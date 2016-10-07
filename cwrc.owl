@@ -21,5 +21,35 @@
     xmlns:loc="http://id.loc.gov/vocabulary/relators/"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:cwrc="http://localhost/">
+
+ <owl:Class rdf:ID="CulturalFormation">
+   <rdfs:label xml:lang="en">Cultural Formation</rdfs:label>
+   <rdfs:label xml:lang="fr">Formation Culturelle</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ </owl:Class>
+
+ <owl:Class rdf:ID="Nationality">
+   <rdfs:label xml:lang="en">Nationality</rdfs:label>
+   <rdfs:label xml:lang="fr">Nationalité</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#CulturalFormation"/>
+ </owl:Class>
+
+ <owl:Class rdf:ID="Gender">
+   <rdfs:label xml:lang="en">Gender</rdfs:label>
+   <rdfs:label xml:lang="fr">Genre</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#CulturalFormation"/>
+ </owl:Class>
+
+ <owl:Class rdf:ID="Race">
+   <rdfs:label xml:lang="en">Race</rdfs:label>
+   <rdfs:label xml:lang="fr">Race</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#CulturalFormation"/>
+ </owl:Class>
+
+
+
 </rdf:RDF>
 
