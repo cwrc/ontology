@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix muninn: <http://rdf.muninn-project.org/ontologies/muninn#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cwrc: <http://localhost/> .
+
+<file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/Black>
+    rdfs:label "Black"@en, "Noire"@fr .
+
+<file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#CulturalFormation>
+    a owl:Class, skos:Concept ;
+    rdfs:label "Cultural Formation"@en, "Formation Culturelle"@fr .
+
+<file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#Gender>
+    a owl:Class, skos:Concept ;
+    rdfs:label "Gender"@en, "Genre"@fr ;
+    owl:subClass <file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#CulturalFormation> .
+
+<file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#Issue>
+    a owl:Class, skos:Concept ;
+    rdfs:label "Issue"@en, "Question"@fr .
+
+<file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#Nationality>
+    a owl:Class, skos:Concept ;
+    rdfs:label "Nationality"@en, "Nationalité"@fr ;
+    owl:subClass <file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#CulturalFormation> .
+
+<file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#Race>
+    a owl:Class, skos:Concept ;
+    rdfs:label "Race"@en, "Race"@fr ;
+    owl:subClass <file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#CulturalFormation> .
+
+<file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#RaceIssue>
+    dcterms:subject <file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#Race> ;
+    a owl:Class, skos:Concept ;
+    rdfs:label "Question Raciale"@fr, "Race Issue"@en ;
+    owl:subClass <file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#Issue> .
+
