@@ -49,7 +49,24 @@
    <owl:subClass rdf:resource="#CulturalFormation"/>
  </owl:Class>
 
+ <rdf:Description rdf:about="Black">
+   <rdfs:label xml:lang="en">Black</rdfs:label>
+   <rdfs:label xml:lang="fr">Noire</rdfs:label>
+ </rdf:Description>
 
+ <owl:Class rdf:ID="Issue">
+   <rdfs:label xml:lang="en">Issue</rdfs:label>
+   <rdfs:label xml:lang="fr">Question</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ </owl:Class>
+
+ <owl:Class rdf:ID="RaceIssue">
+   <rdfs:label xml:lang="en">Race Issue</rdfs:label>
+   <rdfs:label xml:lang="fr">Question Raciale</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#Issue"/>
+   <dc:subject rdf:resource="#Race"/>
+ </owl:Class>
 
 </rdf:RDF>
 
