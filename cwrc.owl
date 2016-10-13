@@ -51,6 +51,13 @@
    <owl:subClass rdf:resource="#CulturalFormation"/>
  </owl:Class>
 
+ <owl:Class rdf:ID="Ethnicity">
+   <rdfs:label xml:lang="en">Ethnicity</rdfs:label>
+   <rdfs:label xml:lang="fr">Ethnicité</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#CulturalFormation"/>
+ </owl:Class>
+
  <owl:Class rdf:ID="Religion">
    <rdfs:label xml:lang="en">Religion</rdfs:label>
    <rdfs:label xml:lang="fr">Religion</rdfs:label>
@@ -58,11 +65,37 @@
    <owl:subClass rdf:resource="#CulturalFormation"/>
  </owl:Class>
 
+ <owl:Class rdf:ID="SocialClass">
+   <rdfs:label xml:lang="en">Social Class</rdfs:label>
+   <rdfs:label xml:lang="fr">Classe Sociale</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#CulturalFormation"/>
+ </owl:Class>
 
- <rdf:Description rdf:about="Black">
-   <rdfs:label xml:lang="en">Black</rdfs:label>
-   <rdfs:label xml:lang="fr">Noire</rdfs:label>
- </rdf:Description>
+ <owl:Class rdf:ID="Language">
+   <rdfs:label xml:lang="en">Language (Spoken and Written)</rdfs:label>
+   <rdfs:label xml:lang="fr">Language (Écris et Parlez)</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#CulturalFormation"/>
+ </owl:Class>
+
+ <owl:Class rdf:ID="Sexuality">
+   <rdfs:label xml:lang="en">Sexuality</rdfs:label>
+   <rdfs:label xml:lang="fr">Sexualité</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#CulturalFormation"/>
+ </owl:Class>
+
+
+
+
+
+
+
+ <cwrc:Race rdf:about="Black">
+   <rdfs:label xml:lang="en">Black (Race)</rdfs:label>
+   <rdfs:label xml:lang="fr">Noir (Race)</rdfs:label>
+ </cwrc:Race>
 
  <owl:Class rdf:ID="Issue">
    <rdfs:label xml:lang="en">Issue</rdfs:label>
@@ -77,6 +110,47 @@
    <owl:subClass rdf:resource="#Issue"/>
    <dc:subject rdf:resource="#Race"/>
  </owl:Class>
+
+ <owl:Class rdf:ID="SexualityIssue">
+   <rdfs:label xml:lang="en">Sexuality Issue</rdfs:label>
+   <rdfs:label xml:lang="fr">Question Sexuelle</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#Issue"/>
+   <dc:subject rdf:resource="#Sexuality"/>
+ </owl:Class>
+
+ <owl:Class rdf:ID="LanguageIssue">
+   <rdfs:label xml:lang="en">Language Issue</rdfs:label>
+   <rdfs:label xml:lang="fr">Question Linguistique</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#Issue"/>
+   <dc:subject rdf:resource="#Language"/>
+ </owl:Class>
+
+ <owl:Class rdf:ID="SocialClassIssue">
+   <rdfs:label xml:lang="en">Social Class Issue</rdfs:label>
+   <rdfs:label xml:lang="fr">Question de Classe Sociale</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#Issue"/>
+   <dc:subject rdf:resource="#SocialClass"/>
+ </owl:Class>
+
+ <owl:Class rdf:ID="ReligionIssue">
+   <rdfs:label xml:lang="en">Religious Issue</rdfs:label>
+   <rdfs:label xml:lang="fr">Question de Religion</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#Issue"/>
+   <dc:subject rdf:resource="#Religion"/>
+ </owl:Class>
+
+ <owl:Class rdf:ID="Ethnicity Issue">
+   <rdfs:label xml:lang="en">Ethnicity Issue</rdfs:label>
+   <rdfs:label xml:lang="fr">Question d'ethnicité</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#Issue"/>
+   <dc:subject rdf:resource="#Ethnicity"/>
+ </owl:Class>
+
 
   <cwrc:Religion rdf:about="#anglicanchurch">
    <rdfs:label xml:lang="en">Anglican Church</rdfs:label>
