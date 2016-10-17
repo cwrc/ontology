@@ -438,6 +438,23 @@ colour
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </cwrc:Religion>
 
+  <cwrc:Religion rdf:about="#judaism">
+   <rdfs:label xml:lang="en">Judaism</rdfs:label>
+   <rdfs:label xml:lang="fr">Judaïsme</rdfs:label>
+   <skos:definition xml:lang="en"></skos:definition>
+   <skos:definition xml:lang="fr"></skos:definition>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:sameAs rdf:resource="http://dbpedia.org/resource/Judaism"/>
+  </cwrc:Religion>
+
+  <cwrc:SocialClass rdf:about="#gentry">
+   <rdfs:label xml:lang="en">Gentry</rdfs:label>
+   <rdfs:label xml:lang="fr">Gentry</rdfs:label>
+   <skos:definition xml:lang="en"></skos:definition>
+   <skos:definition xml:lang="fr"></skos:definition>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:sameAs rdf:resource="http://dbpedia.org/resource/Gentry"/>
+  </cwrc:SocialClass>
 
 
 <owl:ObjectProperty rdf:ID="personalProperty">
