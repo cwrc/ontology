@@ -17,37 +17,400 @@
 @prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
 @prefix loc: <http://id.loc.gov/vocabulary/relators/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix cwrc: <http://localhost/> .
+@prefix cwrc: <http://www.cwrc.ca/ontologies/cwrc#> .
 
-<file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/Black>
-    rdfs:label "Black"@en, "Noire"@fr .
+<http://www.cwrc.ca/ontologies/Black>
+    a cwrc:Race ;
+    rdfs:label "Black (Race)"@en, "Noir (Race)"@fr ;
+    skos:definition ""@en, ""@fr .
 
-<file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#CulturalFormation>
+cwrc:CulturalFormation
     a owl:Class, skos:Concept ;
-    rdfs:label "Cultural Formation"@en, "Formation Culturelle"@fr .
+    rdfs:label "Cultural Formation"@en, "Formation Culturelle"@fr ;
+    skos:definition ""@en, ""@fr .
 
-<file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#Gender>
+cwrc:Ethnicity
+    a owl:Class, skos:Concept ;
+    rdfs:label "Ethnicity"@en, "Ethnicité"@fr ;
+    owl:subClass cwrc:CulturalFormation ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:EthnicityIssue
+    dcterms:subject cwrc:Ethnicity ;
+    a owl:Class, skos:Concept ;
+    rdfs:label "Ethnicity Issue"@en, "Question d'ethnicité"@fr ;
+    owl:subClass cwrc:Issue ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:Gender
     a owl:Class, skos:Concept ;
     rdfs:label "Gender"@en, "Genre"@fr ;
-    owl:subClass <file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#CulturalFormation> .
+    owl:subClass cwrc:CulturalFormation ;
+    skos:definition ""@en, ""@fr .
 
-<file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#Issue>
+cwrc:Issue
     a owl:Class, skos:Concept ;
-    rdfs:label "Issue"@en, "Question"@fr .
+    rdfs:label "Issue"@en, "Question"@fr ;
+    skos:definition ""@en, ""@fr .
 
-<file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#Nationality>
+cwrc:Language
+    a owl:Class, skos:Concept ;
+    rdfs:label "Language (Spoken and Written)"@en, "Language (Écris et Parlez)"@fr ;
+    owl:subClass cwrc:CulturalFormation ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:LanguageIssue
+    dcterms:subject cwrc:Language ;
+    a owl:Class, skos:Concept ;
+    rdfs:label "Language Issue"@en, "Question Linguistique"@fr ;
+    owl:subClass cwrc:Issue ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:Nationality
     a owl:Class, skos:Concept ;
     rdfs:label "Nationality"@en, "Nationalité"@fr ;
-    owl:subClass <file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#CulturalFormation> .
+    owl:subClass cwrc:CulturalFormation ;
+    skos:definition ""@en, ""@fr .
 
-<file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#Race>
+cwrc:Race
     a owl:Class, skos:Concept ;
     rdfs:label "Race"@en, "Race"@fr ;
-    owl:subClass <file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#CulturalFormation> .
+    owl:subClass cwrc:CulturalFormation ;
+    skos:definition ""@en, ""@fr .
 
-<file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#RaceIssue>
-    dcterms:subject <file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#Race> ;
+cwrc:RaceIssue
+    dcterms:subject cwrc:Race ;
     a owl:Class, skos:Concept ;
     rdfs:label "Question Raciale"@fr, "Race Issue"@en ;
-    owl:subClass <file:///Users/warren/Documents/Papers/papers/cwrctesting/cwrc/cwrc.owl#Issue> .
+    owl:subClass cwrc:Issue ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:Religion
+    a owl:Class, skos:Concept ;
+    rdfs:label "Religion"@en, "Religion"@fr ;
+    owl:subClass cwrc:CulturalFormation ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:ReligionIssue
+    dcterms:subject cwrc:Religion ;
+    a owl:Class, skos:Concept ;
+    rdfs:label "Question de Religion"@fr, "Religious Issue"@en ;
+    owl:subClass cwrc:Issue ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:Sexuality
+    a owl:Class, skos:Concept ;
+    rdfs:label "Sexuality"@en, "Sexualité"@fr ;
+    owl:subClass cwrc:CulturalFormation ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:SexualityIssue
+    dcterms:subject cwrc:Sexuality ;
+    a owl:Class, skos:Concept ;
+    rdfs:label "Question Sexuelle"@fr, "Sexuality Issue"@en ;
+    owl:subClass cwrc:Issue ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:SocialClass
+    a owl:Class, skos:Concept ;
+    rdfs:label "Classe Sociale"@fr, "Social Class"@en ;
+    owl:subClass cwrc:CulturalFormation ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:SocialClassIssue
+    dcterms:subject cwrc:SocialClass ;
+    a owl:Class, skos:Concept ;
+    rdfs:label "Question de Classe Sociale"@fr, "Social Class Issue"@en ;
+    owl:subClass cwrc:Issue ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:agnosticism
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Agnosticism"@en, "Agnosticism"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:anglicanchurch
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Anglican Church"@en, "Église anglicane"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:atheistism
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Atheistism"@en, "Atheistism"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:baptistchurch
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Baptist Church"@en, "Église Baptiste"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:catholicchurch
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Catholic Church"@en, "Église Catholique"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:christianity
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Christianisme"@fr, "Christianity"@en ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:churchofchristscientist
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Church of Christ Scientist"@en, "Église de la Science Chrétienne"@fr ;
+    owl:sameAs <http://dbpedia.org/resource/Church_of_Christ,_Scientist> ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:churchofengland
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Church of England"@en, "Église d'Angleterre"@fr ;
+    owl:sameAs dbpedia:Church_of_England ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:churchofireland
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Church of Ireland"@en, "Église d'Irlande"@fr ;
+    owl:sameAs dbpedia:Church_of_Ireland ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:congregationalchurch
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Congregational Church"@en, "Église Congrégationaliste"@fr ;
+    owl:sameAs dbpedia:Congregational_church ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:dissenters
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Dissent"@fr, "Dissenters"@en ;
+    owl:sameAs dbpedia:Dissenter ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:dissentingchurches
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Dissenting Churches"@en, "Églises Dissent"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:entrepreneurial-industrialist
+    a cwrc:SocialClass, skos:Concept ;
+    rdfs:label "Entrepreneurial Industrialist"@en, "Entrerpreneur Industrialist"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:fifthmonarchists
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Cinquième_Monarchie"@fr, "Fifth Monarchists"@en ;
+    owl:sameAs dbpedia:Fifth_Monarchists ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:gentry
+    a cwrc:SocialClass, skos:Concept ;
+    rdfs:label "Gentry"@en, "Gentry"@fr ;
+    owl:sameAs dbpedia:Gentry ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:hasEthnicity
+    a owl:ObjectProperty ;
+    rdfs:domain cwrc:Ethnicity ;
+    rdfs:label "D'Ethnicité"@fr, "has Ethnicity"@en ;
+    rdfs:subPropertyOf cwrc:personalProperty ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:hasEthnicitySelfReported
+    a owl:ObjectProperty ;
+    rdfs:domain cwrc:Ethnicity ;
+    rdfs:label "D'Ethnicité (Autodéclarés)"@fr, "has Ethnicity (Self Reported)"@en ;
+    rdfs:subPropertyOf cwrc:personalPropertySelfReported ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:hasGender
+    a owl:ObjectProperty ;
+    rdfs:domain cwrc:Gender ;
+    rdfs:label "A le Genre"@fr, "has Gender"@en ;
+    rdfs:subPropertyOf cwrc:personalProperty ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:hasGenderSelfReported
+    a owl:ObjectProperty ;
+    rdfs:domain cwrc:Gender ;
+    rdfs:label "A le Genre (Autodéclarés)"@fr, "has Gender (Self Reported)"@en ;
+    rdfs:subPropertyOf cwrc:personalPropertySelfReported ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:hasLanguage
+    a owl:ObjectProperty ;
+    rdfs:domain cwrc:Language ;
+    rdfs:label "Connait la langue"@fr, "Knowns Language"@en ;
+    rdfs:subPropertyOf cwrc:personalProperty ;
+    skos:definition ""@fr, "Knowleage about the language in writing or reading ?"@en .
+
+cwrc:hasLanguageSelfReported
+    a owl:ObjectProperty ;
+    rdfs:domain cwrc:Language ;
+    rdfs:label "Connait la langue (Autodéclarés)"@fr, "Knowns Language (Self Reported)"@en ;
+    rdfs:subPropertyOf cwrc:personalPropertySelfReported ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:hasRace
+    a owl:ObjectProperty ;
+    rdfs:domain cwrc:Race ;
+    rdfs:label "Est de Race"@fr, "has Race"@en ;
+    rdfs:subPropertyOf cwrc:personalProperty ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:hasRaceSelfReported
+    a owl:ObjectProperty ;
+    rdfs:domain cwrc:Race ;
+    rdfs:label "Est de Race (Autodéclarés)"@fr, "has Race (Self Reported)"@en ;
+    rdfs:subPropertyOf cwrc:personalPropertySelfReported ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:hasReligion
+    a owl:ObjectProperty ;
+    rdfs:domain cwrc:Religion ;
+    rdfs:label "Religion"@fr, "has Religious Affiliation"@en ;
+    rdfs:subPropertyOf cwrc:personalProperty ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:hasReligionSelfReported
+    a owl:ObjectProperty ;
+    rdfs:domain cwrc:Religion ;
+    rdfs:label "Religion (Autodéclarés)"@fr, "has Religious Affilication (Self Reported)"@en ;
+    rdfs:subPropertyOf cwrc:personalPropertySelfReported ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:hasSexuality
+    a owl:ObjectProperty ;
+    rdfs:domain cwrc:Sexuality ;
+    rdfs:label "A une Orientation Sexuelle"@fr, "has Sexual Orientation"@en ;
+    rdfs:subPropertyOf cwrc:personalProperty ;
+    skos:definition ""@fr, "Knowleage about the language in writing or reading ?"@en .
+
+cwrc:hasSexualitySelfReported
+    a owl:ObjectProperty ;
+    rdfs:domain cwrc:Sexuality ;
+    rdfs:label "A une Orientation Sexuelle (Autodéclarés)"@fr, "has Sexual Orientation (Self Reported)"@en ;
+    rdfs:subPropertyOf cwrc:personalPropertySelfReported ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:hasSocialClass
+    a owl:ObjectProperty ;
+    rdfs:domain cwrc:SocialClass ;
+    rdfs:label "De Classe Sociale"@fr, "has Social Class"@en ;
+    rdfs:subPropertyOf cwrc:personalProperty ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:hasSocialClassSelfReported
+    a owl:ObjectProperty ;
+    rdfs:domain cwrc:SocialClass ;
+    rdfs:label "De Classe Sociale (Autodéclarés)"@fr, "has Social Class (Self Reported)"@en ;
+    rdfs:subPropertyOf cwrc:personalPropertySelfReported ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:indigent
+    a cwrc:SocialClass, skos:Concept ;
+    rdfs:label "Indigent"@en, "Pauvre"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:islam
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Islam"@en, "Islam"@fr ;
+    owl:sameAs dbpedia:Islam ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:judaism
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Judaism"@en, "Judaism"@fr, "Judaïsme"@fr ;
+    owl:sameAs dbpedia:Judaism ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:lollards
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Lollards"@en, "Lollards"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:methodistchurch
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Methodist Church"@en, "Methodist Church"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:millenarianism
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Millenarianism"@en, "Millenarianism"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:neo-thomism
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "neo-Thomism"@en, "neo-Thomism"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:oxfordmovement
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Oxford Movement"@en, "Oxford Movement"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:pagan
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Pagan"@en, "Pagan"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:personalProperty
+    a owl:ObjectProperty ;
+    rdfs:label "Personal Property"@en, "Propriété de la Personne"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:personalPropertySelfReported
+    a owl:ObjectProperty ;
+    rdfs:label "Personal Property (Self Reported)"@en, "Propriété de la Personne (Autodéclarés)"@fr ;
+    rdfs:subPropertyOf cwrc:personalProperty ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:plymouthbrethren
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Plymouth Brethren"@en, "Plymouth Brethren"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:presbyterianchurch
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Presbyterian Church"@en, "Presbyterian Church"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:puritans
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Puritans"@en, "Puritans"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:quakers
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Quakers"@en, "Quakers"@fr ;
+    owl:sameAs dbpedia:Quakers ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:rationaldissenter
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Rational Dissenter"@en, "Rational Dissenter"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:romancatholicchurch
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Roman Catholic Church"@en, "Roman Catholic Church"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:societyoffriends
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Society of Friends"@en, "Society of Friends"@fr, "Société Religieuse des Amis"@fr ;
+    owl:sameAs dbpedia:Quakers ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:spiritualism
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Spiritualism"@en, "Spiritualism"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:tractarianmovement
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Tractarian Movement"@en, "Tractarian Movement"@fr ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:unitarianchurch
+    a cwrc:Religion, skos:Concept ;
+    rdfs:label "Unitarian Church"@en, "Unitarian Church"@fr ;
+    skos:definition ""@en, ""@fr .
 
