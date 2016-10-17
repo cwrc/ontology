@@ -40,6 +40,9 @@
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
+//race colour
+/techniticy
+colour
 
  <owl:Class rdf:ID="Gender">
    <rdfs:label xml:lang="en">Gender</rdfs:label>
@@ -427,13 +430,132 @@
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:ID="hasGenderSelfReported">
- <rdfs:label xml:lang="en">has Gender</rdfs:label>
- <rdfs:label xml:lang="fr">A le Genre</rdfs:label>
+ <rdfs:label xml:lang="en">has Gender (Self Reported)</rdfs:label>
+ <rdfs:label xml:lang="fr">A le Genre (Autodéclarés)</rdfs:label>
  <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
  <rdfs:domain rdf:resource="#Gender"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
+
+
+<owl:ObjectProperty rdf:ID="hasRace">
+ <rdfs:label xml:lang="en">has Race</rdfs:label>
+ <rdfs:label xml:lang="fr">Est de Race</rdfs:label>
+ <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
+ <rdfs:domain rdf:resource="#Race"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="hasRaceSelfReported">
+ <rdfs:label xml:lang="en">has Race (Self Reported)</rdfs:label>
+ <rdfs:label xml:lang="fr">Est de Race (Autodéclarés)</rdfs:label>
+ <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
+ <rdfs:domain rdf:resource="#Race"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="hasEthnicity">
+ <rdfs:label xml:lang="en">has Ethnicity</rdfs:label>
+ <rdfs:label xml:lang="fr">D'Ethnicité</rdfs:label>
+ <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
+ <rdfs:domain rdf:resource="#Ethnicity"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="hasEthnicitySelfReported">
+ <rdfs:label xml:lang="en">has Ethnicity (Self Reported)</rdfs:label>
+ <rdfs:label xml:lang="fr">D'Ethnicité (Autodéclarés)</rdfs:label>
+ <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
+ <rdfs:domain rdf:resource="#Ethnicity"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="hasReligion">
+ <rdfs:label xml:lang="en">has Religious Affiliation</rdfs:label>
+ <rdfs:label xml:lang="fr">Religion</rdfs:label>
+ <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
+ <rdfs:domain rdf:resource="#Religion"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="hasReligionSelfReported">
+ <rdfs:label xml:lang="en">has Religious Affilication (Self Reported)</rdfs:label>
+ <rdfs:label xml:lang="fr">Religion (Autodéclarés)</rdfs:label>
+ <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
+ <rdfs:domain rdf:resource="#Religion"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
+
+
+<owl:ObjectProperty rdf:ID="hasSocialClass">
+ <rdfs:label xml:lang="en">has Social Class</rdfs:label>
+ <rdfs:label xml:lang="fr">De Classe Sociale</rdfs:label>
+ <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
+ <rdfs:domain rdf:resource="#SocialClass"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="hasSocialClassSelfReported">
+ <rdfs:label xml:lang="en">has Social Class (Self Reported)</rdfs:label>
+ <rdfs:label xml:lang="fr">De Classe Sociale (Autodéclarés)</rdfs:label>
+ <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
+ <rdfs:domain rdf:resource="#SocialClass"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
+
+
+<owl:ObjectProperty rdf:ID="hasLanguage">
+ <rdfs:label xml:lang="en">Knowns Language</rdfs:label>
+ <rdfs:label xml:lang="fr">Connait la langue</rdfs:label>
+ <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
+ <rdfs:domain rdf:resource="#Language"/>
+ <skos:definition xml:lang="en">Knowleage about the language in writing or reading ?</skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="hasLanguageSelfReported">
+ <rdfs:label xml:lang="en">Knowns Language (Self Reported)</rdfs:label>
+ <rdfs:label xml:lang="fr">Connait la langue (Autodéclarés)</rdfs:label>
+ <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
+ <rdfs:domain rdf:resource="#Language"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="hasSexuality">
+ <rdfs:label xml:lang="en">has Sexual Orientation</rdfs:label>
+ <rdfs:label xml:lang="fr">A une Orientation Sexuelle</rdfs:label>
+ <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
+ <rdfs:domain rdf:resource="#Sexuality"/>
+ <skos:definition xml:lang="en">Knowleage about the language in writing or reading ?</skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="hasSexualitySelfReported">
+ <rdfs:label xml:lang="en">has Sexual Orientation (Self Reported)</rdfs:label>
+ <rdfs:label xml:lang="fr">A une Orientation Sexuelle (Autodéclarés)</rdfs:label>
+ <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
+ <rdfs:domain rdf:resource="#Sexuality"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
+
+
+
+
+
+
+
+
 
 
 </rdf:RDF>
