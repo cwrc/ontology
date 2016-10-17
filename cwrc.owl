@@ -188,90 +188,142 @@ colour
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
+  <cwrc:Religion rdf:about="#oxfordmovement">
+   <rdfs:label xml:lang="en">Oxford Movement</rdfs:label>
+   <rdfs:label xml:lang="fr">Oxford Movement</rdfs:label>
+   <skos:definition xml:lang="en"></skos:definition>
+   <skos:definition xml:lang="fr"></skos:definition>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </cwrc:Religion>
+
+
 
   <cwrc:Religion rdf:about="#anglicanchurch">
    <rdfs:label xml:lang="en">Anglican Church</rdfs:label>
-   <rdfs:label xml:lang="fr">Anglican Church</rdfs:label>
+   <rdfs:label xml:lang="fr">Église anglicane</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#baptistchurch">
    <rdfs:label xml:lang="en">Baptist Church</rdfs:label>
-   <rdfs:label xml:lang="fr">Baptist Church</rdfs:label>
+   <rdfs:label xml:lang="fr">Église Baptiste</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#catholicchurch">
    <rdfs:label xml:lang="en">Catholic Church</rdfs:label>
-   <rdfs:label xml:lang="fr">Catholic Church</rdfs:label>
+   <rdfs:label xml:lang="fr">Église Catholique</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#christianity">
    <rdfs:label xml:lang="en">Christianity</rdfs:label>
-   <rdfs:label xml:lang="fr">Christianity</rdfs:label>
+   <rdfs:label xml:lang="fr">Christianisme</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#churchofchristscientist">
    <rdfs:label xml:lang="en">Church of Christ Scientist</rdfs:label>
-   <rdfs:label xml:lang="fr">Church of Christ Scientist</rdfs:label>
+   <rdfs:label xml:lang="fr">Église de la Science Chrétienne</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:sameAs rdf:resource="http://dbpedia.org/resource/Church_of_Christ,_Scientist"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#churchofengland">
    <rdfs:label xml:lang="en">Church of England</rdfs:label>
-   <rdfs:label xml:lang="fr">Church of England</rdfs:label>
+   <rdfs:label xml:lang="fr">Église d'Angleterre</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:sameAs rdf:resource="http://dbpedia.org/resource/Church_of_England"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#churchofireland">
    <rdfs:label xml:lang="en">Church of Ireland</rdfs:label>
-   <rdfs:label xml:lang="fr">Church of Ireland</rdfs:label>
+   <rdfs:label xml:lang="fr">Église d'Irlande</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:sameAs rdf:resource="http://dbpedia.org/resource/Church_of_Ireland"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#congregationalchurch">
    <rdfs:label xml:lang="en">Congregational Church</rdfs:label>
-   <rdfs:label xml:lang="fr">Congregational Church</rdfs:label>
+   <rdfs:label xml:lang="fr">Église Congrégationaliste</rdfs:label>
+   <skos:definition xml:lang="en"></skos:definition>
+   <skos:definition xml:lang="fr"></skos:definition>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:sameAs rdf:resource="http://dbpedia.org/resource/Congregational_church"/>
+  </cwrc:Religion>
+
+  <!-- #dissenters versus #dissentingchurches versus #rationaldissenter -->
+  <cwrc:Religion rdf:about="#dissenters">
+   <rdfs:label xml:lang="en">Dissenters</rdfs:label>
+   <rdfs:label xml:lang="fr">Dissent</rdfs:label>
+   <skos:definition xml:lang="en"></skos:definition>
+   <skos:definition xml:lang="fr"></skos:definition>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:sameAs rdf:resource="http://dbpedia.org/resource/Dissenter"/>
+  </cwrc:Religion>
+
+  <cwrc:Religion rdf:about="#dissentingchurches">
+   <rdfs:label xml:lang="en">Dissenting Churches</rdfs:label>
+   <rdfs:label xml:lang="fr">Églises Dissent</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </cwrc:Religion>
-  <cwrc:Religion rdf:about="#dissenter">
-   <rdfs:label xml:lang="en">Dissenter</rdfs:label>
-   <rdfs:label xml:lang="fr">Dissenter</rdfs:label>
+
+  <cwrc:Religion rdf:about="#rationaldissenter">
+   <rdfs:label xml:lang="en">Rational Dissenter</rdfs:label>
+   <rdfs:label xml:lang="fr">Rational Dissenter</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </cwrc:Religion>
+
   <cwrc:Religion rdf:about="#fifthmonarchists">
    <rdfs:label xml:lang="en">Fifth Monarchists</rdfs:label>
-   <rdfs:label xml:lang="fr">Fifth Monarchists</rdfs:label>
+   <rdfs:label xml:lang="fr">Cinquième_Monarchie</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:sameAs rdf:resource="http://dbpedia.org/resource/Fifth_Monarchists"/>
   </cwrc:Religion>
+
+   <!-- #societyoffriends versus #quakers -->
+
   <cwrc:Religion rdf:about="#societyoffriends">
+   <!-- These are quakers -->
    <rdfs:label xml:lang="en">Society of Friends</rdfs:label>
-   <rdfs:label xml:lang="fr">Society of Friends</rdfs:label>
+   <rdfs:label xml:lang="fr">Société Religieuse des Amis</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:sameAs rdf:resource="http://dbpedia.org/resource/Quakers"/>
   </cwrc:Religion>
+
+  <cwrc:Religion rdf:about="#quakers">
+   <rdfs:label xml:lang="en">Quakers</rdfs:label>
+   <rdfs:label xml:lang="fr">Quakers</rdfs:label>
+   <skos:definition xml:lang="en"></skos:definition>
+   <skos:definition xml:lang="fr"></skos:definition>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:sameAs rdf:resource="http://dbpedia.org/resource/Quakers"/>
+  </cwrc:Religion>
+
+
+
   <cwrc:Religion rdf:about="#islam">
    <rdfs:label xml:lang="en">Islam</rdfs:label>
    <rdfs:label xml:lang="fr">Islam</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:sameAs rdf:resource="http://dbpedia.org/resource/Islam"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#judaism">
    <rdfs:label xml:lang="en">Judaism</rdfs:label>
@@ -308,23 +360,9 @@ colour
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </cwrc:Religion>
-  <cwrc:Religion rdf:about="#puritan">
-   <rdfs:label xml:lang="en">Puritan</rdfs:label>
-   <rdfs:label xml:lang="fr">Puritan</rdfs:label>
-   <skos:definition xml:lang="en"></skos:definition>
-   <skos:definition xml:lang="fr"></skos:definition>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#quakers">
-   <rdfs:label xml:lang="en">Quakers</rdfs:label>
-   <rdfs:label xml:lang="fr">Quakers</rdfs:label>
-   <skos:definition xml:lang="en"></skos:definition>
-   <skos:definition xml:lang="fr"></skos:definition>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#rationaldissenter">
-   <rdfs:label xml:lang="en">Rational Dissenter</rdfs:label>
-   <rdfs:label xml:lang="fr">Rational Dissenter</rdfs:label>
+  <cwrc:Religion rdf:about="#puritans">
+   <rdfs:label xml:lang="en">Puritans</rdfs:label>
+   <rdfs:label xml:lang="fr">Puritans</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -392,7 +430,6 @@ colour
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </cwrc:Religion>
-
   <cwrc:Religion rdf:about="#spiritualism">
    <rdfs:label xml:lang="en">Spiritualism</rdfs:label>
    <rdfs:label xml:lang="fr">Spiritualism</rdfs:label>
@@ -400,6 +437,7 @@ colour
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </cwrc:Religion>
+
 
 
 <owl:ObjectProperty rdf:ID="personalProperty">
