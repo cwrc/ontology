@@ -85,6 +85,7 @@ cwrc:NationalIdentity
     skos:definition ""@en, ""@fr .
 
 cwrc:NationalityContext
+    dcterms:subject cwrc:GeographicalHeritage, cwrc:NationalHeritage, cwrc:NationalIdentity ;
     a owl:Class, skos:Concept ;
     rdfs:label "Contexte de Nationalité"@fr, "Nationality Context"@en ;
     owl:subClass cwrc:Context ;
