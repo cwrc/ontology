@@ -272,9 +272,23 @@ cwrc:hasLanguageSelfReported
     rdfs:subPropertyOf cwrc:personalPropertySelfReported ;
     skos:definition ""@en, ""@fr .
 
-cwrc:hasRace
+cwrc:hasNationality
     a owl:ObjectProperty ;
-    rdfs:domain cwrc:Race ;
+    rdfs:domain cwrc:NationalIdentity ;
+    rdfs:label "de Nationalité"@fr, "has Nationality"@en ;
+    rdfs:subPropertyOf cwrc:personalProperty ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:hasNationalitySelfReported
+    a owl:ObjectProperty ;
+    rdfs:domain cwrc:NationalIdentity ;
+    rdfs:label "de Nationalité (Autodéclarés)"@fr, "has Nationality (Self Reported)"@en ;
+    rdfs:subPropertyOf cwrc:personalPropertySelfReported ;
+    skos:definition ""@en, ""@fr .
+
+cwrc:hasRaceColour
+    a owl:ObjectProperty ;
+    rdfs:domain cwrc:RaceColour ;
     rdfs:label "Est de Race"@fr, "has Race"@en ;
     rdfs:subPropertyOf cwrc:personalProperty ;
     skos:definition ""@en, ""@fr .

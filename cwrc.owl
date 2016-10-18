@@ -548,12 +548,30 @@
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
 
+<owl:ObjectProperty rdf:ID="hasNationality">
+ <rdfs:label xml:lang="en">has Nationality</rdfs:label>
+ <rdfs:label xml:lang="fr">de Nationalité</rdfs:label>
+ <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
+ <rdfs:domain rdf:resource="#NationalIdentity"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:ID="hasRace">
+<owl:ObjectProperty rdf:ID="hasNationalitySelfReported">
+ <rdfs:label xml:lang="en">has Nationality (Self Reported)</rdfs:label>
+ <rdfs:label xml:lang="fr">de Nationalité (Autodéclarés)</rdfs:label>
+ <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
+ <rdfs:domain rdf:resource="#NationalIdentity"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
+
+
+<owl:ObjectProperty rdf:ID="hasRaceColour">
  <rdfs:label xml:lang="en">has Race</rdfs:label>
  <rdfs:label xml:lang="fr">Est de Race</rdfs:label>
  <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
- <rdfs:domain rdf:resource="#Race"/>
+ <rdfs:domain rdf:resource="#RaceColour"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
