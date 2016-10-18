@@ -32,32 +32,72 @@
    <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
- <owl:Class rdf:ID="Nationality">
-   <rdfs:label xml:lang="en">Nationality</rdfs:label>
-   <rdfs:label xml:lang="fr">Nationalité</rdfs:label>
+ <owl:Class rdf:ID="Context">
+   <rdfs:label xml:lang="en">Context</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <skos:definition xml:lang="en"></skos:definition>
+   <skos:definition xml:lang="fr"></skos:definition>
+ </owl:Class>
+
+
+ <owl:Class rdf:ID="NationalHeritage">
+   <rdfs:label xml:lang="en">National Heritage</rdfs:label>
+   <rdfs:label xml:lang="fr">Héritage Nationale</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
- <owl:Class rdf:ID="Gender">
-   <rdfs:label xml:lang="en">Gender</rdfs:label>
-   <rdfs:label xml:lang="fr">Genre</rdfs:label>
+ <owl:Class rdf:ID="NationalIdentity">
+   <rdfs:label xml:lang="en">National Identity</rdfs:label>
+   <rdfs:label xml:lang="fr">Identité Nationale</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
- <owl:Class rdf:ID="Race">
-   <rdfs:label xml:lang="en">Race</rdfs:label>
-   <rdfs:label xml:lang="fr">Race</rdfs:label>
+ <owl:Class rdf:ID="GeographicalHeritage">
+   <rdfs:label xml:lang="en">Geographical Heritage</rdfs:label>
+   <rdfs:label xml:lang="fr">Héritage Géographique</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
+
+
+ <owl:Class rdf:ID="GenderIdentity">
+   <rdfs:label xml:lang="en">Gender Identity</rdfs:label>
+   <rdfs:label xml:lang="fr">Identité Genre</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#CulturalFormation"/>
+   <skos:definition xml:lang="en"></skos:definition>
+   <skos:definition xml:lang="fr"></skos:definition>
+ </owl:Class>
+
+ <owl:Class rdf:ID="SexualIdentity">
+   <rdfs:label xml:lang="en">Sexual Identity</rdfs:label>
+   <rdfs:label xml:lang="fr">Identité Sexuelle</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#CulturalFormation"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ </owl:Class>
+
+
+
+ <owl:Class rdf:ID="RaceColour">
+   <rdfs:label xml:lang="en">Race and/or Colour</rdfs:label>
+   <rdfs:label xml:lang="fr">Race et/ou Couleur de Peau</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#CulturalFormation"/>
+   <skos:definition xml:lang="en"></skos:definition>
+   <skos:definition xml:lang="fr"></skos:definition>
+ </owl:Class>
+
 
  <owl:Class rdf:ID="Ethnicity">
    <rdfs:label xml:lang="en">Ethnicity</rdfs:label>
@@ -68,36 +108,36 @@
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
- <owl:Class rdf:ID="Religion">
-   <rdfs:label xml:lang="en">Religion</rdfs:label>
-   <rdfs:label xml:lang="fr">Religion</rdfs:label>
+ <owl:Class rdf:ID="Denomination">
+   <rdfs:label xml:lang="en">Denomination</rdfs:label>
+   <rdfs:label xml:lang="fr">Dénomination</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
- <owl:Class rdf:ID="SocialClass">
-   <rdfs:label xml:lang="en">Social Class</rdfs:label>
-   <rdfs:label xml:lang="fr">Classe Sociale</rdfs:label>
+ <owl:Class rdf:ID="SocialClassIdentity">
+   <rdfs:label xml:lang="en">Social Class Identity</rdfs:label>
+   <rdfs:label xml:lang="fr">Identité Classe Sociale</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
- <owl:Class rdf:ID="Language">
-   <rdfs:label xml:lang="en">Language (Spoken and Written)</rdfs:label>
-   <rdfs:label xml:lang="fr">Language (Écris et Parlez)</rdfs:label>
+ <owl:Class rdf:ID="LinguisticAbility">
+   <rdfs:label xml:lang="en">Linguistic Ability (Spoken and/or Writen)</rdfs:label>
+   <rdfs:label xml:lang="fr">Habilité linguistique (Écris ou Parlé)</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
- <owl:Class rdf:ID="Sexuality">
-   <rdfs:label xml:lang="en">Sexuality</rdfs:label>
-   <rdfs:label xml:lang="fr">Sexualité</rdfs:label>
+ <owl:Class rdf:ID="PoliticalAffiliation">
+   <rdfs:label xml:lang="en">Political Affiliation</rdfs:label>
+   <rdfs:label xml:lang="fr">Affiliation Politique</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
  <skos:definition xml:lang="en"></skos:definition>
@@ -105,196 +145,194 @@
  </owl:Class>
 
 
-
-
-
-
-
- <cwrc:Race rdf:about="#Black">
+ <cwrc:RaceColour rdf:about="#Black">
    <rdfs:label xml:lang="en">black (Race)</rdfs:label>
    <rdfs:label xml:lang="fr">noir (Race)</rdfs:label>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
- </cwrc:Race>
+ </cwrc:RaceColour>
 
- <owl:Class rdf:ID="Issue">
-   <rdfs:label xml:lang="en">Issue</rdfs:label>
-   <rdfs:label xml:lang="fr">Question</rdfs:label>
+ <owl:Class rdf:ID="SexualityContext">
+   <rdfs:label xml:lang="en">Sexuality Context</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte Sexuelle</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#Context"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
- <owl:Class rdf:ID="RaceIssue">
-   <rdfs:label xml:lang="en">Race Issue</rdfs:label>
-   <rdfs:label xml:lang="fr">Question Raciale</rdfs:label>
+ <owl:Class rdf:ID="LanguageContext">
+   <rdfs:label xml:lang="en">Language Context</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte Linguistique</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <owl:subClass rdf:resource="#Issue"/>
-   <dc:subject rdf:resource="#Race"/>
+   <owl:subClass rdf:resource="#Context"/>
+   <dc:subject rdf:resource="#LinguisticAbility"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
- <owl:Class rdf:ID="SexualityIssue">
-   <rdfs:label xml:lang="en">Sexuality Issue</rdfs:label>
-   <rdfs:label xml:lang="fr">Question Sexuelle</rdfs:label>
+ <owl:Class rdf:ID="SocialClassContext">
+   <rdfs:label xml:lang="en">Social Class Context</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte de Classe Sociale</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <owl:subClass rdf:resource="#Issue"/>
-   <dc:subject rdf:resource="#Sexuality"/>
+   <owl:subClass rdf:resource="#Context"/>
+   <dc:subject rdf:resource="#SocialClassIdentity"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
- <owl:Class rdf:ID="LanguageIssue">
-   <rdfs:label xml:lang="en">Language Issue</rdfs:label>
-   <rdfs:label xml:lang="fr">Question Linguistique</rdfs:label>
+ <owl:Class rdf:ID="DenominationContext">
+   <rdfs:label xml:lang="en">Religious Context</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte de Denomination</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <owl:subClass rdf:resource="#Issue"/>
-   <dc:subject rdf:resource="#Language"/>
+   <owl:subClass rdf:resource="#Context"/>
+   <dc:subject rdf:resource="#Denomination"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
- <owl:Class rdf:ID="SocialClassIssue">
-   <rdfs:label xml:lang="en">Social Class Issue</rdfs:label>
-   <rdfs:label xml:lang="fr">Question de Classe Sociale</rdfs:label>
+ <owl:Class rdf:ID="NationalityContext">
+   <rdfs:label xml:lang="en">Nationality Context</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte de Nationalité</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <owl:subClass rdf:resource="#Issue"/>
-   <dc:subject rdf:resource="#SocialClass"/>
+   <owl:subClass rdf:resource="#Context"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
- <owl:Class rdf:ID="ReligionIssue">
-   <rdfs:label xml:lang="en">Religious Issue</rdfs:label>
-   <rdfs:label xml:lang="fr">Question de Religion</rdfs:label>
+ <owl:Class rdf:ID="PoliticsContext">
+   <rdfs:label xml:lang="en">Political Context</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte Politique</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <owl:subClass rdf:resource="#Issue"/>
-   <dc:subject rdf:resource="#Religion"/>
+   <owl:subClass rdf:resource="#Context"/>
+   <dc:subject rdf:resource="#PoliticalAffiliation"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
- <owl:Class rdf:ID="EthnicityIssue">
-   <rdfs:label xml:lang="en">Ethnicity Issue</rdfs:label>
-   <rdfs:label xml:lang="fr">Question d'ethnicité</rdfs:label>
+
+
+ <owl:Class rdf:ID="EthnicityContext">
+   <rdfs:label xml:lang="en">Racial, Colour or Ethnicity Context</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte Raciale, de Couleur de Peau ou d'ethnicité</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <owl:subClass rdf:resource="#Issue"/>
+   <owl:subClass rdf:resource="#Context"/>
    <dc:subject rdf:resource="#Ethnicity"/>
+   <dc:subject rdf:resource="#RaceColour"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
-  <cwrc:Religion rdf:about="#oxfordmovement">
+  <cwrc:Denomination rdf:about="#oxfordmovement">
    <rdfs:label xml:lang="en">Oxford Movement</rdfs:label>
    <rdfs:label xml:lang="fr">Oxford Movement</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
+  </cwrc:Denomination>
 
 
 
-  <cwrc:Religion rdf:about="#anglicanchurch">
+  <cwrc:Denomination rdf:about="#anglicanchurch">
    <rdfs:label xml:lang="en">Anglican Church</rdfs:label>
    <rdfs:label xml:lang="fr">Église anglicane</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#baptistchurch">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#baptistchurch">
    <rdfs:label xml:lang="en">Baptist Church</rdfs:label>
    <rdfs:label xml:lang="fr">Église Baptiste</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#catholicchurch">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#catholicchurch">
    <rdfs:label xml:lang="en">Catholic Church</rdfs:label>
    <rdfs:label xml:lang="fr">Église Catholique</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#christianity">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#christianity">
    <rdfs:label xml:lang="en">Christianity</rdfs:label>
    <rdfs:label xml:lang="fr">Christianisme</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#churchofchristscientist">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#churchofchristscientist">
    <rdfs:label xml:lang="en">Church of Christ Scientist</rdfs:label>
    <rdfs:label xml:lang="fr">Église de la Science Chrétienne</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Church_of_Christ,_Scientist"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#churchofengland">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#churchofengland">
    <rdfs:label xml:lang="en">Church of England</rdfs:label>
    <rdfs:label xml:lang="fr">Église d'Angleterre</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Church_of_England"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#churchofireland">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#churchofireland">
    <rdfs:label xml:lang="en">Church of Ireland</rdfs:label>
    <rdfs:label xml:lang="fr">Église d'Irlande</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Church_of_Ireland"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#congregationalchurch">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#congregationalchurch">
    <rdfs:label xml:lang="en">Congregational Church</rdfs:label>
    <rdfs:label xml:lang="fr">Église Congrégationaliste</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Congregational_church"/>
-  </cwrc:Religion>
+  </cwrc:Denomination>
 
   <!-- #dissenters versus #dissentingchurches versus #rationaldissenter -->
 
-  <cwrc:Religion rdf:about="#dissenters">
+  <cwrc:Denomination rdf:about="#dissenters">
    <rdfs:label xml:lang="en">Dissenters</rdfs:label>
    <rdfs:label xml:lang="fr">Dissent</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Dissenter"/>
-  </cwrc:Religion>
+  </cwrc:Denomination>
 
-  <cwrc:Religion rdf:about="#dissentingchurches">
+  <cwrc:Denomination rdf:about="#dissentingchurches">
    <rdfs:label xml:lang="en">Dissenting Churches</rdfs:label>
    <rdfs:label xml:lang="fr">Églises Dissent</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
+  </cwrc:Denomination>
 
-  <cwrc:Religion rdf:about="#rationaldissenter">
+  <cwrc:Denomination rdf:about="#rationaldissenter">
    <rdfs:label xml:lang="en">Rational Dissenter</rdfs:label>
    <rdfs:label xml:lang="fr">Rational Dissenter</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
+  </cwrc:Denomination>
 
-  <cwrc:Religion rdf:about="#fifthmonarchists">
+  <cwrc:Denomination rdf:about="#fifthmonarchists">
    <rdfs:label xml:lang="en">Fifth Monarchists</rdfs:label>
    <rdfs:label xml:lang="fr">Cinquième_Monarchie</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Fifth_Monarchists"/>
-  </cwrc:Religion>
+  </cwrc:Denomination>
 
    <!-- #societyoffriends versus #quakers -->
 
-  <cwrc:Religion rdf:about="#societyoffriends">
+  <cwrc:Denomination rdf:about="#societyoffriends">
    <!-- These are quakers -->
    <rdfs:label xml:lang="en">Society of Friends</rdfs:label>
    <rdfs:label xml:lang="fr">Société Religieuse des Amis</rdfs:label>
@@ -302,148 +340,148 @@
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Quakers"/>
-  </cwrc:Religion>
+  </cwrc:Denomination>
 
-  <cwrc:Religion rdf:about="#quakers">
+  <cwrc:Denomination rdf:about="#quakers">
    <rdfs:label xml:lang="en">Quakers</rdfs:label>
    <rdfs:label xml:lang="fr">Quakers</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Quakers"/>
-  </cwrc:Religion>
+  </cwrc:Denomination>
 
 
 
-  <cwrc:Religion rdf:about="#islam">
+  <cwrc:Denomination rdf:about="#islam">
    <rdfs:label xml:lang="en">Islam</rdfs:label>
    <rdfs:label xml:lang="fr">Islam</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Islam"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#judaism">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#judaism">
    <rdfs:label xml:lang="en">Judaism</rdfs:label>
    <rdfs:label xml:lang="fr">Judaism</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#lollards">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#lollards">
    <rdfs:label xml:lang="en">Lollards</rdfs:label>
    <rdfs:label xml:lang="fr">Lollards</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#methodistchurch">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#methodistchurch">
    <rdfs:label xml:lang="en">Methodist Church</rdfs:label>
    <rdfs:label xml:lang="fr">Methodist Church</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#plymouthbrethren">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#plymouthbrethren">
    <rdfs:label xml:lang="en">Plymouth Brethren</rdfs:label>
    <rdfs:label xml:lang="fr">Plymouth Brethren</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#presbyterianchurch">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#presbyterianchurch">
    <rdfs:label xml:lang="en">Presbyterian Church</rdfs:label>
    <rdfs:label xml:lang="fr">Presbyterian Church</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#puritans">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#puritans">
    <rdfs:label xml:lang="en">Puritans</rdfs:label>
    <rdfs:label xml:lang="fr">Puritans</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#romancatholicchurch">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#romancatholicchurch">
    <rdfs:label xml:lang="en">Roman Catholic Church</rdfs:label>
    <rdfs:label xml:lang="fr">Roman Catholic Church</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#societyoffriends">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#societyoffriends">
    <rdfs:label xml:lang="en">Society of Friends</rdfs:label>
    <rdfs:label xml:lang="fr">Society of Friends</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#tractarianmovement">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#tractarianmovement">
    <rdfs:label xml:lang="en">Tractarian Movement</rdfs:label>
    <rdfs:label xml:lang="fr">Tractarian Movement</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#unitarianchurch">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#unitarianchurch">
    <rdfs:label xml:lang="en">Unitarian Church</rdfs:label>
    <rdfs:label xml:lang="fr">Unitarian Church</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#agnosticism">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#agnosticism">
    <rdfs:label xml:lang="en">Agnosticism</rdfs:label>
    <rdfs:label xml:lang="fr">Agnosticism</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#atheistism">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#atheistism">
    <rdfs:label xml:lang="en">Atheistism</rdfs:label>
    <rdfs:label xml:lang="fr">Atheistism</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#millenarianism">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#millenarianism">
    <rdfs:label xml:lang="en">Millenarianism</rdfs:label>
    <rdfs:label xml:lang="fr">Millenarianism</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#neo-thomism">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#neo-thomism">
    <rdfs:label xml:lang="en">neo-Thomism</rdfs:label>
    <rdfs:label xml:lang="fr">neo-Thomism</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#pagan">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#pagan">
    <rdfs:label xml:lang="en">Pagan</rdfs:label>
    <rdfs:label xml:lang="fr">Pagan</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#spiritualism">
+  </cwrc:Denomination>
+  <cwrc:Denomination rdf:about="#spiritualism">
    <rdfs:label xml:lang="en">Spiritualism</rdfs:label>
    <rdfs:label xml:lang="fr">Spiritualism</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
+  </cwrc:Denomination>
 
-  <cwrc:Religion rdf:about="#judaism">
+  <cwrc:Denomination rdf:about="#judaism">
    <rdfs:label xml:lang="en">Judaism</rdfs:label>
    <rdfs:label xml:lang="fr">Judaïsme</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Judaism"/>
-  </cwrc:Religion>
+  </cwrc:Denomination>
 
   <cwrc:SocialClass rdf:about="#gentry">
    <rdfs:label xml:lang="en">Gentry</rdfs:label>
@@ -544,20 +582,20 @@
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:ID="hasReligion">
+<owl:ObjectProperty rdf:ID="hasDenomination">
  <rdfs:label xml:lang="en">has Religious Affiliation</rdfs:label>
- <rdfs:label xml:lang="fr">Religion</rdfs:label>
+ <rdfs:label xml:lang="fr">Denomination</rdfs:label>
  <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
- <rdfs:domain rdf:resource="#Religion"/>
+ <rdfs:domain rdf:resource="#Denomination"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:ID="hasReligionSelfReported">
+<owl:ObjectProperty rdf:ID="hasDenominationSelfReported">
  <rdfs:label xml:lang="en">has Religious Affilication (Self Reported)</rdfs:label>
- <rdfs:label xml:lang="fr">Religion (Autodéclarés)</rdfs:label>
+ <rdfs:label xml:lang="fr">Denomination (Autodéclarés)</rdfs:label>
  <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
- <rdfs:domain rdf:resource="#Religion"/>
+ <rdfs:domain rdf:resource="#Denomination"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
