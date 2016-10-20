@@ -28,7 +28,7 @@
    <rdfs:label xml:lang="en">Cultural Formation</rdfs:label>
    <rdfs:label xml:lang="fr">Formation Culturelle</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <skos:definition xml:lang="en"></skos:definition>
+   <skos:definition xml:lang="en">Cultural formation refers to the processes of lived social subjectivities person's and is often combined with predicates indicating the identity positions as they relate to the following discursive constructions of Class, Denomination, Ethnicity, Gender, GeographicalHeritage, Language, NationalHeritage, NationalIdentity, PoliticalAffiliation, RaceColour, SexualIdentity. These categories are not understood as transhistorical or isolated categories. Rather, they facilitate analysis of howfor a particular individual. It is our hope that modes of classification never occur without a sense of responsibility, and that the tensions inherently present during the practice of classification are never eased but rather challenged and engaged with critically.</skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
@@ -46,7 +46,7 @@
    <rdfs:label xml:lang="fr">Héritage Nationale</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
-   <skos:definition xml:lang="en"></skos:definition>
+   <skos:definition xml:lang="en">NationalHeritage is a subclass of CulturalFormation that captures information about the nationality of a person's family which contributes to an understanding of their racial and ethnic background. It gestures towards hyphenated identities such as "Japanese-Canadian." While Joy Kogawa's nationality is Canadian, her national heritage is Japanese. See raceIssue for a detailed description of the complexities of this element.</skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
@@ -64,7 +64,7 @@
    <rdfs:label xml:lang="fr">Héritage Géographique</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
-   <skos:definition xml:lang="en"></skos:definition>
+   <skos:definition xml:lang="en">GeographicalHeritage is a subclass of CulturalFormation that captures information about the geographical origins of a person's family which often contributes to an understanding of their racial and ethnic background. It offers a way to capture women identified as "South-Asian," for example, when no more precise national heritage is indicated. See raceIssue for a detailed description of the complexities of this element.</skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
@@ -83,10 +83,9 @@
    <rdfs:label xml:lang="fr">Identité Sexuelle</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
- <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="en">SexualIdentity is a subclass of CulturalFormation that captures one word or phrase identifications of sexuality (i.e., "lesbian," "monogamous," "heterosexual") and from this information we will be able to point our reader towards women writers whom they may be interested in studying in a critical analysis of these identifications. Capturing the term "lesbian" in a sexualIdentity**** class does not signify that the subject of the biography was a lesbian; such identifications are often impossible for reasons of historical gaps and silences. It does suggest to our readers that if they are interested in studying lesbian issues, they may wish to look at this particular writer. We assume that sexual identity does not function in an essentialist manner and that to act monogomously does not reflect an essential, ontological state of being. But we are also assuming that issues of sexual identity influence a woman's relationship to her writing and to her life and therefore, we emphasize the importance of capturing this information in a systematic way.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
-
 
 
  <owl:Class rdf:ID="RaceColour">
@@ -104,7 +103,7 @@
    <rdfs:label xml:lang="fr">Ethnicité</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
- <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="en">Ethnicity is a subclass of CulturalFormation that captures information about a person's ethnic position. Ethnicity is a sub-element within culturalFormation and raceAndEthnicity. See raceAndEthnicity for a detailed description of the complexities of this discursive construction and the social practices surrounding it.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
@@ -113,7 +112,7 @@
    <rdfs:label xml:lang="fr">Religion</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
- <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="en">A subclass of CulturalFormation, this describes a person's religion(s) or belief system(s)</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
@@ -140,7 +139,7 @@
    <rdfs:label xml:lang="fr">Affiliation Politique</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
- <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="en">This subclass of CulturalFormation tracks the affiliations, connections and associations which designate a person's political involvement. These affiliations can be both formal connections to a party or organization and informal political positions held by the writer. We hope to point our readers towards women writers associated with different political positions and help researchers make links between political beliefs and writing. For this reason, we are defining political affiliations broadly and include things like "against capital punishment" or "strong supporter of the Empire" in addition to more straightforward affiliations such as "marxist" or "conservative."</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
@@ -203,7 +202,7 @@
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
- <owl:Class rdf:ID="PoliticsContext">
+ <owl:Class rdf:ID="PoliticalContext">
    <rdfs:label xml:lang="en">Political Context</rdfs:label>
    <rdfs:label xml:lang="fr">Contexte Politique</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -212,8 +211,6 @@
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
-
-
 
  <owl:Class rdf:ID="EthnicityContext">
    <rdfs:label xml:lang="en">Racial, Colour or Ethnicity Context</rdfs:label>
