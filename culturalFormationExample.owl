@@ -28,41 +28,37 @@
     xmlns="http://www.cwrc.ca/ontologies/cwrc#">
 
 <cwrc:EthnicityContext rdf:about="#AnnaCulturalFormationodeXXX">
- <rdf:type rdf:resource="oa:Annotation"/>
- <oa:hasTarget rdf:resource="AnnaLeonowens"/>
- <oa:hasBody rdf:resource="white"/>
- <prov:derivedFrom rdf:resource="wordwhitefromtext"/>
+ <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+ <oa:hasTarget rdf:resource="#AnnaLeonowens"/>
+ <oa:hasBody rdf:resource="#white"/>
+ <prov:derivedFrom rdf:resource="#wordwhitefromtext"/>
 </cwrc:EthnicityContext>
 
 <nif:Context rdf:about="#partone">
  <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Sentence"/>
  <nif:isString>Although AL herself, in attempting to adopt an unequivocally</nif:isString>
- <prov:createdBy rdf:resource="originalOrlandoAuthor"/>
- <as:next rdf:resource="parttwo"/>
+ <prov:createdBy rdf:resource="#originalOrlandoAuthor"/>
+ <as:next rdf:resource="#parttwo"/>
 </nif:Context>
-
-
 
 <nif:Context rdf:about="#parttwo">
  <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Sentence"/>
  <nif:isString>English</nif:isString>
- <prov:createdBy rdf:resource="originalOrlandoAuthor"/>
- <as:next rdf:resource="partthree"/>
+ <prov:createdBy rdf:resource="#originalOrlandoAuthor"/>
+ <as:next rdf:resource="#partthree"/>
 </nif:Context>
-
 
 <nif:Context rdf:about="#partthree">
  <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Sentence"/>
  <nif:isString>identity, implicitly claimed that she was</nif:isString>
- <prov:createdBy rdf:resource="originalOrlandoAuthor"/>
- <as:next rdf:resource="wordwhitefromtext"/>
+ <prov:createdBy rdf:resource="#originalOrlandoAuthor"/>
+ <as:next rdf:resource="#wordwhitefromtext"/>
 </nif:Context>
-
 
 <nif:Context rdf:about="#wordwhitefromtext">
  <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Sentence"/>
  <nif:isString>White.</nif:isString>
- <prov:createdBy rdf:resource="originalOrlandoAuthor"/>
+ <prov:createdBy rdf:resource="#originalOrlandoAuthor"/>
 </nif:Context>
 
 <foaf:Person rdf:about="#originalOrlandoAuthor">

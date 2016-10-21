@@ -23,10 +23,10 @@
 @prefix cwrc: <http://www.cwrc.ca/ontologies/cwrc#> .
 
 cwrc:AnnaCulturalFormationodeXXX
-    a cwrc:EthnicityContext, <oa:Annotation> ;
-    oa:hasBody <http://www.cwrc.ca/ontologies/white> ;
-    oa:hasTarget <http://www.cwrc.ca/ontologies/AnnaLeonowens> ;
-    prov:derivedFrom <http://www.cwrc.ca/ontologies/wordwhitefromtext> .
+    a cwrc:EthnicityContext, oa:Annotation ;
+    oa:hasBody cwrc:white ;
+    oa:hasTarget cwrc:AnnaLeonowens ;
+    prov:derivedFrom cwrc:wordwhitefromtext .
 
 cwrc:AnnaLeonowens
     a foaf:Person ;
@@ -39,20 +39,20 @@ cwrc:originalOrlandoAuthor
 cwrc:partone
     nif:isString "Although AL herself, in attempting to adopt an unequivocally" ;
     a nif:Context, nif:Sentence ;
-    as:next <http://www.cwrc.ca/ontologies/parttwo> ;
-    prov:createdBy <http://www.cwrc.ca/ontologies/originalOrlandoAuthor> .
+    as:next cwrc:parttwo ;
+    prov:createdBy cwrc:originalOrlandoAuthor .
 
 cwrc:partthree
     nif:isString "identity, implicitly claimed that she was" ;
     a nif:Context, nif:Sentence ;
-    as:next <http://www.cwrc.ca/ontologies/wordwhitefromtext> ;
-    prov:createdBy <http://www.cwrc.ca/ontologies/originalOrlandoAuthor> .
+    as:next cwrc:wordwhitefromtext ;
+    prov:createdBy cwrc:originalOrlandoAuthor .
 
 cwrc:parttwo
     nif:isString "English" ;
     a nif:Context, nif:Sentence ;
-    as:next <http://www.cwrc.ca/ontologies/partthree> ;
-    prov:createdBy <http://www.cwrc.ca/ontologies/originalOrlandoAuthor> .
+    as:next cwrc:partthree ;
+    prov:createdBy cwrc:originalOrlandoAuthor .
 
 cwrc:white
     a cwrc:RaceColour ;
@@ -61,5 +61,5 @@ cwrc:white
 cwrc:wordwhitefromtext
     nif:isString "White." ;
     a nif:Context, nif:Sentence ;
-    prov:createdBy <http://www.cwrc.ca/ontologies/originalOrlandoAuthor> .
+    prov:createdBy cwrc:originalOrlandoAuthor .
 
