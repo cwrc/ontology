@@ -144,7 +144,7 @@
  </owl:Class>
 
 
- <cwrc:RaceColour rdf:about="#Black">
+ <cwrc:RaceColour rdf:about="#black">
    <rdfs:label xml:lang="en">black (Race)</rdfs:label>
    <rdfs:label xml:lang="fr">noir (Race)</rdfs:label>
  <skos:definition xml:lang="en"></skos:definition>
@@ -254,9 +254,9 @@
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </cwrc:Religion>
-  <cwrc:Religion rdf:about="#christianity">
-   <rdfs:label xml:lang="en">Christianity</rdfs:label>
-   <rdfs:label xml:lang="fr">Christianisme</rdfs:label>
+  <cwrc:Religion rdf:about="#christian">
+   <rdfs:label xml:lang="en">Christian</rdfs:label>
+   <rdfs:label xml:lang="fr">Christian</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -361,9 +361,9 @@
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Islam"/>
   </cwrc:Religion>
-  <cwrc:Religion rdf:about="#judaism">
-   <rdfs:label xml:lang="en">Judaism</rdfs:label>
-   <rdfs:label xml:lang="fr">Judaism</rdfs:label>
+  <cwrc:Religion rdf:about="#jewish">
+   <rdfs:label xml:lang="en">Jewish</rdfs:label>
+   <rdfs:label xml:lang="fr">Juif</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -474,9 +474,9 @@
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </cwrc:Religion>
 
-  <cwrc:Religion rdf:about="#judaism">
-   <rdfs:label xml:lang="en">Judaism</rdfs:label>
-   <rdfs:label xml:lang="fr">Judaïsme</rdfs:label>
+  <cwrc:Religion rdf:about="#jewish">
+   <rdfs:label xml:lang="en">Jewish</rdfs:label>
+   <rdfs:label xml:lang="fr">Juif</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -517,7 +517,7 @@
 </owl:ObjectProperty>
 
 
-<owl:ObjectProperty rdf:ID="personalPropertySelfReported">
+<owl:ObjectProperty rdf:ID="personalPropertySelfDeclared">
  <rdfs:label xml:lang="en">Personal Property (Self Reported)</rdfs:label>
  <rdfs:label xml:lang="fr">Propriété de la Personne (Autodéclarés)</rdfs:label>
  <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
@@ -536,10 +536,10 @@
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:ID="hasGenderSelfReported">
- <rdfs:label xml:lang="en">has Gender (Self Reported)</rdfs:label>
+<owl:ObjectProperty rdf:ID="hasGenderSelfDeclared">
+ <rdfs:label xml:lang="en">has Gender (Self Declared)</rdfs:label>
  <rdfs:label xml:lang="fr">A le Genre (Autodéclarés)</rdfs:label>
- <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
+ <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
  <rdfs:domain rdf:resource="#Gender"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
@@ -554,10 +554,10 @@
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:ID="hasNationalitySelfReported">
- <rdfs:label xml:lang="en">has Nationality (Self Reported)</rdfs:label>
+<owl:ObjectProperty rdf:ID="hasNationalitySelfDeclared">
+ <rdfs:label xml:lang="en">has Nationality (Self Declared)</rdfs:label>
  <rdfs:label xml:lang="fr">de Nationalité (Autodéclarés)</rdfs:label>
- <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
+ <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
  <rdfs:domain rdf:resource="#NationalIdentity"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
@@ -573,10 +573,10 @@
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:ID="hasRaceSelfReported">
- <rdfs:label xml:lang="en">has Race (Self Reported)</rdfs:label>
+<owl:ObjectProperty rdf:ID="hasRaceSelfDeclared">
+ <rdfs:label xml:lang="en">has Race (Self Declared)</rdfs:label>
  <rdfs:label xml:lang="fr">Est de Race (Autodéclarés)</rdfs:label>
- <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
+ <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
  <rdfs:domain rdf:resource="#Race"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
@@ -591,10 +591,10 @@
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:ID="hasEthnicitySelfReported">
- <rdfs:label xml:lang="en">has Ethnicity (Self Reported)</rdfs:label>
+<owl:ObjectProperty rdf:ID="hasEthnicitySelfDefined">
+ <rdfs:label xml:lang="en">has Ethnicity (Self Defined)</rdfs:label>
  <rdfs:label xml:lang="fr">D'Ethnicité (Autodéclarés)</rdfs:label>
- <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
+ <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDefined"/>
  <rdfs:domain rdf:resource="#Ethnicity"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
@@ -609,10 +609,10 @@
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:ID="hasReligionSelfReported">
- <rdfs:label xml:lang="en">has Religious Affilication (Self Reported)</rdfs:label>
+<owl:ObjectProperty rdf:ID="hasReligionSelfDefined">
+ <rdfs:label xml:lang="en">has Religious Affilication (Self Defined)</rdfs:label>
  <rdfs:label xml:lang="fr">Religion (Autodéclarés)</rdfs:label>
- <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
+ <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDefined"/>
  <rdfs:domain rdf:resource="#Religion"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
@@ -628,10 +628,10 @@
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:ID="hasSocialClassSelfReported">
- <rdfs:label xml:lang="en">has Social Class (Self Reported)</rdfs:label>
+<owl:ObjectProperty rdf:ID="hasSocialClassSelfDefined">
+ <rdfs:label xml:lang="en">has Social Class (Self Defined)</rdfs:label>
  <rdfs:label xml:lang="fr">De Classe Sociale (Autodéclarés)</rdfs:label>
- <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
+ <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDefined"/>
  <rdfs:domain rdf:resource="#SocialClass"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
@@ -647,10 +647,10 @@
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:ID="hasLanguageSelfReported">
- <rdfs:label xml:lang="en">Knowns Language (Self Reported)</rdfs:label>
+<owl:ObjectProperty rdf:ID="hasLanguageSelfDeclared">
+ <rdfs:label xml:lang="en">Knowns Language (Self Declared)</rdfs:label>
  <rdfs:label xml:lang="fr">Connait la langue (Autodéclarés)</rdfs:label>
- <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
+ <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
  <rdfs:domain rdf:resource="#Language"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
@@ -665,10 +665,10 @@
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:ID="hasSexualitySelfReported">
- <rdfs:label xml:lang="en">has Sexual Orientation (Self Reported)</rdfs:label>
+<owl:ObjectProperty rdf:ID="hasSexualitySelfDeclared">
+ <rdfs:label xml:lang="en">has Sexual Orientation (Self Declared)</rdfs:label>
  <rdfs:label xml:lang="fr">A une Orientation Sexuelle (Autodéclarés)</rdfs:label>
- <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
+ <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
  <rdfs:domain rdf:resource="#Sexuality"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
