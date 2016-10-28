@@ -50,6 +50,33 @@
    <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
+
+ <cwrc:NationalHeritage rdf:about="#welsh">
+   <rdfs:label xml:lang="en">welsh</rdfs:label>
+   <rdfs:label xml:lang="fr">gallois</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <skos:definition xml:lang="en"></skos:definition> 
+   <skos:definition xml:lang="fr"></skos:definition>
+ </cwrc:NationalHeritage>
+
+ <cwrc:NationalHeritage rdf:about="#spain">
+   <rdfs:label xml:lang="en">spain</rdfs:label>
+   <rdfs:label xml:lang="fr">espagnol</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <skos:definition xml:lang="en"></skos:definition> 
+   <skos:definition xml:lang="fr"></skos:definition>
+ </cwrc:NationalHeritage>
+
+ <cwrc:NationalHeritage rdf:about="#portugal">
+   <rdfs:label xml:lang="en">portugal</rdfs:label>
+   <rdfs:label xml:lang="fr">espagnol</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <skos:definition xml:lang="en"></skos:definition> 
+   <skos:definition xml:lang="fr"></skos:definition>
+ </cwrc:NationalHeritage>
+
+
+
  <owl:Class rdf:ID="NationalIdentity">
    <rdfs:label xml:lang="en">National Identity</rdfs:label>
    <rdfs:label xml:lang="fr">Identité Nationale</rdfs:label>
@@ -58,6 +85,13 @@
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
+
+<cwrc:NationalIdentity rdf:about="#english">
+ <rdfs:label xml:lang="en">English</rdfs:label>
+ <rdfs:label xml:lang="fr">Anglaise</rdfs:label>
+  <rdf:type rdf:resource="#RaceColour"/>
+</cwrc:NationalIdentity>
+
 
  <owl:Class rdf:ID="GeographicalHeritage">
    <rdfs:label xml:lang="en">Geographical Heritage</rdfs:label>
@@ -98,6 +132,21 @@
  </owl:Class>
 
 
+<cwrc:RaceColour rdf:about="#white">
+ <rdfs:label xml:lang="en">white</rdfs:label>
+ <rdfs:label xml:lang="fr">blanc</rdfs:label>
+   <skos:definition xml:lang="en"></skos:definition>
+   <skos:definition xml:lang="fr"></skos:definition>
+</cwrc:RaceColour>
+
+<cwrc:RaceColour rdf:about="#eurasian">
+ <rdfs:label xml:lang="en">eurasian</rdfs:label>
+ <rdfs:label xml:lang="fr">eurasienne</rdfs:label>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</cwrc:RaceColour>
+
+
  <owl:Class rdf:ID="Ethnicity">
    <rdfs:label xml:lang="en">Ethnicity</rdfs:label>
    <rdfs:label xml:lang="fr">Ethnicité</rdfs:label>
@@ -124,6 +173,26 @@
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
+
+<cwrc:SocialClassIdentity rdf:about="#middleClass">
+ <rdfs:label xml:lang="en">middle class</rdfs:label>
+ <rdfs:label xml:lang="fr">classe moyenne</rdfs:label>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <owl:subClass rdf:resource="#CulturalFormation"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</cwrc:SocialClassIdentity>
+
+<cwrc:SocialClassIdentity rdf:about="#entrepreneurial-industrialist">
+ <rdfs:label xml:lang="en">entrepreneurial industrialist</rdfs:label>
+ <rdfs:label xml:lang="fr">entrepreneur industrialist</rdfs:label>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <owl:subClass rdf:resource="#CulturalFormation"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</cwrc:SocialClassIdentity>
+
+
 
  <owl:Class rdf:ID="LinguisticAbility">
    <rdfs:label xml:lang="en">Linguistic Ability (Spoken and/or Writen)</rdfs:label>
@@ -361,13 +430,6 @@
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Islam"/>
   </cwrc:Religion>
-  <cwrc:Religion rdf:about="#jewish">
-   <rdfs:label xml:lang="en">Jewish</rdfs:label>
-   <rdfs:label xml:lang="fr">Juif</rdfs:label>
-   <skos:definition xml:lang="en"></skos:definition>
-   <skos:definition xml:lang="fr"></skos:definition>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
   <cwrc:Religion rdf:about="#lollards">
    <rdfs:label xml:lang="en">Lollards</rdfs:label>
    <rdfs:label xml:lang="fr">Lollards</rdfs:label>
@@ -406,13 +468,6 @@
   <cwrc:Religion rdf:about="#romancatholicchurch">
    <rdfs:label xml:lang="en">Roman Catholic Church</rdfs:label>
    <rdfs:label xml:lang="fr">Roman Catholic Church</rdfs:label>
-   <skos:definition xml:lang="en"></skos:definition>
-   <skos:definition xml:lang="fr"></skos:definition>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#societyoffriends">
-   <rdfs:label xml:lang="en">Society of Friends</rdfs:label>
-   <rdfs:label xml:lang="fr">Society of Friends</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -661,7 +716,7 @@
  <rdfs:label xml:lang="fr">A une Orientation Sexuelle</rdfs:label>
  <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
  <rdfs:domain rdf:resource="#Sexuality"/>
- <skos:definition xml:lang="en">Knowleage about the language in writing or reading ?</skos:definition>
+ <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
 

@@ -22,29 +22,34 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix cwrc: <http://www.cwrc.ca/ontologies/cwrc#> .
 
+cwrc:AnnaCulturalFormatioNodeOne
+    a cwrc:RaceEthnicityContext, oa:Annotation ;
+    oa:hasBody cwrc:english, cwrc:white ;
+    oa:hasTarget cwrc:AnnaLeonowens ;
+    prov:derivedFrom cwrc:partone .
+
 cwrc:AnnaLeonowens
-    cwrc:hasDenomination cwrc:Buddhist, cwrc:PresbyterianChurch ;
-    cwrc:hasNationalHeritage cwrc:Welsh ;
-    cwrc:hasNationality cwrc:English ;
-    cwrc:hasRaceColour cwrc:Eurasian ;
+    cwrc:hasDenomination cwrc:buddhist, cwrc:presbyterianchurch ;
+    cwrc:hasNationalHeritage cwrc:welsh ;
+    cwrc:hasNationality cwrc:english ;
+    cwrc:hasRaceColour cwrc:eurasian ;
     cwrc:hasRaceColourSelfDefined cwrc:white ;
-    cwrc:hasRaceEthnicity cwrc:INSERTNOTE ;
     a foaf:Person ;
     foaf:name "Anna Leonowens" .
 
 cwrc:CharlotteDacre
-    cwrc:hasGeogHeritage cwrc:Jewish ;
-    cwrc:hasReligion cwrc:AnglicanChurch, cwrc:Judaism ;
+    cwrc:hasGeogHeritage cwrc:jewish ;
+    cwrc:hasReligion cwrc:anglicanchurch, cwrc:jewish ;
     cwrc:hasSocialClass cwrc:entrepreneurial-industrialist, cwrc:gentry ;
     a foaf:Person ;
     foaf:name "Charlotte Dacre" .
 
 cwrc:GraceAguilar
-    cwrc:hasEthnicity cwrc:Jewish ;
-    cwrc:hasNationalHeritage cwrc:Portugal, cwrc:Spain ;
-    cwrc:hasNationality cwrc:English, cwrc:Jewish ;
+    cwrc:hasEthnicity cwrc:jewish ;
+    cwrc:hasNationalHeritage cwrc:portugal, cwrc:spain ;
+    cwrc:hasNationality cwrc:english, cwrc:jewish ;
     cwrc:hasRaceColour cwrc:white ;
-    cwrc:hasReligion cwrc:judaism ;
+    cwrc:hasReligion cwrc:jewish ;
     cwrc:hasSocialClass cwrc:entrepreneurial-industrialist, cwrc:middleClass ;
     a foaf:Person ;
     owl:sameAs <http://viaf.org/viaf/7628015> ;
@@ -84,6 +89,7 @@ cwrc:charlotteDacre2
 
 cwrc:charlotteDacreCulturalFormation1
     a cwrc:RaceEthnicityContext, oa:Annotation ;
+    rdfs:label "RaceEthnicityContext for Charlotte Dacre"@en ;
     oa:hasBody cwrc:jewish ;
     oa:hasTarget cwrc:CharlotteDacre ;
     prov:derivedFrom cwrc:charlotteDacre1 .

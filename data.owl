@@ -44,13 +44,12 @@
   <cwrc:hasNationalHeritage rdf:resource="#welsh"/>
   <cwrc:hasRaceColourSelfDefined rdf:resource="#white"/>
   <cwrc:hasRaceColour rdf:resource="#eurasian"/>
-  <cwrc:hasRaceEthnicity rdf:resource="#INSERTNOTE"/>
  </foaf:Person>
  
  <foaf:Person rdf:about="#GraceAguilar">
   <foaf:name>Grace Aguilar</foaf:name>
   <owl:sameAs rdf:resource="http://viaf.org/viaf/7628015"/>
-  <cwrc:hasReligion rdf:resource="#judaism"/>
+  <cwrc:hasReligion rdf:resource="#jewish"/>
   <cwrc:hasSocialClass rdf:resource="#middleClass"/>
   <cwrc:hasSocialClass rdf:resource="#entrepreneurial-industrialist"/>
   <cwrc:hasNationality rdf:resource="#english"/>
@@ -62,6 +61,7 @@
  </foaf:Person>
 
 <cwrc:RaceEthnicityContext rdf:about="#charlotteDacreCulturalFormation1">
+ <rdfs:label xml:lang="en">RaceEthnicityContext for Charlotte Dacre</rdfs:label>
  <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
  <oa:hasTarget rdf:resource="#CharlotteDacre"/>
  <oa:hasBody rdf:resource="#jewish"/>
@@ -136,12 +136,17 @@ Buddha boldly expounded to the people that, according to their own books, all me
  <prov:createdBy rdf:resource="#originalOrlandoAuthor"/>
 </nif:Context>
 
-
-
 <foaf:Group rdf:about="#originalOrlandoAuthor">
  <foaf:name>Members of the Orlando Project.</foaf:name>
 </foaf:Group>
 
+<cwrc:RaceEthnicityContext rdf:about="#AnnaCulturalFormatioNodeOne">
+ <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+ <oa:hasTarget rdf:resource="#AnnaLeonowens"/>
+ <oa:hasBody rdf:resource="#white"/>
+ <oa:hasBody rdf:resource="#english"/>
+ <prov:derivedFrom rdf:resource="#partone"/>
+</cwrc:RaceEthnicityContext>
 
 </rdf:RDF>
 
