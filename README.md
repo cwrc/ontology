@@ -1,2 +1,2 @@
-# cwrc
-Main cwrc schema
+# ontology
+CWRC related ontology data.
