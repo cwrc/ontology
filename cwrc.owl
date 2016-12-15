@@ -27,6 +27,108 @@
     xml:base="http://www.cwrc.ca/ontologies/cwrc#"
     xmlns="http://www.cwrc.ca/ontologies/cwrc#">
 
+
+   <owl:Ontology rdf:about="">
+    <dc:title xml:lang="en">The CWRC Ontology</dc:title>
+    <rdfs:label xml:lang="en">The CWRC Ontology</rdfs:label>
+    <foaf:name xml:lang="en">The CWRC Ontology</foaf:name>
+    <dc:title xml:lang="fr">L'Ontologie CWRC</dc:title>
+    <rdfs:label xml:lang="fr">L'Ontologie CWRC</rdfs:label>
+    <foaf:name xml:lang="fr">L'Ontologie CWRC</foaf:name>
+    <dc:description xml:lang="en">The CWRC Ontology is the overall ontology that represents all elements of structure within the Canadian Writing Research Collaboratory.</dc:description>
+    <skos:definition xml:lang="en">The CWRC Ontology is the overall ontology that represents all elements of structure within the Canadian Writing Research Collaboratory.</skos:definition>
+    <rdfs:comment xml:lang="en">The CWRC Ontology is the overall ontology that represents all elements of structure within the Canadian Writing Research Collaboratory.</rdfs:comment>
+    <dc:description xml:lang="en">L'Ontologie CWRC est l'ontologie maîtresse qui représente tous les éléments de la structure du Collaboratoire scientifique des écrits du Canada.</dc:description>
+    <skos:definition xml:lang="en">L'Ontologie CWRC est l'ontologie maîtresse qui représente tous les éléments de la structure du Collaboratoire scientifique des écrits du Canada.</skos:definition>
+    <rdfs:comment xml:lang="en">L'Ontologie CWRC est l'ontologie maîtresse qui représente tous les éléments de la structure du Collaboratoire scientifique des écrits du Canada.</rdfs:comment>  
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</owl:versionInfo>
+    <owl:priorVersion rdf:resource=""/>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">DATE_TODAY</dc:date>
+    <dc:rights rdf:resource="http://creativecommons.org/licenses/by/3.0/"/> 
+    <vs:term_status xml:lang="en">Testing</vs:term_status>
+    <dc:creator>
+     <foaf:Person rdf:about="#JohnSimpson">
+      <foaf:name>John Simpson</foaf:name>
+     </foaf:Person>
+    </dc:creator>
+    <dc:creator>
+     <foaf:Person rdf:about="#AbigelLemak">
+      <foaf:name>Abigel Lemak</foaf:name>
+     </foaf:Person>
+    </dc:creator>
+    <dc:creator>
+     <foaf:Person rdf:about="#ColinFaulkner">
+      <foaf:name>Colin Faulkner</foaf:name>
+     </foaf:Person>
+    </dc:creator>
+    <dc:creator>
+     <foaf:Person rdf:about="#RobWarren">
+      <foaf:name>Robert Warren</foaf:name>
+      <owl:sameAs rdf:resource="http://rdf.muninn-project.org/ww1/2011/11/11/Person/Warren"/>
+     </foaf:Person>
+    </dc:creator>
+    <dc:publisher>
+     <foaf:Organization rdf:about="#cwrc">
+      <foaf:name xml:lang="fr">Le Collaboratoire scientifique des écrits du Canada</foaf:name>
+      <foaf:name xml:lang="en">The Canadian Writing Research Collaboratory</foaf:name>
+     </foaf:Organization>
+    </dc:publisher>
+    <loc:pdr>   
+     <foaf:Person rdf:about="#SusanBrown"> 
+      <foaf:name>Susan Brown</foaf:name>
+     </foaf:Person>
+    </loc:pdr>
+    <loc:fnd>
+     <foaf:Organization rdf:about="#sshrc">
+      <foaf:name xml:lang="en">Social Sciences and Humanities Research Council</foaf:name>
+      <foaf:name xml:lang="fr">Conseil de recherches en sciences humaines</foaf:name>
+      <foaf:nick>SSHRC</foaf:nick>
+     </foaf:Organization>
+    </loc:fnd>
+    <vann:preferredNamespacePrefix>cwrc</vann:preferredNamespacePrefix>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <foaf:logo rdf:resource="http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif"/>
+   </owl:Ontology>
+ 
+<!-- http://id.loc.gov/vocabulary/relators/ctb -->
+
+   <void:Dataset rdf:about="#datasetdefinition">
+    <dc:title xml:lang="en">The CWRC Ontology</dc:title>
+    <rdfs:label xml:lang="en">The CWRC Ontology</rdfs:label>
+    <foaf:name xml:lang="en">The CWRC Ontology</foaf:name>
+    <dc:title xml:lang="fr">L'Ontologie CWRC</dc:title>
+    <rdfs:label xml:lang="fr">L'Ontologie CWRC</rdfs:label>
+    <foaf:name xml:lang="fr">L'Ontologie CWRC</foaf:name>
+    <dc:description xml:lang="en">The CWRC Ontology is the overall ontology that represents all elements of structure within the Canadian Writing Research Collaboratory.</dc:description>
+    <skos:definition xml:lang="en">The CWRC Ontology is the overall ontology that represents all elements of structure within the Canadian Writing Research Collaboratory.</skos:definition>
+    <rdfs:comment xml:lang="en">The CWRC Ontology is the overall ontology that represents all elements of structure within the Canadian Writing Research Collaboratory.</rdfs:comment>
+    <dc:description xml:lang="en">L'Ontologie CWRC est l'ontologie maîtresse qui représente tous les éléments de la structure du Collaboratoire scientifique des écrits du Canada.</dc:description>
+    <skos:definition xml:lang="en">L'Ontologie CWRC est l'ontologie maîtresse qui représente tous les éléments de la structure du Collaboratoire scientifique des écrits du Canada.</skos:definition>
+    <rdfs:comment xml:lang="en">L'Ontologie CWRC est l'ontologie maîtresse qui représente tous les éléments de la structure du Collaboratoire scientifique des écrits du Canada.</rdfs:comment>
+    <!-- -->
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/> 
+    <cc:Jurisdiction rdf:resource="http://dbpedia.org/resource/Canada"/>
+    <cc:attributionURL rdf:resource="http://www.cwrc.ca/"/>
+    <dc:creator rdf:resource="#JohnSimpson"/>
+    <dc:creator rdf:resource="#AbigelLemak"/>
+    <dc:creator rdf:resource="#ColinFaulkner"/>
+    <dc:creator rdf:resource="#RobWarren"/>
+    <dc:publisher rdf:resource="#cwrc"/>
+    <loc:pdr rdf:resource="#SusanBrown"/> 
+    <loc:fnd rdf:resource="#sshrc"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <foaf:logo rdf:resource="http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif"/>
+   </void:Dataset>
+
+ <!-- End Boilerplate -->
+
+ <foaf:Group rdf:about="#originalOrlandoAuthor">
+  <foaf:name>Members of the Orlando Project.</foaf:name>
+  <skos:definition xml:lang="en">The collection of all persons having written entries for the Orlando project.</skos:definition>
+  <skos:definition xml:lang="fr">La collection de tout les auteurs du project Orlando.</skos:definition>
+ </foaf:Group>
+
+
  <owl:Class rdf:ID="CulturalFormation">
    <rdfs:label xml:lang="en">Cultural Formation</rdfs:label>
    <rdfs:label xml:lang="fr">Formation Culturelle</rdfs:label>
@@ -35,65 +137,173 @@
    <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
+
+
+
+
+<!-- Will inherit oa:hasBody and oa:hasTarget from the Annotation -->
  <owl:Class rdf:ID="Context">
-   <rdfs:label xml:lang="en">Context</rdfs:label>
-   <rdfs:label xml:lang="fr">Contexte</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+  <rdfs:label xml:lang="en">Context</rdfs:label>
+  <rdfs:label xml:lang="fr">Contexte</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:definition xml:lang="en">A context relates </skos:definition>
+  <skos:definition xml:lang="fr"></skos:definition>
+ </owl:Class>
+
+ <!-- Cheat to ensure that the provenance is hooked into the Cultural Context -->
+ <rdf:Description rdf:about="http://www.w3.org/ns/prov#derivedFrom">
+  <rdfs:range rdf:resource="#Context"/>
+ </rdf:Description>
+
+ <owl:Class rdf:ID="RaceEthnicityContext">
+   <rdfs:label xml:lang="en">Race Ethnicity Context</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte raciale et/ou ethnique</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdfs:subClass rdf:resource="#Context"/>
+   <skos:definition xml:lang="en">raceEthnicityContext is a significant sub-class within culturalForms. It captures information and discussions of a person's subject position with regards to race and ethnicity by working in conjunction with subject specific sub-elements (raceColour, nationalHeritage, geogHeritage, ethnicity). The following discussion applies to both the general discursive discussion of raceAndEthnicity as well as the specific sub-class categories.
+Despite the anxieties of the ways in which categories of race or ethnicity circulate and serve various kinds of undesirable interests, to ignore or go the totally free-text route is not a responsible solution for this project, though it would certainly be easier and simpler. The trick here is to make the complexities of the question of race and ethnicity emerge, and to make it clear that these are shifting, historically constituted, and interestedly deployed categories whose use must be understood contextually. The discursiveness with which we will present these categories will, hopefully, help to do this and also allay the anxiety we feel about "labelling" in a vacuum. In other words, the project has no notion that we could or should come up with what is in any way an exact, fully defined, or mutually exclusive set of categories: the point is the overlap within them. Within this system, counting per se becomes highly problematic and the user has to do some work (and some thinking/active defining) before arriving at any kind of list or count, and will hopefully arrive at it with a sense of how problematic such an activity is.
+People using this class should apply it to instances that seem to be right for the context, applying to the category or categories which seem to fit, but they should be encouraged not to let race/ethnicity become invisible or only an issue in relation to the marginalized. And we should, as stressed by those concerned about "white" and "black" as homogenizing categories, encourage people to reach for specificity through multiplicity: i.e. generally attempt to include at least two of: "race/colour"; "ethnicity"; "nationality" or "national-heritage."                                                                                          RaceAndEthnicity is a sub-class within culturalFormation. It has four realted content sub-classes: raceColour, nationalHeritage, geogHeritage, and ethnicity. You are also encouraged to consider all of the other subclasses appropriate to the discussion of cultural formation: class, denomination, language, nationality, politicalAffiliation, and sexualIdentity.</skos:definition>
+   <skos:definition xml:lang="fr"></skos:definition>
+ </owl:Class> 
+
+ <owl:Class rdf:ID="SexualityContext">
+   <rdfs:label xml:lang="en">Sexuality Context</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte Sexuel</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#Context"/>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
+ <owl:Class rdf:ID="LanguageContext">
+   <rdfs:label xml:lang="en">Language Context</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte Linguistique</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#Context"/>
+   <dc:subject rdf:resource="#LinguisticAbility"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ </owl:Class>
+
+ <owl:Class rdf:ID="SocialClassContext">
+   <rdfs:label xml:lang="en">Social Class Context</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte de Classe Sociale</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#Context"/>
+   <dc:subject rdf:resource="#SocialClassIdentity"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ </owl:Class>
+
+ <owl:Class rdf:ID="ReligionContext">
+   <rdfs:label xml:lang="en">Religious Context</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte Religieux</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#Context"/>
+   <dc:subject rdf:resource="#Religion"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ </owl:Class>
+
+ <owl:Class rdf:ID="NationalityContext">
+   <rdfs:label xml:lang="en">Nationality Context</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte de Nationalité</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#Context"/>
+   <dc:subject rdf:resource="#NationalHeritage"/>
+   <dc:subject rdf:resource="#NationalIdentity"/>
+   <dc:subject rdf:resource="#GeographicalHeritage"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ </owl:Class>
+
+ <owl:Class rdf:ID="PoliticalContext">
+   <rdfs:label xml:lang="en">Political Context</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte Politique</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#Context"/>
+   <dc:subject rdf:resource="#PoliticalAffiliation"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ </owl:Class>
+
+ <owl:Class rdf:ID="EthnicityContext">
+   <rdfs:label xml:lang="en">Racial, Colour or Ethnicity Context</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte Raciale, de Couleur de Peau ou d'ethnicité</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#Context"/>
+   <dc:subject rdf:resource="#Ethnicity"/>
+   <dc:subject rdf:resource="#RaceColour"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ </owl:Class>
+
+ <!-- End contexts -->
 
  <owl:Class rdf:ID="NationalHeritage">
    <rdfs:label xml:lang="en">National Heritage</rdfs:label>
    <rdfs:label xml:lang="fr">Héritage Nationale</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
-   <skos:definition xml:lang="en">NationalHeritage is a subclass of CulturalFormation that captures information about the nationality of a person's family which contributes to an understanding of their racial and ethnic background. It gestures towards hyphenated identities such as "Japanese-Canadian." While Joy Kogawa's nationality is Canadian, her national heritage is Japanese. See raceAndEthnicity for a detailed description of the complexities of this element.</skos:definition>
+   <skos:definition xml:lang="en">A subclass of culturalForms, this descrbes a person's national heritage and is not the same as citizenship.</skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
-
- <cwrc:NationalHeritage rdf:about="#welsh">
-   <rdfs:label xml:lang="en">welsh</rdfs:label>
-   <rdfs:label xml:lang="fr">gallois</rdfs:label>
+ <cwrc:NationalHeritage rdf:about="#EnglishNationalHeritage">
+   <rdfs:label xml:lang="en">English</rdfs:label>
+   <rdfs:label xml:lang="fr">Anglaise</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <skos:definition xml:lang="en"></skos:definition> 
    <skos:definition xml:lang="fr"></skos:definition>
  </cwrc:NationalHeritage>
-
- <cwrc:NationalHeritage rdf:about="#spain">
-   <rdfs:label xml:lang="en">spain</rdfs:label>
-   <rdfs:label xml:lang="fr">espagnol</rdfs:label>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <skos:definition xml:lang="en"></skos:definition> 
-   <skos:definition xml:lang="fr"></skos:definition>
- </cwrc:NationalHeritage>
-
- <cwrc:NationalHeritage rdf:about="#portugal">
-   <rdfs:label xml:lang="en">portugal</rdfs:label>
-   <rdfs:label xml:lang="fr">espagnol</rdfs:label>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <skos:definition xml:lang="en"></skos:definition> 
-   <skos:definition xml:lang="fr"></skos:definition>
- </cwrc:NationalHeritage>
-
-
 
  <owl:Class rdf:ID="NationalIdentity">
    <rdfs:label xml:lang="en">National Identity</rdfs:label>
    <rdfs:label xml:lang="fr">Identité Nationale</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
-   <skos:definition xml:lang="en"></skos:definition>
+   <skos:definition xml:lang="en">A subclass of culturalForms, this descrbes a person's nationality/ies and is not the same as citizenship.</skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
-<cwrc:NationalIdentity rdf:about="#english">
- <rdfs:label xml:lang="en">English</rdfs:label>
- <rdfs:label xml:lang="fr">Anglaise</rdfs:label>
-  <rdf:type rdf:resource="#RaceColour"/>
-</cwrc:NationalIdentity>
+ <cwrc:NationalIdentity rdf:about="#EnglishNationalIdentity">
+   <rdfs:label xml:lang="en">English</rdfs:label>
+   <rdfs:label xml:lang="fr">Anglaise</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <skos:definition xml:lang="en"></skos:definition> 
+   <skos:definition xml:lang="fr"></skos:definition>
+ </cwrc:NationalIdentity>
+
+ <owl:Class rdf:ID="Language">
+   <rdfs:label xml:lang="en">Linguistic Ability (Spoken and/or Writen)</rdfs:label>
+   <rdfs:label xml:lang="fr">Habilité linguistique (Écris ou Parlé)</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#CulturalFormation"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ </owl:Class>
+
+
+ <cwrc:Language rdf:about="#EnglishLanguage">
+   <rdfs:label xml:lang="en">English</rdfs:label>
+   <rdfs:label xml:lang="fr">Anglais</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <skos:definition xml:lang="en"></skos:definition> 
+   <skos:definition xml:lang="fr"></skos:definition>
+ </cwrc:Language>
+
+ <cwrc:Language rdf:about="#FrenchLanguage">
+   <rdfs:label xml:lang="en">French</rdfs:label>
+   <rdfs:label xml:lang="fr">Français</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <skos:definition xml:lang="en"></skos:definition> 
+   <skos:definition xml:lang="fr"></skos:definition>
+ </cwrc:Language>
+
+
+
+
 
 
  <owl:Class rdf:ID="GeographicalHeritage">
@@ -169,20 +379,20 @@
  </owl:Class>
 
  <owl:Class rdf:ID="SocialClassIdentity">
-   <rdfs:label xml:lang="en">Social Class Identity</rdfs:label>
-   <rdfs:label xml:lang="fr">Identité Classe Sociale</rdfs:label>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <owl:subClass rdf:resource="#CulturalFormation"/>
- <skos:definition xml:lang="en"></skos:definition>
- <skos:definition xml:lang="fr"></skos:definition>
+  <rdfs:label xml:lang="en">Social Class Identity</rdfs:label>
+  <rdfs:label xml:lang="fr">Identité Classe Sociale</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <owl:subClass rdf:resource="#CulturalFormation"/>
+  <skos:definition xml:lang="en">Provides a structured vocabulary for social rank or class position. Systematizing class position by using the social rank attribute, allows the tagger the freedom to use whatever term is most applicable in the prose. This sub-class of culturalForms and socialClassIssue associates subjects with a specific social class. The association may be or have been embraced by the subject by the subject her/himself or attributed by others. Unlike Notes typed as socialClassIssue, which contain detailed discussion of her class position, socialClass links to a word or phrase signifying a particular construction of class. Social class has been variously constructed and theorized. Social class for women is further complicated by the fact that women were understood to take their social status from fathers and/or husbands. The terminology used here reflects quite basic social groupings that intersect with other factors such as wealth.</skos:definition>
+  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
-<cwrc:SocialClassIdentity rdf:about="#middleClass">
- <rdfs:label xml:lang="en">middle class</rdfs:label>
- <rdfs:label xml:lang="fr">classe moyenne</rdfs:label>
+<cwrc:SocialClassIdentity rdf:about="#lowerMiddleClass">
+ <rdfs:label xml:lang="en">lower middle class</rdfs:label>
+ <rdfs:label xml:lang="fr">classe basse moyenne</rdfs:label>
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
  <owl:subClass rdf:resource="#CulturalFormation"/>
- <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="en">Employees, clerical workers, teachers, governesses. Note, however, that some teachers go into Professional (Mr. Chips) and women starting schools and then managing them also go into Professional.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
 </cwrc:SocialClassIdentity>
 
@@ -191,10 +401,116 @@
  <rdfs:label xml:lang="fr">entrepreneur industrialist</rdfs:label>
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
  <owl:subClass rdf:resource="#CulturalFormation"/>
- <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="en">Running factories, investing money (ie Elizabeth Gaskell, Elizabeth Montagu, Beatrice Webb).</skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <!-- Fix the examples -->
+</cwrc:SocialClassIdentity>
+
+<cwrc:SocialClassIdentity rdf:about="#professional">
+ <rdfs:label xml:lang="en">professional</rdfs:label>
+ <rdfs:label xml:lang="fr">professionnel</rdfs:label>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <owl:subClass rdf:resource="#CulturalFormation"/>
+ <skos:definition xml:lang="en">Doctors, lawyers, guild, high calling, social respect, intellectual requirements, clergy (Church of England) (ie Ann Hunter [married to a surgeon], Virginia Woolf).</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
 </cwrc:SocialClassIdentity>
 
+<cwrc:SocialClassIdentity rdf:about="#managerial">
+ <rdfs:label xml:lang="en">managerial</rdfs:label>
+ <rdfs:label xml:lang="fr">gestionnaire</rdfs:label>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <owl:subClass rdf:resource="#CulturalFormation"/>
+ <skos:definition xml:lang="en">Station in life comes from the fact that they are running something but not putting their money into it, e.g. salaried civil service, bankers, hospital administrators.</skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</cwrc:SocialClassIdentity>
+
+<cwrc:SocialClassIdentity rdf:about="#nobility">
+ <rdfs:label xml:lang="en">nobility</rdfs:label>
+ <rdfs:label xml:lang="fr">nobilitée</rdfs:label>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <owl:subClass rdf:resource="#CulturalFormation"/>
+ <skos:definition xml:lang="en">Holding a title or close family relation to someone holding a title (LMWM, Lord Byron, Nancy Mitford).</skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</cwrc:SocialClassIdentity>
+
+
+<cwrc:SocialClassIdentity rdf:about="#gentry">
+ <rdfs:label xml:lang="en">gentry</rdfs:label>
+ <rdfs:label xml:lang="fr">noblesse non titrée</rdfs:label>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <owl:subClass rdf:resource="#CulturalFormation"/>
+ <skos:definition xml:lang="en">Property-owning or related to same, can be in stocks and bonds. Begins in the idea of owning arms and having a coat of arms. Distinguished from Nobility in so far as money is not necessarily related to blood and title. Disinterested gentlemen are of this class (ie Jane Austen).</skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</cwrc:SocialClassIdentity>
+
+
+<cwrc:SocialClassIdentity rdf:about="#indigent">
+ <rdfs:label xml:lang="en">indigent</rdfs:label>
+ <rdfs:label xml:lang="fr">indigents</rdfs:label>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <owl:subClass rdf:resource="#CulturalFormation"/>
+ <skos:definition xml:lang="en">Poor, destitute, unemployed, on social security.</skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</cwrc:SocialClassIdentity>
+
+<cwrc:SocialClassIdentity rdf:about="#shopkeepers">
+ <rdfs:label xml:lang="en">shopkeepers</rdfs:label>
+ <rdfs:label xml:lang="fr">détaillant</rdfs:label>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <owl:subClass rdf:resource="#CulturalFormation"/>
+ <skos:definition xml:lang="en">Owns and runs a pub or shop. Similar to an industrialist but to a lesser degree of magnitude.</skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</cwrc:SocialClassIdentity>
+
+
+<cwrc:SocialClassIdentity rdf:about="#yeoman-farmer">
+ <rdfs:label xml:lang="en">yeoman-farmer</rdfs:label>
+ <rdfs:label xml:lang="fr">agriculteur vivrier</rdfs:label>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <owl:subClass rdf:resource="#CulturalFormation"/>
+ <skos:definition xml:lang="en">Own just enough land to support themselves if they do most of the work themselves (ie Elizabeth Ham, Mary Webb).</skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</cwrc:SocialClassIdentity>
+
+<cwrc:SocialClassIdentity rdf:about="#skilledCraftpersonArtisan">
+ <rdfs:label xml:lang="en">skilled craftperson - artisan</rdfs:label>
+ <rdfs:label xml:lang="fr">Artisan</rdfs:label>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <owl:subClass rdf:resource="#CulturalFormation"/>
+ <skos:definition xml:lang="en">Goldsmith, tailor, shoemaker, milliner, dressmaker.</skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <!-- Fix examples -->
+</cwrc:SocialClassIdentity>
+
+<cwrc:SocialClassIdentity rdf:about="#urban-industrialUnskilled">
+ <rdfs:label xml:lang="en">urban-industrialUnskilled</rdfs:label>
+ <rdfs:label xml:lang="fr">Urbain - industriel - ouvrier non spécialisé</rdfs:label>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <owl:subClass rdf:resource="#CulturalFormation"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <!-- Fix dfinition -->
+</cwrc:SocialClassIdentity>
+
+<cwrc:SocialClassIdentity rdf:about="#rural-unskilled">
+ <rdfs:label xml:lang="en">rural-unskilled</rdfs:label>
+ <rdfs:label xml:lang="fr">rural - journalier</rdfs:label>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <owl:subClass rdf:resource="#CulturalFormation"/>
+ <skos:definition xml:lang="en">Farm laborers (mostly male).</skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <!-- Fix dfinition -->
+</cwrc:SocialClassIdentity>
+
+<cwrc:SocialClassIdentity rdf:about="#servants">
+ <rdfs:label xml:lang="en">servants</rdfs:label>
+ <rdfs:label xml:lang="fr">servant</rdfs:label>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <owl:subClass rdf:resource="#CulturalFormation"/>
+ <skos:definition xml:lang="en">A person who performs duties for others, especially a person employed in a house on domestic duties or as a personal attendant (Mostly Female).</skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <!-- Fix dfinition -->
+</cwrc:SocialClassIdentity>
 
 
  <owl:Class rdf:ID="LinguisticAbility">
@@ -223,77 +539,6 @@
  <skos:definition xml:lang="fr"></skos:definition>
  </cwrc:RaceColour>
 
- <owl:Class rdf:ID="SexualityContext">
-   <rdfs:label xml:lang="en">Sexuality Context</rdfs:label>
-   <rdfs:label xml:lang="fr">Contexte Sexuelle</rdfs:label>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <owl:subClass rdf:resource="#Context"/>
- <skos:definition xml:lang="en"></skos:definition>
- <skos:definition xml:lang="fr"></skos:definition>
- </owl:Class>
-
- <owl:Class rdf:ID="LanguageContext">
-   <rdfs:label xml:lang="en">Language Context</rdfs:label>
-   <rdfs:label xml:lang="fr">Contexte Linguistique</rdfs:label>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <owl:subClass rdf:resource="#Context"/>
-   <dc:subject rdf:resource="#LinguisticAbility"/>
- <skos:definition xml:lang="en"></skos:definition>
- <skos:definition xml:lang="fr"></skos:definition>
- </owl:Class>
-
- <owl:Class rdf:ID="SocialClassContext">
-   <rdfs:label xml:lang="en">Social Class Context</rdfs:label>
-   <rdfs:label xml:lang="fr">Contexte de Classe Sociale</rdfs:label>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <owl:subClass rdf:resource="#Context"/>
-   <dc:subject rdf:resource="#SocialClassIdentity"/>
- <skos:definition xml:lang="en"></skos:definition>
- <skos:definition xml:lang="fr"></skos:definition>
- </owl:Class>
-
- <owl:Class rdf:ID="ReligionContext">
-   <rdfs:label xml:lang="en">Religious Context</rdfs:label>
-   <rdfs:label xml:lang="fr">Contexte Religieux</rdfs:label>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <owl:subClass rdf:resource="#Context"/>
-   <dc:subject rdf:resource="#Religion"/>
- <skos:definition xml:lang="en"></skos:definition>
- <skos:definition xml:lang="fr"></skos:definition>
- </owl:Class>
-
- <owl:Class rdf:ID="NationalityContext">
-   <rdfs:label xml:lang="en">Nationality Context</rdfs:label>
-   <rdfs:label xml:lang="fr">Contexte de Nationalité</rdfs:label>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <owl:subClass rdf:resource="#Context"/>
-   <dc:subject rdf:resource="#NationalHeritage"/>
-   <dc:subject rdf:resource="#NationalIdentity"/>
-   <dc:subject rdf:resource="#GeographicalHeritage"/>
- <skos:definition xml:lang="en"></skos:definition>
- <skos:definition xml:lang="fr"></skos:definition>
- </owl:Class>
-
- <owl:Class rdf:ID="PoliticalContext">
-   <rdfs:label xml:lang="en">Political Context</rdfs:label>
-   <rdfs:label xml:lang="fr">Contexte Politique</rdfs:label>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <owl:subClass rdf:resource="#Context"/>
-   <dc:subject rdf:resource="#PoliticalAffiliation"/>
- <skos:definition xml:lang="en"></skos:definition>
- <skos:definition xml:lang="fr"></skos:definition>
- </owl:Class>
-
- <owl:Class rdf:ID="EthnicityContext">
-   <rdfs:label xml:lang="en">Racial, Colour or Ethnicity Context</rdfs:label>
-   <rdfs:label xml:lang="fr">Contexte Raciale, de Couleur de Peau ou d'ethnicité</rdfs:label>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <owl:subClass rdf:resource="#Context"/>
-   <dc:subject rdf:resource="#Ethnicity"/>
-   <dc:subject rdf:resource="#RaceColour"/>
- <skos:definition xml:lang="en"></skos:definition>
- <skos:definition xml:lang="fr"></skos:definition>
- </owl:Class>
 
   <cwrc:Religion rdf:about="#oxfordmovement">
    <rdfs:label xml:lang="en">Oxford Movement</rdfs:label>
