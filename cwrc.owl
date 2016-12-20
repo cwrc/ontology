@@ -2,6 +2,7 @@
 <rdf:RDF
     xmlns:vann="http://purl.org/vocab/vann/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
     xmlns:muninn="http://rdf.muninn-project.org/ontologies/muninn#"
     xmlns:foaf="http://xmlns.com/foaf/0.1/"
     xmlns:dbpedia="http://dbpedia.org/resource/"
@@ -345,11 +346,13 @@ People using this class should apply it to instances that seem to be right for t
  </owl:Class>
 
 
-<cwrc:RaceColour rdf:about="#white">
+<cwrc:RaceColour rdf:about="#whiteRace">
  <rdfs:label xml:lang="en">white</rdfs:label>
  <rdfs:label xml:lang="fr">blanc</rdfs:label>
-   <skos:definition xml:lang="en"></skos:definition>
-   <skos:definition xml:lang="fr"></skos:definition>
+ <foaf:name xml:lang="en">White (Race Colour)</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdfs:subClass rdf:resource="#whiteLabel"/>
 </cwrc:RaceColour>
 
 <cwrc:RaceColour rdf:about="#eurasian">
@@ -368,6 +371,16 @@ People using this class should apply it to instances that seem to be right for t
  <skos:definition xml:lang="en">Ethnicity is a subclass of CulturalFormation that captures information about a person's ethnic position. Ethnicity is a sub-element within culturalFormation and raceAndEthnicity. See raceAndEthnicity for a detailed description of the complexities of this discursive construction and the social practices surrounding it.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
+
+<cwrc:Ethnicity rdf:about="#whiteEthnicity">
+ <rdfs:label xml:lang="en">white</rdfs:label>
+ <rdfs:label xml:lang="fr">blanc</rdfs:label>
+ <foaf:name xml:lang="en">White (Ethnicity)</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdfs:subClass rdf:resource="#whiteLabel"/>
+</cwrc:Ethnicity>
+
 
  <owl:Class rdf:ID="Religion">
    <rdfs:label xml:lang="en">Religion</rdfs:label>
@@ -977,14 +990,45 @@ People using this class should apply it to instances that seem to be right for t
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
 
+<!-- Labels -->
 
 
 
+<skos:Concept rdf:about="#whiteLabel">
+ <rdfs:label xml:lang="en">white</rdfs:label>
+ <rdfs:label xml:lang="fr">blanc</rdfs:label>
+ <foaf:name xml:lang="en">white</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+</skos:Concept>
 
+<skos:Concept rdf:about="#blackLabel">
+ <rdfs:label xml:lang="en">black</rdfs:label>
+ <rdfs:label xml:lang="fr">noir</rdfs:label>
+ <foaf:name xml:lang="en">black</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+</skos:Concept>
 
+<skos:Concept rdf:about="#englishLabel">
+ <rdfs:label xml:lang="en">english</rdfs:label>
+ <rdfs:label xml:lang="fr">englais</rdfs:label>
+ <foaf:name xml:lang="en">english</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+</skos:Concept>
 
-
-
+<skos:Concept rdf:about="#jewishLabel">
+ <rdfs:label xml:lang="en">jewish</rdfs:label>
+ <rdfs:label xml:lang="fr">juif</rdfs:label>
+ <foaf:name xml:lang="en">jewish</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+</skos:Concept>
 
 </rdf:RDF>
 
