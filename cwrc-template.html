@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html 
+  xmlns="http://www.w3.org/1999/xhtml"
+  xml:lang="en"
+> 
+
+  <head>
+    <title>CWRC Ontology Specification - ONTOLOGY_VERSION</title>
+    <meta http-equiv="content-type" content="text/xhtml+xml; charset=utf-8" />
+    <!-- With Apologies to Dan Brickley and Libby Miller -->
+    <link href="xmlns-style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet"  type="text/css" />
+    <link rel="mvcb:generatorAgent" type="application/rdf+xml" title="DOAP" href="http://rdfohloh.wikier.org/project/specgen" />
+  </head>
+
+  <body>
+
+    <h1 id="title">CWRC Ontology Specification - ONTOLOGY_VERSION</h1>
+
+<img src="ONTOLOGY_LOGO" align="right">    
+    <h2 id="subtitle">The CWRC Ontology is the overall ontology that represents all elements of structure within the Canadian Writing Research Collaboratory.</h2>
+
+    <h3 id="mymw-doctype">Working Draft &mdash; ONTOLOGY_LONGDATE</h3>
+
+    <dl>
+
+      <dt>Previous version:</dt>
+      <dd><a
+      href="http://rdf.cwrc.ca/ontologies/cwrc-PREVIOUS_ONTOLOGY.html">http://rdf.cwrc.ca/ontologies/cwrc-PREVIOUS_ONTOLOGY.html</a>
+      (<a
+      href="http://rdf.cwrc.ca/ontologies/cwrc-PREVIOUS_ONTOLOGY.owl">owl</a>)
+      </dd>
+
+      <dt>This version:</dt>
+      <dd><a
+      href="http://rdf.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE.html">http://rdf.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE.html</a>
+      (<a
+      href="http://rdf.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE.owl">owl</a>)
+      </dd>
+
+      <dt>Latest version:</dt>
+      <dd><a
+      href="http://rdf.cwrc.ca/ontologies/cwrc.html">http://rdf.cwrc.ca/ontologies/cwrc.html</a>
+      (<a
+      href="http://rdf.cwrc.ca/ontologies/cwrc.owl">owl</a>)
+      </dd>
+
+      <dt>Last Update: ONTOLOGY_VERSION</dt>
+      <dd>Date: ONTOLOGY_LONGDATE</dd>
+
+      <dt>Authors:</dt>
+      <dd>John Simpson</dd>
+      <dd>Susan Brown</dd>
+      <dd>Robert Warren</dd>
+      <dd>Abigel Lemark</dd>
+      <dd>Colin Faulkner</dd>
+    </dl>
+
+    <p class="copyright"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+    <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
+    </a><br/>This work is licensed under a 
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons / Attribution-ShareAlike 3.0 Unported License</a>.</p>
+
+    <!-- ===================================================================== -->
+
+    <hr />
+    <h2 id="abstract">Abstract</h2>
+    <p>
+Cultural diversity has been an increasing source of debate within the
+    digital humanities community. The concentration within the Debates in
+    Digital Humanities series (Gold, 2012; Gold and Klein, 2016) of pieces
+    reflecting the increasing prominence of matters related to race, gender,
+    cultural diversity and difference is but one marker of the extent to
+    which diversity matters. The Orlando Project in feminist literary
+    history incorporated an intersectional understanding of identity
+    categories from the outset. Translating Orlando’s XML data into linked
+    open data (LOD) to make it accessible, interoperable, and amenable to a
+    range of analytical approaches (<a href="">Simpson and Brown</a>) requires an ontology
+    that will serve both Orlando and the broader research community hosted
+    by the Canadian Writing Research Collaboratory (CWRC). This document
+    outlines the CWRC ontology design and the challenges of shifting from
+    semi-structured to structured data (Smith 273).
+    </p>
+
+    <h3 id="status">Status of this Document</h3>
+    <p>
+      This document grows iteratively with modification made over
+      time according to the amount of Orlando data translated and the
+      ontological issues located over time. Continuity is ensured using the <a
+      href="http://www.w3.org/TR/owl-ref/#Annotations">OWL ontology
+      annotations</a> for ontological compatibility and for deprecated classes and properties.
+      Deprecated ontology terms remain present but are marked as such.
+    </p>
+    <h2 id="contents">Table of Contents</h2>    
+    <ol id="toc">
+     <li><a href="#background">Background on the Orlando source data</a></li>
+     <li><a href="goals">Basic ontological goals</a></li>
+     <ol>
+      <li><a href="links">Linkages to other ontologies</a></li>
+     </ol>
+     <li><a href="culturalformations">Cultural Formations</a></li>
+     <li><a href="context">Cultural Contexts</a></li>
+    <li><a href="definition_list">Global cross reference</a></li>
+    <li><a href="notesEvent">Notes on CWRC Events</a></li>
+    <li><a href="notesSKOS">Notes on SKOS and OWL</a></li>
+    <li><a href="conclusion">Conclusion and Future Work</a></li>
+    <li><a href="version_history">Version History</a></li>
+    <li><a href="biblipgraphy">Bibliography</a></li>
+    </ol>
+    <hr />
+
+    <h3 id="background">Background on the Orlando source data</h3>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula leo
+    mi, at molestie nunc pulvinar vel. Cras vitae nisl facilisis, congue
+    massa nec, porta sapien. Nulla a neque porttitor, auctor nulla ultrices,
+    porta ligula. Etiam blandit massa blandit molestie hendrerit.
+    Pellentesque tincidunt sed sem et cursus. Fusce in sem eu lorem
+    ullamcorper tempor. Nulla facilisis odio vitae orci finibus ultricies.
+    Nam ultrices, diam ut pellentesque rhoncus, enim dui molestie felis,
+    vitae ultrices nisi est maximus felis. Vivamus porta, ligula vitae
+    laoreet finibus, erat neque condimentum nulla, eu dictum ipsum massa sed
+    mi. Vivamus metus enim, pellentesque sollicitudin aliquam quis, gravida
+    ac ante. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    Maecenas dictum hendrerit convallis. Donec sagittis molestie ipsum non
+    pharetra. Mauris sed tincidunt odio. Vestibulum dapibus dui in neque
+    fermentum suscipit. Integer commodo eros ante. 
+    
+    
+    <h3 id="goals">Basic ontological goals.</h3>
+
+ Quisque nec elementum ligula. Nullam non rutrum mi. Maecenas in massa
+ semper, suscipit nisi sed, finibus mi. Phasellus ut tellus sed odio blandit
+ sodales pulvinar nec lectus. Fusce in neque id libero cursus finibus id vel
+ massa. Aenean eget finibus urna. Sed maximus fermentum ligula quis
+ interdum. Integer placerat nisi vel magna aliquet, nec pharetra tortor
+ efficitur. Aliquam vitae magna in dui efficitur condimentum. Ut sit amet ex
+ odio. Duis et mi eget nulla fringilla cursus a eu nisi.
+ 
+ Morbi posuere vestibulum justo non condimentum. Maecenas faucibus in erat
+ et finibus. Nullam lacinia justo at elit imperdiet, vitae congue eros
+ interdum. Aliquam at dolor et tellus accumsan egestas bibendum sodales
+ neque. Vivamus et mattis tortor, posuere elementum dolor. Quisque ac tempus
+ massa. Donec efficitur ante dictum laoreet finibus. Ut rhoncus eu elit quis
+ sodales. Suspendisse non ultricies felis. Etiam libero est, efficitur vitae
+ ante at, facilisis rhoncus erat. Vestibulum consequat turpis arcu, et
+ pretium risus faucibus eu. Cras vel consectetur sem. Morbi bibendum ex
+ lacus, vel vestibulum enim ullamcorper quis. Pellentesque habitant morbi
+ tristique senectus et netus et malesuada fames ac turpis egestas. Nam sed
+ interdum odio, at condimentum enim. Integer congue consequat nibh, at
+ suscipit justo fermentum ullamcorper. 
+
+
+    <h4 id="links">Linkages to other ontologies.</h3>
+
+Duis id enim sed lorem semper viverra vel commodo nisi. Suspendisse posuere
+odio neque, in sodales ipsum sagittis gravida. Integer sem enim, vulputate
+at metus sed, ultricies facilisis urna. In nec erat quam. In ut nulla nisl.
+Morbi id neque rhoncus, vulputate diam sed, consectetur sem. Nullam dictum
+posuere libero, eget rutrum justo mattis ac. Etiam rhoncus venenatis magna,
+congue imperdiet nulla viverra sed. Ut egestas tortor purus, id posuere
+risus venenatis id. Aenean eget mauris ac nisi blandit vehicula. 
+ 
+    <h3 id="culturalformations">Cultural Formations.</h3>
+
+The Cultural Formation (CF) tagset recognizes categorization as endemic to
+social experience, while incorporating variation in terminology and
+contextualization of identity categories by employing tags at different
+discursive levels. CF tags describe the subject positions of individuals
+through 1) contextual tags that encode substantial discussions: class;
+language; nationality; race and ethnicity; religion; and sexuality; and 2)
+granular tags that describe, in a word or short phrase, class; ethnicity;
+gender; geographical heritage; language; nationality; national heritage;
+political affiliation; race or colour; religious denomination, and sexual
+identity. The granular tags possess attributes regarding forebears and
+whether a subject self-identified with a particular term. The tagset aimed
+to highlight the extent to which social classification is culturally
+produced and discursively embedded. Rather than disambiguating leaky
+cultural categories, it considered them as mutually constitutive with
+historically specific discursive frameworks, including our tagging
+structures.
+
+
+CF encoding pointed users towards a framework for raising and debating
+complex matters for cultural investigation rather than standardized
+classifications, refusing to neatly group writers into distinct and fixed
+categories, since those categories were neither stable nor mutually
+exclusive (Algee-Hewitt, Porter, Walser).
+
+    <h3 id="context">Cultural Contexts</h3>
+          
+    <h3 id="definition_list">Global cross reference</h3>
+    
+    <!-- The list of classes and properties goes here -->
+    %s
+    <!-- End of the terms list -->
+
+    <h2 id="reference">Detailed references for all terms, classes and
+    properties.</h2>
+ 
+    <p></p>
+
+    <!-- The following is the script-generated list of classes and properties -->
+    %s
+    <!-- End of the terms list -->
+
+    <h2 id="notesEvent">Notes on CWRC Events</h2>
+     <p></p>
+    <h2 id="notesSKOS">Notes on SKOS and OWL</h2>
+    <p>SKOS (Simple Knowledge Organization System) enjoys widespread popularity in the semantic
+    web community as it provides simple terms for taxonomies without requiring reasoner support.
+    Whenever appropriate, SKOS terms are inserted within the military ontology to link terms to
+    each other. However, since these terms are not ontologically powered their scalability is
+    limited since each additional layer of terms within a taxonomy requires another database
+    query.</p>
+    <p>Some of the constructs within the military ontology are deep and require reasoning support.
+    OWL is the preferred means of using this ontology, through the usage of the terms, SKOS-style,
+    is possible. </p> 
+    
+    </p>
+
+    <h2 id="conclusion">Conclusion and Future Work</h2>
+
+    <p>Etiam dignissim lorem id turpis scelerisque vehicula. Maecenas
+    hendrerit nisl libero, a efficitur orci tristique a. Etiam posuere
+    sodales felis, vel malesuada dui. Curabitur sit amet risus gravida,
+    gravida lorem luctus, tristique erat. Aliquam quis felis dapibus, tempus
+    enim aliquam, cursus enim. Ut sed imperdiet nisi. Ut auctor turpis sed
+    vehicula fringilla. Nulla quis enim sem. Pellentesque quis lorem
+    lacinia, fringilla dui ac, pharetra ante. Mauris ultricies lacus metus,
+    quis iaculis lorem porttitor in. Suspendisse placerat est neque, quis
+    tempor dolor commodo dictum. Donec accumsan lorem in justo consectetur,
+    vehicula pharetra mi laoreet. Pellentesque a neque non erat ultricies
+    rutrum. Praesent varius felis purus, id congue dolor ultricies vel.
+    Quisque elit diam, pretium ut aliquam et, sodales ut elit. </p>   
+
+    <h2 id="version_history">Version History</h2>
+
+    <ul>
+    <li><p>0.3 - Initial release.</p></li>
+    </ul>
+    
+    <h2 id="biblipgraphy">Bibliography</h2>    
+m4_include(cwrc-citations.html)
+
+    <!-- ===================================================================== 
+
+
+     ===================================================================== -->
+
+
+  </body>
+
+</html>
+
