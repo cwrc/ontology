@@ -1215,6 +1215,23 @@ People using this class should apply it to instances that seem to be right for t
 
 <!-- Genres -->
 
+<owl:Class rdf:ID="Genre">
+ <rdfs:label xml:lang="en">literary genre</rdfs:label>
+ <rdfs:label xml:lang="fr">genre littéraire</rdfs:label>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition> 
+ <owl:sameAs rdf:resource="http://dbpedia.org/resource/Literary_genre"/>
+</owl:Class>
+
+<owl:ObjectProperty rdf:ID="hasGenre">
+ <rdfs:label xml:lang="en">has genre</rdfs:label>
+ <rdfs:label xml:lang="fr">a un genre</rdfs:label>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
+
+
 
 </rdf:RDF>
 
