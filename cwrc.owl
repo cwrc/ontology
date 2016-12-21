@@ -781,15 +781,25 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:value>unitarianChurch</rdf:value>
  </cwrc:Religion>
 
- <cwrc:Religion rdf:about="#unitarianMovement">
-  <rdfs:label xml:lang="en">Unitarian Movement</rdfs:label>
+ <cwrc:Religion rdf:about="#unitarianism">
+  <rdfs:label xml:lang="en">Unitarianism</rdfs:label>
+  <skos:altLabel xml:lang="en">Unitarian Movement</skos:altLabel>
+  <rdfs:label xml:lang="en">Unitarian</rdfs:label>
+  <rdfs:label xml:lang="nl">unitarisme</rdfs:label>
+  <rdfs:label xml:lang="es">unitarismo</rdfs:label>
+  <rdfs:label xml:lang="es">unitarios</rdfs:label>
   <rdfs:label xml:lang="fr"></rdfs:label>
-  <skos:definition xml:lang="en"></skos:definition>
+  <skos:definition xml:lang="en">The liberal Protestant movement that arose in Europe during the 16th century Reformation, was embodied in a church in Transylvania, and achieved denominational status in the 19th century in the United Kingdom, the United States, and Canada. It is characterized by a denial of the orthodox Christian doctrines of the Trinity and the divinity of Jesus, the free use of reason in religion, and the belief that God exists in one person. In 1961, in the United States and Canada, it merged with the Universalist denomination to form "Unitarian Universalism."  Use also generally for the theological doctrines of the unified nature of God and the humanity of Jesus, first expressed in second- and third-century monarchism and in the teachings of Arius in the third and fourth centuries, and later in the radical Neoplatonist thinkers of the Reformation such as Michael Servetus, Faustus Socinus, and Ferenc David.</skos:definition>
+  <skos:definition xml:lang="nl">In het bijzonder te gebruiken voor de vrijzinnig protestantse beweging die in Europa opkwam tijdens de Reformatie in de 16de eeuw, werd belichaamd door een kerk in Transsylvanië en een confessionele status verkreeg in Groot-Brittannië, de Verenigde Staten en Canada tijdens de 19de eeuw. De beweging wordt gekenmerkt door de afwijzing van de orthodox christelijke leer van de Drie-eenheid en de goddelijke Christus, het vrije gebruik van de rede in religieuze zaken en het geloof dat God bestaat in één persoon. In 1961 fuseerde deze beweging in de Verenigde Staten en Canada met de universalistische beweging, waardoor het ‘unitaristisch universalisme’ ontstond. Ook in het algemeen te gebruiken voor de theologische leer van de eenheid van God en het mens-zijn van Jezus, zoals voor het eerst verwoord in het monarchisme van de 2de en 3de eeuw en in de leer van Arius in de 3de en 4de eeuw, en later in de leer van de radicale neoplatonisten uit de Reformatie zoals Michael Servetus, Faustus Socinus en Ferenc David.</skos:definition>
+  <skos:definition xml:lang="es">Úsese específicamente para el movimiento protestante liberal que surgió en Europa durante la Reforma del siglo XVI, que tuvo su manifestación en una iglesia en Transilvania, y que logró un estatus confesional en el siglo XIX en el Reino Unido, los Estados Unidos y Canadá. Es caracterizado por una desaprobación de las doctrinas cristianas ortodoxas de la Trinidad y la divinidad de Jesús, el libre uso de la razón en la religión y la creencia que Dios existe en una persona. En 1961, en los Estados Unidos y Canadá s</skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
- </cwrc:Religion>
+  <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300263305"/>
+  <rdf:value>unitarianMovement</rdf:value> 
+</cwrc:Religion>
 
 
 <!-- Social Classes -->
@@ -1202,6 +1212,9 @@ People using this class should apply it to instances that seem to be right for t
  </owl:oneOf>
  <skos:inScheme rdf:resource="#TEILabels"/>
 </skos:Concept>
+
+<!-- Genres -->
+
 
 </rdf:RDF>
 
