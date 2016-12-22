@@ -1,0 +1,2310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html 
+  xmlns="http://www.w3.org/1999/xhtml"
+  xml:lang="en"
+> 
+
+  <head>
+    <title>CWRC Ontology Specification - 0.3</title>
+    <meta http-equiv="content-type" content="text/xhtml+xml; charset=utf-8" />
+    <!-- With Apologies to Dan Brickley and Libby Miller -->
+    <link href="xmlns-style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet"  type="text/css" />
+    <link rel="mvcb:generatorAgent" type="application/rdf+xml" title="DOAP" href="http://rdfohloh.wikier.org/project/specgen" />
+  </head>
+
+  <body>
+
+    <h1 id="title">CWRC Ontology Specification - 0.3</h1>
+
+<img src="http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif" align="right">    
+    <h2 id="subtitle">The CWRC Ontology is the overall ontology that represents all elements of structure within the Canadian Writing Research Collaboratory.</h2>
+
+    <h3 id="mymw-doctype">Working Draft &mdash; </h3>
+
+    <dl>
+
+      <dt>Previous version:</dt>
+      <dd><a
+      href="http://rdf.cwrc.ca/ontologies/cwrc-.html">http://rdf.cwrc.ca/ontologies/cwrc-.html</a>
+      (<a
+      href="http://rdf.cwrc.ca/ontologies/cwrc-.owl">owl</a>)
+      </dd>
+
+      <dt>This version:</dt>
+      <dd><a
+      href="http://rdf.cwrc.ca/ontologies/cwrc-2016-12-21.html">http://rdf.cwrc.ca/ontologies/cwrc-2016-12-21.html</a>
+      (<a
+      href="http://rdf.cwrc.ca/ontologies/cwrc-2016-12-21.owl">owl</a>)
+      </dd>
+
+      <dt>Latest version:</dt>
+      <dd><a
+      href="http://rdf.cwrc.ca/ontologies/cwrc.html">http://rdf.cwrc.ca/ontologies/cwrc.html</a>
+      (<a
+      href="http://rdf.cwrc.ca/ontologies/cwrc.owl">owl</a>)
+      </dd>
+
+      <dt>Last Update: 0.3</dt>
+      <dd>Date: </dd>
+
+      <dt>Authors:</dt>
+      <dd>John Simpson</dd>
+      <dd>Susan Brown</dd>
+      <dd>Robert Warren</dd>
+      <dd>Abigel Lemark</dd>
+      <dd>Colin Faulkner</dd>
+    </dl>
+
+    <p class="copyright"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+    <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
+    </a><br/>This work is licensed under a 
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons / Attribution-ShareAlike 3.0 Unported License</a>.</p>
+
+    <!-- ===================================================================== -->
+
+    <hr />
+    <h2 id="abstract">Abstract</h2>
+    <p>
+Cultural diversity has been an increasing source of debate within the
+    digital humanities community. The concentration within the Debates in
+    Digital Humanities series (Gold, 2012; Gold and Klein, 2016) of pieces
+    reflecting the increasing prominence of matters related to race, gender,
+    cultural diversity and difference is but one marker of the extent to
+    which diversity matters. The Orlando Project in feminist literary
+    history incorporated an intersectional understanding of identity
+    categories from the outset. Translating Orlando’s XML data into linked
+    open data (LOD) to make it accessible, interoperable, and amenable to a
+    range of analytical approaches (<a href="">Simpson and Brown</a>) requires an ontology
+    that will serve both Orlando and the broader research community hosted
+    by the Canadian Writing Research Collaboratory (CWRC). This document
+    outlines the CWRC ontology design and the challenges of shifting from
+    semi-structured to structured data (Smith 273).
+    </p>
+
+    <h3 id="status">Status of this Document</h3>
+    <p>
+      This document grows iteratively with modification made over
+      time according to the amount of Orlando data translated and the
+      ontological issues located over time. Continuity is ensured using the <a
+      href="http://www.w3.org/TR/owl-ref/#Annotations">OWL ontology
+      annotations</a> for ontological compatibility and for deprecated classes and properties.
+      Deprecated ontology terms remain present but are marked as such.
+    </p>
+    <h2 id="contents">Table of Contents</h2>    
+    <ol id="toc">
+     <li><a href="#background">Background on the Orlando source data</a></li>
+     <li><a href="goals">Basic ontological goals</a></li>
+     <ol>
+      <li><a href="links">Linkages to other ontologies</a></li>
+     </ol>
+     <li><a href="culturalformations">Cultural Formations</a></li>
+     <li><a href="context">Cultural Contexts</a></li>
+    <li><a href="definition_list">Global cross reference</a></li>
+    <li><a href="notesEvent">Notes on CWRC Events</a></li>
+    <li><a href="notesSKOS">Notes on SKOS and OWL</a></li>
+    <li><a href="conclusion">Conclusion and Future Work</a></li>
+    <li><a href="version_history">Version History</a></li>
+    <li><a href="biblipgraphy">Bibliography</a></li>
+    </ol>
+    <hr />
+
+    <h3 id="background">Background on the Orlando source data</h3>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula leo
+    mi, at molestie nunc pulvinar vel. Cras vitae nisl facilisis, congue
+    massa nec, porta sapien. Nulla a neque porttitor, auctor nulla ultrices,
+    porta ligula. Etiam blandit massa blandit molestie hendrerit.
+    Pellentesque tincidunt sed sem et cursus. Fusce in sem eu lorem
+    ullamcorper tempor. Nulla facilisis odio vitae orci finibus ultricies.
+    Nam ultrices, diam ut pellentesque rhoncus, enim dui molestie felis,
+    vitae ultrices nisi est maximus felis. Vivamus porta, ligula vitae
+    laoreet finibus, erat neque condimentum nulla, eu dictum ipsum massa sed
+    mi. Vivamus metus enim, pellentesque sollicitudin aliquam quis, gravida
+    ac ante. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    Maecenas dictum hendrerit convallis. Donec sagittis molestie ipsum non
+    pharetra. Mauris sed tincidunt odio. Vestibulum dapibus dui in neque
+    fermentum suscipit. Integer commodo eros ante. 
+    
+    
+    <h3 id="goals">Basic ontological goals.</h3>
+
+ Quisque nec elementum ligula. Nullam non rutrum mi. Maecenas in massa
+ semper, suscipit nisi sed, finibus mi. Phasellus ut tellus sed odio blandit
+ sodales pulvinar nec lectus. Fusce in neque id libero cursus finibus id vel
+ massa. Aenean eget finibus urna. Sed maximus fermentum ligula quis
+ interdum. Integer placerat nisi vel magna aliquet, nec pharetra tortor
+ efficitur. Aliquam vitae magna in dui efficitur condimentum. Ut sit amet ex
+ odio. Duis et mi eget nulla fringilla cursus a eu nisi.
+ 
+ Morbi posuere vestibulum justo non condimentum. Maecenas faucibus in erat
+ et finibus. Nullam lacinia justo at elit imperdiet, vitae congue eros
+ interdum. Aliquam at dolor et tellus accumsan egestas bibendum sodales
+ neque. Vivamus et mattis tortor, posuere elementum dolor. Quisque ac tempus
+ massa. Donec efficitur ante dictum laoreet finibus. Ut rhoncus eu elit quis
+ sodales. Suspendisse non ultricies felis. Etiam libero est, efficitur vitae
+ ante at, facilisis rhoncus erat. Vestibulum consequat turpis arcu, et
+ pretium risus faucibus eu. Cras vel consectetur sem. Morbi bibendum ex
+ lacus, vel vestibulum enim ullamcorper quis. Pellentesque habitant morbi
+ tristique senectus et netus et malesuada fames ac turpis egestas. Nam sed
+ interdum odio, at condimentum enim. Integer congue consequat nibh, at
+ suscipit justo fermentum ullamcorper. 
+
+
+    <h4 id="links">Linkages to other ontologies.</h3>
+
+Duis id enim sed lorem semper viverra vel commodo nisi. Suspendisse posuere
+odio neque, in sodales ipsum sagittis gravida. Integer sem enim, vulputate
+at metus sed, ultricies facilisis urna. In nec erat quam. In ut nulla nisl.
+Morbi id neque rhoncus, vulputate diam sed, consectetur sem. Nullam dictum
+posuere libero, eget rutrum justo mattis ac. Etiam rhoncus venenatis magna,
+congue imperdiet nulla viverra sed. Ut egestas tortor purus, id posuere
+risus venenatis id. Aenean eget mauris ac nisi blandit vehicula. 
+ 
+    <h3 id="culturalformations">Cultural Formations.</h3>
+
+The Cultural Formation (CF) tagset recognizes categorization as endemic to
+social experience, while incorporating variation in terminology and
+contextualization of identity categories by employing tags at different
+discursive levels. CF tags describe the subject positions of individuals
+through 1) contextual tags that encode substantial discussions: class;
+language; nationality; race and ethnicity; religion; and sexuality; and 2)
+granular tags that describe, in a word or short phrase, class; ethnicity;
+gender; geographical heritage; language; nationality; national heritage;
+political affiliation; race or colour; religious denomination, and sexual
+identity. The granular tags possess attributes regarding forebears and
+whether a subject self-identified with a particular term. The tagset aimed
+to highlight the extent to which social classification is culturally
+produced and discursively embedded. Rather than disambiguating leaky
+cultural categories, it considered them as mutually constitutive with
+historically specific discursive frameworks, including our tagging
+structures.
+
+
+CF encoding pointed users towards a framework for raising and debating
+complex matters for cultural investigation rather than standardized
+classifications, refusing to neatly group writers into distinct and fixed
+categories, since those categories were neither stable nor mutually
+exclusive (Algee-Hewitt, Porter, Walser).
+
+    <h3 id="context">Cultural Contexts</h3>
+          
+    <h3 id="definition_list">Global cross reference</h3>
+    
+    <!-- The list of classes and properties goes here -->
+    <div style="padding: 1em; border: dotted; background-color: #ddd;"><p>Classes:  <a href="#term_Context">Context</a>,  <a href="#term_CulturalFormation">CulturalFormation</a>,  <a href="#term_Ethnicity">Ethnicity</a>,  <a href="#term_EthnicityContext">EthnicityContext</a>,  <a href="#term_GenderIdentity">GenderIdentity</a>,  <a href="#term_GeographicalHeritage">GeographicalHeritage</a>,  <a href="#term_Language">Language</a>,  <a href="#term_LanguageContext">LanguageContext</a>,  <a href="#term_LinguisticAbility">LinguisticAbility</a>,  <a href="#term_NationalHeritage">NationalHeritage</a>,  <a href="#term_NationalIdentity">NationalIdentity</a>,  <a href="#term_NationalityContext">NationalityContext</a>,  <a href="#term_PoliticalAffiliation">PoliticalAffiliation</a>,  <a href="#term_PoliticalContext">PoliticalContext</a>,  <a href="#term_RaceColour">RaceColour</a>,  <a href="#term_RaceEthnicityContext">RaceEthnicityContext</a>,  <a href="#term_Religion">Religion</a>,  <a href="#term_ReligionContext">ReligionContext</a>,  <a href="#term_SexualIdentity">SexualIdentity</a>,  <a href="#term_SexualityContext">SexualityContext</a>,  <a href="#term_SocialClassContext">SocialClassContext</a>,  <a href="#term_SocialClassIdentity">SocialClassIdentity</a>, 
+</p><p>Properties:  <a href="#term_hasEthnicity">hasEthnicity</a>,  <a href="#term_hasEthnicitySelfDefined">hasEthnicitySelfDefined</a>,  <a href="#term_hasGender">hasGender</a>,  <a href="#term_hasGenderSelfDeclared">hasGenderSelfDeclared</a>,  <a href="#term_hasLanguage">hasLanguage</a>,  <a href="#term_hasLanguageSelfDeclared">hasLanguageSelfDeclared</a>,  <a href="#term_hasNationality">hasNationality</a>,  <a href="#term_hasNationalitySelfDeclared">hasNationalitySelfDeclared</a>,  <a href="#term_hasRaceColour">hasRaceColour</a>,  <a href="#term_hasRaceSelfDeclared">hasRaceSelfDeclared</a>,  <a href="#term_hasReligion">hasReligion</a>,  <a href="#term_hasReligionSelfDefined">hasReligionSelfDefined</a>,  <a href="#term_hasSexuality">hasSexuality</a>,  <a href="#term_hasSexualitySelfDeclared">hasSexualitySelfDeclared</a>,  <a href="#term_hasSocialClass">hasSocialClass</a>,  <a href="#term_hasSocialClassSelfDefined">hasSocialClassSelfDefined</a>,  <a href="#term_personalProperty">personalProperty</a>,  <a href="#term_personalPropertySelfDeclared">personalPropertySelfDeclared</a>, 
+</p><p>Instances:  <a href="#term_AbigelLemak">AbigelLemak</a>,  <a href="#term_agnosticism">agnosticism</a>,  <a href="#term_anglicanchurch">anglicanchurch</a>,  <a href="#term_atheistism">atheistism</a>,  <a href="#term_baptistchurch">baptistchurch</a>,  <a href="#term_black">black</a>,  <a href="#term_blackLabel">blackLabel</a>,  <a href="#term_catholicchurch">catholicchurch</a>,  <a href="#term_christian">christian</a>,  <a href="#term_churchofchristscientist">churchofchristscientist</a>,  <a href="#term_churchofengland">churchofengland</a>,  <a href="#term_churchofireland">churchofireland</a>,  <a href="#term_ColinFaulkner">ColinFaulkner</a>,  <a href="#term_congregationalchurch">congregationalchurch</a>,  <a href="#term_Context">Context</a>,  <a href="#term_CulturalFormation">CulturalFormation</a>,  <a href="#term_cwrc">cwrc</a>,  <a href="#term_cwrc">cwrc</a>,  <a href="#term_datasetdefinition">datasetdefinition</a>,  <a href="#term_dissenters">dissenters</a>,  <a href="#term_dissentingchurches">dissentingchurches</a>,  <a href="#term_englishLabel">englishLabel</a>,  <a href="#term_EnglishLanguage">EnglishLanguage</a>,  <a href="#term_EnglishNationalHeritage">EnglishNationalHeritage</a>,  <a href="#term_EnglishNationalIdentity">EnglishNationalIdentity</a>,  <a href="#term_entrepreneurial-industrialist">entrepreneurial-industrialist</a>,  <a href="#term_Ethnicity">Ethnicity</a>,  <a href="#term_EthnicityContext">EthnicityContext</a>,  <a href="#term_eurasian">eurasian</a>,  <a href="#term_fifthmonarchists">fifthmonarchists</a>,  <a href="#term_FrenchLanguage">FrenchLanguage</a>,  <a href="#term_GenderIdentity">GenderIdentity</a>,  <a href="#term_gentry">gentry</a>,  <a href="#term_GeographicalHeritage">GeographicalHeritage</a>,  <a href="#term_hasEthnicity">hasEthnicity</a>,  <a href="#term_hasEthnicitySelfDefined">hasEthnicitySelfDefined</a>,  <a href="#term_hasGender">hasGender</a>,  <a href="#term_hasGenderSelfDeclared">hasGenderSelfDeclared</a>,  <a href="#term_hasLanguage">hasLanguage</a>,  <a href="#term_hasLanguageSelfDeclared">hasLanguageSelfDeclared</a>,  <a href="#term_hasNationality">hasNationality</a>,  <a href="#term_hasNationalitySelfDeclared">hasNationalitySelfDeclared</a>,  <a href="#term_hasRaceColour">hasRaceColour</a>,  <a href="#term_hasRaceSelfDeclared">hasRaceSelfDeclared</a>,  <a href="#term_hasReligion">hasReligion</a>,  <a href="#term_hasReligionSelfDefined">hasReligionSelfDefined</a>,  <a href="#term_hasSexuality">hasSexuality</a>,  <a href="#term_hasSexualitySelfDeclared">hasSexualitySelfDeclared</a>,  <a href="#term_hasSocialClass">hasSocialClass</a>,  <a href="#term_hasSocialClassSelfDefined">hasSocialClassSelfDefined</a>,  <a href="#term_indigent">indigent</a>,  <a href="#term_islam">islam</a>,  <a href="#term_jewish">jewish</a>,  <a href="#term_jewishLabel">jewishLabel</a>,  <a href="#term_JohnSimpson">JohnSimpson</a>,  <a href="#term_Language">Language</a>,  <a href="#term_LanguageContext">LanguageContext</a>,  <a href="#term_LinguisticAbility">LinguisticAbility</a>,  <a href="#term_lollards">lollards</a>,  <a href="#term_lowerMiddleClass">lowerMiddleClass</a>,  <a href="#term_managerial">managerial</a>,  <a href="#term_methodistchurch">methodistchurch</a>,  <a href="#term_millenarianism">millenarianism</a>,  <a href="#term_NationalHeritage">NationalHeritage</a>,  <a href="#term_NationalIdentity">NationalIdentity</a>,  <a href="#term_NationalityContext">NationalityContext</a>,  <a href="#term_neo-thomism">neo-thomism</a>,  <a href="#term_nobility">nobility</a>,  <a href="#term_originalOrlandoAuthor">originalOrlandoAuthor</a>,  <a href="#term_oxfordmovement">oxfordmovement</a>,  <a href="#term_pagan">pagan</a>,  <a href="#term_personalProperty">personalProperty</a>,  <a href="#term_personalPropertySelfDeclared">personalPropertySelfDeclared</a>,  <a href="#term_plymouthbrethren">plymouthbrethren</a>,  <a href="#term_PoliticalAffiliation">PoliticalAffiliation</a>,  <a href="#term_PoliticalContext">PoliticalContext</a>,  <a href="#term_presbyterianchurch">presbyterianchurch</a>,  <a href="#term_professional">professional</a>,  <a href="#term_puritans">puritans</a>,  <a href="#term_quakers">quakers</a>,  <a href="#term_RaceColour">RaceColour</a>,  <a href="#term_RaceEthnicityContext">RaceEthnicityContext</a>,  <a href="#term_rationaldissenter">rationaldissenter</a>,  <a href="#term_Religion">Religion</a>,  <a href="#term_ReligionContext">ReligionContext</a>,  <a href="#term_RobWarren">RobWarren</a>,  <a href="#term_romancatholicchurch">romancatholicchurch</a>,  <a href="#term_rural-unskilled">rural-unskilled</a>,  <a href="#term_servants">servants</a>,  <a href="#term_SexualIdentity">SexualIdentity</a>,  <a href="#term_SexualityContext">SexualityContext</a>,  <a href="#term_shopkeepers">shopkeepers</a>,  <a href="#term_skilledCraftpersonArtisan">skilledCraftpersonArtisan</a>,  <a href="#term_SocialClassContext">SocialClassContext</a>,  <a href="#term_SocialClassIdentity">SocialClassIdentity</a>,  <a href="#term_societyoffriends">societyoffriends</a>,  <a href="#term_spiritualism">spiritualism</a>,  <a href="#term_sshrc">sshrc</a>,  <a href="#term_SusanBrown">SusanBrown</a>,  <a href="#term_TEILabels">TEILabels</a>,  <a href="#term_tractarianmovement">tractarianmovement</a>,  <a href="#term_unitarianchurch">unitarianchurch</a>,  <a href="#term_urban-industrialUnskilled">urban-industrialUnskilled</a>,  <a href="#term_whiteEthnicity">whiteEthnicity</a>,  <a href="#term_whiteLabel">whiteLabel</a>,  <a href="#term_whiteRace">whiteRace</a>,  <a href="#term_yeoman-farmer">yeoman-farmer</a>, 
+</p><p>Dictionaries:  <a href="#term_TEILabels">TEILabels</a>, 
+</p>
+</div>
+    <!-- End of the terms list -->
+
+    <h2 id="reference">Detailed references for all terms, classes and
+    properties.</h2>
+ 
+    <p></p>
+
+    <!-- The following is the script-generated list of classes and properties -->
+    <div class="specterm" id="term_whiteLabel">
+<h3>Concept: cwrc:whiteLabel</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#whiteLabel">http://www.cwrc.ca/ontologies/cwrc#whiteLabel</a></p><p><em>white</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd><dd><a href="http://www.w3.org/2008/05/skos-xl#Label" style="font-family: monospace;">http://www.w3.org/2008/05/skos-xl#Label</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_blackLabel">
+<h3>Concept: cwrc:blackLabel</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#blackLabel">http://www.cwrc.ca/ontologies/cwrc#blackLabel</a></p><p><em>black</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd><dd><a href="http://www.w3.org/2008/05/skos-xl#Label" style="font-family: monospace;">http://www.w3.org/2008/05/skos-xl#Label</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_englishLabel">
+<h3>Concept: cwrc:englishLabel</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#englishLabel">http://www.cwrc.ca/ontologies/cwrc#englishLabel</a></p><p><em>english</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd><dd><a href="http://www.w3.org/2008/05/skos-xl#Label" style="font-family: monospace;">http://www.w3.org/2008/05/skos-xl#Label</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_jewishLabel">
+<h3>Concept: cwrc:jewishLabel</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#jewishLabel">http://www.cwrc.ca/ontologies/cwrc#jewishLabel</a></p><p><em>jewish</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd><dd><a href="http://www.w3.org/2008/05/skos-xl#Label" style="font-family: monospace;">http://www.w3.org/2008/05/skos-xl#Label</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_TEILabels">
+<h3>Dictionary: cwrc:TEILabels</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#TEILabels">http://www.cwrc.ca/ontologies/cwrc#TEILabels</a></p><p><em>Collection of all ambiguous labels within the TEI markup.</em> -  </p>
+<dl><div style="padding: 5px; border: dotted; background-color: #ddd;">
+<p>Concepts:
+
+ <a href="#term_blackLabel">blackLabel</a>, 
+ <a href="#term_englishLabel">englishLabel</a>, 
+ <a href="#term_jewishLabel">jewishLabel</a>, 
+ <a href="#term_whiteLabel">whiteLabel</a>,  
+
+</div></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Context">
+<h3>Class: cwrc:Context</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#Context">http://www.cwrc.ca/ontologies/cwrc#Context</a></p><p><em>Context</em> - A context relates  </p>
+<dl><dt>in-range-of:</dt><dd><a href="http://www.w3.org/ns/prov#derivedFrom" style="font-family: monospace;">http://www.w3.org/ns/prov#derivedFrom</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_CulturalFormation">
+<h3>Class: cwrc:CulturalFormation</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#CulturalFormation">http://www.cwrc.ca/ontologies/cwrc#CulturalFormation</a></p><p><em>Cultural Formation</em> - Cultural formation refers to the processes of lived social subjectivities person's and is often combined with predicates indicating the identity positions as they relate to the following discursive constructions of Class, Denomination, Ethnicity, Gender, GeographicalHeritage, Language, NationalHeritage, NationalIdentity, PoliticalAffiliation, RaceColour, SexualIdentity. These categories are not understood as transhistorical or isolated categories. Rather, they facilitate analysis of howfor a particular individual. It is our hope that modes of classification never occur without a sense of responsibility, and that the tensions inherently present during the practice of classification are never eased but rather challenged and engaged with critically. </p><p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Ethnicity">
+<h3>Class: cwrc:Ethnicity</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#Ethnicity">http://www.cwrc.ca/ontologies/cwrc#Ethnicity</a></p><p><em>Ethnicity</em> - Ethnicity is a subclass of CulturalFormation that captures information about a person's ethnic position. Ethnicity is a sub-element within culturalFormation and raceAndEthnicity. See raceAndEthnicity for a detailed description of the complexities of this discursive construction and the social practices surrounding it. </p>
+<dl><dt>in-domain-of:</dt><dd><a href="#term_hasEthnicity" style="font-family: monospace;">cwrc:hasEthnicity</a></dd><dd><a href="#term_hasEthnicitySelfDefined" style="font-family: monospace;">cwrc:hasEthnicitySelfDefined</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_EthnicityContext">
+<h3>Class: cwrc:EthnicityContext</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#EthnicityContext">http://www.cwrc.ca/ontologies/cwrc#EthnicityContext</a></p><p><em>Racial, Colour or Ethnicity Context</em> -  </p><p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_GenderIdentity">
+<h3>Class: cwrc:GenderIdentity</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#GenderIdentity">http://www.cwrc.ca/ontologies/cwrc#GenderIdentity</a></p><p><em>Gender Identity</em> -  </p><p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_GeographicalHeritage">
+<h3>Class: cwrc:GeographicalHeritage</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#GeographicalHeritage">http://www.cwrc.ca/ontologies/cwrc#GeographicalHeritage</a></p><p><em>Geographical Heritage</em> - GeographicalHeritage is a subclass of CulturalFormation that captures information about the geographical origins of a person's family which often contributes to an understanding of their racial and ethnic background. It offers a way to capture women identified as "South-Asian," for example, when no more precise national heritage is indicated. See raceAndEthnicity for a detailed description of the complexities of this element. </p><p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Language">
+<h3>Class: cwrc:Language</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#Language">http://www.cwrc.ca/ontologies/cwrc#Language</a></p><p><em>Linguistic Ability (Spoken and/or Writen)</em> -  </p>
+<dl><dt>in-domain-of:</dt><dd><a href="#term_hasLanguage" style="font-family: monospace;">cwrc:hasLanguage</a></dd><dd><a href="#term_hasLanguageSelfDeclared" style="font-family: monospace;">cwrc:hasLanguageSelfDeclared</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_LanguageContext">
+<h3>Class: cwrc:LanguageContext</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#LanguageContext">http://www.cwrc.ca/ontologies/cwrc#LanguageContext</a></p><p><em>Language Context</em> -  </p><p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_LinguisticAbility">
+<h3>Class: cwrc:LinguisticAbility</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#LinguisticAbility">http://www.cwrc.ca/ontologies/cwrc#LinguisticAbility</a></p><p><em>Linguistic Ability (Spoken and/or Writen)</em> -  </p><p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_NationalHeritage">
+<h3>Class: cwrc:NationalHeritage</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#NationalHeritage">http://www.cwrc.ca/ontologies/cwrc#NationalHeritage</a></p><p><em>National Heritage</em> - A subclass of culturalForms, this descrbes a person's national heritage and is not the same as citizenship. </p><p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_NationalIdentity">
+<h3>Class: cwrc:NationalIdentity</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#NationalIdentity">http://www.cwrc.ca/ontologies/cwrc#NationalIdentity</a></p><p><em>National Identity</em> - A subclass of culturalForms, this descrbes a person's nationality/ies and is not the same as citizenship. </p>
+<dl><dt>in-domain-of:</dt><dd><a href="#term_hasNationality" style="font-family: monospace;">cwrc:hasNationality</a></dd><dd><a href="#term_hasNationalitySelfDeclared" style="font-family: monospace;">cwrc:hasNationalitySelfDeclared</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_NationalityContext">
+<h3>Class: cwrc:NationalityContext</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#NationalityContext">http://www.cwrc.ca/ontologies/cwrc#NationalityContext</a></p><p><em>Nationality Context</em> -  </p><p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_PoliticalAffiliation">
+<h3>Class: cwrc:PoliticalAffiliation</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#PoliticalAffiliation">http://www.cwrc.ca/ontologies/cwrc#PoliticalAffiliation</a></p><p><em>Political Affiliation</em> - This subclass of CulturalFormation tracks the affiliations, connections and associations which designate a person's political involvement. These affiliations can be both formal connections to a party or organization and informal political positions held by the writer. We hope to point our readers towards women writers associated with different political positions and help researchers make links between political beliefs and writing. For this reason, we are defining political affiliations broadly and include things like "against capital punishment" or "strong supporter of the Empire" in addition to more straightforward affiliations such as "marxist" or "conservative." </p><p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_PoliticalContext">
+<h3>Class: cwrc:PoliticalContext</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#PoliticalContext">http://www.cwrc.ca/ontologies/cwrc#PoliticalContext</a></p><p><em>Political Context</em> -  </p><p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_RaceColour">
+<h3>Class: cwrc:RaceColour</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#RaceColour">http://www.cwrc.ca/ontologies/cwrc#RaceColour</a></p><p><em>Race and/or Colour</em> -  </p>
+<dl><dt>in-domain-of:</dt><dd><a href="#term_hasRaceColour" style="font-family: monospace;">cwrc:hasRaceColour</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_RaceEthnicityContext">
+<h3>Class: cwrc:RaceEthnicityContext</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#RaceEthnicityContext">http://www.cwrc.ca/ontologies/cwrc#RaceEthnicityContext</a></p><p><em>Race Ethnicity Context</em> - raceEthnicityContext is a significant sub-class within culturalForms. It captures information and discussions of a person's subject position with regards to race and ethnicity by working in conjunction with subject specific sub-elements (raceColour, nationalHeritage, geogHeritage, ethnicity). The following discussion applies to both the general discursive discussion of raceAndEthnicity as well as the specific sub-class categories.
+Despite the anxieties of the ways in which categories of race or ethnicity circulate and serve various kinds of undesirable interests, to ignore or go the totally free-text route is not a responsible solution for this project, though it would certainly be easier and simpler. The trick here is to make the complexities of the question of race and ethnicity emerge, and to make it clear that these are shifting, historically constituted, and interestedly deployed categories whose use must be understood contextually. The discursiveness with which we will present these categories will, hopefully, help to do this and also allay the anxiety we feel about "labelling" in a vacuum. In other words, the project has no notion that we could or should come up with what is in any way an exact, fully defined, or mutually exclusive set of categories: the point is the overlap within them. Within this system, counting per se becomes highly problematic and the user has to do some work (and some thinking/active defining) before arriving at any kind of list or count, and will hopefully arrive at it with a sense of how problematic such an activity is.
+People using this class should apply it to instances that seem to be right for the context, applying to the category or categories which seem to fit, but they should be encouraged not to let race/ethnicity become invisible or only an issue in relation to the marginalized. And we should, as stressed by those concerned about "white" and "black" as homogenizing categories, encourage people to reach for specificity through multiplicity: i.e. generally attempt to include at least two of: "race/colour"; "ethnicity"; "nationality" or "national-heritage."                                                                                          RaceAndEthnicity is a sub-class within culturalFormation. It has four realted content sub-classes: raceColour, nationalHeritage, geogHeritage, and ethnicity. You are also encouraged to consider all of the other subclasses appropriate to the discussion of cultural formation: class, denomination, language, nationality, politicalAffiliation, and sexualIdentity. </p><p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Religion">
+<h3>Class: cwrc:Religion</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#Religion">http://www.cwrc.ca/ontologies/cwrc#Religion</a></p><p><em>Religion</em> - A subclass of CulturalFormation, this describes a person's religion(s) or belief system(s) </p>
+<dl><dt>in-domain-of:</dt><dd><a href="#term_hasReligion" style="font-family: monospace;">cwrc:hasReligion</a></dd><dd><a href="#term_hasReligionSelfDefined" style="font-family: monospace;">cwrc:hasReligionSelfDefined</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_ReligionContext">
+<h3>Class: cwrc:ReligionContext</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#ReligionContext">http://www.cwrc.ca/ontologies/cwrc#ReligionContext</a></p><p><em>Religious Context</em> -  </p><p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_SexualIdentity">
+<h3>Class: cwrc:SexualIdentity</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#SexualIdentity">http://www.cwrc.ca/ontologies/cwrc#SexualIdentity</a></p><p><em>Sexual Identity</em> - SexualIdentity is a subclass of CulturalFormation that captures one word or phrase identifications of sexuality (i.e., "lesbian," "monogamous," "heterosexual") and from this information we will be able to point our reader towards women writers whom they may be interested in studying in a critical analysis of these identifications. Capturing the term "lesbian" in a sexualIdentity**** class does not signify that the subject of the biography was a lesbian; such identifications are often impossible for reasons of historical gaps and silences. It does suggest to our readers that if they are interested in studying lesbian issues, they may wish to look at this particular writer. We assume that sexual identity does not function in an essentialist manner and that to act monogomously does not reflect an essential, ontological state of being. But we are also assuming that issues of sexual identity influence a woman's relationship to her writing and to her life and therefore, we emphasize the importance of capturing this information in a systematic way. </p><p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_SexualityContext">
+<h3>Class: cwrc:SexualityContext</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#SexualityContext">http://www.cwrc.ca/ontologies/cwrc#SexualityContext</a></p><p><em>Sexuality Context</em> -  </p><p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_SocialClassContext">
+<h3>Class: cwrc:SocialClassContext</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#SocialClassContext">http://www.cwrc.ca/ontologies/cwrc#SocialClassContext</a></p><p><em>Social Class Context</em> -  </p><p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_SocialClassIdentity">
+<h3>Class: cwrc:SocialClassIdentity</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#SocialClassIdentity">http://www.cwrc.ca/ontologies/cwrc#SocialClassIdentity</a></p><p><em>Social Class Identity</em> - Provides a structured vocabulary for social rank or class position. Systematizing class position by using the social rank attribute, allows the tagger the freedom to use whatever term is most applicable in the prose. This sub-class of culturalForms and socialClassIssue associates subjects with a specific social class. The association may be or have been embraced by the subject by the subject her/himself or attributed by others. Unlike Notes typed as socialClassIssue, which contain detailed discussion of her class position, socialClass links to a word or phrase signifying a particular construction of class. Social class has been variously constructed and theorized. Social class for women is further complicated by the fact that women were understood to take their social status from fathers and/or husbands. The terminology used here reflects quite basic social groupings that intersect with other factors such as wealth. </p><p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasEthnicity">
+<h3>Property: cwrc:hasEthnicity</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasEthnicity">http://www.cwrc.ca/ontologies/cwrc#hasEthnicity</a></p><p><em>has Ethnicity</em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>sub-property-of:</dt> <dd><a href="#term_personalProperty" style="font-family: monospace;">cwrc:personalProperty</a></dd><dt>Domain:</dt> <dd><a href="#term_Ethnicity" style="font-family: monospace;">cwrc:Ethnicity</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasEthnicitySelfDefined">
+<h3>Property: cwrc:hasEthnicitySelfDefined</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasEthnicitySelfDefined">http://www.cwrc.ca/ontologies/cwrc#hasEthnicitySelfDefined</a></p><p><em>has Ethnicity (Self Defined)</em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>sub-property-of:</dt> <dd><a href="#term_personalPropertySelfDefined" style="font-family: monospace;">cwrc:personalPropertySelfDefined</a></dd><dt>Domain:</dt> <dd><a href="#term_Ethnicity" style="font-family: monospace;">cwrc:Ethnicity</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasGender">
+<h3>Property: cwrc:hasGender</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasGender">http://www.cwrc.ca/ontologies/cwrc#hasGender</a></p><p><em>has Gender</em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>sub-property-of:</dt> <dd><a href="#term_personalProperty" style="font-family: monospace;">cwrc:personalProperty</a></dd><dt>Domain:</dt> <dd><a href="#term_Gender" style="font-family: monospace;">cwrc:Gender</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasGenderSelfDeclared">
+<h3>Property: cwrc:hasGenderSelfDeclared</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasGenderSelfDeclared">http://www.cwrc.ca/ontologies/cwrc#hasGenderSelfDeclared</a></p><p><em>has Gender (Self Declared)</em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>sub-property-of:</dt> <dd><a href="#term_personalPropertySelfDeclared" style="font-family: monospace;">cwrc:personalPropertySelfDeclared</a></dd><dt>Domain:</dt> <dd><a href="#term_Gender" style="font-family: monospace;">cwrc:Gender</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasLanguage">
+<h3>Property: cwrc:hasLanguage</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasLanguage">http://www.cwrc.ca/ontologies/cwrc#hasLanguage</a></p><p><em>Knowns Language</em> - Knowleage about the language in writing or reading ? </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>sub-property-of:</dt> <dd><a href="#term_personalProperty" style="font-family: monospace;">cwrc:personalProperty</a></dd><dt>Domain:</dt> <dd><a href="#term_Language" style="font-family: monospace;">cwrc:Language</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasLanguageSelfDeclared">
+<h3>Property: cwrc:hasLanguageSelfDeclared</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasLanguageSelfDeclared">http://www.cwrc.ca/ontologies/cwrc#hasLanguageSelfDeclared</a></p><p><em>Knowns Language (Self Declared)</em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>sub-property-of:</dt> <dd><a href="#term_personalPropertySelfDeclared" style="font-family: monospace;">cwrc:personalPropertySelfDeclared</a></dd><dt>Domain:</dt> <dd><a href="#term_Language" style="font-family: monospace;">cwrc:Language</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasNationality">
+<h3>Property: cwrc:hasNationality</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasNationality">http://www.cwrc.ca/ontologies/cwrc#hasNationality</a></p><p><em>has Nationality</em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>sub-property-of:</dt> <dd><a href="#term_personalProperty" style="font-family: monospace;">cwrc:personalProperty</a></dd><dt>Domain:</dt> <dd><a href="#term_NationalIdentity" style="font-family: monospace;">cwrc:NationalIdentity</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasNationalitySelfDeclared">
+<h3>Property: cwrc:hasNationalitySelfDeclared</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasNationalitySelfDeclared">http://www.cwrc.ca/ontologies/cwrc#hasNationalitySelfDeclared</a></p><p><em>has Nationality (Self Declared)</em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>sub-property-of:</dt> <dd><a href="#term_personalPropertySelfDeclared" style="font-family: monospace;">cwrc:personalPropertySelfDeclared</a></dd><dt>Domain:</dt> <dd><a href="#term_NationalIdentity" style="font-family: monospace;">cwrc:NationalIdentity</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasRaceColour">
+<h3>Property: cwrc:hasRaceColour</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasRaceColour">http://www.cwrc.ca/ontologies/cwrc#hasRaceColour</a></p><p><em>has Race</em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>sub-property-of:</dt> <dd><a href="#term_personalProperty" style="font-family: monospace;">cwrc:personalProperty</a></dd><dt>Domain:</dt> <dd><a href="#term_RaceColour" style="font-family: monospace;">cwrc:RaceColour</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasRaceSelfDeclared">
+<h3>Property: cwrc:hasRaceSelfDeclared</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasRaceSelfDeclared">http://www.cwrc.ca/ontologies/cwrc#hasRaceSelfDeclared</a></p><p><em>has Race (Self Declared)</em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>sub-property-of:</dt> <dd><a href="#term_personalPropertySelfDeclared" style="font-family: monospace;">cwrc:personalPropertySelfDeclared</a></dd><dt>Domain:</dt> <dd><a href="#term_Race" style="font-family: monospace;">cwrc:Race</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasReligion">
+<h3>Property: cwrc:hasReligion</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasReligion">http://www.cwrc.ca/ontologies/cwrc#hasReligion</a></p><p><em>has Religious Affiliation</em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>sub-property-of:</dt> <dd><a href="#term_personalProperty" style="font-family: monospace;">cwrc:personalProperty</a></dd><dt>Domain:</dt> <dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasReligionSelfDefined">
+<h3>Property: cwrc:hasReligionSelfDefined</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasReligionSelfDefined">http://www.cwrc.ca/ontologies/cwrc#hasReligionSelfDefined</a></p><p><em>has Religious Affilication (Self Defined)</em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>sub-property-of:</dt> <dd><a href="#term_personalPropertySelfDefined" style="font-family: monospace;">cwrc:personalPropertySelfDefined</a></dd><dt>Domain:</dt> <dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasSexuality">
+<h3>Property: cwrc:hasSexuality</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasSexuality">http://www.cwrc.ca/ontologies/cwrc#hasSexuality</a></p><p><em>has Sexual Orientation</em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>sub-property-of:</dt> <dd><a href="#term_personalProperty" style="font-family: monospace;">cwrc:personalProperty</a></dd><dt>Domain:</dt> <dd><a href="#term_Sexuality" style="font-family: monospace;">cwrc:Sexuality</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasSexualitySelfDeclared">
+<h3>Property: cwrc:hasSexualitySelfDeclared</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasSexualitySelfDeclared">http://www.cwrc.ca/ontologies/cwrc#hasSexualitySelfDeclared</a></p><p><em>has Sexual Orientation (Self Declared)</em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>sub-property-of:</dt> <dd><a href="#term_personalPropertySelfDeclared" style="font-family: monospace;">cwrc:personalPropertySelfDeclared</a></dd><dt>Domain:</dt> <dd><a href="#term_Sexuality" style="font-family: monospace;">cwrc:Sexuality</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasSocialClass">
+<h3>Property: cwrc:hasSocialClass</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasSocialClass">http://www.cwrc.ca/ontologies/cwrc#hasSocialClass</a></p><p><em>has Social Class</em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>sub-property-of:</dt> <dd><a href="#term_personalProperty" style="font-family: monospace;">cwrc:personalProperty</a></dd><dt>Domain:</dt> <dd><a href="#term_SocialClass" style="font-family: monospace;">cwrc:SocialClass</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasSocialClassSelfDefined">
+<h3>Property: cwrc:hasSocialClassSelfDefined</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasSocialClassSelfDefined">http://www.cwrc.ca/ontologies/cwrc#hasSocialClassSelfDefined</a></p><p><em>has Social Class (Self Defined)</em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>sub-property-of:</dt> <dd><a href="#term_personalPropertySelfDefined" style="font-family: monospace;">cwrc:personalPropertySelfDefined</a></dd><dt>Domain:</dt> <dd><a href="#term_SocialClass" style="font-family: monospace;">cwrc:SocialClass</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_personalProperty">
+<h3>Property: cwrc:personalProperty</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#personalProperty">http://www.cwrc.ca/ontologies/cwrc#personalProperty</a></p><p><em>Personal Property</em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+</dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_personalPropertySelfDeclared">
+<h3>Property: cwrc:personalPropertySelfDeclared</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#personalPropertySelfDeclared">http://www.cwrc.ca/ontologies/cwrc#personalPropertySelfDeclared</a></p><p><em>Personal Property (Self Reported)</em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>sub-property-of:</dt> <dd><a href="#term_personalProperty" style="font-family: monospace;">cwrc:personalProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_AbigelLemak">
+<h3>Instance: cwrc:AbigelLemak</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#AbigelLemak">http://www.cwrc.ca/ontologies/cwrc#AbigelLemak</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://xmlns.com/foaf/0.1/Person" style="font-family: monospace;">foaf:Person</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_agnosticism">
+<h3>Instance: cwrc:agnosticism</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#agnosticism">http://www.cwrc.ca/ontologies/cwrc#agnosticism</a></p><p><em>Agnosticism</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_anglicanchurch">
+<h3>Instance: cwrc:anglicanchurch</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#anglicanchurch">http://www.cwrc.ca/ontologies/cwrc#anglicanchurch</a></p><p><em>Anglican Church</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_atheistism">
+<h3>Instance: cwrc:atheistism</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#atheistism">http://www.cwrc.ca/ontologies/cwrc#atheistism</a></p><p><em>Atheistism</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_baptistchurch">
+<h3>Instance: cwrc:baptistchurch</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#baptistchurch">http://www.cwrc.ca/ontologies/cwrc#baptistchurch</a></p><p><em>Baptist Church</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_black">
+<h3>Instance: cwrc:black</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#black">http://www.cwrc.ca/ontologies/cwrc#black</a></p><p><em>black (Race)</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_RaceColour" style="font-family: monospace;">cwrc:RaceColour</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_blackLabel">
+<h3>Instance: cwrc:blackLabel</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#blackLabel">http://www.cwrc.ca/ontologies/cwrc#blackLabel</a></p><p><em>black</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd><dd><a href="http://www.w3.org/2008/05/skos-xl#Label" style="font-family: monospace;">http://www.w3.org/2008/05/skos-xl#Label</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_catholicchurch">
+<h3>Instance: cwrc:catholicchurch</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#catholicchurch">http://www.cwrc.ca/ontologies/cwrc#catholicchurch</a></p><p><em>Catholic Church</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_christian">
+<h3>Instance: cwrc:christian</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#christian">http://www.cwrc.ca/ontologies/cwrc#christian</a></p><p><em>Christian</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_churchofchristscientist">
+<h3>Instance: cwrc:churchofchristscientist</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#churchofchristscientist">http://www.cwrc.ca/ontologies/cwrc#churchofchristscientist</a></p><p><em>Church of Christ Scientist</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_churchofengland">
+<h3>Instance: cwrc:churchofengland</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#churchofengland">http://www.cwrc.ca/ontologies/cwrc#churchofengland</a></p><p><em>Church of England</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_churchofireland">
+<h3>Instance: cwrc:churchofireland</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#churchofireland">http://www.cwrc.ca/ontologies/cwrc#churchofireland</a></p><p><em>Church of Ireland</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_ColinFaulkner">
+<h3>Instance: cwrc:ColinFaulkner</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#ColinFaulkner">http://www.cwrc.ca/ontologies/cwrc#ColinFaulkner</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://xmlns.com/foaf/0.1/Person" style="font-family: monospace;">foaf:Person</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_congregationalchurch">
+<h3>Instance: cwrc:congregationalchurch</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#congregationalchurch">http://www.cwrc.ca/ontologies/cwrc#congregationalchurch</a></p><p><em>Congregational Church</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Context">
+<h3>Instance: cwrc:Context</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#Context">http://www.cwrc.ca/ontologies/cwrc#Context</a></p><p><em>Context</em> - A context relates  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/ns/oa#Annotation" style="font-family: monospace;">http://www.w3.org/ns/oa#Annotation</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_CulturalFormation">
+<h3>Instance: cwrc:CulturalFormation</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#CulturalFormation">http://www.cwrc.ca/ontologies/cwrc#CulturalFormation</a></p><p><em>Cultural Formation</em> - Cultural formation refers to the processes of lived social subjectivities person's and is often combined with predicates indicating the identity positions as they relate to the following discursive constructions of Class, Denomination, Ethnicity, Gender, GeographicalHeritage, Language, NationalHeritage, NationalIdentity, PoliticalAffiliation, RaceColour, SexualIdentity. These categories are not understood as transhistorical or isolated categories. Rather, they facilitate analysis of howfor a particular individual. It is our hope that modes of classification never occur without a sense of responsibility, and that the tensions inherently present during the practice of classification are never eased but rather challenged and engaged with critically. </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_cwrc">
+<h3>Instance: cwrc</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc">http://www.cwrc.ca/ontologies/cwrc</a></p><p><em>The CWRC Ontology</em> - The CWRC Ontology is the overall ontology that represents all elements of structure within the Canadian Writing Research Collaboratory. </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Ontology" style="font-family: monospace;">owl:Ontology</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_cwrc">
+<h3>Instance: cwrc:cwrc</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#cwrc">http://www.cwrc.ca/ontologies/cwrc#cwrc</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://xmlns.com/foaf/0.1/Organization" style="font-family: monospace;">foaf:Organization</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_datasetdefinition">
+<h3>Instance: cwrc:datasetdefinition</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#datasetdefinition">http://www.cwrc.ca/ontologies/cwrc#datasetdefinition</a></p><p><em>The CWRC Ontology</em> - The CWRC Ontology is the overall ontology that represents all elements of structure within the Canadian Writing Research Collaboratory. </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://rdfs.org/ns/void#Dataset" style="font-family: monospace;">http://rdfs.org/ns/void#Dataset</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_dissenters">
+<h3>Instance: cwrc:dissenters</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#dissenters">http://www.cwrc.ca/ontologies/cwrc#dissenters</a></p><p><em>Dissenters</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_dissentingchurches">
+<h3>Instance: cwrc:dissentingchurches</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#dissentingchurches">http://www.cwrc.ca/ontologies/cwrc#dissentingchurches</a></p><p><em>Dissenting Churches</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_englishLabel">
+<h3>Instance: cwrc:englishLabel</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#englishLabel">http://www.cwrc.ca/ontologies/cwrc#englishLabel</a></p><p><em>english</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd><dd><a href="http://www.w3.org/2008/05/skos-xl#Label" style="font-family: monospace;">http://www.w3.org/2008/05/skos-xl#Label</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_EnglishLanguage">
+<h3>Instance: cwrc:EnglishLanguage</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#EnglishLanguage">http://www.cwrc.ca/ontologies/cwrc#EnglishLanguage</a></p><p><em>English</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Language" style="font-family: monospace;">cwrc:Language</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_EnglishNationalHeritage">
+<h3>Instance: cwrc:EnglishNationalHeritage</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#EnglishNationalHeritage">http://www.cwrc.ca/ontologies/cwrc#EnglishNationalHeritage</a></p><p><em>English</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_NationalHeritage" style="font-family: monospace;">cwrc:NationalHeritage</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_EnglishNationalIdentity">
+<h3>Instance: cwrc:EnglishNationalIdentity</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#EnglishNationalIdentity">http://www.cwrc.ca/ontologies/cwrc#EnglishNationalIdentity</a></p><p><em>English</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_NationalIdentity" style="font-family: monospace;">cwrc:NationalIdentity</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_entrepreneurial-industrialist">
+<h3>Instance: cwrc:entrepreneurial-industrialist</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#entrepreneurial-industrialist">http://www.cwrc.ca/ontologies/cwrc#entrepreneurial-industrialist</a></p><p><em>entrepreneurial industrialist</em> - Running factories, investing money (ie Elizabeth Gaskell, Elizabeth Montagu, Beatrice Webb). </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_SocialClassIdentity" style="font-family: monospace;">cwrc:SocialClassIdentity</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd><dd><a href="#term_SocialClass" style="font-family: monospace;">cwrc:SocialClass</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Ethnicity">
+<h3>Instance: cwrc:Ethnicity</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#Ethnicity">http://www.cwrc.ca/ontologies/cwrc#Ethnicity</a></p><p><em>Ethnicity</em> - Ethnicity is a subclass of CulturalFormation that captures information about a person's ethnic position. Ethnicity is a sub-element within culturalFormation and raceAndEthnicity. See raceAndEthnicity for a detailed description of the complexities of this discursive construction and the social practices surrounding it. </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_EthnicityContext">
+<h3>Instance: cwrc:EthnicityContext</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#EthnicityContext">http://www.cwrc.ca/ontologies/cwrc#EthnicityContext</a></p><p><em>Racial, Colour or Ethnicity Context</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_eurasian">
+<h3>Instance: cwrc:eurasian</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#eurasian">http://www.cwrc.ca/ontologies/cwrc#eurasian</a></p><p><em>eurasian</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_RaceColour" style="font-family: monospace;">cwrc:RaceColour</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_fifthmonarchists">
+<h3>Instance: cwrc:fifthmonarchists</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#fifthmonarchists">http://www.cwrc.ca/ontologies/cwrc#fifthmonarchists</a></p><p><em>Fifth Monarchists</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_FrenchLanguage">
+<h3>Instance: cwrc:FrenchLanguage</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#FrenchLanguage">http://www.cwrc.ca/ontologies/cwrc#FrenchLanguage</a></p><p><em>French</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Language" style="font-family: monospace;">cwrc:Language</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_GenderIdentity">
+<h3>Instance: cwrc:GenderIdentity</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#GenderIdentity">http://www.cwrc.ca/ontologies/cwrc#GenderIdentity</a></p><p><em>Gender Identity</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_gentry">
+<h3>Instance: cwrc:gentry</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#gentry">http://www.cwrc.ca/ontologies/cwrc#gentry</a></p><p><em>gentry</em> - Property-owning or related to same, can be in stocks and bonds. Begins in the idea of owning arms and having a coat of arms. Distinguished from Nobility in so far as money is not necessarily related to blood and title. Disinterested gentlemen are of this class (ie Jane Austen). </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_SocialClassIdentity" style="font-family: monospace;">cwrc:SocialClassIdentity</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd><dd><a href="#term_SocialClass" style="font-family: monospace;">cwrc:SocialClass</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_GeographicalHeritage">
+<h3>Instance: cwrc:GeographicalHeritage</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#GeographicalHeritage">http://www.cwrc.ca/ontologies/cwrc#GeographicalHeritage</a></p><p><em>Geographical Heritage</em> - GeographicalHeritage is a subclass of CulturalFormation that captures information about the geographical origins of a person's family which often contributes to an understanding of their racial and ethnic background. It offers a way to capture women identified as "South-Asian," for example, when no more precise national heritage is indicated. See raceAndEthnicity for a detailed description of the complexities of this element. </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasEthnicity">
+<h3>Instance: cwrc:hasEthnicity</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasEthnicity">http://www.cwrc.ca/ontologies/cwrc#hasEthnicity</a></p><p><em>has Ethnicity</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#ObjectProperty" style="font-family: monospace;">owl:ObjectProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasEthnicitySelfDefined">
+<h3>Instance: cwrc:hasEthnicitySelfDefined</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasEthnicitySelfDefined">http://www.cwrc.ca/ontologies/cwrc#hasEthnicitySelfDefined</a></p><p><em>has Ethnicity (Self Defined)</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#ObjectProperty" style="font-family: monospace;">owl:ObjectProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasGender">
+<h3>Instance: cwrc:hasGender</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasGender">http://www.cwrc.ca/ontologies/cwrc#hasGender</a></p><p><em>has Gender</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#ObjectProperty" style="font-family: monospace;">owl:ObjectProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasGenderSelfDeclared">
+<h3>Instance: cwrc:hasGenderSelfDeclared</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasGenderSelfDeclared">http://www.cwrc.ca/ontologies/cwrc#hasGenderSelfDeclared</a></p><p><em>has Gender (Self Declared)</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#ObjectProperty" style="font-family: monospace;">owl:ObjectProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasLanguage">
+<h3>Instance: cwrc:hasLanguage</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasLanguage">http://www.cwrc.ca/ontologies/cwrc#hasLanguage</a></p><p><em>Knowns Language</em> - Knowleage about the language in writing or reading ? </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#ObjectProperty" style="font-family: monospace;">owl:ObjectProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasLanguageSelfDeclared">
+<h3>Instance: cwrc:hasLanguageSelfDeclared</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasLanguageSelfDeclared">http://www.cwrc.ca/ontologies/cwrc#hasLanguageSelfDeclared</a></p><p><em>Knowns Language (Self Declared)</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#ObjectProperty" style="font-family: monospace;">owl:ObjectProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasNationality">
+<h3>Instance: cwrc:hasNationality</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasNationality">http://www.cwrc.ca/ontologies/cwrc#hasNationality</a></p><p><em>has Nationality</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#ObjectProperty" style="font-family: monospace;">owl:ObjectProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasNationalitySelfDeclared">
+<h3>Instance: cwrc:hasNationalitySelfDeclared</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasNationalitySelfDeclared">http://www.cwrc.ca/ontologies/cwrc#hasNationalitySelfDeclared</a></p><p><em>has Nationality (Self Declared)</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#ObjectProperty" style="font-family: monospace;">owl:ObjectProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasRaceColour">
+<h3>Instance: cwrc:hasRaceColour</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasRaceColour">http://www.cwrc.ca/ontologies/cwrc#hasRaceColour</a></p><p><em>has Race</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#ObjectProperty" style="font-family: monospace;">owl:ObjectProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasRaceSelfDeclared">
+<h3>Instance: cwrc:hasRaceSelfDeclared</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasRaceSelfDeclared">http://www.cwrc.ca/ontologies/cwrc#hasRaceSelfDeclared</a></p><p><em>has Race (Self Declared)</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#ObjectProperty" style="font-family: monospace;">owl:ObjectProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasReligion">
+<h3>Instance: cwrc:hasReligion</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasReligion">http://www.cwrc.ca/ontologies/cwrc#hasReligion</a></p><p><em>has Religious Affiliation</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#ObjectProperty" style="font-family: monospace;">owl:ObjectProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasReligionSelfDefined">
+<h3>Instance: cwrc:hasReligionSelfDefined</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasReligionSelfDefined">http://www.cwrc.ca/ontologies/cwrc#hasReligionSelfDefined</a></p><p><em>has Religious Affilication (Self Defined)</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#ObjectProperty" style="font-family: monospace;">owl:ObjectProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasSexuality">
+<h3>Instance: cwrc:hasSexuality</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasSexuality">http://www.cwrc.ca/ontologies/cwrc#hasSexuality</a></p><p><em>has Sexual Orientation</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#ObjectProperty" style="font-family: monospace;">owl:ObjectProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasSexualitySelfDeclared">
+<h3>Instance: cwrc:hasSexualitySelfDeclared</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasSexualitySelfDeclared">http://www.cwrc.ca/ontologies/cwrc#hasSexualitySelfDeclared</a></p><p><em>has Sexual Orientation (Self Declared)</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#ObjectProperty" style="font-family: monospace;">owl:ObjectProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasSocialClass">
+<h3>Instance: cwrc:hasSocialClass</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasSocialClass">http://www.cwrc.ca/ontologies/cwrc#hasSocialClass</a></p><p><em>has Social Class</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#ObjectProperty" style="font-family: monospace;">owl:ObjectProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_hasSocialClassSelfDefined">
+<h3>Instance: cwrc:hasSocialClassSelfDefined</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#hasSocialClassSelfDefined">http://www.cwrc.ca/ontologies/cwrc#hasSocialClassSelfDefined</a></p><p><em>has Social Class (Self Defined)</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#ObjectProperty" style="font-family: monospace;">owl:ObjectProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_indigent">
+<h3>Instance: cwrc:indigent</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#indigent">http://www.cwrc.ca/ontologies/cwrc#indigent</a></p><p><em>indigent</em> - Poor, destitute, unemployed, on social security. </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_SocialClassIdentity" style="font-family: monospace;">cwrc:SocialClassIdentity</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd><dd><a href="#term_SocialClass" style="font-family: monospace;">cwrc:SocialClass</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_islam">
+<h3>Instance: cwrc:islam</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#islam">http://www.cwrc.ca/ontologies/cwrc#islam</a></p><p><em>Islam</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_jewish">
+<h3>Instance: cwrc:jewish</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#jewish">http://www.cwrc.ca/ontologies/cwrc#jewish</a></p><p><em>Jewish</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_jewishLabel">
+<h3>Instance: cwrc:jewishLabel</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#jewishLabel">http://www.cwrc.ca/ontologies/cwrc#jewishLabel</a></p><p><em>jewish</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd><dd><a href="http://www.w3.org/2008/05/skos-xl#Label" style="font-family: monospace;">http://www.w3.org/2008/05/skos-xl#Label</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_JohnSimpson">
+<h3>Instance: cwrc:JohnSimpson</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#JohnSimpson">http://www.cwrc.ca/ontologies/cwrc#JohnSimpson</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://xmlns.com/foaf/0.1/Person" style="font-family: monospace;">foaf:Person</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Language">
+<h3>Instance: cwrc:Language</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#Language">http://www.cwrc.ca/ontologies/cwrc#Language</a></p><p><em>Linguistic Ability (Spoken and/or Writen)</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_LanguageContext">
+<h3>Instance: cwrc:LanguageContext</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#LanguageContext">http://www.cwrc.ca/ontologies/cwrc#LanguageContext</a></p><p><em>Language Context</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_LinguisticAbility">
+<h3>Instance: cwrc:LinguisticAbility</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#LinguisticAbility">http://www.cwrc.ca/ontologies/cwrc#LinguisticAbility</a></p><p><em>Linguistic Ability (Spoken and/or Writen)</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_lollards">
+<h3>Instance: cwrc:lollards</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#lollards">http://www.cwrc.ca/ontologies/cwrc#lollards</a></p><p><em>Lollards</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_lowerMiddleClass">
+<h3>Instance: cwrc:lowerMiddleClass</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#lowerMiddleClass">http://www.cwrc.ca/ontologies/cwrc#lowerMiddleClass</a></p><p><em>lower middle class</em> - Employees, clerical workers, teachers, governesses. Note, however, that some teachers go into Professional (Mr. Chips) and women starting schools and then managing them also go into Professional. </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_SocialClassIdentity" style="font-family: monospace;">cwrc:SocialClassIdentity</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_managerial">
+<h3>Instance: cwrc:managerial</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#managerial">http://www.cwrc.ca/ontologies/cwrc#managerial</a></p><p><em>managerial</em> - Station in life comes from the fact that they are running something but not putting their money into it, e.g. salaried civil service, bankers, hospital administrators. </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_SocialClassIdentity" style="font-family: monospace;">cwrc:SocialClassIdentity</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_methodistchurch">
+<h3>Instance: cwrc:methodistchurch</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#methodistchurch">http://www.cwrc.ca/ontologies/cwrc#methodistchurch</a></p><p><em>Methodist Church</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_millenarianism">
+<h3>Instance: cwrc:millenarianism</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#millenarianism">http://www.cwrc.ca/ontologies/cwrc#millenarianism</a></p><p><em>Millenarianism</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_NationalHeritage">
+<h3>Instance: cwrc:NationalHeritage</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#NationalHeritage">http://www.cwrc.ca/ontologies/cwrc#NationalHeritage</a></p><p><em>National Heritage</em> - A subclass of culturalForms, this descrbes a person's national heritage and is not the same as citizenship. </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_NationalIdentity">
+<h3>Instance: cwrc:NationalIdentity</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#NationalIdentity">http://www.cwrc.ca/ontologies/cwrc#NationalIdentity</a></p><p><em>National Identity</em> - A subclass of culturalForms, this descrbes a person's nationality/ies and is not the same as citizenship. </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_NationalityContext">
+<h3>Instance: cwrc:NationalityContext</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#NationalityContext">http://www.cwrc.ca/ontologies/cwrc#NationalityContext</a></p><p><em>Nationality Context</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_neo-thomism">
+<h3>Instance: cwrc:neo-thomism</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#neo-thomism">http://www.cwrc.ca/ontologies/cwrc#neo-thomism</a></p><p><em>neo-Thomism</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_nobility">
+<h3>Instance: cwrc:nobility</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#nobility">http://www.cwrc.ca/ontologies/cwrc#nobility</a></p><p><em>nobility</em> - Holding a title or close family relation to someone holding a title (LMWM, Lord Byron, Nancy Mitford). </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_SocialClassIdentity" style="font-family: monospace;">cwrc:SocialClassIdentity</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_originalOrlandoAuthor">
+<h3>Instance: cwrc:originalOrlandoAuthor</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#originalOrlandoAuthor">http://www.cwrc.ca/ontologies/cwrc#originalOrlandoAuthor</a></p><p><em>Members of the Orlando Project</em> - The collection of all persons having written entries for the Orlando project. </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd><dd><a href="http://xmlns.com/foaf/0.1/Group" style="font-family: monospace;">foaf:Group</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_oxfordmovement">
+<h3>Instance: cwrc:oxfordmovement</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#oxfordmovement">http://www.cwrc.ca/ontologies/cwrc#oxfordmovement</a></p><p><em>Oxford Movement</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_pagan">
+<h3>Instance: cwrc:pagan</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#pagan">http://www.cwrc.ca/ontologies/cwrc#pagan</a></p><p><em>Pagan</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_personalProperty">
+<h3>Instance: cwrc:personalProperty</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#personalProperty">http://www.cwrc.ca/ontologies/cwrc#personalProperty</a></p><p><em>Personal Property</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#ObjectProperty" style="font-family: monospace;">owl:ObjectProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_personalPropertySelfDeclared">
+<h3>Instance: cwrc:personalPropertySelfDeclared</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#personalPropertySelfDeclared">http://www.cwrc.ca/ontologies/cwrc#personalPropertySelfDeclared</a></p><p><em>Personal Property (Self Reported)</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#ObjectProperty" style="font-family: monospace;">owl:ObjectProperty</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_plymouthbrethren">
+<h3>Instance: cwrc:plymouthbrethren</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#plymouthbrethren">http://www.cwrc.ca/ontologies/cwrc#plymouthbrethren</a></p><p><em>Plymouth Brethren</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_PoliticalAffiliation">
+<h3>Instance: cwrc:PoliticalAffiliation</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#PoliticalAffiliation">http://www.cwrc.ca/ontologies/cwrc#PoliticalAffiliation</a></p><p><em>Political Affiliation</em> - This subclass of CulturalFormation tracks the affiliations, connections and associations which designate a person's political involvement. These affiliations can be both formal connections to a party or organization and informal political positions held by the writer. We hope to point our readers towards women writers associated with different political positions and help researchers make links between political beliefs and writing. For this reason, we are defining political affiliations broadly and include things like "against capital punishment" or "strong supporter of the Empire" in addition to more straightforward affiliations such as "marxist" or "conservative." </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_PoliticalContext">
+<h3>Instance: cwrc:PoliticalContext</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#PoliticalContext">http://www.cwrc.ca/ontologies/cwrc#PoliticalContext</a></p><p><em>Political Context</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_presbyterianchurch">
+<h3>Instance: cwrc:presbyterianchurch</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#presbyterianchurch">http://www.cwrc.ca/ontologies/cwrc#presbyterianchurch</a></p><p><em>Presbyterian Church</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_professional">
+<h3>Instance: cwrc:professional</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#professional">http://www.cwrc.ca/ontologies/cwrc#professional</a></p><p><em>professional</em> - Doctors, lawyers, guild, high calling, social respect, intellectual requirements, clergy (Church of England) (ie Ann Hunter [married to a surgeon], Virginia Woolf). </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_SocialClassIdentity" style="font-family: monospace;">cwrc:SocialClassIdentity</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_puritans">
+<h3>Instance: cwrc:puritans</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#puritans">http://www.cwrc.ca/ontologies/cwrc#puritans</a></p><p><em>Puritans</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_quakers">
+<h3>Instance: cwrc:quakers</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#quakers">http://www.cwrc.ca/ontologies/cwrc#quakers</a></p><p><em>Quakers</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_RaceColour">
+<h3>Instance: cwrc:RaceColour</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#RaceColour">http://www.cwrc.ca/ontologies/cwrc#RaceColour</a></p><p><em>Race and/or Colour</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_RaceEthnicityContext">
+<h3>Instance: cwrc:RaceEthnicityContext</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#RaceEthnicityContext">http://www.cwrc.ca/ontologies/cwrc#RaceEthnicityContext</a></p><p><em>Race Ethnicity Context</em> - raceEthnicityContext is a significant sub-class within culturalForms. It captures information and discussions of a person's subject position with regards to race and ethnicity by working in conjunction with subject specific sub-elements (raceColour, nationalHeritage, geogHeritage, ethnicity). The following discussion applies to both the general discursive discussion of raceAndEthnicity as well as the specific sub-class categories.
+Despite the anxieties of the ways in which categories of race or ethnicity circulate and serve various kinds of undesirable interests, to ignore or go the totally free-text route is not a responsible solution for this project, though it would certainly be easier and simpler. The trick here is to make the complexities of the question of race and ethnicity emerge, and to make it clear that these are shifting, historically constituted, and interestedly deployed categories whose use must be understood contextually. The discursiveness with which we will present these categories will, hopefully, help to do this and also allay the anxiety we feel about "labelling" in a vacuum. In other words, the project has no notion that we could or should come up with what is in any way an exact, fully defined, or mutually exclusive set of categories: the point is the overlap within them. Within this system, counting per se becomes highly problematic and the user has to do some work (and some thinking/active defining) before arriving at any kind of list or count, and will hopefully arrive at it with a sense of how problematic such an activity is.
+People using this class should apply it to instances that seem to be right for the context, applying to the category or categories which seem to fit, but they should be encouraged not to let race/ethnicity become invisible or only an issue in relation to the marginalized. And we should, as stressed by those concerned about "white" and "black" as homogenizing categories, encourage people to reach for specificity through multiplicity: i.e. generally attempt to include at least two of: "race/colour"; "ethnicity"; "nationality" or "national-heritage."                                                                                          RaceAndEthnicity is a sub-class within culturalFormation. It has four realted content sub-classes: raceColour, nationalHeritage, geogHeritage, and ethnicity. You are also encouraged to consider all of the other subclasses appropriate to the discussion of cultural formation: class, denomination, language, nationality, politicalAffiliation, and sexualIdentity. </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_rationaldissenter">
+<h3>Instance: cwrc:rationaldissenter</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#rationaldissenter">http://www.cwrc.ca/ontologies/cwrc#rationaldissenter</a></p><p><em>Rational Dissenter</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Religion">
+<h3>Instance: cwrc:Religion</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#Religion">http://www.cwrc.ca/ontologies/cwrc#Religion</a></p><p><em>Religion</em> - A subclass of CulturalFormation, this describes a person's religion(s) or belief system(s) </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_ReligionContext">
+<h3>Instance: cwrc:ReligionContext</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#ReligionContext">http://www.cwrc.ca/ontologies/cwrc#ReligionContext</a></p><p><em>Religious Context</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_RobWarren">
+<h3>Instance: cwrc:RobWarren</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#RobWarren">http://www.cwrc.ca/ontologies/cwrc#RobWarren</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://xmlns.com/foaf/0.1/Person" style="font-family: monospace;">foaf:Person</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_romancatholicchurch">
+<h3>Instance: cwrc:romancatholicchurch</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#romancatholicchurch">http://www.cwrc.ca/ontologies/cwrc#romancatholicchurch</a></p><p><em>Roman Catholic Church</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_rural-unskilled">
+<h3>Instance: cwrc:rural-unskilled</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#rural-unskilled">http://www.cwrc.ca/ontologies/cwrc#rural-unskilled</a></p><p><em>rural-unskilled</em> - Farm laborers (mostly male). </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_SocialClassIdentity" style="font-family: monospace;">cwrc:SocialClassIdentity</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_servants">
+<h3>Instance: cwrc:servants</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#servants">http://www.cwrc.ca/ontologies/cwrc#servants</a></p><p><em>servants</em> - A person who performs duties for others, especially a person employed in a house on domestic duties or as a personal attendant (Mostly Female). </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_SocialClassIdentity" style="font-family: monospace;">cwrc:SocialClassIdentity</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_SexualIdentity">
+<h3>Instance: cwrc:SexualIdentity</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#SexualIdentity">http://www.cwrc.ca/ontologies/cwrc#SexualIdentity</a></p><p><em>Sexual Identity</em> - SexualIdentity is a subclass of CulturalFormation that captures one word or phrase identifications of sexuality (i.e., "lesbian," "monogamous," "heterosexual") and from this information we will be able to point our reader towards women writers whom they may be interested in studying in a critical analysis of these identifications. Capturing the term "lesbian" in a sexualIdentity**** class does not signify that the subject of the biography was a lesbian; such identifications are often impossible for reasons of historical gaps and silences. It does suggest to our readers that if they are interested in studying lesbian issues, they may wish to look at this particular writer. We assume that sexual identity does not function in an essentialist manner and that to act monogomously does not reflect an essential, ontological state of being. But we are also assuming that issues of sexual identity influence a woman's relationship to her writing and to her life and therefore, we emphasize the importance of capturing this information in a systematic way. </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_SexualityContext">
+<h3>Instance: cwrc:SexualityContext</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#SexualityContext">http://www.cwrc.ca/ontologies/cwrc#SexualityContext</a></p><p><em>Sexuality Context</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_shopkeepers">
+<h3>Instance: cwrc:shopkeepers</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#shopkeepers">http://www.cwrc.ca/ontologies/cwrc#shopkeepers</a></p><p><em>shopkeepers</em> - Owns and runs a pub or shop. Similar to an industrialist but to a lesser degree of magnitude. </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_SocialClassIdentity" style="font-family: monospace;">cwrc:SocialClassIdentity</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_skilledCraftpersonArtisan">
+<h3>Instance: cwrc:skilledCraftpersonArtisan</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#skilledCraftpersonArtisan">http://www.cwrc.ca/ontologies/cwrc#skilledCraftpersonArtisan</a></p><p><em>skilled craftperson - artisan</em> - Goldsmith, tailor, shoemaker, milliner, dressmaker. </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_SocialClassIdentity" style="font-family: monospace;">cwrc:SocialClassIdentity</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_SocialClassContext">
+<h3>Instance: cwrc:SocialClassContext</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#SocialClassContext">http://www.cwrc.ca/ontologies/cwrc#SocialClassContext</a></p><p><em>Social Class Context</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_SocialClassIdentity">
+<h3>Instance: cwrc:SocialClassIdentity</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#SocialClassIdentity">http://www.cwrc.ca/ontologies/cwrc#SocialClassIdentity</a></p><p><em>Social Class Identity</em> - Provides a structured vocabulary for social rank or class position. Systematizing class position by using the social rank attribute, allows the tagger the freedom to use whatever term is most applicable in the prose. This sub-class of culturalForms and socialClassIssue associates subjects with a specific social class. The association may be or have been embraced by the subject by the subject her/himself or attributed by others. Unlike Notes typed as socialClassIssue, which contain detailed discussion of her class position, socialClass links to a word or phrase signifying a particular construction of class. Social class has been variously constructed and theorized. Social class for women is further complicated by the fact that women were understood to take their social status from fathers and/or husbands. The terminology used here reflects quite basic social groupings that intersect with other factors such as wealth. </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Class" style="font-family: monospace;">owl:Class</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_societyoffriends">
+<h3>Instance: cwrc:societyoffriends</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#societyoffriends">http://www.cwrc.ca/ontologies/cwrc#societyoffriends</a></p><p><em>Society of Friends</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_spiritualism">
+<h3>Instance: cwrc:spiritualism</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#spiritualism">http://www.cwrc.ca/ontologies/cwrc#spiritualism</a></p><p><em>Spiritualism</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_sshrc">
+<h3>Instance: cwrc:sshrc</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#sshrc">http://www.cwrc.ca/ontologies/cwrc#sshrc</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://xmlns.com/foaf/0.1/Organization" style="font-family: monospace;">foaf:Organization</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_SusanBrown">
+<h3>Instance: cwrc:SusanBrown</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#SusanBrown">http://www.cwrc.ca/ontologies/cwrc#SusanBrown</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://xmlns.com/foaf/0.1/Person" style="font-family: monospace;">foaf:Person</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_TEILabels">
+<h3>Instance: cwrc:TEILabels</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#TEILabels">http://www.cwrc.ca/ontologies/cwrc#TEILabels</a></p><p><em>Collection of all ambiguous labels within the TEI markup.</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2004/02/skos/core#ConceptScheme" style="font-family: monospace;">skos:ConceptScheme</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_tractarianmovement">
+<h3>Instance: cwrc:tractarianmovement</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#tractarianmovement">http://www.cwrc.ca/ontologies/cwrc#tractarianmovement</a></p><p><em>Tractarian Movement</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_unitarianchurch">
+<h3>Instance: cwrc:unitarianchurch</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#unitarianchurch">http://www.cwrc.ca/ontologies/cwrc#unitarianchurch</a></p><p><em>Unitarian Church</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Religion" style="font-family: monospace;">cwrc:Religion</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_urban-industrialUnskilled">
+<h3>Instance: cwrc:urban-industrialUnskilled</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#urban-industrialUnskilled">http://www.cwrc.ca/ontologies/cwrc#urban-industrialUnskilled</a></p><p><em>urban-industrialUnskilled</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_SocialClassIdentity" style="font-family: monospace;">cwrc:SocialClassIdentity</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_whiteEthnicity">
+<h3>Instance: cwrc:whiteEthnicity</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#whiteEthnicity">http://www.cwrc.ca/ontologies/cwrc#whiteEthnicity</a></p><p><em>white</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_Ethnicity" style="font-family: monospace;">cwrc:Ethnicity</a></dd><dd><a href="http://www.w3.org/2002/07/owl#Thing" style="font-family: monospace;">owl:Thing</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_whiteLabel">
+<h3>Instance: cwrc:whiteLabel</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#whiteLabel">http://www.cwrc.ca/ontologies/cwrc#whiteLabel</a></p><p><em>white</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd><dd><a href="http://www.w3.org/2008/05/skos-xl#Label" style="font-family: monospace;">http://www.w3.org/2008/05/skos-xl#Label</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_whiteRace">
+<h3>Instance: cwrc:whiteRace</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#whiteRace">http://www.cwrc.ca/ontologies/cwrc#whiteRace</a></p><p><em>white</em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_RaceColour" style="font-family: monospace;">cwrc:RaceColour</a></dd><dd><a href="http://www.w3.org/2002/07/owl#Thing" style="font-family: monospace;">owl:Thing</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_yeoman-farmer">
+<h3>Instance: cwrc:yeoman-farmer</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.cwrc.ca/ontologies/cwrc#yeoman-farmer">http://www.cwrc.ca/ontologies/cwrc#yeoman-farmer</a></p><p><em>yeoman-farmer</em> - Own just enough land to support themselves if they do most of the work themselves (ie Elizabeth Ham, Mary Webb). </p>
+<dl><dt>RDF Type:</dt><dd><a href="#term_SocialClassIdentity" style="font-family: monospace;">cwrc:SocialClassIdentity</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-family: monospace;">skos:Concept</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+
+    <!-- End of the terms list -->
+
+    <h2 id="notesEvent">Notes on CWRC Events</h2>
+     <p></p>
+    <h2 id="notesSKOS">Notes on SKOS and OWL</h2>
+    <p>SKOS (Simple Knowledge Organization System) enjoys widespread popularity in the semantic
+    web community as it provides simple terms for taxonomies without requiring reasoner support.
+    Whenever appropriate, SKOS terms are inserted within the military ontology to link terms to
+    each other. However, since these terms are not ontologically powered their scalability is
+    limited since each additional layer of terms within a taxonomy requires another database
+    query.</p>
+    <p>Some of the constructs within the military ontology are deep and require reasoning support.
+    OWL is the preferred means of using this ontology, through the usage of the terms, SKOS-style,
+    is possible. </p> 
+    
+    </p>
+
+    <h2 id="conclusion">Conclusion and Future Work</h2>
+
+    <p>Etiam dignissim lorem id turpis scelerisque vehicula. Maecenas
+    hendrerit nisl libero, a efficitur orci tristique a. Etiam posuere
+    sodales felis, vel malesuada dui. Curabitur sit amet risus gravida,
+    gravida lorem luctus, tristique erat. Aliquam quis felis dapibus, tempus
+    enim aliquam, cursus enim. Ut sed imperdiet nisi. Ut auctor turpis sed
+    vehicula fringilla. Nulla quis enim sem. Pellentesque quis lorem
+    lacinia, fringilla dui ac, pharetra ante. Mauris ultricies lacus metus,
+    quis iaculis lorem porttitor in. Suspendisse placerat est neque, quis
+    tempor dolor commodo dictum. Donec accumsan lorem in justo consectetur,
+    vehicula pharetra mi laoreet. Pellentesque a neque non erat ultricies
+    rutrum. Praesent varius felis purus, id congue dolor ultricies vel.
+    Quisque elit diam, pretium ut aliquam et, sodales ut elit. </p>   
+
+    <h2 id="version_history">Version History</h2>
+
+    <ul>
+    <li><p>0.3 - Initial release.</p></li>
+    </ul>
+    
+    <h2 id="biblipgraphy">Bibliography</h2>    
+
+<!-- This document was automatically generated with bibtex2html 1.96
+     (see http://www.lri.fr/~filliatr/bibtex2html/),
+     with the following command:
+     /usr/bin/bibtex2html -nodoc -nobibsource -unicode --quiet -o - cwrc.bib  -->
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="gold2016">1</a>]
+</td>
+<td class="bibtexitem">
+Matthew&nbsp;K. Gold and Lauren&nbsp;F. Klein, editors.
+ <em>Debates in the Digital Humanities</em>.
+ University of Minnesota Press, 2016.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Algee-Hewitt:2016aa">2</a>]
+</td>
+<td class="bibtexitem">
+Mark Algee-Hewitt, J.D. Porter, and Hannah Walser.
+ Representing race and ethnicity in american fiction, 1789-1964.
+ In <em>Identity: NovelTM Annual Workshop</em>, Banff, Canada, October
+  2016.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Bailey:2011aa">3</a>]
+</td>
+<td class="bibtexitem">
+Moya&nbsp;Z. Bailey.
+ All the digital humanists are white, all the nerds are men, but some
+  of us are brave.
+ <em>Journal of Digital Humanities</em>, 1(1), 2011.
+[&nbsp;<a href="http://journalofdigitalhumanities.org/1-1/all-the-digital-humanists-are-white-all-the-nerds-are-men-but-some-of-us-are-brave-by-moya-z-bailey/">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Brown:2006aa">4</a>]
+</td>
+<td class="bibtexitem">
+Susan Brown, Patricia Clements, and Isobel Grundy.
+ Sorting things in: Feminist knowledge representation and changing
+  modes of scholarly production.
+ <em>Women's Studies International Forum</em>, 29(3), 2006.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="dean-hall:sexi:2013">5</a>]
+</td>
+<td class="bibtexitem">
+Adriel Dean-Hall and Robert&nbsp;H. Warren.
+ Sex, privary and ontologies.
+ In <em>Workshop on Search and Exploration of X-Rated Information
+  (SEXI 2013), in proceedings of Sixth ACM International Conference on Web
+  Search and Data Mining (WSDM 2013)</em>, Rome, Italy, February 2013.
+[&nbsp;<a href="http://www.dbdump.org/~warren/publications/dean-hall:sexi:2013/dean-hall:sexi:2013.pdf">.pdf</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Brown:2016aa">6</a>]
+</td>
+<td class="bibtexitem">
+Susan Brown and John Simpson.
+ The curious identity of michael field and its implications for
+  humanities research with the semantic web.
+ In <em>2013 IEEE International Conference on Big Data</em>, 2013.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Fuss:2013aa">7</a>]
+</td>
+<td class="bibtexitem">
+Diana Fuss.
+ <em>Essentially speaking: Feminism, nature and difference</em>.
+ Routledge, 2013.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Lerman:2013aa">8</a>]
+</td>
+<td class="bibtexitem">
+Jonas Lerman.
+ Big data and its exclusions.
+ <em>Stanford Law Review</em>, 66:55-63, September 2013.
+[&nbsp;<a href="http://www.heinonline.org.subzero.lib.uoguelph.ca/HOL/Page?handle=hein.journals/slro66&start_page=55&collection=journals&id=66">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="McPherson:2012aa">9</a>]
+</td>
+<td class="bibtexitem">
+Tara McPherson.
+ Why are the digital humanities so white? or thinking the histories of
+  race and computation.
+ <em>Debates in the digital humanities</em>, pages 139-160, 2012.
+[&nbsp;<a href="http://dhdebates.gc.cuny.edu/debates/part/4">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Munt:1998aa">10</a>]
+</td>
+<td class="bibtexitem">
+S.&nbsp;Munt.
+ Sisters in exile: The lesbian nation.
+ <em>New frontiers of space, bodies and gender</em>, 3(19), 1998.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Nakamura:2002aa">11</a>]
+</td>
+<td class="bibtexitem">
+Lisa Nakamura.
+ <em>Cybertypes: Race, ethnicity, and identity on the internet</em>.
+ Routledge, London, UK, 2002.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Treviranus:2014aa">12</a>]
+</td>
+<td class="bibtexitem">
+Jutta Treviranus.
+ The value of the statistically insignificant.
+ <em>Educause</em>, January 2014.
+[&nbsp;<a href="http://er.educause.edu/articles/2014/1/the-value-of-the-statistically-insignificant">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="oa-w3c">13</a>]
+</td>
+<td class="bibtexitem">
+W3C.
+ Web annotation data model.
+[&nbsp;<a href="https://www.w3.org/TR/annotation-model/">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Woolf:1938aa">14</a>]
+</td>
+<td class="bibtexitem">
+Virginia Woolf.
+ <em>Three Guineas</em>.
+ Hogarth Press, 1938.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Grier:1976aa">15</a>]
+</td>
+<td class="bibtexitem">
+Barbara Grier and Coletta Reid.
+ <em>Lesbian Lives: Biographies of Women from the Ladder</em>.
+ Diana Press, Baltimore, MD, USA, 1976.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Mayor:1971aa">16</a>]
+</td>
+<td class="bibtexitem">
+Elizabeth Mayor.
+ <em>The Ladies of Llangollen: A Study in Romantic Friendship</em>.
+ Joseph, London, UK, 1971.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Faderman:1981aa">17</a>]
+</td>
+<td class="bibtexitem">
+Lillian Faderman.
+ <em>Surpassing the Love of Men: Romantic Friendship and Love between
+  Women from the Renaissance to the Present</em>.
+ Morrow, New York, NY, USA, 1981.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Scott:1762aa">18</a>]
+</td>
+<td class="bibtexitem">
+Sarah Scott.
+ <em>A Description of Millenium Hall</em>.
+ Broadview Press, Peterborough, ON, Canada, 1995 edition, 1762.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="James:1921aa">19</a>]
+</td>
+<td class="bibtexitem">
+Henry James.
+ <em>The Bostonians</em>.
+ Macmillan, 1921 edition, 1886.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Ross:1995aa">20</a>]
+</td>
+<td class="bibtexitem">
+Becki Ross.
+ <em>The House That Jill Built: A Lesbian Nation in Formation</em>.
+ University of Toronto Press, Toronto, On, Canada, 1995.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Brown:1973aa">21</a>]
+</td>
+<td class="bibtexitem">
+Rita&nbsp;Mae Brown.
+ <em>Rubyfruit Jungle</em>.
+ Daughters Inc, Plainfield, VT, USA, 1973.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Halberstam:1998aa">22</a>]
+</td>
+<td class="bibtexitem">
+Jack Halberstam.
+ <em>Female Masculinity</em>.
+ Duke University Press, Durham, NC, USA, 1998.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="joan:1992">23</a>]
+</td>
+<td class="bibtexitem">
+Joan Nestle, editor.
+ <em>The Persistent Desire: A Femme-Butch Reader</em>.
+ Alyson Publications, Boston, MA, USA, 1992.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Radclyffe:1928aa">24</a>]
+</td>
+<td class="bibtexitem">
+Hall Radclyffe.
+ <em>The Well of Loneliness</em>.
+ Jonathan Cape, London, UK, 1928.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Coyote:2011aa">25</a>]
+</td>
+<td class="bibtexitem">
+Ivan&nbsp;E Coyote and Zena Sharman.
+ <em>Persistence: All Ways Butch and Femme</em>.
+ Arsenal Pulp Press, Vancouver, BC, Canada, 2011.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Bergman:2006aa">26</a>]
+</td>
+<td class="bibtexitem">
+S.&nbsp;Bear Bergman.
+ <em>Butch Is a Noun</em>.
+ Suspect Thoughts Press, San Francisco, CA, USA, 2006.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Sycamore:2006aa">27</a>]
+</td>
+<td class="bibtexitem">
+Mattilda&nbsp;Bernstein Sycamore.
+ <em>Nobody Passes: Rejecting the Rules of Gender and Conformity</em>.
+ Seal P, Emeryville, CA, USA, 2006.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Bornstein:2010">28</a>]
+</td>
+<td class="bibtexitem">
+Kate Bornstein and S.&nbsp;Bear Bergman, editors.
+ <em>Gender Outlaws: The Next Generation.</em>
+ Seal P, Berkeley, CA, USA, 2010.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Bornstein:1998aa">29</a>]
+</td>
+<td class="bibtexitem">
+Kate Bornstein.
+ <em>My Gender Workbook: How to Become a Real Man, a Real Woman, the
+  Real You, or Something Else Entirely</em>.
+ Routledge, New York, NY, USA and London, UK, 1998.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Johnston:2015aa">30</a>]
+</td>
+<td class="bibtexitem">
+Jill Johnston.
+ <em>Lesbian Nation: The Feminist Solution</em>.
+ Simon and Schuster, 1973.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Martin:1972aa">31</a>]
+</td>
+<td class="bibtexitem">
+Del Martin and Phyllis Lyon.
+ <em>Lesbian/Woman</em>.
+ Glide P, San Francisco, CA, USA, 1972.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Radicalesbians:1970">32</a>]
+</td>
+<td class="bibtexitem">
+<em>The Woman-Identified Woman</em>.
+ Radicalesbians, New York, NY, USA, 1970.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Richards:1990aa">33</a>]
+</td>
+<td class="bibtexitem">
+Dell Richards.
+ <em>Lesbian Lists: A Look at Lesbian Culture, History, and
+  Personalities</em>.
+ Alyson Publications, Boston, MA, USA, 1990.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Ellis:1897aa">34</a>]
+</td>
+<td class="bibtexitem">
+Havelock Ellis and John&nbsp;Addington Symonds.
+ <em>Studies in the Psychology of Sex</em>.
+ Wilson & Macmillan, London, UK, 1897.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="SarahOrneJewett">35</a>]
+</td>
+<td class="bibtexitem">
+Sarah&nbsp;Orne Jewett.
+ <em>Sarah Orne Jewett Manuscript Collection</em>.
+ Houghton Library, Harvard University, Cambridge, MA, USA.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Krafft-Ebing:1892aa">36</a>]
+</td>
+<td class="bibtexitem">
+Richard Krafft-Ebing.
+ <em>Psychopathia Sexualis, with Especial Reference to Contrary
+  Sexual Instinct: A Medico-Legal Study</em>.
+ F. A. Davis, London, UK, 7th edition, 1892.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Carpenter:1908aa">37</a>]
+</td>
+<td class="bibtexitem">
+Edward Carpenter.
+ <em>The Intermediate Sex: A Study of Some Transitional Types of Men
+  and Women</em>.
+ Swan Sonnenschein and Company, London, UK, 1908.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="butler:1997">38</a>]
+</td>
+<td class="bibtexitem">
+<em>Ladies of Llangollen: Letters and Journals of Lady Eleanor Butler
+  (1739-1829) and Sarah Ponsonby (1755-1831) from the National Library of
+  Wales</em>.
+ Adam Matthew Publications, Marlborough, Wiltshire, England, 1997.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Crook:1926aa">39</a>]
+</td>
+<td class="bibtexitem">
+G.&nbsp;T. Crook.
+ <em>The Complete Newgate Calendar</em>, volume&nbsp;2.
+ Navarre Society, London, UK, 1926.
+
+</td>
+</tr>
+</table>
+
+
+    <!-- ===================================================================== 
+
+
+     ===================================================================== -->
+
+
+  </body>
+
+</html>
+
+<!-- specification regenerated by SpecGen5 at 19:33:17 12/20/16 EST -->
