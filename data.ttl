@@ -23,14 +23,82 @@
 @prefix cwrc: <http://www.cwrc.ca/ontologies/cwrc#> .
 
 cwrc:SophiaKing
-    cwrc:hasClass cwrc:indigent, cwrc:gentry, cwrc:professional ;
+    cwrc:hasSocialClass cwrc:indigent, cwrc:gentry, cwrc:professional ;
     cwrc:hasGeogHeritage cwrc:portugal ;
-    cwrc:hasEthinicity cwrc:jewish ;
+    cwrc:hasEthnicity cwrc:jewish ;
     cwrc:hasDenomination cwrc:jewish
     cwrc:hasPoliticalAffiliation cwrc:radical
     cwrc:hasNationalitySelfDefined cwrc:english
     a foaf:Person ;
     foaf:name “Sophia King” .
+
+SophiaKing  cwrc:hasGeogHeritage cwrc:portugal ;
+
+[Instance of the Cultural Formation for the Ethnicity Context for Sophia King]
+
+http://www.cwrc.ca/cwrcdata/KINGSSocialClassIndigent
+    a cwrc:SocialClassContext ;
+    rdfs:label ":SocialClassContext for Sophia King"@en ;
+    oa:hasBody cwrc:indigent ;
+    oa:hasTarget cwrc:SophiaKing ;
+    prov:derivedFrom cwrc: King12345Happy.
+
+http://www.cwrc.ca/cwrcdata/KINGSSocialClassGentry
+    a cwrc:SocialClassContext ;
+    rdfs:label ":SocialClassContext for Sophia King"@en ;
+    oa:hasBody cwrc:gentry ;
+    oa:hasTarget cwrc:SophiaKing ;
+    prov:derivedFrom cwrc: King12345Happy.
+
+http://www.cwrc.ca/cwrcdata/KINGSSocialClassProfessional
+    a cwrc:SocialClassContext ;
+    rdfs:label ":SocialClassContext for Sophia King"@en ;
+    oa:hasBody cwrc:professional ;
+    oa:hasTarget cwrc:SophiaKing ;
+    prov:derivedFrom cwrc: King12345Happy.
+
+http://www.cwrc.ca/cwrcdata/KINGSRPortugal
+    a cwrc:GeographicHeritageContext ;
+    rdfs:label ":GeographicHeritageContext for Sophia King"@en ;
+    oa:hasBody geonames:Portugal ;
+    oa:hasTarget cwrc:SophiaKing ;
+    prov:derivedFrom cwrc:King12345Happy .
+
+!--> Rob, should denomination be included under RaceEthnicityContext or be Denomination Context? (line 71)
+
+http://www.cwrc.ca/cwrcdata/KINGSEthJewish
+    a cwrc:RaceEthnicityContext ;
+    rdfs:label ":Denomination Context for Sophia King"@en ;
+    oa:hasBody cwrc:jewish ;
+    oa:hasTarget cwrc:SophiaKing ;
+    prov:derivedFrom cwrc:King12345Happy .
+
+http://www.cwrc.ca/cwrcdata/KINGSDenJewish
+    a cwrc:RaceEthnicityContext ;
+    rdfs:label ":RaceEthnicityContext for Sophia King"@en ;
+    oa:hasBody cwrc:jewish ;
+    oa:hasTarget cwrc:SophiaKing ;
+    prov:derivedFrom cwrc: King12345Happy.
+
+http://www.cwrc.ca/cwrcdata/KINGSPoliticalAffRadical
+    a cwrc:PoliticalAffiliationContext ;
+    rdfs:label ":PoliticalAffiliationContext for Sophia King"@en ;
+    oa:hasBody cwrc:radical ;
+    oa:hasTarget cwrc:SophiaKing ;
+    prov:derivedFrom cwrc: King12345Happy.
+
+http://www.cwrc.ca/cwrcdata/KINGSNationalitySDEnglish
+    a cwrc:NationalitySDContext ;
+    rdfs:label ":NationalitySelfDefinedContext for Sophia King"@en ;
+    oa:hasBody cwrc:english ;
+    oa:hasTarget cwrc:SophiaKing ;
+    prov:derivedFrom cwrc: King12345Happy.
+
+cwrc:King12345Happy
+    nif:isString "SK's Sephardic Jewish Portuguese birth, her early years in Judaism, and her father's boyhood as a street urchin and his high-profile but scandalous career (associating with political radicals while lending money to socialites and eventually marrying into the English nobility), made her an outsider in English society." ;
+    a nif:Context, nif:Sentence ;
+    prov:createdBy cwrc:originalOrlandoAuthor .
+
 
 cwrc:AnnaCulturalFormatioNodeOne
     a cwrc:RaceEthnicityContext, oa:Annotation ;
