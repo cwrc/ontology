@@ -22,6 +22,16 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix cwrc: <http://www.cwrc.ca/ontologies/cwrc#> .
 
+cwrc:SophiaKing
+    cwrc:hasClass cwrc:indigent, cwrc:gentry, cwrc:professional ;
+    cwrc:hasGeogHeritage cwrc:portugal ;
+    cwrc:hasEthinicity cwrc:jewish ;
+    cwrc:hasDenomination cwrc:jewish
+    cwrc:hasPoliticalAffiliation cwrc:radical
+    cwrc:hasNationalitySelfDefined cwrc:english
+    a foaf:Person ;
+    foaf:name “Sophia King” .
+
 cwrc:AnnaCulturalFormatioNodeOne
     a cwrc:RaceEthnicityContext, oa:Annotation ;
     oa:hasBody cwrc:english, cwrc:white ;
@@ -40,20 +50,82 @@ cwrc:AnnaLeonowens
 cwrc:CharlotteDacre
     cwrc:hasGeogHeritage cwrc:jewish ;
     cwrc:hasReligion cwrc:anglicanchurch, cwrc:jewish ;
-    cwrc:hasSocialClass cwrc:entrepreneurial-industrialist, cwrc:gentry ;
+    cwrc:hasDenomination cwrc: jewish ; cwrc:anglicanChurch ;
+    cwrc:hasEthnicity cwrc: jewish ; 
+    cwrc:hasGeogHeritage cwrc:portugal, cwrc: england, cwrc: middlesex, cwrc: london ;
+    cwrc:hasSocialClass cwrc:entrepreneurial-industrialist, cwrc:gentry, cwrc: indigent;
+    cwrc:hasDenomination cwrc: jewish ; cwrc:anglicanChurch ;
     a foaf:Person ;
     foaf:name "Charlotte Dacre" .
 
+cwrc:ElizabethSarahGooch
+    cwrc:hasEthnicityHeritage cwrc: jewish 
+    cwrc:hasNationalityHeritage cwrc: portugal ;
+    cwrc:hasDenominationSelfDefined cwrc: anglicanChurch ;
+    cwrc:hasSocialClassSelfDefined cwrc: gentry ;
+    a foaf:Person ;
+    foaf:name “Elizabeth Sarah Gooch” .
+
+cwrc:ElizabethSarahGoochFather
+	a foaf:Person;
+	rel:father cwrc:ElizabethSarahGooch;
+	cwrc:hasDenomination cwrc:jewish ;
+	prov:derivedFrom textnode;
+
 cwrc:GraceAguilar
     cwrc:hasEthnicity cwrc:jewish ;
-    cwrc:hasNationalHeritage cwrc:portugal, cwrc:spain ;
-    cwrc:hasNationality cwrc:english, cwrc:jewish ;
-    cwrc:hasRaceColour cwrc:white ;
+    cwrc:hasNationalHeritage cwrc:portugal, cwrc:spain ; 
+    cwrc:hasNationalitySelfDefined cwrc:english, cwrc:jewish ;
+    cwrc:hasRaceColourHeritage cwrc:white ;
     cwrc:hasReligion cwrc:jewish ;
     cwrc:hasSocialClass cwrc:entrepreneurial-industrialist, cwrc:middleClass ;
+    cwrc:hasDenominationSelfDefined cwrc: jewish ;
+    cwrc:hasPoliticalAffiliation cwrc: proto-zionist ;
     a foaf:Person ;
     owl:sameAs <http://viaf.org/viaf/7628015> ;
     foaf:name "Grace Aguilar" .
+
+cwrc:GraceAguilarFather
+    a foaf:Person;
+    rel:mother cwrc:GraceAguilar;
+    cwrc:hasNationalHeritage cwrc:portugal ;
+    prov:derivedFrom textnode;
+
+cwrc:GraceAguilarMother
+    a foaf:Person;
+    rel:mother cwrc:GraceAguilar;
+    cwrc:hasNationalHeritage cwrc:spain ;
+    prov:derivedFrom textnode;
+
+cwrc:AmyLevy
+    cwrc:hasSocialClass cwrc:upper-middleClass ;
+    cwrc:hasNationalitySelfDefined cwrc:english ;
+    cwrc:hasDenominationSelfDefined cwrc:jewish ;
+    cwrc:hasSexualIdentity cwrc:lesbian ;
+    cwrc:hasEthnicity cwrc:jewish ;
+    a foaf:Person ;
+    owl:sameAs <http://viaf.org/viaf/7628015> ;
+    foaf:name “Amy Levy“ .
+
+cwrc:CharlotteMontefiore
+    cwrc:hasRaceColour cwrc: white ;
+    cwrc:hasDenominationSelfDefined cwrc: jewish ;
+    cwrc:hasSocialClass cwrc:entrepreneurial-industrialist ;
+    cwrc: hasNationalHeritage cwrc:italian ;
+    a foaf:Person ;
+    foaf: name “Charlotte Montefiore” .
+
+cwrc:CharlotteMontefioreFather
+    a foaf:Person;
+    rel:father cwrc:GraceAguilar;
+    cwrc:hasNationalHeritage cwrc:italian;
+    prov:derivedFrom textnode;
+
+cwrc:JuliaFrankau
+    cwrc:hasEthnicitySelfDefined cwrc:jewish ;the
+    cwrc:hasDenominationSelfDefined cwrc:jewish ;
+    a foaf:Person ;
+    foaf: name “Julia Frankau” .
 
 cwrc:annaleanowens1
     nif:isString """Although AL herself, in attempting to adopt an unequivocally English identity, implicitly claimed that she was white, evidence suggests that while
