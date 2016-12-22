@@ -280,12 +280,13 @@ People using this class should apply it to instances that seem to be right for t
  </cwrc:NationalIdentity>
 
  <owl:Class rdf:ID="Language">
-   <rdfs:label xml:lang="en">Linguistic Ability (Spoken and/or Writen)</rdfs:label>
-   <rdfs:label xml:lang="fr">Habilité linguistique (Écris ou Parlé)</rdfs:label>
+   <rdfs:label xml:lang="en">Linguistic Ability</rdfs:label>
+   <rdfs:label xml:lang="fr">Habilité linguistique</rdfs:label>
+   <foaf:name xml:lang="en">Linguistic Ability</foaf:name>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
- <skos:definition xml:lang="en"></skos:definition>
- <skos:definition xml:lang="fr"></skos:definition>
+ <skos:definition xml:lang="en">Does not differentiate between spoken and/or written.</skos:definition>
+ <skos:definition xml:lang="fr">Écris ou Parlé</skos:definition>
  </owl:Class>
 
 
@@ -897,6 +898,18 @@ People using this class should apply it to instances that seem to be right for t
  <skos:definition xml:lang="en">Own just enough land to support themselves if they do most of the work themselves (ie Elizabeth Ham, Mary Webb).</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
 </cwrc:SocialClassIdentity>
+
+
+<cwrc:SocialClassIdentity rdf:about="#upper-middleClass">
+ <rdfs:label xml:lang="en">upper middle class</rdfs:label>
+ <rdfs:label xml:lang="fr">classe haute moyenne</rdfs:label>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <owl:subClass rdf:resource="#CulturalFormation"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <owl:comment xml:lang="en">This term is a CWRC specific addition not in the original Orlando tag set.</owl:comment>
+</cwrc:SocialClassIdentity>
+
 
 <cwrc:SocialClassIdentity rdf:about="#skilledCraftpersonArtisan">
  <rdfs:label xml:lang="en">skilled craftperson - artisan</rdfs:label>
