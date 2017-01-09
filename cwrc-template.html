@@ -66,30 +66,28 @@
     <hr />
     <h2 id="abstract">Abstract</h2>
     <p>
-Cultural diversity has been an increasing source of debate within the
+    Cultural diversity has been an increasing source of debate within the
     digital humanities community. The concentration within the Debates in
-    Digital Humanities series (Gold, 2012; Gold and Klein, 2016) of pieces
+    Digital Humanities series (<a name="gold2016">Gold and Klein, 2016</a>) of pieces
     reflecting the increasing prominence of matters related to race, gender,
     cultural diversity and difference is but one marker of the extent to
     which diversity matters. The Orlando Project in feminist literary
     history incorporated an intersectional understanding of identity
     categories from the outset. Translating Orlando’s XML data into linked
     open data (LOD) to make it accessible, interoperable, and amenable to a
-    range of analytical approaches (<a href="">Simpson and Brown</a>) requires an ontology
+    range of analytical approaches (<a name="Brown:2016aa">Simpson and Brown</a>) requires an ontology
     that will serve both Orlando and the broader research community hosted
     by the Canadian Writing Research Collaboratory (CWRC). This document
     outlines the CWRC ontology design and the challenges of shifting from
-    semi-structured to structured data (Smith 273).
+    semi-structured to structured data.
     </p>
 
     <h3 id="status">Status of this Document</h3>
     <p>
       This document grows iteratively with modification made over
       time according to the amount of Orlando data translated and the
-      ontological issues located over time. Continuity is ensured using the <a
-      href="http://www.w3.org/TR/owl-ref/#Annotations">OWL ontology
-      annotations</a> for ontological compatibility and for deprecated classes and properties.
-      Deprecated ontology terms remain present but are marked as such.
+      ontological issues located over time. Continuity is ensured through 
+      the use of deprecated classes and properties.
     </p>
     <h2 id="contents">Table of Contents</h2>    
     <ol id="toc">
@@ -111,7 +109,8 @@ Cultural diversity has been an increasing source of debate within the
     <hr />
 
     <h3 id="background">Background on the Orlando source data</h3>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula leo
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula leo
     mi, at molestie nunc pulvinar vel. Cras vitae nisl facilisis, congue
     massa nec, porta sapien. Nulla a neque porttitor, auctor nulla ultrices,
     porta ligula. Etiam blandit massa blandit molestie hendrerit.
@@ -129,65 +128,132 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula leo
     
     <h3 id="goals">Basic ontological goals.</h3>
 
- Quisque nec elementum ligula. Nullam non rutrum mi. Maecenas in massa
- semper, suscipit nisi sed, finibus mi. Phasellus ut tellus sed odio blandit
- sodales pulvinar nec lectus. Fusce in neque id libero cursus finibus id vel
- massa. Aenean eget finibus urna. Sed maximus fermentum ligula quis
- interdum. Integer placerat nisi vel magna aliquet, nec pharetra tortor
- efficitur. Aliquam vitae magna in dui efficitur condimentum. Ut sit amet ex
- odio. Duis et mi eget nulla fringilla cursus a eu nisi.
+    <p>The Orlando source data contains multiple types of data which
+    includes annotations on source text, factual information and 
+    information about specific life events. The CWRC linked open data set 
+    represents this information
+    as a series of cultural formations and cultural contexts.</p>
+    
+    <p>While full, integrated tracebility has always been a core need of
+    repeatable experiments, this comes as a complexity cost within linked
+    open data set in that the queries required to retrieve basic information
+    become unyieldy. To this end the CWRC ontology records information in
+    two different ways: through a series of <a href="#Context">Contexts</a>
+    that link the information to its original Orlando text and a series of
+    granular properties that simply link individuals to their personal attributes. In
+    this way, both rapid retreival and deep provenance tracking can be
+    acheived.</p>
+
+    <p>Two basic structures are used within the ontology to acheive this: <a
+    href="#Context">Contexts</a> and <a href="#CulturalFormation">Cultural Formations<a/>.
+    A cultural formation represent elements of lived social subjectivities
+    and/or classification of people such as Race, Gender, Religion, etc.
+    Contexts are used to link a fragment of Orlando prose to the indidvudual
+    it is referencing as well as to the sepcific cultural formation that is
+    being assigned to the person. In addition, properties are seperated in
+    two categories: reported and self-reported, allowing for the
+    qualification of individual statements.</p>
  
- Morbi posuere vestibulum justo non condimentum. Maecenas faucibus in erat
- et finibus. Nullam lacinia justo at elit imperdiet, vitae congue eros
- interdum. Aliquam at dolor et tellus accumsan egestas bibendum sodales
- neque. Vivamus et mattis tortor, posuere elementum dolor. Quisque ac tempus
- massa. Donec efficitur ante dictum laoreet finibus. Ut rhoncus eu elit quis
- sodales. Suspendisse non ultricies felis. Etiam libero est, efficitur vitae
- ante at, facilisis rhoncus erat. Vestibulum consequat turpis arcu, et
- pretium risus faucibus eu. Cras vel consectetur sem. Morbi bibendum ex
- lacus, vel vestibulum enim ullamcorper quis. Pellentesque habitant morbi
- tristique senectus et netus et malesuada fames ac turpis egestas. Nam sed
- interdum odio, at condimentum enim. Integer congue consequat nibh, at
- suscipit justo fermentum ullamcorper. 
-
-
     <h4 id="links">Linkages to other ontologies.</h3>
-
-Duis id enim sed lorem semper viverra vel commodo nisi. Suspendisse posuere
-odio neque, in sodales ipsum sagittis gravida. Integer sem enim, vulputate
-at metus sed, ultricies facilisis urna. In nec erat quam. In ut nulla nisl.
-Morbi id neque rhoncus, vulputate diam sed, consectetur sem. Nullam dictum
-posuere libero, eget rutrum justo mattis ac. Etiam rhoncus venenatis magna,
-congue imperdiet nulla viverra sed. Ut egestas tortor purus, id posuere
-risus venenatis id. Aenean eget mauris ac nisi blandit vehicula. 
  
+    <p>Vocabulary reuse presented some challenges to the CWRC in that the
+    specific intent of vocabularies is not always recorded and thus
+    ambiguitiy in the intent of the author makes their reuse difficult. A
+    typical example is that of religion where much ambiguity exists as to
+    wheter the term actually represents 
+    the religion as a belief system, the underlying religious organization, 
+    the social behaviours it implies or any combination of the above.</p>
+    <p>A the top level the CWRC ontology makes use of the following well know
+    ontologies:
+    <ol>
+     <li>The FOAF ontology for the representation of people and
+     organizations.</li>
+     <li>The BIBO ontology for the representation of biliographic data.</li>
+     <li>The TIME ontology for the representation of events and points in
+     time where ISO8601/XML Schema times are not appropriate.</li>
+     <li>The NIF-CORE ontology is used to contain and manipulate the text of
+     the original Orlando entries.</li>
+     <li>The Open Annotation Ontology is used to link the original Orlando
+     text to specific <a href="#Context">Context</a>s.</li>
+     <li>The SKOS vocabulary is use to represent taxonomical relationships
+     within certain <a href="#CulturalFormation">Cultural Formation<a/>s and
+     to fully document ontology terms.</li>
+     <li>Some Dublin Core vocabulary terms are used for well known documentation
+     tags such as &lt;dc:title&gt;.
+    </ol>
+    </p>    
+
+    <p>The wholesale import of entire vocabularies within the CWRC ontology
+    was likely to cause logical and ontological issues. To this end, we
+    opted not to use the &lt;owl:import&gt; construct and to either
+    link to vocabularies externally or to clone specific sets of terms from
+    selected vocabularies.</p>
+
+    <p>A specific example was with the <a href="#Religion">Religion<a/>
+    class instances that were problematic. <it>Why are we using Getty over
+    dbpedia again?<it></p>
+            
+    <p>This has allowed for the careful control of what
+    statements are made within CWRC while leveraging the work of other
+    projects.</p>   
+
     <h3 id="culturalformations">Cultural Formations.</h3>
 
-The Cultural Formation (CF) tagset recognizes categorization as endemic to
-social experience, while incorporating variation in terminology and
-contextualization of identity categories by employing tags at different
-discursive levels. CF tags describe the subject positions of individuals
-through 1) contextual tags that encode substantial discussions: class;
-language; nationality; race and ethnicity; religion; and sexuality; and 2)
-granular tags that describe, in a word or short phrase, class; ethnicity;
-gender; geographical heritage; language; nationality; national heritage;
-political affiliation; race or colour; religious denomination, and sexual
-identity. The granular tags possess attributes regarding forebears and
-whether a subject self-identified with a particular term. The tagset aimed
-to highlight the extent to which social classification is culturally
-produced and discursively embedded. Rather than disambiguating leaky
-cultural categories, it considered them as mutually constitutive with
-historically specific discursive frameworks, including our tagging
-structures.
-
-
-CF encoding pointed users towards a framework for raising and debating
-complex matters for cultural investigation rather than standardized
+ <p>The <a href="#CulturalFormation">Cultural Formation<a/> classes
+ recognize categorization as endemic to social experience, while
+ incorporating variation in terminology and contextualization of identity
+ categories by employing instances at different discursive levels.</p>  
+ 
+ <p>Cultural Formation subclasses and instances describe the subject positions 
+ of individuals through both <a href="#Context">Context</a>s and granular
+ properties. This arrangements has its roots in the Orlando arrangement of
+ Cultural Formations encodings that pointed users towards a framework for 
+ raising and debating complex matters for cultural investigation rather than standardized
 classifications, refusing to neatly group writers into distinct and fixed
 categories, since those categories were neither stable nor mutually
-exclusive (Algee-Hewitt, Porter, Walser).
+exclusive (<a href="#Algee-Hewitt:2016aa">Algee-Hewitt, 2016</a>).</p>
+
+<p>With the shift to a linked open data approach an issue has been how to
+make this approach compatible with linkages to other ontologies and data
+sets outside of the Orlando reference. Furthermore, the move from "strings
+to links" has created another set of issues in that strings such as White,
+Black, English, etc... are in themselves ambiguous: White and Black can
+represent race or etchnicity, while English can also be etchnicity,
+nationality or a national heritage. Because Orlando uses these strings in
+Cultural Formations specific to, for example, race or
+etchnicity, this must be transferred to a specific Cultural Formation
+instance. Thus, there exists Cultural Formation instances that cover <a
+href="#whiteRace">white</a> as a race and <a href="#whiteEthnicity">white</a>
+as an ethnicity. Lastly, there also exists a <a href="#whiteLabel">white</a>
+label that be instantiated as either race or ethnicity, but not both.</p>
+
+<p>This is departure from previous (non linked open data) controlled
+vocabularies in that the appearance of the term (in this case "white") does
+not determine the specific cultural formation in use, the term does. This
+also means that linkages to other data sets or vocabularies can be
+appropriatly be made since multiple representations of the same concept are
+present within the CWRC ontology. As a last resort, or for data mining
+purposes, the term is also available as an concept whose actual Cultural
+Formation is undecided amongsth the CWRC defined options. This allows for
+linkages to the ontology, such as can be required in text mining, which
+commiting to a specific interpretation immediatly.</p>
+
+
+       <h3 id="granularproperties">Granular Properties</h3> 
+       
+       <p>Granual properties are meant as a simpler means of reporting
+       information about individuals and their personal properties, some of
+       which are self-reported. Some of the reported properties also
+       includes forebears.</p>
+
 
     <h3 id="context">Cultural Contexts</h3>
+    
+     <p>
+     <a href="#Context">Context</a>s are a means of recording both the
+     target of a cultural formation and the source text that was written by
+     Orlando authors about the topic.
+     </p>
           
     <h3 id="definition_list">Global cross reference</h3>
     
@@ -218,18 +284,6 @@ exclusive (Algee-Hewitt, Porter, Walser).
     
     <h2 id="notesEvent">Notes on CWRC Events</h2>
      <p></p>
-    <h2 id="notesSKOS">Notes on SKOS and OWL</h2>
-    <p>SKOS (Simple Knowledge Organization System) enjoys widespread popularity in the semantic
-    web community as it provides simple terms for taxonomies without requiring reasoner support.
-    Whenever appropriate, SKOS terms are inserted within the military ontology to link terms to
-    each other. However, since these terms are not ontologically powered their scalability is
-    limited since each additional layer of terms within a taxonomy requires another database
-    query.</p>
-    <p>Some of the constructs within the military ontology are deep and require reasoning support.
-    OWL is the preferred means of using this ontology, through the usage of the terms, SKOS-style,
-    is possible. </p> 
-    
-    </p>
 
     <h2 id="conclusion">Conclusion and Future Work</h2>
 

@@ -115,13 +115,12 @@
     <dc:creator rdf:resource="#ColinFaulkner"/>
     <dc:creator rdf:resource="#RobWarren"/>
     <dc:publisher rdf:resource="#cwrc"/>
+    <loc:ctb rdf:resource="#originalOrlandoAuthor"/>
     <loc:pdr rdf:resource="#SusanBrown"/> 
     <loc:fnd rdf:resource="#sshrc"/>
     <rdfs:isDefinedBy rdf:resource=""/>
     <foaf:logo rdf:resource="http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif"/>
    </void:Dataset>
-
- <!-- End Boilerplate -->
 
  <skos:Concept rdf:about="#originalOrlandoAuthor">
    <rdfs:label xml:lang="en">Members of the Orlando Project</rdfs:label>
@@ -131,6 +130,8 @@
   <skos:definition xml:lang="en">The collection of all persons having written entries for the Orlando project.</skos:definition>
   <skos:definition xml:lang="fr">La collection de tout les auteurs du project Orlando.</skos:definition>
  </skos:Concept>
+
+ <!-- End Boilerplate -->
 
 
  <owl:Class rdf:ID="CulturalFormation">
@@ -156,6 +157,7 @@
  </owl:Class>
 
  <!-- Cheat to ensure that the provenance is hooked into the Cultural Context -->
+
  <rdf:Description rdf:about="http://www.w3.org/ns/prov#derivedFrom">
   <rdfs:range rdf:resource="#Context"/>
  </rdf:Description>
@@ -391,7 +393,7 @@ People using this class should apply it to instances that seem to be right for t
    <rdfs:label xml:lang="fr">Religion</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
- <skos:definition xml:lang="en">A subclass of CulturalFormation, this describes a person's religion(s) or belief system(s)</skos:definition>
+ <skos:definition xml:lang="en">A subclass of CulturalFormation, this describes a person's religion(s) or belief system(s). Note that while atheism denotes the absence of religion, we use the Religion label for convinience.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
