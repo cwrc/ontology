@@ -134,23 +134,23 @@
     represents this information
     as a series of cultural formations and cultural contexts.</p>
     
-    <p>While full, integrated tracebility has always been a core need of
+    <p>While full, integrated traceability has always been a core need of
     repeatable experiments, this comes as a complexity cost within linked
     open data set in that the queries required to retrieve basic information
-    become unyieldy. To this end the CWRC ontology records information in
+    become unwieldy. To this end the CWRC ontology records information in
     two different ways: through a series of <a href="#Context">Contexts</a>
     that link the information to its original Orlando text and a series of
     granular properties that simply link individuals to their personal attributes. In
-    this way, both rapid retreival and deep provenance tracking can be
-    acheived.</p>
+    this way, both rapid retrieval and deep provenance tracking can be
+    achieved.</p>
 
-    <p>Two basic structures are used within the ontology to acheive this: <a
+    <p>Two basic structures are used within the ontology to achieve this: <a
     href="#Context">Contexts</a> and <a href="#CulturalFormation">Cultural Formations<a/>.
     A cultural formation represent elements of lived social subjectivities
     and/or classification of people such as Race, Gender, Religion, etc.
-    Contexts are used to link a fragment of Orlando prose to the indidvudual
-    it is referencing as well as to the sepcific cultural formation that is
-    being assigned to the person. In addition, properties are seperated in
+    Contexts are used to link a fragment of Orlando prose to the individual
+    it is referencing as well as to the specific cultural formation that is
+    being assigned to the person. In addition, properties are separated in
     two categories: reported and self-reported, allowing for the
     qualification of individual statements.</p>
  
@@ -158,9 +158,9 @@
  
     <p>Vocabulary reuse presented some challenges to the CWRC in that the
     specific intent of vocabularies is not always recorded and thus
-    ambiguitiy in the intent of the author makes their reuse difficult. A
+    ambiguity in the intent of the author makes their reuse difficult. A
     typical example is that of religion where much ambiguity exists as to
-    wheter the term actually represents 
+    whether the term actually represents 
     the religion as a belief system, the underlying religious organization, 
     the social behaviours it implies or any combination of the above.</p>
     <p>A the top level the CWRC ontology makes use of the following well know
@@ -168,7 +168,7 @@
     <ol>
      <li>The FOAF ontology for the representation of people and
      organizations.</li>
-     <li>The BIBO ontology for the representation of biliographic data.</li>
+     <li>The BIBO ontology for the representation of bibliographic data.</li>
      <li>The TIME ontology for the representation of events and points in
      time where ISO8601/XML Schema times are not appropriate.</li>
      <li>The NIF-CORE ontology is used to contain and manipulate the text of
@@ -204,7 +204,7 @@
  incorporating variation in terminology and contextualization of identity
  categories by employing instances at different discursive levels.</p>  
  
- <p>Cultural Formation subclasses and instances describe the subject positions 
+ <p>Cultural Formation sub-classes and instances describe the subject positions 
  of individuals through both <a href="#Context">Context</a>s and granular
  properties. This arrangements has its roots in the Orlando arrangement of
  Cultural Formations encodings that pointed users towards a framework for 
@@ -218,10 +218,10 @@ make this approach compatible with linkages to other ontologies and data
 sets outside of the Orlando reference. Furthermore, the move from "strings
 to links" has created another set of issues in that strings such as White,
 Black, English, etc... are in themselves ambiguous: White and Black can
-represent race or etchnicity, while English can also be etchnicity,
+represent race or ethnicity, while English can also be ethnicity,
 nationality or a national heritage. Because Orlando uses these strings in
 Cultural Formations specific to, for example, race or
-etchnicity, this must be transferred to a specific Cultural Formation
+ethnicity, this must be transferred to a specific Cultural Formation
 instance. Thus, there exists Cultural Formation instances that cover <a
 href="#whiteRace">white</a> as a race and <a href="#whiteEthnicity">white</a>
 as an ethnicity. Lastly, there also exists a <a href="#whiteLabel">white</a>
@@ -231,17 +231,17 @@ label that be instantiated as either race or ethnicity, but not both.</p>
 vocabularies in that the appearance of the term (in this case "white") does
 not determine the specific cultural formation in use, the term does. This
 also means that linkages to other data sets or vocabularies can be
-appropriatly be made since multiple representations of the same concept are
+appropriately be made since multiple representations of the same concept are
 present within the CWRC ontology. As a last resort, or for data mining
 purposes, the term is also available as an concept whose actual Cultural
-Formation is undecided amongsth the CWRC defined options. This allows for
+Formation is undecided amongst the CWRC defined options. This allows for
 linkages to the ontology, such as can be required in text mining, which
-commiting to a specific interpretation immediatly.</p>
+committing to a specific interpretation immediately.</p>
 
 
        <h3 id="granularproperties">Granular Properties</h3> 
        
-       <p>Granual properties are meant as a simpler means of reporting
+       <p>Granular properties are meant as a simpler means of reporting
        information about individuals and their personal properties, some of
        which are self-reported. Some of the reported properties also
        includes forebears.</p>
