@@ -7,13 +7,14 @@
 @prefix ns0: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix ns1: <http://id.loc.gov/vocabulary/relators/> .
 @prefix ns2: <http://purl.org/vocab/vann/> .
+@prefix dbpedia: <http://dbpedia.org/resources/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix cwrc: <http://www.cwrc.ca/ontologies/cwrc#>
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
-
+@prefix cwrc: <http://www.cwrc.ca/ontologies/cwrc> .
 <http://www.cwrc.ca/ontologies/cwrc>
   a owl:Ontology ;
   dc:title "The CWRC Ontology"@en, "L'Ontologie CWRC"@fr ;
@@ -272,7 +273,9 @@ People using this class should apply it to instances that seem to be right for t
 <http://www.cwrc.ca/ontologies/cwrc#catholicChurch>
   a <http://www.cwrc.ca/ontologies/cwrc#Religion>, skos:Concept, foaf:Organization ;
   rdfs:label "Roman Catholic"@en, "rooms-katholicisme"@nl, "katholiek"@nl, "katholicisme"@nl, "catolicismo romano"@es, "catolicismo"@es, ""@fr ;
-  skos:definition "Refers to the branch of Christianity characterized by a uniform, highly developed ritual canon and organizational structure with doctrinal roots based in the teachings of the Apostles of Jesus Christ in the first century, in the Alexandrian school of theology, and in Augustinian thought. In this religious branch, faith is considered an acceptance of revelation; revelation appears as doctrine. In juridical terms, it refers to the branch of Christianity distinguished as a unified, monolithic sacramental system under the governance of papal authority. Throughout much of its history, the seat of the Pope has been in Rome, thus \"Roman Catholicism\" is often used to distinguish this concept from the Orthodox Catholic church."@en, "Se refiere a la rama del cristianismo caracterizada por un canon ritual uniforme y altamente desarrollado y una estructura organizacional con raíces doctrinales basadas en las enseñanzas de los Apostoles de Jesucristo en la primera centuria, en la Escuela Alejandrina de teología, y en el pensamiento agustiniano. En esta rama de la religión, la fe es considerada como una aceptación de revelación; la revelación aparece como doctrina. Se refiere a la rama del cristianismo caracterizada por un canon ritual uniforme y altamente desarrollado y una estructura organizacional con raíces doctrinales basadas en las enseñanzas de los Apóstoles de Jesucristo en el primer siglo, en la Escuela Alejandrina de teología, y en el pensamiento agustiniano. En esta rama de la religión, la fe es considerada como una aceptación de revelación; la revelación aparece como doctrina. En términos jurídicos, se refiere a la rama del Cristianismo distinguido como sistema sacramental unificado, monolítico bajo gobierno de la autoridad papal. A través de la mayor parte de su historia, \"la silla del papal” ha estado en Roma, mediante este concepto el Catolicismo Romano se distingue de la Iglesia Católica Ortodoxa."@es, "Verwijst naar de richting van het christendom die zich kenmerkt door een uniforme, hoogontwikkelde rituele canon en organisatiestructuur met een doctrine die wortelt in de leer van de apostelen van Jezus Christus in de 1ste eeuw, in de theologie van de Alexandrijnse school en in het augustijner gedachtegoed. In deze godsdienstige richting wordt het geloof beschouwd als een aanvaarding van de openbaring; de openbaring heeft de vorm van een doctrine. In juridische zin verwijst de term naar de richting van het christendom die zich onderscheidt als een verenigd, monolithisch sacramenteel systeem onder het bestuur van het pauselijk gezag. Gedurende het grootste deel van de geschiedenis van dit systeem was de paus gevestigd in Rome en daarom wordt 'rooms-katholicisme' vaak gebruikt om dit begrip te onderscheiden van de orthodoxe katholieke kerk."@nl, ""@fr ;
+  skos:definition "Refers to the branch of Christianity characterized by a uniform, highly developed ritual canon and organizational structure with doctrinal roots based in the teachings of the Apostles of Jesus Christ in the first century, in the Alexandrian school of theology, and in Augustinian thought. In this religious branch, faith is considered an acceptance of revelation; revelation appears as doctrine. In juridical terms, it refers to the branch of Christianity distinguished as a unified, monolithic sacramental system under the governance of papal authority. Throughout much of its history, the seat of the Pope has been in Rome, thus \"Roman Catholicism\" is often used to distinguish this concept from the Orthodox Catholic church."@en ;
+  skos:definition "Se refiere a la rama del cristianismo caracterizada por un canon ritual uniforme y altamente desarrollado y una estructura organizacional con raíces doctrinales basadas en las enseñanzas de los Apostoles de Jesucristo en la primera centuria, en la Escuela Alejandrina de teología, y en el pensamiento agustiniano. En esta rama de la religión, la fe es considerada como una aceptación de revelación; la revelación aparece como doctrina. Se refiere a la rama del cristianismo caracterizada por un canon ritual uniforme y altamente desarrollado y una estructura organizacional con raíces doctrinales basadas en las enseñanzas de los Apóstoles de Jesucristo en el primer siglo, en la Escuela Alejandrina de teología, y en el pensamiento agustiniano. En esta rama de la religión, la fe es considerada como una aceptación de revelación; la revelación aparece como doctrina. En términos jurídicos, se refiere a la rama del Cristianismo distinguido como sistema sacramental unificado, monolítico bajo gobierno de la autoridad papal. A través de la mayor parte de su historia, \"la silla del papal\" ha estado en Roma, mediante este concepto el Catolicismo Romano se distingue de la Iglesia Católica Ortodoxa."@es, "Verwijst naar de richting van het christendom die zich kenmerkt door een uniforme, hoogontwikkelde rituele canon en organisatiestructuur met een doctrine die wortelt in de leer van de apostelen van Jezus Christus in de 1ste eeuw, in de theologie van de Alexandrijnse school en in het augustijner gedachtegoed. In deze godsdienstige richting wordt het geloof beschouwd als een aanvaarding van de openbaring; de openbaring heeft de vorm van een doctrine. In juridische zin verwijst de term naar de richting van het christendom die zich onderscheidt als een verenigd, monolithisch sacramenteel systeem onder het bestuur van het pauselijk gezag. Gedurende het grootste deel van de geschiedenis van dit systeem was de paus gevestigd in Rome en daarom wordt 'rooms-katholicisme' vaak gebruikt om dit begrip te onderscheiden van de orthodoxe katholieke kerk."@nl ;
+  skos:definition ""@fr ;
   prov:derivedFrom <http://vocab.getty.edu/aat/300073730> ;
   skos:broader <http://www.cwrc.ca/ontologies/cwrc#christianity> .
 
@@ -315,7 +318,7 @@ People using this class should apply it to instances that seem to be right for t
 <http://www.cwrc.ca/ontologies/cwrc#protestantism>
   a <http://www.cwrc.ca/ontologies/cwrc#Religion>, skos:Concept ;
   rdfs:label "Protestantism"@en, "新教"@zh-hant, "抗羅宗"@zh-hant, "xīn jiāo"@zh-latn-pinyin-x-hanyu, "xin jiao"@zh-latn-pinyin-x-notone, "hsin chiao"@zh-latn-wadegile, "protestantisme"@nl, "protestant"@nl, "protestantismo"@es, ""@fr ;
-  skos:definition "The general term for types of Christian faith originating from the Reformation. Although the early forms of Protestantism were those who followed Luther, Calvin, and Zwingli, the term now includes most non-Roman Catholic or non-Orthodox denominations. Protestants want to be closer to the style of faith of the early Church which they feel has been obscured in Catholic practices. The term derives from the word 'protestari' which means not only to protest but to avow or confess. Common characteristics of Protestantism include the justification by faith alone, the authority of scripture, and the priesthood of all believers, in which not only the clergy are able to hear the confession of sin."@en, "El término general para tipos de fe cristiana originadas a partir de la Reforma. Aunque las formas tempranas del protestantismo fueron aquellas que obedecían a Lutero, Calvino y Zwinglio, el término ahora incluye la mayoría de las denominaciones no Romanas o no Ortodoxas. El caracter común de los protestantes incluye la justificación de la fe por la fe, la autoridad de la sagrada escritura  y el sacerdocio de todos los fieles, por el que cada creyente puede oir la confesión de los pecados, no siendo exclusivo del clero. protestantes quieren estar cerca al estilo de fe de la primera Iglesia el cual sienten ha sido opacado en las prácticas católicas. El término deriva desde la palabra \"protestari\" que significa no sólo protestar sino que reconocer o confesar. Característica común."@es, "De algemene term voor typen christelijk geloof die zijn ontstaan tijdens de Reformatie. Hoewel de vroegste vormen van protestantisme werden beoefend door de volgelingen van Luther, Calvijn en Zwingli, wordt de term tegenwoordig gebruikt voor de meeste overtuigingen die niet rooms-katholiek of orthodox zijn. Protestanten willen dichter bij de geloofsstijl van de vroege kerk staan, die volgens hen in de katholieke praktijk overschaduwd is geraakt. De term is afkomstig van het woord 'protestari', wat niet alleen 'protesteren' betekent, maar ook 'belijden'. Enkele algemene kenmerken van het protestantisme zijn: rechtvaardiging door het geloof alleen, de berusting van alle gezag bij de Bijbel en de leer dat alle gelovigen zelf hun zonden aan God kunnen belijden, waarbij het aanhoren van de biecht niet alleen aan priesters is voorbehouden."@nl, """泛稱源自宗教改革的各式基督信仰。雖然早期的新教形式是指遵循路德(Luther)、喀爾文(Calvin)，以及茨溫利(Zwingli)的派別，但現在新教這個詞彙包含了大部分非羅馬天主教或非正教的派別。新教徒希望能更接近早期教會信仰，認為天主教將之變得晦澀難解。本詞彙衍生自”protestari”，不僅意指抗議，更要坦白或懺悔。新教的常見特色包括因純信而稱義、經典的權威性、信徒皆牧師，所以不是只有牧師才能聽取認罪懺悔。
+  skos:definition "The general term for types of Christian faith originating from the Reformation. Although the early forms of Protestantism were those who followed Luther, Calvin, and Zwingli, the term now includes most non-Roman Catholic or non-Orthodox denominations. Protestants want to be closer to the style of faith of the early Church which they feel has been obscured in Catholic practices. The term derives from the word 'protestari' which means not only to protest but to avow or confess. Common characteristics of Protestantism include the justification by faith alone, the authority of scripture, and the priesthood of all believers, in which not only the clergy are able to hear the confession of sin."@en, "El término general para tipos de fe cristiana originadas a partir de la Reforma. Aunque las formas tempranas del protestantismo fueron aquellas que obedecían a Lutero, Calvino y Zwinglio, el término ahora incluye la mayoría de las denominaciones no Romanas o no Ortodoxas. El caracter común de los protestantes incluye la justificación de la fe por la fe, la autoridad de la sagrada escritura  y el sacerdocio de todos los fieles, por el que cada creyente puede oir la confesión de los pecados, no siendo exclusivo del clero. protestantes quieren estar cerca al estilo de fe de la primera Iglesia el cual sienten ha sido opacado en las prácticas católicas. El término deriva desde la palabra \"protestari\" que significa no sólo protestar sino que reconocer o confesar. Característica común."@es, "De algemene term voor typen christelijk geloof die zijn ontstaan tijdens de Reformatie. Hoewel de vroegste vormen van protestantisme werden beoefend door de volgelingen van Luther, Calvijn en Zwingli, wordt de term tegenwoordig gebruikt voor de meeste overtuigingen die niet rooms-katholiek of orthodox zijn. Protestanten willen dichter bij de geloofsstijl van de vroege kerk staan, die volgens hen in de katholieke praktijk overschaduwd is geraakt. De term is afkomstig van het woord 'protestari', wat niet alleen 'protesteren' betekent, maar ook 'belijden'. Enkele algemene kenmerken van het protestantisme zijn: rechtvaardiging door het geloof alleen, de berusting van alle gezag bij de Bijbel en de leer dat alle gelovigen zelf hun zonden aan God kunnen belijden, waarbij het aanhoren van de biecht niet alleen aan priesters is voorbehouden."@nl, """泛稱源自宗教改革的各式基督信仰。雖然早期的新教形式是指遵循路德(Luther)、喀爾文(Calvin)，以及茨溫利(Zwingli)的派別，但現在新教這個詞彙包含了大部分非羅馬天主教或非正教的派別。新教徒希望能更接近早期教會信仰，認為天主教將之變得晦澀難解。本詞彙衍生自"protestari"，不僅意指抗議，更要坦白或懺悔。新教的常見特色包括因純信而稱義、經典的權威性、信徒皆牧師，所以不是只有牧師才能聽取認罪懺悔。
  """@zh-hant, ""@fr ;
   prov:derivedFrom <http://vocab.getty.edu/aat/300073735> .
 
@@ -2175,64 +2178,63 @@ cwrc:SophiaKing
     cwrc:hasPoliticalAffiliation cwrc:radical
     cwrc:hasNationalitySelfDefined cwrc:english
     a foaf:Person ;
-    foaf:name “Sophia King” .
+    foaf:name "Sophia King" .
 
 SophiaKing  cwrc:hasGeogHeritage cwrc:portugal ;
 
-!--Instance of the Cultural Formation for the Ethnicity Context for Sophia King--!
 
-http://www.cwrc.ca/cwrcdata/KINGSSocialClassIndigent
+<http://www.cwrc.ca/cwrcdata/KINGSSocialClassIndigent>
     a cwrc:SocialClassContext ;
     rdfs:label ":SocialClassContext for Sophia King"@en ;
     oa:hasBody cwrc:indigent ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc: King12345Happy.
 
-http://www.cwrc.ca/cwrcdata/KINGSSocialClassGentry
+<http://www.cwrc.ca/cwrcdata/KINGSSocialClassGentry>
     a cwrc:SocialClassContext ;
     rdfs:label ":SocialClassContext for Sophia King"@en ;
     oa:hasBody cwrc:gentry ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc: King12345Happy.
 
-http://www.cwrc.ca/cwrcdata/KINGSSocialClassProfessional
+<http://www.cwrc.ca/cwrcdata/KINGSSocialClassProfessional>
     a cwrc:SocialClassContext ;
     rdfs:label ":SocialClassContext for Sophia King"@en ;
     oa:hasBody cwrc:professional ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc: King12345Happy.
 
-http://www.cwrc.ca/cwrcdata/KINGSRPortugal
+<http://www.cwrc.ca/cwrcdata/KINGSRPortugal>
     a cwrc:GeographicHeritageContext ;
     rdfs:label ":GeographicHeritageContext for Sophia King"@en ;
-    oa:hasBody geonames:Portugal ;
+    oa:hasBody dbpedia:Portugal ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc:King12345Happy .
 
 !--Rob, should denomination be included under RaceEthnicityContext or be Denomination Context? (line 71)--!
 
-http://www.cwrc.ca/cwrcdata/KINGSEthJewish
+<http://www.cwrc.ca/cwrcdata/KINGSEthJewish>
     a cwrc:RaceEthnicityContext ;
     rdfs:label ":Denomination Context for Sophia King"@en ;
     oa:hasBody cwrc:jewish ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc:King12345Happy .
 
-http://www.cwrc.ca/cwrcdata/KINGSDenJewish
+<http://www.cwrc.ca/cwrcdata/KINGSDenJewish>
     a cwrc:RaceEthnicityContext ;
     rdfs:label ":RaceEthnicityContext for Sophia King"@en ;
     oa:hasBody cwrc:jewish ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc: King12345Happy.
 
-http://www.cwrc.ca/cwrcdata/KINGSPoliticalAffRadical
+<http://www.cwrc.ca/cwrcdata/KINGSPoliticalAffRadical>
     a cwrc:PoliticalAffiliationContext ;
     rdfs:label ":PoliticalAffiliationContext for Sophia King"@en ;
     oa:hasBody cwrc:radical ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc: King12345Happy.
 
-http://www.cwrc.ca/cwrcdata/KINGSNationalitySDEnglish
+<http://www.cwrc.ca/cwrcdata/KINGSNationalitySDEnglish>
     a cwrc:NationalitySDContext ;
     rdfs:label ":NationalitySelfDefinedContext for Sophia King"@en ;
     oa:hasBody cwrc:english ;
@@ -2277,7 +2279,7 @@ cwrc:ElizabethSarahGooch
     cwrc:hasDenominationSelfDefined cwrc: anglicanChurch ;
     cwrc:hasSocialClassSelfDefined cwrc: gentry ;
     a foaf:Person ;
-    foaf:name “Elizabeth Sarah Gooch” .
+    foaf:name "Elizabeth Sarah Gooch" .
 
 cwrc:ElizabethSarahGoochFather
 	a foaf:Person;
@@ -2318,7 +2320,7 @@ cwrc:AmyLevy
     cwrc:hasEthnicity cwrc:jewish ;
     a foaf:Person ;
     owl:sameAs <http://viaf.org/viaf/7628015> ;
-    foaf:name “Amy Levy“ .
+    foaf:name "Amy Levy" .
 
 cwrc:CharlotteMontefiore
     cwrc:hasRaceColour cwrc: white ;
@@ -2326,7 +2328,7 @@ cwrc:CharlotteMontefiore
     cwrc:hasSocialClass cwrc:entrepreneurial-industrialist ;
     cwrc: hasNationalHeritage cwrc:italian ;
     a foaf:Person ;
-    foaf: name “Charlotte Montefiore” .
+    foaf: name "Charlotte Montefiore" .
 
 cwrc:CharlotteMontefioreFather
     a foaf:Person;
@@ -2338,7 +2340,7 @@ cwrc:JuliaFrankau
     cwrc:hasEthnicitySelfDefined cwrc:jewish ;the
     cwrc:hasDenominationSelfDefined cwrc:jewish ;
     a foaf:Person ;
-    foaf: name “Julia Frankau” .
+    foaf: name "Julia Frankau" .
 
 cwrc:annaleanowens1
     nif:isString """Although AL herself, in attempting to adopt an unequivocally English identity, implicitly claimed that she was white, evidence suggests that while
