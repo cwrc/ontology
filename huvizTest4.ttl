@@ -2178,7 +2178,7 @@ cwrc:SophiaKing
 
 SophiaKing  cwrc:hasGeogHeritage cwrc:portugal ;
 
-[Instance of the Cultural Formation for the Ethnicity Context for Sophia King]
+!--Instance of the Cultural Formation for the Ethnicity Context for Sophia King--!
 
 http://www.cwrc.ca/cwrcdata/KINGSSocialClassIndigent
     a cwrc:SocialClassContext ;
@@ -2208,7 +2208,7 @@ http://www.cwrc.ca/cwrcdata/KINGSRPortugal
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc:King12345Happy .
 
-!--> Rob, should denomination be included under RaceEthnicityContext or be Denomination Context? (line 71)
+!--Rob, should denomination be included under RaceEthnicityContext or be Denomination Context? (line 71)--!
 
 http://www.cwrc.ca/cwrcdata/KINGSEthJewish
     a cwrc:RaceEthnicityContext ;
@@ -2404,8 +2404,4 @@ Beth-Zion Lask Abrahams joins some contemporary critics in calling her a Jewish 
 she was a dedicated Jew nonetheless, and above all.""" ;
     a nif:Context, nif:Sentence ;
     prov:createdBy cwrc:originalOrlandoAuthor .
-
-cwrc:originalOrlandoAuthor
-    a foaf:Group ;
-    foaf:name "Members of the Orlando Project." .
 
