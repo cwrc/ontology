@@ -397,10 +397,10 @@ People using this class should apply it to instances that seem to be right for t
  <owl:Class rdf:ID="Religion">
    <rdfs:label xml:lang="en">Religion</rdfs:label>
    <rdfs:label xml:lang="fr">Religion</rdfs:label>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
- <skos:definition xml:lang="en">A subclass of CulturalFormation, this describes a person's religion(s) or belief system(s). Note that while atheism denotes the absence of religion, we use the Religion label for convinience.</skos:definition>
- <skos:definition xml:lang="fr"></skos:definition>
+   <skos:definition xml:lang="en">A subclass of CulturalFormation, this describes a person's religion(s) or belief system(s). Note that while atheism denotes the absence of religion, we use the Religion label for convinience.</skos:definition>
+   <skos:definition xml:lang="fr"></skos:definition>   
  </owl:Class>
 
  <cwrc:Religion rdf:about="#anglicanChurch">
@@ -421,6 +421,8 @@ People using this class should apply it to instances that seem to be right for t
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300153822"/>
+  <skos:inScheme rdf:resource="#Religion"/>
+  <skos:broaderTransitive rdf:resource="#christianity"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#baptistChurch">
@@ -442,7 +444,9 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300153825"/>
- </cwrc:Religion>
+  <skos:inScheme rdf:resource="#Religion"/>
+  <skos:broaderTransitive rdf:resource="#christianity"/>
+</cwrc:Religion>
 
  <cwrc:Religion rdf:about="#buddhism">
   <rdfs:label xml:lang="nl">boeddhisme</rdfs:label>
@@ -461,6 +465,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300073738"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#catholicChurch">
@@ -478,7 +483,8 @@ People using this class should apply it to instances that seem to be right for t
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300073730"/>
   <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-  <skos:broader rdf:resource="#christianity"/>
+  <skos:inScheme rdf:resource="#Religion"/>
+  <skos:broaderTransitive rdf:resource="#christianity"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#christianity">
@@ -498,6 +504,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300073711"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#churchOfChristianScience">
@@ -511,6 +518,8 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300264476"/>
+  <skos:inScheme rdf:resource="#Religion"/>
+  <skos:broaderTransitive rdf:resource="#christianity"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#hinduism">
@@ -530,6 +539,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300073727"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#islam">
@@ -552,6 +562,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300073715"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#judaism">
@@ -571,6 +582,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300073723"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#presbyterianism">
@@ -592,6 +604,8 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300153854"/>
+  <skos:inScheme rdf:resource="#Religion"/>
+  <skos:broaderTransitive rdf:resource="#christianity"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#protestantism">
@@ -612,6 +626,8 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300073735"/>
+  <skos:inScheme rdf:resource="#Religion"/>
+  <skos:broaderTransitive rdf:resource="#christianity"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#agnosticism">
@@ -620,6 +636,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#atheism">
@@ -628,6 +645,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#churchOfEngland">
@@ -637,6 +655,8 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+  <skos:inScheme rdf:resource="#Religion"/>
+  <skos:broaderTransitive rdf:resource="#christianity"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#congregationalChurch">
@@ -645,6 +665,8 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
+  <skos:broaderTransitive rdf:resource="#christianity"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#churchOfIreland">
@@ -653,6 +675,8 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
+  <skos:broaderTransitive rdf:resource="#christianity"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#dissenters">
@@ -661,6 +685,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#dissentingChurches">
@@ -669,6 +694,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#entrepreneurial-industrialism">
@@ -677,6 +703,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#fifthMonarchists">
@@ -685,6 +712,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#lollards">
@@ -693,6 +721,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#methodistChurch">
@@ -701,6 +730,8 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
+  <skos:broaderTransitive rdf:resource="#christianity"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#millenarianism">
@@ -709,6 +740,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#neo-thomism">
@@ -717,6 +749,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#occultism">
@@ -725,6 +758,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en">Any religious or philosophic ideology based on mystical insight into the nature of God and/or divine truth. This insight is attained only through direct experience of the divine. The term is sometimes used to specifically refer to the principles of the Theosophical Society founded in New York in 1875 by Madame Blavatsky and H. S. Olcott which incorporated aspects of Buddhism and Brahmanism.</skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#pagan">
@@ -733,6 +767,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#plymouthBrethren">
@@ -741,6 +776,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#quakers">
@@ -749,6 +785,8 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
+  <skos:broaderTransitive rdf:resource="#christianity"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#rationalDissenter">
@@ -757,6 +795,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
 
@@ -766,6 +805,8 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
+  <skos:broaderTransitive rdf:resource="#christianity"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#spiritualism">
@@ -774,6 +815,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#tractarianMovement">
@@ -782,6 +824,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#unitarianChurch">
@@ -791,6 +834,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <rdf:value>unitarianChurch</rdf:value>
+  <skos:broaderTransitive rdf:resource="#christianity"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#unitarianism">
@@ -808,6 +852,8 @@ People using this class should apply it to instances that seem to be right for t
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300263305"/>
   <rdf:value>unitarianMovement</rdf:value> 
+  <skos:inScheme rdf:resource="#Religion"/>
+  <skos:broaderTransitive rdf:resource="#christianity"/>
 </cwrc:Religion>
 
 
