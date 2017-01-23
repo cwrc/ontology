@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/opt/local/bin/perl
 #
 use RDF::Trine;
 use RDF::Query;
@@ -10,23 +10,34 @@ use strict;
 my $store = RDF::Trine::Store::Memory->new();
 my $model = RDF::Trine::Model->new($store);
 # parse some web data into the model, and print the count of resulting RDF statements
-RDF::Trine::Parser->parse_url_into_model( 'file:../cwrc.owl', $model );
+my $raw_file = 'file:'. $ARGV[0];
+#print $raw_file ."\n\n\n";
+RDF::Trine::Parser->parse_url_into_model( $raw_file, $model );
 #my $xmldocument = $xml_parser->load_xml(location => 'military.owl');
-print $model->size . " RDF statements parsed\n";
+#print $model->size . " RDF statements parsed\n";
 my @allmaps ;
-my $query = RDF::Query->new('SELECT * WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cwrc.ca/ontologies/cwrc#Religion> . }');
+my $query = RDF::Query->new('SELECT * WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cwrc.ca/ontologies/cwrc#Religion> . 
+?uri <http://www.w3.org/2000/01/rdf-schema#label> ?label .
+FILTER(LANG(?label) = "" || LANGMATCHES(LANG(?label), "en"))
+}');
 my $iterator = $query->execute( $model );
-print "graph ReligionGraph {\n";
+print "digraph ReligionGraph {\n
+ratio=\"fill\";
+ size \"3,5\";
+ margin=0;\n";
 while (my $row = $iterator->next) {
  my $astring = $row->{"uri"}->as_string();
- print $astring ."\n";
- my $innerquery =  RDF::Query->new('SELECT * WHERE { <' .$astring . '>  <http://www.w3.org/2004/02/skos/core#broaderTransitive> ?upper . }');
+# print $astring ."\n";
+ my $innerquery =  RDF::Query->new('SELECT * WHERE { ' . $astring . '  <http://www.w3.org/2004/02/skos/core#broaderTransitive> ?upper . }');
+ #
+ #
  my $inneriterator = $innerquery->execute( $model );
- my $lhs = substr(md5_hex($astring),1,5);
+ my $lhs = "X" . substr(md5_hex($astring),1,5);
  while (my $tworow = $inneriterator->next) {
-  my $rhs = substr(md5_hex($tworow->{"upper"}->as_string()),1,5);
-  print $lhs . " -> " . $rhs . ";";
+  my $rhs = "X" . substr(md5_hex($tworow->{"upper"}->as_string()),1,5);
+  print " " .$lhs . " -> " . $rhs . "\n";
  }#while
+ print " $lhs [label=\"" . $row->{"label"}->value() ."\"]\n";
 }       #while        
 print "}";
  exit 0;        
