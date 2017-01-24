@@ -30,64 +30,64 @@ cwrc:SophiaKing
     cwrc:hasPoliticalAffiliation cwrc:radical
     cwrc:hasNationalitySelfDefined cwrc:english
     a foaf:Person ;
-    foaf:name “Sophia King” .
+    foaf:name "Sophia King" .
 
 SophiaKing  cwrc:hasGeogHeritage cwrc:portugal ;
 
 [Instance of the Cultural Formation for the Ethnicity Context for Sophia King]
 
-http://www.cwrc.ca/cwrcdata/KINGSSocialClassIndigent
+<http://www.cwrc.ca/cwrcdata/KINGSSocialClassIndigent>
     a cwrc:SocialClassContext ;
     rdfs:label ":SocialClassContext for Sophia King"@en ;
     oa:hasBody cwrc:indigent ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc: King12345Happy.
 
-http://www.cwrc.ca/cwrcdata/KINGSSocialClassGentry
+<http://www.cwrc.ca/cwrcdata/KINGSSocialClassGentry>
     a cwrc:SocialClassContext ;
     rdfs:label ":SocialClassContext for Sophia King"@en ;
     oa:hasBody cwrc:gentry ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc: King12345Happy.
 
-http://www.cwrc.ca/cwrcdata/KINGSSocialClassProfessional
+<http://www.cwrc.ca/cwrcdata/KINGSSocialClassProfessional>
     a cwrc:SocialClassContext ;
     rdfs:label ":SocialClassContext for Sophia King"@en ;
     oa:hasBody cwrc:professional ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc: King12345Happy.
 
-http://www.cwrc.ca/cwrcdata/KINGSRPortugal
+<http://www.cwrc.ca/cwrcdata/KINGSRPortugal>
     a cwrc:GeographicHeritageContext ;
     rdfs:label ":GeographicHeritageContext for Sophia King"@en ;
-    oa:hasBody geonames:Portugal ;
+    oa:hasBody dbpedia:Portugal ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc:King12345Happy .
 
 !--> Rob, should denomination be included under RaceEthnicityContext or be Denomination Context? (line 71)
 
-http://www.cwrc.ca/cwrcdata/KINGSEthJewish
+<http://www.cwrc.ca/cwrcdata/KINGSEthJewish>
     a cwrc:RaceEthnicityContext ;
     rdfs:label ":Denomination Context for Sophia King"@en ;
     oa:hasBody cwrc:jewish ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc:King12345Happy .
 
-http://www.cwrc.ca/cwrcdata/KINGSDenJewish
+<http://www.cwrc.ca/cwrcdata/KINGSDenJewish>
     a cwrc:RaceEthnicityContext ;
     rdfs:label ":RaceEthnicityContext for Sophia King"@en ;
     oa:hasBody cwrc:jewish ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc: King12345Happy.
 
-http://www.cwrc.ca/cwrcdata/KINGSPoliticalAffRadical
+<http://www.cwrc.ca/cwrcdata/KINGSPoliticalAffRadical>
     a cwrc:PoliticalAffiliationContext ;
     rdfs:label ":PoliticalAffiliationContext for Sophia King"@en ;
     oa:hasBody cwrc:radical ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc: King12345Happy.
 
-http://www.cwrc.ca/cwrcdata/KINGSNationalitySDEnglish
+<http://www.cwrc.ca/cwrcdata/KINGSNationalitySDEnglish>
     a cwrc:NationalitySDContext ;
     rdfs:label ":NationalitySelfDefinedContext for Sophia King"@en ;
     oa:hasBody cwrc:english ;
@@ -132,7 +132,7 @@ cwrc:ElizabethSarahGooch
     cwrc:hasDenominationSelfDefined cwrc: anglicanChurch ;
     cwrc:hasSocialClassSelfDefined cwrc: gentry ;
     a foaf:Person ;
-    foaf:name “Elizabeth Sarah Gooch” .
+    foaf:name "Elizabeth Sarah Gooch" .
 
 cwrc:ElizabethSarahGoochFather
 	a foaf:Person;
@@ -173,7 +173,7 @@ cwrc:AmyLevy
     cwrc:hasEthnicity cwrc:jewish ;
     a foaf:Person ;
     owl:sameAs <http://viaf.org/viaf/7628015> ;
-    foaf:name “Amy Levy“ .
+    foaf:name "Amy Levy" .
 
 cwrc:CharlotteMontefiore
     cwrc:hasRaceColour cwrc: white ;
@@ -181,7 +181,7 @@ cwrc:CharlotteMontefiore
     cwrc:hasSocialClass cwrc:entrepreneurial-industrialist ;
     cwrc: hasNationalHeritage cwrc:italian ;
     a foaf:Person ;
-    foaf: name “Charlotte Montefiore” .
+    foaf: name "Charlotte Montefiore" .
 
 cwrc:CharlotteMontefioreFather
     a foaf:Person;
@@ -193,7 +193,7 @@ cwrc:JuliaFrankau
     cwrc:hasEthnicitySelfDefined cwrc:jewish ;the
     cwrc:hasDenominationSelfDefined cwrc:jewish ;
     a foaf:Person ;
-    foaf: name “Julia Frankau” .
+    foaf: name "Julia Frankau" .
 
 cwrc:annaleanowens1
     nif:isString """Although AL herself, in attempting to adopt an unequivocally English identity, implicitly claimed that she was white, evidence suggests that while
