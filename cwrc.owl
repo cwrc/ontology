@@ -328,6 +328,16 @@ People using this class should apply it to instances that seem to be right for t
    <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
+<cwrc:GeographicalHeritage rdf:about="#england">
+ <rdfs:label xml:lang="en">england</rdfs:label>
+ <rdfs:label xml:lang="fr">angleterre</rdfs:label>
+ <foaf:name xml:lang="en">England (Geographical Heritage)</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdfs:subClass rdf:resource="#englandLabel"/>
+</cwrc:GeographicalHeritage>
+
+
 
  <owl:Class rdf:ID="GenderIdentity">
    <rdfs:label xml:lang="en">Gender Identity</rdfs:label>
@@ -347,6 +357,7 @@ People using this class should apply it to instances that seem to be right for t
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 <!--  (http://ir.lib.uwo.ca/cgi/viewcontent.cgi?article=1085&context=fimspub) -->
+
 
  <owl:Class rdf:ID="RaceColour">
    <rdfs:label xml:lang="en">Race and/or Colour</rdfs:label>
@@ -1194,7 +1205,7 @@ People using this class should apply it to instances that seem to be right for t
  <rdfs:label xml:lang="fr">Connait la langue</rdfs:label>
  <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
  <rdfs:domain rdf:resource="#Language"/>
- <skos:definition xml:lang="en">Knowleage about the language in writing or reading ?</skos:definition>
+ <skos:definition xml:lang="en">Knowleage about the language in writing or reading.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
 
@@ -1206,6 +1217,28 @@ People using this class should apply it to instances that seem to be right for t
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
+
+
+<owl:ObjectProperty rdf:ID="hasNativeLanguage">
+ <rdfs:label xml:lang="en">Knowns Language Natively</rdfs:label>
+ <rdfs:label xml:lang="fr">A une langue native</rdfs:label>
+ <rdfs:subPropertyOf rdf:resource="#hasLanguage"/>
+ <rdfs:domain rdf:resource="#Language"/>
+ <skos:definition xml:lang="en">Knowleage about the language in writing or reading.</skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="hasNativeLanguageSelfDeclared">
+ <rdfs:label xml:lang="en">Knowns Language Natively (Self Declared)</rdfs:label>
+ <rdfs:label xml:lang="fr">A une langue native (Autodéclarés)</rdfs:label>
+ <rdfs:subPropertyOf rdf:resource="#hasLanguageSelfDeclared"/>
+ <rdfs:domain rdf:resource="#Language"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
+
+
+
 
 <owl:ObjectProperty rdf:ID="hasSexuality">
  <rdfs:label xml:lang="en">has Sexual Orientation</rdfs:label>
@@ -1225,9 +1258,28 @@ People using this class should apply it to instances that seem to be right for t
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
 
+<owl:ObjectProperty rdf:ID="hasGeographicHeritage">
+ <rdfs:label xml:lang="en">has Geographic Heritage</rdfs:label>
+ <rdfs:label xml:lang="fr">A un héritage géographique</rdfs:label>
+ <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
+ <rdfs:domain rdf:resource="#GeographicHeritage"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="hasGeographicHeritageSelfDeclared">
+ <rdfs:label xml:lang="en">has Geographic Heritage (Self Declared)</rdfs:label>
+ <rdfs:label xml:lang="fr">A un héritage géographique (Self Declared)</rdfs:label>
+ <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
+ <rdfs:domain rdf:resource="#GeographicHeritage"/>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+</owl:ObjectProperty>
+
+
 <!-- Labels -->
 
-<skos:ConceptScheme rdf:about="#TEILabels">
+<skos:ConceptScheme rdf:about="#TextLabels">
  <rdfs:label xml:lang="en">Collection of all ambiguous labels within the TEI markup.</rdfs:label>
  <rdfs:label xml:lang="fr">blanc</rdfs:label>
  <skos:definition xml:lang="en"></skos:definition>
@@ -1245,7 +1297,7 @@ People using this class should apply it to instances that seem to be right for t
   <owl:Thing rdf:about="#whiteEthnicity"/>
   <owl:Thing rdf:about="#whiteRace"/>
  </owl:oneOf>
- <skos:inScheme rdf:resource="#TEILabels"/>
+ <skos:inScheme rdf:resource="#TextLabels"/>
 </skos:Concept>
 
 <skos:Concept rdf:about="#blackLabel">
@@ -1255,7 +1307,7 @@ People using this class should apply it to instances that seem to be right for t
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
- <skos:inScheme rdf:resource="#TEILabels"/>
+ <skos:inScheme rdf:resource="#TextLabels"/>
 </skos:Concept>
 
 <skos:Concept rdf:about="#englishLabel">
@@ -1265,7 +1317,12 @@ People using this class should apply it to instances that seem to be right for t
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
- <skos:inScheme rdf:resource="#TEILabels"/>
+ <owl:oneOf rdf:parseType="Collection">
+  <owl:Thing rdf:about="#EnglishNationalHeritage"/>
+  <owl:Thing rdf:about="#EnglishLanguage"/>
+  <owl:Thing rdf:about="#EnglishNationalIdentity"/>
+ </owl:oneOf>
+ <skos:inScheme rdf:resource="#TextLabels"/>
 </skos:Concept>
 
 <skos:Concept rdf:about="#jewishLabel">
@@ -1278,8 +1335,23 @@ People using this class should apply it to instances that seem to be right for t
  <owl:oneOf rdf:parseType="Collection">
   <owl:Thing rdf:about="jewish"/>
  </owl:oneOf>
- <skos:inScheme rdf:resource="#TEILabels"/>
+ <skos:inScheme rdf:resource="#TextLabels"/>
 </skos:Concept>
+
+<skos:Concept rdf:about="#englandLabel">
+ <rdfs:label xml:lang="en">england</rdfs:label>
+ <rdfs:label xml:lang="fr">angleterre</rdfs:label>
+ <foaf:name xml:lang="en">England</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+ <owl:oneOf rdf:parseType="Collection">
+  <owl:Thing rdf:about="#england"/>
+ </owl:oneOf>
+ <skos:inScheme rdf:resource="#TextLabels"/>
+</skos:Concept>
+
+
 
 <!-- Genres -->
 

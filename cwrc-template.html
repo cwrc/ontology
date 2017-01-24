@@ -187,7 +187,15 @@
     was likely to cause logical and ontological issues. To this end, we
     opted not to use the &lt;owl:import&gt; construct and to either
     link to vocabularies externally or to clone specific sets of terms from
-    selected vocabularies.</p>
+    selected vocabularies. Similarly, not all ontologies are well-defined
+    but drawing from their narrative or some of their properties prouved
+    usefull. To this end, we avoided the use of &lt;owl:sameAs&gt; so as not
+    to bring in unintended properties or ontological structures into the
+    cwrc ontology. In other cases, the Provenance ontology property
+    &lt;prov:derivedFrom&gt; is used to indicate that the term was
+    constructed using information from other terms without necessarily being
+    equivalent. Direct linkages to other ontologies is usually done through
+    the use of subClasses or &lt;owl:equivalentClass&gt;.</p>
 
     <p>A specific example was with the <a href="#Religion">Religion<a/>
     class instances that were problematic. <it>Why are we using Getty over
@@ -253,6 +261,10 @@ committing to a specific interpretation immediately.</p>
        <p>Taxonomy attempts to trace both the theological and/or
        organizational ancestry of the belief system. This is a highly
        subjective process.</p>
+       <p>The specific taxonomy is:
+       <img src="figures/religionTaxonomy.png">
+       
+       </p>
        
        
        <h3 id="granularproperties">Granular Properties</h3> 
