@@ -187,6 +187,7 @@ People using this class should apply it to instances that seem to be right for t
    <skos:definition xml:lang="en">hasSexualityContext is a significant sub-class within culturalForms. It indicates the presence of information and discussions of a person's subject position with regards to their sexuality and sexual identity. A subclass of Cultural Formation, hasSexualityContext provides depth to more granual categorizations of a person through hasSexuality or hasSexualIdentity. It is not meant to capture individual sexual experiences and relationships, which are covered by intimateRelationships. Specific relationships may be invoked here to indicate the effect on a subject's life and understanding of her own sexuality. This effort to to contextualize gestures towards some of the complicated issues around sexuality, for example, the politics of outing, the historical specificity of some categories such as "congenital invert," or the multiple forms of relating to one's own sexuality. Capturing discussions of her sexuality within this element, will help users interested in the historical, ideological and gendered constructions of sexuality. There are important politics of privacy with respect to the disclosure of a subject's sexuality, sexual orientation and sexual identity. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See Campbell and Cowan 2016</skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
+
 <!--  (http://ir.lib.uwo.ca/cgi/viewcontent.cgi?article=1085&context=fimspub) -->
  <owl:Class rdf:ID="LanguageContext">
    <rdfs:label xml:lang="en">Language Context</rdfs:label>
@@ -358,6 +359,18 @@ People using this class should apply it to instances that seem to be right for t
  </owl:Class>
 <!--  (http://ir.lib.uwo.ca/cgi/viewcontent.cgi?article=1085&context=fimspub) -->
 
+ <owl:Class rdf:ID="SexIdentity">
+   <rdfs:label xml:lang="en">Sex Identity</rdfs:label>
+   <rdfs:label xml:lang="fr">Identité Sexe</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#CulturalFormation"/>
+ <skos:definition xml:lang="en">Sex according to birth or census data.</skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ </owl:Class>
+
+undefined -> unknown
+
+
 
  <owl:Class rdf:ID="RaceColour">
    <rdfs:label xml:lang="en">Race and/or Colour</rdfs:label>
@@ -375,14 +388,16 @@ People using this class should apply it to instances that seem to be right for t
  <foaf:name xml:lang="en">White (Race Colour)</foaf:name>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
- <rdfs:subClass rdf:resource="#whiteLabel"/>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 </cwrc:RaceColour>
 
-<cwrc:RaceColour rdf:about="#eurasian">
+<cwrc:RaceColour rdf:about="#eurasianRace">
  <rdfs:label xml:lang="en">eurasian</rdfs:label>
  <rdfs:label xml:lang="fr">eurasienne</rdfs:label>
+ <foaf:name xml:lang="en">Eurasian (Race Colour)</foaf:name>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 </cwrc:RaceColour>
 
 
@@ -1130,7 +1145,7 @@ People using this class should apply it to instances that seem to be right for t
  <rdfs:label xml:lang="fr">Est de Race</rdfs:label>
  <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
  <rdfs:domain rdf:resource="#RaceColour"/>
- <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="en">A subclass of raceEthnicityContext, this describes a person's racial identity.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
 
@@ -1333,7 +1348,7 @@ People using this class should apply it to instances that seem to be right for t
  <skos:definition xml:lang="fr"></skos:definition>
  <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
  <owl:oneOf rdf:parseType="Collection">
-  <owl:Thing rdf:about="jewish"/>
+  <owl:Thing rdf:about="#jewish"/>
  </owl:oneOf>
  <skos:inScheme rdf:resource="#TextLabels"/>
 </skos:Concept>
@@ -1350,7 +1365,6 @@ People using this class should apply it to instances that seem to be right for t
  </owl:oneOf>
  <skos:inScheme rdf:resource="#TextLabels"/>
 </skos:Concept>
-
 
 
 <!-- Genres -->
