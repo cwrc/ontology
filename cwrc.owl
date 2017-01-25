@@ -347,6 +347,8 @@ People using this class should apply it to instances that seem to be right for t
    <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
+
+
   <cwrc:Gender rdf:about="#genderManMale">
    <rdfs:label xml:lang="en">man/male</rdfs:label>
    <rdfs:label xml:lang="fr">woman/female</rdfs:label>
@@ -381,7 +383,6 @@ People using this class should apply it to instances that seem to be right for t
    <foaf:name xml:lang="fr">Transgenre</foaf:name>
    <skos:definition xml:lang="en">Transgender is the state of one's gender identity, expression or role not matching one's assigned sex.</skos:definition>
    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Transgender"/>
-   <owl:comment xml:lang="en">No longer a subclass of Sex.</owl:comment>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <skos:inScheme rdf:resource="#Gender"/> 
   </cwrc:Gender>
