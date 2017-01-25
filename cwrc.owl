@@ -1382,6 +1382,8 @@ People using this class should apply it to instances that seem to be right for t
  <skos:definition xml:lang="fr"></skos:definition>
 </skos:ConceptScheme>
 
+<!-- add rdfvalue to everything -->
+
 <skos:Concept rdf:about="#whiteLabel">
  <rdfs:label xml:lang="en">white</rdfs:label>
  <rdfs:label xml:lang="fr">blanc</rdfs:label>
@@ -1407,6 +1409,7 @@ People using this class should apply it to instances that seem to be right for t
 </skos:Concept>
 
 <skos:Concept rdf:about="#englishLabel">
+ <rdf:value>english</rdf:value>
  <rdfs:label xml:lang="en">english</rdfs:label>
  <rdfs:label xml:lang="fr">englais</rdfs:label>
  <foaf:name xml:lang="en">english</foaf:name>
@@ -1420,6 +1423,72 @@ People using this class should apply it to instances that seem to be right for t
  </owl:oneOf>
  <skos:inScheme rdf:resource="#TextLabels"/>
 </skos:Concept>
+
+
+<skos:Concept rdf:about="#manLabel">
+ <rdf:value>man</rdf:value>
+ <rdfs:label xml:lang="en">Man</rdfs:label>
+ <rdfs:label xml:lang="fr">Homme</rdfs:label>
+ <foaf:name xml:lang="en">Man (Label)</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+ <owl:oneOf rdf:parseType="Collection">
+  <owl:Thing rdf:about="#genderManMale"/>
+ </owl:oneOf>
+ <skos:inScheme rdf:resource="#TextLabels"/>
+</skos:Concept>
+
+
+
+<skos:Concept rdf:about="#womanLabel">
+ <rdf:value>woman</rdf:value>
+ <rdfs:label xml:lang="en">Woman</rdfs:label>
+ <rdfs:label xml:lang="fr">Femme</rdfs:label>
+ <foaf:name xml:lang="en">Woman (Label)</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+ <owl:oneOf rdf:parseType="Collection">
+  <owl:Thing rdf:about="#genderWomanFemale"/>
+ </owl:oneOf>
+ <skos:inScheme rdf:resource="#TextLabels"/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="#maleLabel">
+ <rdf:value>male</rdf:value>
+ <rdfs:label xml:lang="en">Male</rdfs:label>
+ <rdfs:label xml:lang="fr">Male</rdfs:label>
+ <foaf:name xml:lang="en">Male (Label)</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+ <owl:oneOf rdf:parseType="Collection">
+  <owl:Thing rdf:about="#genderManMale"/>
+  <owl:Thing rdf:about="#maleSex"/>
+ </owl:oneOf>
+ <skos:inScheme rdf:resource="#TextLabels"/>
+</skos:Concept>
+
+
+
+<skos:Concept rdf:about="#FemaleLabel">
+ <rdf:value>female</rdf:value>
+ <rdfs:label xml:lang="en">Female</rdfs:label>
+ <rdfs:label xml:lang="fr">Femelle</rdfs:label>
+ <foaf:name xml:lang="en">Female (Label)</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+ <owl:oneOf rdf:parseType="Collection">
+  <owl:Thing rdf:about="#genderWomanFemale"/>
+  <owl:Thing rdf:about="#femaleSex"/>
+ </owl:oneOf>
+ <skos:inScheme rdf:resource="#TextLabels"/>
+</skos:Concept>
+
+
 
 <skos:Concept rdf:about="#jewishLabel">
  <rdfs:label xml:lang="en">jewish</rdfs:label>
