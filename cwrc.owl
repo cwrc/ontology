@@ -145,7 +145,7 @@
 <owl:ObjectProperty rdf:ID="hasCulturalForms">
  <rdfs:label xml:lang="en">has a cultural form</rdfs:label>
  <rdfs:label xml:lang="fr">a une formation culturelle</rdfs:label>
- <skos:definition xml:lang="en">This sub-class of culturalFormation associates specific concepts and categories with the process of identity formation through cultural processes. Such associations may be or have been embraced by the subject by the subject themself or attributed by others. The concepts and categories classed as culturalForms are understood to overlap with each other conceptually and in terms of the labels used.</skos:definition>
+ <skos:definition xml:lang="en">This sub-property associates specific concepts and categories with the process of identity formation through cultural processes. Such associations may be or have been embraced by the subject by the subject her/himself or attributed by others. The concepts and categories classed as culturalForms are understood to overlap with each other conceptually and in terms of the labels used.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
 </owl:ObjectProperty>
 
@@ -338,16 +338,63 @@ People using this class should apply it to instances that seem to be right for t
  <rdfs:subClass rdf:resource="#englandLabel"/>
 </cwrc:GeographicalHeritage>
 
+ <owl:Class rdf:ID="Gender">
+   <rdfs:label xml:lang="en">Gender</rdfs:label>
+   <rdfs:label xml:lang="fr">Genre</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#CulturalFormation"/>
+   <skos:definition xml:lang="en">A subclass of culturalForms for noting a person's gender whether attributed or self-defined. Although in popular culture gender and biological sex are conflated and understood to be binary, the concept of gender stresses the relationality, constructedness, and performativity of gendered identities and gendered behaviour, whose categories are historically contingent and shifting, and the boundaries between them blurry. Cf. Simone de Beauvoir: "One is not born, but rather becomes, a woman," along with many other theorists of gender including Judith Butler, 1990. Gender is understood as fluid, situational, and sometimes plural, and it is related to though not commensurate with sexual identity and orientation. It is related to but not defined by specific forms of embodiment. Rather than seeing biological sex as a pre-social or natural given, the body is understood as a site of inscription (cf. Elizabeth Grosz 1994) which is also socially constructed and indeed epigenetically shaped by environmental factors (N. Katherine Hayles 2012). This ontology therefore does not provide separate terms for sex as distinct from gender. Instead, the slashes conjoining terms associated with gender and those conventionally associated with sex indicate the constant slippage between gender and sex in the way that these categories circulate through discourses, actions, and institutions. Far from indicating a universal facet of experience, gender intersects with other identity categories and axes of oppression such as class, race or colour, or geographical heritage to produced quite different interests and experiences among people of the same gender, as with the intersection of religion and white masculine identity in the Muscular Christianity movement in nineteenth-century Britain. Being a woman of colour may thus compound the impacts of gender oppression (Kimberlé Crenshaw 1989).</skos:definition>
+   <skos:definition xml:lang="fr"></skos:definition>
+ </owl:Class>
+
+  <cwrc:Gender rdf:about="#genderManMale">
+   <rdfs:label xml:lang="en">man/male</rdfs:label>
+   <rdfs:label xml:lang="fr">woman/female</rdfs:label>
+   <foaf:name xml:lang="en">man/male (gender)</foaf:name>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </cwrc:Gender>
+
+  <cwrc:Gender rdf:about="#genderWomanFemale">
+   <rdfs:label xml:lang="en">Woman/Female</rdfs:label>
+   <rdfs:label xml:lang="fr">Femme/Femelle</rdfs:label>
+   <foaf:name xml:lang="en">Woman/Female (gender)</foaf:name>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </cwrc:Gender>
 
 
- <owl:Class rdf:ID="GenderIdentity">
-   <rdfs:label xml:lang="en">Gender Identity</rdfs:label>
-   <rdfs:label xml:lang="fr">Identité Genre</rdfs:label>
+ <owl:Class rdf:ID="CisGendered">
+   <rdfs:label xml:lang="en">cisGendered</rdfs:label>
+   <rdfs:label xml:lang="fr">Cisgenre</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
+
+
+  <cwrc:Gender rdf:about="#Transgender">
+   <rdfs:label xml:lang="en">Transgender</rdfs:label>
+   <rdfs:label xml:lang="fr">Transgenre</rdfs:label>
+   <foaf:name xml:lang="en">Transgender</foaf:name>
+   <foaf:name xml:lang="fr">Transgenre</foaf:name>
+   <skos:definition xml:lang="en">Transgender is the state of one's gender identity, expression or role not matching one's assigned sex.</skos:definition>
+   <owl:sameAs rdf:resource="http://dbpedia.org/resource/Transgender"/>
+   <owl:comment xml:lang="en">No longer a subclass of Sex.</owl:comment>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <skos:inScheme rdf:resource="#Gender"/> 
+  </cwrc:Gender>
+
+  <skos:Concept rdf:about="#GenderQueer">
+   <rdfs:label xml:lang="en">GenderQueer</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/OrlandoOntology#"/>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <void:inDataset rdf:resource="#datasetdefinition"/>
+  </skos:Concept>
+
+
 
  <owl:Class rdf:ID="SexualIdentity">
    <rdfs:label xml:lang="en">Sexual Identity</rdfs:label>
@@ -357,6 +404,7 @@ People using this class should apply it to instances that seem to be right for t
  <skos:definition xml:lang="en">These terms capture in a word or phrase identifications of sexuality (i.e., "lesbian," "monogamous," "heterosexual") not as a means of shutting down but advancing investigation and critical analysis of these identifications. The association assumes that sexual identity does not function in an essentialist manner but can be plural and fluid, so multiple designations can be applied to a single person. Assertions of sexual itentity may come from the subject her/himself or from others. They may be in tension or mutually exclusive, and they may reflect different life stages. Linking to the term "lesbian" as a sexualIdentity class, for instance, does not signify that the subject was in any definitive sense a lesbian; such identifications are often impossible for reasons of historical gaps and silences. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See Campbell and Cowan 2016</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
+
 <!--  (http://ir.lib.uwo.ca/cgi/viewcontent.cgi?article=1085&context=fimspub) -->
 
  <owl:Class rdf:ID="SexIdentity">
@@ -368,8 +416,32 @@ People using this class should apply it to instances that seem to be right for t
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
-undefined -> unknown
+<cwrc:SexIdentity rdf:about="#maleSex">
+ <rdfs:label xml:lang="en">Male</rdfs:label>
+ <rdfs:label xml:lang="fr">Male</rdfs:label>
+ <foaf:name xml:lang="en">Male (Sex)</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</cwrc:SexIdentity>
 
+<cwrc:SexIdentity rdf:about="#femaleSex">
+ <rdfs:label xml:lang="en">Female</rdfs:label>
+ <rdfs:label xml:lang="fr">Femelle</rdfs:label>
+ <foaf:name xml:lang="en">Female (Sex)</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</cwrc:SexIdentity>
+
+<cwrc:SexIdentity rdf:about="#unknownSex">
+ <rdfs:label xml:lang="en">Unknown</rdfs:label>
+ <rdfs:label xml:lang="fr">Inconnue</rdfs:label>
+ <foaf:name xml:lang="en">Unknown (Sex)</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</cwrc:SexIdentity>
 
 
  <owl:Class rdf:ID="RaceColour">
@@ -389,6 +461,7 @@ undefined -> unknown
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <rdfs:subClass rdf:resource="#whiteLabel"/>
 </cwrc:RaceColour>
 
 <cwrc:RaceColour rdf:about="#eurasianRace">
@@ -738,6 +811,7 @@ undefined -> unknown
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:broaderTransitive rdf:resource="#millenarianism"/>
   <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
@@ -808,8 +882,11 @@ undefined -> unknown
  <cwrc:Religion rdf:about="#quakers">
   <rdfs:label xml:lang="en">Quaker</rdfs:label>
   <rdfs:label xml:lang="fr"></rdfs:label>
-  <skos:definition xml:lang="en"></skos:definition>
-  <skos:definition xml:lang="fr"></skos:definition>
+  <skos:definition xml:lang="en">Quakers (or Friends) are members of a group of religious Christian movements which is known as the Religious Society of Friends in Europe, Australia, New Zealand and parts of North America; and known as the Friends Church in Africa, Asia, South America and parts of the US. The movements were originally, and are still predominantly based on Christianity. Members of the movements profess the priesthood of all believers, a doctrine derived from the First Epistle of Peter. They include those with evangelical, holiness, liberal, and traditional Quaker understandings of Christianity. To differing extents, the different movements that make up the Religious Society of Friends/Friends Church avoid creeds and hierarchical structures. In 2007, there were approximately 359,000 adult Quakers.</skos:definition>
+  <skos:definition xml:lang="fr">La Société religieuse des Amis est un mouvement religieux fondé en Angleterre au XVIIe siècle par des dissidents de l'Église anglicane. Les membres de ce mouvement sont communément connus sous le nom de quakers () mais ils se nomment entre eux « Amis » et « Amies ». Le mouvement est souvent nommé simplement Société des Amis et le surnom de « quaker » apparaît le plus souvent dans la dénomination officielle, sous la forme Société religieuse des Amis (quakers). Les historiens s'accordent à désigner George Fox comme le principal fondateur ou le plus important meneur des débuts du mouvement. Depuis sa création en Angleterre, le mouvement s'est d'abord répandu dans les pays de colonisation anglo-saxonne. Au XXe siècle, des missionnaires quakers ont propagé leur religion en Amérique latine et en Afrique. Aujourd'hui, les quakers déclarent être au nombre d'environ 350 000 dans le monde. La Société des Amis se différencie de la plupart des autres groupes issus du christianisme par l'absence de credo et de toute structure hiérarchique. Pour les quakers, la croyance religieuse appartient à la sphère personnelle et chacun est libre de ses convictions. Le concept de « lumière intérieure » (inner light) est cependant partagé par la plupart d'entre eux, quelle que soit la signification donnée à ces mots. De nombreux quakers reconnaissent le christianisme mais ne ressentent pas leur foi comme entrant dans les catégories chrétiennes traditionnelles. On trouve aujourd'hui dans la Société des Amis des pratiques très diverses, y compris un large courant évangélique.</skos:definition>
+  <skos:definition xml:lang="nl">Het Religieus Genootschap der Vrienden, beter bekend als quakers, verouderd Nederlands kwakers, vormt een groep ondogmatische gelovigen, die zijn wortels vindt in de christelijke traditie. Het leven en de overgeleverde uitspraken van Jezus vormen een belangrijke inspiratiebron.</skos:definition>
+  <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
+  <prov:derivedFrom rdf:resource="http://dbpedia.org/page/Quakers"/>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
   <skos:broaderTransitive rdf:resource="#christianity"/>
@@ -841,6 +918,7 @@ undefined -> unknown
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdfs:subClassOf rdf:resource="http://dbpedia.org/page/Spiritualism"/> 
   <skos:inScheme rdf:resource="#Religion"/>
  </cwrc:Religion>
 
@@ -851,6 +929,8 @@ undefined -> unknown
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
+  <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
+  <rdfs:subClassOf rdf:resource="http://dbpedia.org/page/Oxford_Movement"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#unitarianChurch">
@@ -879,7 +959,8 @@ undefined -> unknown
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300263305"/>
   <rdf:value>unitarianMovement</rdf:value> 
   <skos:inScheme rdf:resource="#Religion"/>
-  <skos:broaderTransitive rdf:resource="#christianity"/>
+  <skos:broaderTransitive rdf:resource="#protestantism"/>
+  <rdfs:subClassOf rdf:resource="http://dbpedia.org/page/Unitarianism"/>  
 </cwrc:Religion>
 
 
