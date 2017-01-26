@@ -26,6 +26,7 @@
 cwrc:SophiaKing
     cwrc:hasSocialClass cwrc:indigent, cwrc:gentry, cwrc:professional ;
     cwrc:hasGeogHeritage cwrc:portugal ;
+    cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasEthnicity cwrc:jewish ;
     cwrc:hasDenomination cwrc:jewish
     cwrc:hasPoliticalAffiliation cwrc:radical
@@ -37,31 +38,38 @@ SophiaKing  cwrc:hasGeogHeritage cwrc:portugal ;
 
 <!---Instance of the Cultural Formation for the Ethnicity Context for Sophia King--->
 
-<http://www.cwrc.ca/cwrcdata/KINGSSocialClassIndigent>
+<http://www.cwrc.ca/cwrcdata/KINGSocialClassIndigent>
     a cwrc:SocialClassContext ;
     rdfs:label ":SocialClassContext for Sophia King"@en ;
     oa:hasBody cwrc:indigent ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc: King12345.
 
-<http://www.cwrc.ca/cwrcdata/KINGSSocialClassGentry>
+<http://www.cwrc.ca/cwrcdata/KINGSocialClassGentry>
     a cwrc:SocialClassContext ;
     rdfs:label ":SocialClassContext for Sophia King"@en ;
     oa:hasBody cwrc:gentry ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc: King12345.
 
-<http://www.cwrc.ca/cwrcdata/KINGSSocialClassProfessional>
+<http://www.cwrc.ca/cwrcdata/KINGSocialClassProfessional>
     a cwrc:SocialClassContext ;
     rdfs:label ":SocialClassContext for Sophia King"@en ;
     oa:hasBody cwrc:professional ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc: King12345.
 
-<http://www.cwrc.ca/cwrcdata/KINGSRPortugal>
+<http://www.cwrc.ca/cwrcdata/KINGGeographicHeritageContextPortugal>
     a cwrc:GeographicHeritageContext ;
     rdfs:label ":GeographicHeritageContext for Sophia King"@en ;
     oa:hasBody dbpedia:Portugal ;
+    oa:hasTarget cwrc:SophiaKing ;
+    prov:derivedFrom cwrc:King12345 .
+
+<http://www.cwrc.ca/cwrcdata/KINGGenderGenderWomanFemale>
+    a cwrc:Gender ;
+    rdfs:label ":Gender for Sophia King"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc:King12345 .
 
@@ -102,6 +110,7 @@ cwrc:King12345Happy
 
 <!---ANNA LEONOWENS--->
 cwrc:AnnaLeonowens
+    cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasDenomination cwrc:buddhist, cwrc:presbyterianchurch ;
     cwrc:hasNationalHeritage cwrc:welsh ;
     cwrc:hasNationality cwrc:english ;
@@ -110,42 +119,49 @@ cwrc:AnnaLeonowens
     a foaf:Person ;
     foaf:name "Anna Leonowens" .
 
-<http://www.cwrc.ca/cwrcdata/KINGSDenominationPresbyterian>
+<http://www.cwrc.ca/cwrcdata/LEONOWENSGenderGenderWomanFemale>
+    a cwrc:Gender ;
+    rdfs:label ":Gender for Anna Leonowens"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
+    oa:hasTarget cwrc:AnnaLeonowens ;
+    prov:derivedFrom cwrc:Leonowens12345 .
+
+<http://www.cwrc.ca/cwrcdata/LEONOWENSDenominationPresbyterian>
     a cwrc:Denomination ;
     rdfs:label ":Denomination for Anna Leonowens"@en ;
     oa:hasBody cwrc:presbyterian ;
     oa:hasTarget cwrc:AnnaLeonowens ;
     prov:derivedFrom cwrc: Leonowens12345.
 
-<http://www.cwrc.ca/cwrcdata/KINGSDenominationBuddhist>
+<http://www.cwrc.ca/cwrcdata/LEONOWENSDenominationBuddhist>
     a cwrc:Denomination ;
     rdfs:label ":Denomination for Anna Leonowens"@en ;
     oa:hasBody cwrc:buddhist ;
     oa:hasTarget cwrc:AnnaLeonowens ;
     prov:derivedFrom cwrc: Leonowens12345.
 
-<http://www.cwrc.ca/cwrcdata/KINGSNationalHeritageWelsh>
+<http://www.cwrc.ca/cwrcdata/LEONOWENSNationalHeritageWelsh>
     a cwrc:Denomination ;
     rdfs:label ":National Heritage for Anna Leonowens"@en ;
     oa:hasBody cwrc:welsh ;
     oa:hasTarget cwrc:AnnaLeonowens ;
     prov:derivedFrom cwrc: Leonowens12345.
 
-<http://www.cwrc.ca/cwrcdata/KINGSNationalityEnglish>
+<http://www.cwrc.ca/cwrcdata/LEONOWENSNationalityEnglish>
     a cwrc:Denomination ;
     rdfs:label ":Nationality for Anna Leonowens"@en ;
     oa:hasBody cwrc:english ;
     oa:hasTarget cwrc:AnnaLeonowens ;
     prov:derivedFrom cwrc: Leonowens12345.
 
-<http://www.cwrc.ca/cwrcdata/KINGSRaceColourEurasian>
+<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceColourEurasian>
     a cwrc:Denomination ;
     rdfs:label ":Race Colour for Anna Leonowens"@en ;
     oa:hasBody cwrc:eurasian ;
     oa:hasTarget cwrc:AnnaLeonowens ;
     prov:derivedFrom cwrc: Leonowens12345.
 
-<http://www.cwrc.ca/cwrcdata/KINGSRaceColourSelfDefinedWhite>
+<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceColourSelfDefinedWhite>
     a cwrc:Denomination ;
     rdfs:label ":Race Colour for Anna Leonowens"@en ;
     oa:hasBody cwrc:white ;
@@ -160,6 +176,7 @@ cwrc:AnnaCulturalFormatioNodeOne
 
 <!---CHARLOTTE DACRE--->
 cwrc:CharlotteDacre
+    cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasGeogHeritage cwrc:jewish, ; cwrc:portugal, cwrc: england, cwrc: middlesex, cwrc: london ;
     cwrc:hasReligion cwrc:anglicanchurch, cwrc:jewish ;
     cwrc:hasDenomination cwrc: jewish ; cwrc:anglicanChurch ;
@@ -167,6 +184,13 @@ cwrc:CharlotteDacre
     cwrc:hasSocialClass cwrc:entrepreneurial-industrialist, cwrc:gentry, cwrc: indigent;
     a foaf:Person ;
     foaf:name "Charlotte Dacre" .
+
+<http://www.cwrc.ca/cwrcdata/DACREGenderGenderWomanFemale>
+    a cwrc:Gender ;
+    rdfs:label ":Gender for Charlotte Dacre"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
+    oa:hasTarget cwrc:CharlotteDacre ;
+    prov:derivedFrom cwrc:Dacre12345 .
 
 <http://www.cwrc.ca/cwrcdata/DACREGeogHeritageJewish>
     a cwrc:GeogHeritage ;
@@ -261,12 +285,20 @@ cwrc:CharlotteDacre
 
 <!---ELIZABETH SARAH GOOCH--->
 cwrc:ElizabethSarahGooch
+    cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasEthnicityHeritage cwrc: jewish 
     cwrc:hasNationalityHeritage cwrc: portugal ;
     cwrc:hasDenominationSelfDefined cwrc: anglicanChurch ;
     cwrc:hasSocialClassSelfDefined cwrc: gentry ;
     a foaf:Person ;
     foaf:name "Elizabeth Sarah Gooch" .
+
+<http://www.cwrc.ca/cwrcdata/GOOCHGenderGenderWomanFemale>
+    a cwrc:Gender ;
+    rdfs:label ":Gender for Elizabeth Sarah Gooch"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
+    oa:hasTarget cwrc:ElizabethSarahGooch ;
+    prov:derivedFrom cwrc:Gooch12345 .
 
 <http://www.cwrc.ca/cwrcdata/GOOCHEthnicityHeritageJewish>
     a cwrc:EthnicityHeritage ;
@@ -304,6 +336,7 @@ cwrc:ElizabethSarahGoochFather
 
 <!---GRACE AGUILAR--->
 cwrc:GraceAguilar
+    cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasEthnicity cwrc:jewish ;
     cwrc:hasNationalHeritage cwrc:portugal, cwrc:spain ; 
     cwrc:hasNationalitySelfDefined cwrc:english, cwrc:jewish ;
@@ -315,6 +348,13 @@ cwrc:GraceAguilar
     a foaf:Person ;
     owl:sameAs <http://viaf.org/viaf/7628015> ;
     foaf:name "Grace Aguilar" .
+
+<http://www.cwrc.ca/cwrcdata/AGUILARGenderGenderWomanFemale>
+    a cwrc:Gender ;
+    rdfs:label ":Gender for Grace Aguilar"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
+    oa:hasTarget cwrc:GraceAguilar ;
+    prov:derivedFrom cwrc:Aguilar12345 .
 
 <http://www.cwrc.ca/cwrcdata/AGUILAREthnicityJewish>
     a cwrc:Ethnicity ;
@@ -421,6 +461,7 @@ cwrc:GraceAguilarMother
 
 <!---AMY LEVY--->
 cwrc:AmyLevy
+    cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasSocialClass cwrc:upper-middleClass ;
     cwrc:hasNationalitySelfDefined cwrc:english ;
     cwrc:hasDenominationSelfDefined cwrc:jewish ;
@@ -429,6 +470,13 @@ cwrc:AmyLevy
     a foaf:Person ;
     owl:sameAs <http://viaf.org/viaf/7628015> ;
     foaf:name "Amy Levy" .
+
+<http://www.cwrc.ca/cwrcdata/LEVYGenderGenderWomanFemale>
+    a cwrc:Gender ;
+    rdfs:label ":Gender for Amy Levy"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
+    oa:hasTarget cwrc:AmyLevy ;
+    prov:derivedFrom cwrc:Levy12345 .
 
 <http://www.cwrc.ca/cwrcdata/LEVYSocialClassUpper-MiddleClass>
     a cwrc:SocialClass ;
@@ -474,6 +522,13 @@ cwrc:CharlotteMontefiore
     a foaf:Person ;
     foaf: name "Charlotte Montefiore" .
 
+<http://www.cwrc.ca/cwrcdata/MONTEFIOREGenderGenderWomanFemale>
+    a cwrc:Gender ;
+    rdfs:label ":Gender for Charlotte Montefiore"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
+    oa:hasTarget cwrc:CharlotteMontefiore ;
+    prov:derivedFrom cwrc:Montefiore12345 .
+
 <http://www.cwrc.ca/cwrcdata/MONTEFIORERaceColourWhite>
     a cwrc:RaceColour ;
     rdfs:label ":Race Colour for Charlotte Montefiore"@en ;
@@ -517,10 +572,18 @@ cwrc:charlotteDacreCulturalFormation1
 
 <!---JULIA FRANKAU--->
 cwrc:JuliaFrankau
+    cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasEthnicitySelfDefined cwrc:jewish ;
     cwrc:hasDenominationSelfDefined cwrc:jewish ;
     a foaf:Person ;
     foaf: name "Julia Frankau" .
+
+<http://www.cwrc.ca/cwrcdata/FRANKAUGenderGenderWomanFemale>
+    a cwrc:Gender ;
+    rdfs:label ":Gender for Julia Frankau"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
+    oa:hasTarget cwrc:JuliaFrankau ;
+    prov:derivedFrom cwrc:Frankau12345 .
 
 <http://www.cwrc.ca/cwrcdata/FRANKAUEthnicitySelfDefinedJewish>
     a cwrc:EthnicitySelfDefined ;
