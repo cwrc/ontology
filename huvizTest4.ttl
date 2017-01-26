@@ -2282,8 +2282,8 @@ cwrc:ElizabethSarahGooch
 cwrc:ElizabethSarahGoochFather
     a foaf:Person;
     rel:father cwrc:ElizabethSarahGooch;
-    cwrc:hasDenomination cwrc:jewish ;
-    prov:derivedFrom textnode .
+    cwrc:hasDenomination cwrc:jewish . # remember to change the . to a ;
+#    prov:derivedFrom textnode .
 
 cwrc:GraceAguilar
     cwrc:hasEthnicity cwrc:jewish ;
@@ -2301,14 +2301,14 @@ cwrc:GraceAguilar
 cwrc:GraceAguilarFather
     a foaf:Person;
     rel:mother cwrc:GraceAguilar;
-    cwrc:hasNationalHeritage cwrc:portugal ;
-    prov:derivedFrom textnode;
+    cwrc:hasNationalHeritage cwrc:portugal . # remember to change the . to a ;
+#    prov:derivedFrom textnode .
 
 cwrc:GraceAguilarMother
     a foaf:Person;
     rel:mother cwrc:GraceAguilar;
-    cwrc:hasNationalHeritage cwrc:spain ;
-    prov:derivedFrom textnode;
+    cwrc:hasNationalHeritage cwrc:spain . # remember to change the . to a ;
+#    prov:derivedFrom textnode .
 
 cwrc:AmyLevy
     cwrc:hasSocialClass cwrc:upper-middleClass ;
@@ -2331,8 +2331,8 @@ cwrc:CharlotteMontefiore
 cwrc:CharlotteMontefioreFather
     a foaf:Person;
     rel:father cwrc:GraceAguilar;
-    cwrc:hasNationalHeritage cwrc:italian;
-    prov:derivedFrom textnode;
+    cwrc:hasNationalHeritage cwrc:italian . # remember to change the . to a ;
+#    prov:derivedFrom textnode .
 
 cwrc:JuliaFrankau
     cwrc:hasEthnicitySelfDefined cwrc:jewish ;the
