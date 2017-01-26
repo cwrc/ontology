@@ -22,7 +22,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix cwrc: <http://www.cwrc.ca/ontologies/cwrc#> .
 
-<!---SOPHIA KING--->
+# SOPHIA KING
 cwrc:SophiaKing
     cwrc:hasSocialClass cwrc:indigent, cwrc:gentry, cwrc:professional ;
     cwrc:hasGeogHeritage cwrc:portugal ;
@@ -36,7 +36,7 @@ cwrc:SophiaKing
 
 SophiaKing  cwrc:hasGeogHeritage cwrc:portugal ;
 
-<!---Instance of the Cultural Formation for the Ethnicity Context for Sophia King--->
+# Instance of the Cultural Formation for the Ethnicity Context for Sophia King
 
 <http://www.cwrc.ca/cwrcdata/KINGSocialClassIndigent>
     a cwrc:SocialClassContext ;
@@ -73,7 +73,7 @@ SophiaKing  cwrc:hasGeogHeritage cwrc:portugal ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc:King12345 .
 
-<!---Rob, should denomination be included under RaceEthnicityContext or be Denomination Context? (line 71)--->
+# Rob, should denomination be included under RaceEthnicityContext or be Denomination Context? (line 71)
 
 <http://www.cwrc.ca/cwrcdata/KINGSEthJewish>
     a cwrc:RaceEthnicityContext ;
@@ -108,7 +108,7 @@ cwrc:King12345Happy
     a nif:Context, nif:Sentence ;
     prov:createdBy cwrc:originalOrlandoAuthor .
 
-<!---ANNA LEONOWENS--->
+# ANNA LEONOWENS
 cwrc:AnnaLeonowens
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasDenomination cwrc:buddhist, cwrc:presbyterianchurch ;
@@ -174,7 +174,7 @@ cwrc:AnnaCulturalFormatioNodeOne
     oa:hasTarget cwrc:AnnaLeonowens ;
     prov:derivedFrom cwrc:partone .
 
-<!---CHARLOTTE DACRE--->
+# CHARLOTTE DACRE
 cwrc:CharlotteDacre
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasGeogHeritage cwrc:jewish, ; cwrc:portugal, cwrc: england, cwrc: middlesex, cwrc: london ;
@@ -283,7 +283,7 @@ cwrc:CharlotteDacre
     oa:hasTarget cwrc:CharlotteDacre ;
     prov:derivedFrom cwrc: Dacre12345.
 
-<!---ELIZABETH SARAH GOOCH--->
+# ELIZABETH SARAH GOOCH
 cwrc:ElizabethSarahGooch
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasEthnicityHeritage cwrc: jewish 
@@ -334,7 +334,7 @@ cwrc:ElizabethSarahGoochFather
 	cwrc:hasDenomination cwrc:jewish ;
 	prov:derivedFrom textnode;
 
-<!---GRACE AGUILAR--->
+# GRACE AGUILAR
 cwrc:GraceAguilar
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasEthnicity cwrc:jewish ;
@@ -459,7 +459,7 @@ cwrc:GraceAguilarMother
     cwrc:hasNationalHeritage cwrc:spain ;
     prov:derivedFrom textnode;
 
-<!---AMY LEVY--->
+# AMY LEVY
 cwrc:AmyLevy
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasSocialClass cwrc:upper-middleClass ;
@@ -513,7 +513,7 @@ cwrc:AmyLevy
     oa:hasTarget cwrc:AmyLevy ;
     prov:derivedFrom cwrc: Levy12345.
 
-<!---CHARLOTTE MONTEFIORE--->
+# CHARLOTTE MONTEFIORE
 cwrc:CharlotteMontefiore
     cwrc:hasRaceColour cwrc: white ;
     cwrc:hasDenominationSelfDefined cwrc: jewish ;
@@ -570,7 +570,7 @@ cwrc:charlotteDacreCulturalFormation1
     oa:hasTarget cwrc:CharlotteDacre ;
     prov:derivedFrom cwrc:charlotteDacre1 .
 
-<!---JULIA FRANKAU--->
+# JULIA FRANKAU
 cwrc:JuliaFrankau
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasEthnicitySelfDefined cwrc:jewish ;
