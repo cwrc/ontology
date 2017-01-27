@@ -158,7 +158,7 @@
   <rdfs:label xml:lang="en">Context</rdfs:label>
   <rdfs:label xml:lang="fr">Contexte</rdfs:label>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <skos:definition xml:lang="en">A context relates </skos:definition>
+  <skos:definition xml:lang="en">A context relates.... </skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
 
@@ -251,6 +251,19 @@ People using this class should apply it to instances that seem to be right for t
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  </owl:Class>
+
+ <owl:Class rdf:ID="GenderContext">
+   <rdfs:label xml:lang="en">Gender Context</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte de Gendre</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#Context"/>
+   <dc:subject rdf:resource="#Gender"/>
+   <skos:definition xml:lang="en"></skos:definition>
+   <skos:definition xml:lang="fr"></skos:definition>
+ </owl:Class>
+
+
+
 
  <!-- End contexts -->
 
@@ -404,9 +417,39 @@ People using this class should apply it to instances that seem to be right for t
    <owl:subClass rdf:resource="#CulturalFormation"/>
  <skos:definition xml:lang="en">These terms capture in a word or phrase identifications of sexuality (i.e., "lesbian," "monogamous," "heterosexual") not as a means of shutting down but advancing investigation and critical analysis of these identifications. The association assumes that sexual identity does not function in an essentialist manner but can be plural and fluid, so multiple designations can be applied to a single person. Assertions of sexual itentity may come from the subject her/himself or from others. They may be in tension or mutually exclusive, and they may reflect different life stages. Linking to the term "lesbian" as a sexualIdentity class, for instance, does not signify that the subject was in any definitive sense a lesbian; such identifications are often impossible for reasons of historical gaps and silences. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See Campbell and Cowan 2016</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
+ <owl:sameAs rdf:resource="http://homosaurus.org/terms/sexualIdentity"/>
  </owl:Class>
 
 <!--  (http://ir.lib.uwo.ca/cgi/viewcontent.cgi?article=1085&context=fimspub) -->
+
+<cwrc:SexualIdentity rdf:about="#heterosexual">
+ <rdfs:label xml:lang="en">Heterosexual</rdfs:label>
+ <rdfs:label xml:lang="fr">Hétérosexuelle</rdfs:label>
+ <foaf:name xml:lang="en">Heterosexual (Sexual Identity)</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <owl:sameAs rdf:resource="http://homosaurus.org/terms/heterosexualIdentity"/>
+</cwrc:SexualIdentity>
+
+<cwrc:SexualIdentity rdf:about="#homosexual">
+ <rdfs:label xml:lang="en">Homosexual</rdfs:label>
+ <rdfs:label xml:lang="fr">Homosexuel</rdfs:label>
+ <foaf:name xml:lang="en">Homosexual (Sexual Identity)</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</cwrc:SexualIdentity>
+
+<cwrc:SexualIdentity rdf:about="#lesbian">
+ <rdfs:label xml:lang="en">Lesbian</rdfs:label>
+ <rdfs:label xml:lang="fr">Lesbienne</rdfs:label>
+ <foaf:name xml:lang="en">Lesbian (Sexual Identity)</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <owl:sameAs rdf:resource="http://homosaurus.org/terms/lesbianIdentity"/>
+</cwrc:SexualIdentity>
 
  <owl:Class rdf:ID="SexIdentity">
    <rdfs:label xml:lang="en">Sex Identity</rdfs:label>
@@ -474,6 +517,14 @@ People using this class should apply it to instances that seem to be right for t
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 </cwrc:RaceColour>
 
+ <owl:Class rdf:ID="RaceEthnicity">
+   <rdfs:label xml:lang="en">Race and/or Ethnicity</rdfs:label>
+   <rdfs:label xml:lang="fr">Race et/ou Ethnicité</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <owl:subClass rdf:resource="#CulturalFormation"/>
+   <skos:definition xml:lang="en"></skos:definition>
+   <skos:definition xml:lang="fr"></skos:definition>
+ </owl:Class>
 
  <owl:Class rdf:ID="Ethnicity">
    <rdfs:label xml:lang="en">Ethnicity</rdfs:label>
