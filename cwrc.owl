@@ -189,6 +189,8 @@ People using this class should apply it to instances that seem to be right for t
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class> 
 
+
+
  <owl:Class rdf:ID="SexualityContext">
    <rdfs:label xml:lang="en">Sexuality Context</rdfs:label>
    <rdfs:label xml:lang="fr">Contexte Sexuel</rdfs:label>
@@ -367,11 +369,6 @@ People using this class should apply it to instances that seem to be right for t
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Language>
-
-
-
-
-
 
  <owl:Class rdf:ID="GeographicalHeritage">
    <rdfs:label xml:lang="en">Geographical Heritage</rdfs:label>
@@ -780,6 +777,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <skos:broaderTransitive rdf:resource="#abrahamicReligions"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#churchOfChristianScience">
@@ -819,6 +817,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <skos:broaderTransitive rdf:resource="#abrahamicReligions"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#islam">
@@ -844,6 +843,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <skos:broaderTransitive rdf:resource="#abrahamicReligions"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#judaism">
@@ -866,6 +866,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <skos:broaderTransitive rdf:resource="#abrahamicReligions"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#presbyterianism">
@@ -985,6 +986,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#dissentingChurches">
@@ -996,6 +998,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
  </cwrc:Religion>
 
 
@@ -1009,6 +1012,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <skos:broaderTransitive rdf:resource="#dissenters"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#lollards">
@@ -1104,6 +1108,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <skos:broaderTransitive rdf:resource="#dissenters"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#rationalDissenter">
@@ -1115,6 +1120,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <skos:broaderTransitive rdf:resource="#dissenters"/>
  </cwrc:Religion>
 
 
@@ -1189,6 +1195,13 @@ People using this class should apply it to instances that seem to be right for t
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:Religion>
 
+<cwrc:Religion rdf:about="#abrahamicReligions">
+ <rdfs:label xml:lang="en">Abrahamic Religions</rdfs:label>
+ <rdfs:label xml:lang="en">Religions Abrahamic</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
+ <void:inDataset rdf:resource="#datasetdefinition"/>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</cwrc:Religion>
 
 <!-- Social Classes -->
 
