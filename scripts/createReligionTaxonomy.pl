@@ -22,9 +22,10 @@ FILTER(LANG(?label) = "" || LANGMATCHES(LANG(?label), "en"))
 }');
 my $iterator = $query->execute( $model );
 print "digraph ReligionGraph {\n
-ratio=\"fill\";
- size \"3,5\";
+ size=\"30,30\";
  margin=0;\n";
+#ratio=\"fill\";
+
 while (my $row = $iterator->next) {
  my $astring = $row->{"uri"}->as_string();
 # print $astring ."\n";

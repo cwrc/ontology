@@ -998,16 +998,6 @@ People using this class should apply it to instances that seem to be right for t
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Religion>
 
- <cwrc:Religion rdf:about="#entrepreneurial-industrialism">
-  <rdfs:label xml:lang="en">Entrepreneurial Industrialism</rdfs:label>
-  <rdfs:label xml:lang="fr"></rdfs:label>
-  <skos:definition xml:lang="en"></skos:definition>
-  <skos:definition xml:lang="fr"></skos:definition>
-  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
-  <void:inDataset rdf:resource="#datasetdefinition"/>
-  <skos:inScheme rdf:resource="#Religion"/>
- </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#fifthMonarchists">
   <rdfs:label xml:lang="en">Fifth Monarchists</rdfs:label>
@@ -1030,6 +1020,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <skos:broaderTransitive rdf:resource="#catholicChurch"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#methodistChurch">
@@ -1064,6 +1055,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <skos:broaderTransitive rdf:resource="#catholicChurch"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#occultism">
@@ -1278,6 +1270,16 @@ People using this class should apply it to instances that seem to be right for t
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
+
+ <cwrc:SocialClassIdentity rdf:about="#entrepreneurial-industrialism">
+  <rdfs:label xml:lang="en">Entrepreneurial Industrialism</rdfs:label>
+  <rdfs:label xml:lang="fr"></rdfs:label>
+  <skos:definition xml:lang="en"></skos:definition>
+  <skos:definition xml:lang="fr"></skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
+  <void:inDataset rdf:resource="#datasetdefinition"/>
+ </cwrc:SocialClassIdentity>
 
 
 <cwrc:SocialClassIdentity rdf:about="#indigent">
