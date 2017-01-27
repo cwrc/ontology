@@ -718,7 +718,7 @@ People using this class should apply it to instances that seem to be right for t
   <rdfs:label xml:lang="nl">boeddhisme</rdfs:label>
   <rdfs:label xml:lang="en">Buddhism</rdfs:label>
   <rdfs:label xml:lang="es">budismo</rdfs:label>
-  <rdfs:label xml:lang="en">Buddhist</rdfs:label>
+  <skos:altLabel xml:lang="en">Buddhist</skos:altLabel>
   <rdfs:label xml:lang="zh-hant">佛教</rdfs:label>
   <rdfs:label xml:lang="zh-latn-pinyin-x-hanyu">fó jiào</rdfs:label>
   <rdfs:label xml:lang="zh-latn-pinyin-x-notone">fo jiao</rdfs:label>
@@ -734,6 +734,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <skos:broaderTransitive rdf:resource="#occultism"/> 
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#catholicChurch">
@@ -817,7 +818,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
-  <skos:broaderTransitive rdf:resource="#abrahamicReligions"/>
+ <skos:broaderTransitive rdf:resource="#occultism"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#islam">
@@ -927,7 +928,8 @@ People using this class should apply it to instances that seem to be right for t
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
- </cwrc:Religion>
+  <skos:broaderTransitive rdf:resource="#occultism"/> 
+</cwrc:Religion>
 
  <cwrc:Religion rdf:about="#atheism">
   <rdfs:label xml:lang="en">Atheism</rdfs:label>
@@ -1048,6 +1050,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <skos:broaderTransitive rdf:resource="#occultism"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#neo-thomism">
@@ -1082,6 +1085,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <skos:broaderTransitive rdf:resource="#occultism"/>
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#plymouthBrethren">
@@ -1146,6 +1150,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <skos:broaderTransitive rdf:resource="#occultism"/> 
  </cwrc:Religion>
 
  <cwrc:Religion rdf:about="#tractarianMovement">
@@ -1197,10 +1202,11 @@ People using this class should apply it to instances that seem to be right for t
 
 <cwrc:Religion rdf:about="#abrahamicReligions">
  <rdfs:label xml:lang="en">Abrahamic Religions</rdfs:label>
- <rdfs:label xml:lang="en">Religions Abrahamic</rdfs:label>
+ <rdfs:label xml:lang="fr">Religions Abrahamic</rdfs:label>
  <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
  <void:inDataset rdf:resource="#datasetdefinition"/>
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <skos:broaderTransitive rdf:resource="#occultism"/>
 </cwrc:Religion>
 
 <!-- Social Classes -->
