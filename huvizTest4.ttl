@@ -15,6 +15,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix cwrc: <http://www.cwrc.ca/ontologies/cwrc#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+
 <http://www.cwrc.ca/ontologies/cwrc>
   a owl:Ontology ;
   dc:title "The CWRC Ontology"@en, "L'Ontologie CWRC"@fr ;
@@ -2168,41 +2170,37 @@ People using this class should apply it to instances that seem to be right for t
   rdf:value "CLERIHEW" ;
   rdfs:label "clerihew"@en, ""@fr ;
   skos:definition ""@en, ""@fr .
-  
-  
+
 cwrc:SophiaKing
     cwrc:hasSocialClass cwrc:indigent, cwrc:gentry, cwrc:professional ;
     cwrc:hasGeogHeritage cwrc:portugal ;
     cwrc:hasEthnicity cwrc:jewish ;
-    cwrc:hasDenomination cwrc:jewish
-    cwrc:hasPoliticalAffiliation cwrc:radical
-    cwrc:hasNationalitySelfDefined cwrc:english
+    cwrc:hasDenomination cwrc:jewish ;
+    cwrc:hasPoliticalAffiliation cwrc:radical ;
+    cwrc:hasNationalitySelfDefined cwrc:english ;
     a foaf:Person ;
     foaf:name "Sophia King" .
-
-SophiaKing  cwrc:hasGeogHeritage cwrc:portugal ;
-
 
 <http://www.cwrc.ca/cwrcdata/KINGSSocialClassIndigent>
     a cwrc:SocialClassContext ;
     rdfs:label ":SocialClassContext for Sophia King"@en ;
     oa:hasBody cwrc:indigent ;
     oa:hasTarget cwrc:SophiaKing ;
-    prov:derivedFrom cwrc: King12345Happy.
+    prov:derivedFrom cwrc:King12345Happy .
 
 <http://www.cwrc.ca/cwrcdata/KINGSSocialClassGentry>
     a cwrc:SocialClassContext ;
     rdfs:label ":SocialClassContext for Sophia King"@en ;
     oa:hasBody cwrc:gentry ;
     oa:hasTarget cwrc:SophiaKing ;
-    prov:derivedFrom cwrc: King12345Happy.
+    prov:derivedFrom cwrc:King12345Happy .
 
 <http://www.cwrc.ca/cwrcdata/KINGSSocialClassProfessional>
     a cwrc:SocialClassContext ;
     rdfs:label ":SocialClassContext for Sophia King"@en ;
     oa:hasBody cwrc:professional ;
     oa:hasTarget cwrc:SophiaKing ;
-    prov:derivedFrom cwrc: King12345Happy.
+    prov:derivedFrom cwrc:King12345Happy .
 
 <http://www.cwrc.ca/cwrcdata/KINGSRPortugal>
     a cwrc:GeographicHeritageContext ;
@@ -2211,7 +2209,7 @@ SophiaKing  cwrc:hasGeogHeritage cwrc:portugal ;
     oa:hasTarget cwrc:SophiaKing ;
     prov:derivedFrom cwrc:King12345Happy .
 
-!--Rob, should denomination be included under RaceEthnicityContext or be Denomination Context? (line 71)--!
+# Rob, should denomination be included under RaceEthnicityContext or be Denomination Context? (line 71)
 
 <http://www.cwrc.ca/cwrcdata/KINGSEthJewish>
     a cwrc:RaceEthnicityContext ;
@@ -2225,21 +2223,21 @@ SophiaKing  cwrc:hasGeogHeritage cwrc:portugal ;
     rdfs:label ":RaceEthnicityContext for Sophia King"@en ;
     oa:hasBody cwrc:jewish ;
     oa:hasTarget cwrc:SophiaKing ;
-    prov:derivedFrom cwrc: King12345Happy.
+    prov:derivedFrom cwrc:King12345Happy .
 
 <http://www.cwrc.ca/cwrcdata/KINGSPoliticalAffRadical>
     a cwrc:PoliticalAffiliationContext ;
     rdfs:label ":PoliticalAffiliationContext for Sophia King"@en ;
     oa:hasBody cwrc:radical ;
     oa:hasTarget cwrc:SophiaKing ;
-    prov:derivedFrom cwrc: King12345Happy.
+    prov:derivedFrom cwrc:King12345Happy .
 
 <http://www.cwrc.ca/cwrcdata/KINGSNationalitySDEnglish>
     a cwrc:NationalitySDContext ;
     rdfs:label ":NationalitySelfDefinedContext for Sophia King"@en ;
     oa:hasBody cwrc:english ;
     oa:hasTarget cwrc:SophiaKing ;
-    prov:derivedFrom cwrc: King12345Happy.
+    prov:derivedFrom cwrc:King12345Happy .
 
 cwrc:King12345Happy
     nif:isString "SK's Sephardic Jewish Portuguese birth, her early years in Judaism, and her father's boyhood as a street urchin and his high-profile but scandalous career (associating with political radicals while lending money to socialites and eventually marrying into the English nobility), made her an outsider in English society." ;
@@ -2265,52 +2263,52 @@ cwrc:AnnaLeonowens
 cwrc:CharlotteDacre
     cwrc:hasGeogHeritage cwrc:jewish ;
     cwrc:hasReligion cwrc:anglicanchurch, cwrc:jewish ;
-    cwrc:hasDenomination cwrc: jewish ; cwrc:anglicanChurch ;
-    cwrc:hasEthnicity cwrc: jewish ; 
-    cwrc:hasGeogHeritage cwrc:portugal, cwrc: england, cwrc: middlesex, cwrc: london ;
-    cwrc:hasSocialClass cwrc:entrepreneurial-industrialist, cwrc:gentry, cwrc: indigent;
-    cwrc:hasDenomination cwrc: jewish ; cwrc:anglicanChurch ;
+    cwrc:hasDenomination cwrc:jewish, cwrc:anglicanChurch ;
+    cwrc:hasEthnicity cwrc:jewish ;
+    cwrc:hasGeogHeritage cwrc:portugal, cwrc:england, cwrc:middlesex, cwrc:london ;
+    cwrc:hasSocialClass cwrc:entrepreneurial-industrialist, cwrc:gentry, cwrc:indigent;
+    cwrc:hasDenomination cwrc:jewish, cwrc:anglicanChurch ;
     a foaf:Person ;
     foaf:name "Charlotte Dacre" .
 
 cwrc:ElizabethSarahGooch
-    cwrc:hasEthnicityHeritage cwrc: jewish 
-    cwrc:hasNationalityHeritage cwrc: portugal ;
-    cwrc:hasDenominationSelfDefined cwrc: anglicanChurch ;
-    cwrc:hasSocialClassSelfDefined cwrc: gentry ;
+    cwrc:hasEthnicityHeritage cwrc:jewish ;
+    cwrc:hasNationalityHeritage cwrc:portugal ;
+    cwrc:hasDenominationSelfDefined cwrc:anglicanChurch ;
+    cwrc:hasSocialClassSelfDefined cwrc:gentry ;
     a foaf:Person ;
     foaf:name "Elizabeth Sarah Gooch" .
 
 cwrc:ElizabethSarahGoochFather
-	a foaf:Person;
-	rel:father cwrc:ElizabethSarahGooch;
-	cwrc:hasDenomination cwrc:jewish ;
-	prov:derivedFrom textnode;
+    a foaf:Person;
+    ns1:father cwrc:ElizabethSarahGooch;
+    cwrc:hasDenomination cwrc:jewish . # remember to change the . to a ;
+#    prov:derivedFrom textnode .
 
 cwrc:GraceAguilar
     cwrc:hasEthnicity cwrc:jewish ;
-    cwrc:hasNationalHeritage cwrc:portugal, cwrc:spain ; 
+    cwrc:hasNationalHeritage cwrc:portugal, cwrc:spain ;
     cwrc:hasNationalitySelfDefined cwrc:english, cwrc:jewish ;
     cwrc:hasRaceColourHeritage cwrc:white ;
     cwrc:hasReligion cwrc:jewish ;
     cwrc:hasSocialClass cwrc:entrepreneurial-industrialist, cwrc:middleClass ;
-    cwrc:hasDenominationSelfDefined cwrc: jewish ;
-    cwrc:hasPoliticalAffiliation cwrc: proto-zionist ;
+    cwrc:hasDenominationSelfDefined cwrc:jewish ;
+    cwrc:hasPoliticalAffiliation cwrc:proto-zionist ;
     a foaf:Person ;
     owl:sameAs <http://viaf.org/viaf/7628015> ;
     foaf:name "Grace Aguilar" .
 
 cwrc:GraceAguilarFather
     a foaf:Person;
-    rel:mother cwrc:GraceAguilar;
-    cwrc:hasNationalHeritage cwrc:portugal ;
-    prov:derivedFrom textnode;
+    ns1:mother cwrc:GraceAguilar;
+    cwrc:hasNationalHeritage cwrc:portugal . # remember to change the . to a ;
+#    prov:derivedFrom textnode .
 
 cwrc:GraceAguilarMother
     a foaf:Person;
-    rel:mother cwrc:GraceAguilar;
-    cwrc:hasNationalHeritage cwrc:spain ;
-    prov:derivedFrom textnode;
+    ns1:mother cwrc:GraceAguilar;
+    cwrc:hasNationalHeritage cwrc:spain . # remember to change the . to a ;
+#    prov:derivedFrom textnode .
 
 cwrc:AmyLevy
     cwrc:hasSocialClass cwrc:upper-middleClass ;
@@ -2323,24 +2321,24 @@ cwrc:AmyLevy
     foaf:name "Amy Levy" .
 
 cwrc:CharlotteMontefiore
-    cwrc:hasRaceColour cwrc: white ;
-    cwrc:hasDenominationSelfDefined cwrc: jewish ;
+    cwrc:hasRaceColour cwrc:white ;
+    cwrc:hasDenominationSelfDefined cwrc:jewish ;
     cwrc:hasSocialClass cwrc:entrepreneurial-industrialist ;
-    cwrc: hasNationalHeritage cwrc:italian ;
+    cwrc:hasNationalHeritage cwrc:italian ;
     a foaf:Person ;
-    foaf: name "Charlotte Montefiore" .
+    foaf:name "Charlotte Montefiore" .
 
 cwrc:CharlotteMontefioreFather
     a foaf:Person;
-    rel:father cwrc:GraceAguilar;
-    cwrc:hasNationalHeritage cwrc:italian;
-    prov:derivedFrom textnode;
+    ns1:father cwrc:GraceAguilar;
+    cwrc:hasNationalHeritage cwrc:italian . # remember to change the . to a ;
+#    prov:derivedFrom textnode .
 
 cwrc:JuliaFrankau
-    cwrc:hasEthnicitySelfDefined cwrc:jewish ;the
+    cwrc:hasEthnicitySelfDefined cwrc:jewish ;
     cwrc:hasDenominationSelfDefined cwrc:jewish ;
     a foaf:Person ;
-    foaf: name "Julia Frankau" .
+    foaf:name "Julia Frankau" .
 
 cwrc:annaleanowens1
     nif:isString """Although AL herself, in attempting to adopt an unequivocally English identity, implicitly claimed that she was white, evidence suggests that while
