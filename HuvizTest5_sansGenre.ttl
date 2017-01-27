@@ -205,9 +205,9 @@ People using this class should apply it to instances that seem to be right for t
   owl:subClass <http://www.cwrc.ca/ontologies/cwrc#CulturalFormation> ;
   skos:definition "GeographicalHeritage is a subclass of CulturalFormation that captures information about the geographical origins of a person's family which often contributes to an understanding of their racial and ethnic background. It offers a way to capture women identified as \"South-Asian,\" for example, when no more precise national heritage is indicated. See raceAndEthnicity for a detailed description of the complexities of this element."@en, ""@fr .
 
-<http://www.cwrc.ca/ontologies/cwrc#GenderIdentity>
+<http://www.cwrc.ca/ontologies/cwrc#Gender>
   a owl:Class, skos:Concept ;
-  rdfs:label "Gender Identity"@en, "Identité Genre"@fr ;
+  rdfs:label "Gender"@en, "Identité Genre"@fr ;
   owl:subClass <http://www.cwrc.ca/ontologies/cwrc#CulturalFormation> ;
   skos:definition ""@en, ""@fr .
 
@@ -554,7 +554,7 @@ People using this class should apply it to instances that seem to be right for t
 
 <http://www.cwrc.ca/ontologies/cwrc#personalProperty>
   a owl:ObjectProperty ;
-  rdfs:label "Personal Property"@en, "Propriété de la Personne"@fr ;
+   rdfs:label "Personal Property"@en, "Propriété de la Personne"@fr ;
   skos:definition ""@en, ""@fr .
 
 <http://www.cwrc.ca/ontologies/cwrc#personalPropertySelfDeclared>
