@@ -135,6 +135,38 @@
 
  <!-- End Boilerplate -->
 
+  <owl:Class rdf:ID="Address">
+    <rdfs:label xml:lang="en">address</rdfs:label>
+    <rdfs:label xml:lang="fr">adresse</rdfs:label>
+    <skos:definition xml:lang="en">A mailling or street address.</skos:definition>
+    <skos:definition xml:lang="fr">Une adresse postale ou de rue.</skos:definition>
+    <rdfs:comment xml:lang="en">The postal address is the equivalent of a schema.org address and inherits all of the data from that vocabulary to markup a modern postral address.</rdfs:comment>
+    <owl:sameAs rdf:resource="http://schema.org/PostalAddress"/>
+    <rdfs:subClassOf rdf:resource="#Place"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/OrlandoOntology#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Place">
+    <rdfs:label xml:lang="en">Place</rdfs:label>
+    <rdfs:label xml:lang="fr">Endroit</rdfs:label>
+    <foaf:name xml:lang="en">Place</foaf:name>
+    <foaf:name xml:lang="fr">Endroit</foaf:name>
+    <skos:definition xml:lang="en">A named place, wheter incorporated, settled or occupied.</skos:definition>
+    <skos:definition xml:lang="en">Un endroit nommé, qu'il soit populéé, inc nomméorporer ou abandonné.</skos:definition>
+    <rdfs:comment xml:lang="en">Could be a populated place according to Geonames, but not necessarily so. Some places, such as cross-roads are named without having a population or settlement per say. The geonames is incosistent in this regards in that a populated place can be abandonned.</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Place"/>
+    <owl:equivalentClass rdf:resource="http://schema.org/Place"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    <owl:sameAs rdf:resource="http://geovocab.org/spatial#Feature"/>
+    <owl:sameAs rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/OrlandoOntology#"/>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
 
  <owl:Class rdf:ID="CulturalFormation">
    <rdfs:label xml:lang="en">Cultural Formation</rdfs:label>
