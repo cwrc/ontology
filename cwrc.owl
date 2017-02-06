@@ -135,6 +135,66 @@
 
  <!-- End Boilerplate -->
 
+
+  <owl:Class rdf:ID="Event">
+   <foaf:name>Event</foaf:name>
+   <rdfs:label xml:lang="en">Event (Historical)</rdfs:label>
+   <rdfs:label xml:lang="fr">Évenement (Historique)</rdfs:label>
+   <rdfs:label xml:lang="de">Event</rdfs:label>
+   <skos:definition xml:lang="en">An event that occurs in space and time.</skos:definition>
+   <rdf:type rdf:resource="http://www.w3.org/2006/time/TemporalEntity"/>
+   <owl:sameAs rdf:resource="http://erlangen-crm.org/current/E5.Event"/>
+   <owl:sameAs rdf:resource="http://linkedevents.org/ontology/Event"/> 
+   <owl:sameAs rdf:resource="http://en.wikipedia.org/wiki/Event"/>
+   <rdfs:isDefinedBy rdf:resource="https://raw.githubusercontent.com/cwrc/OrlandoOntology/master/OrlandoOntology#"/>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+   <owl:ObjectProperty rdf:ID="hasActor">
+   <rdfs:label xml:lang="en">hasActor</rdfs:label>
+   <rdfs:comment xml:lang="en">An Actor in this event.</rdfs:comment>
+   <rdfs:domain rdf:resource="#Event"/>
+   <rdfs:range rdf:resource="#Actor"/>
+   <rdfs:isDefinedBy rdf:resource="https://raw.githubusercontent.com/cwrc/OrlandoOntology/master/OrlandoOntology#"/>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="Actor">
+   <rdfs:label xml:lang="en">Actor</rdfs:label>
+   <rdfs:comment xml:lang="en">A person performing a certain role within an event.</rdfs:comment>
+   <owl:sameAs rdf:resource="http://erlangen-crm.org/current/E39.Actor"/>
+   <rdfs:isDefinedBy rdf:resource="https://raw.githubusercontent.com/cwrc/OrlandoOntology/master/OrlandoOntology#"/>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="identity">
+   <rdfs:label xml:lang="en">Identity</rdfs:label>
+   <rdfs:comment xml:lang="en">The identity of the person who committed the act.</rdfs:comment>
+   <rdfs:domain rdf:resource="#Actor"/>
+   <rdfs:range rdf:resource="#Person"/>
+   <rdfs:isDefinedBy rdf:resource="https://raw.githubusercontent.com/cwrc/OrlandoOntology/master/OrlandoOntology#"/>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="inRole">
+   <rdfs:label xml:lang="en">In Role</rdfs:label>
+   <rdfs:comment xml:lang="en">The role taken on by this actor.</rdfs:comment>
+   <rdfs:domain rdf:resource="#Actor"/>
+   <rdfs:range rdf:resource="#Role"/>
+   <rdfs:isDefinedBy rdf:resource="https://raw.githubusercontent.com/cwrc/OrlandoOntology/master/OrlandoOntology#"/>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+
+
+<!-- Events -->
+
+
   <owl:Class rdf:ID="Address">
     <rdfs:label xml:lang="en">address</rdfs:label>
     <rdfs:label xml:lang="fr">adresse</rdfs:label>
@@ -1264,6 +1324,7 @@ People using this class should apply it to instances that seem to be right for t
   <skos:definition xml:lang="fr"></skos:definition>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
  </owl:Class>
 
 <cwrc:SocialClassIdentity rdf:about="#lowerMiddleClass">
