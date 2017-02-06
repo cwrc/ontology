@@ -219,6 +219,8 @@ People using this class should apply it to instances that seem to be right for t
    <skos:definition xml:lang="fr"></skos:definition>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <dc:subject rdf:resource="#Ethnicity"/>
+  <dc:subject rdf:resource="#RaceColour"/>
  </owl:Class> 
 
 
@@ -232,6 +234,10 @@ People using this class should apply it to instances that seem to be right for t
    <skos:definition xml:lang="fr"></skos:definition>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <dc:subject rdf:resource="#SexualIdentity"/>
+  <dc:subject rdf:resource="#SexIdentity"/>
+  <dc:subject rdf:resource="#Gender"/>
+
  </owl:Class>
 
 <!--  (http://ir.lib.uwo.ca/cgi/viewcontent.cgi?article=1085&context=fimspub) -->
@@ -245,6 +251,7 @@ People using this class should apply it to instances that seem to be right for t
  <skos:definition xml:lang="fr"></skos:definition>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <dc:subject rdf:resource="#Language"/>
  </owl:Class>
 
  <owl:Class rdf:ID="SocialClassContext">
@@ -257,6 +264,7 @@ People using this class should apply it to instances that seem to be right for t
  <skos:definition xml:lang="fr"></skos:definition>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <dc:subject rdf:resource="#SocialClassIdentity"/>
  </owl:Class>
 
  <owl:Class rdf:ID="ReligionContext">
@@ -269,6 +277,7 @@ People using this class should apply it to instances that seem to be right for t
  <skos:definition xml:lang="fr"></skos:definition>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+  <dc:subject rdf:resource="#Religion"/>
  </owl:Class>
 
  <owl:Class rdf:ID="NationalityContext">
@@ -308,6 +317,7 @@ People using this class should apply it to instances that seem to be right for t
  <skos:definition xml:lang="fr"></skos:definition>
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+   <dc:subject rdf:resource="#Ethnicity"/>
  </owl:Class>
 
  <owl:Class rdf:ID="GenderContext">
@@ -668,10 +678,10 @@ People using this class should apply it to instances that seem to be right for t
    <rdfs:label xml:lang="fr">Ethnicité</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalFormation"/>
- <skos:definition xml:lang="en">Ethnicity is a subclass of CulturalFormation that captures information about a person's ethnic position. Ethnicity is a sub-element within culturalFormation and raceAndEthnicity. See raceAndEthnicity for a detailed description of the complexities of this discursive construction and the social practices surrounding it.</skos:definition>
- <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
-  <void:inDataset rdf:resource="#datasetdefinition"/>
+   <skos:definition xml:lang="en">Ethnicity is a subclass of CulturalFormation that captures information about a person's ethnic position. Ethnicity is a sub-element within culturalFormation and raceAndEthnicity. See raceAndEthnicity for a detailed description of the complexities of this discursive construction and the social practices surrounding it.</skos:definition>
+   <skos:definition xml:lang="fr"></skos:definition>
+   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
+   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
 <cwrc:Ethnicity rdf:about="#whiteEthnicity">
