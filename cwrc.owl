@@ -686,7 +686,6 @@ People using this class should apply it to instances that seem to be right for t
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SexIdentity>
 
-
  <owl:Class rdf:ID="RaceColour">
    <rdfs:label xml:lang="en">Race and/or Colour</rdfs:label>
    <rdfs:label xml:lang="fr">Race et/ou Couleur de Peau</rdfs:label>
@@ -697,7 +696,6 @@ People using this class should apply it to instances that seem to be right for t
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
-
 
 <cwrc:RaceColour rdf:about="#whiteRace">
  <rdfs:label xml:lang="en">white</rdfs:label>
@@ -1383,7 +1381,6 @@ People using this class should apply it to instances that seem to be right for t
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
 
-
 <cwrc:SocialClassIdentity rdf:about="#gentry">
  <rdfs:label xml:lang="en">gentry</rdfs:label>
  <rdfs:label xml:lang="fr">noblesse non titrée</rdfs:label>
@@ -1404,7 +1401,6 @@ People using this class should apply it to instances that seem to be right for t
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:SocialClassIdentity>
-
 
 <cwrc:SocialClassIdentity rdf:about="#indigent">
  <rdfs:label xml:lang="en">indigent</rdfs:label>
@@ -1428,7 +1424,6 @@ People using this class should apply it to instances that seem to be right for t
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
 
-
 <cwrc:SocialClassIdentity rdf:about="#yeoman-farmer">
  <rdfs:label xml:lang="en">Members of this historica class owned just enough land to support themselves if they did most of the work themselves. Examples include Elizabeth Ham and Mary Webb.</rdfs:label>
  <rdfs:label xml:lang="fr">agriculteur vivrier</rdfs:label>
@@ -1439,7 +1434,6 @@ People using this class should apply it to instances that seem to be right for t
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
-
 
 <cwrc:SocialClassIdentity rdf:about="#upper-middleClass">
  <rdfs:label xml:lang="en">upper middle class</rdfs:label>
@@ -1452,7 +1446,6 @@ People using this class should apply it to instances that seem to be right for t
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
-
 
 <cwrc:SocialClassIdentity rdf:about="#skilledCraftpersonArtisan">
  <rdfs:label xml:lang="en">This category includes such trades as goldsmith, tailor, shoemaker, milliner, and dressmaker.</rdfs:label>
@@ -1502,7 +1495,6 @@ People using this class should apply it to instances that seem to be right for t
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
 
-
  <owl:Class rdf:ID="LinguisticAbility">
    <rdfs:label xml:lang="en">Linguistic Ability (Spoken and/or Writen)</rdfs:label>
    <rdfs:label xml:lang="fr">Habilité linguistique (Écris ou Parlé)</rdfs:label>
@@ -1525,7 +1517,6 @@ People using this class should apply it to instances that seem to be right for t
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
-
  <cwrc:RaceColour rdf:about="#black">
    <rdfs:label xml:lang="en">black (Race)</rdfs:label>
    <rdfs:label xml:lang="fr">noir (Race)</rdfs:label>
@@ -1534,7 +1525,6 @@ People using this class should apply it to instances that seem to be right for t
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:RaceColour>
-
 
   <cwrc:SocialClass rdf:about="#gentry">
    <rdfs:label xml:lang="en">Gentry</rdfs:label>
@@ -1567,7 +1557,6 @@ People using this class should apply it to instances that seem to be right for t
   <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
 
-
 <owl:ObjectProperty rdf:ID="personalProperty">
  <rdfs:label xml:lang="en">Personal Property</rdfs:label>
  <rdfs:label xml:lang="fr">Propriété de la Personne</rdfs:label>
@@ -1576,7 +1565,6 @@ People using this class should apply it to instances that seem to be right for t
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
-
 
 <owl:ObjectProperty rdf:ID="personalPropertySelfDeclared">
  <rdfs:label xml:lang="en">Personal Property (Self Reported)</rdfs:label>
@@ -1587,8 +1575,6 @@ People using this class should apply it to instances that seem to be right for t
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
-
-
 
 <owl:ObjectProperty rdf:ID="hasGender">
  <rdfs:label xml:lang="en">has Gender</rdfs:label>
@@ -1634,7 +1620,6 @@ People using this class should apply it to instances that seem to be right for t
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
-
 <owl:ObjectProperty rdf:ID="hasRaceColour">
  <rdfs:label xml:lang="en">has Race</rdfs:label>
  <rdfs:label xml:lang="fr">Est de Race</rdfs:label>
@@ -1645,7 +1630,6 @@ People using this class should apply it to instances that seem to be right for t
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
-
 
 <owl:ObjectProperty rdf:ID="hasRaceColourSelfDeclared">
  <rdfs:label xml:lang="en">has Race (Self Declared)</rdfs:label>
@@ -1702,7 +1686,6 @@ People using this class should apply it to instances that seem to be right for t
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
-
 <owl:ObjectProperty rdf:ID="hasSocialClass">
  <rdfs:label xml:lang="en">has Social Class</rdfs:label>
  <rdfs:label xml:lang="fr">De Classe Sociale</rdfs:label>
@@ -1724,7 +1707,6 @@ People using this class should apply it to instances that seem to be right for t
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
-
 
 <owl:ObjectProperty rdf:ID="hasLanguage">
  <rdfs:label xml:lang="en">Knowns Language</rdfs:label>
@@ -1748,7 +1730,6 @@ People using this class should apply it to instances that seem to be right for t
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
-
 <owl:ObjectProperty rdf:ID="hasNativeLanguage">
  <rdfs:label xml:lang="en">Knowns Language Natively</rdfs:label>
  <rdfs:label xml:lang="fr">A une langue native</rdfs:label>
@@ -1770,9 +1751,6 @@ People using this class should apply it to instances that seem to be right for t
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
-
-
-
 
 <owl:ObjectProperty rdf:ID="hasSexuality">
  <rdfs:label xml:lang="en">has Sexual Orientation</rdfs:label>
@@ -1817,7 +1795,6 @@ People using this class should apply it to instances that seem to be right for t
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
-
 
 <!-- Labels -->
 
@@ -1878,7 +1855,6 @@ People using this class should apply it to instances that seem to be right for t
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </skos:Concept>
 
-
 <skos:Concept rdf:about="#manLabel">
  <rdf:value>man</rdf:value>
  <rdfs:label xml:lang="en">Man</rdfs:label>
@@ -1895,8 +1871,6 @@ People using this class should apply it to instances that seem to be right for t
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </skos:Concept>
 
-
-
 <skos:Concept rdf:about="#womanLabel">
  <rdf:value>woman</rdf:value>
  <rdfs:label xml:lang="en">Woman</rdfs:label>
@@ -1912,7 +1886,6 @@ People using this class should apply it to instances that seem to be right for t
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </skos:Concept>
-
 
 <skos:Concept rdf:about="#maleLabel">
  <rdf:value>male</rdf:value>
@@ -1931,8 +1904,6 @@ People using this class should apply it to instances that seem to be right for t
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </skos:Concept>
 
-
-
 <skos:Concept rdf:about="#FemaleLabel">
  <rdf:value>female</rdf:value>
  <rdfs:label xml:lang="en">Female</rdfs:label>
@@ -1949,8 +1920,6 @@ People using this class should apply it to instances that seem to be right for t
   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </skos:Concept>
-
-
 
 <skos:Concept rdf:about="#jewishLabel">
  <rdfs:label xml:lang="en">jewish</rdfs:label>
@@ -1982,7 +1951,6 @@ People using this class should apply it to instances that seem to be right for t
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </skos:Concept>
 
-
 <!-- Genres -->
 
 <owl:Class rdf:ID="Genre">
@@ -2008,7 +1976,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreDevotional">
    <rdf:value>DEVOTIONAL</rdf:value>
    <rdfs:label xml:lang="en">devotional</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">dévotional</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2017,7 +1985,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreReligious">
    <rdf:value>RELIGIOUS</rdf:value>
    <rdfs:label xml:lang="en">religious</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">religieux</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2026,7 +1994,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genrePoetry">
    <rdf:value>POETRY</rdf:value>
    <rdfs:label xml:lang="en">poetry</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">poésie</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2035,7 +2003,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreDrama">
    <rdf:value>DRAMA</rdf:value>
    <rdfs:label xml:lang="en">drama</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">drame</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2044,7 +2012,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreEpistle">
    <rdf:value>EPISTLE</rdf:value>
    <rdfs:label xml:lang="en">epistle</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr"épître></rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2053,7 +2021,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreRiddle">
    <rdf:value>RIDDLE</rdf:value>
    <rdfs:label xml:lang="en">riddle</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">énigme</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2062,7 +2030,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreAnthology">
    <rdf:value>ANTHOLOGY</rdf:value>
    <rdfs:label xml:lang="en">anthology</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">anthologie</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2071,7 +2039,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreCharade">
    <rdf:value>CHARADE</rdf:value>
    <rdfs:label xml:lang="en">charade</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">charade</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2080,16 +2048,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreElegy">
    <rdf:value>ELEGY</rdf:value>
    <rdfs:label xml:lang="en">elegy</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
-   <skos:definition xml:lang="en"></skos:definition>
-   <skos:definition xml:lang="fr"></skos:definition>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
-   <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:Genre>
-  <cwrc:Genre rdf:about="#genreEditing">
-   <rdf:value>EDITING</rdf:value>
-   <rdfs:label xml:lang="en">editing</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">élégie</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2098,16 +2057,16 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreTragedy">
    <rdf:value>TRAGEDY</rdf:value>
    <rdfs:label xml:lang="en">tragedy</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">tragédie</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
    <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Genre>
-  <cwrc:Genre rdf:about="#genreLiterarycriticism">
+  <cwrc:Genre rdf:about="#genreLiteraryCriticism">
    <rdf:value>LITERARYCRITICISM</rdf:value>
-   <rdfs:label xml:lang="en">literarycriticism</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="en">literaryriticism</rdfs:label>
+   <rdfs:label xml:lang="fr">critiquelittéraire</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2116,7 +2075,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreGothic">
    <rdf:value>GOTHIC</rdf:value>
    <rdfs:label xml:lang="en">gothic</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">gothique</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2125,7 +2084,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genrePrefatorypiece">
    <rdf:value>PREFATORYPIECE</rdf:value>
    <rdfs:label xml:lang="en">prefatorypiece</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">préfixe</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2134,7 +2093,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreParatexts">
    <rdf:value>PARATEXTS</rdf:value>
    <rdfs:label xml:lang="en">paratexts</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">paratextes</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2143,7 +2102,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreComedy">
    <rdf:value>COMEDY</rdf:value>
    <rdfs:label xml:lang="en">comedy</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">comédie</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2152,7 +2111,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreEpilogue">
    <rdf:value>EPILOGUE</rdf:value>
    <rdfs:label xml:lang="en">epilogue</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">épilogue</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2161,16 +2120,16 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreFiction">
    <rdf:value>FICTION</rdf:value>
    <rdfs:label xml:lang="en">fiction</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">fiction</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
    <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Genre>
-  <cwrc:Genre rdf:about="#genreLegendfolktale">
+  <cwrc:Genre rdf:about="#genreLegendFolktale">
    <rdf:value>LEGENDFOLKTALE</rdf:value>
    <rdfs:label xml:lang="en">legendfolktale</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">légende et conte de fée</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2179,7 +2138,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreBallad">
    <rdf:value>BALLAD</rdf:value>
    <rdfs:label xml:lang="en">ballad</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">ballade</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2188,7 +2147,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreLyric">
    <rdf:value>LYRIC</rdf:value>
    <rdfs:label xml:lang="en">lyric</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">lyrique</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2197,7 +2156,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreHistorical">
    <rdf:value>HISTORICAL</rdf:value>
    <rdfs:label xml:lang="en">historical</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">historique</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2206,7 +2165,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreNovel">
    <rdf:value>NOVEL</rdf:value>
    <rdfs:label xml:lang="en">novel</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">roman</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2215,7 +2174,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreEssay">
    <rdf:value>ESSAY</rdf:value>
    <rdfs:label xml:lang="en">essay</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">essai</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2224,7 +2183,7 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreSatire">
    <rdf:value>SATIRE</rdf:value>
    <rdfs:label xml:lang="en">satire</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">satire</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
@@ -2233,16 +2192,16 @@ People using this class should apply it to instances that seem to be right for t
   <cwrc:Genre rdf:about="#genreShortstory">
    <rdf:value>SHORTSTORY</rdf:value>
    <rdfs:label xml:lang="en">shortstory</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">nouvelle</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
    <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Genre>
-  <cwrc:Genre rdf:about="#genreChildrensliterature">
+  <cwrc:Genre rdf:about="#genreChildrensLiterature">
    <rdf:value>CHILDRENSLITERATURE</rdf:value>
    <rdfs:label xml:lang="en">childrensliterature</rdfs:label>
-   <rdfs:label xml:lang="fr"></rdfs:label>
+   <rdfs:label xml:lang="fr">littérature pour l'enfants</rdfs:label>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
