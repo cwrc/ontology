@@ -4,7 +4,6 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ns0: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix loc: <http://id.loc.gov/vocabulary/relators/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dbpedia: <http://dbpedia.org/resources/> .
@@ -673,9 +672,9 @@ cwrc:originalOrlandoAuthor
   dc:rights <http://creativecommons.org/licenses/by/3.0/> ;
   dc:creator <http://www.cwrc.ca/ontologies/cwrc#JohnSimpson>, <http://www.cwrc.ca/ontologies/cwrc#AbigelLemak>, <http://www.cwrc.ca/ontologies/cwrc#ColinFaulkner>, <http://www.cwrc.ca/ontologies/cwrc#RobWarren> ;
   dc:publisher <http://www.cwrc.ca/ontologies/cwrc#cwrc> ;
-  ns1:pdr <http://www.cwrc.ca/ontologies/cwrc#SusanBrown> ;
-  ns1:fnd <http://www.cwrc.ca/ontologies/cwrc#sshrc> ;
-  ns2:preferredNamespacePrefix "cwrc" ;
+  loc:pdr <http://www.cwrc.ca/ontologies/cwrc#SusanBrown> ;
+  loc:fnd <http://www.cwrc.ca/ontologies/cwrc#sshrc> ;
+  vann:preferredNamespacePrefix "cwrc" ;
   void:inDataset <http://www.cwrc.ca/ontologies/cwrc#datasetdefinition> ;
   foaf:logo <http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif> .
 
