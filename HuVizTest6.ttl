@@ -17,6 +17,7 @@
 @prefix cwrc: <http://www.cwrc.ca/ontologies/cwrc#> .
 @prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
 @prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix schema: <http://schema.org/> .
 
 # SOPHIA KING
 cwrc:SophiaKing
@@ -669,7 +670,6 @@ cwrc:originalOrlandoAuthor
   owl:priorVersion <http://www.cwrc.ca/ontologies/cwrc> ;
   dc:date "DATE_TODAY"^^xsd:date ;
   dc:rights <http://creativecommons.org/licenses/by/3.0/> ;
-  ns0:term_status "Testing"@en ;
   dc:creator <http://www.cwrc.ca/ontologies/cwrc#JohnSimpson>, <http://www.cwrc.ca/ontologies/cwrc#AbigelLemak>, <http://www.cwrc.ca/ontologies/cwrc#ColinFaulkner>, <http://www.cwrc.ca/ontologies/cwrc#RobWarren> ;
   dc:publisher <http://www.cwrc.ca/ontologies/cwrc#cwrc> ;
   ns1:pdr <http://www.cwrc.ca/ontologies/cwrc#SusanBrown> ;
