@@ -74,7 +74,7 @@ cwrc:SophiaKing
 # Rob, should denomination be included under RaceEthnicityContext or be Denomination Context? (line 71)
 
 <http://www.cwrc.ca/cwrcdata/KINGSEthJewish>
-    a cwrc:RaceEthnicityContext ;
+    a cwrc:Denomination ;
     rdfs:label ":Denomination Context for Sophia King"@en ;
     oa:hasBody cwrc:jewish ;
     oa:hasTarget cwrc:SophiaKing ;
@@ -139,28 +139,28 @@ cwrc:AnnaLeonowens
     prov:derivedFrom cwrc:Leonowens12345 .
 
 <http://www.cwrc.ca/cwrcdata/LEONOWENSNationalHeritageWelsh>
-    a cwrc:Denomination ;
+    a cwrc:NationalHeritage ;
     rdfs:label ":National Heritage for Anna Leonowens"@en ;
     oa:hasBody cwrc:welsh ;
     oa:hasTarget cwrc:AnnaLeonowens ;
     prov:derivedFrom cwrc:Leonowens12345 .
 
 <http://www.cwrc.ca/cwrcdata/LEONOWENSNationalityEnglish>
-    a cwrc:Denomination ;
+    a cwrc:Nationality ;
     rdfs:label ":Nationality for Anna Leonowens"@en ;
     oa:hasBody cwrc:english ;
     oa:hasTarget cwrc:AnnaLeonowens ;
     prov:derivedFrom cwrc:Leonowens12345 .
 
 <http://www.cwrc.ca/cwrcdata/LEONOWENSRaceColourEurasian>
-    a cwrc:Denomination ;
+    a cwrc:RaceColour ;
     rdfs:label ":Race Colour for Anna Leonowens"@en ;
     oa:hasBody cwrc:eurasian ;
     oa:hasTarget cwrc:AnnaLeonowens ;
     prov:derivedFrom cwrc:Leonowens12345 .
 
 <http://www.cwrc.ca/cwrcdata/LEONOWENSRaceColourSelfDefinedWhite>
-    a cwrc:Denomination ;
+    a cwrc:RaceColour ;
     rdfs:label ":Race Colour for Anna Leonowens"@en ;
     oa:hasBody cwrc:white ;
     oa:hasTarget cwrc:AnnaLeonowens ;
