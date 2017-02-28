@@ -42,7 +42,7 @@
     <dc:description xml:lang="en">L'Ontologie CWRC est l'ontologie maîtresse qui représente tous les éléments de la structure du Collaboratoire scientifique des écrits du Canada.</dc:description>
     <skos:definition xml:lang="en">L'Ontologie CWRC est l'ontologie maîtresse qui représente tous les éléments de la structure du Collaboratoire scientifique des écrits du Canada.</skos:definition>
     <rdfs:comment xml:lang="en">L'Ontologie CWRC est l'ontologie maîtresse qui représente tous les éléments de la structure du Collaboratoire scientifique des écrits du Canada.</rdfs:comment>  
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</owl:versionInfo>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.99</owl:versionInfo>
     <owl:priorVersion rdf:resource=""/>
     <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">DATE_TODAY</dc:date>
     <dc:rights rdf:resource="http://creativecommons.org/licenses/by/3.0/"/> 
@@ -95,6 +95,11 @@
     <vann:preferredNamespacePrefix>cwrc</vann:preferredNamespacePrefix>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <foaf:logo rdf:resource="http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85019388"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85043777"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85013838"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85077519"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2009007122"/>
    </owl:Ontology>
  
 <!-- http://id.loc.gov/vocabulary/relators/ctb -->
@@ -127,6 +132,11 @@
     <loc:fnd rdf:resource="#sshrc"/>
     <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#"/>
     <foaf:logo rdf:resource="http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85019388"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85043777"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85013838"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85077519"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2009007122"/>
    </void:Dataset>
 
  <skos:Concept rdf:about="#originalOrlandoAuthor">
