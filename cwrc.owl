@@ -72,6 +72,7 @@
      <foaf:Organization rdf:about="#cwrc">
       <foaf:name xml:lang="fr">Le Collaboratoire scientifique des écrits du Canada</foaf:name>
       <foaf:name xml:lang="en">The Canadian Writing Research Collaboratory</foaf:name>
+      <foaf:logo rdf:resource="http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif"/>
      </foaf:Organization>
     </dc:publisher>
     <loc:pdr>   
@@ -79,6 +80,11 @@
       <foaf:name>Susan Brown</foaf:name>
      </foaf:Person>
     </loc:pdr>
+    <loc:ctb>
+     <foaf:Person rdf:about="#ConstanceCrompton">
+      <foaf:name>Constance Crompton</foaf:name>
+     </foaf:Person>
+    </loc:ctb>
     <loc:fnd>
      <foaf:Organization rdf:about="#sshrc">
       <foaf:name xml:lang="en">Social Sciences and Humanities Research Council</foaf:name>
@@ -115,6 +121,7 @@
     <dc:creator rdf:resource="#ColinFaulkner"/>
     <dc:creator rdf:resource="#RobWarren"/>
     <dc:publisher rdf:resource="#cwrc"/>
+    <loc:ctb rdf:resource="#ConstanceCrompton"/>
     <loc:ctb rdf:resource="#originalOrlandoAuthor"/>
     <loc:pdr rdf:resource="#SusanBrown"/> 
     <loc:fnd rdf:resource="#sshrc"/>

@@ -4,9 +4,8 @@ ONTOLOGY=cwrc
 ONTOLOGY_DATE = $(shell date -u +"%Y-%m-%d")
 DATE_CLEAN = $(shell date -u +"%Y%m%d")
 ONTOLOGY_LONGDATE = $(shell date -d '$(ONTOLOGY_DATE)'  +'%d %B %Y')
-ONTOLOGY_VERSION = $(shell xpath $(ONTOLOGY).owl  '/rdf:RDF/owl:Ontology/owl:versionInfo/text()' 2> /dev/null)
-ONTOLOGY_LOGO = $(shell xpath $(ONTOLOGY).owl '/rdf:RDF/owl:Ontology/foaf:logo/@rdf:resource'  2> /dev/null | sed 's/\//\\\//g' | cut -d "\"" -f 2)
-#shell xpath -e '/rdf:RDF/owl:Ontology/foaf:logo/text()' $(ONTOLOGY).owl 2> /dev/null)
+ONTOLOGY_VERSION = $(shell xpath -e '/rdf:RDF/owl:Ontology/owl:versionInfo/text()' $(ONTOLOGY).owl  2> /dev/null)
+ONTOLOGY_LOGO = $(shell xpath -e '/rdf:RDF/owl:Ontology/foaf:logo/@rdf:resource' $(ONTOLOGY).owl  2> /dev/null | sed 's/\//\\\//g' | cut -d "\"" -f 2)
 force:	$(ONTOLOGY).owl
 	touch $(ONTOLOGY).owl
 	touch $(ONTOLOGY)-template.html	
@@ -29,7 +28,7 @@ $(DOCS_TEMPLATES): $(DOCS) $(ONTOLOGY).owl
 $(ONTOLOGY)-$(ONTOLOGY_DATE).dot: $(ONTOLOGY).owl
 	grep -v "rdfs:label" $(ONTOLOGY).owl  | grep -v "rdfs:comment"| grep -v "foaf:name" | grep -v "rdf:type" | rapper -o dot - "http://rdf.muninn-project.org/ontologies/"$(ONTOLOGY)"#" | grep -v "owl:Class" | grep -v "owl:ObjectProperty" > $(ONTOLOGY)-$(ONTOLOGY_DATE).dot
 $(ONTOLOGY)-template-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-template.html figures/religionTaxonomy.png
-	sed "s/PREVIOUS_ONTOLOGY/$(PREVIOUS_ONTOLOGY)/g"  < $(ONTOLOGY)-template.html | sed "s/ONTOLOGY_NAME/$(ONTOLOGY)/g"  | sed "s/ONTOLOGY_DATE/$(ONTOLOGY_DATE)/g" |  sed "s/ONTOLOGY_LONGDATE/$(ONTOLOGY_LONGDATE)/g"  | sed "s/ONTOLOGY_VERSION/$(ONTOLOGY_VERSION)/g"  | sed 's/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g'  > $(ONTOLOGY)-template-$(ONTOLOGY_DATE).html
+	sed "s/PREVIOUS_ONTOLOGY/$(PREVIOUS_ONTOLOGY)/g"  < $(ONTOLOGY)-template.html | sed "s/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g" | sed "s/ONTOLOGY_NAME/$(ONTOLOGY)/g"  | sed "s/ONTOLOGY_DATE/$(ONTOLOGY_DATE)/g" |  sed "s/ONTOLOGY_LONGDATE/$(ONTOLOGY_LONGDATE)/g"  | sed "s/ONTOLOGY_VERSION/$(ONTOLOGY_VERSION)/g"  | sed 's/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g'  > $(ONTOLOGY)-template-$(ONTOLOGY_DATE).html
 $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-template-$(ONTOLOGY_DATE).html $(ONTOLOGY)-$(ONTOLOGY_DATE)-citations.html
 	 m4 -P $(ONTOLOGY)-template-$(ONTOLOGY_DATE).html > $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html
 $(ONTOLOGY)-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html # $(ONTOLOGY)-overall-$(ONTOLOGY_DATE).jpg
@@ -46,3 +45,5 @@ figures/religionTaxonomy.png: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 	./scripts/createReligionTaxonomy.pl $(ONTOLOGY)-$(ONTOLOGY_DATE).owl | dot -ofigures/religionTaxonomy.png -Tpng 
 clean:
 	rm -f $(ONTOLOGY)-$(ONTOLOGY_DATE).dot $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-template-$(ONTOLOGY_DATE).html $(ONTOLOGY)-$(ONTOLOGY_DATE).html $(ONTOLOGY)-$(ONTOLOGY_DATE)-citations.html
+testing-deploy: force all
+		
