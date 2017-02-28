@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+    xmlns:muninn="http://rdf.muninn-project.org/ontologies/muninn#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dbpedia="http://dbpedia.org/resource/"
+    xmlns:time = "http://www.w3.org/2006/time#"   
+    xmlns:cc = "http://creativecommons.org/ns#"
+    xmlns:nif="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#"
+    xmlns:as="http://www.w3.org/ns/activitystreams#"
+    xmlns:oa="http://www.w3.org/ns/oa#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:doap="http://usefulinc.com/ns/doap#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:loc="http://id.loc.gov/vocabulary/relators/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:cwrc="http://www.cwrc.ca/ontologies/cwrc#"
+    xml:base="http://sparql.cwrc.ca/.well-know/void#"
+    xmlns="http://sparql.cwrc.ca/.well-know/void#">
+
+  <rdf:Description rdf:about="#cwrcmaindataset">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/.well-know/void.rdf"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#Date">ONTOLOGY_DATE</dcterms:modified>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <void:uriRegexPattern>http://sparql.cwrc.ca/data/.+</void:uriRegexPattern>
+    <foaf:homepage rdf:resource="http://www.cwrc.ca"/>
+    <void:exampleResource rdf:resource="http://sparql.cwrc.ca/"/>
+    <void:sparqlEndpoint rdf:resource="http://sparql.cwrc.ca/sparql" />
+    <void:dataDump rdf:resource="http://sparql.cwrc.ca/Downloads/Dump-Latest.nq"/>
+    <void:dataDump rdf:resource="http://sparql.cwrc.ca/Downloads/Dump-Latest.n3"/>
+    <void:feature rdf:resource="http://www.w3.org/ns/formats/RDF_XML"/>
+    <void:feature rdf:resource="http://www.w3.org/ns/formats/N-Triples"/>
+    <void:feature rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
+    <void:feature rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_XML"/>
+    <void:feature rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_JSON"/>
+    <void:feature rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_TSV"/>
+    <void:vocabulary rdf:resource="http://purl.org/vocab/vann/"/>
+    <void:vocabulary rdf:resource="http://xmlns.com/foaf/spec/"/>
+    <void:vocabulary rdf:resource="http://dbpedia.org/resource/"/>
+    <void:vocabulary rdf:resource="http://www.w3.org/2006/time#"/>  
+    <void:vocabulary rdf:resource="http://creativecommons.org/ns#"/>
+    <void:vocabulary rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    <void:vocabulary rdf:resource="http://www.w3.org/ns/prov#"/>
+    <void:vocabulary rdf:resource="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
+    <void:vocabulary rdf:resource="http://www.w3.org/2003/11/swrl#"/>
+    <void:vocabulary rdf:resource="http://usefulinc.com/ns/doap#"/>
+    <void:vocabulary rdf:resource="http://purl.org/dc/terms/"/>
+    <void:vocabulary rdf:resource="http://www.w3.org/TR/void/"/>
+    <void:vocabulary rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <void:vocabulary rdf:resource="http://www.w3.org/2003/11/swrlb#"/>
+    <void:triples>TOTAL_TRIPLES_CWRC</void:triples>
+    <void:entities>TOTAL_ENTITIES_CWRC</void:entities>
+    <dc:title xml:lang="en">The Canadian Writing Research Collaboratory Linked Open Dataset.</dc:title>
+    <rdfs:label xml:lang="en">The Canadian Writing Research Collaboratory Linked Open Dataset.</rdfs:label>
+    <foaf:name xml:lang="en">The Canadian Writing Research Collaboratory Linked Open Dataset.</foaf:name>
+    <dc:title xml:lang="fr">L'ensemble de données liées du Collaboratoire scientifique des écrits du Canada.</dc:title>
+    <rdfs:label xml:lang="fr">L'ensemble de données liées du Collaboratoire scientifique des écrits du Canada.</rdfs:label>
+    <foaf:name xml:lang="fr">L'ensemble de données liées du Collaboratoire scientifique des écrits du Canada.</foaf:name>
+    <dc:description xml:lang="en">The Canadian Writing Research Collaboratory's mission is to bring together researchers working with online technologies to investigate writing and related cultural practices relevant to Canada and to the digital turn. This virtual research environment enables researchers to leverage the power of digital tools by creating and uploading critical, biographical, bibliographical, historical, and primary source materials in text, image, audio, or video formats, and to enrich metadata and XML content with annotations in a linked open data format.</dc:description>
+    <skos:definition xml:lang="en">The Canadian Writing Research Collaboratory's mission is to bring together researchers working with online technologies to investigate writing and related cultural practices relevant to Canada and to the digital turn. This virtual research environment enables researchers to leverage the power of digital tools by creating and uploading critical, biographical, bibliographical, historical, and primary source materials in text, image, audio, or video formats, and to enrich metadata and XML content with annotations in a linked open data format.</skos:definition>
+    <rdfs:comment xml:lang="en">The Canadian Writing Research Collaboratory's mission is to bring together researchers working with online technologies to investigate writing and related cultural practices relevant to Canada and to the digital turn. This virtual research environment enables researchers to leverage the power of digital tools by creating and uploading critical, biographical, bibliographical, historical, and primary source materials in text, image, audio, or video formats, and to enrich metadata and XML content with annotations in a linked open data format.</rdfs:comment>
+    <dc:description xml:lang="fr">La mission du Collaboratoire scientifique des écrits du Canada est de réunir des chercheurs travaillant avec des technologies en ligne afin d'étudier l'écriture et les pratiques culturelles connexes pertinentes au Canada et au virage numérique. Cet environnement de recherche virtuel permet aux chercheurs de tirer parti de la puissance des outils numériques en créant et en téléchargeant des documents critiques, biographiques, bibliographiques, historiques et primaires dans des formats texte, image, audio ou vidéo et enrichissant les métadonnées et le contenu XML avec des annotations dans un format de données ouvertes et liées.</dc:description>
+    <skos:definition xml:lang="fr">La mission du Collaboratoire scientifique des écrits du Canada est de réunir des chercheurs travaillant avec des technologies en ligne afin d'étudier l'écriture et les pratiques culturelles connexes pertinentes au Canada et au virage numérique. Cet environnement de recherche virtuel permet aux chercheurs de tirer parti de la puissance des outils numériques en créant et en téléchargeant des documents critiques, biographiques, bibliographiques, historiques et primaires dans des formats texte, image, audio ou vidéo et enrichissant les métadonnées et le contenu XML avec des annotations dans un format de données ouvertes et liées.</skos:definition>
+    <rdfs:comment xml:lang="fr">La mission du Collaboratoire scientifique des écrits du Canada est de réunir des chercheurs travaillant avec des technologies en ligne afin d'étudier l'écriture et les pratiques culturelles connexes pertinentes au Canada et au virage numérique. Cet environnement de recherche virtuel permet aux chercheurs de tirer parti de la puissance des outils numériques en créant et en téléchargeant des documents critiques, biographiques, bibliographiques, historiques et primaires dans des formats texte, image, audio ou vidéo et enrichissant les métadonnées et le contenu XML avec des annotations dans un format de données ouvertes et liées.</rdfs:comment>  
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">DATE_TODAY</dc:date>
+    <dc:rights rdf:resource="http://creativecommons.org/licenses/by/3.0/"/> 
+    <dc:creator>
+     <foaf:Person rdf:about="#JohnSimpson">
+      <foaf:name>John Simpson</foaf:name>
+     </foaf:Person>
+    </dc:creator>
+    <dc:creator>
+     <foaf:Person rdf:about="#AbigelLemak">
+      <foaf:name>Abigel Lemak</foaf:name>
+     </foaf:Person>
+    </dc:creator>
+    <dc:creator>
+     <foaf:Person rdf:about="#ColinFaulkner">
+      <foaf:name>Colin Faulkner</foaf:name>
+     </foaf:Person>
+    </dc:creator>
+    <dc:creator>
+     <foaf:Person rdf:about="#RobWarren">
+      <foaf:name>Robert Warren</foaf:name>
+      <owl:sameAs rdf:resource="http://rdf.muninn-project.org/ww1/2011/11/11/Person/Warren"/>
+     </foaf:Person>
+    </dc:creator>
+    <dc:publisher>
+     <foaf:Organization rdf:about="#cwrc">
+      <foaf:name xml:lang="fr">Le Collaboratoire scientifique des écrits du Canada</foaf:name>
+      <foaf:name xml:lang="en">The Canadian Writing Research Collaboratory</foaf:name>
+      <foaf:logo rdf:resource="http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif"/>
+     </foaf:Organization>
+    </dc:publisher>
+    <loc:pdr>   
+     <foaf:Person rdf:about="#SusanBrown"> 
+      <foaf:name>Susan Brown</foaf:name>
+     </foaf:Person>
+    </loc:pdr>
+    <loc:ctb>
+     <foaf:Person rdf:about="#ConstanceCrompton">
+      <foaf:name>Constance Crompton</foaf:name>
+     </foaf:Person>
+    </loc:ctb>
+    <loc:fnd>
+     <foaf:Organization rdf:about="#sshrc">
+      <foaf:name xml:lang="en">Social Sciences and Humanities Research Council</foaf:name>
+      <foaf:name xml:lang="fr">Conseil de recherches en sciences humaines</foaf:name>
+      <foaf:nick>SSHRC</foaf:nick>
+     </foaf:Organization>
+    </loc:fnd>
+    <foaf:logo rdf:resource="http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85019388"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85043777"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85013838"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85077519"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2009007122"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#orlandomaindataset">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/.well-know/void.rdf"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#Date">ONTOLOGY_DATE</dcterms:modified>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <void:uriRegexPattern>http://sparql.cwrc.ca/data/.+</void:uriRegexPattern>
+    <foaf:homepage rdf:resource="http://www.cwrc.ca"/>
+    <void:exampleResource rdf:resource="http://sparql.cwrc.ca/"/>
+    <void:sparqlEndpoint rdf:resource="http://sparql.cwrc.ca/sparql" />
+    <void:dataDump rdf:resource="http://sparql.cwrc.ca/Downloads/Dump-Latest.nq"/>
+    <void:dataDump rdf:resource="http://sparql.cwrc.ca/Downloads/Dump-Latest.n3"/>
+    <void:feature rdf:resource="http://www.w3.org/ns/formats/RDF_XML"/>
+    <void:feature rdf:resource="http://www.w3.org/ns/formats/N-Triples"/>
+    <void:feature rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
+    <void:feature rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_XML"/>
+    <void:feature rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_JSON"/>
+    <void:feature rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_TSV"/>
+    <void:vocabulary rdf:resource="http://purl.org/vocab/vann/"/>
+    <void:vocabulary rdf:resource="http://xmlns.com/foaf/spec/"/>
+    <void:vocabulary rdf:resource="http://dbpedia.org/resource/"/>
+    <void:vocabulary rdf:resource="http://www.w3.org/2006/time#"/>  
+    <void:vocabulary rdf:resource="http://creativecommons.org/ns#"/>
+    <void:vocabulary rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    <void:vocabulary rdf:resource="http://www.w3.org/ns/prov#"/>
+    <void:vocabulary rdf:resource="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
+    <void:vocabulary rdf:resource="http://www.w3.org/2003/11/swrl#"/>
+    <void:vocabulary rdf:resource="http://usefulinc.com/ns/doap#"/>
+    <void:vocabulary rdf:resource="http://purl.org/dc/terms/"/>
+    <void:vocabulary rdf:resource="http://www.w3.org/TR/void/"/>
+    <void:vocabulary rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <void:vocabulary rdf:resource="http://www.w3.org/2003/11/swrlb#"/>
+    <void:triples>TOTAL_TRIPLES_CWRC</void:triples>
+    <void:entities>TOTAL_ENTITIES_CWRC</void:entities>
+    <dc:title xml:lang="en">The Orlando Project Linked Open Dataset.</dc:title>
+    <rdfs:label xml:lang="en">The Orlando Project Linked Open Dataset.</rdfs:label>
+    <foaf:name xml:lang="en">The Orlando Project Linked Open Dataset.</foaf:name>
+    <dc:title xml:lang="fr">L'ensemble de données liées du project Orlando.</dc:title>
+    <rdfs:label xml:lang="fr">L'ensemble de données liées du project Orlando.</rdfs:label>
+    <foaf:name xml:lang="fr">L'ensemble de données liées du project Orlando.</foaf:name>
+    <dc:description xml:lang="en">The Orlando Project is an experiment in the integration of text and technology. It has designed and continues to enhance digital tools to harness the power of computers for critical literary and historical research. The project's constantly expanding and improving storehouse of knowledge about women's lives and writings, the Orlando textbase itself, is rendered uniquely searchable and sortable by its encoding in a linked open data format.</dc:description>
+    <skos:definition xml:lang="en">The Orlando Project is an experiment in the integration of text and technology. It has designed and continues to enhance digital tools to harness the power of computers for critical literary and historical research. The project's constantly expanding and improving storehouse of knowledge about women's lives and writings, the Orlando textbase itself, is rendered uniquely searchable and sortable by its encoding in a linked open data format.</skos:definition>
+    <rdfs:comment xml:lang="en">The Orlando Project is an experiment in the integration of text and technology. It has designed and continues to enhance digital tools to harness the power of computers for critical literary and historical research. The project's constantly expanding and improving storehouse of knowledge about women's lives and writings, the Orlando textbase itself, is rendered uniquely searchable and sortable by its encoding in a linked open data format.</rdfs:comment>
+    <dc:description xml:lang="fr">Le Projet Orlando est une expérience dans l'intégration du texte et de la technologie. Il a conçu et continue d'améliorer les outils numériques pour exploiter la puissance des ordinateurs pour la recherche littéraire et historique critique. La base de données d'Orlando, qui est constamment en expansion et en constante amélioration, est rendue accessible par son encodage dans un format de données ouvertes et liées.</dc:description>
+    <skos:definition xml:lang="fr">Le Projet Orlando est une expérience dans l'intégration du texte et de la technologie. Il a conçu et continue d'améliorer les outils numériques pour exploiter la puissance des ordinateurs pour la recherche littéraire et historique critique. La base de données d'Orlando, qui est constamment en expansion et en constante amélioration, est rendue accessible par son encodage dans un format de données ouvertes et liées.</skos:definition>
+    <rdfs:comment xml:lang="fr">Le Projet Orlando est une expérience dans l'intégration du texte et de la technologie. Il a conçu et continue d'améliorer les outils numériques pour exploiter la puissance des ordinateurs pour la recherche littéraire et historique critique. La base de données d'Orlando, qui est constamment en expansion et en constante amélioration, est rendue accessible par son encodage dans un format de données ouvertes et liées.</rdfs:comment>  
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">DATE_TODAY</dc:date>
+    <dc:rights rdf:resource="http://creativecommons.org/licenses/by/3.0/"/> 
+    <dc:creator rdf:resource="#originalOrlandoAuthor"/>
+    <dc:publisher>
+     <foaf:Organization rdf:about="#cwrc">
+      <foaf:name xml:lang="fr">Le Collaboratoire scientifique des écrits du Canada</foaf:name>
+      <foaf:name xml:lang="en">The Canadian Writing Research Collaboratory</foaf:name>
+      <foaf:logo rdf:resource="http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif"/>
+     </foaf:Organization>
+    </dc:publisher>
+    <loc:fnd>
+     <foaf:Organization rdf:about="#sshrc">
+      <foaf:name xml:lang="en">Social Sciences and Humanities Research Council</foaf:name>
+      <foaf:name xml:lang="fr">Conseil de recherches en sciences humaines</foaf:name>
+      <foaf:nick>SSHRC</foaf:nick>
+     </foaf:Organization>
+    </loc:fnd>
+    <foaf:logo rdf:resource="http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85043777"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008103144"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85147457"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85147456"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85047747"/>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2009124199"/>
+  </rdf:Description>
+
+  <skos:Concept rdf:about="#originalOrlandoAuthor">
+    <rdfs:label xml:lang="en">Members of the Orlando Project</rdfs:label>
+    <rdfs:label xml:lang="fr">Les membres du project Orlando</rdfs:label>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+    <foaf:name xml:lang="en">Members of the Orlando Project.</foaf:name>
+    <skos:definition xml:lang="en">The collection of all persons having written entries for the Orlando project.</skos:definition>
+    <skos:definition xml:lang="fr">La collection de tout les auteurs du project Orlando.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/.well-know/void"/>
+  </skos:Concept>
+
+
+  <!-- To be automated at a later date. -->
+  <void:Linkset rdf:about="http://rdf.muninn-project.org/ww1/muninn-ww1-dataset/muninn-GeoNames">
+   <void:objectsTarget rdf:resource="http://rdf.muninn-project.org/ww1/muninn-ww1-dataset"/>
+   <void:subjectsTarget rdf:resource="http://rdf.muninn-project.org/ww1/muninn-ww1-dataset/GeoNames"/>
+   <void:triples>1</void:triples>  
+  </void:Linkset>
+
+
+
+</rdf:RDF>
