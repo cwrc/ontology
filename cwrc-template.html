@@ -175,6 +175,35 @@
     Formation as in effect labels, retaining the ambiguity of terms that
     draw together identity categories.</p>
 
+ 
+    <p>Vocabulary reuse presented some challenges to the CWRC in that the
+    specific intent of vocabularies is not always recorded and thus
+    ambiguity in the intent of the author makes their reuse difficult. A
+    typical example is that of religion where much ambiguity exists as to
+    whether the term actually represents 
+    the religion as a belief system, the underlying religious organization, 
+    the social behaviours it implies or any combination of the above.</p>
+    <p>A the top level the CWRC ontology makes use of the following well know
+    ontologies:
+    <ol>
+     <li>The FOAF ontology for the representation of people and
+     organizations.</li>
+     <li>The BIBO ontology for the representation of bibliographic data.</li>
+     <li>The TIME ontology for the representation of events and points in
+     time where ISO8601/XML Schema times are not appropriate.</li>
+     <li>The NIF-CORE ontology is used to contain and manipulate the text of
+     the original Orlando entries.</li>
+     <li>The Open Annotation Ontology is used to link the original Orlando
+     text to specific <a href="#Context">Context</a>s.</li>
+     <li>The SKOS vocabulary is use to represent taxonomical relationships
+     within certain <a href="#CulturalFormation">Cultural Formation<a/>s and
+     to fully document ontology terms.</li>
+     <li>Some Dublin Core vocabulary terms are used for well known documentation
+     tags such as &lt;dc:title&gt;.
+    </ol>
+    </p>    
+
+
     <h4 id="provenance">c. Provenance and contexts</h4>
 
     <p>
@@ -187,6 +216,21 @@
     snippets, which within the dataset become instances of contextual notes or human-readable
      annotations to which the ontological classes are directly tied.     
     </p>    
+
+    <p>The wholesale import of entire vocabularies within the CWRC ontology
+    was likely to cause logical and ontological issues. To this end, we
+    opted not to use the &lt;owl:import&gt; construct and to either
+    link to vocabularies externally or to clone specific sets of terms from
+    selected vocabularies. Similarly, not all ontologies are well-defined
+    but drawing from their narrative or some of their properties prouved
+    usefull. To this end, we avoided the use of &lt;owl:sameAs&gt; so as not
+    to bring in unintended properties or ontological structures into the
+    cwrc ontology. In other cases, the Provenance ontology property
+    &lt;prov:derivedFrom&gt; is used to indicate that the term was
+    constructed using information from other terms without necessarily being
+    equivalent. Direct linkages to other ontologies is usually done through
+    the use of subClasses or &lt;owl:equivalentClass&gt;.</p>
+
     <h4 id="labelsandvalues">d. Labels and values</h4>
     <p>
      As noted above, labels are not only used here to indicate the particular
@@ -234,6 +278,7 @@
     this way, both rapid retrieval and deep provenance tracking can be
     achieved.</p>
 
+
     <p>Two basic structures are used within the ontology to achieve this: <a
     href="#Context">Contexts</a> and <a href="#CulturalFormation">Cultural Formations<a/>.
     A cultural formation represent elements of lived social subjectivities
@@ -243,58 +288,8 @@
     being assigned to the person. In addition, properties are separated in
     two categories: reported and self-reported, allowing for the
     qualification of individual statements.</p>
- 
-    <h4 id="links">Linkages to other ontologies.</h3>
- 
-    <p>Vocabulary reuse presented some challenges to the CWRC in that the
-    specific intent of vocabularies is not always recorded and thus
-    ambiguity in the intent of the author makes their reuse difficult. A
-    typical example is that of religion where much ambiguity exists as to
-    whether the term actually represents 
-    the religion as a belief system, the underlying religious organization, 
-    the social behaviours it implies or any combination of the above.</p>
-    <p>A the top level the CWRC ontology makes use of the following well know
-    ontologies:
-    <ol>
-     <li>The FOAF ontology for the representation of people and
-     organizations.</li>
-     <li>The BIBO ontology for the representation of bibliographic data.</li>
-     <li>The TIME ontology for the representation of events and points in
-     time where ISO8601/XML Schema times are not appropriate.</li>
-     <li>The NIF-CORE ontology is used to contain and manipulate the text of
-     the original Orlando entries.</li>
-     <li>The Open Annotation Ontology is used to link the original Orlando
-     text to specific <a href="#Context">Context</a>s.</li>
-     <li>The SKOS vocabulary is use to represent taxonomical relationships
-     within certain <a href="#CulturalFormation">Cultural Formation<a/>s and
-     to fully document ontology terms.</li>
-     <li>Some Dublin Core vocabulary terms are used for well known documentation
-     tags such as &lt;dc:title&gt;.
-    </ol>
-    </p>    
 
-    <p>The wholesale import of entire vocabularies within the CWRC ontology
-    was likely to cause logical and ontological issues. To this end, we
-    opted not to use the &lt;owl:import&gt; construct and to either
-    link to vocabularies externally or to clone specific sets of terms from
-    selected vocabularies. Similarly, not all ontologies are well-defined
-    but drawing from their narrative or some of their properties prouved
-    usefull. To this end, we avoided the use of &lt;owl:sameAs&gt; so as not
-    to bring in unintended properties or ontological structures into the
-    cwrc ontology. In other cases, the Provenance ontology property
-    &lt;prov:derivedFrom&gt; is used to indicate that the term was
-    constructed using information from other terms without necessarily being
-    equivalent. Direct linkages to other ontologies is usually done through
-    the use of subClasses or &lt;owl:equivalentClass&gt;.</p>
-
-    <p>A specific example was with the <a href="#Religion">Religion<a/>
-    class instances that were problematic.</p>
-            
-    <p>This has allowed for the careful control of what
-    statements are made within CWRC while leveraging the work of other
-    projects.</p>   
-
-    <h3 id="culturalformations">Cultural Formations.</h3>
+    <h4 id="culturalformationsontology">a. Cultural Formations</h4>    
 
  <p>The <a href="#CulturalFormation">Cultural Formation<a/> classes
  recognize categorization as endemic to social experience, while
@@ -334,10 +329,20 @@ purposes, the term is also available as an concept whose actual Cultural
 Formation is undecided amongst the CWRC defined options. This allows for
 linkages to the ontology, such as can be required in text mining, which
 committing to a specific interpretation immediately.</p>
+ 
+    <h4 id="contextontology">b. Contexts</h4>    
+ 
+       <h4 id="granularproperties">Granular Properties</h4> 
+       
+       <p>Granular properties are meant as a simpler means of reporting
+       information about individuals and their personal properties, some of
+       which are self-reported. Some of the reported properties also
+       includes forebears.</p>
 
-       <h4 id="religion">Religion</h4>
-   
-       <p>The original Orlando data makes religious reporting an difficult
+
+    <h4 id="taxonomiesontology">c. Built-in Taxonomies</h4>    
+       <h5 id="religion_taxonomy">i. Religion</h5>
+          <p>The original Orlando data makes religious reporting an difficult
        issue in that the original contexts did not differentiation between
        religious beliefs, membership within religious organizations and the
        explicit abscende of any religious belief.</p>
@@ -351,31 +356,17 @@ committing to a specific interpretation immediately.</p>
        organizational ancestry of the belief system. This is a highly
        subjective process.</p>
        <p>The specific taxonomy is:
-       <img src="figures/religionTaxonomy.png">
-       
+       <img src="figures/religionTaxonomy.png">  
        </p>
        
-       <h4 id="gender">Gender, Sex and Orientation</h4>
+       <h5 id="genre_taxonomy">ii. Literary Genre</h5>
+       
+       
+       <h5 id="gender_taxonomy">iii. Gender, Sex and Orientation</h5>
        
        <p>Depending on the situation, the Orlando tags may reference any
        combination of sex, gender and/or sexual orientation. </p> 
        
-         
-       <h3 id="granularproperties">Granular Properties</h3> 
-       
-       <p>Granular properties are meant as a simpler means of reporting
-       information about individuals and their personal properties, some of
-       which are self-reported. Some of the reported properties also
-       includes forebears.</p>
-
-
-    <h3 id="context">Cultural Contexts</h3>
-    
-     <p>
-     <a href="#Context">Context</a>s are a means of recording both the
-     target of a cultural formation and the source text that was written by
-     Orlando authors about the topic.
-     </p>
           
     <h3 id="definition_list">Global cross reference</h3>
     
@@ -403,29 +394,32 @@ committing to a specific interpretation immediately.</p>
     <li>Whenever referencing a geographical location, use the most precise
     item within the database.</li>
     </ul>
+
+    <h2 id="notesSKOSOWL">Notes on SKOS and OWL</h2>
+     <p>
+     SKOS (Simple Knowledge Organization System) enjoys widespread popularity in the semantic web community as it provides simple
+     terms for taxonomies without requiring reasoner support. Whenever appropriate, SKOS terms are inserted within this ontology
+     to link terms to each other. However, since these terms are not ontologically powered, their scalability is limited since
+     each additional layer of terms within a taxonomy requires another database query.</p>
+     <p>  
+     Some of the constructs within the CWRC ontology are deep and require reasoning support. OWL is the preferred means of using
+     this ontology, though the usage of the terms, SKOS-style, is possible.
+     </p>
+    
     
     <h2 id="notesEvent">Notes on CWRC Events</h2>
      <p></p>
 
     <h2 id="conclusion">Conclusion and Future Work</h2>
-
-    <p>Etiam dignissim lorem id turpis scelerisque vehicula. Maecenas
-    hendrerit nisl libero, a efficitur orci tristique a. Etiam posuere
-    sodales felis, vel malesuada dui. Curabitur sit amet risus gravida,
-    gravida lorem luctus, tristique erat. Aliquam quis felis dapibus, tempus
-    enim aliquam, cursus enim. Ut sed imperdiet nisi. Ut auctor turpis sed
-    vehicula fringilla. Nulla quis enim sem. Pellentesque quis lorem
-    lacinia, fringilla dui ac, pharetra ante. Mauris ultricies lacus metus,
-    quis iaculis lorem porttitor in. Suspendisse placerat est neque, quis
-    tempor dolor commodo dictum. Donec accumsan lorem in justo consectetur,
-    vehicula pharetra mi laoreet. Pellentesque a neque non erat ultricies
-    rutrum. Praesent varius felis purus, id congue dolor ultricies vel.
-    Quisque elit diam, pretium ut aliquam et, sodales ut elit. </p>   
-
+    <p>
+    This is a draft ontology that is very much in progress. It will continue to be developed, expanded, and revised as we
+    discover the implications of how we have structured the ontology through using it to extract and explore our data, data and
+    uses cases that necessitate expansion or refinement, and as new needs, understandings, and debates arise.
+    </p>
     <h2 id="version_history">Version History</h2>
 
     <ul>
-    <li><p>0.3 - Initial release.</p></li>
+    <li><p>0.99 - Initial public release.</p></li>
     </ul>
     
     <h2 id="biblipgraphy">Bibliography</h2>    
