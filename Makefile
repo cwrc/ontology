@@ -9,6 +9,7 @@ ONTOLOGY_LOGO = $(shell xpath -e '/rdf:RDF/owl:Ontology/foaf:logo/@rdf:resource'
 force:	$(ONTOLOGY).owl
 	touch $(ONTOLOGY).owl
 	touch $(ONTOLOGY)-template.html	
+	rm $(ONTOLOGY)-ref.bib
 all:	$(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 $(ONTOLOGY)-$(ONTOLOGY_DATE).owl: $(ONTOLOGY).owl 
 	echo $(ONTOLOGY_LOGO)
