@@ -17,9 +17,9 @@ my $query = RDF::Query->new('SELECT * WHERE { ?uri <http://www.w3.org/1999/02/22
 FILTER(LANG(?label) = "" || LANGMATCHES(LANG(?label), "en"))
 }');
 my $iterator = $query->execute( $model );
-print "digraph GenreGraph {\n
- size=\"30,30\";
- margin=0;\n";
+print "digraph GenreGraph {\n";
+# size=\"50,50\";
+# margin=0;\n";
 #ratio=\"fill\";
 
 while (my $row = $iterator->next) {
