@@ -11,10 +11,12 @@ force:	$(ONTOLOGY).owl
 	touch $(ONTOLOGY)-template.html	
 	rm $(ONTOLOGY)-ref.bib
 all:	$(ONTOLOGY)-$(ONTOLOGY_DATE).owl
-$(ONTOLOGY)-$(ONTOLOGY_DATE).owl: $(ONTOLOGY).owl 
+$(ONTOLOGY)-$(ONTOLOGY_DATE).owl: $(ONTOLOGY).owl cwrc_genre.owl
 	echo $(ONTOLOGY_LOGO)
 	xpath $(ONTOLOGY).owl "/rdf:RDF" 1> /dev/null 2> /dev/null
-	sed 's/DATE_TODAY/$(DATE_CLEAN)/g' < $(ONTOLOGY).owl > $(ONTOLOGY)-$(ONTOLOGY_DATE).owl	
+	sed 's/DATE_TODAY/$(DATE_CLEAN)/g' < $(ONTOLOGY).owl | grep -v "</rdf:RDF>" > $(ONTOLOGY)-$(ONTOLOGY_DATE).owl	
+	cat cwrc_genre.owl >> $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
+	echo "</rdf:RDF>" >> $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 $(ONTOLOGY)-$(ONTOLOGY_DATE).nt: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 	rapper -o turtle $(ONTOLOGY)-$(ONTOLOGY_DATE).owl > $(ONTOLOGY)-$(ONTOLOGY_DATE).nt
 $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
@@ -28,7 +30,7 @@ $(DOCS_TEMPLATES): $(DOCS) $(ONTOLOGY).owl
 	./generateTermDocumentation.sh doc $(ONTOLOGY)-docs/
 $(ONTOLOGY)-$(ONTOLOGY_DATE).dot: $(ONTOLOGY).owl
 	grep -v "rdfs:label" $(ONTOLOGY).owl  | grep -v "rdfs:comment"| grep -v "foaf:name" | grep -v "rdf:type" | rapper -o dot - "http://rdf.muninn-project.org/ontologies/"$(ONTOLOGY)"#" | grep -v "owl:Class" | grep -v "owl:ObjectProperty" > $(ONTOLOGY)-$(ONTOLOGY_DATE).dot
-$(ONTOLOGY)-template-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-template.html figures/religionTaxonomy.png
+$(ONTOLOGY)-template-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-template.html figures/religionTaxonomy.png figures/genreTaxonomy.png
 	sed "s/PREVIOUS_ONTOLOGY/$(PREVIOUS_ONTOLOGY)/g"  < $(ONTOLOGY)-template.html | sed "s/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g" | sed "s/ONTOLOGY_NAME/$(ONTOLOGY)/g"  | sed "s/ONTOLOGY_DATE/$(ONTOLOGY_DATE)/g" |  sed "s/ONTOLOGY_LONGDATE/$(ONTOLOGY_LONGDATE)/g"  | sed "s/ONTOLOGY_VERSION/$(ONTOLOGY_VERSION)/g"  | sed 's/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g'  > $(ONTOLOGY)-template-$(ONTOLOGY_DATE).html
 $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-template-$(ONTOLOGY_DATE).html $(ONTOLOGY)-citations.html
 	 m4 -P $(ONTOLOGY)-template-$(ONTOLOGY_DATE).html > $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html
@@ -44,6 +46,8 @@ $(ONTOLOGY)-ref.bib:
 	wget -O $(ONTOLOGY)-ref.bib "https://api.zotero.org/groups/1018142/items/top?start=0&limit=100&format=bibtex&v=1"
 figures/religionTaxonomy.png: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 	./scripts/createReligionTaxonomy.pl $(ONTOLOGY)-$(ONTOLOGY_DATE).owl | dot -ofigures/religionTaxonomy.png -Tpng 
+figures/genreTaxonomy.png: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
+	./scripts/createGenreTaxonomy.pl $(ONTOLOGY)-$(ONTOLOGY_DATE).owl | dot -ofigures/genreTaxonomy.png -Tpng 
 clean:
 	rm -f $(ONTOLOGY)-$(ONTOLOGY_DATE).dot $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-template-$(ONTOLOGY_DATE).html $(ONTOLOGY)-$(ONTOLOGY_DATE).html $(ONTOLOGY)-citations.html
 testing-deploy: force all
