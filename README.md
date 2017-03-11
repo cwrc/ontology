@@ -11,6 +11,6 @@ http://sparql.cwrc.ca/ontology/cwrc.html is the currently deployed ontology  (ch
 
 cwrc.ttl - The main ontology in turtle serialization (converted from rdf/xml).
 
-cwrc.bib - Bibtex file with all citations - moved to https://www.zotero.org/groups/cwrc_ontology_references - will be deleted.
+All ontology citations have been moved to https://www.zotero.org/groups/cwrc_ontology_references 
 
 cwrc-template.html - Template for the CWRC Ontology documentation before the term generator is run.
