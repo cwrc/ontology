@@ -18,7 +18,7 @@ $(ONTOLOGY)-$(ONTOLOGY_DATE).owl: $(ONTOLOGY).owl cwrc_genre.owl
 	cat cwrc_genre.owl >> $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 	echo "</rdf:RDF>" >> $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 $(ONTOLOGY)-$(ONTOLOGY_DATE).nt: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
-	rapper -o turtle $(ONTOLOGY)-$(ONTOLOGY_DATE).owl > $(ONTOLOGY)-$(ONTOLOGY_DATE).nt
+	rapper $(ONTOLOGY)-$(ONTOLOGY_DATE).owl > $(ONTOLOGY)-$(ONTOLOGY_DATE).nt
 $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 	rapper -o turtle $(ONTOLOGY)-$(ONTOLOGY_DATE).owl > $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl	
 all:	$(ONTOLOGY)-$(ONTOLOGY_DATE).html $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl $(ONTOLOGY)-$(ONTOLOGY_DATE).nt  $(ONTOLOGY)-$(ONTOLOGY_DATE).owl #$(ONTOLOGY)-overall-$(ONTOLOGY_DATE).jpg		
