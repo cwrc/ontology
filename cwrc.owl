@@ -253,7 +253,7 @@
    <rdfs:label xml:lang="en">Cultural Formation</rdfs:label>
    <rdfs:label xml:lang="fr">Formation Culturelle</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <skos:definition xml:lang="en">Cultural formation refers to the processes of lived social subjectivities of people and is often combined with predicates indicating the identity positions as they relate to the following discursive constructions of Class, Denomination, Ethnicity, Gender, GeographicalHeritage, Language, NationalHeritage, NationalIdentity, PoliticalAffiliation, RaceColour, SexualIdentity. These categories are not understood as transhistorical or isolated categories. Rather, they facilitate analysis of howfor a particular individual. It is our hope that modes of classification never occur without a sense of responsibility, and that the tensions inherently present during the practice of classification are never eased but rather challenged and engaged with critically.</skos:definition>
+   <skos:definition xml:lang="en">Cultural formation refers to the processes of lived social subjectivities of people and is often combined with predicates indicating the identity positions as they relate to the following discursive constructions of Class, Religion, Ethnicity, Gender, GeographicalHeritage, LinguisticAbility, NationalHeritage, NationalIdentity, PoliticalAffiliation, RaceColour, SexualIdentity. These categories are not understood as transhistorical or isolated categories. Rather, they facilitate analysis of how such situationally contingent, changing, and negotiated labels are assigned to or adopted by a particular individual. The tensions endemic to practices of classification demand critical engagement and inquiry into the situatedness of particular cultural identities.</skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
    <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -295,8 +295,8 @@
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <rdfs:subClass rdf:resource="#Context"/>
    <skos:definition xml:lang="en">raceEthnicityContext is a significant sub-class within culturalForms. It indicates the presence of information and discussions of a person's subject position with regards to race and ethnicity by working in conjunction with subject specific sub-elements (raceColour, nationalHeritage, geogHeritage, ethnicity). The following discussion applies to both the general discursive context of raceAndEthnicity as well as the specific sub-class categories.
-Despite the anxieties of the ways in which categories of race or ethnicity circulate and serve various kinds of undesirable interests, to ignore or go the totally free-text route is not a responsible solution for this project, though it would certainly be easier and simpler. The trick here is to make the complexities of the question of race and ethnicity emerge, and to make it clear that these are shifting, historically constituted, and interestedly deployed categories whose use must be understood contextually. The discursiveness with which we will present these categories will, hopefully, help to do this and also allay the anxiety we feel about \"labelling\" in a vacuum. In other words, the project has no notion that we could or should come up with what is in any way an exact, fully defined, or mutually exclusive set of categories: the point is the overlap within them. Within this system, counting per se becomes highly problematic and the user has to do some work (and some thinking/active defining) before arriving at any kind of list or count, and will hopefully arrive at it with a sense of how problematic such an activity is.
-People using this class should apply it to instances that seem to be right for the context, applying to the category or categories which seem to fit, but they should be encouraged not to let race/ethnicity become invisible or only an issue in relation to the marginalized. And we should, as stressed by those concerned about \"white\" and \"black\" as homogenizing categories, encourage people to reach for specificity through multiplicity: i.e. generally attempt to include at least two of: \"race/colour\"; \"ethnicity\"; \"nationality\" or \"national-heritage.\" RaceAndEthnicity is a sub-class within culturalFormation. It has four realted content sub-classes: raceColour, nationalHeritage, geogHeritage, and ethnicity. You are also encouraged to consider all of the other subclasses appropriate to the discussion of cultural formation: class, denomination, language, nationality, politicalAffiliation, and sexualIdentity.</skos:definition>
+Despite the ways in which categories of race and ethnicity frequently serve heinous interests, their ideological and material impacts in the formation of identities requires recognition. These are shifting, historically constituted, and interestedly deployed categories whose use must be situated contextually and which are understood here finally as discursive or representational. Because of this this ontology does not try to lay out an exact, fully defined, or mutually exclusive set of categories: this is an impossibility given their shifting use and the overlap among them. 
+Those applying this class and its subclasses are encouraged not to let privileged identites operate as an unspoken given or to use this class solely in relation to the marginalized. Those concerned about "white" and "black" as homogenizing categories are encouraged to reach for specificity through multiplicity and representations of intersectionality. RaceAndEthnicity is a sub-class within culturalFormation. It has four related content sub-classes: raceColour, nationalHeritage, geogHeritage, and ethnicity.</skos:definition>
    <skos:definition xml:lang="fr">raceEthnicityContext est une sous-catégorie importante de culturalForms. Elle indique la présence d’informations et de discussions sur le sujet concernant son appartenance raciale et ethnique, fonctionnant conjointement avec les sous-éléments spécifiques au sujet (raceColour, nationalHeritage, geogHeritage, ethnicity). La discussion qui suit s’applique aussi bien au contexte discursif général de raceAndEthnicity qu’aux sous-catégories spécifiques.
 Malgré les inquiétudes sur la façon dont les catégories de race et d’ethnicité circulent et nourrissent diverses sortes d’intérêts malvenus, les ignorer ou suivre la voix d’un texte totalement libre est un détour qui ne convient pas pour ce projet, même si cela serait plus aisé et plus simple. Le tour que nous empruntons ici fait émerger la complexité des questions de race et d’ethnicité, en faisant bien comprendre que ces catégories sont changeantes, historiquement constituées, développées de façon intéressée, et que leur utilisation doit être comprise dans son contexte. Nous espérons que la discursivité que nous construirons aidera à présenter ces catégories d’une telle manière, ainsi qu’à apaiser l’inquiétude qu’on éprouve à “étiqueter” dans le vide. En d’autres mots, le projet est étranger à l’idée que nous pouvons ou devons aboutir à un ensemble de catégories exactes, totalement définies ou incompatibles ; l’objectif est plutôt de les faire coïncider. Au sein de ce système, compter per se devient hautement problématique et l’utilisateur/trice doit effectuer un certain travail (de réflexion/de définition active) avant d’arriver à quelque liste ou compte, ce qui lui donnera, nous l’espérons, un aperçu du caractère problématique d’une telle activité. 
 Les personnes utilisant cette catégorie devront y appliquer des exemples, ou termes, qui semblent corrects en contexte, en les insérant à la ou les catégories qui semblent convenir, mais sont amenés  à ne pas laisser la race/l’ethnicité devenir invisibles ou un problème seulement pour les marginaux. Et nous devons, comme certains l’ont déjà souligné pour les catégories généralisantes “blancs” et “noirs”, encourager les utilisateurs à atteindre le spécifique par le biais du multiple, c’est-à-dire en essayant d’inclure au moins deux catégories parmi “race/couleur”, “ethnicité, “nationalité”, ou “héritage national”. RaceAndEthnicity est une sous-catégorie de culturalFormation. Elle contient quatre sous-catégories relatives: raceColour, nationalHeritage, geogHeritage et ethnicity. Vous êtes également encouragés à prendre en compte toutes les autres sous-catégories en lien avec la problématique de la la formation culturelle: class, denomination, language, nationality, politicalAffiliation, et sexualIdentity. 
@@ -1733,44 +1733,44 @@ Les personnes utilisant cette catégorie devront y appliquer des exemples, ou te
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:ID="hasLanguage">
- <rdfs:label xml:lang="en">Knowns Language</rdfs:label>
+<owl:ObjectProperty rdf:ID="hasLinguisticAbility">
+ <rdfs:label xml:lang="en">Language Known</rdfs:label>
  <rdfs:label xml:lang="fr">Connait la langue</rdfs:label>
  <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
- <rdfs:domain rdf:resource="#Language"/>
- <skos:definition xml:lang="en">Knowleage about the language in writing or reading.</skos:definition>
+ <rdfs:domain rdf:resource="#LinguisticAbility"/>
+ <skos:definition xml:lang="en">Knowlege of the language for writing or reading.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:ID="hasLanguageSelfDeclared">
- <rdfs:label xml:lang="en">Knowns Language (Self Declared)</rdfs:label>
+<owl:ObjectProperty rdf:ID="hasLinguisticAbilitySelfDeclared">
+ <rdfs:label xml:lang="en">Language Known (Self Declared)</rdfs:label>
  <rdfs:label xml:lang="fr">Connait la langue (Autodéclarés)</rdfs:label>
  <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
- <rdfs:domain rdf:resource="#Language"/>
+ <rdfs:domain rdf:resource="#LinguisticAbility"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:ID="hasNativeLanguage">
- <rdfs:label xml:lang="en">Knowns Language Natively</rdfs:label>
+<owl:ObjectProperty rdf:ID="hasNativeLinguisticAbility">
+ <rdfs:label xml:lang="en">Natively Known Language</rdfs:label>
  <rdfs:label xml:lang="fr">A une langue native</rdfs:label>
- <rdfs:subPropertyOf rdf:resource="#hasLanguage"/>
- <rdfs:domain rdf:resource="#Language"/>
- <skos:definition xml:lang="en">Knowleage about the language in writing or reading.</skos:definition>
+ <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
+ <rdfs:domain rdf:resource="#LinguisticAbility"/>
+ <skos:definition xml:lang="en">Knowledge of the language for writing or reading.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:ID="hasNativeLanguageSelfDeclared">
- <rdfs:label xml:lang="en">Knowns Language Natively (Self Declared)</rdfs:label>
+<owl:ObjectProperty rdf:ID="hasNativeLinguisticAbilitySelfDeclared">
+ <rdfs:label xml:lang="en">Natively Known Language (Self Declared)</rdfs:label>
  <rdfs:label xml:lang="fr">A une langue native (Autodéclarés)</rdfs:label>
- <rdfs:subPropertyOf rdf:resource="#hasLanguageSelfDeclared"/>
- <rdfs:domain rdf:resource="#Language"/>
+ <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbilitySelfDeclared"/>
+ <rdfs:domain rdf:resource="#LinguisticAbility"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
