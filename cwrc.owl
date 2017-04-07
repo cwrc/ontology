@@ -572,32 +572,6 @@ Les personnes utilisant cette catégorie devront y appliquer des exemples, ou te
 
 
 
- <owl:Class rdf:ID="CisGendered">
-   <rdfs:label xml:lang="en">cisGendered</rdfs:label>
-   <rdfs:label xml:lang="fr">Cisgenre</rdfs:label>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <owl:subClass rdf:resource="#CulturalFormation"/>
-   <skos:definition xml:lang="en">Indicates alignment between a person's gender identity and their sex as understood or assigned at birth.</skos:definition>
-   <skos:definition xml:lang="fr"></skos:definition>
-   <owl:sameAs rdf:resource="http://dbpedia.org/resource/Cisgender"/>
-   <owl:differentFrom rdf:resource="#Transgender"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
-  <void:inDataset rdf:resource="#datasetdefinition"/>
- </owl:Class>
-
-  <owl:Class rdf:ID="Transgender">
-   <rdfs:label xml:lang="en">Transgender</rdfs:label>
-   <rdfs:label xml:lang="fr">Transgenre</rdfs:label>
-   <foaf:name xml:lang="en">Transgender</foaf:name>
-   <foaf:name xml:lang="fr">Transgenre</foaf:name>
-   <owl:subClass rdf:resource="#CulturalFormation"/>
-   <skos:definition xml:lang="en">Transgender is the state of one's gender identity, expression or role not matching one's assigned sex.</skos:definition>
-   <owl:sameAs rdf:resource="http://dbpedia.org/resource/Transgender"/>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
-  <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
-
   <owl:Class rdf:ID="GenderQueer">
    <rdfs:label xml:lang="en">GenderQueer</rdfs:label>
    <rdfs:label xml:lang="fr">Non-binaire</rdfs:label>
@@ -973,7 +947,7 @@ Les personnes utilisant cette catégorie devront y appliquer des exemples, ou te
   <skos:broaderTransitive rdf:resource="#abrahamicReligions"/>
  </cwrc:Religion>
 
- <cwrc:Religion rdf:about="#judaism">
+ <cwrc:Religion rdf:about="#jewishReligion">
   <rdfs:label xml:lang="en">Jewish</rdfs:label>
   <rdfs:label xml:lang="zh-hant">猶太教</rdfs:label>
   <rdfs:label xml:lang="zh-latn-pinyin-x-hanyu">yóu tài jiāo</rdfs:label>
