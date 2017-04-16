@@ -72,7 +72,7 @@
      <foaf:Organization rdf:about="#cwrc">
       <foaf:name xml:lang="fr">Le Collaboratoire scientifique des écrits du Canada</foaf:name>
       <foaf:name xml:lang="en">The Canadian Writing Research Collaboratory</foaf:name>
-      <foaf:logo rdf:resource="http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif"/>
+      <foaf:logo rdf:resource="http://sparql.cwrc.ca/images/CWRCLogo-Horz-FullColour.png"/>
      </foaf:Organization>
     </dc:publisher>
     <loc:pdr>   
@@ -1208,7 +1208,7 @@ Les personnes utilisant cette catégorie devront y appliquer des exemples, ou te
   <skos:definition xml:lang="fr">La Société religieuse des Amis est un mouvement religieux fondé en Angleterre au XVIIe siècle par des dissidents de l'Église anglicane. Les membres de ce mouvement sont communément connus sous le nom de quakers () mais ils se nomment entre eux « Amis » et « Amies ». Le mouvement est souvent nommé simplement Société des Amis et le surnom de « quaker » apparaît le plus souvent dans la dénomination officielle, sous la forme Société religieuse des Amis (quakers). Les historiens s'accordent à désigner George Fox comme le principal fondateur ou le plus important meneur des débuts du mouvement. Depuis sa création en Angleterre, le mouvement s'est d'abord répandu dans les pays de colonisation anglo-saxonne. Au XXe siècle, des missionnaires quakers ont propagé leur religion en Amérique latine et en Afrique. Aujourd'hui, les quakers déclarent être au nombre d'environ 350 000 dans le monde. La Société des Amis se différencie de la plupart des autres groupes issus du christianisme par l'absence de credo et de toute structure hiérarchique. Pour les quakers, la croyance religieuse appartient à la sphère personnelle et chacun est libre de ses convictions. Le concept de « lumière intérieure » (inner light) est cependant partagé par la plupart d'entre eux, quelle que soit la signification donnée à ces mots. De nombreux quakers reconnaissent le christianisme mais ne ressentent pas leur foi comme entrant dans les catégories chrétiennes traditionnelles. On trouve aujourd'hui dans la Société des Amis des pratiques très diverses, y compris un large courant évangélique.</skos:definition>
   <skos:definition xml:lang="nl">Het Religieus Genootschap der Vrienden, beter bekend als quakers, verouderd Nederlands kwakers, vormt een groep ondogmatische gelovigen, die zijn wortels vindt in de christelijke traditie. Het leven en de overgeleverde uitspraken van Jezus vormen een belangrijke inspiratiebron.</skos:definition>
   <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
-  <prov:derivedFrom rdf:resource="http://dbpedia.org/page/Quakers"/>
+  <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Quakers"/>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
@@ -1247,7 +1247,7 @@ Les personnes utilisant cette catégorie devront y appliquer des exemples, ou te
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:subClassOf rdf:resource="http://dbpedia.org/page/Spiritualism"/> 
+  <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Spiritualism"/> 
   <skos:inScheme rdf:resource="#Religion"/>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1262,7 +1262,7 @@ Les personnes utilisant cette catégorie devront y appliquer des exemples, ou te
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
   <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
-  <rdfs:subClassOf rdf:resource="http://dbpedia.org/page/Oxford_Movement"/>
+  <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Oxford_Movement"/>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Religion>
@@ -1296,7 +1296,7 @@ Les personnes utilisant cette catégorie devront y appliquer des exemples, ou te
   <rdf:value>unitarianMovement</rdf:value> 
   <skos:inScheme rdf:resource="#Religion"/>
   <skos:broaderTransitive rdf:resource="#protestantism"/>
-  <rdfs:subClassOf rdf:resource="http://dbpedia.org/page/Unitarianism"/>  
+  <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Unitarianism"/>  
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:Religion>
