@@ -1,3 +1,33 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+    xmlns:muninn="http://rdf.muninn-project.org/ontologies/muninn#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dbpedia="http://dbpedia.org/resource/"
+    xmlns:time = "http://www.w3.org/2006/time#"   
+    xmlns:cc = "http://creativecommons.org/ns#"
+    xmlns:nif="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#"
+    xmlns:as="http://www.w3.org/ns/activitystreams#"
+    xmlns:oa="http://www.w3.org/ns/oa#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:doap="http://usefulinc.com/ns/doap#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:loc="http://id.loc.gov/vocabulary/relators/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#"
+    xml:base="http://sparql.cwrc.ca/ontologies/cwrc#"
+    xmlns="http://sparql.cwrc.ca/ontologies/cwrc#">
+    
 <cwrc:Genre rdf:about="#genreAbridgement">
    <rdf:value>ABRIDGEMENT</rdf:value>
    <rdfs:label xml:lang="en">abridgement</rdfs:label>
@@ -228,8 +258,8 @@
    <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300080104"/>
    <owl:comment xml:lang="en">This term and its description was created from data gathered from the Getty Art &amp; Architecture Thesaurus.</owl:comment>
   </cwrc:Genre>
-   <rdf:value>BALLAD</rdf:value>
 <cwrc:Genre rdf:about="#genreBallade">
+   <rdf:value>BALLAD</rdf:value>
    <rdf:value>BALLADE</rdf:value>
    <rdf:value>BALLAD</rdf:value>
    <rdfs:label xml:lang="en">ballade</rdfs:label>
@@ -2689,3 +2719,5 @@
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </cwrc:Genre>
+</rdf:RDF>
+
