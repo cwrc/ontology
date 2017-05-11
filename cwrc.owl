@@ -325,7 +325,6 @@
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <dc:subject rdf:resource="#Sexuality"/>
-  <dc:subject rdf:resource="#SexIdentity"/>
   <dc:subject rdf:resource="#Gender"/>
 
  </owl:Class>
@@ -660,26 +659,29 @@
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:Sexuality>
 
- <owl:Class rdf:ID="SexIdentity">
+ <owl:DeprecatedClass rdf:ID="SexIdentity">
    <rdfs:label xml:lang="en">Sex Identity</rdfs:label>
    <rdfs:label xml:lang="fr">Identité Sexe</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalForm"/>
- <skos:definition xml:lang="en">Sex according to birth or census data.</skos:definition>
- <skos:definition xml:lang="fr"></skos:definition>
+   <owl:comment xml:lang="en">Deprecated in favour of class Gender.</owl:comment>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
- </owl:Class>
+  <owl:equivalentClass rdf:resource="#Gender"/>
+ </owl:DeprecatedClass>
 
 <cwrc:SexIdentity rdf:about="#maleSex">
  <rdfs:label xml:lang="en">Male</rdfs:label>
  <rdfs:label xml:lang="fr">Male</rdfs:label>
  <foaf:name xml:lang="en">Male (Sex)</foaf:name>
  <skos:definition xml:lang="en"></skos:definition>
- <skos:definition xml:lang="fr"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition> 
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
-  <void:inDataset rdf:resource="#datasetdefinition"/>
+ <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+ <void:inDataset rdf:resource="#datasetdefinition"/>
+ <owl:comment xml:lang="en">Deprecated in favour of instance #genderManMale.</owl:comment>
+ <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+ <owl:equivalentClass rdf:resource="#genderManMale"/>
 </cwrc:SexIdentity>
 
 <cwrc:SexIdentity rdf:about="#femaleSex">
@@ -689,8 +691,11 @@
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
-  <void:inDataset rdf:resource="#datasetdefinition"/>
+ <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+ <void:inDataset rdf:resource="#datasetdefinition"/>
+ <owl:comment xml:lang="en">Deprecated in favour of instance #genderWomanFemale.</owl:comment>
+ <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+ <owl:equivalentClass rdf:resource="#genderWomanFemale"/>
 </cwrc:SexIdentity>
 
 <cwrc:SexIdentity rdf:about="#unknownSex">
@@ -702,6 +707,8 @@
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
+ <owl:comment xml:lang="en">Deprecated with no current equivalence.</owl:comment>
+ <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 </cwrc:SexIdentity>
 
  <owl:Class rdf:ID="RaceColour">
