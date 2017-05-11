@@ -16,7 +16,7 @@ RDF::Trine::Parser->parse_url_into_model( $raw_file, $model );
 #my $xmldocument = $xml_parser->load_xml(location => 'military.owl');
 #print $model->size . " RDF statements parsed\n";
 my @allmaps ;
-my $query = RDF::Query->new('SELECT * WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cwrc.ca/ontologies/cwrc#Religion> . 
+my $query = RDF::Query->new('SELECT * WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sparql.cwrc.ca/ontologies/cwrc#Religion> . 
 ?uri <http://www.w3.org/2000/01/rdf-schema#label> ?label .
 FILTER(LANG(?label) = "" || LANGMATCHES(LANG(?label), "en"))
 }');
