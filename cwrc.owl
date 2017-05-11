@@ -43,7 +43,7 @@
     <skos:definition xml:lang="fr">L'Ontologie CWRC est l'ontologie maîtresse qui représente tous les éléments de la structure du Collaboratoire scientifique des écrits du Canada.</skos:definition>
     <rdfs:comment xml:lang="fr">L'Ontologie CWRC est l'ontologie maîtresse qui représente tous les éléments de la structure du Collaboratoire scientifique des écrits du Canada.</rdfs:comment>  
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.99</owl:versionInfo>
-    <owl:priorVersion rdf:resource=""/>
+    <owl:priorVersion rdf:resource="http://sparql.cwrc.ca/ontology/cwrc-2017-03-18"/>
     <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">DATE_TODAY</dc:date>
     <dc:rights rdf:resource="http://creativecommons.org/licenses/by-nc/4.0/"/> 
     <vs:term_status xml:lang="en">Testing</vs:term_status>
@@ -95,7 +95,7 @@
     </loc:fnd>
     <vann:preferredNamespacePrefix>cwrc</vann:preferredNamespacePrefix>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <foaf:logo rdf:resource="http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif"/>
+    <foaf:logo rdf:resource="http://sparql.cwrc.ca/images/CWRCLogo-Horz-FullColour.png"/>
     <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85019388"/>
     <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85043777"/>
     <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85013838"/>
@@ -1048,7 +1048,6 @@
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Religion>
 
-#this seems like a duplicate (see a few entries above, line 701):
  <cwrc:Religion rdf:about="#churchOfEngland">
   <rdfs:label xml:lang="en">Church of England</rdfs:label>
   <rdfs:label xml:lang="fr"></rdfs:label>
