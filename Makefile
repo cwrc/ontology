@@ -11,14 +11,14 @@ TOTAL_ENTITIES_CWRC_ONTOLOGY = $(shell cat $(ONTOLOGY)-$(ONTOLOGY_DATE).unique)
 force:	$(ONTOLOGY).owl
 	touch $(ONTOLOGY).owl
 	touch $(ONTOLOGY)-template.html	
-	rm $(ONTOLOGY)-ref.bib
+	rm -f $(ONTOLOGY)-ref.bib
 all:	$(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 
 $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp: $(ONTOLOGY).owl cwrc_genre.owl
 	echo $(ONTOLOGY_LOGO)
 	xpath $(ONTOLOGY).owl "/rdf:RDF" 1> /dev/null 2> /dev/null
 	sed 's/DATE_TODAY/$(DATE_CLEAN)/g' < $(ONTOLOGY).owl | grep -v "</rdf:RDF>" > $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp	
-	cat cwrc_genre.owl >> $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp
+	./scripts/xpath-unicode -e "/rdf:RDF/node()" cwrc_genre.owl >> $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp
 	echo "</rdf:RDF>" >> $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp
 $(ONTOLOGY)-$(ONTOLOGY_DATE).counts: $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp
 	rapper $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp | wc -l > $(ONTOLOGY)-$(ONTOLOGY_DATE).counts
@@ -64,6 +64,6 @@ figures/religionTaxonomy.png: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 figures/genreTaxonomy.png: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 	./scripts/createGenreTaxonomy.pl $(ONTOLOGY)-$(ONTOLOGY_DATE).owl | dot -ofigures/genreTaxonomy.png -Tpng 
 clean:
-	rm -f $(ONTOLOGY)-$(ONTOLOGY_DATE).dot $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-template-$(ONTOLOGY_DATE).html $(ONTOLOGY)-$(ONTOLOGY_DATE).html $(ONTOLOGY)-citations.html
+	rm -f $(ONTOLOGY)-$(ONTOLOGY_DATE).dot $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-template-$(ONTOLOGY_DATE).html $(ONTOLOGY)-$(ONTOLOGY_DATE).html $(ONTOLOGY)-citations.html $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp $(ONTOLOGY)-$(ONTOLOGY_DATE).counts
 testing-deploy: force all
 		
