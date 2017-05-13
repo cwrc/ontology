@@ -1380,3 +1380,31 @@ she was a dedicated Jew nonetheless, and above all.""" ;
     a nif:Context, nif:Sentence ;
     prov:createdBy cwrc:originalOrlandoAuthor .
 
+# JULIA FRANKAU
+cwrc:JuliaFrankau
+    cwrc:hasGender cwrc:genderWomanFemale ;
+    cwrc:hasEthnicitySelfDefined cwrc:jewishEthnicity ;
+    cwrc:hasReligionSelfDefined cwrc:jewishReligion ;
+    a foaf:Person ;
+    foaf:name "Julia Frankau" .
+
+<http://www.cwrc.ca/cwrcdata/FRANKAUGenderGenderWomanFemale>
+    a cwrc:GenderContext, oa:Annotation ;
+    rdfs:label ":Gender for Julia Frankau"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
+    oa:hasTarget cwrc:JuliaFrankau ;
+    prov:derivedFrom cwrc:Frankau12345 .
+
+<http://www.cwrc.ca/cwrcdata/FRANKAUEthnicitySelfDefinedJewish>
+    a cwrc:EthnicityContext, oa:Annotation ;
+    rdfs:label ":Ethnicity Self Defined for Julia Frankau"@en ;
+    oa:hasBody cwrc:jewishEthnicity ;
+    oa:hasTarget cwrc:JuliaFrankau ;
+    prov:derivedFrom cwrc:Frankau12345 .
+
+<http://www.cwrc.ca/cwrcdata/FRANKAUReligionSelfDefinedJewish>
+    a cwrc:ReligionContext, oa:Annotation ;
+    rdfs:label ":Religion Self Defined for Julia Frankau"@en ;
+    oa:hasBody cwrc:jewishReligion ;
+    oa:hasTarget cwrc:JuliaFrankau ;
+    prov:derivedFrom cwrc:Frankau12345 .
