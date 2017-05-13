@@ -1,5 +1,4 @@
-<?xml version="1.0"  encoding="UTF-8"?>
-<rdf:RDF
+<?xml version="1.0"  encoding="UTF-8"?> <rdf:RDF
     xmlns:vann="http://purl.org/vocab/vann/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
@@ -447,6 +446,18 @@
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:NationalHeritage>
 
+ <cwrc:NationalIdentity rdf:about="#jewishNationalIdentity">
+   <rdfs:label xml:lang="en">Jewish</rdfs:label>
+   <rdfs:label xml:lang="fr">Juif</rdfs:label>
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <skos:definition xml:lang="en"></skos:definition> 
+   <skos:definition xml:lang="fr"></skos:definition>
+   <rdfs:subClass rdf:resource="#jewishLabel"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <void:inDataset rdf:resource="#datasetdefinition"/>
+ </cwrc:NationalIdentity>
+
+
  <owl:Class rdf:ID="NationalIdentity">
    <rdfs:label xml:lang="en">National Identity</rdfs:label>
    <rdfs:label xml:lang="fr">Identité Nationale</rdfs:label>
@@ -519,6 +530,17 @@
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <rdfs:subClass rdf:resource="#englandLabel"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <void:inDataset rdf:resource="#datasetdefinition"/>
+</cwrc:GeographicalHeritage>
+
+<cwrc:GeographicalHeritage rdf:about="#jewishGeographicalHeritage">
+ <rdfs:label xml:lang="en">Jewish</rdfs:label>
+ <rdfs:label xml:lang="fr">Juif</rdfs:label>
+ <foaf:name xml:lang="en">Jewish (Geographical Heritage)</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdfs:subClass rdf:resource="#jewishLabel"/>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:GeographicalHeritage>
@@ -777,6 +799,19 @@
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:Ethnicity>
+
+<cwrc:Ethnicity rdf:about="#JewishEthnicity">
+ <rdfs:label xml:lang="en">Jewish</rdfs:label>
+ <rdfs:label xml:lang="fr">Juif</rdfs:label>
+ <foaf:name xml:lang="en">Jewish (Ethnicity)</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdfs:subClass rdf:resource="#jewishLabel"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <void:inDataset rdf:resource="#datasetdefinition"/>
+</cwrc:Ethnicity>
+
+
 
 <!-- Religion -->
  <owl:Class rdf:ID="Religion">
@@ -1953,7 +1988,8 @@
  <skos:definition xml:lang="fr"></skos:definition>
  <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
  <owl:oneOf rdf:parseType="Collection">
-  <owl:Thing rdf:about="#jewish"/>
+  <owl:Thing rdf:about="#jewishReligion"/>
+  <owl:Thing rdf:about="#jewishEthnicity"/>
  </owl:oneOf>
  <skos:inScheme rdf:resource="#TextLabels"/>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
