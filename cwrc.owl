@@ -146,7 +146,7 @@
    <foaf:name xml:lang="en">Members of the Orlando Project.</foaf:name>
    <foaf:homepage rdf:resource="http://orlando.cambridge.org/public/svDocumentation?formname=t&amp;d_id=CREDITSANDACKNOWLEDGEMENTS"/>
    <skos:definition xml:lang="en">The collection of all persons having written entries for The Orlando Project.</skos:definition>
-   <skos:definition xml:lang="fr">La collection de tout les auteurs du Project Orlando.</skos:definition>
+   <skos:definition xml:lang="fr">La collection de tous les auteurs du Projet Orlando.</skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
    <void:inDataset rdf:resource="#datasetdefinition"/>
    <void:triples>TOTAL_TRIPLES_CWRC_ONTOLOGY</void:triples>
@@ -234,7 +234,7 @@
     <foaf:name xml:lang="en">Place</foaf:name>
     <foaf:name xml:lang="fr">Endroit</foaf:name>
     <skos:definition xml:lang="en">A named place, wheter incorporated, settled or occupied.</skos:definition>
-    <skos:definition xml:lang="en">Un endroit nommé, qu'il soit populéé, inc nomméorporer ou abandonné.</skos:definition>
+    <skos:definition xml:lang="en">Un endroit nommé, qu'il soit déclaré, investi ou occupé.</skos:definition>
     <rdfs:comment xml:lang="en">Could be a populated place according to Geonames, but not necessarily so. Some places, such as cross-roads are named without having a population or settlement per say. The geonames is incosistent in this regards in that a populated place can be abandonned.</rdfs:comment>
     <owl:equivalentClass rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Place"/>
@@ -301,7 +301,7 @@
 
  <owl:Class rdf:ID="RaceEthnicityContext">
   <rdfs:label xml:lang="en">Race Ethnicity Context</rdfs:label>
-  <rdfs:label xml:lang="fr">Contexte raciale et/ou ethnique</rdfs:label>
+  <rdfs:label xml:lang="fr">Contexte racial et/ou ethnique</rdfs:label>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <rdfs:subClass rdf:resource="#Context"/>
   <skos:definition xml:lang="en">raceEthnicityContext is a significant sub-class within culturalForms. It indicates the presence of information and discussions of a person's subject position with regards to race and ethnicity by working in conjunction with subject specific sub-elements (raceColour, nationalHeritage, geogHeritage, ethnicity). The following discussion applies to both the general discursive context of raceAndEthnicity as well as the specific sub-class categories. Despite the ways in which categories of race and ethnicity frequently serve heinous interests, their ideological and material impacts in the formation of identities requires recognition. These are shifting, historically constituted, and interestedly deployed categories whose use must be situated contextually and which are understood here finally as discursive or representational. Because of this this ontology does not try to lay out an exact, fully defined, or mutually exclusive set of categories: this is an impossibility given their shifting use and the overlap among them. Those applying this class and its subclasses are encouraged not to let privileged identities operate as an unspoken given or to use this class solely in relation to the marginalized. Those concerned about "white" and "black" as homogenizing categories are encouraged to reach for specificity through multiplicity and representations of intersectionality. RaceAndEthnicity is a sub-class within culturalFormation. It has four related content sub-classes: raceColour, nationalHeritage, geogHeritage, and ethnicity.</skos:definition>
@@ -396,7 +396,7 @@
 
  <owl:Class rdf:ID="EthnicityContext">
    <rdfs:label xml:lang="en">Racial, Colour or Ethnicity Context</rdfs:label>
-   <rdfs:label xml:lang="fr">Contexte Raciale, de Couleur de Peau ou d'ethnicité</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte Racial, de Couleur de Peau ou d'Ethnicité</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#Context"/>
    <dc:subject rdf:resource="#Ethnicity"/>
@@ -410,7 +410,7 @@
 
  <owl:Class rdf:ID="GenderContext">
    <rdfs:label xml:lang="en">Gender Context</rdfs:label>
-   <rdfs:label xml:lang="fr">Contexte de Gendre</rdfs:label>
+   <rdfs:label xml:lang="fr">Contexte de Genre</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#Context"/>
    <dc:subject rdf:resource="#Gender"/>
@@ -427,7 +427,7 @@
 
  <owl:Class rdf:ID="NationalHeritage">
    <rdfs:label xml:lang="en">National Heritage</rdfs:label>
-   <rdfs:label xml:lang="fr">Héritage Nationale</rdfs:label>
+   <rdfs:label xml:lang="fr">Héritage National</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalForm"/>
    <skos:definition xml:lang="en">A subclass of culturalForms, this descrbes a person's national heritage and is not the same as citizenship.</skos:definition>
@@ -620,7 +620,7 @@
 
  <owl:Class rdf:ID="Sexuality">
    <rdfs:label xml:lang="en">Sexuality</rdfs:label>
-   <rdfs:label xml:lang="fr">Sexualitée</rdfs:label>
+   <rdfs:label xml:lang="fr">Sexualité</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalForm"/>
   <skos:definition xml:lang="en">These terms capture in a word or phrase identifications of sexuality (i.e., "lesbian," "monogamous," "heterosexual") not as a means of shutting down but advancing investigation and critical analysis of these identifications. The association assumes that sexual identity does not function in an essentialist manner but can be plural and fluid, so multiple designations can be applied to a single person. Assertions of sexual itentity may come from the subject her/himself or from others. They may be in tension or mutually exclusive, and they may reflect different life stages. Linking to the term "lesbian" as a sexualIdentity class, for instance, does not signify that the subject was in any definitive sense a lesbian; such identifications are often impossible for reasons of historical gaps and silences. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See Campbell and Cowan 2016</skos:definition>
@@ -660,7 +660,7 @@
 
 <cwrc:Sexuality rdf:about="#homosexual">
  <rdfs:label xml:lang="en">Homosexual</rdfs:label>
- <rdfs:label xml:lang="fr">Homosexuel</rdfs:label>
+ <rdfs:label xml:lang="fr">Homosexuelle</rdfs:label>
  <foaf:name xml:lang="en">Homosexual (Sexual Identity)</foaf:name>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
@@ -694,7 +694,7 @@
 
 <cwrc:SexIdentity rdf:about="#maleSex">
  <rdfs:label xml:lang="en">Male</rdfs:label>
- <rdfs:label xml:lang="fr">Male</rdfs:label>
+ <rdfs:label xml:lang="fr">Mâle</rdfs:label>
  <foaf:name xml:lang="en">Male (Sex)</foaf:name>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition> 
