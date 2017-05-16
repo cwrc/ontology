@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html 
+  xmlns="http://www.w3.org/1999/xhtml"
+  xml:lang="en"
+> 
+
+  <head>
+    <title>Spécifications d'ontologie CWRC - ONTOLOGY_VERSION</title>
+    <meta http-equiv="content-type" content="text/xhtml+xml; charset=utf-8" />
+    <!-- With Apologies to Dan Brickley and Libby Miller -->
+    <link href="xmlns-style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet"  type="text/css" />
+    <link rel="mvcb:generatorAgent" type="application/rdf+xml" title="DOAP" href="http://rdfohloh.wikier.org/project/specgen" />
+  </head>
+
+  <body>
+
+    <h1 id="title">Spécifications d'ontologie CWRC - ONTOLOGY_VERSION</h1>
+
+<img src="ONTOLOGY_LOGO" align="right" width="350">    
+    <h2 id="subtitle">L'Ontologie CWRC est l'ontologie maîtresse qui représente tous les éléments de la structure du Collaboratoire scientifique des écrits du Canada.</h2>
+
+    <h3 id="mymw-doctype">Brouillon de travail &mdash; ONTOLOGY_LONGDATE</h3>
+
+    <dl>
+
+      <dt>Ancienne version:</dt>
+      <dd><a
+      href="PREVIOUS_ONTOLOGY">PREVIOUS_ONTOLOGY</a>
+      (<a href="PREVIOUS_ONTOLOGY.owl">owl - rdf/xml</a>, 
+      <a href="PREVIOUS_ONTOLOGY.ttl">ttl</a>, <a
+      href="PREVIOUS_ONTOLOGY.nt">nt</a>)
+      </dd>
+      
+      <dt>Version courante:</dt>
+      <dd><a
+      href="http://sparql.cwrc.ca/ontology/cwrc-ONTOLOGY_DATE.html">http://sparql.cwrc.ca/ontology/cwrc-ONTOLOGY_DATE.html</a>
+      (<a href="http://sparql.cwrc.ca/ontology/cwrc-ONTOLOGY_DATE.owl">owl-rdf/xml</a>,
+<a href="http://sparql.cwrc.ca/ontology/cwrc-ONTOLOGY_DATE.ttl">ttl</a>,
+<a href="http://sparql.cwrc.ca/ontology/cwrc-ONTOLOGY_DATE.nt">nt</a>)
+      </dd>
+
+      <dt>Version à date:</dt>
+      <dd><a
+      href="http://sparql.cwrc.ca/ontology/cwrc.html">http://sparql.cwrc.ca/ontology/cwrc.html</a>
+      (<a href="http://sparql.cwrc.ca/ontology/cwrc.owl">owl-rdf/xml</a>, 
+<a href="http://sparql.cwrc.ca/ontology/cwrc.ttl">ttl</a>, 
+<a href="http://sparql.cwrc.ca/ontology/cwrc.nt">nt</a>)
+      </dd>
+
+      <dt>Dernière version : ONTOLOGY_VERSION</dt>
+      <dd>Date: ONTOLOGY_LONGDATE</dd>
+
+      <dt>Auteurs:</dt>
+     
+      <dd>Susan Brown</dd>
+      <dd>Colin Faulkner</dd>
+      <dd>Abigel Lemak</dd>
+      <dd>Kim Martin</dd>
+      <dd>Jade Penancier</dd>
+      <dd>John Simpson</dd>
+      <dd>Robert Warren</dd>
+      
+      <dt>Contributeurs:</dt>
+      <dd>Constance Crompton</dd>
+      <dd>Original Orlando Project Authors</dd>
+      
+      <dt>Sujects:</dt>
+      <dd> <a href="http://id.loc.gov/authorities/subjects/sh85019388">Littérature Canadienne</a>, 
+      <a href="http://id.loc.gov/authorities/subjects/sh85043777"/>Littérature Anglaise</a>, 
+      <a href="http://id.loc.gov/authorities/subjects/sh85013838"/>Bibliographie</a>, 
+      <a href="http://id.loc.gov/authorities/subjects/sh85077519"/>Littérature--Histore et critique</a>, 
+      <a href="http://id.loc.gov/authorities/subjects/sh2009007122"/>Littérature en sciences humaines - Éditions</a></dd>
+    </dl>
+
+    <p class="copyright"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
+    </a><br/>Cette oeuvre est licencier par une licence 
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+
+    <!-- ===================================================================== -->
+
+    <hr />
+
+    <h2 id="abstract">Résume</h2>
+    <p>L'Ontologie du Collaboratoire scientifique des écrits du Canada (<a href="www.cwrc.ca">cwrc.ca</a>) regroupe divers documents
+    de données liés produits par le Collaboratoire liés aux écrivains, à l'écriture et à la culture.</p>
+
+    <h2 id="contents">Tables des Matières</h2>
+    
+    <ul style="list-style-type: none">
+    <li><a href="#introduction">1. Introduction</a></li> 
+    <li><a href="#status">2. Statut du présent document</a></li>
+    <li><a href="#status_ontology">3. Statut de cette ontologie dynamique</a></li>
+    <li><a href="#background">4. Contexte des données source d'Orlando</a></li>
+    <li><a href="#goals">5. Objectifs ontologiques fondamentaux</a></li>
+    <ul style="list-style-type: none">
+    <li><a href="#principals">a. Principes</a></li>
+    <li><a href="#linkages">b. Liens avec d'autres ontologies</a></li>
+    <li><a href="#provenance">c. Provenance et contextes</a></li>
+    <li><a href="#labelsandvalues">d. Étiquettes et valeurs</a></li>
+    <li><a href="#culturalformationsgeneric">e. Forme culturelle</a></li>
+    </ul>
+    <li><a href="#structures">6. Les structures ontologiques du CWRC</a></li>
+    <ul style="list-style-type: none">
+    <li><a href="#culturalformationsontology">a. Forme culturelle</a></li>    
+    <li><a href="#contextontology">b. Contextes</a></li>    
+    <li><a href="#granularproperties">c. Propriétés Granulaires</a></li> 
+    <li><a href="#taxonomiesontology">d. Taxonomies intégrées</a></li>
+    <ul style="list-style-type: none">    
+    <li><a href="#religion_taxonomy">i. Religion</a></li>
+    <li><a href="#genre_taxonomy">ii. Genre littéraire</a></li>
+    <li><a href="#gender_taxonomy">iii. Genre, sexe et orientation</a></li>
+    </ul>
+    </ul>
+    <li><a href="#definition_list">7. Référence Globales</a></li>
+    <li><a href="#reference">8. Références détaillées pour tous les termes, classes et propriétés</a></li>
+    <li><a href="#notesSKOS">9. Règles de conception de l'ontologie CWRC</a></li>
+    <li><a href="#notesSKOSOWL">10. Notes sur SKOS et OWL</a></li>
+    <li><a href="#notesEvent">11. Notes sur les événements de la CWRC</a></li>
+    <li><a href="#conclusion">12. Conclusion et travail futur</a></li>
+    <li><a href="#version_history">13. Historique des versions</a></li>
+    <li><a href="#biblipgraphy">14. Bibliographie</a></li>    
+    </ul>
+
+    <h3 id="introduction">1. Introduction</h3> 
+    <p>Bien qu'il contienne des éléments assez généraux pour des activités telles que l'annotation et la citation, l'ontologie de
+    la CWRC a pour objet de décrire et de relier les aspects des études littéraires et de l'histoire littéraire, avec un accent
+    particulier sur le genre et l'analyse intersectorielle en raison de ses racines dans <a href="http://www.artsrn.ualberta.ca/orlando/">Le Projet Orlando</a>,
+    une histoire d'écriture des femmes dans les îles britanniques. Il relie un certain nombre de normes tout en essayant
+    d'indiquer la complexité de la relation entre la représentation et la provenance dans la production de données liées et de
+    transmettre la situation (<a href="#haraway_situated_1988">Haraway, 1988</a>) de la connaissance qu'elle représente.</p>
+    
+    <p>Certains des matériaux associés à cette ontologie sont créés nativement par des activités menées au sein du
+    Collaboratoire. D'autres sont produits grâce à un processus de traduction à partir de balises HTML intégrées. En d'autres
+    termes, certains sont le produit de la création humaine ou de la conservation, et d'autres sont générés par machine.</p>
+
+    <h3 id="status">2. Statut du présent document</h3>
+
+    <p>Ce document est une version lisible par l'utilisateur de l'ontologie qui ne peut pas documenter toutes ses structures de
+    données. L'ontologie elle-même devrait être la principale source de compréhension de la façon dont l'ontologie fonctionne.</p>
+    <p>L'auditoire visé de ce document est le savant qui souhaite comprendre comment l'ontologie s'attaque aux problèmes concrets
+    d'enregistrement des données et aux praticiens des données ouvertes liés qui ont l'intention d'utiliser cette ontologie.</p>
+
+    <h3 id="status_ontology">3. Statut de cette ontologie dynamique</h3>
+
+     <p>Ce document et l'ontologie associée se développeront itérativement avec des modifications apportées au fil du temps, car
+     les données sont progressivement traduites et d'autres préoccupations ontologiques identifiées au fil du temps. La
+     continuité est assurée en utilisant les annotations d'ontologie OWL pour la compatibilité ontologique et pour les classes et
+     propriétés obsolètes. Les termes d'ontologie supprimés restent présents mais sont marqués comme tels.</p>
+
+    <h3 id="background">4. Contexte des données source d'Orlando</h3>
+
+    <p>Le projet d'Orlando s'est lancé en 1995 sur une histoire de l'écriture des femmes dans les îles britanniques depuis les
+    débuts jusqu'au présent(<a href="#brown_story_2007">Brown, Clements and Grundy, 2007a</a>;<a
+    href="#brown_introduction_2007">Brown, Clements and Grundy, 2007b</a>). Cette collaboration née-numérique a conçu une représentation du
+    savoir(<a href="#susan_brown_sorting_2006">Brown, Clements et al., 2006</a>) sous la forme d'un jeu de
+    tags SGML sur mesure pour coder les priorités et les concepts dans le texte tel qu'il était écrit. Ce tagset structure le
+    contenu biocrite, chronologique et bibliographique de l'histoire résultante de plus de 8 millions de mots et 2 millions de
+    tags. Le schéma fournit la base du schéma du Collaboratoire canadien de recherche sur l'écriture pour un contenu similaire et
+    fournit les bases de l'ontologie fournie ici. Certaines des données sources sont produites par l'extraction à partir de
+    balises XML incorporées dans les matériaux du Projet Orlando et le contenu de contenu structuré similaire dans le
+    Collaboratoire(<a href="#brown_curious_2013">Simpson and Brown, 2013</a>).</p>
+    
+    <p><i>Orlando: l'écriture des femmes dans les îles britanniques des débuts au Présent</i> (<a href="#susan_brown_sorting_2006">Brown and Clements and et al., 2006</a>)
+    est publié par Cambridge
+    University Press:<br/> <a
+    href="http://orlando.cambridge.org">http://orlando.cambridge.org</a>.</p>
+    <p>L'introduction savante et l'introduction au jeu de tags Orlando sont disponibles ici:<br/> <a
+    href="http://orlando.cambridge.org/public/svDocumentation?&d_id=ABOUTTHEPROJECT">http://orlando.cambridge.org/public/svDocumentation?&d_id=ABOUTTHEPROJECT</a>.</p>
+    <p>Les contributeurs à Orlando sont énuméré ici:<br/> <a
+    href="http://orlando.cambridge.org/public/svDocumentation?formname=t&d_id=CREDITSANDACKNOWLEDGEMENTS">http://orlando.cambridge.org/public/svDocumentation?formname=t&d_id=CREDITSANDACKNOWLEDGEMENTS</a>.</p>
+    
+    <p>Les schémas XML de Orlando Project et le schéma XML du projet CWRC sont disponibles à<br/> <a
+    href="https://github.com/cwrc/CWRC-Schema/tree/master/schemas">https://github.com/cwrc/CWRC-Schema/tree/master/schemas</a>.</p> 
+    
+    
+    <h3 id="goals">5. Objectifs ontologiques fondamentaux</h3>
+
+    <h4 id="principals">a. Principes</h4>
+
+    <p>Le schéma couvre les entités, les classes et les relations associées aux domaines de la littérature et de l'histoire
+    littéraire et culturelle, telles qu'elles sont comprises dans une perspective féministe intersectorielle. La conception de
+    l'ontologie répond aux défis du passage de données semi-structurées à des données structurées (<a
+    href="#james_smith_working_2013">Smith, 2013</a>). Bien que les triples de
+    données liées se tiennent formellement, beaucoup sont dérivés de la prose discursive et sont mieux lus dans un environnement
+    qui relie leur contexte d'origine. La conception de l'ontologie de la CWRC évite de représenter les extractions de RDF à
+    partir de données d'Orlando en tant qu'associations positivistes, et produit pourtant des structures de graphiques
+    compatibles OWL / RDF lisibles par machine. Il permet de faire référence, sans endosser, à des vocabulaires ontologiques
+    externes qui font néanmoins partie de la documentation des processus et des identités culturels.</p>
+
+    <h4 id="linkages">b. Liens avec d'autres ontologies</h4>
+    
+    <p>Nous employons un certain nombre de stratégies pour lier à d'autres ontologies. Notre architecture n'importait pas
+    d'autres ontologies en gros, mais se rapporte à de grands vocabulaires de manière définie.  Nous essayons de ne pas abuser du
+    terme owl:sameAs (<a href="#halpin_when_2010">Halpin, Hayes et al., 2010</a>).  Nous adoptons des espaces de noms externes et
+    des classes et des termes associés dans la mesure du possible lorsqu'ils sont largement utilisés et leurs vocabulaires sont
+    largement compatibles avec le nôtre, comme dans le cas des vocabulaires <a href="http://xmlns.com/foaf/spec/"> FOAF </a> et
+    <a href="http://bibliontology.com/"> BIBO </a>.  Pour certains termes, comme ceux pour les confessions religieuses ou les
+    genres, nous sommes heureux de nous baser sur les les termes et définitions d'autres vocabulaires en partie ou en totalité,
+    comme dans le cas des termes du <a href="#_getty_2017">Getty Art and Architecture Thesaurus</a> (<a
+    href="http://www.getty.edu/research/index.html">Getty Research Institute</a>).  D'autres termes sont référencés, mais à un
+    enlever.  Ceci est particulièrement fréquent par rapport au
+            vocabulaire associé à la forme culturelle (voir ci-dessous), qui est principalement considéré comme représentatif, et
+            dans lequel les termes d'identité sont tapés comme des étiquettes et liés à d'autres instances d'étiquettes internes
+            plus étroites qui indiquent l'intersection de ce terme Avec un ou plusieurs types de catégorisation d'identité.
+            Ceux-ci sont à leur tour liés à des ontologies externes sous forme de sous-classes, en vue d'indiquer que, bien
+            qu'elles soient liées, les termes et leurs définitions ne correspondent pas à ceux utilisés dans le vocabulaire du
+            CWRC. Grâce à cette structure, notre vocabulaire positionne tous les termes associés aux processus de la forme
+            culturelle en tant que marqueurs, conservant l'ambiguïté des termes impliqués dans la construction sociale complexe
+            des identités.</p>
+
+ 
+    <p>La réutilisation du vocabulaire a présenté certains défis au CWRC en ce sens que les vocabulaires utilisés dans le
+    balisage à partir desquels le RDF est dérivé peuvent être utilisés de manière ambiguë dans une mesure où la réutilisation est
+    difficile. Un exemple typique est celui de la religion, où il existe beaucoup d'ambiguïté quant à savoir si le terme
+    représente réellement la religion comme un système de croyance, une adhésion formelle à l'organisation religieuse associée,
+    les comportements sociaux et souvent laïques ou les affiliations associées à la religion ou toute combinaison De ce qui
+    précède.</p>
+
+    <p>Au niveau supérieur, l'ontologie de la CWRC utilise les ontologies bien connues suivantes:
+    <ol>
+     <li> L'ontologie <a href="http://xmlns.com/foaf/spec/"> FOAF </a> pour la représentation des personnes et
+     Organisations. </li>
+     <li> L'ontologie <a href="http://bibliontology.com/"> BIBO </a> pour la représentation des données bibliographiques. </li>
+     <li> L'ontologie <a href="https://www.w3.org/TR/owl-time/"> TIME </a> pour la représentation des événements et des points
+     dans le temps où <a href="https://www.w3.org/XML/Schema"> les temps de schéma ISO8601 / XML </a> ne sont pas appropriés. </li>
+     <li> L'ontologie <a href="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core/nif-core.html"> NIF-CORE </a> est
+     utilisée pour contenir et manipuler le texte des entrées originales d'Orlando. </li>
+     <li> Le modèle de données <a href="https://www.w3.org/TR/annotation-model/"> Open Annotation </a> est utilisé pour lier
+     le texte d'Orlando original à des <a href="#Context"> Contextes </a> spécifiques </ li>. </li>
+     <li> Le vocabulaire <a href="https://www.w3.org/TR/skos-reference/"> SKOS </a> est utilisé pour représenter les relations
+     taxonomiques dans le cadre de <a href="#CulturalForm"> Formulaire culturels </a> et pour documenter complètement les termes de l'ontologie. </li>
+     <li> Certains termes de vocabulaire <a href="http://dublincore.org/documents/dcmi-terms/"> Dublin Core </a> sont utilisés
+     pour une documentation bien connue, tels que &lt; dc:title &gt;.</li>
+     </ol>
+    </p>    
+
+
+    <h4 id="provenance">c. Provenance et contextes</h4>
+
+    <p> Comme indiqué ci-dessus, certaines données associées à cette ontologie ont été générées à partir de structures XML (<a
+href="#brown_curious_2013"> Simpson et Brown, 2013 </a>).  La provenance est donc particulièrement importante, étant donné que
+ces données n'ont pas été produites nativement dans RDF, mais plutôt sous la forme de balises intégrées dans un contexte
+discursif.  Dans de tels cas, les parties pertinentes du texte sont fournies sous la forme d'extraits qui, dans l'ensemble de
+données, deviennent des exemples de notes contextuelles ou d'annotations lisibles par l'homme auxquelles les classes ontologiques
+sont directement liées.
+    </p>    
+
+    <p>L'importation en gros de vocabulaires complets au sein de l'ontologie de la CWRC était susceptible de causer des problèmes
+logiques et ontologiques. À cette fin, nous avons choisi de ne pas utiliser le &lt;owl:import&gt; Construire et plutôt se
+lier à des vocabulaires à l'extérieur ou cloner des ensembles spécifiques de termes à partir de vocabulaires sélectionnés. De
+même, tous les vocabulaires sont bien définis d'un point de vue ontologique, mais en tirant sur leur récit ou sur certaines de
+leurs propriétés, ils se sont révélés utiles. À cette fin, nous avons évité l'utilisation de &lt;owl:sameAs&gt; Afin de
+ne pas apporter des propriétés non intentionnelles ou des structures ontologiques dans l'ontologie de la CWRC. Dans d'autres cas,
+la propriété ontologie Provenance &lt;prov:derivedFrom&gt; Est utilisé pour indiquer que le terme a été construit à l'aide
+d'informations provenant d'autres termes sans nécessairement être équivalent. Les liens directs vers d'autres ontologies sont
+généralement effectués par l'utilisation de subClasses ou &lt;owl:equivalentClass &gt;.</p>
+
+    <h4 id="labelsandvalues">d. Étiquettes et valeurs</h4>
+    <p>
+Comme indiqué ci-dessus, les étiquettes ne sont pas seulement utilisées ici pour indiquer les termes particuliers associés à un
+élément de l'ontologie, mais pour indiquer, lorsqu'on l'utilise pour taper une classe, sa représentation ou sa discursivité.</p>
+    <h4 id="culturalformationsgeneric">e. Diversité culturelle</h4>
+
+    <p>La diversité culturelle a été une source croissante de débats au-delà et au sein de la communauté des sciences humaines
+numériques. La concentration dans la série <i> Débats dans les sciences humaines numériques </i> (<a href="#matthew_k._gold_debates_2012">Gold, 2012</a>; <a href="#matthew_k._gold_debates_2016">Gold and Klein, 2016</a>) des pièces reflétant l'importance croissante des
+questions liées à la race, au genre, à la diversité culturelle et à la différence, c'est une seule marque de la mesure dans
+laquelle la diversité est importante. Cette ontologie cherche à transmettre une compréhension intersectrice des catégories
+d'identité, tel qu'incarné dans les schémas XML de Biographie XML du projet d'Orlando associé à un élément de l'ontologie, mais
+d'indiquer, lorsqu'il est utilisé pour taper une classe, sa représentativité ou sa discursivité.</p>
+<p>
+La partie de la forme culturelle de l'ontologie reconnaît la catégorisation comme endémique de l'expérience sociale, tout en
+intégrant la variation de la terminologie et la contextualisation des catégories d'identité. Il comprend la classification
+sociale en tant que culturellement produite, intersectée et intégrée discursivement. Nous invoquons les catégories comme motif
+d'enquête culturelle plutôt que de classifications fixes, car ces catégories n'ont jamais été stables ou mutuellement exclusives
+(<a href="#mark_algee-hewitt_representing_2016">Algee-Hewitt, Porter, and Walser, 2016</a>). Pour une explication plus détaillée
+de la formation culturelle, voir <a href="#brown_cultural_2017">Brown et al 2017</a>.</p> 
+
+    <h3 id="structures">6. Les structures ontologiques du CWRC</h3>
+        
+    <p>Les données sources de la CWRC couvrent plusieurs types de données, y compris des annotations sur des textes sources, des
+métadonnées, des matériaux granulaires tels que la bibliographie et le contenu discursif et analytique sur des événements concrets de la vie et des phénomènes littéraires.
+L'ensemble de données ouvertes associé à la CWRC représente des informations telles que des séries d'assertions, fréquemment
+associées à des contextes particuliers.
+</p>
+    
+    <p>
+Bien que la traçabilité complète et intégrée ait toujours été un besoin essentiel d'expériences répétées, cela vient en tant que
+coût de complexité dans un ensemble de données ouvertes liées, car les requêtes requises pour récupérer les informations de base
+deviennent difficiles à gérer. À cette fin, l'ontologie de la CWRC enregistre l'information de deux façons différentes: à travers
+une série de <a href="#Context"> Contextes </a> qui relient l'information à son texte source associé à Orlando ou à d'autres
+matériaux, et à travers un Série de propriétés granulaires qui relient simplement les individus à leurs attributs personnels. De
+cette façon, la récupération rapide et le suivi de provenance profonde sont activés.
+</p>
+
+
+    <p>Deux structures de base sont utilisées dans l'ontologie pour y parvenir: <a href="#Context"> Contextes </a>  et <a
+href="#CulturalForm"> Forme culturelle </a>. Une formation culturelle représente des éléments de subjectivité sociale vécue et /
+ou la classification des personnes à travers des catégories telles que la race, le genre, la langue, la sexualité ou la religion.
+Les contextes sont utilisés pour relier un fragment de prose d'Orlando à l'individu auquel il se réfère ainsi qu'à la formation
+culturelle spécifique qui lui est attribuée. En outre, les propriétés sont séparées en deux catégories: déclarées et
+autodéclarées, permettant la qualification des déclarations individuelles.</p>
+
+    <h4 id="culturalformationsontology">a. Forme culturelle</h4>    
+
+ <p>Les classes <a href="#CulturalForm"> Forme culturelle </a> reconnaissent la catégorisation comme endémique de l'expérience
+sociale, tout en incorporant des variations dans la terminologie et la contextualisation des catégories d'identité en employant
+des instances à différents niveaux discursifs.</p>  
+ 
+ <p>Les sous-classes et les exemples de la forme culturelle décrivent les positions des individus à la fois à travers <a
+href="#Context"> Contexte </a> et propriétés granulaires. Cet arrangement a ses racines dans l'arrangement d'Orlando des
+encodages du Forme culturelle qui a amené les utilisateurs vers un cadre pour élever et débattre de questions complexes pour
+l'enquête culturelle plutôt que d'invoquer des catégories réelles.</p>
+
+<p>
+Le passage du balisage sémantique intégré à une approche de données ouvertes liées a présenté le défi de rendre cette approche
+compatible avec les liens avec d'autres ontologies et ensembles de données en dehors du cadre de référence d'Orlando. Le passage
+de "chaînes vers des liens" ou "chaînes vers les choses" était en quelque sorte en désaccord avec l'étreinte de l'ambiguïté des
+cordes comme le blanc, le noir, l'anglais, etc.: le blanc et le noir peuvent représenter une race ou une origine ethnique, alors
+que L'anglais peut également être invoqué en tant qu'individu, nationalité ou patrimoine national. Orlando marque ces chaînes à
+l'aide de leur étiquette de tags culturels comme spécifique à, par exemple, le contexte de race ou d'origine ethnique, obligeant
+une association similaire, dans la représentation de données liées, avec un exemple spécifique de Forme culturelle. Ainsi, il
+existe des instances de forme culturelle qui indiquent la construction discursive de <a href="#whiteRace"> white </a> en tant que
+race et <a href="#whiteEthnicity"> blanc </a> en tant d'ethnie. Enfin, il existe également une étiquette <a
+href="#whiteLabel"> blanc </a> qui peut être instanciée soit en race, soit en origine ethnique, mais pas dans la même affirmation
+(bien que des affirmations multiples soient possibles).
+</p>
+<p>Il s'agit d'un écart par rapport aux précédents vocabulaires contrôlés (données ouvertes non liées), en ce que l'apparence du
+terme ou de l'étiquette (dans ce cas «blanc») n'indique pas la formation culturelle spécifique invoquée, l'instance spécifique le
+fait. Cela signifie également que des liens vers d'autres ensembles de données ou des vocabulaires peuvent être réalisés de
+manière appropriée, car de multiples représentations de la même étiquette sont présentes dans l'ontologie de la CWRC. En dernier
+recours, ou à des fins d'exploration de données, le terme est également disponible en tant que concept dont le formulaire
+culturel actuel est indécis parmi les options définies par la CWRC. Cela permet des liens vers une ontologie externe, tel que
+cela peut être requis par l'exploration de texte, sans approuver la définition ou l'interprétation correspondante du terme.</p>
+ 
+    <h4 id="contextontology">b. Contextes</h4>    
+ 
+       <h4 id="granularproperties">c. Propriétés Granulaires</h4> 
+       
+       <p>Les propriétés granulaires constituent un moyen simple de signaler des informations sur les individus et leurs
+propriétés personnelles, dont certaines sont autodéclarées. Certaines propriétés sont des associations héritées d'ancêtres.</p>
+
+
+    <h4 id="taxonomiesontology">d. Taxonomies intégrées</h4>    
+       <h5 id="religion_taxonomy">i. Religion</h5>
+<p>Les données originales d'Orlando rendent les rapports religieux un défi en ce sens que les contextes originaux ne faisaient pas
+la différence entre la croyance religieuse, l'appartenance à une organisation religieuse et l'absence de toute croyance
+religieuse combinée à l'adhésion à des valeurs ou des pratiques. </p>
+        <p> Nous utilisons une taxonomie pour énumérer les catégories associées à ce spectre. La taxonomie en elle-même est basée
+sur SKOS et représente un mélange lâche des croyances partagées et des découvertes historiques. La classe de religion est
+également un schéma conceptuel de SKOS qui comporte plusieurs &lt;skos:topConcept&gt;s. </p>
+        <p> Certains mouvements religieux sont organisés et sont donc marqués comme organisations FOAF </p>
+        <p> La taxonomie tente de tracer le fondement théologique et / ou organisationnel du système de croyance. Comme pour
+appliquer les étiquettes à un individu, il s'agit d'un processus d'interprétation. </p>
+        <p> La taxonomie spécifique est: </p>
+       <img src="figures/religionTaxonomy-ONTOLOGY_DATE.png">  
+       <h5 id="genre_taxonomy">ii. Genre littéraire</h5>
+       <p>The CWRC ontology contains over 240 genres.</p> 
+       <p>La taxonomie spécifique est: </p>
+       <img src="figures/genreTaxonomy-ONTOLOGY_DATE.png">  
+       </p>
+       
+       <h5 id="gender_taxonomy">iii. Genre, sexe et orientation</h5>
+       
+       <p>Les étiquettes d'Orlando peuvent faire référence à toute combinaison de sexe, de genre et / ou d'orientation sexuelle
+pour un individu particulier.</p> 
+       
+          
+    <h3 id="definition_list">7. Référence Globales</h3>
+    
+    <!-- The list of classes and properties goes here -->
+    %s
+    <!-- End of the terms list -->
+
+    <h2 id="reference">8. Références détaillées pour tous les termes, classes et propriétés</h2>
+ 
+    <p></p>
+
+    <!-- The following is the script-generated list of classes and properties -->
+    %s
+    <!-- End of the terms list -->
+
+    <h2 id="notesSKOS">9. Règles de conception de l'ontologie CWRC</h2>
+
+<p> Au-delà du formalisme de [citation sur les règles de conception de l'ontologie], l'ontologie CWRC suit les règles et styles
+de conception suivants: </p>
+     <ul>
+     <li> Le contenu de rdfs: étiquettes étiquettes sont toujours en minuscules. </li>
+     <li> Dans la mesure du possible, l'équivalent d'étiquette Orlando XML original est contenu dans la variable
+     &lt;rdf:value&gt; de n'importe quel terme dans l'ontologie. </li>
+     <li> Chaque fois que vous faites référence à une zone géographique, utilisez l'élément le plus précis de la base de données.</li>
+    </ul>
+
+    <h2 id="notesSKOSOWL">10. Notes sur SKOS et OWL</h2>
+     <p>SKOS (Simple Knowledge Organization System) bénéficie d'une popularité répandue dans la communauté Web sémantique, car il
+fournit des termes simples pour les taxonomies sans nécessiter de soutien pour les raisons. Chaque fois que cela s'avère
+approprié, les termes SKOS sont insérés dans cette ontologie pour relier les termes entre eux. Cependant, étant donné que ces
+termes ne sont pas alimentés de manière ontologique, leur évolutivité est limitée car chaque couche supplémentaire de termes dans
+une taxonomie nécessite une autre requête de base de données.</p>
+
+     <p> Certaines des constructions de l'ontologie de la CWRC sont profondes et nécessitent un soutien de raisonnement. OWL est le moyen
+préféré d'utiliser cette ontologie, bien que l'utilisation des termes, style SKOS, soit possible.</p>
+    
+    
+    <h2 id="notesEvent">11. Notes sur les événements de la CWRC</h2>
+     <p></p>
+
+    <h2 id="conclusion">12. Conclusion et travail futur</h2>
+    <p>
+CWRC est un projet d'ontologie qui est en cours. Il continuera à être développé, développé et révisé, car nous découvrons les
+implications de la façon dont nous avons structuré l'ontologie en l'utilisant pour l'extraction et l'exploration de nos données,
+des données et des cas d'utilisation qui nécessitent une expansion ou un raffinement, et en tant que nouveaux besoins,
+compréhensions et débats se posent.
+    </p>
+    <h2 id="version_history">13. Historique des versions</h2>
+    <ul>
+    <li><p>0.99 - Version publique initiale.</p></li>
+    <li><p>0.99.2 - Publication périodique avec des logos mis à jour, des genres, de la documentation et des données d'auteurs appropriées.</p></li>
+    </ul>
+    
+    <h2 id="biblipgraphy">14. Bibliographie</h2>    
+m4_include(cwrc-citations.html)
+
+    <!-- ===================================================================== 
+
+
+     ===================================================================== -->
+
+
+  </body>
+
+</html>
