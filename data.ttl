@@ -667,28 +667,28 @@ cwrc:VitaSackvilleWest
     oa:hasTarget cwrc:VitaSackvilleWest ;
     prov:derivedFrom cwrc:SackvilleWest12345 .
 
-<http://www.cwrc.ca/cwercdata/SACKVILLEWESTSexualityBisexual>
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTSexualityBisexual>
     a cwrc:SexualityContext ;
     rdfs:label ":Sexuality for Vita Sackville-West"@en ;
     oa:hasBody cwrc:bisexual ;
     oa:hasTarget cwrc:VitaSackvilleWest ;
     prov:derivedFrom cwrc:SackvilleWest12345 .
 
-<http://www.cwrc.ca/cwercdata/SACKVILLEWESTSexualitySelfDefinedBisexual>
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTSexualitySelfDefinedBisexual>
     a cwrc:SexualitySelfDefinedContext ;
     rdfs:label ":SexualitySelfDefined for Vita Sackville-West"@en ;
     oa:hasBody cwrc:bisexual ;
     oa:hasTarget cwrc:VitaSackvilleWest ;
     prov:derivedFrom cwrc:SackvilleWest12345 .
 
-<http://www.cwrc.ca/cwercdata/SACKVILLEWESTSexualityLesbian>
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTSexualityLesbian>
     a cwrc:SexualityContext ;
     rdfs:label ":Sexuality for Vita Sackville-West"@en ;
     oa:hasBody cwrc:Lesbian ;
     oa:hasTarget cwrc:VitaSackvilleWest ;
     prov:derivedFrom cwrc:SackvilleWest12345 .
 
-<http://www.cwrc.ca/cwercdata/SACKVILLEWESTSexualitySelfDefinedLesbian>
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTSexualitySelfDefinedLesbian>
     a cwrc:SexualitySelfDefinedContext ;
     rdfs:label ":SexualitySelfDefined for Vita Sackville-West"@en ;
     oa:hasBody cwrc:lesbian ;
@@ -696,10 +696,48 @@ cwrc:VitaSackvilleWest
     prov:derivedFrom cwrc:SackvilleWest12345 .
 
 
+# VIRGINIA WOOLF
+cwrc:VirginiaWoolf
+    cwrc:hasSocialRank cwrc:professional ;
+    cwrc:hasSocialRackSelfDefined cwrc:professional ;
+    cwrc:hasNationality cwrc:english
+    cwrc:hasSexuality cwrc:bisexual
+    cwrc:hasSexualitySelfDefined cwrc:bisexual
 
+<http://www.cwrc.ca/cwrcdata/WOOLFSocialRankProfessional>
+    a cwrc:SocialRankContext ;
+    rdfs:label ":SocialRank for Virginia Woolf"@en ;
+    oa:hasBody cwrc:professional ;
+    oa: hasTarget cwrc:VirginiaWoolf ;
+    prov:derivedFrom cwrc:Woolf12345 .
 
+<http://www.cwrc.ca/cwrcdata/WOOLFSocialRankSelfDefinedProfessional>
+    a cwrc:SocialRankSelfDefinedContext ;
+    rdfs:label ":SocialRankSelfDefined for Virginia Woolf"@en ;
+    oa:hasBody cwrc:professional ;
+    oa:hasTarget cwrc:VirginiaWoolf ;
+    prov:derivedFrom cwrc:Woolf12345 .
 
+<http://www.cwrc.ca/cwrcdata/WOOLFNationalIdentityEnglish>
+    a cwrc:NationalIdentityContext ;
+    rdfs:label ":NationalIdentity for Virginia Woolf"@en ;
+    oa:hasBody cwrc:english ;
+    oa:hasTarget cwrc:VirginiaWoolf ;
+    prov:derivedFrom cwrc:Woolf12345 .
 
+<http://www.cwrc.ca/cwrcdata/WOOLFSexualityBisexual>
+    a cwrc:SexualityContext ;
+    rdfs:label ":Sexuality for Virginia Woolf"@en ;
+    oa:hasBody cwrc:bisexual ;
+    oa:hasTarget cwrc:VirginiaWoolf ;
+    prov:derivedFrom cwrc:Woolf12345 .
+
+<http://www.cwrc.ca/cwrcdata/WOOLFSexualitySelfDefinedBisexual>
+    a cwrc:SexualitySelfDefinedContext ;
+    rdfs:label ":SexualitySelfDefined for Virginia Woolf"@en ;
+    oa:hasBody cwrc:bisexual ;
+    oa:hasTarget cwrc:VirginiaWoolf ;
+    prov:derivedFrom cwrc:Woolf12345 .
 
 
 
