@@ -598,6 +598,109 @@ cwrc:JuliaFrankau
     oa:hasTarget cwrc:JuliaFrankau ;
     prov:derivedFrom cwrc:Frankau12345 .
 
+# VITA SACKVILLE-WEST
+cwrc:VitaSackvilleWest
+    cwrc:hasSocialClass cwrc:nobility ;
+    cwrc:hasNationalHeritage cwrc:spanish ;
+#forebear maternal grandmother 
+#Rob review forebear
+    cwrc:hasNationalHeritageSelfDefined cwrc:spanish ;
+    cwrc:hasEthnicity cwrc:gipsy ;
+#forebear maternal grandmother
+    cwrc:hasEthnicitySelfDefined cwrc:gipsy ;
+    cwrc:hasNationalHeritage cwrc:english ;
+#forebear grandfather
+    cwrc:hasNationalHeritageSelfDefined cwrc:english ;
+    cwrc:hasSexuality cwrc:bisexual ;
+    cwrc:hasSexualitySelfDefined cwrc:bisexual ;
+    cwrc:hasSexuality cwrc:lesbian ;
+    cwrc:hasSexualitySelfDefined cwrc:lesbian ;
+    a foaf:Person ;
+    foaf:name "Vita Sackville-West" .
+
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTSocialClassNobility>
+    a cwrc:SocialClassContext ;
+    rdfs:label ":SocialClassNobility for Vita Sackville-West"@en ;
+    oa:hasBody cwrc:nobility ;
+    oa:hasTarget cwrc:VitaSackvilleWest ;
+    prov:derivedFrom cwrc:SackvilleWest12345 .
+
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTNationalHeritageSpanish>
+    a cwrc:NationalHeritageContext ;
+    rdfs:label ":NationalHeritageSpanish for Vita Sackville-West"@en ;
+    oa:hasBody cwrc:spanish ;
+    oa:hasTarget cwrc:VitaSackvilleWest ;
+    prov:derivedFrom cwrc:SackvilleWest12345 .
+
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTNationalHeritageSelfDefinedSpanish>
+    a cwrc:NationalHeritageSelfDefinedContext ;
+    rdfs:label ":NationalHeritageSpanishSelfDefined for Vita Sackville-West"@en ;
+    oa:hasBody cwrc:spanish ;
+    oa:hasTarget cwrc:VitaSackvilleWest ;
+    prov:derivedFrom cwrc:SackvilleWest12345 .
+
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTEthnicityGypsy>
+    a cwrc:EthnicityContext ;
+    rdfs:label ":Ethnicity for Vita Sackville-West"@en ;
+    oa:hasBody cwrc:gipsy ;
+    oa:hasTarget cwrc:VitaSackvilleWest ;
+    prov:derivedFrom cwrc:SackvilleWest12345 .
+
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTEthnicitySelfDefinedGypsy>
+    a cwrc:EthnicitySelfDefinedContext ;
+    rdfs:label ":EthnicitySelfDefined for Vita Sackville-West"@en ;
+    oa:hasBody cwrc:gipsy ;
+    oa:hasTarget cwrc:VitaSackvilleWest ;
+    prov:derivedFrom cwrc:SackvilleWest12345 .
+
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTNationalHeritageEnglish>
+    a cwrc:NationalHeritageContext ;
+    rdfs:label ":NationalHeritageEnglish for Vita Sackville-West"@en ;
+    oa:hasBody cwrc:english ;
+    oa:hasTarget cwrc:VitaSackvilleWest ;
+    prov:derivedFrom cwrc:SackvilleWest12345 .
+
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTNationalHeritageSelfDefinedEnglish>
+    a cwrc:NationalHeritageSelfDefinedContext ;
+    rdfs:label ":NationalHeritageEnglishSelfDefined for Vita Sackville-West"@en ;
+    oa:hasBody cwrc:english ;
+    oa:hasTarget cwrc:VitaSackvilleWest ;
+    prov:derivedFrom cwrc:SackvilleWest12345 .
+
+<http://www.cwrc.ca/cwercdata/SACKVILLEWESTSexualityBisexual>
+    a cwrc:SexualityContext ;
+    rdfs:label ":Sexuality for Vita Sackville-West"@en ;
+    oa:hasBody cwrc:bisexual ;
+    oa:hasTarget cwrc:VitaSackvilleWest ;
+    prov: derivedFrom cwrc:SackvilleWest12345 .
+
+<http://www.cwrc.ca/cwercdata/SACKVILLEWESTSexualitySelfDefinedBisexual>
+    a cwrc:SexualitySelfDefinedContext ;
+    rdfs:label ":SexualitySelfDefined for Vita Sackville-West"@en ;
+    oa:hasBody cwrc:bisexual ;
+    oa:hasTarget cwrc:VitaSackvilleWest ;
+    prov: derivedFrom cwrc:SackvilleWest12345 .
+
+<http://www.cwrc.ca/cwercdata/SACKVILLEWESTSexualityLesbian>
+    a cwrc:SexualityContext ;
+    rdfs:label ":Sexuality for Vita Sackville-West"@en ;
+    oa:hasBody cwrc:Lesbian ;
+    oa:hasTarget cwrc:VitaSackvilleWest ;
+    prov: derivedFrom cwrc:SackvilleWest12345 .
+
+<http://www.cwrc.ca/cwercdata/SACKVILLEWESTSexualitySelfDefinedLesbian>
+    a cwrc:SexualitySelfDefinedContext ;
+    rdfs:label ":SexualitySelfDefined for Vita Sackville-West"@en ;
+    oa:hasBody cwrc:lesbian ;
+    oa:hasTarget cwrc:VitaSackvilleWest ;
+    prov: derivedFrom cwrc:SackvilleWest12345 .
+
+
+
+
+
+
+
 # cwrc:annaleanowens1
 #    nif:isString """Although AL herself, in attempting to adopt an unequivocally English identity, implicitly claimed that she was white, evidence suggests that while
 # her father was probably Welsh (he had lived in Middlesex) and presumably white, her mother was quite possibly Eurasian. If this is the case then
