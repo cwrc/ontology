@@ -40,7 +40,7 @@
 <a href="http://sparql.cwrc.ca/ontology/cwrc-ONTOLOGY_DATE.nt">nt</a>)
       </dd>
 
-      <dt>Version à date:</dt>
+      <dt>Version à jour:</dt>
       <dd><a
       href="http://sparql.cwrc.ca/ontology/cwrc.html">http://sparql.cwrc.ca/ontology/cwrc.html</a>
       (<a href="http://sparql.cwrc.ca/ontology/cwrc.owl">owl-rdf/xml</a>, 
@@ -82,16 +82,15 @@
 
     <hr />
 
-    <h2 id="abstract">Résume</h2>
-    <p>L'Ontologie du Collaboratoire scientifique des écrits du Canada (<a href="www.cwrc.ca">cwrc.ca</a>) regroupe divers documents
-    de données liés produits par le Collaboratoire liés aux écrivains, à l'écriture et à la culture.</p>
+    <h2 id="abstract">Résumé</h2>
+    <p>L'Ontologie du Collaboratoire scientifique des écrits du Canada (<a href="www.cwrc.ca">cwrc.ca</a>) regroupe diverses ressources de webs de données produites par le Collaboratoire relatif aux écrivains, à l'écriture et à la culture.</p>
 
     <h2 id="contents">Tables des Matières</h2>
     
     <ul style="list-style-type: none">
     <li><a href="#introduction">1. Introduction</a></li> 
     <li><a href="#status">2. Statut du présent document</a></li>
-    <li><a href="#status_ontology">3. Statut de cette ontologie dynamique</a></li>
+    <li><a href="#status_ontology">3. Statut de l'ontologie dynamique</a></li>
     <li><a href="#background">4. Contexte des données source d'Orlando</a></li>
     <li><a href="#goals">5. Objectifs ontologiques fondamentaux</a></li>
     <ul style="list-style-type: none">
@@ -99,7 +98,7 @@
     <li><a href="#linkages">b. Liens avec d'autres ontologies</a></li>
     <li><a href="#provenance">c. Provenance et contextes</a></li>
     <li><a href="#labelsandvalues">d. Étiquettes et valeurs</a></li>
-    <li><a href="#culturalformationsgeneric">e. Forme culturelle</a></li>
+    <li><a href="#culturalformationsgeneric">e. Forme Culturelle</a></li>
     </ul>
     <li><a href="#structures">6. Les structures ontologiques du CWRC</a></li>
     <ul style="list-style-type: none">
@@ -124,34 +123,32 @@
     </ul>
 
     <h3 id="introduction">1. Introduction</h3> 
-    <p>Bien qu'il contienne des éléments assez généraux pour des activités telles que l'annotation et la citation, l'ontologie de
-    la CWRC a pour objet de décrire et de relier les aspects des études littéraires et de l'histoire littéraire, avec un accent
-    particulier sur le genre et l'analyse intersectorielle en raison de ses racines dans <a href="http://www.artsrn.ualberta.ca/orlando/">Le Projet Orlando</a>,
-    une histoire d'écriture des femmes dans les îles britanniques. Il relie un certain nombre de normes tout en essayant
-    d'indiquer la complexité de la relation entre la représentation et la provenance dans la production de données liées et de
-    transmettre la situation (<a href="#haraway_situated_1988">Haraway, 1988</a>) de la connaissance qu'elle représente.</p>
+    <p>Bien qu'il contienne des éléments assez généraux pour des activités telles que l'annotation et la citation, l'ontologie du CWRC a pour objectif de décrire et relier certains aspects de la Littérature et de l'histoire littéraire, avec une attention toute particulière portée au genre et à l'interprétation intersectionelle, en raison de ses liens avec le <a href="http://www.artsrn.ualberta.ca/orlando/">Le Projet Orlando</a>,
+    une histoire littéraire des femmes de lettres britanniques. Il les relie à certaines catégories normées, tout en essayant
+    de rendre la complexité qui relie représentation et provenance dans la production de webs de données, ainsi que de
+    transmettre la position culturelle et politique (<a href="#haraway_situated_1988">Haraway, 1988</a>) du savoir qu'elle présente.</p>
     
-    <p>Certains des matériaux associés à cette ontologie sont créés nativement par des activités menées au sein du
-    Collaboratoire. D'autres sont produits grâce à un processus de traduction à partir de balises HTML intégrées. En d'autres
-    termes, certains sont le produit de la création humaine ou de la conservation, et d'autres sont générés par machine.</p>
+    <p>Certains des matériaux associés à cette ontologie sont nés d'activités menées au sein du
+    Collaboratoire. D'autres sont générés grâce à un processus de traduction à partir de balises XML intégrées. En d'autres
+    termes, certains sont issus d'activités humaines telles que la création ou la conservation de contenus, alors que d'autres sont générés par des machines.</p>
 
     <h3 id="status">2. Statut du présent document</h3>
 
     <p>Ce document est une version lisible par l'utilisateur de l'ontologie qui ne peut pas documenter toutes ses structures de
-    données. L'ontologie elle-même devrait être la principale source de compréhension de la façon dont l'ontologie fonctionne.</p>
-    <p>L'auditoire visé de ce document est le savant qui souhaite comprendre comment l'ontologie s'attaque aux problèmes concrets
-    d'enregistrement des données et aux praticiens des données ouvertes liés qui ont l'intention d'utiliser cette ontologie.</p>
+    données. L'ontologie elle-même devrait servir de référence pour la compréhension de son fonctionnement.</p>
+    <p>Ce document est destiné à un public d'académiques souhaitant comprendre la façon dont l'ontologie s'attaque aux problèmes concrets
+    d'enregistrement des données et aux professionnels des webs de données ayant l'intention d'utiliser cette ontologie.</p>
 
-    <h3 id="status_ontology">3. Statut de cette ontologie dynamique</h3>
+    <h3 id="status_ontology">3. Statut de l'ontologie dynamique</h3>
 
-     <p>Ce document et l'ontologie associée se développeront itérativement avec des modifications apportées au fil du temps, car
-     les données sont progressivement traduites et d'autres préoccupations ontologiques identifiées au fil du temps. La
-     continuité est assurée en utilisant les annotations d'ontologie OWL pour la compatibilité ontologique et pour les classes et
-     propriétés obsolètes. Les termes d'ontologie supprimés restent présents mais sont marqués comme tels.</p>
+     <p>Ce document et l'ontologie associée se développeront de façon itérative et des modifications seront apportées, étant donné que
+     la traduction des données est progressive et que de nouveaux problèmes ontologiques sont identifiées au fil du temps. La
+     continuité est assurée en utilisant les annotations d'ontologie OWL pour la compatibilité ontologique ainsi que pour les classes et
+     les propriétés obsolètes. Les termes supprimés de l'ontologue restent présents mais sont marqués comme tels.</p>
 
     <h3 id="background">4. Contexte des données source d'Orlando</h3>
 
-    <p>Le projet d'Orlando s'est lancé en 1995 sur une histoire de l'écriture des femmes dans les îles britanniques depuis les
+    <p>Le projet d'Orlando fut créé en 1995 et est histoire de l'écriture des femmes dans les îles britanniques depuis les
     débuts jusqu'au présent(<a href="#brown_story_2007">Brown, Clements and Grundy, 2007a</a>;<a
     href="#brown_introduction_2007">Brown, Clements and Grundy, 2007b</a>). Cette collaboration née-numérique a conçu une représentation du
     savoir(<a href="#susan_brown_sorting_2006">Brown, Clements et al., 2006</a>) sous la forme d'un jeu de
