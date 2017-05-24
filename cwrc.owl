@@ -23,9 +23,9 @@
     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
     xmlns:loc="http://id.loc.gov/vocabulary/relators/"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#"
-    xml:base="http://sparql.cwrc.ca/ontologies/cwrc#"
-    xmlns="http://sparql.cwrc.ca/ontologies/cwrc#">
+    xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"
+    xml:base="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"
+    xmlns="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#">
 
 
    <owl:Ontology rdf:about="">
@@ -130,7 +130,7 @@
     <loc:ctb rdf:resource="#originalOrlandoAuthor"/>
     <loc:pdr rdf:resource="#SusanBrown"/> 
     <loc:fnd rdf:resource="#sshrc"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
     <foaf:logo rdf:resource="http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif"/>
     <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85019388"/>
     <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85043777"/>
@@ -147,7 +147,7 @@
    <foaf:homepage rdf:resource="http://orlando.cambridge.org/public/svDocumentation?formname=t&amp;d_id=CREDITSANDACKNOWLEDGEMENTS"/>
    <skos:definition xml:lang="en">The collection of all persons having written entries for The Orlando Project.</skos:definition>
    <skos:definition xml:lang="fr">La collection de tous les auteurs du Projet Orlando.</skos:definition>
-   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
    <void:inDataset rdf:resource="#datasetdefinition"/>
    <void:triples>TOTAL_TRIPLES_CWRC_ONTOLOGY</void:triples>
    <void:entities>TOTAL_ENTITIES_CWRC_ONTOLOGY</void:entities>
@@ -253,7 +253,7 @@
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <skos:definition xml:lang="en">Cultural formation refers to the processes of lived social subjectivities of people and is often combined with predicates indicating the identity positions as they relate to the following discursive constructions of Class, Religion, Ethnicity, Gender, GeographicalHeritage, LinguisticAbility, NationalHeritage, NationalIdentity, PoliticalAffiliation, RaceColour, Sexuality. These categories are not understood as transhistorical or isolated categories. Rather, they facilitate analysis of how such situationally contingent, changing, and negotiated labels are assigned to or adopted by a particular individual. The tensions endemic to practices of classification demand critical engagement and inquiry into the situatedness of particular cultural identities.</skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
-   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
    <void:inDataset rdf:resource="#datasetdefinition"/>
    <owl:equivalentClass rdf:resource="#CulturalForm"/>
  </owl:DeprecatedClass>
@@ -265,7 +265,7 @@
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <skos:definition xml:lang="en">Cultural forms refers to the processes of lived social subjectivities of people and is often combined with predicates indicating the identity positions as they relate to the following discursive constructions of Class, Religion, Ethnicity, Gender, GeographicalHeritage, LinguisticAbility, NationalHeritage, NationalIdentity, PoliticalAffiliation, RaceColour, Sexuality. These categories are not understood as transhistorical or isolated categories. Rather, they facilitate analysis of how such situationally contingent, changing, and negotiated labels are assigned to or adopted by a particular individual. The tensions endemic to practices of classification demand critical engagement and inquiry into the situatedness of particular cultural identities.</skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
-   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
    <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
@@ -274,7 +274,7 @@
  <rdfs:label xml:lang="fr">a une formation culturelle</rdfs:label>
  <skos:definition xml:lang="en">This sub-class of culturalFormation associates specific concepts and categories with the process of identity formation through cultural processes. Such associations may be or have been embraced by the subject her/himself or attributed by others. The concepts and categories classed as culturalForms are understood to overlap with each other conceptually and in terms of the labels used.</skos:definition>
  <skos:definition xml:lang="fr">Cette sous-classe de culturalFormation associe des concepts et des catégories spécifiques au processus de formation identitaire à travers les processus culturels. Le sujet elle/lui-même peut ou a pu s’approprier de telles associations, ou d’autres personnes les lui ont attribuées. Les concepts et les catégories classés dans culturalForms se chevauchent en théorie et en terme d'étiquettes utilisés.</skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -289,7 +289,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:definition xml:lang="en">A context relates.... </skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
@@ -306,7 +306,7 @@
   <rdfs:subClass rdf:resource="#Context"/>
   <skos:definition xml:lang="en">raceEthnicityContext is a significant sub-class within culturalForms. It indicates the presence of information and discussions of a person's subject position with regards to race and ethnicity by working in conjunction with subject specific sub-elements (raceColour, nationalHeritage, geogHeritage, ethnicity). The following discussion applies to both the general discursive context of raceAndEthnicity as well as the specific sub-class categories. Despite the ways in which categories of race and ethnicity frequently serve heinous interests, their ideological and material impacts in the formation of identities requires recognition. These are shifting, historically constituted, and interestedly deployed categories whose use must be situated contextually and which are understood here finally as discursive or representational. Because of this this ontology does not try to lay out an exact, fully defined, or mutually exclusive set of categories: this is an impossibility given their shifting use and the overlap among them. Those applying this class and its subclasses are encouraged not to let privileged identities operate as an unspoken given or to use this class solely in relation to the marginalized. Those concerned about "white" and "black" as homogenizing categories are encouraged to reach for specificity through multiplicity and representations of intersectionality. RaceAndEthnicity is a sub-class within culturalFormation. It has four related content sub-classes: raceColour, nationalHeritage, geogHeritage, and ethnicity.</skos:definition>
   <skos:definition xml:lang="fr">raceEthnicityContext est une sous-classe importante de culturalForms. Elle indique la présence d’informations et de discussions sur le sujet concernant son appartenance raciale et ethnique, fonctionnant conjointement avec les sous-éléments spécifiques au sujet (raceColour, nationalHeritage, geogHeritage, ethnicity). La discussion qui suit s’applique aussi bien au contexte discursif général de raceAndEthnicity ainsi qu’aux catégories spécifiques de cette sous-classe. Même si les catégories de race et d'ethnicité sont fréquemment manipulées au service d'intérêts déplorables, leurs répercussions idéologiques et matérielles sur la formation identitaire requière qu'on les prenne en compte. Ces catégories sont changeantes, historiquement constituées, développées de façon intéressée, et leur usage doit être situé dans leur contexte; elles sont finalement comprises ici comme discursives et représentationnelles. C'est pour ces raisons que l'ontologie ne prétend pas présenter un ensemble de catégories exact, complètement défini, ou mutuellement exclusif, ce qui est impossible étant donné leur utilisation en changement constant ainsi que leur chevauchement. Celles/ceux qui appliquent ces catégories et sous-catégories sont encouragé/es à ne pas faire fonctionner les identités privilégiées comme si elles étaient consensuelles et évidentes, ou à utiliser cette classe seulement en relation avec les marginaux. Celles/ceux préoccupés par le fait que "blanc" et "noir" sont des catégories homogénéisantes sont encouragés à atteindre la spécificité à travers la multiplicité et les représentations intersectionnelles. RaceAndEthnicity est sous-classe de culturalFormation. Elle a quatre sous-classes qui lui sont liées: raceColour, nationalHeritage, geogHeritage et ethnicity.</skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <dc:subject rdf:resource="#Ethnicity"/>
   <dc:subject rdf:resource="#RaceColour"/>
@@ -321,7 +321,7 @@
    <owl:subClass rdf:resource="#Context"/>
    <skos:definition xml:lang="en">hasSexualityContext is a significant sub-class within culturalForms. It indicates the presence of information and discussions of a person's subject position with regards to their sexuality and sexual identity. A subclass of Cultural Formation, hasSexualityContext provides depth to more granual categorizations of a person through hasSexuality or hasSexuality. It is not meant to capture individual sexual experiences and relationships, which are covered by intimateRelationships. Specific relationships may be invoked here to indicate the effect on a subject's life and understanding of her own sexuality. This effort to to contextualize gestures towards some of the complicated issues around sexuality, for example, the politics of outing, the historical specificity of some categories such as "congenital invert," or the multiple forms of relating to one's own sexuality. Capturing discussions of her sexuality within this element, will help users interested in the historical, ideological and gendered constructions of sexuality. There are important politics of privacy with respect to the disclosure of a subject's sexuality, sexual orientation and sexual identity. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See Campbell and Cowan 2016</skos:definition>
    <skos:definition xml:lang="fr">sexualityContext est une sous-classe importante de culturalForms. Elle indique la présence de données ou de discussions sur la subjectivité d’une personne en ce qui concerne sa sexualité et son identité sexuelle. Sous-classe de culturalForms, sexualityContext approfondit la catégorisation granulaire d’une personne à travers hasSexuality ou hasSexuality. Elle n’est pas vouée à répertorier les expériences sexuelles et relations personnelles, qui sont comprises dans intimateRelationships. Des relations spécifiques pourront être évoquées ici pour indiquer les conséquences qu’elles ont eu dans la vie du sujet ou la compréhension de sa propre sexualité. Cet effort de contextualisation est un mouvement vers des questions complexes autours de la sexualité, comme par exemple les politiques de délation autour de la sexualité, la spécificité historique de certaines catégories comme “inversion sexuelle”, ou les multiples formes liées à la sexualité d’une personne. En saisissant les discussions sur sa sexualité, cet élément sera utile aux utilisateurs intéressés par la construction historique, idéologique et genrée de la sexualité. Les politiques de confidentialité sont importantes au regard de la divulgation de la sexualité, de l’orientation et de l’identité sexuelles du sujet. En ce qui concerne les personnes toujours en vie, notre pratique est de ne nous appuyer que sur des sources ou des divulgations diffusées au public large par le sujet elle/lui-même, afin d’éviter de dévoiler des informations privées sur sa sexualité par inadvertance. Voir Campbell and Cowan 2016 (http://ir.lib.uwo.ca/cgi/viewcontent.cgi?article=1085&amp;context=fimspub). </skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <dc:subject rdf:resource="#Sexuality"/>
   <dc:subject rdf:resource="#Gender"/>
@@ -337,7 +337,7 @@
    <dc:subject rdf:resource="#LinguisticAbility"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <dc:subject rdf:resource="#Language"/>
  </owl:Class>
@@ -350,7 +350,7 @@
    <dc:subject rdf:resource="#SocialClassIdentity"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <dc:subject rdf:resource="#SocialClassIdentity"/>
  </owl:Class>
@@ -363,7 +363,7 @@
    <dc:subject rdf:resource="#Religion"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <dc:subject rdf:resource="#Religion"/>
  </owl:Class>
@@ -378,7 +378,7 @@
    <dc:subject rdf:resource="#GeographicalHeritage"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
@@ -390,7 +390,7 @@
    <dc:subject rdf:resource="#PoliticalAffiliation"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
@@ -403,7 +403,7 @@
    <dc:subject rdf:resource="#RaceColour"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
    <dc:subject rdf:resource="#Ethnicity"/>
  </owl:Class>
@@ -416,7 +416,7 @@
    <dc:subject rdf:resource="#Gender"/>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
@@ -432,7 +432,7 @@
    <owl:subClass rdf:resource="#CulturalForm"/>
    <skos:definition xml:lang="en">A subclass of culturalForms, this descrbes a person's national heritage and is not the same as citizenship.</skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
@@ -442,7 +442,7 @@
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <skos:definition xml:lang="en"></skos:definition> 
    <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:NationalHeritage>
 
@@ -453,7 +453,7 @@
    <skos:definition xml:lang="en"></skos:definition> 
    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:subClass rdf:resource="#jewishLabel"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:NationalIdentity>
 
@@ -465,7 +465,7 @@
    <owl:subClass rdf:resource="#CulturalForm"/>
    <skos:definition xml:lang="en">A subclass of culturalForms, this descrbes a person's nationality/ies and is not the same as citizenship.</skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
@@ -475,7 +475,7 @@
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <skos:definition xml:lang="en"></skos:definition> 
    <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:NationalIdentity>
 
@@ -487,7 +487,7 @@
    <owl:subClass rdf:resource="#CulturalForm"/>
  <skos:definition xml:lang="en">Does not differentiate between spoken and/or written.</skos:definition>
  <skos:definition xml:lang="fr">Écrit ou Parlé</skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
@@ -498,7 +498,7 @@
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <skos:definition xml:lang="en"></skos:definition> 
    <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Language>
 
@@ -508,7 +508,7 @@
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <skos:definition xml:lang="en"></skos:definition> 
    <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Language>
 
@@ -519,7 +519,7 @@
    <owl:subClass rdf:resource="#CulturalForm"/>
    <skos:definition xml:lang="en">GeographicalHeritage is a subclass of CulturalForm that captures information about the geographical origins of a person's family which often contributes to an understanding of their racial and ethnic background. It offers a way to capture women identified as "South-Asian," for example, when no more precise national heritage is indicated. See raceAndEthnicity for a detailed description of the complexities of this element.</skos:definition>
    <skos:definition xml:lang="fr">GeographicalHeritage est une sous-classe de CulturalForms qui contient des informations sur les origines géographiques de la famille d'une personne, ce qui contribue souvent à la compréhension de ses origines ethnique et raciale. Cela permet de saisir l’identité de femmes qui se déclarent “sud-asiatiques” par exemple, quand aucune autre précision n'est fournie concernant l'héritage national. Voir raceEthnicityContext pour un compte-rendu détaillé de la complexité de cet élément.</skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
@@ -530,7 +530,7 @@
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <rdfs:subClass rdf:resource="#englandLabel"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:GeographicalHeritage>
 
@@ -541,7 +541,7 @@
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <rdfs:subClass rdf:resource="#jewishLabel"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:GeographicalHeritage>
 
@@ -552,7 +552,7 @@
    <owl:subClass rdf:resource="#CulturalForm"/>
    <skos:definition xml:lang="en">A subclass of culturalForms for noting a person's gender whether attributed or self-defined. Although in popular culture gender and biological sex are conflated and understood to be binary, the concept of gender stresses the relationality, constructedness, and performativity of gendered identities and gendered behaviour, whose categories are historically contingent and shifting, and the boundaries between them blurry. Cf. Simone de Beauvoir: "One is not born, but rather becomes, a woman," along with many other theorists of gender including Judith Butler, 1990. Gender is understood as fluid, situational, and sometimes plural, and it is related to though not commensurate with sexual identity and orientation. It is related to but not defined by specific forms of embodiment. Rather than seeing biological sex as a pre-social or natural given, the body is understood as a site of inscription (cf. Elizabeth Grosz 1994) which is also socially constructed and indeed epigenetically shaped by environmental factors (N. Katherine Hayles 2012). This ontology therefore does not provide separate terms for sex as distinct from gender. Instead, the slashes conjoining terms associated with gender and those conventionally associated with sex indicate the constant slippage between gender and sex in the way that these categories circulate through discourses, actions, and institutions. Far from indicating a universal facet of experience, gender intersects with other identity categories and axes of oppression such as class, race or colour, or geographical heritage to produced quite different interests and experiences among people of the same gender, as with the intersection of religion and white masculine identity in the Muscular Christianity movement in nineteenth-century Britain. Being a woman of colour may thus compound the impacts of gender oppression (Kimberlé Crenshaw 1989).</skos:definition>
    <skos:definition xml:lang="fr">Cette  sous-classe de culturalForms indique le genre d’une personne, qu’il soit attribué par cette dernière ou auto-défini. Même si dans la culture populaire le genre et le sexe biologique sont confondus et binaires, le concept de genre souligne la relativité, la constructivité et la performativité des identités et des comportements genrés, réparties en catégories historiquement contingentes, changeantes et aux frontières floues. Cf Simone de Beauvoir: “On ne naît pas femme, on le devient,” et d’autres nombreuses théoriciennes du genre, dont Judith Butler en 1990. Le genre est entendu comme fluide, situationnel, parfois pluriel, et est relié à, l’identité et l’orientation sexuelles même s’ils ne doivent pas être confondus. Il est relié à des formes spécifiques d’incarnation ou à des comportements physiques, sans pour autant être défini par eux. Plutôt que de voir le sexe biologique comme présocial et attribué par nature,  le corps est compris comme un lieu d’inscriptions (cf Elizabeth Grosz 1994) qui est aussi socialement construit et épigénétiquement modelé par des facteurs environnementaux (N. Katherine Hayles 2012). Cette ontologie ne fournit donc pas de termes séparés pour le genre et le sexe. Les barres obliques qui lient les termes associés aux genres et ceux conventionnellement attribués au sexe indiquent plutôt le glissement constant de ces catégories au fil des discours, des actions et des institutions. Loin d’indiquer une part d’expérience universelle, le genre s’entrecroise avec d’autres catégories d’identité et axes d’oppression comme la classe, la race, la couleur, ou l’héritage géographique pour produire des intérêts et des expériences bien différentes pour les personnes d’un même genre. Un exemple est l’intersection de la religion et de l’identité masculine du mouvement de la Chrétienté Musculaire formé au Royaume-Uni au 19ème siècle. Dans ce contexte, être une femme de couleur devait aggraver les oppressions liées au genre (Kimberlé Crenshaw 1989).</skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
@@ -563,7 +563,7 @@
    <foaf:name xml:lang="en">man/male (gender)</foaf:name>
    <skos:definition xml:lang="en"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
 
@@ -573,7 +573,7 @@
    <foaf:name xml:lang="en">Woman/Female (gender)</foaf:name>
    <skos:definition xml:lang="en"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
 
@@ -583,7 +583,7 @@
    <foaf:name xml:lang="en">Transman/Transmale (gender)</foaf:name>
    <skos:definition xml:lang="en"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
 
@@ -593,7 +593,7 @@
    <foaf:name xml:lang="en">Transwoman/Transfemale (gender)</foaf:name>
    <skos:definition xml:lang="en"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
 
@@ -604,7 +604,7 @@
    <rdfs:label xml:lang="fr">Non-binaire</rdfs:label>
    <skos:note>Listed as non-binary? in french</skos:note>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
@@ -612,7 +612,7 @@
    <rdfs:label xml:lang="en">Androgynous</rdfs:label>
    <rdfs:label xml:lang="fr">Androgyne</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
@@ -627,7 +627,7 @@
   <skos:definition xml:lang="fr">Ces termes englobent en un mot ou en une phrase, l’identification à des types de sexualité (par exemple “lesbienne”, “monogame”, “hétérosexuel/le”), non pas pour fermer la discussion, mais pour développer l’étude et l’analyse critique de ces identifications. L’association suppose que la sexualité n’est pas vécue de manière essentialiste, mais peut être plurielle et fluide, et ainsi plusieurs désignations peuvent être appliquées à une seule personne. Les affirmations de l’identité sexuelle peuvent venir du sujet elle/lui-même ou bien d’autres personnes. Elles peuvent être en tension ou incompatibles, et refléter différents moments de la vie. Par exemple, lier le terme “lesbienne” à la classe sexualIdentiy ne signifie pas que le sujet était définitivement lesbienne, puisqu’une telle identification est souvent impossible à cause des lacunes et silences historiques. En ce qui concerne les personnes toujours en vie, notre pratique est de ne nous appuyer que sur des sources ou des divulgations diffusées au public large par le sujet elle/lui-même afin d’éviter de dévoiler sa sexualité par inadvertance. 
 </skos:definition>
   <owl:sameAs rdf:resource="http://homosaurus.org/terms/sexualIdentity"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
@@ -638,7 +638,7 @@
    <owl:subClass rdf:resource="#CulturalForm"/>
    <owl:comment xml:lang="en">Deprecated in favour of #Sexuality term.</owl:comment>
   <owl:sameAs rdf:resource="http://homosaurus.org/terms/sexualIdentity"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
    <owl:equivalentClass rdf:resource="#Sexuality"/>
  </owl:DeprecatedClass>
@@ -654,7 +654,7 @@
  <skos:definition xml:lang="fr"></skos:definition>
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
  <owl:sameAs rdf:resource="http://homosaurus.org/terms/heterosexualIdentity"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:Sexuality>
 
@@ -665,7 +665,7 @@
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:Sexuality>
 
@@ -677,7 +677,7 @@
  <skos:definition xml:lang="fr"></skos:definition>
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
  <owl:sameAs rdf:resource="http://homosaurus.org/terms/lesbianIdentity"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:Sexuality>
 
@@ -687,7 +687,7 @@
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalForm"/>
    <owl:comment xml:lang="en">Deprecated in favour of class Gender.</owl:comment>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <owl:equivalentClass rdf:resource="#Gender"/>
  </owl:DeprecatedClass>
@@ -699,7 +699,7 @@
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition> 
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
- <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+ <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
  <void:inDataset rdf:resource="#datasetdefinition"/>
  <owl:comment xml:lang="en">Deprecated in favour of instance #genderManMale.</owl:comment>
  <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -713,7 +713,7 @@
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
- <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+ <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
  <void:inDataset rdf:resource="#datasetdefinition"/>
  <owl:comment xml:lang="en">Deprecated in favour of instance #genderWomanFemale.</owl:comment>
  <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -727,7 +727,7 @@
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  <owl:comment xml:lang="en">Deprecated with no current equivalence.</owl:comment>
  <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -740,7 +740,7 @@
    <owl:subClass rdf:resource="#CulturalForm"/>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
@@ -752,7 +752,7 @@
  <skos:definition xml:lang="fr"></skos:definition>
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
  <rdfs:subClass rdf:resource="#whiteLabel"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:RaceColour>
 
@@ -763,7 +763,7 @@
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:RaceColour>
 
@@ -774,7 +774,7 @@
    <owl:subClass rdf:resource="#CulturalForm"/>
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
@@ -785,7 +785,7 @@
    <owl:subClass rdf:resource="#CulturalForm"/>
    <skos:definition xml:lang="en">Ethnicity is a subclass of CulturalForm that captures information about a person's ethnic position. Ethnicity is a sub-element within culturalFormation and raceAndEthnicity. See raceAndEthnicity for a detailed description of the complexities of this discursive construction and the social practices surrounding it.</skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
-   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
    <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
@@ -796,7 +796,7 @@
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <rdfs:subClass rdf:resource="#whiteLabel"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:Ethnicity>
 
@@ -807,7 +807,7 @@
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <rdfs:subClass rdf:resource="#jewishLabel"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:Ethnicity>
 
@@ -821,7 +821,7 @@
    <owl:subClass rdf:resource="#CulturalForm"/>
    <skos:definition xml:lang="en">A subclass of CulturalForm, this describes a person's religion(s) or belief system(s). Note that while atheism denotes the absence of religion, we use the Religion label for convinience.</skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>   
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
  </owl:Class>
@@ -846,7 +846,7 @@
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300153822"/>
   <skos:inScheme rdf:resource="#Religion"/>
   <skos:broaderTransitive rdf:resource="#christianity"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Religion>
 
@@ -871,7 +871,7 @@
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300153825"/>
   <skos:inScheme rdf:resource="#Religion"/>
   <skos:broaderTransitive rdf:resource="#christianity"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:Religion>
 
@@ -893,7 +893,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300073738"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <skos:broaderTransitive rdf:resource="#occultism"/> 
  </cwrc:Religion>
@@ -915,7 +915,7 @@
   <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
   <skos:inScheme rdf:resource="#Religion"/>
   <skos:broaderTransitive rdf:resource="#christianity"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Religion>
 
@@ -937,7 +937,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300073711"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <skos:broaderTransitive rdf:resource="#abrahamicReligions"/>
  </cwrc:Religion>
@@ -955,7 +955,7 @@
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300264476"/>
   <skos:inScheme rdf:resource="#Religion"/>
   <skos:broaderTransitive rdf:resource="#christianity"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Religion>
 
@@ -977,7 +977,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300073727"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  <skos:broaderTransitive rdf:resource="#occultism"/>
  </cwrc:Religion>
@@ -1003,7 +1003,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300073715"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <skos:broaderTransitive rdf:resource="#abrahamicReligions"/>
  </cwrc:Religion>
@@ -1026,7 +1026,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300073723"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <skos:broaderTransitive rdf:resource="#abrahamicReligions"/>
  </cwrc:Religion>
@@ -1052,7 +1052,7 @@
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300153854"/>
   <skos:inScheme rdf:resource="#Religion"/>
   <skos:broaderTransitive rdf:resource="#christianity"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Religion>
 
@@ -1076,7 +1076,7 @@
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300073735"/>
   <skos:inScheme rdf:resource="#Religion"/>
   <skos:broaderTransitive rdf:resource="#christianity"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Religion>
 
@@ -1087,7 +1087,7 @@
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <skos:broaderTransitive rdf:resource="#occultism"/> 
 </cwrc:Religion>
@@ -1099,7 +1099,7 @@
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Religion>
 
@@ -1112,7 +1112,7 @@
   <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
   <skos:inScheme rdf:resource="#Religion"/>
   <skos:broaderTransitive rdf:resource="#christianity"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Religion>
 
@@ -1124,7 +1124,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
   <skos:broaderTransitive rdf:resource="#christianity"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Religion>
 
@@ -1136,7 +1136,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
   <skos:broaderTransitive rdf:resource="#christianity"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Religion>
 
@@ -1147,7 +1147,7 @@
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
  </cwrc:Religion>
@@ -1159,7 +1159,7 @@
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
  </cwrc:Religion>
@@ -1173,7 +1173,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:broaderTransitive rdf:resource="#millenarianism"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <skos:broaderTransitive rdf:resource="#dissenters"/>
  </cwrc:Religion>
@@ -1185,7 +1185,7 @@
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <skos:broaderTransitive rdf:resource="#catholicChurch"/>
  </cwrc:Religion>
@@ -1198,7 +1198,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
   <skos:broaderTransitive rdf:resource="#christianity"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Religion>
 
@@ -1209,7 +1209,7 @@
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <skos:broaderTransitive rdf:resource="#occultism"/>
  </cwrc:Religion>
@@ -1221,7 +1221,7 @@
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <skos:broaderTransitive rdf:resource="#catholicChurch"/>
  </cwrc:Religion>
@@ -1233,7 +1233,7 @@
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Religion>
 
@@ -1244,7 +1244,7 @@
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <skos:broaderTransitive rdf:resource="#occultism"/>
  </cwrc:Religion>
@@ -1256,7 +1256,7 @@
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <skos:broaderTransitive rdf:resource="#anglicanChurch"/>
  </cwrc:Religion>
@@ -1271,7 +1271,7 @@
   <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Quakers"/>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <skos:broaderTransitive rdf:resource="#dissenters"/>
  </cwrc:Religion>
@@ -1283,7 +1283,7 @@
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <skos:broaderTransitive rdf:resource="#dissenters"/>
  </cwrc:Religion>
@@ -1297,7 +1297,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <skos:inScheme rdf:resource="#Religion"/>
   <skos:broaderTransitive rdf:resource="#christianity"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Religion>
 
@@ -1309,7 +1309,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Spiritualism"/> 
   <skos:inScheme rdf:resource="#Religion"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <skos:broaderTransitive rdf:resource="#occultism"/> 
  </cwrc:Religion>
@@ -1323,7 +1323,7 @@
   <skos:inScheme rdf:resource="#Religion"/>
   <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
   <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Oxford_Movement"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Religion>
 
@@ -1335,7 +1335,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <rdf:value>unitarianChurch</rdf:value>
   <skos:broaderTransitive rdf:resource="#christianity"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:Religion>
 
@@ -1357,14 +1357,14 @@
   <skos:inScheme rdf:resource="#Religion"/>
   <skos:broaderTransitive rdf:resource="#protestantism"/>
   <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Unitarianism"/>  
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:Religion>
 
 <cwrc:Religion rdf:about="#abrahamicReligions">
  <rdfs:label xml:lang="en">Abrahamic Religions</rdfs:label>
  <rdfs:label xml:lang="fr">Religions abrahamique</rdfs:label>
- <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+ <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
  <void:inDataset rdf:resource="#datasetdefinition"/>
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
  <skos:broaderTransitive rdf:resource="#occultism"/>
@@ -1379,7 +1379,7 @@
   <owl:subClass rdf:resource="#CulturalForm"/>
   <skos:definition xml:lang="en">A subclass of culturalForms, Social Class terms associate subjects with a specific social group, recognizing that such categories and their application to individuals are contested and can change over time. The association may be or have been embraced by the subject by the subject her/himself or attributed by others. Unlike Notes typed as socialClassContext, which contain detailed discussion of a subject's class position, socialClass links to a word or phrase signifying a particular construction of class, with particular reference to earlier historical periods in the British Isles. Social class has been variously constructed and theorized, and for women is further complicated by the fact that women were understood to take their social status from fathers and/or husbands. The terminology used here reflects quite basic social groupings that intersect with other factors such as wealth.</skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
  </owl:Class>
@@ -1391,7 +1391,7 @@
  <owl:subClass rdf:resource="#CulturalForm"/>
  <skos:definition xml:lang="en">Employees, clerical workers, teachers, governesses. Note, however, that some teachers go into Professional (Mr. Chips) and women starting schools and then managing them also go into Professional.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
 
@@ -1403,7 +1403,7 @@
  <skos:definition xml:lang="en">Involves larges-scale enterprises such as running factories, or backing such enterprises through investing money, for instance, Elizabeth Montagu or Beatrice Webb.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <!-- Fix the examples -->
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
 
@@ -1414,7 +1414,7 @@
  <owl:subClass rdf:resource="#CulturalForm"/>
  <skos:definition xml:lang="en">Includes doctors, lawyers, guild members, and those of high calling such as members of the clergy (Church of England). It implies social respect and intellectual requirements. Examples are Ann Hunter, who was married to a surgeon, and Virginia Woolf, daughter of an intellectual.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
 
@@ -1425,7 +1425,7 @@
  <owl:subClass rdf:resource="#CulturalForm"/>
  <skos:definition xml:lang="en">Someone whose station in life comes from the fact that they are running something but not putting their money into it, e.g. salaried civil service, bankers, hospital administrators.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
 
@@ -1436,7 +1436,7 @@
  <owl:subClass rdf:resource="#CulturalForm"/>
  <skos:definition xml:lang="en">This group refers to those holding a title or of close family relation to someone holding a title (such as Lady Mary Wortley Montagu, Lord Byron, or Nancy Mitford).</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
 
@@ -1447,7 +1447,7 @@
  <owl:subClass rdf:resource="#CulturalForm"/>
  <skos:definition xml:lang="en">Gentry indicates someone who is property-owning or related to the same; property can be land or stocks and bonds. It begins in the idea of owning arms and having a coat of arms. but is distinguished from nobility in so far as money is not necessarily related to blood and title. Disinterested gentlemen are of this class (i.e. Mr. Bennett in Jane Austen). Gentlewomen belong to this class, even thought they may not themselves own much property but instead be supported by a father or brother, or they may be distressed, which is to say, impoverished gentlewomen, as in the case of Jane Eyre or Austen's Jane Fairfax.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
 
@@ -1457,7 +1457,7 @@
   <skos:definition xml:lang="en"></skos:definition>
   <skos:definition xml:lang="fr"></skos:definition>
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:SocialClassIdentity>
 
@@ -1468,7 +1468,7 @@
  <owl:subClass rdf:resource="#CulturalForm"/>
  <skos:definition xml:lang="en">This social group is poor, destitute, unemployed, supported by charity, or on social security.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
 
@@ -1479,7 +1479,7 @@
  <owl:subClass rdf:resource="#CulturalForm"/>
  <skos:definition xml:lang="en">Owns and runs a pub or shop. Similar to an industrialist but to a lesser degree of magnitude.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
 
@@ -1490,7 +1490,7 @@
  <owl:subClass rdf:resource="#CulturalForm"/>
  <skos:definition xml:lang="en">Own just enough land to support themselves if they do most of the work themselves (ie Elizabeth Ham, Mary Webb).</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
 
@@ -1502,7 +1502,7 @@
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <owl:comment xml:lang="en">This term is a CWRC specific addition not in the original Orlando tag set.</owl:comment>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
 
@@ -1514,7 +1514,7 @@
  <skos:definition xml:lang="en">Goldsmith, tailor, shoemaker, milliner, dressmaker.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <!-- Fix examples -->
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
 
@@ -1526,7 +1526,7 @@
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <!-- Fix dfinition -->
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
 
@@ -1538,7 +1538,7 @@
  <skos:definition xml:lang="en">This generally indicates farm laborers, mostly male in earlier periods, and includes migrant farm workers.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <!-- Fix dfinition -->
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
 
@@ -1550,7 +1550,7 @@
  <skos:definition xml:lang="en">Domestic servants typically live in the home with the family or institution that employs them, although the lowest class of servants might work only casually and hence not receive room and board. This type of labour, very common before the twentieth century, is distinct from that of service positions such as shop assistants, flight attendances, and restaurant workers.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
  <!-- Fix dfinition -->
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
 
@@ -1561,7 +1561,7 @@
    <owl:subClass rdf:resource="#CulturalForm"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
@@ -1572,7 +1572,7 @@
    <owl:subClass rdf:resource="#CulturalForm"/>
  <skos:definition xml:lang="en">This subclass of CulturalForm tracks the affiliations, connections and associations which designate a person's political involvement. These affiliations can be both formal connections to a party or organization and informal political positions held by the writer. We hope to point our readers towards women writers associated with different political positions and help researchers make links between political beliefs and writing. For this reason, we are defining political affiliations broadly and include things like "against capital punishment" or "strong supporter of the Empire" in addition to more straightforward affiliations such as "marxist" or "conservative."</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
@@ -1581,7 +1581,7 @@
    <rdfs:label xml:lang="fr">noir (Race)</rdfs:label>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:RaceColour>
 
@@ -1592,7 +1592,7 @@
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Gentry"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
 
@@ -1602,7 +1602,7 @@
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
 
@@ -1612,7 +1612,7 @@
    <skos:definition xml:lang="en"></skos:definition>
    <skos:definition xml:lang="fr"></skos:definition>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
 
@@ -1621,7 +1621,7 @@
  <rdfs:label xml:lang="fr">Propriété de la Personne</rdfs:label>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1631,7 +1631,7 @@
  <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1642,7 +1642,7 @@
  <rdfs:domain rdf:resource="#Gender"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1653,7 +1653,7 @@
  <rdfs:domain rdf:resource="#Gender"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1664,7 +1664,7 @@
  <rdfs:domain rdf:resource="#NationalIdentity"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1675,7 +1675,7 @@
  <rdfs:domain rdf:resource="#NationalIdentity"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1686,7 +1686,7 @@
  <rdfs:domain rdf:resource="#RaceColour"/>
  <skos:definition xml:lang="en">A subclass of raceEthnicityContext, this describes a person's racial identity.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1697,7 +1697,7 @@
  <rdfs:domain rdf:resource="#Race"/>
  <skos:definition xml:lang="en">A subclass of raceEthnicityContext, this describes a person's self-reported racial identity.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1708,7 +1708,7 @@
  <rdfs:domain rdf:resource="#Ethnicity"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1719,7 +1719,7 @@
  <rdfs:domain rdf:resource="#Ethnicity"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1730,7 +1730,7 @@
  <rdfs:domain rdf:resource="#Religion"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1741,7 +1741,7 @@
  <rdfs:domain rdf:resource="#Religion"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1752,7 +1752,7 @@
  <rdfs:domain rdf:resource="#SocialClass"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1763,7 +1763,7 @@
  <rdfs:domain rdf:resource="#SocialClass"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1774,7 +1774,7 @@
  <rdfs:domain rdf:resource="#LinguisticAbility"/>
  <skos:definition xml:lang="en">Knowlege of the language for writing or reading.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1785,7 +1785,7 @@
  <rdfs:domain rdf:resource="#LinguisticAbility"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1796,7 +1796,7 @@
  <rdfs:domain rdf:resource="#LinguisticAbility"/>
  <skos:definition xml:lang="en">Knowledge of the language for writing or reading.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1807,7 +1807,7 @@
  <rdfs:domain rdf:resource="#LinguisticAbility"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1818,7 +1818,7 @@
  <rdfs:domain rdf:resource="#Sexuality"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1829,7 +1829,7 @@
  <rdfs:domain rdf:resource="#Sexuality"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1840,7 +1840,7 @@
  <rdfs:domain rdf:resource="#GeographicHeritage"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1851,7 +1851,7 @@
  <rdfs:domain rdf:resource="#GeographicHeritage"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 
@@ -1862,7 +1862,7 @@
  <rdfs:label xml:lang="fr">blanc</rdfs:label>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </skos:ConceptScheme>
 
@@ -1880,7 +1880,7 @@
   <owl:Thing rdf:about="#whiteRace"/>
  </owl:oneOf>
  <skos:inScheme rdf:resource="#TextLabels"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </skos:Concept>
 
@@ -1892,7 +1892,7 @@
  <skos:definition xml:lang="fr"></skos:definition>
  <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
  <skos:inScheme rdf:resource="#TextLabels"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </skos:Concept>
 
@@ -1910,7 +1910,7 @@
   <owl:Thing rdf:about="#EnglishNationalIdentity"/>
  </owl:oneOf>
  <skos:inScheme rdf:resource="#TextLabels"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </skos:Concept>
 
@@ -1926,7 +1926,7 @@
   <owl:Thing rdf:about="#genderManMale"/>
  </owl:oneOf>
  <skos:inScheme rdf:resource="#TextLabels"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </skos:Concept>
 
@@ -1942,7 +1942,7 @@
   <owl:Thing rdf:about="#genderWomanFemale"/>
  </owl:oneOf>
  <skos:inScheme rdf:resource="#TextLabels"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </skos:Concept>
 
@@ -1959,7 +1959,7 @@
   <owl:Thing rdf:about="#maleSex"/>
  </owl:oneOf>
  <skos:inScheme rdf:resource="#TextLabels"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </skos:Concept>
 
@@ -1976,7 +1976,7 @@
   <owl:Thing rdf:about="#femaleSex"/>
  </owl:oneOf>
  <skos:inScheme rdf:resource="#TextLabels"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </skos:Concept>
 
@@ -1992,7 +1992,7 @@
   <owl:Thing rdf:about="#jewishEthnicity"/>
  </owl:oneOf>
  <skos:inScheme rdf:resource="#TextLabels"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </skos:Concept>
 
@@ -2007,7 +2007,7 @@
   <owl:Thing rdf:about="#england"/>
  </owl:oneOf>
  <skos:inScheme rdf:resource="#TextLabels"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </skos:Concept>
 
@@ -2020,7 +2020,7 @@
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition> 
  <owl:sameAs rdf:resource="http://dbpedia.org/resource/Literary_genre"/>
- <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+ <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
  <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:Class>
 
@@ -2029,7 +2029,7 @@
  <rdfs:label xml:lang="fr">a un genre</rdfs:label>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
- <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#"/>
+ <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
  <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
 <!-- Moved to cwrc_genre.owl for now -->

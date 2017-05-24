@@ -24,15 +24,15 @@
     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
     xmlns:loc="http://id.loc.gov/vocabulary/relators/"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#"
-    xml:base="http://sparql.cwrc.ca/ontologies/cwrc#"
-    xmlns="http://sparql.cwrc.ca/ontologies/cwrc#">
+    xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"
+    xml:base="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"
+    xmlns="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#">
     
 <cwrc:Genre rdf:about="#genreAbridgement">
    <rdf:value>ABRIDGEMENT</rdf:value>
    <rdfs:label xml:lang="en">abridgement</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -48,7 +48,7 @@
    <rdf:value>ACLEF</rdf:value>
    <rdfs:label xml:lang="en">aclef</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -57,7 +57,7 @@
    <rdf:value>ACROSTIC</rdf:value>
    <rdfs:label xml:lang="en">acrostic</rdfs:label>
    <rdfs:label xml:lang="fr">acrostiche</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -76,7 +76,7 @@
    <rdf:value>ADAPTATION</rdf:value>
    <rdfs:label xml:lang="en">adaptation</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -88,7 +88,7 @@
    <rdf:value>ADVENTUREWRITING</rdf:value>
    <rdfs:label xml:lang="en">adventure writing</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -97,7 +97,7 @@
    <rdf:value>ADVERTISINGCOPY</rdf:value>
    <rdfs:label xml:lang="en">advertising copy</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -106,7 +106,7 @@
    <rdf:value>AFTERPIECE</rdf:value>
    <rdfs:label xml:lang="en">afterpiece</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -115,7 +115,7 @@
    <rdf:value>AFTERWORD</rdf:value>
    <rdfs:label xml:lang="en">afterword</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -124,7 +124,7 @@
    <rdf:value>AGITPROP</rdf:value>
    <rdfs:label xml:lang="en">agitprop</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -133,7 +133,7 @@
    <rdf:value>ALLEGORY</rdf:value>
    <rdfs:label xml:lang="en">allegory</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -151,7 +151,7 @@
    <rdf:value>ANAGRAM</rdf:value>
    <rdfs:label xml:lang="en">anagram</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -163,7 +163,7 @@
    <rdf:value>ANNOTATION</rdf:value>
    <rdfs:label xml:lang="en">annotation</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -178,7 +178,7 @@
    <rdf:value>ANSWER</rdf:value>
    <rdfs:label xml:lang="en">answer</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -187,7 +187,7 @@
    <rdf:value>ANTHEM</rdf:value>
    <rdfs:label xml:lang="en">anthem</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -196,7 +196,7 @@
    <rdf:value>ANTHOLOGY</rdf:value>
    <rdfs:label xml:lang="en">anthology</rdfs:label>
    <rdfs:label xml:lang="fr">anthologie</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -205,7 +205,7 @@
    <rdf:value>ANTIROMANCE</rdf:value>
    <rdfs:label xml:lang="en">antiromance</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -214,7 +214,7 @@
    <rdf:value>APHORISM</rdf:value>
    <rdfs:label xml:lang="en">aphorism</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -229,7 +229,7 @@
    <rdf:value>APOLOGY</rdf:value>
    <rdfs:label xml:lang="en">apology</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -238,7 +238,7 @@
    <rdf:value>ARTCRITICISM</rdf:value>
    <rdfs:label xml:lang="en">art criticism</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -247,7 +247,7 @@
    <rdf:value>AUTOBIOGRAPHY</rdf:value>
    <rdfs:label xml:lang="en">autobiography</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -264,7 +264,7 @@
    <rdf:value>BALLAD</rdf:value>
    <rdfs:label xml:lang="en">ballade</rdfs:label>
    <rdfs:label xml:lang="fr">ballade</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -278,7 +278,7 @@
    <rdf:value>BALLADOPERA</rdf:value>
    <rdfs:label xml:lang="en">ballad opera</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -287,7 +287,7 @@
    <rdf:value>BALLET</rdf:value>
    <rdfs:label xml:lang="en">ballet</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -296,7 +296,7 @@
    <rdf:value>BERGAMASQUE</rdf:value>
    <rdfs:label xml:lang="en">bergamasque</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -305,7 +305,7 @@
    <rdf:value>BESTIARY</rdf:value>
    <rdfs:label xml:lang="en">bestiary</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -321,7 +321,7 @@
    <rdf:value>BIBLICALPARAPHRASE</rdf:value>
    <rdfs:label xml:lang="en">biblical paraphrase</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -330,7 +330,7 @@
    <rdf:value>BILDUNGSROMAN</rdf:value>
    <rdfs:label xml:lang="en">bildungsroman</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -349,7 +349,7 @@
    <rdf:value>BIOGRAPHICALDICTIONARY</rdf:value>
    <rdfs:label xml:lang="en">biographical dictionary</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -358,7 +358,7 @@
    <rdf:value>BIOGRAPHY</rdf:value>
    <rdfs:label xml:lang="en">biography</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -376,7 +376,7 @@
    <rdf:value>BISEXUALFICTION</rdf:value>
    <rdfs:label xml:lang="en">bisexual fiction</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -385,7 +385,7 @@
    <rdf:value>BLACKCOMEDY</rdf:value>
    <rdfs:label xml:lang="en">black comedy</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -401,7 +401,7 @@
    <rdf:value>BOUTSRIMES</rdf:value>
    <rdfs:label xml:lang="en">boutsrimes</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -410,7 +410,7 @@
    <rdf:value>BROADSIDE</rdf:value>
    <rdfs:label xml:lang="en">broadside</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -419,7 +419,7 @@
    <rdf:value>BURLETTA</rdf:value>
    <rdfs:label xml:lang="en">burletta</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -428,7 +428,7 @@
    <rdf:value>CABARET</rdf:value>
    <rdfs:label xml:lang="en">cabaret</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -437,7 +437,7 @@
    <rdf:value>CAPTIVITYNARRATIVE</rdf:value>
    <rdfs:label xml:lang="en">captivity narrative</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -450,7 +450,7 @@
    <rdf:value>CATECHISM</rdf:value>
    <rdfs:label xml:lang="en">catechism</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -466,7 +466,7 @@
    <rdf:value>CHAPBOOK</rdf:value>
    <rdfs:label xml:lang="en">chapbook</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -475,7 +475,7 @@
    <rdf:value>CHARACTER</rdf:value>
    <rdfs:label xml:lang="en">character</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -484,7 +484,7 @@
    <rdf:value>CHARADE</rdf:value>
    <rdfs:label xml:lang="en">charade</rdfs:label>
    <rdfs:label xml:lang="fr">charade</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -493,7 +493,7 @@
    <rdf:value>CHILDRENSLITERATURE</rdf:value>
    <rdfs:label xml:lang="en">childrens literature</rdfs:label>
    <rdfs:label xml:lang="fr">littérature pour l'enfants</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -502,7 +502,7 @@
    <rdf:value>CLERIHEW</rdf:value>
    <rdfs:label xml:lang="en">clerihew</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -516,7 +516,7 @@
    <rdf:value>CLOSETDRAMA</rdf:value>
    <rdfs:label xml:lang="en">closetdrama</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -525,7 +525,7 @@
    <rdf:value>COLOURINGBOOK</rdf:value>
    <rdfs:label xml:lang="en">colouring book</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -541,7 +541,7 @@
    <rdf:value>COMEDY</rdf:value>
    <rdfs:label xml:lang="en">comedy</rdfs:label>
    <rdfs:label xml:lang="fr">comédie</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -556,7 +556,7 @@
    <rdf:value>COMEDYOFINTRIGUE</rdf:value>
    <rdfs:label xml:lang="en">comedy of intrigue</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -566,7 +566,7 @@
    <rdf:value>COMEDYOFMANNERS</rdf:value>
    <rdfs:label xml:lang="en">comedy of manners</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -582,7 +582,7 @@
    <rdf:value>COMEDYOFMENACE</rdf:value>
    <rdfs:label xml:lang="en">comedy of menace</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -592,7 +592,7 @@
    <rdf:value>COMICBOOK</rdf:value>
    <rdfs:label xml:lang="en">comicbook</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -601,7 +601,7 @@
    <rdf:value>COMINGOUT</rdf:value>
    <rdfs:label xml:lang="en">coming out</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -610,7 +610,7 @@
    <rdf:value>COMMONPLACEBOOK</rdf:value>
    <rdfs:label xml:lang="en">common place book</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -619,7 +619,7 @@
    <rdf:value>COMPANION</rdf:value>
    <rdfs:label xml:lang="en">companion</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -628,7 +628,7 @@
    <rdf:value>COMPUTERPROGRAM</rdf:value>
    <rdfs:label xml:lang="en">computer program</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -637,7 +637,7 @@
    <rdf:value>CONDITIONOFENGLANDNOVEL</rdf:value>
    <rdfs:label xml:lang="en">condition of england novel</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -647,7 +647,7 @@
    <rdf:value>CONDUCTLITERATURE</rdf:value>
    <rdfs:label xml:lang="en">conduct literature</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -656,7 +656,7 @@
    <rdf:value>COOKBOOK</rdf:value>
    <rdfs:label xml:lang="en">cookbook</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -672,7 +672,7 @@
    <rdf:value>COURTSHIPFICTION</rdf:value>
    <rdfs:label xml:lang="en">courtshipfiction</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -681,7 +681,7 @@
    <rdf:value>CRIMINOLOGY</rdf:value>
    <rdfs:label xml:lang="en">criminology</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -690,7 +690,7 @@
    <rdf:value>DEDICATION</rdf:value>
    <rdfs:label xml:lang="en">dedication</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -699,7 +699,7 @@
    <rdf:value>DETECTIVE</rdf:value>
    <rdfs:label xml:lang="en">detective</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -714,7 +714,7 @@
    <rdf:value>DEVOTIONAL</rdf:value>
    <rdfs:label xml:lang="en">devotional</rdfs:label>
    <rdfs:label xml:lang="fr">dévotional</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -727,7 +727,7 @@
    <rdf:value>DIALOGUEOFTHEDEAD</rdf:value>
    <rdfs:label xml:lang="en">dialogue of the dead</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -736,7 +736,7 @@
    <rdf:value>DIALOGUEORDEBATE</rdf:value>
    <rdfs:label xml:lang="en">dialogue or debate</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -745,7 +745,7 @@
    <rdf:value>DIARY</rdf:value>
    <rdfs:label xml:lang="en">diary</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -760,7 +760,7 @@
    <rdf:value>DICTIONARY</rdf:value>
    <rdfs:label xml:lang="en">dictionary</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -774,7 +774,7 @@
    <rdf:value>DIDACTIC</rdf:value>
    <rdfs:label xml:lang="en">didactic</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -783,7 +783,7 @@
    <rdf:value>DIRECTORY</rdf:value>
    <rdfs:label xml:lang="en">directory</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -792,7 +792,7 @@
    <rdf:value>DISSERTATION</rdf:value>
    <rdfs:label xml:lang="en">dissertation</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -801,7 +801,7 @@
    <rdf:value>DOCUMENTARY</rdf:value>
    <rdfs:label xml:lang="en">documentary</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -810,7 +810,7 @@
    <rdf:value>DOMESTIC</rdf:value>
    <rdfs:label xml:lang="en">domestic</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -822,7 +822,7 @@
    <rdf:value>DRAMA</rdf:value>
    <rdfs:label xml:lang="en">drama</rdfs:label>
    <rdfs:label xml:lang="fr">drame</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -831,7 +831,7 @@
    <rdf:value>DRAMATICMONOLOGUE</rdf:value>
    <rdfs:label xml:lang="en">dramatic monologue</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -845,7 +845,7 @@
    <rdf:value>DREAMVISION</rdf:value>
    <rdfs:label xml:lang="en">dreamvision</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -854,7 +854,7 @@
    <rdf:value>DYSTOPIA</rdf:value>
    <rdfs:label xml:lang="en">dystopia</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -863,7 +863,7 @@
    <rdf:value>ECLOGUE</rdf:value>
    <rdfs:label xml:lang="en">eclogue</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -879,7 +879,7 @@
    <rdf:value>ELEGY</rdf:value>
    <rdfs:label xml:lang="en">elegy</rdfs:label>
    <rdfs:label xml:lang="fr">élégie</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -897,7 +897,7 @@
    <rdf:value>ENCYCLOPAEDIA</rdf:value>
    <rdfs:label xml:lang="en">encyclopaedia</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -906,7 +906,7 @@
    <rdf:value>EPIC</rdf:value>
    <rdfs:label xml:lang="en">epic</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -918,7 +918,7 @@
    <rdf:value>EPIGRAM</rdf:value>
    <rdfs:label xml:lang="en">epigram</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -936,7 +936,7 @@
    <rdf:value>EPILOGUE</rdf:value>
    <rdfs:label xml:lang="en">epilogue</rdfs:label>
    <rdfs:label xml:lang="fr">épilogue</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -945,7 +945,7 @@
    <rdf:value>EPISTLE</rdf:value>
    <rdfs:label xml:lang="en">epistle</rdfs:label>
    <rdfs:label xml:lang="fr">épître></rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -963,7 +963,7 @@
    <rdf:value>EPISTOLARY</rdf:value>
    <rdfs:label xml:lang="en">epistolary</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -978,7 +978,7 @@
    <rdf:value>EPITAPH</rdf:value>
    <rdfs:label xml:lang="en">epitaph</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -994,7 +994,7 @@
    <rdf:value>EPITHALAMIUM</rdf:value>
    <rdfs:label xml:lang="en">epithalamium</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1009,7 +1009,7 @@
    <rdf:value>EPYLLION</rdf:value>
    <rdfs:label xml:lang="en">epyllion</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1021,7 +1021,7 @@
    <rdf:value>EROTICAPORNOGRAPHY</rdf:value>
    <rdfs:label xml:lang="en">erotica pornography</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1030,7 +1030,7 @@
    <rdf:value>ESSAY</rdf:value>
    <rdfs:label xml:lang="en">essay</rdfs:label>
    <rdfs:label xml:lang="fr">essai</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1049,7 +1049,7 @@
    <rdf:value>EULOGY</rdf:value>
    <rdfs:label xml:lang="en">eulogy</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1064,7 +1064,7 @@
    <rdf:value>EXHIBITIONCATALOGUE</rdf:value>
    <rdfs:label xml:lang="en">exhibition catalogue</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1077,7 +1077,7 @@
    <rdf:value>FABLE</rdf:value>
    <rdfs:label xml:lang="en">fable</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1092,7 +1092,7 @@
    <rdf:value>FABLIAU</rdf:value>
    <rdfs:label xml:lang="en">fabliau</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1101,7 +1101,7 @@
    <rdf:value>FAIRYTALE</rdf:value>
    <rdfs:label xml:lang="en">fairytale</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1113,7 +1113,7 @@
    <rdf:value>FANTASY</rdf:value>
    <rdfs:label xml:lang="en">fantasy</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1131,7 +1131,7 @@
    <rdf:value>FARCE</rdf:value>
    <rdfs:label xml:lang="en">farce</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1140,7 +1140,7 @@
    <rdf:value>FEMINIST</rdf:value>
    <rdfs:label xml:lang="en">feminist</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1149,7 +1149,7 @@
    <rdf:value>FEMINISTTHEORY</rdf:value>
    <rdfs:label xml:lang="en">feminist theory</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1158,7 +1158,7 @@
    <rdf:value>FICTION</rdf:value>
    <rdfs:label xml:lang="en">fiction</rdfs:label>
    <rdfs:label xml:lang="fr">fiction</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1173,7 +1173,7 @@
    <rdf:value>FILMTVSCRIPT</rdf:value>
    <rdfs:label xml:lang="en">film tv script</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1182,7 +1182,7 @@
    <rdf:value>FOLKSONG</rdf:value>
    <rdfs:label xml:lang="en">folksong</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1191,7 +1191,7 @@
    <rdf:value>GARDENINGBOOK</rdf:value>
    <rdfs:label xml:lang="en">gardening book</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1200,7 +1200,7 @@
    <rdf:value>GENEALOGY</rdf:value>
    <rdfs:label xml:lang="en">genealogy</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1216,7 +1216,7 @@
    <rdf:value>GEORGIC</rdf:value>
    <rdfs:label xml:lang="en">georgic</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1225,7 +1225,7 @@
    <rdf:value>GHOSTSTORY</rdf:value>
    <rdfs:label xml:lang="en">ghost story</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1244,7 +1244,7 @@
    <rdf:value>GIFTBOOK</rdf:value>
    <rdfs:label xml:lang="en">giftbook</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1253,7 +1253,7 @@
    <rdf:value>GOTHIC</rdf:value>
    <rdfs:label xml:lang="en">gothic</rdfs:label>
    <rdfs:label xml:lang="fr">gothique</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1268,7 +1268,7 @@
    <rdf:value>GOVERNMENTREPORT</rdf:value>
    <rdfs:label xml:lang="en">government report</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1277,7 +1277,7 @@
    <rdf:value>GRAMMAR</rdf:value>
    <rdfs:label xml:lang="en">grammar</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1286,7 +1286,7 @@
    <rdf:value>GRAVEYARDPOETRY</rdf:value>
    <rdfs:label xml:lang="en">graveyard poetry</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1296,7 +1296,7 @@
    <rdf:value>GUIDEBOOK</rdf:value>
    <rdfs:label xml:lang="en">guidebook</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1305,7 +1305,7 @@
    <rdf:value>HAGIOGRAPHY</rdf:value>
    <rdfs:label xml:lang="en">hagiography</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1323,7 +1323,7 @@
    <rdf:value>HAIKU</rdf:value>
    <rdfs:label xml:lang="en">haiku</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1332,7 +1332,7 @@
    <rdf:value>HARLEQUINADE</rdf:value>
    <rdfs:label xml:lang="en">harlequinade</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1341,7 +1341,7 @@
    <rdf:value>HEROIC</rdf:value>
    <rdfs:label xml:lang="en">heroic</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1350,7 +1350,7 @@
    <rdf:value>HISTORICAL</rdf:value>
    <rdfs:label xml:lang="en">historical</rdfs:label>
    <rdfs:label xml:lang="fr">historique</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1359,7 +1359,7 @@
    <rdf:value>HISTORY</rdf:value>
    <rdfs:label xml:lang="en">history</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1371,7 +1371,7 @@
    <rdf:value>HYMN</rdf:value>
    <rdfs:label xml:lang="en">hymn</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1380,7 +1380,7 @@
    <rdf:value>IMITATION</rdf:value>
    <rdfs:label xml:lang="en">imitation</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1389,7 +1389,7 @@
    <rdf:value>INDUSTRIALNOVEL</rdf:value>
    <rdfs:label xml:lang="en">industrial novel</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1399,7 +1399,7 @@
    <rdf:value>INTRODUCTION</rdf:value>
    <rdfs:label xml:lang="en">introduction</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1408,7 +1408,7 @@
    <rdf:value>JOURNALISM</rdf:value>
    <rdfs:label xml:lang="en">journalism</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1417,7 +1417,7 @@
    <rdf:value>JUVENILIA</rdf:value>
    <rdfs:label xml:lang="en">juvenilia</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1426,7 +1426,7 @@
    <rdf:value>KITCHENSINKDRAMA</rdf:value>
    <rdfs:label xml:lang="en">kitchensink drama</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1435,7 +1435,7 @@
    <rdf:value>KUNSTLERROMAN</rdf:value>
    <rdfs:label xml:lang="en">kunstlerroman</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1444,7 +1444,7 @@
    <rdf:value>LAIS</rdf:value>
    <rdfs:label xml:lang="en">lais</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1456,7 +1456,7 @@
    <rdf:value>LAMPOON</rdf:value>
    <rdfs:label xml:lang="en">lampoon</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1465,7 +1465,7 @@
    <rdf:value>LEGALWRITING</rdf:value>
    <rdfs:label xml:lang="en">legal writing</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1474,7 +1474,7 @@
    <rdf:value>LEGENDFOLKTALE</rdf:value>
    <rdfs:label xml:lang="en">legend folktale</rdfs:label>
    <rdfs:label xml:lang="fr">légende et conte de fée</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1483,7 +1483,7 @@
    <rdf:value>LESBIAN</rdf:value>
    <rdfs:label xml:lang="en">lesbian</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1495,7 +1495,7 @@
    <rdf:value>LETTER</rdf:value>
    <rdfs:label xml:lang="en">letter</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1507,7 +1507,7 @@
    <rdf:value>LETTERSFROMTHEDEADTOTHELIVING</rdf:value>
    <rdfs:label xml:lang="en">letters from the dead to the living</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1516,7 +1516,7 @@
    <rdf:value>LIBRETTO</rdf:value>
    <rdfs:label xml:lang="en">libretto</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1525,7 +1525,7 @@
    <rdf:value>LITERARYCRITICISM</rdf:value>
    <rdfs:label xml:lang="en">literary criticism</rdfs:label>
    <rdfs:label xml:lang="fr">critiquelittéraire</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1534,7 +1534,7 @@
    <rdf:value>LITURGY</rdf:value>
    <rdfs:label xml:lang="en">liturgy</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1543,7 +1543,7 @@
    <rdf:value>LOVE</rdf:value>
    <rdfs:label xml:lang="en">love</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1554,7 +1554,7 @@
    <rdf:value>LYRIC</rdf:value>
    <rdfs:label xml:lang="en">lyric</rdfs:label>
    <rdfs:label xml:lang="fr">lyrique</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1566,7 +1566,7 @@
    <rdf:value>MAGICREALIST</rdf:value>
    <rdfs:label xml:lang="en">magic realist</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1575,7 +1575,7 @@
    <rdf:value>MANIFESTO</rdf:value>
    <rdfs:label xml:lang="en">manifesto</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1584,7 +1584,7 @@
    <rdf:value>MANUAL</rdf:value>
    <rdfs:label xml:lang="en">manual</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1593,7 +1593,7 @@
    <rdf:value>MAP</rdf:value>
    <rdfs:label xml:lang="en">map</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1602,7 +1602,7 @@
    <rdf:value>MASQUE</rdf:value>
    <rdfs:label xml:lang="en">masque</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1611,7 +1611,7 @@
    <rdf:value>MEDICALWRITING</rdf:value>
    <rdfs:label xml:lang="en">medical writing</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1620,7 +1620,7 @@
    <rdf:value>MELODRAMA</rdf:value>
    <rdfs:label xml:lang="en">melodrama</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1629,7 +1629,7 @@
    <rdf:value>MIXEDMEDIA</rdf:value>
    <rdfs:label xml:lang="en">mixed media</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1638,7 +1638,7 @@
    <rdf:value>MOCKFORMS</rdf:value>
    <rdfs:label xml:lang="en">mockforms</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1647,7 +1647,7 @@
    <rdf:value>MONOLOGUE</rdf:value>
    <rdfs:label xml:lang="en">monologue</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1663,7 +1663,7 @@
    <rdf:value>MORALITYMYSTERYPLAY</rdf:value>
    <rdfs:label xml:lang="en">morality mystery play</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1672,7 +1672,7 @@
    <rdf:value>MULTIMEDIA</rdf:value>
    <rdfs:label xml:lang="en">multimedia</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1681,7 +1681,7 @@
    <rdf:value>MUSICOLOGY</rdf:value>
    <rdfs:label xml:lang="en">musicology</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1690,7 +1690,7 @@
    <rdf:value>MYSTERY</rdf:value>
    <rdfs:label xml:lang="en">mystery</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1699,7 +1699,7 @@
    <rdf:value>MYTH</rdf:value>
    <rdfs:label xml:lang="en">myth</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1717,7 +1717,7 @@
    <rdf:value>NARRATIVEPOETRY</rdf:value>
    <rdfs:label xml:lang="en">narrative poetry</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1734,7 +1734,7 @@
    <rdf:value>NATIONALTALE</rdf:value>
    <rdfs:label xml:lang="en">national tale</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1743,7 +1743,7 @@
    <rdf:value>NOTEBOOK</rdf:value>
    <rdfs:label xml:lang="en">notebook</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1756,7 +1756,7 @@
    <rdf:value>NOVEL</rdf:value>
    <rdfs:label xml:lang="en">novel</rdfs:label>
    <rdfs:label xml:lang="fr">roman</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1772,7 +1772,7 @@
    <rdf:value>NOVELLA</rdf:value>
    <rdfs:label xml:lang="en">novella</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1788,7 +1788,7 @@
    <rdf:value>NURSERYRHYME</rdf:value>
    <rdfs:label xml:lang="en">nurseryrhyme</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1797,7 +1797,7 @@
    <rdf:value>OBITUARY</rdf:value>
    <rdfs:label xml:lang="en">obituary</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1809,7 +1809,7 @@
    <rdf:value>OCCASIONALPOETRY</rdf:value>
    <rdfs:label xml:lang="en">occasional poetry</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1823,7 +1823,7 @@
    <rdf:value>ODE</rdf:value>
    <rdfs:label xml:lang="en">ode</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1838,7 +1838,7 @@
    <rdf:value>ONEACTPLAY</rdf:value>
    <rdfs:label xml:lang="en">one act play</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1847,7 +1847,7 @@
    <rdf:value>OPERA</rdf:value>
    <rdfs:label xml:lang="en">opera</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1856,7 +1856,7 @@
    <rdf:value>ORATORIO</rdf:value>
    <rdfs:label xml:lang="en">oratorio</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1865,7 +1865,7 @@
    <rdf:value>ORIENTAL</rdf:value>
    <rdfs:label xml:lang="en">oriental</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1874,7 +1874,7 @@
    <rdf:value>PAGEANT</rdf:value>
    <rdfs:label xml:lang="en">pageant</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1883,7 +1883,7 @@
    <rdf:value>PANEGYRIC</rdf:value>
    <rdfs:label xml:lang="en">panegyric</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1892,7 +1892,7 @@
    <rdf:value>PANTOMIME</rdf:value>
    <rdfs:label xml:lang="en">pantomime</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1901,7 +1901,7 @@
    <rdf:value>PARABLE</rdf:value>
    <rdfs:label xml:lang="en">parable</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1919,7 +1919,7 @@
    <rdf:value>PARATEXTS</rdf:value>
    <rdfs:label xml:lang="en">paratexts</rdfs:label>
    <rdfs:label xml:lang="fr">paratextes</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1928,7 +1928,7 @@
    <rdf:value>PARODY</rdf:value>
    <rdfs:label xml:lang="en">parody</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1944,7 +1944,7 @@
    <rdf:value>PASTORAL</rdf:value>
    <rdfs:label xml:lang="en">pastoral</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1953,7 +1953,7 @@
    <rdf:value>PEDAGOGY</rdf:value>
    <rdfs:label xml:lang="en">pedagogy</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1962,7 +1962,7 @@
    <rdf:value>PERFORMANCEPOETRY</rdf:value>
    <rdfs:label xml:lang="en">performance poetry</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1976,7 +1976,7 @@
    <rdf:value>PERIODICAL</rdf:value>
    <rdfs:label xml:lang="en">periodical</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1985,7 +1985,7 @@
    <rdf:value>PETITION</rdf:value>
    <rdfs:label xml:lang="en">petition</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1994,7 +1994,7 @@
    <rdf:value>PHILOSOPHICAL</rdf:value>
    <rdfs:label xml:lang="en">philosophical</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2003,7 +2003,7 @@
    <rdf:value>PHILOSOPHY</rdf:value>
    <rdfs:label xml:lang="en">philosophy</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2012,7 +2012,7 @@
    <rdf:value>PICARESQUE</rdf:value>
    <rdfs:label xml:lang="en">picaresque</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2028,7 +2028,7 @@
    <rdf:value>PINDARIC</rdf:value>
    <rdfs:label xml:lang="en">pindaric</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2037,7 +2037,7 @@
    <rdf:value>POETRY</rdf:value>
    <rdfs:label xml:lang="en">poetry</rdfs:label>
    <rdfs:label xml:lang="fr">poésie</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2053,7 +2053,7 @@
    <rdf:value>POLEMIC</rdf:value>
    <rdfs:label xml:lang="en">polemic</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2071,7 +2071,7 @@
    <rdf:value>POLITICALWRITING</rdf:value>
    <rdfs:label xml:lang="en">political writing</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2080,7 +2080,7 @@
    <rdf:value>POPULAR</rdf:value>
    <rdfs:label xml:lang="en">popular</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2089,7 +2089,7 @@
    <rdf:value>PRAYER</rdf:value>
    <rdfs:label xml:lang="en">prayer</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2102,7 +2102,7 @@
    <rdf:value>PREFATORYPIECE</rdf:value>
    <rdfs:label xml:lang="en">prefatory piece</rdfs:label>
    <rdfs:label xml:lang="fr">préfixe</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2111,7 +2111,7 @@
    <rdf:value>PROLETARIANWRITING</rdf:value>
    <rdfs:label xml:lang="en">proletarianwriting</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2120,7 +2120,7 @@
    <rdf:value>PROLOGUE</rdf:value>
    <rdfs:label xml:lang="en">prologue</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2129,7 +2129,7 @@
    <rdf:value>PROPAGANDA</rdf:value>
    <rdfs:label xml:lang="en">propaganda</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2138,7 +2138,7 @@
    <rdf:value>PROPHECY</rdf:value>
    <rdfs:label xml:lang="en">prophecy</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2154,7 +2154,7 @@
    <rdf:value>PSALM</rdf:value>
    <rdfs:label xml:lang="en">psalm</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2163,7 +2163,7 @@
    <rdf:value>PSYCHOANALYTICAL</rdf:value>
    <rdfs:label xml:lang="en">psychoanalytical</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2172,7 +2172,7 @@
    <rdf:value>QUIZ</rdf:value>
    <rdfs:label xml:lang="en">quiz</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2181,7 +2181,7 @@
    <rdf:value>RADIODRAMA</rdf:value>
    <rdfs:label xml:lang="en">radio drama</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2190,7 +2190,7 @@
    <rdf:value>REALIST</rdf:value>
    <rdfs:label xml:lang="en">realist</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2199,7 +2199,7 @@
    <rdf:value>REGIONAL</rdf:value>
    <rdfs:label xml:lang="en">regional</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2208,7 +2208,7 @@
    <rdf:value>RELIGIOUS</rdf:value>
    <rdfs:label xml:lang="en">religious</rdfs:label>
    <rdfs:label xml:lang="fr">religieux</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2217,7 +2217,7 @@
    <rdf:value>REVIEW</rdf:value>
    <rdfs:label xml:lang="en">review</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2226,7 +2226,7 @@
    <rdf:value>REVUE</rdf:value>
    <rdfs:label xml:lang="en">revue</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2235,7 +2235,7 @@
    <rdf:value>RIDDLE</rdf:value>
    <rdfs:label xml:lang="en">riddle</rdfs:label>
    <rdfs:label xml:lang="fr">énigme</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2244,7 +2244,7 @@
    <rdf:value>ROMANCE</rdf:value>
    <rdfs:label xml:lang="en">romance</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2259,7 +2259,7 @@
    <rdf:value>SAGEWRITING</rdf:value>
    <rdfs:label xml:lang="en">sage writing</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2271,7 +2271,7 @@
    <rdf:value>SATIRE</rdf:value>
    <rdfs:label xml:lang="en">satire</rdfs:label>
    <rdfs:label xml:lang="fr">satire</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2290,7 +2290,7 @@
    <rdf:value>SCHOLARSHIP</rdf:value>
    <rdfs:label xml:lang="en">scholarship</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2299,7 +2299,7 @@
    <rdf:value>SCHOOLFICTION</rdf:value>
    <rdfs:label xml:lang="en">school fiction</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2308,7 +2308,7 @@
    <rdf:value>SCIENCEFICTION</rdf:value>
    <rdfs:label xml:lang="en">science fiction</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2324,7 +2324,7 @@
    <rdf:value>SCIENTIFICWRITING</rdf:value>
    <rdfs:label xml:lang="en">scientific writing</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2333,7 +2333,7 @@
    <rdf:value>SCRAPBOOK</rdf:value>
    <rdfs:label xml:lang="en">scrapbook</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2342,7 +2342,7 @@
    <rdf:value>SENSATIONNOVEL</rdf:value>
    <rdfs:label xml:lang="en">sensation novel</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2356,7 +2356,7 @@
    <rdf:value>SENTIMENTAL</rdf:value>
    <rdfs:label xml:lang="en">sentimental</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2369,7 +2369,7 @@
    <rdf:value>SEQUEL</rdf:value>
    <rdfs:label xml:lang="en">sequel</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2378,7 +2378,7 @@
    <rdf:value>SERMON</rdf:value>
    <rdfs:label xml:lang="en">sermon</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2394,7 +2394,7 @@
    <rdf:value>SEXUALAWAKENINGFICTION</rdf:value>
    <rdfs:label xml:lang="en">sexual awakening fiction</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2403,7 +2403,7 @@
    <rdf:value>SHORTSTORY</rdf:value>
    <rdfs:label xml:lang="en">short story</rdfs:label>
    <rdfs:label xml:lang="fr">nouvelle</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2421,7 +2421,7 @@
    <rdf:value>SILVERFORKNOVEL</rdf:value>
    <rdfs:label xml:lang="en">silverfork novel</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2431,7 +2431,7 @@
    <rdf:value>SKETCH</rdf:value>
    <rdfs:label xml:lang="en">sketch</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2447,7 +2447,7 @@
    <rdf:value>SKETCHBOOK</rdf:value>
    <rdfs:label xml:lang="en">sketch book</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2456,7 +2456,7 @@
    <rdf:value>SLAVENARRATIVE</rdf:value>
    <rdfs:label xml:lang="en">slave narrative</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2465,7 +2465,7 @@
    <rdf:value>SOCIALSCIENCE</rdf:value>
    <rdfs:label xml:lang="en">social science</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2474,7 +2474,7 @@
    <rdf:value>SONG</rdf:value>
    <rdfs:label xml:lang="en">song</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2483,7 +2483,7 @@
    <rdf:value>SONNET</rdf:value>
    <rdfs:label xml:lang="en">sonnet</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2498,7 +2498,7 @@
    <rdf:value>SPEECH</rdf:value>
    <rdfs:label xml:lang="en">speech</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2507,7 +2507,7 @@
    <rdf:value>TESTIMONY</rdf:value>
    <rdfs:label xml:lang="en">testimony</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2516,7 +2516,7 @@
    <rdf:value>TEXTBOOK</rdf:value>
    <rdfs:label xml:lang="en">textbook</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2525,7 +2525,7 @@
    <rdf:value>THEATREOFCRUELTY</rdf:value>
    <rdfs:label xml:lang="en">theatre of cruelty</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2534,7 +2534,7 @@
    <rdf:value>THEATREOFTHEABSURD</rdf:value>
    <rdfs:label xml:lang="en">theatre of the absurd</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2543,7 +2543,7 @@
    <rdf:value>THEOLOGY</rdf:value>
    <rdfs:label xml:lang="en">theology</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2552,7 +2552,7 @@
    <rdf:value>THESAURUS</rdf:value>
    <rdfs:label xml:lang="en">thesaurus</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2561,7 +2561,7 @@
    <rdf:value>THRILLER</rdf:value>
    <rdfs:label xml:lang="en">thriller</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2570,7 +2570,7 @@
    <rdf:value>TOPOGRAPHICALPOETRY</rdf:value>
    <rdfs:label xml:lang="en">topographical poetry</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2583,7 +2583,7 @@
    <rdf:value>TRACTPAMPHLET</rdf:value>
    <rdfs:label xml:lang="en">tract pamphlet</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2592,7 +2592,7 @@
    <rdf:value>TRAGEDY</rdf:value>
    <rdfs:label xml:lang="en">tragedy</rdfs:label>
    <rdfs:label xml:lang="fr">tragédie</rdfs:label>
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2610,7 +2610,7 @@
    <rdf:value>TRAGICOMEDY</rdf:value>
    <rdfs:label xml:lang="en">tragicomedy</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2626,7 +2626,7 @@
    <rdf:value>TRANSLATION</rdf:value>
    <rdfs:label xml:lang="en">translation</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2642,7 +2642,7 @@
    <rdf:value>TRAVELWRITING</rdf:value>
    <rdfs:label xml:lang="en">travel writing</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2651,7 +2651,7 @@
    <rdf:value>TREATISE</rdf:value>
    <rdfs:label xml:lang="en">treatise</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2669,7 +2669,7 @@
    <rdf:value>UTOPIA</rdf:value>
    <rdfs:label xml:lang="en">utopia</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2678,7 +2678,7 @@
    <rdf:value>VERSENOVEL</rdf:value>
    <rdfs:label xml:lang="en">verse novel</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2692,7 +2692,7 @@
    <rdf:value>VIGNETTE</rdf:value>
    <rdfs:label xml:lang="en">vignette</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2705,7 +2705,7 @@
    <rdf:value>VILLANELLE</rdf:value>
    <rdfs:label xml:lang="en">villanelle</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2714,7 +2714,7 @@
    <rdf:value>YOUNGADULTWRITING</rdf:value>
    <rdfs:label xml:lang="en">young adult writing</rdfs:label>
    <rdfs:label xml:lang="fr" />
-   <rdfs:isDefinedBy rdf:resource="http://www.cwrc.ca/ontologies/cwrc#" />
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#" />
    <void:inDataset rdf:resource="#datasetdefinition" />
    <skos:inScheme rdf:resource="#Genre"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
