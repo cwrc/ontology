@@ -700,15 +700,15 @@ cwrc:VitaSackvilleWest
 cwrc:VirginiaWoolf
     cwrc:hasSocialRank cwrc:professional ;
     cwrc:hasSocialRackSelfDefined cwrc:professional ;
-    cwrc:hasNationality cwrc:english
-    cwrc:hasSexuality cwrc:bisexual
-    cwrc:hasSexualitySelfDefined cwrc:bisexual
+    cwrc:hasNationality cwrc:english;
+    cwrc:hasSexuality cwrc:bisexual;
+    cwrc:hasSexualitySelfDefined cwrc:bisexual .
 
 <http://www.cwrc.ca/cwrcdata/WOOLFSocialRankProfessional>
     a cwrc:SocialRankContext ;
     rdfs:label ":SocialRank for Virginia Woolf"@en ;
     oa:hasBody cwrc:professional ;
-    oa: hasTarget cwrc:VirginiaWoolf ;
+    oa:hasTarget cwrc:VirginiaWoolf ;
     prov:derivedFrom cwrc:Woolf12345 .
 
 <http://www.cwrc.ca/cwrcdata/WOOLFSocialRankSelfDefinedProfessional>
