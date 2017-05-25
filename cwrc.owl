@@ -186,7 +186,7 @@
    <owl:sameAs rdf:resource="http://erlangen-crm.org/current/E5.Event"/>
    <owl:sameAs rdf:resource="http://linkedevents.org/ontology/Event"/> 
    <owl:sameAs rdf:resource="http://en.wikipedia.org/wiki/Event"/>
-   <rdfs:isDefinedBy rdf:resource="https://raw.githubusercontent.com/cwrc/OrlandoOntology/master/OrlandoOntology#"/>
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -196,7 +196,7 @@
    <rdfs:comment xml:lang="en">An Actor in this event.</rdfs:comment>
    <rdfs:domain rdf:resource="#Event"/>
    <rdfs:range rdf:resource="#Actor"/>
-   <rdfs:isDefinedBy rdf:resource="https://raw.githubusercontent.com/cwrc/OrlandoOntology/master/OrlandoOntology#"/>
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -205,7 +205,7 @@
    <rdfs:label xml:lang="en">Actor</rdfs:label>
    <rdfs:comment xml:lang="en">A person performing a certain role within an event.</rdfs:comment>
    <owl:sameAs rdf:resource="http://erlangen-crm.org/current/E39.Actor"/>
-   <rdfs:isDefinedBy rdf:resource="https://raw.githubusercontent.com/cwrc/OrlandoOntology/master/OrlandoOntology#"/>
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -215,7 +215,7 @@
    <rdfs:comment xml:lang="en">The identity of the person who committed the act.</rdfs:comment>
    <rdfs:domain rdf:resource="#Actor"/>
    <rdfs:range rdf:resource="#Person"/>
-   <rdfs:isDefinedBy rdf:resource="https://raw.githubusercontent.com/cwrc/OrlandoOntology/master/OrlandoOntology#"/>
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -225,7 +225,7 @@
    <rdfs:comment xml:lang="en">The role taken on by this actor.</rdfs:comment>
    <rdfs:domain rdf:resource="#Actor"/>
    <rdfs:range rdf:resource="#Role"/>
-   <rdfs:isDefinedBy rdf:resource="https://raw.githubusercontent.com/cwrc/OrlandoOntology/master/OrlandoOntology#"/>
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -243,7 +243,7 @@
     <rdfs:comment xml:lang="en">The postal address is the equivalent of a schema.org address and inherits all of the data from that vocabulary to markup a modern postral address.</rdfs:comment>
     <owl:sameAs rdf:resource="http://schema.org/PostalAddress"/>
     <rdfs:subClassOf rdf:resource="#Place"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/OrlandoOntology#"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -262,7 +262,7 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
     <owl:sameAs rdf:resource="http://geovocab.org/spatial#Feature"/>
     <owl:sameAs rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
-   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/OrlandoOntology#"/>
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
