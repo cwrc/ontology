@@ -179,7 +179,7 @@ cwrc:CharlotteDacre
     cwrc:hasReligion cwrc:anglicanChurch, cwrc:jewishReligion ;
     cwrc:hasReligion cwrc:jewishReligion, cwrc:anglicanChurch ;
     cwrc:hasEthnicity cwrc:jewishEthnicity ;
-    cwrc:hasSocialClass cwrc:entrepreneurial-industrialist, cwrc:gentry, cwrc:indigent;
+    cwrc:hasSocialClass cwrc:entrepreneurial, cwrc:gentry, cwrc:indigent;
     a foaf:Person ;
     foaf:name "Charlotte Dacre" .
 
@@ -260,10 +260,10 @@ cwrc:CharlotteDacre
     oa:hasTarget cwrc:CharlotteDacre ;
     prov:derivedFrom cwrc:Dacre12345 .
 
-<http://www.cwrc.ca/cwrcdata/DACRESocialClassEntrepreneurial-Industrialist>
+<http://www.cwrc.ca/cwrcdata/DACRESocialClassEntrepreneurial>
     a cwrc:SocialClassContext ;
     rdfs:label ":Social Class for Charlotte Dacre"@en ;
-    oa:hasBody cwrc:entrepreneurial-industrialist ;
+    oa:hasBody cwrc:entrepreneurial ;
     oa:hasTarget cwrc:CharlotteDacre ;
     prov:derivedFrom cwrc:Dacre12345 .
 
@@ -340,7 +340,7 @@ cwrc:GraceAguilar
     cwrc:hasNationalitySelfDefined cwrc:EnglishNationalIdentity, cwrc:jewishNationalIdentity ;
     cwrc:hasRaceColourHeritage cwrc:whiteRace ;
     cwrc:hasReligion cwrc:jewishReligion, cwrc:protestant, cwrc:catholic ;
-    cwrc:hasSocialClass cwrc:entrepreneurial-industrialist, cwrc:middleClass ;
+    cwrc:hasSocialClass cwrc:entrepreneurial, cwrc:middleClass ;
     cwrc:hasReligionSelfDefined cwrc:jewishReligion ;
     cwrc:hasPoliticalAffiliation cwrc:proto-zionist ;
     a foaf:Person ;
@@ -417,10 +417,10 @@ cwrc:GraceAguilar
     oa:hasTarget cwrc:GraceAguilar ;
     prov:derivedFrom cwrc:Aguilar12345 .
 
-<http://www.cwrc.ca/cwrcdata/AGUILARSocialClassEntrepreneurial-Industrialist>
+<http://www.cwrc.ca/cwrcdata/AGUILARSocialClassEntrepreneurial>
     a cwrc:SocialClass ;
     rdfs:label ":Social Class for Grace Aguilar"@en ;
-    oa:hasBody cwrc:entrepreneurial-industrialist ;
+    oa:hasBody cwrc:entrepreneurial ;
     oa:hasTarget cwrc:GraceAguilar ;
     prov:derivedFrom cwrc:Aguilar12345 .
 
@@ -516,7 +516,7 @@ cwrc:CharlotteMontefiore
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasRaceColour cwrc:whiteRace ;
     cwrc:hasReligionSelfDefined cwrc:jewishReligion ;
-    cwrc:hasSocialClass cwrc:entrepreneurial-industrialist ;
+    cwrc:hasSocialClass cwrc:entrepreneurial ;
     cwrc:hasNationalHeritage cwrc:italian ;
     a foaf:Person ;
     foaf:name "Charlotte Montefiore" .
@@ -542,12 +542,12 @@ cwrc:CharlotteMontefiore
     oa:hasTarget cwrc:CharlotteMontefiore ;
     prov:derivedFrom cwrc:Montefiore12345 .
 
-<http://www.cwrc.ca/cwrcdata/MONTEFIORESocialClassEntrepreneurial-Industrialist>
-    a cwrc:ReligionContext ;
-    rdfs:label ":Religion Self Defined for Charlotte Montefiore"@en ;
-    oa:hasBody cwrc:jewishReligion ;
-    oa:hasTarget cwrc:CharlotteMontefiore ;
-    prov:derivedFrom cwrc:Montefiore12345 .
+<http://www.cwrc.ca/cwrcdata/MONTEFIORESocialClassEntrepreneurial>
+    a cwrc:SocialClass ;
+    rdfs:label ":Social Class for Charlotte Montefiore"@en ;
+    oa:hasBody cwrc:entrepreneurial ;
+    oa:hasTarget cwrc:Charlotte Montefiore ;
+    prov:derivedFrom cwrc:Montefiore12345 
 
 <http://www.cwrc.ca/cwrcdata/MONTEFIORENationalHeritageItalian>
     a cwrc:NationalHeritage ;
