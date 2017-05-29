@@ -1416,8 +1416,8 @@
 </cwrc:SocialClassIdentity>
 
 <cwrc:SocialClassIdentity rdf:about="#entrepreneurial-industrialist">
- <rdfs:label xml:lang="en">entrepreneurial industrialist</rdfs:label>
- <rdfs:label xml:lang="fr">entrepreneur industrialist</rdfs:label>
+ <rdfs:label xml:lang="en">entrepreneurial</rdfs:label>
+ <rdfs:label xml:lang="fr">entrepreneur</rdfs:label>
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
  <owl:subClass rdf:resource="#CulturalForm"/>
  <skos:definition xml:lang="en">Involves larges-scale enterprises such as running factories, or backing such enterprises through investing money, for instance, Elizabeth Montagu or Beatrice Webb.</skos:definition>
@@ -1479,7 +1479,8 @@
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE#"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
- </cwrc:SocialClassIdentity>
+  <owl:equivalentClass rdf:resource="#entrepreneurial-industrialist"/>
+ </owl:DeprecatedClass>
 
 <cwrc:SocialClassIdentity rdf:about="#indigent">
  <rdfs:label xml:lang="en">indigent</rdfs:label>
