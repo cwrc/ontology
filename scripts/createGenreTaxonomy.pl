@@ -20,14 +20,16 @@ my $iterator = $query->execute( $model );
 #if (length($query->error) > 1) {
 #  print $query->error . "\n";
  # }
-print "digraph GenreGraph {\n";
-# size=\"50,50\";
-# margin=0;\n";
+print "digraph GenreGraph {\n
+ margin=0;\n";
 #ratio=\"fill\";
+ # size=\"50,50\";
 
 while (my $row = $iterator->next) {
  my $astring = $row->{"uri"}->as_string();
-# print $astring ."\n";
+ # print $astring ."\n";
+
+
  my $innerquery =  RDF::Query->new('SELECT * WHERE { ' . $astring . '  <http://www.w3.org/2004/02/skos/core#broaderTransitive> ?upper . }');
  #
  #
@@ -37,7 +39,11 @@ while (my $row = $iterator->next) {
   my $rhs = "X" . substr(md5_hex($tworow->{"upper"}->as_string()),1,5);
   print " " .$lhs . " -> " . $rhs . "\n";
  }#while
- print " $lhs [label=\"" . $row->{"label"}->value() ."\"]\n";
+ my $uri = $astring;
+ $uri =~ s/</"/;
+ $uri =~ s/>/"/;
+ print " $lhs [label=\"" . $row->{"label"}->value()."\" URL=".$uri."]\n";
+
 }       #while        
 print "}";
  exit 0;        

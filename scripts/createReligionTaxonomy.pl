@@ -38,7 +38,11 @@ while (my $row = $iterator->next) {
   my $rhs = "X" . substr(md5_hex($tworow->{"upper"}->as_string()),1,5);
   print " " .$lhs . " -> " . $rhs . "\n";
  }#while
- print " $lhs [label=\"" . $row->{"label"}->value() ."\"]\n";
+ my $uri = $astring;
+ $uri =~ s/</"/;
+ $uri =~ s/>/"/;
+ # print $uri."\n";
+ print " $lhs [label=\"" . $row->{"label"}->value()."\" URL=".$uri."]\n";
 }       #while        
 print "}";
  exit 0;        
