@@ -603,6 +603,26 @@ cwrc:JuliaFrankau
     oa:hasTarget cwrc:JuliaFrankau ;
     prov:derivedFrom cwrc:Frankau12345 .
 
+# VITA SACKVILLE-WEST
+cwrc:VitaSackvilleWest
+    cwrc:hasSocialClass cwrc:nobility ;
+    cwrc:hasNationalHeritage cwrc:spanish ;
+#forebear maternal grandmother 
+#Rob review forebear
+    cwrc:hasNationalHeritageSelfDefined cwrc:spanish ;
+    cwrc:hasEthnicity cwrc:gipsy ;
+#forebear maternal grandmother
+    cwrc:hasEthnicitySelfDefined cwrc:gipsy ;
+    cwrc:hasNationalHeritage cwrc:english ;
+#forebear grandfather
+    cwrc:hasNationalHeritageSelfDefined cwrc:english ;
+    cwrc:hasSexuality cwrc:bisexual ;
+    cwrc:hasSexualitySelfDefined cwrc:bisexual ;
+    cwrc:hasSexuality cwrc:lesbian ;
+    cwrc:hasSexualitySelfDefined cwrc:lesbian ;
+    a foaf:Person ;
+    foaf:name "Vita Sackville-West" .
+
 # VIRGINIA WOOLF
 cwrc:VirginiaWoolf
     cwrc:hasSocialRank cwrc:professional ;
@@ -700,6 +720,10 @@ cwrc:ElizabethI
     cwrc:hasNationality cwrc:englishNationalIdentity ;
     a foaf:Person ;
     foaf:name "Elizabeth I" .
+    
+cwrc:Tilda Swindon
+    a foaf:Person ;
+    foaf:name "Tilda Swindon" .
 
 
 cwrc:annaleanowens1
