@@ -721,11 +721,11 @@ cwrc:ElizabethI
     a foaf:Person ;
     foaf:name "Elizabeth I" .
     
-cwrc:Tilda Swindon
-    a foaf:Person ;
-    foaf:name "Tilda Swindon" .
-
-
+<http://www.cwrc.ca/cwrcdata/TildaSwindon>
+   owl:sameAs <http://www.viaf.org/viaf/117443790/#Swinton,_Tilda>;
+   a foaf:Person;
+   foaf:name "Tilda Swindon" .
+  
 cwrc:annaleanowens1
     nif:isString """Although AL herself, in attempting to adopt an unequivocally English identity, implicitly claimed that she was white, evidence suggests that while
 her father was probably Welsh (he had lived in Middlesex) and presumably white, her mother was quite possibly Eurasian. If this is the case then
