@@ -68,7 +68,7 @@ $(ONTOLOGY)-ref.bib:
 	wget -O $(ONTOLOGY)-ref.bib "https://api.zotero.org/groups/1018142/items/top?start=0&limit=100&format=bibtex&v=1"
 figures/religionTaxonomy-$(ONTOLOGY_DATE).png: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 	# dot -Tsvg example1_graph.dot -o test.svg
-	./scripts/createReligionTaxonomy.pl $(ONTOLOGY)-$(ONTOLOGY_DATE).owl | dot -ofigures/religionTaxonomy-$(ONTOLOGY_DATE).svg -Tsvg 
+	./scripts/createReligionTaxonomy.pl $(ONTOLOGY)-$(ONTOLOGY_DATE).owl | unflatten -l 5 -c 10 | dot -ofigures/religionTaxonomy-$(ONTOLOGY_DATE).svg -Tsvg 
 
 figures/genreTaxonomy-$(ONTOLOGY_DATE).png: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 
