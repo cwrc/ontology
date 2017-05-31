@@ -690,6 +690,70 @@ cwrc:VirginiaWoolf
    cwrc:hasGenre cwrc:genreNovel ;  
    dc:title "To the Lighthouse" ;
    dc:creator cwrc:VirginiaWoolf .
+   
+<http://www.cwrc.ca/cwrcdata/ALadyofQuality>
+   a frbr:Work, bibo:Book;
+   schema:workExample <http://cwrc.ca/cwrcdata/ALadyofQuality>:
+   cwrc:hasGenre cwrc:genreFiction ;
+   cwrc:hasGenre cwrc:genreRomance ;
+   cwrc:hasGenre cwrc:genreHistorical ;
+   dc:creator cwrc:FrancesHodgsonBurnett .
+   
+<http://www.cwrc.ca/cwrcdata/ToldByAnIdiot>
+   a frbr:Work, bibo:Book;
+   schema:workExample <http://cwrc.ca/cwrcdata/ToldByAnIdiot>:
+   cwrc:hasGenre cwrc:genreNovel ;
+   dc:creator cwrc:Rose Macaulay .  
+
+<http://www.cwrc.ca/cwrcdata/HermeticDefinition>
+   a frbr:Work, bibo:Book;
+   schema:workExample <http://cwrc.ca/cwrcdata/ALadyofQuality>:
+   cwrc:hasGenre cwrc:genrePoetry ;
+   dc:creator cwrc:HD .
+   
+<http://www.cwrc.ca/cwrcdata/KnoleAndTheSackvilles>
+   a frbr:Work, bibo:Book;
+   schema:workExample <http://cwrc.ca/cwrcdata/KnoleAndTheSackvilles>:
+   cwrc:hasGenre cwrc:genreHistory ;
+   dc:date "1922";
+   dc:creator cwrc:Vita Sackville-West.
+   
+<http://www.cwrc.ca/cwrcdata/ABoyAtTheHogarthPress>
+   a frbr:Work, bibo:Book;
+   schema:workExample <http://www.cwrc.ca/cwrcdata/ABoyAtTheHogarthPress>;
+   cwrc:hasGenre cwrc:genreNovel ;  
+   dc:title "A Boy at the Hogarth Press" ;
+   dc:creator cwrc:RichardKennedy .   
+   
+<http://www.cwrc.ca/cwrcdata/Orlando>
+   a frbr:Work, bibo:Film;
+   schema:workExample <http://www.cwrc.ca/cwrcdata/OrlandoExpression>;
+   cwrc:hasGenre cwrc:genreFilm ; 
+   owl:sameAs <http://www.imdb.com/title/tt0107756/> ;
+   dc:creator cwrc:SallyPotter .   
+ 
+ #HEREHERE
+ 
+ <http://www.cwrc.ca/cwrcdata/Orlando>
+   a frbr:Work, dbpedia:Play;
+   schema:workExample <http://www.cwrc.ca/cwrcdata/OrlandoExpression>;
+   cwrc:hasGenre cwrc:genreFilm ; 
+   dc:creator cwrc:SarahRuel .
+ 
+ <http://www.cwrc.ca/cwrcdata/TheDailyChronicle>
+   a frbr:Work, bibo:Newspaper;
+   schema;workExample <http://www.cwrc.ca/cwrcdata/TheDailyChronicle>;
+   cwrc:hasGenre cwrc:genreNewspaper ;
+ 
+ <http://www.cwrc.ca/cwrcdata/TheObserver>
+   a frbr:Work, bibo:Newspaper;
+   schema;workExample <http://www.cwrc.ca/cwrcdata/TheObserver>;
+   cwrc:hasGenre cwrc:genreNewspaper ;
+ 
+ <http://www.cwrc.ca/cwrcdata/MorningPost>
+   a frbr:Work, bibo:Newspaper;
+   schema;workExample <http://www.cwrc.ca/cwrcdata/MorningPost>;
+   cwrc:hasGenre cwrc:genreNewspaper ;
 
 <http://www.cwrc.ca/cwrcdata/OrlandoExpression>
    a frbr:Expression, bibo:Book;
@@ -717,12 +781,12 @@ cwrc:VirginiaWoolf
    rdfs:label "HogarthPress"@en ;
    owl:sameAs <http://dbpedia.org/resource/Hogarth_Press> .
    
-   
-   
  <http://www.cwrc.ca/cwrcdata/ClassicStageCompany>
     a foaf:Organization;
     foaf:name "Classic Stage Company"@en ;
-    rdfs:label "Classic Stage Company"@en .  
+    rdfs:label "Classic Stage Company"@en . 
+    
+#People go here    
 
 cwrc:AlexanderPope
     cwrc:hasGender cwrc:genderManMale ;
