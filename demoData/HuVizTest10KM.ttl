@@ -670,8 +670,8 @@ cwrc:VirginiaWoolf
     oa:hasBody cwrc:bisexual ;
     oa:hasTarget cwrc:VirginiaWoolf ;
     prov:derivedFrom cwrc:Woolf12345 .
-
-#Kim testing here
+    
+ #Works go here   
 
 <http://www.cwrc.ca/cwrcdata/Orlando>
    a frbr:Work, bibo:Book;
@@ -683,12 +683,13 @@ cwrc:VirginiaWoolf
    dc:title "Orlando" ;
    rdfs:label "Orlando (Work)"@en ;
    dc:creator cwrc:VirginiaWoolf .
-  
-<http://www.cwrc.ca/cwrcdata/HogarthPress>
-   a foaf:Organization;
-   foaf:name "HogarthPress"@en ;
-   rdfs:label "HogarthPress"@en ;
-   owl:sameAs <http://dbpedia.org/resource/Hogarth_Press> .
+   
+<http://www.cwrc.ca/cwrcdata/ToTheLighthouse>
+   a frbr:Work, bibo:Book;
+   schema:workExample <http://www.cwrc.ca/cwrcdata/ToTheLighthouse>;
+   cwrc:hasGenre cwrc:genreNovel ;  
+   dc:title "To the Lighthouse" ;
+   dc:creator cwrc:VirginiaWoolf .
 
 <http://www.cwrc.ca/cwrcdata/OrlandoExpression>
    a frbr:Expression, bibo:Book;
@@ -703,11 +704,25 @@ cwrc:VirginiaWoolf
    dc:title "Orlando (2006)" ;
    dc:creator cwrc:VirginiaWoolf .
 
+#Organizations go here
+
 <http://www.cwrc.ca/cwrcdata/MarinerBooks>
    a foaf:Organization;
    foaf:name "Mariner Books"@en ;
    rdfs:label "Mariner Books"@en .
-
+   
+<http://www.cwrc.ca/cwrcdata/HogarthPress>
+   a foaf:Organization;
+   foaf:name "HogarthPress"@en ;
+   rdfs:label "HogarthPress"@en ;
+   owl:sameAs <http://dbpedia.org/resource/Hogarth_Press> .
+   
+   
+   
+ <http://www.cwrc.ca/cwrcdata/ClassicStageCompany>
+    a foaf:Organization;
+    foaf:name "Classic Stage Company"@en ;
+    rdfs:label "Classic Stage Company"@en .  
 
 cwrc:AlexanderPope
     cwrc:hasGender cwrc:genderManMale ;
