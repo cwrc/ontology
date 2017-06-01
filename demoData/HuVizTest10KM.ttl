@@ -624,7 +624,7 @@ cwrc:VitaSackvilleWest
     foaf:name "Vita Sackville-West" .
 
 # VIRGINIA WOOLF
-cwrc:VirginiaWoolf
+<http://www.cwrc.ca/cwrcdata/VirginiaWoolf>
     cwrc:hasSocialRank cwrc:professional ;
     cwrc:hasSocialRackSelfDefined cwrc:professional ;
     cwrc:hasNationality cwrc:english;
@@ -632,8 +632,8 @@ cwrc:VirginiaWoolf
     cwrc:hasSexualitySelfDefined cwrc:bisexual ;
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasNationality cwrc:englishNationalIdentity ;
-    cwrc:alludesExplicitlyTo cwrc:ElizabethI ;
-    cwrc:respondsTo cwrc:EmbassyLetters ;
+    cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/ElizabethI> ;
+    cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/EmbassyLetters> ;
     a foaf:Person ;
     foaf:name "Virginia Woolf" .
 		
@@ -641,35 +641,35 @@ cwrc:VirginiaWoolf
     a cwrc:SocialRankContext ;
     rdfs:label ":SocialRank for Virginia Woolf"@en ;
     oa:hasBody cwrc:professional ;
-    oa:hasTarget cwrc:VirginiaWoolf ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
     prov:derivedFrom cwrc:Woolf12345 .
 
 <http://www.cwrc.ca/cwrcdata/WOOLFSocialRankSelfDefinedProfessional>
     a cwrc:SocialRankSelfDefinedContext ;
     rdfs:label "SocialRankSelfDefined for Virginia Woolf"@en ;
     oa:hasBody cwrc:professional ;
-    oa:hasTarget cwrc:VirginiaWoolf ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
     prov:derivedFrom cwrc:Woolf12345 .
 
 <http://www.cwrc.ca/cwrcdata/WOOLFNationalIdentityEnglish>
     a cwrc:NationalIdentityContext ;
     rdfs:label ":NationalIdentity for Virginia Woolf"@en ;
     oa:hasBody cwrc:english ;
-    oa:hasTarget cwrc:VirginiaWoolf ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
     prov:derivedFrom cwrc:Woolf12345 .
 
 <http://www.cwrc.ca/cwrcdata/WOOLFSexualityBisexual>
     a cwrc:SexualityContext ;
     rdfs:label ":Sexuality for Virginia Woolf"@en ;
     oa:hasBody cwrc:bisexual ;
-    oa:hasTarget cwrc:VirginiaWoolf ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
     prov:derivedFrom cwrc:Woolf12345 .
 
 <http://www.cwrc.ca/cwrcdata/WOOLFSexualitySelfDefinedBisexual>
     a cwrc:SexualitySelfDefinedContext ;
     rdfs:label ":SexualitySelfDefined for Virginia Woolf"@en ;
     oa:hasBody cwrc:bisexual ;
-    oa:hasTarget cwrc:VirginiaWoolf ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
     prov:derivedFrom cwrc:Woolf12345 .
     
  #Works go here   
@@ -679,47 +679,47 @@ cwrc:VirginiaWoolf
    schema:workExample <http://www.cwrc.ca/cwrcdata/OrlandoExpression>;
    cwrc:hasGenre cwrc:genreNovel ;
    loc:pub <http://www.cwrc.ca/cwrcdata/HogarthPress> ;
-   cwrc:alludesExplicitlyTo cwrc:AlexanderPope ;
-   cwrc:alludesExplicitlyTo cwrc:ElizabethI ;
-   cwrc:relatesByMaterialFeaturesTo cwrc:VitaSackvilleWest ;
-   cwrc:relatesByMaterialFeaturesTo cwrc:KnoleHouse ;   
+   cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/AlexanderPope> ;
+   cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/ElizabethI> ;
+   cwrc:relatesByMaterialFeaturesTo <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+   cwrc:relatesByMaterialFeaturesTo <http://www.cwrc.ca/cwrcdata/KnoleHouse> ;   
    cwrc:contestsGenre cwrc:genreBiography ;
    cwrc:contestsGenre cwrc:genreFiction ;
    cwrc:contestsGenre cwrc:genreMockforms ;
    cwrc:contestsGenre cwrc:genreHistory ;
-   cwrc:relatesByCirculationTo cwrc:ToTheLighthouse ;
-   cwrc:relatesByCirculationTo cwrc:HarcourtBrace ;
-   cwrc:relatesByCirculationTo cwrc:RichardKennedy ;
-   cwrc:relatesByManuscriptTo cwrc:VitaSackvilleWest ;
-   cwrc:relatesByArchiveTo cwrc:KnoleHouse ;
-   cwrc:hasSetting cwrc:Constantinople ;
-   cwrc:respondsTo cwrc:LadyMaryWortleyMontagu ;
-   cwrc:relatesEroticallyTo cwrc:VirginiaWoolf ;
-   cwrc:relatesEroticallyTo cwrc:VirginiaWoolf ;
-   cwrc:influences cwrc:ALadyOfQuality ;
-   cwrc:relatesPoliticallyTo cwrc:VirginiaWoolf ;
-   cwrc:relatesBySisterHoodTo cwrc:VirginiaWoolf ;
-   cwrc:relatesTextuallyTo cwrc:HermeticDefinition ;
-   cwrc:relatesEroticallyTo cwrc:VitaSackvilleWest ;
-   cwrc:relatesByReceptionTo cwrc:VitaSackvilleWest ;
-   cwrc:relatesByEducationTo cwrc:HelenDunmore ;
+   cwrc:relatesByCirculationTo <http://www.cwrc.ca/cwrcdata/ToTheLighthouse> ;
+   cwrc:relatesByCirculationTo <http://www.cwrc.ca/cwrcdata/HarcourtBrace> ;
+   cwrc:relatesByCirculationTo <http://www.cwrc.ca/cwrcdata/RichardKennedy> ;
+   cwrc:relatesByManuscriptTo <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+   cwrc:relatesByArchiveTo <http://www.cwrc.ca/cwrcdata/KnoleHouse> ;
+   cwrc:hasSetting <http://www.cwrc.ca/cwrcdata/Constantinople> ;
+   cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/LadyMaryWortleyMontagu> ;
+   cwrc:relatesEroticallyTo <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+   cwrc:relatesEroticallyTo <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+   cwrc:influences <http://www.cwrc.ca/cwrcdata/ALadyOfQuality> ;
+   cwrc:relatesPoliticallyTo <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+   cwrc:relatesBySisterHoodTo <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+   cwrc:relatesTextuallyTo <http://www.cwrc.ca/cwrcdata/HermeticDefinition> ;
+   cwrc:relatesEroticallyTo <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+   cwrc:relatesByReceptionTo <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+   cwrc:relatesByEducationTo <http://www.cwrc.ca/cwrcdata/HelenDunmore> ;
    dc:title "Orlando" ;
    rdfs:label "Orlando (Work)"@en ;
-   dc:creator cwrc:VirginiaWoolf .
+   dc:creator <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> .
    
 <http://www.cwrc.ca/cwrcdata/ToTheLighthouse>
    a frbr:Work, bibo:Book;
    schema:workExample <http://www.cwrc.ca/cwrcdata/ToTheLighthouse>;
    cwrc:hasGenre cwrc:genreNovel ;  
    dc:title "To the Lighthouse" ;
-   rdfs:label "To the Lighthouse)"@en ;
-   dc:creator cwrc:VirginiaWoolf .
+   rdfs:label "To the Lighthouse"@en ;
+   dc:creator <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> .
    
 <http://www.cwrc.ca/cwrcdata/EmbassyLetters>   
    a frbr:Work, bibo:Book;
    schema:workExample <http://www.cwrc.ca/cwrcdata/EmbassyLetters>;
    cwrc:hasGenre cwrc:genreLetter ;
-   dc:creator cwrc:LadyMaryWortleyMontagu .
+   dc:creator <http://www.cwrc.ca/cwrcdata/LadyMaryWortleyMontagu> .
    
 <http://www.cwrc.ca/cwrcdata/ALadyofQuality>
    a frbr:Work, bibo:Book;
@@ -728,39 +728,39 @@ cwrc:VirginiaWoolf
    cwrc:hasGenre cwrc:genreRomance ;
    cwrc:hasGenre cwrc:genreHistorical ;
    rdfs:label "A Lady of Quality"@en ;   
-   dc:creator cwrc:FrancesHodgsonBurnett .
+   dc:creator <http://www.cwrc.ca/cwrcdata/FrancesHodgsonBurnett> .
    
 <http://www.cwrc.ca/cwrcdata/ToldByAnIdiot>
    a frbr:Work, bibo:Book;
    schema:workExample <http://cwrc.ca/cwrcdata/ToldByAnIdiot>;
    cwrc:hasGenre cwrc:genreNovel ;
    rdfs:label "Told by an Idiot"@en ;
-   dc:creator cwrc:RoseMacaulay .  
+   dc:creator <http://www.cwrc.ca/cwrcdata/RoseMacaulay> .  
 
 <http://www.cwrc.ca/cwrcdata/HermeticDefinition>
    a frbr:Work, bibo:Book;
    schema:workExample <http://cwrc.ca/cwrcdata/ALadyofQuality>;
    cwrc:hasGenre cwrc:genrePoetry ;
    rdfs:label "HermeticDefinition"@en ;
-   dc:creator cwrc:HD .
+   dc:creator <http://www.cwrc.ca/cwrcdata/HD> .
    
 <http://www.cwrc.ca/cwrcdata/KnoleAndTheSackvilles>
    a frbr:Work, bibo:Book;
    schema:workExample <http://cwrc.ca/cwrcdata/KnoleAndTheSackvilles>;
    cwrc:hasGenre cwrc:genreHistory ;
-   cwrc:influences cwrc:Orlando ;
+   cwrc:influences <http://www.cwrc.ca/cwrcdata/Orlando> ;
    dc:date "1922";
    rdfs:label "Knole and the Sackvilles"@en ;
-   dc:creator cwrc:VitaSackvilleWest.
+   dc:creator <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> .
 
 <http://www.cwrc.ca/cwrcdata/TwelveDays>
    a frbr:Work, bibo:Book;
    schema:workExample <http://cwrc.ca/cwrcdata/TwelveDays>;
    cwrc:hasGenre cwrc:genreHistory ;
-   cwrc:hasReceptionRelationTo cwrc:Orlando ;
+   cwrc:hasReceptionRelationTo <http://www.cwrc.ca/cwrcdata/Orlando> ;
    dc:date "1922";
    rdfs:label "Twelve Days"@en ;
-   dc:creator cwrc:VitaSackvilleWest.
+   dc:creator <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> .
    
 <http://www.cwrc.ca/cwrcdata/ABoyAtTheHogarthPress>
    a frbr:Work, bibo:Book;
@@ -768,20 +768,20 @@ cwrc:VirginiaWoolf
    cwrc:hasGenre cwrc:genreNovel ;  
    dc:title "A Boy at the Hogarth Press" ;
    rdfs:label "A Boy at the Hogarth Press"@en ;
-   dc:creator cwrc:RichardKennedy .   
+   dc:creator <http://www.cwrc.ca/cwrcdata/RichardKennedy> .   
    
 <http://www.cwrc.ca/cwrcdata/Orlando>
    a frbr:Work, bibo:Film;
    schema:workExample <http://www.cwrc.ca/cwrcdata/OrlandoExpression>;
    cwrc:hasGenre cwrc:genreFilm ; 
    owl:sameAs <http://www.imdb.com/title/tt0107756/> ;
-   dc:creator cwrc:SallyPotter .   
+   dc:creator <http://www.cwrc.ca/cwrcdata/SallyPotter> .   
    
  <http://www.cwrc.ca/cwrcdata/Orlando>
    a frbr:Work, dbpedia:Play;
    schema:workExample <http://www.cwrc.ca/cwrcdata/OrlandoExpression>;
    cwrc:hasGenre cwrc:genreFilm ; 
-   dc:creator cwrc:SarahRuel .
+   dc:creator <http://www.cwrc.ca/cwrcdata/SarahRuel> .
  
  <http://www.cwrc.ca/cwrcdata/TheDailyChronicle>
    a frbr:Work, bibo:Newspaper;
@@ -796,14 +796,14 @@ cwrc:VirginiaWoolf
  <http://www.cwrc.ca/cwrcdata/MorningPost>
    a frbr:Work, bibo:Newspaper;
    schema:workExample <http://www.cwrc.ca/cwrcdata/MorningPost>;
-   cwrc:respondsTo cwrc:Orlando ;
+   cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/Orlando> ;
    cwrc:hasGenre cwrc:genreNewspaper .
 
 <http://www.cwrc.ca/cwrcdata/OrlandoExpression>
    a frbr:Expression, bibo:Book;
    schema:workExample <http://www.cwrc.ca/cwrcdata/Orlando>;
    cwrc:hasGenre cwrc:genreNovel ;
-   cwrc:hasMaterialFeaturesRelatedto cwrc:TildaSwinton ;
+   cwrc:hasMaterialFeaturesRelatedto <http://www.cwrc.ca/cwrcdata/TildaSwinton> ;
    loc:pub <http://www.cwrc.ca/cwrcdata/MarinerBooks> ;
    cwrc:hasMaterialFeaturesRelatedto <http://dbpedia.org/resource/Knole_House>, <http://dbpedia.org/resource/Sevenoaks>, <http://sws.geonames.org/3333158>, <http://sws.geonames.org/6269131>;
    bibo:isbn "978-0156031516";
@@ -811,7 +811,7 @@ cwrc:VirginiaWoolf
    bibo:edition "1";
    rdfs:label "Orlando"@en ;
    dc:title "Orlando (2006)" ;
-   dc:creator cwrc:VirginiaWoolf .
+   dc:creator <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> .
 
 #Organizations go here
 
@@ -833,35 +833,35 @@ cwrc:VirginiaWoolf
     
 #People go here    
 
-cwrc:AlexanderPope
+<http://www.cwrc.ca/cwrcdata/AlexanderPope>
     cwrc:hasGender cwrc:genderManMale ;
     cwrc:hasNationality cwrc:englishNationalIdentity ;
     a foaf:Person ;
     foaf:name "Alexander Pope" .
 
-cwrc:ElizabethI
+<http://www.cwrc.ca/cwrcdata/ElizabethI>
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasNationality cwrc:englishNationalIdentity ;
     a foaf:Person ;
     foaf:name "Elizabeth I" .
     
-cwrc:TildaSwinton
+<http://www.cwrc.ca/cwrcdata/TildaSwinton>
     owl:sameAs <http://www.viaf.org/viaf/117443790/#Swinton,_Tilda>;
     a foaf:Person ;
     foaf:name "Tilda Swinton" .
    
-cwrc:SallyPotter
+<http://www.cwrc.ca/cwrcdata/SallyPotter>
     owl:sameAs <http://www.viaf.org/viaf/78760437/#Potter,_Sally>;
     a foaf:Person ;
     foaf:name "Sally Potter" .
    
-cwrc:EdwinMorgan
+<http://www.cwrc.ca/cwrcdata/EdwinMorgan>
     owl:sameAs <http://www.viaf.org/viaf/68969203/#Morgan,_Edwin,_1920-2010>;
-    cwrc:alludesExplicitlyTo cwrc:VirginiaWoolf ;
+    cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
     a foaf:Person ;
     foaf:name "Edwin Morgan" .
   
-cwrc:RichardKennedy
+<http://www.cwrc.ca/cwrcdata/RichardKennedy>
     owl:sameAs <http://www.viaf.org/viaf/52955138/#Kennedy,_Richard,_1910-1989>;
     a foaf:Person ;
     foaf:name "Richard Kennedy" .
@@ -870,51 +870,51 @@ cwrc:RichardKennedy
 #   a foaf:Person ;
 #   foaf:name "Sir John Colling Squire" .
     
-cwrc:RebeccaWest
+<http://www.cwrc.ca/cwrcdata/RebeccaWest>
     owl:sameAs <http://viaf.org/viaf/108321467/#West,_Rebecca,_1892-1983>;
-    cwrc:respondsTo cwrc:Orlando ;
+    cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/Orlando> ;
     a foaf:Person ;
     foaf:name "Rebecca West" .    
     
-cwrc:DHLawrence
+<http://www.cwrc.ca/cwrcdata/DHLawrence>
     owl:sameAs <http://viaf.org/viaf/95150359/#Lawrence,_D._H.,_(David_Herbert),_1885-1930>;
-    cwrc:respondsTo cwrc:Orlando ;
+    cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/Orlando> ;
     a foaf:Person ;
     foaf:name "D H Lawrence" .    
     
-cwrc:AldousHuxley
+<http://www.cwrc.ca/cwrcdata/AldousHuxley>
     owl:sameAs <http://viaf.org/viaf/71392434/#Huxley,_Aldous,_1894-1963>;
-    cwrc:respondsTo cwrc:Orlando ;
+    cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/Orlando> ;
     a foaf:Person ;
     foaf:name "Aldous Huxley" .  
     
-cwrc:JeanetteWinterson
+<http://www.cwrc.ca/cwrcdata/JeanetteWinterson>
     owl:sameAs <http://viaf.org/viaf/4961254/#Winterson,_Jeanette,_1959->;
-    cwrc:respondsTo cwrc:Orlando ;
+    cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/Orlando> ;
     a foaf:Person ;
     foaf:name "Jeanette Winterson" .
     
-cwrc:SarahRuhl
+<http://www.cwrc.ca/cwrcdata/SarahRuhl>
     owl:sameAs <http://viaf.org/viaf/81312438/#Ruhl,_Sarah,_1974->;
     a foaf:Person ;
     foaf:name "Sarah Ruhl" .    
 
-cwrc:LadyMaryWortleyMonatgu
+<http://www.cwrc.ca/cwrcdata/LadyMaryWortleyMonatgu>
     owl:sameAs <http://viaf.org/viaf/7394587/#Montagu,_Mary_Wortley,_Lady,_1689-1762>;
     a foaf:Person ;
     foaf:name "Lady Mary Wortley Montagu" .
     
-cwrc:FrancesHodgsonBurnett
+<http://www.cwrc.ca/cwrcdata/FrancesHodgsonBurnett>
     owl:sameAs <http://viaf.org/viaf/27061925/#Burnett,_Frances_Hodgson,_1849-1924>;
     a foaf:Person ;
     foaf:name "Frances Hodgson Burnett" .   
 
-cwrc:RoseMacaulay
+<http://www.cwrc.ca/cwrcdata/RoseMacaulay>
     owl:sameAs <http://viaf.org/viaf/100194559/#Macaulay,_Rose,_1881-1958>;
     a foaf:Person ;
     foaf:name "Rose Macaulay" .        
 
-cwrc:HD
+<http://www.cwrc.ca/cwrcdata/HD>
     owl:sameAs <http://viaf.org/viaf/4925150/#H.D._(Hilda_Doolittle),_1886-1961>;
     a foaf:Person ;
     foaf:name "H D" .        
