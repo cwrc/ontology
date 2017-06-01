@@ -721,7 +721,7 @@ cwrc:VirginiaWoolf
    cwrc:hasGenre cwrc:genreHistory ;
    dc:date "1922";
    rdfs:label "Knole and the Sackvilles"@en ;
-   dc:creator cwrc:VitaSackville-West.
+   dc:creator cwrc:VitaSackvilleWest.
 
 <http://www.cwrc.ca/cwrcdata/TwelveDays>
    a frbr:Work, bibo:Book;
@@ -729,7 +729,7 @@ cwrc:VirginiaWoolf
    cwrc:hasGenre cwrc:genreHistory ;
    dc:date "1922";
    rdfs:label "Twelve Days"@en ;
-   dc:creator cwrc:VitaSackville-West.
+   dc:creator cwrc:VitaSackvilleWest.
    
 <http://www.cwrc.ca/cwrcdata/ABoyAtTheHogarthPress>
    a frbr:Work, bibo:Book;
@@ -839,10 +839,12 @@ cwrc:ElizabethI
     foaf:name "Sir John Colling Squire" .
     
 <http://www.cwrc.ca/cwrcdata/RebeccaWest>
+    owl:sameAs <http://viaf.org/viaf/108321467/#West,_Rebecca,_1892-1983>;
     a foaf:Person ;
     foaf:name "Rebecca West" .    
     
 <http://www.cwrc.ca/cwrcdata/DHLawrence>
+    owl:sameAs <http://viaf.org/viaf/95150359/#Lawrence,_D._H.,_(David_Herbert),_1885-1930>;
     a foaf:Person ;
     foaf:name "D H Lawrence" .    
     
