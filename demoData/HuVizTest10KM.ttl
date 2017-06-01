@@ -680,6 +680,19 @@ cwrc:VirginiaWoolf
    loc:pub <http://www.cwrc.ca/cwrcdata/HogarthPress> ;
    cwrc:alludesExplicitlyTo cwrc:AlexanderPope ;
    cwrc:alludesExplicitlyTo cwrc:ElizabethI ;
+   cwrc:relatesByMaterialFeaturesTo cwrc:VitaSackvilleWest ;
+   cwrc:relatesByMaterialFeaturesTo cwrc:KnoleHouse ;   
+   cwrc:contestsGenre cwrc:genreBiography ;
+   cwrc:contestsGenre cwrc:genreFiction ;
+   cwrc:contestsGenre cwrc:genreMockforms ;
+   cwrc:contestsGenre cwrc:genreHistory ;
+   cwrc:relatesByCirculationTo cwrc:ToTheLighthouse ;
+   cwrc:relatesByCirculationTo cwrc:HarcourtBrace ;
+   cwrc:relatesByCirculationTo cwrc:RichardKennedy ;
+   cwrc:relatesByManuscriptTo cwrc:VitaSackvilleWest ;
+   cwrc:relatesByArchiveTo cwrc:KnoleHouse ;
+   cwrc:hasSetting cwrc:Constantinople ;
+   cwrc:respondsTo cwrc:LadyMaryWortleyMontagu ;
    dc:title "Orlando" ;
    rdfs:label "Orlando (Work)"@en ;
    dc:creator cwrc:VirginiaWoolf .
@@ -745,9 +758,7 @@ cwrc:VirginiaWoolf
    cwrc:hasGenre cwrc:genreFilm ; 
    owl:sameAs <http://www.imdb.com/title/tt0107756/> ;
    dc:creator cwrc:SallyPotter .   
- 
- #HEREHERE
- 
+   
  <http://www.cwrc.ca/cwrcdata/Orlando>
    a frbr:Work, dbpedia:Play;
    schema:workExample <http://www.cwrc.ca/cwrcdata/OrlandoExpression>;
