@@ -633,6 +633,7 @@ cwrc:VirginiaWoolf
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasNationality cwrc:englishNationalIdentity ;
     cwrc:alludesExplicitlyTo cwrc:ElizabethI ;
+    cwrc:respondsTo cwrc:EmbassyLetters ;
     a foaf:Person ;
     foaf:name "Virginia Woolf" .
 		
@@ -695,6 +696,14 @@ cwrc:VirginiaWoolf
    cwrc:respondsTo cwrc:LadyMaryWortleyMontagu ;
    cwrc:relatesEroticallyTo cwrc:VirginiaWoolf ;
    cwrc:relatesEroticallyTo cwrc:VirginiaWoolf ;
+   cwrc:influences cwrc:ALadyOfQuality ;
+   cwrc:relatesPoliticallyTo cwrc:VirginiaWoolf ;
+   cwrc:relatesBySisterHoodTo cwrc:VirginiaWoolf ;
+   cwrc:relatesTextuallyTo cwrc:HermeticDefinition ;
+   cwrc:relatesEroticallyTo cwrc:VitaSackvilleWest ;
+   cwrc:relatesByReceptionTo cwrc:VitaSackvilleWest ;
+   cwrc:relatesByEducationTo cwrc:HelenDunmore ;
+   cwrc
    dc:title "Orlando" ;
    rdfs:label "Orlando (Work)"@en ;
    dc:creator cwrc:VirginiaWoolf .
@@ -706,6 +715,12 @@ cwrc:VirginiaWoolf
    dc:title "To the Lighthouse" ;
    rdfs:label "To the Lighthouse)"@en ;
    dc:creator cwrc:VirginiaWoolf .
+   
+<http://www.cwrc.ca/cwrcdata/EmbassyLetters>   
+   a frbr:Work, bibo:Book;
+   schema:workExample <http://www.cwrc.ca/cwrcdata/EmbassyLetters>;
+   cwrc:hasGenre cwrc:genreLetter ;
+   dc:creator cwrc:LadyMaryWortleyMontagu .
    
 <http://www.cwrc.ca/cwrcdata/ALadyofQuality>
    a frbr:Work, bibo:Book;
@@ -734,6 +749,7 @@ cwrc:VirginiaWoolf
    a frbr:Work, bibo:Book;
    schema:workExample <http://cwrc.ca/cwrcdata/KnoleAndTheSackvilles>;
    cwrc:hasGenre cwrc:genreHistory ;
+   cwrc:influences cwrc:Orlando (Work) ;
    dc:date "1922";
    rdfs:label "Knole and the Sackvilles"@en ;
    dc:creator cwrc:VitaSackvilleWest.
@@ -742,6 +758,7 @@ cwrc:VirginiaWoolf
    a frbr:Work, bibo:Book;
    schema:workExample <http://cwrc.ca/cwrcdata/TwelveDays>;
    cwrc:hasGenre cwrc:genreHistory ;
+   cwrc:hasReceptionRelationTo cwrc:Orlando (Work) ;
    dc:date "1922";
    rdfs:label "Twelve Days"@en ;
    dc:creator cwrc:VitaSackvilleWest.
@@ -780,12 +797,14 @@ cwrc:VirginiaWoolf
  <http://www.cwrc.ca/cwrcdata/MorningPost>
    a frbr:Work, bibo:Newspaper;
    schema:workExample <http://www.cwrc.ca/cwrcdata/MorningPost>;
+   cwrc:respondsTo cwrc:Orlando (Work) ;
    cwrc:hasGenre cwrc:genreNewspaper .
 
 <http://www.cwrc.ca/cwrcdata/OrlandoExpression>
    a frbr:Expression, bibo:Book;
    schema:workExample <http://www.cwrc.ca/cwrcdata/Orlando>;
    cwrc:hasGenre cwrc:genreNovel ;
+   cwrc:hasMaterialFeaturesRelatedto cwrc:TildaSwinton ;
    loc:pub <http://www.cwrc.ca/cwrcdata/MarinerBooks> ;
    cwrc:hasMaterialFeaturesRelatedto <http://dbpedia.org/resource/Knole_House>, <http://dbpedia.org/resource/Sevenoaks>, <http://sws.geonames.org/3333158>, <http://sws.geonames.org/6269131>;
    bibo:isbn "978-0156031516";
@@ -839,6 +858,7 @@ cwrc:SallyPotter
    
 cwrc:EdwinMorgan
     owl:sameAs <http://www.viaf.org/viaf/68969203/#Morgan,_Edwin,_1920-2010>;
+    cwrc:alludesExplicitlyTo cwrc:VirginiaWoolf ;
     a foaf:Person ;
     foaf:name "Edwin Morgan" .
   
@@ -853,21 +873,25 @@ cwrc:RichardKennedy
     
 cwrc:RebeccaWest
     owl:sameAs <http://viaf.org/viaf/108321467/#West,_Rebecca,_1892-1983>;
+    cwrc:respondsTo cwrc:Orlando (Work) ;
     a foaf:Person ;
     foaf:name "Rebecca West" .    
     
 cwrc:DHLawrence
     owl:sameAs <http://viaf.org/viaf/95150359/#Lawrence,_D._H.,_(David_Herbert),_1885-1930>;
+    cwrc:respondsTo cwrc:Orlando (Work) ;
     a foaf:Person ;
     foaf:name "D H Lawrence" .    
     
 cwrc:AldousHuxley
     owl:sameAs <http://viaf.org/viaf/71392434/#Huxley,_Aldous,_1894-1963>;
+    cwrc:respondsTo cwrc:Orlando (Work) ;
     a foaf:Person ;
     foaf:name "Aldous Huxley" .  
     
 cwrc:JeanetteWinterson
     owl:sameAs <http://viaf.org/viaf/4961254/#Winterson,_Jeanette,_1959->;
+    cwrc:respondsTo cwrc:Orlando (Work) ;
     a foaf:Person ;
     foaf:name "Jeanette Winterson" .
     
