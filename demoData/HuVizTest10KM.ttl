@@ -707,6 +707,27 @@ cwrc:VitaSackvilleWest
    rdfs:label "Orlando (Work)"@en ;
    dc:creator <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> .
    
+  <http://www.cwrc.ca/cwrcdata/DiaryOfAProvincialLady>
+    a frbr:Work, bibo:Book;
+    schema:workExample <http://cwrc.ca/cwrcdata/DiaryOfAProvincialLady>;
+    cwrc:hasGenre cwrc:genreAutobiography ;
+    rdfs:label "Diary of a Provincial Lady"@en ;
+    dc:creator <http://www.cwrc.ca/cwrcdata/EMDelafield> .
+
+  <http://www.cwrc.ca/cwrcdata/TheGeorgianNovelAndMrRobinson>
+    a frbr:Work, bibo:Book;
+    schema:workExample <http://cwrc.ca/cwrcdata/TheGeorgianNovelAndMrRobinson>;
+    cwrc:hasGenre cwrc:genreLiteraryCriticism ;
+    rdfs:label "The Georgian Novel and Mr. Robinson"@en ;
+    dc:creator <http://www.cwrc.ca/cwrcdata/StormJameson> .
+
+   <http://www.cwrc.ca/cwrcdata/BroderieAnglaise>
+     a frbr:Work, bibo:Book;
+     schema:workExample <http://cwrc.ca/cwrcdata/BroderieAnglaise>;
+     cwrc:hasGenre cwrc:genreNovel ;
+     rdfs:label "Broderie Anglaise"@en ;
+     dc:creator <http://www.cwrc.ca/cwrcdata/VioletTrefusis> .
+   
 <http://www.cwrc.ca/cwrcdata/ToTheLighthouse>
    a frbr:Work, bibo:Book;
    schema:workExample <http://www.cwrc.ca/cwrcdata/ToTheLighthouse>;
@@ -831,7 +852,35 @@ cwrc:VitaSackvilleWest
     foaf:name "Classic Stage Company"@en ;
     rdfs:label "Classic Stage Company"@en . 
     
-#People go here    
+#People go here   
+
+<http://www.cwrc.ca/cwrcdata/HelenDunmore>
+  owl:sameAs <https://viaf.org/viaf/79148136/#Dunmore,_Helen,_1952-....>
+  cwrc:hasGender cwrc:genderWomanFemale ;
+  cwrc:hasNationality cwrc:englishNationalIdentity ;
+  a foaf:Person ;
+  foaf:name "Helen Dunmore" .
+
+<http://www.cwrc.ca/cwrcdata/VioletTrefusis>
+  owl:sameAs <https://viaf.org/viaf/66145857803523020381/#Trefusis,_Violet,_1894-1972>
+  cwrc:hasGender cwrc:genderWomanFemale ;
+  cwrc:hasNationality cwrc:englishNationalIdentity ;
+  a foaf:Person ;
+  foaf:name "Violet Trefusis" .
+
+<http://www.cwrc.ca/cwrcdata/StormJameson>
+  owl:sameAs <https://viaf.org/viaf/109630395/#Jameson,_Storm,_1891-1986>
+  cwrc:hasGender cwrc:genderWomanFemale ;
+  cwrc:hasNationality cwrc:englishNationalIdentity ;
+  a foaf:Person ;
+  foaf:name "Storm Jameson" .
+
+<http://www.cwrc.ca/cwrcdata/EMDelafield>
+  owl:sameAs <https://viaf.org/viaf/66504782/#Delafield,_E._M.,_1890-1943>;
+  cwrc:hasGender cwrc:genderWomanFemale ;
+  cwrc:hasNationality cwrc:englishNationalIdentity ;
+  a foaf:Person ;
+  foaf:name "E. M. Delafield" .
 
 <http://www.cwrc.ca/cwrcdata/AlexanderPope>
     cwrc:hasGender cwrc:genderManMale ;
