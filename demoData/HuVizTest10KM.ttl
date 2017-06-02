@@ -128,7 +128,7 @@ cwrc:AnnaLeonowens
     rdfs:label ":Gender for Anna Leonowens"@en ;
     oa:hasBody cwrc:genderWomanFemale ;
     oa:hasTarget cwrc:AnnaLeonowens ;
-    prov:derivedFrom cwrc:Leonowens12345
+    prov:derivedFrom cwrc:Leonowens12345 .
 
 <http://www.cwrc.ca/cwrcdata/LEONOWENSDenominationPresbyterian>
     a cwrc:Denomination ;
@@ -831,7 +831,7 @@ cwrc:VitaSackvilleWest
     foaf:name "Classic Stage Company"@en ;
     rdfs:label "Classic Stage Company"@en . 
     
-#People go here   
+#People go here    
 
 <http://www.cwrc.ca/cwrcdata/AlexanderPope>
     cwrc:hasGender cwrc:genderManMale ;
@@ -2297,4 +2297,3 @@ People using this class should apply it to instances that seem to be right for t
   skos:definition ""@en, ""@fr ;
   rdfs:isDefinedBy <http://www.cwrc.ca/ontologies/cwrc#> ;
   void:inDataset <http://www.cwrc.ca/ontologies/cwrc#datasetdefinition> .
-
