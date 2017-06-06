@@ -442,14 +442,14 @@ cwrc:hasNationalHeritage cwrc:portugal, cwrc:spain ;
 <http://www.cwrc.ca/cwrcdata/EmanuelAguilar>
     a foaf:Person;
     foaf:name "Emanuel Aguilar" ;
-    loc:father <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    cwrc:father <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
     cwrc:hasNationalHeritage cwrc:portugal .
 #    prov:derivedFrom textnode ;
 
 <http://www.cwrc.ca/cwrcdata/SarahDiasFernandesAguilar>
     a foaf:Person ;
     foaf:name "Sarah (Dias Fernandes) Aguilar" ;
-    loc:mother <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    cwrc:mother <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
     cwrc:hasNationalHeritage cwrc:spain .
 #    prov:derivedFrom textnode .
 
@@ -651,77 +651,66 @@ cwrc:charlotteDacreCulturalFormation1
 <http://www.cwrc.ca/cwrcdata/JosefaDuran>
     a foaf:Person ;
     foaf:name "Josefa Duran (Pepita)" ;
-    loc:grandmother <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+    cwrc:grandmother <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
     cwrc:hasNationalIdentity cwrc:spanish .
 #    prov:derivedFrom textnode .
 
 <http://www.cwrc.ca/cwrcdata/JosefaDuran>
     a foaf:Person ;
     foaf:name "Josefa Duran (Pepita)" ;
-    loc:grandmother <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
-    cwrc:hasEthnicity cwrc:gipsy .
-#    prov:derivedFrom textnode .
-
-<http://www.cwrc.ca/cwrcdata/JosefaDuran>
-    a foaf:Person ;
-    foaf:name "Josefa Duran (Pepita)" ;
-    loc:grandmother <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+    cwrc:grandmother <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
     cwrc:hasEthnicity cwrc:gipsy .
 #    prov:derivedFrom textnode .
 
 <http://www.cwrc.ca/cwrcdata/VitaSackvilleWestGrandfather>
     a foaf:Person ;
     foaf:name "Vita Sackville West's grandfather" ;
-    rel:grandparent <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+    rel:grandfather <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
     cwrc:hasEthnicity cwrc:gipsy .
 #    prov:derivedFrom textnode .
 
 # VIRGINIA WOOLF
 <http://www.cwrc.ca/cwrcdata/VirginiaWoolf>
     cwrc:hasSocialRackSelfDefined cwrc:professional ;
-    cwrc:hasNationality cwrc:english;
     cwrc:hasSexualitySelfDefined cwrc:bisexual ;
     cwrc:hasGender cwrc:genderWomanFemale ;
-    cwrc:hasNationality cwrc:englishNationalIdentity ;
+    cwrc:hasNationality cwrc:englishNationality ;
     cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/ElizabethI> ;
     cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/EmbassyLetters> ;
     a foaf:Person ;
     foaf:name "Virginia Woolf" .
-		
-<http://www.cwrc.ca/cwrcdata/WOOLFSocialRankProfessional>
-    a cwrc:SocialRankContext ;
-    rdfs:label ":SocialRank for Virginia Woolf"@en ;
-    oa:hasBody cwrc:professional ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
-    prov:derivedFrom cwrc:Woolf12345 .
 
-<http://www.cwrc.ca/cwrcdata/WOOLFSocialRankSelfDefinedProfessional>
-    a cwrc:SocialRankSelfDefinedContext ;
+ <http://www.cwrc.ca/cwrcdata/WOOLFSocialRankSelfDefinedProfessional>
+    a cwrc:SocialRankContext ;
+    
+    <http://www.cwrc.ca/cwrcdata/WOOLFSocialRankSelfDefinedProfessional>
+    a cwrc:SocialRankContext ;
     rdfs:label "SocialRankSelfDefined for Virginia Woolf"@en ;
     oa:hasBody cwrc:professional ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
     prov:derivedFrom cwrc:Woolf12345 .
 
-<http://www.cwrc.ca/cwrcdata/WOOLFNationalIdentityEnglish>
-    a cwrc:NationalIdentityContext ;
-    rdfs:label ":NationalIdentity for Virginia Woolf"@en ;
-    oa:hasBody cwrc:english ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
-    prov:derivedFrom cwrc:Woolf12345 .
-
-<http://www.cwrc.ca/cwrcdata/WOOLFSexualityBisexual>
-    a cwrc:SexualityContext ;
-    rdfs:label ":Sexuality for Virginia Woolf"@en ;
-    oa:hasBody cwrc:bisexual ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
-    prov:derivedFrom cwrc:Woolf12345 .
-
 <http://www.cwrc.ca/cwrcdata/WOOLFSexualitySelfDefinedBisexual>
-    a cwrc:SexualitySelfDefinedContext ;
+    a cwrc:SexualityContext ;
     rdfs:label ":SexualitySelfDefined for Virginia Woolf"@en ;
     oa:hasBody cwrc:bisexual ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
     prov:derivedFrom cwrc:Woolf12345 .
+    
+<http://www.cwrc.ca/cwrcdata/WOOLFGenderWomanFemale>
+    a cwrc:GenderContext ;
+    rdfs:label "Gender Context for Virginia Woolf"@en ;
+    oa:hasBody cwrc:gender cwrc:genderWomanFemale ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+    prov:derivedFrom cwrc:Woolf12345 .
+    
+    <http://www.cwrc.ca/cwrcdata/WOOLFNationalIdentityEnglish>
+    a cwrc:NationalityContext ;
+    rdfs:label ":NationalIdentity for Virginia Woolf"@en ;
+    oa:hasBody cwrc:englishIdentity ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+    prov:derivedFrom cwrc:Woolf12345 .
+    
     
  #Works go here   
 
@@ -745,7 +734,6 @@ cwrc:charlotteDacreCulturalFormation1
    cwrc:relatesByArchiveTo <http://www.cwrc.ca/cwrcdata/KnoleHouse> ;
    cwrc:hasSetting <http://www.cwrc.ca/cwrcdata/Constantinople> ;
    cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/LadyMaryWortleyMontagu> ;
-   cwrc:relatesEroticallyTo <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
    cwrc:relatesEroticallyTo <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
    cwrc:influences <http://www.cwrc.ca/cwrcdata/ALadyOfQuality> ;
    cwrc:relatesPoliticallyTo <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
