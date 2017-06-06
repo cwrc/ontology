@@ -766,7 +766,20 @@
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </owl:Class>
 
-<cwrc:RaceColour rdf:about="#whiteRace">
+<owl:DeprecatedClass rdf:about="#whiteRace">
+ <rdfs:label xml:lang="en">white</rdfs:label>
+ <rdfs:label xml:lang="fr">blanc</rdfs:label>
+ <foaf:name xml:lang="en">White (Race Colour)</foaf:name>
+ <skos:definition xml:lang="en"></skos:definition>
+ <skos:definition xml:lang="fr"></skos:definition>
+ <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+ <rdfs:subClass rdf:resource="#whiteLabel"/>
+ <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+ <void:inDataset rdf:resource="#datasetdefinition"/>
+ <owl:equivalentClass rdf:resource="#whiteRaceColour"/>
+</owl:DeprecatedClass>
+
+<cwrc:RaceColour rdf:about="#whiteRaceColour">
  <rdfs:label xml:lang="en">white</rdfs:label>
  <rdfs:label xml:lang="fr">blanc</rdfs:label>
  <foaf:name xml:lang="en">White (Race Colour)</foaf:name>
@@ -777,6 +790,7 @@
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:RaceColour>
+
 
 <cwrc:RaceColour rdf:about="#eurasianRace">
  <rdfs:label xml:lang="en">eurasian</rdfs:label>
