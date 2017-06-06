@@ -1,4 +1,5 @@
-<?xml version="1.0"  encoding="UTF-8"?> <rdf:RDF
+<?xml version="1.0"  encoding="UTF-8"?> 
+<rdf:RDF
     xmlns:vann="http://purl.org/vocab/vann/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
@@ -79,8 +80,8 @@
      </foaf:Person>
     </dc:creator>
     <dc:creator>
-     <foaf:Person rdf:about="#AlliyyaMohammed">
-      <foaf:name>Alliyya Mohammed</foaf:name>
+     <foaf:Person rdf:about="#AlliyyaMo">
+      <foaf:name>Alliyya Mo</foaf:name>
      </foaf:Person>
     </dc:creator>
     <dc:publisher>
@@ -143,7 +144,7 @@
     <dc:creator rdf:resource="#RobWarren"/>
     <dc:publisher rdf:resource="#cwrc"/>
     <dc:creator rdf:resource="#JadePenancier"/>
-    <dc:creator rdf:resource="#AlliyyaMohammed"/>
+    <dc:creator rdf:resource="#AlliyyaMo"/>
     <dc:creator rdf:resource="#KimMartin"/>
     <dc:creator rdf:resource="#SusanBrown"/>
     <loc:ctb rdf:resource="#ConstanceCrompton"/>
@@ -505,10 +506,11 @@
    <foaf:name xml:lang="en">Linguistic Ability</foaf:name>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <owl:subClass rdf:resource="#CulturalForm"/>
- <skos:definition xml:lang="en">Does not differentiate between spoken and/or written.</skos:definition>
- <skos:definition xml:lang="fr">Écrit ou Parlé</skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-  <void:inDataset rdf:resource="#datasetdefinition"/>
+   <skos:definition xml:lang="en">These terms do not differentiate between spoken and/or written. For operational reasons this class is a direct equivalent to ISO639 language code as published by the Library of Congress.</skos:definition>
+   <skos:definition xml:lang="fr">Écrit ou Parlé. Pour des raisons opérationnelles, cette classe est équivalente à la classe de langage iso639 publiée par le Library of Congress.</skos:definition>
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+   <void:inDataset rdf:resource="#datasetdefinition"/>
+   <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/iso639-1/iso639-1_Language"/>
  </owl:Class>
 
 

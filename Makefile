@@ -52,8 +52,8 @@ $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-template-$(ONTOLOGY_DAT
 	 m4 -P $(ONTOLOGY)-template-$(ONTOLOGY_DATE).html > $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html
 $(ONTOLOGY)-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html # $(ONTOLOGY)-overall-$(ONTOLOGY_DATE).jpg
 	./specgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY) $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html  $(ONTOLOGY)-$(ONTOLOGY_DATE).html  -i
-$(ONTOLOGY)-FR-template-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-template-FR.html figures/religionTaxonomy-$(ONTOLOGY_DATE).png figures/genreTaxonomy-$(ONTOLOGY_DATE).png
-	sed "s/PREVIOUS_ONTOLOGY/$(PREVIOUS_ONTOLOGY)/g"  < $(ONTOLOGY)-template-FR.html | sed "s/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g" | sed "s/ONTOLOGY_NAME/$(ONTOLOGY)/g"  | sed "s/ONTOLOGY_DATE/$(ONTOLOGY_DATE)/g" |  sed "s/ONTOLOGY_LONGDATE/$(ONTOLOGY_LONGDATE)/g"  | sed "s/ONTOLOGY_VERSION/$(ONTOLOGY_VERSION)/g"  | sed 's/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g'  > $(ONTOLOGY)-FR-template-$(ONTOLOGY_DATE).html
+$(ONTOLOGY)-FR-template-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-template-fr.html figures/religionTaxonomy-$(ONTOLOGY_DATE).png figures/genreTaxonomy-$(ONTOLOGY_DATE).png
+	sed "s/PREVIOUS_ONTOLOGY/$(PREVIOUS_ONTOLOGY)/g"  < $(ONTOLOGY)-template-fr.html | sed "s/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g" | sed "s/ONTOLOGY_NAME/$(ONTOLOGY)/g"  | sed "s/ONTOLOGY_DATE/$(ONTOLOGY_DATE)/g" |  sed "s/ONTOLOGY_LONGDATE/$(ONTOLOGY_LONGDATE)/g"  | sed "s/ONTOLOGY_VERSION/$(ONTOLOGY_VERSION)/g"  | sed 's/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g'  > $(ONTOLOGY)-FR-template-$(ONTOLOGY_DATE).html
 $(ONTOLOGY)-FR-template2-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-FR-template-$(ONTOLOGY_DATE).html $(ONTOLOGY)-citations.html
 	 m4 -P $(ONTOLOGY)-FR-template-$(ONTOLOGY_DATE).html > $(ONTOLOGY)-FR-template2-$(ONTOLOGY_DATE).html
 $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-FR-template2-$(ONTOLOGY_DATE).html # $(ONTOLOGY)-overall-$(ONTOLOGY_DATE).jpg
@@ -69,10 +69,7 @@ $(ONTOLOGY)-ref.bib:
 figures/religionTaxonomy-$(ONTOLOGY_DATE).png: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 	# dot -Tsvg example1_graph.dot -o test.svg
 	./scripts/createReligionTaxonomy.pl $(ONTOLOGY)-$(ONTOLOGY_DATE).owl | unflatten -l 5 -c 10 | dot -ofigures/religionTaxonomy-$(ONTOLOGY_DATE).svg -Tsvg 
-
 figures/genreTaxonomy-$(ONTOLOGY_DATE).png: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
-
-
 	# ./scripts/createGenreTaxonomy.pl $(ONTOLOGY)-$(ONTOLOGY_DATE).owl | dot -ofigures/genreTaxonomy-$(ONTOLOGY_DATE).svg -Tsvg
 	./scripts/createGenreTaxonomy.pl $(ONTOLOGY)-$(ONTOLOGY_DATE).owl | unflatten -l 5 -c 10 | dot -ofigures/genreTaxonomy-$(ONTOLOGY_DATE).svg -Tsvg
 clean:
