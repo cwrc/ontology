@@ -42,7 +42,7 @@ while (my $row = $iterator->next) {
  my $uri = $astring;
  $uri =~ s/</"/;
  $uri =~ s/>/"/;
- print " $lhs [label=\"" . $row->{"label"}->value()."\" URL=".$uri."]\n";
+ print " $lhs [label=\"" . $row->{"label"}->value()."\" URL=".$uri." target=\"_parent\"]\n";
 
 }       #while        
 print "}";
