@@ -29,85 +29,83 @@
 @prefix frbr: <http://purl.org/vocab/frbr/core> .
 
 # SOPHIA KING
-cwrc:SophiaKing
+<http://www.cwrc.ca/cwrcdata/SophiaKing>
     cwrc:hasSocialClass cwrc:indigent, cwrc:gentry, cwrc:professional ;
     cwrc:hasGeogHeritage cwrc:portugal ;
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasEthnicity cwrc:jewish ;
-    cwrc:hasDenomination cwrc:jewish ;
+    cwrc:hasReligion cwrc:jewish ;
     cwrc:hasPoliticalAffiliation cwrc:radical ;
-    cwrc:hasNationalitySelfDefined cwrc:english ;
+    cwrc:hasNationalitySelfDefined cwrc:EnglishNationalHeritage ;
     a foaf:Person ;
     foaf:name "Sophia King" .
 
 # Instance of the Cultural Formation for the Ethnicity Context for Sophia King
 
-<http://www.cwrc.ca/cwrcdata/KINGSocialClassIndigent>
+<http://www.cwrc.ca/cwrcdata/KINGSocialClass>
     a cwrc:SocialClassContext ;
     rdfs:label ":SocialClassContext for Sophia King"@en ;
     oa:hasBody cwrc:indigent ;
-    oa:hasTarget cwrc:SophiaKing ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
     prov:derivedFrom cwrc:King12345 .
 
 <http://www.cwrc.ca/cwrcdata/KINGSocialClassGentry>
     a cwrc:SocialClassContext ;
     rdfs:label ":SocialClassContext for Sophia King"@en ;
     oa:hasBody cwrc:gentry ;
-    oa:hasTarget cwrc:SophiaKing ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
     prov:derivedFrom cwrc:King12345 .
 
-<http://www.cwrc.ca/cwrcdata/KINGSocialClassProfessional>
+<http://www.cwrc.ca/cwrcdata/KINGSocialClass>
     a cwrc:SocialClassContext ;
     rdfs:label ":SocialClassContext for Sophia King"@en ;
     oa:hasBody cwrc:professional ;
-    oa:hasTarget cwrc:SophiaKing ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
     prov:derivedFrom cwrc:King12345 .
 
-<http://www.cwrc.ca/cwrcdata/KINGGeographicHeritageContextPortugal>
+<http://www.cwrc.ca/cwrcdata/KINGGeographicHeritage>
     a cwrc:GeographicHeritageContext ;
     rdfs:label ":GeographicHeritageContext for Sophia King"@en ;
     oa:hasBody dbpedia:Portugal ;
-    oa:hasTarget cwrc:SophiaKing ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
     prov:derivedFrom cwrc:King12345 .
 
-<http://www.cwrc.ca/cwrcdata/KINGGenderGenderWomanFemale>
-    a cwrc:Gender ;
+<http://www.cwrc.ca/cwrcdata/KINGGenderContext>
+    a cwrc:GenderContext ;
     rdfs:label ":Gender for Sophia King"@en ;
     oa:hasBody cwrc:genderWomanFemale ;
-    oa:hasTarget cwrc:SophiaKing ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
     prov:derivedFrom cwrc:King12345 .
 
-# Rob, should denomination be included under RaceEthnicityContext or be Denomination Context? (line 71)
-
-<http://www.cwrc.ca/cwrcdata/KINGSEthJewish>
-    a cwrc:RaceEthnicityContext ;
-    rdfs:label ":Denomination Context for Sophia King"@en ;
-    oa:hasBody cwrc:jewish ;
-    oa:hasTarget cwrc:SophiaKing ;
+<http://www.cwrc.ca/cwrcdata/KINGSRel>
+    a cwrc:ReligionContext ;
+    rdfs:label ":ReligionContext for Sophia King"@en ;
+    oa:hasBody cwrc:jewishReligion ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
     prov:derivedFrom cwrc:King12345 .
 
-<http://www.cwrc.ca/cwrcdata/KINGSDenJewish>
+<http://www.cwrc.ca/cwrcdata/KINGSEth>
     a cwrc:RaceEthnicityContext ;
     rdfs:label ":RaceEthnicityContext for Sophia King"@en ;
-    oa:hasBody cwrc:jewish ;
-    oa:hasTarget cwrc:SophiaKing ;
+    oa:hasBody cwrc:JewishEthnicity ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
     prov:derivedFrom cwrc:King12345 .
 
-<http://www.cwrc.ca/cwrcdata/KINGSPoliticalAffRadical>
-    a cwrc:PoliticalAffiliationContext ;
-    rdfs:label ":PoliticalAffiliationContext for Sophia King"@en ;
+<http://www.cwrc.ca/cwrcdata/KINGSPolitical>
+    a cwrc:PoliticalContext ;
+    rdfs:label ":PoliticalContext for Sophia King"@en ;
     oa:hasBody cwrc:radical ;
-    oa:hasTarget cwrc:SophiaKing ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
     prov:derivedFrom cwrc:King12345 .
 
-<http://www.cwrc.ca/cwrcdata/KINGSNationalitySDEnglish>
-    a cwrc:NationalitySDContext ;
-    rdfs:label ":NationalitySelfDefinedContext for Sophia King"@en ;
-    oa:hasBody cwrc:english ;
-    oa:hasTarget cwrc:SophiaKing ;
+<http://www.cwrc.ca/cwrcdata/KINGSNationality>
+    a cwrc:NationalityContext ;
+    rdfs:label ":NationalityContext for Sophia King"@en ;
+    oa:hasBody cwrc:EnglishNationalHeritage ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
     prov:derivedFrom cwrc:King12345 .
 
-cwrc:King12345Happy
+cwrc:King12345
     nif:isString "SK's Sephardic Jewish Portuguese birth, her early years in Judaism, and her father's boyhood as a street urchin and his high-profile but scandalous career (associating with political radicals while lending money to socialites and eventually marrying into the English nobility), made her an outsider in English society." ;
     a nif:Context, nif:Sentence ;
     prov:createdBy cwrc:originalOrlandoAuthor .
@@ -115,7 +113,7 @@ cwrc:King12345Happy
 # ANNA LEONOWENS
 <http://www.cwrc.ca/cwrcdata/AnnaLeonowens>
     cwrc:hasGender cwrc:genderWomanFemale ;
-    cwrc:hasDenomination cwrc:buddhist, cwrc:presbyterianchurch ;
+    cwrc:hasReligion cwrc:buddhist, cwrc:presbyterianchurch ;
     cwrc:hasNationalHeritage cwrc:welsh ;
     cwrc:hasNationality cwrc:english ;
     cwrc:hasRaceColour cwrc:eurasian ;
@@ -123,165 +121,150 @@ cwrc:King12345Happy
     a foaf:Person ;
     foaf:name "Anna Leonowens" .
 
-<http://www.cwrc.ca/cwrcdata/LEONOWENSGenderGenderWomanFemale>
+<http://www.cwrc.ca/cwrcdata/LEONOWENSGender>
     a cwrc:Gender ;
     rdfs:label ":Gender for Anna Leonowens"@en ;
     oa:hasBody cwrc:genderWomanFemale ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom cwrc:Leonowens12345 .
 
-<http://www.cwrc.ca/cwrcdata/LEONOWENSDenominationPresbyterian>
-    a cwrc:Denomination ;
-    rdfs:label ":Denomination for Anna Leonowens"@en ;
+<http://www.cwrc.ca/cwrcdata/LEONOWENSReligionPresbyterian>
+    a cwrc:Religion ;
+    rdfs:label ":Religion for Anna Leonowens"@en ;
     oa:hasBody cwrc:presbyterian ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom cwrc:Leonowens12345 .
 
-<http://www.cwrc.ca/cwrcdata/LEONOWENSDenominationBuddhist>
-    a cwrc:Denomination ;
-    rdfs:label ":Denomination for Anna Leonowens"@en ;
+<http://www.cwrc.ca/cwrcdata/LEONOWENSReligionBuddhist>
+    a cwrc:Religion ;
+    rdfs:label ":Religion for Anna Leonowens"@en ;
     oa:hasBody cwrc:buddhist ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom cwrc:Leonowens12345 .
 
 <http://www.cwrc.ca/cwrcdata/LEONOWENSNationalHeritageWelsh>
-    a cwrc:Denomination ;
+    a cwrc:NationalHeritageContext ;
     rdfs:label ":National Heritage for Anna Leonowens"@en ;
     oa:hasBody cwrc:welsh ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom cwrc:Leonowens12345 .
 
-<http://www.cwrc.ca/cwrcdata/LEONOWENSNationalityEnglish>
-    a cwrc:Denomination ;
+<http://www.cwrc.ca/cwrcdata/LEONOWENSNationality>
+    a cwrc:NationalityContext ;
     rdfs:label ":Nationality for Anna Leonowens"@en ;
     oa:hasBody cwrc:english ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom cwrc:Leonowens12345 .
 
 <http://www.cwrc.ca/cwrcdata/LEONOWENSRaceColourEurasian>
-    a cwrc:Denomination ;
-    rdfs:label ":Race Colour for Anna Leonowens"@en ;
+    a cwrc:RaceEthnicityContext ;
+    rdfs:label ":Race Ethnicity for Anna Leonowens"@en ;
     oa:hasBody cwrc:eurasian ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom cwrc:Leonowens12345 .
 
-<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceColourSelfDefinedWhite>
-    a cwrc:Denomination ;
+<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceColourWhite>
+    a cwrc:RaceEthnicityContext ;
     rdfs:label ":Race Colour for Anna Leonowens"@en ;
-    oa:hasBody cwrc:white ;
+    oa:hasBody cwrc:whiteEthnicity ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom cwrc:Leonowens12345.
 
-cwrc:AnnaCulturalFormatioNodeOne
-    a cwrc:RaceEthnicityContext, oa:Annotation ;
-    oa:hasBody cwrc:english, cwrc:white ;
+<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceEthEnglish>
+    a cwrc:RaceEthnicityContext ;
+    oa:hasBody cwrc:english ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
-    prov:derivedFrom cwrc:partone .
+    prov:derivedFrom cwrc:Leonowens12345 .
 
 # CHARLOTTE DACRE
 <http://www.cwrc.ca/cwrcdata/CharlotteDacre>
     cwrc:hasGender cwrc:genderWomanFemale ;
-    cwrc:hasGeogHeritage cwrc:jewish, cwrc:portugal, cwrc:england, cwrc:middlesex, cwrc:london ;
-    cwrc:hasReligion cwrc:anglicanchurch, cwrc:jewish ;
-    cwrc:hasDenomination cwrc:jewish, cwrc:anglicanChurch ;
-    cwrc:hasEthnicity cwrc:jewish ;
+    cwrc:hasGeogHeritage cwrc:jewishGeographicalHeritage, cwrc:portugal, cwrc:england, cwrc:middlesex, cwrc:london ;
+    cwrc:hasReligion cwrc:anglicanchurch, cwrc:jewishReligion ;
+    cwrc:hasEthnicity cwrc:JewishEthnicity ;
     cwrc:hasSocialClass cwrc:entrepreneurial-industrialist, cwrc:gentry, cwrc:indigent;
     a foaf:Person ;
     foaf:name "Charlotte Dacre" .
 
 <http://www.cwrc.ca/cwrcdata/DACREGenderGenderWomanFemale>
-    a cwrc:Gender ;
+    a cwrc:GenderContext ;
     rdfs:label ":Gender for Charlotte Dacre"@en ;
     oa:hasBody cwrc:genderWomanFemale ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
     prov:derivedFrom cwrc:Dacre12345 .
 
 <http://www.cwrc.ca/cwrcdata/DACREGeogHeritageJewish>
-    a cwrc:GeogHeritage ;
+    a cwrc:GeographicHeritageContext ;
     rdfs:label ":Geographic Heritage for Charlotte Dacre"@en ;
     oa:hasBody cwrc:jewish ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
     prov:derivedFrom cwrc:Dacre12345 .
 
 <http://www.cwrc.ca/cwrcdata/DACREGeogHeritagePortugal>
-    a cwrc:GeogHeritage ;
+    a cwrc:GeographicHeritageContext ;
     rdfs:label ":Geographic Heritage for Charlotte Dacre"@en ;
     oa:hasBody cwrc:portugal ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
     prov:derivedFrom cwrc:Dacre12345 .
 
 <http://www.cwrc.ca/cwrcdata/DACREGeogHeritageEngland>
-    a cwrc:GeogHeritage ;
+    a cwrc:GeographicHeritageContext ;
     rdfs:label ":Geographic Heritage for Charlotte Dacre"@en ;
     oa:hasBody cwrc:england ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
     prov:derivedFrom cwrc:Dacre12345 .
 
 <http://www.cwrc.ca/cwrcdata/DACREGeogHeritageMiddlesex>
-    a cwrc:GeogHeritage ;
+    a cwrc:GeographicHeritageContext ;
     rdfs:label ":Geographic Heritage for Charlotte Dacre"@en ;
     oa:hasBody cwrc:middlesex ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
     prov:derivedFrom cwrc:Dacre12345 .
 
 <http://www.cwrc.ca/cwrcdata/DACREGeogHeritageLondon>
-    a cwrc:GeogHeritage ;
+    a cwrc:GeographicHeritageContext ;
     rdfs:label ":Geographic Heritage for Charlotte Dacre"@en ;
     oa:hasBody cwrc:london ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
     prov:derivedFrom cwrc:Dacre12345 .
 
 <http://www.cwrc.ca/cwrcdata/DACREReligionAnglicanChurch>
-    a cwrc:Religion ;
-    rdfs:label ":Religion for Charlotte Dacre"@en ;
+    a cwrc:ReligionContext ;
+    rdfs:label ":Religion Context for Charlotte Dacre"@en ;
     oa:hasBody cwrc:anglicanChurch ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
     prov:derivedFrom cwrc:Dacre12345 .
 
 <http://www.cwrc.ca/cwrcdata/DACREReligionJewish>
-    a cwrc:Religion ;
-    rdfs:label ":Religion for Charlotte Dacre"@en ;
-    oa:hasBody cwrc:jewish ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
-    prov:derivedFrom cwrc:Dacre12345 .
-
-<http://www.cwrc.ca/cwrcdata/DACREDenominationJewish>
-    a cwrc:Denomination ;
-    rdfs:label ":Denomination for Charlotte Dacre"@en ;
-    oa:hasBody cwrc:jewish ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
-    prov:derivedFrom cwrc:Dacre12345 .
-
-<http://www.cwrc.ca/cwrcdata/DACREDenominationAnglicanChurch>
-    a cwrc:Denomination ;
-    rdfs:label ":Denomination for Charlotte Dacre"@en ;
-    oa:hasBody cwrc:anglicanChurch ;
+    a cwrc:ReligionContext ;
+    rdfs:label ":Religion Context for Charlotte Dacre"@en ;
+    oa:hasBody cwrc:jewishReligion ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
     prov:derivedFrom cwrc:Dacre12345 .
 
 <http://www.cwrc.ca/cwrcdata/DACREEthnicityJewish>
-    a cwrc:Ethnicity ;
-    rdfs:label ":Ethnicity for Charlotte Dacre"@en ;
-    oa:hasBody cwrc:jewish ;
+    a cwrc:EthnicityContext ;
+    rdfs:label ":Ethnicity Context for Charlotte Dacre"@en ;
+    oa:hasBody cwrc:JewishEthnicity ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
     prov:derivedFrom cwrc:Dacre12345 .
 
 <http://www.cwrc.ca/cwrcdata/DACRESocialClassEntrepreneurial-Industrialist>
-    a cwrc:SocialClass ;
+    a cwrc:SocialClassContext ;
     rdfs:label ":Social Class for Charlotte Dacre"@en ;
     oa:hasBody cwrc:entrepreneurial-industrialist ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
     prov:derivedFrom cwrc:Dacre12345 .
 
 <http://www.cwrc.ca/cwrcdata/DACRESocialClassGentry>
-    a cwrc:SocialClass ;
+    a cwrc:SocialClassContext ;
     rdfs:label ":Social Class for Charlotte Dacre"@en ;
     oa:hasBody cwrc:gentry ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
     prov:derivedFrom cwrc:Dacre12345 .
 
 <http://www.cwrc.ca/cwrcdata/DACRESocialClassIndigent>
-    a cwrc:SocialClass ;
+    a cwrc:SocialClassContext ;
     rdfs:label ":Social Class for Charlotte Dacre"@en ;
     oa:hasBody cwrc:indigent ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
