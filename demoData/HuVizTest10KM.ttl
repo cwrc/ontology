@@ -716,7 +716,7 @@ cwrc:charlotteDacreCulturalFormation1
 
 <http://www.cwrc.ca/cwrcdata/Orlando>
    a frbr:Work, bibo:Book;
-   schema:workExample <http://www.cwrc.ca/cwrcdata/OrlandoExpression>;
+   schema:workExample <http://www.cwrc.ca/cwrcdata/OrlandoExpressionOrlando2006> ;
    cwrc:hasGenre cwrc:genreNovel ;
    loc:pub <http://www.cwrc.ca/cwrcdata/HogarthPress> ;
    cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/AlexanderPope> ;
@@ -809,18 +809,22 @@ cwrc:charlotteDacreCulturalFormation1
    rdfs:label "A Boy at the Hogarth Press"@en ;
    dc:creator <http://www.cwrc.ca/cwrcdata/RichardKennedy> .   
    
-<http://www.cwrc.ca/cwrcdata/Orlando>
-   a frbr:Work, bibo:Film;
-   schema:workExample <http://www.cwrc.ca/cwrcdata/OrlandoExpression>;
+<http://www.cwrc.ca/cwrcdata/OrlandoFilm>
+   a frbr:Work, bibo:Film ;
    cwrc:hasGenre cwrc:genreFilm ; 
    owl:sameAs <http://www.imdb.com/title/tt0107756/> ;
-   dc:creator <http://www.cwrc.ca/cwrcdata/SallyPotter> .   
+   dc:creator <http://www.cwrc.ca/cwrcdata/SallyPotter> ;  
+   cwrc:adapts <http://www.cwrc.ca/cwrcdata/Orlando> ;
+   dc:title: "Orlando (film)" ;
+   rdfs:label "Orlando (film)" .
    
- <http://www.cwrc.ca/cwrcdata/Orlando>
+ <http://www.cwrc.ca/cwrcdata/OrlandoPlay>
    a frbr:Work, dbpedia:Play;
-   schema:workExample <http://www.cwrc.ca/cwrcdata/OrlandoExpression>;
-   cwrc:hasGenre cwrc:genreFilm ; 
-   dc:creator <http://www.cwrc.ca/cwrcdata/SarahRuhl> .
+   cwrc:hasGenre cwrc:genreDrama ; 
+   cwrc:adapts <http://www.cwrc.ca/cwrcdata/Orlando> ;
+   dc:creator <http://www.cwrc.ca/cwrcdata/SarahRuhl> ;
+   dc:title: "Orlando (play)" ;
+   rdfs:label "Orlando (play)" .
  
  <http://www.cwrc.ca/cwrcdata/TheDailyChronicle>
    a frbr:Work, bibo:Newspaper;
@@ -838,7 +842,7 @@ cwrc:charlotteDacreCulturalFormation1
    cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/Orlando> ;
    cwrc:hasGenre cwrc:genreNewspaper .
 
-<http://www.cwrc.ca/cwrcdata/OrlandoExpression>
+<http://www.cwrc.ca/cwrcdata/OrlandoExpressionOrlando2006>
    a frbr:Expression, bibo:Book;
    schema:workExample <http://www.cwrc.ca/cwrcdata/Orlando>;
    cwrc:hasGenre cwrc:genreNovel ;
@@ -848,7 +852,7 @@ cwrc:charlotteDacreCulturalFormation1
    bibo:isbn "978-0156031516";
    dc:date "2006";
    bibo:edition "1";
-   rdfs:label "Orlando"@en ;
+   rdfs:label "Orlando (2006)"@en ;
    dc:title "Orlando (2006)" ;
    dc:creator <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> .
 
