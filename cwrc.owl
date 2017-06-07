@@ -855,9 +855,13 @@
  <foaf:name xml:lang="en">Jewish (Ethnicity)</foaf:name>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <skos:narrower rdf:resource="#jewishLabel"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-  <void:inDataset rdf:resource="#datasetdefinition"/>
+ <skos:narrower rdf:resource="#jewishLabel"/>
+ <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+ <void:inDataset rdf:resource="#datasetdefinition"/>
+ <rdfs:subClass rdf:resource="#jewishLabel"/>
+ <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+ <void:inDataset rdf:resource="#datasetdefinition"/>
+>>>>>>> 67e4d1b42f10c864e65e1c4dacc1bcefb6b56c8d
 </cwrc:Ethnicity>
 
 
