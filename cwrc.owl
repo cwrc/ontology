@@ -474,7 +474,7 @@
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <skos:definition xml:lang="en"></skos:definition> 
    <skos:definition xml:lang="fr"></skos:definition>
-  <skos:skos:broader rdf:resource="#jewishLabel"/>
+   <skos:broader rdf:resource="#jewishlabel"/>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:NationalIdentity>
@@ -552,7 +552,7 @@
  <foaf:name xml:lang="en">England (Geographical Heritage)</foaf:name>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <skos:skos:broader rdf:resource="#jewishLabel"/>
+   <skos:broader rdf:resource="#jewishLabel"/>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:GeographicalHeritage>
@@ -563,7 +563,7 @@
  <foaf:name xml:lang="en">Jewish (Geographical Heritage)</foaf:name>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <skos:skos:broader rdf:resource="#jewishLabel"/>
+   <skos:broader rdf:resource="#jewishLabel"/>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:GeographicalHeritage>
@@ -843,7 +843,7 @@
  <foaf:name xml:lang="en">Jewish (Ethnicity)</foaf:name>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <skos:skos:broader rdf:resource="#jewishLabel"/>
+   <skos:broader rdf:resource="#jewishLabel"/>
  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
  <void:inDataset rdf:resource="#datasetdefinition"/>
  <owl:equivalentClass rdf:resource="#jewishEthnicity"/>  
@@ -855,7 +855,7 @@
  <foaf:name xml:lang="en">Jewish (Ethnicity)</foaf:name>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
- <skos:skos:broader rdf:resource="#jewishLabel"/>
+  <skos:broader rdf:resource="#jewishLabel"/>
  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
  <void:inDataset rdf:resource="#datasetdefinition"/>
  <rdfs:subClass rdf:resource="#jewishLabel"/>
@@ -1079,7 +1079,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300073723"/>
   <skos:inScheme rdf:resource="#Religion"/>
-  <skos:skos:broader rdf:resource="#jewishLabel"/>
+   <skos:broader rdf:resource="#jewishLabel"/>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <skos:broaderTransitive rdf:resource="#abrahamicReligions"/>
