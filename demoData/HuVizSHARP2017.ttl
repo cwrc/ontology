@@ -1,0 +1,1023 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix muninn: <http://rdf.muninn-project.org/ontologies/muninn#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cwrc: <http://www.cwrc.ca/ontologies/cwrc#> .
+#ONTOLOGY PREFIXES
+@prefix schema: <http://schema.org/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core> .
+@prefix rel: <http://purl.org/vocab/relationship/> .
+
+# SOPHIA KING
+<http://www.cwrc.ca/cwrcdata/SophiaKing>
+    cwrc:hasSocialClass cwrc:indigent, cwrc:gentry, cwrc:professional ;
+    cwrc:hasGeogHeritage cwrc:portugal ;
+    cwrc:hasGender cwrc:genderWomanFemale ;
+    cwrc:hasEthnicity cwrc:JewishEthnicity ;
+    cwrc:hasReligion cwrc:jewishReligion ;
+    cwrc:hasPoliticalAffiliation cwrc:radical ;
+    cwrc:hasNationalitySelfDefined cwrc:EnglishNationalHeritage ;
+    a foaf:Person ;
+    foaf:name "Sophia King" .
+
+# Instance of the Cultural Formation for the Ethnicity Context for Sophia King
+
+<http://www.cwrc.ca/cwrcdata/KINGSocialClass>
+    a cwrc:SocialClassContext ;
+    rdfs:label ":SocialClassContext for Sophia King"@en ;
+    oa:hasBody cwrc:indigent ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
+    prov:derivedFrom cwrc:King12345 .
+
+<http://www.cwrc.ca/cwrcdata/KINGSocialClassGentry>
+    a cwrc:SocialClassContext ;
+    rdfs:label ":SocialClassContext for Sophia King"@en ;
+    oa:hasBody cwrc:gentry ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
+    prov:derivedFrom cwrc:King12345 .
+
+<http://www.cwrc.ca/cwrcdata/KINGSocialClass>
+    a cwrc:SocialClassContext ;
+    rdfs:label ":SocialClassContext for Sophia King"@en ;
+    oa:hasBody cwrc:professional ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
+    prov:derivedFrom cwrc:King12345 .
+
+<http://www.cwrc.ca/cwrcdata/KINGGeographicHeritage>
+    a cwrc:GeographicHeritageContext ;
+    rdfs:label ":GeographicHeritageContext for Sophia King"@en ;
+    oa:hasBody dbpedia:Portugal ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
+    prov:derivedFrom cwrc:King12345 .
+
+<http://www.cwrc.ca/cwrcdata/KINGGenderContext>
+    a cwrc:GenderContext ;
+    rdfs:label ":Gender for Sophia King"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
+    prov:derivedFrom cwrc:King12345 .
+
+<http://www.cwrc.ca/cwrcdata/KINGSRel>
+    a cwrc:ReligionContext ;
+    rdfs:label ":ReligionContext for Sophia King"@en ;
+    oa:hasBody cwrc:jewishReligion ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
+    prov:derivedFrom cwrc:King12345 .
+
+<http://www.cwrc.ca/cwrcdata/KINGSEth>
+    a cwrc:RaceEthnicityContext ;
+    rdfs:label ":RaceEthnicityContext for Sophia King"@en ;
+    oa:hasBody cwrc:JewishEthnicity ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
+    prov:derivedFrom cwrc:King12345 .
+
+<http://www.cwrc.ca/cwrcdata/KINGSPolitical>
+    a cwrc:PoliticalContext ;
+    rdfs:label ":PoliticalContext for Sophia King"@en ;
+    oa:hasBody cwrc:radical ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
+    prov:derivedFrom cwrc:King12345 .
+
+<http://www.cwrc.ca/cwrcdata/KINGSNationality>
+    a cwrc:NationalityContext ;
+    rdfs:label ":NationalityContext for Sophia King"@en ;
+    oa:hasBody cwrc:EnglishNationalHeritage ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
+    prov:derivedFrom cwrc:King12345 .
+
+cwrc:King12345
+    nif:isString "SK's Sephardic Jewish Portuguese birth, her early years in Judaism, and her father's boyhood as a street urchin and his high-profile but scandalous career (associating with political radicals while lending money to socialites and eventually marrying into the English nobility), made her an outsider in English society." ;
+    a nif:Context, nif:Sentence ;
+    prov:createdBy cwrc:originalOrlandoAuthor .
+
+# ANNA LEONOWENS
+<http://www.cwrc.ca/cwrcdata/AnnaLeonowens>
+    cwrc:hasGender cwrc:genderWomanFemale ;
+    cwrc:hasReligion cwrc:buddhist, cwrc:presbyterianchurch ;
+    cwrc:hasNationalHeritage cwrc:welsh ;
+    cwrc:hasNationality cwrc:english ;
+    cwrc:hasRaceColour cwrc:eurasian ;
+    cwrc:hasRaceColourSelfDefined cwrc:white ;
+    a foaf:Person ;
+    foaf:name "Anna Leonowens" .
+
+<http://www.cwrc.ca/cwrcdata/LEONOWENSGender>
+    a cwrc:Gender ;
+    rdfs:label ":Gender for Anna Leonowens"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
+    prov:derivedFrom cwrc:Leonowens12345 .
+
+<http://www.cwrc.ca/cwrcdata/LEONOWENSReligionPresbyterian>
+    a cwrc:Religion ;
+    rdfs:label ":Religion for Anna Leonowens"@en ;
+    oa:hasBody cwrc:presbyterian ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
+    prov:derivedFrom cwrc:Leonowens12345 .
+
+<http://www.cwrc.ca/cwrcdata/LEONOWENSReligionBuddhist>
+    a cwrc:Religion ;
+    rdfs:label ":Religion for Anna Leonowens"@en ;
+    oa:hasBody cwrc:buddhist ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
+    prov:derivedFrom cwrc:Leonowens12345 .
+
+<http://www.cwrc.ca/cwrcdata/LEONOWENSNationalHeritageWelsh>
+    a cwrc:NationalHeritageContext ;
+    rdfs:label ":National Heritage for Anna Leonowens"@en ;
+    oa:hasBody cwrc:welsh ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
+    prov:derivedFrom cwrc:Leonowens12345 .
+
+<http://www.cwrc.ca/cwrcdata/LEONOWENSNationality>
+    a cwrc:NationalityContext ;
+    rdfs:label ":Nationality for Anna Leonowens"@en ;
+    oa:hasBody cwrc:english ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
+    prov:derivedFrom cwrc:Leonowens12345 .
+
+<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceColourEurasian>
+    a cwrc:RaceEthnicityContext ;
+    rdfs:label ":Race Ethnicity for Anna Leonowens"@en ;
+    oa:hasBody cwrc:eurasian ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
+    prov:derivedFrom cwrc:Leonowens12345 .
+
+<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceColourWhite>
+    a cwrc:RaceEthnicityContext ;
+    rdfs:label ":Race Colour for Anna Leonowens"@en ;
+    oa:hasBody cwrc:whiteEthnicity ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
+    prov:derivedFrom cwrc:Leonowens12345.
+
+<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceEthEnglish>
+    a cwrc:RaceEthnicityContext ;
+    oa:hasBody cwrc:english ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
+    prov:derivedFrom cwrc:Leonowens12345 .
+
+# CHARLOTTE DACRE
+<http://www.cwrc.ca/cwrcdata/CharlotteDacre>
+    cwrc:hasGender cwrc:genderWomanFemale ;
+    cwrc:hasGeogHeritage cwrc:jewishGeographicalHeritage, cwrc:portugal, cwrc:england, cwrc:middlesex, cwrc:london ;
+    cwrc:hasReligion cwrc:anglicanchurch, cwrc:jewishReligion ;
+    cwrc:hasEthnicity cwrc:JewishEthnicity ;
+    cwrc:hasSocialClass cwrc:entrepreneurial-industrialist, cwrc:gentry, cwrc:indigent;
+    a foaf:Person ;
+    foaf:name "Charlotte Dacre" .
+
+<http://www.cwrc.ca/cwrcdata/DACREGenderGenderWomanFemale>
+    a cwrc:GenderContext ;
+    rdfs:label ":Gender for Charlotte Dacre"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
+    prov:derivedFrom cwrc:Dacre12345 .
+
+<http://www.cwrc.ca/cwrcdata/DACREGeogHeritageJewish>
+    a cwrc:GeographicHeritageContext ;
+    rdfs:label ":Geographic Heritage for Charlotte Dacre"@en ;
+    oa:hasBody cwrc:jewish ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
+    prov:derivedFrom cwrc:Dacre12345 .
+
+<http://www.cwrc.ca/cwrcdata/DACREGeogHeritagePortugal>
+    a cwrc:GeographicHeritageContext ;
+    rdfs:label ":Geographic Heritage for Charlotte Dacre"@en ;
+    oa:hasBody cwrc:portugal ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
+    prov:derivedFrom cwrc:Dacre12345 .
+
+<http://www.cwrc.ca/cwrcdata/DACREGeogHeritageEngland>
+    a cwrc:GeographicHeritageContext ;
+    rdfs:label ":Geographic Heritage for Charlotte Dacre"@en ;
+    oa:hasBody cwrc:england ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
+    prov:derivedFrom cwrc:Dacre12345 .
+
+<http://www.cwrc.ca/cwrcdata/DACREGeogHeritageMiddlesex>
+    a cwrc:GeographicHeritageContext ;
+    rdfs:label ":Geographic Heritage for Charlotte Dacre"@en ;
+    oa:hasBody cwrc:middlesex ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
+    prov:derivedFrom cwrc:Dacre12345 .
+
+<http://www.cwrc.ca/cwrcdata/DACREGeogHeritageLondon>
+    a cwrc:GeographicHeritageContext ;
+    rdfs:label ":Geographic Heritage for Charlotte Dacre"@en ;
+    oa:hasBody cwrc:london ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
+    prov:derivedFrom cwrc:Dacre12345 .
+
+<http://www.cwrc.ca/cwrcdata/DACREReligionAnglicanChurch>
+    a cwrc:ReligionContext ;
+    rdfs:label ":Religion Context for Charlotte Dacre"@en ;
+    oa:hasBody cwrc:anglicanChurch ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
+    prov:derivedFrom cwrc:Dacre12345 .
+
+<http://www.cwrc.ca/cwrcdata/DACREReligionJewish>
+    a cwrc:ReligionContext ;
+    rdfs:label ":Religion Context for Charlotte Dacre"@en ;
+    oa:hasBody cwrc:jewishReligion ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
+    prov:derivedFrom cwrc:Dacre12345 .
+
+<http://www.cwrc.ca/cwrcdata/DACREEthnicityJewish>
+    a cwrc:EthnicityContext ;
+    rdfs:label ":Ethnicity Context for Charlotte Dacre"@en ;
+    oa:hasBody cwrc:JewishEthnicity ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
+    prov:derivedFrom cwrc:Dacre12345 .
+
+<http://www.cwrc.ca/cwrcdata/DACRESocialClassEntrepreneurial-Industrialist>
+    a cwrc:SocialClassContext ;
+    rdfs:label ":Social Class for Charlotte Dacre"@en ;
+    oa:hasBody cwrc:entrepreneurial-industrialist ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
+    prov:derivedFrom cwrc:Dacre12345 .
+
+<http://www.cwrc.ca/cwrcdata/DACRESocialClassGentry>
+    a cwrc:SocialClassContext ;
+    rdfs:label ":Social Class for Charlotte Dacre"@en ;
+    oa:hasBody cwrc:gentry ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
+    prov:derivedFrom cwrc:Dacre12345 .
+
+<http://www.cwrc.ca/cwrcdata/DACRESocialClassIndigent>
+    a cwrc:SocialClassContext ;
+    rdfs:label ":Social Class for Charlotte Dacre"@en ;
+    oa:hasBody cwrc:indigent ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
+    prov:derivedFrom cwrc:Dacre12345 .
+
+# ELIZABETH SARAH GOOCH
+<http://www.cwrc.ca/cwrcdata/ElizabethSarahGooch>
+    cwrc:hasGender cwrc:genderWomanFemale ;
+    cwrc:hasEthnicityHeritage cwrc:JewishEthnicity ;
+    cwrc:hasNationalityHeritage cwrc:portugal ;
+    cwrc:hasReligionSelfDefined cwrc:anglicanChurch ;
+    cwrc:hasSocialClassSelfDefined cwrc:gentry ;
+    a foaf:Person ;
+    foaf:name "Elizabeth Sarah Gooch" .
+
+<http://www.cwrc.ca/cwrcdata/GOOCHGenderGenderWomanFemale>
+    a cwrc:GenderContext ;
+    rdfs:label ":Gender Context for Elizabeth Sarah Gooch"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/ElizabethSarahGooch> ;
+    prov:derivedFrom cwrc:Gooch12345 .
+
+<http://www.cwrc.ca/cwrcdata/GOOCHEthnicityHeritageJewish>
+    a cwrc:EthnicityHeritageContext ;
+    rdfs:label ":Ethnicity Heritage for Elizabeth Sarah Gooch"@en ;
+    oa:hasBody cwrc:JewishEthnicity ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/ElizabethSarahGooch> ;
+    prov:derivedFrom cwrc:Gooch12345 .
+
+<http://www.cwrc.ca/cwrcdata/GOOCHNationalityHeritagePortugal>
+    a cwrc:NationalityHeritageContext ;
+    rdfs:label ":Nationality Heritage for Elizabeth Sarah Gooch"@en ;
+    oa:hasBody cwrc:portugal ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/ElizabethSarahGooch> ;
+    prov:derivedFrom cwrc:Gooch12345 .
+
+<http://www.cwrc.ca/cwrcdata/GOOCHDenominationSelfDefinedAnglicanChurch>
+    a cwrc:ReligionContext ;
+    rdfs:label ":Religion Context for Elizabeth Sarah Gooch"@en ;
+    oa:hasBody cwrc:anglicanChurch ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/ElizabethSarahGooch> ;
+    prov:derivedFrom cwrc:Gooch12345 .
+
+<http://www.cwrc.ca/cwrcdata/GOOCHSocialClassSelfDefinedGentry>
+    a cwrc:SocialClassContext ;
+    rdfs:label ":Social Class Context for Elizabeth Sarah Gooch"@en ;
+    oa:hasBody cwrc:gentry ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/ElizabethSarahGooch> ;
+    prov:derivedFrom cwrc:Gooch12345 .
+
+<http://www.cwrc.ca/cwrcdata/ElizabethSarahGoochFather>
+    a foaf:Person ;
+    rdfs:label ":Father of Elizabeth Sarah Gooch"@en ;
+    loc:father <http://www.cwrc.ca/cwrcdata/ElizabethSarahGooch>;
+    cwrc:hasReligion cwrc:jewishReligion .
+#	prov:derivedFrom textnode;
+ 
+# GRACE AGUILAR
+<http://www.cwrc.ca/cwrcdata/GraceAguilar>
+    cwrc:hasGender cwrc:genderWomanFemale ;
+    cwrc:hasEthnicity cwrc:jewishEthnicity ;
+#add nationality after inserted into ontology
+cwrc:hasNationalHeritage cwrc:portugal, cwrc:spain ;
+    cwrc:hasNationalitySelfDefined cwrc:englishNationalIdentity, cwrc:jewishNationalIdentity ;
+    cwrc:hasRaceColourHeritage cwrc:whiteRaceColour ;
+    cwrc:hasReligion cwrc:protestant, cwrc:catholic ;
+    cwrc:hasSocialClass cwrc:entrepreneurial-industrialist, cwrc:middleClass ;
+    cwrc:hasReligionSelfDefined cwrc:jewishReligion ;
+    #check data: is it in the source as political affiliation or as nationality?
+    cwrc:hasPoliticalAffiliation cwrc:proto-zionistPoliticalAffiliation ;
+    a foaf:Person ;
+    owl:sameAs <http://viaf.org/viaf/7628015> ;
+    foaf:name "Grace Aguilar" .
+
+<http://www.cwrc.ca/cwrcdata/AGUILARGenderGenderContext>
+    a cwrc:GenderContext ;
+    rdfs:label "Gender Context for Grace Aguilar"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    prov:derivedFrom cwrc:Aguilar12345 .
+
+<http://www.cwrc.ca/cwrcdata/AGUILAREthnicityJewish>
+    a cwrc:RaceEthnicityContext ;
+    rdfs:label ":Ethnicity for Grace Aguilar"@en ;
+    oa:hasBody cwrc:jewishEthnicity ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    prov:derivedFrom cwrc:Aguilar12345 .
+
+<http://www.cwrc.ca/cwrcdata/AGUILARNationalHeritagePortugal>
+    a cwrc:NationalHeritageContext ;
+    rdfs:label ":National Heritage for Grace Aguilar"@en ;
+    oa:hasBody cwrc:portugal ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    prov:derivedFrom cwrc:Aguilar12345 .
+
+<http://www.cwrc.ca/cwrcdata/AGUILARNationalHeritageSpain>
+    a cwrc:NationalHeritageContext ;
+    rdfs:label ":National Heritage for Grace Aguilar"@en ;
+    oa:hasBody cwrc:spain ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    prov:derivedFrom cwrc:Aguilar12345 .
+
+<http://www.cwrc.ca/cwrcdata/AGUILARNationalitySelfDefinedEnglish>
+    a cwrc:NationalityContext ;
+    rdfs:label ":Nationality Self Defined for Grace Aguilar"@en ;
+    oa:hasBody cwrc:englishNationality ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    prov:derivedFrom cwrc:Aguilar12345 .
+
+<http://www.cwrc.ca/cwrcdata/AGUILARNationalitySelfDefinedJewish>
+    a cwrc:NationalityContext ;
+    rdfs:label ":Nationality Self Defined for Grace Aguilar"@en ;
+    oa:hasBody cwrc:jewishNationality ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    prov:derivedFrom cwrc:Aguilar12345 .
+
+<http://www.cwrc.ca/cwrcdata/AGUILARRaceColourHeritageWhite>
+    a cwrc:RaceEthnicityContext ;
+    rdfs:label ":Race Colour Heritage for Grace Aguilar"@en ;
+    oa:hasBody cwrc:whiteRaceColour ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    prov:derivedFrom cwrc:Aguilar12345 .
+
+<http://www.cwrc.ca/cwrcdata/AGUILARReligionJewish>
+    a cwrc:ReligionContext ;
+    rdfs:label ":Religion for Grace Aguilar"@en ;
+    oa:hasBody cwrc:jewishReligion ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    prov:derivedFrom cwrc:Aguilar12345 .
+
+<http://www.cwrc.ca/cwrcdata/AGUILARReligionProtestant>
+    a cwrc:ReligionContext ;
+    rdfs:label ":Religion for Grace Aguilar"@en ;
+    oa:hasBody cwrc:protestant ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    prov:derivedFrom cwrc:Aguilar12345 .
+
+<http://www.cwrc.ca/cwrcdata/AGUILARReligionCatholic>
+    a cwrc:ReligionContext ;
+    rdfs:label ":Religion for Grace Aguilar"@en ;
+    oa:hasBody cwrc:catholic ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    prov:derivedFrom cwrc:Aguilar12345 .
+
+<http://www.cwrc.ca/cwrcdata/AGUILARSocialClassEntrepreneurial-Industrialist>
+    a cwrc:SocialClassContext ;
+    rdfs:label ":Social Class for Grace Aguilar"@en ;
+    oa:hasBody cwrc:entrepreneurial-industrialist ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    prov:derivedFrom cwrc:Aguilar12345 .
+
+<http://www.cwrc.ca/cwrcdata/AGUILARSocialClassMiddleClass>
+    a cwrc:SocialClassContext ;
+    rdfs:label ":Social Class for Grace Aguilar"@en ;
+    oa:hasBody cwrc:middleClass ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    prov:derivedFrom cwrc:Aguilar12345 .
+
+<http://www.cwrc.ca/cwrcdata/AGUILARDenominationSelfDefinedJewish>
+    a cwrc:ReligionSelfDefined ;
+    rdfs:label ":Religion Self Defined for Grace Aguilar"@en ;
+    oa:hasBody cwrc:jewishReligion ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    prov:derivedFrom cwrc:Aguilar12345 .
+
+<http://www.cwrc.ca/cwrcdata/AGUILARPoliticalAffiliationProto-Zionist>
+    a cwrc:PoliticalContext ;
+    rdfs:label ":Political Affiliation Self Defined for Grace Aguilar"@en ;
+    #update when we have this in ontology
+    oa:hasBody cwrc:proto-zionist ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    prov:derivedFrom cwrc:Aguilar12345 .
+
+<http://www.cwrc.ca/cwrcdata/EmanuelAguilar>
+    a foaf:Person;
+    foaf:name "Emanuel Aguilar" ;
+    cwrc:father <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    cwrc:hasNationalHeritage cwrc:portugal .
+#    prov:derivedFrom textnode ;
+
+<http://www.cwrc.ca/cwrcdata/SarahDiasFernandesAguilar>
+    a foaf:Person ;
+    foaf:name "Sarah (Dias Fernandes) Aguilar" ;
+    cwrc:mother <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    cwrc:hasNationalHeritage cwrc:spain .
+#    prov:derivedFrom textnode .
+
+# AMY LEVY
+<http://www.cwrc.ca/cwrcdata/AmyLevy>
+    cwrc:hasGender cwrc:genderWomanFemale ;
+    cwrc:hasSocialClass cwrc:upper-middleClass ;
+    cwrc:hasNationalitySelfDefined cwrc:english ;
+    cwrc:hasReligionSelfDefined cwrc:jewishReligion ;
+    cwrc:hasSexualIdentity cwrc:lesbian ;
+    cwrc:hasEthnicity cwrc:jewishEthnicity ;
+    a foaf:Person ;
+    owl:sameAs <http://viaf.org/viaf/7628015> ;
+    foaf:name "Amy Levy" .
+
+<http://www.cwrc.ca/cwrcdata/LEVYGenderGenderWomanFemale>
+    a cwrc:GenderContext ;
+    rdfs:label ":Gender for Amy Levy"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
+    oa:hasTarget cwrc:AmyLevy ;
+    prov:derivedFrom cwrc:Levy12345 .
+
+<http://www.cwrc.ca/cwrcdata/LEVYSocialClassUpper-MiddleClass>
+    a cwrc:SocialClassContext ;
+    rdfs:label ":Social Class for Amy Levy"@en ;
+    oa:hasBody cwrc:upper-middleClass ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AmyLevy> ;
+    prov:derivedFrom cwrc:Levy12345 .
+
+<http://www.cwrc.ca/cwrcdata/LEVYNationalitySelfDefinedEnglish>
+    a cwrc:NationalityContext ;
+    rdfs:label ":Nationality Self Defined for Amy Levy"@en ;
+    oa:hasBody cwrc:englishNationality ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AmyLevy> ;
+    prov:derivedFrom cwrc:Levy12345 .
+
+<http://www.cwrc.ca/cwrcdata/LEVYDenominationSelfDefinedJewish>
+    a cwrc:ReligiousContext ;
+    rdfs:label ":Denomination Self Defined for Amy Levy"@en ;
+    oa:hasBody cwrc:jewishReligion ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AmyLevy> ;
+    prov:derivedFrom cwrc:Levy12345 .
+
+<http://www.cwrc.ca/cwrcdata/LEVYSexualIdentityLesbian>
+    a cwrc:SexualityContext ;
+    rdfs:label ":Sexual Identity for Amy Levy"@en ;
+    oa:hasBody cwrc:lesbian ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AmyLevy> ;
+    prov:derivedFrom cwrc:Levy12345 .
+
+<http://www.cwrc.ca/cwrcdata/LEVYEthnicityJewish>
+    a cwrc:RaceEthnicityContext ;
+    rdfs:label ":Ethnicity for Amy Levy"@en ;
+    oa:hasBody cwrc:jewishEthnicity ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AmyLevy> ;
+    prov:derivedFrom cwrc:Levy12345 .
+
+# CHARLOTTE MONTEFIORE
+<http://www.cwrc.ca/cwrcdata/CharlotteMontefiore>
+    cwrc:hasRaceColour cwrc:whiteRaceColour ;
+    cwrc:hasReligionSelfDefined cwrc:jewishReligion ;
+    cwrc:hasSocialClass cwrc:entrepreneurial-industrialist ;
+    cwrc:hasNationalHeritage cwrc:italian ;
+    a foaf:Person ;
+    foaf:name "Charlotte Montefiore" .
+
+<http://www.cwrc.ca/cwrcdata/MONTEFIOREGenderGenderWomanFemale>
+    a cwrc:GenderContext ;
+    rdfs:label ":Gender for Charlotte Montefiore"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
+    prov:derivedFrom cwrc:Montefiore12345 .
+
+<http://www.cwrc.ca/cwrcdata/MONTEFIORERaceColourWhite>
+    a cwrc:RaceColour ;
+    rdfs:label ":Race Colour for Charlotte Montefiore"@en ;
+    oa:hasBody cwrc:white ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
+    prov:derivedFrom cwrc:Montefiore12345 .
+
+<http://www.cwrc.ca/cwrcdata/MONTEFIOREDenominationSelfDefinedJewish>
+    a cwrc:DenominationSelfDefined ;
+    rdfs:label ":Denomination Self Defined for Charlotte Montefiore"@en ;
+    oa:hasBody cwrc:jewish ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
+    prov:derivedFrom cwrc:Montefiore12345 .
+
+<http://www.cwrc.ca/cwrcdata/MONTEFIORESocialClassEntrepreneurial-Industrialist>
+    a cwrc:DenominationSelfDefined ;
+    rdfs:label ":Denomination Self Defined for Charlotte Montefiore"@en ;
+    oa:hasBody cwrc:jewish ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
+    prov:derivedFrom cwrc:Montefiore12345 .
+
+<http://www.cwrc.ca/cwrcdata/MONTEFIORENationalHeritageItalian>
+    a cwrc:NationalHeritage ;
+    rdfs:label ":National Heritage for Charlotte Montefiore"@en ;
+    oa:hasBody cwrc:italian ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
+    prov:derivedFrom cwrc:Montefiore12345 .
+
+cwrc:CharlotteMontefioreFather
+    a foaf:Person ;
+    foaf:name "Abraham Montefiore" ;
+    loc:father <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
+    cwrc:hasNationalHeritage cwrc:italian .
+#    prov:derivedFrom textnode;
+
+#possibly applies to Charlotte Montefiore? Not sure why Dacre is here
+cwrc:charlotteDacreCulturalFormation1
+    a cwrc:RaceEthnicityContext, oa:Annotation ;
+    rdfs:label "RaceEthnicityContext for Charlotte Dacre"@en ;
+    oa:hasBody cwrc:jewish ;
+    oa:hasTarget cwrc:CharlotteDacre ;
+    prov:derivedFrom cwrc:charlotteDacre1 .
+
+# JULIA FRANKAU
+<http://www.cwrc.ca/cwrcdata/JuliaFrankau>
+    cwrc:hasGender cwrc:genderWomanFemale ;
+    cwrc:hasEthnicitySelfDefined cwrc:jewish ;
+    cwrc:hasreligionSelfDefined cwrc:jewishReligion ;
+    a foaf:Person ;
+    foaf:name "Julia Frankau" .
+
+<http://www.cwrc.ca/cwrcdata/FRANKAUGenderGenderWomanFemale>
+    a cwrc:GenderContext ;
+    rdfs:label ":Gender for Julia Frankau"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/JuliaFrankau> ;
+    prov:derivedFrom cwrc:Frankau12345 .
+
+<http://www.cwrc.ca/cwrcdata/FRANKAUEthnicitySelfDefinedJewish>
+    a cwrc:RaceEthnicityContext ;
+    rdfs:label ":Ethnicity Self Defined for Julia Frankau"@en ;
+    oa:hasBody cwrc:jewishEthnicity ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/JuliaFrankau> ;
+    prov:derivedFrom cwrc:Frankau12345 .
+
+<http://www.cwrc.ca/cwrcdata/FRANKAUDenominationSelfDefinedJewish>
+    a cwrc:ReligionContext ;
+    rdfs:label ":Denomination Self Defined for Julia Frankau"@en ;
+    oa:hasBody cwrc:jewishReligion ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/JuliaFrankau> ;
+    prov:derivedFrom cwrc:Frankau12345 .
+
+# VITA SACKVILLE-WEST
+<http://www.cwrc.ca/cwrcdata/VitaSackvilleWest>
+    cwrc:hasSocialClass cwrc:nobility ;
+    cwrc:hasNationalHeritageSelfDefined cwrc:spanish ;
+    cwrc:hasNationalHeritageSelfDefined cwrc:englishNationality ;
+    cwrc:hasEthnicitySelfDefined cwrc:gipsy ;
+    cwrc:hasSexualitySelfDefined cwrc:bisexual ;
+    cwrc:hasSexualitySelfDefined cwrc:lesbian ;
+    a foaf:Person ;
+    foaf:name "Vita Sackville-West" .
+    
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTSocialClassNobility>
+    a cwrc:SocialClassContext ;
+    rdfs:label "Social Class Context for Vita Sackville-West"@en ;
+    oa:hasBody cwrc:nobility ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+    prov:derivedFrom cwrc:SackvilleWest12345 .
+       
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTNationalHeritageSpanish>
+    a cwrc:NationalHeritageContext ;
+    rdfs:label "National Heritage Context for Vita Sackville-West"@en ;
+    oa:hasBody cwrc:spanish ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+    prov:derivedFrom cwrc:SackvilleWest12345 .
+    
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTNationalHeritageEnglish>
+    a cwrc:NationalHeritageContext ;
+    rdfs:label "National Heritage Context for Vita Sackville-West"@en ;
+    oa:hasBody cwrc:englishNationality ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+    prov:derivedFrom cwrc:SackvilleWest12345 .
+    
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTEthnicityGipsy>
+    a cwrc:EthnicityContext ;
+    rdfs:label "Ethnicity Context for Vita Sackville-West"@en ;
+    oa:hasBody cwrc:gipsy ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+    prov:derivedFrom cwrc:SackvilleWest12345 .
+    
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTSexualityBisexual>
+    a cwrc:SexualityContext ;
+    rdfs:label "Sexuality Context for Vita Sackville-West"@en ;
+    oa:hasBody cwrc:bisexual ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+    prov:derivedFrom cwrc:SackvilleWest12345 .
+    
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTSexualityLesbian>
+    a cwrc:SexualityContext ;
+    rdfs:label "Sexuality Context for Vita Sackville-West"@en ;
+    oa:hasBody cwrc:lesbian ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+    prov:derivedFrom cwrc:SackvilleWest12345 .
+
+<http://www.cwrc.ca/cwrcdata/JosefaDuran>
+    a foaf:Person ;
+    foaf:name "Josefa Duran (Pepita)" ;
+    cwrc:grandmother <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+    cwrc:hasNationalIdentity cwrc:spanish .
+#    prov:derivedFrom textnode .
+
+<http://www.cwrc.ca/cwrcdata/JosefaDuran>
+    a foaf:Person ;
+    foaf:name "Josefa Duran (Pepita)" ;
+    cwrc:grandmother <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+    cwrc:hasEthnicity cwrc:gipsy .
+#    prov:derivedFrom textnode .
+
+<http://www.cwrc.ca/cwrcdata/VitaSackvilleWestGrandfather>
+    a foaf:Person ;
+    foaf:name "Vita Sackville West's grandfather" ;
+    rel:grandfather <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+    cwrc:hasEthnicity cwrc:gipsy .
+#    prov:derivedFrom textnode .
+
+# VIRGINIA WOOLF
+<http://www.cwrc.ca/cwrcdata/VirginiaWoolf>
+    cwrc:hasSocialRackSelfDefined cwrc:professional ;
+    cwrc:hasSexualitySelfDefined cwrc:bisexual ;
+    cwrc:hasGender cwrc:genderWomanFemale ;
+    cwrc:hasNationality cwrc:englishNationality ;
+    cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/ElizabethI> ;
+    cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/EmbassyLetters> ;
+    a foaf:Person ;
+    foaf:name "Virginia Woolf" .
+    
+<http://www.cwrc.ca/cwrcdata/WOOLFSocialRankSelfDefinedProfessional>
+    a cwrc:SocialRankContext ;
+    rdfs:label "SocialRankSelfDefined for Virginia Woolf"@en ;
+    oa:hasBody cwrc:professional ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+    prov:derivedFrom cwrc:Woolf12345 .
+
+<http://www.cwrc.ca/cwrcdata/WOOLFSexualitySelfDefinedBisexual>
+    a cwrc:SexualityContext ;
+    rdfs:label ":SexualitySelfDefined for Virginia Woolf"@en ;
+    oa:hasBody cwrc:bisexual ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+    prov:derivedFrom cwrc:Woolf12345 .
+    
+<http://www.cwrc.ca/cwrcdata/WOOLFGenderWomanFemale>
+    a cwrc:GenderContext ;
+    rdfs:label "Gender Context for Virginia Woolf"@en ;
+    oa:hasBody cwrc:genderWomanFemale ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+    prov:derivedFrom cwrc:Woolf12345 .
+    
+<http://www.cwrc.ca/cwrcdata/WOOLFNationalIdentityEnglish>
+    a cwrc:NationalityContext ;
+    rdfs:label ":NationalIdentity for Virginia Woolf"@en ;
+    oa:hasBody cwrc:englishIdentity ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+    prov:derivedFrom cwrc:Woolf12345 .    
+    
+ #Works go here   
+
+<http://www.cwrc.ca/cwrcdata/Orlando>
+   a frbr:Work, bibo:Book;
+   schema:workExample <http://www.cwrc.ca/cwrcdata/OrlandoExpressionOrlando2006> ;
+   cwrc:hasGenre cwrc:genreNovel ;
+   loc:pub <http://www.cwrc.ca/cwrcdata/HogarthPress> ;
+   cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/AlexanderPope> ;
+   cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/ElizabethI> ;
+   cwrc:relatesByMaterialFeaturesTo <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+   cwrc:relatesByMaterialFeaturesTo <http://www.cwrc.ca/cwrcdata/KnoleHouse> ;   
+   cwrc:contestsGenre cwrc:genreBiography ;
+   cwrc:contestsGenre cwrc:genreFiction ;
+   cwrc:contestsGenre cwrc:genreMockforms ;
+   cwrc:contestsGenre cwrc:genreHistory ;
+   cwrc:relatesByCirculationTo <http://www.cwrc.ca/cwrcdata/ToTheLighthouse> ;
+   cwrc:relatesByCirculationTo <http://www.cwrc.ca/cwrcdata/HarcourtBrace> ;
+   cwrc:relatesByCirculationTo <http://www.cwrc.ca/cwrcdata/RichardKennedy> ;
+   cwrc:relatesByManuscriptTo <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+   cwrc:relatesByArchiveTo <http://www.cwrc.ca/cwrcdata/KnoleHouse> ;
+   cwrc:hasSetting <http://www.cwrc.ca/cwrcdata/Constantinople> ;
+   cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/LadyMaryWortleyMontagu> ;
+   cwrc:relatesEroticallyTo <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+   cwrc:influences <http://www.cwrc.ca/cwrcdata/ALadyOfQuality> ;
+   cwrc:relatesPoliticallyTo <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+   cwrc:relatesBySisterHoodTo <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+   cwrc:relatesTextuallyTo <http://www.cwrc.ca/cwrcdata/HermeticDefinition> ;
+   cwrc:relatesEroticallyTo <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+   cwrc:relatesByReceptionTo <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+   cwrc:relatesByEducationTo <http://www.cwrc.ca/cwrcdata/HelenDunmore> ;
+   dc:title "Orlando" ;
+   rdfs:label "Orlando (Work)"@en ;
+   dc:creator <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> .
+   
+<http://www.cwrc.ca/cwrcdata/ToTheLighthouse>
+   a frbr:Work, bibo:Book;
+   schema:workExample <http://www.cwrc.ca/cwrcdata/ToTheLighthouse>;
+   cwrc:hasGenre cwrc:genreNovel ;  
+   dc:title "To the Lighthouse" ;
+   rdfs:label "To the Lighthouse"@en ;
+   dc:creator <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> .
+   
+<http://www.cwrc.ca/cwrcdata/EmbassyLetters>   
+   a frbr:Work, bibo:Book;
+   schema:workExample <http://www.cwrc.ca/cwrcdata/EmbassyLetters>;
+   cwrc:hasGenre cwrc:genreLetter ;
+   dc:creator <http://www.cwrc.ca/cwrcdata/LadyMaryWortleyMontagu> .
+   
+<http://www.cwrc.ca/cwrcdata/ALadyofQuality>
+   a frbr:Work, bibo:Book;
+   schema:workExample <http://cwrc.ca/cwrcdata/ALadyofQuality>;
+   cwrc:hasGenre cwrc:genreFiction ;
+   cwrc:hasGenre cwrc:genreRomance ;
+   cwrc:hasGenre cwrc:genreHistorical ;
+   rdfs:label "A Lady of Quality"@en ;   
+   dc:creator <http://www.cwrc.ca/cwrcdata/FrancesHodgsonBurnett> .
+   
+<http://www.cwrc.ca/cwrcdata/ToldByAnIdiot>
+   a frbr:Work, bibo:Book;
+   schema:workExample <http://cwrc.ca/cwrcdata/ToldByAnIdiot>;
+   cwrc:hasGenre cwrc:genreNovel ;
+   rdfs:label "Told by an Idiot"@en ;
+   dc:creator <http://www.cwrc.ca/cwrcdata/RoseMacaulay> .  
+
+<http://www.cwrc.ca/cwrcdata/HermeticDefinition>
+   a frbr:Work, bibo:Book;
+   schema:workExample <http://cwrc.ca/cwrcdata/ALadyofQuality>;
+   cwrc:hasGenre cwrc:genrePoetry ;
+   rdfs:label "HermeticDefinition"@en ;
+   dc:creator <http://www.cwrc.ca/cwrcdata/HD> .
+   
+<http://www.cwrc.ca/cwrcdata/KnoleAndTheSackvilles>
+   a frbr:Work, bibo:Book;
+   schema:workExample <http://cwrc.ca/cwrcdata/KnoleAndTheSackvilles>;
+   cwrc:hasGenre cwrc:genreHistory ;
+   cwrc:influences <http://www.cwrc.ca/cwrcdata/Orlando> ;
+   dc:date "1922";
+   rdfs:label "Knole and the Sackvilles"@en ;
+   dc:creator <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> .
+
+<http://www.cwrc.ca/cwrcdata/TwelveDays>
+   a frbr:Work, bibo:Book;
+   schema:workExample <http://cwrc.ca/cwrcdata/TwelveDays>;
+   cwrc:hasGenre cwrc:genreHistory ;
+   cwrc:hasReceptionRelationTo <http://www.cwrc.ca/cwrcdata/Orlando> ;
+   dc:date "1922";
+   rdfs:label "Twelve Days"@en ;
+   dc:creator <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> .
+   
+<http://www.cwrc.ca/cwrcdata/ABoyAtTheHogarthPress>
+   a frbr:Work, bibo:Book;
+   schema:workExample <http://www.cwrc.ca/cwrcdata/ABoyAtTheHogarthPress>;
+   cwrc:hasGenre cwrc:genreNovel ;  
+   dc:title "A Boy at the Hogarth Press" ;
+   rdfs:label "A Boy at the Hogarth Press"@en ;
+   dc:creator <http://www.cwrc.ca/cwrcdata/RichardKennedy> .   
+   
+<http://www.cwrc.ca/cwrcdata/OrlandoFilm>
+   a frbr:Work, bibo:Film ;
+   cwrc:hasGenre cwrc:genreFilm ; 
+   owl:sameAs <http://www.imdb.com/title/tt0107756/> ;
+   dc:creator <http://www.cwrc.ca/cwrcdata/SallyPotter> ;  
+   cwrc:adapts <http://www.cwrc.ca/cwrcdata/Orlando> ;
+   dc:title "Orlando (film)" ;
+   rdfs:label "Orlando (film)" .
+   
+ <http://www.cwrc.ca/cwrcdata/OrlandoPlay>
+   a frbr:Work, dbpedia:Play;
+   cwrc:hasGenre cwrc:genreDrama ; 
+   cwrc:adapts <http://www.cwrc.ca/cwrcdata/Orlando> ;
+   dc:creator <http://www.cwrc.ca/cwrcdata/SarahRuhl> ;
+   dc:title "Orlando (play)" ;
+   rdfs:label "Orlando (play)" .
+ 
+ <http://www.cwrc.ca/cwrcdata/TheDailyChronicle>
+   a frbr:Work, bibo:Newspaper;
+   schema:workExample <http://www.cwrc.ca/cwrcdata/TheDailyChronicle>;
+   cwrc:hasGenre cwrc:genreNewspaper .
+ 
+ <http://www.cwrc.ca/cwrcdata/TheObserver>
+   a frbr:Work, bibo:Newspaper;
+   schema:workExample <http://www.cwrc.ca/cwrcdata/TheObserver>;
+   cwrc:hasGenre cwrc:genreNewspaper .
+ 
+ <http://www.cwrc.ca/cwrcdata/MorningPost>
+   a frbr:Work, bibo:Newspaper;
+   schema:workExample <http://www.cwrc.ca/cwrcdata/MorningPost>;
+   cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/Orlando> ;
+   cwrc:hasGenre cwrc:genreNewspaper .
+
+<http://www.cwrc.ca/cwrcdata/OrlandoExpressionOrlando2006>
+   a frbr:Expression, bibo:Book;
+   schema:workExample <http://www.cwrc.ca/cwrcdata/Orlando>;
+   cwrc:hasGenre cwrc:genreNovel ;
+   cwrc:hasMaterialFeaturesRelatedto <http://www.cwrc.ca/cwrcdata/TildaSwinton> ;
+   loc:pub <http://www.cwrc.ca/cwrcdata/MarinerBooks> ;
+   cwrc:hasMaterialFeaturesRelatedto <http://dbpedia.org/resource/Knole_House>, <http://dbpedia.org/resource/Sevenoaks>, <http://sws.geonames.org/3333158>, <http://sws.geonames.org/6269131>;
+   bibo:isbn "978-0156031516";
+   dc:date "2006";
+   bibo:edition "1";
+   rdfs:label "Orlando (2006)"@en ;
+   dc:title "Orlando (2006)" ;
+   dc:creator <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> .
+
+#Organizations go here
+
+<http://www.cwrc.ca/cwrcdata/MarinerBooks>
+   a foaf:Organization;
+   foaf:name "Mariner Books"@en ;
+   rdfs:label "Mariner Books"@en .
+   
+<http://www.cwrc.ca/cwrcdata/HogarthPress>
+   a foaf:Organization;
+   foaf:name "HogarthPress"@en ;
+   rdfs:label "HogarthPress"@en ;
+   owl:sameAs <http://dbpedia.org/resource/Hogarth_Press> .
+   
+ <http://www.cwrc.ca/cwrcdata/ClassicStageCompany>
+    a foaf:Organization;
+    foaf:name "Classic Stage Company"@en ;
+    rdfs:label "Classic Stage Company"@en . 
+    
+#People go here    
+
+<http://www.cwrc.ca/cwrcdata/AlexanderPope>
+    cwrc:hasGender cwrc:genderManMale ;
+    cwrc:hasNationality cwrc:englishNationalIdentity ;
+    a foaf:Person ;
+    foaf:name "Alexander Pope" .
+
+<http://www.cwrc.ca/cwrcdata/ElizabethI>
+    cwrc:hasGender cwrc:genderWomanFemale ;
+    cwrc:hasNationality cwrc:englishNationalIdentity ;
+    a foaf:Person ;
+    foaf:name "Elizabeth I" .
+    
+<http://www.cwrc.ca/cwrcdata/TildaSwinton>
+    owl:sameAs <http://www.viaf.org/viaf/117443790/#Swinton,_Tilda>;
+    a foaf:Person ;
+    foaf:name "Tilda Swinton" .
+   
+<http://www.cwrc.ca/cwrcdata/SallyPotter>
+    owl:sameAs <http://www.viaf.org/viaf/78760437/#Potter,_Sally>;
+    a foaf:Person ;
+    foaf:name "Sally Potter" .
+   
+<http://www.cwrc.ca/cwrcdata/EdwinMorgan>
+    owl:sameAs <http://www.viaf.org/viaf/68969203/#Morgan,_Edwin,_1920-2010>;
+    cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
+    a foaf:Person ;
+    foaf:name "Edwin Morgan" .
+  
+<http://www.cwrc.ca/cwrcdata/RichardKennedy>
+    owl:sameAs <http://www.viaf.org/viaf/52955138/#Kennedy,_Richard,_1910-1989>;
+    a foaf:Person ;
+    foaf:name "Richard Kennedy" .
+    
+#<http://www.cwrc.ca/cwrcdata/SirJohnCollingSquire>
+#   a foaf:Person ;
+#   foaf:name "Sir John Colling Squire" .
+    
+<http://www.cwrc.ca/cwrcdata/RebeccaWest>
+    owl:sameAs <http://viaf.org/viaf/108321467/#West,_Rebecca,_1892-1983>;
+    cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/Orlando> ;
+    a foaf:Person ;
+    foaf:name "Rebecca West" .    
+    
+<http://www.cwrc.ca/cwrcdata/DHLawrence>
+    owl:sameAs <http://viaf.org/viaf/95150359/#Lawrence,_D._H.,_(David_Herbert),_1885-1930>;
+    cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/Orlando> ;
+    a foaf:Person ;
+    foaf:name "D H Lawrence" .    
+    
+<http://www.cwrc.ca/cwrcdata/AldousHuxley>
+    owl:sameAs <http://viaf.org/viaf/71392434/#Huxley,_Aldous,_1894-1963>;
+    cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/Orlando> ;
+    a foaf:Person ;
+    foaf:name "Aldous Huxley" .  
+    
+<http://www.cwrc.ca/cwrcdata/JeanetteWinterson>
+    owl:sameAs <http://viaf.org/viaf/4961254/#Winterson,_Jeanette,_1959->;
+    cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/Orlando> ;
+    a foaf:Person ;
+    foaf:name "Jeanette Winterson" .
+    
+<http://www.cwrc.ca/cwrcdata/SarahRuhl>
+    owl:sameAs <http://viaf.org/viaf/81312438/#Ruhl,_Sarah,_1974->;
+    a foaf:Person ;
+    foaf:name "Sarah Ruhl" .    
+
+<http://www.cwrc.ca/cwrcdata/LadyMaryWortleyMonatgu>
+    owl:sameAs <http://viaf.org/viaf/7394587/#Montagu,_Mary_Wortley,_Lady,_1689-1762>;
+    a foaf:Person ;
+    foaf:name "Lady Mary Wortley Montagu" .
+    
+<http://www.cwrc.ca/cwrcdata/FrancesHodgsonBurnett>
+    owl:sameAs <http://viaf.org/viaf/27061925/#Burnett,_Frances_Hodgson,_1849-1924>;
+    a foaf:Person ;
+    foaf:name "Frances Hodgson Burnett" .   
+
+<http://www.cwrc.ca/cwrcdata/RoseMacaulay>
+    owl:sameAs <http://viaf.org/viaf/100194559/#Macaulay,_Rose,_1881-1958>;
+    a foaf:Person ;
+    foaf:name "Rose Macaulay" .        
+
+<http://www.cwrc.ca/cwrcdata/HD>
+    owl:sameAs <http://viaf.org/viaf/4925150/#H.D._(Hilda_Doolittle),_1886-1961>;
+    a foaf:Person ;
+    foaf:name "H D" .        
+   
+cwrc:annaleanowens1
+    nif:isString """Although AL herself, in attempting to adopt an unequivocally English identity, implicitly claimed that she was white, evidence suggests that while
+her father was probably Welsh (he had lived in Middlesex) and presumably white, her mother was quite possibly Eurasian. If this is the case then
+AL suppressed her mixed-race origins. Anna was multi-lingual and from childhood could speak Hindustani, English and Guzerati (also called 
+Gujarati), which was taught to her by her mother. She also became fluent in Sanskrit,French ,Thai , Malay,  Arabic, Persian, Latin and Pali. 
+She knew some Russian from her travels. AL was Presbyterian but also studied Hinduism and Buddhism. She believed that she was too good a Christian 
+not to be something of a Buddhist, and too good a Buddhist not to be something of a Christian.""" ;
+    a nif:Context, nif:Sentence ;
+    prov:createdBy cwrc:originalOrlandoAuthor .
+
+cwrc:annaleanowens2
+    nif:isString """AL often visited the Reclining Buddha at the temple Wat Po in Bangkok. Her Thai teacher gave her frequent instruction on Buddha's teachings. Later in
+Siamese Harem Life, Anna recalled that she had learned that the prophet's object was not only a religious but a social revolution. A good deal of what
+was venerated as religion he found to be merely social usage, for which a Divine sanction was feigned. [Buddha], without hesitation, rejected all of
+this . . . . His greatest blow to the old religion, however, was in his explicit repudiation of caste. He offered his religion to all men alike . . . . 
+Buddha boldly expounded to the people that, according to their own books, all men were equal.""" ;
+    a nif:Context, nif:Sentence ;
+    prov:createdBy cwrc:originalOrlandoAuthor .
+
+cwrc:charlotteDacre1
+    nif:isString """CD was a teenager when her Jewish parents divorced; presumably she was brought up in Judaism until this event; probably she completed her upbringing as an gentlewoman. She must have been to a greater or lesser extent an outsider in English society, not only because of her Sephardic Jewish Portuguese heritage but because 
+of her father's highly visible but anomalous character, as a Londoner but an outsider, an ex-street-child and boxer, author of inflammatory political pamphlets, 
+moving in high society and privy to its financial secrets while not himself a member of it.""" ;
+    a nif:Context, nif:Sentence ;
+    prov:createdBy cwrc:originalOrlandoAuthor .
+
+cwrc:charlotteDacre2
+    nif:isString "The Anglican baptism of CD's children may—perhaps—represent a final severing of her Jewish roots." ;
+    a nif:Context, nif:Sentence ;
+    prov:createdBy cwrc:originalOrlandoAuthor .
+
+cwrc:graceaguilar1
+    nif:isString """Both of GA's parents were presumably white and of Jewish descent; her family belonged to the middle class. Her father's family was from Spain and her mother's 
+family was from Portugal. GA was English by birth, and she was full of praise for her country as a land of tolerance and freedom: England offers a rest and home 
+of perfect freedom to the exile and oppressed . . . . Much of her writing about Jews served to counter the claims of those such as Thomas Carlyle, who argued that
+Jews could not be fully loyal to any country except Zion. GA's writings treat in detail the Jewish faith to which she strongly adhered, and she often focuses on
+the persecution and prejudice which Jews suffered throughout the nineteenth century, as well as historically. As critic Michael Galchinsky argues, the practices
+and culture of crypto-Judaism, whereby Jews evaded the Inquisition by passing for Catholic while retaining their ancestral faith in private, considerably influenced
+both the form and content of her work. Despite her intense commitment to improving the standing of her people through her writing, her friend Anna Maria Hall
+avers that she and her husband could only with difficulty get GA to speak on religious topics and were quite unacquainted with her religious habits.
+However, her continuing dedication to Judaism, and her identification of herself with her Sephardic Jewish heritage—which she also considered a nationality
+—was obvious to those who knew her, and she may have been a proto-Zionist the natural and unaffected eloquence of her words, when referring to the past history 
+of the Jews . . . and the positive radiance of her countenance when she spoke of the gathering of the tribes at Jerusalem, could never be forgotten.""" ;
+    a nif:Context, nif:Sentence ;
+    prov:createdBy cwrc:originalOrlandoAuthor .
+
+cwrc:graceaguilar2
+    nif:isString """In Devon she developed the religious tolerance that distinguishes her writing and helped her to bridge the gap between the Jewish and Christian literary 
+communities. Here she came into contact with provincial English Protestantism, which she distinguished from the intolerant Catholicism that had 
+persecuted her family on the Continent. She made Christian friends with whom she discussed religious issues, attended church—she altered the forms of 
+praise and prayer where necessary to accord with her own—and came to the conclusion that Christianity and Judaism had much in common in spirit, even
+ if they diverged in form. She later argued in Sabbath Thoughts that Christianity was the Kingdom of Iron prophesied by Daniel, which would prepare
+for the Jewish messiah. Her lack of adequate religious education meant that she frequently had to rely on Christian texts about Judaism. Critic
+Beth-Zion Lask Abrahams joins some contemporary critics in calling her a Jewish Protestant; however, others have argued that though she was reformist,
+she was a dedicated Jew nonetheless, and above all.""" ;
+    a nif:Context, nif:Sentence ;
+    prov:createdBy cwrc:originalOrlandoAuthor .
+
+cwrc:originalOrlandoAuthor
+    a foaf:Group ;
+    foaf:name "Members of the Orlando Project." .
+
+#ONTOLOGY 
