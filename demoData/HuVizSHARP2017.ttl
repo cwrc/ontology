@@ -694,7 +694,7 @@ cwrc:charlotteDacreCulturalFormation1
     rdfs:label "Sexuality Context for Virginia Woolf"@en ;
     oa:hasBody cwrc:bisexual ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
-    prov:derivedFrom cwrc:Woolf12345 .
+    prov:derivedFrom cwrc:VirginiaWoolf1 .
     
 <http://www.cwrc.ca/cwrcdata/WOOLFGenderWomanFemale>
     a cwrc:GenderContext ;
@@ -1015,6 +1015,11 @@ praise and prayer where necessary to accord with her own—and came to the concl
 for the Jewish messiah. Her lack of adequate religious education meant that she frequently had to rely on Christian texts about Judaism. Critic
 Beth-Zion Lask Abrahams joins some contemporary critics in calling her a Jewish Protestant; however, others have argued that though she was reformist,
 she was a dedicated Jew nonetheless, and above all.""" ;
+    a nif:Context, nif:Sentence ;
+    prov:createdBy cwrc:originalOrlandoAuthor .
+
+<http://www.cwrc.ca/cwrcdata/VirginiaWoolf1>
+    rdfs:label """Woolf, Virginia Woolf's childhood sexual experience was painful, humiliating, and formative, and her adult sexuality has been much discussed since publication of "A Sketch of the Past," "22 Hyde Park Gate," and "Old Bloomsbury" in Moments of Being, 1976. She later shared the principled objections of her Bloomsbury friends to the Victorian social management of sexuality, which they saw as based on possessiveness, jealousy, and exploitation. Her own erotic relationships were with individuals of both sexes.""" ;
     a nif:Context, nif:Sentence ;
     prov:createdBy cwrc:originalOrlandoAuthor .
 
