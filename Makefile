@@ -75,4 +75,5 @@ figures/genreTaxonomy-$(ONTOLOGY_DATE).png: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 clean:
 	rm -f $(ONTOLOGY)-$(ONTOLOGY_DATE).dot $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-template-$(ONTOLOGY_DATE).html $(ONTOLOGY)-$(ONTOLOGY_DATE).html $(ONTOLOGY)-citations.html $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp $(ONTOLOGY)-$(ONTOLOGY_DATE).counts
 testing-deploy: force all
-		
+clean-all:
+	ls | grep '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].*'| xargs rm
