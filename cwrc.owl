@@ -6,6 +6,7 @@
     xmlns:muninn="http://rdf.muninn-project.org/ontologies/muninn#"
     xmlns:foaf="http://xmlns.com/foaf/0.1/"
     xmlns:rel="http://purl.org/vocab/relationship/"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
     xmlns:bio="http://purl.org/vocab/bio/0.1/"
     xmlns:dbpedia="http://dbpedia.org/resource/"
     xmlns:time = "http://www.w3.org/2006/time#"   
@@ -32,6 +33,9 @@
 
 
    <owl:Ontology rdf:about="">
+    <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>  
+    <vann:preferredNamespacePrefix>cwrc</vann:preferredNamespacePrefix> 
+    <vann:preferredNamespaceUri>http://sparql.cwrc.ca/ontology/cwrc#</vann:preferredNamespaceUri> 
     <dc:title xml:lang="en">The CWRC Ontology</dc:title>
     <rdfs:label xml:lang="en">The CWRC Ontology</rdfs:label>
     <foaf:name xml:lang="en">The CWRC Ontology</foaf:name>
@@ -279,6 +283,8 @@
    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
    <void:inDataset rdf:resource="#datasetdefinition"/>
    <owl:equivalentClass rdf:resource="#CulturalForm"/>
+   <dc:isReplacedBy rdf:resource="#CulturalForm"/>
+   <vs:term_status xml:lang="en">deprecated</vs:term_status>
  </owl:DeprecatedClass>
 
 
@@ -664,7 +670,8 @@
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
    <owl:equivalentClass rdf:resource="#Sexuality"/>
- </owl:DeprecatedClass>
+   <dc:isReplacedBy rdf:resource="#Sexuality"/>
+   <vs:term_status xml:lang="en">deprecated</vs:term_status> </owl:DeprecatedClass>
 
 
 <!--  (http://ir.lib.uwo.ca/cgi/viewcontent.cgi?article=1085&context=fimspub) -->
@@ -713,9 +720,11 @@
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <owl:equivalentClass rdf:resource="#Gender"/>
+   <dc:isReplacedBy rdf:resource="#Gender"/>
+   <vs:term_status xml:lang="en">deprecated</vs:term_status>
  </owl:DeprecatedClass>
 
-<cwrc:SexIdentity rdf:about="#maleSex">
+<rdf:Description rdf:about="#maleSex">
  <rdfs:label xml:lang="en">Male</rdfs:label>
  <rdfs:label xml:lang="fr">Mâle</rdfs:label>
  <foaf:name xml:lang="en">Male (Sex)</foaf:name>
@@ -727,9 +736,11 @@
  <owl:comment xml:lang="en">Deprecated in favour of instance #genderManMale.</owl:comment>
  <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
  <owl:equivalentClass rdf:resource="#genderManMale"/>
-</cwrc:SexIdentity>
+ <dc:isReplacedBy rdf:resource="#genderManMale"/>
+ <vs:term_status xml:lang="en">deprecated</vs:term_status>
+</rdf:Description>
 
-<cwrc:SexIdentity rdf:about="#femaleSex">
+<rdf:Description rdf:about="#femaleSex">
  <rdfs:label xml:lang="en">Female</rdfs:label>
  <rdfs:label xml:lang="fr">Femelle</rdfs:label>
  <foaf:name xml:lang="en">Female (Sex)</foaf:name>
@@ -741,9 +752,11 @@
  <owl:comment xml:lang="en">Deprecated in favour of instance #genderWomanFemale.</owl:comment>
  <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
  <owl:equivalentClass rdf:resource="#genderWomanFemale"/>
-</cwrc:SexIdentity>
+ <dc:isReplacedBy rdf:resource="#genderWomanFemale"/>
+ <vs:term_status xml:lang="en">deprecated</vs:term_status>
+</rdf:Description>
 
-<cwrc:SexIdentity rdf:about="#unknownSex">
+<rdf:Description rdf:about="#unknownSex">
  <rdfs:label xml:lang="en">Unknown</rdfs:label>
  <rdfs:label xml:lang="fr">Inconnue</rdfs:label>
  <foaf:name xml:lang="en">Unknown (Sex)</foaf:name>
@@ -754,7 +767,8 @@
   <void:inDataset rdf:resource="#datasetdefinition"/>
  <owl:comment xml:lang="en">Deprecated with no current equivalence.</owl:comment>
  <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-</cwrc:SexIdentity>
+ <vs:term_status xml:lang="en">deprecated</vs:term_status>
+</rdf:Description>
 
  <owl:Class rdf:ID="RaceColour">
    <rdfs:label xml:lang="en">Race and/or Colour</rdfs:label>
@@ -778,6 +792,8 @@
  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
  <void:inDataset rdf:resource="#datasetdefinition"/>
  <owl:equivalentClass rdf:resource="#whiteRaceColour"/>
+ <dc:isReplacedBy rdf:resource="#whiteRaceColour"/>
+ <vs:term_status xml:lang="en">deprecated</vs:term_status>
 </owl:DeprecatedClass>
 
 <cwrc:RaceColour rdf:about="#whiteRaceColour">
@@ -847,6 +863,8 @@
  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
  <void:inDataset rdf:resource="#datasetdefinition"/>
  <owl:equivalentClass rdf:resource="#jewishEthnicity"/>  
+ <dc:isReplacedBy rdf:resource="#jewishEthnicity"/>
+ <vs:term_status xml:lang="en">deprecated</vs:term_status>
 </owl:DeprecatedClass>
 
 <cwrc:Ethnicity rdf:about="#jewishEthnicity">
@@ -1513,6 +1531,8 @@
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <owl:equivalentClass rdf:resource="#entrepreneurial-industrialist"/>
+ <dc:isReplacedBy rdf:resource="#entrepreneurial-industrialist"/>
+ <vs:term_status xml:lang="en">deprecated</vs:term_status>
  </owl:DeprecatedClass>
 
 <cwrc:SocialClassIdentity rdf:about="#indigent">
