@@ -1518,8 +1518,9 @@
  <rdfs:subClassOf rdf:resource="#CulturalForm"/>
  <skos:definition xml:lang="en">Gentry indicates someone who is property-owning or related to the same; property can be land or stocks and bonds. It begins in the idea of owning arms and having a coat of arms. but is distinguished from nobility in so far as money is not necessarily related to blood and title. Disinterested gentlemen are of this class (i.e. Mr. Bennett in Jane Austen). Gentlewomen belong to this class, even thought they may not themselves own much property but instead be supported by a father or brother, or they may be distressed, which is to say, impoverished gentlewomen, as in the case of Jane Eyre or Austen's Jane Fairfax.</skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-  <void:inDataset rdf:resource="#datasetdefinition"/>
+ <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+ <void:inDataset rdf:resource="#datasetdefinition"/>
+ <owl:sameAs rdf:resource="http://dbpedia.org/resource/Gentry"/>
 </cwrc:SocialClassIdentity>
 
  <owl:DeprecatedClass rdf:about="#entrepreneurial-industrialism">
@@ -1658,37 +1659,6 @@
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
  </cwrc:RaceColour>
-
-  <cwrc:SocialClass rdf:about="#gentry">
-   <rdfs:label xml:lang="en">Gentry</rdfs:label>
-   <rdfs:label xml:lang="fr">Gentry</rdfs:label>
-   <skos:definition xml:lang="en"></skos:definition>
-   <skos:definition xml:lang="fr"></skos:definition>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <owl:sameAs rdf:resource="http://dbpedia.org/resource/Gentry"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-  <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:SocialClass>
-
-  <cwrc:SocialClass rdf:about="#indigent">
-   <rdfs:label xml:lang="en">Indigent</rdfs:label>
-   <rdfs:label xml:lang="fr">Pauvre</rdfs:label>
-   <skos:definition xml:lang="en"></skos:definition>
-   <skos:definition xml:lang="fr"></skos:definition>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-  <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:SocialClass>
-
-  <cwrc:SocialClass rdf:about="#entrepreneurial-industrialist">
-   <rdfs:label xml:lang="en">Entrepreneurial Industrialist</rdfs:label>
-   <rdfs:label xml:lang="fr">Entrerpreneur Industrialist</rdfs:label>
-   <skos:definition xml:lang="en"></skos:definition>
-   <skos:definition xml:lang="fr"></skos:definition>
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-  <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:SocialClass>
 
 <owl:ObjectProperty rdf:ID="personalProperty">
  <rdfs:label xml:lang="en">Personal Property</rdfs:label>
