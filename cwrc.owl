@@ -665,7 +665,7 @@
    <rdfs:label xml:lang="fr">Identité Sexuelle</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-   <owl:comment xml:lang="en">Deprecated in favour of #Sexuality term.</owl:comment>
+   <rdfs:comment xml:lang="en">Deprecated in favour of #Sexuality term.</rdfs:comment>
   <owl:sameAs rdf:resource="http://homosaurus.org/terms/sexualIdentity"/>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -716,7 +716,7 @@
    <rdfs:label xml:lang="fr">Identité Sexe</rdfs:label>
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-   <owl:comment xml:lang="en">Deprecated in favour of class Gender.</owl:comment>
+   <rdfs:comment xml:lang="en">Deprecated in favour of class Gender.</rdfs:comment>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
   <owl:equivalentClass rdf:resource="#Gender"/>
@@ -733,7 +733,7 @@
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
  <void:inDataset rdf:resource="#datasetdefinition"/>
- <owl:comment xml:lang="en">Deprecated in favour of instance #genderManMale.</owl:comment>
+ <rdfs:comment xml:lang="en">Deprecated in favour of instance #genderManMale.</rdfs:comment>
  <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
  <owl:equivalentClass rdf:resource="#genderManMale"/>
  <dc:isReplacedBy rdf:resource="#genderManMale"/>
@@ -749,7 +749,7 @@
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
  <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
  <void:inDataset rdf:resource="#datasetdefinition"/>
- <owl:comment xml:lang="en">Deprecated in favour of instance #genderWomanFemale.</owl:comment>
+ <rdfs:comment xml:lang="en">Deprecated in favour of instance #genderWomanFemale.</rdfs:comment>
  <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
  <owl:equivalentClass rdf:resource="#genderWomanFemale"/>
  <dc:isReplacedBy rdf:resource="#genderWomanFemale"/>
@@ -765,7 +765,7 @@
  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
- <owl:comment xml:lang="en">Deprecated with no current equivalence.</owl:comment>
+ <rdfs:comment xml:lang="en">Deprecated with no current equivalence.</rdfs:comment>
  <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
  <vs:term_status xml:lang="en">deprecated</vs:term_status>
 </rdf:Description>
@@ -1576,7 +1576,7 @@
  <rdfs:subClassOf rdf:resource="#CulturalForm"/>
  <skos:definition xml:lang="en"></skos:definition>
  <skos:definition xml:lang="fr"></skos:definition>
- <owl:comment xml:lang="en">This term is a CWRC specific addition not in the original Orlando tag set.</owl:comment>
+ <rdfs:comment xml:lang="en">This term is a CWRC specific addition not in the original Orlando tag set.</rdfs:comment>
   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   <void:inDataset rdf:resource="#datasetdefinition"/>
 </cwrc:SocialClassIdentity>
