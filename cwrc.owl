@@ -162,7 +162,7 @@
   </void:Dataset>
   <skos:Concept rdf:about="#originalOrlandoAuthor">
     <rdfs:label xml:lang="en">Members of the Orlando Project</rdfs:label>
-    <rdfs:label xml:lang="fr">Les membres du project Orlando</rdfs:label>
+    <rdfs:label xml:lang="fr">Les membres du projet Orlando</rdfs:label>
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
     <foaf:name xml:lang="en">Members of the Orlando Project.</foaf:name>
     <foaf:homepage rdf:resource="http://orlando.cambridge.org/public/svDocumentation?formname=t&amp;d_id=CREDITSANDACKNOWLEDGEMENTS"/>
@@ -177,7 +177,7 @@
   <owl:Class rdf:ID="Event">
     <foaf:name>Event</foaf:name>
     <rdfs:label xml:lang="en">event (historical)</rdfs:label>
-    <rdfs:label xml:lang="fr">évenement (historique)</rdfs:label>
+    <rdfs:label xml:lang="fr">évènement (historique)</rdfs:label>
     <rdfs:label xml:lang="de">event</rdfs:label>
     <skos:definition xml:lang="en">An event that occurs in space and time.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2006/time/TemporalEntity"/>
@@ -268,7 +268,7 @@
   </owl:DeprecatedClass>
   <owl:Class rdf:ID="CulturalForm">
     <rdfs:label xml:lang="en">cultural form</rdfs:label>
-    <rdfs:label xml:lang="fr">formation culturelle</rdfs:label>
+    <rdfs:label xml:lang="fr">forme culturelle</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Cultural forms refers to the processes of lived social subjectivities of people and is often combined with predicates indicating the identity positions as they relate to the following discursive constructions of Class, Religion, Ethnicity, Gender, GeographicalHeritage, LinguisticAbility, NationalHeritage, NationalIdentity, PoliticalAffiliation, RaceColour, Sexuality. These categories are not understood as transhistorical or isolated categories. Rather, they facilitate analysis of how such situationally contingent, changing, and negotiated labels are assigned to or adopted by a particular individual. The tensions endemic to practices of classification demand critical engagement and inquiry into the situatedness of particular cultural identities.</skos:definition>
     <skos:definition xml:lang="fr"/>
@@ -277,7 +277,7 @@
   </owl:Class>
   <owl:ObjectProperty rdf:ID="hasCulturalForms">
     <rdfs:label xml:lang="en">has a cultural form</rdfs:label>
-    <rdfs:label xml:lang="fr">a une formation culturelle</rdfs:label>
+    <rdfs:label xml:lang="fr">a une forme culturelle</rdfs:label>
     <skos:definition xml:lang="en">This sub-class of culturalFormation associates specific concepts and categories with the process of identity formation through cultural processes. Such associations may be or have been embraced by the subject her/himself or attributed by others. The concepts and categories classed as culturalForms are understood to overlap with each other conceptually and in terms of the labels used.</skos:definition>
     <skos:definition xml:lang="fr">Cette sous-classe de culturalFormation associe des concepts et des catégories spécifiques au processus de formation identitaire à travers les processus culturels. Le sujet elle/lui-même peut ou a pu s’approprier de telles associations, ou d’autres personnes les lui ont attribuées. Les concepts et les catégories classés dans culturalForms se chevauchent en théorie et en terme d'étiquettes utilisés.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -304,7 +304,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#Context"/>
     <skos:definition xml:lang="en">raceEthnicityContext is a significant sub-class within culturalForms. It indicates the presence of information and discussions of a person's subject position with regards to race and ethnicity by working in conjunction with subject specific sub-elements (raceColour, nationalHeritage, geogHeritage, ethnicity). The following discussion applies to both the general discursive context of raceAndEthnicity as well as the specific sub-class categories. Despite the ways in which categories of race and ethnicity frequently serve heinous interests, their ideological and material impacts in the formation of identities requires recognition. These are shifting, historically constituted, and interestedly deployed categories whose use must be situated contextually and which are understood here finally as discursive or representational. Because of this this ontology does not try to lay out an exact, fully defined, or mutually exclusive set of categories: this is an impossibility given their shifting use and the overlap among them. Those applying this class and its subclasses are encouraged not to let privileged identities operate as an unspoken given or to use this class solely in relation to the marginalized. Those concerned about &quot;white&quot; and &quot;black&quot; as homogenizing categories are encouraged to reach for specificity through multiplicity and representations of intersectionality. RaceAndEthnicity is a sub-class within culturalFormation. It has four related content sub-classes: raceColour, nationalHeritage, geogHeritage, and ethnicity.</skos:definition>
-    <skos:definition xml:lang="fr">raceEthnicityContext est une sous-classe importante de culturalForms. Elle indique la présence d’informations et de discussions sur le sujet concernant son appartenance raciale et ethnique, fonctionnant conjointement avec les sous-éléments spécifiques au sujet (raceColour, nationalHeritage, geogHeritage, ethnicity). La discussion qui suit s’applique aussi bien au contexte discursif général de raceAndEthnicity ainsi qu’aux catégories spécifiques de cette sous-classe. Même si les catégories de race et d'ethnicité sont fréquemment manipulées au service d'intérêts déplorables, leurs répercussions idéologiques et matérielles sur la formation identitaire requière qu'on les prenne en compte. Ces catégories sont changeantes, historiquement constituées, développées de façon intéressée, et leur usage doit être situé dans leur contexte; elles sont finalement comprises ici comme discursives et représentationnelles. C'est pour ces raisons que l'ontologie ne prétend pas présenter un ensemble de catégories exact, complètement défini, ou mutuellement exclusif, ce qui est impossible étant donné leur utilisation en changement constant ainsi que leur chevauchement. Celles/ceux qui appliquent ces catégories et sous-catégories sont encouragé/es à ne pas faire fonctionner les identités privilégiées comme si elles étaient consensuelles et évidentes, ou à utiliser cette classe seulement en relation avec les marginaux. Celles/ceux préoccupés par le fait que &quot;blanc&quot; et &quot;noir&quot; sont des catégories homogénéisantes sont encouragés à atteindre la spécificité à travers la multiplicité et les représentations intersectionnelles. RaceAndEthnicity est sous-classe de culturalFormation. Elle a quatre sous-classes qui lui sont liées: raceColour, nationalHeritage, geogHeritage et ethnicity.</skos:definition>
+    <skos:definition xml:lang="fr">raceEthnicityContext est une sous-classe importante de culturalForms. Elle indique la présence d’informations et de discussions sur le sujet concernant son appartenance raciale et ethnique, conjointement avec les sous-éléments spécifiques au sujet (raceColour, nationalHeritage, geogHeritage, ethnicity). La discussion qui suit s’applique au contexte discursif général de raceAndEthnicity ainsi qu’aux catégories spécifiques de cette sous-classe. Même si les catégories de race et d'ethnicité sont fréquemment manipulées au service d'intérêts déplorables, elles doivent être prises en compte à cause de leur répercussions idéologiques et matérielles sur la formation identitaire. Ces catégories sont changeantes, historiquement constituées, développées de façon intéressée, doivent être employées en contexte et sont ici entendues comme discursives et représentationnelles. C'est pour ces raisons que l'ontologie ne prétend pas offrir un ensemble de catégories exactes, complètement définies, ou mutuellement exclusives, ce que leur emploi instable et leur chevauchement ne permettent pas. Celles/ceux qui appliquent ces catégories et sous-catégories sont encouragé/es à ne pas faire fonctionner les identités privilégiées comme si elles étaient consensuelles et évidentes, ou à utiliser cette classe seulement pour les marginaux. Celles/ceux préoccupés par le fait que &quot;blanc&quot; et &quot;noir&quot; sont des catégories homogénéisantes sont encouragés à atteindre la spécificité à travers la multiplicité et les représentations intersectionnelles. RaceAndEthnicity est sous-classe de culturalFormation. Elle a quatre sous-classes qui lui sont liées: raceColour, nationalHeritage, geogHeritage et ethnicity.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <dc:subject rdf:resource="#Ethnicity"/>
@@ -312,7 +312,7 @@
   </owl:Class>
   <owl:Class rdf:ID="SexualityContext">
     <rdfs:label xml:lang="en">sexuality context</rdfs:label>
-    <rdfs:label xml:lang="fr">contexte sexuel</rdfs:label>
+    <rdfs:label xml:lang="fr">contexte de sexualité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#Context"/>
     <skos:definition xml:lang="en">hasSexualityContext is a significant sub-class within culturalForms. It indicates the presence of information and discussions of a person's subject position with regards to their sexuality and sexual identity. A subclass of Cultural Formation, hasSexualityContext provides depth to more granual categorizations of a person through hasSexuality or hasSexuality. It is not meant to capture individual sexual experiences and relationships, which are covered by intimateRelationships. Specific relationships may be invoked here to indicate the effect on a subject's life and understanding of her own sexuality. This effort to to contextualize gestures towards some of the complicated issues around sexuality, for example, the politics of outing, the historical specificity of some categories such as &quot;congenital invert,&quot; or the multiple forms of relating to one's own sexuality. Capturing discussions of her sexuality within this element, will help users interested in the historical, ideological and gendered constructions of sexuality. There are important politics of privacy with respect to the disclosure of a subject's sexuality, sexual orientation and sexual identity. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See Campbell and Cowan 2016</skos:definition>
@@ -420,7 +420,7 @@
   </owl:Class>
   <cwrc:NationalHeritage rdf:about="#EnglishNationalHeritage">
     <rdfs:label xml:lang="en">English</rdfs:label>
-    <rdfs:label xml:lang="fr">Anglaise</rdfs:label>
+    <rdfs:label xml:lang="fr">Anglais</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
@@ -449,7 +449,7 @@
   </owl:Class>
   <cwrc:NationalIdentity rdf:about="#EnglishNationalIdentity">
     <rdfs:label xml:lang="en">English</rdfs:label>
-    <rdfs:label xml:lang="fr">Anglaise</rdfs:label>
+    <rdfs:label xml:lang="fr">Anglais</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
@@ -458,7 +458,7 @@
   </cwrc:NationalIdentity>
   <owl:Class rdf:ID="Language">
     <rdfs:label xml:lang="en">Linguistic Ability</rdfs:label>
-    <rdfs:label xml:lang="fr">habilité linguistique</rdfs:label>
+    <rdfs:label xml:lang="fr">aptitudelinguistique</rdfs:label>
     <foaf:name xml:lang="en">linguistic ability</foaf:name>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
@@ -727,7 +727,7 @@
   </cwrc:RaceColour>
   <cwrc:RaceColour rdf:about="#eurasianRace">
     <rdfs:label xml:lang="en">eurasian</rdfs:label>
-    <rdfs:label xml:lang="fr">eurasienne</rdfs:label>
+    <rdfs:label xml:lang="fr">eurasien</rdfs:label>
     <foaf:name xml:lang="en">Eurasian (Race Colour)</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
@@ -840,7 +840,7 @@
     <rdfs:label xml:lang="nl">Baptisme</rdfs:label>
     <rdfs:label xml:lang="es">Baptismo</rdfs:label>
     <rdfs:label xml:lang="es">Baptistas</rdfs:label>
-    <rdfs:label xml:lang="fr">Baptiste</rdfs:label>
+    <rdfs:label xml:lang="fr">Baptisme</rdfs:label>
     <skos:definition xml:lang="en">Refers to a Protestant denomination centered around the belief that the sacrament of baptism should only be administered to adult members after a personal profession of belief in Jesus Christ. Baptism in this faith is usually done by full immersion. Emphasis is placed on biblical scripture and preaching. The Baptist denomination is primarily derived from early 17th-century England and Wales where it quickly spread although there are some links with the Anabaptists of the 16th century. Baptist churches very rapidly increased in the late 19th century in the United States. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="nl">Verwijst naar een protestantse gezindte waarbij het geloof centraal staat dat het sacrament van de doop alleen moet worden toegediend aan volwassen leden na een persoonlijke belijdenis van geloof in Jezus Christus. De doop vindt bij deze gezindte doorgaans plaats door volledige onderdompeling. De nadruk ligt op Bijbelse geschriften en preken. Het baptisme is in hoofdzaak ontstaan in de vroege 17de eeuw in Engeland en Wales waar het zich snel verspreidde, hoewel er enige verbanden zijn met de anabaptisten van de 16de eeuw. In de late 19de eeuw nam het aantal baptistische kerken in de Verenigde Staten snel toe. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="es">Se refiere a la religión protestante centrada en torno a la creencia que el sacramento del bautismo debería ser administrado sólo a miembros adultos tras una manifestación personal de creencia en Jesucristo. El bautismo en esta fe es usualmente hecho por inmersión total. El énfasis es puesto en las Escrituras Bíblicas y la oración. La denominación baptista deriva principalmente de la Inglaterra y Gales del siglo XVII en donde rápidamente se difundió a pesar que hay algunas conexiones con los Anabaptistas del siglo XVI. La iglesia baptista creció rápidamente en el siglo XIX en los Estados Unidos. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
@@ -888,7 +888,7 @@
     <rdfs:label xml:lang="nl">Katholicisme</rdfs:label>
     <rdfs:label xml:lang="es">Catolicismo Romano</rdfs:label>
     <rdfs:label xml:lang="es">Catolicismo</rdfs:label>
-    <rdfs:label xml:lang="fr">Catholique</rdfs:label>
+    <rdfs:label xml:lang="fr">Catholicisme</rdfs:label>
     <skos:definition xml:lang="en">Refers to the branch of Christianity characterized by a uniform, highly developed ritual canon and organizational structure with doctrinal roots based in the teachings of the Apostles of Jesus Christ in the first century, in the Alexandrian school of theology, and in Augustinian thought. In this religious branch, faith is considered an acceptance of revelation; revelation appears as doctrine. In juridical terms, it refers to the branch of Christianity distinguished as a unified, monolithic sacramental system under the governance of papal authority. Throughout much of its history, the seat of the Pope has been in Rome, thus &quot;Roman Catholicism&quot; is often used to distinguish this concept from the Orthodox Catholic church. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="es">Se refiere a la rama del cristianismo caracterizada por un canon ritual uniforme y altamente desarrollado y una estructura organizacional con raíces doctrinales basadas en las enseñanzas de los Apostoles de Jesucristo en la primera centuria, en la Escuela Alejandrina de teología, y en el pensamiento agustiniano. En esta rama de la religión, la fe es considerada como una aceptación de revelación; la revelación aparece como doctrina. Se refiere a la rama del cristianismo caracterizada por un canon ritual uniforme y altamente desarrollado y una estructura organizacional con raíces doctrinales basadas en las enseñanzas de los Apóstoles de Jesucristo en el primer siglo, en la Escuela Alejandrina de teología, y en el pensamiento agustiniano. En esta rama de la religión, la fe es considerada como una aceptación de revelación; la revelación aparece como doctrina. En términos jurídicos, se refiere a la rama del Cristianismo distinguido como sistema sacramental unificado, monolítico bajo gobierno de la autoridad papal. A través de la mayor parte de su historia, &quot;la silla del papal” ha estado en Roma, mediante este concepto el Catolicismo Romano se distingue de la Iglesia Católica Ortodoxa. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="nl">Verwijst naar de richting van het christendom die zich kenmerkt door een uniforme, hoogontwikkelde rituele canon en organisatiestructuur met een doctrine die wortelt in de leer van de apostelen van Jezus Christus in de 1ste eeuw, in de theologie van de Alexandrijnse school en in het augustijner gedachtegoed. In deze godsdienstige richting wordt het geloof beschouwd als een aanvaarding van de openbaring; de openbaring heeft de vorm van een doctrine. In juridische zin verwijst de term naar de richting van het christendom die zich onderscheidt als een verenigd, monolithisch sacramenteel systeem onder het bestuur van het pauselijk gezag. Gedurende het grootste deel van de geschiedenis van dit systeem was de paus gevestigd in Rome en daarom wordt 'rooms-katholicisme' vaak gebruikt om dit begrip te onderscheiden van de orthodoxe katholieke kerk. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
@@ -913,7 +913,7 @@
     <rdfs:label xml:lang="nl">Christendom</rdfs:label>
     <rdfs:label xml:lang="nl">Christelijk</rdfs:label>
     <rdfs:label xml:lang="es">Cristianismo</rdfs:label>
-    <rdfs:label xml:lang="fr">Chrétianisme</rdfs:label>
+    <rdfs:label xml:lang="fr">Christianisme</rdfs:label>
     <skos:definition xml:lang="en">Refers to the world religion and culture that developed in the first century CE, driven by the teachings of Jesus Christ of Nazareth. Its roots are in the Judaic tradition and the Old Testament. The tenets include a belief in the death and redemptive resurrection of Jesus. The religion incorporates a tradition of faith, ritual, and a form of church authority or leadership. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="es">Se refiere a la religión y cultura que se desarrolló en la primera centuria, guiado por la creencia y reverencia por la vida, enseñanza, muerte y resurrección redentiva de Jesucristo de Nazaret. La religión incorpora una tradición de fe, ritual y una forma de iglesia de autoridad y liderazgo. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="nl">Verwijst naar de wereldreligie en -cultuur die in de eerste eeuw n. Chr. tot ontwikkeling kwam op basis van de leer van Jezus Christus van Nazareth. De wortels van deze religie liggen in de joodse traditie en het Oude Testament. Een van de kenmerkende grondbeginselen is het geloof in de dood en wederopstanding van Jezus. De religie omvat een traditie van geloof, rituelen en een vorm van kerkelijke autoriteit of leiderschap. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
@@ -957,7 +957,7 @@
     <rdfs:label xml:lang="zh-latn-wadegile">yin tu chiao</rdfs:label>
     <rdfs:label xml:lang="nl">Hindoeïsme</rdfs:label>
     <rdfs:label xml:lang="es">Hinduismo</rdfs:label>
-    <rdfs:label xml:lang="fr">l'hindouisme</rdfs:label>
+    <rdfs:label xml:lang="fr">hindouisme</rdfs:label>
     <skos:definition xml:lang="en">General term for the set of intellectual and philosophical tenets and highly diverse beliefs and practices that define the civilization, art, literature, society, and politics of the Indian subcontinent. Hinduism is not a common set of rigid beliefs , but varies significantly between different regions; it includes Shaivism, Vaishnavism, Srauta, and numerous other traditions. Among other practices and philosophies, Hinduism includes a wide spectrum of laws and prescriptions of &quot;daily morality&quot; based on karma, dharma, and societal norms. The highest divine powers are seen as complementary to one another and not exclusive. Hinduism does not have a particular founder or central authority. Hindu literature is rich and varied, with no one text considered uniquely authoritative. The Vedas, dating to the Vedic period (ca. 1200-500 BCE), are the earliest extant writings. Religious law books and epics such as the Ramayana and the Mahabharata have been and continue to be highly influential. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="es">Se refiere al conjunto de creencias y prácticas altamente diversas que generalmente denotan la civilización y cultura India de los dos mil últimos años. La religión influye fuertemente en el arte, la literatura, la política y al sociedad hinduista. Presenta la creencia y la práctica de ritos mágicos, cultos animales, creencia en demonios, cultos a deidades, incluyendo dioses locales y dioses centrales, misticismo, ascetismo y una apreciación y respeto por otras formas de cultos o creencias religiosas. La verdad de la religión no esta concebida como un término dogmático, sino que la verdad supera toda definición verbal. En vez de un sistema de doctrinas, el énfasis se pone en la manera correcta de vivir (dharma). Hay variaciones significativas entre diversas regiones. La mayoría de las formas de hinduismo enfatizan el concepto del reencarnación o de la transmigración; la liberación (moksha) desde el ciclo del samsara es la última meta espiritual del hindú. Brahma, Vishnu y Shiva son las deidades hindúes principales, juntos forman la tríada, el Trimurti. Existen muchos otros deidades de menor rango. El Hinduismo no tiene un fundador en particular o un iniciado, allí no hay una autoridad central. La literatura hindú es rica y variada, sin un texto considerado únicamente autoritario. El Vedas, fechando en el período de Vedic (ca. 1200-500 a. C), es la escritura más temprana existente. Los libros de ley y las epopeyas religiosas tales como el Ramayana y el Mahabharata han sido y continúan siendo altamente influyentes. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="nl">Verwijst naar de reeks uiterst diverse geloven en gebruiken die in het algemeen verwijzen naar de Indiase beschaving en cultuur van de afgelopen tweeduizend jaar. De religie heeft een sterke invloed op de Indiase kunst, literatuur, maatschappij en politiek. Het hindoeïsme omvat diverse religieuze geloven en gebruiken en in plaats van andere goden, andere godsdiensten en andere religieuze concepten als fout of onverenigbaar te zien, worden de hoogste goddelijke machten gezien als elkaar aanvullend. De religieuze waarheid wordt niet gezien in dogmatische termen aangezien wordt geloofd dat de waarheid alle woordelijke definities overstijgt. In plaats van op een reeks doctrines ligt de nadruk op de juiste manier van leven (dharma). Er zijn aanzienlijke verschillen per regio. In de meeste vormen van het hindoeïsme ligt de nadruk op het concept van reïncarnatie of zielsverhuizing; de bevrijding (moksha) van de cyclus van samsara is het uiteindelijke spirituele doel van hindoes. Brahma, Visjnoe en Shiva zijn de belangrijkste hindoeïstische godheden en vormen gezamenlijk een drie-eenheid, de Trimurti. Verder is er een groot aantal lagere goden. Het hindoeïsme heeft geen specifieke oprichter of ontstaansmoment en er is geen centrale autoriteit. De hindoeïstische literatuur is erg rijk en gevarieerd en geen enkele specifieke tekst wordt als gezaghebbend beschouwd. De Veda's, die afkomstig zijn uit de Vedische periode (ca. 1200-500 v. Chr.), zijn de oudste overgebleven geschriften. Religieuze wetboeken en heldendichten zoals de Ramayana en de Mahabharata zijn altijd erg invloedrijk geweest. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
@@ -985,7 +985,7 @@
     <rdfs:label xml:lang="fr">Religion Mahométane</rdfs:label>
     <rdfs:label xml:lang="fr">Mahométisme</rdfs:label>
     <rdfs:label xml:lang="es">Islamismo</rdfs:label>
-    <rdfs:label xml:lang="fr">L'islam</rdfs:label>
+    <rdfs:label xml:lang="fr">islam</rdfs:label>
     <skos:definition xml:lang="en">Refers to the religious beliefs and social practices founded in the seventh century by the Arabian Prophet Muhammad, held to be the last of a series of major prophets, which include, according to Islamic dogma, Adam, Noah, and Jesus. It later spread throughout the Middle East, Africa, Europe, and parts of Asia. It is characterized by the belief in the fundamental idea that a devotee 'surrenders' and submits his will to Allah, the prime creator and sustainer of the universe and all creation. In Islam, God is unique and has no partner or intermediary as in the Christian Trinity. Social service and the active alleviation of suffering in others is considered the only path to salvation and prayer and sacred ritual alone are inadequate forms of submission to Allah. The Qur'an (Koran), the sacred text of the religion, is a compilation of revelations from Allah believed to have been received by Muhammad. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="es">Se refiere a creencias religiosas y prácticas sociales fundadas en el siglo VII por el Profeta árabe Mahoma, supuestamente el último de una serie de grandes profetas, incluídos, de acuerdo al dogma Islámico, Adán, Noé y Jesús. Posteriormente se difundió a través del Medio Oriente, África, Europa y parte de Asia. Se caracteriza por la creencia en la idea fundamental que un devoto se &quot;rinde&quot; y somete la voluntad de Alá, el principal creador y mantenedor del universo y toda creación. En el Islam, Dios es único y no tiene parentesco o intermediario como la trinidad cristiana. El servicio social y las actividades que alivian el sufrimiento de otros es considerado el único camino a la salvación y la oración y ritual sagrado a solas es una inadecuado forma de sumisión para Alá. El Coran (Koran), consagrado el texto de las religiones, es una compilación relevante de las creencias de Alá que fueron recibidas de Mahoma. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="nl">Verwijst naar het samenstel van religieuze overtuigingen en sociale gebruiken dat in de 7de eeuw is ontstaan op basis van de leer van de Arabische profeet Mohammed, die wordt beschouwd als de laatste in een reeks van grote profeten; volgens de islamitische leer zijn dit onder anderen Adam, Noach en Jezus. De islam heeft zich later verspreid in het Midden-Oosten, Afrika, Europa en delen van Azië. De islam wordt gekenmerkt door het geloof in het fundamentele idee dat een gelovige zich 'overgeeft' en zich onderwerpt aan Allah, de schepper van het universum en de schepping als geheel. God is uniek en heeft geen partner of tussenpersoon zoals bij de christelijke drie-eenheid. Maatschappelijke dienstbaarheid en het actief verlichten van het lijden van anderen wordt beschouwd als de enige weg naar verlossing en gebeden en heilige rituelen zijn op zichzelf onvoldoende vormen van overgave aan Allah. De Qur'an (Koran), het heilige geschrift van de religie, is een verzameling onthullingen die, zo gelooft men, door Allah aan Mohammed zijn geopenbaard. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
@@ -1038,7 +1038,7 @@
     <rdfs:label xml:lang="nl">Presbyterianisme</rdfs:label>
     <rdfs:label xml:lang="nl">Prebyteriaan</rdfs:label>
     <rdfs:label xml:lang="es">Presbiterianismo</rdfs:label>
-    <rdfs:label xml:lang="fr">Presbytérien</rdfs:label>
+    <rdfs:label xml:lang="fr">Presbytarianisme</rdfs:label>
     <skos:definition xml:lang="en">One of the main Protestant groups that arose out of the 16th-century Reformation. Generally speaking, modern Presbyterian churches trace their origins to the Calvinist churches of the British Isles, the European counterparts of which came to be known by the more inclusive name of Reformed. The term presbyterian also denotes a collegiate type of church government led by pastors and lay leaders called elders or presbyters. Strictly speaking, all Presbyterian churches are a part of the Reformed, or Calvinist, tradition, although not all Reformed churches are presbyterian in their form of government. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="nl">Een van de belangrijkste protestantse groeperingen die voortkwamen uit de 16de-eeuwse Reformatie. In het algemeen hebben moderne presbyteriaanse kerken hun oorsprong in de calvinistische kerken op de Britse eilanden, waarvan de Europese tegenhangers bekend zijn geworden onder de meer algemene naam 'gereformeerden'. De term 'presbyteriaans' verwijst ook naar een collegiaal type kerkbestuur onder leiding van pastors en leken die ouderlingen of presbyters worden genoemd. Strikt genomen maken alle presbyteriaanse kerken deel uit van de gereformeerde of calvinistische traditie, maar zijn niet alle gereformeerde kerken presbyteriaans in hun bestuursvorm. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="es">Uno de los principales grupos protestantes que surgió de la Reforma del siglo XVI. Hablando en general, las Iglesias Presbiterianas modernas señalan sus orígenes en las iglesias calvinistas de las Islas Británicas, la contraparte Europea la que fue conocida por el nombre más global de &quot;Reformada&quot;. El término presbiterianismo también denota un tipo colegiado de gobierno de iglesia liderado por el pastor y lideres laicos llamados ancianos o presbiteros. Estrictamente hablando, todas las iglesias presbiterianas son parte de la Iglesia .El término presbiterianismo también denota un tipo colegiado de gobierno de iglesia liderado por el pastor y lideres laicos llamados ancianos o presbiteros. Estrictamente hablando, todas las iglesias presbiterianas son parte de la Reforma o Calvinismo, tradición, aunque no todas las iglesias Reformadas son presbiterianas en su gubernamentalidad. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
@@ -1081,7 +1081,7 @@
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#agnosticism">
     <rdfs:label xml:lang="en">Agnosticism</rdfs:label>
-    <rdfs:label xml:lang="fr">l'agnosticisme</rdfs:label>
+    <rdfs:label xml:lang="fr">agnosticisme</rdfs:label>
     <skos:definition xml:lang="en">Agnosticism is the view that, the truth values of certain claims – especially metaphysical and religious claims such as whether God, the divine or the supernatural exist – are unknown and perhaps unknowable. According to the philosopher William L. Rowe: "In the popular sense of the term, an agnostic is someone who neither believes nor disbelieves in God, whereas an atheist disbelieves in God." Agnosticism is a doctrine or set of tenets rather than a religion as such. Thomas Henry Huxley, an English biologist, coined the word "agnostic" in 1869.Earlier thinkers, however, had written works that promoted agnostic points of view, such as Sanjaya Belatthaputta, a 5th-century BCE Indian philosopher who expressed agnosticism about any afterlife; and Protagoras, a 5th-century BCE Greek philosopher who expressed agnosticism about "the gods". The Nasadiya Sukta in the Rigveda is agnostic about the origin of the universe. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">L’agnosticisme ou pensée de l'interrogation est une attitude de pensée considérant la vérité de certaines propositions concernant notamment l'existence de Dieu ou des dieux comme inconnaissable : à la différence des croyants, considérant probable ou certaine l'existence de telles divinités, ou des athées l'estimant improbable ou impossible, les agnostiques refusent de trancher. Si le degré de scepticisme varie selon les individus, les agnostiques s'accordent pour dire qu'il n'existe pas de preuve définitive en faveur de l'existence ou de l'inexistence du divin, et affirment l'impossibilité de se prononcer. Si les agnostiques refusent de se prononcer quant à l'existence d'une intelligence supérieure, ils n'accordent, en revanche, ou du moins tendent à n'accorder, aucune transcendance et aucune valeur sacrée aux religions (prophète, messie, textes sacrés...) et à leurs institutions (clergé, rituels et prescriptions diverses...). Ceux-ci voient en effet les religions comme de pures constructions sociales et culturelles qui auraient surtout pour fonction historique d'assurer la cohésion et l'ordre dans les sociétés humaines traditionnelles via par exemple la menace de l'enfer, la promesse du paradis ou encore la notion de péché ou par le mécanisme du bouc émissaire. En d'autres termes, les religions, aux yeux d'un agnostique, seraient bien trop « humaines » de par leurs modes de fonctionnement et de par les dynamiques anthropologiques sur lesquelles elles se basent (soutien psychologique face à la mort, analogie très anthropocentrique d'un Dieu bâtisseur de l'univers...) pour qu'elles aient un quelconque lien direct avec toute forme d'intelligence supérieure, tout en n'excluant pas non plus pour certains le fait que ce soit malgré tout possible. D'où cette interrogation constante propre à l'agnostique. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1129,7 +1129,7 @@
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#churchOfIreland">
     <rdfs:label xml:lang="en">Church of Ireland</rdfs:label>
-    <rdfs:label xml:lang="fr">l'Église d'Irlande</rdfs:label>
+    <rdfs:label xml:lang="fr">Église d'Irlande</rdfs:label>
     <skos:definition xml:lang="en">The Church of Ireland (Irish: Eaglais na hÉireann Scots: Kirk o Airlann) is a Christian church in Ireland and an autonomous province of the Anglican Communion. It is organised on an all-Ireland basis and is the second-largest Christian church on the island after the Catholic Church. Like other Anglican churches, it has retained elements of pre-Reformation practice, notably its episcopal polity, while rejecting the primacy of the Bishop of Rome. Nevertheless, in theological and liturgical matters, it incorporates many principles of the Reformation, particularly those espoused during the English Reformation. The church self identifies as being both Catholic and Reformed. Within the church, differences exist between those members who are more Catholic-leaning (high church) and those who are more Protestant-leaning (low church or evangelical). For historical and cultural reasons, the Church of Ireland is generally identified as a Protestant church. The Church of Ireland is the second-largest in the Republic of Ireland, with around 130,000 members, and the third-largest in Northern Ireland, with around 260,000 members. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">L'Église d'Irlande (irlandais : Eaglais na hÉireann, anglais : Church of Ireland) est une communauté religieuse autonome de la communion anglicane, dont le rayon d'action touche la République d'Irlande et l'Irlande du Nord. Comme d'autres Églises anglicanes, elle s'affirme « catholique » et « réformée ». Quand l'Église d'Angleterre rompt avec le Pape et l'Église catholique romaine, l'Église d'Irlande évolue également vers la Réforme, gardant son statut juridique et ses possessions, si sa doctrine change. Ainsi, de nos jours, l'Église, dans ses cathédrales et ses églises, conserve largement l'héritage des constructions médiévales de l'île. La nouvelle Église indépendante n'est cependant pas suivie par la majorité de la population ; l'Église catholique romaine conserve le soutien de la plus grande partie des habitants, et ce jusqu'à aujourd'hui. En dépit de son caractère minoritaire, cependant, l'Église d'Irlande conserve le statut de religion d'État jusqu'au désétablissement de 1869, quand Gladstone abolit l'Acte d'établissement. Le nombre d'églises est tombé brusquement au cours du XXe siècle, particulièrement en République d'Irlande, après l'indépendance ; le dernier recensement de la République montre un exemple rare de résistance à la crise de la foi. Aujourd'hui, l'Église d'Irlande est, après l'Église catholique, la deuxième plus importante Église de l'île d'Irlande. C'est également la plus importante Église protestante de la République d'Irlande et le deuxième plus importante d'Irlande du Nord, après l'Église presbytérienne d'Irlande. Elle est gouvernée par un synode général du clergé et des laïcs et organisée en douze diocèses. Elle a à sa tête l'archevêque d'Armagh, qui porte le titre de "Primat de toute l'Irlande". L'archevêque actuel est Richard Clarke qui a succédé le à Alan Harper ; l'autre archevêque est celui de Dublin John Neill. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/page/Church_of_Ireland"/>
@@ -1153,7 +1153,7 @@
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#dissentingChurches">
     <rdfs:label xml:lang="en">Dissenting Churches</rdfs:label>
-    <rdfs:label xml:lang="fr">l'Église dissidents</rdfs:label>
+    <rdfs:label xml:lang="fr">Églises dissidentes</rdfs:label>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1191,7 +1191,7 @@
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#methodistChurch">
     <rdfs:label xml:lang="en">Methodist Church</rdfs:label>
-    <rdfs:label xml:lang="fr">l'Église méthodiste</rdfs:label>
+    <rdfs:label xml:lang="fr">Église méthodiste</rdfs:label>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1326,7 +1326,7 @@
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#unitarianChurch">
     <rdfs:label xml:lang="en">Unitarian Church</rdfs:label>
-    <rdfs:label xml:lang="fr">l'Église unitarienne</rdfs:label>
+    <rdfs:label xml:lang="fr">Église unitarienne</rdfs:label>
     <skos:definition xml:lang="en">Unitarian church usually refers to a church (either a single church or a group of churches and/or its followers) which follows Unitarianism, a Christian theology. It can also more broadly refer to a church which is a member of an umbrella group with "Unitarian" in its title, such as the Unitarian Universalist Association in the U.S., the Canadian Unitarian Council, and similar bodies. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Unitarian_church"/>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
@@ -1344,7 +1344,7 @@
     <rdfs:label xml:lang="nl">unitarisme</rdfs:label>
     <rdfs:label xml:lang="es">unitarismo</rdfs:label>
     <rdfs:label xml:lang="es">unitarios</rdfs:label>
-    <rdfs:label xml:lang="fr">l'unitarisme</rdfs:label>
+    <rdfs:label xml:lang="fr">unitarisme</rdfs:label>
     <skos:definition xml:lang="en">The liberal Protestant movement that arose in Europe during the 16th century Reformation, was embodied in a church in Transylvania, and achieved denominational status in the 19th century in the United Kingdom, the United States, and Canada. It is characterized by a denial of the orthodox Christian doctrines of the Trinity and the divinity of Jesus, the free use of reason in religion, and the belief that God exists in one person. In 1961, in the United States and Canada, it merged with the Universalist denomination to form &quot;Unitarian Universalism.&quot;  Use also generally for the theological doctrines of the unified nature of God and the humanity of Jesus, first expressed in second- and third-century monarchism and in the teachings of Arius in the third and fourth centuries, and later in the radical Neoplatonist thinkers of the Reformation such as Michael Servetus, Faustus Socinus, and Ferenc David. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="nl">In het bijzonder te gebruiken voor de vrijzinnig protestantse beweging die in Europa opkwam tijdens de Reformatie in de 16de eeuw, werd belichaamd door een kerk in Transsylvanië en een confessionele status verkreeg in Groot-Brittannië, de Verenigde Staten en Canada tijdens de 19de eeuw. De beweging wordt gekenmerkt door de afwijzing van de orthodox christelijke leer van de Drie-eenheid en de goddelijke Christus, het vrije gebruik van de rede in religieuze zaken en het geloof dat God bestaat in één persoon. In 1961 fuseerde deze beweging in de Verenigde Staten en Canada met de universalistische beweging, waardoor het ‘unitaristisch universalisme’ ontstond. Ook in het algemeen te gebruiken voor de theologische leer van de eenheid van God en het mens-zijn van Jezus, zoals voor het eerst verwoord in het monarchisme van de 2de en 3de eeuw en in de leer van Arius in de 3de en 4de eeuw, en later in de leer van de radicale neoplatonisten uit de Reformatie zoals Michael Servetus, Faustus Socinus en Ferenc David. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="es">Úsese específicamente para el movimiento protestante liberal que surgió en Europa durante la Reforma del siglo XVI, que tuvo su manifestación en una iglesia en Transilvania, y que logró un estatus confesional en el siglo XIX en el Reino Unido, los Estados Unidos y Canadá. Es caracterizado por una desaprobación de las doctrinas cristianas ortodoxas de la Trinidad y la divinidad de Jesús, el libre uso de la razón en la religión y la creencia que Dios existe en una persona. En 1961, en los Estados Unidos y Canadá s <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
@@ -1364,7 +1364,7 @@
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#abrahamicReligions">
     <rdfs:label xml:lang="en">Abrahamic religions</rdfs:label>
-    <rdfs:label xml:lang="fr">Religions abrahamique</rdfs:label>
+    <rdfs:label xml:lang="fr">Religions abrahamiques</rdfs:label>
     <skos:definition xml:lang="en">Abrahamic religions, emphasizing and tracing their common origin to the tribal patriarch Abraham or recognizing a spiritual tradition identified with him, comprising one of the major divisions in comparative religion, along with Indian, Iranian, and East Asian religions. Judaism, Christianity and Islam are the largest Abrahamic religions.The largest Abrahamic religions in chronological order of founding are Judaism (2nd millennium BCE), Christianity (1st century CE) and Islam (7th century CE). <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">L'expression religion abrahamique désigne principalement le judaïsme, le christianisme dont les Saintes Écritures, respectivement le Tanakh, la Bible évoquent la figure d'Abraham et l'islam avec le Coran, celle d'Ibrahim.En français, cette expression est apparue vers 1950 dans des études d'islamologie pour désigner, d'une part, la religion d'Abraham telle qu'elle se conçoit dans l'islam et d'autre part les trois religions que sont le judaïsme, le christianisme et l'islam. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/page/Abrahamic_religions"/>
@@ -1388,7 +1388,7 @@
   </owl:Class>
   <cwrc:SocialClassIdentity rdf:about="#lowerMiddleClass">
     <rdfs:label xml:lang="en">lower middle class</rdfs:label>
-    <rdfs:label xml:lang="fr">classe basse moyenne</rdfs:label>
+    <rdfs:label xml:lang="fr">classe moyenne inférieure</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">Employees, clerical workers, teachers, governesses. Note, however, that some teachers go into Professional (Mr. Chips) and women starting schools and then managing them also go into Professional.</skos:definition>
@@ -1429,7 +1429,7 @@
   </cwrc:SocialClassIdentity>
   <cwrc:SocialClassIdentity rdf:about="#nobility">
     <rdfs:label xml:lang="en">nobility</rdfs:label>
-    <rdfs:label xml:lang="fr">nobilitée</rdfs:label>
+    <rdfs:label xml:lang="fr">noblesse</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">This group refers to those holding a title or of close family relation to someone holding a title (such as Lady Mary Wortley Montagu, Lord Byron, or Nancy Mitford).</skos:definition>
@@ -1450,7 +1450,7 @@
   </cwrc:SocialClassIdentity>
   <owl:DeprecatedClass rdf:about="#entrepreneurial-industrialism">
     <rdfs:label xml:lang="en">entrepreneurial industrialism</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">entrepreneuriat industriel</rdfs:label>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1472,7 +1472,7 @@
   </cwrc:SocialClassIdentity>
   <cwrc:SocialClassIdentity rdf:about="#shopkeepers">
     <rdfs:label xml:lang="en">shopkeepers</rdfs:label>
-    <rdfs:label xml:lang="fr">détaillant</rdfs:label>
+    <rdfs:label xml:lang="fr">commerçants</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">Owns and runs a pub or shop. Similar to an industrialist but to a lesser degree of magnitude.</skos:definition>
@@ -1492,7 +1492,7 @@
   </cwrc:SocialClassIdentity>
   <cwrc:SocialClassIdentity rdf:about="#upper-middleClass">
     <rdfs:label xml:lang="en">upper middle class</rdfs:label>
-    <rdfs:label xml:lang="fr">classe haute moyenne</rdfs:label>
+    <rdfs:label xml:lang="fr">classe moyenne supérieure</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en"/>
@@ -1514,7 +1514,7 @@
   </cwrc:SocialClassIdentity>
   <cwrc:SocialClassIdentity rdf:about="#urban-industrialUnskilled">
     <rdfs:label xml:lang="en">urban-industrial unskilled</rdfs:label>
-    <rdfs:label xml:lang="fr">Urbain - industriel - ouvrier non spécialisé</rdfs:label>
+    <rdfs:label xml:lang="fr">ouvrier non qualifié</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">This category includes factory workers and workers in urban or large-scale industries without defined trades or professional qualifications, and those in low-wage and low-status service sector jobs, such as the restaurant or fast-food industry, in industrial or post-industrial societies.</skos:definition>
@@ -1525,7 +1525,7 @@
   </cwrc:SocialClassIdentity>
   <cwrc:SocialClassIdentity rdf:about="#rural-unskilled">
     <rdfs:label xml:lang="en">rural-unskilled</rdfs:label>
-    <rdfs:label xml:lang="fr">rural-journalier</rdfs:label>
+    <rdfs:label xml:lang="fr">travailleurs ruraus non qualifiés</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">This generally indicates farm laborers, mostly male in earlier periods, and includes migrant farm workers.</skos:definition>
@@ -1536,7 +1536,7 @@
   </cwrc:SocialClassIdentity>
   <cwrc:SocialClassIdentity rdf:about="#servants">
     <rdfs:label xml:lang="en">servants</rdfs:label>
-    <rdfs:label xml:lang="fr">servant</rdfs:label>
+    <rdfs:label xml:lang="fr">domestiques</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">Domestic servants typically live in the home with the family or institution that employs them, although the lowest class of servants might work only casually and hence not receive room and board. This type of labour, very common before the twentieth century, is distinct from that of service positions such as shop assistants, flight attendances, and restaurant workers.</skos:definition>
@@ -1547,7 +1547,7 @@
   </cwrc:SocialClassIdentity>
   <owl:Class rdf:ID="LinguisticAbility">
     <rdfs:label xml:lang="en">linguistic ability (spoken and/or writen)</rdfs:label>
-    <rdfs:label xml:lang="fr">habilité linguistique (écris ou parlé)</rdfs:label>
+    <rdfs:label xml:lang="fr">aptitude linguistique (écrit ou parlé)</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en"/>
@@ -1583,7 +1583,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="personalPropertySelfDeclared">
     <rdfs:label xml:lang="en">personal property (self reported)</rdfs:label>
-    <rdfs:label xml:lang="fr">propriété de la personne (autodéclarés)</rdfs:label>
+    <rdfs:label xml:lang="fr">propriété de la personne (autodéclarée)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
@@ -1592,7 +1592,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasGender">
     <rdfs:label xml:lang="en">has gender</rdfs:label>
-    <rdfs:label xml:lang="fr">a le genre</rdfs:label>
+    <rdfs:label xml:lang="fr">est de genre</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#Gender"/>
     <skos:definition xml:lang="en"/>
@@ -1602,7 +1602,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasGenderSelfDeclared">
     <rdfs:label xml:lang="en">has gender (self declared)</rdfs:label>
-    <rdfs:label xml:lang="fr">a le genre (autodéclarés)</rdfs:label>
+    <rdfs:label xml:lang="fr">est de genre (autodéclaré)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
     <rdfs:range rdf:resource="#Gender"/>
     <skos:definition xml:lang="en"/>
@@ -1622,7 +1622,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasNationalitySelfDeclared">
     <rdfs:label xml:lang="en">has nationality (self declared)</rdfs:label>
-    <rdfs:label xml:lang="fr">de nationalité (autodéclarés)</rdfs:label>
+    <rdfs:label xml:lang="fr">de nationalité (autodéclarée)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
     <rdfs:range rdf:resource="#NationalIdentity"/>
     <skos:definition xml:lang="en"/>
@@ -1642,7 +1642,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasRaceColourSelfDeclared">
     <rdfs:label xml:lang="en">has race (self declared)</rdfs:label>
-    <rdfs:label xml:lang="fr">est de race (autodéclarés)</rdfs:label>
+    <rdfs:label xml:lang="fr">est de race (autodéclarée)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
     <rdfs:range rdf:resource="#Race"/>
     <skos:definition xml:lang="en">A subclass of raceEthnicityContext, this describes a person's self-reported racial identity.</skos:definition>
@@ -1662,7 +1662,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasEthnicitySelfDefined">
     <rdfs:label xml:lang="en">has ethnicity (self defined)</rdfs:label>
-    <rdfs:label xml:lang="fr">d'ethnicité (autodéclarés)</rdfs:label>
+    <rdfs:label xml:lang="fr">d'ethnicité (autodéclarée)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDefined"/>
     <rdfs:range rdf:resource="#Ethnicity"/>
     <skos:definition xml:lang="en"/>
@@ -1672,7 +1672,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasReligion">
     <rdfs:label xml:lang="en">has religious affiliation</rdfs:label>
-    <rdfs:label xml:lang="fr">religion</rdfs:label>
+    <rdfs:label xml:lang="fr">est de confession</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#Religion"/>
     <skos:definition xml:lang="en"/>
@@ -1682,7 +1682,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasReligionSelfDefined">
     <rdfs:label xml:lang="en">has religious affilication (self defined)</rdfs:label>
-    <rdfs:label xml:lang="fr">religion (autodéclarés)</rdfs:label>
+    <rdfs:label xml:lang="fr">religion (autodéclarée)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDefined"/>
     <rdfs:range rdf:resource="#Religion"/>
     <skos:definition xml:lang="en"/>
@@ -1722,7 +1722,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasLinguisticAbilitySelfDeclared">
     <rdfs:label xml:lang="en">language known (self declared)</rdfs:label>
-    <rdfs:label xml:lang="fr">connait la langue (autodéclarés)</rdfs:label>
+    <rdfs:label xml:lang="fr">connait la langue (autodéclaré)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
     <skos:definition xml:lang="en"/>
@@ -1732,7 +1732,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasNativeLinguisticAbility">
     <rdfs:label xml:lang="en">natively known language</rdfs:label>
-    <rdfs:label xml:lang="fr">a une langue native</rdfs:label>
+    <rdfs:label xml:lang="fr">a une langue maternelle</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
     <skos:definition xml:lang="en">Knowledge of the language for writing or reading.</skos:definition>
@@ -1742,7 +1742,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasNativeLinguisticAbilitySelfDeclared">
     <rdfs:label xml:lang="en">natively known language (self declared)</rdfs:label>
-    <rdfs:label xml:lang="fr">a une langue native (autodéclarés)</rdfs:label>
+    <rdfs:label xml:lang="fr">a une langue maternelle (autodéclaré)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbilitySelfDeclared"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
     <skos:definition xml:lang="en"/>
@@ -1762,7 +1762,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasSexualitySelfDeclared">
     <rdfs:label xml:lang="en">has sexual orientation (self declared)</rdfs:label>
-    <rdfs:label xml:lang="fr">a une orientation sexuelle (autodéclarés)</rdfs:label>
+    <rdfs:label xml:lang="fr">a une orientation sexuelle (autodéclarée)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
     <rdfs:range rdf:resource="#Sexuality"/>
     <skos:definition xml:lang="en"/>
@@ -1782,7 +1782,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasGeographicHeritageSelfDeclared">
     <rdfs:label xml:lang="en">has geographic heritage (self declared)</rdfs:label>
-    <rdfs:label xml:lang="fr">a un héritage géographique (autodéclarés)</rdfs:label>
+    <rdfs:label xml:lang="fr">a un héritage géographique (autodéclaré)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#GeographicHeritage"/>
     <skos:definition xml:lang="en"/>
