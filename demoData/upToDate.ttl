@@ -36,7 +36,7 @@
     cwrc:hasGeogHeritage cwrc:portugal ;
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasEthnicity cwrc:JewishEthnicity ;
-    cwrc:hasReligion cwrc:jewishReligion ;
+    cwrc:hasReligion cwrc:judaism ;
     cwrc:hasPoliticalAffiliation cwrc:radical ;
     cwrc:hasNationalitySelfDefined cwrc:EnglishNationalHeritage ;
     a foaf:Person ;
@@ -82,7 +82,7 @@
 <http://www.cwrc.ca/cwrcdata/KINGSRel>
     a cwrc:ReligionContext ;
     rdfs:label "Religion Context for Sophia King"@en ;
-    oa:hasBody cwrc:jewishReligion ;
+    oa:hasBody cwrc:judaism ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
     prov:derivedFrom cwrc:King12345 .
 
@@ -241,7 +241,7 @@ cwrc:King12345
 <http://www.cwrc.ca/cwrcdata/DACREReligionJewish>
     a cwrc:ReligionContext ;
     rdfs:label "Religion Context for Charlotte Dacre"@en ;
-    oa:hasBody cwrc:jewishReligion ;
+    oa:hasBody cwrc:judaism ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre1> .
 
@@ -322,7 +322,7 @@ cwrc:King12345
     a foaf:Person ;
     rdfs:label "Father of Elizabeth Sarah Gooch"@en ;
     loc:father <http://www.cwrc.ca/cwrcdata/ElizabethSarahGooch>;
-    cwrc:hasReligion cwrc:jewishReligion .
+    cwrc:hasReligion cwrc:judaism .
 #	prov:derivedFrom textnode;
  
 # GRACE AGUILAR
@@ -335,7 +335,7 @@ cwrc:King12345
     cwrc:hasRaceColourHeritage cwrc:whiteRaceColour ;
     cwrc:hasReligion cwrc:protestant, cwrc:catholic ;
     cwrc:hasSocialClass cwrc:entrepreneurial-industrialist, cwrc:middleClass ;
-    cwrc:hasReligionSelfDefined cwrc:jewishReligion ;
+    cwrc:hasReligionSelfDefined cwrc:judaism ;
     #check data: is it in the source as political affiliation or as nationality?
     cwrc:hasPoliticalAffiliation cwrc:proto-zionistPoliticalAffiliation ;
     a foaf:Person ;
@@ -394,7 +394,7 @@ cwrc:King12345
 <http://www.cwrc.ca/cwrcdata/AGUILARReligionJewish>
     a cwrc:ReligionContext ;
     rdfs:label "Religion Context for Grace Aguilar"@en ;
-    oa:hasBody cwrc:jewishReligion ;
+    oa:hasBody cwrc:judaism ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> .
 
@@ -429,7 +429,7 @@ cwrc:King12345
 <http://www.cwrc.ca/cwrcdata/AGUILARReligionSelfDefinedJewish>
     a cwrc:ReligionSelfDefined ;
     rdfs:label "Religion Context for Grace Aguilar"@en ;
-    oa:hasBody cwrc:jewishReligion ;
+    oa:hasBody cwrc:judaism ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> .
 
@@ -460,7 +460,7 @@ cwrc:King12345
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasSocialClass cwrc:upper-middleClass ;
     cwrc:hasNationalitySelfDefined cwrc:english ;
-    cwrc:hasReligionSelfDefined cwrc:jewishReligion ;
+    cwrc:hasReligionSelfDefined cwrc:judaism ;
     cwrc:hasSexualIdentity cwrc:lesbian ;
     cwrc:hasEthnicity cwrc:jewishEthnicity ;
     a foaf:Person ;
@@ -491,7 +491,7 @@ cwrc:King12345
 <http://www.cwrc.ca/cwrcdata/LEVYReligionSelfDefinedJewish>
     a cwrc:ReligiousContext ;
     rdfs:label "Religion Context for Amy Levy"@en ;
-    oa:hasBody cwrc:jewishReligion ;
+    oa:hasBody cwrc:judaism ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AmyLevy> ;
     prov:derivedFrom cwrc:Levy12345 .
 
@@ -512,7 +512,7 @@ cwrc:King12345
 # CHARLOTTE MONTEFIORE
 <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore>
     cwrc:hasRaceColour cwrc:whiteRaceColour ;
-    cwrc:hasReligionSelfDefined cwrc:jewishReligion ;
+    cwrc:hasReligionSelfDefined cwrc:judaism ;
     cwrc:hasSocialClass cwrc:entrepreneurial-industrialist ;
     cwrc:hasNationalHeritage cwrc:italian ;
     a foaf:Person ;
@@ -523,35 +523,35 @@ cwrc:King12345
     rdfs:label "Gender Context for Charlotte Montefiore"@en ;
     oa:hasBody cwrc:genderWomanFemale ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
-    prov:derivedFrom cwrc:Montefiore12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/Montefiore12345> .
 
 <http://www.cwrc.ca/cwrcdata/MONTEFIORERaceColourWhite>
     a cwrc:RaceColour ;
     rdfs:label "Race/Ethnicity Context for Charlotte Montefiore"@en ;
     oa:hasBody cwrc:white ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
-    prov:derivedFrom cwrc:Montefiore12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/Montefiore12345> .
 
 <http://www.cwrc.ca/cwrcdata/MONTEFIOREReligionSelfDefinedJewish>
-    a cwrc:ReligionSelfDefined ;
+    a cwrc:ReligionContext ;
     rdfs:label "Religion Context for Charlotte Montefiore"@en ;
-    oa:hasBody cwrc:jewish ;
+    oa:hasBody cwrc:judaism ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
-    prov:derivedFrom cwrc:Montefiore12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/Montefiore12345> .
 
 <http://www.cwrc.ca/cwrcdata/MONTEFIORESocialClassEntrepreneurial-Industrialist>
-    a cwrc:ReligionSelfDefined ;
-    rdfs:label "Religion Context for Charlotte Montefiore"@en ;
-    oa:hasBody cwrc:jewish ;
+    a  cwrc:SocialClassContext ;
+    rdfs:label "Social Class Context for Charlotte Montefiore"@en ;
+    oa:hasBody cwrc:entrepreneurial-industrialist;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
-    prov:derivedFrom cwrc:Montefiore12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/Montefiore12345> .
 
 <http://www.cwrc.ca/cwrcdata/MONTEFIORENationalHeritageItalian>
     a cwrc:NationalHeritage ;
     rdfs:label "National Identity Context for Charlotte Montefiore"@en ;
     oa:hasBody cwrc:italian ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
-    prov:derivedFrom cwrc:Montefiore12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/Montefiore12345> .
 
 cwrc:CharlotteMontefioreFather
     a foaf:Person ;
@@ -566,13 +566,13 @@ cwrc:charlotteDacreCulturalFormation1
     rdfs:label "Race/Ethnicity Context for Charlotte Dacre"@en ;
     oa:hasBody cwrc:jewish ;
     oa:hasTarget cwrc:CharlotteDacre ;
-    prov:derivedFrom cwrc:charlotteDacre1 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre1> .
 
 # JULIA FRANKAU
 <http://www.cwrc.ca/cwrcdata/JuliaFrankau>
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasEthnicitySelfDefined cwrc:jewish ;
-    cwrc:hasreligionSelfDefined cwrc:jewishReligion ;
+    cwrc:hasreligionSelfDefined cwrc:judaism ;
     a foaf:Person ;
     foaf:name "Julia Frankau" .
 
@@ -581,21 +581,21 @@ cwrc:charlotteDacreCulturalFormation1
     rdfs:label "Gender Context for Julia Frankau"@en ;
     oa:hasBody cwrc:genderWomanFemale ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/JuliaFrankau> ;
-    prov:derivedFrom cwrc:Frankau12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/Frankau12345> .
 
 <http://www.cwrc.ca/cwrcdata/FRANKAUEthnicitySelfDefinedJewish>
     a cwrc:RaceEthnicityContext ;
     rdfs:label "Race/Ethnicity Context for Julia Frankau"@en ;
     oa:hasBody cwrc:jewishEthnicity ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/JuliaFrankau> ;
-    prov:derivedFrom cwrc:Frankau12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/Frankau12345> .
 
 <http://www.cwrc.ca/cwrcdata/FRANKAUReligionSelfDefinedJewish>
     a cwrc:ReligionContext ;
     rdfs:label "Religion Context for Julia Frankau"@en ;
-    oa:hasBody cwrc:jewishReligion ;
+    oa:hasBody cwrc:judaism ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/JuliaFrankau> ;
-    prov:derivedFrom cwrc:Frankau12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/Frankau12345> .
 
 # VITA SACKVILLE-WEST
 <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest>
@@ -613,42 +613,42 @@ cwrc:charlotteDacreCulturalFormation1
     rdfs:label "Social Class Context for Vita Sackville-West"@en ;
     oa:hasBody cwrc:nobility ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
-    prov:derivedFrom cwrc:SackvilleWest12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/SackvilleWest12345> .
        
 <http://www.cwrc.ca/cwrcdata/SACKVILLEWESTNationalHeritageSpanish>
     a cwrc:NationalHeritageContext ;
     rdfs:label "National Heritage Context for Vita Sackville-West"@en ;
     oa:hasBody cwrc:spanish ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
-    prov:derivedFrom cwrc:SackvilleWest12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/SackvilleWest12345> .
     
 <http://www.cwrc.ca/cwrcdata/SACKVILLEWESTNationalHeritageEnglish>
     a cwrc:NationalHeritageContext ;
     rdfs:label "National Heritage Context for Vita Sackville-West"@en ;
     oa:hasBody cwrc:englishNationality ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
-    prov:derivedFrom cwrc:SackvilleWest12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/SackvilleWest12345> .
     
 <http://www.cwrc.ca/cwrcdata/SACKVILLEWESTEthnicityGipsy>
     a cwrc:EthnicityContext ;
     rdfs:label "Race/Ethnicity Context for Vita Sackville-West"@en ;
     oa:hasBody cwrc:gipsy ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
-    prov:derivedFrom cwrc:SackvilleWest12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/SackvilleWest12345> .
     
 <http://www.cwrc.ca/cwrcdata/SACKVILLEWESTSexualityBisexual>
     a cwrc:SexualityContext ;
     rdfs:label "Sexuality Context for Vita Sackville-West"@en ;
     oa:hasBody cwrc:bisexual ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
-    prov:derivedFrom cwrc:SackvilleWest12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/SackvilleWest12345> .
     
 <http://www.cwrc.ca/cwrcdata/SACKVILLEWESTSexualityLesbian>
     a cwrc:SexualityContext ;
     rdfs:label "Sexuality Context for Vita Sackville-West"@en ;
     oa:hasBody cwrc:lesbian ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
-    prov:derivedFrom cwrc:SackvilleWest12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/SackvilleWest12345> .
 
 <http://www.cwrc.ca/cwrcdata/JosefaDuran>
     a foaf:Person ;
@@ -687,7 +687,7 @@ cwrc:charlotteDacreCulturalFormation1
     rdfs:label "Social Class Context for Virginia Woolf"@en ;
     oa:hasBody cwrc:professional ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
-    prov:derivedFrom cwrc:Woolf12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/virginiaWoolf1> .
 
 <http://www.cwrc.ca/cwrcdata/WOOLFSexualitySelfDefinedBisexual>
     a cwrc:SexualityContext ;
@@ -701,14 +701,14 @@ cwrc:charlotteDacreCulturalFormation1
     rdfs:label "Gender Context for Virginia Woolf"@en ;
     oa:hasBody cwrc:genderWomanFemale ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
-    prov:derivedFrom cwrc:Woolf12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/virginiaWoolf1> .
     
 <http://www.cwrc.ca/cwrcdata/WOOLFNationalIdentityEnglish>
     a cwrc:NationalityContext ;
     rdfs:label "National Identity Context for Virginia Woolf"@en ;
     oa:hasBody cwrc:englishIdentity ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
-    prov:derivedFrom cwrc:Woolf12345 .    
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/virginiaWoolf1> .    
     
  #Works go here   
 
@@ -4446,7 +4446,7 @@ cwrc:jewishLabel
     a skos:Concept, skosxl:Label ;
     rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-06-07> ;
     rdfs:label "jewish"@en, "juif"@fr ;
-    owl:oneOf (cwrc:jewishReligion
+    owl:oneOf (cwrc:judaism
         cwrc:jewishEthnicity
     ) ;
     skos:definition ""@en, ""@fr ;
@@ -4461,7 +4461,7 @@ cwrc:jewishNationalIdentity
     rdfs:subClass cwrc:jewishLabel ;
     skos:definition ""@en, ""@fr .
 
-cwrc:jewishReligion
+cwrc:judaism
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:Religion, owl:Thing, skos:Concept ;
     rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-06-07> ;
