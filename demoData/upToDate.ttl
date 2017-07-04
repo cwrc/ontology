@@ -183,7 +183,7 @@ cwrc:King12345
 <http://www.cwrc.ca/cwrcdata/CharlotteDacre>
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasGeogHeritage cwrc:jewishGeographicalHeritage, cwrc:portugal, cwrc:england, cwrc:middlesex, cwrc:london ;
-    cwrc:hasReligion cwrc:anglicanchurch, cwrc:jewishReligion ;
+    cwrc:hasReligion cwrc:anglicanchurch, cwrc:judaism ;
     cwrc:hasEthnicity cwrc:JewishEthnicity ;
     cwrc:hasSocialClass cwrc:entrepreneurial-industrialist, cwrc:gentry, cwrc:indigent;
     a foaf:Person ;
@@ -199,7 +199,7 @@ cwrc:King12345
 <http://www.cwrc.ca/cwrcdata/DACREGeogHeritageJewish>
     a cwrc:GeographicHeritageContext ;
     rdfs:label "Geographic Heritage Context for Charlotte Dacre"@en ;
-    oa:hasBody cwrc:jewish ;
+    oa:hasBody cwrc:jewishGeographicalHeritage ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre1> .
 
