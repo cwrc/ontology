@@ -81,7 +81,7 @@ tempTest: specgen.py
 	./specgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY) $(ONTOLOGY)-FR-template2-$(ONTOLOGY_DATE).html  $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html  -i
 	# french 
 	# ./docgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY) $(ONTOLOGY)-FR-template2-$(ONTOLOGY_DATE).html  $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html  -i
-doc: docgen.py
-	./docgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY) $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html  $(ONTOLOGY)-$(ONTOLOGY_DATE).html  -i
+doc: scripts/docgen.py
+	./scripts/docgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY) $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html  $(ONTOLOGY)-$(ONTOLOGY_DATE).html  -i
 	@echo "\n\n\n\n\n"
-	./docgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY) $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html  $(ONTOLOGY)-$(ONTOLOGY_DATE).html
+	./scripts/docgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY) $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html  $(ONTOLOGY)-$(ONTOLOGY_DATE).html
