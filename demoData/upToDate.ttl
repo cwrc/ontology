@@ -38,7 +38,7 @@
     cwrc:hasEthnicity cwrc:JewishEthnicity ;
     cwrc:hasReligion cwrc:judaism ;
     cwrc:hasPoliticalAffiliation cwrc:radical ;
-    cwrc:hasNationalitySelfDefined cwrc:EnglishNationalHeritage ;
+    cwrc:hasNationalitySelfDefined cwrc:englishNationalHeritage ;
     a foaf:Person ;
     foaf:name "Sophia King" .
 
@@ -103,7 +103,7 @@
 <http://www.cwrc.ca/cwrcdata/KINGSNationality>
     a cwrc:NationalityContext ;
     rdfs:label "Nationality Context for Sophia King"@en ;
-    oa:hasBody cwrc:EnglishNationalHeritage ;
+    oa:hasBody cwrc:englishNationalHeritage ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
     prov:derivedFrom cwrc:King12345 .
 
@@ -1121,14 +1121,14 @@ cwrc:EnglishLanguage
     rdfs:label "Anglais"@fr, "English"@en ;
     skos:definition ""@en, ""@fr .
 
-cwrc:EnglishNationalHeritage
+cwrc:englishNationalHeritage
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:NationalHeritage, owl:Thing, skos:Concept ;
     rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-06-07> ;
     rdfs:label "Anglaise"@fr, "English"@en ;
     skos:definition ""@en, ""@fr .
 
-cwrc:EnglishNationalIdentity
+cwrc:englishNationalIdentity
     void:inDataset cwrc:datasetdefinition ;
     a cwrc:NationalIdentity, owl:Thing, skos:Concept ;
     rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-06-07> ;
@@ -1634,9 +1634,9 @@ cwrc:englishLabel
     rdf:value "english" ;
     rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-06-07> ;
     rdfs:label "englais"@fr, "english"@en ;
-    owl:oneOf (cwrc:EnglishNationalHeritage
+    owl:oneOf (cwrc:englishNationalHeritage
         cwrc:EnglishLanguage
-        cwrc:EnglishNationalIdentity
+        cwrc:englishNationalIdentity
     ) ;
     skos:definition ""@en, ""@fr ;
     skos:inScheme cwrc:TextLabels ;

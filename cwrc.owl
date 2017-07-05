@@ -413,12 +413,24 @@
     <rdfs:label xml:lang="fr">Héritage National</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">A subclass of culturalForms, this descrbes a person's national heritage and is not the same as citizenship.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of culturalForms, this escrbes a person's national heritage and is not the same as citizenship.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-  <cwrc:NationalHeritage rdf:about="#EnglishNationalHeritage">
+  <owl:DeprecatedClass rdf:about="#EnglishNationalHeritage">
+    <rdfs:label xml:lang="en">English</rdfs:label>
+    <rdfs:label xml:lang="fr">Anglais</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:equivalentClass rdf:resource="#englishNationalHeritage"/>
+    <dc:isReplacedBy rdf:resource="#englishNationalHeritage"/>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </owl:DeprecatedClass>
+  <cwrc:NationalHeritage rdf:about="#englishNationalHeritage">
     <rdfs:label xml:lang="en">English</rdfs:label>
     <rdfs:label xml:lang="fr">Anglais</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -427,6 +439,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:NationalHeritage>
+
   <cwrc:NationalIdentity rdf:about="#jewishNationalIdentity">
     <rdfs:label xml:lang="en">Jewish</rdfs:label>
     <rdfs:label xml:lang="fr">Juif</rdfs:label>
@@ -447,7 +460,19 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-  <cwrc:NationalIdentity rdf:about="#EnglishNationalIdentity">
+  <owl:DeprecatedClass rdf:about="#EnglishNationalIdentity">
+    <rdfs:label xml:lang="en">English</rdfs:label>
+    <rdfs:label xml:lang="fr">Anglais</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:equivalentClass rdf:resource="#englishNationalIdentity"/>
+    <dc:isReplacedBy rdf:resource="#englishNationalIdentity"/>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </owl:DeprecatedClass>
+  <cwrc:NationalIdentity rdf:about="#englishNationalIdentity">
     <rdfs:label xml:lang="en">English</rdfs:label>
     <rdfs:label xml:lang="fr">Anglais</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
