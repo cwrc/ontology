@@ -12,6 +12,7 @@
   xmlns:foaf="http://xmlns.com/foaf/0.1/" 
   xmlns:loc="http://id.loc.gov/vocabulary/relators/" 
   xmlns:locl ="http://id.loc.gov/vocabulary/languages/"
+  xmlns:mil ="http://rdf.muninn-project.org/ontologies/military#"
   xmlns:nif="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#" 
   xmlns:oa="http://www.w3.org/ns/oa#" 
   xmlns:owl="http://www.w3.org/2002/07/owl#" 
@@ -491,24 +492,24 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/iso639-1/iso639-1_Language"/>
   </owl:Class>
-  <cwrc:Language rdf:about="#EnglishLanguage">
+  <owl:DeprecatedClass rdf:about="#EnglishLanguage">
     <rdfs:label xml:lang="en">English</rdfs:label>
     <rdfs:label xml:lang="fr">Anglais</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:Language>
-  <cwrc:Language rdf:about="#FrenchLanguage">
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    <owl:equivalentClass rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+  </owl:DeprecatedClass>
+  <owl:DeprecatedClass rdf:about="#FrenchLanguage">
     <rdfs:label xml:lang="en">French</rdfs:label>
     <rdfs:label xml:lang="fr">Français</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:Language>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    <owl:equivalentClass rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/>
+  </owl:DeprecatedClass>
   <owl:Class rdf:ID="GeographicalHeritage">
     <rdfs:label xml:lang="en">Geographical Heritage</rdfs:label>
     <rdfs:label xml:lang="fr">Héritage Géographique</rdfs:label>
