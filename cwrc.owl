@@ -6,7 +6,6 @@
   xmlns:cc="http://creativecommons.org/ns#" 
   xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" 
   xmlns:dbpedia="http://dbpedia.org/resource/" 
-  xmlns:dc="http://purl.org/dc/terms/" 
   xmlns:dcterms="http://purl.org/dc/terms/" 
   xmlns:doap="http://usefulinc.com/ns/doap#" 
   xmlns:foaf="http://xmlns.com/foaf/0.1/" 
@@ -32,67 +31,67 @@
     <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
     <vann:preferredNamespacePrefix>cwrc</vann:preferredNamespacePrefix>
     <vann:preferredNamespaceUri>http://sparql.cwrc.ca/ontology/cwrc#</vann:preferredNamespaceUri>
-    <dc:title xml:lang="en">The CWRC Ontology</dc:title>
+    <dcterms:title xml:lang="en">The CWRC Ontology</dcterms:title>
     <rdfs:label xml:lang="en">The CWRC Ontology</rdfs:label>
     <foaf:name xml:lang="en">The CWRC Ontology</foaf:name>
-    <dc:title xml:lang="fr">L'Ontologie CWRC</dc:title>
+    <dcterms:title xml:lang="fr">L'Ontologie CWRC</dcterms:title>
     <rdfs:label xml:lang="fr">L'Ontologie CWRC</rdfs:label>
     <foaf:name xml:lang="fr">L'Ontologie CWRC</foaf:name>
-    <dc:description xml:lang="en">The CWRC Ontology is the ontology of the Canadian Writing Research Collaboratory.</dc:description>
+    <dcterms:description xml:lang="en">The CWRC Ontology is the ontology of the Canadian Writing Research Collaboratory.</dcterms:description>
     <skos:definition xml:lang="en">The CWRC Ontology is the ontology of the Canadian Writing Research Collaboratory.</skos:definition>
     <rdfs:comment xml:lang="en">The CWRC Ontology is the ontology of the Canadian Writing Research Collaboratory.</rdfs:comment>
-    <dc:description xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</dc:description>
+    <dcterms:description xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</dcterms:description>
     <skos:definition xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</skos:definition>
     <rdfs:comment xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</rdfs:comment>
     <owl:versionInfo>0.99.3</owl:versionInfo>
     <owl:priorVersion rdf:resource="http://sparql.cwrc.ca/ontology/cwrc-2017-03-18"/>
-    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">ONTOLOGY_DATE</dc:date>
-    <dc:rights rdf:resource="http://creativecommons.org/licenses/by-nc/4.0/"/>
+    <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">ONTOLOGY_DATE</dcterms:date>
+    <dcterms:rights rdf:resource="http://creativecommons.org/licenses/by-nc/4.0/"/>
     <vs:term_status xml:lang="en">Testing</vs:term_status>
-    <dc:creator>
+    <dcterms:creator>
       <foaf:Person rdf:about="#JohnSimpson">
         <foaf:name>John Simpson</foaf:name>
       </foaf:Person>
-    </dc:creator>
-    <dc:creator>
+    </dcterms:creator>
+    <dcterms:creator>
       <foaf:Person rdf:about="#AbigelLemak">
         <foaf:name>Abigel Lemak</foaf:name>
       </foaf:Person>
-    </dc:creator>
-    <dc:creator>
+    </dcterms:creator>
+    <dcterms:creator>
       <foaf:Person rdf:about="#JadePenancier">
         <foaf:name>Jade Penancier</foaf:name>
       </foaf:Person>
-    </dc:creator>
-    <dc:creator>
+    </dcterms:creator>
+    <dcterms:creator>
       <foaf:Person rdf:about="#KimMartin">
         <foaf:name>Kim Martin</foaf:name>
       </foaf:Person>
-    </dc:creator>
-    <dc:creator rdf:resource="#SusanBrown"/>
-    <dc:creator>
+    </dcterms:creator>
+    <dcterms:creator rdf:resource="#SusanBrown"/>
+    <dcterms:creator>
       <foaf:Person rdf:about="#ColinFaulkner">
         <foaf:name>Colin Faulkner</foaf:name>
       </foaf:Person>
-    </dc:creator>
-    <dc:creator>
+    </dcterms:creator>
+    <dcterms:creator>
       <foaf:Person rdf:about="#RobWarren">
         <foaf:name>Robert Warren</foaf:name>
         <owl:sameAs rdf:resource="http://rdf.muninn-project.org/ww1/2011/11/11/Person/Warren"/>
       </foaf:Person>
-    </dc:creator>
-    <dc:creator>
+    </dcterms:creator>
+    <dcterms:creator>
       <foaf:Person rdf:about="#AlliyyaMo">
         <foaf:name>Alliyya Mo</foaf:name>
       </foaf:Person>
-    </dc:creator>
-    <dc:publisher>
+    </dcterms:creator>
+    <dcterms:publisher>
       <foaf:Organization rdf:about="#cwrc">
         <foaf:name xml:lang="fr">Le Collaboratoire scientifique des écrits du Canada</foaf:name>
         <foaf:name xml:lang="en">The Canadian Writing Research Collaboratory</foaf:name>
         <foaf:logo rdf:resource="http://sparql.cwrc.ca/images/CWRCLogo-Horz-FullColour.png"/>
       </foaf:Organization>
-    </dc:publisher>
+    </dcterms:publisher>
     <loc:pdr>
       <foaf:Person rdf:about="#SusanBrown">
         <foaf:name>Susan Brown</foaf:name>
@@ -114,50 +113,50 @@
     <vann:preferredNamespacePrefix>cwrc</vann:preferredNamespacePrefix>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <foaf:logo rdf:resource="http://sparql.cwrc.ca/images/CWRCLogo-Horz-FullColour.png"/>
-    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85019388"/>
-    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85043777"/>
-    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85013838"/>
-    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85077519"/>
-    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2009007122"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85019388"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85043777"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85013838"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85077519"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2009007122"/>
   </owl:Ontology>
   <!-- http://id.loc.gov/vocabulary/relators/ctb -->
   <void:Dataset rdf:about="#datasetdefinition">
-    <dc:title xml:lang="en">The CWRC Ontology</dc:title>
+    <dcterms:title xml:lang="en">The CWRC Ontology</dcterms:title>
     <rdfs:label xml:lang="en">The CWRC Ontology</rdfs:label>
     <foaf:name xml:lang="en">The CWRC Ontology</foaf:name>
-    <dc:title xml:lang="fr">L'Ontologie CWRC</dc:title>
+    <dcterms:title xml:lang="fr">L'Ontologie CWRC</dcterms:title>
     <rdfs:label xml:lang="fr">L'Ontologie CWRC</rdfs:label>
     <foaf:name xml:lang="fr">L'Ontologie CWRC</foaf:name>
-    <dc:description xml:lang="en">The CWRC Ontology is the ontology of the Canadian Writing Research Collaboratory.</dc:description>
+    <dcterms:description xml:lang="en">The CWRC Ontology is the ontology of the Canadian Writing Research Collaboratory.</dcterms:description>
     <skos:definition xml:lang="en">The CWRC Ontology is the ontology of the Canadian Writing Research Collaboratory.</skos:definition>
     <rdfs:comment xml:lang="en">The CWRC Ontology is the ontology of the Canadian Writing Research Collaboratory.</rdfs:comment>
-    <dc:description xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</dc:description>
+    <dcterms:description xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</dcterms:description>
     <skos:definition xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</skos:definition>
     <rdfs:comment xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</rdfs:comment>
     <!-- -->
     <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc/4.0/"/>
     <cc:Jurisdiction rdf:resource="http://dbpedia.org/resource/Canada"/>
     <cc:attributionURL rdf:resource="http://www.cwrc.ca/"/>
-    <dc:creator rdf:resource="#JohnSimpson"/>
-    <dc:creator rdf:resource="#AbiLemak"/>
-    <dc:creator rdf:resource="#ColinFaulkner"/>
-    <dc:creator rdf:resource="#RobWarren"/>
-    <dc:publisher rdf:resource="#cwrc"/>
-    <dc:creator rdf:resource="#JadePenancier"/>
-    <dc:creator rdf:resource="#AlliyyaMo"/>
-    <dc:creator rdf:resource="#KimMartin"/>
-    <dc:creator rdf:resource="#SusanBrown"/>
+    <dcterms:creator rdf:resource="#JohnSimpson"/>
+    <dcterms:creator rdf:resource="#AbiLemak"/>
+    <dcterms:creator rdf:resource="#ColinFaulkner"/>
+    <dcterms:creator rdf:resource="#RobWarren"/>
+    <dcterms:publisher rdf:resource="#cwrc"/>
+    <dcterms:creator rdf:resource="#JadePenancier"/>
+    <dcterms:creator rdf:resource="#AlliyyaMo"/>
+    <dcterms:creator rdf:resource="#KimMartin"/>
+    <dcterms:creator rdf:resource="#SusanBrown"/>
     <loc:ctb rdf:resource="#ConstanceCrompton"/>
     <loc:ctb rdf:resource="#originalOrlandoAuthor"/>
     <loc:pdr rdf:resource="#SusanBrown"/>
     <loc:fnd rdf:resource="#sshrc"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <foaf:logo rdf:resource="http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif"/>
-    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85019388"/>
-    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85043777"/>
-    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85013838"/>
-    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85077519"/>
-    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2009007122"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85019388"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85043777"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85013838"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85077519"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2009007122"/>
   </void:Dataset>
   <skos:Concept rdf:about="#originalOrlandoAuthor">
     <rdfs:label xml:lang="en">Members of the Orlando Project</rdfs:label>
@@ -262,7 +261,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:equivalentClass rdf:resource="#CulturalForm"/>
-    <dc:isReplacedBy rdf:resource="#CulturalForm"/>
+    <dcterms:isReplacedBy rdf:resource="#CulturalForm"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedClass>
   <owl:Class rdf:ID="CulturalForm">
@@ -306,8 +305,8 @@
     <skos:definition xml:lang="fr">raceEthnicityContext est une sous-classe importante de culturalForms. Elle indique la présence d’informations et de discussions sur le sujet concernant son appartenance raciale et ethnique, conjointement avec les sous-éléments spécifiques au sujet (raceColour, nationalHeritage, geogHeritage, ethnicity). La discussion qui suit s’applique au contexte discursif général de raceAndEthnicity ainsi qu’aux catégories spécifiques de cette sous-classe. Même si les catégories de race et d'ethnicité sont fréquemment manipulées au service d'intérêts déplorables, elles doivent être prises en compte à cause de leur répercussions idéologiques et matérielles sur la formation identitaire. Ces catégories sont changeantes, historiquement constituées, développées de façon intéressée, doivent être employées en contexte et sont ici entendues comme discursives et représentationnelles. C'est pour ces raisons que l'ontologie ne prétend pas offrir un ensemble de catégories exactes, complètement définies, ou mutuellement exclusives, ce que leur emploi instable et leur chevauchement ne permettent pas. Celles/ceux qui appliquent ces catégories et sous-catégories sont encouragé/es à ne pas faire fonctionner les identités privilégiées comme si elles étaient consensuelles et évidentes, ou à utiliser cette classe seulement pour les marginaux. Celles/ceux préoccupés par le fait que &quot;blanc&quot; et &quot;noir&quot; sont des catégories homogénéisantes sont encouragés à atteindre la spécificité à travers la multiplicité et les représentations intersectionnelles. RaceAndEthnicity est sous-classe de culturalFormation. Elle a quatre sous-classes qui lui sont liées: raceColour, nationalHeritage, geogHeritage et ethnicity.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <dc:subject rdf:resource="#Ethnicity"/>
-    <dc:subject rdf:resource="#RaceColour"/>
+    <dcterms:subject rdf:resource="#Ethnicity"/>
+    <dcterms:subject rdf:resource="#RaceColour"/>
   </owl:Class>
   <owl:Class rdf:ID="SexualityContext">
     <rdfs:label xml:lang="en">sexuality context</rdfs:label>
@@ -318,8 +317,8 @@
     <skos:definition xml:lang="fr">sexualityContext est une sous-classe importante de culturalForms. Elle indique la présence de données ou de discussions sur la subjectivité d’une personne en ce qui concerne sa sexualité et son identité sexuelle. Sous-classe de culturalForms, sexualityContext approfondit la catégorisation granulaire d’une personne à travers hasSexuality ou hasSexuality. Elle n’est pas vouée à répertorier les expériences sexuelles et relations personnelles, qui sont comprises dans intimateRelationships. Des relations spécifiques pourront être évoquées ici pour indiquer les conséquences qu’elles ont eu dans la vie du sujet ou la compréhension de sa propre sexualité. Cet effort de contextualisation est un mouvement vers des questions complexes autours de la sexualité, comme par exemple les politiques de délation autour de la sexualité, la spécificité historique de certaines catégories comme “inversion sexuelle”, ou les multiples formes liées à la sexualité d’une personne. Les utilisatrices/teurs intéressé/es par la construction historique, idéologique et genrée de la sexualité pour se servir de cet élément qui rend compte des débats autour de ce thème. Nous reconnaissons l'importance des politiques de confidentialité au regard de la divulgation de la sexualité, de l’orientation et de l’identité sexuelles du sujet. En ce qui concerne les personnes toujours en vie, notre pratique est de ne nous appuyer que sur des sources ou des déclarations publiques venant du sujet elle/lui-même, afin d’éviter de dévoiler par inadvertance des informations privées sur sa sexualité. Voir Campbell and Cowan 2016. (http://ir.lib.uwo.ca/cgi/viewcontent.cgi?article=1085&amp;context=fimspub). </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <dc:subject rdf:resource="#Sexuality"/>
-    <dc:subject rdf:resource="#Gender"/>
+    <dcterms:subject rdf:resource="#Sexuality"/>
+    <dcterms:subject rdf:resource="#Gender"/>
   </owl:Class>
   <!--  (http://ir.lib.uwo.ca/cgi/viewcontent.cgi?article=1085&context=fimspub) -->
   <owl:Class rdf:ID="LanguageContext">
@@ -327,45 +326,45 @@
     <rdfs:label xml:lang="fr">contexte linguistique</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#Context"/>
-    <dc:subject rdf:resource="#LinguisticAbility"/>
+    <dcterms:subject rdf:resource="#LinguisticAbility"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <dc:subject rdf:resource="#Language"/>
+    <dcterms:subject rdf:resource="#Language"/>
   </owl:Class>
   <owl:Class rdf:ID="SocialClassContext">
     <rdfs:label xml:lang="en">social class context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte de classe sociale</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#Context"/>
-    <dc:subject rdf:resource="#SocialClassIdentity"/>
+    <dcterms:subject rdf:resource="#SocialClassIdentity"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <dc:subject rdf:resource="#SocialClassIdentity"/>
+    <dcterms:subject rdf:resource="#SocialClassIdentity"/>
   </owl:Class>
   <owl:Class rdf:ID="ReligionContext">
     <rdfs:label xml:lang="en">religious context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte religieux</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#Context"/>
-    <dc:subject rdf:resource="#Religion"/>
+    <dcterms:subject rdf:resource="#Religion"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <dc:subject rdf:resource="#Religion"/>
+    <dcterms:subject rdf:resource="#Religion"/>
   </owl:Class>
   <owl:Class rdf:ID="NationalityContext">
     <rdfs:label xml:lang="en">nationality context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte de nationalité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#Context"/>
-    <dc:subject rdf:resource="#NationalHeritage"/>
-    <dc:subject rdf:resource="#NationalIdentity"/>
-    <dc:subject rdf:resource="#GeographicalHeritage"/>
+    <dcterms:subject rdf:resource="#NationalHeritage"/>
+    <dcterms:subject rdf:resource="#NationalIdentity"/>
+    <dcterms:subject rdf:resource="#GeographicalHeritage"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -376,7 +375,7 @@
     <rdfs:label xml:lang="fr">contexte politique</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#Context"/>
-    <dc:subject rdf:resource="#PoliticalAffiliation"/>
+    <dcterms:subject rdf:resource="#PoliticalAffiliation"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -387,20 +386,20 @@
     <rdfs:label xml:lang="fr">contexte racial, de couleur de peau ou d'ethnicité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#Context"/>
-    <dc:subject rdf:resource="#Ethnicity"/>
-    <dc:subject rdf:resource="#RaceColour"/>
+    <dcterms:subject rdf:resource="#Ethnicity"/>
+    <dcterms:subject rdf:resource="#RaceColour"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <dc:subject rdf:resource="#Ethnicity"/>
+    <dcterms:subject rdf:resource="#Ethnicity"/>
   </owl:Class>
   <owl:Class rdf:ID="GenderContext">
     <rdfs:label xml:lang="en">Gender Context</rdfs:label>
     <rdfs:label xml:lang="fr">Contexte de Genre</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#Context"/>
-    <dc:subject rdf:resource="#Gender"/>
+    <dcterms:subject rdf:resource="#Gender"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -426,7 +425,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:equivalentClass rdf:resource="#englishNationalHeritage"/>
-    <dc:isReplacedBy rdf:resource="#englishNationalHeritage"/>
+    <dcterms:isReplacedBy rdf:resource="#englishNationalHeritage"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedClass>
   <cwrc:NationalHeritage rdf:about="#englishNationalHeritage">
@@ -468,7 +467,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:equivalentClass rdf:resource="#englishNationalIdentity"/>
-    <dc:isReplacedBy rdf:resource="#englishNationalIdentity"/>
+    <dcterms:isReplacedBy rdf:resource="#englishNationalIdentity"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedClass>
   <cwrc:NationalIdentity rdf:about="#englishNationalIdentity">
@@ -623,7 +622,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:equivalentClass rdf:resource="#Sexuality"/>
-    <dc:isReplacedBy rdf:resource="#Sexuality"/>
+    <dcterms:isReplacedBy rdf:resource="#Sexuality"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedClass>
   <!--  (http://ir.lib.uwo.ca/cgi/viewcontent.cgi?article=1085&context=fimspub) -->
@@ -668,7 +667,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:equivalentClass rdf:resource="#Gender"/>
-    <dc:isReplacedBy rdf:resource="#Gender"/>
+    <dcterms:isReplacedBy rdf:resource="#Gender"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedClass>
   <rdf:Description rdf:about="#maleSex">
@@ -683,7 +682,7 @@
     <rdfs:comment xml:lang="en">Deprecated in favour of instance #genderManMale.</rdfs:comment>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <owl:equivalentClass rdf:resource="#genderManMale"/>
-    <dc:isReplacedBy rdf:resource="#genderManMale"/>
+    <dcterms:isReplacedBy rdf:resource="#genderManMale"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
   <rdf:Description rdf:about="#femaleSex">
@@ -698,7 +697,7 @@
     <rdfs:comment xml:lang="en">Deprecated in favour of instance #genderWomanFemale.</rdfs:comment>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <owl:equivalentClass rdf:resource="#genderWomanFemale"/>
-    <dc:isReplacedBy rdf:resource="#genderWomanFemale"/>
+    <dcterms:isReplacedBy rdf:resource="#genderWomanFemale"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
   <rdf:Description rdf:about="#unknownSex">
@@ -735,7 +734,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:equivalentClass rdf:resource="#whiteRaceColour"/>
-    <dc:isReplacedBy rdf:resource="#whiteRaceColour"/>
+    <dcterms:isReplacedBy rdf:resource="#whiteRaceColour"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedClass>
   <cwrc:RaceColour rdf:about="#whiteRaceColour">
@@ -799,7 +798,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:equivalentClass rdf:resource="#jewishEthnicity"/>
-    <dc:isReplacedBy rdf:resource="#jewishEthnicity"/>
+    <dcterms:isReplacedBy rdf:resource="#jewishEthnicity"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedClass>
   <cwrc:Ethnicity rdf:about="#jewishEthnicity">
@@ -1077,7 +1076,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broaderTransitive rdf:resource="#abrahamicReligions"/>
     <owl:equivalentClass rdf:resource="#judaism"/>
-    <dc:isReplacedBy rdf:resource="#judaism"/>
+    <dcterms:isReplacedBy rdf:resource="#judaism"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedClass>
   <cwrc:Religion rdf:about="#presbyterianism">
@@ -1510,7 +1509,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:equivalentClass rdf:resource="#entrepreneurial-industrialist"/>
-    <dc:isReplacedBy rdf:resource="#entrepreneurial-industrialist"/>
+    <dcterms:isReplacedBy rdf:resource="#entrepreneurial-industrialist"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedClass>
   <cwrc:SocialClassIdentity rdf:about="#indigent">
