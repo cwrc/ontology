@@ -13,6 +13,7 @@ classdomains = {}
 spec_url = None
 spec_ns = None
 spec_pre = "cwrc"
+lang = None
 
 ns_list = {
     "content": "http://purl.org/rss/1.0/modules/content/",
@@ -59,10 +60,11 @@ def print_usage():
     print("\t\tprefix      : prefix for CURIEs")
     print("\t\ttemplate    : HTML template path")
     print("\t\tdestination : specification destination (by default)")
-    print("\t\toptional flags:")
-    print("\t\t\t-i   : add instances on the specification (disabled by default)")
+    print("\t\tlanguage flags:")
+    print("\t\t\ten   : english")
+    print("\t\t\tfr   : french")
     print("\nExamples:")
-    print("%s example.owl ex template.html example.owl.html -i" % script)
+    print("%s example.owl ex template.html example.owl.html en" % script)
     sys.exit(-1)
 
 
@@ -96,24 +98,109 @@ def get_domain_range_dict(graph):
     return domain_dict, range_dict
 
 
-def getDictionaries(model, classes, properties):
-    """
-    Extract all resources instanced in the ontology
-    (aka "everything that is skos:Concept")
-    """
+def get_instances(graph, class_list):
     instances = []
-    for i in model.find_statements(RDF.Statement(None, rdf.type, skos.ConceptScheme)):
-        uri = str(i.subject.uri)
-        print("Found Dictionary:", uri)
-        if not uri in instances:
-            instances.append(uri)
-    print("Dictionaries listed")
+    for owl_class in class_list:
+        class_uri = spec_ns[owl_class]
+        for s, p, o in graph.triples((None, RDF.type, class_uri)):
+            instances.append(str(s).split("#")[1])
+
+    instances = sorted(list(set(instances)))
     return instances
 
 
-def specgen(specloc, template, instances=True, mode="spec"):
-    """The meat and potatoes: Everything starts here."""
+def create_link_lists(list, name):
+    string = "<p>%s" % name
+    for x in list:
+        string += '\t<a href="#%s">%s</a>,' % (x, x)
+    string += "</p>"
+    return(string)
 
+
+def get_azlist_html(az_dict, list):
+    string = '<div class="az_list">'
+    for key in list:
+        string += create_link_lists(az_dict[key], key)
+    string += '</div>'
+    return string
+
+
+def get_rdfs(graph, uri):
+    # "Returns label and comment given an RDF.Node with a URI in it"
+    comment = ''
+    label = ''
+    # if (type(urinode) == str):
+    #     urinode = RDF.Uri(urinode)
+    print(lang)
+        # print("\n")
+    # print(graph.preferredLabel(uri, lang, RDFS.label))
+    # print(graph.preferredLabel(uri, lang, RDFS.label))
+    # print(type(graph.preferredLabel(uri, lang, RDFS.label)))
+    label = None
+    test = graph.preferredLabel(uri, lang, RDFS.label)[0]
+    # for x in test:
+    #     print(x)
+    # print(type(test))
+    # print(len(test))
+    if len(test) == 2:
+        label = test[1]
+    print(label)
+    print("\nComment:")
+    for s, p, o in graph.triples((uri, RDFS.comment, None)):
+        print(s)
+        print(p)
+        print(o)
+        print(type(o))
+
+    # test = graph.comment(uri)
+    # print(test)
+
+    # print(test[0])
+    # print(test[1])
+    # label = [o for s, p, o in graph.triples((uri, RDFS.label, None))]
+    # print(type(label))
+    # print(label)
+    print("\n\n")
+    # print(graph.preferredLabel(label, lang))
+    # l = graph.find_statements(RDF.Statement(urinode, rdfs.label, None))
+    # if l.current():
+    #     label = l.current().object.literal_value['string']
+    # c = graph.find_statements(RDF.Statement(urinode, skos.definition, None))
+    # if c.current():
+    #     comment = c.current().object.literal_value['string']
+    # c = graph.find_statements(RDF.Statement(urinode, rdfs.comment, None))
+    # if c.current():
+    #     comment = c.current().object.literal_value['string']
+    return label, comment
+
+
+def terms_html(name, list, graph):
+    # print("haha")
+    doc = ""
+    print(spec_pre)
+    for item in list:
+        doc += """<div class="specterm" id="%s">\n""" % (item)
+        doc += """\t<h3>%s: %s:%s</h3>\n""" % (name, spec_pre, item)
+        term_uri = spec_ns[item]
+        doc += """\t<p class="uri">URI: <a href="%s">%s</a></p>\n""" % (term_uri, term_uri)
+        label, comment = get_rdfs(graph, term_uri)
+        # break
+        # print "Term is %s" % term
+        # print "Type is %s" % type(term)
+        # print(nsTest)
+    # try:
+    #     term_uri = term.uri
+    # except:
+    #     term_uri = term
+    # doc += """<p style="font-family:monospace; font-size:0.em;">URI: <a href="%s">%s</a></p>""" % (term_uri, term_uri)
+    # label, comment = get_rdfs(m, term)
+    # print "Term is %s" % term
+    # print "Type is %s" % type(term)
+        doc += "</div>\n\n"
+    return doc
+
+
+def specgen(specloc, template, language):
     global spec_url
     global spec_ns
     global ns_list
@@ -140,8 +227,7 @@ def specgen(specloc, template, instances=True, mode="spec"):
     spec_ns = rdflib.Namespace(spec_url)
     ns_list[spec_pre] = spec_url
 
-    # Get class/properties and range/domain info
-    # Gets classes labels from uris from graph and sorts them
+    # Gets sorted classes & property labels
     class_list = [x.split("#")[1] for x in sorted(graph.subjects(None, OWL.Class))]
     prop_list = [x.split("#")[1] for x in sorted(graph.subjects(None, OWL.ObjectProperty))]
 
@@ -149,40 +235,24 @@ def specgen(specloc, template, instances=True, mode="spec"):
     global range_dict
     domain_dict, range_dict = get_domain_range_dict(graph)
 
-    skos_concepts = [str(s) for s, p, o in graph.triples((None, RDF.type, SKOS.ConceptScheme))]
-    print(skos_concepts)
-    # for x in skos_concepts:
-    #     query_str = "select ?x where {?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <" + str(x) + ">}"
-    #     for row in graph.query(query_str):
-    #         print(row.x)
+    # Dict_list in specgen
+    skos_concepts = [str(s).split("#")[1] for s, p, o in graph.triples((None, RDF.type, SKOS.ConceptScheme))]
 
-    instances = []
-    for owl_class in class_list:
-        class_uri = spec_ns[owl_class]
-        for s, p, o in graph.triples((None, RDF.type, class_uri)):
-            instances.append(str(s))
+    instance_list = get_instances(graph, class_list)
 
-    instances = sorted(list(set(instances)))
-    print(instances)
-    for x in instances:
-        print(x)
-            # for s, p, o in graph.triples((None, RDF.type, class_uri)):
-            #     print(s)
+    # Build HTML list of terms.
+    az_dict = {
+        "Classes:": class_list,
+        "Properties:": prop_list,
+        "Instances:": instance_list,
+        "Dictionaries:": skos_concepts,
+    }
+    temp_list = ["Classes:", "Properties:", "Instances:", "Dictionaries:"]
+    azlist_html = get_azlist_html(az_dict, temp_list)
 
-    # for one in classes:
-    #     print "Check class:", one
-    #         uri = str(i.subject.uri)
-    #         print "Check instance:", uri, one
-    #         if not uri in instances:
-    #             instances.append(uri)
-
-        # print(row.subj)
-
-    # test = graph.subjects(None, skos_concepts[0])
-    # print(test)
-    # for x in test:
-    #     print(x)
-
+    termlist = terms_html("Property", prop_list, graph)
+    print("\n\n\n\n")
+    # print(termlist)
     return template
 
 
@@ -193,24 +263,19 @@ def set_term_dir(directory):
 
 
 def main():
-    if (len(sys.argv) < 5 or len(sys.argv) > 6):
-        print("hello")
+    global lang
+    if (len(sys.argv) != 6):
         print_usage()
 
     specloc = sys.argv[1]
     spec_pre = sys.argv[2]
-    specdoc = sys.argv[2] + "-docs"
+    specdoc = spec_pre + "-docs"
     temploc = sys.argv[3]
     dest = sys.argv[4]
+    lang = sys.argv[5]
     template = None
-    set_term_dir(specdoc)
 
-    print(specloc)
-    print(spec_pre)
-    print(specdoc)
-    print(temploc)
-    print(dest)
-    # template
+    set_term_dir(specdoc)
 
     try:
         f = open(temploc, "r")
@@ -219,11 +284,11 @@ def main():
         print("Error reading from template \"" + temploc + "\": " + str(e))
         print_usage()
 
-    instances = False
-    if len(sys.argv) > 5 and sys.argv[5] == '-i':
-        instances = True
+    if lang.lower() not in ["en", "fr"]:
+        print("Language selected is currently not supported")
+        print_usage()
 
-    specgen(specloc, template, instances=instances)
+    specgen(specloc, template, lang)
 
     # save(dest, specgen(specloc, template, instances=instances))
 
