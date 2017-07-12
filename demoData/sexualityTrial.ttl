@@ -47,22 +47,94 @@
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/Sappho> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/Sappho12345> .
 
-<http://www.cwrc.ca/cwrcdata/SAPPHOSocialClassGentry>
+<http://www.cwrc.ca/cwrcdata/SAPPHOSexuality>
     a cwrc:SexualityContext ;
-    rdfs:label "Social Class Context for Sappho"@en ;
+    rdfs:label "Sexuality Context for Sappho"@en ;
     oa:hasBody cwrc:heterosexual ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/Sappho> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/Sappho12345> .
 
-<http://www.cwrc.ca/cwrcdata/SAPPHOSocialClass>
+<http://www.cwrc.ca/cwrcdata/SAPPHOSexuality>
     a cwrc:SexualityContext ;
-    rdfs:label "Social Class Context for Sappho"@en ;
+    rdfs:label "Sexuality Context for Sappho"@en ;
     oa:hasBody cwrc:lesbian ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/Sappho> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/Sappho12345> .
 
 cwrc:Sappho12345
     nif:isString "She probably came from an aristocratic family (important enough to be the target of a hostile government). Historians have argued that the Lesbos of her day offered women freedom and opportunities for development which were rare in ancient Greece. Bibliographic Citation link.  Although she was formerly celebrated for heterosexual passion, and has been more recently understood as the prototypical lesbian, Sappho's sexuality is difficult to assess. Her poetry gives voice to desire for both women and men, and no evidence outside her poetry exists. Furthermore, she existed in an entirely different, and largely irretrievable, culture. Bibliographic Citation link." ;
+    a nif:Context, nif:Sentence ;
+    prov:createdBy cwrc:originalOrlandoAuthor .
+
+# JULIAN OF NORWICH
+<http://www.cwrc.ca/cwrcdata/Sappho>
+    cwrc:hasReligion cwrc:romanCatholicChurch ;
+    cwrc:hasSexuality cwrc:celibate ;
+    a foaf:Person ;
+    foaf:name "Julian of Norwich" .
+
+# Instance of the Cultural Formation for Julian of Norwich
+
+<http://www.cwrc.ca/cwrcdata/JULIANOFNORWICHReligion>
+    a cwrc:ReligionContext ;
+    rdfs:label "Religion Context for Julian of Norwich"@en ;
+    oa:hasBody cwrc:romanCatholicChurch ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/JulianofNorwich> ;
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/JulianofNorwich12345> .
+
+<http://www.cwrc.ca/cwrcdata/SAPPHOSexuality>
+    a cwrc:SexualityContext ;
+    rdfs:label "Sexuality Context for Julian of Norwich"@en ;
+    oa:hasBody cwrc:celibate ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/JulianofNorwich> ;
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/JulianofNorwich12345> .
+
+cwrc:JulianofNorwich12345
+    nif:isString "Julian of Norwich was a Roman Catholic (like everyone in England at the time). It is not known when she became an anchoress, or what her life had been before that. Her family may have owned some property. She may have been a Benedictine nun. Bibliographic Citation link. But she did not hesitate to criticise the church hierarchy." ;
+    a nif:Context, nif:Sentence ;
+    prov:createdBy cwrc:originalOrlandoAuthor .
+
+# MARGERY KEMPE
+<http://www.cwrc.ca/cwrcdata/MargeryKempe>
+    cwrc:hasSocialClass cwrc:entrepreneurialIndustrial, cwrc:professional ;
+    cwrc:hasNationalitySelfDefined cwrc:english ;
+    cwrc:hasSexuality cwrc:heterosexual ;
+    cwrc:hasSexuality cwrc:celibate ;
+    a foaf:Person ;
+    foaf:name "Margery Kempe" .
+
+# Instance of the Cultural Formation for Margery Kempe
+
+<http://www.cwrc.ca/cwrcdata/MARGERYKEMPESocialClass>
+    a cwrc:SocialClassContext ;
+    rdfs:label "Social Class Context for Margery Kempe"@en ;
+    oa:hasBody cwrc:entrepreneurialIndustrial, cwrc:professional ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/MargeryKempe> ;
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/MargeryKempe12345> .
+
+<http://www.cwrc.ca/cwrcdata/MARGERYKEMPENationalitySelfDefined>
+    a cwrc:NationalitySelfDefined ;
+    rdfs:label "Nationality Self Defined Context for Margery Kempe"@en ;
+    oa:hasBody cwrc:english ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/MargeryKempe> ;
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/MargeryKempe12345> .
+
+<http://www.cwrc.ca/cwrcdata/MARGERYKEMPESexuality>
+    a cwrc:SexualityContext ;
+    rdfs:label "Sexuality Context for Margery Kempe"@en ;
+    oa:hasBody cwrc:heterosexual ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/MargeryKempe> ;
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/MargeryKempe12345> .
+
+<http://www.cwrc.ca/cwrcdata/MARGERYKEMPESexuality>
+    a cwrc:SexualityContext ;
+    rdfs:label "Sexuality Context for Margery Kempe"@en ;
+    oa:hasBody cwrc:celibate ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/MargeryKempe> ;
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/MargeryKempe12345> .
+
+cwrc:MargeryKempe12345
+    nif:isString "She was, like the whole population of England in her day, a Roman Catholic; she was suspected, but acquitted, of the heresy of Lollardy. Bibliographic Citation link. After a prolific married life, she became a celibate." ;
     a nif:Context, nif:Sentence ;
     prov:createdBy cwrc:originalOrlandoAuthor .
 
