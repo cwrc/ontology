@@ -9,6 +9,8 @@
   xmlns:dcterms="http://purl.org/dc/terms/" 
   xmlns:doap="http://usefulinc.com/ns/doap#" 
   xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+  xmlns:eurovoc="http://eurovoc.europa.eu/"
+  xmlns:geonames="http://sws.geonames.org/"
   xmlns:loc="http://id.loc.gov/vocabulary/relators/" 
   xmlns:locl ="http://id.loc.gov/vocabulary/languages/"
   xmlns:mil ="http://rdf.muninn-project.org/ontologies/military#"
@@ -79,17 +81,12 @@
       <foaf:Person rdf:about="#RobWarren">
         <foaf:name>Robert Warren</foaf:name>
         <owl:sameAs rdf:resource="http://rdf.muninn-project.org/ww1/2011/11/11/Person/Warren"/>
+        <foaf:homepage rdf:resource="http://www.muninn-project.org/" />
       </foaf:Person>
     </dcterms:creator>
     <dcterms:creator>
       <foaf:Person rdf:about="#AlliyyaMo">
         <foaf:name>Alliyya Mo</foaf:name>
-      </foaf:Person>
-    </dcterms:creator>
-    <dcterms:creator>
-      <foaf:Person rdf:about="#SusanBrown">
-        <foaf:name>Susan Brown</foaf:name>
-        <owl:sameAs rdf:resource="http://orcid.org/0000-0002-0267-7344"/>
       </foaf:Person>
     </dcterms:creator>
     <dcterms:publisher>
@@ -149,11 +146,11 @@
     <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc/4.0/"/>
     <cc:Jurisdiction rdf:resource="http://dbpedia.org/resource/Canada"/>
     <cc:attributionURL rdf:resource="http://www.cwrc.ca/"/>
+    <dcterms:publisher rdf:resource="#cwrc"/>
     <dcterms:creator rdf:resource="#JohnSimpson"/>
     <dcterms:creator rdf:resource="#AbiLemak"/>
     <dcterms:creator rdf:resource="#ColinFaulkner"/>
     <dcterms:creator rdf:resource="#RobWarren"/>
-    <dcterms:publisher rdf:resource="#cwrc"/>
     <dcterms:creator rdf:resource="#JadePenancier"/>
     <dcterms:creator rdf:resource="#AlliyyaMo"/>
     <dcterms:creator rdf:resource="#KimMartin"/>
@@ -1857,7 +1854,7 @@
   <!-- Labels -->
   <skos:ConceptScheme rdf:about="#TextLabels">
     <rdfs:label xml:lang="en">text labels</rdfs:label>
-    <rdfs:label xml:lang="fr">blanc</rdfs:label>
+    <rdfs:label xml:lang="fr">noms</rdfs:label>
     <skos:definition xml:lang="en">Collection of all ambiguous labels within the Orlando markup.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
