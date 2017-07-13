@@ -29,11 +29,13 @@
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix frbr: <http://purl.org/vocab/frbr/core> .
 @prefix rel: <http://purl.org/vocab/relationship/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
 
 # SOPHIA KING
 <http://www.cwrc.ca/cwrcdata/SophiaKing>
     cwrc:hasSocialClass cwrc:indigent, cwrc:gentry, cwrc:professional ;
-    cwrc:hasGeogHeritage cwrc:portugal ;
+    cwrc:hasGeogHeritage geonames:2264397/about.rdf ;
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasEthnicity cwrc:JewishEthnicity ;
     cwrc:hasReligion cwrc:judaism ;
@@ -103,7 +105,7 @@
 <http://www.cwrc.ca/cwrcdata/KINGSNationality>
     a cwrc:NationalityContext ;
     rdfs:label "Nationality Context for Sophia King"@en ;
-    oa:hasBody cwrc:englishNationalHeritage ;
+    oa:hasBody eurovoc:5438 ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
     prov:derivedFrom cwrc:King12345 .
 
