@@ -40,7 +40,7 @@
     cwrc:hasEthnicity cwrc:JewishEthnicity ;
     cwrc:hasReligion cwrc:judaism ;
     cwrc:hasPoliticalAffiliation cwrc:radical ;
-    cwrc:hasNationalitySelfDefined cwrc:englishNationalHeritage ;
+    cwrc:hasNationalitySelfDefined eurovoc:5438 ;
     a foaf:Person ;
     foaf:name "Sophia King" .
 
@@ -675,7 +675,7 @@ cwrc:charlotteDacreCulturalFormation1
 
 # VIRGINIA WOOLF
 <http://www.cwrc.ca/cwrcdata/VirginiaWoolf>
-    cwrc:hasSocialRackSelfDefined cwrc:professional ;
+    cwrc:hasSocialRankSelfDefined cwrc:professional ;
     cwrc:hasSexualitySelfDefined cwrc:bisexual ;
     cwrc:hasGender cwrc:genderWomanFemale ;
     cwrc:hasNationality cwrc:englishNationality ;
@@ -812,7 +812,7 @@ cwrc:charlotteDacreCulturalFormation1
 <http://www.cwrc.ca/cwrcdata/OrlandoFilm>
    a frbr:Work, bibo:Film ;
    cwrc:hasGenre cwrc:genreFilm ; 
-   owl:sameAs <http://www.imdb.com/title/tt0107756/> ;
+   owl:sameAs <http://data.linkedmdb.org/resource/film/1592> ;
    dc:creator <http://www.cwrc.ca/cwrcdata/SallyPotter> ;  
    cwrc:adapts <http://www.cwrc.ca/cwrcdata/Orlando> ;
    dc:title "Orlando (film)" ;
