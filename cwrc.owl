@@ -27,6 +27,7 @@
   xmlns:void="http://rdfs.org/ns/void#" 
   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#" 
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+ 
   <owl:Ontology rdf:about="">
     <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
     <vann:preferredNamespacePrefix>cwrc</vann:preferredNamespacePrefix>
@@ -85,6 +86,12 @@
         <foaf:name>Alliyya Mo</foaf:name>
       </foaf:Person>
     </dcterms:creator>
+    <dcterms:creator>
+      <foaf:Person rdf:about="#SusanBrown">
+        <foaf:name>Susan Brown</foaf:name>
+        <owl:sameAs rdf:resource="http://orcid.org/0000-0002-0267-7344"/>
+      </foaf:Person>
+    </dcterms:creator>
     <dcterms:publisher>
       <foaf:Organization rdf:about="#cwrc">
         <foaf:name xml:lang="fr">Le Collaboratoire scientifique des écrits du Canada</foaf:name>
@@ -102,7 +109,12 @@
       <foaf:Person rdf:about="#ConstanceCrompton">
         <foaf:name>Constance Crompton</foaf:name>
       </foaf:Person>
-    </loc:ctb>
+    </loc:ctb>    
+<!--     <loc:ctb>
+      <foaf:Organization rdf:about="#originalOrlandoAuthor">
+        <foaf:name>Original Orlando Project Authors</foaf:name>
+      </foaf:Organization>
+    </loc:ctb> -->
     <loc:fnd>
       <foaf:Organization rdf:about="#sshrc">
         <foaf:name xml:lang="en">Social Sciences and Humanities Research Council</foaf:name>
@@ -820,7 +832,7 @@
     <rdfs:label xml:lang="fr">Religion</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">A subclass of CulturalForm, this describes a person's religion(s) or belief system(s). Note that while atheism denotes the absence of religion, we use the Religion label for convinience.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of CulturalForm, this describes a person's religion(s) or belief system(s). Note that while atheism denotes the absence of religion, we use the Religion label for convenience.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
