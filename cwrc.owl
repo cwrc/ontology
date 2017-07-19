@@ -1857,6 +1857,121 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
   <!-- Moved to cwrc_genre.owl for now -->
+  <!-- Personal / family relationships. -->
+  <owl:ObjectProperty rdf:ID="relativeOf">
+    <rdf:value>FAMILY</rdf:value>
+    <rdfs:label xml:lang="en">relativeOf</rdfs:label>
+    <rdfs:label xml:lang="fr">liens de famille</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="bloodRelativeOf">
+    <rdfs:label xml:lang="en">blood relative of</rdfs:label>
+    <rdfs:label xml:lang="fr">liens de sang</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="childOf">
+    <rdfs:label xml:lang="en">child Of</rdfs:label>
+    <rdfs:label xml:lang="fr">enfant de</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
+  </owl:ObjectProperty>
+
+
+  <owl:ObjectProperty rdf:ID="daughterOf">
+    <rdfs:label xml:lang="en">daughter Of</rdfs:label>
+    <rdfs:label xml:lang="fr">fille de</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#childOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="sonOf">
+    <rdfs:label xml:lang="en">son Of</rdfs:label>
+    <rdfs:label xml:lang="fr">fil de</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#childOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+
+  <owl:ObjectProperty rdf:ID="parentOf">
+    <rdf:value>PARENTS</rdf:value>
+    <rdfs:label xml:lang="en">parent Of</rdfs:label>
+    <rdfs:label xml:lang="fr">parent de</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+
+  <owl:ObjectProperty rdf:ID="motherOf">
+    <rdf:value>MOTHER</rdf:value>
+    <rdfs:label xml:lang="en">mother Of</rdfs:label>
+    <rdfs:label xml:lang="fr">mère de</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#parentOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="fatherOf">
+    <rdf:value>FATHER</rdf:value>
+    <rdfs:label xml:lang="en">father Of</rdfs:label>
+    <rdfs:label xml:lang="fr">père de</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#parentOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="grandParentOf">
+    <rdf:value>GRANDPARENTS</rdf:value>
+    <rdfs:label xml:lang="en">grand parent of</rdfs:label>
+    <rdfs:label xml:lang="fr">grand parent de</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+
+  <owl:ObjectProperty rdf:ID="grandMotherOf">
+    <rdf:value>GRANDMOTHER</rdf:value>
+    <rdfs:label xml:lang="en">grand mother of</rdfs:label>
+    <rdfs:label xml:lang="fr">grand-mère de</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#grandParentOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="grandFatherOf">
+    <rdf:value>GRANDFATHER</rdf:value>
+    <rdfs:label xml:lang="en">grand father of</rdfs:label>
+    <rdfs:label xml:lang="fr">grand-père de</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#grandParentOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="auntOf">
+    <rdf:value>AUNT</rdf:value>
+    <rdfs:label xml:lang="en">aunt of</rdfs:label>
+    <rdfs:label xml:lang="fr">tante de</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="uncleOf">
+    <rdf:value>UNCLE</rdf:value>
+    <rdfs:label xml:lang="en">uncle of</rdfs:label>
+    <rdfs:label xml:lang="fr">oncle de</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+ 
   <!-- Deprecated classes go here for sanity -->
   <owl:DeprecatedClass rdf:ID="CulturalFormation">
     <rdfs:label xml:lang="en">cultural formation </rdfs:label>
