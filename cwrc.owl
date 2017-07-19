@@ -107,11 +107,7 @@
         <foaf:name>Constance Crompton</foaf:name>
       </foaf:Person>
     </loc:ctb>    
-<!--     <loc:ctb>
-      <foaf:Organization rdf:about="#originalOrlandoAuthor">
-        <foaf:name>Original Orlando Project Authors</foaf:name>
-      </foaf:Organization>
-    </loc:ctb> -->
+    <loc:ctb rdf:resource="#originalOrlandoAuthor"/>
     <loc:fnd>
       <foaf:Organization rdf:about="#sshrc">
         <foaf:name xml:lang="en">Social Sciences and Humanities Research Council</foaf:name>
@@ -128,7 +124,7 @@
     <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85077519"/>
     <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2009007122"/>
   </owl:Ontology>
-  <!-- http://id.loc.gov/vocabulary/relators/ctb -->
+
   <void:Dataset rdf:about="#datasetdefinition">
     <dcterms:title xml:lang="en">The CWRC Ontology</dcterms:title>
     <rdfs:label xml:lang="en">The CWRC Ontology</rdfs:label>
@@ -166,7 +162,11 @@
     <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85013838"/>
     <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85077519"/>
     <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2009007122"/>
+    <void:triples>TOTAL_TRIPLES_CWRC_ONTOLOGY</void:triples>
+    <void:entities>TOTAL_ENTITIES_CWRC_ONTOLOGY</void:entities>
   </void:Dataset>
+
+
   <skos:Concept rdf:about="#originalOrlandoAuthor">
     <rdfs:label xml:lang="en">Members of the Orlando Project</rdfs:label>
     <rdfs:label xml:lang="fr">Les membres du projet Orlando</rdfs:label>
@@ -177,8 +177,6 @@
     <skos:definition xml:lang="fr">La collection de tous les auteurs du Projet Orlando.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <void:triples>TOTAL_TRIPLES_CWRC_ONTOLOGY</void:triples>
-    <void:entities>TOTAL_ENTITIES_CWRC_ONTOLOGY</void:entities>
   </skos:Concept>
   <!-- End Boilerplate -->
   <owl:Class rdf:ID="Event">
@@ -1838,25 +1836,6 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </skos:Concept>
   <!-- Genres -->
-  <owl:Class rdf:ID="Genre">
-    <rdfs:label xml:lang="en">literary genre</rdfs:label>
-    <rdfs:label xml:lang="fr">genre littéraire</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Literary_genre"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
-  <owl:ObjectProperty rdf:ID="hasGenre">
-    <rdfs:label xml:lang="en">has genre</rdfs:label>
-    <rdfs:label xml:lang="fr">a un genre</rdfs:label>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-  <!-- Moved to cwrc_genre.owl for now -->
   <!-- Personal / family relationships. -->
   <owl:ObjectProperty rdf:ID="relativeOf">
     <rdf:value>FAMILY</rdf:value>
