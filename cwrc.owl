@@ -1952,7 +1952,7 @@
   </owl:ObjectProperty>
  
   <!-- Deprecated classes go here for sanity -->
-  <owl:DeprecatedClass rdf:ID="CulturalFormation">
+  <owl:DeprecatedClass rdf:ID="#CulturalFormation">
     <rdfs:label xml:lang="en">cultural formation </rdfs:label>
     <rdfs:label xml:lang="fr">formation culturelle</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2009,7 +2009,7 @@
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
     <owl:equivalentClass rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/>
   </owl:DeprecatedClass>
-  <owl:DeprecatedClass rdf:ID="SexualIdentity">
+  <owl:DeprecatedClass rdf:ID="#SexualIdentity">
     <rdfs:label xml:lang="en">Sexual Identity</rdfs:label>
     <rdfs:label xml:lang="fr">Identité Sexuelle</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2022,7 +2022,7 @@
     <dcterms:isReplacedBy rdf:resource="#Sexuality"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedClass>
-  <owl:DeprecatedClass rdf:ID="SexIdentity">
+  <owl:DeprecatedClass rdf:ID="#SexIdentity">
     <rdfs:label xml:lang="en">sex identity</rdfs:label>
     <rdfs:label xml:lang="fr">identité sexe</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2146,7 +2146,7 @@
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedClass>
 
-  <rdf:Description rdf:about="personalPropertySelfDeclared">
+  <rdf:Description rdf:about="#personalPropertySelfDeclared">
     <rdfs:label xml:lang="en">personal property (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">propriété de la personne (autodéclarée)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
@@ -2158,7 +2158,7 @@
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
   
-  <rdf:Description rdf:about="hasGenderSelfDeclared">
+  <rdf:Description rdf:about="#hasGenderSelfDeclared">
     <rdfs:label xml:lang="en">has gender (self declared)</rdfs:label>
     <rdfs:label xml:lang="fr">est de genre (autodéclaré)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
@@ -2173,7 +2173,7 @@
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
   
-  <rdf:Description rdf:about="hasNationalitySelfDeclared">
+  <rdf:Description rdf:about="#hasNationalitySelfDeclared">
     <rdfs:label xml:lang="en">has nationality (self declared)</rdfs:label>
     <rdfs:label xml:lang="fr">de nationalité (autodéclarée)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
@@ -2188,7 +2188,7 @@
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
   
-  <rdf:Description rdf:about="hasRaceColourSelfDeclared">
+  <rdf:Description rdf:about="#hasRaceColourSelfDeclared">
     <rdfs:label xml:lang="en">has race (self declared)</rdfs:label>
     <rdfs:label xml:lang="fr">est de race (autodéclarée)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
@@ -2202,7 +2202,7 @@
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
   
-  <rdf:Description rdf:about="hasEthnicitySelfDefined">
+  <rdf:Description rdf:about="#hasEthnicitySelfDefined">
     <rdfs:label xml:lang="en">has ethnicity (self defined)</rdfs:label>
     <rdfs:label xml:lang="fr">d'ethnicité (autodéclarée)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDefined"/>
@@ -2217,7 +2217,7 @@
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
 
-  <rdf:Description rdf:about="hasReligionSelfDefined">
+  <rdf:Description rdf:about="#hasReligionSelfDefined">
     <rdfs:label xml:lang="en">has religious affilication (self defined)</rdfs:label>
     <rdfs:label xml:lang="fr">religion (autodéclarée)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDefined"/>
@@ -2232,7 +2232,7 @@
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
   
-  <rdf:Description rdf:about="hasSocialClassSelfDefined">
+  <rdf:Description rdf:about="#hasSocialClassSelfDefined">
     <rdfs:label xml:lang="en">has social class (self defined)</rdfs:label>
     <rdfs:label xml:lang="fr">de classe sociale (autodéclarés)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDefined"/>
@@ -2247,7 +2247,7 @@
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
   
-  <rdf:Description rdf:about="hasLinguisticAbilitySelfDeclared">
+  <rdf:Description rdf:about="#hasLinguisticAbilitySelfDeclared">
     <rdfs:label xml:lang="en">language known (self declared)</rdfs:label>
     <rdfs:label xml:lang="fr">connait la langue (autodéclaré)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
@@ -2262,7 +2262,7 @@
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
 
-  <rdf:Description rdf:about="hasNativeLinguisticAbilitySelfDeclared">
+  <rdf:Description rdf:about="#hasNativeLinguisticAbilitySelfDeclared">
     <rdfs:label xml:lang="en">natively known language (self declared)</rdfs:label>
     <rdfs:label xml:lang="fr">a une langue maternelle (autodéclaré)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbilitySelfDeclared"/>
@@ -2277,7 +2277,7 @@
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
   
-  <rdf:Description rdf:about="hasSexualitySelfDeclared">
+  <rdf:Description rdf:about="#hasSexualitySelfDeclared">
     <rdfs:label xml:lang="en">has sexual orientation (self declared)</rdfs:label>
     <rdfs:label xml:lang="fr">a une orientation sexuelle (autodéclarée)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
@@ -2292,7 +2292,7 @@
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
   
-  <rdf:Description rdf:about="hasGeographicHeritageSelfDeclared">
+  <rdf:Description rdf:about="#hasGeographicHeritageSelfDeclared">
     <rdfs:label xml:lang="en">has geographic heritage (self declared)</rdfs:label>
     <rdfs:label xml:lang="fr">a un héritage géographique (autodéclaré)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
