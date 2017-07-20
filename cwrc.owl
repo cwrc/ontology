@@ -1960,6 +1960,8 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of class #CulturalForm.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe #CulturalForm.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#CulturalForm"/>
     <dcterms:isReplacedBy rdf:resource="#CulturalForm"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
@@ -1974,6 +1976,8 @@
     <owl:sameAs rdf:resource="http://homosaurus.org/terms/sexualIdentity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of class #Sexuality.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe #Sexuality.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#Sexuality"/>
     <dcterms:isReplacedBy rdf:resource="#Sexuality"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
@@ -1984,12 +1988,15 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <rdfs:comment xml:lang="en">Deprecated in favour of class Gender.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe Gender.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:equivalentClass rdf:resource="#Gender"/>
     <dcterms:isReplacedBy rdf:resource="#Gender"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedClass>
+
+  <!-- Deprecated Instances -->
   <rdf:Description rdf:about="#maleSex">
     <rdfs:label xml:lang="en">Male</rdfs:label>
     <rdfs:label xml:lang="fr">Mâle</rdfs:label>
@@ -2000,6 +2007,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:comment xml:lang="en">Deprecated in favour of instance #genderManMale.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #genderManMale.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#genderManMale"/>
     <dcterms:isReplacedBy rdf:resource="#genderManMale"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2015,6 +2023,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:comment xml:lang="en">Deprecated in favour of instance #genderWomanFemale.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #genderWomanFemale.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#genderWomanFemale"/>
     <dcterms:isReplacedBy rdf:resource="#genderWomanFemale"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2043,6 +2052,8 @@
     <rdfs:subClassOf rdf:resource="#whiteLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #whiteRaceColour.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #whiteRaceColour.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#whiteRaceColour"/>
     <dcterms:isReplacedBy rdf:resource="#whiteRaceColour"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2057,6 +2068,8 @@
     <skos:broader rdf:resource="#jewishLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #jewishEthnicity.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #jewishEthnicity.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#jewishEthnicity"/>
     <dcterms:isReplacedBy rdf:resource="#jewishEthnicity"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2087,6 +2100,8 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broaderTransitive rdf:resource="#abrahamicReligions"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #judaism.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #judaism.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#judaism"/>
     <dcterms:isReplacedBy rdf:resource="#judaism"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2100,6 +2115,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #entrepreneurial.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #entrepreneurial.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#entrepreneurial-industrialist"/>
     <dcterms:isReplacedBy rdf:resource="#entrepreneurial-industrialist"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2112,6 +2129,8 @@
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #personalPropertySelfReported.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #personalPropertySelfReported.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#personalPropertySelfReported"/>
     <dcterms:isReplacedBy rdf:resource="#personalPropertySelfReported"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2127,6 +2146,8 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #hasGenderSelfReported.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #hasGenderSelfReported.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#hasGenderSelfReported"/>
     <dcterms:isReplacedBy rdf:resource="#hasGenderSelfReported"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2142,6 +2163,8 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #hasNationalitySelfReported.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #hasNationalitySelfReported.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#hasNationalitySelfReported"/>
     <dcterms:isReplacedBy rdf:resource="#hasNationalitySelfReported"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2156,6 +2179,8 @@
     <skos:definition xml:lang="en">This describes a person's self-reported racial identity.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #hasNationalitySelfReported.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #hasNationalitySelfReported.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#hasNationalitySelfReported"/>
     <dcterms:isReplacedBy rdf:resource="#hasNationalitySelfReported"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2171,6 +2196,8 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #hasEthnicitySelfReported.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #hasEthnicitySelfReported.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#hasEthnicitySelfReported"/>
     <dcterms:isReplacedBy rdf:resource="#hasEthnicitySelfReported"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2186,6 +2213,8 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #hasReligionSelfReported.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #hasReligionSelfReported.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#hasReligionSelfReported"/>
     <dcterms:isReplacedBy rdf:resource="#hasReligionSelfReported"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2201,6 +2230,8 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #hasSocialClassSelfReported.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #hasSocialClassSelfReported.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#hasSocialClassSelfReported"/>
     <dcterms:isReplacedBy rdf:resource="#hasSocialClassSelfReported"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2216,6 +2247,8 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #hasLinguisticAbilitySelfReported.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #hasLinguisticAbilitySelfReported.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#hasLinguisticAbilitySelfReported"/>
     <dcterms:isReplacedBy rdf:resource="#hasLinguisticAbilitySelfReported"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2231,6 +2264,8 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #hasLinguisticAbilitySelfReported.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #hasLinguisticAbilitySelfReported.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#hasLinguisticAbilitySelfReported"/>
     <dcterms:isReplacedBy rdf:resource="#hasLinguisticAbilitySelfReported"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2246,6 +2281,8 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #hasSexualitySelfReported.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #hasSexualitySelfReported.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#hasSexualitySelfReported"/>
     <dcterms:isReplacedBy rdf:resource="#hasSexualitySelfReported"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2261,6 +2298,8 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #hasGeographicHeritageSelfReported.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #hasGeographicHeritageSelfReported.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#hasGeographicHeritageSelfReported"/>
     <dcterms:isReplacedBy rdf:resource="#hasGeographicHeritageSelfReported"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2276,6 +2315,8 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #englishNationalHeritage.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #englishNationalHeritage.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#englishNationalHeritage"/>
     <dcterms:isReplacedBy rdf:resource="#englishNationalHeritage"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2289,6 +2330,8 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #englishNationalIdentity.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #englishNationalIdentity.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#englishNationalIdentity"/>
     <dcterms:isReplacedBy rdf:resource="#englishNationalIdentity"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2301,9 +2344,11 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdf:Descriptionass rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:Description rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    <rdfs:comment xml:lang="en">Deprecated in favour of foreign instance <![CDATA[<a href="http://id.loc.gov/vocabulary/languages/eng">eng</a>]]>.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance <![CDATA[<a href="http://id.loc.gov/vocabulary/languages/eng">eng</a>]]>.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="#FrenchLanguage">
     <rdfs:label xml:lang="en">French</rdfs:label>
@@ -2314,6 +2359,8 @@
     <owl:equivalentClass rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    <rdfs:comment xml:lang="en">Deprecated in favour of foreign instance <![CDATA[<a href="http://id.loc.gov/vocabulary/languages/fre">fre</a>]]>.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance <![CDATA[<a href="http://id.loc.gov/vocabulary/languages/fre">fre</a>]]>.</rdfs:comment>
   </rdf:Description>
 
 
