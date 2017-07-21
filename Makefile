@@ -15,12 +15,10 @@ force:	$(ONTOLOGY).owl
 	rm -f $(ONTOLOGY)-ref.bib
 all:	$(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html $(ONTOLOGY)-$(ONTOLOGY_DATE).html
 
-$(ONTOLOGY)-$(ONTOLOGY_DATE).tmp: $(ONTOLOGY).owl cwrc_genre.owl
+$(ONTOLOGY)-$(ONTOLOGY_DATE).tmp: $(ONTOLOGY).owl
 	echo $(ONTOLOGY_LOGO)
 	xpath $(ONTOLOGY).owl "/rdf:RDF" 1> /dev/null 2> /dev/null
-	sed 's/DATE_TODAY/$(DATE_CLEAN)/g' < $(ONTOLOGY).owl | grep -v "</rdf:RDF>" > $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp	
-	./scripts/xpath-unicode -e "/rdf:RDF/node()" cwrc_genre.owl >> $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp
-	echo "</rdf:RDF>" >> $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp
+	sed 's/DATE_TODAY/$(DATE_CLEAN)/g' < $(ONTOLOGY).owl > $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp	
 $(ONTOLOGY)-$(ONTOLOGY_DATE).counts: $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp
 	rapper $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp | wc -l > $(ONTOLOGY)-$(ONTOLOGY_DATE).counts
 $(ONTOLOGY)-$(ONTOLOGY_DATE).unique: $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp
