@@ -1107,6 +1107,14 @@ cwrc:CulturalForm
     rdfs:label "Cultural Form"@en, "Formation Culturelle"@fr ;
     skos:definition ""@fr, "Cultural forms refers to the processes of lived social subjectivities of people and is often combined with predicates indicating the identity positions as they relate to the following discursive constructions of Class, Religion, Ethnicity, Gender, GeographicalHeritage, LinguisticAbility, NationalHeritage, NationalIdentity, PoliticalAffiliation, RaceColour, Sexuality. These categories are not understood as transhistorical or isolated categories. Rather, they facilitate analysis of how such situationally contingent, changing, and negotiated labels are assigned to or adopted by a particular individual. The tensions endemic to practices of classification demand critical engagement and inquiry into the situatedness of particular cultural identities."@en .
 
+cwrc:hasCulturalForms
+    void:inDataset cwrc:datasetdefinition ;
+    a owl:DeprecatedProperty, skos:Concept ;
+    rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-06-07> ;
+    owl:equivalentProperty cwrc:hasCulturalForm ;
+    rdfs:label "a une formation culturelle"@fr, "has a cultural form"@en ;
+    skos:definition "Cette sous-classe de culturalFormation associe des concepts et des catégories spécifiques au processus de formation identitaire à travers les processus culturels. Le sujet elle/lui-même peut ou a pu s’approprier de telles associations, ou d’autres personnes les lui ont attribuées. Les concepts et les catégories classés dans culturalForms se chevauchent en théorie et en terme d'étiquettes utilisés."@fr, "This sub-class of culturalFormation associates specific concepts and categories with the process of identity formation through cultural processes. Such associations may be or have been embraced by the subject her/himself or attributed by others. The concepts and categories classed as culturalForms are understood to overlap with each other conceptually and in terms of the labels used."@en .
+
 cwrc:CulturalFormation
     void:inDataset cwrc:datasetdefinition ;
     a owl:DeprecatedClass, skos:Concept ;
@@ -4173,7 +4181,7 @@ cwrc:hasActor
     rdfs:label "hasActor"@en ;
     rdfs:range cwrc:Actor .
 
-cwrc:hasCulturalForms
+cwrc:hasCulturalForm
     void:inDataset cwrc:datasetdefinition ;
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <http://sparql.cwrc.ca/ontologies/cwrc-2017-06-07> ;

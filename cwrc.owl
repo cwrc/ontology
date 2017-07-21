@@ -268,7 +268,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-  <owl:ObjectProperty rdf:ID="hasCulturalForms">
+  <owl:ObjectProperty rdf:ID="hasCulturalForm">
     <rdfs:label xml:lang="en">has a cultural form</rdfs:label>
     <rdfs:label xml:lang="fr">a une forme culturelle</rdfs:label>
     <skos:definition xml:lang="en">This sub-class of culturalFormation associates specific concepts and categories with the process of identity formation through cultural processes. Such associations may be or have been embraced by the subject her/himself or attributed by others. The concepts and categories classed as culturalForms are understood to overlap with each other conceptually and in terms of the labels used.</skos:definition>
@@ -1950,7 +1950,24 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
- 
+
+
+<!-- All Deprecated things(properties, classes, instances in that order) -->
+  <!-- Deprecated Properties -->
+  <owl:DeprecatedProperty rdf:ID="hasCulturalForms">
+    <rdfs:label xml:lang="en">has a cultural form</rdfs:label>
+    <rdfs:label xml:lang="fr">a une forme culturelle</rdfs:label>
+    <skos:definition xml:lang="en">This sub-class of culturalFormation associates specific concepts and categories with the process of identity formation through cultural processes. Such associations may be or have been embraced by the subject her/himself or attributed by others. The concepts and categories classed as culturalForms are understood to overlap with each other conceptually and in terms of the labels used.</skos:definition>
+    <skos:definition xml:lang="fr">Cette sous-classe de culturalFormation associe des concepts et des catégories spécifiques au processus de formation identitaire à travers les processus culturels. Le sujet elle/lui-même peut ou a pu s’approprier de telles associations, ou d’autres personnes les lui ont attribuées. Les concepts et les catégories classés dans culturalForms se chevauchent en théorie et en terme d'étiquettes utilisés.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of object property #hasCulturalForm.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de la propriété #hasCulturalForm.</rdfs:comment>
+    <owl:equivalentProperty rdf:resource="#hasCulturalForm"/>
+    <dcterms:isReplacedBy rdf:resource="#hasCulturalForm"/>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </owl:DeprecatedProperty>
+
   <!-- Deprecated classes go here for sanity -->
   <owl:DeprecatedClass rdf:ID="CulturalFormation">
     <rdfs:label xml:lang="en">cultural formation </rdfs:label>
