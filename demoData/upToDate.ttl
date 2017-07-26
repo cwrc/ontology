@@ -37,7 +37,7 @@
     cwrc:hasSocialClass cwrc:indigent, cwrc:gentry, cwrc:professional ;
     cwrc:hasGeogHeritage geonames:2264397 ;
     cwrc:hasGender cwrc:genderWomanFemale ;
-    cwrc:hasEthnicity cwrc:JewishEthnicity ;
+    cwrc:hasEthnicity cwrc:jewishEthnicity ;
     cwrc:hasReligion cwrc:judaism ;
     cwrc:hasPoliticalAffiliation cwrc:radical ;
     cwrc:hasNationalitySelfReported eurovoc:5438 ;
@@ -70,7 +70,7 @@
 <http://www.cwrc.ca/cwrcdata/KINGGeographicHeritagePortugal>
     a cwrc:GeographicHeritageContext ;
     rdfs:label "Geographic Heritage Context for Sophia King"@en ;
-    oa:hasBody geonames:2264397 ;
+    oa:hasBody geonames:2264397, cwrc:portugal ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
     prov:derivedFrom cwrc:King12345 .
 
@@ -91,7 +91,7 @@
 <http://www.cwrc.ca/cwrcdata/KINGSEth>
     a cwrc:RaceEthnicityContext ;
     rdfs:label "Race Ethnicity Context for Sophia King"@en ;
-    oa:hasBody cwrc:JewishEthnicity ;
+    oa:hasBody cwrc:jewishEthnicity ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
     prov:derivedFrom cwrc:King12345 .
 
