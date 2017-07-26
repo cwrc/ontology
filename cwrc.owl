@@ -699,8 +699,8 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
   </owl:Class>
-  <cwrc:Religion rdf:about="#anglicanChurch">
-    <rdfs:label xml:lang="en">Church of England</rdfs:label>
+  <cwrc:Religion rdf:about="#anglicanism">
+    <rdfs:label xml:lang="en">Anglicanism</rdfs:label>
     <rdfs:label xml:lang="zh-hant">英國聖公會 (英國國教)</rdfs:label>
     <rdfs:label xml:lang="zh-latn-pinyin-x-hanyu">yīng guó shèng gōng huì</rdfs:label>
     <rdfs:label xml:lang="zh-latn-pinyin-x-notone">ying guo sheng gong hui</rdfs:label>
@@ -725,8 +725,8 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Religion>
-  <cwrc:Religion rdf:about="#baptistChurch">
-    <rdfs:label xml:lang="en">Baptist</rdfs:label>
+  <cwrc:Religion rdf:about="#baptistChristianity">
+    <rdfs:label xml:lang="en">Baptist Christianity</rdfs:label>
     <rdfs:label xml:lang="zh-hant">浸禮宗</rdfs:label>
     <rdfs:label xml:lang="zh-hant">浸禮派</rdfs:label>
     <rdfs:label xml:lang="zh-hant">浸信會</rdfs:label>
@@ -777,7 +777,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broaderTransitive rdf:resource="#occultism"/>
   </cwrc:Religion>
-  <cwrc:Religion rdf:about="#catholicChurch">
+  <cwrc:Religion rdf:about="#catholicism">
     <rdfs:label xml:lang="en">Roman Catholic</rdfs:label>
     <rdfs:label xml:lang="nl">Rooms-Katholicisme</rdfs:label>
     <rdfs:label xml:lang="nl">Katholiek</rdfs:label>
@@ -824,7 +824,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broaderTransitive rdf:resource="#abrahamicReligions"/>
   </cwrc:Religion>
-  <cwrc:Religion rdf:about="#churchOfChristianScience">
+  <cwrc:Religion rdf:about="#christianScience">
     <rdfs:label xml:lang="en">Christian Science</rdfs:label>
     <rdfs:label xml:lang="nl">Christenwetenschap</rdfs:label>
     <rdfs:label xml:lang="es">Ciencia Cristiana</rdfs:label>
@@ -1009,8 +1009,8 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Religion>
-  <cwrc:Religion rdf:about="#congregationalChurch">
-    <rdfs:label xml:lang="en">Congregational Church</rdfs:label>
+  <cwrc:Religion rdf:about="#congregationalism">
+    <rdfs:label xml:lang="en">Congregationalism</rdfs:label>
     <rdfs:label xml:lang="fr">Églises congrégationalistes</rdfs:label>
     <skos:definition xml:lang="en">Congregational churches are Protestant Christian churches practicing congregationalist church governance, in which each congregation independently and autonomously runs its own affairs. Congregationalism is often considered to be a part of the wider Reformed tradition. Many Congregational churches claim their descent from Protestant denominations formed on a theory of union published by the theologian Robert Browne in 1582. These arose from the ideas of nonconforming Protestants during the Puritan Reformation of the Church of England. In Great Britain, the early Congregationalists were called Separatists or Independents to distinguish them from the similarly Calvinistic Presbyterians. Congregational churches were widely established in the Plymouth Colony and the Massachusetts Bay Colony (later New England), and together wrote the Cambridge Platform of 1648 which described the autonomy of the church and its association with others. Within the United States, the model of Congregational churches was carried by migrating settlers from New England into New York, then into the Old North West, and further. With their insistence on independent local bodies, they became important in many social reform movements, including abolitionism, temperance, and women's suffrage. Modern Congregationalism in the United States is largely split into three bodies: the United Church of Christ, the National Association of Congregational Christian Churches and the Conservative Congregational Christian Conference, which is the most theologically conservative. Congregationalism, as defined by the Pew Research Center, is estimated to represent 0.5% of the worldwide Protestant population. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">Les Églises congrégationalistes sont des églises protestantes de tradition réformée, pratiquant une forme d’organisation d’église où chaque paroisse se gère de manière entièrement autonome et indépendante. Le congrégationalisme se caractérise plus comme un mouvement que comme une dénomination chrétienne en raison de sa conviction fondamentale en faveur de l’autonomie complète de chaque paroisse. Malgré la forte diversité théologique inhérente à leur forme d'organisation, la plupart des congrégationalistes se considèrent d'abord comme des réformés, soit traditionnels soit néo-orthodoxes (barthiens). Les congrégationalistes, selon la définition du centre de recherche indépendant Pew Research Center, représentent environ 0,5% de la population protestante mondiale, soit 4 millions de chrétiens répartis essentiellement dans les grands pays anglophones (Royaume-Uni, États-Unis, Canada, Australie, Afrique du sud, Irlande) et dans quelques « terres de mission » (Argentine, Bulgarie, Îles Samoa). Leur rôle historique et leur influence, notamment aux États-Unis, excèdent largement ces chiffres. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
@@ -1036,21 +1036,10 @@
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Religion>
-  <cwrc:Religion rdf:about="#dissenters">
+  <cwrc:Religion rdf:about="#dissentingChristianity">
     <rdfs:label xml:lang="en">Dissenters</rdfs:label>
     <rdfs:label xml:lang="fr">dissidents (ou non-conformistes)</rdfs:label>
     <skos:definition xml:lang="en">"One who dissents or disagrees in matters of opinion, belief, &amp;c. The term 'dissenter' is, however, practically restricted to the special sense of a member of a religious body in England which has, for one reason or another, separated from the Established Church. Strictly, the term includes the English Roman Catholics, who in the original draft of the Relief Act of 1791 were styled “Protesting Catholic Dissenters.” It is in practice, however, restricted to the “Protestant Dissenters” referred to in sec. ii. of the Toleration Act of 1688."<![CDATA[<a href="#_britannica_1911">(Encyclopedia Britannica, 1911)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="#Religion"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#dissentingChurches">
-    <rdfs:label xml:lang="en">Dissenting Churches</rdfs:label>
-    <rdfs:label xml:lang="fr">Églises dissidentes</rdfs:label>
-    <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
@@ -1073,9 +1062,9 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broaderTransitive rdf:resource="#dissenters"/>
   </cwrc:Religion>
-  <cwrc:Religion rdf:about="#lollards">
-    <rdfs:label xml:lang="en">Lollards</rdfs:label>
-    <rdfs:label xml:lang="fr">Lollards</rdfs:label>
+  <cwrc:Religion rdf:about="#lollardy">
+    <rdfs:label xml:lang="en">Lollardy</rdfs:label>
+    <rdfs:label xml:lang="fr">Lollardy</rdfs:label>
     <skos:definition xml:lang="en">Lollardy (Lollardry, Lollardism) was a political and religious movement that existed from the mid-14th century to the English Reformation. It was initially led by John Wycliffe, a prominent theologian who was dismissed from the University of Oxford in 1381 for criticism of the Church, especially in his doctrine on the Eucharist. The Lollards' demands were primarily for reform of Western Christianity. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">Les Lollards sont les membres ou sympathisants d'un mouvement de contestation religieuse et sociale apparu en Angleterre au XIVe siècle. — John Ball <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]> </skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Lollardy"/>
@@ -1086,8 +1075,8 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broaderTransitive rdf:resource="#catholicChurch"/>
   </cwrc:Religion>
-  <cwrc:Religion rdf:about="#methodistChurch">
-    <rdfs:label xml:lang="en">Methodist Church</rdfs:label>
+  <cwrc:Religion rdf:about="#methodism">
+    <rdfs:label xml:lang="en">Methodism</rdfs:label>
     <rdfs:label xml:lang="fr">Église méthodiste</rdfs:label>
     <skos:definition xml:lang="en">"Or United Methodists, and English Nonconformist community formed in 1907 by the union of the Methodist New Connexion (1797), the Bible Christians (1815), and the United Methodist Free Churches (1857). The act of parliament which enabled this amalgamation received the royal assent on the 26th of July 1907, and authorized the union “to deal with real and personal property belonging to the said three churches or denominations, to provide for the vesting of the said property in trust for the United Church so formed and for the assimilation of the trusts thereof, and for other purposes.” The union was completed on the 16th of September 1907 in Wesley's Chapel, City Road, London."<![CDATA[<a href="#_britannica_1911">(Encyclopedia Britannica, 1911)</a>]]></skos:definition>
     <skos:definition xml:lang="fr"/>
@@ -1135,8 +1124,8 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Religion>
-  <cwrc:Religion rdf:about="#pagan">
-    <rdfs:label xml:lang="en">Pagan</rdfs:label>
+  <cwrc:Religion rdf:about="#paganism">
+    <rdfs:label xml:lang="en">Paganism</rdfs:label>
     <rdfs:label xml:lang="fr">païen (ou payen)</rdfs:label>
     <skos:definition xml:lang="en">Paganism is a term that developed among the Christian community of southern Europe during late antiquity to describe religions other than their own, Judaism, or Islam–the three Abrahamic religions. Throughout Christendom, it continued to be used, typically in a derogatory sense. In the 19th century, it was re-adopted as a self-descriptor by members of various artistic groups inspired by the ancient world. In the 20th century, it came to be applied as a self-description by practitioners of contemporary pagan, or neo-pagan, religious movements. There has been much scholarly argument as to the origin of the term paganism. Paganism has also been understood by some[who?] to include any non-Abrahamic religions, but this is generally[who?] seen as insulting by adherents of those religions. While paganism is often considered to exclude monotheism and to express a worldview that is pantheistic, polytheistic, or animistic, there are some monotheistic pagans. Once monotheistic religions, such as Christianity and Islam, started to become more prominent (in processes known as Christianization and Islamization), names to encompass polytheistic worshipers started to develop; some of these include Hellene, pagan, and heathen, and at times these names were used as slurs. Modern knowledge of old pagan religions comes from several sources, including: anthropological field research records, the evidence of archaeological artifacts, and the historical accounts of ancient writers regarding cultures known to the classical world. Before the rise of monotheistic religions, most people practiced some type of polytheism. Many of these religions started to die out, and eventually they became extinct. In some cases, elements of polytheistic belief systems continued to exist in folklore. Paganism would later be studied during the Renaissance and Romantic era. Forms of these religions, influenced by various historical pagan beliefs of pre-modern Europe, exist today and are known as contemporary or modern paganism, also referred to as Neo-paganism. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">Paganisme est un terme générique employé depuis le VIe siècle par des chrétiens pour désigner la religion de ceux qui ne sont ni chrétiens, ni juifs, ni musulmans. Il remonte au latin paganus (païen). Au VIe siècle, ce mot pouvait servir à désigner les habitants des campagnes par opposition à ceux des villes ou bien les civils par opposition aux militaires. D'abord employé comme sobriquet populaire par des chrétiens pour désigner ceux qui ne sont pas baptisés, le terme a ensuite été adopté dans la littérature chrétienne. Même s'il y désigne toujours ceux qui ne sont pas chrétiens, son acception y est cependant ambiguë. Il est parfois employé de façon péjorative pour désigner ceux qui sont tenus pour être des ignorants, parfois de façon neutre pour désigner les philosophes grecs, parfois encore pour désigner des chrétiens jugés mal convertis ou tièdes dans leur foi. À partir de 370, des lois impériales regroupées au Ve siècle dans le code théodosien emploient le terme paganus pour désigner ceux qui pratiquent la magie, ceux qui sont considérés comme superstitieux ou dans l'erreur. Le terme a depuis conservé une connotation péjorative. De nombreux Pères de l'Église ayant écrit « contre les païens », le paganisme a eu une première existence sous forme de fiction littéraire, comme s'il s'agissait de la religion de ceux qui ne sont pas chrétiens. Le paganisme tel qu'il a été exposé par les Pères de l'Église n'était cependant pas à proprement parler une religion, il s'agit plutôt de l'ensemble sans homogénéité des positions philosophiques et des croyances rejetées par les Pères de l'Église. Le paganisme est ainsi, dans l'antiquité tardive, une attitude combattue par des chrétiens puis par les autorités, mais elle n'est revendiquée par personne. C'est surtout à l'époque moderne, avec l'essor de l'histoire des religions que le paganisme commence à être perçu et étudié comme une religion parmi d'autres. Le paganisme peut aujourd'hui être revendiqué sous forme de néo-paganisme, ou bien comme une position philosophique tel que l'a fait Marc Augé dans Le génie du paganisme. Le mot paganus n'a pas son correspondant chez les écrivains chrétiens de langue grecque qui utilisent le terme moins péjoratif de « nations » ou « religions nationales » (ethnikoï) (décalque de l'hébreu). <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
@@ -1160,8 +1149,8 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broaderTransitive rdf:resource="#anglicanChurch"/>
   </cwrc:Religion>
-  <cwrc:Religion rdf:about="#quakers">
-    <rdfs:label xml:lang="en">Quaker</rdfs:label>
+  <cwrc:Religion rdf:about="#quakerism">
+    <rdfs:label xml:lang="en">Quakerism</rdfs:label>
     <rdfs:label xml:lang="fr">quaker</rdfs:label>
     <skos:definition xml:lang="en">Quakers (or Friends) are members of a group of religious Christian movements which is known as the Religious Society of Friends in Europe, Australia, New Zealand and parts of North America; and known as the Friends Church in Africa, Asia, South America and parts of the US. The movements were originally, and are still predominantly based on Christianity. Members of the movements profess the priesthood of all believers, a doctrine derived from the First Epistle of Peter. They include those with evangelical, holiness, liberal, and traditional Quaker understandings of Christianity. To differing extents, the different movements that make up the Religious Society of Friends/Friends Church avoid creeds and hierarchical structures. In 2007, there were approximately 359,000 adult Quakers. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">La Société religieuse des Amis est un mouvement religieux fondé en Angleterre au XVIIe siècle par des dissidents de l'Église anglicane. Les membres de ce mouvement sont communément connus sous le nom de quakers () mais ils se nomment entre eux « Amis » et « Amies ». Le mouvement est souvent nommé simplement Société des Amis et le surnom de « quaker » apparaît le plus souvent dans la dénomination officielle, sous la forme Société religieuse des Amis (quakers). Les historiens s'accordent à désigner George Fox comme le principal fondateur ou le plus important meneur des débuts du mouvement. Depuis sa création en Angleterre, le mouvement s'est d'abord répandu dans les pays de colonisation anglo-saxonne. Au XXe siècle, des missionnaires quakers ont propagé leur religion en Amérique latine et en Afrique. Aujourd'hui, les quakers déclarent être au nombre d'environ 350 000 dans le monde. La Société des Amis se différencie de la plupart des autres groupes issus du christianisme par l'absence de credo et de toute structure hiérarchique. Pour les quakers, la croyance religieuse appartient à la sphère personnelle et chacun est libre de ses convictions. Le concept de « lumière intérieure » (inner light) est cependant partagé par la plupart d'entre eux, quelle que soit la signification donnée à ces mots. De nombreux quakers reconnaissent le christianisme mais ne ressentent pas leur foi comme entrant dans les catégories chrétiennes traditionnelles. On trouve aujourd'hui dans la Société des Amis des pratiques très diverses, y compris un large courant évangélique. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
@@ -1174,29 +1163,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broaderTransitive rdf:resource="#dissenters"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#rationalDissenter">
-    <rdfs:label xml:lang="en">Rational Dissenter</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
-    <!-- #outstanding, btw -->
-    <skos:definition xml:lang="en"></skos:definition>
-    <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="#Religion"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broaderTransitive rdf:resource="#dissenters"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#societyOfFriends">
-    <rdfs:label xml:lang="en">Society of Friends</rdfs:label>
-    <rdfs:label xml:lang="fr">Société religieuse des Amis</rdfs:label>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="#Religion"/>
-    <skos:broaderTransitive rdf:resource="#christianity"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#spiritualism">
     <rdfs:label xml:lang="en">Spiritualism</rdfs:label>
@@ -1219,19 +1185,6 @@
     <skos:inScheme rdf:resource="#Religion"/>
     <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
     <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Oxford_Movement"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#unitarianChurch">
-    <rdfs:label xml:lang="en">Unitarian Church</rdfs:label>
-    <rdfs:label xml:lang="fr">Église unitarienne</rdfs:label>
-    <skos:definition xml:lang="en">Unitarian church usually refers to a church (either a single church or a group of churches and/or its followers) which follows Unitarianism, a Christian theology. It can also more broadly refer to a church which is a member of an umbrella group with "Unitarian" in its title, such as the Unitarian Universalist Association in the U.S., the Canadian Unitarian Council, and similar bodies. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
-    <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Unitarian_church"/>
-    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
-    <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:value>unitarianChurch</rdf:value>
-    <skos:broaderTransitive rdf:resource="#christianity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Religion>
@@ -2370,6 +2323,244 @@
       <rdfs:comment xml:lang="en">Deprecated in favour of foreign instance <![CDATA[<a href="http://id.loc.gov/vocabulary/languages/fre">fre</a>]]>.</rdfs:comment>
       <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance <![CDATA[<a href="http://id.loc.gov/vocabulary/languages/fre">fre</a>]]>.</rdfs:comment>
     </rdf:Description>
-
+ 
+  <rdf:Description rdf:about="#baptistChurch">
+    <rdfs:label xml:lang="en">Baptist</rdfs:label>
+    <rdfs:label xml:lang="zh-hant">浸禮宗</rdfs:label>
+    <rdfs:label xml:lang="zh-hant">浸禮派</rdfs:label>
+    <rdfs:label xml:lang="zh-hant">浸信會</rdfs:label>
+    <rdfs:label xml:lang="zh-latn-pinyin-x-hanyu">jìn lǐ zōng</rdfs:label>
+    <rdfs:label xml:lang="zh-latn-pinyin-x-notone">jin li zong</rdfs:label>
+    <rdfs:label xml:lang="zh-latn-wadegile">chin li tsung</rdfs:label>
+    <rdfs:label xml:lang="nl">Baptisme</rdfs:label>
+    <rdfs:label xml:lang="es">Baptismo</rdfs:label>
+    <rdfs:label xml:lang="es">Baptistas</rdfs:label>
+    <rdfs:label xml:lang="fr">Baptisme</rdfs:label>
+    <skos:definition xml:lang="en">Refers to a Protestant denomination centered around the belief that the sacrament of baptism should only be administered to adult members after a personal profession of belief in Jesus Christ. Baptism in this faith is usually done by full immersion. Emphasis is placed on biblical scripture and preaching. The Baptist denomination is primarily derived from early 17th-century England and Wales where it quickly spread although there are some links with the Anabaptists of the 16th century. Baptist churches very rapidly increased in the late 19th century in the United States. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
+    <skos:definition xml:lang="nl">Verwijst naar een protestantse gezindte waarbij het geloof centraal staat dat het sacrament van de doop alleen moet worden toegediend aan volwassen leden na een persoonlijke belijdenis van geloof in Jezus Christus. De doop vindt bij deze gezindte doorgaans plaats door volledige onderdompeling. De nadruk ligt op Bijbelse geschriften en preken. Het baptisme is in hoofdzaak ontstaan in de vroege 17de eeuw in Engeland en Wales waar het zich snel verspreidde, hoewel er enige verbanden zijn met de anabaptisten van de 16de eeuw. In de late 19de eeuw nam het aantal baptistische kerken in de Verenigde Staten snel toe. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
+    <skos:definition xml:lang="es">Se refiere a la religión protestante centrada en torno a la creencia que el sacramento del bautismo debería ser administrado sólo a miembros adultos tras una manifestación personal de creencia en Jesucristo. El bautismo en esta fe es usualmente hecho por inmersión total. El énfasis es puesto en las Escrituras Bíblicas y la oración. La denominación baptista deriva principalmente de la Inglaterra y Gales del siglo XVII en donde rápidamente se difundió a pesar que hay algunas conexiones con los Anabaptistas del siglo XVI. La iglesia baptista creció rápidamente en el siglo XIX en los Estados Unidos. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
+    <skos:definition xml:lang="zh-hant">一支新教派別，相信只有親自聲明信仰基督的成人才可受洗。此教的洗禮通常需全身浸洗。重視聖經經文與佈道。浸信會與十六世紀的重浸派有些淵源，但主要源於十七世紀初的英格蘭與威爾斯，在這兩處快速廣傳。其教會於十九世紀末在美國急速增加。 <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
+    <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300153825"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <skos:definition xml:lang="fr">Le baptisme est un courant chrétien évangélique issu d'un réveil démarré par les pasteurs anglais John Smyth en Hollande en 1609, puis Thomas Helwys en Angleterre en 1612. Ce mouvement se caractérise par l'importance donnée à la Bible, à la nouvelle naissance, au baptême adulte en tant que témoignage volontaire, un esprit missionnaire, un engagement moral de vie ainsi que par l’autonomie locale des églises, la séparation de l’Église et de l’État, et finalement l’autorité de la congrégation (congrégationalisme). Selon les chiffres du Pew Research Center, en 2011, le mouvement recense 72 millions de croyants. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
+    <prov:derivedFrom rdf:resource="http://dbpedia.org/page/Baptists"/>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#Religion"/>
+    <skos:broaderTransitive rdf:resource="#christianity"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #baptistChristianity.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #baptistChristianity.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#baptistChristianity"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="#catholicChurch">
+    <rdfs:label xml:lang="en">Roman Catholic</rdfs:label>
+    <rdfs:label xml:lang="nl">Rooms-Katholicisme</rdfs:label>
+    <rdfs:label xml:lang="nl">Katholiek</rdfs:label>
+    <rdfs:label xml:lang="nl">Katholicisme</rdfs:label>
+    <rdfs:label xml:lang="es">Catolicismo Romano</rdfs:label>
+    <rdfs:label xml:lang="es">Catolicismo</rdfs:label>
+    <rdfs:label xml:lang="fr">Catholicisme</rdfs:label>
+    <skos:definition xml:lang="en">Refers to the branch of Christianity characterized by a uniform, highly developed ritual canon and organizational structure with doctrinal roots based in the teachings of the Apostles of Jesus Christ in the first century, in the Alexandrian school of theology, and in Augustinian thought. In this religious branch, faith is considered an acceptance of revelation; revelation appears as doctrine. In juridical terms, it refers to the branch of Christianity distinguished as a unified, monolithic sacramental system under the governance of papal authority. Throughout much of its history, the seat of the Pope has been in Rome, thus &quot;Roman Catholicism&quot; is often used to distinguish this concept from the Orthodox Catholic church. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
+    <skos:definition xml:lang="es">Se refiere a la rama del cristianismo caracterizada por un canon ritual uniforme y altamente desarrollado y una estructura organizacional con raíces doctrinales basadas en las enseñanzas de los Apostoles de Jesucristo en la primera centuria, en la Escuela Alejandrina de teología, y en el pensamiento agustiniano. En esta rama de la religión, la fe es considerada como una aceptación de revelación; la revelación aparece como doctrina. Se refiere a la rama del cristianismo caracterizada por un canon ritual uniforme y altamente desarrollado y una estructura organizacional con raíces doctrinales basadas en las enseñanzas de los Apóstoles de Jesucristo en el primer siglo, en la Escuela Alejandrina de teología, y en el pensamiento agustiniano. En esta rama de la religión, la fe es considerada como una aceptación de revelación; la revelación aparece como doctrina. En términos jurídicos, se refiere a la rama del Cristianismo distinguido como sistema sacramental unificado, monolítico bajo gobierno de la autoridad papal. A través de la mayor parte de su historia, &quot;la silla del papal” ha estado en Roma, mediante este concepto el Catolicismo Romano se distingue de la Iglesia Católica Ortodoxa. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
+    <skos:definition xml:lang="nl">Verwijst naar de richting van het christendom die zich kenmerkt door een uniforme, hoogontwikkelde rituele canon en organisatiestructuur met een doctrine die wortelt in de leer van de apostelen van Jezus Christus in de 1ste eeuw, in de theologie van de Alexandrijnse school en in het augustijner gedachtegoed. In deze godsdienstige richting wordt het geloof beschouwd als een aanvaarding van de openbaring; de openbaring heeft de vorm van een doctrine. In juridische zin verwijst de term naar de richting van het christendom die zich onderscheidt als een verenigd, monolithisch sacramenteel systeem onder het bestuur van het pauselijk gezag. Gedurende het grootste deel van de geschiedenis van dit systeem was de paus gevestigd in Rome en daarom wordt 'rooms-katholicisme' vaak gebruikt om dit begrip te onderscheiden van de orthodoxe katholieke kerk. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
+    <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300073730"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <skos:definition xml:lang="fr">L’Église catholique, ou Église catholique, apostolique et romaine, est la plus grande Église chrétienne avec plus d'un milliard de fidèles. Elle réunit l’ensemble des chrétiens en communion avec le pape et les évêques qui sont considérés par les catholiques comme étant les successeurs des apôtres de Jésus-Christ. L'Église catholique est l'une des plus vieilles institutions religieuses au monde et a joué un rôle important dans l'histoire, surtout du monde occidental. La foi de l'Église catholique est résumée par le symbole de Nicée et elle se caractérise par la célébration des sept sacrements dont le plus important est l'Eucharistie célébré liturgiquement durant la messe. Selon son propre catéchisme, l'Église catholique est composée de trois parties qui ne forment qu'une seule Église placée sous Jésus-Christ : l'Église militante, l'Église triomphante et l'Église souffrante correspondant respectivement à l'ensemble des fidèles sur terre, l'ensemble des saints qui sont au ciel et l'ensemble des âmes qui sont au purgatoire. L'Église catholique sur terre se conçoit comme une communion d'Églises locales ou particulières, c'est-à-dire ayant chacune un territoire et un évêque à sa tête. Celles-ci sont chacune pleinement l'Église catholique dans la mesure où elles sont en communion avec le pape, qui est l'évêque de Rome et considéré comme étant le successeur de saint Pierre, et en communion les unes avec les autres. L'Église catholique se définit comme une institution à la fois humaine et divine : « société parfaite en dépit de l'imperfection de ses membres ». En plus d'être l'ensemble des baptisés, elle est aussi une institution et un clergé organisés de façon hiérarchique. Une très grande majorité des catholiques (au moins 98 %) sont de l'Église latine, mais il existe aussi des catholiques de différentes Églises catholiques orientales. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
+    <prov:derivedFrom rdf:resource="http://dbpedia.org/page/Catholic_Church"/>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#Religion"/>
+    <skos:broaderTransitive rdf:resource="#christianity"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #catholicism.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #catholicism.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#catholicism"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#churchOfChristianScience">
+    <rdfs:label xml:lang="en">Christian Science</rdfs:label>
+    <rdfs:label xml:lang="nl">Christenwetenschap</rdfs:label>
+    <rdfs:label xml:lang="es">Ciencia Cristiana</rdfs:label>
+    <rdfs:label xml:lang="fr">Science CHRÉTIENNE</rdfs:label>
+    <skos:definition xml:lang="en">Refers to a Christian denomination and movement founded by Mary Baker Eddy (1821-1910) that seeks to reinstate the Christian message of salvation from all evil, including sickness and disease as well as sin. Eddy, a semi-invalid who was interested in cures not involving medicine, claimed a recovery from a bad injury without medical assistance in 1866. Afterwards, she devoted herself to restoring the healing emphasis of early Christianity. In 1875 she finished writing the first edition of the 'Science and Health with Key to the Scriptures.' This work and the Bible are the principal texts of the movement and importance has been laid on establishing reading rooms where these works can make their own appeal to readers. The 'Christian Science Monitor' is also published by the denomination. Christian Science believes that ignorance is at the root of human unease and thus 'dis-ease.' Instead of seeking medical treatment, special Christian Science healers are to be consulted for spiritual healing. Health, happiness, and holiness can be restored by applying to all aspects of life practices and attitudes in keeping with the principal of divine harmony. The first Church of Christ, Scientist was founded in 1879 in Boston and its headquarters remain there. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
+    <skos:definition xml:lang="es">Se refiere a una secta y movimiento cristiano fundado por Mary Baker Eddy (1821-1910) que busca reincorporar el mensaje cristiano de salvación de todo mal, incluso la enfermedad y padecimiento así como el pecado. Eddy, un semi-inválido que estaba interesado en curas que no involucraran medicina, afirmó que se había recuperado de una lesión grave sin la ayuda médica en 1866. Después, se consagró a restaurar el énfasis curativo de la primera cristiandad. En 1875 ella terminó escribiendo la primera edición del &quot;la Ciencia y Salud con Llave a las Escrituras&quot;. Este trabajo y la Biblia son los textos principales del movimiento y importancia se ha puesto en establecer salas de lectura donde estos trabajos pueden hacer su propia apelación a los lectores. El &quot;Instructivo de ciencia cristiano&quot; también fue publicado por la secta. La Ciencia Cristiana cree que la ignorancia es la raíz de los padecimientos humanos y por lo tanto de la enfermedad. En lugar de buscar tratamiento médico, los sanadores de la Ciencia Cristiana especiales serán consultados para la curación espiritual. La salud, felicidad, y santidad pueden ser restauradas aplicando a todos los aspectos de la vida prácticas y actitudes en concordancia con la armonía divina. La primera Iglesia Científica de Cristo, se fundó en 1879 en Boston y su centro principal permanece allí. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
+    <skos:definition xml:lang="nl">Verwijst naar een christelijke gezindte en beweging die is gesticht door Mary Baker Eddy (1821-1910) en die streeft naar herbevestiging van de christelijke boodschap van verlossing van al het kwaad, met inbegrip van ziekte en zonde. Eddy, die half invalide was en geïnteresseerd in genezing zonder medicijnen, beweerde dat zij in 1866 zonder medische hulp was hersteld van zwaar letsel. Daarna wijdde zij zich aan het herstel van de nadruk op gebedsgenezing die het vroege christendom had gekenmerkt. In 1875 voltooide zij de eerste editie van haar boek 'Science and Health with Key to the Scriptures'. Dit werk en de Bijbel zijn de voornaamste geschriften van de beweging, die veel belang hecht aan de inrichting van leesruimten waar deze boeken een eigen beroep op de lezers kunnen doen. Ook de 'Christian Science Monitor' wordt door het kerkgenootschap uitgegeven. Volgens de leer van Christian Science is onwetendheid de wortel van het menselijk ongemak, de menselijke ziekte. In plaats van medische behandeling te zoeken moet men gebedsgenezers van Christian Science raadplegen voor spirituele genezing. Gezondheid, geluk en heiligheid kunnen worden hersteld door alle aspecten van de levenspraktijk en -houding aan te spreken in overeenstemming met het beginsel van goddelijke harmonie. De eerste Church of Christ, Scientist werd in 1879 in Boston gesticht en het hoofdkwartier van de beweging is daar nog altijd gevestigd. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
+    <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300264476"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <skos:definition xml:lang="fr">La Science chrétienne (ou Christian Science en anglais) se définit elle-même comme la « Science du Christ ». Sa fondatrice, la théologienne américaine Mary Baker Eddy, estime avoir redécouvert en 1866 les lois appliquées par Jésus dans la guérison des malades et la résolution des aléas de la vie, lois toujours démontrables aujourd'hui. Son observation des guérisons et résolutions diverses obtenues sur la base de sa théorie en prouve, selon elle, la validité. Ainsi, la Science chrétienne est « chrétienne » en ce sens qu’elle repose sur les enseignements de Jésus de Nazareth, tels qu'exposés dans le Nouveau Testament. La Science chrétienne se veut une religion pratique permettant l'application de lois divines démontrables. Afin d'assurer la diffusion de cette science, Mary Baker Eddy fonde en 1879 une Église sans credo, appelée « Église du Christ, Scientiste » (en anglais The First Church of Christ, Scientist), rassemblant de nos jours 1 800 églises dans 82 pays et quelques centaines de milliers de pratiquants, principalement aux États-Unis. Reconnue comme association cultuelle dans de nombreux pays, notamment aux États-Unis, la Science chrétienne précise que, malgré la confusion possible entre les deux noms, elle n’a rien de commun avec l’Église de Scientologie; de plus, bien qu'elle partage nombre de concepts métaphysiques avec les églises de la Nouvelle Pensée comme Unité, la Science divine et la Science religieuse, ce qui amène certains historiens et sociologues à les aborder ensemble dans leurs travaux, la Science chrétienne et ces églises ne se reconnaissent pas mutuellement comme faisant partie de la même mouvance. La principale critique de la Science chrétienne est qu'elle a un caractère alternatif et non complémentaire au traitement médical. Ainsi, les guérisons alléguées sont obtenues en dehors de tout contrôle médical. Ses guérisons de maladies fonctionnelles ou organiques sont considérées comme relevant de l’effet placebo par les détracteurs de la Science chrétienne (ce qui n’est d’ailleurs pas tellement en contradiction avec la Science chrétienne, qui ne considère la maladie que comme le résultat de simples croyances erronées, qu’il faudrait donc corriger pour recouvrer la santé.). La principale défense de la Science chrétienne est que chacun est libre de choisir la méthode de guérison qu'il juge la plus efficace et qu'il n'existe aucune contrainte à ce sujet. Les sympathisants mettent en avant les guérisons qu’ils disent avoir obtenues et réfutent toute idée de rejet de la médecine conventionnelle. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
+    <prov:derivedFrom rdf:resource="http://dbpedia.org/page/Christian_Science"/>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#Religion"/>
+    <skos:broaderTransitive rdf:resource="#christianity"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #christianScience.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #christianScience.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#christianScience"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#congregationalChurch">
+    <rdfs:label xml:lang="en">Congregational Church</rdfs:label>
+    <rdfs:label xml:lang="fr">Églises congrégationalistes</rdfs:label>
+    <skos:definition xml:lang="en">Congregational churches are Protestant Christian churches practicing congregationalist church governance, in which each congregation independently and autonomously runs its own affairs. Congregationalism is often considered to be a part of the wider Reformed tradition. Many Congregational churches claim their descent from Protestant denominations formed on a theory of union published by the theologian Robert Browne in 1582. These arose from the ideas of nonconforming Protestants during the Puritan Reformation of the Church of England. In Great Britain, the early Congregationalists were called Separatists or Independents to distinguish them from the similarly Calvinistic Presbyterians. Congregational churches were widely established in the Plymouth Colony and the Massachusetts Bay Colony (later New England), and together wrote the Cambridge Platform of 1648 which described the autonomy of the church and its association with others. Within the United States, the model of Congregational churches was carried by migrating settlers from New England into New York, then into the Old North West, and further. With their insistence on independent local bodies, they became important in many social reform movements, including abolitionism, temperance, and women's suffrage. Modern Congregationalism in the United States is largely split into three bodies: the United Church of Christ, the National Association of Congregational Christian Churches and the Conservative Congregational Christian Conference, which is the most theologically conservative. Congregationalism, as defined by the Pew Research Center, is estimated to represent 0.5% of the worldwide Protestant population. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">Les Églises congrégationalistes sont des églises protestantes de tradition réformée, pratiquant une forme d’organisation d’église où chaque paroisse se gère de manière entièrement autonome et indépendante. Le congrégationalisme se caractérise plus comme un mouvement que comme une dénomination chrétienne en raison de sa conviction fondamentale en faveur de l’autonomie complète de chaque paroisse. Malgré la forte diversité théologique inhérente à leur forme d'organisation, la plupart des congrégationalistes se considèrent d'abord comme des réformés, soit traditionnels soit néo-orthodoxes (barthiens). Les congrégationalistes, selon la définition du centre de recherche indépendant Pew Research Center, représentent environ 0,5% de la population protestante mondiale, soit 4 millions de chrétiens répartis essentiellement dans les grands pays anglophones (Royaume-Uni, États-Unis, Canada, Australie, Afrique du sud, Irlande) et dans quelques « terres de mission » (Argentine, Bulgarie, Îles Samoa). Leur rôle historique et leur influence, notamment aux États-Unis, excèdent largement ces chiffres. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
+    <prov:derivedFrom rdf:resource="http://dbpedia.org/page/Congregational_church"/>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#Religion"/>
+    <skos:broaderTransitive rdf:resource="#christianity"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #congregationalism.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #congragationalism.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#congragationalism"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="#dissenters">
+    <rdfs:label xml:lang="en">Dissenters</rdfs:label>
+    <rdfs:label xml:lang="fr">dissidents (ou non-conformistes)</rdfs:label>
+    <skos:definition xml:lang="en">"One who dissents or disagrees in matters of opinion, belief, &amp;c. The term 'dissenter' is, however, practically restricted to the special sense of a member of a religious body in England which has, for one reason or another, separated from the Established Church. Strictly, the term includes the English Roman Catholics, who in the original draft of the Relief Act of 1791 were styled “Protesting Catholic Dissenters.” It is in practice, however, restricted to the “Protestant Dissenters” referred to in sec. ii. of the Toleration Act of 1688."<![CDATA[<a href="#_britannica_1911">(Encyclopedia Britannica, 1911)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
+    <dcterms:isReplacedBy rdf:resource="#jewishEthnicity"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#dissentingChurches">
+    <rdfs:label xml:lang="en">Dissenting Churches</rdfs:label>
+    <rdfs:label xml:lang="fr">Églises dissidentes</rdfs:label>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #dissentingChristianity.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #dissentingChristianity.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#dissentingChristianity"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#lollards">
+    <rdfs:label xml:lang="en">Lollards</rdfs:label>
+    <rdfs:label xml:lang="fr">Lollards</rdfs:label>
+    <skos:definition xml:lang="en">Lollardy (Lollardry, Lollardism) was a political and religious movement that existed from the mid-14th century to the English Reformation. It was initially led by John Wycliffe, a prominent theologian who was dismissed from the University of Oxford in 1381 for criticism of the Church, especially in his doctrine on the Eucharist. The Lollards' demands were primarily for reform of Western Christianity. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">Les Lollards sont les membres ou sympathisants d'un mouvement de contestation religieuse et sociale apparu en Angleterre au XIVe siècle. — John Ball <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]> </skos:definition>
+    <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Lollardy"/>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#catholicChurch"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #lollardy.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #lollardy.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#lollardy"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#pagan">
+    <rdfs:label xml:lang="en">Pagan</rdfs:label>
+    <rdfs:label xml:lang="fr">païen (ou payen)</rdfs:label>
+    <skos:definition xml:lang="en">Paganism is a term that developed among the Christian community of southern Europe during late antiquity to describe religions other than their own, Judaism, or Islam–the three Abrahamic religions. Throughout Christendom, it continued to be used, typically in a derogatory sense. In the 19th century, it was re-adopted as a self-descriptor by members of various artistic groups inspired by the ancient world. In the 20th century, it came to be applied as a self-description by practitioners of contemporary pagan, or neo-pagan, religious movements. There has been much scholarly argument as to the origin of the term paganism. Paganism has also been understood by some[who?] to include any non-Abrahamic religions, but this is generally[who?] seen as insulting by adherents of those religions. While paganism is often considered to exclude monotheism and to express a worldview that is pantheistic, polytheistic, or animistic, there are some monotheistic pagans. Once monotheistic religions, such as Christianity and Islam, started to become more prominent (in processes known as Christianization and Islamization), names to encompass polytheistic worshipers started to develop; some of these include Hellene, pagan, and heathen, and at times these names were used as slurs. Modern knowledge of old pagan religions comes from several sources, including: anthropological field research records, the evidence of archaeological artifacts, and the historical accounts of ancient writers regarding cultures known to the classical world. Before the rise of monotheistic religions, most people practiced some type of polytheism. Many of these religions started to die out, and eventually they became extinct. In some cases, elements of polytheistic belief systems continued to exist in folklore. Paganism would later be studied during the Renaissance and Romantic era. Forms of these religions, influenced by various historical pagan beliefs of pre-modern Europe, exist today and are known as contemporary or modern paganism, also referred to as Neo-paganism. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">Paganisme est un terme générique employé depuis le VIe siècle par des chrétiens pour désigner la religion de ceux qui ne sont ni chrétiens, ni juifs, ni musulmans. Il remonte au latin paganus (païen). Au VIe siècle, ce mot pouvait servir à désigner les habitants des campagnes par opposition à ceux des villes ou bien les civils par opposition aux militaires. D'abord employé comme sobriquet populaire par des chrétiens pour désigner ceux qui ne sont pas baptisés, le terme a ensuite été adopté dans la littérature chrétienne. Même s'il y désigne toujours ceux qui ne sont pas chrétiens, son acception y est cependant ambiguë. Il est parfois employé de façon péjorative pour désigner ceux qui sont tenus pour être des ignorants, parfois de façon neutre pour désigner les philosophes grecs, parfois encore pour désigner des chrétiens jugés mal convertis ou tièdes dans leur foi. À partir de 370, des lois impériales regroupées au Ve siècle dans le code théodosien emploient le terme paganus pour désigner ceux qui pratiquent la magie, ceux qui sont considérés comme superstitieux ou dans l'erreur. Le terme a depuis conservé une connotation péjorative. De nombreux Pères de l'Église ayant écrit « contre les païens », le paganisme a eu une première existence sous forme de fiction littéraire, comme s'il s'agissait de la religion de ceux qui ne sont pas chrétiens. Le paganisme tel qu'il a été exposé par les Pères de l'Église n'était cependant pas à proprement parler une religion, il s'agit plutôt de l'ensemble sans homogénéité des positions philosophiques et des croyances rejetées par les Pères de l'Église. Le paganisme est ainsi, dans l'antiquité tardive, une attitude combattue par des chrétiens puis par les autorités, mais elle n'est revendiquée par personne. C'est surtout à l'époque moderne, avec l'essor de l'histoire des religions que le paganisme commence à être perçu et étudié comme une religion parmi d'autres. Le paganisme peut aujourd'hui être revendiqué sous forme de néo-paganisme, ou bien comme une position philosophique tel que l'a fait Marc Augé dans Le génie du paganisme. Le mot paganus n'a pas son correspondant chez les écrivains chrétiens de langue grecque qui utilisent le terme moins péjoratif de « nations » ou « religions nationales » (ethnikoï) (décalque de l'hébreu). <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#occultism"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #paganism.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #paganism.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#paganism"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#quakers">
+    <rdfs:label xml:lang="en">Quaker</rdfs:label>
+    <rdfs:label xml:lang="fr">quaker</rdfs:label>
+    <skos:definition xml:lang="en">Quakers (or Friends) are members of a group of religious Christian movements which is known as the Religious Society of Friends in Europe, Australia, New Zealand and parts of North America; and known as the Friends Church in Africa, Asia, South America and parts of the US. The movements were originally, and are still predominantly based on Christianity. Members of the movements profess the priesthood of all believers, a doctrine derived from the First Epistle of Peter. They include those with evangelical, holiness, liberal, and traditional Quaker understandings of Christianity. To differing extents, the different movements that make up the Religious Society of Friends/Friends Church avoid creeds and hierarchical structures. In 2007, there were approximately 359,000 adult Quakers. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">La Société religieuse des Amis est un mouvement religieux fondé en Angleterre au XVIIe siècle par des dissidents de l'Église anglicane. Les membres de ce mouvement sont communément connus sous le nom de quakers () mais ils se nomment entre eux « Amis » et « Amies ». Le mouvement est souvent nommé simplement Société des Amis et le surnom de « quaker » apparaît le plus souvent dans la dénomination officielle, sous la forme Société religieuse des Amis (quakers). Les historiens s'accordent à désigner George Fox comme le principal fondateur ou le plus important meneur des débuts du mouvement. Depuis sa création en Angleterre, le mouvement s'est d'abord répandu dans les pays de colonisation anglo-saxonne. Au XXe siècle, des missionnaires quakers ont propagé leur religion en Amérique latine et en Afrique. Aujourd'hui, les quakers déclarent être au nombre d'environ 350 000 dans le monde. La Société des Amis se différencie de la plupart des autres groupes issus du christianisme par l'absence de credo et de toute structure hiérarchique. Pour les quakers, la croyance religieuse appartient à la sphère personnelle et chacun est libre de ses convictions. Le concept de « lumière intérieure » (inner light) est cependant partagé par la plupart d'entre eux, quelle que soit la signification donnée à ces mots. De nombreux quakers reconnaissent le christianisme mais ne ressentent pas leur foi comme entrant dans les catégories chrétiennes traditionnelles. On trouve aujourd'hui dans la Société des Amis des pratiques très diverses, y compris un large courant évangélique. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
+    <skos:definition xml:lang="nl">Het Religieus Genootschap der Vrienden, beter bekend als quakers, verouderd Nederlands kwakers, vormt een groep ondogmatische gelovigen, die zijn wortels vindt in de christelijke traditie. Het leven en de overgeleverde uitspraken van Jezus vormen een belangrijke inspiratiebron. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
+    <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Quakers"/>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#dissenters"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #quakerism.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #quakerism.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#quakerism"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#rationalDissenter">
+    <rdfs:label xml:lang="en">Rational Dissenter</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en"></skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#dissenters"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #dissentingChristianity.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #dissentingChristianity.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#dissentingChristianity"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#societyOfFriends">
+    <rdfs:label xml:lang="en">Society of Friends</rdfs:label>
+    <rdfs:label xml:lang="fr">Société religieuse des Amis</rdfs:label>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#Religion"/>
+    <skos:broaderTransitive rdf:resource="#christianity"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #quakerism.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #quakerism.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#quakerism"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#unitarianChurch">
+    <rdfs:label xml:lang="en">Unitarian Church</rdfs:label>
+    <rdfs:label xml:lang="fr">Église unitarienne</rdfs:label>
+    <skos:definition xml:lang="en">Unitarian church usually refers to a church (either a single church or a group of churches and/or its followers) which follows Unitarianism, a Christian theology. It can also more broadly refer to a church which is a member of an umbrella group with "Unitarian" in its title, such as the Unitarian Universalist Association in the U.S., the Canadian Unitarian Council, and similar bodies. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
+    <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Unitarian_church"/>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:value>unitarianChurch</rdf:value>
+    <skos:broaderTransitive rdf:resource="#christianity"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #unitarianism.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #unitarianism.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#unitarianism"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  
 
 </rdf:RDF>
