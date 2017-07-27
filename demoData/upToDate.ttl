@@ -116,8 +116,8 @@ cwrc:King12345
 
 # ANNA LEONOWENS
 <http://www.cwrc.ca/cwrcdata/AnnaLeonowens>
-    cwrc:hasGender cwrc:genderWomanFemale ;
-    cwrc:hasReligion cwrc:buddhist, cwrc:presbyterianchurch ;
+    cwrc:hasGender cwrc:woman ;
+    cwrc:hasReligion cwrc:buddhism, cwrc:presbyterianism ;
     cwrc:hasNationalHeritage cwrc:welsh ;
     cwrc:hasNationality cwrc:english ;
     cwrc:hasRaceColour cwrc:eurasian ;
@@ -125,57 +125,57 @@ cwrc:King12345
     a foaf:Person ;
     foaf:name "Anna Leonowens" .
 
-<http://www.cwrc.ca/cwrcdata/LEONOWENSGender>
+<http://www.cwrc.ca/cwrcdata/LEONOWENSCulturalFormation>
     a cwrc:Gender ;
-    rdfs:label "Gender Context for Anna Leonowens"@en ;
-    oa:hasBody cwrc:genderWomanFemale ;
+    rdfs:label "Cultural Formation Context for Anna Leonowens"@en ;
+    oa:hasBody cwrc:woman ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleanowens1> .
 
-<http://www.cwrc.ca/cwrcdata/LEONOWENSReligionPresbyterian>
+<http://www.cwrc.ca/cwrcdata/LEONOWENSReligionContext>
     a cwrc:Religion ;
     rdfs:label "Religion Context for Anna Leonowens"@en ;
     oa:hasBody cwrc:presbyterian ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleanowens1> .
 
-<http://www.cwrc.ca/cwrcdata/LEONOWENSReligionBuddhist>
+<http://www.cwrc.ca/cwrcdata/LEONOWENSReligionContext>
     a cwrc:Religion ;
     rdfs:label "Religion Context for Anna Leonowens"@en ;
     oa:hasBody cwrc:buddhist ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleanowens2> .
 
-<http://www.cwrc.ca/cwrcdata/LEONOWENSNationalHeritageWelsh>
-    a cwrc:NationalHeritageContext ;
-    rdfs:label "National Heritage Context for Anna Leonowens"@en ;
+<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceEthnicityContext>
+    a cwrc:NationalHeritage ;
+    rdfs:label "Race/Ethnicity Context for Anna Leonowens"@en ;
     oa:hasBody cwrc:welsh ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleanowens1> .
 
-<http://www.cwrc.ca/cwrcdata/LEONOWENSNationality>
-    a cwrc:NationalityContext ;
+<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceEthnicityContext>
+    a cwrc:Nationality ;
     rdfs:label "National Identity Context for Anna Leonowens"@en ;
     oa:hasBody cwrc:english ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleanowens1> .
 
-<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceColourEurasian>
-    a cwrc:RaceEthnicityContext ;
+<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceEthnicityContext>
+    a cwrc:RaceEthnicity ;
     rdfs:label "Race Ethnicity Context for Anna Leonowens"@en ;
     oa:hasBody cwrc:eurasian ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleanowens1> .
 
-<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceColourWhite>
-    a cwrc:RaceEthnicityContext ;
+<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceEthnicityContext>
+    a cwrc:RaceEthnicity ;
     rdfs:label "Race/Ethnicity Context for Anna Leonowens"@en ;
     oa:hasBody cwrc:whiteEthnicity ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleanowens1>.
 
-<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceEthEnglish>
-    a cwrc:RaceEthnicityContext ;
+<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceEthnicityContext>
+    a cwrc:RaceEthnicity ;
     rdfs:label "Race/Ethnicity Context for Anna Leonowens"@en ;
     oa:hasBody cwrc:english ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
