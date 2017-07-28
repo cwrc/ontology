@@ -1207,7 +1207,6 @@
     <skos:definition xml:lang="fr">L’unitarisme est une doctrine qui affirme que le Dieu du christianisme est une seule personne, et non pas une seule nature ou "ousie" en trois hypostases comme l'affirme le dogme de la Trinité : Père, Fils et Esprit. Selon le dogme de la Trinité, ces trois personnes divines participent d'une seule nature divine unique . Le « trinitarisme » est la doctrine officielle du christianisme depuis le premier concile de Nicée (325) et le concile de Chalcédoine (451). <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/page/Unitarianism"/>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
-
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:value>unitarianMovement</rdf:value>
     <skos:inScheme rdf:resource="#Religion"/>
@@ -1219,6 +1218,7 @@
   <cwrc:Religion rdf:about="#abrahamicReligions">
     <rdfs:label xml:lang="en">Abrahamic religions</rdfs:label>
     <rdfs:label xml:lang="fr">Religions abrahamiques</rdfs:label>
+    <skos:inScheme rdf:resource="#Religion"/>
     <skos:definition xml:lang="en">Abrahamic religions, emphasizing and tracing their common origin to the tribal patriarch Abraham or recognizing a spiritual tradition identified with him, comprising one of the major divisions in comparative religion, along with Indian, Iranian, and East Asian religions. Judaism, Christianity and Islam are the largest Abrahamic religions.The largest Abrahamic religions in chronological order of founding are Judaism (2nd millennium BCE), Christianity (1st century CE) and Islam (7th century CE). <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">L'expression religion abrahamique désigne principalement le judaïsme, le christianisme dont les Saintes Écritures, respectivement le Tanakh, la Bible évoquent la figure d'Abraham et l'islam avec le Coran, celle d'Ibrahim.En français, cette expression est apparue vers 1950 dans des études d'islamologie pour désigner, d'une part, la religion d'Abraham telle qu'elle se conçoit dans l'islam et d'autre part les trois religions que sont le judaïsme, le christianisme et l'islam. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/page/Abrahamic_religions"/>
@@ -1241,10 +1241,10 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
   </owl:Class>
   <cwrc:SocialClass rdf:about="#lowerMiddleClass">
-    <rdfs:label xml:lang="en">lower middle class</rdfs:label>
-    <rdfs:label xml:lang="fr">classe moyenne inférieure</rdfs:label>
+    <rdfs:label xml:lang="en">lower-middle class</rdfs:label>
+    <rdfs:label xml:lang="fr">classe-moyenne inférieure</rdfs:label>
+    <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">Employees, clerical workers, teachers, governesses. Note, however, that some teachers go into Professional (Mr. Chips) and women starting schools and then managing them also go into Professional.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1253,19 +1253,18 @@
   <cwrc:SocialClass rdf:about="#entrepreneurial-industrialist">
     <rdfs:label xml:lang="en">entrepreneurial</rdfs:label>
     <rdfs:label xml:lang="fr">entrepreneur</rdfs:label>
+    <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">Involves larges-scale enterprises such as running factories, or backing such enterprises through investing money, for instance, Elizabeth Montagu or Beatrice Webb.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <!-- Fix the examples -->
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#professional">
     <rdfs:label xml:lang="en">professional</rdfs:label>
     <rdfs:label xml:lang="fr">professionnel</rdfs:label>
+    <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">Includes doctors, lawyers, guild members, and those of high calling such as members of the clergy (Church of England). It implies social respect and intellectual requirements. Examples are Ann Hunter, who was married to a surgeon, and Virginia Woolf, daughter of an intellectual.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1274,8 +1273,8 @@
   <cwrc:SocialClass rdf:about="#managerial">
     <rdfs:label xml:lang="en">managerial</rdfs:label>
     <rdfs:label xml:lang="fr">gestionnaire</rdfs:label>
+    <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">Someone whose station in life comes from the fact that they are running something but not putting their money into it, e.g. salaried civil service, bankers, hospital administrators.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1284,8 +1283,8 @@
   <cwrc:SocialClass rdf:about="#nobility">
     <rdfs:label xml:lang="en">nobility</rdfs:label>
     <rdfs:label xml:lang="fr">noblesse</rdfs:label>
+    <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">This group refers to those holding a title or of close family relation to someone holding a title (such as Lady Mary Wortley Montagu, Lord Byron, or Nancy Mitford).</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1294,8 +1293,8 @@
   <cwrc:SocialClass rdf:about="#gentry">
     <rdfs:label xml:lang="en">gentry</rdfs:label>
     <rdfs:label xml:lang="fr">noblesse non titrée</rdfs:label>
+    <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">Gentry indicates someone who is property-owning or related to the same; property can be land or stocks and bonds. It begins in the idea of owning arms and having a coat of arms. but is distinguished from nobility in so far as money is not necessarily related to blood and title. Disinterested gentlemen are of this class (i.e. Mr. Bennett in Jane Austen). Gentlewomen belong to this class, even thought they may not themselves own much property but instead be supported by a father or brother, or they may be distressed, which is to say, impoverished gentlewomen, as in the case of Jane Eyre or Austen's Jane Fairfax. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">La landed gentry est le nom donné à la bonne société anglaise, et en particulier à la noblesse non titrée. Elle est de bonne éducation et « a des valeurs ». Les membres de la gentry sont légalement des gentlemen, esquire, et peuvent recevoir des décorations, titres de noblesses, héréditaires ou viagier (chevaliers, baronnets). Cette classe, composée à la fois de la haute bourgeoisie et de la noblesse titrée ou non, se développe au XVIe siècle, à une époque de mobilité sociale accentuée. À l'origine, ce sont des notables provinciaux, propriétaires, qui s'enrichissent grâce à leurs domaines (qu'ils n'exploitent pas directement). Du point de vue juridique, la gentry n'a pas un statut comparable à celui qu'a eu la noblesse continentale au cours des siècles, et on ne parle donc pas légalement de nobility (sauf en Écosse qui a un système plus proche du système continental). En effet, en Angleterre (au sens strict), seuls les pairs ont légalement le titre de noble et tous les attributs légaux qui vont avec. Ainsi, dans une famille qui descend d'un pair du royaume, seul le chef de famille est légalement « noble », les autres sont gentry. Néanmoins, la gentry a tous les attributs sociaux de la noblesse, et est donc reconnue comme noble au sens complet par la CILANE (« Commission d'information et de liaison des associations nobles d'Europe », voir Association d'entraide de la noblesse française). Le statut juridique de la gentility est donné par la lettre patente donnée par les rois d'armes par délégation du souverain. C'est cette lettre patente qui leur donne à eux seuls le droit de porter des armoiries, de se déclarer « of gentle birth. » Dans la distinction traditionnelle nobilitas maior et nobilitas minor, les pairs représentent le premier groupe, la gentry le second. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Gentry"/>
@@ -1305,8 +1304,8 @@
   <cwrc:SocialClass rdf:about="#indigent">
     <rdfs:label xml:lang="en">indigent</rdfs:label>
     <rdfs:label xml:lang="fr">indigents</rdfs:label>
+    <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">This social group is poor, destitute, unemployed, supported by charity, or on social security.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1315,8 +1314,8 @@
   <cwrc:SocialClass rdf:about="#shopkeepers">
     <rdfs:label xml:lang="en">shopkeepers</rdfs:label>
     <rdfs:label xml:lang="fr">commerçants</rdfs:label>
+    <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">Owns and runs a pub or shop. Similar to an industrialist but to a lesser degree of magnitude.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1325,18 +1324,18 @@
   <cwrc:SocialClass rdf:about="#yeoman-farmer">
     <rdfs:label xml:lang="en">yeoman farmer</rdfs:label>
     <rdfs:label xml:lang="fr">agriculteur vivrier</rdfs:label>
+    <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">Own just enough land to support themselves if they do most of the work themselves (ie Elizabeth Ham, Mary Webb).</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#upper-middleClass">
-    <rdfs:label xml:lang="en">upper middle class</rdfs:label>
+    <rdfs:label xml:lang="en">upper-middle class</rdfs:label>
     <rdfs:label xml:lang="fr">classe moyenne supérieure</rdfs:label>
+    <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdfs:comment xml:lang="en">This term is a CWRC specific addition not in the original Orlando tag set.</rdfs:comment>
@@ -1346,47 +1345,44 @@
   <cwrc:SocialClass rdf:about="#skilledCraftpersonArtisan">
     <rdfs:label xml:lang="en">skilled craftperson/artisan</rdfs:label>
     <rdfs:label xml:lang="fr">artisan</rdfs:label>
+    <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">Goldsmith, tailor, shoemaker, milliner, dressmaker.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <!-- Fix examples -->
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#urban-industrialUnskilled">
-    <rdfs:label xml:lang="en">urban-industrial unskilled</rdfs:label>
+    <rdfs:label xml:lang="en">urban unskilled</rdfs:label>
     <rdfs:label xml:lang="fr">ouvrier non qualifié</rdfs:label>
+    <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">This category includes factory workers and workers in urban or large-scale industries without defined trades or professional qualifications, and those in low-wage and low-status service sector jobs, such as the restaurant or fast-food industry, in industrial or post-industrial societies.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <!-- Fix dfinition -->
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#rural-unskilled">
-    <rdfs:label xml:lang="en">rural-unskilled</rdfs:label>
+    <rdfs:label xml:lang="en">rural unskilled</rdfs:label>
     <rdfs:label xml:lang="fr">travailleurs ruraus non qualifiés</rdfs:label>
+    <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">This generally indicates farm laborers, mostly male in earlier periods, and includes migrant farm workers.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <!-- Fix dfinition -->
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#servants">
     <rdfs:label xml:lang="en">servants</rdfs:label>
     <rdfs:label xml:lang="fr">domestiques</rdfs:label>
+    <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">Domestic servants typically live in the home with the family or institution that employs them, although the lowest class of servants might work only casually and hence not receive room and board. This type of labour, very common before the twentieth century, is distinct from that of service positions such as shop assistants, flight attendances, and restaurant workers.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <!-- Fix dfinition -->
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
+<!-- Linguistic Abilities -->
   <owl:Class rdf:ID="LinguisticAbility">
     <rdfs:label xml:lang="en">linguistic ability (spoken and/or writen)</rdfs:label>
     <rdfs:label xml:lang="fr">aptitude linguistique (écrit ou parlé)</rdfs:label>
@@ -1397,6 +1393,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+  <!-- Political Affiliations -->
   <owl:Class rdf:ID="PoliticalAffiliation">
     <rdfs:label xml:lang="en">political affiliation</rdfs:label>
     <rdfs:label xml:lang="fr">affiliation politique</rdfs:label>
@@ -1407,6 +1404,8 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+<!-- Political affiliation Instances go here -->
+
   <cwrc:RaceColour rdf:about="#black">
     <rdfs:label xml:lang="en">black (race)</rdfs:label>
     <rdfs:label xml:lang="fr">noir (race)</rdfs:label>
