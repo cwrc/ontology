@@ -517,26 +517,25 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-  <!-- To Be Deprecated -->
-  <cwrc:Gender rdf:about="#genderManMale">
-    <rdfs:label xml:lang="en">man/male</rdfs:label>
-    <rdfs:label xml:lang="fr">homme/mâle</rdfs:label>
-    <foaf:name xml:lang="en">man/male (gender)</foaf:name>
+  <cwrc:Gender rdf:about="#man">
+    <rdfs:label xml:lang="en">man</rdfs:label>
+    <rdfs:label xml:lang="fr">homme</rdfs:label>
+    <foaf:name xml:lang="en">man (gender)</foaf:name>
     <skos:definition xml:lang="en"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
-  <cwrc:Gender rdf:about="#genderWomanFemale">
-    <rdfs:label xml:lang="en">Woman/Female</rdfs:label>
-    <rdfs:label xml:lang="fr">Femme/Femelle</rdfs:label>
-    <foaf:name xml:lang="en">Woman/Female (gender)</foaf:name>
+  <cwrc:Gender rdf:about="#woman">
+    <rdfs:label xml:lang="en">Woman</rdfs:label>
+    <rdfs:label xml:lang="fr">Femme</rdfs:label>
+    <foaf:name xml:lang="en">Woman (gender)</foaf:name>
     <skos:definition xml:lang="en"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
-  <cwrc:Gender rdf:about="#genderTransMan">
+  <cwrc:Gender rdf:about="#transMan">
     <rdfs:label xml:lang="en">Transman/Transmale</rdfs:label>
     <rdfs:label xml:lang="fr">Homme Trans</rdfs:label>
     <foaf:name xml:lang="en">Transman/Transmale (gender)</foaf:name>
@@ -545,7 +544,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
-  <cwrc:Gender rdf:about="#genderTransWoman">
+  <cwrc:Gender rdf:about="#transWoman">
     <rdfs:label xml:lang="en">Transwoman/Transfemale</rdfs:label>
     <rdfs:label xml:lang="fr">Femme Trans</rdfs:label>
     <foaf:name xml:lang="en">Transwoman/Transfemale (gender)</foaf:name>
@@ -1737,39 +1736,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </skos:Concept>
-  <!-- These Should be deprecated -->
-  <skos:Concept rdf:about="#maleLabel">
-    <rdf:value>male</rdf:value>
-    <rdfs:label xml:lang="en">male</rdfs:label>
-    <rdfs:label xml:lang="fr">male</rdfs:label>
-    <foaf:name xml:lang="en">Male (Label)</foaf:name>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
-    <owl:oneOf rdf:parseType="Collection">
-      <owl:Thing rdf:about="#genderManMale"/>
-      <owl:Thing rdf:about="#maleSex"/>
-    </owl:oneOf>
-    <skos:inScheme rdf:resource="#TextLabels"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="#FemaleLabel">
-    <rdf:value>female</rdf:value>
-    <rdfs:label xml:lang="en">female</rdfs:label>
-    <rdfs:label xml:lang="fr">femelle</rdfs:label>
-    <foaf:name xml:lang="en">Female (Label)</foaf:name>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
-    <owl:oneOf rdf:parseType="Collection">
-      <owl:Thing rdf:about="#genderWomanFemale"/>
-      <owl:Thing rdf:about="#femaleSex"/>
-    </owl:oneOf>
-    <skos:inScheme rdf:resource="#TextLabels"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </skos:Concept>
   <skos:Concept rdf:about="#jewishLabel">
     <rdfs:label xml:lang="en">Jewish</rdfs:label>
     <rdfs:label xml:lang="fr">Juif</rdfs:label>
@@ -1994,6 +1960,102 @@
   </owl:DeprecatedClass>
 
   <!-- Deprecated Instances -->
+  <rdf:Description rdf:about="#maleLabel">
+      <rdf:value>male</rdf:value>
+      <rdfs:label xml:lang="en">male</rdfs:label>
+      <rdfs:label xml:lang="fr">male</rdfs:label>
+      <foaf:name xml:lang="en">Male (Label)</foaf:name>
+      <skos:definition xml:lang="en"/>
+      <skos:definition xml:lang="fr"/>
+      <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+      <owl:oneOf rdf:parseType="Collection">
+        <owl:Thing rdf:about="#genderManMale"/>
+        <owl:Thing rdf:about="#maleSex"/>
+      </owl:oneOf>
+      <skos:inScheme rdf:resource="#TextLabels"/>
+      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+      <void:inDataset rdf:resource="#datasetdefinition"/>
+      <rdfs:comment xml:lang="en">Deprecated with no current equivalence..</rdfs:comment>
+      <rdfs:comment xml:lang="fr">Désapprouver sans équivalence.</rdfs:comment>
+      <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+      <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    </rdf:Description>
+    <rdf:Description rdf:about="#FemaleLabel">
+      <rdf:value>female</rdf:value>
+      <rdfs:label xml:lang="en">female</rdfs:label>
+      <rdfs:label xml:lang="fr">femelle</rdfs:label>
+      <foaf:name xml:lang="en">Female (Label)</foaf:name>
+      <skos:definition xml:lang="en"/>
+      <skos:definition xml:lang="fr"/>
+      <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+      <owl:oneOf rdf:parseType="Collection">
+        <owl:Thing rdf:about="#genderWomanFemale"/>
+        <owl:Thing rdf:about="#femaleSex"/>
+      </owl:oneOf>
+      <skos:inScheme rdf:resource="#TextLabels"/>
+      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+      <void:inDataset rdf:resource="#datasetdefinition"/>
+      <rdfs:comment xml:lang="en">Deprecated with no current equivalence.</rdfs:comment>
+      <rdfs:comment xml:lang="fr">Désapprouver sans équivalence.</rdfs:comment>
+      <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+      <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    </rdf:Description>
+  <rdf:Description rdf:about="#genderManMale">
+    <rdfs:label xml:lang="en">man/male</rdfs:label>
+    <rdfs:label xml:lang="fr">homme/mâle</rdfs:label>
+    <foaf:name xml:lang="en">man/male (gender)</foaf:name>
+    <skos:definition xml:lang="en"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #man.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #man.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#man"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#genderWomanFemale">
+    <rdfs:label xml:lang="en">Woman/Female</rdfs:label>
+    <rdfs:label xml:lang="fr">Femme/Femelle</rdfs:label>
+    <foaf:name xml:lang="en">Woman/Female (gender)</foaf:name>
+    <skos:definition xml:lang="en"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #woman.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #woman.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#woman"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#genderTransMan">
+    <rdfs:label xml:lang="en">Transman/Transmale</rdfs:label>
+    <rdfs:label xml:lang="fr">Homme Trans</rdfs:label>
+    <foaf:name xml:lang="en">Transman/Transmale (gender)</foaf:name>
+    <skos:definition xml:lang="en"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #transMan.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #transMan.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#transMan"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#genderTransWoman">
+    <rdfs:label xml:lang="en">Transwoman/Transfemale</rdfs:label>
+    <rdfs:label xml:lang="fr">Femme Trans</rdfs:label>
+    <foaf:name xml:lang="en">Transwoman/Transfemale (gender)</foaf:name>
+    <skos:definition xml:lang="en"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #transWoman.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #transWoman.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#transWoman"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
   <rdf:Description rdf:about="#maleSex">
       <rdfs:label xml:lang="en">Male</rdfs:label>
       <rdfs:label xml:lang="fr">Mâle</rdfs:label>
