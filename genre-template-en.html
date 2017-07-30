@@ -81,37 +81,111 @@
     
     <ul style="list-style-type: none">
     <li><a href="#introduction">1. Introduction</a></li> 
-    <li><a href="#genre_taxonomy">2. Literary Genre Taxonomy</a></li>
-    <li><a href="#version_history">3. Version History</a></li>
-    <li><a href="#biblipgraphy">4. Bibliography</a></li>    
+    <li><a href="#background">2. Background</a></li> 
+    <li><a href="datasources">3. Data sources</a></li> 
+    <li><a href=""taxonomy">4. Taxonomy construction</a></li>
+   <li><a href="usingthisontology">4. Using this ontology</a></li>
+    <li><a href="definition_list">7. Global Cross-Reference</a></li>
+    <li><a href="reference">5. Detailed references for all terms, classes and instances.</a></li>
+    <li><a href="conclusion">6. Conclusion and Future Work</a></li>
+    <li><a href="version_history">7. Version History</a></li>
+    <li><a href="biblipgraphy">8. Bibliography</a></li>    
+
     </ul>
      <h3 id="introduction">1. Introduction</h3>
      
      <p>A part of the extensive bibliographic data provided by the Orlando
-     project a large amount of genre information was created.</p>
-     <p>Genre, Carolyn R. Miller contends in an influential article, does not inhere in “substance or form of discourse” but must rather be conceived of in terms of situationally-specific rhetorical action, although her definition is more complicated than this brief articulation would suggest, since she argues that “action encompasses both substance and form”
-     (151,152).</p>
-     <p>Two primary types of action are associated with genre. Miller addresses how particular speech acts or instances of discourse, that is, texts in a broad sense, come themselves to embody generic features; these, she argues, emerge from rhetorical situations which are social constructs by which private intentions are translated into socially recognizable and interpretable discursive acts (Miller 1984). But there is also the act of applying a generic label to a text, another kind of discursive act that operates in a wide range of contexts for different purposes. Generic categorization is foundational to literary studies, organizing both primary and secondary materials, defining specializations and literary movements, and playing a major role in the organization and articulation of literary theory, criticism, and history. As a major feature of library classification systems, genre labelling serves research across the disciplines. It organizes bookstores and publishers’ lists, and is used by readers to share and discuss their tastes in
-     texts.</p>
-     <p>Within these wide-ranging contexts, methods of categorizing specific texts by genre fall into a spectrum ranging from the application by professional cataloguers of tightly controlled authoritative vocabularies produced by “trusted sources” (Harper), though to entirely folksonomic categories devised ad hoc by users of online systems--what Clay Shirky has described as “a radical break with previous categorization strategies, rather than an extension of them.” Numerous studies have indicated that while the terms deployed in these various contexts may overlap, they are not consistently applied (Lester; Lu; Rolla). What will happen, then, when such different approaches to genre intersect, collide, or otherwise interact within a Linked Open Data (LOD) environment where they may be aggregated into a single
-     interface?</p>
-
+     project literary genre information was collected into a linked open
+     data ontology. It's primary purpose was to annotate bibliographic
+     references within the dataset with a dereferenceable vocabulary that
+     could also be used to search for works of a certain genre.</p>
      
-     <h3 id="genre_taxonomy">ii. Literary Genre</h3>
-       <p>The taxonomy of literary genres is based on a SKOS approach that
-       is geared towards information retrieval.</p> 
+     <h3 id="background">2. Background</h3>
+     <p>Genre, Carolyn R.  Miller contends in an influential article, does
+     not inhere in “substance or form of discourse” but must rather be
+     conceived of in terms of situationally-specific rhetorical action,
+     although her definition is more complicated than this brief
+     articulation would suggest, since she argues that “action encompasses
+     both substance and form” (151,152).</p> 
+     
+     <p>Two primary types of action are associated with genre.  Miller addresses how particular speech acts
+     or instances of discourse, that is, texts in a broad sense, come
+     themselves to embody generic features; these, she argues, emerge from
+     rhetorical situations which are social constructs by which private
+     intentions are translated into socially recognizable and interpretable
+     discursive acts (Miller 1984).  But there is also the act of applying a
+     generic label to a text, another kind of discursive act that operates
+     in a wide range of contexts for different purposes.  Generic
+     categorization is foundational to literary studies, organizing both
+     primary and secondary materials, defining specializations and literary
+     movements, and playing a major role in the organization and
+     articulation of literary theory, criticism, and history.  As a major
+     feature of library classification systems, genre labeling serves
+     research across the disciplines.  It organizes bookstores and
+     publishers’ lists, and is used by readers to share and discuss their
+     tastes in texts.</p> 
+     
+     <p>Within these wide-ranging contexts, methods of
+     categorizing specific texts by genre fall into a spectrum ranging from
+     the application by professional cataloguers of tightly controlled
+     authoritative vocabularies produced by “trusted sources” (Harper),
+     though to entirely folksonomic categories devised ad hoc by users of
+     online systems--what Clay Shirky has described as “a radical break with
+     previous categorization strategies, rather than an extension of them.”
+     Numerous studies have indicated that while the terms deployed in these
+     various contexts may overlap, they are not consistently applied
+     (Lester; Lu; Rolla).  What will happen, then, when such different
+     approaches to genre intersect, collide, or otherwise interact within a
+     Linked Open Data (LOD) environment where they may be aggregated into a
+     single interface?</p>
+     
+     <h3 id="datasources">3. Data sources</h3>
+     
+     <p>The list of genres used within this ontology is based on
+     the genres originally listed by the Orlando Project. The list is
+     tightly coupled to the project's original objectives but is
+     substantive.</p>
+     <p>As the original Orlando project did not post definitions or
+     descriptions of the genres it used, these had to be created for this
+     ontology. Whenever possible, these were adapted from the linked open
+     data sets of DBpedia/Wikipedia, the Getty Art &amp; Architecture Thesaurus or from the <i><a href="http://web.cn.edu/kwheeler/lit_terms.html">Literary Terms and
+     Definitions</a></i> webpage of  
+     Dr. L. Kip Wheeler. The indebtness of the description is done using
+     the <a href="https://www.w3.org/TR/prov-o/">provenance ontology</a>, inline html citations and within
+     &lt;rdfs:comment&gt;
+     tags.</p> 
+     
+     <h3 id="taxonomy">4. Taxonomy construction</h3>
+       <p>The Literary Genre ontology contains a taxonomy of literary genres based on a
+       <a href="https://www.w3.org/2004/02/skos/">SKOS</a> approach. This
+       provides limited transitive narrower/broader definitions that be used
+       to search for relevant creative works using the taxonomy. The
+       taxonomical tree is built on an ad-hoc topic relevance standard meant
+       for document retrieval and that may not be suited to all
+       applications.</p>
        <p>The specific taxonomy is:
 <p> </p>
        <object type="image/svg+xml" data="figures/genreTaxonomy-ONTOLOGY_DATE.svg"></object>  
        </p>
+     <h3 id="usingthisontology">4. Using this ontology</h3>
+
+     <p>This ontology was constructed to support the efforts of the CWRC
+     project while enabling it's stand-alone use by outside projects. Genres
+     exist both as typed instances of the <a href="#Genre">&lt;genre:Genre&gt;</a> class and as
+     <a href="https://www.w3.org/2009/08/skos-reference/skos.html#Concept">&lt;skos:Concept&gt;</a>s
+     of a Genre <a href="https://www.w3.org/2009/08/skos-reference/skos.html#ConceptScheme">&lt;ConceptScheme&gt;</a>. Instances can be both accessed directly or
+     through the built in SKOS taxonomical properties. A provided property
+     <a href="#hasGenre">&lt;genre:hasGenre&gt;</a> with no <a href="https://www.w3.org/TR/owl-ref/#domain-def">&lt;rdfs:domain&gt;</a>
+     permits the easy assignment of a genre to a work without committing to
+     a specific type of creative work.</p>
     <h3 id="definition_list">7. Global Cross-Reference</h3>
     
     <!-- The list of classes and properties goes here -->
     %s
     <!-- End of the terms list -->
 
-    <h2 id="reference">8. Detailed references for all terms, classes and
-    properties</h2>
+    <h3 id="reference">5. Detailed references for all terms, classes and
+    properties</h3>
  
     <p></p>
 
@@ -119,20 +193,21 @@
     %s
     <!-- End of the terms list -->
 
-    <h2 id="conclusion">12. Conclusion and Future Work</h2>
+    <h3 id="conclusion">6. Conclusion and Future Work</h3>
     <p>
-    This is a draft ontology that is very much in progress. It will continue to be developed, expanded, and revised as we
-    discover the implications of how we have structured the ontology through using it to extract and explore our data, data and
-    uses cases that necessitate expansion or refinement, and as new needs, understandings, and debates arise.
-    </p>
-    <h2 id="version_history">13. Version History</h2>
+    This ontology should be considered stable in nature with occasional
+    additions and refinements being made from time to time. 
+    It will continue to be developed as we
+    discover the implications of a multilingual ontology dedicated to literary
+    genres.</p>
+    <h3 id="version_history">7. Version History</h3>
 
     <ul>
-    <li><p>0.1 - Ontology seperated off from main cwrc ontology.</p></li>
+    <li><p>0.1 - Ontology separated off from main cwrc ontology.</p></li>
     </ul>
     
-    <h2 id="biblipgraphy">14. Bibliography</h2>    
-m4_include(cwrc-citations.html)
+    <h3 id="biblipgraphy">8. Bibliography</h3>    
+m4_include(genre-citations.html)
 
     <!-- ===================================================================== 
 
