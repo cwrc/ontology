@@ -117,7 +117,7 @@ cwrc:King12345
 # ANNA LEONOWENS
 <http://www.cwrc.ca/cwrcdata/AnnaLeonowens>
     cwrc:hasGender cwrc:woman ;
-    cwrc:hasReligion cwrc:buddhism, cwrc:presbyterianism ;
+    cwrc:hasReligion cwrc:buddhism, cwrc:presbyterianism cwrc:hinduism ;
     cwrc:hasNationalHeritage cwrc:welsh ;
     cwrc:hasNationality cwrc:english ;
     cwrc:hasRaceColour cwrc:eurasian ;
@@ -157,14 +157,14 @@ cwrc:King12345
 <http://www.cwrc.ca/cwrcdata/LEONOWENSRaceEthnicityContext>
     a cwrc:NationalityContext ;
     rdfs:label "Race Ethnicity Context for Anna Leonowens"@en ;
-    oa:hasBody eurovoc:2290 ;
+    oa:hasBody cwrc:wales ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleanowens1> .
 
 <http://www.cwrc.ca/cwrcdata/LEONOWENSRaceEthnicityContext>
     a cwrc:NationalityContext ; 
     rdfs:label "Race Ethnicity Context for Anna Leonowens"@en ;
-    oa:hasBody eurovoc:5438 ;
+    oa:hasBody cwrc:england ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleanowens1> .
     
