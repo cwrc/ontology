@@ -438,7 +438,12 @@ endorsing the corresponding definition or interpretation of the term.</p>
     <p>Beyond the formalism of [citation on ontology design rules], the CWRC
     ontology follows the following design rules and styles:</p>
     <ul>
-    <li>The contents of rdfs:labels tags are always in lowercase.</li>
+    <li>The contents of rdfs:labels tags are always in lowercase, with the
+    following exceptions:</li>
+    <ul>
+    <li>Labels for religions, political affiliations and groups of people derived from a proper name
+    will begin with an uppercase letter.</li>
+    </ul>
     <li>Whenever possible, the original Orlando XML tag equivalent is
     contained within the rdf:value tag of any term within the ontology.</li>
     <li>Whenever referencing a geographical location, use the most precise
