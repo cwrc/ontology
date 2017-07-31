@@ -437,12 +437,12 @@
 <!-- Nationalities -->
 <!-- To be deprecated infavor of nationality -->
   <owl:Class rdf:ID="NationalIdentity"> 
-    <rdfs:label xml:lang="en">National Identity</rdfs:label>
-    <rdfs:label xml:lang="fr">Identité Nationale</rdfs:label>
+    <rdfs:label xml:lang="en">Nationality</rdfs:label>
+    <rdfs:label xml:lang="fr">Nationalité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A subclass of culturalForms, this descrbes a person's nationality/ies and is not the same as citizenship.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Une sous-classe de Cultural Forms, ceci décrit la nationalité d'une personne et n'est pas sa citoyenneté.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
