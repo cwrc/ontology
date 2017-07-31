@@ -493,7 +493,7 @@
     <foaf:name xml:lang="en">England (Geographical Heritage)</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#jewishLabel"/>
+    <skos:broader rdf:resource="#englishLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:GeographicalHeritage>
@@ -750,7 +750,7 @@
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
-    <skos:broaderTransitive rdf:resource="#christianity"/>
+    <skos:broaderTransitive rdf:resource="#protestantism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Religion>
@@ -780,7 +780,7 @@
     <skos:broaderTransitive rdf:resource="#occultism"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#catholicism">
-    <rdfs:label xml:lang="en">Roman Catholic</rdfs:label>
+    <rdfs:label xml:lang="en">Roman Catholicism</rdfs:label>
     <rdfs:label xml:lang="nl">Rooms-Katholicisme</rdfs:label>
     <rdfs:label xml:lang="nl">Katholiek</rdfs:label>
     <rdfs:label xml:lang="nl">Katholicisme</rdfs:label>
@@ -899,7 +899,7 @@
     <skos:broaderTransitive rdf:resource="#abrahamicReligions"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#judaism">
-    <rdfs:label xml:lang="en">Jewish</rdfs:label>
+    <rdfs:label xml:lang="en">Judaism</rdfs:label>
     <rdfs:label xml:lang="zh-hant">猶太教</rdfs:label>
     <rdfs:label xml:lang="zh-latn-pinyin-x-hanyu">yóu tài jiāo</rdfs:label>
     <rdfs:label xml:lang="zh-latn-pinyin-x-notone">you tai jiao</rdfs:label>
@@ -947,7 +947,7 @@
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
-    <skos:broaderTransitive rdf:resource="#christianity"/>
+    <skos:broaderTransitive rdf:resource="#protestantism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Religion>
@@ -985,7 +985,6 @@
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broaderTransitive rdf:resource="#occultism"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#atheism">
     <rdfs:label xml:lang="en">Atheism</rdfs:label>
@@ -1020,7 +1019,7 @@
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
-    <skos:broaderTransitive rdf:resource="#christianity"/>
+    <skos:broaderTransitive rdf:resource="#protestantism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Religion>
@@ -1033,13 +1032,13 @@
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
-    <skos:broaderTransitive rdf:resource="#christianity"/>
+    <skos:broaderTransitive rdf:resource="#anglicanism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#dissentingChristianity">
-    <rdfs:label xml:lang="en">Dissenters</rdfs:label>
+    <rdfs:label xml:lang="en">Dissenting Christianity</rdfs:label>
     <rdfs:label xml:lang="fr">dissidents (ou non-conformistes)</rdfs:label>
     <skos:definition xml:lang="en">&quot;One who dissents or disagrees in matters of opinion, belief, &amp;c. The term 'dissenter' is, however, practically restricted to the special sense of a member of a religious body in England which has, for one reason or another, separated from the Established Church. Strictly, the term includes the English Roman Catholics, who in the original draft of the Relief Act of 1791 were styled “Protesting Catholic Dissenters.” It is in practice, however, restricted to the “Protestant Dissenters” referred to in sec. ii. of the Toleration Act of 1688.&quot;<![CDATA[<a href="#_britannica_1911">(Encyclopedia Britannica, 1911)</a>]]></skos:definition>
     <skos:definition xml:lang="fr"/>
@@ -1047,7 +1046,7 @@
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
+    <skos:broaderTransitive rdf:resource="#protestantism"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#fifthMonarchists">
     <rdfs:label xml:lang="en">Fifth Monarchists</rdfs:label>
@@ -1084,7 +1083,7 @@
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
-    <skos:broaderTransitive rdf:resource="#christianity"/>
+    <skos:broaderTransitive rdf:resource="#protestantism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Religion>
@@ -1100,7 +1099,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broaderTransitive rdf:resource="#occultism"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#neo-thomism">
     <rdfs:label xml:lang="en">Neo-thomism</rdfs:label>
@@ -1149,7 +1147,7 @@
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broaderTransitive rdf:resource="#anglicanChurch"/>
+    <skos:broaderTransitive rdf:resource="#protestantism"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#quakerism">
     <rdfs:label xml:lang="en">Quakerism</rdfs:label>
@@ -1159,7 +1157,7 @@
     <skos:definition xml:lang="nl">Het Religieus Genootschap der Vrienden, beter bekend als quakers, verouderd Nederlands kwakers, vormt een groep ondogmatische gelovigen, die zijn wortels vindt in de christelijke traditie. Het leven en de overgeleverde uitspraken van Jezus vormen een belangrijke inspiratiebron. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Quakers"/>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
-    <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
+    <skos:broaderTransitive rdf:resource="#protestantism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
