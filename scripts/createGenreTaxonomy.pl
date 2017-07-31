@@ -12,7 +12,7 @@ my $model = RDF::Trine::Model->new($store);
 my $raw_file = 'file:'. $ARGV[0];
 RDF::Trine::Parser->parse_url_into_model( $raw_file, $model );
 my @allmaps ;
-my $query = RDF::Query->new('SELECT * WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sparql.cwrc.ca/ontologies/cwrc#Genre> . 
+my $query = RDF::Query->new('SELECT * WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sparql.cwrc.ca/ontologies/genre#Genre> . 
 ?uri <http://www.w3.org/2000/01/rdf-schema#label> ?label .
 FILTER(LANG(?label) = "" || LANGMATCHES(LANG(?label), "en"))
 }');
@@ -24,7 +24,6 @@ print "digraph GenreGraph {\n
  margin=0;\n";
 #ratio=\"fill\";
  # size=\"50,50\";
-
 while (my $row = $iterator->next) {
  my $astring = $row->{"uri"}->as_string();
  # print $astring ."\n";
