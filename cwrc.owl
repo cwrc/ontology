@@ -2548,7 +2548,22 @@
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
-  
+    <rdf:Description rdf:about="#dissenterProtestant">
+    <rdfs:label xml:lang="en">Dissent (Protestant)</rdfs:label>
+    <rdfs:label xml:lang="fr">dissidents (ou non-conformistes)</rdfs:label>
+    <skos:definition xml:lang="en">In English church history, a nonconformist was a Protestant who did not "conform" to the governance and usages of the established Church of England. Broad use of the term was precipitated after the Restoration of the British monarchy in 1660, when the Act of Uniformity 1662 re-established the opponents of reform within the Church of England. By the late 19th-century the term specifically included the Reformed Christians (Presbyterians, Congregationalists and other Calvinist sects), plus the Baptists and Methodists. The English Dissenters such as the Puritans who violated the Act of Uniformity 1559 — typically by practising radical, sometimes separatist, dissent — were retrospectively labelled as nonconformists.<![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">Les non-conformistes, appelés aussi Dissidents (dissenters), étaient ceux qui, en Angleterre, refusaient de suivre la doctrine de l'Église anglicane. Il s'agissait notamment des Puritains, des Presbytériens, des Anabaptistes ou des Calvinistes. On oppose les non-conformistes aux Conformistes.<![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
+    <prov:derivedFrom rdf:resource="http://dbpedia.org/page/Nonconformist"/>
+    <prov:derivedFrom rdf:resource="http://dbpedia.org/page/English_Dissenters"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
+    <skos:narrowerTransitive rdf:resource="#dissenters"/>
+    <skos:narrowerTransitive rdf:resource="#dissentingChurches"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+  </rdf:Description>
   <rdf:Description rdf:about="#dissenters">
     <rdfs:label xml:lang="en">Dissenters</rdfs:label>
     <rdfs:label xml:lang="fr">dissidents (ou non-conformistes)</rdfs:label>
@@ -2559,7 +2574,9 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
-    <dcterms:isReplacedBy rdf:resource="#jewishEthnicity"/>
+   <rdfs:comment xml:lang="en">Deprecated in favour of instance #dissentProtestant.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #dissentProtestant.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#dissentProtestant"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
@@ -2574,9 +2591,9 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
-    <rdfs:comment xml:lang="en">Deprecated in favour of instance #dissentingChristianity.</rdfs:comment>
-    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #dissentingChristianity.</rdfs:comment>
-    <dcterms:isReplacedBy rdf:resource="#dissentingChristianity"/>
+     <rdfs:comment xml:lang="en">Deprecated in favour of instance #dissentProtestant.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #dissentProtestant.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#dissentProtestant"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
