@@ -433,6 +433,8 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:sameAs rdf:resource="http://sws.geonames.org/6269131/"/>
+    <skos:broader rdf:resource="#englishLabel"/>
   </cwrc:NationalHeritage>
 <!-- Nationalities -->
 <!-- To be deprecated infavor of nationality -->
@@ -456,7 +458,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:NationalIdentity>
-    <cwrc:NationalIdentity rdf:about="#englishNationalIdentity">
+   <cwrc:NationalIdentity rdf:about="#englishNationalIdentity">
     <rdfs:label xml:lang="en">English</rdfs:label>
     <rdfs:label xml:lang="fr">Anglais</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -464,7 +466,23 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:sameAs rdf:resource="http://eurovoc.europa.eu/5438"/>  
+    <skos:broader rdf:resource="#englishLabel"/>      
   </cwrc:NationalIdentity>
+
+   <cwrc:NationalIdentity rdf:about="#welshNationalHeritage">
+    <rdfs:label xml:lang="en">Welsh</rdfs:label>
+    <rdfs:label xml:lang="fr">Gallois</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broader rdf:resource="#welshLabel"/>
+    <owl:sameAs rdf:resource="http://sws.geonames.org/2634895/"/>
+  </cwrc:NationalIdentity>
+
+  
   <owl:Class rdf:ID="Language">
     <rdfs:label xml:lang="en">Linguistic Ability</rdfs:label>
     <rdfs:label xml:lang="fr">aptitudelinguistique</rdfs:label>
@@ -496,6 +514,7 @@
     <skos:broader rdf:resource="#englishLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:sameAs rdf:resource="http://eurovoc.europa.eu/5438"/>
   </cwrc:GeographicalHeritage>
   <cwrc:GeographicalHeritage rdf:about="#jewishGeographicalHeritage">
     <rdfs:label xml:lang="en">Jewish</rdfs:label>
@@ -632,9 +651,10 @@
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#whiteLabel"/>
+    <skos:broader rdf:resource="#whiteLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broader rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#SkinColorSimpleWhite"/>
   </cwrc:RaceColour>
   <cwrc:RaceColour rdf:about="#eurasianRace">
     <rdfs:label xml:lang="en">eurasian</rdfs:label>
@@ -645,6 +665,9 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broader rdf:resource="#eurasianLabel"/>
+    <rdfs:subClassOf rdf:resource="#eurasianLabel"/>
+    <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Eurasian_(mixed_ancestry)"/>
   </cwrc:RaceColour>
   <owl:Class rdf:ID="RaceEthnicity">
     <rdfs:label xml:lang="en">race and/or ethnicity</rdfs:label>
@@ -672,7 +695,7 @@
     <foaf:name xml:lang="en">White (Ethnicity)</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <rdfs:subClassOf rdf:resource="#whiteLabel"/>
+    <skos:broader rdf:resource="#whiteLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Ethnicity>
@@ -1679,6 +1702,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </skos:Concept>
+
   <skos:Concept rdf:about="#blackLabel">
     <rdfs:label xml:lang="en">black</rdfs:label>
     <rdfs:label xml:lang="fr">noir</rdfs:label>
@@ -1690,6 +1714,20 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </skos:Concept>
+
+  <skos:Concept rdf:about="#eurasianLabel">
+    <rdfs:label xml:lang="en">eurasian</rdfs:label>
+    <rdfs:label xml:lang="fr">eurasian</rdfs:label>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+    <skos:inScheme rdf:resource="#TextLabels"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:narrower rdf:resource="#eurasianRace"/>
+  </skos:Concept>
+
+
   <skos:Concept rdf:about="#englishLabel">
     <rdf:value>english</rdf:value>
     <rdfs:label xml:lang="en">english</rdfs:label>
@@ -1702,11 +1740,16 @@
       <owl:Thing rdf:about="#EnglishNationalHeritage"/>
       <owl:Thing rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
       <owl:Thing rdf:about="#EnglishNationalIdentity"/>
+      <owl:Thing rdf:about="#england"/>
     </owl:oneOf>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:narrower rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
   </skos:Concept>
+
+
+
   <skos:Concept rdf:about="#manLabel">
     <rdf:value>man</rdf:value>
     <rdfs:label xml:lang="en">man</rdfs:label>
