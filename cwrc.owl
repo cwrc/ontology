@@ -1140,7 +1140,7 @@
     <rdfs:label xml:lang="en">Occultism/Theosophism</rdfs:label>
     <rdfs:label xml:lang="fr">occultisme</rdfs:label>
     <skos:definition xml:lang="en">Any religious or philosophic ideology based on mystical insight into the nature of God and/or divine truth. This insight is attained only through direct experience of the divine. The term is sometimes used to specifically refer to the principles of the Theosophical Society founded in New York in 1875 by Madame Blavatsky and H. S. Olcott which incorporated aspects of Buddhism and Brahmanism.</skos:definition>
-    <!-- Missing source -->
+    <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300056000"/>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
@@ -1997,7 +1997,6 @@
     <skos:definition xml:lang="fr">Une sous-catégorie de culturalForms, les termes de socialClassIdentity associent les sujets à des groupes sociaux spécifiques, en prenant en compte le fait que ces catégories et leur application aux individus sont contestables et peuvent changer au fil du temps. L’association à une classe sociale peut ou a pu être assumée par le sujet elle/lui-même ou attribuée par d’autres. Contrairement aux notes comme socialClassContext, qui contiennent les détails des discussions autour de le statut social du sujet, socialClassIdentity relie un mot ou une phrase référant à une classe spécifique qui renvoie à des périodes historiques antérieures spécifiques des Îles Britanniques. La notion de classe sociale a été construite et théorisée de diverses manières, et est d’autant plus complexe pour les femmes puisqu’elles étaient censées adopter le statut social de leur père et/ou de leur mari. La terminologie ici utilisée réfère à des groupes sociaux élémentaires qui se recoupent avec d’autres facteurs comme la richesse.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <owl:equivalentClass rdf:resource="#SocialClass"/>
     <dcterms:isReplacedBy rdf:resource="#SocialClass"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>

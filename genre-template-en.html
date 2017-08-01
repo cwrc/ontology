@@ -96,7 +96,7 @@
      
      <p>A part of the extensive bibliographic data provided by the Orlando
      project literary genre information was collected into a linked open
-     data ontology. It's primary purpose was to annotate bibliographic
+     data ontology. Its primary purpose was to annotate bibliographic
      references within the dataset with a dereferenceable vocabulary that
      could also be used to search for works of a certain genre.</p>
      
@@ -148,7 +148,7 @@
      <p>As the original Orlando project did not post definitions or
      descriptions of the genres it used, these had to be created for this
      ontology. Whenever possible, these were adapted from the linked open
-     data sets of DBpedia/Wikipedia, the Getty Art &amp; Architecture Thesaurus or from the <i><a href="http://web.cn.edu/kwheeler/lit_terms.html">Literary Terms and
+     data sets of DBpedia/Wikipedia, the Getty Art &amp; Architecture Thesaurus, or from the <i><a href="http://web.cn.edu/kwheeler/lit_terms.html">Literary Terms and
      Definitions</a></i> webpage of  
      Dr. L. Kip Wheeler. The indebtness of the description is done using
      the <a href="https://www.w3.org/TR/prov-o/">provenance ontology</a>, inline html citations and within
@@ -158,7 +158,7 @@
      <h3 id="taxonomy">4. Taxonomy construction</h3>
        <p>The Literary Genre ontology contains a taxonomy of literary genres based on a
        <a href="https://www.w3.org/2004/02/skos/">SKOS</a> approach. This
-       provides limited transitive narrower/broader definitions that be used
+       provides limited transitive narrower/broader definitions that can be used
        to search for relevant creative works using the taxonomy. The
        taxonomical tree is built on an ad-hoc topic relevance standard meant
        for document retrieval and that may not be suited to all
@@ -170,7 +170,7 @@
      <h3 id="usingthisontology">4. Using this ontology</h3>
 
      <p>This ontology was constructed to support the efforts of the CWRC
-     project while enabling it's stand-alone use by outside projects. Genres
+     project while enabling its stand-alone use by outside projects. Genres
      exist both as typed instances of the <a href="#Genre">&lt;genre:Genre&gt;</a> class and as
      <a href="https://www.w3.org/2009/08/skos-reference/skos.html#Concept">&lt;skos:Concept&gt;</a>s
      of a Genre <a href="https://www.w3.org/2009/08/skos-reference/skos.html#ConceptScheme">&lt;ConceptScheme&gt;</a>. Instances can be both accessed directly or
@@ -178,6 +178,7 @@
      <a href="#hasGenre">&lt;genre:hasGenre&gt;</a> with no <a href="https://www.w3.org/TR/owl-ref/#domain-def">&lt;rdfs:domain&gt;</a>
      permits the easy assignment of a genre to a work without committing to
      a specific type of creative work.</p>
+      <p>This ontology can be paired with the <a href="http://sparql.cwrc.ca/">CWRC ontology</a>, though it is certainly not required. The focus of the CWRC ontology is on &quot;describing and relating aspects literary studies and literary history, with a strong emphasis on gender and intersectional analysis indebted to its roots in The Orlando Project, a history of women’s writing in the British Isles.&quot; Given the CWRC ontology's complexity and specificity, we have decided to split it off from the genre ontology so that users may reap the joys of having a taxonomy of genre at their fingertips without having to import some of CWRC's more contentious ontological assertions (eg. cultural formation) wholesale. We do, however, hope users will engage with both ontologies.</p>
     <h3 id="definition_list">7. Global Cross-Reference</h3>
     
     <!-- The list of classes and properties goes here -->
