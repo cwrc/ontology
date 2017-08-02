@@ -233,7 +233,7 @@
   <owl:Class rdf:ID="Address">
     <rdfs:label xml:lang="en">address</rdfs:label>
     <rdfs:label xml:lang="fr">adresse</rdfs:label>
-    <skos:definition xml:lang="en">A mailing or street address.</skos:definition>
+    <skos:definition xml:lang="en">A mailling or street address.</skos:definition>
     <skos:definition xml:lang="fr">Une adresse postale ou de rue.</skos:definition>
     <skos:definition xml:lang="en">The postal address is the equivalent of a schema.org address and inherits all of the data from that vocabulary to markup a modern postal address.</skos:definition>
     <owl:sameAs rdf:resource="http://schema.org/PostalAddress"/>
@@ -247,7 +247,7 @@
     <rdfs:label xml:lang="fr">endroit</rdfs:label>
     <foaf:name xml:lang="en">Place</foaf:name>
     <foaf:name xml:lang="fr">Endroit</foaf:name>
-    <skos:definition xml:lang="en">A named place, whether incorporated, settled or occupied.</skos:definition>
+    <skos:definition xml:lang="en">A named place, wheter incorporated, settled or occupied.</skos:definition>
     <skos:definition xml:lang="fr">Un endroit nommé, qu'il soit déclaré, investi ou occupé.</skos:definition>
     <skos:definition xml:lang="en">Could be a populated place according to Geonames, but not necessarily so. Some places, such as cross-roads are named without having a population or settlement per say. The geonames is inconsistent in this regards in that a populated place can be abandoned.</skos:definition>
     <owl:equivalentClass rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -1068,7 +1068,7 @@
     <rdfs:label xml:lang="en">Dissenting Christianity</rdfs:label>
     <rdfs:label xml:lang="fr">Dissidence anglaise</rdfs:label>
     <skos:definition xml:lang="en">&quot;One who dissents or disagrees in matters of opinion, belief, &amp;c. The term 'dissenter' is, however, practically restricted to the special sense of a member of a religious body in England which has, for one reason or another, separated from the Established Church. Strictly, the term includes the English Roman Catholics, who in the original draft of the Relief Act of 1791 were styled “Protesting Catholic Dissenters.” It is in practice, however, restricted to the “Protestant Dissenters” referred to in sec. ii. of the Toleration Act of 1688.&quot;<![CDATA[<a href="#_britannica_1911">(Encyclopedia Britannica, 1911)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">&quot;Les Dissidents anglais (en anglais : English Dissenters ou nonconformists) sont des protestants anglais qui firent sécession de l'Église d'Angleterre. Ils s'opposaient à l'interférence de l'État dans les affaires religieuses et fondèrent leurs propres communautés du XVIe au XVIIIe siècle. Les Dissidents triomphèrent un temps lors du gouvernement d'Oliver Cromwell, mais après la Restauration de la monarchie, en 1660, l'épiscopat fut rétabli et les droits civiques des Dissidents limités, dès les années 1660, par une série de lois dont l’Act of Uniformity, le Corporation Act et le Test Act. Ce n'est qu'en 1828 que ces lois discriminatoires sont abrogées. Parmi les Dissidents les plus connus, on peut citer le fondateur de la secte des Puritains Henry Jacob (en) (1563-1624), l'éditeur Joseph Johnson (1738-1809), la mystique Jane Leade (1623-1704), le philosophe Richard Price (1723-1791), ou encore le chimiste et théologien Joseph Priestley (1733-1804), ainsi que le fondateur d'une académie dissidente à Kendal (Cumbria), le révérend Caleb Rotherham, qui instruisit l'un des pères de la Révolution industrielle, le fondeur et beau-frère de Joseph Priestley, John Wilkinson.&quot;<![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1133,7 +1133,7 @@
     <skos:definition xml:lang="en">Neo-Scholasticism (also known as neo-scholastic Thomism or neo-Thomism because of the great influence of the writings of St. Thomas Aquinas on the movement), is a revival and development of medieval scholasticism in Roman Catholic theology and philosophy which began in the second half of the 19th century.<![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Neo-Scholasticism"/>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">&quot;Courant de pensée philosophico-théologique de type thomiste, développé à partir XIXe siècle pour répondre aux objections posées au christianisme catholique par la modernité.&quot;<![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -4250,40 +4250,26 @@
 
   <!-- Labels -->
   <skos:ConceptScheme rdf:about="#TextLabels">
-    <rdf:type resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">text labels</rdfs:label>
     <rdfs:label xml:lang="fr">étiquette</rdfs:label>
     <skos:definition xml:lang="en">Collection of all ambiguous labels within the Orlando markup.</skos:definition>
-    <skos:definition xml:lang="fr"/>  
+    <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:related rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
   </skos:ConceptScheme>
-  <!-- this is essentially a clone of the xkos-xl properly, except for the uniqueness restriction since we have translations. -->
-  <owl:DatatypeProperty  rdf:ID="literalForm">
-    <rdfs:range rdf:resource="#TextLabels"/>
-    <rdfs:label xml:lang="en">has literal form</rdfs:label>
-    <rdfs:label xml:lang="fr">a une forme litteralle</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:DatatypeProperty>
-  
   <!-- add rdfvalue to everything -->
   <skos:Concept rdf:about="#whiteLabel">
     <rdfs:label xml:lang="en">white</rdfs:label>
     <rdfs:label xml:lang="fr">blanc</rdfs:label>
-    <cwrc:literalForm xml:lang="en">white</cwrc:literalForm>
-    <cwrc:literalForm xml:lang="fr">blanc</cwrc:literalForm>
     <foaf:name xml:lang="en">white</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="#TextLabels"/>
+    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#whiteEthnicity"/>
       <owl:Thing rdf:about="#whiteRace"/>
     </owl:oneOf>
     <skos:inScheme rdf:resource="#TextLabels"/>
-    <rdf:type rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </skos:Concept>
@@ -4292,11 +4278,9 @@
     <rdfs:label xml:lang="en">black</rdfs:label>
     <rdfs:label xml:lang="fr">noir</rdfs:label>
     <foaf:name xml:lang="en">black</foaf:name>
-    <cwrc:literalForm xml:lang="en">black</cwrc:literalForm>
-    <cwrc:literalForm xml:lang="fr">noir</cwrc:literalForm>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="#TextLabels"/>
+    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -4304,12 +4288,10 @@
 
   <skos:Concept rdf:about="#eurasianLabel">
     <rdfs:label xml:lang="en">eurasian</rdfs:label>
-    <rdfs:label xml:lang="fr">eurasien</rdfs:label>
-    <cwrc:literalForm xml:lang="en">eurasian</cwrc:literalForm>
-    <cwrc:literalForm xml:lang="fr">eurasien</cwrc:literalForm>
+    <rdfs:label xml:lang="fr">eurasian</rdfs:label>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="#TextLabels"/>
+    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -4321,11 +4303,10 @@
     <rdf:value>english</rdf:value>
     <rdfs:label xml:lang="en">english</rdfs:label>
     <rdfs:label xml:lang="fr">englais</rdfs:label>
-    <cwrc:literalForm xml:lang="en">english</cwrc:literalForm>
-    <cwrc:literalForm xml:lang="fr">anglais</cwrc:literalForm>
+    <foaf:name xml:lang="en">english</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="#TextLabels"/>
+    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#EnglishNationalHeritage"/>
       <owl:Thing rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
@@ -4344,11 +4325,10 @@
     <rdf:value>man</rdf:value>
     <rdfs:label xml:lang="en">man</rdfs:label>
     <rdfs:label xml:lang="fr">homme</rdfs:label>
-    <cwrc:literalForm xml:lang="en">man</cwrc:literalForm>
-    <cwrc:literalForm xml:lang="fr">homme</cwrc:literalForm>
+    <foaf:name xml:lang="en">Man (Label)</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="#TextLabels"/>
+    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#man"/>
     </owl:oneOf>
@@ -4360,11 +4340,10 @@
     <rdf:value>woman</rdf:value>
     <rdfs:label xml:lang="en">woman</rdfs:label>
     <rdfs:label xml:lang="fr">femme</rdfs:label>
-    <cwrc:literalForm xml:lang="en">woman</cwrc:literalForm>
-    <cwrc:literalForm xml:lang="fr">femme</cwrc:literalForm>
+    <foaf:name xml:lang="en">Woman (Label)</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="#TextLabels"/>
+    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#woman"/>
     </owl:oneOf>
@@ -4375,11 +4354,10 @@
   <skos:Concept rdf:about="#jewishLabel">
     <rdfs:label xml:lang="en">Jewish</rdfs:label>
     <rdfs:label xml:lang="fr">Juif</rdfs:label>
-    <cwrc:literalForm xml:lang="en">Jewish</cwrc:literalForm>
-    <cwrc:literalForm xml:lang="fr">Juif</cwrc:literalForm>
+    <foaf:name xml:lang="en">Jewish</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="#TextLabels"/>
+    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#judaism"/>
       <owl:Thing rdf:about="#jewishEthnicity"/>
@@ -4393,11 +4371,10 @@
   <skos:Concept rdf:about="#englandLabel">
     <rdfs:label xml:lang="en">England</rdfs:label>
     <rdfs:label xml:lang="fr">Angleterre</rdfs:label>
-    <cwrc:literalForm xml:lang="en">England</cwrc:literalForm>
-    <cwrc:literalForm xml:lang="fr">Angleterre</cwrc:literalForm>
+    <foaf:name xml:lang="en">England</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="#TextLabels"/>
+    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#england"/>
     </owl:oneOf>
@@ -4608,7 +4585,7 @@
       <foaf:name xml:lang="en">Male (Label)</foaf:name>
       <skos:definition xml:lang="en"/>
       <skos:definition xml:lang="fr"/>
-      <rdf:type rdf:resource="#TextLabels"/>
+      <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
       <owl:oneOf rdf:parseType="Collection">
         <owl:Thing rdf:about="#genderManMale"/>
         <owl:Thing rdf:about="#maleSex"/>
@@ -4628,7 +4605,7 @@
       <foaf:name xml:lang="en">Female (Label)</foaf:name>
       <skos:definition xml:lang="en"/>
       <skos:definition xml:lang="fr"/>
-      <rdf:type rdf:resource="#TextLabels"/>
+      <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
       <owl:oneOf rdf:parseType="Collection">
         <owl:Thing rdf:about="#genderWomanFemale"/>
         <owl:Thing rdf:about="#femaleSex"/>

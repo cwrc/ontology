@@ -51,63 +51,68 @@
     rdfs:label "Cultural Formation Context for Sophia King"@en ;
     oa:hasBody cwrc:woman ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/King12345> .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/sophiaKing_Main_Document> .
 
 <http://www.cwrc.ca/cwrcdata/KingCulturalFormation>
     a cwrc:CulturalFormationContext ;
     rdfs:label "Cultural Formation Context for Sophia King"@en ;
     oa:hasBody cwrc:indigent ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
-    prov:derivedFrom cwrc:King12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/sophiaKing1> .
 
 <http://www.cwrc.ca/cwrcdata/KingCulturalFormation>
     a cwrc:CulturalFormationContext ;
     rdfs:label "Cultural Formation Context for Sophia King"@en ;
     oa:hasBody cwrc:gentry ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
-    prov:derivedFrom cwrc:King12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/sophiaKing1> .
 
 <http://www.cwrc.ca/cwrcdata/KingCulturalFormation>
     a cwrc:CulturalFormationContext ;
     rdfs:label "Cultural Formation Context for Sophia King"@en ;
     oa:hasBody cwrc:professional ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
-    prov:derivedFrom cwrc:King12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/sophiaKing1> .
 
 <http://www.cwrc.ca/cwrcdata/KingCulturalFormation>
     a cwrc:CulturalFormationContext ;
     rdfs:label "Cultural Formation Context for Sophia King"@en ;
     oa:hasBody geonames:2264397, cwrc:portugal ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
-    prov:derivedFrom cwrc:King12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/sophiaKing1> .
     
 <http://www.cwrc.ca/cwrcdata/KingCulturalFormation>
     a cwrc:CulturalFormationContext ;
     rdfs:label "Cultural Formation Context for Sophia King"@en ;
     oa:hasBody cwrc:jewishEthnicity ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
-    prov:derivedFrom cwrc:King12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/sophiaKing1> .
 
 <http://www.cwrc.ca/cwrcdata/KingCulturalFormation>
     a cwrc:CulturalFormationContext ;
     rdfs:label "Cultural Formation Context for Sophia King"@en ;
     oa:hasBody cwrc:judaism ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
-    prov:derivedFrom cwrc:King12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/sophiaKing1> .
 
 <http://www.cwrc.ca/cwrcdata/KingCulturalFormation>
     a cwrc:CulturalFormationContext ;
     rdfs:label "Cultural Formation Context for Sophia King"@en ;
     oa:hasBody cwrc:radical ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
-    prov:derivedFrom cwrc:King12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/sophiaKing1> .
 
 <http://www.cwrc.ca/cwrcdata/KingCulturalFormation>
     a cwrc:CulturalFormationContext ;
     rdfs:label "Cultural Formation Context for Sophia King"@en ;
     oa:hasBody cwrc:england ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
-    prov:derivedFrom cwrc:King12345 .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/sophiaKing1> .
+
+<http://www.cwrc.ca/cwrcdata/sophiaKing_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Sophia King"@en ;
+    dc:creator cwrc:originalOrlandoAuthor .
 
 # ANNA LEONOWENS
 <http://www.cwrc.ca/cwrcdata/AnnaLeonowens>
@@ -127,17 +132,12 @@
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleonowens_Main_Document> .
 
-<http://www.cwrc.ca/cwrcdata/annaleonowens_Main_Document>
-    a foaf:Document;
-    rdfs:label "Orlando Markup on AnnaLeonowens"@en ;
-    dc:creator cwrc:originalOrlandoAuthor .
-
 <http://www.cwrc.ca/cwrcdata/LEONOWENSReligionContext>
     a cwrc:ReligionContext ;
     rdfs:label "Religion Context for Anna Leonowens"@en ;
     oa:hasBody cwrc:presbyterianism ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleonowens1> .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaLeonowens1> .
 
  <http://www.cwrc.ca/cwrcdata/LEONOWENSReligionContext>
     a cwrc:ReligionContext ;
@@ -181,6 +181,11 @@
     oa:hasBody cwrc:whiteEthnicity ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleonowens1>.
+
+<http://www.cwrc.ca/cwrcdata/annaLeonowens_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Anna Leonowens"@en ;
+    dc:creator cwrc:originalOrlandoAuthor .
 
 # CHARLOTTE DACRE
 <http://www.cwrc.ca/cwrcdata/CharlotteDacre>
@@ -278,6 +283,11 @@
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre1> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre2> .
 
+<http://www.cwrc.ca/cwrcdata/charlotteDacre_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Charlotte Dacre"@en ;
+    dc:creator cwrc:originalOrlandoAuthor .
+
 #ELIZABETH SARAH GOOCH
 <http://www.cwrc.ca/cwrcdata/ElizabethSarahGooch>
     cwrc:hasGender cwrc:genderWomanFemale ;
@@ -327,8 +337,13 @@
     a foaf:Person ;
     rdfs:label "Father of Elizabeth Sarah Gooch"@en ;
     cwrc:fatherOf <http://www.cwrc.ca/cwrcdata/ElizabethSarahGooch>;
-    cwrc:hasReligion cwrc:judaism .
+    cwrc:hasReligion cwrc:judaism ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/elizabethSarahGooch1> .
+
+<http://www.cwrc.ca/cwrcdata/elizabethSarahGooch_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Elizabeth Sarah Gooch"@en ;
+    dc:creator cwrc:originalOrlandoAuthor .
  
 # GRACE AGUILAR
 <http://www.cwrc.ca/cwrcdata/GraceAguilar>
@@ -351,7 +366,7 @@
     rdfs:label "Cultural Formation Context for Grace Aguilar"@en ;
     oa:hasBody cwrc:woman ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar_Main_Document> .
     
 <http://www.cwrc.ca/cwrcdata/AGUILARCulturalFormation>
     a cwrc:CulturalFormationContext ;
@@ -477,6 +492,11 @@
     cwrc:hasNationalHeritage cwrc:spain ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> .
 
+<http://www.cwrc.ca/cwrcdata/graceAguilar_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Grace Aguilar"@en ;
+    dc:creator cwrc:originalOrlandoAuthor .
+ 
 # AMY LEVY
 # check for double input of Religion self-reported, once under Religion tag, once outside KM
 <http://www.cwrc.ca/cwrcdata/AmyLevy>
@@ -554,6 +574,11 @@
     oa:hasBody cwrc:christianity ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AmyLevy> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/amyLevy1> .
+
+<http://www.cwrc.ca/cwrcdata/amyLevy_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Amy Levy"@en ;
+    dc:creator cwrc:originalOrlandoAuthor .
 	     
 # CHARLOTTE MONTEFIORE
 <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore>
@@ -570,7 +595,7 @@
     rdfs:label "Cultural Formation Context for Charlotte Montefiore"@en ;
     oa:hasBody cwrc:woman ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteMontefiore1> .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteMontefiore_Main_Document> .
 
 <http://www.cwrc.ca/cwrcdata/MONTEFIORECulturalFormation>
     a cwrc:CulturalFormationContext ;
@@ -607,6 +632,11 @@ cwrc:CharlotteMontefioreFather
     cwrc:hasNationalHeritage cwrc:italian ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteMontefiore1> .
 
+<http://www.cwrc.ca/cwrcdata/charlotteMontefiore_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Charlotte Montefiore"@en ;
+    dc:creator cwrc:originalOrlandoAuthor .
+
 # JULIA FRANKAU
 <http://www.cwrc.ca/cwrcdata/JuliaFrankau>
     cwrc:hasGender cwrc:genderWomanFemale ;
@@ -620,7 +650,7 @@ cwrc:CharlotteMontefioreFather
     rdfs:label "Cultural Formation Context for Julia Frankau"@en ;
     oa:hasBody cwrc:woman ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/JuliaFrankau> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/juliaFrankau1> .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/juliaFrankau_Main_Document> .
 
 <http://www.cwrc.ca/cwrcdata/FRANKAUEReligionContext>
     a cwrc:ReligionContext ;
@@ -635,6 +665,11 @@ cwrc:CharlotteMontefioreFather
     oa:hasBody cwrc:judaism ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/JuliaFrankau> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/juliaFrankau1> .
+
+<http://www.cwrc.ca/cwrcdata/juliaFrankau_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Julia Frankau"@en ;
+    dc:creator cwrc:originalOrlandoAuthor .
 
 # VITA SACKVILLE-WEST
 <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest>
@@ -653,7 +688,7 @@ cwrc:CharlotteMontefioreFather
     rdfs:label "Cultural Formation Context for Vita Sackville West"@en ;
     oa:hasBody cwrc:woman ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/SackvilleWest12345> .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/vitaSackvilleWest_Main_Document> .
     
 <http://www.cwrc.ca/cwrcdata/SACKVILLEWESTClassIssueContext>
     a cwrc:ClassIssueContext ;
@@ -701,7 +736,7 @@ cwrc:CharlotteMontefioreFather
     a foaf:Person ;
     foaf:name "Josefa Duran (Pepita)" ;
     cwrc:grandmotherOf <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
-    cwrc:hasNationalIdentity cwrc:spanish .
+    cwrc:hasNationalIdentity cwrc:spanish ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/SackvilleWest2> .
 
 <http://www.cwrc.ca/cwrcdata/JosefaDuran>
@@ -758,6 +793,11 @@ cwrc:CharlotteMontefioreFather
     oa:hasBody cwrc:englishNationality ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/virginiaWoolf1> .    
+
+<http://www.cwrc.ca/cwrcdata/vitaSackVilleWest_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on Vita Sackville West"@en ;
+    dc:creator cwrc:originalOrlandoAuthor .
     
  #Works go here   
 
@@ -1010,12 +1050,13 @@ cwrc:CharlotteMontefioreFather
 
 #snippets go here
 
-<http://www.cwrc.ca/cwrcdata/King12345>
+<http://www.cwrc.ca/cwrcdata/sophiaKing1>
     rdfs:label """SK's Sephardic Jewish Portuguese birth, her early years in Judaism, and her father's boyhood as a street urchin and his high-profile but scandalous career (associating with political radicals while lending money to socialites and eventually marrying into the English nobility), made her an outsider in English society."""@en ;
 a nif:Context, nif:Sentence ;
+    dc:partOf <http://www.cwrc.ca/cwrcdata/sophiaKing_Main_Document> ;
     prov:createdBy cwrc:originalOrlandoAuthor .
 
-<http://www.cwrc.ca/cwrcdata/annaleonowens1>
+<http://www.cwrc.ca/cwrcdata/annaLeonowens1>
     rdfs:label """Although AL herself, in attempting to adopt an unequivocally English identity, implicitly claimed that she was white, evidence suggests that while
 her father was probably Welsh (he had lived in Middlesex) and presumably white, her mother was quite possibly Eurasian. If this is the case then
 AL suppressed her mixed-race origins. Anna was multi-lingual and from childhood could speak Hindustani, English and Guzerati (also called 
@@ -1026,7 +1067,7 @@ not to be something of a Buddhist, and too good a Buddhist not to be something o
     dc:partOf <http://www.cwrc.ca/cwrcdata/annaleonowens_Main_Document> ;
     prov:createdBy cwrc:originalOrlandoAuthor .
 
-<http://www.cwrc.ca/cwrcdata/annaleonowens2>
+<http://www.cwrc.ca/cwrcdata/annaLeonowens2>
     rdfs:label """AL often visited the Reclining Buddha at the temple Wat Po in Bangkok. Her Thai teacher gave her frequent instruction on Buddha's teachings. Later in
 Siamese Harem Life, Anna recalled that she had learned that the prophet's object was not only a religious but a social revolution. A good deal of what
 was venerated as religion he found to be merely social usage, for which a Divine sanction was feigned. [Buddha], without hesitation, rejected all of
@@ -1041,11 +1082,13 @@ Buddha boldly expounded to the people that, according to their own books, all me
 of her father's highly visible but anomalous character, as a Londoner but an outsider, an ex-street-child and boxer, author of inflammatory political pamphlets, 
 moving in high society and privy to its financial secrets while not himself a member of it."""@en ;
     a nif:Context, nif:Sentence ;
+    dc:partOf <http://www.cwrc.ca/cwrcdata/charlotteDacre_Main_Document> ;
     prov:createdBy cwrc:originalOrlandoAuthor .
 
 <http://www.cwrc.ca/cwrcdata/charlotteDacre2>
     rdfs:label """The Anglican baptism of CD's children may—perhaps—represent a final severing of her Jewish roots."""@en ;
     a nif:Context, nif:Sentence ;
+    dc:partOf <http://www.cwrc.ca/cwrcdata/charlotteDacre_Main_Document> ;
     prov:createdBy cwrc:originalOrlandoAuthor .
     
 <http://www.cwrc.ca/cwrcdata/elizabethSarahGooch1>    
@@ -1053,6 +1096,7 @@ moving in high society and privy to its financial secrets while not himself a me
     she was baptised into the Church of England on 4 October in the year of her birth, aged just over three months. As an orphan, the sole heiress to her 
     late father's wealth, she was a privileged outsider in English society, an unconventional version of a conventional literary heroine."""@en ;
     a nif:Context, nif:Sentence ;
+    dc:partOf <http://www.cwrc.ca/cwrcdata/elizabethSarahGooch_Main_Document> ;
     prov:createdBy cwrc:originalOrlandoAuthor .
 
 <http://www.cwrc.ca/cwrcdata/graceAguilar1>	
@@ -1068,6 +1112,7 @@ avers that she and her husband could only with difficulty get GA to speak on rel
 —was obvious to those who knew her, and she may have been a proto-Zionist the natural and unaffected eloquence of her words, when referring to the past history 
 of the Jews . . . and the positive radiance of her countenance when she spoke of the gathering of the tribes at Jerusalem, could never be forgotten."""@en ;
     a nif:Context, nif:Sentence ;
+    dc:partOf <http://www.cwrc.ca/cwrcdata/graceAguilar_Main_Document> ;
     prov:createdBy cwrc:originalOrlandoAuthor .
     
 <http://www.cwrc.ca/cwrcdata/graceAguilar2>
@@ -1079,6 +1124,7 @@ if they diverged in form. She later argued in Sabbath Thoughts that Christianity
 for the Jewish messiah. Her lack of adequate religious education meant that she frequently had to rely on Christian texts about Judaism. Critic
 Beth-Zion Lask Abrahams joins some contemporary critics in calling her a Jewish Protestant; however, others have argued that though she was reformist,
 she was a dedicated Jew nonetheless, and above all."""@en ;
+    dc:partOf <http://www.cwrc.ca/cwrcdata/graceAguilar_Main_Document> ;
     a nif:Context, nif:Sentence ;
     prov:createdBy cwrc:originalOrlandoAuthor .
     
@@ -1087,11 +1133,13 @@ she was a dedicated Jew nonetheless, and above all."""@en ;
 more freely than most English people. They thought of themselves as wholly assimilated, and seem to have practised the Jewish religion only sketchily. They 
 occasionally attended the Reform synagogue in Upper Berkeley Street; the children visited Christian churches with their governess."""@en ;
  	a nif:Context, nif:Sentence ;
+    dc:partOf <http://www.cwrc.ca/cwrcdata/amyLevy_Main_Document> ;
     prov:createdBy cwrc:originalOrlandoAuthor .
 
 <http://www.cwrc.ca/cwrcdata/amyLevy2>
 	rdfs:label """AL early developed strong erotic attachments to women. She wrote of these openly, but may or may not have expressed them physically."""@en ;
  	a nif:Context, nif:Sentence ;
+    dc:partOf <http://www.cwrc.ca/cwrcdata/amyLevy_Main_Document> ;
     prov:createdBy cwrc:originalOrlandoAuthor .
 
 <http://www.cwrc.ca/cwrcdata/amyLevy3>
@@ -1100,11 +1148,13 @@ She apparently thought of herself as unattractive to a degree quite at odds with
 of Jewish people with exaggeratedly stereotyped racial characteristics. After visiting a synagogue in Dresden she wrote, "the German Hebrew makes me feel, as
  a rule, that the Anti-Semitic movement is a most just & virtuous one."""@en ;
  	a nif:Context, nif:Sentence ;
+    dc:partOf <http://www.cwrc.ca/cwrcdata/amyLevy_Main_Document> ;
     prov:createdBy cwrc:originalOrlandoAuthor .
 
 <http://www.cwrc.ca/cwrcdata/amyLevy4>
     rdfs:label """Her time in Dresden crystallized her mixed feelings about the practice of her religion. Visiting the synagogue (for Yom Kippur) disgusted her: she said that German Jews made her feel anti-semitic."""@en ;
  	a nif:Context, nif:Sentence ;
+    dc:partOf <http://www.cwrc.ca/cwrcdata/amyLevy_Main_Document> ;
     prov:createdBy cwrc:originalOrlandoAuthor .
     
 <http://www.cwrc.ca/cwrcdata/charlotteMontefiore1> 
@@ -1112,6 +1162,7 @@ of Jewish people with exaggeratedly stereotyped racial characteristics. After vi
 members of the 'Cousinhood', "that circle of aristocratic Jewish families who held sway over the community's governance, and who were in contact with MPs on 
 issues of emancipation."""@en ;
 	a nif:Context, nif:Sentence ;
+    dc:partOf <http://www.cwrc.ca/cwrcdata/charlotteMontefiore_Main_Document> ;
     prov:createdBy cwrc:originalOrlandoAuthor .
     
 <http://www.cwrc.ca/cwrcdata/juliaFrankau1> 
@@ -1119,6 +1170,7 @@ issues of emancipation."""@en ;
 Gertner Zatlin finds in her "acculturation bordering on assimilation," but she remained a practising Jew until her husband's refusal to circumcise their eldest 
 son resulted in their expulsion from their Reform synagogue. JF therefore became assimilated through forces beyond her control."""@en ;
 	a nif:Context, nif:Sentence ;
+    dc:partOf <http://www.cwrc.ca/cwrcdata/juliaFrankau_Main_Document> ;
     prov:createdBy cwrc:originalOrlandoAuthor .
 
 <http://www.cwrc.ca/cwrcdata/vitaSackvilleWest1>
@@ -1127,6 +1179,7 @@ the estate given to Thomas Sackville by Elizabeth I in 1566. Vita herself could 
 aristocrat, she was a snob: she referred constantly to 'bedints' (a family term for the lower classes, or those whose class status did not pass muster), and 
 wrote in 1927: "How I hate the proletariat."""@en ;
  	a nif:Context, nif:Sentence ;
+    dc:partOf <http://www.cwrc.ca/cwrcdata/vitaSackvilleWest_Main_Document> ;
     prov:createdBy cwrc:originalOrlandoAuthor .
     
 <http://www.cwrc.ca/cwrcdata/vitaSackvilleWest2>
@@ -1134,12 +1187,14 @@ wrote in 1927: "How I hate the proletariat."""@en ;
 Pepita (whose biography she wrote), and the Sackville line (through her grandfather Lionel, second Baron Sackville). She saw the Spanish side of her nature as 
 passionate and perverse and the English side of her nature as caring and controlled. Many of her works explore this theme of duality."""@en ;
  	a nif:Context, nif:Sentence ;
+    dc:partOf <http://www.cwrc.ca/cwrcdata/vitaSackvilleWest_Main_Document> ;
     prov:createdBy cwrc:originalOrlandoAuthor .    
 
 <http://www.cwrc.ca/cwrcdata/vitaSackvilleWest3>
 	rdfs:label """VSW was bisexual. She explicitly linked her lesbian desires and behaviour to her Spanish ancestry. She had great magnetism and sexual energy: 
 people of both sexes fell in love with her and in some cases developed obsessions with her."""@en ;
  	a nif:Context, nif:Sentence ;
+    dc:partOf <http://www.cwrc.ca/cwrcdata/vitaSackvilleWest_Main_Document> ;
     prov:createdBy cwrc:originalOrlandoAuthor .
     
 <http://www.cwrc.ca/cwrcdata/virginiaWoolf1>
@@ -1148,12 +1203,12 @@ since publication of "A Sketch of the Past," "22 Hyde Park Gate," and "Old Bloom
 her Bloomsbury friends to the Victorian social management of sexuality, which they saw as based on possessiveness, jealousy, and exploitation. Her own erotic 
 relationships were with individuals of both sexes."""@en ;
     a nif:Context, nif:Sentence ;
+    dc:partOf <http://www.cwrc.ca/cwrcdata/virginiaWoolf_Main_Document> ;
     prov:createdBy cwrc:originalOrlandoAuthor .
 
 cwrc:originalOrlandoAuthor
     a foaf:Group ;
     foaf:name "Members of the Orlando Project." .
-
 
 #ONTOLOGY 
 
