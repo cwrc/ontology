@@ -127,6 +127,11 @@
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleonowens_Main_Document> .
 
+<http://www.cwrc.ca/cwrcdata/annaleonowens_Main_Document>
+    a foaf:Document;
+    rdfs:label "Orlando Markup on AnnaLeonowens"@en ;
+    dc:creator cwrc:originalOrlandoAuthor .
+
 <http://www.cwrc.ca/cwrcdata/LEONOWENSReligionContext>
     a cwrc:ReligionContext ;
     rdfs:label "Religion Context for Anna Leonowens"@en ;
@@ -321,9 +326,9 @@
 <http://www.cwrc.ca/cwrcdata/ElizabethSarahGoochFather>
     a foaf:Person ;
     rdfs:label "Father of Elizabeth Sarah Gooch"@en ;
-    loc:father <http://www.cwrc.ca/cwrcdata/elizabethSarahGooch>;
+    cwrc:fatherOf <http://www.cwrc.ca/cwrcdata/ElizabethSarahGooch>;
     cwrc:hasReligion cwrc:judaism .
-#	prov:derivedFrom textnode;
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/elizabethSarahGooch1> .
  
 # GRACE AGUILAR
 <http://www.cwrc.ca/cwrcdata/GraceAguilar>
@@ -461,14 +466,14 @@
 <http://www.cwrc.ca/cwrcdata/EmanuelAguilar>
     a foaf:Person;
     foaf:name "Emanuel Aguilar" ;
-    cwrc:father <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    cwrc:fatherOf <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
     cwrc:hasNationalHeritage cwrc:portugal ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> .
 
 <http://www.cwrc.ca/cwrcdata/SarahDiasFernandesAguilar>
     a foaf:Person ;
     foaf:name "Sarah (Dias Fernandes) Aguilar" ;
-    cwrc:mother <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
+    cwrc:motherOf <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
     cwrc:hasNationalHeritage cwrc:spain ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> .
 
@@ -550,7 +555,6 @@
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AmyLevy> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/amyLevy1> .
 	     
-
 # CHARLOTTE MONTEFIORE
 <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore>
     cwrc:hasGender cwrc:woman ;
@@ -601,7 +605,7 @@ cwrc:CharlotteMontefioreFather
     foaf:name "Abraham Montefiore" ;
     cwrc:fatherOf <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
     cwrc:hasNationalHeritage cwrc:italian ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/Montefiore12345> .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteMontefiore1> .
 
 # JULIA FRANKAU
 <http://www.cwrc.ca/cwrcdata/JuliaFrankau>
@@ -634,7 +638,7 @@ cwrc:CharlotteMontefioreFather
 
 # VITA SACKVILLE-WEST
 <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest>
-	cwrc:hasGender cwrc:woman ;
+    cwrc:hasGender cwrc:woman ;
     cwrc:hasSocialClass cwrc:nobility ;
     cwrc:hasNationalHeritageSelfReported cwrc:spanish ;
     cwrc:hasEthnicitySelfReported cwrc:gipsy ;
@@ -696,33 +700,32 @@ cwrc:CharlotteMontefioreFather
 <http://www.cwrc.ca/cwrcdata/JosefaDuran>
     a foaf:Person ;
     foaf:name "Josefa Duran (Pepita)" ;
-    cwrc:grandmother <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+    cwrc:grandmotherOf <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
     cwrc:hasNationalIdentity cwrc:spanish .
-#    prov:derivedFrom textnode .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/SackvilleWest2> .
 
 <http://www.cwrc.ca/cwrcdata/JosefaDuran>
     a foaf:Person ;
     foaf:name "Josefa Duran (Pepita)" ;
     cwrc:grandmotherOf <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
-    cwrc:hasEthnicity cwrc:gipsy .
-#    prov:derivedFrom textnode .
+    cwrc:hasEthnicity cwrc:gipsy ;
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/SackvilleWest2> .
 
 <http://www.cwrc.ca/cwrcdata/VitaSackvilleWestGrandfather>
     a foaf:Person ;
     foaf:name "Vita Sackville West's grandfather" ;
     cwrc:grandfatherOf <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
-    cwrc:hasEthnicity cwrc:gipsy .
-#    prov:derivedFrom textnode .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/SackvilleWest2> .
 
 # VIRGINIA WOOLF
 <http://www.cwrc.ca/cwrcdata/VirginiaWoolf>
-    cwrc:hasGender cwrc:genderWomanFemale ;
+    cwrc:hasGender cwrc:woman ;
     cwrc:hasSocialRankSelfReported cwrc:professional ;
     cwrc:hasReligion cwrc:societyOfFriends, cwrc:quakers, cwrc:agnosticism ;
 # add cwrc:evangelical once in dataset KM
     cwrc:hasNationality cwrc:englishNationality ;
     cwrc:hasSexualitySelfReported cwrc:bisexual ;
-	cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/ElizabethI> ;
+    cwrc:alludesExplicitlyTo <http://www.cwrc.ca/cwrcdata/ElizabethI> ;
     cwrc:respondsTo <http://www.cwrc.ca/cwrcdata/EmbassyLetters> ;
     a foaf:Person ;
     foaf:name "Virginia Woolf" .
@@ -1020,6 +1023,7 @@ Gujarati), which was taught to her by her mother. She also became fluent in Sans
 She knew some Russian from her travels. AL was Presbyterian but also studied Hinduism and Buddhism. She believed that she was too good a Christian 
 not to be something of a Buddhist, and too good a Buddhist not to be something of a Christian."""@en ;
     a nif:Context, nif:Sentence ;
+    dc:partOf <http://www.cwrc.ca/cwrcdata/annaleonowens_Main_Document> ;
     prov:createdBy cwrc:originalOrlandoAuthor .
 
 <http://www.cwrc.ca/cwrcdata/annaleonowens2>
@@ -1029,6 +1033,7 @@ was venerated as religion he found to be merely social usage, for which a Divine
 this . . . . His greatest blow to the old religion, however, was in his explicit repudiation of caste. He offered his religion to all men alike . . . . 
 Buddha boldly expounded to the people that, according to their own books, all men were equal."""@en ;
     a nif:Context, nif:Sentence ;
+    dc:partOf <http://www.cwrc.ca/cwrcdata/annaleonowens_Main_Document> ;
     prov:createdBy cwrc:originalOrlandoAuthor .
 
 <http://www.cwrc.ca/cwrcdata/charlotteDacre1>
