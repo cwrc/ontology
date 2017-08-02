@@ -553,7 +553,7 @@
 
 # CHARLOTTE MONTEFIORE
 <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore>
-	cwrc:hasGender cwrc:woman ;
+    cwrc:hasGender cwrc:woman ;
     cwrc:hasRaceColour cwrc:whiteRaceColour ;
     cwrc:hasReligionSelfReported cwrc:judaism ;
     cwrc:hasSocialClass cwrc:entrepreneurial-industrialist ;
@@ -599,7 +599,7 @@
 cwrc:CharlotteMontefioreFather
     a foaf:Person ;
     foaf:name "Abraham Montefiore" ;
-    loc:father <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
+    cwrc:fatherOf <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
     cwrc:hasNationalHeritage cwrc:italian ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/Montefiore12345> .
 
@@ -703,14 +703,14 @@ cwrc:CharlotteMontefioreFather
 <http://www.cwrc.ca/cwrcdata/JosefaDuran>
     a foaf:Person ;
     foaf:name "Josefa Duran (Pepita)" ;
-    cwrc:grandmother <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+    cwrc:grandmotherOf <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
     cwrc:hasEthnicity cwrc:gipsy .
 #    prov:derivedFrom textnode .
 
 <http://www.cwrc.ca/cwrcdata/VitaSackvilleWestGrandfather>
     a foaf:Person ;
     foaf:name "Vita Sackville West's grandfather" ;
-    rel:grandfather <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
+    cwrc:grandfatherOf <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
     cwrc:hasEthnicity cwrc:gipsy .
 #    prov:derivedFrom textnode .
 
@@ -1008,8 +1008,8 @@ cwrc:CharlotteMontefioreFather
 #snippets go here
 
 <http://www.cwrc.ca/cwrcdata/King12345>
-	rdfs:label """SK's Sephardic Jewish Portuguese birth, her early years in Judaism, and her father's boyhood as a street urchin and his high-profile but scandalous career (associating with political radicals while lending money to socialites and eventually marrying into the English nobility), made her an outsider in English society."""@en ;
-    a nif:Context, nif:Sentence ;
+    rdfs:label """SK's Sephardic Jewish Portuguese birth, her early years in Judaism, and her father's boyhood as a street urchin and his high-profile but scandalous career (associating with political radicals while lending money to socialites and eventually marrying into the English nobility), made her an outsider in English society."""@en ;
+a nif:Context, nif:Sentence ;
     prov:createdBy cwrc:originalOrlandoAuthor .
 
 <http://www.cwrc.ca/cwrcdata/annaleonowens1>
