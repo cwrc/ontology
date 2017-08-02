@@ -94,6 +94,7 @@
         <foaf:name xml:lang="fr">Le Collaboratoire scientifique des écrits du Canada</foaf:name>
         <foaf:name xml:lang="en">The Canadian Writing Research Collaboratory</foaf:name>
         <foaf:logo rdf:resource="http://sparql.cwrc.ca/images/CWRCLogo-Horz-FullColour.png"/>
+        <foaf:homepage rdf:resource="http://www.cwrc.ca/"/>
       </foaf:Organization>
     </dcterms:publisher>
     <loc:pdr>
@@ -115,7 +116,6 @@
         <foaf:nick>SSHRC</foaf:nick>
       </foaf:Organization>
     </loc:fnd>
-    <vann:preferredNamespacePrefix>cwrc</vann:preferredNamespacePrefix>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <foaf:logo rdf:resource="http://sparql.cwrc.ca/images/CWRCLogo-Horz-FullColour.png"/>
     <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85019388"/>
@@ -172,6 +172,7 @@
     <rdfs:label xml:lang="fr">Les membres du projet Orlando</rdfs:label>
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
     <foaf:name xml:lang="en">Members of the Orlando Project.</foaf:name>
+    <foaf:name xml:lang="fr">Les membres du projet Orlando</foaf:name>
     <foaf:homepage rdf:resource="http://orlando.cambridge.org/public/svDocumentation?formname=t&amp;d_id=CREDITSANDACKNOWLEDGEMENTS"/>
     <skos:definition xml:lang="en">The collection of all persons having written entries for The Orlando Project.</skos:definition>
     <skos:definition xml:lang="fr">La collection de tous les auteurs du Projet Orlando.</skos:definition>
@@ -188,14 +189,14 @@
     <rdf:type rdf:resource="http://www.w3.org/2006/time/TemporalEntity"/>
     <owl:sameAs rdf:resource="http://erlangen-crm.org/current/E5.Event"/>
     <owl:sameAs rdf:resource="http://linkedevents.org/ontology/Event"/>
-    <owl:sameAs rdf:resource="http://en.wikipedia.org/wiki/Event"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Event"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
   <owl:ObjectProperty rdf:ID="hasActor">
     <rdfs:label xml:lang="en">has actor</rdfs:label>
-    <rdfs:comment xml:lang="en">An Actor in this event.</rdfs:comment>
+    <skos:definition xml:lang="en">An Actor in this event.</skos:definition>
     <rdfs:range rdf:resource="#Event"/>
     <rdfs:range rdf:resource="#Actor"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -204,7 +205,7 @@
   </owl:ObjectProperty>
   <owl:Class rdf:ID="Actor">
     <rdfs:label xml:lang="en">actor</rdfs:label>
-    <rdfs:comment xml:lang="en">A person performing a certain role within an event.</rdfs:comment>
+    <skos:definition xml:lang="en">A person performing a certain role within an event.</skos:definition>
     <owl:sameAs rdf:resource="http://erlangen-crm.org/current/E39.Actor"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -212,7 +213,7 @@
   </owl:Class>
   <owl:ObjectProperty rdf:ID="identity">
     <rdfs:label xml:lang="en">identity</rdfs:label>
-    <rdfs:comment xml:lang="en">The identity of the person who committed the act.</rdfs:comment>
+    <skos:definition xml:lang="en">The identity of the person who committed the act.</skos:definition>
     <rdfs:domain rdf:resource="#Actor"/>
     <rdfs:range rdf:resource="#Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -221,7 +222,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="inRole">
     <rdfs:label xml:lang="en">in role</rdfs:label>
-    <rdfs:comment xml:lang="en">The role taken on by this actor.</rdfs:comment>
+    <skos:definition xml:lang="en">The role taken on by this actor.</skos:definition>
     <rdfs:domain rdf:resource="#Actor"/>
     <rdfs:range rdf:resource="#Role"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -234,7 +235,7 @@
     <rdfs:label xml:lang="fr">adresse</rdfs:label>
     <skos:definition xml:lang="en">A mailing or street address.</skos:definition>
     <skos:definition xml:lang="fr">Une adresse postale ou de rue.</skos:definition>
-    <rdfs:comment xml:lang="en">The postal address is the equivalent of a schema.org address and inherits all of the data from that vocabulary to markup a modern postal address.</rdfs:comment>
+    <skos:definition xml:lang="en">The postal address is the equivalent of a schema.org address and inherits all of the data from that vocabulary to markup a modern postal address.</skos:definition>
     <owl:sameAs rdf:resource="http://schema.org/PostalAddress"/>
     <rdfs:subClassOf rdf:resource="#Place"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -248,7 +249,7 @@
     <foaf:name xml:lang="fr">Endroit</foaf:name>
     <skos:definition xml:lang="en">A named place, whether incorporated, settled or occupied.</skos:definition>
     <skos:definition xml:lang="fr">Un endroit nommé, qu'il soit déclaré, investi ou occupé.</skos:definition>
-    <rdfs:comment xml:lang="en">Could be a populated place according to Geonames, but not necessarily so. Some places, such as cross-roads are named without having a population or settlement per say. The geonames is inconsistent in this regards in that a populated place can be abandoned.</rdfs:comment>
+    <skos:definition xml:lang="en">Could be a populated place according to Geonames, but not necessarily so. Some places, such as cross-roads are named without having a population or settlement per say. The geonames is inconsistent in this regards in that a populated place can be abandoned.</skos:definition>
     <owl:equivalentClass rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Place"/>
     <owl:equivalentClass rdf:resource="http://schema.org/Place"/>
@@ -271,8 +272,8 @@
   <owl:ObjectProperty rdf:ID="hasCulturalForm">
     <rdfs:label xml:lang="en">has a cultural form</rdfs:label>
     <rdfs:label xml:lang="fr">a une forme culturelle</rdfs:label>
-    <skos:definition xml:lang="en">This sub-class of culturalFormation associates specific concepts and categories with the process of identity formation through cultural processes. Such associations may be or have been embraced by the subject her/himself or attributed by others. The concepts and categories classed as culturalForms are understood to overlap with each other conceptually and in terms of the labels used.</skos:definition>
-    <skos:definition xml:lang="fr">Cette sous-classe de culturalFormation associe des concepts et des catégories spécifiques au processus de formation identitaire à travers les processus culturels. Le sujet elle/lui-même peut ou a pu s’approprier de telles associations, ou d’autres personnes les lui ont attribuées. Les concepts et les catégories classés dans culturalForms se chevauchent en théorie et en terme d'étiquettes utilisés.</skos:definition>
+    <skos:definition xml:lang="en">This associates specific concepts and categories with the process of identity formation through cultural processes. Such associations may be or have been embraced by the subject her/himself or attributed by others. The concepts and categories classed as culturalForms are understood to overlap with each other conceptually and in terms of the labels used.</skos:definition>
+    <skos:definition xml:lang="fr">Associe des concepts et des catégories spécifiques au processus de formation identitaire à travers les processus culturels. Le sujet elle/lui-même peut ou a pu s’approprier de telles associations, ou d’autres personnes les lui ont attribuées. Les concepts et les catégories classés dans culturalForms se chevauchent en théorie et en terme d'étiquettes utilisés.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -294,7 +295,6 @@
   </rdf:Description>
 
   <owl:Class rdf:ID="CulturalFormContext">
-    <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
     <rdfs:label xml:lang="en">cultural form context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte culturel</rdfs:label>
     <rdfs:subClassOf rdf:resource="#Context"/>
@@ -305,14 +305,13 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
-
   <owl:Class rdf:ID="RaceEthnicityContext">
     <rdfs:label xml:lang="en">race ethnicity context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte racial et/ou ethnique</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
-    <skos:definition xml:lang="en">raceEthnicityContext is a significant sub-class within culturalForms. It indicates the presence of information and discussions of a person's subject position with regards to race and ethnicity by working in conjunction with subject specific sub-elements (raceColour, nationalHeritage, geogHeritage, ethnicity). The following discussion applies to both the general discursive context of raceAndEthnicity as well as the specific sub-class categories. Despite the ways in which categories of race and ethnicity frequently serve heinous interests, their ideological and material impacts in the formation of identities requires recognition. These are shifting, historically constituted, and interestedly deployed categories whose use must be situated contextually and which are understood here finally as discursive or representational. Because of this this ontology does not try to lay out an exact, fully defined, or mutually exclusive set of categories: this is an impossibility given their shifting use and the overlap among them. Those applying this class and its subclasses are encouraged not to let privileged identities operate as an unspoken given or to use this class solely in relation to the marginalized. Those concerned about &quot;white&quot; and &quot;black&quot; as homogenizing categories are encouraged to reach for specificity through multiplicity and representations of intersectionality. RaceAndEthnicity is a sub-class within culturalFormation. It has four related content sub-classes: raceColour, nationalHeritage, geogHeritage, and ethnicity.</skos:definition>
-    <skos:definition xml:lang="fr">raceEthnicityContext est une sous-classe importante de culturalForms. Elle indique la présence d’informations et de discussions sur le sujet concernant son appartenance raciale et ethnique, conjointement avec les sous-éléments spécifiques au sujet (raceColour, nationalHeritage, geogHeritage, ethnicity). La discussion qui suit s’applique au contexte discursif général de raceAndEthnicity ainsi qu’aux catégories spécifiques de cette sous-classe. Même si les catégories de race et d'ethnicité sont fréquemment manipulées au service d'intérêts déplorables, elles doivent être prises en compte à cause de leur répercussions idéologiques et matérielles sur la formation identitaire. Ces catégories sont changeantes, historiquement constituées, développées de façon intéressée, doivent être employées en contexte et sont ici entendues comme discursives et représentationnelles. C'est pour ces raisons que l'ontologie ne prétend pas offrir un ensemble de catégories exactes, complètement définies, ou mutuellement exclusives, ce que leur emploi instable et leur chevauchement ne permettent pas. Celles/ceux qui appliquent ces catégories et sous-catégories sont encouragé/es à ne pas faire fonctionner les identités privilégiées comme si elles étaient consensuelles et évidentes, ou à utiliser cette classe seulement pour les marginaux. Celles/ceux préoccupés par le fait que &quot;blanc&quot; et &quot;noir&quot; sont des catégories homogénéisantes sont encouragés à atteindre la spécificité à travers la multiplicité et les représentations intersectionnelles. RaceAndEthnicity est sous-classe de culturalFormation. Elle a quatre sous-classes qui lui sont liées: raceColour, nationalHeritage, geogHeritage et ethnicity.</skos:definition>
+    <skos:definition xml:lang="en">raceEthnicityContext is a significant sub-class within culturalFormContext. It indicates the presence of information and discussions of a person's subject position with regards to race and ethnicity by working in conjunction with subject specific sub-elements (raceColour, nationalHeritage, geogHeritage, ethnicity). The following discussion applies to both the general discursive context of raceAndEthnicity as well as the specific sub-class categories. Despite the ways in which categories of race and ethnicity frequently serve heinous interests, their ideological and material impacts in the formation of identities requires recognition. These are shifting, historically constituted, and interestedly deployed categories whose use must be situated contextually and which are understood here finally as discursive or representational. Because of this this ontology does not try to lay out an exact, fully defined, or mutually exclusive set of categories: this is an impossibility given their shifting use and the overlap among them. Those applying this class and its subclasses are encouraged not to let privileged identities operate as an unspoken given or to use this class solely in relation to the marginalized. Those concerned about &quot;white&quot; and &quot;black&quot; as homogenizing categories are encouraged to reach for specificity through multiplicity and representations of intersectionality. RaceAndEthnicity is a sub-class within culturalFormation. It has four related content sub-classes: raceColour, nationalHeritage, geogHeritage, and ethnicity.</skos:definition>
+    <skos:definition xml:lang="fr">raceEthnicityContext est une sous-classe importante de culturalFormContext. Elle indique la présence d’informations et de discussions sur le sujet concernant son appartenance raciale et ethnique, conjointement avec les sous-éléments spécifiques au sujet (raceColour, nationalHeritage, geogHeritage, ethnicity). La discussion qui suit s’applique au contexte discursif général de raceAndEthnicity ainsi qu’aux catégories spécifiques de cette sous-classe. Même si les catégories de race et d'ethnicité sont fréquemment manipulées au service d'intérêts déplorables, elles doivent être prises en compte à cause de leur répercussions idéologiques et matérielles sur la formation identitaire. Ces catégories sont changeantes, historiquement constituées, développées de façon intéressée, doivent être employées en contexte et sont ici entendues comme discursives et représentationnelles. C'est pour ces raisons que l'ontologie ne prétend pas offrir un ensemble de catégories exactes, complètement définies, ou mutuellement exclusives, ce que leur emploi instable et leur chevauchement ne permettent pas. Celles/ceux qui appliquent ces catégories et sous-catégories sont encouragé/es à ne pas faire fonctionner les identités privilégiées comme si elles étaient consensuelles et évidentes, ou à utiliser cette classe seulement pour les marginaux. Celles/ceux préoccupés par le fait que &quot;blanc&quot; et &quot;noir&quot; sont des catégories homogénéisantes sont encouragés à atteindre la spécificité à travers la multiplicité et les représentations intersectionnelles. RaceAndEthnicity est sous-classe de culturalFormation. Elle a quatre sous-classes qui lui sont liées: raceColour, nationalHeritage, geogHeritage et ethnicity.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <dcterms:subject rdf:resource="#Ethnicity"/>
@@ -323,8 +322,8 @@
     <rdfs:label xml:lang="fr">contexte de sexualité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
-    <skos:definition xml:lang="en">hasSexualityContext is a significant sub-class within culturalForms. It indicates the presence of information and discussions of a person's subject position with regards to their sexuality and sexual identity. A subclass of Cultural Formation, hasSexualityContext provides depth to more granual categorizations of a person through hasSexuality or hasSexuality. It is not meant to capture individual sexual experiences and relationships, which are covered by intimateRelationships. Specific relationships may be invoked here to indicate the effect on a subject's life and understanding of her own sexuality. This effort to to contextualize gestures towards some of the complicated issues around sexuality, for example, the politics of outing, the historical specificity of some categories such as &quot;congenital invert,&quot; or the multiple forms of relating to one's own sexuality. Capturing discussions of her sexuality within this element, will help users interested in the historical, ideological and gendered constructions of sexuality. There are important politics of privacy with respect to the disclosure of a subject's sexuality, sexual orientation and sexual identity. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See Campbell and Cowan 2016</skos:definition>
-    <skos:definition xml:lang="fr">sexualityContext est une sous-classe importante de culturalForms. Elle indique la présence de données ou de discussions sur la subjectivité d’une personne en ce qui concerne sa sexualité et son identité sexuelle. Sous-classe de culturalForms, sexualityContext approfondit la catégorisation granulaire d’une personne à travers hasSexuality ou hasSexuality. Elle n’est pas vouée à répertorier les expériences sexuelles et relations personnelles, qui sont comprises dans intimateRelationships. Des relations spécifiques pourront être évoquées ici pour indiquer les conséquences qu’elles ont eu dans la vie du sujet ou la compréhension de sa propre sexualité. Cet effort de contextualisation est un mouvement vers des questions complexes autours de la sexualité, comme par exemple les politiques de délation autour de la sexualité, la spécificité historique de certaines catégories comme “inversion sexuelle”, ou les multiples formes liées à la sexualité d’une personne. Les utilisatrices/teurs intéressé/es par la construction historique, idéologique et genrée de la sexualité pour se servir de cet élément qui rend compte des débats autour de ce thème. Nous reconnaissons l'importance des politiques de confidentialité au regard de la divulgation de la sexualité, de l’orientation et de l’identité sexuelles du sujet. En ce qui concerne les personnes toujours en vie, notre pratique est de ne nous appuyer que sur des sources ou des déclarations publiques venant du sujet elle/lui-même, afin d’éviter de dévoiler par inadvertance des informations privées sur sa sexualité. Voir Campbell and Cowan 2016. (http://ir.lib.uwo.ca/cgi/viewcontent.cgi?article=1085&amp;context=fimspub). </skos:definition>
+    <skos:definition xml:lang="en">hasSexualityContext is a significant sub-class within culturalFormContext. It indicates the presence of information and discussions of a person's subject position with regards to their sexuality and sexual identity. A subclass of Cultural Formation, hasSexualityContext provides depth to more granual categorizations of a person through hasSexuality or hasSexuality. It is not meant to capture individual sexual experiences and relationships, which are covered by intimateRelationships. Specific relationships may be invoked here to indicate the effect on a subject's life and understanding of her own sexuality. This effort to to contextualize gestures towards some of the complicated issues around sexuality, for example, the politics of outing, the historical specificity of some categories such as &quot;congenital invert,&quot; or the multiple forms of relating to one's own sexuality. Capturing discussions of her sexuality within this element, will help users interested in the historical, ideological and gendered constructions of sexuality. There are important politics of privacy with respect to the disclosure of a subject's sexuality, sexual orientation and sexual identity. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See Campbell and Cowan 2016</skos:definition>
+    <skos:definition xml:lang="fr">sexualityContext est une sous-classe importante de culturalFormContext. Elle indique la présence de données ou de discussions sur la subjectivité d’une personne en ce qui concerne sa sexualité et son identité sexuelle. Sous-classe de culturalForms, sexualityContext approfondit la catégorisation granulaire d’une personne à travers hasSexuality ou hasSexuality. Elle n’est pas vouée à répertorier les expériences sexuelles et relations personnelles, qui sont comprises dans intimateRelationships. Des relations spécifiques pourront être évoquées ici pour indiquer les conséquences qu’elles ont eu dans la vie du sujet ou la compréhension de sa propre sexualité. Cet effort de contextualisation est un mouvement vers des questions complexes autours de la sexualité, comme par exemple les politiques de délation autour de la sexualité, la spécificité historique de certaines catégories comme “inversion sexuelle”, ou les multiples formes liées à la sexualité d’une personne. Les utilisatrices/teurs intéressé/es par la construction historique, idéologique et genrée de la sexualité pour se servir de cet élément qui rend compte des débats autour de ce thème. Nous reconnaissons l'importance des politiques de confidentialité au regard de la divulgation de la sexualité, de l’orientation et de l’identité sexuelles du sujet. En ce qui concerne les personnes toujours en vie, notre pratique est de ne nous appuyer que sur des sources ou des déclarations publiques venant du sujet elle/lui-même, afin d’éviter de dévoiler par inadvertance des informations privées sur sa sexualité. Voir Campbell and Cowan 2016. (http://ir.lib.uwo.ca/cgi/viewcontent.cgi?article=1085&amp;context=fimspub). </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <dcterms:subject rdf:resource="#Sexuality"/>
@@ -352,7 +351,6 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <dcterms:subject rdf:resource="#SocialClass"/>
   </owl:Class>
   <owl:Class rdf:ID="ReligionContext">
     <rdfs:label xml:lang="en">religious context</rdfs:label>
@@ -364,7 +362,6 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <dcterms:subject rdf:resource="#Religion"/>
   </owl:Class>
   <owl:Class rdf:ID="NationalityContext">
     <rdfs:label xml:lang="en">nationality context</rdfs:label>
@@ -401,7 +398,6 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <dcterms:subject rdf:resource="#Ethnicity"/>
   </owl:Class>
   <owl:Class rdf:ID="GenderContext">
     <rdfs:label xml:lang="en">Gender Context</rdfs:label>
@@ -443,8 +439,8 @@
     <rdfs:label xml:lang="fr">Nationalité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">A subclass of culturalForms, this descrbes a person's nationality/ies and is not the same as citizenship.</skos:definition>
-    <skos:definition xml:lang="fr">Une sous-classe de Cultural Forms, ceci décrit la nationalité d'une personne et n'est pas sa citoyenneté.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of Cultural Form, this describes a person's nationalities and is not the same as citizenship.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-classe de Cultural Form, ceci décrit la nationalité d'une personne et n'est pas sa citoyenneté.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -470,7 +466,7 @@
     <skos:broader rdf:resource="#englishLabel"/>      
   </cwrc:NationalIdentity>
 
-   <cwrc:NationalIdentity rdf:about="#welshNationalHeritage">
+   <cwrc:NationalHeritage rdf:about="#welshNationalHeritage">
     <rdfs:label xml:lang="en">Welsh</rdfs:label>
     <rdfs:label xml:lang="fr">Gallois</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -480,12 +476,12 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broader rdf:resource="#welshLabel"/>
     <owl:sameAs rdf:resource="http://sws.geonames.org/2634895/"/>
-  </cwrc:NationalIdentity>
+  </cwrc:NationalHeritage>
 
   
   <owl:Class rdf:ID="Language">
-    <rdfs:label xml:lang="en">Linguistic Ability</rdfs:label>
-    <rdfs:label xml:lang="fr">aptitudelinguistique</rdfs:label>
+    <rdfs:label xml:lang="en">linguistic lbility</rdfs:label>
+    <rdfs:label xml:lang="fr">aptitude linguistique</rdfs:label>
     <foaf:name xml:lang="en">linguistic ability</foaf:name>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
@@ -496,12 +492,12 @@
     <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/iso639-1/iso639-1_Language"/>
   </owl:Class>
     <owl:Class rdf:ID="GeographicalHeritage">
-    <rdfs:label xml:lang="en">Geographical Heritage</rdfs:label>
-    <rdfs:label xml:lang="fr">Héritage Géographique</rdfs:label>
+    <rdfs:label xml:lang="en">geographical heritage</rdfs:label>
+    <rdfs:label xml:lang="fr">héritage géographique</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">GeographicalHeritage is a subclass of CulturalForm that captures information about the geographical origins of a person's family which often contributes to an understanding of their racial and ethnic background. It offers a way to capture women identified as &quot;South-Asian,&quot; for example, when no more precise national heritage is indicated. See raceAndEthnicity for a detailed description of the complexities of this element.</skos:definition>
-    <skos:definition xml:lang="fr">GeographicalHeritage est une sous-classe de CulturalForms qui contient des informations sur les origines géographiques de la famille d'une personne, ce qui contribue souvent à la compréhension de ses origines ethnique et raciale. Cela permet de saisir l’identité de femmes qui se déclarent “sud-asiatiques” par exemple, quand aucune autre précision n'est fournie concernant l'héritage national. Voir raceEthnicityContext pour un compte-rendu détaillé de la complexité de cet élément.</skos:definition>
+    <skos:definition xml:lang="fr">GeographicalHeritage est une sous-classe de CulturalForm qui contient des informations sur les origines géographiques de la famille d'une personne, ce qui contribue souvent à la compréhension de ses origines ethnique et raciale. Cela permet de saisir l’identité de femmes qui se déclarent “sud-asiatiques” par exemple, quand aucune autre précision n'est fournie concernant l'héritage national. Voir raceEthnicityContext pour un compte-rendu détaillé de la complexité de cet élément.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -531,8 +527,8 @@
     <rdfs:label xml:lang="fr">genre</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">A subclass of culturalForms for noting a person's gender whether attributed or self-defined. Although in popular culture gender and biological sex are conflated and understood to be binary, the concept of gender stresses the relationality, constructedness, and performativity of gendered identities and gendered behaviour, whose categories are historically contingent and shifting, and the boundaries between them blurry. Cf. Simone de Beauvoir: &quot;One is not born, but rather becomes, a woman,&quot; along with many other theorists of gender including Judith Butler, 1990. Gender is understood as fluid, situational, and sometimes plural, and it is related to though not commensurate with sexual identity and orientation. It is related to but not defined by specific forms of embodiment. Rather than seeing biological sex as a pre-social or natural given, the body is understood as a site of inscription (cf. Elizabeth Grosz 1994) which is also socially constructed and indeed epigenetically shaped by environmental factors (N. Katherine Hayles 2012). This ontology therefore does not provide separate terms for sex as distinct from gender. Instead, the slashes conjoining terms associated with gender and those conventionally associated with sex indicate the constant slippage between gender and sex in the way that these categories circulate through discourses, actions, and institutions. Far from indicating a universal facet of experience, gender intersects with other identity categories and axes of oppression such as class, race or colour, or geographical heritage to produced quite different interests and experiences among people of the same gender, as with the intersection of religion and white masculine identity in the Muscular Christianity movement in nineteenth-century Britain. Being a woman of colour may thus compound the impacts of gender oppression (Kimberlé Crenshaw 1989).</skos:definition>
-    <skos:definition xml:lang="fr">Cette  sous-classe de culturalForms indique le genre d’une personne, qu’il soit attribué par cette dernière ou auto-défini. Même si dans la culture populaire le genre et le sexe biologique sont confondus et binaires, le concept de genre souligne la relativité, la constructivité et la performativité des identités et des comportements genrés, réparties en catégories historiquement contingentes, changeantes et aux frontières floues. Cf Simone de Beauvoir: “On ne naît pas femme, on le devient,” et d’autres nombreuses théoriciennes du genre, dont Judith Butler en 1990. Le genre est entendu comme fluide, situationnel, parfois pluriel, et est relié à, l’identité et l’orientation sexuelles même s’ils ne doivent pas être confondus. Il est relié à des formes spécifiques d’incarnation ou à des comportements physiques, sans pour autant être défini par eux. Plutôt que de voir le sexe biologique comme présocial et attribué par nature,  le corps est compris comme un lieu d’inscriptions (cf Elizabeth Grosz 1994) qui est aussi socialement construit et épigénétiquement modelé par des facteurs environnementaux (N. Katherine Hayles 2012). Cette ontologie ne fournit donc pas de termes séparés pour le genre et le sexe. Les barres obliques qui lient les termes associés aux genres et ceux conventionnellement attribués au sexe indiquent plutôt le glissement constant de ces catégories au fil des discours, des actions et des institutions. Loin d’indiquer une part d’expérience universelle, le genre s’entrecroise avec d’autres catégories d’identité et axes d’oppression comme la classe, la race, la couleur, ou l’héritage géographique pour produire des intérêts et des expériences bien différentes pour les personnes d’un même genre. Un exemple est l’intersection de la religion et de l’identité masculine du mouvement de la Chrétienté Musculaire formé au Royaume-Uni au 19ème siècle. Dans ce contexte, être une femme de couleur devait aggraver les oppressions liées au genre (Kimberlé Crenshaw 1989).</skos:definition>
+    <skos:definition xml:lang="en">A subclass of culturalForms for noting a person's gender whether attributed or self-defined. Although in popular culture gender and biological sex are conflated and understood to be binary, the concept of gender stresses the relationality, constructedness, and performativity of gendered identities and gendered behaviour, whose categories are historically contingent and shifting, and the boundaries between them blurry. Cf. Simone de Beauvoir: &quot;One is not born, but rather becomes, a woman,&quot; along with many other theorists of gender including Judith Butler, 1990. Gender is understood as fluid, situational, and sometimes plural, and it is related to though not commensurate with sexual identity and orientation. It is related to but not defined by specific forms of embodiment. Rather than seeing biological sex as a pre-social or natural given, the body is understood as a site of inscription (cf. Elizabeth Grosz 1994) which is also socially constructed and indeed epigenetically shaped by environmental factors (N. Katherine Hayles 2012). This ontology therefore does not provide separate terms for sex as distinct from gender. Instead, the slashes conjoining terms associated with gender and those conventionally associated with sex indicate the constant slippage between gender and sex in the way that these categories circulate through discourses, actions, and institutions. Far from indicating a universal facet of experience, gender intersects with other identity categories and axes of oppression such as class, race or colour, or geographical heritage to produced quite different interests and experiences among people of the same gender, as with the intersection of religion and white masculine identity in the Muscular Christianity movement in nineteenth-century Britain. Being a woman of colour may thus compound the impacts of gender oppression (<![CDATA[<a href="#crenshaw_demarginalizing_1989">Kimberlé Crenshaw, 1989</a>]]>).</skos:definition>
+    <skos:definition xml:lang="fr">Cette  sous-classe de culturalForms indique le genre d’une personne, qu’il soit attribué par cette dernière ou auto-défini. Même si dans la culture populaire le genre et le sexe biologique sont confondus et binaires, le concept de genre souligne la relativité, la constructivité et la performativité des identités et des comportements genrés, réparties en catégories historiquement contingentes, changeantes et aux frontières floues. Cf Simone de Beauvoir: “On ne naît pas femme, on le devient,” et d’autres nombreuses théoriciennes du genre, dont Judith Butler en 1990. Le genre est entendu comme fluide, situationnel, parfois pluriel, et est relié à, l’identité et l’orientation sexuelles même s’ils ne doivent pas être confondus. Il est relié à des formes spécifiques d’incarnation ou à des comportements physiques, sans pour autant être défini par eux. Plutôt que de voir le sexe biologique comme présocial et attribué par nature,  le corps est compris comme un lieu d’inscriptions (cf Elizabeth Grosz 1994) qui est aussi socialement construit et épigénétiquement modelé par des facteurs environnementaux (N. Katherine Hayles 2012). Cette ontologie ne fournit donc pas de termes séparés pour le genre et le sexe. Les barres obliques qui lient les termes associés aux genres et ceux conventionnellement attribués au sexe indiquent plutôt le glissement constant de ces catégories au fil des discours, des actions et des institutions. Loin d’indiquer une part d’expérience universelle, le genre s’entrecroise avec d’autres catégories d’identité et axes d’oppression comme la classe, la race, la couleur, ou l’héritage géographique pour produire des intérêts et des expériences bien différentes pour les personnes d’un même genre. Un exemple est l’intersection de la religion et de l’identité masculine du mouvement de la Chrétienté Musculaire formé au Royaume-Uni au 19ème siècle. Dans ce contexte, être une femme de couleur devait aggraver les oppressions liées au genre (<![CDATA[<a href="#crenshaw_demarginalizing_1989">Kimberlé Crenshaw, 1989</a>]]>).</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -546,27 +542,27 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
   <cwrc:Gender rdf:about="#woman">
-    <rdfs:label xml:lang="en">Woman</rdfs:label>
-    <rdfs:label xml:lang="fr">Femme</rdfs:label>
-    <foaf:name xml:lang="en">Woman (gender)</foaf:name>
+    <rdfs:label xml:lang="en">woman</rdfs:label>
+    <rdfs:label xml:lang="fr">femme</rdfs:label>
+    <foaf:name xml:lang="en">woman (gender)</foaf:name>
     <skos:definition xml:lang="en"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
   <cwrc:Gender rdf:about="#transMan">
-    <rdfs:label xml:lang="en">Transman/Transmale</rdfs:label>
-    <rdfs:label xml:lang="fr">Homme Trans</rdfs:label>
-    <foaf:name xml:lang="en">Transman/Transmale (gender)</foaf:name>
+    <rdfs:label xml:lang="en">transman/transmale</rdfs:label>
+    <rdfs:label xml:lang="fr">homme trans</rdfs:label>
+    <foaf:name xml:lang="en">transman/transmale (gender)</foaf:name>
     <skos:definition xml:lang="en"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
   <cwrc:Gender rdf:about="#transWoman">
-    <rdfs:label xml:lang="en">Transwoman/Transfemale</rdfs:label>
-    <rdfs:label xml:lang="fr">Femme Trans</rdfs:label>
-    <foaf:name xml:lang="en">Transwoman/Transfemale (gender)</foaf:name>
+    <rdfs:label xml:lang="en">transwoman/transfemale</rdfs:label>
+    <rdfs:label xml:lang="fr">femme trans</rdfs:label>
+    <foaf:name xml:lang="en">transwoman/transfemale (gender)</foaf:name>
     <skos:definition xml:lang="en"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -574,16 +570,16 @@
   </cwrc:Gender>
   <!-- NEED TO BE FIXED AS AS INSTANCES OF GENDERS -->
   <owl:Class rdf:ID="GenderQueer">
-    <rdfs:label xml:lang="en">GenderQueer</rdfs:label>
-    <rdfs:label xml:lang="fr">Non-binaire</rdfs:label>
+    <rdfs:label xml:lang="en">gender queer</rdfs:label>
+    <rdfs:label xml:lang="fr">non-binaire</rdfs:label>
     <skos:note>Listed as non-binary? in french</skos:note>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
   <owl:Class rdf:ID="Androgynous">
-    <rdfs:label xml:lang="en">Androgynous</rdfs:label>
-    <rdfs:label xml:lang="fr">Androgyne</rdfs:label>
+    <rdfs:label xml:lang="en">androgynous</rdfs:label>
+    <rdfs:label xml:lang="fr">androgyne</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -594,18 +590,17 @@
     <rdfs:label xml:lang="fr">sexualité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">These terms capture in a word or phrase identifications of sexuality (i.e., &quot;lesbian,&quot; &quot;monogamous,&quot; &quot;heterosexual&quot;) not as a means of shutting down but advancing investigation and critical analysis of these identifications. The association assumes that sexual identity does not function in an essentialist manner but can be plural and fluid, so multiple designations can be applied to a single person. Assertions of sexual itentity may come from the subject her/himself or from others. They may be in tension or mutually exclusive, and they may reflect different life stages. Linking to the term &quot;lesbian&quot; as a sexualIdentity class, for instance, does not signify that the subject was in any definitive sense a lesbian; such identifications are often impossible for reasons of historical gaps and silences. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See Campbell and Cowan 2016</skos:definition>
-    <skos:definition xml:lang="fr">Ces termes identifient en un mot ou en une phrase la sexualité d'un sujet (par exemple “lesbienne”, “monogame”, “hétérosexuel/le”), non pas pour fermer la discussion, mais pour développer l’étude et l’analyse critique de ces catégories. L’association à une sexualité suppose que celle-ci n’est pas vécue de manière essentialiste, mais est plutôt plurielle et fluide; plusieurs désignations peuvent ainsi être appliquées à une seule personne. Le sujet elle/lui-même ou d'autres personnes peuvent émettre des assertions sur son identité sexuelle. Celles-ci peuvent se trouver en tension, se montrer incompatibles, et reflètent le changement du sujet au cours du sa vie. Par exemple, lier le terme “lesbienne” à la classe sexualIdentiy ne signifie pas que le sujet était définitivement lesbienne, car une telle identification est souvent impossible à cause des lacunes et silences historiques. En ce qui concerne les personnes toujours en vie, nous ne nous appuyons que sur des sources ou des déclarations publiques faites par le sujet elle/lui-même afin d’éviter de dévoiler sa sexualité par inadvertance. Voir Campbell et Cowan 2016. 
-</skos:definition>
+    <skos:definition xml:lang="en">These terms capture in a word or phrase identifications of sexuality (i.e., &quot;lesbian,&quot; &quot;monogamous,&quot; &quot;heterosexual&quot;) not as a means of shutting down but advancing investigation and critical analysis of these identifications. The association assumes that sexual identity does not function in an essentialist manner but can be plural and fluid, so multiple designations can be applied to a single person. Assertions of sexual itentity may come from the subject her/himself or from others. They may be in tension or mutually exclusive, and they may reflect different life stages. Linking to the term &quot;lesbian&quot; as a sexualIdentity class, for instance, does not signify that the subject was in any definitive sense a lesbian; such identifications are often impossible for reasons of historical gaps and silences. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See (<![CDATA[<a href="#CWRC_ISLANDORA_ID">Campbell and Cowan 2016</a>]]>)</skos:definition>
+    <skos:definition xml:lang="fr">Ces termes identifient en un mot ou en une phrase la sexualité d'un sujet (par exemple “lesbienne”, “monogame”, “hétérosexuel/le”), non pas pour fermer la discussion, mais pour développer l’étude et l’analyse critique de ces catégories. L’association à une sexualité suppose que celle-ci n’est pas vécue de manière essentialiste, mais est plutôt plurielle et fluide; plusieurs désignations peuvent ainsi être appliquées à une seule personne. Le sujet elle/lui-même ou d'autres personnes peuvent émettre des assertions sur son identité sexuelle. Celles-ci peuvent se trouver en tension, se montrer incompatibles, et reflètent le changement du sujet au cours du sa vie. Par exemple, lier le terme “lesbienne” à la classe sexualIdentiy ne signifie pas que le sujet était définitivement lesbienne, car une telle identification est souvent impossible à cause des lacunes et silences historiques. En ce qui concerne les personnes toujours en vie, nous ne nous appuyons que sur des sources ou des déclarations publiques faites par le sujet elle/lui-même afin d’éviter de dévoiler sa sexualité par inadvertance. Voir (<![CDATA[<a href="#CWRC_ISLANDORA_ID">Campbell and Cowan 2016</a>]]>).</skos:definition>
     <owl:sameAs rdf:resource="http://homosaurus.org/terms/sexualIdentity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
   <!--  (http://ir.lib.uwo.ca/cgi/viewcontent.cgi?article=1085&context=fimspub) -->
   <cwrc:Sexuality rdf:about="#heterosexual">
-    <rdfs:label xml:lang="en">Heterosexual</rdfs:label>
-    <rdfs:label xml:lang="fr">Hétérosexuelle</rdfs:label>
-    <foaf:name xml:lang="en">Heterosexual (Sexual Identity)</foaf:name>
+    <rdfs:label xml:lang="en">heterosexual</rdfs:label>
+    <rdfs:label xml:lang="fr">hétérosexuelle</rdfs:label>
+    <foaf:name xml:lang="en">heterosexual (sexual identity)</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -614,9 +609,9 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Sexuality>
   <cwrc:Sexuality rdf:about="#homosexual">
-    <rdfs:label xml:lang="en">Homosexual</rdfs:label>
-    <rdfs:label xml:lang="fr">Homosexuelle</rdfs:label>
-    <foaf:name xml:lang="en">Homosexual (Sexual Identity)</foaf:name>
+    <rdfs:label xml:lang="en">homosexual</rdfs:label>
+    <rdfs:label xml:lang="fr">homosexuelle</rdfs:label>
+    <foaf:name xml:lang="en">homosexual (sexual identity)</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -624,9 +619,9 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Sexuality>
   <cwrc:Sexuality rdf:about="#lesbian">
-    <rdfs:label xml:lang="en">Lesbian</rdfs:label>
-    <rdfs:label xml:lang="fr">Lesbienne</rdfs:label>
-    <foaf:name xml:lang="en">Lesbian (Sexual Identity)</foaf:name>
+    <rdfs:label xml:lang="en">lesbian</rdfs:label>
+    <rdfs:label xml:lang="fr">lesbienne</rdfs:label>
+    <foaf:name xml:lang="en">lesbian (sexual identity)</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -647,7 +642,7 @@
   <cwrc:RaceColour rdf:about="#whiteRaceColour">
     <rdfs:label xml:lang="en">white</rdfs:label>
     <rdfs:label xml:lang="fr">blanc</rdfs:label>
-    <foaf:name xml:lang="en">White (Race Colour)</foaf:name>
+    <foaf:name xml:lang="en">white (race colour)</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -659,7 +654,7 @@
   <cwrc:RaceColour rdf:about="#eurasianRace">
     <rdfs:label xml:lang="en">eurasian</rdfs:label>
     <rdfs:label xml:lang="fr">eurasien</rdfs:label>
-    <foaf:name xml:lang="en">Eurasian (Race Colour)</foaf:name>
+    <foaf:name xml:lang="en">eurasian (race colour)</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -692,7 +687,7 @@
   <cwrc:Ethnicity rdf:about="#whiteEthnicity">
     <rdfs:label xml:lang="en">white</rdfs:label>
     <rdfs:label xml:lang="fr">blanc</rdfs:label>
-    <foaf:name xml:lang="en">White (Ethnicity)</foaf:name>
+    <foaf:name xml:lang="en">white (ethnicity)</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <skos:broader rdf:resource="#whiteLabel"/>
@@ -708,21 +703,17 @@
     <skos:broader rdf:resource="#jewishLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subClassOf rdf:resource="#jewishLabel"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:Ethnicity>
+   </cwrc:Ethnicity>
   <!-- Religion -->
   <owl:Class rdf:ID="Religion">
-    <rdfs:label xml:lang="en">Religion</rdfs:label>
-    <rdfs:label xml:lang="fr">Religion</rdfs:label>
+    <rdfs:label xml:lang="en">religion</rdfs:label>
+    <rdfs:label xml:lang="fr">religion</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A subclass of CulturalForm, this describes a person's religion(s) or belief system(s). Note that while atheism denotes the absence of religion, we use the Religion label for convenience.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
   </owl:Class>
   <cwrc:Religion rdf:about="#anglicanism">
     <rdfs:label xml:lang="en">Anglicanism</rdfs:label>
@@ -1270,8 +1261,8 @@
     <rdfs:label xml:lang="fr">classe sociale</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">A subclass of culturalForms, socialClass terms associate subjects with a specific social group, recognizing that such categories and their application to individuals are contested and can change over time. The association may be or have been embraced by the subject her/himself or attributed by others. Unlike Notes typed as socialClassContext, which contain detailed discussion of a subject's class position, socialClass links to a word or phrase signifying a particular construction of class, with particular reference to earlier historical periods in the British Isles. Social class has been variously constructed and theorized, and for women is further complicated by the fact that women were understood to take their social status from fathers and/or husbands. The terminology used here reflects quite basic social groupings that intersect with other factors such as wealth.</skos:definition>
-    <skos:definition xml:lang="fr">Une sous-catégorie de culturalForms, les termes de socialClass associent les sujets à des groupes sociaux spécifiques, en prenant en compte le fait que ces catégories et leur application aux individus sont contestables et peuvent changer au fil du temps. L’association à une classe sociale peut ou a pu être assumée par le sujet elle/lui-même ou attribuée par d’autres. Contrairement aux notes comme socialClassContext, qui contiennent les détails des discussions autour de le statut social du sujet, socialClass relie un mot ou une phrase référant à une classe spécifique qui renvoie à des périodes historiques antérieures spécifiques des Îles Britanniques. La notion de classe sociale a été construite et théorisée de diverses manières, et est d’autant plus complexe pour les femmes puisqu’elles étaient censées adopter le statut social de leur père et/ou de leur mari. La terminologie ici utilisée réfère à des groupes sociaux élémentaires qui se recoupent avec d’autres facteurs comme la richesse.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of culturalForm, socialClass terms associate subjects with a specific social group, recognizing that such categories and their application to individuals are contested and can change over time. The association may be or have been embraced by the subject her/himself or attributed by others. Unlike Notes typed as socialClassContext, which contain detailed discussion of a subject's class position, socialClass links to a word or phrase signifying a particular construction of class, with particular reference to earlier historical periods in the British Isles. Social class has been variously constructed and theorized, and for women is further complicated by the fact that women were understood to take their social status from fathers and/or husbands. The terminology used here reflects quite basic social groupings that intersect with other factors such as wealth.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-catégorie de culturalForm, les termes de socialClass associent les sujets à des groupes sociaux spécifiques, en prenant en compte le fait que ces catégories et leur application aux individus sont contestables et peuvent changer au fil du temps. L’association à une classe sociale peut ou a pu être assumée par le sujet elle/lui-même ou attribuée par d’autres. Contrairement aux notes comme socialClassContext, qui contiennent les détails des discussions autour de le statut social du sujet, socialClass relie un mot ou une phrase référant à une classe spécifique qui renvoie à des périodes historiques antérieures spécifiques des Îles Britanniques. La notion de classe sociale a été construite et théorisée de diverses manières, et est d’autant plus complexe pour les femmes puisqu’elles étaient censées adopter le statut social de leur père et/ou de leur mari. La terminologie ici utilisée réfère à des groupes sociaux élémentaires qui se recoupent avec d’autres facteurs comme la richesse.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
@@ -1281,7 +1272,7 @@
     <rdfs:label xml:lang="fr">classe-moyenne inférieure</rdfs:label>
     <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">Employees, clerical workers, teachers, governesses. Note, however, that some teachers go into Professional (Mr. Chips) and women starting schools and then managing them also go into Professional.</skos:definition>
+    <skos:definition xml:lang="en">Employees, clerical workers, teachers, governesses. Note, however, that some teachers go into Professions (<![CDATA[<a href="https://en.wikipedia.org/wiki/Goodbye,_Mr._Chips_(1939_film)">Mr. Chips from the 1939 film of that name</a>]]>) and women starting schools and then managing them also go into Professions.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1400,7 +1391,7 @@
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#rural-unskilled">
     <rdfs:label xml:lang="en">rural unskilled</rdfs:label>
-    <rdfs:label xml:lang="fr">travailleurs ruraus non qualifiés</rdfs:label>
+    <rdfs:label xml:lang="fr">travailleurs ruraux non qualifiés</rdfs:label>
     <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">This generally indicates farm laborers, mostly male in earlier periods, and includes migrant farm workers.</skos:definition>
@@ -1441,6 +1432,13 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="contraryTo">
+   <rdfs:label xml:lang="en">contrary to</rdfs:label>
+   <rdfs:label xml:lang="fr">contraire à</rdfs:label>
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+   <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty> 
 <!-- Political affiliation Instances go here -->
   <cwrc:PoliticalAffiliation rdf:about="#abolitionism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -1456,8 +1454,8 @@
     <skos:definition xml:lang="fr">L'abolitionnisme est un courant de pensée qui émerge dans le dernier tiers du XVIIIe siècle dans le monde occidental (notamment en Grande-Bretagne) et vise la suppression de l'esclavage. Par extension, on utilise le terme pour tous les mouvements qui cherchent la suppression d'une tradition, d'une institution ou d'une loi : abolition de la peine de mort, de la torture, du travail, des privilèges, des prisons, de la prostitution, du spécisme, etc. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Abolitionism"/>
-    <skos:broader rdf:resource="#humanRights"/>
-    <skos:broader rdf:resource="#racialEquality"/>
+    <skos:broaderTransitive rdf:resource="#humanRights"/>
+    <skos:broaderTransitive rdf:resource="#racialEquality"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1471,7 +1469,7 @@
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Category:AIDS_activism"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#socialReform"/>
+    <skos:broaderTransitive rdf:resource="#socialReform"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1487,7 +1485,7 @@
     <skos:definition xml:lang="en"></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#nationalism"/>
+    <skos:broaderTransitive rdf:resource="#nationalism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1510,6 +1508,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#nationalism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#animalWelfareAdvocacy">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -1527,7 +1526,7 @@
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Animal_welfare"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#socialReform"/>
+    <skos:broaderTransitive rdf:resource="#socialReform"/>
     <skos:related rdf:resource="#feminism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1556,11 +1555,12 @@
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Antisemitism"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#racialEquality"/>
+    <skos:broaderTransitive rdf:resource="#racialEquality"/>
     <skos:related rdf:resource="#anti-Fascism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#antisemitism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Apartheid">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -1570,9 +1570,9 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Anti-Apartheid_Movement"/>
-    <skos:broader rdf:resource="#racialEquality"/>
-    <skos:broader rdf:resource="#socialReform"/>
-    <skos:broader rdf:resource="#humanRights"/>
+    <skos:broaderTransitive rdf:resource="#racialEquality"/>
+    <skos:broaderTransitive rdf:resource="#socialReform"/>
+    <skos:broaderTransitive rdf:resource="#humanRights"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1589,6 +1589,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#pro-BoerWar"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Bolshevism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -1604,7 +1605,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:PoliticalAffiliation>
+    <cwrc:contraryTo rdf:resource="#bolshevism"/>  
+   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Bonapartism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <rdf:value>anti-bonapartist</rdf:value>
@@ -1641,7 +1643,7 @@
     <skos:definition xml:lang="fr">La peine de mort, ou peine capitale, est une peine prévue par la loi consistant à exécuter une personne ayant été reconnue coupable d'une faute qualifiée de « crime capital ». La sentence est prononcée par l'institution judiciaire à l'issue d'un procès. En l'absence d'un procès, ou dans les cas où celui-ci n'est pas réalisé par une institution reconnue, on parle d'exécution sommaire, d'acte de vengeance ou de justice privée. La peine de mort est diversement considérée selon les époques et les régions géographiques. Elle est prévue dans les textes de loi de 93 pays, mais seuls 22 des 192 pays du globe ont procédé à des exécutions en 2014. Elle est une sanction reconnue bien que réprouvée par les institutions internationales comme l'Organisation des Nations unies (ONU). Les États abolitionnistes sont aujourd'hui majoritaires, mais ils ne représentent encore qu'une minorité de la population mondiale. Parmi les démocraties industrialisées, seules deux la pratiquent : les États-Unis et le Japon. Au plan international, le 18 décembre 2007, l’Assemblée générale de l'ONU a adopté la résolution 62/149 appelant à un moratoire sur les exécutions dans le monde. Cette résolution (comme les autres résolutions de l'ONU) n'a pas de valeur contraignante mais peut être vue comme le signe que la majorité des états souhaite remettre en cause la peine de mort. Cependant huit des dix pays les plus peuplés ont voté contre la résolution. Elle a été renouvelée en 2014. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Capital_punishment"/>
-    <skos:broader rdf:resource="#socialReform"/>
+    <skos:broaderTransitive rdf:resource="#socialReform"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1672,8 +1674,8 @@
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Dalit"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#socialReform"/>
-    <skos:broader rdf:resource="#feminism"/>
+    <skos:broaderTransitive rdf:resource="#socialReform"/>
+    <skos:broaderTransitive rdf:resource="#feminism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1692,6 +1694,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#pro-Catholicism"/>  
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Censorship">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -1707,7 +1710,7 @@
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Freedom_of_speech"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#socialReform"/>
+    <skos:broaderTransitive rdf:resource="#socialReform"/>
     <skos:related rdf:resource="#anti-Monarchism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1726,6 +1729,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#pro-communism"/>  
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Conscriptionism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -1739,6 +1743,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#pro-communism"/>    
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-ContagiousDiseasesAct">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -1751,8 +1756,8 @@
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Contagious_Diseases_Acts"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#feminism"/>
-    <skos:broader rdf:resource="#socialReform"/>
+    <skos:broaderTransitive rdf:resource="#feminism"/>
+    <skos:broaderTransitive rdf:resource="#socialReform"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1765,7 +1770,7 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Campaigns_against_corporal_punishment"/>
-    <skos:broader rdf:resource="#socialReform"/>
+    <skos:broaderTransitive rdf:resource="#socialReform"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1797,6 +1802,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#facism"/>    
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Federalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -1813,6 +1819,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Feminism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -1832,6 +1839,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#feminism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Globalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -1861,11 +1869,12 @@
     <skos:definition xml:lang="fr">L'anti-impérialisme est une idéologie d’opposition à l'impérialisme, c'est-à-dire la doctrine d'un État ou un groupe d'États à mettre un autre État ou un groupe d'États plus faible sous sa dépendance politique, économique et culturelle par la conquête militaire ou toute autre forme de coercition. Cette idéologie est corollaire au processus de décolonisation, aux mouvements de libération nationale et, dans une certaine mesure, au nationalisme. Bien que le terme impérialisme est utilisé la langue française au cours XIXe siècle pour désigner l'appui au régime napoléonien et le « système de gouvernement et de domination de l'Empire romain », l'anti-impérialisme prend son origine durant la seconde moitié de XIXe siècle de l'anglais imperialism qui désigne d'abord la politique d'extension coloniale de l'Empire britannique sous le premier ministre britannique Benjamin Disraeli au cours des années 1870. Le concept sera approfondi par John Atkinson Hobson en 1902 dans son livre Imperialism: A Study. L'anti-impérialisme est aussi une notions cruciale du marxisme-léninisme. Le concept, qui diffère de l'usage commun, est approfondi dans le livre de 1917 L'Impérialisme, stade suprême du capitalisme de Lénine entre autres. Dans la théorie marxiste, l'impérialisme est un stade du capitalisme au cours duquel le capital financier supplante toutes les autres formes du capital. L'anti-impérialisme a été l'un des principales politique de l'URSS, de la République populaire de Chine, de Cuba et des autres pays communistes depuis la seconde moitié du XXe siècle. La fin du XXe siècle sous l'hégémonie des États-Unis voit la naissance d'un nouvel impérialisme . L'anti-impérialisme, dans ces circonstances, est une part intégrante du mouvement altermondialiste qui s'oppose à la mondialisation libérale et aux grands accords de libre-échange et du mouvement pacifiste qui s'oppose aux invasions militaires. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Anti-imperialism"/>
-    <skos:broader rdf:resource="#humanRights"/>
+    <skos:broaderTransitive rdf:resource="#humanRights"/>
     <skos:related rdf:resource="#anti-British"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#imperialism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Jacobin">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -1891,6 +1900,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#jacobitism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-LandLeague">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -1917,6 +1927,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#monarchism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-NuclearMovement">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -1953,6 +1964,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#pacifism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-PovertyMovement">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -1996,6 +2008,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#socialism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Suffrage">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2010,6 +2023,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#suffrage"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Trade-Unionism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2023,15 +2037,16 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#labourMouvement"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Urbanism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <rdf:value>pro-countryside</rdf:value>
     <rdfs:label xml:lang="en">anti-urbanism</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en"> <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
+    <rdfs:label xml:lang="fr">antiurbain</rdfs:label>
+    <skos:definition xml:lang="en">Anti-urbanism is hostility toward the city as opposed to the country, a simple rejection of the city, or a wish to destroy the city. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">L’antiurbain est l’hostilité à l’égard de la ville par opposition à la campagne, un rejet pur et simple, une volonté de détruire la ville.  <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Anti-urbanism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -2080,7 +2095,7 @@
     <skos:definition xml:lang="fr">Le mouvement antiguerre est un mouvement social[réf. nécessaire] s'opposant aux conflits armés. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Anti-war_movement"/>
-    <skos:broader rdf:resource="#pacifism"/>
+    <skos:broaderTransitive rdf:resource="#pacifism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -2099,7 +2114,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:PoliticalAffiliation>
+    <cwrc:contraryTo rdf:resource="#zionism"/>
+   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#antidisestablishmentarianism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <rdf:value>antidisestablishmentarian</rdf:value>
@@ -2238,7 +2254,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
-  <cwrc:PoliticalAffiliation rdf:about="#children'SWelfare">
+  <cwrc:PoliticalAffiliation rdf:about="#childrensWelfare">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <rdf:value>children's rights</rdf:value>
     <rdf:value>children's rights advocate</rdf:value>
@@ -2264,7 +2280,7 @@
     <skos:definition xml:lang="fr">Le pacifisme chrétien est un courant de pensée et d'action à l'intérieur du christianisme. Il désigne, a minima, le refus de la participation à la mise à mort d'un être humain à la guerre pour motif de conscience, et plus largement, le refus d'utiliser des moyens violents pour se défendre, parvenir à ses fins ou opposer une résistance. Bien qu'étant la position d'origine des premiers chrétiens , le pacifisme est considéré comme la position minoritaire au sein des Églises chrétiennes, la position dominante dans l'histoire de l'Église étant la doctrine de la guerre juste. Ce refus d'attenter à la vie de la personne humaine se fonde sur l'un ou plusieurs les aspects bibliques-théologiques suivants : l'être humain comme créature et image de Dieu à ne pas tuer (Ge 1.27 ; Ge 9.5-6)la parole du Décalogue (Ex 20,13) : « Tu ne tueras point », et l'extension de son champ d'applicationl'enseignement du Christ (« Ne vous opposez pas [violemment] au mal » (Mt 5.39) ; « Aimez vos ennemis » (Mt 5.44)l'exemple de la vie du Christ (1 Pi 2.21-23)la mort du Christ interprétée comme don de soi et comme manière de répondre au mal (Rm 5.6-10)la résurrection du Christ vue comme la justification par Dieu de la manière de vivre du Messie (Phil 2.6-11)l'enseignement des apôtres (« Soyez en paix avec tous » (Rm 12.18) ; « Sois vainqueur du mal par le bien » (Rm 12.21) Le pacifisme chrétien rejoint aujourd'hui l'ensemble de ce qui peut se désigner par le vocable de non-violence et qui se décline en dialogue, résolution de conflits, médiation, protestation non-violence, justice restaurative, etc. Le pacifisme chrétien et la non-violence sont notamment connu en milieu catholique à travers les efforts de pacification de la communauté de Sant'Egidio et les nombreuses missions diplomatiques de Jean-Paul II[réf. nécessaire]. Au sein du protestantisme, la résistance spirituelle au nazisme suscitée par le pasteur André Trocmé autour du Chambon-sur-Lignon, le combat de Martin Luther King pour les droits civiques, les Équipes chrétiennes d’action pour la paix (en) (Christian Peacemaker Teams), ou encore le pardon accordé par la communauté amish après la tuerie dans l'école de Nickel Mines en Pennsylvanie ont largement popularisé la non-violence. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Christian_pacifism"/>
-    <skos:broader rdf:resource="#pacifism"/>
+    <skos:broaderTransitive rdf:resource="#pacifism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -2278,7 +2294,7 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Christian_socialism"/>
-    <skos:broader rdf:resource="#socialism"/>
+    <skos:broaderTransitive rdf:resource="#socialism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -2313,7 +2329,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
-  <cwrc:PoliticalAffiliation rdf:about="#co-OperativeMovement">
+  <cwrc:PoliticalAffiliation rdf:about="#co-operativeMovement">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <rdfs:label xml:lang="en">co-operative movement</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -2361,7 +2377,7 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Conscientious_objector"/>
-    <skos:broader rdf:resource="#pacifism"/>
+    <skos:broaderTransitive rdf:resource="#pacifism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -2389,7 +2405,7 @@
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Feminism"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#feminism"/>
+    <skos:broaderTransitive rdf:resource="#feminism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -2473,11 +2489,12 @@
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Dreyfus_affair"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#humanRights"/>
+    <skos:broaderTransitive rdf:resource="#humanRights"/>
     <skos:related rdf:resource="#anti-Antisemitism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#antisematism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#educationReform">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2628,7 +2645,7 @@
     <skos:definition xml:lang="en">Activism opposing violence from a feminist perspective, often but not exclusively violence against women and children, including sexual and domestic violence and female genital mutilation.</skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#feminism"/>
+    <skos:broaderTransitive rdf:resource="#feminism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -2641,8 +2658,8 @@
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Internationalism_(politics)"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#feminism"/>
-    <skos:broader rdf:resource="#internationalism"/>
+    <skos:broaderTransitive rdf:resource="#feminism"/>
+    <skos:broaderTransitive rdf:resource="#internationalism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -2656,8 +2673,8 @@
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Pacifism"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#feminism"/>
-    <skos:broader rdf:resource="#pacifism"/>
+    <skos:broaderTransitive rdf:resource="#feminism"/>
+    <skos:broaderTransitive rdf:resource="#pacifism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -2736,7 +2753,7 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Greek_nationalism"/>
-    <skos:broader rdf:resource="#nationalism"/>
+    <skos:broaderTransitive rdf:resource="#nationalism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -2837,7 +2854,7 @@
     <skos:definition xml:lang="fr">45xCe modèle est-il pertinent ? Cliquez pour en voir d'autres.Cet article ne cite pas suffisamment ses sources (mai 2015). Si vous disposez d'ouvrages ou d'articles de référence ou si vous connaissez des sites web de qualité traitant du thème abordé ici, merci de compléter l'article en donnant les références utiles à sa vérifiabilité et en les liant à la section « Notes et références » (modifier l'article, comment ajouter mes sources ?). Le mouvement pour l'indépendance de l'Inde recouvre un ensemble complexe englobant diverses campagnes nationales et régionales, des troubles et des tentatives inspirés d'une philosophie à la fois non-violente et militante, et a impliqué une gamme étendue d'organismes, de philosophies et de mouvements politiques indiens ayant eu pour but commun de mettre fin à l'autorité coloniale britannique aussi bien que celle d'autres administrations coloniales dans le sous-continent indien. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Indian_independence_movement"/>
-    <skos:broader rdf:resource="#humanRights"/>
+    <skos:broaderTransitive rdf:resource="#humanRights"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -2967,7 +2984,7 @@
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Italian_unification"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#nationalism"/>
+    <skos:broaderTransitive rdf:resource="#nationalism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -3032,6 +3049,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#anti-Trade-Unionism"/> 
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#left-Wing">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3221,7 +3239,7 @@
     <skos:definition xml:lang="fr">Le néo-conservatisme ou néoconservatisme est un courant de pensée politique d'origine américaine apparu à la fin du XXe siècle. Il s'agit d'une conception qui a émergé aux États-Unis par opposition au relativisme culturel et à la contre-culture de la Nouvelle gauche (« New Left ») des années 1960. Cette philosophie a influencé les politiques menées par George W. Bush, signifiant un réalignement de la politique américaine, et le passage de quelques libéraux sociaux à la droite du spectre politique, d'où le terme qui fait référence aux « nouveaux » conservateurs. À l'origine, le terme néo-conservateur était utilisé pour critiquer les sociaux-libéraux qui sont passés du côté du Parti républicain. Michael Harrington, un social-démocrate, a forgé l'usage du mot néo-conservateur en 1973 dans Dissent, un magazine sur les politiques de protection sociale. Selon E. J. Dionne, le néo-conservatisme est né sur le principe que le social-libéralisme a échoué. Le premier théoricien néo-conservateur à avoir adopté ce mot et qui est considéré comme le fondateur de cette idéologie est Irving Kristol et père de William Kristol, fondateur du think-tank « néo-conservateur » Project for the New American Century. Irving Kristol a été un militant trotskyste actif pendant sa jeunesse et a exposé ses vues néoconservatrices en 1979 dans l'article Confessions of a True, Self-Confessed 'Neoconservative'. Les idées de Kristol sont influentes depuis les années 1950 quand il a cofondé et édité le magazine Encounter. Un autre idéologue de ce mouvement était Norman Podhoretz, éditeur au magazine Commentary de 1960 à 1995. En 1982, Podhoretz se désignait déjà comme un néo-conservateur dans un article du New York Times Magazine intitulé The Neoconservative Anguish over Reagan's Foreign Policy. La doctrine Reagan était considérée comme anticommuniste et en opposition avec l'influence mondiale de l'URSS. Elle était au centre de la politique étrangère américaine jusqu'à la fin de la Guerre froide, un peu avant que Clinton ne devienne président. L'influence néo-conservatrice sur la politique étrangère américaine sera un peu plus tard au premier plan de la doctrine Bush. Les journaux néo-conservateurs prééminents sont Commentary et The Weekly Standard. Il existe aussi des cercles de réflexion néo-conservateurs sur la politique étrangère dont notamment American Enterprise Institute (AEI), le The Heritage Foundation, JINSA (Jewish Institute for National Security Affairs) et enfin Project for the New American Century (PNAC). <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Neoconservatism"/>
-    <skos:broader rdf:resource="#conservatism"/>
+    <skos:broaderTransitive rdf:resource="#conservatism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -3260,7 +3278,7 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Nonjuring_schism"/>
-    <skos:broader rdf:resource="#jacobitism"/>
+    <skos:broaderTransitive rdf:resource="#jacobitism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -3338,7 +3356,7 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Polish_nationalism"/>
-    <skos:broader rdf:resource="#nationalism"/>
+    <skos:broaderTransitive rdf:resource="#nationalism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -3608,7 +3626,7 @@
     <skos:definition xml:lang="fr">Le nationalisme écossais moderne naît dans l'entre-deux-guerres, même si des éléments nationalistes sont depuis plusieurs siècles au cœur de l'identité écossaise. L'article examine le contexte historique et politique qui a vu l'éclosion d'un nationalisme politique en Écosse, depuis la création du SNP (Scottish National Party) en 1934 jusqu'à la mise en place d'un régime de dévolution à l'Écosse à partir de 1999. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Scottish_nationalism"/>
-    <skos:broader rdf:resource="#nationalism"/>
+    <skos:broaderTransitive rdf:resource="#nationalism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -3705,7 +3723,7 @@
     <skos:definition xml:lang="fr">La Société religieuse des Amis est un mouvement religieux fondé en Angleterre au XVIIe siècle par des dissidents de l'Église anglicane. Les membres de ce mouvement sont communément connus sous le nom de quakers () mais ils se nomment entre eux « Amis » et « Amies ». Le mouvement est souvent nommé simplement Société des Amis et le surnom de « quaker » apparaît le plus souvent dans la dénomination officielle, sous la forme Société religieuse des Amis (quakers). Les historiens s'accordent à désigner George Fox comme le principal fondateur ou le plus important meneur des débuts du mouvement. Depuis sa création en Angleterre, le mouvement s'est d'abord répandu dans les pays de colonisation anglo-saxonne. Au XXe siècle, des missionnaires quakers ont propagé leur religion en Amérique latine et en Afrique. Aujourd'hui, les quakers déclarent être au nombre d'environ 350 000 dans le monde. La Société des Amis se différencie de la plupart des autres groupes issus du christianisme par l'absence de credo et de toute structure hiérarchique. Pour les quakers, la croyance religieuse appartient à la sphère personnelle et chacun est libre de ses convictions. Le concept de « lumière intérieure » (inner light) est cependant partagé par la plupart d'entre eux, quelle que soit la signification donnée à ces mots. De nombreux quakers reconnaissent le christianisme mais ne ressentent pas leur foi comme entrant dans les catégories chrétiennes traditionnelles. On trouve aujourd'hui dans la Société des Amis des pratiques très diverses, y compris un large courant évangélique. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Quakers"/>
-    <skos:broader rdf:resource="#humanRights"/>
+    <skos:broaderTransitive rdf:resource="#humanRights"/>
     <skos:related rdf:resource="#abolitionism"/>
     <skos:related rdf:resource="#feminism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -3737,7 +3755,7 @@
     <skos:definition xml:lang="fr">Le mot stalinisme désigne l’idéologie et la pratique politique des partis communistes ayant adopté la ligne politique définie par les partisans de Joseph Staline, secrétaire général du Parti communiste de l'Union soviétique. Par extension, ces partis et leurs membres ont été qualifiés de staliniens. Le stalinisme est caractérisé par le centralisme et l'emploi de la force et de la terreur comme mode de gouvernement, accompagnés d'un culte de la personnalité organisé autour du principal dirigeant de chaque Parti communiste. Les régimes staliniens se caractérisent par une économie planifiée par l'état. Par extension, le terme de stalinisme et les adjectifs stalinien ou, plus rarement, staliniste sont parfois utilisés pour qualifier l'ensemble des régimes basés sur le modèle soviétique, ainsi que les partis politiques les soutenant. Après la déstalinisation (1956), l'Union soviétique cesse de se réclamer de Staline, mais le terme stalinisme et l'adjectif stalinien continuent d'être utilisés, dans le cadre de discours critiques ou polémiques, pour qualifier l'URSS, l'ensemble des pays du bloc de l'Est et plus largement l'ensemble des régimes dictatoriaux communistes. En Europe après la déstalinisation, seule la République populaire socialiste d'Albanie s'est réclamée de la continuité stalinienne. En Asie en revanche, ce fut encore, durant des décennies, le cas des régimes communistes chinois, vietnamien, laotien, cambodgien et surtout coréen qui, au XXIe siècle, est parfois qualifiée de « dernier régime stalinien ». <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Stalinism"/>
-    <skos:broader rdf:resource="#communism"/>
+    <skos:broaderTransitive rdf:resource="#communism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -3759,12 +3777,13 @@
     <skos:definition xml:lang="fr">Le droit de vote permet aux citoyens d'un État de voter pour exprimer leur volonté, à l'occasion d'un scrutin. Dans son application contemporaine, il pose un choix et permet, soit d'élire des gouvernants à but représentatif, soit de répondre à une question posée par la gouvernance, sous forme de plébiscite ou de référendum. Les démocraties modernes présentent le droit de vote comme un droit civique fondamental. À partir du XIXe siècle, le vote devient un synonyme de démocratie, alors qu'auparavant il désignait un régime aristocratique ou oligarchique. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Suffrage"/>
-    <skos:broader rdf:resource="#feminism"/>
-    <skos:broader rdf:resource="#socialReform"/>
+    <skos:broaderTransitive rdf:resource="#feminism"/>
+    <skos:broaderTransitive rdf:resource="#socialReform"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:PoliticalAffiliation>
+    <cwrc:contraryTo rdf:resource="#anti-Feminism"/>
+   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#taxResistance">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <rdf:value>tax withholder</rdf:value>
@@ -3810,6 +3829,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#whiggism"/>    
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#tradeUnionism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3822,7 +3842,7 @@
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Trade_union"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#socialReform"/>
+    <skos:broaderTransitive rdf:resource="#socialReform"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -3836,7 +3856,7 @@
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Urban_renewal"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#socialReform"/>
+    <skos:broaderTransitive rdf:resource="#socialReform"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -3868,7 +3888,7 @@
   * Portail du pays de Galles Portail du pays de Galles <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Welsh_nationalism"/>
-    <skos:broader rdf:resource="#nationalism"/>
+    <skos:broaderTransitive rdf:resource="#nationalism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -3902,7 +3922,7 @@
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/John_Wilkes"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#socialReform"/>
+    <skos:broaderTransitive rdf:resource="#socialReform"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -3916,10 +3936,11 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Womanism"/>
-    <skos:broader rdf:resource="#feminism"/>
+    <skos:broaderTransitive rdf:resource="#feminism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#anti-feminism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#womensEducationReform">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3937,10 +3958,11 @@
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Category:Women_and_education"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#educationReform"/>
+    <skos:broaderTransitive rdf:resource="#educationReform"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#anti-feminism"/>    
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#womensEmploymentReform">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3954,11 +3976,12 @@
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Women_in_the_workforce"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#socialReform"/>
-    <skos:broader rdf:resource="#feminism"/>
+    <skos:broaderTransitive rdf:resource="#socialReform"/>
+    <skos:broaderTransitive rdf:resource="#feminism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#anti-feminism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#zionism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3970,7 +3993,7 @@
     <skos:definition xml:lang="fr">Le sionisme est une idéologie politique fondée sur un sentiment national juif, décrite comme nationaliste par les uns et comme émancipatrice par les autres, prônant l'existence d'un centre territorial ou étatique peuplé par les Juifs en Terre d'Israël (Eretz Israël). À la naissance du mouvement, à la fin du XIXe siècle, ce territoire correspondait à la Palestine ottomane, puis après la Première Guerre mondiale à la partie occidentale de la Palestine mandataire. Sur un plan idéologique et institutionnel, le sionisme entend œuvrer à donner ou redonner aux Juifs un statut perdu depuis l'annexion du Royaume d'Israël par l'Empire assyrien en -720, à savoir celui d'un peuple disposant d'un territoire. Il faut le différencier du post-sionisme, qui veut donner une orientation laïque à l'État d'Israël, normaliser les relations avec les Palestiniens, et du néo-sionisme, qui milite pour la migration des Palestiniens et des Arabes israéliens vers les autres pays arabes. Le mouvement sioniste est né parmi les communautés ashkénazes d'Europe centrale et orientale sous la pression des pogroms, mais aussi en Europe occidentale, à la suite du choc causé par l'affaire Dreyfus – qui compte parmi les motifs du lancement du Congrès sioniste par Theodor Herzl. Bien qu'ayant des caractères spécifiques du fait de la dispersion des Juifs, cette idéologie est contemporaine de l'affirmation d'autres nationalismes en Europe. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Zionism"/>
-    <skos:broader rdf:resource="#nationalism"/>
+    <skos:broaderTransitive rdf:resource="#nationalism"/>
     <skos:related rdf:resource="#anti-Antisemitism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -4229,7 +4252,7 @@
   <skos:ConceptScheme rdf:about="#TextLabels">
     <rdf:type resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">text labels</rdfs:label>
-    <rdfs:label xml:lang="fr">noms</rdfs:label>
+    <rdfs:label xml:lang="fr">étiquette</rdfs:label>
     <skos:definition xml:lang="en">Collection of all ambiguous labels within the Orlando markup.</skos:definition>
     <skos:definition xml:lang="fr"/>  
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -4386,7 +4409,7 @@
   <!-- Personal / family relationships. -->
   <owl:ObjectProperty rdf:ID="relativeOf">
     <rdf:value>FAMILY</rdf:value>
-    <rdfs:label xml:lang="en">relativeOf</rdfs:label>
+    <rdfs:label xml:lang="en">relative of</rdfs:label>
     <rdfs:label xml:lang="fr">liens de famille</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -4401,7 +4424,7 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="childOf">
-    <rdfs:label xml:lang="en">child Of</rdfs:label>
+    <rdfs:label xml:lang="en">child of</rdfs:label>
     <rdfs:label xml:lang="fr">enfant de</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -4410,7 +4433,7 @@
 
 
   <owl:ObjectProperty rdf:ID="daughterOf">
-    <rdfs:label xml:lang="en">daughter Of</rdfs:label>
+    <rdfs:label xml:lang="en">daughter of</rdfs:label>
     <rdfs:label xml:lang="fr">fille de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#childOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -4418,7 +4441,7 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="sonOf">
-    <rdfs:label xml:lang="en">son Of</rdfs:label>
+    <rdfs:label xml:lang="en">son of</rdfs:label>
     <rdfs:label xml:lang="fr">fil de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#childOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -4428,16 +4451,17 @@
 
   <owl:ObjectProperty rdf:ID="parentOf">
     <rdf:value>PARENTS</rdf:value>
-    <rdfs:label xml:lang="en">parent Of</rdfs:label>
+    <rdfs:label xml:lang="en">parent of</rdfs:label>
     <rdfs:label xml:lang="fr">parent de</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
   </owl:ObjectProperty>
 
 
   <owl:ObjectProperty rdf:ID="motherOf">
     <rdf:value>MOTHER</rdf:value>
-    <rdfs:label xml:lang="en">mother Of</rdfs:label>
+    <rdfs:label xml:lang="en">mother of</rdfs:label>
     <rdfs:label xml:lang="fr">mère de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#parentOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -4446,7 +4470,7 @@
 
   <owl:ObjectProperty rdf:ID="fatherOf">
     <rdf:value>FATHER</rdf:value>
-    <rdfs:label xml:lang="en">father Of</rdfs:label>
+    <rdfs:label xml:lang="en">father of</rdfs:label>
     <rdfs:label xml:lang="fr">père de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#parentOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -4459,6 +4483,7 @@
     <rdfs:label xml:lang="fr">grand parent de</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
   </owl:ObjectProperty>
 
 
@@ -4487,6 +4512,7 @@
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="uncleOf">
@@ -4496,6 +4522,7 @@
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
   </owl:ObjectProperty>
 
 
@@ -5258,5 +5285,4 @@
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
   
-
 </rdf:RDF>
