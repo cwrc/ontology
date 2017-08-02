@@ -47,7 +47,7 @@
     <skos:definition xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</skos:definition>
     <rdfs:comment xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</rdfs:comment>
     <owl:versionInfo>0.99.3</owl:versionInfo>
-    <owl:priorVersion rdf:resource="http://sparql.cwrc.ca/ontology/cwrc-2017-03-18"/>
+    <owl:priorVersion rdf:resource="http://sparql.cwrc.ca/ontology/cwrc-2017-06-10"/>
     <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">ONTOLOGY_DATE</dcterms:date>
     <dcterms:rights rdf:resource="http://creativecommons.org/licenses/by-nc/4.0/"/>
     <vs:term_status xml:lang="en">Testing</vs:term_status>
@@ -791,7 +791,6 @@
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broaderTransitive rdf:resource="#occultism"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#catholicism">
     <rdfs:label xml:lang="en">Roman Catholicism</rdfs:label>
@@ -895,7 +894,6 @@
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broaderTransitive rdf:resource="#occultism"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#islam">
     <rdfs:label xml:lang="en">Islamism</rdfs:label>
@@ -1143,7 +1141,7 @@
   <cwrc:Religion rdf:about="#occultism">
     <rdfs:label xml:lang="en">Occultism/Theosophism</rdfs:label>
     <rdfs:label xml:lang="fr">occultisme</rdfs:label>
-    <skos:definition xml:lang="en">Any religious or philosophic ideology based on mystical insight into the nature of God and/or divine truth. This insight is attained only through direct experience of the divine. The term is sometimes used to specifically refer to the principles of the Theosophical Society founded in New York in 1875 by Madame Blavatsky and H. S. Olcott which incorporated aspects of Buddhism and Brahmanism.</skos:definition>
+    <skos:definition xml:lang="en">Any religious or philosophic ideology based on mystical insight into the nature of God and/or divine truth. This insight is attained only through direct experience of the divine. The term is sometimes used to specifically refer to the principles of the Theosophical Society founded in New York in 1875 by Madame Blavatsky and H. S. Olcott which incorporated aspects of Buddhism and Brahmanism.<![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
     <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300056000"/>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1160,7 +1158,6 @@
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broaderTransitive rdf:resource="#occultism"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#plymouthBrethren">
     <rdfs:label xml:lang="en">Plymouth Brethren</rdfs:label>
@@ -1202,7 +1199,6 @@
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broaderTransitive rdf:resource="#occultism"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#tractarianMovement">
     <rdfs:label xml:lang="en">Tractarian Movement</rdfs:label>
@@ -1253,7 +1249,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:broaderTransitive rdf:resource="#occultism"/>
   </cwrc:Religion>
   <!-- Social Classes -->
   <owl:Class rdf:ID="SocialClass">
