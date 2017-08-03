@@ -59,7 +59,7 @@ $(ONTOLOGY)-FR-template-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-template-fr.html figu
 $(ONTOLOGY)-FR-template2-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-FR-template-$(ONTOLOGY_DATE).html $(ONTOLOGY)-citations.html
 	 m4 -P $(ONTOLOGY)-FR-template-$(ONTOLOGY_DATE).html > $(ONTOLOGY)-FR-template2-$(ONTOLOGY_DATE).html
 $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-FR-template2-$(ONTOLOGY_DATE).html # $(ONTOLOGY)-overall-$(ONTOLOGY_DATE).jpg
-	./scripts/docgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY) $(ONTOLOGY)-template-fr.html  $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html fr
+	./scripts/docgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY) $(ONTOLOGY)-FR-template2-$(ONTOLOGY_DATE).html  $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html fr
 #$(ONTOLOGY)-overall-$(ONTOLOGY_DATE).jpg: $(ONTOLOGY)-$(ONTOLOGY_DATE).dot
 #	dot -o $(ONTOLOGY)-overall-$(ONTOLOGY_DATE).jpg -Tpng $(ONTOLOGY)-$(ONTOLOGY_DATE).dot
 #$(ONTOLOGY)-overall-small-$(ONTOLOGY_DATE).jpg:  $(ONTOLOGY)-overall-$(ONTOLOGY_DATE).jpg
