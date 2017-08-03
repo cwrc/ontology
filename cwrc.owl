@@ -869,7 +869,7 @@
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
+    <skos:broaderTransitive rdf:resource="#anglicanism"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#hinduism">
     <rdfs:label xml:lang="en">Hinduism</rdfs:label>
@@ -1020,18 +1020,6 @@
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:Religion>
-  <cwrc:Religion rdf:about="#churchOfEngland">
-    <rdfs:label xml:lang="en">Church of England</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    <skos:inScheme rdf:resource="#Religion"/>
-    <skos:broaderTransitive rdf:resource="#christianity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Religion>
@@ -1208,7 +1196,7 @@
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Oxford_Movement"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
-    <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
+    <skos:broaderTransitive rdf:resource="#anglicanism"/>
     <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Oxford_Movement"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5127,7 +5115,7 @@
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
+    <skos:broaderTransitive rdf:resource="#anglicanism"/>
    <rdfs:comment xml:lang="en">Deprecated in favour of instance #dissentProtestant.</rdfs:comment>
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #dissentProtestant.</rdfs:comment>
     <dcterms:isReplacedBy rdf:resource="#dissentProtestant"/>
@@ -5144,7 +5132,7 @@
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
+    <skos:broaderTransitive rdf:resource="#anglicanism"/>
      <rdfs:comment xml:lang="en">Deprecated in favour of instance #dissentProtestant.</rdfs:comment>
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #dissentProtestant.</rdfs:comment>
     <dcterms:isReplacedBy rdf:resource="#dissentProtestant"/>
@@ -5193,7 +5181,7 @@
     <skos:definition xml:lang="nl">Het Religieus Genootschap der Vrienden, beter bekend als quakers, verouderd Nederlands kwakers, vormt een groep ondogmatische gelovigen, die zijn wortels vindt in de christelijke traditie. Het leven en de overgeleverde uitspraken van Jezus vormen een belangrijke inspiratiebron. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Quakers"/>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
-    <skos:broaderTransitive rdf:resource="#churchOfEngland"/>
+    <skos:broaderTransitive rdf:resource="#anglicanism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5253,6 +5241,23 @@
     <rdfs:comment xml:lang="en">Deprecated in favour of instance #unitarianism.</rdfs:comment>
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #unitarianism.</rdfs:comment>
     <dcterms:isReplacedBy rdf:resource="#unitarianism"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#churchOfEngland">
+    <rdfs:label xml:lang="en">Church of England</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <skos:inScheme rdf:resource="#Religion"/>
+    <skos:broaderTransitive rdf:resource="#christianity"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance #anglicanism.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance #anglicanism.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#anglicanism"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
