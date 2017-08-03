@@ -54,17 +54,7 @@
       <dd>Date: ONTOLOGY_LONGDATE</dd>
 
       <dt>Authors:</dt>
-      
-      <dd>Susan Brown</dd>
-      <dd>Colin Faulkner</dd>
-      <dd>Abigel Lemak</dd>
-      <dd>Kim Martin</dd>
-      <dd>Alliyya Mohammed</dd>
-      <dd>Jade Penancier</dd>
-      <dd>John Simpson</dd>
-      <dd>Robert Warren</dd>
-            
-
+{_authors_}
       <dt>Contributors:</dt>
       <dd>Constance Crompton</dd>
       <dd>Original Orlando Project Authors</dd>
@@ -89,43 +79,51 @@
     <h2 id="abstract">Abstract</h2>
     <p>The Ontology of the Canadian Writing Research Collaboratory (<a href="http://www.cwrc.ca/en">cwrc.ca</a>) brings together various linked
     data materials produced within the Collaboratory related to the writers, writing, and culture.</p>
-
-    <h2 id="contents">Table of Contents</h2>
     
-    <ul style="list-style-type: none">
-    <li><a href="#introduction">1. Introduction</a></li> 
-    <li><a href="#status">2. Status of this Document</a></li>
-    <li><a href="#status_ontology">3. Status of this dynamic ontology</a></li>
-    <li><a href="#background">4. Background on the Orlando source data</a></li>
-    <li><a href="#goals">5. Basic ontological goals</a></li>
-    <ul style="list-style-type: none">
-    <li><a href="#principals">a. Principles</a></li>
-    <li><a href="#linkages">b. Linkages to other ontologies</a></li>
-    <li><a href="#provenance">c. Provenance and contexts</a></li>
-    <li><a href="#labelsandvalues">d. Labels and values</a></li>
-    <li><a href="#culturalformationsgeneric">e. Cultural Form</a></li>
-    </ul>
-    <li><a href="#structures">6. CWRC ontological structures</a></li>
-    <ul style="list-style-type: none">
-    <li><a href="#culturalformationsontology">a. Cultural Form</a></li>    
-    <li><a href="#contextontology">b. Contexts</a></li>    
-    <li><a href="#granularproperties">c. Granular Properties</a></li> 
-    <li><a href="#taxonomiesontology">d. Built-in Taxonomies</a></li>
-    <ul style="list-style-type: none">    
-    <li><a href="#religion_taxonomy">i. Religion</a></li>
-    <li><a href="#genre_taxonomy">ii. Literary Genre</a></li>
-    <li><a href="#gender_taxonomy">iii. Gender, Sex and Orientation</a></li>
-    </ul>
-    </ul>
-    <li><a href="#definition_list">7. Global Cross-Reference</a></li>
-    <li><a href="#reference">8. Detailed references for all terms, classes and properties</a></li>
-    <li><a href="#notesSKOS">9. CWRC Ontology Design Rules</a></li>
-    <li><a href="#notesSKOSOWL">10. Notes on SKOS and OWL</a></li>
-    <li><a href="#notesEvent">11. Notes on CWRC Events</a></li>
-    <li><a href="#conclusion">12. Conclusion and Future Work</a></li>
-    <li><a href="#version_history">13. Version History</a></li>
-    <li><a href="#biblipgraphy">14. Bibliography</a></li>    
-    </ul>
+    <h2 id="contents">Table of Contents</h2>
+    <div class="table-contents">
+      <ul>
+        <li><a href="#introduction">1. Introduction</a></li> 
+        <li><a href="#status">2. Status of this Document</a></li>
+        <li><a href="#status_ontology">3. Status of this dynamic ontology</a></li>
+        <li><a href="#background">4. Background on the Orlando source data</a></li>
+        <li><a href="#goals">5. Basic ontological goals</a></li>
+        <ul>
+          <li><a href="#principals">a. Principles</a></li>
+          <li><a href="#linkages">b. Linkages to other ontologies</a></li>
+          <li><a href="#provenance">c. Provenance and contexts</a></li>
+          <li><a href="#labelsandvalues">d. Labels and values</a></li>
+          <li><a href="#culturalformationsgeneric">e. Cultural Form</a></li>
+        </ul>
+        <li><a href="#structures">6. CWRC ontological structures</a></li>
+        <ul>
+          <li><a href="#culturalformationsontology">a. Cultural Form</a></li>    
+          <li><a href="#contextontology">b. Contexts</a></li>    
+          <li><a href="#granularproperties">c. Granular Properties</a></li> 
+          <li><a href="#taxonomiesontology">d. Built-in Taxonomies</a></li>
+          <ul>    
+            <li><a href="#religion_taxonomy">i. Religion</a></li>
+            <li><a href="#genre_taxonomy">ii. Literary Genre</a></li>
+            <li><a href="#gender_taxonomy">iii. Gender, Sex and Orientation</a></li>
+          </ul>
+        </ul>
+        <li><a href="#definition_list">7. Global Cross-Reference</a></li>
+        <li><a href="#reference">8. Detailed references for all terms, classes and properties</a></li>
+        <ul>
+          <li><a href="#dictionaries">a. Dictionaries</a></li>
+          <li><a href="#classes">b. Classes</a></li>
+          <li><a href="#properties">c. Properties</a></li>
+          <li><a href="#instances">d. Instances</a></li>
+        </ul>
+        <li><a href="#notesSKOS">9. CWRC Ontology Design Rules</a></li>
+        <li><a href="#notesSKOSOWL">10. Notes on SKOS and OWL</a></li>
+        <li><a href="#notesEvent">11. Notes on CWRC Events</a></li>
+        <li><a href="#conclusion">12. Conclusion and Future Work</a></li>
+        <li><a href="#version_history">13. Version History</a></li>
+        <li><a href="#deprecated">14. Deprecated Classes</a></li>    
+        <li><a href="#bibliography">15. Bibliography</a></li>    
+      </ul>
+    </div>
 
     <h3 id="introduction">1. Introduction</h3> 
     <p>Although it contains quite general components for activities such as annotation
@@ -421,7 +419,7 @@ endorsing the corresponding definition or interpretation of the term.</p>
     <h3 id="definition_list">7. Global Cross-Reference</h3>
     
     <!-- The list of classes and properties goes here -->
-    %s
+    {_azlist_}
     <!-- End of the terms list -->
 
     <h2 id="reference">8. Detailed references for all terms, classes and
@@ -430,7 +428,7 @@ endorsing the corresponding definition or interpretation of the term.</p>
     <p></p>
 
     <!-- The following is the script-generated list of classes and properties -->
-    %s
+    {_terms_}
     <!-- End of the terms list -->
 
     <h2 id="notesSKOS">9. CWRC Ontology Design Rules</h2>
@@ -438,12 +436,7 @@ endorsing the corresponding definition or interpretation of the term.</p>
     <p>Beyond the formalism of [citation on ontology design rules], the CWRC
     ontology follows the following design rules and styles:</p>
     <ul>
-    <li>The contents of rdfs:labels tags are always in lowercase, with the
-    following exceptions:</li>
-    <ul>
-    <li>Labels for religions, political affiliations and groups of people derived from a proper name
-    will begin with an uppercase letter.</li>
-    </ul>
+    <li>The contents of rdfs:labels tags are always in lowercase.</li>
     <li>Whenever possible, the original Orlando XML tag equivalent is
     contained within the rdf:value tag of any term within the ontology.</li>
     <li>Whenever referencing a geographical location, use the most precise
@@ -477,8 +470,9 @@ endorsing the corresponding definition or interpretation of the term.</p>
     <li><p>0.99 - Initial public release.</p></li>
     <li><p>0.99.2 - Periodic release with updated logos, genres, documentation and proper masthead data.</p></li>
     </ul>
-    
-    <h2 id="biblipgraphy">14. Bibliography</h2>    
+    <h2 id="deprecated">14. Deprecated Terms</h2>    
+    {_deprecated_}
+    <h2 id="bibliography">15. Bibliography</h2>    
 m4_include(cwrc-citations.html)
 
     <!-- ===================================================================== 
