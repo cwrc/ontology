@@ -39,13 +39,13 @@ $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 	rapper -o turtle $(ONTOLOGY)-$(ONTOLOGY_DATE).owl > $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl	
 
 testing: all
-	cat $(ONTOLOGY)-$(ONTOLOGY_DATE)-en.html | sed 's/cwrc.ca\/ontology\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE)-en.html
-	cat $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html  | sed 's/cwrc.ca\/ontology\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html
+	cat $(ONTOLOGY)-$(ONTOLOGY_DATE)-en.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE)-en.html
+	cat $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html  | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html
 	ln -sf /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE)-en.html /var/www/html/testing/$(ONTOLOGY).html
 	ln -sf /var/www/html/testing/$(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html /var/www/html/testing/$(ONTOLOGY)-FR.html
-	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).owl /var/www/html/testing/cwrc.owl
-	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).nt /var/www/html/testing/cwrc.nt
-	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl /var/www/html/testing/cwrc.ttl	
+	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).owl /var/www/html/testing/$(ONTOLOGY).owl
+	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).nt /var/www/html/testing/$(ONTOLOGY).nt
+	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl /var/www/html/testing/$(ONTOLOGY).ttl	
 	cp -f figures/* /var/www/html/testing/figures/.	
 	cp -f -R css /var/www/html/testing/.
 
