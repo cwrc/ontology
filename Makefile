@@ -15,7 +15,7 @@ force:	$(ONTOLOGY).owl
 	touch $(ONTOLOGY)-template-FR.html	
 	rm -f $(ONTOLOGY)-ref.bib
 
-all: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html $(ONTOLOGY).html
+all: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html $(ONTOLOGY).html $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl $(ONTOLOGY)-$(ONTOLOGY_DATE).nt
 
 $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp: $(ONTOLOGY).owl
 	echo $(ONTOLOGY_LOGO)
@@ -37,11 +37,14 @@ $(ONTOLOGY).html: $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html
 testing: all
 	cat $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html
 	cat $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html  | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html
+	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).owl /var/www/html/testing/.
+	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).nt /var/www/html/testing/.
+	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl /var/www/html/testing/.	
 	ln -sf /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html /var/www/html/testing/$(ONTOLOGY).html
 	ln -sf /var/www/html/testing/$(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html /var/www/html/testing/$(ONTOLOGY)-FR.html
-	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).owl /var/www/html/testing/$(ONTOLOGY).owl
-	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).nt /var/www/html/testing/$(ONTOLOGY).nt
-	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl /var/www/html/testing/$(ONTOLOGY).ttl	
+	ln -sf /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE).owl /var/www/html/testing/$(ONTOLOGY).owl
+	ln -sf /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE).nt /var/www/html/testing/$(ONTOLOGY).nt
+	ln -sf /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE).ttl /var/www/html/testing/$(ONTOLOGY).ttl
 	cp -f figures/* /var/www/html/testing/figures/.	
 	cp -f -R css /var/www/html/testing/.
 
