@@ -32,14 +32,15 @@ $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 all:	$(ONTOLOGY)-$(ONTOLOGY_DATE).html $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl $(ONTOLOGY)-$(ONTOLOGY_DATE).nt  $(ONTOLOGY)-$(ONTOLOGY_DATE).owl #$(ONTOLOGY)-overall-$(ONTOLOGY_DATE).jpg		
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).html cwrc.html
 testing:	all	
-	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).html /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE).html
-	cp -f $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html /var/www/html/testing/$(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html
+	cat $(ONTOLOGY)-$(ONTOLOGY_DATE).html | sed 's/\/ontology\//\/testing\//g' | /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE).html
+	cat $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html  | sed 's/\/ontology\//\/testing\//g' | /var/www/html/testing/$(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html
 	ln -sf /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE).html /var/www/html/testing/$(ONTOLOGY).html
 	ln -sf /var/www/html/testing/$(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html /var/www/html/testing/$(ONTOLOGY)-FR.html
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).owl /var/www/html/testing/cwrc.owl
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).nt /var/www/html/testing/cwrc.nt
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl /var/www/html/testing/cwrc.ttl	
 	cp -f figures/* /var/www/html/testing/figures/.	
+	cp -f -R css /var/www/html/testing/.
 #	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).owl  ~/public_html/.
 #	cp -f $(ONTOLOGY)-overall-$(ONTOLOGY_DATE).jpg ~/public_html/images/.
 #	cp -f $(ONTOLOGY)-overall-small-$(ONTOLOGY_DATE).jpg ~/public_html/images/.
