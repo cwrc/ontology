@@ -11,16 +11,13 @@ TOTAL_ENTITIES_CWRC_ONTOLOGY = $(shell cat $(ONTOLOGY)-$(ONTOLOGY_DATE).unique)
 
 force:	$(ONTOLOGY).owl
 	touch $(ONTOLOGY).owl
-	touch $(ONTOLOGY)-template-en.html	
+	touch $(ONTOLOGY)-template-EN.html	
 	touch $(ONTOLOGY)-template-FR.html	
 	rm -f $(ONTOLOGY)-ref.bib
 
 all: $(ONTOLOGY) 
 
-$(ONTOLOGY): $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html $(ONTOLOGY)-$(ONTOLOGY_DATE)-en.html $(ONTOLOGY).html
-
-$(ONTOLOGY).html: $(ONTOLOGY)-$(ONTOLOGY_DATE)-en.html
-	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE)-en.html $(ONTOLOGY).html
+$(ONTOLOGY): $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html $(ONTOLOGY).html
 
 $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp: $(ONTOLOGY).owl
 	echo $(ONTOLOGY_LOGO)
@@ -37,10 +34,12 @@ $(ONTOLOGY)-$(ONTOLOGY_DATE).nt: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 	rapper -o turtle $(ONTOLOGY)-$(ONTOLOGY_DATE).owl > $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl	
 
+$(ONTOLOGY).html: $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html
+	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html $(ONTOLOGY).html
 testing: all
-	cat $(ONTOLOGY)-$(ONTOLOGY_DATE)-en.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE)-en.html
+	cat $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html
 	cat $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html  | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html
-	ln -sf /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE)-en.html /var/www/html/testing/$(ONTOLOGY).html
+	ln -sf /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html /var/www/html/testing/$(ONTOLOGY).html
 	ln -sf /var/www/html/testing/$(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html /var/www/html/testing/$(ONTOLOGY)-FR.html
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).owl /var/www/html/testing/$(ONTOLOGY).owl
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).nt /var/www/html/testing/$(ONTOLOGY).nt
@@ -52,12 +51,12 @@ $(DOCS_TEMPLATES): $(DOCS) $(ONTOLOGY).owl
 	./generateTermDocumentation.sh doc $(ONTOLOGY)-docs/
 $(ONTOLOGY)-$(ONTOLOGY_DATE).dot: $(ONTOLOGY).owl
 	grep -v "rdfs:label" $(ONTOLOGY).owl  | grep -v "rdfs:comment"| grep -v "foaf:name" | grep -v "rdf:type" | rapper -o dot - "http://rdf.muninn-project.org/ontologies/"$(ONTOLOGY)"#" | grep -v "owl:Class" | grep -v "owl:ObjectProperty" > $(ONTOLOGY)-$(ONTOLOGY_DATE).dot
-$(ONTOLOGY)-template-$(ONTOLOGY_DATE)-en.html: $(ONTOLOGY)-template-en.html figures/religionTaxonomy-$(ONTOLOGY_DATE).svg figures/genreTaxonomy-$(ONTOLOGY_DATE).svg
-	sed "s/PREVIOUS_ONTOLOGY/$(PREVIOUS_ONTOLOGY)/g"  < $(ONTOLOGY)-template-en.html | sed "s/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g" | sed "s/ONTOLOGY_NAME/$(ONTOLOGY)/g"  | sed "s/ONTOLOGY_DATE/$(ONTOLOGY_DATE)/g" |  sed "s/ONTOLOGY_LONGDATE/$(ONTOLOGY_LONGDATE)/g"  | sed "s/ONTOLOGY_VERSION/$(ONTOLOGY_VERSION)/g"  | sed 's/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g'  > $(ONTOLOGY)-template-$(ONTOLOGY_DATE)-en.html
-$(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-template-$(ONTOLOGY_DATE)-en.html $(ONTOLOGY)-citations.html
-	 m4 -P $(ONTOLOGY)-template-$(ONTOLOGY_DATE)-en.html > $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html
-$(ONTOLOGY)-$(ONTOLOGY_DATE)-en.html: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html # $(ONTOLOGY)-overall-$(ONTOLOGY_DATE).jpg
-	./scripts/docgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY) $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html  $(ONTOLOGY)-$(ONTOLOGY_DATE)-en.html  en
+$(ONTOLOGY)-template-$(ONTOLOGY_DATE)-EN.html: $(ONTOLOGY)-template-EN.html figures/religionTaxonomy-$(ONTOLOGY_DATE).svg figures/genreTaxonomy-$(ONTOLOGY_DATE).svg
+	sed "s/PREVIOUS_ONTOLOGY/$(PREVIOUS_ONTOLOGY)/g"  < $(ONTOLOGY)-template-EN.html | sed "s/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g" | sed "s/ONTOLOGY_NAME/$(ONTOLOGY)/g"  | sed "s/ONTOLOGY_DATE/$(ONTOLOGY_DATE)/g" |  sed "s/ONTOLOGY_LONGDATE/$(ONTOLOGY_LONGDATE)/g"  | sed "s/ONTOLOGY_VERSION/$(ONTOLOGY_VERSION)/g"  | sed 's/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g'  > $(ONTOLOGY)-template-$(ONTOLOGY_DATE)-EN.html
+$(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-template-$(ONTOLOGY_DATE)-EN.html $(ONTOLOGY)-citations.html
+	 m4 -P $(ONTOLOGY)-template-$(ONTOLOGY_DATE)-EN.html > $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html
+$(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html # $(ONTOLOGY)-overall-$(ONTOLOGY_DATE).jpg
+	./scripts/docgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY) $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html  $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html  en
 $(ONTOLOGY)-FR-template-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-template-FR.html figures/religionTaxonomy-$(ONTOLOGY_DATE).svg figures/genreTaxonomy-$(ONTOLOGY_DATE).svg
 	sed "s/PREVIOUS_ONTOLOGY/$(PREVIOUS_ONTOLOGY)/g"  < $(ONTOLOGY)-template-FR.html | sed "s/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g" | sed "s/ONTOLOGY_NAME/$(ONTOLOGY)/g"  | sed "s/ONTOLOGY_DATE/$(ONTOLOGY_DATE)/g" |  sed "s/ONTOLOGY_LONGDATE/$(ONTOLOGY_LONGDATE)/g"  | sed "s/ONTOLOGY_VERSION/$(ONTOLOGY_VERSION)/g"  | sed 's/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g'  > $(ONTOLOGY)-FR-template-$(ONTOLOGY_DATE).html
 $(ONTOLOGY)-FR-template2-$(ONTOLOGY_DATE).html: $(ONTOLOGY)-FR-template-$(ONTOLOGY_DATE).html $(ONTOLOGY)-citations.html
@@ -87,9 +86,9 @@ doc: scripts/docgen.py
 	./scripts/docgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY) $(ONTOLOGY)-template-FR.html  $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html fr
 	@echo "\n\n\n\n\n"
 	# anglais 
-	./scripts/docgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY) $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html  $(ONTOLOGY)-$(ONTOLOGY_DATE)-en.html  en
+	./scripts/docgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY) $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html  $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html  en
 	./scripts/docgen.py genre.owl genre genre-template-FR.html  genre-FR-$(ONTOLOGY_DATE).html  fr
-	./scripts/docgen.py genre.owl genre genre-template-en.html  genre-en-$(ONTOLOGY_DATE).html  en
+	./scripts/docgen.py genre.owl genre genre-template-EN.html  genre-EN-$(ONTOLOGY_DATE).html  en
 
 doctest: scripts/docgen.py
-	./scripts/docgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY) $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html  $(ONTOLOGY)-$(ONTOLOGY_DATE)-en.html  en > ./scripts/test.html
+	./scripts/docgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY) $(ONTOLOGY)-template2-$(ONTOLOGY_DATE).html  $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html  en > ./scripts/test.html
