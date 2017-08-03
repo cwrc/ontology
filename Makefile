@@ -15,9 +15,7 @@ force:	$(ONTOLOGY).owl
 	touch $(ONTOLOGY)-template-FR.html	
 	rm -f $(ONTOLOGY)-ref.bib
 
-all: $(ONTOLOGY) 
-
-$(ONTOLOGY): $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html $(ONTOLOGY).html
+all: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html $(ONTOLOGY).html
 
 $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp: $(ONTOLOGY).owl
 	echo $(ONTOLOGY_LOGO)
