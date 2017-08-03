@@ -46,72 +46,30 @@
 
 # Instance of the Cultural Formation for the Ethnicity Context for Sophia King
 
-<http://www.cwrc.ca/cwrcdata/KingCulturalFormation>
+<http://orlando.cambridge.org/protected/svPeople?formname=r&name_entry=King,%20Sophia>
     a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Sophia King"@en ;
+    rdfs:label "Gender Context for Sophia King"@en ;
     oa:hasBody cwrc:woman ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/sophiaKing_Main_Document> .
 
-<http://www.cwrc.ca/cwrcdata/KingCulturalFormation>
+<http://www.cwrc.ca/cwrcdata/KingCulturalFormation1>
     a cwrc:CulturalFormationContext ;
     rdfs:label "Cultural Formation Context for Sophia King"@en ;
     oa:hasBody cwrc:indigent ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/sophiaKing1> .
-
-<http://www.cwrc.ca/cwrcdata/KingCulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Sophia King"@en ;
     oa:hasBody cwrc:gentry ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/sophiaKing1> .
-
-<http://www.cwrc.ca/cwrcdata/KingCulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Sophia King"@en ;
     oa:hasBody cwrc:professional ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/sophiaKing1> .
-
-<http://www.cwrc.ca/cwrcdata/KingCulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Sophia King"@en ;
-    oa:hasBody geonames:2264397, cwrc:portugal ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/sophiaKing1> .
-    
-<http://www.cwrc.ca/cwrcdata/KingCulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Sophia King"@en ;
+    oa:hasBody cwrc:portugal ;
     oa:hasBody cwrc:jewishEthnicity ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/sophiaKing1> .
-
-<http://www.cwrc.ca/cwrcdata/KingCulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Sophia King"@en ;
     oa:hasBody cwrc:judaism ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/sophiaKing1> .
-
-<http://www.cwrc.ca/cwrcdata/KingCulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Sophia King"@en ;
     oa:hasBody cwrc:radical ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/sophiaKing1> .
-
-<http://www.cwrc.ca/cwrcdata/KingCulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Sophia King"@en ;
     oa:hasBody cwrc:england ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/SophiaKing> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/sophiaKing1> .
 
 <http://www.cwrc.ca/cwrcdata/sophiaKing_Main_Document>
     a foaf:Document;
-    rdfs:label "Orlando Markup on Sophia King"@en ;
+    rdfs:label "Orlando Entry on Sophia King"@en ;
     dc:creator cwrc:originalOrlandoAuthor .
 
 # ANNA LEONOWENS
@@ -125,62 +83,38 @@
     a foaf:Person ;
     foaf:name "Anna Leonowens" .
 
-<http://www.cwrc.ca/cwrcdata/LEONOWENSCulturalFormation>
+<http://orlando.cambridge.org/protected/svPeople?formname=r&name_entry=Leonowens,%20Anna>
     a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Anna Leonowens"@en ;
+    rdfs:label "Gender Context for Anna Leonowens"@en ;
     oa:hasBody cwrc:woman ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleonowens_Main_Document> .
 
-<http://www.cwrc.ca/cwrcdata/LEONOWENSReligionContext>
+<http://www.cwrc.ca/cwrcdata/LEONOWENSReligionContext1>
     a cwrc:ReligionContext ;
     rdfs:label "Religion Context for Anna Leonowens"@en ;
     oa:hasBody cwrc:presbyterianism ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
+    oa:hasBody cwrc:hinduism ;
+    oa:hasBody cwrc:buddhist ;
+	oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaLeonowens1> .
 
- <http://www.cwrc.ca/cwrcdata/LEONOWENSReligionContext>
-    a cwrc:ReligionContext ;
-    rdfs:label "Religion Context for Anna Leonowens"@en ;
-    oa:hasBody cwrc:hinduism ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleonowens1> .
-
-<http://www.cwrc.ca/cwrcdata/LEONOWENSReligionContext>
+<http://www.cwrc.ca/cwrcdata/LEONOWENSReligionContext2>
     a cwrc:ReligionContext ;
     rdfs:label "Religion Context for Anna Leonowens"@en ;
     oa:hasBody cwrc:buddhist ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleonowens1> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleonowens2> .
 
-<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceEthnicityContext>
+<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceEthnicityContext1>
     a cwrc:NationalityContext ;
     rdfs:label "Race Ethnicity Context for Anna Leonowens"@en ;
     oa:hasBody cwrc:wales ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleonowens1> .
-
-<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceEthnicityContext>
-    a cwrc:NationalityContext ; 
-    rdfs:label "Race Ethnicity Context for Anna Leonowens"@en ;
     oa:hasBody cwrc:england ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleonowens1> .
-    
-<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceEthnicityContext>
-    a cwrc:RaceEthnicityContext ;
-    rdfs:label "Race Ethnicity Context for Anna Leonowens"@en ;
     oa:hasBody cwrc:eurasianRace ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleonowens1> .
-
-<http://www.cwrc.ca/cwrcdata/LEONOWENSRaceEthnicityContext>
-    a cwrc:RaceEthnicityContext ;
-    rdfs:label "Race Ethnicity Context for Anna Leonowens"@en ;
     oa:hasBody cwrc:whiteEthnicity ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AnnaLeonowens> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleonowens1>.
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/annaleonowens1> .
 
 <http://www.cwrc.ca/cwrcdata/annaLeonowens_Main_Document>
     a foaf:Document;
@@ -197,90 +131,42 @@
     a foaf:Person ;
     foaf:name "Charlotte Dacre" .
 
-<http://www.cwrc.ca/cwrcdata/DACRECulturalFormation>
-    a cwrc:GenderContext ;
+<http://orlando.cambridge.org/protected/svPeople?formname=r&name_entry=Dacre,%20Charlotte>
+    a cwrc:CulturalFormationContext ;
     rdfs:label "Gender Context for Charlotte Dacre"@en ;
     oa:hasBody cwrc:woman ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre_Main_Document> .
 
-<http://www.cwrc.ca/cwrcdata/DACRECulturalFormation>
+<http://www.cwrc.ca/cwrcdata/DACRECulturalFormation1>
     a cwrc:CulturalFormationContext ;
     rdfs:label "Cultural Formation Context for Charlotte Dacre"@en ;
     oa:hasBody cwrc:jewishGeographicalHeritage ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre1> .
-
-<http://www.cwrc.ca/cwrcdata/DACREGeogHeritagePortugal>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Charlotte Dacre"@en ;
     oa:hasBody cwrc:portugal ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre1> .
-
-<http://www.cwrc.ca/cwrcdata/DACREGeogHeritageEngland>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Charlotte Dacre"@en ;
     oa:hasBody cwrc:england ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre1> .
-
-<http://www.cwrc.ca/cwrcdata/DACREGeogHeritageMiddlesex>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Charlotte Dacre"@en ;
     oa:hasBody cwrc:middlesex ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre1> .
-
-<http://www.cwrc.ca/cwrcdata/DACREGeogHeritageLondon>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Charlotte Dacre"@en ;
     oa:hasBody cwrc:london ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre1> .
-
-<http://www.cwrc.ca/cwrcdata/DACREEthnicityJewish>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Charlotte Dacre"@en ;
     oa:hasBody cwrc:jewishEthnicity ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre1> .
-
-<http://www.cwrc.ca/cwrcdata/DACRESocialClassEntrepreneurial-Industrialist>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Charlotte Dacre"@en ;
     oa:hasBody cwrc:entrepreneurial-industrialist ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre1> .
-
-<http://www.cwrc.ca/cwrcdata/DACRESocialClassGentry>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Charlotte Dacre"@en ;
     oa:hasBody cwrc:gentry ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre1> .
-
-<http://www.cwrc.ca/cwrcdata/DACRESocialClassIndigent>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Charlotte Dacre"@en ;
     oa:hasBody cwrc:indigent ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre1> .
     
-<http://www.cwrc.ca/cwrcdata/DACREReligionContext>
+<http://www.cwrc.ca/cwrcdata/DACREReligionContext1>
     a cwrc:ReligionContext ;
     rdfs:label "Religion Context for Charlotte Dacre"@en ;
     oa:hasBody cwrc:anglicanChurch ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre1> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre2> .
-
-<http://www.cwrc.ca/cwrcdata/DACREReligionContext>
-    a cwrc:ReligionContext ;
-    rdfs:label "Religion Context for Charlotte Dacre"@en ;
     oa:hasBody cwrc:judaism ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre1> ;
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre1> .
+
+<http://www.cwrc.ca/cwrcdata/DACREReligionContext2>
+    a cwrc:ReligionContext ;
+    rdfs:label "Religion Context for Charlotte Dacre"@en ;
+    oa:hasBody cwrc:anglicanChurch ;
+    oa:hasBody cwrc:judaism ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteDacre> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteDacre2> .
 
 <http://www.cwrc.ca/cwrcdata/charlotteDacre_Main_Document>
@@ -298,37 +184,19 @@
     a foaf:Person ;
     foaf:name "Elizabeth Sarah Gooch" .
 
-<http://www.cwrc.ca/cwrcdata/GOOCHCulturalFormation>
+<http://orlando.cambridge.org/protected/svPeople?formname=r&name_entry=Gooch,%20Elizabeth%20Sarah>
     a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation for Elizabeth Sarah Gooch"@en ;
+    rdfs:label "Gender Context for Elizabeth Sarah Gooch"@en ;
     oa:hasBody cwrc:woman ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/ElizabethSarahGooch> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/elizabethSarahGooch_Main_Document> .
 
-<http://www.cwrc.ca/cwrcdata/GOOCHCulturalFormation>
+<http://www.cwrc.ca/cwrcdata/GOOCHCulturalFormation1>
     a cwrc:CulturalFormationContext ;
     rdfs:label "Cultural Formation for Elizabeth Sarah Gooch"@en ;
     oa:hasBody cwrc:jewishEthnicity ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/ElizabethSarahGooch> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/elizabethSarahGooch1> .
-
-<http://www.cwrc.ca/cwrcdata/GOOCHCulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation for Elizabeth Sarah Gooch"@en ;
-    oa:hasBody geonames:2264397 ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/ElizabethSarahGooch> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/elizabethSarahGooch1> .
-
-<http://www.cwrc.ca/cwrcdata/GOOCHCulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation for Elizabeth Sarah Gooch"@en ;
+    oa:hasBody cwrc:portugal ;
     oa:hasBody cwrc:anglicanChurch ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/ElizabethSarahGooch> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/elizabethSarahGooch1> .
-
-<http://www.cwrc.ca/cwrcdata/GOOCHCulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation for Elizabeth Sarah Gooch"@en ;
     oa:hasBody cwrc:gentry ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/ElizabethSarahGooch> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/elizabethSarahGooch1> .
@@ -361,119 +229,51 @@
     owl:sameAs <http://viaf.org/viaf/7628015> ;
     foaf:name "Grace Aguilar" .
 
-<http://www.cwrc.ca/cwrcdata/AGUILARCulturalFormation>
+<http://orlando.cambridge.org/protected/svPeople?formname=r&name_entry=Aguilar,%20Grace>
     a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Grace Aguilar"@en ;
+    rdfs:label "Gender Context for Grace Aguilar"@en ;
     oa:hasBody cwrc:woman ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar_Main_Document> .
     
-<http://www.cwrc.ca/cwrcdata/AGUILARCulturalFormation>
+<http://www.cwrc.ca/cwrcdata/AGUILARCulturalFormation1>
     a cwrc:CulturalFormationContext ;
     rdfs:label "Cultural Formation Context for Grace Aguilar"@en ;
     oa:hasBody cwrc:whiteRaceColour ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> .
-    
-<http://www.cwrc.ca/cwrcdata/AGUILARCulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Grace Aguilar"@en ;
     oa:hasBody cwrc:entrepreneurial-industrialist ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> .
-
-<http://www.cwrc.ca/cwrcdata/AGUILARCulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Grace Aguilar"@en ;
     oa:hasBody cwrc:middleClass ;
+    oa:hasBody cwrc:portugal ;
+    oa:hasBody cwrc:spain ;
+    oa:hasBody cwrc:jewishEthnicity ;
+    oa:hasBody cwrc:englishNationality ;
+    oa:hasBody cwrc:jewishNationality ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> .
     
-<http://www.cwrc.ca/cwrcdata/AGUILARCulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Grace Aguilar"@en ;
-    oa:hasBody cwrc:portugal ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> .
-
-<http://www.cwrc.ca/cwrcdata/AGUILARCulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Grace Aguilar"@en ;
-    oa:hasBody cwrc:spain ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> .
-
-<http://www.cwrc.ca/cwrcdata/AGUILARCulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Grace Aguilar"@en ;
-    oa:hasBody cwrc:jewishEthnicity ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> .
-
-<http://www.cwrc.ca/cwrcdata/AGUILARCulturalFormation>
+<http://www.cwrc.ca/cwrcdata/AGUILARCulturalFormation2>
     a cwrc:CulturalFormationContext ;
     rdfs:label "Cultural Formation Context for Grace Aguilar"@en ;
     oa:hasBody cwrc:englishNationality ;
+	oa:hasBody cwrc:jewishNationality ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar2> .
 
-<http://www.cwrc.ca/cwrcdata/AGUILARCulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Grace Aguilar"@en ;
-    oa:hasBody cwrc:jewishNationality ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar2> .
-
-<http://www.cwrc.ca/cwrcdata/AGUILARReligionContext>
+<http://www.cwrc.ca/cwrcdata/AGUILARReligionContext1>
     a cwrc:ReligionContext ;
     rdfs:label "Religion Context for Grace Aguilar"@en ;
     oa:hasBody cwrc:judaism ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> .
-
-<http://www.cwrc.ca/cwrcdata/AGUILARReligionContext>
-    a cwrc:ReligionContext ;
-    rdfs:label "Religion Context for Grace Aguilar"@en ;
     oa:hasBody cwrc:protestantism ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar2> .
-
-<http://www.cwrc.ca/cwrcdata/AGUILARReligionContext>
-    a cwrc:ReligionContext ;
-    rdfs:label "Religion Context for Grace Aguilar"@en ;
     oa:hasBody cwrc:catholicism ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar2> .
-
-<http://www.cwrc.ca/cwrcdata/AGUILARReligionContext>
-    a cwrc:ReligionContext ;
-    rdfs:label "Religion Context for Grace Aguilar"@en ;
-    oa:hasBody cwrc:judaism ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> .
-
-<http://www.cwrc.ca/cwrcdata/AGUILARReligionContext>
-    a cwrc:ReligionContext ;
-    rdfs:label "Religion Context for Grace Aguilar"@en ;
-    #update when we have this in ontology
     oa:hasBody cwrc:proto-zionist ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar1> .
-    
-<http://www.cwrc.ca/cwrcdata/AGUILARReligionContext>
+
+<http://www.cwrc.ca/cwrcdata/AGUILARReligionContext2>
     a cwrc:ReligionContext ;
     rdfs:label "Religion Context for Grace Aguilar"@en ;
+    oa:hasBody cwrc:protestantism ;
+    oa:hasBody cwrc:catholicism ;
     oa:hasBody cwrc:christianity ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar2> .
-    
-<http://www.cwrc.ca/cwrcdata/AGUILARReligionContext>
-    a cwrc:ReligionContext ;
-    rdfs:label "Religion Context for Grace Aguilar"@en ;
     oa:hasBody cwrc:judaism ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/GraceAguilar> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/graceAguilar2> .
@@ -498,7 +298,6 @@
     dc:creator cwrc:originalOrlandoAuthor .
  
 # AMY LEVY
-# check for double input of Religion self-reported, once under Religion tag, once outside KM
 <http://www.cwrc.ca/cwrcdata/AmyLevy>
     cwrc:hasGender cwrc:woman ;
     cwrc:hasSocialClass cwrc:upper-middleClass ;
@@ -511,70 +310,52 @@
     owl:sameAs <http://viaf.org/viaf/7628015> ;
     foaf:name "Amy Levy" .
 
-<http://www.cwrc.ca/cwrcdata/LEVYCulturalFormation>
+<http://orlando.cambridge.org/protected/svPeople?formname=r&name_entry=Levy,%20Amy>
     a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Amy Levy"@en ;
+    rdfs:label "Gender Context for Amy Levy"@en ;
     oa:hasBody cwrc:woman ;
     oa:hasTarget cwrc:AmyLevy ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/amyLevy_Main_Document> .
 
-<http://www.cwrc.ca/cwrcdata/LEVYCulturalFormation>
+<http://www.cwrc.ca/cwrcdata/LEVYCulturalFormation1>
     a cwrc:CulturalFormationContext ;
     rdfs:label "Cultural Formation Context for Amy Levy"@en ;
     oa:hasBody cwrc:upper-middleClass ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AmyLevy> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/amyLevy1> .
-
-<http://www.cwrc.ca/cwrcdata/LEVYCulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Amy Levy"@en ;
     oa:hasBody cwrc:englishNationality ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AmyLevy> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/amyLevy1> .
-
-<http://www.cwrc.ca/cwrcdata/LEVYCulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Amy Levy"@en ;
     oa:hasBody cwrc:judaism ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AmyLevy> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/amyLevy1> .
 
-<http://www.cwrc.ca/cwrcdata/LEVYCulturalFormation>
+<http://www.cwrc.ca/cwrcdata/LEVYCulturalFormation2>
     a cwrc:CulturalFormationContext ;
     rdfs:label "Cultural Formation Context for Amy Levy"@en ;
     oa:hasBody cwrc:lesbian ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AmyLevy> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/amyLevy2> .
 
-<http://www.cwrc.ca/cwrcdata/LEVYRaceEthnicityContext>
+<http://www.cwrc.ca/cwrcdata/LEVYRaceEthnicityContext3>
     a cwrc:CulturalFormationContext ;
     rdfs:label "Race/Ethnicity Context for Amy Levy"@en ;
     oa:hasBody cwrc:jewishEthnicity ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AmyLevy> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/amyLevy3> .
     
-<http://www.cwrc.ca/cwrcdata/LEVYReligionContext>
+<http://www.cwrc.ca/cwrcdata/LEVYReligionContext1>
+    a cwrc:ReligionContext ;
+    rdfs:label "Religion Context for Amy Levy"@en ;
+    oa:hasBody cwrc:judaism ;
+    oa:hasBody cwrc:anglicanism ;
+    oa:hasBody cwrc:christianity ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AmyLevy> ;
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/amyLevy1> .
+    
+<http://www.cwrc.ca/cwrcdata/LEVYReligionContext4>
     a cwrc:ReligionContext ;
     rdfs:label "Religion Context for Amy Levy"@en ;
     oa:hasBody cwrc:judaism ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/AmyLevy> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/amyLevy1> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/amyLevy4> .
     
-<http://www.cwrc.ca/cwrcdata/LEVYReligionContext>
-    a cwrc:ReligionContext ;
-    rdfs:label "Religion Context for Amy Levy"@en ;  
-    oa:hasBody cwrc:anglicanism ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AmyLevy> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/amyLevy1> .
-	
-<http://www.cwrc.ca/cwrcdata/LEVYReligionContext>
-    a cwrc:ReligionContext ;
-    rdfs:label "Religion Context for Amy Levy"@en ; 
-    oa:hasBody cwrc:christianity ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/AmyLevy> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/amyLevy1> .
-
 <http://www.cwrc.ca/cwrcdata/amyLevy_Main_Document>
     a foaf:Document;
     rdfs:label "Orlando Markup on Amy Levy"@en ;
@@ -590,37 +371,19 @@
     a foaf:Person ;
     foaf:name "Charlotte Montefiore" .
 
-<http://www.cwrc.ca/cwrcdata/MONTEFIORECulturalFormation>
+<http://orlando.cambridge.org/protected/svPeople?formname=r&name_entry=Montefiore,%20Charlotte>
     a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Charlotte Montefiore"@en ;
+    rdfs:label "Gender Context for Charlotte Montefiore"@en ;
     oa:hasBody cwrc:woman ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteMontefiore_Main_Document> .
 
-<http://www.cwrc.ca/cwrcdata/MONTEFIORECulturalFormation>
+<http://www.cwrc.ca/cwrcdata/MONTEFIORECulturalFormation1>
     a cwrc:CulturalFormationContext ;
     rdfs:label "Cultural Formation Context for Charlotte Montefiore"@en ;
     oa:hasBody cwrc:white ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteMontefiore1> .
-
-<http://www.cwrc.ca/cwrcdata/MONTEFIORECulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Charlotte Montefiore"@en ;
     oa:hasBody cwrc:judaism ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteMontefiore1> .
-
-<http://www.cwrc.ca/cwrcdata/MONTEFIORECulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Charlotte Montefiore"@en ;
     oa:hasBody cwrc:entrepreneurial-industrialist;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteMontefiore1> .
-
-<http://www.cwrc.ca/cwrcdata/MONTEFIORECulturalFormation>
-    a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Charlotte Montefiore"@en ;
     oa:hasBody cwrc:italian ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/CharlotteMontefiore> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/charlotteMontefiore1> .
@@ -645,23 +408,17 @@ cwrc:CharlotteMontefioreFather
     a foaf:Person ;
     foaf:name "Julia Frankau" .
 
-<http://www.cwrc.ca/cwrcdata/FRANKAUCulturalFormation>
+<http://orlando.cambridge.org/protected/svPeople?formname=r&name_entry=Frankau,%20Julia>
     a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Julia Frankau"@en ;
+    rdfs:label "Gender Context for Julia Frankau"@en ;
     oa:hasBody cwrc:woman ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/JuliaFrankau> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/juliaFrankau_Main_Document> .
 
-<http://www.cwrc.ca/cwrcdata/FRANKAUEReligionContext>
+<http://www.cwrc.ca/cwrcdata/FRANKAUEReligionContext1>
     a cwrc:ReligionContext ;
     rdfs:label "Religion Context for Julia Frankau"@en ;
     oa:hasBody cwrc:jewishEthnicity ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/JuliaFrankau> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/juliaFrankau1> .
-
-<http://www.cwrc.ca/cwrcdata/FRANKAUEReligionContext>
-    a cwrc:ReligionContext ;
-    rdfs:label "Religion Context for Julia Frankau"@en ;
     oa:hasBody cwrc:judaism ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/JuliaFrankau> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/juliaFrankau1> .
@@ -683,55 +440,37 @@ cwrc:CharlotteMontefioreFather
     a foaf:Person ;
     foaf:name "Vita Sackville-West" .
     
-<http://www.cwrc.ca/cwrcdata/WestCulturalFormation>
+<http://orlando.cambridge.org/protected/svPeople?formname=r&name_entry=Sackville-West,%20Vita>
     a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Vita Sackville West"@en ;
+    rdfs:label "Gender Context for Vita Sackville West"@en ;
     oa:hasBody cwrc:woman ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/vitaSackvilleWest_Main_Document> .
     
-<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTClassIssueContext>
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTClassIssueContext1>
     a cwrc:ClassIssueContext ;
     rdfs:label "Class Issue Context for Vita Sackville-West"@en ;
     oa:hasBody cwrc:nobility ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/SackvilleWest1> .
        
-<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTRaceEthnicityContext>
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTRaceEthnicityContext2>
     a cwrc:RaceEthnicityContext ;
     rdfs:label "Race Ethnicity Context for Vita Sackville-West"@en ;
     oa:hasBody cwrc:spanish ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/SackvilleWest2> .
-    
-<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTRaceEthnicityContext>
-    a cwrc:RaceEthnicityContext ;
-    rdfs:label "Race Ethnicity Context for Vita Sackville-West"@en ;
     oa:hasBody cwrc:english ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/SackvilleWest2> .
-    
-<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTRaceEthnicityContext>
-    a cwrc:RaceEthnicityContext ;
-    rdfs:label "Race Ethnicity Context for Vita Sackville-West"@en ;
     oa:hasBody cwrc:gipsy ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/SackvilleWest2> .
     
-<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTSexualityContext>
+<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTSexualityContext3>
     a cwrc:SexualityContext ;
     rdfs:label "Sexuality Context for Vita Sackville-West"@en ;
     oa:hasBody cwrc:bisexual ;
-    oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/SackvilleWest3> .
-    
-<http://www.cwrc.ca/cwrcdata/SACKVILLEWESTSexualityContext>
-    a cwrc:SexualityContext ;
-    rdfs:label "Sexuality Context for Vita Sackville-West"@en ;
     oa:hasBody cwrc:lesbian ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VitaSackvilleWest> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/SackvilleWest3> .
-
+    
 <http://www.cwrc.ca/cwrcdata/JosefaDuran>
     a foaf:Person ;
     foaf:name "Josefa Duran (Pepita)" ;
@@ -765,12 +504,12 @@ cwrc:CharlotteMontefioreFather
     a foaf:Person ;
     foaf:name "Virginia Woolf" .
     
-<http://www.cwrc.ca/cwrcdata/WOOLFCulturalFormation>
+<http://orlando.cambridge.org/protected/svPeople?formname=r&name_entry=Woolf,%20Virginia>
     a cwrc:CulturalFormationContext ;
-    rdfs:label "Cultural Formation Context for Virginia Woolf"@en ;
+    rdfs:label "Gender Context for Virginia Woolf"@en ;
     oa:hasBody cwrc:woman ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
-    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/virginiaWoolf1> .
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/virginiaWoolf_Main_Document> .
     
 <http://www.cwrc.ca/cwrcdata/WOOLFSocialRankSelfReportedProfessional>
     a cwrc:SocialRankContext ;
@@ -779,7 +518,6 @@ cwrc:CharlotteMontefioreFather
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/virginiaWoolf1> .
 
-#Again, how do we show that this is self-reported? KM
 <http://www.cwrc.ca/cwrcdata/WOOLFSexualityContext>
     a cwrc:SexualityContext ;
     rdfs:label "Sexuality Context for Virginia Woolf"@en ;
@@ -794,9 +532,9 @@ cwrc:CharlotteMontefioreFather
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/VirginiaWoolf> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/virginiaWoolf1> .    
 
-<http://www.cwrc.ca/cwrcdata/vitaSackVilleWest_Main_Document>
+<http://www.cwrc.ca/cwrcdata/virginia_Woolf_Main_Document>
     a foaf:Document;
-    rdfs:label "Orlando Markup on Vita Sackville West"@en ;
+    rdfs:label "Orlando Markup on Virginia Woolf"@en ;
     dc:creator cwrc:originalOrlandoAuthor .
     
  #Works go here   
