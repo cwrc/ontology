@@ -32,7 +32,10 @@ $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 all:	$(ONTOLOGY)-$(ONTOLOGY_DATE).html $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl $(ONTOLOGY)-$(ONTOLOGY_DATE).nt  $(ONTOLOGY)-$(ONTOLOGY_DATE).owl #$(ONTOLOGY)-overall-$(ONTOLOGY_DATE).jpg		
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).html cwrc.html
 testing:	all	
-	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).html /var/www/html/testing/cwrc.html
+	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).html /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE).html
+	cp -f $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html /var/www/html/testing/$(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html
+	ln -sf /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE).html /var/www/html/testing/$(ONTOLOGY).html
+	ln -sf /var/www/html/testing/$(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html /var/www/html/testing/$(ONTOLOGY)-FR.html
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).owl /var/www/html/testing/cwrc.owl
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).nt /var/www/html/testing/cwrc.nt
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl /var/www/html/testing/cwrc.ttl	
