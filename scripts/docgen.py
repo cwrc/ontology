@@ -44,6 +44,7 @@ PROV = rdflib.Namespace(ns_list["prov"])
 # log = Log("log/docgen")
 # log.test_name("Debugging Document Generator")
 
+
 def print_usage():
     script = sys.argv[0]
     print("Usage:")
@@ -196,6 +197,7 @@ def create_term_html(graph, list, list_type):
             "comment": get_comment_list(graph, uri),
             "derived": get_prov_derivedFrom(graph, uri),
         }
+
         if list_type == "Instance":
             term_dict["rdf-type"] = get_rdf_type(graph, uri)
         elif list_type == "Class":
@@ -203,10 +205,18 @@ def create_term_html(graph, list, list_type):
                 term_dict["same-as"] = get_owl_sameas(graph, uri)
             if get_rdfs_subclass(graph, uri):
                 term_dict["subclass"] = get_rdfs_subclass(graph, uri)
-            if uri in domain_dict:
-                term_dict["in-domain"] = domain_dict[uri]
-            if uri in range_dict:
-                term_dict["in-range"] = range_dict[uri]
+            if str(uri) in domain_dict:
+                temp = domain_dict[str(uri)]
+                temp_dict = {}
+                for y in temp:
+                    temp_dict.update(get_prefix_ns_with_link(y))
+                term_dict["in-domain"] = temp_dict
+            if str(uri) in range_dict:
+                temp = range_dict[str(uri)]
+                temp_dict = {}
+                for y in temp:
+                    temp_dict.update(get_prefix_ns_with_link(y))
+                term_dict["in-range"] = temp_dict
 
         elif list_type == "Property":
             if get_rdfs_range(graph, uri):
@@ -433,15 +443,13 @@ def get_term_html(term_dict, term_type):
         html_str += "<dl>\n"
         html_str += "<dt>in-domain-of:</dt>\n"
         for x in term_dict["in-domain"]:
-            html_str += '<dd><a href="%s" style="font-family:monospace;">%s</a></dd>' % (term_dict["in-domain"][
-                x], str(x))
+            html_str += '<dd><a href="%s" style="font-family:monospace;">%s</a></dd>' % (term_dict["in-domain"][x], str(x))
         html_str += "</dl>\n"
     if "in-range" in term_dict:
         html_str += "<dl>\n"
         html_str += "<dt>in-range-of:</dt>\n"
         for x in term_dict["in-range"]:
-            html_str += '<dd><a href="%s" style="font-family:monospace;">%s</a></dd>' % (term_dict["in-range"][
-                x], str(x))
+            html_str += '<dd><a href="%s" style="font-family:monospace;">%s</a></dd>' % (term_dict["in-range"][x], str(x))
         html_str += "</dl>\n"
 
     if "range" in term_dict:
