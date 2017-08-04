@@ -5,7 +5,7 @@
 > 
 
   <head>
-    <title>Spécifications de l'ontologie des genres littéraires CWRC - ONTOLOGY_VERSION</title>
+    <title>Spécifications de l'ontologie des genres littéraires CSÉC - ONTOLOGY_VERSION</title>
     <meta http-equiv="content-type" content="text/xhtml+xml; charset=utf-8" />
     <!-- With Apologies to Dan Brickley and Libby Miller -->
     <link href="css/xmlns-style.css" rel="stylesheet" type="text/css" />
@@ -16,10 +16,10 @@
 
   <body>
 
-    <h1 id="title">Spécifications de l'ontologie des genres littéraires CWRC - ONTOLOGY_VERSION</h1>
+    <h1 id="title">Spécifications de l'ontologie des genres littéraires CSÉC - ONTOLOGY_VERSION</h1>
 
 <img src="ONTOLOGY_LOGO" align="right" width="350">    
-    <h2 id="subtitle">L'Ontologie des genres littéraires CWRC est l'ontologie utilisée par le Collaboratoire scientifique des
+    <h2 id="subtitle">L'Ontologie des genres littéraires CSÉC est l'ontologie utilisée par le Collaboratoire scientifique des
     écrits du Canada pour assigner des genres à des écrits littéraires.</h2>
 
     <h3 id="mymw-doctype">Brouillon de travail &mdash; ONTOLOGY_LONGDATE (<a
@@ -67,32 +67,158 @@
     <hr />
 
     <h2 id="abstract">Résumé</h2>
-    <p>L'Ontologie des genres littéraires CWRC est l'ontologie utilisée par le Collaboratoire scientifique des écrits du Canada
+    <p>L'Ontologie des genres littéraires CSÉC est l'ontologie utilisée par le Collaboratoire scientifique des écrits du Canada
     (<a href="http://www.cwrc.ca/fr">cwrc.ca</a>)
     pour assigner des genres à des écrits littéraires.</p>
 
     <h2 id="contents">Tables des Matières</h2>
     
-    <ul style="list-style-type: none">
+     <ul style="list-style-type: none">
     <li><a href="#introduction">1. Introduction</a></li> 
-    <li><a href="#taxonomiesontology">2. Taxonomies intégrées</a></li>
-    <li><a href="#version_history">3. Historique des versions</a></li>
-    <li><a href="#biblipgraphy">4. Bibliographie</a></li>    
+    <li><a href="#background">2. Contexte</a></li> 
+    <li><a href="#datasources">3. Sources de données</a></li> 
+    <li><a href="#taxonomy">4. Constructions de taxonomie</a></li>
+   <li><a href="#usingthisontology">5. Utilization de cette ontology</a></li>
+    <li><a href="#definition_list">6. Référence globale</a></li>
+    <li><a href="#reference">7. Références détaillées de tous les termes, classes et propriétés</a></li>
+    <li><a href="#conclusion">8. Conclusion et travail futur</a></li>
+    <li><a href="#version_history">9. Historiques des versions</a></li>
+    <li><a href="#bibliography">10. Bibliographie</a></li>    
+
     </ul>
-       <h3 id="genre_taxonomy">ii. Genre littéraire</h3>
-       <p>The CWRC ontology contains over 240 genres.</p> 
-       <p>La taxonomie spécifique est: </p>
-       <object type="image/svg+xml" data="figures/genreTaxonomy-ONTOLOGY_DATE.svg">  
-       </object>
+
+    
+     <h3 id="introduction">1. Introduction</h3>
+
+     <p>Une partie des données de bibliographie extensive fournies par les
+     documents du projet Orlando sur les genres littéraires a été rassemblée
+     en web de données ontologique.  Son objectif principal était d'annoter
+     les références bibliographiques dans jeu de données avec un vocabulaire
+     adaptable qui pourrait également être utilisé pour la recherche
+     d’œuvres appartenant à un genre spécifique.</p>
+
+     <h3 id="background">2. Contexte</h3>
+
+<p> Dans un article influent, Carolyn R.  Miller le soutient que le genre
+littéraire n’est pas inhérent à “une substance ou une forme du discours”,
+mais doit plutôt être conçu en termes d’activité rhétorique rattachée à une
+situation spécifique, bien que sa définition soit plus compliquée que cette
+brève formulation le suggère, puisqu'elle soutient que "l'activité englobe à
+la fois la substance et la forme" (151, 152).  </p>
+     
+  <P> Deux types d’activités principales sont associées au genre littéraire. 
+  Miller s'interroge sur la façon dont certains actes ou cas de discours
+  particuliers, c’est-à-dire les textes au sens large, viennent eux-même
+  incarner des caractéristiques génériques; celles-ci émanent de situations
+  rhétoriques, qui sont des constructions sociales par lesquelles des
+  intentions individuelles sont traduites en actes discursifs socialement
+  reconnaissables et interprétables (Miller, 1984).  Mais il existe aussi
+  l’action d’attribuer une étiquette générique à un texte, ce qui représente
+  un autre type d'acte discursif opérant dans un large panel de contextes et
+  à des fins variées.  La catégorisation générique est fondamentale pour les
+  études littéraires, elle organise des matériaux primaires et secondaires,
+  définit des spécialisations et des mouvements littéraires, et joue un rôle
+  majeur dans l'organisation et l’articulation théorique, critique et
+  historique de la littérature.  En tant que fonction majeure des systèmes
+  de classification des bibliothèques, l'étiquetage des genres sert à la
+  recherche dans toutes les disciplines.  Il sert à organiser les librairies
+  ainsi que les fonds d’édition, et est utilisé par les lecteurs lorsqu’ils
+  échangent leurs expériences de lecture et discutent de leurs préférences
+  littéraires.  </p>
+     
+  <p> Dans une telle variété de contextes, la catégorisation par genre
+littéraire de textes spécifiques couvre une large spectre de méthodes,
+allant des catalogues professionnels qui appliquent des vocabulaires
+d’autorité rigoureusement contrôlés  produits par des "sources de confiance"
+(Harper) aux utilisateurs de systèmes en ligne qui conçoivent ad hoc des
+catégories entièrement issue de l’indexation personnelle—ce que Clay Shirky
+a qualifié de “rupture radicale avec les stratégies de catégorisation
+antérieures, au lieu d’une extension de celles-ci".  De nombreuses études
+ont montré que si des termes correspondants peuvent être déployés dans ces
+différents contextes, ils ne sont pas systématiquement appliqués (Lester;
+Lu; Rolla).  Qu'arrivera-t-il donc si des approches des genres littéraires
+aussi variées se croisent, se confrontent ou interagissent de quelque autre
+façon dans un environnement en web de données (Linked Open Data) où elles
+peuvent être agrégées au sein d’une interface unique?  </p>
+
+    <H3 id="#datasources">3. Sources de données</h3>
+   <p> La liste des genres utilisés dans cette ontologie s’appuie sur les
+   genres littéraires initialement répertoriés par le projet d'Orlando.  La
+   liste est étroitement couplée aux objectifs originaux du projet mais est
+   substantielle.  </p>
+  
+   <p> Comme le projet original d'Orlando n'a pas publié de définitions ou
+     de descriptions des genres qu'il utilisait, ces dernières ont dû être
+     créées spécialement pour cette ontologie.  Lorsque cela était possible,
+     les définitions ont été écrites d’après des jeux de données ouverts
+     provenant de DBpedia/Wikipedia, Getty Art &amp; Architecture Thesaurus
+     ou de <i> <a href="http://web.cn.edu/kwheeler/lit_terms.html"> Termes
+     et définitions littéraires </a> </ i> de la page web du Dr.  L.  Kip
+     Wheeler.  Les références aux descriptions sont réalisées grâce à
+     l’utilisation d’<a href="https://www.w3.org/TR/prov-o/"> ontologie de
+     provenance </a>, de citations html intégrées au texte et à d’étiquettes
+     de  &Lt;rdfs:commentaires&gt;.  Tags.  </p>
+
+
+     <H3 id="taxonomie"> 4. Construction de taxonomie </h3>
+ 
+       <P> L'ontologie des Genres Littéraires contient une taxonomie des
+       genres basée sur une approache <a
+       href="https://www.w3.org/2004/02/skos/"> SKOS (Système Simple
+       d’Organisation des connaissances)</a>.  Elle fournit des relations
+       sémantiques limitées indiquer des termes plus génériques/plus
+       spécifiques et peuvent être utilisées pour la recherche pertinente
+       d’oeuvres en utilisant la taxonomie.  L'arbre taxonomique est basé
+       sur un standard définiton de sujets pertinents ad hoc voué à
+       l’extraction de documents et ne convient pas pour toutes les
+       utilisations.</p>
+
+
+       <p>La taxonomie spécifique est la suivante:</p>
+       <p> 
+       <object type="image/svg+xml" data="figures/genreTaxonomy-ONTOLOGY_DATE.svg"></object>  
        </p>
        
-    <h3 id="definition_list">7. Référence Globales</h3>
+     <h3 id="usingthisontology">5. Utilization de cette ontology</h3>
+
+     <p>Cette ontologie a été élaborée pour appuyer les efforts du projet du
+     CSÉC tout en autorisant une utilisation autonome par des projets
+     externes.  Les genres littéraires existent à la fois sous forme
+     d’instances de la classe <a href="#Genre">&lt;genre:GenreLittéraire&gt;</a> et en tant que  <a
+     href="https://www.w3.org/2009/08/skos-reference/skos.html#Concept">&lt;skos:Concept&gt;</a>s
+     d’une genre <a
+     href="https://www.w3.org/2009/08/skos-reference/skos.html#ConceptScheme">&lt;ConceptScheme&gt;</a>. 
+     L’accès aux instances peut se faire directement ou bien via les
+     propriétés taxonomiques SKOS intégrées.  Une propriété de <a
+     href="#hasGenre">&lt;genre littéraire:hasGenre&gt;</a> fournie sans <a
+     href="https://www.w3.org/TR/owl-ref/#domain-def">&lt;rdfs:domaine&gt;</a>
+     permet d’assignement aisément un genre à une oeuvre sans engager de
+     type spécifique de création.  </p>
+     
+ <p>Cette ontologie peut être jumelée avec <a
+ href="http://sparql.cwrc.ca/ontology/cwrc">
+ l’ontologie du CSÉC </a> même si cela n’est pas requis.  L’objectif
+ ontologique du CSÉC est de décrire et de relier les études littéraires et
+ l’histoire de la Littérature, en mettant l'accent sur les questions de
+ genre (&quot;gender studies&quot;) et l'intersectionnalité en raison de ses
+ liens avec le projet Orlando, une histoire littéraire des femmes de lettres
+ britanniques.  Compte tenu de la complexité et de la spécificité de
+ l'ontologie du CSÉC, nous avons décidé de la séparer de l'ontologie des
+ genres littéraires afin que les utilisateurs puissent tirer profit d’une
+ taxonomie de genres littéraires disponible  à portée de main, sans avoir à
+ importer dans leur intégralité certaines assertions ontologiques plus
+ controversées du CSÉC (par exemple Formation Culturelle).  Nous espérons
+ néanmoins que les utilisateurs s’intéresseront aux deux ontologies.</p>
+
+
+
+    <h3 id="definition_list">6. Référence Globales</h3>
     
     <!-- The list of classes and properties goes here -->
     {_azlist_}
     <!-- End of the terms list -->
 
-    <h2 id="reference">8. Références détaillées pour tous les termes, classes et propriétés</h2>
+    <h3 id="reference">7. Références détaillées pour tous les termes, classes et propriétés</h3>
  
     <p></p>
 
@@ -100,12 +226,16 @@
     {_terms_}
     <!-- End of the terms list -->
 
-    <h2 id="version_history">13. Historique des versions</h2>
+ <h3 id="conclusion">8. Conclusion et travail futur</h3>
+    <p>Cette ontologie devra être considérée comme stable par nature, accompagnée d’ajouts ponctuels et de précisions qui seront effectuées de temps à autre.  Son développement dépendra de notre découverte progressive de ce qu’implique une ontologie multilingue dédiée aux genre littéraires.
+</p>
+    <h3 id="version_history">9. Historiques des versions</h3>
+
     <ul>
-    <li><p>0.1 - L'ontologie est séparer de l'ontologie cwrc.</p></li>
+    <li><p>0.1 - Ontologie séparée de l’ontologie principale du CSÉC.</p></li>
     </ul>
     
-    <h2 id="biblipgraphy">14. Bibliographie</h2>    
+    <h3 id="bibliography">10. Bibliographie</h3>    
 m4_include(cwrc-citations.html)
 
     <!-- ===================================================================== 
