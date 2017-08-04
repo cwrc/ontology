@@ -416,7 +416,6 @@
   <owl:Class rdf:ID="NationalHeritage">
     <rdfs:label xml:lang="en">national heritage</rdfs:label>
     <rdfs:label xml:lang="fr">héritage national</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A subclass of Cultural Form, this property indicates a person's national heritage, with accompanying context, where present, provided by Nationality Context annotations. National Heritage is composed of various elements related to national identity, often transmitted from previous generations and influenced by a subject’s national historical background or geographical heritage. It can be multiple and can be different from a person’s national identity, current or official citizenship, or the geographical region or territory in which a person resides. Those using this class and its subclasses are encouraged to consult associated Nationality Context excerpts or annotations, if available.</skos:definition>
@@ -451,7 +450,6 @@
   <owl:Class rdf:ID="NationalIdentity"> 
     <rdfs:label xml:lang="en">nationality</rdfs:label>
     <rdfs:label xml:lang="fr">nationalité</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A subclass of Cultural Form, this property indicates a person's nationality, either as self-reported or as assigned by others, with accompanying context, where present,  provided by Nationality Context annotations. It is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. Like other identity categories, nationality may be plural, fluid, or contingent, and it can intersect with national Heritage or Geographical Heritage as well as other identity categories. Those using this class and its subclasses are encouraged to consult associated Nationality Context annotations, if available.</skos:definition>
@@ -500,7 +498,6 @@
     <rdfs:label xml:lang="en">geographical heritage</rdfs:label>
     <rdfs:label xml:lang="fr">héritage géographique</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A subclass of culturalForm, this property indicates  a person's geographic heritage, with accompanying context, where present, provided by Nationality Context annotations. Geographic heritage involves the geographical origins of a person's family, which often contributes to an understanding of their racial and ethnic background. It offers a way to capture individuals identified as "South-Asian," for example, when no more precise national heritage is indicated. See raceEthnicityContext for a detailed description of the complexities of this class.  It can be multiple and it can be different from a person’s national identity or national heritage, current or official citizenship, or the geographical region or territory in which a person resides. Those using this class and its subclasses are encouraged to consult associated Nationality Context excerpts or annotations, if available.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe de Forme Culturelle, Héritage Géographique indique l’héritage géographique d’une personne, accompagné du contexte fourni par les annotations de Contexte National lorsque celui-ci est disponible. L’héritage géographique inclut les origines géographiques de la famille d’une personne, qui s’avèrent souvent utiles à la compréhension de son milieu ethnique et raciale. Cela permet par exemple de saisir l’identité de femmes qui se déclarent &quot;sud-asiatiques&quot;, alors qu’aucune autre précision n'est fournie concernant son héritage national. Voir Contexte Ethnique Et Racial pour un compte-rendu détaillé de la complexité de cette classe. Il peut être multiple et différent de l’identité ou de l’héritage national, de la citoyenneté actuelle ou officielle, et de la région géographique ou du territoire de résidence. Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les extraits ou les annotations de Contexte National lorsqu’ils sont disponibles.</skos:definition>
@@ -535,7 +532,6 @@
   <owl:Class rdf:ID="Gender">
     <rdfs:label xml:lang="en">gender</rdfs:label>
     <rdfs:label xml:lang="fr">genre</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A subclass of culturalForms for noting a person's gender whether attributed or self-defined. Although in popular culture gender and biological sex are conflated and understood to be binary, the concept of gender stresses the relationality, constructedness, and performativity of gendered identities and gendered behaviour, whose categories are historically contingent and shifting, and the boundaries between them blurry. Cf. Simone de Beauvoir: &quot;One is not born, but rather becomes, a woman,&quot; along with many other theorists of gender including Judith Butler, 1990. Gender is understood as fluid, situational, and sometimes plural, and it is related to though not commensurate with sexual identity and orientation. It is related to but not defined by specific forms of embodiment. Rather than seeing biological sex as a pre-social or natural given, the body is understood as a site of inscription (cf. Elizabeth Grosz 1994) which is also socially constructed and indeed epigenetically shaped by environmental factors (N. Katherine Hayles 2012). This ontology therefore does not provide separate terms for sex as distinct from gender. Instead, the slashes conjoining terms associated with gender and those conventionally associated with sex indicate the constant slippage between gender and sex in the way that these categories circulate through discourses, actions, and institutions. Far from indicating a universal facet of experience, gender intersects with other identity categories and axes of oppression such as class, race or colour, or geographical heritage to produced quite different interests and experiences among people of the same gender, as with the intersection of religion and white masculine identity in the Muscular Christianity movement in nineteenth-century Britain. Being a woman of colour may thus compound the impacts of gender oppression (<![CDATA[<a href="#crenshaw_demarginalizing_1989">Kimberlé Crenshaw, 1989</a>]]>).</skos:definition>
@@ -604,7 +600,6 @@
   <owl:Class rdf:ID="Sexuality">
     <rdfs:label xml:lang="en">sexuality</rdfs:label>
     <rdfs:label xml:lang="fr">sexualité</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A subclass of Cultural Form and linked to Sexuality Context, Sexuality properties indicate in a word or phrase identifications or aspects of sexuality (i.e., "lesbian," "monogamous," "heterosexual" but also &quot;promiscuous&quot;) not as a means of shutting down but advancing investigation and critical analysis of these identifications. The association assumes that sSexual identity does not function in an essentialist manner but can be plural and fluid, so multiple designations can be applied to a single person can be associated with multiple terms. Sexual identity may come from the subject her/himself or be ascribed by others. Terms may be in tension or mutually exclusive, they may reflect different life stages, and they may or may not reflect actual sexual practices. Linking a person to the term "lesbian" as a sexualityIdentity class, for instance, does not necessarily signify that the subject was in any definitive sense a lesbian; such identifications are often impossible for reasons of historical gaps and silences. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See <![CDATA[ <a href=#3A9144c07e-d14f-4371-8d28-7545b7337a4a ">Campbell and Cowan, 2016</a> ]]></skos:definition>
@@ -705,7 +700,6 @@
   <owl:Class rdf:ID="RaceColour">
     <rdfs:label xml:lang="en">race or colour</rdfs:label>
     <rdfs:label xml:lang="fr">race ou couleur</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en"/>
@@ -753,7 +747,6 @@
   <owl:Class rdf:ID="Ethnicity">
     <rdfs:label xml:lang="en">ethnicity</rdfs:label>
     <rdfs:label xml:lang="fr">ethnicité</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">Ethnicity is a subclass of CulturalForm that captures information about a person's ethnic position. Ethnicity is a sub-element within culturalFormation and raceAndEthnicity. See raceAndEthnicity for a detailed description of the complexities of this discursive construction and the social practices surrounding it.</skos:definition>
@@ -1324,7 +1317,6 @@
     <rdfs:label xml:lang="en">social class</rdfs:label>
     <rdfs:label xml:lang="fr">classe sociale</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A subclass of culturalForm, socialClass terms associate subjects with a specific social group, recognizing that such categories and their application to individuals are contested and can change over time. The association may be or have been embraced by the subject her/himself or attributed by others. Unlike Notes typed as socialClassContext, which contain detailed discussion of a subject's class position, socialClass links to a word or phrase signifying a particular construction of class, with particular reference to earlier historical periods in the British Isles. Social class has been variously constructed and theorized, and for women is further complicated by the fact that women were understood to take their social status from fathers and/or husbands. The terminology used here reflects quite basic social groupings that intersect with other factors such as wealth.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-catégorie de culturalForm, les termes de socialClass associent les sujets à des groupes sociaux spécifiques, en prenant en compte le fait que ces catégories et leur application aux individus sont contestables et peuvent changer au fil du temps. L’association à une classe sociale peut ou a pu être assumée par le sujet elle/lui-même ou attribuée par d’autres. Contrairement aux notes comme socialClassContext, qui contiennent les détails des discussions autour de le statut social du sujet, socialClass relie un mot ou une phrase référant à une classe spécifique qui renvoie à des périodes historiques antérieures spécifiques des Îles Britanniques. La notion de classe sociale a été construite et théorisée de diverses manières, et est d’autant plus complexe pour les femmes puisqu’elles étaient censées adopter le statut social de leur père et/ou de leur mari. La terminologie ici utilisée réfère à des groupes sociaux élémentaires qui se recoupent avec d’autres facteurs comme la richesse.</skos:definition>
@@ -1490,7 +1482,6 @@
   <owl:Class rdf:ID="PoliticalAffiliation">
     <rdfs:label xml:lang="en">political affiliation</rdfs:label>
     <rdfs:label xml:lang="fr">affiliation politique</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">This subclass of CulturalForm tracks the affiliations, connections and associations which designate a person's political involvement. These affiliations can be both formal connections to a party or organization and informal political positions held by the writer. We hope to point our readers towards women writers associated with different political positions and help researchers make links between political beliefs and writing. For this reason, we are defining political affiliations broadly and include things like &quot;against capital punishment&quot; or &quot;strong supporter of the Empire&quot; in addition to more straightforward affiliations such as &quot;marxist&quot; or &quot;conservative.&quot;</skos:definition>
