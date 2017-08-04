@@ -67,6 +67,7 @@ testing: all
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).nt /var/www/html/testing/.
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl /var/www/html/testing/.	
 	ln -sf /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html /var/www/html/testing/$(ONTOLOGY).html
+	ln -sf /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE).html
 	ln -sf /var/www/html/testing/$(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html /var/www/html/testing/$(ONTOLOGY)-FR.html
 	ln -sf /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE).owl /var/www/html/testing/$(ONTOLOGY).owl
 	ln -sf /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE).nt /var/www/html/testing/$(ONTOLOGY).nt
