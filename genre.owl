@@ -1266,18 +1266,12 @@ s épîtres.</skos:definition>
   <genre:Genre rdf:about="#genreEpitaph">
     <rdf:value>EPITAPH</rdf:value>
     <rdfs:label xml:lang="en">epitaph</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">épitaphe</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#Genre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">Inscriptions on sepulchral monuments in the memory of those buried in the tomb or grave. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
-    <skos:definition xml:lang="de">Inschrift auf einem Grabmal in Erinnerung an die in der Grabstätte Beerdigten. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
-    <skos:definition xml:lang="nl">Inscripties op grafmonumenten ter nagedachtenis aan personen die in het betreffende graf of de betreffende tombe zijn begraven. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
-    <skos:definition xml:lang="es">Inscripciones en mausoleos en memoria de quienes se encuentran enterrados en la tumba o sepulcro. <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
-    <skos:definition xml:lang="zh-hant">墓碑上的銘文，以紀念埋葬於墳地或墓穴者。 <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
-    <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300028729"/>
-    <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <skos:narrower rdf:resource="http://vocab.getty.edu/aat/300028729"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreEpithalamium">
     <rdf:value>EPITHALAMIUM</rdf:value>
