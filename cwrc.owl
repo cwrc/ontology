@@ -411,10 +411,13 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
   <!-- End contexts -->
+
+  <!-- National Heritages -->
   <owl:Class rdf:ID="NationalHeritage">
     <rdfs:label xml:lang="en">national heritage</rdfs:label>
     <rdfs:label xml:lang="fr">héritage national</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A subclass of Cultural Form, this property indicates a person's national heritage, with accompanying context, where present, provided by Nationality Context annotations. National Heritage is composed of various elements related to national identity, often transmitted from previous generations and influenced by a subject’s national historical background or geographical heritage. It can be multiple and can be different from a person’s national identity, current or official citizenship, or the geographical region or territory in which a person resides. Those using this class and its subclasses are encouraged to consult associated Nationality Context excerpts or annotations, if available.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-catégorie de Forme Culturelle, cette propriété indique l’héritage national d’une personne, accompagné du contexte fourni par Contexte National lorsque celui-ci est disponible. Héritage National est composé de divers éléments relatifs à l’identité nationale, souvent transmis par des générations précédentes et influencé par le milieu historique ainsi que par l’héritage géographique. Il peut être multiple et différent de l’identité nationale, de la citoyenneté actuelle ou officielle, de la région géographique ou du territoire de résidence. Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les extraits ou les annotations de Contexte National lorsqu’ils sont disponibles.</skos:definition>
@@ -432,39 +435,6 @@
     <owl:sameAs rdf:resource="http://sws.geonames.org/6269131/"/>
     <skos:broader rdf:resource="#englishLabel"/>
   </cwrc:NationalHeritage>
-<!-- Nationalities -->
-  <owl:Class rdf:ID="NationalIdentity"> 
-    <rdfs:label xml:lang="en">nationality</rdfs:label>
-    <rdfs:label xml:lang="fr">nationalité</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">A subclass of Cultural Form, this property indicates a person's nationality, either as self-reported or as assigned by others, with accompanying context, where present,  provided by Nationality Context annotations. It is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. Like other identity categories, nationality may be plural, fluid, or contingent, and it can intersect with national Heritage or Geographical Heritage as well as other identity categories. Those using this class and its subclasses are encouraged to consult associated Nationality Context annotations, if available.</skos:definition>
-    <skos:definition xml:lang="fr">Une sous-catégorie de Forme Culturelle, cette propriété indique la nationalité d’une personne, accompagnée du contexte fourni par les annotations de Nationalité Contexte lorsque celui-ci est disponible. Elle diffère de la citoyenneté et n’est pas proportionnelle à la zone géographique ou au territoire sur lequel une personne réside. Comme d’autres catégories identitaires, la nationalité peut être plurielle, fluide ou contingente, et recoupe avec Héritage National ainsi qu’avec d’autres catégories identitaires. Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les les annotations de Nationalité Contexte lorsqu’ils sont disponibles.</skos:definition>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
-  <cwrc:NationalIdentity rdf:about="#jewishNationalIdentity">
-    <rdfs:label xml:lang="en">Jewish</rdfs:label>
-    <rdfs:label xml:lang="fr">Juif</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#jewishlabel"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:NationalIdentity>
-   <cwrc:NationalIdentity rdf:about="#englishNationalIdentity">
-    <rdfs:label xml:lang="en">English</rdfs:label>
-    <rdfs:label xml:lang="fr">Anglais</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <owl:sameAs rdf:resource="http://eurovoc.europa.eu/5438"/>  
-    <skos:broader rdf:resource="#englishLabel"/>      
-  </cwrc:NationalIdentity>
-
    <cwrc:NationalHeritage rdf:about="#welshNationalHeritage">
     <rdfs:label xml:lang="en">Welsh</rdfs:label>
     <rdfs:label xml:lang="fr">Gallois</rdfs:label>
@@ -477,6 +447,41 @@
     <owl:sameAs rdf:resource="http://sws.geonames.org/2634895/"/>
   </cwrc:NationalHeritage>
 
+<!-- Nationalities -->
+  <owl:Class rdf:ID="NationalIdentity"> 
+    <rdfs:label xml:lang="en">nationality</rdfs:label>
+    <rdfs:label xml:lang="fr">nationalité</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
+    <skos:definition xml:lang="en">A subclass of Cultural Form, this property indicates a person's nationality, either as self-reported or as assigned by others, with accompanying context, where present,  provided by Nationality Context annotations. It is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. Like other identity categories, nationality may be plural, fluid, or contingent, and it can intersect with national Heritage or Geographical Heritage as well as other identity categories. Those using this class and its subclasses are encouraged to consult associated Nationality Context annotations, if available.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-catégorie de Forme Culturelle, cette propriété indique la nationalité d’une personne, accompagnée du contexte fourni par les annotations de Nationalité Contexte lorsque celui-ci est disponible. Elle diffère de la citoyenneté et n’est pas proportionnelle à la zone géographique ou au territoire sur lequel une personne réside. Comme d’autres catégories identitaires, la nationalité peut être plurielle, fluide ou contingente, et recoupe avec Héritage National ainsi qu’avec d’autres catégories identitaires. Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les les annotations de Nationalité Contexte lorsqu’ils sont disponibles.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <cwrc:NationalIdentity rdf:about="#jewishNationalIdentity">
+    <rdfs:label xml:lang="en">Jewish</rdfs:label>
+    <rdfs:label xml:lang="fr">Juif</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#NationalIdentity"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <skos:broader rdf:resource="#jewishlabel"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:NationalIdentity>
+   <cwrc:NationalIdentity rdf:about="#englishNationalIdentity">
+    <rdfs:label xml:lang="en">English</rdfs:label>
+    <rdfs:label xml:lang="fr">Anglais</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#NationalIdentity"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:sameAs rdf:resource="http://eurovoc.europa.eu/5438"/>  
+    <skos:broader rdf:resource="#englishLabel"/>      
+  </cwrc:NationalIdentity>
   
   <owl:Class rdf:ID="Language">
     <rdfs:label xml:lang="en">language</rdfs:label>
@@ -490,9 +495,11 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/iso639-1/iso639-1_Language"/>
   </owl:Class>
-    <owl:Class rdf:ID="GeographicalHeritage">
+  <!-- Geographic Heritages -->
+  <owl:Class rdf:ID="GeographicalHeritage">
     <rdfs:label xml:lang="en">geographical heritage</rdfs:label>
     <rdfs:label xml:lang="fr">héritage géographique</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A subclass of culturalForm, this property indicates  a person's geographic heritage, with accompanying context, where present, provided by Nationality Context annotations. Geographic heritage involves the geographical origins of a person's family, which often contributes to an understanding of their racial and ethnic background. It offers a way to capture individuals identified as "South-Asian," for example, when no more precise national heritage is indicated. See raceEthnicityContext for a detailed description of the complexities of this class.  It can be multiple and it can be different from a person’s national identity or national heritage, current or official citizenship, or the geographical region or territory in which a person resides. Those using this class and its subclasses are encouraged to consult associated Nationality Context excerpts or annotations, if available.</skos:definition>
@@ -504,6 +511,8 @@
     <rdfs:label xml:lang="en">England</rdfs:label>
     <rdfs:label xml:lang="fr">Angleterre</rdfs:label>
     <foaf:name xml:lang="en">England (Geographical Heritage)</foaf:name>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#GeographicalHeritage"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <skos:broader rdf:resource="#englishLabel"/>
@@ -515,6 +524,8 @@
     <rdfs:label xml:lang="en">Jewish</rdfs:label>
     <rdfs:label xml:lang="fr">Juif</rdfs:label>
     <foaf:name xml:lang="en">Jewish (Geographical Heritage)</foaf:name>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#GeographicalHeritage"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <skos:broader rdf:resource="#jewishLabel"/>
@@ -525,6 +536,7 @@
     <rdfs:label xml:lang="en">gender</rdfs:label>
     <rdfs:label xml:lang="fr">genre</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A subclass of culturalForms for noting a person's gender whether attributed or self-defined. Although in popular culture gender and biological sex are conflated and understood to be binary, the concept of gender stresses the relationality, constructedness, and performativity of gendered identities and gendered behaviour, whose categories are historically contingent and shifting, and the boundaries between them blurry. Cf. Simone de Beauvoir: &quot;One is not born, but rather becomes, a woman,&quot; along with many other theorists of gender including Judith Butler, 1990. Gender is understood as fluid, situational, and sometimes plural, and it is related to though not commensurate with sexual identity and orientation. It is related to but not defined by specific forms of embodiment. Rather than seeing biological sex as a pre-social or natural given, the body is understood as a site of inscription (cf. Elizabeth Grosz 1994) which is also socially constructed and indeed epigenetically shaped by environmental factors (N. Katherine Hayles 2012). This ontology therefore does not provide separate terms for sex as distinct from gender. Instead, the slashes conjoining terms associated with gender and those conventionally associated with sex indicate the constant slippage between gender and sex in the way that these categories circulate through discourses, actions, and institutions. Far from indicating a universal facet of experience, gender intersects with other identity categories and axes of oppression such as class, race or colour, or geographical heritage to produced quite different interests and experiences among people of the same gender, as with the intersection of religion and white masculine identity in the Muscular Christianity movement in nineteenth-century Britain. Being a woman of colour may thus compound the impacts of gender oppression (<![CDATA[<a href="#crenshaw_demarginalizing_1989">Kimberlé Crenshaw, 1989</a>]]>).</skos:definition>
     <skos:definition xml:lang="fr">Cette  sous-classe de culturalForms indique le genre d’une personne, qu’il soit attribué par cette dernière ou auto-défini. Même si dans la culture populaire le genre et le sexe biologique sont confondus et binaires, le concept de genre souligne la relativité, la constructivité et la performativité des identités et des comportements genrés, réparties en catégories historiquement contingentes, changeantes et aux frontières floues. Cf Simone de Beauvoir: “On ne naît pas femme, on le devient,” et d’autres nombreuses théoriciennes du genre, dont Judith Butler en 1990. Le genre est entendu comme fluide, situationnel, parfois pluriel, et est relié à, l’identité et l’orientation sexuelles même s’ils ne doivent pas être confondus. Il est relié à des formes spécifiques d’incarnation ou à des comportements physiques, sans pour autant être défini par eux. Plutôt que de voir le sexe biologique comme présocial et attribué par nature,  le corps est compris comme un lieu d’inscriptions (cf Elizabeth Grosz 1994) qui est aussi socialement construit et épigénétiquement modelé par des facteurs environnementaux (N. Katherine Hayles 2012). Cette ontologie ne fournit donc pas de termes séparés pour le genre et le sexe. Les barres obliques qui lient les termes associés aux genres et ceux conventionnellement attribués au sexe indiquent plutôt le glissement constant de ces catégories au fil des discours, des actions et des institutions. Loin d’indiquer une part d’expérience universelle, le genre s’entrecroise avec d’autres catégories d’identité et axes d’oppression comme la classe, la race, la couleur, ou l’héritage géographique pour produire des intérêts et des expériences bien différentes pour les personnes d’un même genre. Un exemple est l’intersection de la religion et de l’identité masculine du mouvement de la Chrétienté Musculaire formé au Royaume-Uni au 19ème siècle. Dans ce contexte, être une femme de couleur devait aggraver les oppressions liées au genre (<![CDATA[<a href="#crenshaw_demarginalizing_1989">Kimberlé Crenshaw, 1989</a>]]>).</skos:definition>
@@ -535,8 +547,9 @@
     <rdfs:label xml:lang="en">man</rdfs:label>
     <rdfs:label xml:lang="fr">homme</rdfs:label>
     <foaf:name xml:lang="en">man (gender)</foaf:name>
-    <skos:definition xml:lang="en"/>
+    <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -544,8 +557,9 @@
     <rdfs:label xml:lang="en">woman</rdfs:label>
     <rdfs:label xml:lang="fr">femme</rdfs:label>
     <foaf:name xml:lang="en">woman (gender)</foaf:name>
-    <skos:definition xml:lang="en"/>
+    <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -553,8 +567,9 @@
     <rdfs:label xml:lang="en">transman/transmale</rdfs:label>
     <rdfs:label xml:lang="fr">homme trans</rdfs:label>
     <foaf:name xml:lang="en">transman/transmale (gender)</foaf:name>
-    <skos:definition xml:lang="en"/>
+    <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -562,8 +577,9 @@
     <rdfs:label xml:lang="en">transwoman/transfemale</rdfs:label>
     <rdfs:label xml:lang="fr">femme trans</rdfs:label>
     <foaf:name xml:lang="en">transwoman/transfemale (gender)</foaf:name>
-    <skos:definition xml:lang="en"/>
+    <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -572,7 +588,8 @@
     <rdfs:label xml:lang="en">gender queer</rdfs:label>
     <rdfs:label xml:lang="fr">non-binaire</rdfs:label>
     <skos:note>Listed as non-binary? in french</skos:note>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#Gender"/>
+    <rdf:type rdf:resource="http://www.w8.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -588,6 +605,7 @@
     <rdfs:label xml:lang="en">sexuality</rdfs:label>
     <rdfs:label xml:lang="fr">sexualité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A subclass of Cultural Form and linked to Sexuality Context, Sexuality properties indicate in a word or phrase identifications or aspects of sexuality (i.e., "lesbian," "monogamous," "heterosexual" but also &quot;promiscuous&quot;) not as a means of shutting down but advancing investigation and critical analysis of these identifications. The association assumes that sSexual identity does not function in an essentialist manner but can be plural and fluid, so multiple designations can be applied to a single person can be associated with multiple terms. Sexual identity may come from the subject her/himself or be ascribed by others. Terms may be in tension or mutually exclusive, they may reflect different life stages, and they may or may not reflect actual sexual practices. Linking a person to the term "lesbian" as a sexualityIdentity class, for instance, does not necessarily signify that the subject was in any definitive sense a lesbian; such identifications are often impossible for reasons of historical gaps and silences. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See <![CDATA[ <a href=#3A9144c07e-d14f-4371-8d28-7545b7337a4a ">Campbell and Cowan, 2016</a> ]]></skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe de Forme Culturelle liée à Sexualité En Contexte, les propriétés de Sexualité indiquent en un mot ou en une phrase les identifications ou les aspects de la sexualité  (par exemple &quot;lesbienne&quot;, &quot;monogame&quot;, &quot;hétérosexuel.le&quot;, mais aussi &quot;ouvert.e&quot;), non pas pour clore la discussion mais pour développer l’étude et l’analyse critique de ces catégories. Comme l’identité sexuelle peut être plurielle et fluide, une même personne est susceptible d’être associée à plusieurs termes. L’identité sexuelle peut être formulée par la personne elle-même ou être assignée par d’autres individus. Les termes utilisés peuvent se trouver en tension ou se montrer incompatibles, et reflètent différentes périodes de l’existence. Par exemple, lier une personne au terme &quot;lesbienne&quot; comme classe de sexualité ne signifie pas nécessairement que cette dernière était définitivement lesbienne, car une telle identification est souvent impossible à cause de lacunes et de silences historiques. En ce qui concerne les personnes toujours en vie, nous ne nous appuyons que sur des sources ou des déclarations publiques faites par le sujet elle/lui-même afin de ne pas dévoiler par inadvertance des informations privées sur sa sexualité. Voir <![CDATA[ <a href="#3A9144c07e-d14f-4371-8d28-7545b7337a4a ">Campbell et Cowan 2016</a> ]]></skos:definition>
@@ -602,6 +620,7 @@
     <foaf:name xml:lang="en">heterosexual (sexual identity)</foaf:name>
     <skos:definition xml:lang="en">Heterosexuality indicates sexual attraction to the so-called &quot;opposite sex,&quot; that is, sexual attraction between men and women. This understanding relies, like bisexual, on a binary understanding of sex and gender that also often conflates sex with gender. Adrienne Rich draws on Kathleen Gough in articulating an understanding of heterosexuality as compulsory for women within patriarchy. In her essay &quot;The Straight Mind&quot; (first published in 1980) Monique Wittig understands heterosexuality as a semiotic, linguistic, political, and ontological construct. It constitutes itself as a normative system through the oppression of women by men and the &quot;necessity of the different/other at every level&quot;. The straight mind &quot;creates the doctrine of the difference between sexes to justify this oppression&quot;.</skos:definition>
     <skos:definition xml:lang="fr">L’hétérosexualité indique l’attraction sexuelle pour le sexe prétendument &quot;opposé&quot;, c’est-à-dire entre les hommes et les femmes. Cette compréhension du terme repose, comme pour la bisexualité, sur une interprétation binaire du sexe et du genre, qui confond habituellement les deux notions. S’appuyant sur Kathleen Gough, Adrienne Rich interprète ll’hétérosexualité comme obligatoire pour les femmes dans un contexte patriarcal. Dans son article &quot;La pensée straight&quot; (publiée pour la première fois en 1980) Monique Wittig interprète l’hétérosexualité comme une construction sémiotique, linguistique, politique et ontologique. Elle se constitue comme un système normatif qui passe par l'oppression des femmes par les hommes et la &quot;la nécessité de l'autre différent à tous les niveaux&quot;. La pensée straight &quot;produit la doctrine de la différence entre les sexes pour justifier cette oppression&quot;.</skos:definition>
+    <skos:inScheme rdf:resource="#Sexuality"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <owl:sameAs rdf:resource="http://homosaurus.org/terms/heterosexualIdentity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -613,6 +632,7 @@
     <foaf:name xml:lang="en">homosexual (sexual identity)</foaf:name>
     <skos:definition xml:lang="en">Homosexuality indicates sexual attraction to subjects of the same gender. Like bisexual, it draws on  a binary understanding of sex and gender that also often conflates sex with gender. Homosexual is often used as an umbrella term for lesbian and  gay sexuality.</skos:definition>
     <skos:definition xml:lang="fr">L’homosexualité indique l’attraction sexuelle entre des sujets du même genre. Comme bisexuel, le terme repose sur une interprétation binaire et souvent indifférenciée du sexe et du genre. Homosexuel est souvent utilisé comme terme générique pour les sexualités lesbienne et gay.</skos:definition>
+    <skos:inScheme rdf:resource="#Sexuality"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -623,6 +643,7 @@
     <foaf:name xml:lang="en">lesbian (sexual identity)</foaf:name>
     <skos:definition xml:lang="en">Lesbianism indicates the sexual attraction of women to other women. Yet, lesbian feminist thinkers underline that this common definition is reductive. Drawing on Kathleen Gough and within an understanding of heterosexuality as compulsory for women within patriarchy, Adrienne Rich describes a lesbian continuum, the &quot;range—through each woman's life and throughout history—of woman-identified experiences, not simply the fact that a woman has had or consciously desired genital sexual experience with another woman&quot; <![CDATA[ <a href="#3A8049540f-3673-4ca0-920c-cb5326d7c466">(Of Blood Bread and Poetry, 1983)</a> ]]>. In a heteronormative context, lesbianism is not only a question of sexuality but also has complex political implications.</skos:definition>
     <skos:definition xml:lang="fr">Le lesbianisme indique l’attraction sexuelle entre les femmes. Cependant, certaines intellectuelles lesbiennes féministes soulignent l’aspect réducteur d’une telle définition. S’appuyant sur Kathleen Gough, Adrienne Rich interprète l’hétérosexualité comme obligatoire pour les femmes dans un contexte patriarcal, et évoque un continuum lesbien, les &quot;diverses expériences spécifiques aux femmes—au cours de leur existence ou à travers l’Histoire— et non simplement le fait qu’une femme a eu ou a consciemment désiré avoir des expériences sexuelles avec une autre femme&quot; <![CDATA[ <a href="#3A8049540f-3673-4ca0-920c-cb5326d7c466">(Of Blood and Poetry, 1983)</a> ]]>. Dans un contexte hétéronormatif, le lesbianisme ne relève donc pas seulement de la sexualité mais implique aussi des questions politiques complexes.</skos:definition>
+    <skos:inScheme rdf:resource="#Sexuality"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <owl:sameAs rdf:resource="http://homosaurus.org/terms/lesbianIdentity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -634,6 +655,7 @@
     <foaf:name xml:lang="en">bisexual (sexual identity)</foaf:name>
     <skos:definition xml:lang="en">Bisexuality indicates sexual attraction to both genders. In terms of binary understandings of sex or gender, bisexuality is often defined as being sexually attracted to &quot;both sexes&quot;.</skos:definition>
     <skos:definition xml:lang="fr">La bisexualité réfère à l’attraction sexuelle pour les deux genres. En terme d’acceptation binaire du sexe ou du genre, la bisexualité est souvent définie comme attraction sexuelle pour les &quot;deux sexes&quot;.</skos:definition>
+    <skos:inScheme rdf:resource="#Sexuality"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <owl:sameAs rdf:resource="http://homosaurus.org/terms/bisexualIdentity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -644,6 +666,7 @@
     <rdfs:label xml:lang="fr">célibat</rdfs:label>
     <skos:definition xml:lang="en">Celibacy indicates abstention from sex, and can stem from personal choice, religious prescriptions, or with religious occupations such as being a nun or priest . Celibacy is not the be confused with  asexuality, which describes a lack of  interest in sex  or sexual attraction to other subjects.</skos:definition>
     <skos:definition xml:lang="fr">Le célibat indique l’abstinence sexuelle, et peut être dû à un choix personnel, à des impératifs religieux ou des professions cléricales comme religieuse ou prêtre. Le célibat ne doit pas être confondu avec l’asexualité, qui décrit une absence d’intérêt pour les pratiques sexuelles ou d’attirance sexuelle pour d’autres personnes.</skos:definition>
+    <skos:inScheme rdf:resource="#Sexuality"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <owl:sameAs rdf:resource="http://homosaurus.org/terms/celibacy"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -654,6 +677,7 @@
     <rdfs:label xml:lang="fr">frigidité</rdfs:label>
     <skos:definition xml:lang="en">Frigidity labels a female subject as sexually withdrawn  or unenthusiastic (read: non-consenting)  in relation to the sexual advance, usually of men within a heterosexual framework, and suggests a lack of pleasure from sexual activities. Unlike asexual and celibate, this term is often ascribed to women, as opposed to self-referential. The term &quot;frigid&quot; was coined in the 1920s by sexologists (Sex and Society, Vol. 1, 285). Its use in discourse surrounding female sexuality is waning.</skos:definition>
     <skos:definition xml:lang="fr">La frigidité est attribuée aux femmes qui se montrent distantes ou peu enthousiastes (comprendre non consentantes) face aux avances sexuelles, le plus souvent de la part d’hommes dans un cadre hétéronormé, et suggère un manque de plaisir associé aux pratiques sexuelles. Contrairement à l’asexualité et au célibat, ce terme est souvent assigné à des femmes, et n'est donc pas autoréférentiel. Le terme &quot;frigide&quot; a été formulé dans les années 20 par des sexologues (Sex and Society, Vol. 1, 285). Son usage est en déclin dans les discours à propos de la sexualité féminine.</skos:definition>
+    <skos:inScheme rdf:resource="#Sexuality"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -663,6 +687,7 @@
     <rdfs:label xml:lang="fr">promiscuité</rdfs:label>
     <skos:definition xml:lang="en">Promiscuity indicates sex with multiple partners in a casual or indiscriminate fashion and in opposition to socially sanctioned sexual behaviour. Promiscuity is differently constructed for women and men in most historical and cultural contexts, being closely connected to the control of female  sexuality and reproduction. It includes libertinism, a form of  hedonistic sexual politics frequently ascribed to or adopted by men.</skos:definition>
     <skos:definition xml:lang="fr">La promiscuité indique l’activité sexuelle avec des partenaires multiples de façon décomplexée et indifférenciée, en opposition aux pratiques sexuelles socialement acceptées. La promiscuité est différemment interprétée pour les femmes et les hommes dans la plupart des contextes historiques et culturelles, étant étroitement liée au contrôle de la sexualité féminine et de la reproduction. Elle inclut le libertinage, une forme de sexualité hédoniste fréquemment attribuée à ou adoptée par des hommes.</skos:definition>
+    <skos:inScheme rdf:resource="#Sexuality"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -672,6 +697,7 @@
     <rdfs:label xml:lang="fr">libertinage</rdfs:label>
     <skos:definition xml:lang="en">Libertinism refers to a type of sexual identity (often tied to men) used to describe a subject who subscribes to hedonistic sexual politics.</skos:definition>
     <skos:definition xml:lang="fr">Le libertinage réfère à un type d’identité sexuelle (souvent pour des hommes) utilisé pour décrire un sujet adhérant aux idées et pratiques hédonistes.</skos:definition>
+    <skos:inScheme rdf:resource="#Sexuality"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -680,6 +706,7 @@
     <rdfs:label xml:lang="en">race or colour</rdfs:label>
     <rdfs:label xml:lang="fr">race ou couleur</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
@@ -693,6 +720,7 @@
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#RaceColour"/>
     <skos:broader rdf:resource="#whiteLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -704,6 +732,7 @@
     <foaf:name xml:lang="en">eurasian (race colour)</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
+    <skos:inScheme rdf:resource="#RaceColour"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -725,6 +754,7 @@
     <rdfs:label xml:lang="en">ethnicity</rdfs:label>
     <rdfs:label xml:lang="fr">ethnicité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">Ethnicity is a subclass of CulturalForm that captures information about a person's ethnic position. Ethnicity is a sub-element within culturalFormation and raceAndEthnicity. See raceAndEthnicity for a detailed description of the complexities of this discursive construction and the social practices surrounding it.</skos:definition>
     <skos:definition xml:lang="fr"/>
@@ -737,6 +767,8 @@
     <foaf:name xml:lang="en">white (ethnicity)</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
+    <skos:inScheme rdf:resource="#RaceColour"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="#whiteLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -747,6 +779,8 @@
     <foaf:name xml:lang="en">Jewish (Ethnicity)</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
+    <skos:inScheme rdf:resource="#RaceColour"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="#jewishLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1289,13 +1323,13 @@
   <owl:Class rdf:ID="SocialClass">
     <rdfs:label xml:lang="en">social class</rdfs:label>
     <rdfs:label xml:lang="fr">classe sociale</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A subclass of culturalForm, socialClass terms associate subjects with a specific social group, recognizing that such categories and their application to individuals are contested and can change over time. The association may be or have been embraced by the subject her/himself or attributed by others. Unlike Notes typed as socialClassContext, which contain detailed discussion of a subject's class position, socialClass links to a word or phrase signifying a particular construction of class, with particular reference to earlier historical periods in the British Isles. Social class has been variously constructed and theorized, and for women is further complicated by the fact that women were understood to take their social status from fathers and/or husbands. The terminology used here reflects quite basic social groupings that intersect with other factors such as wealth.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-catégorie de culturalForm, les termes de socialClass associent les sujets à des groupes sociaux spécifiques, en prenant en compte le fait que ces catégories et leur application aux individus sont contestables et peuvent changer au fil du temps. L’association à une classe sociale peut ou a pu être assumée par le sujet elle/lui-même ou attribuée par d’autres. Contrairement aux notes comme socialClassContext, qui contiennent les détails des discussions autour de le statut social du sujet, socialClass relie un mot ou une phrase référant à une classe spécifique qui renvoie à des périodes historiques antérieures spécifiques des Îles Britanniques. La notion de classe sociale a été construite et théorisée de diverses manières, et est d’autant plus complexe pour les femmes puisqu’elles étaient censées adopter le statut social de leur père et/ou de leur mari. La terminologie ici utilisée réfère à des groupes sociaux élémentaires qui se recoupent avec d’autres facteurs comme la richesse.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
   </owl:Class>
   <cwrc:SocialClass rdf:about="#lowerMiddleClass">
     <rdfs:label xml:lang="en">lower-middle class</rdfs:label>
