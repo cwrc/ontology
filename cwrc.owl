@@ -264,8 +264,8 @@
     <rdfs:label xml:lang="en">cultural form</rdfs:label>
     <rdfs:label xml:lang="fr">forme culturelle</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">Cultural forms refers to the processes of lived social subjectivities of people and is often combined with predicates indicating the identity positions as they relate to the following discursive constructions of Class, Religion, Ethnicity, Gender, GeographicalHeritage, LinguisticAbility, NationalHeritage, NationalIdentity, PoliticalAffiliation, RaceColour, Sexuality. These categories are not understood as transhistorical or isolated categories. Rather, they facilitate analysis of how such situationally contingent, changing, and negotiated labels are assigned to or adopted by a particular individual. The tensions endemic to practices of classification demand critical engagement and inquiry into the situatedness of particular cultural identities.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">The Cultural Form class of properties associates specific concepts and categories with the process of identity formation through cultural processes. Such associations may be or have been embraced by the subject herself or himself or attributed by others. Although cultural forms or social identities circulate around the notion of characteristics, traditions, beliefs, or origins that are shared with others, recent work has stressed the contingency, provisionality, and constructedness of such categories through both complex discourses and social practices. As argued by Stuart Hall, &quot;It seems to be in the attempt to rearticulate the relationship between subjects and discursive practices that the question of identity recurs&quot; (&quot;Introduction&quot;). See Stuart Hall and Paul du Goy’s edited collection Questions of Cultural Identity (1996). Given their highly discursive nature, the concepts and categories classed as cultural forms are understood to overlap with each other conceptually. The same word or label can therefore occur as multiple cultural forms, reflecting the shifting discursive contexts in which it has been used and the diverse situations from which it has emerged. Each specific Cultural Form is understood to interact not only with other cultural forms or identity categories applied to a person, and other instances of the form applied to other people, but also always with Cultural Formation Context annotations, which support the understanding that social identities are always constructions in progress.</skos:definition>
+    <skos:definition xml:lang="fr">La classe de propriétés Forme Culturelle associe des concepts et des catégories spécifiques à la formation identitaire réalisée au travers de processus culturels. De  telles associations ont été adoptées par le sujet elle/lui-même ou attribuées par d’autres. Même si les formes culturelles ou les identités sociales s’articulent autour de notions communément partagées comme la caractérisation, les traditions, les croyances ou les origines, certains travaux récents ont ont montré que de telles catégories sont contingentes, provisoire et construites par des discours et des pratiques sociales complexes. Tel que Stuart Hall l’affirme, &quot;Il semble que la question de l’identité réapparaît dans une tentative de remanier la relation entre sujets et pratiques discursives&quot; (&quot;Introduction&quot;). Voir la collection éditée par Stuart Hall et Paul du Goy,  Questions of Cultural Identity. Étant donné leur nature hautement discursive, les concepts et les catégories de Formes Culturelles sont conceptuellement imbriqués. Un même terme peut donc apparaître sous diverses formes culturelles, reflétant le changement de contextes discursifs dans lesquels il est employé et les diverses situations d’où il provient. Chaque Forme Culturelle est non seulement perçue en interaction avec d’autres formes culturelles, ou catégories identitaires, qu’elles soient appliquées à une personne ou à d’autres individus, mais est aussi toujours reliée aux annotations de Formation Culturelle En Contexte, soutenant que les identités sociales sont des phénomènes toujours en construction.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -296,11 +296,11 @@
 
   <owl:Class rdf:ID="CulturalFormContext">
     <rdfs:label xml:lang="en">cultural form context</rdfs:label>
-    <rdfs:label xml:lang="fr">contexte culturel</rdfs:label>
+    <rdfs:label xml:lang="fr">forme culturelle en contexte</rdfs:label>
     <rdfs:subClassOf rdf:resource="#Context"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en"></skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">Cultural Form Context is a significant subclass of Context. Annotations typed as Cultural Formation Context provide information about and discussions of a person's social identity or subjectivity through the use of Cultural Form properties, which when multiple often indicate intersectional identities.</skos:definition>
+    <skos:definition xml:lang="fr">Form Culturelle En Contexte est une sous-classe de contexte importante. Les annotations entrées en tant Formation Culturelle En Contexte fournissent des renseignements et des discussions sur l’identité sociales ou la subjectivité d’une personne à travers l’utilisation des propriétés Formes Culturelles, qui indiquent souvent des identités intersectionnelles lorsqu’elles sont multiples. .</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -365,14 +365,14 @@
   </owl:Class>
   <owl:Class rdf:ID="NationalityContext">
     <rdfs:label xml:lang="en">nationality context</rdfs:label>
-    <rdfs:label xml:lang="fr">contexte de nationalité</rdfs:label>
+    <rdfs:label xml:lang="fr">contexte national</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
     <dcterms:subject rdf:resource="#NationalHeritage"/>
     <dcterms:subject rdf:resource="#NationalIdentity"/>
     <dcterms:subject rdf:resource="#GeographicalHeritage"/>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">Nationality Context is a significant subclass of context. Annotations typed as Nationality Context provide information about and discussions of a person's cultural formation in relation to their national identity, national heritage, and geographic heritage -- which are not always aligned. Nationality Context provides depth to more granular indications of national identity through the nationality, National Heritage, and Geographic Heritage properties.</skos:definition>
+    <skos:definition xml:lang="fr">Contexte National est une sous-classe de contexte importante. Les annotations entrées en tant que Nationalité Context fournissent des informations et des discussions sur la formation culturelle d’une personne, en lien avec son identité nationale et son héritage national et géographique qui ne sont pas toujours alignés. Contexte National explore plus en détails les indications granulaires sur l’identité nationale à travers les propriétés Nationalité, Héritage National et Héritage Géographique.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -412,12 +412,12 @@
   </owl:Class>
   <!-- End contexts -->
   <owl:Class rdf:ID="NationalHeritage">
-    <rdfs:label xml:lang="en">National Heritage</rdfs:label>
-    <rdfs:label xml:lang="fr">Héritage National</rdfs:label>
+    <rdfs:label xml:lang="en">national heritage</rdfs:label>
+    <rdfs:label xml:lang="fr">héritage national</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">A subclass of culturalForms, this escrbes a person's national heritage and is not the same as citizenship.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">A subclass of Cultural Form, this property indicates a person's national heritage, with accompanying context, where present, provided by Nationality Context annotations. National Heritage is composed of various elements related to national identity, often transmitted from previous generations and influenced by a subject’s national historical background or geographical heritage. It can be multiple and can be different from a person’s national identity, current or official citizenship, or the geographical region or territory in which a person resides. Those using this class and its subclasses are encouraged to consult associated Nationality Context excerpts or annotations, if available.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-catégorie de Forme Culturelle, cette propriété indique l’héritage national d’une personne, accompagné du contexte fourni par Contexte National lorsque celui-ci est disponible. Héritage National est composé de divers éléments relatifs à l’identité nationale, souvent transmis par des générations précédentes et influencé par le milieu historique ainsi que par l’héritage géographique. Il peut être multiple et différent de l’identité nationale, de la citoyenneté actuelle ou officielle, de la région géographique ou du territoire de résidence. Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les extraits ou les annotations de Contexte National lorsqu’ils sont disponibles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -433,14 +433,13 @@
     <skos:broader rdf:resource="#englishLabel"/>
   </cwrc:NationalHeritage>
 <!-- Nationalities -->
-<!-- To be deprecated infavor of nationality -->
   <owl:Class rdf:ID="NationalIdentity"> 
-    <rdfs:label xml:lang="en">Nationality</rdfs:label>
-    <rdfs:label xml:lang="fr">Nationalité</rdfs:label>
+    <rdfs:label xml:lang="en">nationality</rdfs:label>
+    <rdfs:label xml:lang="fr">nationalité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">A subclass of Cultural Form, this describes a person's nationalities and is not the same as citizenship.</skos:definition>
-    <skos:definition xml:lang="fr">Une sous-classe de Cultural Form, ceci décrit la nationalité d'une personne et n'est pas sa citoyenneté.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of Cultural Form, this property indicates a person's nationality, either as self-reported or as assigned by others, with accompanying context, where present,  provided by Nationality Context annotations. It is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. Like other identity categories, nationality may be plural, fluid, or contingent, and it can intersect with national Heritage or Geographical Heritage as well as other identity categories. Those using this class and its subclasses are encouraged to consult associated Nationality Context annotations, if available.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-catégorie de Forme Culturelle, cette propriété indique la nationalité d’une personne, accompagnée du contexte fourni par les annotations de Nationalité Contexte lorsque celui-ci est disponible. Elle diffère de la citoyenneté et n’est pas proportionnelle à la zone géographique ou au territoire sur lequel une personne réside. Comme d’autres catégories identitaires, la nationalité peut être plurielle, fluide ou contingente, et recoupe avec Héritage National ainsi qu’avec d’autres catégories identitaires. Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les les annotations de Nationalité Contexte lorsqu’ils sont disponibles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -496,8 +495,8 @@
     <rdfs:label xml:lang="fr">héritage géographique</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">GeographicalHeritage is a subclass of CulturalForm that captures information about the geographical origins of a person's family which often contributes to an understanding of their racial and ethnic background. It offers a way to capture women identified as &quot;South-Asian,&quot; for example, when no more precise national heritage is indicated. See raceAndEthnicity for a detailed description of the complexities of this element.</skos:definition>
-    <skos:definition xml:lang="fr">GeographicalHeritage est une sous-classe de CulturalForm qui contient des informations sur les origines géographiques de la famille d'une personne, ce qui contribue souvent à la compréhension de ses origines ethnique et raciale. Cela permet de saisir l’identité de femmes qui se déclarent “sud-asiatiques” par exemple, quand aucune autre précision n'est fournie concernant l'héritage national. Voir raceEthnicityContext pour un compte-rendu détaillé de la complexité de cet élément.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of culturalForm, this property indicates  a person's geographic heritage, with accompanying context, where present, provided by Nationality Context annotations. Geographic heritage involves the geographical origins of a person's family, which often contributes to an understanding of their racial and ethnic background. It offers a way to capture individuals identified as "South-Asian," for example, when no more precise national heritage is indicated. See raceEthnicityContext for a detailed description of the complexities of this class.  It can be multiple and it can be different from a person’s national identity or national heritage, current or official citizenship, or the geographical region or territory in which a person resides. Those using this class and its subclasses are encouraged to consult associated Nationality Context excerpts or annotations, if available.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-classe de Forme Culturelle, Héritage Géographique indique l’héritage géographique d’une personne, accompagné du contexte fourni par les annotations de Contexte National lorsque celui-ci est disponible. L’héritage géographique inclut les origines géographiques de la famille d’une personne, qui s’avèrent souvent utiles à la compréhension de son milieu ethnique et raciale. Cela permet par exemple de saisir l’identité de femmes qui se déclarent &quot;sud-asiatiques&quot;, alors qu’aucune autre précision n'est fournie concernant son héritage national. Voir Contexte Ethnique Et Racial pour un compte-rendu détaillé de la complexité de cette classe. Il peut être multiple et différent de l’identité ou de l’héritage national, de la citoyenneté actuelle ou officielle, et de la région géographique ou du territoire de résidence. Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les extraits ou les annotations de Contexte National lorsqu’ils sont disponibles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -630,8 +629,8 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Sexuality>
   <owl:Class rdf:ID="RaceColour">
-    <rdfs:label xml:lang="en">race and/or colour</rdfs:label>
-    <rdfs:label xml:lang="fr">race et/ou couleur de peau</rdfs:label>
+    <rdfs:label xml:lang="en">race or colour</rdfs:label>
+    <rdfs:label xml:lang="fr">race ou couleur</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en"/>
@@ -3993,16 +3992,18 @@
   </cwrc:RaceColour>
   <owl:ObjectProperty rdf:ID="personalProperty">
     <rdfs:label xml:lang="en">personal property</rdfs:label>
-    <rdfs:label xml:lang="fr">propriété de la personne</rdfs:label>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">propriété personnelle</rdfs:label>
+    <skos:definition xml:lang="en">A property that is ascribed to a person.</skos:definition>
+    <skos:definition xml:lang="fr">Une propriété qui est attribuée à une personne.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="personalPropertySelfReported">
-    <rdfs:label xml:lang="en">personal property (self reported)</rdfs:label>
-    <rdfs:label xml:lang="fr">propriété de la personne (autodéclarée)</rdfs:label>
+    <rdfs:label xml:lang="en">personal property self-reported</rdfs:label>
+    <rdfs:label xml:lang="fr">propriété personnelle autodéclarée</rdfs:label>
+    <skos:definition xml:lang="en">This is a personal property that is self-reported.</skos:definition>
+    <skos:definition xml:lang="fr">Une propriété personnelle autodéclarée.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -4048,6 +4049,8 @@
   <owl:ObjectProperty rdf:ID="hasNationalitySelfReported">
     <rdfs:label xml:lang="en">has nationality (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">de nationalité (autodéclarée)</rdfs:label>
+    <skos:definition xml:lang="en" >A subproperty of personal property (self-reported), this property indicates a person's self-defined nationality/ies and is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. For more information on this property see nationality.</skos:definition>
+    <skos:definition xml:lang="fr" >Une sous-propriété de propriété personnelle autodéclarée, cette propriété indique la/les nationalité(s) autoproclamée(s) d’une personne, différant de la citoyenneté et n’étant pas proportionnelle à la zone géographique ou au territoire sur lequel elle réside.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#NationalIdentity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -4067,11 +4070,12 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasRaceColourSelfReported">
-    <rdfs:label xml:lang="en">has race (self reported)</rdfs:label>
-    <rdfs:label xml:lang="fr">est de race (autodéclarée)</rdfs:label>
+    <rdfs:label xml:lang="en">has race or colour self-defined</rdfs:label>
+    <rdfs:label xml:lang="fr">a race ou couleur autodéclarée</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#Race"/>
-    <skos:definition xml:lang="en">This describes a person's self-reported racial identity.</skos:definition>
+    <skos:definition xml:lang="en">A subproperty of personal property self reported, this property indicates a person's self-reported race or colour.  For further information about this property, see Race or Colour.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-propriété de de propriété personnelle autodéclarée, cette propriété indique l’appartenance raciale ou la couleur autodéclarées d’une personne.  Pour plus d’informations à propre de cette propriété, voir Race ou Couleur. </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -4113,6 +4117,8 @@
   <owl:ObjectProperty rdf:ID="hasReligionSelfReported">
     <rdfs:label xml:lang="en">has religious affiliation (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">religion (autodéclarée)</rdfs:label>
+    <skos:definition xml:lang="en">A personal property, this indicates a person's self-reported religion(s) or belief system(s).</skos:definition>
+    <skos:definition xml:lang="fr">Une propriété personnelle qui indique la/les religion(s) ou le(s) système(s) de croyance autoproclamé(s) par une personne.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
