@@ -319,11 +319,11 @@
   </owl:Class>
   <owl:Class rdf:ID="SexualityContext">
     <rdfs:label xml:lang="en">sexuality context</rdfs:label>
-    <rdfs:label xml:lang="fr">contexte de sexualité</rdfs:label>
+    <rdfs:label xml:lang="fr">sexualité en contexte</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
-    <skos:definition xml:lang="en">hasSexualityContext is a significant sub-class within culturalFormContext. It indicates the presence of information and discussions of a person's subject position with regards to their sexuality and sexual identity. A subclass of Cultural Formation, hasSexualityContext provides depth to more granual categorizations of a person through hasSexuality or hasSexuality. It is not meant to capture individual sexual experiences and relationships, which are covered by intimateRelationships. Specific relationships may be invoked here to indicate the effect on a subject's life and understanding of her own sexuality. This effort to to contextualize gestures towards some of the complicated issues around sexuality, for example, the politics of outing, the historical specificity of some categories such as &quot;congenital invert,&quot; or the multiple forms of relating to one's own sexuality. Capturing discussions of her sexuality within this element, will help users interested in the historical, ideological and gendered constructions of sexuality. There are important politics of privacy with respect to the disclosure of a subject's sexuality, sexual orientation and sexual identity. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See Campbell and Cowan 2016</skos:definition>
-    <skos:definition xml:lang="fr">sexualityContext est une sous-classe importante de culturalFormContext. Elle indique la présence de données ou de discussions sur la subjectivité d’une personne en ce qui concerne sa sexualité et son identité sexuelle. Sous-classe de culturalForms, sexualityContext approfondit la catégorisation granulaire d’une personne à travers hasSexuality ou hasSexuality. Elle n’est pas vouée à répertorier les expériences sexuelles et relations personnelles, qui sont comprises dans intimateRelationships. Des relations spécifiques pourront être évoquées ici pour indiquer les conséquences qu’elles ont eu dans la vie du sujet ou la compréhension de sa propre sexualité. Cet effort de contextualisation est un mouvement vers des questions complexes autours de la sexualité, comme par exemple les politiques de délation autour de la sexualité, la spécificité historique de certaines catégories comme “inversion sexuelle”, ou les multiples formes liées à la sexualité d’une personne. Les utilisatrices/teurs intéressé/es par la construction historique, idéologique et genrée de la sexualité pour se servir de cet élément qui rend compte des débats autour de ce thème. Nous reconnaissons l'importance des politiques de confidentialité au regard de la divulgation de la sexualité, de l’orientation et de l’identité sexuelles du sujet. En ce qui concerne les personnes toujours en vie, notre pratique est de ne nous appuyer que sur des sources ou des déclarations publiques venant du sujet elle/lui-même, afin d’éviter de dévoiler par inadvertance des informations privées sur sa sexualité. Voir Campbell and Cowan 2016. (http://ir.lib.uwo.ca/cgi/viewcontent.cgi?article=1085&amp;context=fimspub). </skos:definition>
+    <skos:definition xml:lang="en">Sexuality Context is a significant subclass of context. Annotations typed as Sexuality Context provide information about and discussions of a person's subjectivity with regards to their sexuality and sexual identity. Sexuality Context provides depth to more granular categorizations of a person through the sexuality or Sexuality Self-Reported properties. It does not provide context for  individual sexual experiences and relationships, although specific relationships may be invoked to indicate the impact on a subject's life and understanding of her own sexuality. Contextualizations allow recognition of the complicated politics of sexuality, for example, considerations regarding outing, the historical specificity of some categories such as "congenital invert," the appropriation of derogatory terms, and the multiplicity of constructions. There are important politics of privacy with respect to the disclosure of a subject's sexuality, sexual orientation, and sexual identity. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See <![CDATA[ <a href="#3A9144c07e-d14f-4371-8d28-7545b7337a4a ">Campbell and Cowan, 2016</a> ]]></skos:definition>
+    <skos:definition xml:lang="fr">Sexualité En Contexte est une sous-classe de contexte importante. Les annotations entrées en tant que Sexualité En Contexte fournissent des renseignements et des discussions sur la subjectivité d’une personne en ce qui concerne sa sexualité et son identité sexuelle, à travers Sexualité ou Sexualité Autodéclarée. Sexualité En Contexte. ll n’est pas vouée à répertorier les expériences sexuelles et les relations intimes, même si certaines relations peuvent être évoquées pour indiquer leurs conséquences sur la vie du sujet ou la connaissance qu’elle a de sa propre sexualité. Ces efforts de contextualisation permettent de reconnaître l’existence de questions complexes qui entourent la sexualité, comme par exemple les politiques de délation, la spécificité historique de certaines catégories comme &quot;inversion sexuelle&quot;, l’appropriation de termes dépréciatifs ou les multiples formes de constructions. D’importantes politiques de confidentialité existent en ce qui concerne  la divulgation de la sexualité, de l’orientation et de l’identité sexuelle d’une personne. En ce qui concerne les personnes toujours en vie, notre pratique est donc de ne nous appuyer que sur des sources ou des déclarations publiques venant du sujet elle/lui-même, afin de ne pas dévoiler par inadvertance des informations privées sur sa sexualité. Voir <![CDATA[ <a href="#3A9144c07e-d14f-4371-8d28-7545b7337a4a ">Campbell et Cowan 2016</a> ]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <dcterms:subject rdf:resource="#Sexuality"/>
@@ -589,42 +589,90 @@
     <rdfs:label xml:lang="fr">sexualité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">These terms capture in a word or phrase identifications of sexuality (i.e., &quot;lesbian,&quot; &quot;monogamous,&quot; &quot;heterosexual&quot;) not as a means of shutting down but advancing investigation and critical analysis of these identifications. The association assumes that sexual identity does not function in an essentialist manner but can be plural and fluid, so multiple designations can be applied to a single person. Assertions of sexual itentity may come from the subject her/himself or from others. They may be in tension or mutually exclusive, and they may reflect different life stages. Linking to the term &quot;lesbian&quot; as a sexualIdentity class, for instance, does not signify that the subject was in any definitive sense a lesbian; such identifications are often impossible for reasons of historical gaps and silences. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See (<![CDATA[<a href="#CWRC_ISLANDORA_ID">Campbell and Cowan 2016</a>]]>)</skos:definition>
-    <skos:definition xml:lang="fr">Ces termes identifient en un mot ou en une phrase la sexualité d'un sujet (par exemple “lesbienne”, “monogame”, “hétérosexuel/le”), non pas pour fermer la discussion, mais pour développer l’étude et l’analyse critique de ces catégories. L’association à une sexualité suppose que celle-ci n’est pas vécue de manière essentialiste, mais est plutôt plurielle et fluide; plusieurs désignations peuvent ainsi être appliquées à une seule personne. Le sujet elle/lui-même ou d'autres personnes peuvent émettre des assertions sur son identité sexuelle. Celles-ci peuvent se trouver en tension, se montrer incompatibles, et reflètent le changement du sujet au cours du sa vie. Par exemple, lier le terme “lesbienne” à la classe sexualIdentiy ne signifie pas que le sujet était définitivement lesbienne, car une telle identification est souvent impossible à cause des lacunes et silences historiques. En ce qui concerne les personnes toujours en vie, nous ne nous appuyons que sur des sources ou des déclarations publiques faites par le sujet elle/lui-même afin d’éviter de dévoiler sa sexualité par inadvertance. Voir (<![CDATA[<a href="#CWRC_ISLANDORA_ID">Campbell and Cowan 2016</a>]]>).</skos:definition>
+    <skos:definition xml:lang="en">A subclass of Cultural Form and linked to Sexuality Context, Sexuality properties indicate in a word or phrase identifications or aspects of sexuality (i.e., "lesbian," "monogamous," "heterosexual" but also &quot;promiscuous&quot;) not as a means of shutting down but advancing investigation and critical analysis of these identifications. The association assumes that sSexual identity does not function in an essentialist manner but can be plural and fluid, so multiple designations can be applied to a single person can be associated with multiple terms. Sexual identity may come from the subject her/himself or be ascribed by others. Terms may be in tension or mutually exclusive, they may reflect different life stages, and they may or may not reflect actual sexual practices. Linking a person to the term "lesbian" as a sexualityIdentity class, for instance, does not necessarily signify that the subject was in any definitive sense a lesbian; such identifications are often impossible for reasons of historical gaps and silences. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See <![CDATA[ <a href=#3A9144c07e-d14f-4371-8d28-7545b7337a4a ">Campbell and Cowan, 2016</a> ]]></skos:definition>
+    <skos:definition xml:lang="fr">Une sous-classe de Forme Culturelle liée à Sexualité En Contexte, les propriétés de Sexualité indiquent en un mot ou en une phrase les identifications ou les aspects de la sexualité  (par exemple &quot;lesbienne&quot;, &quot;monogame&quot;, &quot;hétérosexuel.le&quot;, mais aussi &quot;ouvert.e&quot;), non pas pour clore la discussion mais pour développer l’étude et l’analyse critique de ces catégories. Comme l’identité sexuelle peut être plurielle et fluide, une même personne est susceptible d’être associée à plusieurs termes. L’identité sexuelle peut être formulée par la personne elle-même ou être assignée par d’autres individus. Les termes utilisés peuvent se trouver en tension ou se montrer incompatibles, et reflètent différentes périodes de l’existence. Par exemple, lier une personne au terme &quot;lesbienne&quot; comme classe de sexualité ne signifie pas nécessairement que cette dernière était définitivement lesbienne, car une telle identification est souvent impossible à cause de lacunes et de silences historiques. En ce qui concerne les personnes toujours en vie, nous ne nous appuyons que sur des sources ou des déclarations publiques faites par le sujet elle/lui-même afin de ne pas dévoiler par inadvertance des informations privées sur sa sexualité. Voir <![CDATA[ <a href="#3A9144c07e-d14f-4371-8d28-7545b7337a4a ">Campbell et Cowan 2016</a> ]]></skos:definition>
     <owl:sameAs rdf:resource="http://homosaurus.org/terms/sexualIdentity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
   <!--  (http://ir.lib.uwo.ca/cgi/viewcontent.cgi?article=1085&context=fimspub) -->
   <cwrc:Sexuality rdf:about="#heterosexual">
-    <rdfs:label xml:lang="en">heterosexual</rdfs:label>
-    <rdfs:label xml:lang="fr">hétérosexuelle</rdfs:label>
+    <rdfs:label xml:lang="en">heterosexuality</rdfs:label>
+    <rdfs:label xml:lang="fr">hétérosexualité</rdfs:label>
     <foaf:name xml:lang="en">heterosexual (sexual identity)</foaf:name>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">Heterosexuality indicates sexual attraction to the so-called &quot;opposite sex,&quot; that is, sexual attraction between men and women. This understanding relies, like bisexual, on a binary understanding of sex and gender that also often conflates sex with gender. Adrienne Rich draws on Kathleen Gough in articulating an understanding of heterosexuality as compulsory for women within patriarchy. In her essay &quot;The Straight Mind&quot; (first published in 1980) Monique Wittig understands heterosexuality as a semiotic, linguistic, political, and ontological construct. It constitutes itself as a normative system through the oppression of women by men and the &quot;necessity of the different/other at every level&quot;. The straight mind &quot;creates the doctrine of the difference between sexes to justify this oppression&quot;.</skos:definition>
+    <skos:definition xml:lang="fr">L’hétérosexualité indique l’attraction sexuelle pour le sexe prétendument &quot;opposé&quot;, c’est-à-dire entre les hommes et les femmes. Cette compréhension du terme repose, comme pour la bisexualité, sur une interprétation binaire du sexe et du genre, qui confond habituellement les deux notions. S’appuyant sur Kathleen Gough, Adrienne Rich interprète ll’hétérosexualité comme obligatoire pour les femmes dans un contexte patriarcal. Dans son article &quot;La pensée straight&quot; (publiée pour la première fois en 1980) Monique Wittig interprète l’hétérosexualité comme une construction sémiotique, linguistique, politique et ontologique. Elle se constitue comme un système normatif qui passe par l'oppression des femmes par les hommes et la &quot;la nécessité de l'autre différent à tous les niveaux&quot;. La pensée straight &quot;produit la doctrine de la différence entre les sexes pour justifier cette oppression&quot;.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <owl:sameAs rdf:resource="http://homosaurus.org/terms/heterosexualIdentity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Sexuality>
   <cwrc:Sexuality rdf:about="#homosexual">
-    <rdfs:label xml:lang="en">homosexual</rdfs:label>
-    <rdfs:label xml:lang="fr">homosexuelle</rdfs:label>
+    <rdfs:label xml:lang="en">homosexuality</rdfs:label>
+    <rdfs:label xml:lang="fr">homosexualité</rdfs:label>
     <foaf:name xml:lang="en">homosexual (sexual identity)</foaf:name>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">Homosexuality indicates sexual attraction to subjects of the same gender. Like bisexual, it draws on  a binary understanding of sex and gender that also often conflates sex with gender. Homosexual is often used as an umbrella term for lesbian and  gay sexuality.</skos:definition>
+    <skos:definition xml:lang="fr">L’homosexualité indique l’attraction sexuelle entre des sujets du même genre. Comme bisexuel, le terme repose sur une interprétation binaire et souvent indifférenciée du sexe et du genre. Homosexuel est souvent utilisé comme terme générique pour les sexualités lesbienne et gay.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Sexuality>
   <cwrc:Sexuality rdf:about="#lesbian">
-    <rdfs:label xml:lang="en">lesbian</rdfs:label>
-    <rdfs:label xml:lang="fr">lesbienne</rdfs:label>
+    <rdfs:label xml:lang="en">lesbianism</rdfs:label>
+    <rdfs:label xml:lang="fr">lesbianisme</rdfs:label>
     <foaf:name xml:lang="en">lesbian (sexual identity)</foaf:name>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">Lesbianism indicates the sexual attraction of women to other women. Yet, lesbian feminist thinkers underline that this common definition is reductive. Drawing on Kathleen Gough and within an understanding of heterosexuality as compulsory for women within patriarchy, Adrienne Rich describes a lesbian continuum, the &quot;range—through each woman's life and throughout history—of woman-identified experiences, not simply the fact that a woman has had or consciously desired genital sexual experience with another woman&quot; <![CDATA[ <a href="#3A8049540f-3673-4ca0-920c-cb5326d7c466">(Of Blood Bread and Poetry, 1983)</a> ]]>. In a heteronormative context, lesbianism is not only a question of sexuality but also has complex political implications.</skos:definition>
+    <skos:definition xml:lang="fr">Le lesbianisme indique l’attraction sexuelle entre les femmes. Cependant, certaines intellectuelles lesbiennes féministes soulignent l’aspect réducteur d’une telle définition. S’appuyant sur Kathleen Gough, Adrienne Rich interprète l’hétérosexualité comme obligatoire pour les femmes dans un contexte patriarcal, et évoque un continuum lesbien, les &quot;diverses expériences spécifiques aux femmes—au cours de leur existence ou à travers l’Histoire— et non simplement le fait qu’une femme a eu ou a consciemment désiré avoir des expériences sexuelles avec une autre femme&quot; <![CDATA[ <a href="#3A8049540f-3673-4ca0-920c-cb5326d7c466">(Of Blood and Poetry, 1983)</a> ]]>. Dans un contexte hétéronormatif, le lesbianisme ne relève donc pas seulement de la sexualité mais implique aussi des questions politiques complexes.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <owl:sameAs rdf:resource="http://homosaurus.org/terms/lesbianIdentity"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Sexuality>
+  <cwrc:Sexuality rdf:about="#sexualityBisexuality">
+    <rdfs:label xml:lang="en">bisexuality</rdfs:label>
+    <rdfs:label xml:lang="fr">bisexualité</rdfs:label>
+    <foaf:name xml:lang="en">bisexual (sexual identity)</foaf:name>
+    <skos:definition xml:lang="en">Bisexuality indicates sexual attraction to both genders. In terms of binary understandings of sex or gender, bisexuality is often defined as being sexually attracted to &quot;both sexes&quot;.</skos:definition>
+    <skos:definition xml:lang="fr">La bisexualité réfère à l’attraction sexuelle pour les deux genres. En terme d’acceptation binaire du sexe ou du genre, la bisexualité est souvent définie comme attraction sexuelle pour les &quot;deux sexes&quot;.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:sameAs rdf:resource="http://homosaurus.org/terms/bisexualIdentity"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Sexuality>
+  <cwrc:Sexuality rdf:about="#sexualityCelibacy">
+    <rdfs:label xml:lang="en">celibacy</rdfs:label>
+    <rdfs:label xml:lang="fr">célibat</rdfs:label>
+    <skos:definition xml:lang="en">Celibacy indicates abstention from sex, and can stem from personal choice, religious prescriptions, or with religious occupations such as being a nun or priest . Celibacy is not the be confused with  asexuality, which describes a lack of  interest in sex  or sexual attraction to other subjects.</skos:definition>
+    <skos:definition xml:lang="fr">Le célibat indique l’abstinence sexuelle, et peut être dû à un choix personnel, à des impératifs religieux ou des professions cléricales comme religieuse ou prêtre. Le célibat ne doit pas être confondu avec l’asexualité, qui décrit une absence d’intérêt pour les pratiques sexuelles ou d’attirance sexuelle pour d’autres personnes.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:sameAs rdf:resource="http://homosaurus.org/terms/celibacy"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Sexuality>
+  <cwrc:Sexuality rdf:about="#sexualityFrigidity">
+    <rdfs:label xml:lang="en">frigidity</rdfs:label>
+    <rdfs:label xml:lang="fr">frigidité</rdfs:label>
+    <skos:definition xml:lang="en">Frigidity labels a female subject as sexually withdrawn  or unenthusiastic (read: non-consenting)  in relation to the sexual advance, usually of men within a heterosexual framework, and suggests a lack of pleasure from sexual activities. Unlike asexual and celibate, this term is often ascribed to women, as opposed to self-referential. The term &quot;frigid&quot; was coined in the 1920s by sexologists (Sex and Society, Vol. 1, 285). Its use in discourse surrounding female sexuality is waning.</skos:definition>
+    <skos:definition xml:lang="fr">La frigidité est attribuée aux femmes qui se montrent distantes ou peu enthousiastes (comprendre non consentantes) face aux avances sexuelles, le plus souvent de la part d’hommes dans un cadre hétéronormé, et suggère un manque de plaisir associé aux pratiques sexuelles. Contrairement à l’asexualité et au célibat, ce terme est souvent assigné à des femmes, et n'est donc pas autoréférentiel. Le terme &quot;frigide&quot; a été formulé dans les années 20 par des sexologues (Sex and Society, Vol. 1, 285). Son usage est en déclin dans les discours à propos de la sexualité féminine.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Sexuality>
+  <cwrc:Sexuality rdf:about="#sexualityPromiscuity">
+    <rdfs:label xml:lang="en">promiscuity</rdfs:label>
+    <rdfs:label xml:lang="fr">promiscuité</rdfs:label>
+    <skos:definition xml:lang="en">Promiscuity indicates sex with multiple partners in a casual or indiscriminate fashion and in opposition to socially sanctioned sexual behaviour. Promiscuity is differently constructed for women and men in most historical and cultural contexts, being closely connected to the control of female  sexuality and reproduction. It includes libertinism, a form of  hedonistic sexual politics frequently ascribed to or adopted by men.</skos:definition>
+    <skos:definition xml:lang="fr">La promiscuité indique l’activité sexuelle avec des partenaires multiples de façon décomplexée et indifférenciée, en opposition aux pratiques sexuelles socialement acceptées. La promiscuité est différemment interprétée pour les femmes et les hommes dans la plupart des contextes historiques et culturelles, étant étroitement liée au contrôle de la sexualité féminine et de la reproduction. Elle inclut le libertinage, une forme de sexualité hédoniste fréquemment attribuée à ou adoptée par des hommes.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Sexuality>
+  <cwrc:Sexuality rdf:about="#sexualityLibertinism">
+    <rdfs:label xml:lang="en">libertinism</rdfs:label>
+    <rdfs:label xml:lang="fr">libertinage</rdfs:label>
+    <skos:definition xml:lang="en">Libertinism refers to a type of sexual identity (often tied to men) used to describe a subject who subscribes to hedonistic sexual politics.</skos:definition>
+    <skos:definition xml:lang="fr">Le libertinage réfère à un type d’identité sexuelle (souvent pour des hommes) utilisé pour décrire un sujet adhérant aux idées et pratiques hédonistes.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Sexuality>
@@ -4208,12 +4256,12 @@
   </owl:ObjectProperty>
   
   <owl:ObjectProperty rdf:ID="hasSexualitySelfReported">
-    <rdfs:label xml:lang="en">has sexual orientation (self reported)</rdfs:label>
-    <rdfs:label xml:lang="fr">a une orientation sexuelle (autodéclarée)</rdfs:label>
+    <rdfs:label xml:lang="en">has sexuality self-reported</rdfs:label>
+    <rdfs:label xml:lang="fr">a sexualité autodéclarée</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#Sexuality"/>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">A subproperty of Personal Property Self-reported, this describes a person's self-reported sexuality. For more information, see Sexuality and Sexuality Context.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-propriété de propriété personnelle autodéclarée qui décrit la sexualité autodéclarée d’une personne. Pour plus d’information, voir Sexualité et Sexualité En Contexte.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
