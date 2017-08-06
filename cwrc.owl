@@ -4330,22 +4330,37 @@
 
 
   <!-- Labels -->
-  <skos:ConceptScheme rdf:about="#TextLabels">
-    <rdfs:label xml:lang="en">text labels</rdfs:label>
+  <owl:Class rdf:ID="TextLabels">
+    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+    <rdfs:label xml:lang="en">textual label</rdfs:label>
     <rdfs:label xml:lang="fr">étiquette</rdfs:label>
     <skos:definition xml:lang="en">Collection of all ambiguous labels within the Orlando markup.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </skos:ConceptScheme>
+    <skos:related rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+  </owl:Class>
+
+  <!-- this is essentially a clone of the xkos-xl properly, except for the uniqueness restriction since we have translations. -->  
+  <owl:ObjectProperty rdf:ID="literalForm">
+    <rdfs:label xml:lang="en">has literal form</rdfs:label>
+    <rdfs:label xml:lang="fr">a une forme litteralle</rdfs:label>
+    <rdfs:range rdf:resource="#TextLabels"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  
   <!-- add rdfvalue to everything -->
   <skos:Concept rdf:about="#whiteLabel">
     <rdfs:label xml:lang="en">white</rdfs:label>
     <rdfs:label xml:lang="fr">blanc</rdfs:label>
     <foaf:name xml:lang="en">white</foaf:name>
+    <cwrc:literalForm xml:lang="en">white</cwrc:literalForm>
+    <cwrc:literalForm xml:lang="fr">blanc</cwrc:literalForm>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+    <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#whiteEthnicity"/>
       <owl:Thing rdf:about="#whiteRace"/>
@@ -4359,9 +4374,11 @@
     <rdfs:label xml:lang="en">black</rdfs:label>
     <rdfs:label xml:lang="fr">noir</rdfs:label>
     <foaf:name xml:lang="en">black</foaf:name>
+    <cwrc:literalForm xml:lang="en">black</cwrc:literalForm>
+    <cwrc:literalForm xml:lang="fr">noir</cwrc:literalForm>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+    <rdf:type rdf:resource="#TextLabels"/>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -4372,7 +4389,9 @@
     <rdfs:label xml:lang="fr">eurasian</rdfs:label>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+    <cwrc:literalForm xml:lang="en">eurasian</cwrc:literalForm>
+    <cwrc:literalForm xml:lang="fr">eurasien</cwrc:literalForm>
+    <rdf:type rdf:resource="#TextLabels"/>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -4385,9 +4404,11 @@
     <rdfs:label xml:lang="en">english</rdfs:label>
     <rdfs:label xml:lang="fr">englais</rdfs:label>
     <foaf:name xml:lang="en">english</foaf:name>
+    <cwrc:literalForm xml:lang="en">english</cwrc:literalForm>
+    <cwrc:literalForm xml:lang="fr">anglais</cwrc:literalForm>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+    <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#EnglishNationalHeritage"/>
       <owl:Thing rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
@@ -4406,10 +4427,12 @@
     <rdf:value>man</rdf:value>
     <rdfs:label xml:lang="en">man</rdfs:label>
     <rdfs:label xml:lang="fr">homme</rdfs:label>
+    <cwrc:literalForm xml:lang="en">man</cwrc:literalForm>
+    <cwrc:literalForm xml:lang="fr">homme</cwrc:literalForm>
     <foaf:name xml:lang="en">Man (Label)</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+    <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#man"/>
     </owl:oneOf>
@@ -4421,10 +4444,12 @@
     <rdf:value>woman</rdf:value>
     <rdfs:label xml:lang="en">woman</rdfs:label>
     <rdfs:label xml:lang="fr">femme</rdfs:label>
+    <cwrc:literalForm xml:lang="en">woman</cwrc:literalForm>
+    <cwrc:literalForm xml:lang="fr">femme</cwrc:literalForm>
     <foaf:name xml:lang="en">Woman (Label)</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+    <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#woman"/>
     </owl:oneOf>
@@ -4436,9 +4461,11 @@
     <rdfs:label xml:lang="en">Jewish</rdfs:label>
     <rdfs:label xml:lang="fr">Juif</rdfs:label>
     <foaf:name xml:lang="en">Jewish</foaf:name>
+    <cwrc:literalForm xml:lang="en">Jewish</cwrc:literalForm>
+    <cwrc:literalForm xml:lang="fr">Juif</cwrc:literalForm>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+    <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#judaism"/>
       <owl:Thing rdf:about="#jewishEthnicity"/>
@@ -4452,10 +4479,12 @@
   <skos:Concept rdf:about="#englandLabel">
     <rdfs:label xml:lang="en">England</rdfs:label>
     <rdfs:label xml:lang="fr">Angleterre</rdfs:label>
+    <cwrc:literalForm xml:lang="en">England</cwrc:literalForm>
+    <cwrc:literalForm xml:lang="fr">Angleterre</cwrc:literalForm>
     <foaf:name xml:lang="en">England</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+    <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#england"/>
     </owl:oneOf>
@@ -4905,7 +4934,7 @@
       <foaf:name xml:lang="en">Male (Label)</foaf:name>
       <skos:definition xml:lang="en"/>
       <skos:definition xml:lang="fr"/>
-      <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+      <rdf:type rdf:resource="#TextLabels"/>
       <owl:oneOf rdf:parseType="Collection">
         <owl:Thing rdf:about="#genderManMale"/>
         <owl:Thing rdf:about="#maleSex"/>
@@ -4925,7 +4954,7 @@
       <foaf:name xml:lang="en">Female (Label)</foaf:name>
       <skos:definition xml:lang="en"/>
       <skos:definition xml:lang="fr"/>
-      <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+      <rdf:type rdf:resource="#TextLabels"/>
       <owl:oneOf rdf:parseType="Collection">
         <owl:Thing rdf:about="#genderWomanFemale"/>
         <owl:Thing rdf:about="#femaleSex"/>
