@@ -890,7 +890,6 @@
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Comedy_of_manners"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <skos:broaderTransitive rdf:resource="#genreComedy"/>
-    <skos:broaderTransitive rdf:resource="#genreComedy"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreComedyofmenace">
     <rdf:value>COMEDYOFMENACE</rdf:value>
@@ -1229,7 +1228,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:narrowerTransitive rdf:resource="#genreComedyofmenace"/>
     <skos:narrowerTransitive rdf:resource="#genreClosetdrama"/>
     <skos:narrowerTransitive rdf:resource="#genreKitchensinkdrama"/>
-    <skos:narrowerTransitive rdf:resource="#genreOne-Actplay"/>
+    <skos:narrowerTransitive rdf:resource="#genreOneactplay"/>
     <skos:narrowerTransitive rdf:resource="#genreMoralitymysteryplay"/>
     <skos:narrowerTransitive rdf:resource="#genrePantomime"/>
     <skos:narrowerTransitive rdf:resource="#genrePageant"/>
@@ -1635,16 +1634,16 @@ s épîtres.</skos:definition>
     <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300191065"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:narrowerTransitive rdf:resource="#genreAdventure"/>
-    <skos:narrowerTransitive rdf:resource="#genreRealist"/>
-    <skos:narrowerTransitive rdf:resource="#genreMystery"/>
     <skos:narrowerTransitive rdf:resource="#genreMagicrealism"/>
+    <skos:narrowerTransitive rdf:resource="#genreMystery"/>
     <skos:narrowerTransitive rdf:resource="#genreNationaltale"/>
     <skos:narrowerTransitive rdf:resource="#genreNovel"/>
-    <skos:narrowerTransitive rdf:resource="#genreShortstory"/>
+    <skos:narrowerTransitive rdf:resource="#genreRealist"/>
     <skos:narrowerTransitive rdf:resource="#genreSchoolfiction"/>
     <skos:narrowerTransitive rdf:resource="#genreSciencefiction"/>
     <skos:narrowerTransitive rdf:resource="#genreSensationnovel"/>
     <skos:narrowerTransitive rdf:resource="#genreSexualawakeningfiction"/>
+    <skos:narrowerTransitive rdf:resource="#genreShortstory"/>
     <skos:narrowerTransitive rdf:resource="#genreSilverforknovel"/>
     <skos:narrowerTransitive rdf:resource="#genreThriller"/>
     <skos:narrowerTransitive rdf:resource="#genreVersenovel"/>
@@ -2305,7 +2304,8 @@ s épîtres.</skos:definition>
     <skos:inScheme rdf:resource="#Genre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Religious dramas or pageants, typically written anonymously, that were popular in medieval Europe. Mystery plays represent one or more scenes from the Bible, and were first performed in the 13th century, often using a wagon as a stage to allow a performance to take place in various locations, . Morality plays were first popularized in the 15th century, and are allegorical rather than directly representational works in which personified vices and virtues compete to win a human soul for eternity. (<![CDATA[<a href="cwrcid_3A4c227091-6bf0-4325-b846-9733fae19e61">Oxford, 2015</a>]]>)</skos:definition>
-    <prov:derivedFrom rdf:resource="http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-745?rskey=1MnHpb&amp;result=741     http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-753?rskey=XphoRT&amp;result=751"/>
+    <prov:derivedFrom rdf:resource="http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-745?rskey=1MnHpb&amp;result=741"/>
+    <prov:derivedFrom rdf:resource="http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-753?rskey=XphoRT&amp;result=751"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</owl:comment>
   </genre:Genre>
   <genre:Genre rdf:about="#genreMultimedia">
@@ -2380,7 +2380,6 @@ s épîtres.</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Narrative_poetry"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <skos:broaderTransitive rdf:resource="#genrePoetry"/>
-    <skos:broaderTransitive rdf:resource="#genrePoetry"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreNationaltale">
     <rdf:value>NATIONALTALE</rdf:value>
@@ -2426,16 +2425,16 @@ s épîtres.</skos:definition>
     <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300202580"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:broaderTransitive rdf:resource="#genreFiction"/>
-    <skos:narrowerTransitive rdf:resource="#genreÀclef"/>
+    <skos:narrowerTransitive rdf:resource="#genreBildungsroman"/>
     <skos:narrowerTransitive rdf:resource="#genreConditionofenglandnovel"/>
     <skos:narrowerTransitive rdf:resource="#genreIndustrialnovel"/>
+    <skos:narrowerTransitive rdf:resource="#genreKunstlerroman"/>
+    <skos:narrowerTransitive rdf:resource="#genreNationaltale"/>
     <skos:narrowerTransitive rdf:resource="#genreNovella"/>
     <skos:narrowerTransitive rdf:resource="#genreSensationnovel"/>
     <skos:narrowerTransitive rdf:resource="#genreSilverforknovel"/>
     <skos:narrowerTransitive rdf:resource="#genreVersenovel"/>
-    <skos:narrowerTransitive rdf:resource="#genreKunstlerroman"/>
-    <skos:narrowerTransitive rdf:resource="#genreBildungsroman"/>
-    <skos:narrowerTransitive rdf:resource="#genreNationaltale"/>
+    <skos:narrowerTransitive rdf:resource="#genreÀclef"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreNovella">
     <rdf:value>NOVELLA</rdf:value>
@@ -2494,7 +2493,6 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="de">Der Ausdruck Gelegenheitsdichtung (Casualpoesie sowie parallele Wortbildungen auf -lyrik) bezeichnet in der Literaturwissenschaft Dichtung, die meist unter kommerziellen Gesichtspunkten auf einen speziellen Anlass hin verfasst wird (Gelegenheitsschrift). Goethe verwendet in Dichtung und Wahrheit und in den Gesprächen mit Eckermann den Ausdruck „Gelegenheitsgedicht“ auch in einem weniger abschätzigen Sinn für Gedichte, die sich der Inspiration eines Augenblicks verdanken, der nun im Gedicht festgehalten ist. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Occasional_poetry"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
-    <skos:broaderTransitive rdf:resource="#genrePoetry"/>
     <skos:broaderTransitive rdf:resource="#genrePoetry"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreOde">
@@ -2639,10 +2637,10 @@ s épîtres.</skos:definition>
     <prov:derivedFrom rdf:resource="https://books.google.ca/books?id=s4FMCAAAQBAJ&amp;printsec=frontcover&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</owl:comment>
     <skos:narrowerTransitive rdf:resource="#genreAfterword"/>
-    <skos:narrowerTransitive rdf:resource="#genreIntroduction"/>
-    <skos:narrowerTransitive rdf:resource="#genrePrefatorypiece"/>
     <skos:narrowerTransitive rdf:resource="#genreDedication"/>
     <skos:narrowerTransitive rdf:resource="#genreEpilogue"/>
+    <skos:narrowerTransitive rdf:resource="#genreIntroduction"/>
+    <skos:narrowerTransitive rdf:resource="#genrePrefatorypiece"/>
     <skos:narrowerTransitive rdf:resource="#genrePrologue"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreParody">
@@ -2703,7 +2701,6 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="fr">La lecture performée ou lecture-performance est une lecture publique de textes poétiques ou littéraires effectuée le plus souvent par son auteur dans un esprit qui s'apparente à celui de la performance et qui peut convoquer tous les arts et techniques du théâtre et de la scène où la poésie et la littérature sont cependant toujours au premier plan. Christian Prigent, Serge Pey et Charles Pennequin en sont les premiers représentants. Édith Azam est aujourd'hui la conseillère lecture-performance au festival Voix de la Méditerranée de Lodève. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Performance_poetry"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
-    <skos:broaderTransitive rdf:resource="#genrePoetry"/>
     <skos:broaderTransitive rdf:resource="#genrePoetry"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genrePeriodical">
@@ -2807,29 +2804,27 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="nl">Poëzie of dichtkunst (van het Griekse 'poiesis'/ποίησις: maken, scheppen, vormen) is een vorm van literatuur die de esthetische en ritmische eigenschappen van taal zoals metrum en geluidssymboliek benut om betekenissen te genereren ter aanvulling, vervanging of ondermijning van de prozaïsche, ogenschijnlijke betekenis. Poëzie heeft een lange geschiedenis die teruggaat tot het Soemerische epos Gilgamesj. Vroege gedichten ontwikkelden zich uit volksliederen zoals de Chinese Sjijing, of uit de noodzaak om orale epiek steeds opnieuw te vertellen, zoals in de Veda's uit het Sanskriet, het Zoroastrische Gathas en de Homerische epossen Ilias en Odyssee. Antieke pogingen om poëzie te omschrijven, zoals de Poetica van Aristoteles, benadrukten het spraakgebruik in retorica, drama, lied en komedie. Latere pogingen concentreerden zich op kenmerken als herhaling, versvorm en rijm en benadrukten de esthetica die poëzie onderscheidt van meer objectief informatieve, prozaïsche vormen van schrift. Vanaf het midden der twintigste eeuw wordt de dichtkunst soms meer algemeen beschouwd als een wezenlijk creatieve handeling waarbij taal gebruikt wordt. In poëzie worden vormen en conventies gebruikt om een andere interpretatie van woorden te suggereren, of om een gevoelsmatige respons teweeg te brengen. Middelen zoals assonantie, alliteratie, onomatopeeën en ritme worden soms gebruikt om bezwerende of muzikale effecten te bereiken. Het gebruik van ambiguïteit, symboliek, ironie en andere stilistische elementen van de poëtische voordracht maken vaak een veelheid van interpretaties mogelijk. Op dezelfde wijze schept beeldspraak zoals metafoor, vergelijking (al dan niet Homerisch) en metonymie resonantie tussen anderszins ongelijksoortige beelden - een gelaagdheid van betekenissen waarbij niet eerder waargenomen connecties worden gevormd. Tussen individuele versregels kunnen verwante vormen van resonantie aanwezig zijn in hun patronen van rijm of ritme. De genoegens die de poëzie aan lezer of luisteraar verschaft, worden teweeggebracht door de bijzondere combinatie van vorm, klank en betekenis die eigen is aan het vers, en deze genoegens kunnen van emotionele (bijvoorbeeld ontroering of bezwering), intellectuele (bijvoorbeeld inzicht of nuancering) of humoristische aard zijn. Ontvankelijkheid voor poëzie of versgevoeligheid is mede afhankelijk van de mate waarin deze wordt gecultiveerd. Poëzie heeft een lange geschiedenis, vanaf de vroegste mondeling gereciteerde en gezongen verzen tot de hedendaagse schriftelijke, al dan niet gestructureerde vormen van dichtkunst. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Poetry"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
+    <skos:narrowerTransitive rdf:resource="#genreAnagram"/>
+    <skos:narrowerTransitive rdf:resource="#genreApology"/>
     <skos:narrowerTransitive rdf:resource="#genreBallade"/>
     <skos:narrowerTransitive rdf:resource="#genreBoutrimes"/>
+    <skos:narrowerTransitive rdf:resource="#genreCharade"/>
     <skos:narrowerTransitive rdf:resource="#genreClerihew"/>
-    <skos:narrowerTransitive rdf:resource="#genreNarrativepoetry"/>
-    <skos:narrowerTransitive rdf:resource="#genreTopographicalpoetry"/>
     <skos:narrowerTransitive rdf:resource="#genreGeorgic"/>
     <skos:narrowerTransitive rdf:resource="#genreGraveyardpoetry"/>
-    <skos:narrowerTransitive rdf:resource="#genreOccasionalpoetry"/>
-    <skos:narrowerTransitive rdf:resource="#genreNurseryrhyme"/>
-    <skos:narrowerTransitive rdf:resource="#genrePerformancepoetry"/>
-    <skos:narrowerTransitive rdf:resource="#genrePindaric"/>
     <skos:narrowerTransitive rdf:resource="#genreHaiku"/>
-    <skos:narrowerTransitive rdf:resource="#genreCharade"/>
     <skos:narrowerTransitive rdf:resource="#genreHymn"/>
-    <skos:narrowerTransitive rdf:resource="#genreApology"/>
-    <skos:narrowerTransitive rdf:resource="#genreOde"/>
-    <skos:narrowerTransitive rdf:resource="#genrePsalm"/>
-    <skos:narrowerTransitive rdf:resource="#genreAnagram"/>
-    <skos:narrowerTransitive rdf:resource="#genreHaiku"/>
     <skos:narrowerTransitive rdf:resource="#genreLais"/>
     <skos:narrowerTransitive rdf:resource="#genreLyric"/>
     <skos:narrowerTransitive rdf:resource="#genreNarrativepoetry"/>
+    <skos:narrowerTransitive rdf:resource="#genreNurseryrhyme"/>
+    <skos:narrowerTransitive rdf:resource="#genreOccasionalpoetry"/>
+    <skos:narrowerTransitive rdf:resource="#genreOde"/>
+    <skos:narrowerTransitive rdf:resource="#genrePerformancepoetry"/>
+    <skos:narrowerTransitive rdf:resource="#genrePindaric"/>
+    <skos:narrowerTransitive rdf:resource="#genrePsalm"/>
     <skos:narrowerTransitive rdf:resource="#genreSonnet"/>
+    <skos:narrowerTransitive rdf:resource="#genreTopographicalpoetry"/>
     <skos:narrowerTransitive rdf:resource="#genreVillainelle"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genrePolemic">
@@ -3118,7 +3113,7 @@ s épîtres.</skos:definition>
     <prov:derivedFrom rdf:resource="http://vocab.getty.edu/aat/300191065"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:narrowerTransitive rdf:resource="#genreCourtshipfiction"/>
-    <cwrc:contraryTo rdf:resource="#genreAnti-Romance"/>
+    <cwrc:contraryTo rdf:resource="#genreAntiromance"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreSagewriting">
     <rdf:value>SAGEWRITING</rdf:value>
@@ -3247,7 +3242,6 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="fr">Le roman à sensation est un genre littéraire né dans la deuxième moitié du XIXe siècle en Grande-Bretagne. Ce genre littéraire est une évolution des romans mélodramatiques, qui utilisaient un ensemble de personnages stéréotypés, et des romans Newgate, qui avaient pour thème principal la vie de célèbres criminels. East Lynne de Ellen Wood's, paru en 1861, fut le premier roman à être étiqueté comme roman à sensation par la critique. Le courant comprend trois auteurs majeurs : Ellen Woods, Wilkie Collins (La Femme en blanc, 1859; La Pierre de lune, 1868) et Mary Elizabeth Braddon (Le secret de Lady Audley, 1862). Les romans à sensation avaient pour thèmes des sujets choquants comme l'adultère, le vol, l'enlèvement, la bigamie, la fabrication de fausse monnaie, la séduction et le meurtre. Le genre se distinguait des autres mouvements de l'époque, comme le mouvement Gothique, par l'utilisation de ces thèmes dans un contexte domestique, voire familial, allant ainsi à l'encontre de l'idée largement répandue à l'époque victorienne que les événements sensationnels étaient totalement étrangers à la vie confortable des classes moyennes qui composaient la plus grande partie du lectorat de l'époque. William S. Gilbert fit une satire du genre en 1871 avec son opéra comique A Sensation Novel. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Sensation_novel"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
-    <skos:broaderTransitive rdf:resource="#genreNovel"/>
     <skos:broaderTransitive rdf:resource="#genreNovel"/>
     <skos:broaderTransitive rdf:resource="#genreFiction"/>
   </genre:Genre>
@@ -3538,7 +3532,6 @@ s épîtres.</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Topographical_poetry"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <skos:broaderTransitive rdf:resource="#genrePoetry"/>
-    <skos:broaderTransitive rdf:resource="#genrePoetry"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreTractpamphlet">
     <rdf:value>TRACTPAMPHLET</rdf:value>
@@ -3667,7 +3660,6 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="de">Der Versroman ist eine als Roman geschriebene Erzählung in Vers­form; in erster Linie der Ritterroman der höfischen Dichtung des Mittelalters. Dazu zählen beispielsweise: (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Verse_novel"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
-    <skos:broaderTransitive rdf:resource="#genreNovel"/>
     <skos:broaderTransitive rdf:resource="#genreNovel"/>
     <skos:broaderTransitive rdf:resource="#genreFiction"/>
   </genre:Genre>
