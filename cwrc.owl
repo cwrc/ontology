@@ -4141,7 +4141,7 @@
   <owl:ObjectProperty rdf:ID="hasNationalitySelfReported">
     <rdfs:label xml:lang="en">has nationality (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">de nationalité (autodéclarée)</rdfs:label>
-    <skos:definition xml:lang="en" >A subproperty of personal property (self-reported), this property indicates a person's self-defined nationality/ies and is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. For more information on this property see nationality.</skos:definition>
+    <skos:definition xml:lang="en" >A subproperty of personal property (self-reported), this property indicates a person's self-defined nationality/ies and is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. For more information on this property see @@#NationalIdentity@@.</skos:definition>
     <skos:definition xml:lang="fr" >Une sous-propriété de propriété personnelle autodéclarée, cette propriété indique la/les nationalité(s) autoproclamée(s) d’une personne, différant de la citoyenneté et n’étant pas proportionnelle à la zone géographique ou au territoire sur lequel elle réside.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#NationalIdentity"/>
@@ -4234,7 +4234,7 @@
     <rdfs:label xml:lang="en">has social class (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">de classe sociale (autodéclarés)</rdfs:label>
     <skos:definition xml:lang="en">A subproperty of Personal Property Self-Reported indicating a person's self-reported social class.</skos:definition>
-    <skos:definition xml:lang="en">Une sous-propriété de propriété personnelle autodéclarée qui indique la classe sociale autodéclarée d’une personne.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-propriété de propriété personnelle autodéclarée qui indique la classe sociale autodéclarée d’une personne.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#SocialClass"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
