@@ -75,6 +75,9 @@ testing: all
 	cp -f figures/* /var/www/html/testing/figures/.	
 	cp -f -R css /var/www/html/testing/.
 
+push: cwrc.owl genre.owl
+	rapper cwrc.owl -c
+	rapper genre.owl -c
 clean:
 	rm -f $(ONTOLOGY)-citations.html
 	rm -f *$(ONTOLOGY_DATE).* 
