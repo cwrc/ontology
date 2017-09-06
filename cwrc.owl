@@ -15,6 +15,7 @@
   xmlns:locl ="http://id.loc.gov/vocabulary/languages/"
   xmlns:mil ="http://rdf.muninn-project.org/ontologies/military#"
   xmlns:nif="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#" 
+  xmlns:bibo="http://purl.org/ontology/bibo/"
   xmlns:oa="http://www.w3.org/ns/oa#" 
   xmlns:owl="http://www.w3.org/2002/07/owl#" 
   xmlns:prov="http://www.w3.org/ns/prov#" 
@@ -168,6 +169,12 @@
     <void:entities>TOTAL_ENTITIES_CWRC_ONTOLOGY</void:entities>
   </void:Dataset>
 
+  <bibo:Collection rdf:about="#bibliography">
+  <rdfs:label xml:lang="en">The cwrc ontology bibliography</rdfs:label>
+  <rdfs:label xml:lang="fr">La bibliographie de l'ontologie cwrc</rdfs:label>
+   <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+   <void:inDataset rdf:resource="#datasetdefinition"/>
+  </bibo:Collection>
 
   <skos:Concept rdf:about="#originalOrlandoAuthor">
     <rdfs:label xml:lang="en">Members of the Orlando Project</rdfs:label>
