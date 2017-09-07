@@ -206,12 +206,23 @@
   <owl:ObjectProperty rdf:ID="hasActor">
     <rdfs:label xml:lang="en">has actor</rdfs:label>
     <skos:definition xml:lang="en">An Actor in this event.</skos:definition>
-    <rdfs:range rdf:resource="#Event"/>
+    <rdfs:domain rdf:resource="#Event"/>
     <rdfs:range rdf:resource="#Actor"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="actorTo">
+    <rdfs:label xml:lang="en">actor to</rdfs:label>
+    <skos:definition xml:lang="en">The Events that the Actor is associated with.</skos:definition>
+    <rdfs:domain rdf:resource="#Actor"/>
+    <rdfs:range rdf:resource="#Event"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
   <owl:Class rdf:ID="Actor">
     <rdfs:label xml:lang="en">actor</rdfs:label>
     <skos:definition xml:lang="en">A person performing a certain role within an event.</skos:definition>
@@ -283,6 +294,13 @@
     <rdfs:label xml:lang="fr">a une forme culturelle</rdfs:label>
     <skos:definition xml:lang="en">This associates specific concepts and categories with the process of identity formation through cultural processes. Such associations may be or have been embraced by the subject her/himself or attributed by others. The concepts and categories classed as culturalForms are understood to overlap with each other conceptually and in terms of the labels used.</skos:definition>
     <skos:definition xml:lang="fr">Associe des concepts et des catégories spécifiques au processus de formation identitaire à travers les processus culturels. Le sujet elle/lui-même peut ou a pu s’approprier de telles associations, ou d’autres personnes les lui ont attribuées. Les concepts et les catégories classés dans culturalForms se chevauchent en théorie et en terme d'étiquettes utilisés.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="culturalFormTo">
+    <rdfs:label xml:lang="en">cultural from to</rdfs:label>
+    <skos:definition xml:lang="en">This is the inverse of has a cultural form.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
