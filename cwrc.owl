@@ -218,6 +218,7 @@
     <skos:definition xml:lang="en">The Events that the Actor is associated with.</skos:definition>
     <rdfs:domain rdf:resource="#Actor"/>
     <rdfs:range rdf:resource="#Event"/>
+    <owl:inverseOf rdf:resource="#hasActor"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -301,6 +302,7 @@
   <owl:ObjectProperty rdf:ID="culturalFormTo">
     <rdfs:label xml:lang="en">cultural from to</rdfs:label>
     <skos:definition xml:lang="en">This is the inverse of has a cultural form.</skos:definition>
+    <owl:inverseOf rdf:resource="#hasCulturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
