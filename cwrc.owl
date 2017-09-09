@@ -1568,6 +1568,7 @@
     <skos:definition xml:lang="fr">L'abolitionnisme est un courant de pensée qui émerge dans le dernier tiers du XVIIIe siècle dans le monde occidental (notamment en Grande-Bretagne) et vise la suppression de l'esclavage. Par extension, on utilise le terme pour tous les mouvements qui cherchent la suppression d'une tradition, d'une institution ou d'une loi : abolition de la peine de mort, de la torture, du travail, des privilèges, des prisons, de la prostitution, du spécisme, etc. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Abolitionism"/>
+    <cwrc:contraryTo rdf:resource="#pro-Slavery"/>
     <skos:broaderTransitive rdf:resource="#humanRights"/>
     <skos:broaderTransitive rdf:resource="#racialEquality"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1651,6 +1652,8 @@
     <rdfs:label xml:lang="fr">anti-américanisme</rdfs:label>
     <skos:definition xml:lang="en">Opposed to the policies or influence of the United States of America, often with reference to specific government actions. See: <![CDATA[<a href="https://en.wikipedia.org/wiki/anti-american">https://en.wikipedia.org/wiki/anti-american</a>]]></skos:definition>
     <skos:definition xml:lang="fr">Opposition aux politiques ou à l'influence des États-Unis, souvent en référence à des actions gouvernementales spécifiques. Voir: <![CDATA[<a href="https://fr.wikipedia.org/wiki/Antiam%C3%A9ricanisme">https://fr.wikipedia.org/wiki/Antiam%C3%A9ricanisme</a>]]></skos:definition>
+    <cwrc:contraryTo rdf:resource="#americanNationalism"/>
+    <cwrc:contraryTo rdf:resource="#pro-American"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Anti-Americanism"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1728,6 +1731,7 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Bonapartism"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <cwrc:contraryTo rdf:resource="#bonapartism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
@@ -1894,6 +1898,7 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Euroscepticism"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <cwrc:contraryTo rdf:resource="#pro-European"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
@@ -1912,7 +1917,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:contraryTo rdf:resource="#facism"/>    
+    <cwrc:contraryTo rdf:resource="#fascism"/>    
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Federalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -1950,6 +1955,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <cwrc:contraryTo rdf:resource="#feminism"/>
+    <cwrc:contraryTo rdf:resource="#suffrage"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Globalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2103,6 +2109,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#racism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Socialism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2207,6 +2214,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="pro-BoerWar"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Zionism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2235,6 +2243,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#disestablismentarianism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#antisemitism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2486,6 +2495,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#anti-Communism"/>
+    <cwrc:contraryTo rdf:resource="#liberalism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#conscientiousObjection">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3020,6 +3031,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#irishUnionism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#irishNationalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3135,6 +3147,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#antisemitism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#labourMovement">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3187,6 +3200,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#irishHomeRuleMovement"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#liberalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3335,6 +3349,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#anti-antisemitism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#neo-Conservatism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3552,6 +3567,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#feminism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#pro-European">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3575,6 +3591,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#blackAnti-Oppression"/>
+    <cwrc:contraryTo rdf:resource="#anti-Racism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#propertyLawReform">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3621,6 +3639,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#racism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#racism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3635,6 +3654,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#abolitionism"/>
+    <cwrc:contraryTo rdf:resource="#blackAnti-Oppression"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#radicalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
