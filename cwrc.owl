@@ -2110,6 +2110,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <cwrc:contraryTo rdf:resource="#racism"/>
+    <skos:related rdf:resource="#blackAnti-Oppression"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Socialism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2292,6 +2293,9 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#feminism"/>
+    <skos:related rdf:resource="#pro-choice"/>
+    <skos:related rdf:resource="#sexualReform"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#blackAnti-Oppression">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2327,6 +2331,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skso:related rdf:resource="#communism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#bonapartism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2468,6 +2473,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#socialReform"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#communalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2497,6 +2503,8 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <cwrc:contraryTo rdf:resource="#anti-Communism"/>
     <cwrc:contraryTo rdf:resource="#liberalism"/>
+    <skos:related rdf:resource="#maoism"/>
+    <skos:related rdf:resource="#marxism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#conscientiousObjection">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2523,6 +2531,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#neo-Conservatism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#conservativeFeminism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2537,6 +2546,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#conservatism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#constitutionalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2605,6 +2615,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#feminism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#dreyfusard">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2636,6 +2647,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#socialReform"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#egalitarianism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2674,6 +2686,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#civilRights"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#environmentalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2758,6 +2771,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#civilRights"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#feministAnti-ViolenceActivism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2840,6 +2854,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#civilRights"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#germanNationalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2864,6 +2879,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#greekNationalist">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2917,6 +2933,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#socialReform"/>
+    <skos:related rdf:resource="#civilRights"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#humanRights">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2977,6 +2995,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#socialReform"/>
+    <skos:related rdf:resource="#civilRights"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#indigenousRights">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2989,6 +3009,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#humanRights"/>
+    <skos:related rdf:resource="#anti-Imperialism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#individualism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3032,6 +3054,8 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <cwrc:contraryTo rdf:resource="#irishUnionism"/>
+    <skos:related rdf:resource="#irishNationalism"/>
+    <skos:related rdf:resource="#irishRepublicanism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#irishNationalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3120,6 +3144,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#girondin"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#jacobitism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3170,6 +3195,8 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <cwrc:contraryTo rdf:resource="#anti-Trade-Unionism"/> 
+    <skos:related rdf:resource="#socialism"/>
+    <skos:related rdf:resource="#socialReform"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#left-Wing">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3201,6 +3228,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <cwrc:contraryTo rdf:resource="#irishHomeRuleMovement"/>
+    <skos:related rdf:resource="#liberalism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#liberalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3276,6 +3304,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#revolutionaryPolitics"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#monarchism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3334,6 +3363,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#patriotism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#nazism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3350,6 +3380,8 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <cwrc:contraryTo rdf:resource="#anti-antisemitism"/>
+    <skos:related rdf:resource="#antisemitism"/>
+    <skos:related rdf:resource="#fascism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#neo-Conservatism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3418,6 +3450,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#anti-WarMovement"/>
+    <skos:related rdf:resource="#anti-Conscriptionism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#parliamentarianism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3554,6 +3588,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#catholicism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#pro-Choice">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3568,6 +3603,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <cwrc:contraryTo rdf:resource="#feminism"/>
+    <skos:related rdf:resource="#feminism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#pro-European">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3609,6 +3645,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#socialReform"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#protestantRule">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3718,6 +3755,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#catholicism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#sanitaryMovement">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3777,6 +3815,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#socialPurity"/>
+    <skos:related rdf:resource="#pro-Choice"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#socialPurity">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3873,6 +3913,9 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#communism"/>
+    <skos:related rdf:resource="#marxism"/>
+    <skos:related rdf:resource="#bolshevism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#suffrage">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3929,6 +3972,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#conservatism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#toryPartyBritain">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -4052,6 +4096,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <cwrc:contraryTo rdf:resource="#anti-feminism"/>
+    <skos:related rdf:resource="#anti-racism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#womensEducationReform">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
