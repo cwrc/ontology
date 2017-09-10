@@ -1571,6 +1571,7 @@
     <cwrc:contraryTo rdf:resource="#pro-Slavery"/>
     <skos:broaderTransitive rdf:resource="#humanRights"/>
     <skos:broaderTransitive rdf:resource="#racialEquality"/>
+    <skos:broaderTransitive rdf:resource="#civilRights"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1791,6 +1792,7 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:broaderTransitive rdf:resource="#socialReform"/>
     <skos:broaderTransitive rdf:resource="#feminism"/>
+    <skos:broaderTransitive rdf:resource="#civilRights"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -2109,6 +2111,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#civilRights"/>
     <cwrc:contraryTo rdf:resource="#racism"/>
     <skos:related rdf:resource="#blackAnti-Oppression"/>
   </cwrc:PoliticalAffiliation>
@@ -2293,6 +2296,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#socialReform"/>
     <skos:related rdf:resource="#feminism"/>
     <skos:related rdf:resource="#pro-choice"/>
     <skos:related rdf:resource="#sexualReform"/>
@@ -2312,6 +2316,7 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Racism_in_the_United_Kingdom"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/African-American_Civil_Rights_Movement_(1954%E2%80%931968)"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:broaderTransitive rdf:resource="#civilRights"/>
     <skos:related rdf:resource="#abolitionism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -2331,7 +2336,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skso:related rdf:resource="#communism"/>
+    <skos:related rdf:resource="#communism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#bonapartism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2404,6 +2409,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#humanRights"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#christianPacifism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2444,6 +2450,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#libertarianism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#civilRights">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2647,6 +2654,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#civilRights"/>
     <skos:related rdf:resource="#socialReform"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#egalitarianism">
@@ -3053,6 +3061,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#republicanism"/>
     <cwrc:contraryTo rdf:resource="#irishUnionism"/>
     <skos:related rdf:resource="#irishNationalism"/>
     <skos:related rdf:resource="#irishRepublicanism"/>
@@ -3074,6 +3083,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#nationalism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#irishRepublicanism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3094,6 +3104,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#republicanism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#irishUnionism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3290,6 +3301,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#socialReform"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#marxism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3897,6 +3909,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#republicanism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#stalinism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
