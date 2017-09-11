@@ -9,10 +9,10 @@ fi
 WORKFILE=/tmp/wo.$$
 DOWNLOAD=/tmp/down.$$
 BIBFILE=$2
-if [ "$1" == "cwrc" ]
+if [ "$1" = "cwrc" ]
 then
  STOPNOW="islandora/object/cwrc%3Aontologysources"
-elif [ "$1" == "genre" ]
+elif [ "$1" = "genre" ]
 then
  STOPNOW="islandora/object/cwrc%3Agenreontologysources"
 else
