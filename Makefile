@@ -17,10 +17,12 @@ force:	$(ONTOLOGY).owl
 
 all: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp $(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html $(ONTOLOGY).html $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl $(ONTOLOGY)-$(ONTOLOGY_DATE).nt
 
-$(ONTOLOGY)-$(ONTOLOGY_DATE).tmp: $(ONTOLOGY).owl
+$(ONTOLOGY)-$(ONTOLOGY_DATE).tmp: $(ONTOLOGY).owl $(ONTOLOGY)-$(ONTOLOGY_DATE).bibli
 	echo $(ONTOLOGY_LOGO)
 	xpath $(ONTOLOGY).owl "/rdf:RDF" 1> /dev/null 2> /dev/null
-	sed 's/DATE_TODAY/$(DATE_CLEAN)/g' < $(ONTOLOGY).owl > $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp	
+	sed 's/DATE_TODAY/$(DATE_CLEAN)/g' < $(ONTOLOGY).owl  | grep -v "</rdf:RDF>" > $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp	
+	cat $(ONTOLOGY)-$(ONTOLOGY_DATE).bibli >> $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp 
+	echo "</rdf:RDF>" >> $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp 
 $(ONTOLOGY)-$(ONTOLOGY_DATE).counts: $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp
 	rapper $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp | wc -l > $(ONTOLOGY)-$(ONTOLOGY_DATE).counts
 $(ONTOLOGY)-$(ONTOLOGY_DATE).unique: $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp
@@ -31,7 +33,8 @@ $(ONTOLOGY)-$(ONTOLOGY_DATE).nt: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 	rapper $(ONTOLOGY)-$(ONTOLOGY_DATE).owl > $(ONTOLOGY)-$(ONTOLOGY_DATE).nt
 $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 	rapper -o turtle $(ONTOLOGY)-$(ONTOLOGY_DATE).owl > $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl	
-
+$(ONTOLOGY)-$(ONTOLOGY_DATE).bibli: $(ONTOLOGY).owl
+	./scripts/getFedoraCollection.sh $(ONTOLOGY) $(ONTOLOGY)-$(ONTOLOGY_DATE).bibli
 $(DOCS_TEMPLATES): $(DOCS) $(ONTOLOGY).owl
 	./generateTermDocumentation.sh doc $(ONTOLOGY)-docs/
 $(ONTOLOGY)-$(ONTOLOGY_DATE).dot: $(ONTOLOGY).owl
