@@ -1891,6 +1891,20 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
+   <cwrc:PoliticalAffiliation rdf:about="#anti-Dreyfusard">
+    <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
+    <rdfs:label xml:lang="en">anti-Dreyfusard</rdfs:label>
+    <rdfs:label xml:lang="fr">antidreyfusard</rdfs:label>
+    <skos:definition xml:lang="en">Supporters of the French military during the prosecution of Captain Alfred Dreyfus. See: <![CDATA[<a href="https://en.wikipedia.org/wiki/Dreyfus_affair">https://en.wikipedia.org/wiki/Dreyfus_affair</a>]]></skos:definition>
+   <skos:definition xml:lang="fr">Défenseurs de l'Armée lors de le procès du capitaine Alfred Dreyfus. Voir <![CDATA[<a href="https://fr.wikipedia.org/wiki/Affaire_Dreyfus">https://fr.wikipedia.org/wiki/Affaire_Dreyfus</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Dreyfus_affair"/>
+    <skos:broaderTransitive rdf:resource="#humanRights"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#dreyfusard"/>
+  </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-European">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <rdfs:label xml:lang="en">anti-European politics</rdfs:label>
@@ -2630,7 +2644,7 @@
     <rdfs:label xml:lang="en">Dreyfusard</rdfs:label>
     <rdfs:label xml:lang="fr">Dreyfusard</rdfs:label>
     <skos:definition xml:lang="en">Supporters of Captain Alfred Dreyfus in his prosecution by the French military. See: <![CDATA[<a href="https://en.wikipedia.org/wiki/Dreyfus_affair">https://en.wikipedia.org/wiki/Dreyfus_affair</a>]]></skos:definition>
-    <skos:definition xml:lang="fr">Défenseurs du capitain Alfred Dreyfus lors de sa mise en accusation. Voir <![CDATA[<a href="https://fr.wikipedia.org/wiki/Affaire_Dreyfus">https://fr.wikipedia.org/wiki/Affaire_Dreyfus</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">Défenseurs du capitaine Alfred Dreyfus lors de son procès. Voir <![CDATA[<a href="https://fr.wikipedia.org/wiki/Affaire_Dreyfus">https://fr.wikipedia.org/wiki/Affaire_Dreyfus</a>]]></skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Dreyfus_affair"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:broaderTransitive rdf:resource="#humanRights"/>
@@ -3157,6 +3171,20 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:related rdf:resource="#girondin"/>
+  </cwrc:PoliticalAffiliation>
+    <cwrc:PoliticalAffiliation rdf:about="#jacobinism">
+    <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
+    <rdf:value>jacobin</rdf:value>
+    <rdfs:label xml:lang="en">Jacobinism</rdfs:label>
+    <rdfs:label xml:lang="fr">Jacobinisme</rdfs:label>
+    <skos:definition xml:lang="en">A Jacobin (French pronunciation: ​[ʒakɔbɛ̃]) was a member of the Jacobin Club, a revolutionary political movement that was the most famous political club during the French Revolution (1789–99). The club was so called from the Dominican convent where they originally met, in the Rue Saint-Jacques (Latin: Jacobus) in Paris. Today, Jacobin and Jacobinism are used in a variety of senses. Jacobin is sometimes used in Britain as a pejorative for radical, left-wing revolutionary politics (English pronunciation: /ˈdʒækəbᵻn/), especially when it exhibits dogmatism and violent repression. In France, Jacobin now generally indicates a supporter of a centralized republican state and strong central government powers and/or supporters of extensive government intervention to transform society.<![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:definition xml:lang="fr">Le jacobinisme est une doctrine politique qui défend la souveraineté populaire et l'indivisibilité de la République française. Il tient son nom du club des Jacobins, dont les membres s'étaient établis pendant la Révolution française dans l'ancien couvent des Jacobins à Paris. Le mot jacobinisme désigne aujourd'hui une doctrine qui tend à organiser le pouvoir de façon administrative (bureaucratie) et centralisée (centralisation) et à le faire exercer par une petite élite de techniciens (technocratie) qui étendent leur compétence à tous les échelons géographiques et à tous les domaines de la vie sociale afin de les rendre uniformes, ce qui en fait l'adversaire du régionalisme. L'usage moderne du mot jacobinisme est de quelque manière anachronique. En effet, le jacobinisme, pendant la révolution française, était une réaction aux enjeux particuliers de l'époque. Pour n'en retenir que la philosophie, on pourrait aussi entendre jacobinisme comme une doctrine opposée aux politiques communautaires, qui tendrait, par exemple, aux divisions internes. Comme mouvement historique, le jacobinisme peut s'apparenter au XVIIIe siècle en Autriche au joséphisme et au XXe siècle en URSS au centralisme bureaucratique. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Jacobin_(politics)"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#jacobitism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
