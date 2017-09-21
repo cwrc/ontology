@@ -609,22 +609,23 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
   <!-- NEED TO BE FIXED AS AS INSTANCES OF GENDERS -->
-  <owl:Class rdf:ID="GenderQueer">
-    <rdfs:label xml:lang="en">gender queer</rdfs:label>
+  <cwrc:Gender rdf:about="GenderQueer">
+    <rdfs:label xml:lang="en">genderqueer</rdfs:label>
     <rdfs:label xml:lang="fr">non-binaire</rdfs:label>
     <skos:note>Listed as non-binary? in french</skos:note>
     <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w8.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
-  <owl:Class rdf:ID="Androgynous">
+  </cwrc:Gender>
+  <cwrc:Gender rdf:about="Androgynous">
     <rdfs:label xml:lang="en">androgynous</rdfs:label>
     <rdfs:label xml:lang="fr">androgyne</rdfs:label>
+    <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
+  </cwrc:Gender>
 
   <owl:Class rdf:ID="Sexuality">
     <rdfs:label xml:lang="en">sexuality</rdfs:label>
