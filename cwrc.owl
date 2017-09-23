@@ -608,8 +608,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
-  <!-- NEED TO BE FIXED AS AS INSTANCES OF GENDERS -->
-  <cwrc:Gender rdf:about="GenderQueer">
+  <cwrc:Gender rdf:about="#GenderQueer">
     <rdfs:label xml:lang="en">genderqueer</rdfs:label>
     <rdfs:label xml:lang="fr">non-binaire</rdfs:label>
     <skos:note>Listed as non-binary? in french</skos:note>
@@ -618,7 +617,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
-  <cwrc:Gender rdf:about="Androgynous">
+  <cwrc:Gender rdf:about="#Androgynous">
     <rdfs:label xml:lang="en">androgynous</rdfs:label>
     <rdfs:label xml:lang="fr">androgyne</rdfs:label>
     <skos:inScheme rdf:resource="#Gender"/>
