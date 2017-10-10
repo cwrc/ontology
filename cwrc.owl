@@ -308,6 +308,13 @@
   </owl:ObjectProperty>
   <!-- Will inherit oa:hasBody and oa:hasTarget from the Annotation -->
 
+  <owl:Class rdf:about="Role">
+    <skos:definition xml:lang="en">A role of a Person or Actor in some Event, CreativeWork or Organization</rdfs:label>
+    <rdfs:label xml:lang="en">role</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </skos:definition>
+
   <owl:Class rdf:ID="Context">
     <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
     <rdfs:label xml:lang="en">context</rdfs:label>
