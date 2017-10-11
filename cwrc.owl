@@ -236,8 +236,8 @@ At the heart of a persona is an identity that is interacted with by others and t
   <owl:ObjectProperty rdf:about="personaTo">
     <rdfs:label xml:lang="en">persona to</rdfs:label>
     <owl:inverseOf rdf:resource="#hasPersona"/>
-    <rdfs:domain rdf:domain="#Persona"/>
-    <rdfs:range rdf:range="#NaturalPerson"/>
+    <rdfs:domain rdf:resource="#Persona"/>
+    <rdfs:range rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
