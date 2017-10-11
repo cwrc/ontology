@@ -7,7 +7,8 @@
   xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" 
   xmlns:dbpedia="http://dbpedia.org/resource/" 
   xmlns:dcterms="http://purl.org/dc/terms/" 
-  xmlns:doap="http://usefulinc.com/ns/doap#" 
+  xmlns:doap="http://usefulinc.com/ns/doap#"
+  xmlns:fibo="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/People/" 
   xmlns:foaf="http://xmlns.com/foaf/0.1/" 
   xmlns:eurovoc="http://eurovoc.europa.eu/"
   xmlns:geonames="http://sws.geonames.org/"
@@ -203,6 +204,32 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+
+  <!-- FOAF Person Derivatives -->
+
+  <owl:Class rdf:about="NaturalPerson">
+    <rdfs:label xml:lang="en">natural person</rdfs:label>
+    <skos:definition xml:lang="en">A person; any member of the species homo sapiens.</skos:definition>
+    <rdfs:type rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/People/Person"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Persona">
+    <rdfs:label xml:lang="en">persona</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <skos:definition xml:lang="en">The persona, unlike the role, cannot be adopted by people generally, but is specific to one natural person, or more rarely several natural persons. The persona is an original creation, often bearing meaning about the biographical, historical and sociological context to which its/their creator/s is/are attached. It is also important to recall that the persona cannot be associated with mental illness or multiple personality disorders, since they are not the product of a distorted or uncontrolled perception of reality. 
+At the heart of a persona is an identity that is interacted with by others and that at times can be confused with an actual natural person. It is incarnated and developed by a natural person, and may have a social, literary, artistic or political activity.</skos:definition>
+  </owl:Class>
+
+
+  <!-- This guy still needs work, but will have to wait for now -->
+  <owl:Class rdf:about="ChangeSet">
+    <rdfs:label xml:lang="en">change set</rdfs:label>
+    <skos:definition xml:lang="en">A Changeset represents changes or additions made to the ontology by ontology editors or for instances that were edited. Will also be used to translate and contain Orlando recordInfo instances.</skos:definition>
+    <rdfs:range rdf:resource="skos:note"/>
+  </owl:Class>
+
+
   <owl:ObjectProperty rdf:ID="hasActor">
     <rdfs:label xml:lang="en">has actor</rdfs:label>
     <skos:definition xml:lang="en">An Actor in this event.</skos:definition>
