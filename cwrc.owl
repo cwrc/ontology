@@ -190,20 +190,6 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </skos:Concept>
   <!-- End Boilerplate -->
-  <owl:Class rdf:ID="Event">
-    <foaf:name>Event</foaf:name>
-    <rdfs:label xml:lang="en">event (historical)</rdfs:label>
-    <rdfs:label xml:lang="fr">évènement (historique)</rdfs:label>
-    <rdfs:label xml:lang="de">event</rdfs:label>
-    <skos:definition xml:lang="en">An event that occurs in space and time.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2006/time/TemporalEntity"/>
-    <owl:sameAs rdf:resource="http://erlangen-crm.org/current/E5.Event"/>
-    <owl:sameAs rdf:resource="http://linkedevents.org/ontology/Event"/>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Event"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
 
   <!-- FOAF Person Derivatives -->
 
@@ -252,6 +238,135 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:range rdf:resource="skos:note"/>
   </owl:Class>
 
+  <!-- Events and Actors -->
+
+  <owl:Class rdf:ID="Event">
+    <foaf:name>Event</foaf:name>
+    <rdfs:label xml:lang="en">event (historical)</rdfs:label>
+    <rdfs:label xml:lang="fr">évènement (historique)</rdfs:label>
+    <rdfs:label xml:lang="de">event</rdfs:label>
+    <skos:definition xml:lang="en">An event that occurs in time.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2006/time/TemporalEntity"/>
+    <owl:sameAs rdf:resource="http://erlangen-crm.org/current/E5.Event"/>
+    <owl:sameAs rdf:resource="http://linkedevents.org/ontology/Event"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Event"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+
+  <owl:ObjectProperty rdf:about="hasPeformance">
+    <rdfs:label xml:lang="en">has Peformance</rdfs:label>
+    <rdfs:label xml:lang="fr">a une interprétation</rdfs:label>
+    <skos:definition xml:lang="en">Associates an event or performance to a performance.</skos:definition>
+    <rdfs:domain rdf:resource="#Event"/>
+    <rdfs:domain rdf:resource="#Performance"/>
+    <rdfs:range rdf:resource="#Performance"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="Performance">
+    <foaf:name>performance</foaf:name>
+    <rdfs:label xml:lang="en">performance</rdfs:label>
+    <rdfs:label xml:lang="fr">interprétation</rdfs:label>
+    <rdfs:label xml:lang="de">Leistung</rdfs:label>
+    <skos:definition xml:lang="en">A performance by an agent in an event under a specific context, be it in a role, character or responsibility.</skos:definition>
+    <rdfs:comment xml:lang="en">Note that performances can be nested.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subClassOf rdf:resource="#Event"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:about="hasActor">
+    <rdfs:label xml:lang="en">has Actor</rdfs:label>
+    <rdfs:label xml:lang="fr">a un interpréte</rdfs:label>
+    <skos:definition xml:lang="en">Associates a performance to a person.</skos:definition>
+    <rdfs:domain rdf:resource="#Performance"/>
+    <rdfs:range rdf:resource="#Person"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="hasCharacter">
+    <rdfs:label xml:lang="en">has Character</rdfs:label>
+    <rdfs:label xml:lang="fr">a un personnage</rdfs:label>
+    <skos:definition xml:lang="en">Associates a performance to a (story) character.</skos:definition>
+    <rdfs:domain rdf:resource="#Performance"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:about="hasRole">
+    <rdfs:label xml:lang="en">has Role</rdfs:label>
+    <rdfs:label xml:lang="fr">a un rôle</rdfs:label>
+    <skos:definition xml:lang="en">Associates a performance to a role.</skos:definition>
+    <rdfs:domain rdf:resource="#Performance"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+
+  <owl:Class rdf:ID="BirthEvent">
+    <foaf:name>birth</foaf:name>
+    <rdfs:label xml:lang="en">birth</rdfs:label>
+    <rdfs:label xml:lang="fr">naissance</rdfs:label>
+    <rdfs:label xml:lang="de">geburt</rdfs:label>
+    <skos:definition xml:lang="en">The birth event of a person.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subClassOf rdf:resource="#Event"/>
+    <time:before rdf:resource="#DeathEvent"/>
+  </owl:Class>
+
+
+  <owl:Class rdf:ID="DeathEvent">
+    <foaf:name>death</foaf:name>
+    <rdfs:label xml:lang="en">death</rdfs:label>
+    <rdfs:label xml:lang="fr">mort</rdfs:label>
+    <rdfs:label xml:lang="de">tod</rdfs:label>
+    <skos:definition xml:lang="en">The death event of a person.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subClassOf rdf:resource="#Event"/>
+    <time:after rdf:resource="#BirthEvent"/>
+  </owl:Class>
+
+
+  <owl:Class rdf:ID="LifeEvent">
+    <foaf:name>life event</foaf:name>
+    <rdfs:label xml:lang="en">life event</rdfs:label>
+    <rdfs:label xml:lang="fr">évènement de vie</rdfs:label>
+    <rdfs:label xml:lang="de">lebensereignis</rdfs:label>
+    <skos:definition xml:lang="en">An event during the life of a person.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subClassOf rdf:resource="#Event"/>
+    <time:after rdf:resource="#BirthEvent"/>
+    <time:before rdf:resource="#DeathEvent"/>
+  </owl:Class>
+
+
+  <owl:Class rdf:ID="AfterLifeEvent">
+    <foaf:name>after life event</foaf:name>
+    <rdfs:label xml:lang="en">after life event</rdfs:label>
+    <rdfs:label xml:lang="fr">évènement d'après vie</rdfs:label>
+    <rdfs:label xml:lang="de">nachlebensereignis</rdfs:label>
+    <skos:definition xml:lang="en">An event whose principal is a person that is deceased. Could be used for a funeral, an influence over a living author or the estate of a deceased person.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subClassOf rdf:resource="#Event"/>
+    <time:after rdf:resource="#BirthEvent"/>
+    <time:after rdf:resource="#DeathEvent"/>
+  </owl:Class>
+
+
 
   <owl:ObjectProperty rdf:ID="hasActor">
     <rdfs:label xml:lang="en">has actor</rdfs:label>
@@ -282,6 +397,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+
   <owl:ObjectProperty rdf:ID="identity">
     <rdfs:label xml:lang="en">identity</rdfs:label>
     <skos:definition xml:lang="en">The identity of the person who committed the act.</skos:definition>
@@ -291,6 +407,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:ID="inRole">
     <rdfs:label xml:lang="en">in role</rdfs:label>
     <skos:definition xml:lang="en">The role taken on by this actor.</skos:definition>
@@ -300,7 +417,8 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <!-- Events -->
+
+
   <owl:Class rdf:ID="Address">
     <rdfs:label xml:lang="en">address</rdfs:label>
     <rdfs:label xml:lang="fr">adresse</rdfs:label>
@@ -4869,7 +4987,6 @@ At the heart of a persona is an identity that is interacted with by others and t
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
   </owl:ObjectProperty>
-
 
   <owl:ObjectProperty rdf:ID="motherOf">
     <rdf:value>MOTHER</rdf:value>
