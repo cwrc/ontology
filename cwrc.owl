@@ -61,11 +61,23 @@
     <dcterms:creator>
       <foaf:Person rdf:about="#AbigelLemak">
         <foaf:name>Abigel Lemak</foaf:name>
+        <foaf:account>
+          <foaf:OnlineAccount>
+            <foaf:accountName>lemaka</foaf:accountName>
+            <foaf:accountServiceHomepage rdf:resource="https://www.github.com"/>
+          </foaf:OnlineAccount>
+        </foaf:account>
       </foaf:Person>
     </dcterms:creator>
     <dcterms:creator>
       <foaf:Person rdf:about="#JadePenancier">
         <foaf:name>Jade Penancier</foaf:name>
+        <foaf:account>
+          <foaf:OnlineAccount>
+            <foaf:accountName>jadepncr</foaf:accountName>
+            <foaf:accountServiceHomepage rdf:resource="https://www.github.com"/>
+          </foaf:OnlineAccount>
+        </foaf:account>
       </foaf:Person>
     </dcterms:creator>
     <dcterms:creator>
@@ -85,11 +97,23 @@
         <owl:sameAs rdf:resource="http://rdf.muninn-project.org/ww1/2011/11/11/Person/Warren"/>
         <foaf:homepage rdf:resource="http://www.dbdump.org/" />
         <foaf:img rdf:resource="http://sparql.cwrc.ca/images/rob.jpeg" />
+        <foaf:account>
+          <foaf:OnlineAccount>
+            <foaf:accountName>rwarren2</foaf:accountName>
+            <foaf:accountServiceHomepage rdf:resource="https://www.github.com"/>
+          </foaf:OnlineAccount>
+        </foaf:account>
       </foaf:Person>
     </dcterms:creator>
     <dcterms:creator>
       <foaf:Person rdf:about="#AlliyyaMo">
         <foaf:name>Alliyya Mo</foaf:name>
+        <foaf:account>
+          <foaf:OnlineAccount>
+            <foaf:accountName>alliyya</foaf:accountName>
+            <foaf:accountServiceHomepage rdf:resource="https://www.github.com"/>
+          </foaf:OnlineAccount>
+        </foaf:account>
       </foaf:Person>
     </dcterms:creator>
     <dcterms:publisher>
@@ -105,6 +129,12 @@
         <foaf:name>Susan Brown</foaf:name>
         <owl:sameAs rdf:resource="http://orcid.org/0000-0002-0267-7344"/>
         <foaf:homepage rdf:resource="http://www.uoguelph.ca/~sbrown/"/>
+        <foaf:account>
+          <foaf:OnlineAccount>
+            <foaf:accountName>SusanBrown</foaf:accountName>
+            <foaf:accountServiceHomepage rdf:resource="https://www.github.com"/>
+          </foaf:OnlineAccount>
+        </foaf:account>
       </foaf:Person>
     </loc:pdr>
     <loc:ctb>
@@ -236,6 +266,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdfs:range rdf:resource="skos:note"/>
+    <prov:wasDerivedFrom rdf:resource="http://vocab.org/changeset/"/>
   </owl:Class>
 
   <!-- Events and Actors -->
