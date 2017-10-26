@@ -367,18 +367,6 @@ At the heart of a persona is an identity that is interacted with by others and t
     <time:after rdf:resource="#DeathEvent"/>
   </owl:Class>
 
-
-
-  <owl:ObjectProperty rdf:ID="hasActor">
-    <rdfs:label xml:lang="en">has actor</rdfs:label>
-    <skos:definition xml:lang="en">An Actor in this event.</skos:definition>
-    <rdfs:domain rdf:resource="#Event"/>
-    <rdfs:range rdf:resource="#Actor"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-
   <owl:ObjectProperty rdf:ID="actorTo">
     <rdfs:label xml:lang="en">actor to</rdfs:label>
     <skos:definition xml:lang="en">The Events that the Actor is associated with.</skos:definition>
