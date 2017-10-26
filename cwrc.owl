@@ -211,7 +211,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:Class>
 
-  <owl:ObjectProperty rdf:about="hasPersona">
+  <owl:ObjectProperty rdf:ID="hasPersona">
     <rdfs:label xml:lang="en">has persona</rdfs:label>
     <skos:definition xml:lang="en">Associates a Persona with one more NaturalPerson(s). </skos:definition>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
@@ -219,7 +219,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="personaTo">
+  <owl:ObjectProperty rdf:ID="personaTo">
     <rdfs:label xml:lang="en">persona to</rdfs:label>
     <owl:inverseOf rdf:resource="#hasPersona"/>
     <rdfs:domain rdf:resource="#Persona"/>
@@ -257,7 +257,7 @@ At the heart of a persona is an identity that is interacted with by others and t
   </owl:Class>
 
 
-  <owl:ObjectProperty rdf:about="hasPeformance">
+  <owl:ObjectProperty rdf:ID="hasPeformance">
     <rdfs:label xml:lang="en">has Peformance</rdfs:label>
     <rdfs:label xml:lang="fr">a une interprétation</rdfs:label>
     <skos:definition xml:lang="en">Associates an event or performance to a performance.</skos:definition>
@@ -281,7 +281,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:subClassOf rdf:resource="#Event"/>
   </owl:Class>
 
-  <owl:ObjectProperty rdf:about="hasActor">
+  <owl:ObjectProperty rdf:ID="hasActor">
     <rdfs:label xml:lang="en">has Actor</rdfs:label>
     <rdfs:label xml:lang="fr">a un interpréte</rdfs:label>
     <skos:definition xml:lang="en">Associates a performance to a person.</skos:definition>
@@ -291,7 +291,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="hasCharacter">
+  <owl:ObjectProperty rdf:ID="hasCharacter">
     <rdfs:label xml:lang="en">has Character</rdfs:label>
     <rdfs:label xml:lang="fr">a un personnage</rdfs:label>
     <skos:definition xml:lang="en">Associates a performance to a (story) character.</skos:definition>
@@ -300,7 +300,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
   
-  <owl:ObjectProperty rdf:about="hasRole">
+  <owl:ObjectProperty rdf:ID="hasRole">
     <rdfs:label xml:lang="en">has Role</rdfs:label>
     <rdfs:label xml:lang="fr">a un rôle</rdfs:label>
     <skos:definition xml:lang="en">Associates a performance to a role.</skos:definition>
