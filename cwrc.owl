@@ -193,7 +193,7 @@
 
   <!-- FOAF Person Derivatives -->
 
-  <owl:Class rdf:about="NaturalPerson">
+  <owl:Class rdf:ID="NaturalPerson">
     <rdfs:label xml:lang="en">natural person</rdfs:label>
     <skos:definition xml:lang="en">A person; any member of the species homo sapiens.</skos:definition>
     <rdfs:type rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/People/Person"/>
@@ -201,7 +201,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:Class>
 
-  <owl:Class rdf:about="Persona">
+  <owl:Class rdf:ID="Persona">
     <rdfs:label xml:lang="en">persona</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <skos:definition xml:lang="en">The persona, unlike the role, cannot be adopted by people generally, but is specific to one natural person, or more rarely several natural persons. The persona is an original creation, often bearing meaning about the biographical, historical and sociological context to which its/their creator/s is/are attached. It is also important to recall that the persona cannot be associated with mental illness or multiple personality disorders, since they are not the product of a distorted or uncontrolled perception of reality. 
@@ -229,7 +229,7 @@ At the heart of a persona is an identity that is interacted with by others and t
 
 
   <!-- This guy still needs work, but will have to wait for now -->
-  <owl:Class rdf:about="ChangeSet">
+  <owl:Class rdf:ID="ChangeSet">
     <rdfs:label xml:lang="en">change set</rdfs:label>
     <skos:definition xml:lang="en">A Changeset represents changes or additions made to the ontology by ontology editors or for instances that were edited. Will also be used to translate and contain Orlando recordInfo instances.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -477,7 +477,7 @@ At the heart of a persona is an identity that is interacted with by others and t
   </owl:ObjectProperty>
   <!-- Will inherit oa:hasBody and oa:hasTarget from the Annotation -->
 
-  <owl:Class rdf:about="Role">
+  <owl:Class rdf:ID="Role">
     <skos:definition xml:lang="en">A role of a Person or Actor in some Event, CreativeWork or Organization</skos:definition>
     <rdfs:label xml:lang="en">role</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
