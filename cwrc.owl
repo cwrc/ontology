@@ -378,15 +378,6 @@ At the heart of a persona is an identity that is interacted with by others and t
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <owl:Class rdf:ID="Actor">
-    <rdfs:label xml:lang="en">actor</rdfs:label>
-    <skos:definition xml:lang="en">A person performing a certain role within an event.</skos:definition>
-    <owl:sameAs rdf:resource="http://erlangen-crm.org/current/E39.Actor"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
-
   <owl:ObjectProperty rdf:ID="identity">
     <rdfs:label xml:lang="en">identity</rdfs:label>
     <skos:definition xml:lang="en">The identity of the person who committed the act.</skos:definition>
@@ -5139,6 +5130,18 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:subPropertyOf rdf:resource="#partnerOf"/>
     <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Partnership"/>
   </owl:ObjectProperty>
+
+<!-- Instances of roles -->
+
+  <owl:Class rdf:about="Actor">
+    <rdfs:label xml:lang="en">actor</rdfs:label>
+    <skos:definition xml:lang="en">A person performing a certain role within an event.</skos:definition>
+    <owl:sameAs rdf:resource="http://erlangen-crm.org/current/E39.Actor"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#Role"/>
+  </owl:Class>
 
 
 <!-- All Deprecated things(properties, classes, instances in that order) -->
