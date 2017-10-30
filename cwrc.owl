@@ -5133,7 +5133,7 @@ At the heart of a persona is an identity that is interacted with by others and t
 
 <!-- Instances of roles -->
 
-  <owl:Class rdf:about="Actor">
+  <cwrc:Role rdf:about="#Actor">
     <rdfs:label xml:lang="en">actor</rdfs:label>
     <skos:definition xml:lang="en">A person performing a certain role within an event.</skos:definition>
     <owl:sameAs rdf:resource="http://erlangen-crm.org/current/E39.Actor"/>
@@ -5141,7 +5141,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#Role"/>
-  </owl:Class>
+  </cwrc:Role>
 
 
 <!-- All Deprecated things(properties, classes, instances in that order) -->
