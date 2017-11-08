@@ -219,6 +219,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
+  
   <owl:ObjectProperty rdf:ID="personaTo">
     <rdfs:label xml:lang="en">persona to</rdfs:label>
     <owl:inverseOf rdf:resource="#hasPersona"/>
@@ -243,11 +244,11 @@ At the heart of a persona is an identity that is interacted with by others and t
 
   <owl:Class rdf:ID="Event">
     <foaf:name>Event</foaf:name>
-    <rdfs:label xml:lang="en">event (historical)</rdfs:label>
-    <rdfs:label xml:lang="fr">évènement (historique)</rdfs:label>
+    <rdfs:label xml:lang="en">event</rdfs:label>
+    <rdfs:label xml:lang="fr">évènement</rdfs:label>
     <rdfs:label xml:lang="de">event</rdfs:label>
     <skos:definition xml:lang="en">An event that occurs in time.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2006/time/TemporalEntity"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time/TemporalEntity"/>
     <owl:sameAs rdf:resource="http://erlangen-crm.org/current/E5.Event"/>
     <owl:sameAs rdf:resource="http://linkedevents.org/ontology/Event"/>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Event"/>
@@ -256,25 +257,31 @@ At the heart of a persona is an identity that is interacted with by others and t
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
-
-  <owl:ObjectProperty rdf:ID="hasPeformance">
-    <rdfs:label xml:lang="en">has Peformance</rdfs:label>
-    <rdfs:label xml:lang="fr">a une interprétation</rdfs:label>
-    <skos:definition xml:lang="en">Associates an event or performance to a performance.</skos:definition>
+  <owl:ObjectProperty rdf:ID="hasSubEvent">
+    <rdfs:label xml:lang="en">has Sub Element</rdfs:label>
+    <rdfs:label xml:lang="fr">a un sous évènement</rdfs:label>
+    <skos:definition xml:lang="en">Associates a sub event to a master event.</skos:definition>
     <rdfs:domain rdf:resource="#Event"/>
-    <rdfs:domain rdf:resource="#Performance"/>
-    <rdfs:range rdf:resource="#Performance"/>
+    <rdfs:range rdf:resource="#Event"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
-  <owl:Class rdf:ID="Performance">
+  <owl:ObjectProperty rdf:ID="hasEventElement">
+    <rdfs:label xml:lang="en">has Element</rdfs:label>
+    <rdfs:label xml:lang="fr">a un elment</rdfs:label>
+    <skos:definition xml:lang="en">Associates an event or event element.</skos:definition>
+    <rdfs:domain rdf:resource="#Event"/>
+    <rdfs:range rdf:resource="#EventElement"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="EventElement">
     <foaf:name>performance</foaf:name>
-    <rdfs:label xml:lang="en">performance</rdfs:label>
-    <rdfs:label xml:lang="fr">interprétation</rdfs:label>
-    <rdfs:label xml:lang="de">Leistung</rdfs:label>
-    <skos:definition xml:lang="en">A performance by an agent in an event under a specific context, be it in a role, character or responsibility.</skos:definition>
-    <rdfs:comment xml:lang="en">Note that performances can be nested.</rdfs:comment>
+    <rdfs:label xml:lang="en">Event Element</rdfs:label>
+    <rdfs:label xml:lang="fr">élement d'évènement</rdfs:label>
+    <skos:definition xml:lang="en">An event element by an agent in an event under a specific context, be it in a role, character or responsibility.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -284,9 +291,9 @@ At the heart of a persona is an identity that is interacted with by others and t
   <owl:ObjectProperty rdf:ID="hasActor">
     <rdfs:label xml:lang="en">has Actor</rdfs:label>
     <rdfs:label xml:lang="fr">a un interpréte</rdfs:label>
-    <skos:definition xml:lang="en">Associates a performance to a person.</skos:definition>
-    <rdfs:domain rdf:resource="#Performance"/>
-    <rdfs:range rdf:resource="#Person"/>
+    <skos:definition xml:lang="en">Associates an event element to a person.</skos:definition>
+    <rdfs:domain rdf:resource="#EventElement"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
@@ -294,8 +301,8 @@ At the heart of a persona is an identity that is interacted with by others and t
   <owl:ObjectProperty rdf:ID="hasCharacter">
     <rdfs:label xml:lang="en">has Character</rdfs:label>
     <rdfs:label xml:lang="fr">a un personnage</rdfs:label>
-    <skos:definition xml:lang="en">Associates a performance to a (story) character.</skos:definition>
-    <rdfs:domain rdf:resource="#Performance"/>
+    <skos:definition xml:lang="en">Associates an event element to a (story) character.</skos:definition>
+    <rdfs:domain rdf:resource="#EventElement"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
@@ -303,11 +310,25 @@ At the heart of a persona is an identity that is interacted with by others and t
   <owl:ObjectProperty rdf:ID="hasRole">
     <rdfs:label xml:lang="en">has Role</rdfs:label>
     <rdfs:label xml:lang="fr">a un rôle</rdfs:label>
-    <skos:definition xml:lang="en">Associates a performance to a role.</skos:definition>
-    <rdfs:domain rdf:resource="#Performance"/>
+    <skos:definition xml:lang="en">Associates an event element to a role.</skos:definition>
+    <rdfs:domain rdf:resource="#EventElement"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="actorTo">
+    <rdfs:label xml:lang="en">actor to</rdfs:label>
+    <skos:definition xml:lang="en">The Events that the Actor is associated with.</skos:definition>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:range rdf:resource="#EventElement"/>
+    <owl:inverseOf rdf:resource="#hasActor"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+
+
 
 
   <owl:Class rdf:ID="BirthEvent">
@@ -366,38 +387,6 @@ At the heart of a persona is an identity that is interacted with by others and t
     <time:after rdf:resource="#BirthEvent"/>
     <time:after rdf:resource="#DeathEvent"/>
   </owl:Class>
-
-  <owl:ObjectProperty rdf:ID="actorTo">
-    <rdfs:label xml:lang="en">actor to</rdfs:label>
-    <skos:definition xml:lang="en">The Events that the Actor is associated with.</skos:definition>
-    <rdfs:domain rdf:resource="#Actor"/>
-    <rdfs:range rdf:resource="#Event"/>
-    <owl:inverseOf rdf:resource="#hasActor"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:ID="identity">
-    <rdfs:label xml:lang="en">identity</rdfs:label>
-    <skos:definition xml:lang="en">The identity of the person who committed the act.</skos:definition>
-    <rdfs:domain rdf:resource="#Actor"/>
-    <rdfs:range rdf:resource="#Person"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:ID="inRole">
-    <rdfs:label xml:lang="en">in role</rdfs:label>
-    <skos:definition xml:lang="en">The role taken on by this actor.</skos:definition>
-    <rdfs:domain rdf:resource="#Actor"/>
-    <rdfs:range rdf:resource="#Role"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-
 
   <owl:Class rdf:ID="Address">
     <rdfs:label xml:lang="en">address</rdfs:label>
@@ -5919,5 +5908,68 @@ At the heart of a persona is an identity that is interacted with by others and t
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
+
+
+  <owl:DeprecatedProperty rdf:ID="hasPeformance">
+    <rdfs:label xml:lang="en">has Peformance</rdfs:label>
+    <rdfs:label xml:lang="fr">a une interprétation</rdfs:label>
+    <skos:definition xml:lang="en">Associates an event or performance to a performance.</skos:definition>
+    <rdfs:domain rdf:resource="#Event"/>
+    <rdfs:domain rdf:resource="#Performance"/>
+    <rdfs:range rdf:resource="#Performance"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <dcterms:isReplacedBy rdf:resource="#hasEventElement"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    <owl:equivalentProperty rdf:resource="#hasEventElement"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of property #hasEventElement.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de la propriété #hasEventElement.</rdfs:comment>
+  </owl:DeprecatedProperty>
+
+  <owl:DeprecatedClass rdf:ID="Performance">
+    <foaf:name>performance</foaf:name>
+    <rdfs:label xml:lang="en">performance</rdfs:label>
+    <rdfs:label xml:lang="fr">interprétation</rdfs:label>
+    <rdfs:label xml:lang="de">Leistung</rdfs:label>
+    <skos:definition xml:lang="en">A performance by an agent in an event under a specific context, be it in a role, character or responsibility.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subClassOf rdf:resource="#EventElement"/>
+    <dcterms:isReplacedBy rdf:resource="#hasElement"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    <owl:equivalentClass rdf:resource="#EventElement"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of class #EventElement.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe #EventElement.</rdfs:comment>
+  </owl:DeprecatedClass>
+
+  <owl:DeprecatedProperty rdf:ID="identity">
+    <rdfs:label xml:lang="en">identity</rdfs:label>
+    <skos:definition xml:lang="en">The identity of the person who committed the act.</skos:definition>
+    <rdfs:domain rdf:resource="#Actor"/>
+    <rdfs:range rdf:resource="#Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    <rdfs:comment xml:lang="en">Deprecated from previous Orlando Ontology design.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver de l'ancienne ontology Orlando.</rdfs:comment>
+  </owl:DeprecatedProperty>
+
+  <owl:DeprecatedProperty rdf:ID="inRole">
+    <rdfs:label xml:lang="en">in role</rdfs:label>
+    <skos:definition xml:lang="en">The role taken on by this actor.</skos:definition>
+    <rdfs:domain rdf:resource="#Actor"/>
+    <rdfs:range rdf:resource="#Role"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    <rdfs:comment xml:lang="en">Deprecated from previous Orlando Ontology design.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver de l'ancienne ontologie Orlando.</rdfs:comment>
+  </owl:DeprecatedProperty>
+
   
 </rdf:RDF>
