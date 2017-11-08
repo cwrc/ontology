@@ -54,6 +54,10 @@
             <li><a href="#genre_taxonomy">ii. Literary Genre</a></li>
             <!-- <li><a href="#gender_taxonomy">iii. Gender, Sex and Orientation</a></li> -->
           </ul>
+          <li><a href="#notesEvent">e. Notes on CWRC Events</a></li>
+          <ul>
+            <li><a href="#">i. Notes on nomenclature</a></li>
+          </ul>
         </ul>
         <li><a href="#definition_list">7. Global Cross-Reference</a></li>
         <li><a href="#reference">8. Detailed references for all terms, classes and properties</a></li>
@@ -65,11 +69,10 @@
         </ul>
         <li><a href="#notesSKOS">9. CWRC Ontology Design Rules</a></li>
         <li><a href="#notesSKOSOWL">10. Notes on SKOS and OWL</a></li>
-        <li><a href="#notesEvent">11. Notes on CWRC Events</a></li>
-        <li><a href="#conclusion">12. Conclusion and Future Work</a></li>
-        <li><a href="#version_history">13. Version History</a></li>
-        <li><a href="#deprecated">14. Deprecated Terms</a></li>    
-        <li><a href="#bibliography">15. Bibliography</a></li>    
+        <li><a href="#conclusion">11. Conclusion and Future Work</a></li>
+        <li><a href="#version_history">12. Version History</a></li>
+        <li><a href="#deprecated">13. Deprecated Terms</a></li>    
+        <li><a href="#bibliography">14. Bibliography</a></li>    
       </ul>
     </div>
 
@@ -409,52 +412,10 @@ endorsing the corresponding definition or interpretation of the term.</p>
        <p> </p>
               <object type="image/svg+xml" data="figures/genreTaxonomy-ONTOLOGY_DATE.svg"></object>  
               </p>
-          
-    <h3 id="definition_list">7. Global Cross-Reference</h3>
+
+
     
-    <!-- The list of classes and properties goes here -->
-    {_azlist_}
-    <!-- End of the terms list -->
-
-    <h2 id="reference">8. Detailed references for all terms, classes and
-    properties</h2>
- 
-    <p></p>
-
-    <!-- The following is the script-generated list of classes and properties -->
-    {_terms_}
-    <!-- End of the terms list -->
-
-    <h2 id="notesSKOS">9. CWRC Ontology Design Rules</h2>
-
-    <p>Beyond the formalism of [citation on ontology design rules], the CWRC
-    ontology follows the following design rules and styles:</p>
-    <ul>
-    <li>The contents of rdfs:labels tags are always in lowercase, with the
-    following exceptions:</li>
-    <ul>
-    <li>Labels for religions, political affiliations and groups of people derived from a proper name  will begin with an uppercase letter.</li>
-    </ul>
-    <li>Whenever possible, the original Orlando XML tag equivalent is
-    contained within the rdf:value tag of any term within the ontology.</li>
-    <li>Whenever referencing a geographical location, use the most precise
-    item within the database.</li>
-    <li>Definitions in French, English (and other serendipitously available languages) are never word for word translations and are definitions in their own right.</li>
-    </ul>
-
-    <h2 id="notesSKOSOWL">10. Notes on SKOS and OWL</h2>
-     <p>
-     SKOS (Simple Knowledge Organization System) enjoys widespread popularity in the semantic web community as it provides simple
-     terms for taxonomies without requiring reasoner support. Whenever appropriate, SKOS terms are inserted within this ontology
-     to link terms to each other. However, since these terms are not ontologically powered, their scalability is limited since
-     each additional layer of terms within a taxonomy requires another database query.</p>
-     <p>  
-     Some of the constructs within the CWRC ontology are deep and require reasoning support. OWL is the preferred means of using
-     this ontology, though the usage of the terms, SKOS-style, is possible.
-     </p>
-    
-    
-    <h2 id="notesEvent">11. Notes on CWRC Events</h2>
+    <h4 id="notesEvent">e. CWRC Events</h4>
 
     <p>The CWRC ontology was meant to handle data from projects such as
     Orlando that contain data that is often imprecise or incomplete.
@@ -518,8 +479,15 @@ domain means that essentially anything can perform a part to an event,
 including personaes, pets, inanimate objects (such as ships) and the
 elements (eg: storms).</p>
 
+ <img src="figures/StevieSmith.png" style="display: block; margin: auto;width 60%;"/>
 
- <h3 id="#event_nomenclature">a. Notes about nomenclature</h3>
+  <p>The example above represents two different awards given to Stevie
+  Smith three years apart and is an example of the possibility of using
+  TimeOwl as a means of recording both imprecise and relative temporal data.
+  3 years seperate both awards and a duration node seperates both of
+  them.</p>
+
+ <h5 id="#event_nomenclature">i. Notes about nomenclature</h5>
 
 <p>Roles, Actor, Agent, Character, Performance as words that have related
 semantic meanings in the vernacular but whose formal definitions have
@@ -532,8 +500,50 @@ theatrical group. We are aware that different arrangements of nomenclaures
 are possible, but these represent the best arrangement with the least
 abiguity.</p>
 
+          
+    <h3 id="definition_list">7. Global Cross-Reference</h3>
+    
+    <!-- The list of classes and properties goes here -->
+    {_azlist_}
+    <!-- End of the terms list -->
 
-      
+    <h2 id="reference">8. Detailed references for all terms, classes and
+    properties</h2>
+ 
+    <p></p>
+
+    <!-- The following is the script-generated list of classes and properties -->
+    {_terms_}
+    <!-- End of the terms list -->
+
+    <h2 id="notesSKOS">9. CWRC Ontology Design Rules</h2>
+
+    <p>Beyond the formalism of [citation on ontology design rules], the CWRC
+    ontology follows the following design rules and styles:</p>
+    <ul>
+    <li>The contents of rdfs:labels tags are always in lowercase, with the
+    following exceptions:</li>
+    <ul>
+    <li>Labels for religions, political affiliations and groups of people derived from a proper name  will begin with an uppercase letter.</li>
+    </ul>
+    <li>Whenever possible, the original Orlando XML tag equivalent is
+    contained within the rdf:value tag of any term within the ontology.</li>
+    <li>Whenever referencing a geographical location, use the most precise
+    item within the database.</li>
+    <li>Definitions in French, English (and other serendipitously available languages) are never word for word translations and are definitions in their own right.</li>
+    </ul>
+
+    <h2 id="notesSKOSOWL">10. Notes on SKOS and OWL</h2>
+     <p>
+     SKOS (Simple Knowledge Organization System) enjoys widespread popularity in the semantic web community as it provides simple
+     terms for taxonomies without requiring reasoner support. Whenever appropriate, SKOS terms are inserted within this ontology
+     to link terms to each other. However, since these terms are not ontologically powered, their scalability is limited since
+     each additional layer of terms within a taxonomy requires another database query.</p>
+     <p>  
+     Some of the constructs within the CWRC ontology are deep and require reasoning support. OWL is the preferred means of using
+     this ontology, though the usage of the terms, SKOS-style, is possible.
+     </p>
+    
 
     <h2 id="conclusion">12. Conclusion and Future Work</h2>
     <p>
