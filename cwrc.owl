@@ -189,6 +189,14 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </skos:Concept>
+
+  <owl:AnnotationProperty rdf:ID="CompetencyQuestion">
+    <rdfs:label xml:lang="en">Competency Question</rdfs:label>
+    <skos:definition xml:lang="en">A Question that can be asked of the ontology and will be used to specify the high level requirements of the CWRC Ontology allowing decisions about structure and components to be made.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:AnnotationProperty>
+
   <!-- End Boilerplate -->
 
   <!-- FOAF Person Derivatives -->
