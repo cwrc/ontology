@@ -48,6 +48,12 @@
     <dcterms:description xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</dcterms:description>
     <skos:definition xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</skos:definition>
     <rdfs:comment xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</rdfs:comment>
+    <cwrc:CompetencyQuestion xml:lang="en">What journals does a particular author have works published in?</cwrc:CompetencyQuestion>
+    <cwrc:CompetencyQuestion xml:lang="en">What connections does a particular person have?</cwrc:CompetencyQuestion>
+    <cwrc:CompetencyQuestion xml:lang="en">What reviews exist for a particular book?</cwrc:CompetencyQuestion>
+    <cwrc:CompetencyQuestion xml:lang="en">Which people have published novels in a particular period that identify as a particular sex?</cwrc:CompetencyQuestion>
+    <cwrc:CompetencyQuestion xml:lang="en">Does a connection exist between two people?</cwrc:CompetencyQuestion>
+    <cwrc:CompetencyQuestion xml:lang="en">Does the ontology support mapping to Orlando Vocabulary Events?</cwrc:CompetencyQuestion>
     <owl:versionInfo>0.99.5</owl:versionInfo>
     <owl:priorVersion rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-2017-08-04"/>
     <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">ONTOLOGY_DATE</dcterms:date>
@@ -207,15 +213,26 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.w3.org/2006/time/Instant"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdfs:range rdf:resource="skos:note"/>
     <prov:wasDerivedFrom rdf:resource="http://vocab.org/changeset/"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:Class>
 
    <owl:ObjectProperty rdf:about="affectedEntity">
     <rdfs:label xml:lang="en">affected entity</rdfs:label>
     <skos:definition xml:lang="en">Affected Entities link to the Object or Class that was modified within a ChangeSet, this can be any rdf:resource. A ChangeSet may have 0 to many AffectedEntities.</skos:definition>
     <rdfs:domain rdf:resource="#ChangeSet"/>
+        <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="alteredBy">
+    <rdfs:label xml:lang="en">altered by</rdfs:label>
+    <skos:definition xml:lang="en">Links a person to a Changeset entry</skos:definition>
+    <rdfs:domain rdf:resource="#ChangeSet"/>
+    <rdfs:range rdf:resource="#NaturalPerson"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
   <!-- FOAF Person Derivatives -->
