@@ -607,12 +607,16 @@ At the heart of a persona is an identity that is interacted with by others and t
   </owl:Class>
   <owl:Class rdf:ID="GenderContext">
     <rdfs:label xml:lang="en">Gender Context</rdfs:label>
-    <rdfs:label xml:lang="fr">Contexte de Genre</rdfs:label>
+    <rdfs:label xml:lang="fr">Genre En Contexte</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
     <dcterms:subject rdf:resource="#Gender"/>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">
+      Gender Context is a significant subclass of context. It is associated with the Cultural Form subclass Gender, and sometimes other intersecting Cultural Forms. Annotations typed as Gender Context provide information about and discussions of a person's subjectivity with regards to their gender and gender identity. Gender Context provides depth to more granular categorizations of a person indicated through the properties hasGender or hasGenderSelf-Reported.
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      Genre En Contexte est une sous-classe de contexte importante. Elle est associées à la sous-classe de Forme Culturelle Gender, et parfois en croisement avec d’autres Formes Culturelles. Les annotations entrées en tant que Genre En Contexte fournissent des renseignements et des discussions sur  la subjectivité d’une personne en ce qui concerne son genre et son identité genrée. Genre Contexte explore plus en détails les catégorisations granulaires  d’une personne indiquées dans les propriétés aUnGenre ou aUnGenreAutodéclaré. 
+    </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -751,11 +755,12 @@ At the heart of a persona is an identity that is interacted with by others and t
     </skos:definition>
     <skos:definition xml:lang="fr">
       Cette sous-classe de Forme Culturelle indique le genre d’une personne, qu’il soit attribué par d’autres ou autoproclamé, accompagné du contexte fourni par les annotations de Genre Contexte lorsque celui-ci est disponible. 
-      Même si dans la culture populaire le genre et le sexe biologique sont confondus et compris comme binaires, le concept de genre souligne la dimension relationnelle, construite et performative des identités et des comportements genrés, dont les catégories sont contingentes et changent au cours de l’Histoire, sans qu’elles soient clairement délimitées. Cf <![CDATA[ <a href="#cwrc:c6a678e5-8fc6-41bc-8631-7cfb7116017e"> Simone de Beauvoir </a>]]: &quot;On ne naît pas femme, on le devient,&quot; et d’autres nombreuses théoriciennes du genre, dont Judith Butler en 1990<![CDATA[ <a href="cwrc:825995b3-3b66-4e0a-a62d-d8649aaead78">(Judith Butler, 1990)</a>]]>. À ce jour, les études de genres se sont davantage intéressées à la construction de la féminité qu’à celle de la masculinité. Cette construction du genre à plusieurs niveaux est également soulignée par Donna Haraway qui le définit comme une &quot;différence socialement, historiquement et sémiotiquement située&quot; <![CDATA[<a href="#cwrc:f62e94d6-bd04-494c-9282-53af0a3f3376">(Donna Haraway,1988)</a>]]  
-
-      Le genre est interprété comme fluide, situationnel, parfois pluriel ainsi que lié à l’identité et l’orientation sexuelles sans leur être proportionnel, tout comme il est relié à certaines façons spécifiques de vivre et de présenter son corps, qui ne définissent pas non plus le genre. Plutôt que de voir le sexe biologique comme présocial ou un fait naturel,  le corps est compris comme un lieu d’inscriptions  (cf. <![CDATA[<a href="#cwrc:3d49dc32-ac97-4abd-a252-573c52b463cf"> (Elizabeth Grosz, 1994)</a>]]) qui est aussi socialement construit et épigénétiquement modelé par des facteurs environnementaux <![CDATA[<a href="#cwrc:5e45242f-0c2e-4aaa-8ddb-ac54dd0e6249">(N. Katherine Hayles, 2012)</a>]]>. Selon la formulation de la neurologiste féministe Gillian Einstein, &quot;Le monde écrit sur le corps&quot; <![CDATA[<a href="#cwrc:842ffbb4-11de-4212-8e6e-9d4d8d28d3a5">(Gillian Einstein, 2012)</a>]]>. Cette ontologie ne fournit donc pas de termes séparés pour le sexe et le genre en tant qu’entités distinctes. Au contraire, elle privilégie les termes associés au genre, en admettant qu’ils sont conventionnellement mais non nécessairement associés au sexe, et qu’il existe un glissement constant de ces catégories au fil des discours, des actions et des institutions. Loin d’indiquer une part d’expérience universelle, le genre rencontre d’autres catégories identitaires et divers vecteurs d’oppression comme la classe, la race, la couleur ou l’héritage géographique, produisant des expériences et des intérêts très différents pour les personnes d’un même genre. Un exemple est le mouvement de la Chrétienté Musculaire, formé au Royaume-Uni au 19ème siècle, qui relie la religion à l’identité masculine. Une telle interaction entre différentes formes d’oppression est appelée &quot;intersectionnalité&quot; <![CDATA[ <a href="#cwrc:b9eeccf9-9380-4341-99dc-a83f5ee32909">(Kimberlé Crenshaw, 1989)</a>]]>
+      Même si dans la culture populaire le genre et le sexe biologique sont confondus et compris comme binaires, le concept de genre souligne la dimension relationnelle, construite et performative des identités et des comportements genrés, dont les catégories sont contingentes et changent au cours de l’Histoire, sans qu’elles soient clairement délimitées. Cf 
+      <![CDATA[ <a href="#cwrc:c6a678e5-8fc6-41bc-8631-7cfb7116017e"> Simone de Beauvoir </a>]]>: &quot;On ne naît pas femme, on le devient,&quot; et d’autres nombreuses théoriciennes du genre, dont Judith Butler en 1990
+      <![CDATA[ <a href="cwrc:825995b3-3b66-4e0a-a62d-d8649aaead78">(Judith Butler, 1990)</a>]]>. À ce jour, les études de genres se sont davantage intéressées à la construction de la féminité qu’à celle de la masculinité. Cette construction du genre à plusieurs niveaux est également soulignée par Donna Haraway qui le définit comme une &quot;différence socialement, historiquement et sémiotiquement située&quot; 
+      <![CDATA[<a href="#cwrc:f62e94d6-bd04-494c-9282-53af0a3f3376">(Donna Haraway,1988)</a>]]> 
+      Le genre est interprété comme fluide, situationnel, parfois pluriel ainsi que lié à l’identité et l’orientation sexuelles sans leur être proportionnel, tout comme il est relié à certaines façons spécifiques de vivre et de présenter son corps, qui ne définissent pas non plus le genre. Plutôt que de voir le sexe biologique comme présocial ou un fait naturel,  le corps est compris comme un lieu d’inscriptions  (cf. <![CDATA[<a href="#cwrc:3d49dc32-ac97-4abd-a252-573c52b463cf"> (Elizabeth Grosz, 1994)</a>]]>) qui est aussi socialement construit et épigénétiquement modelé par des facteurs environnementaux <![CDATA[<a href="#cwrc:5e45242f-0c2e-4aaa-8ddb-ac54dd0e6249">(N. Katherine Hayles, 2012)</a>]]>. Selon la formulation de la neurologiste féministe Gillian Einstein, &quot;Le monde écrit sur le corps&quot; <![CDATA[<a href="#cwrc:842ffbb4-11de-4212-8e6e-9d4d8d28d3a5">(Gillian Einstein, 2012)</a>]]>. Cette ontologie ne fournit donc pas de termes séparés pour le sexe et le genre en tant qu’entités distinctes. Au contraire, elle privilégie les termes associés au genre, en admettant qu’ils sont conventionnellement mais non nécessairement associés au sexe, et qu’il existe un glissement constant de ces catégories au fil des discours, des actions et des institutions. Loin d’indiquer une part d’expérience universelle, le genre rencontre d’autres catégories identitaires et divers vecteurs d’oppression comme la classe, la race, la couleur ou l’héritage géographique, produisant des expériences et des intérêts très différents pour les personnes d’un même genre. Un exemple est le mouvement de la Chrétienté Musculaire, formé au Royaume-Uni au 19ème siècle, qui relie la religion à l’identité masculine. Une telle interaction entre différentes formes d’oppression est appelée &quot;intersectionnalité&quot; <![CDATA[ <a href="#cwrc:b9eeccf9-9380-4341-99dc-a83f5ee32909">(Kimberlé Crenshaw, 1989)</a>]]>
       Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les annotations associées fournies par Genre Contexte, si disponibles. 
-
     </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -766,7 +771,12 @@ At the heart of a persona is an identity that is interacted with by others and t
     <foaf:name xml:lang="en">man (gender)</foaf:name>
     <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="en">
+      Indicates identification with or labelling as the gender man, and who is often but not necessarily understood to be sexed male.
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      Indique l’identification ou l’assignation au genre féminin, et qui est souvent mais non nécessairement de sexe féminin. 
+    </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -776,7 +786,68 @@ At the heart of a persona is an identity that is interacted with by others and t
     <foaf:name xml:lang="en">woman (gender)</foaf:name>
     <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="en">
+      Indicates a subject identification with or labelling as the gender woman, and who is often but not necessarily understood to be sexed female. &quot;One is not born, but rather becomes, woman&quot; <![CDATA[<a href="#cwrc:c6a678e5-8fc6-41bc-8631-7cfb7116017e"> (Simone de Beauvoir, 1973) </a>]]>
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      Indique l’identification ou l’assignation au genre féminin, et qui est souvent mais non nécessairement de sexe féminin. &quot;On ne naît pas femme, on le devient&quot;: <![CDATA[ <a href="#cwrc:c6a678e5-8fc6-41bc-8631-7cfb7116017e"> (Simone de Beauvoir, 1973) </a>]]>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Gender>
+  <cwrc:Gender rdf:about="#cisGender">
+    <rdfs:label xml:lang="en">cisgender</rdfs:label>
+    <rdfs:label xml:lang="fr">cisgenre</rdfs:label>
+    <skos:inScheme rdf:resource="#Gender"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">
+      Indicates alignment between a person's gender identity and their sex as understood or assigned at birth. As per the Trans Student Educational Resources (TSER), &quot;the term is not indicative of gender expression, sexual orientation, hormonal makeup, physical anatomy, or how one is perceived in daily life&quot; (<![CDATA[<a href="#cwrc:7b624412-74a3-4560-a038-d59b747ee9c7">(TSER, 2017)</a>]]>).
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      Indique l’alignement entre le genre et le sexe d’une personne, tel que celui-ci a été compris ou assigné à sa naissance. Selon le Trans Student Educational Resources (TSER), &quot;le terme n’est pas révélateur de l’expression du genre, de l’orientation sexuelle, de la constitution hormonale, de l’anatomie, ou de la façon dont une personne est perçue au quotidien&quot;  (<![CDATA[<a href="#cwrc:7b624412-74a3-4560-a038-d59b747ee9c7">(TSER, 2017)</a>]]>)
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Gender>
+  <cwrc:Gender rdf:about="#cisWoman">
+    <rdfs:label xml:lang="en">ciswoman</rdfs:label>
+    <rdfs:label xml:lang="fr">femme cisgenre</rdfs:label>
+    <skos:inScheme rdf:resource="#Gender"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">
+      Indicates a cisgendered woman.
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      Indique une femme cisgenre. 
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Gender>
+  <cwrc:Gender rdf:about="#cisMan">
+    <rdfs:label xml:lang="en">cisman</rdfs:label>
+    <rdfs:label xml:lang="fr">homme cisgenre</rdfs:label>
+    <skos:inScheme rdf:resource="#Gender"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">
+      Indicates a  cisgendered man.
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      Indique un homme cisgenre. 
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Gender>
+  <cwrc:Gender rdf:about="#transGender">
+    <rdfs:label xml:lang="en">transgender</rdfs:label>
+    <rdfs:label xml:lang="fr">transgenre</rdfs:label>
+    <skos:inScheme rdf:resource="#Gender"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">
+      Indicates divergence of a person's gender identity from their sex as understood or assigned at birth. Unlike transwoman or transman, &quot;the  term transgender is not indicative of gender expression,&quot; nor is it indicative of &quot;sexual orientation, hormonal makeup, physical anatomy, or how one is perceived in daily life.&quot;(<![CDATA[<a href="#cwrc:7b624412-74a3-4560-a038-d59b747ee9c7">(TSER, 2017)</a>]]>)
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      Indique la discordance entre le genre et le sexe d’une personne, tel que celui-ci a été compris ou assigné à sa naissance. Contrairement à femme trans ou homme trans, &quot;le terme n’est pas révélateur de l’expression du genre, de l’orientation sexuelle, de la constitution hormonale, de l’anatomie, ou de la façon dont une personne est perçue au quotidien&quot;  (<![CDATA[<a href="#cwrc:7b624412-74a3-4560-a038-d59b747ee9c7">(TSER, 2017)</a>]]>).
+    </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -786,7 +857,12 @@ At the heart of a persona is an identity that is interacted with by others and t
     <foaf:name xml:lang="en">transman/transmale (gender)</foaf:name>
     <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="en">
+      Typically indicates identification as a man while having been assigned the sex &quot;female&quot; at birth. Some trans men prefer to drop the prefix &quot;trans&quot; and keep the label &quot;man&quot;  (<![CDATA[<a href="#cwrc:7b624412-74a3-4560-a038-d59b747ee9c7">(TSER, 2017)</a>]]>). This definition includes trans boys too.
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      Indique habituellement  l’identification en tant qu’homme alors que le sexe &quot;féminin&quot; a été assigné à la naissance. Certains hommes trans renoncent à la mention &quot;trans&quot; et préfèrent utiliser le terme &quot;homme&quot; seul. (<![CDATA[<a href="#cwrc:7b624412-74a3-4560-a038-d59b747ee9c7">(TSER, 2017)</a>]]>). Cette définition inclut également les garçons trans.
+    </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -796,7 +872,12 @@ At the heart of a persona is an identity that is interacted with by others and t
     <foaf:name xml:lang="en">transwoman/transfemale (gender)</foaf:name>
     <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="en">
+      Typically indicates identification as a woman while having been assigned the sex &quot;male&quot; at birth. Some trans women prefer to drop the prefix &quot;trans&quot; and keep the label &quot;woman&quot; (<![CDATA[<a href="#cwrc:7b624412-74a3-4560-a038-d59b747ee9c7">(TSER, 2017)</a>]]>). This definition includes trans girls too.
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      Indique habituellement l’identification en tant que femme alors que le sexe &quot;masculin&quot; a été assigné à la naissance. Certaines femmes trans renoncent à la mention &quot;trans&quot; et préfèrent utiliser le terme &quot;femme&quot; seul. (<![CDATA[<a href="#cwrc:7b624412-74a3-4560-a038-d59b747ee9c7">(TSER, 2017)</a>]]>). Cette définition inclut également les filles trans.
+    </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -805,6 +886,12 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">non-binaire</rdfs:label>
     <skos:note>Listed as non-binary? in french</skos:note>
     <skos:inScheme rdf:resource="#Gender"/>
+    <skos:definition xml:lang="en">
+      Indicates refusal of  dominant gender categories and cisnormativity, and identification with both, a combination, or neither of the dominant binary gender roles. The term is strongly associated with the late twentieth and twenty-first centuries. It comes from deconstructionist and post-structuralist theory, and was coined by <![CDATA[<a href="#cwrc:fab56e35-9796-4e6d-861d-a6b626f5714d">Teresa de Lauretis at a conference in 1990</a>]]>. Because &quot;queer&quot; identity is recent, its definition is still debated among scholars and activists. Even though it is not rigidly defined, the term is increasingly deployed to refer to a large category of people who are not &quot;straight&quot;, in a sense that is not restricted to sexual orientation. Following <![CDATA[ <a href="cwrc:825995b3-3b66-4e0a-a62d-d8649aaead78">Judith Butler</a>]]>, queerness is not understood as an essence, but best described as a doing or performance, a way to situate oneself deliberately against traditional notions of gender. See https://en.wikipedia.org/wiki/Genderqueer.
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      Indique le refus des catégories genrées dominantes et de  la cisnormativité, l’identification aux deux, à aucun, ou à une combinaison des rôles genrés dominants. Le terme est fortement associé associé à la fin du 20e siècle et au 21e siècle. Il provient des théories déconstructionnistes et poststructuralistes, et fut formulé pour la première fois par  <![CDATA[<a href="#cwrc:fab56e35-9796-4e6d-861d-a6b626f5714d">Teresa de Lauretis lors d'une conférence en 1990</a>]]>. Du fait que le terme &quot;queer&quot; est assez récent, il est toujours sujet à des discussions parmi les chercheurs et les activistes. Même s’il ne possède pas de définition définitive, le terme est de plus en plus utilisé pour référer à une large catégorie de personnes qui ne sont pas &quot;hétérosexuel/les&quot;, dans un sens qui va au-delà de l’orientation sexuelle. Selon <![CDATA[ <a href="cwrc:825995b3-3b66-4e0a-a62d-d8649aaead78">Judith Butler</a> ]]>, l’identité queer ne peut pas être compris comme une essence, mais est plutôt performative et s’actualise à travers des actions, au sein d’une posture délibérément  à contre-courant des acceptions traditionnelles du genre. Voir https://fr.wikipedia.org/wiki/Queer. 
+    </skos:definition>
     <rdf:type rdf:resource="http://www.w8.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -813,6 +900,12 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="en">androgynous</rdfs:label>
     <rdfs:label xml:lang="fr">androgyne</rdfs:label>
     <skos:inScheme rdf:resource="#Gender"/>
+    <skos:definition xml:lang="en">
+      Indicates gender ambiguity or indeterminacy, and the adoption or presentation of a blend of both masculine and feminine gender attributes and behaviour. The term is strongly associated with the nineteenth and twentieth centuries, when it was redefined by Jungian theories and later by Jungian feminist psychologists <![CDATA[<a href="#cwrc:72ce1f91-b3d5-4b7b-8b76-dc674513bec1">(Elizabeth Wright, 1992)</a>]]>. Androgyny may involve cross-dressing, or appropriation of external attributes usually assigned to the supposedly opposite sex or gender. It may be understood as gender indetermination, gender neutrality, or a fairly balanced mix of male and female attributes. The term also has political significance in some feminist circles. For example, androgyny is an important feature in Virginia Woolf’s vision of writing and creative processes (<![CDATA[ <a href="#cwrc:db3de175-7d4a-4860-908b-a905b9cc9b07">(Virginia Woolf, 1929)</a>]]>).
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      Indique l'ambiguïté ou à l’indétermination du genre, avec l’adoption ou la présentation d’une combinaison de différents attributs et comportements associés aux genres féminin et masculin. Le terme est fortement associé au 19e et au 20e siècles, lorsqu’il est redéfini par C. G. Jung et plus tard par les féministes jungiennes <![CDATA[<a href="#cwrc:72ce1f91-b3d5-4b7b-8b76-dc674513bec1">(Elizabeth Wright, 1992)</a>]]>. L’androgynie implique éventuellement le travestissement, ou l’appropriation d’attributs externes traditionnellement associés au sexe opposé. Elle peut être interprétée comme un genre indéterminé, neutre ou un mélange plus ou moins équilibré d’attributs féminins et masculins. Le terme possède également une connotation politique dans certains cercles féministes. Par exemple, le thème de l’androgynie est important pour Virginia Woolf dans sa conception des processus de création et d’écriture. (<![CDATA[ <a href="#cwrc:db3de175-7d4a-4860-908b-a905b9cc9b07">(Virginia Woolf, 1929)</a>]]>).
+    </skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -4434,6 +4527,12 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">est de genre (autodéclaré)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#Gender"/>
+    <skos:definition xml:lang="en">
+      A personal property, this indicates a person's self-defined gender. For more information on this property, see gender.
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      Une propriété personnelle, qui indique le genre autoproclamé d’une personne. Pour plus d’information, voir genre/gender.
+    </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>

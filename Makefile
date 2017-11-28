@@ -33,7 +33,7 @@ $(ONTOLOGY)-$(ONTOLOGY_DATE).nt: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 	rapper $(ONTOLOGY)-$(ONTOLOGY_DATE).owl > $(ONTOLOGY)-$(ONTOLOGY_DATE).nt
 $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 	rapper -o turtle $(ONTOLOGY)-$(ONTOLOGY_DATE).owl > $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl	
-$(ONTOLOGY)-$(ONTOLOGY_DATE).bibli: $(ONTOLOGY).owl
+$(ONTOLOGY)-$(ONTOLOGY_DATE).bibli:
 	./scripts/getFedoraCollection.sh $(ONTOLOGY) $(ONTOLOGY)-$(ONTOLOGY_DATE).bibli
 $(DOCS_TEMPLATES): $(DOCS) $(ONTOLOGY).owl
 	./generateTermDocumentation.sh doc $(ONTOLOGY)-docs/
