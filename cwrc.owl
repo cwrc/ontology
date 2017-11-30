@@ -1151,8 +1151,8 @@ At the heart of a persona is an identity that is interacted with by others and t
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Eurasian_(mixed_ancestry)"/>
   </cwrc:RaceColour>
   <owl:Class rdf:ID="RaceEthnicity">
-    <rdfs:label xml:lang="en">race and/or ethnicity</rdfs:label>
-    <rdfs:label xml:lang="fr">race et/ou ethnicité</rdfs:label>
+    <rdfs:label xml:lang="en">race or ethnicity</rdfs:label>
+    <rdfs:label xml:lang="fr">race ou ethnicité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en"/>
@@ -1165,20 +1165,180 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">ethnicité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">Ethnicity is a subclass of CulturalForm that captures information about a person's ethnic position. Ethnicity is a sub-element within culturalFormation and raceAndEthnicity. See raceAndEthnicity for a detailed description of the complexities of this discursive construction and the social practices surrounding it.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">
+      A subclass of Cultural Form for indicating a person's ethnicity, either as self-reported or as assigned by others, with accompanying context, where present, provided by Race Ethnicity Context annotations. Ethnicities are groups constructed on the conception of shared national, religious, geographical, racial, or cultural backgrounds or traditions, and particular ethnicities may be denigrated, lauded, or both, depending on the context. Ethnicities are shifting, historically constituted, and interestedly deployed categories whose use must be situated contextually and which are understood here finally as discursive or representational although they have real material impacts. As Angel Oquendo writes, &quot;Despite its long ‘materialist’ past in which it was taken to be synonymous with ‘race,’ the concept of ethnicity as used today does appear to focus on cultural rather than on physiognomic difference.&quot; (Angel R. Oquendo, &quot;Re-imagining the Latino/a Race&quot; in The Latino/a Condition: A Critical Reader edited by Richard Delgado, Jean Stefancic)<![CDATA[ <a href="http://beta.cwrc.ca/islandora/object/cwrc%3A65424c4e-5257-4e6c-962f-de12a7f11aea">1998</a>]]> This ontology therefore does not attempt to lay out an exact, fully defined, or mutually exclusive set of ethnic categories: this is an impossibility given their shifting use and the overlap among them and with identity categories for race, geography, and nationality, as demonstrated by Noel Ignatieve in his book How the Irish Became White <![CDATA[ <a href="https://www.zotero.org/groups/1018142/cwrc_ontology_references/items/itemKey/B89FNRTA">1995</a>]]>. Those using this class and its subclasses are encouraged to consult associated Race Or Ethnicity Context annotations, if available.
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      Cette sous-classe de Forme Culturelle indique l’ethnicité d’une personne en parallèle avec le contexte fourni par les annotations de Contexte Ethnique Et Racial lorsqu’il est présent. Une sous-classe de Forme Culturelle, elle indique l'ethnicité d’une personne, que celle-ci soit autodéclarée ou assignée par d’autres. Les ethnies sont des groupes qui se fondent sur une le partage de traditions ou d’héritages nationaux, religieux, géographiques, raciaux ou culturels; en fonction du contexte, certaines ethnies particulières sont dénigrées, glorifiées, ou les deux à la fois. Les ethnicités changeantes, historiquement constituées, développées de façon intéressée, et dont l’usage doit être resitué en contexte, sont enfin comprises ici comme discursives et représentationnelles, même si leurs répercussions matérielles sont bien réelles. Angel Oquendo écrit que &quot;En dépit de son long passé ‘matérialiste’ au cours duquel il était synonyme de ‘race’, le concept d'ethnicité tel qu’il est employé aujourd’hui semble être centré sur la culture plutôt que sur la différence physionomique.&quot; (Angel R. Oquendo, &quot;Re-imagining the Latino/a Race&quot; in The Latino/a Condition: A Critical Reader édité par Richard Delgado, Jean Stefancic) Cette ontologie ne prétend donc pas offrir un ensemble de catégories ethniques exact, complètement défini, ou mutuellement exclusif; cela est impossible étant donné leur utilisation en changement constant et leur chevauchement mutuel ou avec d’autres catégories identitaires utilisées pour la race, la géographie ou la nationalité. Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les annotations de Contexte Ethnique Et Racial lorsqu’ils sont disponibles.
+    </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+  <cwrc:Ethnicity rdf:about="#africanEthnicity">
+    <rdfs:label xml:lang="en">African</rdfs:label>
+    <rdfs:label xml:lang="fr">Africain</rdfs:label>
+    <foaf:name xml:lang="en">African (ethnicity)</foaf:name>
+    <rdf:value>black African descent</rdf:value>
+    <skos:definition xml:lang="en">
+      &quot;The ethnic groups of Africa number in the thousands, each generally having its own language (or dialect of a language) and culture. The ethnolinguistic groups include various Afro-Asiatic, Khoisan, Niger-Congo and Nilo-Saharan populations.&quot; <![CDATA[ <a href="http://dbpedia.org/page/List_of_ethnic_groups_of_Africa">DBpedia</a>]]>
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      &quot;Cet article propose une liste des groupes ethniques d'Afrique, non exhaustive (on peut en dénombrer près de 2 000 sur le continent africain et à Madagascar) et en cours d'élaboration. Comme il s'agit de sociétés vivantes, ces distinctions et divisions sont toujours discutées et en évolution, il n'en existe donc pas de représentation unique. La notion d'ethnie est controversée au sein de l'anthropologie contemporaine, notamment francophone. En particulier, il n'existe pas d'accord sur des critères permettant de délimiter tous les groupes (langue, culture, territoire, sentiment d'appartenance…) Ce répertoire alphabétique a donc surtout une finalité pratique. Il appartient à chaque article d'apporter précisions et mise en perspective historique.&quot;<![CDATA[ <a href="http://dbpedia.org/page/Liste_des_groupes_ethniques_d%27Afrique">DBpedia</a>]]>
+    </skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/List_of_ethnic_groups_of_Africa"/>
+    <skos:inScheme rdf:resource="#Ethnicity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="#blackLabel"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Ethnicity>
+  <cwrc:Ethnicity rdf:about="#african-americanEthnicity">
+    <rdfs:label xml:lang="en">African-American</rdfs:label>
+    <rdfs:label xml:lang="fr">Afro-américain</rdfs:label>
+    <rdf:value>African-Americans</rdf:value>
+    <skos:definition xml:lang="en">
+      &quot;African Americans (also referred to as Black Americans or Afro-Americans) are an ethnic group of Americans (citizens or residents of the United States) with total or partial ancestry from any of the Black racial groups of Africa. The term may also be used to include only those individuals who are descended from enslaved Africans. As a compound adjective the term is usually hyphenated as African-American.&quot; <![CDATA[ <a href="http://dbpedia.org/page/African_Americans">DBpedia</a>]]>
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      &quot;Les Afro-Américains, également appelés Noirs américains ou, plus rarement, Africains-Américains, sont les citoyens des États-Unis ayant des ancêtres originaires d'Afrique noire. La grande majorité des Afro-Américains est descendante des esclaves déportés entre le début du xviie et le début du xixe siècle. Longtemps victimes de l'esclavage, de la ségrégation raciale et de la discrimination (en), la reconstruction après la guerre de Sécession, la déségrégation et le Mouvement des droits civiques constituent autant d'étapes vers la reconnaissance des droits des Afro-Américains. L’accession de Barack Obama à la tête des États-Unis en 2009 constitue bien d’un certain point de vue la fin de ce long cheminement mais n'empêche pas que les classes sociales afro-Américaines les plus démunies soient toujours confrontées au racisme et à la discrimination, notamment par certains membres des forces de police américaine.&quot;<![CDATA[ <a href="http://dbpedia.org/page/Afro-Américains">DBpedia</a>]]>
+    </skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/African_Americans"/>
+    <skos:inScheme rdf:resource="#Ethnicity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="#blackLabel"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Ethnicity>
+  <cwrc:Ethnicity rdf:about="#ashkenaziJewishEthnicity">
+    <rdfs:label xml:lang="en">Ashkenazi Jewish</rdfs:label>
+    <rdfs:label xml:lang="fr">Juif ashkénaze</rdfs:label>
+    <rdf:value>Ashkenazim, or German Jewish</rdf:value>
+    <rdf:value>Ashkenazim</rdf:value>
+    <skos:definition xml:lang="en">
+      &quot;Ashkenazi Jews, also known as Ashkenazic Jews or simply Ashkenazim (Hebrew: אַשְׁכְּנַזִּים, Ashkenazi Hebrew pronunciation: [ˌaʃkəˈnazim], singular: [ˌaʃkəˈnazi], Modern Hebrew: [aʃkenaˈzim, aʃkenaˈzi]; also יְהוּדֵי אַשְׁכֲּנַז Y'hudey Ashkenaz), are a Jewish diaspora population who coalesced as a distinct community of Jews in the Holy Roman Empire around the end of the 1st millennium. The traditional diaspora language of Ashkenazi Jews consisted of various dialects of Yiddish.&quot; <![CDATA[ <a href="http://dbpedia.org/page/Ashkenazi_Jews">DBpedia</a>]]>
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      &quot;L'appellation Ashkénaze, Ashkenaze ou Achkenaze désigne 'les Juifs de l'Europe occidentale, centrale et orientale qui sont d'origine et de langue germaniques par opposition à ceux qui sont originaires d'Espagne et sont dits séfarades (sefardim)'  et aux Juifs descendant des communautés juives des régions proche et moyen-orientales dits Mizrahim. Leur nom vient du patriarche biblique Ashkenaz. Les communautés ashkénazes se sont principalement concentrées en Allemagne, en Pologne, en Russie, dans l'ancien Empire austro-hongrois et, de façon plus clairsemée, dans le reste de l'Europe centrale et orientale. Les Ashkénazes sont caractérisés par des coutumes, un héritage culturel et des traditions religieuses particulières. À la différence des communautés séfarades ou mizrahim, la langue vernaculaire des Ashkénazes est le yiddish5, variété de moyen-haut allemand enrichie d’emprunts à l’hébreu, au polonais et au russe6). Certaines sources attestent de leur présence dans toute l'Europe du nord-ouest au début du Moyen  ge. Les Ashkénazes constituent aujourd'hui la catégorie la plus nombreuse du judaïsme mondial.&quot; <![CDATA[ <a href="http://dbpedia.org/page/Ashkénaze">DBpedia</a>]]>
+    </skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Ashkenazi_Jews"/>
+    <skos:inScheme rdf:resource="#Ethnicity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="#jewishLabel"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Ethnicity>
+  <cwrc:Ethnicity rdf:about="#bengaliEthnicity">
+    <rdfs:label xml:lang="en">Bengali</rdfs:label>
+    <rdfs:label xml:lang="fr">bengali</rdfs:label>
+    <rdf:value> </rdf:value>
+    <skos:definition xml:lang="en">
+      &quot;The Bengalis (বাঙালি Bangali), also spelled as the Bangalees, are a major Indo-Aryan ethnic group. They are native to the region of Bengal in South Asia, which is presently-divided between Bangladesh and the Indian state of West Bengal. They speak the Bengali language, the most easterly branch of the Indo-European language family. Bengalis are the third largest ethnic group in the world after the Han Chinese and the Arabs. They have four major religious subgroups, including Bengali Muslims, Bengali Hindus, Bengali Christians and Bengali Buddhists.&quot; <![CDATA[ <a href="http://dbpedia.org/page/Bengalis">DBpedia</a>]]>
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      &quot;Les Bengalis (Bengali: বাঙালি Bangali) sont le principal groupe ethnique de la région du Bengale partagée entre le Bangladesh et l'Inde. Les langues Bengalis sont les principales langues maternelles des Bengalis. Ils sont majoritaires au Bangladesh et dans les États du Bengale-Occidental et de Tripura d'Inde. Ils représentent quelque 150 millions d'individus au Bangladesh, 70 millions en Inde, 3 millions au Pakistan et forment d'importantes minorités d'Arabie Saoudite et des Émirats arabes unis. Environ 65 % des Bengalis sont Musulmans, 34 % Hindous, et moins de 1% sont de diverses confessions (dont Chrétiens). Les Bengalis Musulmans vivent principalement au Bangladesh, ou ils constituent plus de 80 % des croyants. Le reste des Bengalis, Hindous, vivent en Inde, surtout au Bengale-occidental. Au Bangladesh, entre 11 et 15% de la population Bengalie est Hindoue.&quot; <![CDATA[ <a href="http://dbpedia.org/page/Bengalis_(peuple)">DBpedia</a>]]>
+    </skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Bengalis"/>
+    <skos:inScheme rdf:resource="#Ethnicity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Ethnicity>
+  <cwrc:Ethnicity rdf:about="#blackEthnicity">
+    <rdfs:label xml:lang="en">black</rdfs:label>
+    <rdfs:label xml:lang="fr">noir</rdfs:label>
+    <skos:definition xml:lang="en">
+      &quot;Black people (seen both capitalized and with lowercase 'b') is a term used in certain countries, often in socially based systems of racial classification or of ethnicity, to describe persons who are perceived to be dark-skinned compared to other given populations. As such, the meaning of the expression varies widely both between and within societies, and depends significantly on context. For many other individuals, communities and countries, "black" is also perceived as a derogatory, outdated, reductive or otherwise unrepresentative label, and as a result is neither used nor defined. Different societies apply differing criteria regarding who is classified as "black", and these social constructs have also changed over time. In a number of countries, societal variables affect classification as much as skin color, and the social criteria for "blackness" vary. For example, in North America the term black people is not necessarily an indicator of skin color or ethnic origin, but is instead a socially based racial classification related to being African American, with a family history associated with institutionalized slavery. In South Africa and Latin America, mixed-race people are generally not classified as "black". In other regions such as Australasia, settlers applied the term "black" or it was used by local populations with different histories and ancestral backgrounds.&quot; <![CDATA[ <a href="http://dbpedia.org/page/Black_people">DBpedia</a>]]>
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      &quot;La catégorie Noir(e) est généralement employée en français pour distinguer un être humain ayant la peau foncée. S'il désigne souvent des êtres humains originaires d'Afrique subsaharienne, ce terme peut être utilisé pour qualifier des personnes asiatiques (Papous...) ou océaniennes (Aborigènes…). Les études scientifiques, fondées depuis le milieu du xxe siècle sur la génétique, ont affirmé que le concept de race n'est pas pertinent pour caractériser les différents sous-groupes géographiques de l'espèce humaine car la variabilité génétique entre individus d'un même sous-groupe est plus importante que la variabilité génétique moyenne entre sous-groupes géographiques. Le consensus scientifique actuel rejette en tout état de cause la présence d'arguments biologiques pour légitimer la notion de race, reléguée à une représentation arbitraire selon des critères morphologiques, ethnico-sociaux, culturels ou politiques, comme les identités. D'un point de vue biologique la peau foncée est un épiderme qui comporte un fort taux de mélanine, c'est donc une adaptation génétique issue de la sélection naturelle permettant une protection face aux radiations UV dans les milieux fortement ensoleillés. Ces milieux sont moins soumis au risque de carence en vitamine D à l'inverse des pays faiblement ensoleillés dans lesquels les individus ont la peau claire.&quot; <![CDATA[ <a href="http://dbpedia.org/page/Noir_(humain)">DBpedia</a>]]>
+    </skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Black_people"/>
+    <skos:inScheme rdf:resource="#Ethnicity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="#blackLabel"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Ethnicity>
+  <cwrc:Ethnicity rdf:about="#celticEthnicity">
+    <rdfs:label xml:lang="en">Celtic</rdfs:label>
+    <rdfs:label xml:lang="fr">Celte</rdfs:label>
+    <rdf:value>Highland</rdf:value>
+    <rdf:value>Highland (that is Celtic)</rdf:value>
+    <skos:definition xml:lang="en">
+      &quot;A modern Celtic identity emerged in Western Europe following the identification of the native peoples of the Atlantic fringe as Celts by Edward Lhuyd in the 18th century. Lhuyd and others equated the Celts described by Greco-Roman writers with the pre-Roman peoples of France, Great Britain and Ireland. The Irish and ancient British languages were thus Celtic languages. The descendants of these languages were the Brittonic (Breton, Cornish and Welsh variants) and Gaelic (Irish, Manx and Scottish variants) languages. These peoples were therefore modern Celts. Attempts were made to link their distinctive cultures to those of the Ancient Celtic people.&quot; <![CDATA[ <a href="http://dbpedia.org/page/Celts_(modern)">DBpedia</a>]]>
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      &quot;Les Celtes constituent une civilisation protohistorique qui se définit par l'usage de langues celtiques et par certains particularismes culturels. Ils ont jadis été présents sur une grande partie du continent européen et en Asie mineure. L'apogée de l'expansion celte se situe entre le viiie siècle av. J.-C. et le iiie siècle, marqué notamment par la civilisation laténienne au ve siècle av. J.-C. Une succession de conquêtes et de migrations les mènent jusqu'en Galatie, en Asie mineure. Ainsi, leur domination s'étendait dans l'Europe actuelle de Galice jusqu'à Galați.&quot; <![CDATA[ <a href="http://dbpedia.org/page/Celtes">DBpedia</a>]]>
+    </skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Celts_(modern)"/>
+    <skos:inScheme rdf:resource="#Ethnicity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Ethnicity>
+  <cwrc:Ethnicity rdf:about="#europeanEthnicity">
+    <rdfs:label xml:lang="en">European</rdfs:label>
+    <rdfs:label xml:lang="fr">Européen</rdfs:label>
+    <skos:definition xml:lang="en">
+      &quot;The ethnic groups in Europe are the focus of European ethnology, the field of anthropology related to the various ethnic groups that reside in the nations of Europe. According to German monograph Minderheitenrechte in Europa co-edited by Pan and Pfeil (2002) there are 87 distinct peoples of Europe, of which 33 form the majority population in at least one sovereign state, while the remaining 54 constitute ethnic minorities. The total number of national minority populations in Europe is estimated at 105 million people, or 14% of 770 million Europeans.&quot; <![CDATA[ <a href="http://dbpedia.org/page/Ethnic_groups_in_Europe">DBpedia</a>]]>
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      Les Européens sont les habitants de l'Europe. Au sens anthropologique, ils peuvent, plus simplement, être désignés par leur couleur de peau, c'est-à-dire comme &quot;Blancs&quot;, bien que ce dernier terme soit moins précis car n'étant pas exclusif aux populations européennes. Du fait de la colonisation et de l'émigration européennes durant les siècles passés, de nombreux Européens ont quitté l'Europe, et le monde d'aujourd’hui se caractérise par une 'diaspora' européenne dans de nombreux pays (Amérique du Nord, Australie, Nouvelle-Zélande, pays du Sud de l'Amérique latine…), qui forment le monde occidental. Ce gentilé peut aussi désigner, selon une conception strictement géographique, les habitants du continent européen ; on peut plus rarement désigner comme Européens les citoyens de l'Union européenne (même si tout Européen n'est pas nécessairement citoyen de l'Union Européenne).
+      <![CDATA[ <a href="https://fr.wikipedia.org/wiki/Europ%C3%A9ens">Wikipédia</a>]]>
+    </skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Ethnic_groups_in_Europe"/>
+    <skos:inScheme rdf:resource="#Ethnicity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Ethnicity>
+  <cwrc:Ethnicity rdf:about="#irishEthnicity">
+    <rdfs:label xml:lang="en">Irish</rdfs:label>
+    <rdfs:label xml:lang="fr">Irlandais</rdfs:label>
+    <skos:definition xml:lang="en">
+      &quot;The Irish people (Irish: Muintir na hÉireann or Na hÉireannaigh) are a nation and ethnic group native to the island of Ireland, who share a common Irish ancestry, identity and culture. Ireland has been inhabited for about 9,000 years according to archaeological studies (see Prehistoric Ireland). For most of Ireland's recorded history, the Irish have been primarily a Gaelic people (see Gaelic Ireland). Anglo-Normans conquered parts of Ireland in the 12th century, while England's 16th/17th century (re)conquest and colonization of Ireland brought a large number of English and Lowland Scots to parts of the island, especially the north. Today, Ireland is made up of the Republic of Ireland (an independent state), and the smaller Northern Ireland (a part of the United Kingdom).&quot; <![CDATA[ <a href="http://dbpedia.org/page/Irish_people">DBpedia</a>]]>
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      &quot;Le peuple irlandais (en irlandais : Muintir na hÉireann, na hÉireannaigh ou na Gaeil) est un groupe ethnique d'Europe de l'Ouest originaire d'Irlande, une île de l'archipel des îles Britanniques. Les personnes d'appartenance ethnique irlandaise, vivant en dehors de ce pays, sont communes dans beaucoup de pays du monde occidental, particulièrement dans les pays anglophones. D'ailleurs, ce sont les États-Unis qui accueillent le plus grand nombre de personnes d'ascendance irlandaise avec environ la moitié de la population irlandaise mondiale, c'est-à-dire dix fois plus qu'en Irlande elle-même. Néanmoins, ce n'est qu'en République d'Irlande et en Irlande du Nord qu'ils forment la majorité de la population.
+
+      À l'étranger, la langue Celte Irlandaise n'est pratiquement pas parlée, et cette langue s'efface surtout au profit de l'Anglais, en Amérique du Nord et en Océanie.&quot; <![CDATA[ <a href=""http://dbpedia.org/page/Irlandais_(peuple)"">DBpedia</a>]]>
+    </skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Irish_people"/>
+    <skos:inScheme rdf:resource="#Ethnicity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Ethnicity>
+  <cwrc:Ethnicity rdf:about="#sephardicJewishEthnicity">
+    <rdfs:label xml:lang="en">Sephardic Jewish</rdfs:label>
+    <rdfs:label xml:lang="fr">Juif séfarade</rdfs:label>
+    <rdf:value> </rdf:value>
+    <skos:definition xml:lang="en">
+      &quot;Sephardi Jews, also known as Sephardic Jews or simply Sephardim (Hebrew: סְפָרַדִּים, Modern Hebrew: Sfaraddim, Tiberian: Səp̄āraddîm; also יְהוּדֵי סְפָרַד Y'hudey Spharad, lit. "The Jews of Spain"), are a Jewish ethnic division whose ethnogenesis and emergence as a distinct community of Jews coalesced in the Iberian Peninsula around the start of the 2nd millennium (i.e., about the year 1000). They established communities throughout Spain and Portugal, where they traditionally resided, evolving what would become their distinctive characteristics and diasporic identity.&quot; <![CDATA[ <a href="http://dbpedia.org/page/Sephardi_Jews">DBpedia</a>]]>
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      &quot;Les Séfarades (parfois orthographié Sépharades) constituent une branche du judaïsme qui suit le judaïsme liturgique espagnol et portugais (en particulier dans la prononciation des mots des prières). Certains ont contribué aux sciences et techniques en al-Andalus comme Maïmonide, Abraham ibn Ezra, Juda Halevi, Nahmanide, Salomon ibn Gabirol et Moïse de Léon. Par extension, le terme « Séfarade » désigne aussi souvent les Juifs non ashkénazes qui ont souvent adopté le rite séfarade au contact des Juifs issus de l'émigration consécutive à l'expulsion des Juifs d'Espagne.&quot; <![CDATA[ <a href="http://dbpedia.org/page/Séfarade">DBpedia</a>]]>
+    </skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Sephardi_Jews"/>
+    <skos:inScheme rdf:resource="#Ethnicity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Ethnicity>
   <cwrc:Ethnicity rdf:about="#whiteEthnicity">
     <rdfs:label xml:lang="en">white</rdfs:label>
     <rdfs:label xml:lang="fr">blanc</rdfs:label>
     <foaf:name xml:lang="en">white (ethnicity)</foaf:name>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">
+      &quot;White people is a racial classification specifier, used for people of Europid ancestry, with the exact implications dependent on context. The contemporary usage of 'white people' or a 'white race; as a large group of (mainly European) populations contrasting with 'black', American Indian, 'colored' or non-white originates in the 17th century. It is today particularly used as a racial classifier in multiracial societies, such as the United States (White American), the United Kingdom (White British), Brazil (White Brazilian), and South Africa (White South African). Various social constructions of whiteness have been significant to national identity, public policy, religion, population statistics, racial segregation, affirmative action, white privilege, eugenics, racial marginalization and racial quotas. The term 'white race' or 'white people' entered the major European languages in the later 17th century, in the context of racialized slavery and unequal status in European colonies. Description of populations as 'white' in reference to their skin color predates this notion and is found in Greco-Roman ethnography and other ancient sources. Scholarship on race generally distinguishes the modern concept from pre-modern descriptions of collective difference.&quot; <![CDATA[ <a href="http://dbpedia.org/page/White_people">DBpedia</a>]]>
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      &quot;Le terme Blanc est employé, dans le langage courant, pour désigner des êtres humains caractérisés notamment par une couleur de peau claire. Le terme est généralement employé pour désigner les individus présentant des caractéristiques physiques qui sont historiquement associées aux populations européennes. La définition d'un 'individu blanc' diffère sensiblement d'après les contextes historiques, légaux, culturels, et géographiques. Dans certains contextes, en particulier aux États-Unis, le terme 'caucasien' est utilisé comme synonyme. D'un point de vue biologique, la peau blanche est une adaptation génétique issue de la sélection naturelle favorisant la synthèse de la vitamine D en milieu faiblement ensoleillé en permettant une pénétration plus profonde des rayons de soleil dans l'épiderme du fait d'un taux de mélanine plus bas2,3. Les latitudes tempérées sont moins soumises aux risques liés au rayonnement ultraviolet, à l'inverse des milieux fortement ensoleillés dans lesquels les individus ont la peau plus foncée.&quot; <![CDATA[ <a href="http://dbpedia.org/page/Blanc_(humain)&quot;>DBpedia</a>]]>
+    </skos:definition>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="#whiteLabel"/>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/White_people"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Ethnicity>
@@ -1186,13 +1346,88 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="en">Jewish</rdfs:label>
     <rdfs:label xml:lang="fr">Juif</rdfs:label>
     <foaf:name xml:lang="en">Jewish (Ethnicity)</foaf:name>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <rdf:value>a Jewish</rdf:value>
+    <rdf:value>Jewish</rdf:value>
+    <rdf:value>Jew</rdf:value>
+    <rdf:value>Judaism</rdf:value>
+    <rdf:value>Jewry</rdf:value>
+    <rdf:value>Jews</rdf:value>
+    <rdf:value>one-quarter Jewish</rdf:value>
+    <skos:definition xml:lang="en">
+      &quot;The Jews (/dʒuːz/; Hebrew: יְהוּדִים ISO 259-3 Yehudim, Israeli pronunciation [jehuˈdim]), also known as the Jewish people, are an ethnoreligious group originating from the Israelites, or Hebrews, of the Ancient Near East. Jewish ethnicity, nationhood and religion are strongly interrelated, as Judaism is the traditional faith of the Jewish nation, while its observance varies from strict observance to complete nonobservance. Jews originated as a national and religious group in the Middle East during the second millennium BCE, in the part of the Levant known as the Land of Israel. The Merneptah Stele appears to confirm the existence of a people of Israel, associated with the god El, somewhere in Canaan as far back as the 13th century BCE (Late Bronze Age). The Israelites, as an outgrowth of the Canaanite population, consolidated their hold with the emergence of the Kingdom of Israel, and the Kingdom of Judah. Some consider that these Canaanite sedentary Israelites melded with incoming nomadic groups known as 'Hebrews'. Though few sources in the Bible mention the exilic periods in detail, the experience of diaspora life, from the Ancient Egyptian rule over the Levant, to Assyrian Captivity and Exile, to Babylonian Captivity and Exile, to Seleucid Imperial rule, to the Roman occupation, and the historical relations between Israelites and their homeland, became a major feature of Jewish history, identity and memory. The worldwide Jewish population reached a peak of 16.7 million prior to World War II, but approximately 6 million Jews were systematically murdered during the Holocaust. Since then the population has slowly risen again, and as of 2015 was estimated at 14.3 million by the Berman Jewish DataBank, or less than 0.2% of the total world population (roughly one in every 514 people). According to the report, about 43% of all Jews reside in Israel (6.4 million), and 40% in the United States (5.7 million), with most of the remainder living in Europe (1.4 million) and Canada (0.4 million). These numbers include all those who self-identified as Jews in a socio-demographic study or were identified as such by a respondent in the same household. The exact world Jewish population, however, is difficult to measure. In addition to issues with census methodology, disputes among proponents of halakhic, secular, political, and ancestral identification factors regarding who is a Jew may affect the figure considerably depending on the source. Israel is the only country where Jews form a majority of the population. The modern State of Israel was established as a Jewish state and defines itself as such in its Declaration of Independence and Basic Laws. Its Law of Return grants the right of citizenship to any Jew who requests it. Despite their small percentage of the world's population, Jews have significantly influenced and contributed to human progress in many fields, including philosophy, ethics, literature, business, fine arts and architecture, religion, music, theatre and cinema, medicine, as well as science and technology, both historically and in modern times.&quot; <![CDATA[ <a href="http://dbpedia.org/page/Jews">DBpedia</a>]]>
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      "&quot;Les Juifs (en hébreu : יְהוּדִים / yehoudim, en grec ancien : Ἰουδαῖοι / Ioudaĩoi, en latin : Iudaei, etc.) sont les membres d’un peuple lié à sa propre religion, le judaïsme, et au sens large du terme à une appartenance ethnique et religieuse.
+
+      La tradition juive relie leur ascendance aux patriarches Abraham, Isaac et Jacob également appelé Israël. Ils peuplent la Judée et le royaume d'Israël, structurant leur quotidien autour de la Bible hébraïque, laquelle comprend les cinq Livres de la Torah attribués à Moïse, les Livres des prophètes ultérieurs et d’autres écrits. La Bible définit leurs croyances, leur histoire, leur identité nationale et légifère dans tous les domaines de leur vie.
+
+      À la suite des aléas de leur histoire, les Juifs migrent ou sont déportés de la Judée et essaiment à travers le monde. La diaspora juive résulte principalement de la conjonction de deux facteurs, une volonté d'essaimage et la nécessité de fuir des persécutions. Tentant de conserver leur mode de vie ancestral au sein des populations avoisinantes dans lesquelles ils s’acculturent, ils développent des traditions religieuses, culinaires et des langues propres ainsi que d’autres traits spécifiques. Réciproquement, ils exercent un certain attrait sur leurs populations d’accueil et l’on enregistre dans l’Empire romain un nombre important de conversions au judaïsme. L’impact et la proportion de ces conversions font débat au sein des historiens. Leur histoire sur plus de deux millénaires en Europe est marquée par des persécutions qui culminent au xxe siècle avec la Shoah.
+
+      Les grandes révolutions de l’ère moderne entraînent chez nombre d’entre eux une perte ou un abandon de tout ou partie des repères traditionnels. Plusieurs tentatives sont menées pour les redéfinir en tant qu’entité confessionnelle, nationale ou culturelle de sorte qu’en français, l'usage commun distingue entre les Juifs (avec une majuscule — les 'personnes descendant de l'ancien peuple d'Israël') et les juifs (sans majuscule — 'personnes qui professent le judaïsme').
+
+      Le nombre total des Juifs contemporains est difficile à estimer avec précision, et fait l'objet de controverses, mais, selon une estimation effectuée en 2013, il serait d'environ 13,8 millions. La majorité d'entre eux vit en Israël et aux États-Unis, et les autres principalement en Europe, au Canada et en Amérique latine.&quot; <![CDATA[ <a href="http://dbpedia.org/page/Juifs">DBpedia</a>]]>
+    </skos:definition>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Jews"/>
     <skos:broader rdf:resource="#jewishLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+   </cwrc:Ethnicity>
+   <cwrc:Ethnicity rdf:about="#romaniEthnicity">
+     <rdfs:label xml:lang="en">Romani</rdfs:label>
+     <rdfs:label xml:lang="fr">rom</rdfs:label>
+     <rdf:value>gypsy</rdf:value>
+     <rdf:value>gypsies</rdf:value>
+     <rdf:value>gipsy</rdf:value>
+     <rdf:value>Roma</rdf:value>
+     <rdf:value></rdf:value>
+     <rdf:value></rdf:value>
+     <skos:definition xml:lang="en">
+       &quot;The Romani (also spelled Romany; /ˈroʊməni/, /ˈrɒ-/), or Roma, are a traditionally nomadic ethnic group, living mostly in Europe and the Americas and originating from the northern regions of the Indian subcontinent, presumably from where the states Rajasthan, Haryana, and Punjab exist today. The Romani are widely known among English-speaking people by the exonym "Gypsies" (or "Gipsies"), which some people consider pejorative due to its connotations of illegality and irregularity.&quot;<![CDATA[ <a href="http://dbpedia.org/page/Romani_people">DBpedia</a>]]>
+     </skos:definition>
+     <skos:definition xml:lang="fr">
+       "&quot;Les Roms (parfois écrit Rroms, également désignés en français sous les noms de Tziganes, Gitans, Bohémiens, Manouches ou Romanichels selon les pays d'où ils sont supposés venir notamment, par les appellations d'origine scientifique Kalés ou Sintis, ou encore gens du voyage par confusion ou vision fantasmée, l'immense majorité étant sédentaire) forment un ensemble de populations établies dans divers pays du monde et se considérant comme formant un seul peuple, en raison de leur origine et de leur culture communes. Originaires de la péninsule indienne, avec des langues initiales qu'on croit originaires du nord-ouest du sous-continent indien, ce peuple, constitué de minorités vivant entre l'Inde et l'Atlantique, puis sur le continent américain, est connu par diverses dénominations exonymes locales. Rom se propose comme une appellation endonyme unique, signifiant « homme accompli et marié au sein de la communauté » en langue romani.
+
+       Présentes en Europe dès le xie siècle, les populations roms de tous les pays formeraient ensemble, au xxie siècle, selon une étude faite en 1994 pour le conseil de l'Europe, la minorité 'la plus importante en termes numériques'.&quot; <![CDATA[ <a href="http://dbpedia.org/page/Roms">DBpedia</a>]]>
+     </skos:definition>
+     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Romani_people"/>
+     <skos:inScheme rdf:resource="#Ethnicity"/>
+     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+     <void:inDataset rdf:resource="#datasetdefinition"/>
+   </cwrc:Ethnicity>
+   <cwrc:Ethnicity rdf:about="#thracianEthnicity">
+     <rdfs:label xml:lang="en">Thracian</rdfs:label>
+     <rdfs:label xml:lang="fr">thrace</rdfs:label>
+     <rdf:value>Thracians</rdf:value>
+     <skos:definition xml:lang="en">
+       &quot;The Thracians (/ˈθreɪʃənz/; Ancient Greek: Θρᾷκες Thrāikes, Latin: Thraci) were a group of Indo-European tribes inhabiting a large area in southeastern Europe. They spoke the Thracian language – a scarcely attested branch of the Indo-European language family. The study of Thracians and Thracian culture is known as Thracology.&quot; <![CDATA[ <a href="http://dbpedia.org/page/Thracians">DBpedia</a>]]>
+     </skos:definition>
+     <skos:definition xml:lang="fr">
+       &quot;Les Thraces constituaient un peuple de langue paléo-balkanique (donc indo-européenne) dont les tribus, signalées dans les Balkans en même temps que les Achéens, les Éoliens et les Ioniens, partageaient un ensemble de croyances, un mode de vie et une même langue avec des variantes et dialectes. Leur civilisation, encore mal connue, s'est épanouie du IIe millénaire av. J.‑C. au iiie siècle av. J.-C., sur un substrat anté-indo-européen dit « pélasge » développé dès le Ve millénaire av. J.‑C. comme civilisation agricole et pourvue de nécropoles richement dotées en or. L'étymologie de ce nom reste incertaine. Orale, la culture des Thraces était faite de légendes et de mythes incluant la croyance en l'immortalité sous la forme de l'« orphisme », décrit par Hérodote. Les connaissances que nous avons de ce peuple viennent des auteurs grecs anciens et de découvertes archéologiques récentes.&quot; <![CDATA[ <a href="http://dbpedia.org/page/Thraces">DBpedia</a>]]>
+     </skos:definition>
+     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Thracians"/>
+     <skos:inScheme rdf:resource="#Ethnicity"/>
+     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+     <void:inDataset rdf:resource="#datasetdefinition"/>
+   </cwrc:Ethnicity>
+   <cwrc:Ethnicity rdf:about="#Ethnicity">
+     <rdfs:label xml:lang="en">Wendish</rdfs:label>
+     <rdfs:label xml:lang="fr">Wende</rdfs:label>
+     <rdf:value>Wends or Sorbs</rdf:value>
+     <skos:definition xml:lang="en">
+       &quot;Wends (Old English: Winedas, Old Norse: Vindr, German: Wenden, Winden, Danish: vendere, Swedish: vender, Polish: Wendowie) is a historical name for the West Slavs living near Germanic settlement areas. It does not refer to a homogeneous people, but to various peoples, tribes or groups depending on where and when it is used.&quot; <![CDATA[ <a href="http://dbpedia.org/page/Wends">DBpedia</a>]]>
+     </skos:definition>
+     <skos:definition xml:lang="fr">
+       &quot;Le nom de Wendes, transcription germanique du latin Venedi, peut avoir plusieurs sens : Les Wendes (Venedi) en l'an 125, dans la perspective historique. Le mot désigne l'ensemble des Slaves. dans une perspective historique, communément admise par les milieux universitaires, l'ethnonyme Wenden désigne toutes les tribus slaves en allemand : c'est le nom donné au Moyen  ge par les Allemands à tous les peuples slaves établis sur le territoire délimité par l'Oder, la Spree, la Saale et les monts Métallifères. Les Wendes de la basse Elbe et de la côte Baltique étaient des Polabes et des Obodrites, ceux du sud-est des Slovinces et ceux de l'Elbe supérieure des Sorabes.&quot;<![CDATA[<a href="http://dbpedia.org/page/Wendes">DBpedia</a>]]>
+     </skos:definition>
+     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/ "/>
+     <skos:inScheme rdf:resource="#Ethnicity"/>
+     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+     <void:inDataset rdf:resource="#datasetdefinition"/>
    </cwrc:Ethnicity>
   <!-- Religion -->
   <owl:Class rdf:ID="Religion">
@@ -1573,12 +1808,12 @@ At the heart of a persona is an identity that is interacted with by others and t
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Fifth_Monarchists"/>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broaderTransitive rdf:resource="#dissentProtestant"/>
     <skos:broaderTransitive rdf:resource="#millenarianism"/>
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broaderTransitive rdf:resource="#dissentProtestant"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#lollardy">
     <rdfs:label xml:lang="en">Lollardy</rdfs:label>
@@ -1673,11 +1908,11 @@ At the heart of a persona is an identity that is interacted with by others and t
     <skos:definition xml:lang="nl">Het Religieus Genootschap der Vrienden, beter bekend als quakers, verouderd Nederlands kwakers, vormt een groep ondogmatische gelovigen, die zijn wortels vindt in de christelijke traditie. Het leven en de overgeleverde uitspraken van Jezus vormen een belangrijke inspiratiebron. <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Quakers"/>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
-    <skos:broaderTransitive rdf:resource="#protestantism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#protestantism"/>
     <skos:broaderTransitive rdf:resource="#dissentProtestant"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#spiritualism">
@@ -4693,6 +4928,12 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">d'ethnicité (autodéclarée)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#Ethnicity"/>
+    <skos:definition xml:lang="en">
+      A subclass of Cultural Form for indicating a person's self-reported ethnicity, with accompanying context, where present, provided by Race Ethnicity Context annotations. For more information on this property, see Ethnicity.
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      Une sous-classe de Forme Culturelle qui indique l’ethnicité autodéclarée, accompagnée du contexte fourni par les annotations de Contexte Ethnique Et Racial là ou il est disponible. Pour plus d’informations sur cette propriété, voir Ethnicité.
+    </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
