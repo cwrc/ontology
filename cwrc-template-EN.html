@@ -109,15 +109,13 @@
     primary source for understanding how the ontology works.  </p>
      <p>The intended audience of this document is the scholar that wishes to
     understand how the ontology tackles concrete data recording problems and
-    the linked open data practitioners that intends to make use of this
+    the linked open data practitioner that intends to make use of this
     ontology.  </p> 
 
     <h3 id="status_ontology">3. Status of this dynamic ontology</h3>
 
     <p>
-     This document and the associated ontology will grow iteratively with
-    modifications made over time as data is progressively translated and
-    further ontological concerns identified over time.  Continuity is
+      This document and the associated ontology will grow iteratively with modifications made over time as data is progressively translated and further ontological concerns are identified.  Continuity is
     ensured using the OWL ontology annotations for ontological compatibility
     and for deprecated classes and properties.  Deprecated ontology terms
     remain present but are marked as such.  </p>
@@ -207,7 +205,7 @@ The Orlando Project’s XML schemas and the CWRC Project’s XML schema are avai
  
     <p>Vocabulary reuse presented some challenges to the CWRC in that the
  vocabularies used in the markup from which the RDF is derived can be
- ambiguously employed to an extend that reuse is difficult.  A typical
+ ambiguously employed to an extent that reuse is difficult.  A typical
  example is that of religion, where much ambiguity exists as to
     whether the term actually represents the religion as a belief system,
     formal membership in the associated religious organization, the social
@@ -323,7 +321,7 @@ The Orlando Project’s XML schemas and the CWRC Project’s XML schema are avai
     particular contexts.</p>
     
     <p>While full, integrated traceability has always been a core need of
-    repeatable experiments, this comes as a complexity cost within a linked
+    repeatable experiments, this comes at a complexity cost within a linked
     open data set in that the queries required to retrieve basic information
     become unwieldy. To this end, the CWRC ontology records information in
     two different ways: through a series of <a href="#Context">Contexts</a>
@@ -335,7 +333,7 @@ The Orlando Project’s XML schemas and the CWRC Project’s XML schema are avai
 
     <p>Two basic structures are used within the ontology to achieve this: <a
     href="#Context">Context</a>s and <a href="#CulturalForm">Cultural Form</a>.
-    A cultural formation represent elements of lived social subjectivities
+    A cultural formation represents elements of lived social subjectivities
     and/or classification of people through categories such as race, gender, language, sexuality, or religion.
     Contexts are used to link a fragment of Orlando prose to the individual
     whom it references as well as to the specific cultural formation that is
@@ -352,8 +350,8 @@ The Orlando Project’s XML schemas and the CWRC Project’s XML schema are avai
  
  <p>Cultural Form sub-classes and instances describe the subject positions 
  of individuals through both <a href="#Context">Context</a>s and granular
- properties. This arrangements has its roots in the Orlando arrangement of
- Cultural Form encodings that pointed users towards a framework for 
+ properties. This arrangement has its roots in the Orlando arrangement of
+ Cultural Form encodings that points users towards a framework for 
  raising and debating complex matters for cultural investigation rather than invoking reified
 categories.</p>
 
@@ -375,7 +373,7 @@ not indicate the specific cultural formation being invoked, the specific instanc
 also means that linkages to other data sets or vocabularies can be made
 appropriately, since multiple representations of the same label are
 present within the CWRC ontology. As a last resort, or for data mining
-purposes, the term is also available as an concept whose actual Cultural
+purposes, the term is also available as a concept whose actual Cultural
 Form is undecided amongst the CWRC-defined options. This allows for
 linkages to an external ontology, such as can be required by text mining, without
 endorsing the corresponding definition or interpretation of the term.</p>
@@ -385,13 +383,13 @@ endorsing the corresponding definition or interpretation of the term.</p>
        <h4 id="granularproperties">c. Granular Properties</h4> 
        
        <p>
-       Granular properties provide a simple means of indicating cultural categories as  as presumed, perceived, or otherwise assigned to a person according to cultural conventions, or as self-reported by the person themselves. . Some of the properties are associations inherited from forebears.            
+       Granular properties provide a simple means of indicating cultural categories as  as presumed, perceived, or otherwise assigned to a person according to cultural conventions, or as self-reported by the person themselves. Some of the properties are associations inherited from forebears.            
       </p>
 
 
     <h4 id="taxonomiesontology">d. Built-in Taxonomies</h4>    
        <h5 id="religion_taxonomy">i. Religion</h5>
-          <p>The original Orlando data makes religious reporting a challenge in that the original contexts did not differentiation between
+          <p>The original Orlando data makes religious reporting a challenge in that the original contexts had no differentiation between
        religious belief, membership in a religious organization, and 
       absence of any religious belief combined with adherence to values or practices.</p>
        <p>We use a taxonomy for enumerating the categories associated with this spectrum. The taxonomy in
