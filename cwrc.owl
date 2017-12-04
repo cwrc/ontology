@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xml:base="http://sparql.cwrc.ca/ontologies/cwrc#" 
   xmlns="http://sparql.cwrc.ca/ontologies/cwrc#" 
-  xmlns:as="http://www.w3.org/ns/activitystreams#" 
   xmlns:bio="http://purl.org/vocab/bio/0.1/" 
   xmlns:cc="http://creativecommons.org/ns#" 
   xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" 
   xmlns:dbpedia="http://dbpedia.org/resource/" 
   xmlns:dcterms="http://purl.org/dc/terms/" 
-  xmlns:doap="http://usefulinc.com/ns/doap#"
-  xmlns:fibo="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/People/" 
   xmlns:foaf="http://xmlns.com/foaf/0.1/" 
   xmlns:eurovoc="http://eurovoc.europa.eu/"
   xmlns:geonames="http://sws.geonames.org/"
   xmlns:loc="http://id.loc.gov/vocabulary/relators/" 
-  xmlns:locl ="http://id.loc.gov/vocabulary/languages/"
-  xmlns:mil ="http://rdf.muninn-project.org/ontologies/military#"
-  xmlns:nif="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#" 
   xmlns:bibo="http://purl.org/ontology/bibo/"
   xmlns:oa="http://www.w3.org/ns/oa#" 
   xmlns:owl="http://www.w3.org/2002/07/owl#" 
   xmlns:prov="http://www.w3.org/ns/prov#" 
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
-  xmlns:rel="http://purl.org/vocab/relationship/" 
   xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
   xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#" 
   xmlns:time="http://www.w3.org/2006/time#" 
@@ -48,12 +41,6 @@
     <dcterms:description xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</dcterms:description>
     <skos:definition xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</skos:definition>
     <rdfs:comment xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</rdfs:comment>
-    <cwrc:CompetencyQuestion xml:lang="en">What journals does a particular author have works published in?</cwrc:CompetencyQuestion>
-    <cwrc:CompetencyQuestion xml:lang="en">What connections does a particular person have?</cwrc:CompetencyQuestion>
-    <cwrc:CompetencyQuestion xml:lang="en">What reviews exist for a particular book?</cwrc:CompetencyQuestion>
-    <cwrc:CompetencyQuestion xml:lang="en">Which people have published novels in a particular period that identify as a particular sex?</cwrc:CompetencyQuestion>
-    <cwrc:CompetencyQuestion xml:lang="en">Does a connection exist between two people?</cwrc:CompetencyQuestion>
-    <cwrc:CompetencyQuestion xml:lang="en">Does the ontology support mapping to Orlando Vocabulary Events?</cwrc:CompetencyQuestion>
     <owl:versionInfo>0.99.5</owl:versionInfo>
     <owl:priorVersion rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-2017-08-04"/>
     <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">ONTOLOGY_DATE</dcterms:date>
@@ -239,8 +226,7 @@
 
   <owl:Class rdf:ID="NaturalPerson">
     <rdfs:label xml:lang="en">natural person</rdfs:label>
-    <skos:definition xml:lang="en">A person; any member of the species homo sapiens.</skos:definition>
-    <rdfs:type rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/People/Person"/>
+    <skos:definition xml:lang="en">A person that is alive, or was alive at some point in time.</skos:definition>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:Class>
