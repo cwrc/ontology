@@ -220,7 +220,6 @@ def specgen(template, language):
 
     template = template.format(_header_=get_header_html(), _azlist_=azlist_html,
                                _terms_=terms_html, _deprecated_=deprecated_html)
-    # template = template.format(_header_="hello",_azlist_="pls",_terms_="work",_deprecated_="pls")
     return template
 
 
@@ -641,9 +640,8 @@ def get_header_html():
     latest_url = url[:-1]
     version_type = "English"
     if lang == "en":
-        url += "FR-"
         version_type = "Française"
-    url += header["date"] + ".html"
+    url += header["date"] + "-FR.html"
     html_str += """(<a href="%s">Version %s</a>)</h3>\n""" % (url, version_type)
     html_str += "<dl>\n"
     if header["prior"]:
