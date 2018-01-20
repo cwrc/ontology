@@ -27,6 +27,7 @@ my $taxonomy = $ARGV[1];
 my $lang = $ARGV[2];
 
 RDF::Trine::Parser->parse_url_into_model( $raw_file, $model );
+
 # gets base xml uri for use in other ontologies
 my $query = RDF::Query->new('SELECT * WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology>.
 }');
@@ -39,12 +40,23 @@ while (my $row = $iterator->next) {
 }
 
 my @allmaps;
+
 # Gets all instances of the chosen class
-my $query = RDF::Query->new('SELECT * WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> '.$namespaceUri.$taxonomy.'> .
-?uri <http://www.w3.org/2000/01/rdf-schema#label> ?label .
-FILTER(LANG(?label) = "" || LANGMATCHES(LANG(?label), "'.$lang.'"))
-}');
+my $query_str = 'SELECT * WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 
+    '.$namespaceUri.$taxonomy.'> .
+    ?uri <http://www.w3.org/2000/01/rdf-schema#label> ?label .
+    FILTER(LANG(?label) = "" || LANGMATCHES(LANG(?label), "'.$lang.'"))
+}';
+my $query = RDF::Query->new($query_str);
 my $iterator = $query->execute( $model );
+
+unless ($iterator->next) {
+    print "Query has failed, unable to generate diagraph!\n";
+    print "Here was the provided query based on the class provided: ".$taxonomy."\n\n" ;
+    print $query_str."\n";
+    exit 0;
+}
+
 print "digraph ".$taxonomy."Graph {\n
  size=\"30,30\";
  margin=0;\n";
@@ -64,4 +76,4 @@ while (my $row = $iterator->next) {
     print " $lhs [label=\"" . $row->{"label"}->value()."\" URL=".$uri."target=\"_parent\"]\n";
 }
 print "}";
-exit 0;
+exit();
