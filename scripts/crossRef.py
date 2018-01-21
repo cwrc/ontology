@@ -37,10 +37,14 @@ def get_full_uri(uri):
 def printXML(root):
     rough_string = '<?xml version="1.0" encoding="UTF-8"?>\n'
     rough_string += etree.tostring(root, encoding="unicode", pretty_print=True)
+    # Accounting for oddities in lxml not properly ignoring CDATA sections
     rough_string = rough_string.replace("&lt;", "<")
     rough_string = rough_string.replace("&gt;", ">")
-    rough_string = rough_string.replace('" <a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>',
-                                        '" <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>')
+    rough_string = rough_string.replace("<![CDATA[<a", "<a")
+    rough_string = rough_string.replace("a>]]>", "a>")
+
+    rough_string = rough_string.replace("<a href=", "<![CDATA[<a href=")
+    rough_string = rough_string.replace("</a>", "</a>]]>")
     print(str(rough_string))
 
 
@@ -50,8 +54,8 @@ def get_webpage_title(url):
         webpage = urllib.request.urlopen(url).read()
         title = str(webpage).split('<title>')[1].split('</title>')[0]
     except urllib.error.URLError:
-        print("%s is currently inaccessible" % url)
-        print("Unable to retrieve title from webpage.\n")
+        print("<!-- %s is currently inaccessible -->" % url)
+        print("<!-- Unable to retrieve title from webpage.\n-->")
     return title
 
 
