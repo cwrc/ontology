@@ -59,8 +59,8 @@ figures/religionTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: cwrc.owl scripts/create
 	./scripts/createTaxonomy.pl cwrc.owl Religion $(O_LANG) | unflatten -l 5 -c 10 | dot -ofigures/religionTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
 figures/politicalAffiliationTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: cwrc.owl scripts/createTaxonomy.pl
 	./scripts/createTaxonomy.pl cwrc.owl PoliticalAffiliation $(O_LANG) | unflatten -l 5 -c 10 | dot -ofigures/politicalAffiliationTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
-figures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: genre.owl scripts/createTaxonomy.pl
-	./scripts/createTaxonomy.pl genre.owl Genre $(O_LANG) | unflatten -l 5 -c 10 | dot -ofigures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
+#figures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: genre.owl scripts/createTaxonomy.pl
+#	./scripts/createTaxonomy.pl genre.owl Genre $(O_LANG) | unflatten -l 5 -c 10 | dot -ofigures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
 
 
 $(ONTOLOGY).html: $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html
@@ -73,7 +73,7 @@ $(ONTOLOGY).html: $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html
 testing-deploy: force all
 testing: all
 	cat $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html
-	cat $(ONTOLOGY)-$(ONTOLOGY_DATE)-FR-.html  | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY)-FR-$(ONTOLOGY_DATE).html
+	cat $(ONTOLOGY)-$(ONTOLOGY_DATE)-FR.html  | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE)-FR.html
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).owl /var/www/html/testing/.
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).nt /var/www/html/testing/.
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl /var/www/html/testing/.	
