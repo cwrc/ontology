@@ -35,8 +35,11 @@ def get_full_uri(uri):
 
 
 def printXML(root):
+    # etree.dump(root)
+
     rough_string = '<?xml version="1.0" encoding="UTF-8"?>\n'
-    rough_string += etree.tostring(root, encoding="unicode", pretty_print=True)
+    rough_string += (etree.tostring(root, encoding="utf-8", pretty_print=True)).decode('utf-8')
+    # rough_string += etree.tostring(root, encoding="unicode", pretty_print=True)
     # Accounting for oddities in lxml not properly ignoring CDATA sections
     rough_string = rough_string.replace("&lt;", "<")
     rough_string = rough_string.replace("&gt;", ">")
@@ -51,8 +54,9 @@ def printXML(root):
 def get_webpage_title(url):
     title = url
     try:
-        webpage = urllib.request.urlopen(url).read()
+        webpage = urllib.request.urlopen(url).read().decode('utf-8')
         title = str(webpage).split('<title>')[1].split('</title>')[0]
+        # print(title)
     except urllib.error.URLError:
         print("<!-- %s is currently inaccessible -->" % url)
         print("<!-- Unable to retrieve title from webpage.\n-->")
