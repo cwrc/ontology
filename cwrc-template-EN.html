@@ -1,38 +1,31 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-<html 
-  xmlns="http://www.w3.org/1999/xhtml"
-  xml:lang="en"
-> 
 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
   <head>
     <title>CWRC Ontology Specification - ONTOLOGY_VERSION</title>
     <meta http-equiv="content-type" content="text/xhtml+xml; charset=utf-8" />
     <!-- With Apologies to Dan Brickley and Libby Miller -->
     <link href="css/xmlns-style.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet"  type="text/css" />
-    <link href="css/cwrc.css" rel="stylesheet"  type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/cwrc.css" rel="stylesheet" type="text/css" />
     <link rel="mvcb:generatorAgent" type="application/rdf+xml" title="DOAP" href="https://raw.githubusercontent.com/muninn/ontology-tools/master/rdf/voidDescription.rdf#specgenMarkII" />
-
   </head>
 
   <body>
-
-{_header_}
-
-    <p class="copyright"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
-
+    {_header_}
+    <p class="copyright"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
     <!-- ===================================================================== -->
-
-    <hr />
+    <hr/>
 
     <h2 id="abstract">Abstract</h2>
-    <p>The Ontology of the Canadian Writing Research Collaboratory (<a href="http://www.cwrc.ca/en">cwrc.ca</a>) brings together various linked
-    data materials produced within the Collaboratory related to the writers, writing, and culture.</p>
-    
+    <p>The Ontology of the Canadian Writing Research Collaboratory (<a href="http://www.cwrc.ca">cwrc.ca</a>) brings together various linked
+  data materials produced within the Collaboratory related to the writers, writing, and culture.</p>
+  
+
     <h2 id="contents">Table of Contents</h2>
     <div class="table-contents">
       <ul>
-        <li><a href="#introduction">1. Introduction</a></li> 
+        <li><a href="#introduction">1. Introduction</a></li>
         <li><a href="#status">2. Status of this Document</a></li>
         <li><a href="#status_ontology">3. Status of this dynamic ontology</a></li>
         <li><a href="#background">4. Background on the Orlando source data</a></li>
@@ -46,11 +39,11 @@
         </ul>
         <li><a href="#structures">6. CWRC ontological structures</a></li>
         <ul>
-          <li><a href="#culturalformationsontology">a. Cultural Form</a></li>    
-          <li><a href="#contextontology">b. Contexts</a></li>    
-          <li><a href="#granularproperties">c. Granular Properties</a></li> 
+          <li><a href="#culturalformationsontology">a. Cultural Form</a></li>
+          <li><a href="#contextontology">b. Contexts</a></li>
+          <li><a href="#granularproperties">c. Granular Properties</a></li>
           <li><a href="#taxonomiesontology">d. Built-in Taxonomies</a></li>
-          <ul>    
+          <ul>
             <li><a href="#religion_taxonomy">i. Religion</a></li>
             <li><a href="#genre_taxonomy">ii. Literary Genre</a></li>
             <!-- <li><a href="#gender_taxonomy">iii. Gender, Sex and Orientation</a></li> -->
@@ -73,520 +66,195 @@
         <li><a href="#notesSKOSOWL">10. Notes on SKOS and OWL</a></li>
         <li><a href="#conclusion">11. Conclusion and Future Work</a></li>
         <li><a href="#version_history">12. Version History</a></li>
-        <li><a href="#deprecated">13. Deprecated Terms</a></li>    
-        <li><a href="#bibliography">14. Bibliography</a></li>    
+        <li><a href="#deprecated">13. Deprecated Terms</a></li>
+        <li><a href="#bibliography">14. Bibliography</a></li>
       </ul>
     </div>
 
-    <h3 id="introduction">1.  Introduction</h3> 
-    
-    <p> 
-    
-    Although it contains quite general components for activities such as
-    annotation and citation, the focus of the CWRC ontology is on describing
-    and relating aspects of literary studies and literary history, with a
-    strong emphasis on gender and intersectional analysis indebted to its
-    roots in <a href="http://www.artsrn.ualberta.ca/orlando/">The Orlando
-    Project, a history of women’s writing in the British Isles</a>.  It
-    links to a number of standards while attempting to indicate the
-    complexity of the relationship between representation and provenance in
-    the production of linked data, and to convey the situatedness (<a
-    href="#haraway_situated_1988">Haraway, 1988</a>) of the knowledge that
-    it represents.  </p>
+    <h3 id="introduction">1. Introduction</h3>
+    <p>Although it contains quite general components for activities such as annotation and citation, the focus of the CWRC ontology is on describing and relating aspects of literary studies and literary history, with a strong emphasis on gender and intersectional analysis indebted to its roots in <a href="http://www.artsrn.ualberta.ca/orlando/">The Orlando Project, a history of women’s writing in the British Isles</a>. It links to a number of standards while attempting to indicate the complexity of the relationship between representation and provenance in the production of linked data, and to convey the situatedness (<a href="#haraway_situated_1988">Haraway, 1988</a>) of the knowledge that it represents. </p>
+    <p>Some of the materials associated with this ontology are produced natively by activities conducted within the Collaboratory. Others are produced through a process of translation from embedded XML markup. In other words, some are the product of human creation or curation, and others are generated by machine. </p>
 
-
-    
-    <p> Some of the materials associated with this ontology are produced
-    natively by activities conducted within the Collaboratory.  Others are
-    produced through a process of translation from embedded XML markup.  In
-    other words, some are the product of human creation or curation, and
-    others are generated by machine.  </p> 
-    
-    <h3 id="status">2.  About this Document</h3>
-
-    <p>This document is a human-readable version of the ontology that cannot
-    document all of its data structures.  The ontology itself should be the
-    primary source for understanding how the ontology works.  </p>
-     <p>The intended audience of this document is the scholar that wishes to
-    understand how the ontology tackles concrete data recording problems and
-    the linked open data practitioner that intends to make use of this
-    ontology.  </p> 
+    <h3 id="status">2. About this Document</h3>
+    <p>This document is a human-readable version of the ontology that cannot document all of its data structures. The ontology itself should be the primary source for understanding how the ontology works. </p>
+    <p>The intended audience of this document is the scholar that wishes to understand how the ontology tackles concrete data recording problems and the linked open data practitioner that intends to make use of this ontology. </p>
 
     <h3 id="status_ontology">3. Status of this dynamic ontology</h3>
-
-    <p>
-      This document and the associated ontology will grow iteratively with modifications made over time as data is progressively translated and further ontological concerns are identified.  Continuity is
-    ensured using the OWL ontology annotations for ontological compatibility
-    and for deprecated classes and properties.  Deprecated ontology terms
-    remain present but are marked as such.  </p>
-
-
+    <p>This document and the associated ontology will grow iteratively with modifications made over time as data is progressively translated and further ontological concerns are identified. Continuity is ensured using the OWL ontology annotations for ontological compatibility and for deprecated classes and properties. Deprecated ontology terms remain present but are marked as such. </p>
 
     <h3 id="background">4. Background on the Orlando source data</h3>
+    <p> The Orlando Project embarked in 1995 on a history of women’s writing in the British Isles from the beginnings to the present (<a href="#brown_story_2007">Brown, Clements and Grundy, 2007a</a>;<a href="#brown_introduction_2007">Brown, Clements and Grundy, 2007b</a>).</p>
+    <p>This born-digital collaboration devised a knowledge representation (<a href="#susan_brown_sorting_2006">Brown, Clements et al., 2006</a>) in the form of a bespoke SGML tagset to encode the project’s intellectual priorities and concepts in the text as it was being written. This tagset structures the biocritical, chronological, and bibliographical content of the resulting history of more than 8 million words and 2 million tags. The schema provides the basis of the Canadian Writing Research Collaboratory’s schema for similar content, and provides the foundation of the ontology provided here. Some of the source data is produced via extraction from XML tags embedded in Orlando Project materials and the content of similarly structured content within the Collaboratory (<a href="#brown_curious_2013">Simpson and Brown, 2013</a>). </p>
+    <p><i>Orlando: Women’s Writing in the British Isles from the Beginnings to the Present</i> (<a href="#susan_brown_sorting_2006">Brown and Clements and et al., 2006</a>) is published by Cambridge University Press: <a href="http://orlando.cambridge.org">http://orlando.cambridge.org</a>.</p> 
+    <p>The scholarly introduction and introduction to the Orlando tagset are available here: <a href="http://orlando.cambridge.org/public/svDocumentation?&d_id=ABOUTTHEPROJECT">http://orlando.cambridge.org/public/svDocumentation?&d_id=ABOUTTHEPROJECT</a>.</p> 
+    <p>Contributors to Orlando are listed here: <a href="http://orlando.cambridge.org/public/svDocumentation?formname=t&d_id=CREDITSANDACKNOWLEDGEMENTS">http://orlando.cambridge.org/public/svDocumentation?formname=t&d_id=CREDITSANDACKNOWLEDGEMENTS</a>.</p> 
+    <p>The Orlando Project’s XML schemas and the CWRC Project’s XML schema are available at <a href="https://github.com/cwrc/CWRC-Schema/tree/master/schemas">https://github.com/cwrc/CWRC-Schema/tree/master/schemas</a>. </p>
 
-<p>
-The Orlando Project embarked in 1995 on a history of women’s writing in the
-British Isles from the beginnings to the present (<a href="#brown_story_2007">Brown, Clements and Grundy, 2007a</a>;<a href="#brown_introduction_2007">Brown, Clements and Grundy, 2007b</a>).  This born-digital
-collaboration devised a knowledge representation (<a href="#susan_brown_sorting_2006">Brown, Clements et al., 2006</a>) in the form of a bespoke SGML tagset to encode the project’s
-intellectual priorities and concepts in the text as it was being written. 
-This tagset structures the biocritical, chronological, and bibliographical
-content of the resulting history of more than 8 million words and 2 million
-tags.  The schema provides the basis of the Canadian Writing Research
-Collaboratory’s schema for similar content, and provides the foundation of
-the ontology provided here.  Some of the source data is produced via
-extraction from XML tags embedded in Orlando Project materials and the
-content of similarly structured content within the Collaboratory (<a href="#brown_curious_2013">Simpson and Brown, 2013</a>).
-</p>
-
-<p>
-<i>Orlando: Women’s Writing in the British Isles from the Beginnings to the Present</i> (<a href="#susan_brown_sorting_2006">Brown and Clements and et al., 2006</a>) is published by Cambridge University Press: <a href="http://orlando.cambridge.org">http://orlando.cambridge.org</a>.
-
-The scholarly introduction and introduction to the Orlando tagset are available here:
-
-<a href="http://orlando.cambridge.org/public/svDocumentation?&d_id=ABOUTTHEPROJECT">http://orlando.cambridge.org/public/svDocumentation?&d_id=ABOUTTHEPROJECT</a>.
-
-Contributors to Orlando are listed here:
-
-<a  href="http://orlando.cambridge.org/public/svDocumentation?formname=t&d_id=CREDITSANDACKNOWLEDGEMENTS">http://orlando.cambridge.org/public/svDocumentation?formname=t&d_id=CREDITSANDACKNOWLEDGEMENTS</a>.
-
-The Orlando Project’s XML schemas and the CWRC Project’s XML schema are available at
-
-<a href="https://github.com/cwrc/CWRC-Schema/tree/master/schemas">https://github.com/cwrc/CWRC-Schema/tree/master/schemas</a>.
-
-</p> 
-   
     <h3 id="goals">5. Basic ontological goals</h3>
 
     <h4 id="principals">a. Principles</h4>
+    <p>The schema covers entities, classes, and relationships associated with the domains of literature and literary and cultural history as understood from an intersectional feminist perspective. The ontology design responds to the challenges of shifting from semi-structured to structured data (<a href="#james_smith_working_2013">Smith, 2013</a>). Although linked data triples stand on their own formally, many are derived from discursive prose and are best read in an environment that links back to their original context. The CWRC ontology design avoids representing RDF extractions from Orlando data as positivist assertions, and yet produces machine-readable OWL/RDF-compliant graph structures. It allows references to, without endorsing, external ontological vocabularies that are nevertheless part of documenting cultural processes and identities.</p>
 
-    <p>The schema covers entities, classes, and relationships associated
-    with the domains of literature and literary and cultural history as
-    understood from an intersectional feminist perspective.  The ontology
-    design responds to the challenges of shifting from semi-structured to
-    structured data (<a href="#james_smith_working_2013">Smith, 2013</a>). 
-    Although linked data triples stand on their own formally, many are
-    derived from discursive prose and are best read in an environment that
-    links back to their original context.  The CWRC ontology design avoids
-    representing RDF extractions from Orlando data as positivist assertions,
-    and yet produces machine-readable OWL/RDF-compliant graph structures. 
-    It allows references to, without endorsing, external ontological
-    vocabularies that are nevertheless part of documenting cultural
-    processes and identities.</p>
 
     <h4 id="linkages">b. Linkages to other ontologies</h4>
-    
-    <p>We employ a number of strategies for linking to other ontologies.  Our
-    architecture does not import other ontologies wholesale, but relates to
-    large vocabularies in defined ways.  We try not to abuse sameAs predicates
-    (<a href="#halpin_when_2010">Halpin, Hayes et al., 2010</a>).</p>
-    
-    <p>  We adopt external namespaces and associated
-    classes and terms wherever possible when they are in widespread use and
-    their vocabularies are broadly compatible with ours, as in the case of the
-    <a href="http://xmlns.com/foaf/spec/">FOAF</a> and <a href="http://bibliontology.com/">BIBO</a> vocabularies.  For some terms, such as those for religious
-    denominations or genres, we are happy to draw on other vocabularies’ terms
-    and definitions in part or in whole, as in the case of terms from
-    the <a href="#_getty_2017">Getty Art and Architecture Thesaurus</a> (<a href="http://www.getty.edu/research/index.html">Getty Research
-    Institute</a>).  Other
-    terms are referenced, but at a distance.  This is particularly common in
-    relation to the vocabulary associated with Cultural Form (see below),
-    which is understood primarily as representational, and within which identity
-    terms are typed as labels and related to other internal narrower instances of labels
-    that indicate the intersection of that term with one or more type of
-    identity categorization. These are in turn related to external ontologies
-    with &lt;rdfs:subClassOf&gt; (or &lt;owl:equivalentClass&gt, &lt;skos:narrower&gt,
-    &lt;skos:broader&gt, etc...) with a view to indicating that, although related, the
-    terms and their definitions are not commensurate
-    with those used in the CWRC vocabulary. By means of this structure, our
-    vocabulary positions all terms associated with processes of Cultural
-    Form as in effect "labels", retaining the ambiguity of terms implicated in the complex social construction of identities
-    within a narrative.</p>
-
- 
-    <p>Vocabulary reuse presented some challenges to the CWRC in that the
- vocabularies used in the markup from which the RDF is derived can be
- ambiguously employed to an extent that reuse is difficult.  A typical
- example is that of religion, where much ambiguity exists as to
-    whether the term actually represents the religion as a belief system,
-    formal membership in the associated religious organization, the social
-    and often secular behaviours or affiliations associated with the
-    religion, or any combination of the above.</p>
- 
- 
-    <p>At the top level, the CWRC ontology makes use of the following well
-    known
-    ontologies:
-    <ol>
-     <li>The <a href="http://xmlns.com/foaf/spec/">FOAF</a> ontology for the representation of people and
-     organizations.</li>
-     <li>The <a href="http://bibliontology.com/">BIBO</a> ontology for the representation of bibliographic data.</li>
-     <li>The <a href="https://www.w3.org/TR/owl-time/">TIME</a> ontology for the representation of events and points in
-     time where <a href="https://www.w3.org/XML/Schema">ISO8601/XML Schema times</a> are not appropriate.</li>
-     <li>The <a href="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core/nif-core.html">NIF-CORE</a> ontology is used to contain and manipulate the text of
-     the original Orlando entries.</li>
-     <li>The <a href="https://www.w3.org/TR/annotation-model/">Web Open Annotation</a> data model is used to link the original Orlando
-     text to specific <a href="#Context">Contexts</a>.</li>
-     <li>The <a href="https://www.w3.org/TR/skos-reference/">SKOS</a> vocabulary is used to represent taxonomical relationships
-     within certain <a href="#CulturalForm">Cultural Form</a>s and
-     to fully document ontology terms.</li>
-     <li>Some <a href="http://dublincore.org/documents/dcmi-terms/">Dublin Core</a> vocabulary terms are used for well known documentation
-     tags such as &lt;dc:title&gt;.
-     <li>The <a href="https://www.w3.org/TR/prov-overview/">W3C Provenance ontology</a> is used to indicate indebtedness, derivation or provenance of term descriptions as well as Cultural Context source annotations.
-     <li>Linkages are made to the <a href="http://www.cidoc-crm.org/">CRM-CIDOC</a> ontology to cultural instances that are in common with CWRC. 
-    </ol>
-    </p>    
-
-    <p>
-
-    Established ontologies and vocabularies including <a href="http://eurovoc.europa.eu/">EuroVoc</a>,
-    <a href="http://www.getty.edu/research/tools/vocabularies/">Getty
-    Vocabularies</a>, <a href="http://id.loc.gov/vocabulary/languages.html">Library of Congress
-    Languages</a> and <a href="http://geonames.org/">geonames</a> are used in the
-    definition of numerous classes and instances.  For instance, the
-    religious terms of the <a
-    href="http://www.getty.edu/research/tools/vocabularies/aat/">Getty Art and Architecture
-    Thesaurus</a> provided
-    suitable definitions for many religions, as does <a
-    href="http://dbpedia.org/">DBPedia</a> and other
-    scholarly sources. Quotation marks around the text of the description
-    indicate wholesale adoption of the source definition.  Where the
-    description is  surrounded by quotation marks, the term has been defined
-    by the CWRC team, but links to may be provided to external resources
-    such as a scholarly article or closely related DBpedia entry.
+    <p>We employ a number of strategies for linking to other ontologies. Our architecture does not import other ontologies wholesale, but relates to large vocabularies in defined ways. We try not to abuse sameAs predicates (<a href="#halpin_when_2010">Halpin, Hayes et al., 2010</a>).</p>
+    <p> We adopt external namespaces and associated classes and terms wherever possible when they are in widespread use and their vocabularies are broadly compatible with ours, as in the case of the <a href="http://xmlns.com/foaf/spec/">FOAF</a> and <a href="http://bibliontology.com/">BIBO</a> vocabularies. For some terms, such as those for religious denominations or genres, we are happy to draw on other vocabularies’ terms and definitions in part or in whole, as in the case of terms from the <a href="#_getty_2017">Getty Art and Architecture Thesaurus</a> (<a href="http://www.getty.edu/research/index.html">Getty Research Institute</a>). Other terms are referenced, but at a distance. This is particularly common in relation to the vocabulary associated with Cultural Form (see below), which is understood primarily as representational, and within which identity terms are typed as labels and related to other internal narrower instances of labels that indicate the intersection of that term with one or more type of identity categorization. These are in turn related to external ontologies with <code>&lt;rdfs:subClassOf&gt;</code> (or <code>&lt;owl:equivalentClass&gt;</code>, <code>&lt;skos:narrower&gt;</code>, <code>&lt;skos:broader&gt;</code>, etc...) with a view to indicating that, although related, the terms and their definitions are not commensurate with those used in the CWRC vocabulary. By means of this structure, our vocabulary positions all terms associated with processes of Cultural Form as in effect "labels", retaining the ambiguity of terms implicated in the complex social construction of identities within a narrative.</p>
+    <p>Vocabulary reuse presented some challenges to the CWRC in that the vocabularies used in the markup from which the RDF is derived can be ambiguously employed to an extent that reuse is difficult. A typical example is that of religion, where much ambiguity exists as to whether the term actually represents the religion as a belief system, formal membership in the associated religious organization, the social and often secular behaviours or affiliations associated with the religion, or any combination of the above.</p>
+    <p>At the top level, the CWRC ontology makes use of the following well known ontologies:
+      <ol>
+        <li>The <a href="http://xmlns.com/foaf/spec/">FOAF</a> ontology for the representation of people and organizations.</li>
+        <li>The <a href="http://bibliontology.com/">BIBO</a> ontology for the representation of bibliographic data.</li>
+        <li>The <a href="https://www.w3.org/TR/owl-time/">TIME</a> ontology for the representation of events and points in time where <a href="https://www.w3.org/XML/Schema">ISO8601/XML Schema times</a> are not appropriate.</li>
+        <li>The <a href="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core/nif-core.html">NIF-CORE</a> ontology is used to contain and manipulate the text of the original Orlando entries.</li>
+        <li>The <a href="https://www.w3.org/TR/annotation-model/">Web Open Annotation</a> data model is used to link the original Orlando text to specific <a href="#Context">Contexts</a>.</li>
+        <li>The <a href="https://www.w3.org/TR/skos-reference/">SKOS</a> vocabulary is used to represent taxonomical relationships within certain <a href="#CulturalForm">Cultural Form</a>s and to fully document ontology terms.</li>
+        <li>Some <a href="http://dublincore.org/documents/dcmi-terms/">Dublin Core</a> vocabulary terms are used for well known documentation tags such as <code>&lt;dc:title&gt;</code>.</li>
+        <li>The <a href="https://www.w3.org/TR/prov-overview/">W3C Provenance ontology</a> is used to indicate indebtedness, derivation or provenance of term descriptions as well as Cultural Context source annotations. </li>
+        <li>Linkages are made to the <a href="http://www.cidoc-crm.org/">CRM-CIDOC</a> ontology to cultural instances that are in common with CWRC.</li>
+      </ol>
     </p>
-    
+    <p>Established ontologies and vocabularies including <a href="http://eurovoc.europa.eu/">EuroVoc</a>, <a href="http://www.getty.edu/research/tools/vocabularies/">Getty Vocabularies</a>, <a href="http://id.loc.gov/vocabulary/languages.html">Library of Congress Languages</a> and <a href="http://geonames.org/">geonames</a> are used in the definition of numerous classes and instances. For instance, the religious terms of the <a href="http://www.getty.edu/research/tools/vocabularies/aat/">Getty Art and Architecture Thesaurus</a> provided suitable definitions for many religions, as does <a href="http://dbpedia.org/">DBPedia</a> and other scholarly sources. Quotation marks around the text of the description indicate wholesale adoption of the source definition. Where the description is surrounded by quotation marks, the term has been defined by the CWRC team, but links to may be provided to external resources such as a scholarly article or closely related DBpedia entry. </p>
+
+
     <h4 id="provenance">c. Provenance and contexts</h4>
+    <p>As noted above, some data associated with this ontology has been generated from XML structures (<a href="#brown_curious_2013">Simpson and Brown, 2013</a>). Provenance is thus particularly important, given that such data was not produced natively in RDF but rather in the form of tags embedded in a discursive context. In such cases, the relevant portions of the text are provided in the form of snippets, which within the dataset become instances of contextual notes or human-readable annotations to which the data set nodes are directly tied. </p>
+    <p>The wholesale import of entire vocabularies within the CWRC ontology was likely to cause logical and ontological problems. To this end, we opted not to use the <code>&lt;owl:import&gt;</code> construct and instead either to link to vocabularies externally or to clone specific sets of terms from selected vocabularies. Similarly, not all vocabularies are well-defined from an ontological standpoint, but drawing from their narrative or some of their properties proved useful. To this end, we avoided the use of <code>&lt;owl:sameAs&gt;</code> so as not to bring unintended properties or ontological structures into the CWRC ontology. In other cases, the Provenance ontology property <code>&lt;prov:derivedFrom&gt;</code> is used to indicate that the term was constructed using information from other terms without necessarily being equivalent. Direct linkages to other ontologies are usually made through the use of subClasses or <code>&lt;owl:equivalentClass&gt;</code>.</p>
 
-    <p>
-    As noted above, some data associated with this ontology has been generated
-    from XML structures (<a href="#brown_curious_2013">Simpson and Brown,
-    2013</a>). Provenance is thus
-    particularly important, given that such data was not produced natively in
-    RDF but rather in the form of tags embedded in a discursive context. In
-    such cases, the relevant portions of the text are provided in the form of
-    snippets, which within the dataset become instances of contextual notes or human-readable
-     annotations to which the data set nodes are directly tied.     
-    </p>    
-
-    <p>The wholesale import of entire vocabularies within the CWRC ontology
-    was likely to cause logical and ontological problems. To this end, we
-    opted not to use the &lt;owl:import&gt; construct and instead either to
-    link to vocabularies externally or to clone specific sets of terms from
-    selected vocabularies. Similarly, not all vocabularies are well-defined from an ontological standpoint,
-    but drawing from their narrative or some of their properties proved
-    useful. To this end, we avoided the use of &lt;owl:sameAs&gt; so as not
-    to bring unintended properties or ontological structures into the
-    CWRC ontology. In other cases, the Provenance ontology property
-    &lt;prov:derivedFrom&gt; is used to indicate that the term was
-    constructed using information from other terms without necessarily being
-    equivalent. Direct linkages to other ontologies are usually made through
-    the use of subClasses or &lt;owl:equivalentClass&gt;.</p>
 
     <h4 id="labelsandvalues">d. Labels and values</h4>
-    <p>
-     As noted above, label terms are not only used here to indicate the particular
-     terms associated with an element of the ontology, but to indicate, when
-     used to type a class, its representationality or discursivity.
-    </p>
-    <h4 id="culturalformationsgeneric">e. Cultural diversity</h4>
+    <p>As noted above, label terms are not only used here to indicate the particular terms associated with an element of the ontology, but to indicate, when used to type a class, its representationality or discursivity. </p>
 
-    <p>
-    Cultural diversity has been an increasing source of debate beyond and
-    within the digital humanities community. The concentration within the
-      <i>Debates in Digital Humanities</i> series (<a href="#matthew_k._gold_debates_2012">Gold, 2012</a>; <a
-    href="#matthew_k._gold_debates_2016">Gold and Klein, 2016</a>) of
-    pieces reflecting the increasing prominence of matters related to race,
-    gender, cultural diversity, and difference is but one marker of the extent
-    to which diversity matters. This ontology seeks to convey an intersectional
-    understanding of identity categories, as instantiated in The Orlando
-    Project’s XML Biography schema. 
-    
-    The Cultural Form portion of the ontology recognizes categorization as
-    endemic to social experience, while incorporating variation in terminology
-    and the contextualization of identity categories.  It understands social
-    classification as culturally produced, intersecting, and discursively
-    embedded. We invoke categories as the grounds for cultural investigation
-    rather than fixed classifications, since such categories have never been
-    stable or mutually exclusive (<a href="#mark_algee-hewitt_representing_2016">Algee-Hewitt, Porter, and Walser, 2016</a>).
-    For a more detailed explication of cultural formation, see <a href="#brown_cultural_2017">Brown et al 2017</a>.
-    </p> 
+
+    <h4 id="culturalformationsgeneric">e. Cultural diversity</h4>
+    <p>Cultural diversity has been an increasing source of debate beyond and within the digital humanities community. The concentration within the <i>Debates in Digital Humanities</i> series (<a href="#matthew_k._gold_debates_2012">Gold, 2012</a>; <a href="#matthew_k._gold_debates_2016">Gold and Klein, 2016</a>) of pieces reflecting the increasing prominence of matters related to race, gender, cultural diversity, and difference is but one marker of the extent to which diversity matters. This ontology seeks to convey an intersectional understanding of identity categories, as instantiated in The Orlando Project’s XML Biography schema.</p>
+    <p>The Cultural Form portion of the ontology recognizes categorization as endemic to social experience, while incorporating variation in terminology and the contextualization of identity categories. It understands social classification as culturally produced, intersecting, and discursively embedded. We invoke categories as the grounds for cultural investigation rather than fixed classifications, since such categories have never been stable or mutually exclusive (<a href="#mark_algee-hewitt_representing_2016">Algee-Hewitt, Porter, and Walser, 2016</a>). For a more detailed explication of cultural formation, see <a href="#brown_cultural_2017">Brown et al 2017</a>. </p>
+
 
     <h3 id="structures">6. CWRC ontological structures</h3>
-        
-    <p>Source data from CWRC spans multiple types of data including
-    annotations on source texts, meta-data, granular material such as
-    bibliography, and discursive and analytical content about specific life
-    events and literary phenomena.  The CWRC linked open data set represents
-    such information as series of assertions, frequently associated with
-    particular contexts.</p>
-    
-    <p>While full, integrated traceability has always been a core need of
-    repeatable experiments, this comes at a complexity cost within a linked
-    open data set in that the queries required to retrieve basic information
-    become unwieldy. To this end, the CWRC ontology records information in
-    two different ways: through a series of <a href="#Context">Contexts</a>
-    that link the information to its associated source text in Orlando or other materials, and through a series of
-    granular properties that simply link individuals to their personal attributes. In
-    this way, both rapid retrieval and deep provenance tracking are
-    enabled.</p>
+    <p>Source data from CWRC spans multiple types of data including annotations on source texts, meta-data, granular material such as bibliography, and discursive and analytical content about specific life events and literary phenomena. The CWRC linked open data set represents such information as series of assertions, frequently associated with particular contexts.</p>
+    <p>While full, integrated traceability has always been a core need of repeatable experiments, this comes at a complexity cost within a linked open data set in that the queries required to retrieve basic information become unwieldy. To this end, the CWRC ontology records information in two different ways: through a series of <a href="#Context">Contexts</a> that link the information to its associated source text in Orlando or other materials, and through a series of granular properties that simply link individuals to their personal attributes. In this way, both rapid retrieval and deep provenance tracking are enabled.</p>
+    <p>Two basic structures are used within the ontology to achieve this: <a href="#Context">Context</a>s and <a href="#CulturalForm">Cultural Form</a>. A cultural formation represents elements of lived social subjectivities and/or classification of people through categories such as race, gender, language, sexuality, or religion. Contexts are used to link a fragment of Orlando prose to the individual whom it references as well as to the specific cultural formation that is being assigned to the person. In addition, properties are separated in two categories: reported and self-reported, allowing for the qualification of individual statements.</p>
 
 
-    <p>Two basic structures are used within the ontology to achieve this: <a
-    href="#Context">Context</a>s and <a href="#CulturalForm">Cultural Form</a>.
-    A cultural formation represents elements of lived social subjectivities
-    and/or classification of people through categories such as race, gender, language, sexuality, or religion.
-    Contexts are used to link a fragment of Orlando prose to the individual
-    whom it references as well as to the specific cultural formation that is
-    being assigned to the person. In addition, properties are separated in
-    two categories: reported and self-reported, allowing for the
-    qualification of individual statements.</p>
-
-    <h4 id="culturalformationsontology">a. Cultural Form</h4>    
-
- <p>The <a href="#CulturalForm">Cultural Form</a> classes
- recognize categorization as endemic to social experience, while
- incorporating variation in terminology and contextualization of identity
- categories by employing instances at different discursive levels.</p>  
- 
- <p>Cultural Form sub-classes and instances describe the subject positions 
- of individuals through both <a href="#Context">Context</a>s and granular
- properties. This arrangement has its roots in the Orlando arrangement of
- Cultural Form encodings that points users towards a framework for 
- raising and debating complex matters for cultural investigation rather than invoking reified
-categories.</p>
-
-<p>The shift from embedded semantic markup to a linked open data approach presented the challenge of making this approach compatible with linkages to other ontologies and data
-sets outside of the Orlando frame of reference. The move from "strings
-to links" or "strings to things" was in some sense at odds with the former embrace of the ambiguity of strings such as white,
-black, English, etc.: white and black can
-represent race or ethnicity, while English can also be invoked as an ethnicity,
-nationality, or a national heritage. Orlando marks these strings using
-its Cultural Forms tagset as specific to, for example, the context of race or
-ethnicity, mandating a similar association, within the linked data representation, with a specific instance of Cultural Form. Thus, there exist Cultural Form instances that point to the discursive construction of <a
-href="#whiteRace">white</a> as a race and <a href="#whiteEthnicity">white</a>
-as an ethnicity. Lastly, there also exists a <a href="#whiteLabel">white</a>
-label that can be instantiated as either race or ethnicity, but not both within the same assertion (although multiple assertions are possible).</p>
-
-<p>This is a departure from previous (non-linked open data) controlled
-vocabularies, in that the appearance of the term or label (in this case "white") does
-not indicate the specific cultural formation being invoked, the specific instance does. This
-also means that linkages to other data sets or vocabularies can be made
-appropriately, since multiple representations of the same label are
-present within the CWRC ontology. As a last resort, or for data mining
-purposes, the term is also available as a concept whose actual Cultural
-Form is undecided amongst the CWRC-defined options. This allows for
-linkages to an external ontology, such as can be required by text mining, without
-endorsing the corresponding definition or interpretation of the term.</p>
- 
-    <h4 id="contextontology">b. Contexts</h4>    
-<!--Insert summary here of how contexts are related to both properties and snippets through OA. --> 
-       <h4 id="granularproperties">c. Granular Properties</h4> 
-       
-       <p>
-       Granular properties provide a simple means of indicating cultural categories as  as presumed, perceived, or otherwise assigned to a person according to cultural conventions, or as self-reported by the person themselves. Some of the properties are associations inherited from forebears.            
-      </p>
+    <h4 id="culturalformationsontology">a. Cultural Form</h4>
+    <p>The <a href="#CulturalForm">Cultural Form</a> classes recognize categorization as endemic to social experience, while incorporating variation in terminology and contextualization of identity categories by employing instances at different discursive levels.</p>
+    <p>Cultural Form sub-classes and instances describe the subject positions of individuals through both <a href="#Context">Context</a>s and granular properties. This arrangement has its roots in the Orlando arrangement of Cultural Form encodings that points users towards a framework for raising and debating complex matters for cultural investigation rather than invoking reified categories.</p>
+    <p>The shift from embedded semantic markup to a linked open data approach presented the challenge of making this approach compatible with linkages to other ontologies and data sets outside of the Orlando frame of reference. The move from "strings to links" or "strings to things" was in some sense at odds with the former embrace of the ambiguity of strings such as white, black, English, etc.: white and black can represent race or ethnicity, while English can also be invoked as an ethnicity, nationality, or a national heritage. Orlando marks these strings using its Cultural Forms tagset as specific to, for example, the context of race or ethnicity, mandating a similar association, within the linked data representation, with a specific instance of Cultural Form. Thus, there exist Cultural Form instances that point to the discursive construction of <a href="#whiteRace">white</a> as a race and <a href="#whiteEthnicity">white</a> as an ethnicity. Lastly, there also exists a <a href="#whiteLabel">white</a> label that can be instantiated as either race or ethnicity, but not both within the same assertion (although multiple assertions are possible).</p>
+    <p>This is a departure from previous (non-linked open data) controlled vocabularies, in that the appearance of the term or label (in this case "white") does not indicate the specific cultural formation being invoked, the specific instance does. This also means that linkages to other data sets or vocabularies can be made appropriately, since multiple representations of the same label are present within the CWRC ontology. As a last resort, or for data mining purposes, the term is also available as a concept whose actual Cultural Form is undecided amongst the CWRC-defined options. This allows for linkages to an external ontology, such as can be required by text mining, without endorsing the corresponding definition or interpretation of the term.</p>
 
 
-    <h4 id="taxonomiesontology">d. Built-in Taxonomies</h4>    
-       <h5 id="religion_taxonomy">i. Religion</h5>
-          <p>The original Orlando data makes religious reporting a challenge in that the original contexts had no differentiation between
-       religious belief, membership in a religious organization, and 
-      absence of any religious belief combined with adherence to values or practices.</p>
-       <p>We use a taxonomy for enumerating the categories associated with this spectrum. The taxonomy in
-       itself is SKOS-based and represents a loose mixture of the shared
-       beliefs and historical offshoots.</p>
-       <p>The taxonomy attempts to trace in a subjective way the theological and/or historical lineage of the belief system. Like applying the labels to an individual, this is an interpretive process.</p>
-       <p>The specific taxonomy is:
-         <p> </p>
-       <object type="image/svg+xml" data="figures/religionTaxonomy-ONTOLOGY_DATE-EN.svg"></object>
-       <h5 id="politicalAffliation_taxonomy">ii. Political Affiliation</h5>
-       <object type="image/svg+xml" data="figures/politicalAffiliationTaxonomy-ONTOLOGY_DATE-EN.svg"></object>
-
-       </p>
-            <h5 id="genre_taxonomy">iii. Genre </h5>
-              <p>The Literary Genre ontology contains a taxonomy of literary genres based on a
-              <a href="https://www.w3.org/2004/02/skos/">SKOS</a> approach. This
-              provides limited transitive narrower/broader definitions that can be used
-              to search for relevant creative works using the taxonomy. The
-              taxonomical tree is built on an ad-hoc topic relevance standard meant
-              for document retrieval and that may not be suited to all
-              applications. One distinctive feature of the ontology is the use of adjectival terms such as &apos;philosophical&apos; or &apos;detective&apos; to denote a particularly type of text. Such terms can be employed in conjunction with genres that relate more to form, such as &apos;poem&apos; or &apos;novel&apos;, so as to denote, for instance, &apos;feminist novel&apos;.</p>
-              <p>The specific taxonomy is:
-       <p> </p>
-              <object type="image/svg+xml" data="figures/genreTaxonomy-ONTOLOGY_DATE-EN.svg"></object>  
-              </p>
+    <h4 id="contextontology">b. Contexts</h4>
+    <!--Insert summary here of how contexts are related to both properties and snippets through OA. -->
 
 
-    
+    <h4 id="granularproperties">c. Granular Properties</h4>
+    <p> Granular properties provide a simple means of indicating cultural categories as as presumed, perceived, or otherwise assigned to a person according to cultural conventions, or as self-reported by the person themselves. Some of the properties are associations inherited from forebears.</p>
+
+
+    <h4 id="taxonomiesontology">d. Built-in Taxonomies</h4>
+
+
+    <h5 id="religion_taxonomy">i. Religion</h5>
+    <p>The original Orlando data makes religious reporting a challenge in that the original contexts had no differentiation between religious belief, membership in a religious organization, and absence of any religious belief combined with adherence to values or practices.</p>
+    <p>We use a taxonomy for enumerating the categories associated with this spectrum. The taxonomy in itself is SKOS-based and represents a loose mixture of the shared beliefs and historical offshoots.</p>
+    <p>The taxonomy attempts to trace in a subjective way the theological and/or historical lineage of the belief system. Like applying the labels to an individual, this is an interpretive process.</p>
+    <p><a href="figures/religionTaxonomy-ONTOLOGY_DATE-EN.svg">The specific taxonomy is:</a></p>
+    <object type="image/svg+xml" data="figures/religionTaxonomy-ONTOLOGY_DATE-EN.svg"></object>
+
+
+    <h5 id="politicalAffliation_taxonomy">ii. Political Affiliation</h5>
+    <p><a href="figures/politicalAffiliationTaxonomy-ONTOLOGY_DATE-EN.svg">The specific taxonomy is:</a></p>
+    <object type="image/svg+xml" data="figures/politicalAffiliationTaxonomy-ONTOLOGY_DATE-EN.svg"></object>
+
+
+    <h5 id="genre_taxonomy">iii. Genre </h5>
+    <p>The Literary Genre ontology contains a taxonomy of literary genres based on a <a href="https://www.w3.org/2004/02/skos/">SKOS</a> approach. This provides limited transitive narrower/broader definitions that can be used to search for relevant creative works using the taxonomy. The taxonomical tree is built on an ad-hoc topic relevance standard meant for document retrieval and that may not be suited to all applications. One distinctive feature of the ontology is the use of adjectival terms such as &apos;philosophical&apos; or &apos;detective&apos; to denote a particularly type of text. Such terms can be employed in conjunction with genres that relate more to form, such as &apos;poem&apos; or &apos;novel&apos;, so as to denote, for instance, &apos;feminist novel&apos;.</p>
+    <p><a href="figures/genreTaxonomy-EN.svg">The specific taxonomy is:</a></p>
+    <object type="image/svg+xml" data="figures/genreTaxonomy-EN.svg"></object>
+
+
     <h4 id="notesEvent">e. CWRC Events</h4>
+    <p>The CWRC ontology was meant to handle data from projects such as Orlando that contain data that is often imprecise or incomplete. Furthermore, a by-product of the heterogeneous nature of the data sources referenced within the Orlando dataset was that the date information was recorded at different levels of granularities. While the formatting used to record the data is consistent with ISO/8601, a number of edge cases exists within the markup for inconsistent or incomplete data which needed a consistent structure. Secondly, the events are in many cases defined through a narrative instead of discrete event types where the relationship of individual agents to the event is ambiguous.</p>
+    <p>The XML Schemas provide some support for poorly dated events through their reuse of the ISO/8601 standards. However, the specific flavor of ISO/8601 handling varies dramatically according to the application with the result that different parsers only support limited varieties of data type. Most concerning is that the handling of imprecise ISO/8601 dates is inconsistent across implementations, resulting in the year 1901 possibly being represented as January 1, 1901 or 1901-??-??, making reliable interpretation impossible.</p>
+    <p>An aspect of temporal data that is similarly frustrating is that in a number of cases events are known to exist but whose Gregorian dates are missing. However, the ordering of these events may be well known against well defined events but the lack of a date/time stamp makes the recording of that event problematic in most database. To this end, we required that the event model be able to handle both incomplete time and data stamps as well as temporal relationships against other events such as before, after, during, etc...</p>
+    <p>To this end, events classes within the CWRC ontology are implemented using Time-OWL's TemporalEntity which gives us the ability to ground an event in a partial ISO8601 date and/or relate it against other events. While the <a href="https://www.w3.org/TR/owl-time/">Time-OWL ontology</a> comes with the classes needed to work consistently with Gregorian Calendar entries, hooks are provided for the materialization of other calendars such as Islamic, Chinese Lunar and business quarter reporting.</p>
+    <p>Because of the humanistic nature of the Orlando data, the following specific event types are defined specifically for biographical purposes: a person's birth, a person's death, events that occurred during the lifetime of a person and events that occurred after the death of a person.</p>
+    <figure>
+      <img src="figures/eventStructures.png" style="display: block; margin: auto;width 60%;"/>
+      <figcaption>Figure 1 - Events have a sub classed structure.</figcaption>
+    </figure>
+    <p>The rational behind this lies both in the literary nature of the Orlando project and in data quality concerns with the original source data. It was a goal to track literary influences across works within Orlando before and after the lifetime of the author. Furthermore, some events within Orlando are known to have been mislabeled or from erroneous sources. The ability to describe certain events as having had taken place within the lifetime (or after) enables the checking of biographical entries at generation time.</p>
+    <p>The specific term eventElement is used to link the event to the agent that performs a certain part within the event. The use of the <code>foaf:agent</code> as a domain means that essentially anything can perform a part to an event, including personae, pets, inanimate objects (such as ships) and the elements (eg: storms).</p>
+    <figure>
+      <img src="figures/StevieSmith.png" style="display: block; margin: auto;width 60%;"/>
+      <figcaption>Figure 2 - A representation of the RDF triples marking up Stevie Smith obtaining two different awards.</figcaption>
+    </figure>
+    <p>The example above represents two different awards given to Stevie Smith three years apart and is an example of the possibility of using TimeOwl as a means of recording both imprecise and relative temporal data. 3 years separate both awards and a duration node separates both of them.</p>
 
-    <p>The CWRC ontology was meant to handle data from projects such as
-    Orlando that contain data that is often imprecise or incomplete.
-    Furthermore, a by-product of the heterogeneous nature of the data sources
-    referenced within the Orlando dataset was that the date information was
-    recorded at different levels of granularities. While the formatting used
-    to record the data is consistent with ISO/8601, a number of edge cases
-    exists within the markup for inconsistent or incomplete data which
-    needed a consistent structure. Secondly, the events are in many cases
-    defined through a narrative instead of discrete event types where the
-    relationship of individual agents to the event is ambiguous.</p> 
 
-    
-    <p>The XML Schemas provide some support for poorly dated events through
-    their reuse of the ISO/8601 standards.  However, the specific flavor of
-    ISO/8601 handling varies dramatically according to the application with
-    the result that different parsers only support limited varieties of data
-    type.  Most concerning is that the handling of imprecise ISO/8601 dates
-    is inconsistent across implementations, resulting in the year 1901
-    possibly being represented as January 1, 1901 or 1901-??-??, making
-    reliable interpretation impossible.</p>
-    
-    <p>An aspect of temporal data that is similarly frustrating is that in a
-    number of cases events are known to exist but whose Gregorian dates are
-    missing. However, the ordering of these events may be well known against
-    well defined events but the lack of a date/time stamp makes the
-    recording of that event problematic in most database. To this end, we
-    required that the event model be able to handle both incomplete time and
-    data stamps as well as temporal relationships against other events such
-    as before, after, during, etc...</p>
+    <h5 id="event_nomenclature">i. Notes about nomenclature</h5>
+    <p>Roles, Actor, Agent, Character, Performance as words that have related semantic meanings in the vernacular but whose formal definitions have different meanings in different domains. Furthermore different standards see each terms as either properties or classes. While primary based on the Orlando schemas, additional structures were required to be created in the CWRC ontology so that a variety of events could be represented ranging from life events to specific performances of a theatrical play staged by a theatrical group. We are aware that different arrangements of nomenclatures are possible, but these represent the best arrangement with the least ambiguity.</p>
 
-     <p>To this end, events classes within the CWRC ontology are implemented
-     using
-     Time-OWL's TemporalEntity which gives us the ability to ground an event
-     in a partial ISO8601 date and/or relate it against other events. While
-     the Time-OWL ontology comes with the classes needed to work
-     consistently with Gregorian Calendar entries, hooks are provided for
-     the materialization of other calendars such as Islamic, Chinese Lunar
-     and business quarter reporting. The full documentation on using
-     Time-OWL can be found <a href="https://www.w3.org/TR/owl-time/">here</a>.</P>
-     
-     <p>Because of the humanistic nature of the Orlando data, the following
-     specific event types are defined specifically for biographical purposes: a person's birth, a person's death,
-     events that occurred during the lifetime of a person and events that
-     occurred after the death of a person.</p>
-     
-    <figure> 
-    <img src="figures/eventStructures.png" style="display: block; margin: auto;width 60%;"/>
-    <figcaption>Figure 1 - Events have a sub classed structure.</figcaption>
- </figure>
-    <p>The rational behind this lies both in the literary nature of the Orlando
-    project and in data quality concerns with the original source data. It
-    was a goal to track literary influences across works within Orlando
-    before and after the lifetime of the author. Furthermore, some events
-    within Orlando are known to have been mislabeled or from erroneous
-    sources. The ability to describe certain events as having had taken
-    place within the lifetime (or after) enables the checking of
-    biographical entries at generation time.</p> 
 
-<p>The specific term eventElement is used to link the event to the agent that
-performs a certain part within the event. The use of the foaf:agent as a
-domain means that essentially anything can perform a part to an event,
-including personae, pets, inanimate objects (such as ships) and the
-elements (eg: storms).</p>
- 
- <figure>
- <img src="figures/StevieSmith.png" style="display: block; margin: auto;width 60%;"/>
- <figcaption>Figure 2 - A representation of the RDF triples marking up Stevie Smith
- obtaining two different awards.</figcaption>
- </figure>
- 
- 
-  <p>The example above represents two different awards given to Stevie
-  Smith three years apart and is an example of the possibility of using
-  TimeOwl as a means of recording both imprecise and relative temporal data.
-  3 years separate both awards and a duration node separates both of
-  them.</p>
+    <h4 id="changeSets">f. Notes on ChangeSets</h4>
+    <p>Change Sets exist to track changes to instances, terms, and classes within the ontology, they are therefore used by both the authors of the ontology as well as users who are making addtions or modifications. Changesets are instances that are linked either to or from a structure in the ontology. This is done through the object properties <i>affected entity</i> or through the <code>skos:changeNote</code>. A single changeset may apply to several entities therefore the <code>affected entity</code> relation may be applied 0 or more times. Changesets also track the user through the <code>altered by</code> relation and may link to any <code>CWRC:Person</code>. In addition dates and times are kept track of through <code>time:inXSDDateTimeStamp</code> using xsd:dateStamps to track the instant the change was applied to the ontology. This will allow changesets to be used as release by selecting them between a particular date to show major changes. Through provenance Change Sets may link to external resources allowing extended discussion to be kept out of the ontology. Shorter descriptions are included through the <code>skos:changeNote</code> relation as well as a title using a standard <code>rdfs:label</code>. Change Sets are to be used anytime an issue is completed by ontology developers or an instance is changed by a user. Automated mechanisms will be used to offset some of the work required.</p>
+    <figure>
+      <img src="figures/ChangeSets.png" style="display: block; margin: auto;width 60%;"/>
+      <figcaption>Figure 3 - Change Set Example using both external descriptions and internal descriptions</figcaption>
+    </figure>
 
- <h5 id="event_nomenclature">i. Notes about nomenclature</h5>
 
-<p>Roles, Actor, Agent, Character, Performance as words that have related
-semantic meanings in the vernacular but whose formal definitions have
-different meanings in different domains. Furthermore different standards
-see each terms as either properties or classes. While primary based on the
-Orlando schemas, additional structures were required to be created in the
-CWRC ontology so that a variety of events could be represented ranging from
-life events to specific performances of a theatrical play staged by a
-theatrical group. We are aware that different arrangements of nomenclatures
-are possible, but these represent the best arrangement with the least
-ambiguity.</p>
-
-<h4 id="changeSets">f. Notes on ChangeSets</h4>
-
-Change Sets exist to track changes to instances, terms, and classes within the ontology, they are therefore used by both the authors of the ontology as well as users who are making addtions or modifications. Changesets are instances that are linked either to or from a structure in the ontology. This is done through the object properties <i>affected entity</i> or through the <i>skos:changeNote</i>. A single changeset may apply to several entities therefore the <i>affected entity</i> relation may be applied 0 or more times. 
-
-Changesets also track the user through the <i>altered by</i> relation and may link to any CWRC:Person. In addition dates and times are kept track of through <i>time:inXSDDateTimeStamp</i> using xsd:dateStamps to track the instant the change was applied to the ontology. This will allow changesets to be used as release by selecting them between a particular date to show major changes. 
-
-Through provenance Change Sets may link to external resources allowing extended discussion to be kept out of the ontology. Shorter descriptions are included through the <i>skos:changeNote</i> relation as well as a title using a standard <i>rdfs:label</i>. Change Sets are to be used anytime an issue is completed by ontology developers or an instance is changed by a user. Automated mechanisms will be used to offset some of the work required. 
-
-  <figure> 
-    <img src="figures/ChangeSets.png" style="display: block; margin: auto;width 60%;"/>
-    <figcaption>Figure 3 - Change Set Example using both external descriptions and internal descriptions</figcaption>
-  </figure>
-
-          
     <h3 id="definition_list">7. Global Cross-Reference</h3>
-    
     <!-- The list of classes and properties goes here -->
-{_azlist_}
+    {_azlist_}
     <!-- End of the terms list -->
 
-    <h2 id="reference">8. Detailed references for all terms, classes and
-    properties</h2>
- 
+
+    <h2 id="reference">8. Detailed references for all terms, classes and properties</h2>
     <!-- The following is the script-generated list of classes and properties -->
-{_terms_}
+    {_terms_}
     <!-- End of the terms list -->
+
 
     <h2 id="notesSKOS">9. CWRC Ontology Design Rules</h2>
+    <p>Beyond the formalism of [citation on ontology design rules], the CWRC ontology follows the following design rules and styles:</p>
+    <ul>
+      <li>The contents of rdfs:labels tags are always in lowercase, with the
+      following exceptions:</li>
+      <ul>
+        <li>Labels for religions, political affiliations and groups of people derived from a proper name will begin with an uppercase letter.</li>
+      </ul>
+      <li>Whenever possible, the original Orlando XML tag equivalent is contained within the rdf:value tag of any term within the ontology.</li>
+      <li>Whenever referencing a geographical location, use the most precise item within the database.</li>
+      <li>Definitions in French, English (and other serendipitously available languages) are never word for word translations, and are definitions in their own right.</li>
+    </ul>
 
-    <p>Beyond the formalism of [citation on ontology design rules], the CWRC
-    ontology follows the following design rules and styles:</p>
-    <ul>
-    <li>The contents of rdfs:labels tags are always in lowercase, with the
-    following exceptions:</li>
-    <ul>
-    <li>Labels for religions, political affiliations and groups of people derived from a proper name  will begin with an uppercase letter.</li>
-    </ul>
-    <li>Whenever possible, the original Orlando XML tag equivalent is
-    contained within the rdf:value tag of any term within the ontology.</li>
-    <li>Whenever referencing a geographical location, use the most precise
-    item within the database.</li>
-    <li>Definitions in French, English (and other serendipitously available languages) are never word for word translations, and are definitions in their own right.</li>
-    </ul>
 
     <h2 id="notesSKOSOWL">10. Notes on SKOS and OWL</h2>
-     <p>
-     SKOS (Simple Knowledge Organization System) enjoys widespread popularity in the semantic web community as it provides simple
-     terms for taxonomies without requiring reasoner support. Whenever appropriate, SKOS terms are inserted within this ontology
-     to link terms to each other. However, since these terms are not ontologically powered, their scalability is limited since
-     each additional layer of terms within a taxonomy requires another database query.</p>
-     <p>  
-     Some of the constructs within the CWRC ontology are deep and require reasoning support. OWL is the preferred means of using
-     this ontology, though the usage of the terms, SKOS-style, is possible.
-     </p>
-    
+    <p>SKOS (Simple Knowledge Organization System) enjoys widespread popularity in the semantic web community as it provides simple terms for taxonomies without requiring reasoner support. Whenever appropriate, SKOS terms are inserted within this ontology to link terms to each other. However, since these terms are not ontologically powered, their scalability is limited since each additional layer of terms within a taxonomy requires another database query.</p>
+    <p>Some of the constructs within the CWRC ontology are deep and require reasoning support. OWL is the preferred means of using this ontology, though the usage of the terms, SKOS-style, is possible.
+    </p>
+
 
     <h2 id="conclusion">12. Conclusion and Future Work</h2>
-    <p>
-    This is a draft ontology that is very much in progress. It will continue to be developed, expanded, and revised as we discover the implications of how we have structured the ontology through using it to extract and explore our data, as fresh data and use cases necessitate expansion or refinement, and as new needs, understandings, and debates arise.
-    </p>
+    <p>This is a draft ontology that is very much in progress. It will continue to be developed, expanded, and revised as we discover the implications of how we have structured the ontology through using it to extract and explore our data, as fresh data and use cases necessitate expansion or refinement, and as new needs, understandings, and debates arise. </p>
+
+
     <h2 id="version_history">13. Version History</h2>
-
     <ul>
-    <li><p>0.99 - Initial public release.</p></li>
-    <li><p>0.99.2 - Periodic release with updated logos, genres, documentation, and proper masthead data.</p></li>
+      <li><p>0.99 - Initial public release.</p></li>
+      <li><p>0.99.2 - Periodic release with updated logos, genres, documentation, and proper masthead data.</p></li>
+      <li><p>0.99.6 - Periodic release [UPDATE THIS]</p></li>
     </ul>
-    <h2 id="deprecated">14. Deprecated Terms</h2>    
-{_deprecated_}
-    <h2 id="bibliography">15. Bibliography</h2>    
-m4_include(cwrc-citations.html)
-
-    <!-- ===================================================================== 
 
 
-     ===================================================================== -->
+    <h2 id="deprecated">14. Deprecated Terms</h2>
+    {_deprecated_}
 
 
+    <h2 id="bibliography">15. Bibliography</h2>
+    m4_include(cwrc-citations.html)
+    <!-- =====================================================================
+    ===================================================================== -->
   </body>
-
 </html>
