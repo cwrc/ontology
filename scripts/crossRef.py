@@ -44,10 +44,14 @@ def printXML(root):
     rough_string = rough_string.replace("&lt;", "<")
     rough_string = rough_string.replace("&gt;", ">")
     rough_string = rough_string.replace("<![CDATA[<a", "<a")
+    rough_string = rough_string.replace("<![CDATA[<i", "<i")
     rough_string = rough_string.replace("a>]]>", "a>")
+    rough_string = rough_string.replace("i>]]>", "i>")
 
     rough_string = rough_string.replace("<a href=", "<![CDATA[<a href=")
+    rough_string = rough_string.replace("<i>", "<![CDATA[<i>")
     rough_string = rough_string.replace("</a>", "</a>]]>")
+    rough_string = rough_string.replace("</i>", "</i>]]>")
     print(str(rough_string))
 
 
@@ -56,7 +60,6 @@ def get_webpage_title(url):
     try:
         webpage = urllib.request.urlopen(url).read().decode('utf-8')
         title = str(webpage).split('<title>')[1].split('</title>')[0]
-        # print(title)
     except urllib.error.URLError:
         print("<!-- %s is currently inaccessible -->" % url)
         print("<!-- Unable to retrieve title from webpage.\n-->")
@@ -65,7 +68,7 @@ def get_webpage_title(url):
 
 def get_definitions(element):
     for x in element:
-        if str(x.tag)[-10:] == "definition":
+        if "definition" or "comment" in str(x.tag):
             if x.text and "@@" in x.text:
                 pattern = re.compile('@@(.*?)@@')
                 matches = pattern.finditer(x.text)
@@ -73,7 +76,7 @@ def get_definitions(element):
 
                 for string in original_strings:
                     uri = string[2:-2]
-                    if '#' in uri:
+                    if uri[0] == '#':
                         language = x.get("{http://www.w3.org/XML/1998/namespace}lang")
                         hyperlink = create_hyperlink(uri, get_label(get_full_uri(uri), language))
                     else:
