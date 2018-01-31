@@ -288,7 +288,7 @@ At the heart of a persona is an identity that is interacted with by others and t
 
   <owl:ObjectProperty rdf:ID="hasEventElement">
     <rdfs:label xml:lang="en">has Element</rdfs:label>
-    <rdfs:label xml:lang="fr">a un elment</rdfs:label>
+    <rdfs:label xml:lang="fr">a un élément</rdfs:label>
     <skos:definition xml:lang="en">Associates an event or event element.</skos:definition>
     <rdfs:domain rdf:resource="#Event"/>
     <rdfs:range rdf:resource="#EventElement"/>
@@ -299,7 +299,7 @@ At the heart of a persona is an identity that is interacted with by others and t
   <owl:Class rdf:ID="EventElement">
     <foaf:name>performance</foaf:name>
     <rdfs:label xml:lang="en">Event Element</rdfs:label>
-    <rdfs:label xml:lang="fr">élement d'évènement</rdfs:label>
+    <rdfs:label xml:lang="fr">élément d'évènement</rdfs:label>
     <skos:definition xml:lang="en">An event element by an agent in an event under a specific context, be it in a role, character or responsibility.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -309,7 +309,7 @@ At the heart of a persona is an identity that is interacted with by others and t
 
   <owl:ObjectProperty rdf:ID="hasActor">
     <rdfs:label xml:lang="en">has Actor</rdfs:label>
-    <rdfs:label xml:lang="fr">a un interpréte</rdfs:label>
+    <rdfs:label xml:lang="fr">a un acteur</rdfs:label>
     <skos:definition xml:lang="en">Associates an event element to a person.</skos:definition>
     <rdfs:domain rdf:resource="#EventElement"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
@@ -381,7 +381,7 @@ At the heart of a persona is an identity that is interacted with by others and t
   <owl:Class rdf:ID="LifeEvent">
     <foaf:name>life event</foaf:name>
     <rdfs:label xml:lang="en">life event</rdfs:label>
-    <rdfs:label xml:lang="fr">évènement de vie</rdfs:label>
+    <rdfs:label xml:lang="fr">évènement au cours de la vie</rdfs:label>
     <rdfs:label xml:lang="de">lebensereignis</rdfs:label>
     <skos:definition xml:lang="en">An event during the life of a person.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -396,7 +396,7 @@ At the heart of a persona is an identity that is interacted with by others and t
   <owl:Class rdf:ID="AfterLifeEvent">
     <foaf:name>after life event</foaf:name>
     <rdfs:label xml:lang="en">after life event</rdfs:label>
-    <rdfs:label xml:lang="fr">évènement d'après vie</rdfs:label>
+    <rdfs:label xml:lang="fr">évènement posthume</rdfs:label>
     <rdfs:label xml:lang="de">nachlebensereignis</rdfs:label>
     <skos:definition xml:lang="en">An event whose principal is a person that is deceased. Could be used for a funeral, an influence over a living author or the estate of a deceased person.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -443,7 +443,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">forme culturelle</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">The Cultural Form class of properties associates specific concepts and categories with the process of identity formation through cultural processes. Such associations may be or have been embraced by the subject herself or himself or attributed by others. Although cultural forms or social identities circulate around the notion of characteristics, traditions, beliefs, or origins that are shared with others, recent work has stressed the contingency, provisionality, and constructedness of such categories through both complex discourses and social practices. As argued by Stuart Hall, &quot;It seems to be in the attempt to rearticulate the relationship between subjects and discursive practices that the question of identity recurs&quot; (&quot;Introduction&quot;). See Stuart Hall and Paul du Goy’s edited collection Questions of Cultural Identity (<![CDATA[<a href="#cwrc:e1f710d3-6ebd-4181-be61-bf931282a8b7">Paul du Goy and Stuart Hall, 1996</a>]]>). Given their highly discursive nature, the concepts and categories classed as cultural forms are understood to overlap with each other conceptually. The same word or label can therefore occur as multiple cultural forms, reflecting the shifting discursive contexts in which it has been used and the diverse situations from which it has emerged. Each specific Cultural Form is understood to interact not only with other cultural forms or identity categories applied to a person, and other instances of the form applied to other people, but also always with Cultural Formation Context annotations, which support the understanding that social identities are always constructions in progress.</skos:definition>
-    <skos:definition xml:lang="fr">La classe de propriétés Forme Culturelle associe des concepts et des catégories spécifiques à la formation identitaire réalisée au travers de processus culturels. De  telles associations ont été adoptées par le sujet elle/lui-même ou attribuées par d’autres. Même si les formes culturelles ou les identités sociales s’articulent autour de notions communément partagées comme la caractérisation, les traditions, les croyances ou les origines, certains travaux récents ont ont montré que de telles catégories sont contingentes, provisoire et construites par des discours et des pratiques sociales complexes. Tel que Stuart Hall l’affirme, «Il semble que la question de l’identité réapparaît dans une tentative de remanier la relation entre sujets et pratiques discursives» («Introduction»). Voir la collection éditée par Stuart Hall et Paul du Goy, Questions of Cultural Identity (<![CDATA[<a href="#cwrc:e1f710d3-6ebd-4181-be61-bf931282a8b7">Paul du Goy and Stuart Hall, 1996</a>]]>). Étant donné leur nature hautement discursive, les concepts et les catégories de Formes Culturelles sont conceptuellement imbriqués. Un même terme peut donc apparaître sous diverses formes culturelles, reflétant le changement de contextes discursifs dans lesquels il est employé et les diverses situations d’où il provient. Chaque Forme Culturelle est non seulement perçue en interaction avec d’autres formes culturelles, ou catégories identitaires, qu’elles soient appliquées à une personne ou à d’autres individus, mais est aussi toujours reliée aux annotations de Formation Culturelle En Contexte, soutenant que les identités sociales sont des phénomènes toujours en construction.</skos:definition>
+    <skos:definition xml:lang="fr">La classe de propriétés Forme Culturelle associe des concepts et des catégories spécifiques à la formation identitaire réalisée au travers de processus culturels. De  telles associations ont été adoptées par le sujet elle/lui-même ou attribuées par d’autres. Même si les formes culturelles ou les identités sociales s’articulent autour de notions communément partagées comme la caractérisation, les traditions, les croyances ou les origines, certains travaux récents ont ont montré que de telles catégories sont contingentes, provisoire et construites par des discours et des pratiques sociales complexes. Tel que Stuart Hall l’affirme, &quot;Il semble que la question de l’identité réapparaît dans une tentative de remanier la relation entre sujets et pratiques discursives&quot; (&quot;Introduction&quot;). Voir la collection éditée par Stuart Hall et Paul du Goy,  Questions of Cultural Identity (<![CDATA[ <a href="#cwrc:e1f710d3-6ebd-4181-be61-bf931282a8b7">(Paul du Goy and Stuart Hall, 1996)]]>. Comme ils sont de nature discursive, les concepts et les catégories de Formes Culturelles se recoupent. Un même terme peut donc apparaître sous diverses formes culturelles, reflétant le changement de contextes discursifs dans lesquels il est employé et les diverses situations d’où il provient. Chaque Forme Culturelle est d'une part liée aux autres formes culturelles ou catégories identitaires qui sont appliquées à une personne ou à d’autres individus, et est d'autre part toujours reliée aux annotations de Formation Culturelle En Contexte, soutenant que les identités sociales sont toujours considérées comme des constructions en progrès.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -451,13 +451,13 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="en">has a cultural form</rdfs:label>
     <rdfs:label xml:lang="fr">a une forme culturelle</rdfs:label>
     <skos:definition xml:lang="en">This associates specific concepts and categories with the process of identity formation through cultural processes. Such associations may be or have been embraced by the subject her/himself or attributed by others. The concepts and categories classed as a @@#CulturalForm@@ are understood to overlap with each other conceptually and in terms of the labels used.</skos:definition>
-    <skos:definition xml:lang="fr">Associe des concepts et des catégories spécifiques au processus de formation identitaire à travers les processus culturels. Le sujet elle/lui-même peut ou a pu s’approprier de telles associations, ou d’autres personnes les lui ont attribuées. Les concepts et les catégories classés dans @@#CulturalForm@@ se chevauchent en théorie et en terme d'étiquettes utilisés.</skos:definition>
+    <skos:definition xml:lang="fr">Associe des concepts et des catégories spécifiques au processus de formation identitaire par des processus culturels. Les sujets eux-mêmes peuvent ou ont pu s’approprier de telles associations, ou d’autres personnes les leur ont attribuées. Les concepts et les catégories classés dans @@#CulturalForm@@ se chevauchent pour les concepts et les étiquettes utilisés.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="culturalFormTo">
-    <rdfs:label xml:lang="en">cultural from to</rdfs:label>
+    <rdfs:label xml:lang="en">cultural form to</rdfs:label>
     <skos:definition xml:lang="en">This is the inverse of has a cultural form.</skos:definition>
     <owl:inverseOf rdf:resource="#hasCulturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -493,7 +493,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:subClassOf rdf:resource="#Context"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Cultural Form Context is a significant subclass of Context. Annotations typed as Cultural Form Context provide information about and discussions of a person's social identity or subjectivity through the use of @@#CulturalForm@@ properties, which when multiple often indicate intersectional identities.</skos:definition>
-    <skos:definition xml:lang="fr">Form Culturelle En Contexte est une sous-classe de contexte importante. Les annotations entrées en tant Form Culturelle En Contexte fournissent des renseignements et des discussions sur l’identité sociales ou la subjectivité d’une personne à travers l’utilisation des propriétés @@#CulturalForm@@, qui indiquent souvent des identités intersectionnelles lorsqu’elles sont multiples.</skos:definition>
+    <skos:definition xml:lang="fr">Formation Culturelle En Contexte est une sous-classe de contexte importante. Les annotations entrées en tant Formation Culturelle En Contexte fournissent des renseignements et des discussions sur l’identité sociales ou la subjectivité d’une personne à travers l’utilisation des propriétés Formes Culturelles, qui lorsqu'elles sont multiples indiquent souvent des identités intersectionnelles. </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -510,7 +510,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <skos:definition xml:lang="fr">
       Contexte Ethnique ou Racial est une sous-classe importante de Contexte, et est associée aux sous-classes Race ou Couleur et Ethnicité. Les annotations entrées en tant que Contexte Ethnique ou Racial fournissent des renseignements de contextualisation et des discussions sur l’identité d’un sujet concernant son appartenance raciale et/ou son ethnicité. 
 
-      Même si les catégories de race et d'ethnicité sont fréquemment manipulées au service d'intérêts déplorables, leurs répercussions idéologiques et matérielles sur la formation identitaire requiert qu'on les prenne en compte. Ces catégories sont changeantes, historiquement constituées, développées de façon intéressée, et leur usage doit être resitué en contexte; elles sont finalement comprises ici comme discursives et représentationnelles, même si elles ont de réelles répercussions matérielles. Elles sont entendues comme des constructions sociales: «Le fait d’être ou de ne pas être d’une certaine race n’est rien de plus que l’acceptation sociale et l’attribution sociétale d’une race à une personne» <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>
+      Même si les catégories de race et d'ethnicité sont fréquemment manipulées au service d'intérêts déplorables, leurs répercussions idéologiques et matérielles sur la formation identitaire requièrent qu'on les prenne en compte. Ces catégories sont changeantes, historiquement constituées, développées de façon intéressée, et leur usage doit être resitué dans leur contexte; elles sont finalement comprises ici comme discursives et représentationnelles, même si elles ont de réelles répercussions matérielles. Elles sont entendues comme des constructions sociales: «Le fait d’être ou de ne pas être d’une certaine race n’est rien de plus que l’acceptation sociale et l’attribution sociétale d’une race à une personne» <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>
     </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
