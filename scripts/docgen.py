@@ -84,13 +84,6 @@ def print_usage():
     sys.exit(-1)
 
 
-def insert_dictionary(where, key, value):
-    if key not in where:
-        where[key] = []
-    if value not in where[key]:
-        where[key].append(value)
-
-
 def get_domain_range_dict():
     range_list = set(sorted(o_graph.objects(None, RDFS.range)))
     domain_list = set(sorted(o_graph.objects(None, RDFS.domain)))
@@ -162,22 +155,23 @@ def specgen(template, language):
     global spec_url
     global spec_ns
     global ns_list
+    global namespace_dict
 
     # getting all namespaces from o_graph
     all_ns = [n for n in o_graph.namespace_manager.namespaces()]
 
     # creating a dictionary of the names spaces - {identifier:uri}
-    global namespace_dict
     namespace_dict = {key: value for (key, value) in all_ns}
+    if spec_pre in namespace_dict:
+        spec_url = namespace_dict[spec_pre]
+    else:
+        spec_url = namespace_dict['']
 
-    spec_url = namespace_dict['']
     spec_ns = rdflib.Namespace(spec_url)
     ns_list[spec_pre] = spec_url
 
     # Gets sorted classes & property labels
-
     class_list = [get_uri_term((x)) for x in sorted(o_graph.subjects(None, OWL.Class))]
-
     prop_list = [get_uri_term((x)) for x in sorted(o_graph.subjects(None, OWL.ObjectProperty))]
 
     global domain_dict
@@ -186,9 +180,7 @@ def specgen(template, language):
 
     # Dict_list in specgen
     # skos_concepts = [get_uri_term(s) for s, p, o in sorted(o_graph.triples((None, RDF.type, SKOS.ConceptScheme)))]
-
     classes_i = sorted([x for x in class_list if (None, RDF.type, get_full_uri(x)) in o_graph])
-
     instance_list = get_instances(class_list)
 
     # Build HTML list of terms.
@@ -621,13 +613,18 @@ def get_header_html():
 
     html_str += """<h2 id="subtitle">%s</h2>\n""" % header["desc"][0]
     html_str += """<h3 id="mymw-doctype">%s &mdash; %s""" % (trans_dict["draft"][l_index], header["date_str"])
-    url = "/".join(spec_url.split("/")[:-1]) + "/" + spec_pre + "-"
-    curr_url = url + header["date"]
+
+    url = "/".join(spec_url.split("/")[:-1]) + "/" + spec_pre + "-" + header["date"]
+    curr_url = url
     latest_url = url[:-1]
     version_type = "English"
+
     if lang == "en":
         version_type = "Française"
-    url += header["date"] + "-FR.html"
+        url += "-FR.html"
+    else:
+        url += "-EN.html"
+
     html_str += """(<a href="%s">Version %s</a>)</h3>\n""" % (url, version_type)
     html_str += "<dl>\n"
     if header["prior"]:
