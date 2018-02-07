@@ -15,8 +15,13 @@ force:	$(ONTOLOGY).owl
 	touch $(ONTOLOGY)-template-$(O_LANG).html	
 	rm -f cwrc-ref.bib
 
-all: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp $(ONTOLOGY)-$(ONTOLOGY_DATE)-$(O_LANG).html $(ONTOLOGY).html $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl $(ONTOLOGY)-$(ONTOLOGY_DATE).nt $(ONTOLOGY)-$(ONTOLOGY_DATE).bibli
-
+all: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-$(ONTOLOGY_DATE)-$(O_LANG).html $(ONTOLOGY).html
+	rm $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp2
+	rm $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp
+	rm $(ONTOLOGY)-$(ONTOLOGY_DATE).counts
+	rm $(ONTOLOGY)-$(ONTOLOGY_DATE).unique
+	# rm $(ONTOLOGY)-template-$(ONTOLOGY_DATE)-$(O_LANG).html
+	# rm $(ONTOLOGY)-template2-$(ONTOLOGY_DATE)-$(O_LANG).html
 
 $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp: $(ONTOLOGY).owl $(ONTOLOGY)-$(ONTOLOGY_DATE).bibli
 	echo $(ONTOLOGY_LOGO)
@@ -25,24 +30,19 @@ $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp: $(ONTOLOGY).owl $(ONTOLOGY)-$(ONTOLOGY_DATE).b
 	cat $(ONTOLOGY)-$(ONTOLOGY_DATE).bibli >> $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp 
 	echo "</rdf:RDF>" >> $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp 
 
-
 $(ONTOLOGY)-$(ONTOLOGY_DATE).counts: $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp
 	rapper $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp | wc -l > $(ONTOLOGY)-$(ONTOLOGY_DATE).counts
 $(ONTOLOGY)-$(ONTOLOGY_DATE).unique: $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp
 	rapper $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp | cut -d " " -f 1 | sort | sort -u | wc -l > $(ONTOLOGY)-$(ONTOLOGY_DATE).unique
+
 $(ONTOLOGY)-$(ONTOLOGY_DATE).owl: $(ONTOLOGY)-$(ONTOLOGY_DATE).unique $(ONTOLOGY)-$(ONTOLOGY_DATE).counts $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp ./scripts/crossRef.py
 	./scripts/crossRef.py $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp > $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp2
 	cat $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp2 | sed 's/ONTOLOGY_DATE/$(ONTOLOGY_DATE)/g' | sed 's/TOTAL_TRIPLES_CWRC_ONTOLOGY/$(TOTAL_TRIPLES_CWRC_ONTOLOGY)/g' | sed 's/TOTAL_ENTITIES_CWRC_ONTOLOGY/$(TOTAL_ENTITIES_CWRC_ONTOLOGY)/g' > $(ONTOLOGY)-$(ONTOLOGY_DATE).owl	
-$(ONTOLOGY)-$(ONTOLOGY_DATE).nt: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 	rapper $(ONTOLOGY)-$(ONTOLOGY_DATE).owl > $(ONTOLOGY)-$(ONTOLOGY_DATE).nt
-$(ONTOLOGY)-$(ONTOLOGY_DATE).ttl: $(ONTOLOGY)-$(ONTOLOGY_DATE).owl
 	rapper -o turtle $(ONTOLOGY)-$(ONTOLOGY_DATE).owl > $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl	
+
 $(ONTOLOGY)-$(ONTOLOGY_DATE).bibli:
 	./scripts/getFedoraCollection.sh $(ONTOLOGY) $(ONTOLOGY)-$(ONTOLOGY_DATE).bibli
-$(DOCS_TEMPLATES): $(DOCS) $(ONTOLOGY).owl
-	./generateTermDocumentation.sh doc $(ONTOLOGY)-docs/
-$(ONTOLOGY)-$(ONTOLOGY_DATE).dot: $(ONTOLOGY).owl
-	grep -v "rdfs:label" $(ONTOLOGY).owl  | grep -v "rdfs:comment"| grep -v "foaf:name" | grep -v "rdf:type" | rapper -o dot - "http://rdf.muninn-project.org/ontologies/"$(ONTOLOGY)"#" | grep -v "owl:Class" | grep -v "owl:ObjectProperty" > $(ONTOLOGY)-$(ONTOLOGY_DATE).dot
 
 $(ONTOLOGY)-template-$(ONTOLOGY_DATE)-$(O_LANG).html: $(ONTOLOGY)-template-$(O_LANG).html figures/religionTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg figures/politicalAffiliationTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg #figures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg
 	sed "s/PREVIOUS_ONTOLOGY/$(PREVIOUS_ONTOLOGY)/g"  < $(ONTOLOGY)-template-$(O_LANG).html | sed "s/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g" | sed "s/ONTOLOGY_NAME/$(ONTOLOGY)/g"  | sed "s/ONTOLOGY_DATE/$(ONTOLOGY_DATE)/g" |  sed "s/ONTOLOGY_LONGDATE/$(ONTOLOGY_LONGDATE)/g"  | sed "s/ONTOLOGY_VERSION/$(ONTOLOGY_VERSION)/g"  | sed 's/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g'  > $(ONTOLOGY)-template-$(ONTOLOGY_DATE)-$(O_LANG).html
@@ -62,13 +62,8 @@ figures/politicalAffiliationTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: cwrc.owl sc
 #figures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: genre.owl scripts/createTaxonomy.pl
 #	./scripts/createTaxonomy.pl genre.owl Genre $(O_LANG) | unflatten -l 5 -c 10 | dot -ofigures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
 
-
 $(ONTOLOGY).html: $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html $(ONTOLOGY).html
-	rm $(ONTOLOGY)-template-$(ONTOLOGY_DATE)-$(O_LANG).html
-	rm $(ONTOLOGY)-template2-$(ONTOLOGY_DATE)-$(O_LANG).html
-	rm $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp2
-	rm $(ONTOLOGY)-$(ONTOLOGY_DATE).tmp
 
 testing-deploy: force all
 testing: all
@@ -103,8 +98,7 @@ doc: scripts/docgen.py
 	./scripts/docgen.py genre.owl genre genre-template-FR.html  genre-FR-$(ONTOLOGY_DATE).html  fr
 	./scripts/docgen.py genre.owl genre genre-template-EN.html  genre-EN-$(ONTOLOGY_DATE).html  en
 doctest: scripts/docgen.py
-	./scripts/docgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).owl $(ONTOLOGY)-template2-$(ONTOLOGY_DATE)-$(O_LANG).html  $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html  en
+	./scripts/docgen.py $(ONTOLOGY).rdf $(ONTOLOGY)-template2-$(ONTOLOGY_DATE)-$(O_LANG).html  $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html  en
 
 cross:
-	# ./scripts/crossRef.py cwrc.owl
 	./scripts/crossRef.py cwrc.owl > Testing.owl
