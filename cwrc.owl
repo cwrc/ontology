@@ -227,7 +227,14 @@
 
   <owl:Class rdf:ID="NaturalPerson">
     <rdfs:label xml:lang="en">natural person</rdfs:label>
-    <skos:definition xml:lang="en">A person that is alive, or was alive at some point in time.</skos:definition>
+    <skos:definition xml:lang="en">A human being who is alive, or was alive at some point in time. Natural persons may be fictionalized, in which case they are also classed as a @@#FictionalPerson@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="FictionalPerson">
+    <rdfs:label xml:lang="en">fictional person</rdfs:label>
+    <skos:definition xml:lang="en">A person, broadly defined, who features in an imaginative work such as a literary work, as a character or in some other way that distinguishes the reference to them from the natural person who is being represented. In other words, there is a distinction between a simple allusion to a @@#NaturalPerson@@, and the fictionalization of that person within a text or other work of art.</skos:definition>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:Class>
