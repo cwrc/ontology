@@ -205,7 +205,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:Class>
 
-  <owl:ObjectProperty rdf:about="affectedEntity">
+  <owl:ObjectProperty rdf:about="#affectedEntity">
     <rdfs:label xml:lang="en">affected entity</rdfs:label>
     <skos:definition xml:lang="en">Affected Entities link to the Object or Class that was modified within a ChangeSet, this can be any rdf:resource. A ChangeSet may have 0 to many AffectedEntities.</skos:definition>
     <rdfs:domain rdf:resource="#ChangeSet"/>
@@ -213,7 +213,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="alteredBy">
+  <owl:ObjectProperty rdf:about="#alteredBy">
     <rdfs:label xml:lang="en">altered by</rdfs:label>
     <skos:definition xml:lang="en">Links a person to a Changeset entry</skos:definition>
     <rdfs:domain rdf:resource="#ChangeSet"/>
@@ -228,7 +228,7 @@
     <rdfs:label xml:lang="en">natural person</rdfs:label>
     <skos:definition xml:lang="en">A human being who is alive, or was alive at some point in time. Natural persons may be fictionalized, in which case they are also classed as a @@#FictionalPerson@@.</skos:definition>
      <rdfs:label xml:lang="fr">personne physique</rdfs:label>
-    <skos:definition xml:lang="fr"> Être humain en vie ou ayant vécu à un moment donné. Les personnes physiques peuvent être objets de fiction, auquel cas elles sont classées en tant que @@#PersonneFictive@@.</skos:definition>
+    <skos:definition xml:lang="fr"> Être humain en vie ou ayant vécu à un moment donné. Les personnes physiques peuvent être objets de fiction, auquel cas elles sont classées en tant que @@#FictionalPerson@@.</skos:definition>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:Class>
@@ -237,7 +237,7 @@
     <rdfs:label xml:lang="en">fictional person</rdfs:label>
     <skos:definition xml:lang="en">A person, broadly defined, who features in an imaginative work such as a literary work, as a character or in some other way that distinguishes the reference to them from the natural person who is being represented. In other words, there is a distinction between a simple allusion to a @@#NaturalPerson@@, and the fictionalization of that person within a text or other work of art.</skos:definition>
      <rdfs:label xml:lang="en">personne fictive</rdfs:label>
-    <skos:definition xml:lang="en">Définie de façon large, personne figurant dans une œuvre créative telle qu'une œuvre littéraire, dans laquelle elle est un personnage ou représentée d'une façon qui diffère de la personne physique à laquelle elle renvoie. Autrement dit, il existe une différence entre la simple allusion à une @@#PersonnePhysique@@ et la version romancée de cette personne dans un texte ou tout autre oeuvre d'art. </skos:definition>
+    <skos:definition xml:lang="en">Définie de façon large, personne figurant dans une œuvre créative telle qu'une œuvre littéraire, dans laquelle elle est un personnage ou représentée d'une façon qui diffère de la personne physique à laquelle elle renvoie. Autrement dit, il existe une différence entre la simple allusion à une @@#NaturalPerson@@ et la version romancée de cette personne dans un texte ou tout autre oeuvre d'art. </skos:definition>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:Class>
