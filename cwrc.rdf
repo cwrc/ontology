@@ -5231,9 +5231,8 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </skos:Concept>
-  <!-- Genres -->
-  <!-- Personal / family relationships. -->
 
+  <!-- Personal / family relationships. -->
   <owl:ObjectProperty rdf:ID="interpersonalRelationship">
     <rdf:value>OTHER</rdf:value>
     <rdfs:label xml:lang="en">interpersonal relationship</rdfs:label>
@@ -5241,8 +5240,6 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-
-
 
   <owl:ObjectProperty rdf:ID="relativeOf">
     <rdf:value>FAMILY</rdf:value>
@@ -5263,8 +5260,6 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
   </owl:ObjectProperty>
 
-
-
   <owl:ObjectProperty rdf:ID="guardianOf">
     <rdf:value>GUARDIAN</rdf:value>
     <rdfs:label xml:lang="en">guardian of</rdfs:label>
@@ -5273,16 +5268,6 @@ At the heart of a persona is an identity that is interacted with by others and t
     <skos:definition xml:lang="fr">Une personne placé en charge du bienfait d'un personne mineure.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdfs:subPropertyOf rdf:resource="#interpersonalRelationship"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-
-
-
-  <owl:ObjectProperty rdf:ID="bloodRelativeOf">
-    <rdfs:label xml:lang="en">blood relative of</rdfs:label>
-    <rdfs:label xml:lang="fr">liens de sang</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
@@ -5368,7 +5353,6 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
   </owl:ObjectProperty>
 
-
   <owl:ObjectProperty rdf:ID="grandDaughterOf">
     <rdf:value>GRANDDAUGHTER</rdf:value>
     <rdfs:label xml:lang="en">grand-daughter of</rdfs:label>
@@ -5397,7 +5381,6 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
   </owl:ObjectProperty>
 
-
   <owl:ObjectProperty rdf:ID="stepDaughterOf">
     <rdf:value>STEPDAUGHTER</rdf:value>
     <rdfs:label xml:lang="en">step-daughter of</rdfs:label>
@@ -5415,7 +5398,6 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-
 
   <owl:ObjectProperty rdf:ID="parentOf">
     <rdf:value>PARENTS</rdf:value>
@@ -5553,8 +5535,6 @@ At the heart of a persona is an identity that is interacted with by others and t
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
   </owl:ObjectProperty>
-  
-  
 
 
   <owl:ObjectProperty rdf:ID="partnerOf">
@@ -5590,7 +5570,6 @@ At the heart of a persona is an identity that is interacted with by others and t
   </owl:ObjectProperty>
 
 <!-- Instances of roles -->
-
   <cwrc:Role rdf:about="#Actor">
     <rdfs:label xml:lang="en">actor</rdfs:label>
     <skos:definition xml:lang="en">A person performing a certain role within an event.</skos:definition>
@@ -5616,6 +5595,19 @@ At the heart of a persona is an identity that is interacted with by others and t
     <owl:equivalentProperty rdf:resource="#hasCulturalForm"/>
     <dcterms:isReplacedBy rdf:resource="#hasCulturalForm"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </owl:DeprecatedProperty>
+
+  <!-- <owl:ObjectProperty rdf:ID="bloodRelativeOf"> -->
+  <owl:DeprecatedProperty rdf:ID="bloodRelativeOf">
+    <rdfs:label xml:lang="en">blood relative of</rdfs:label>
+    <rdfs:label xml:lang="fr">liens de sang</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated, with no current equivalence, in favour of definition of family relationships as more fluid and expansive than blood relations.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver sans équivalence.</rdfs:comment>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
   </owl:DeprecatedProperty>
 
   <!-- Deprecated classes go here for sanity -->
