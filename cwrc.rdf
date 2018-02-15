@@ -4885,7 +4885,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">est de race</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#RaceColour"/>
-    <skos:definition xml:lang="en">A subclass of raceEthnicityContext, this describes a person's racial identity.</skos:definition>
+    <skos:definition xml:lang="en">A subproperty of @@#personalProperty@@, this describes a person's racial identity.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -4921,10 +4921,10 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#Ethnicity"/>
     <skos:definition xml:lang="en">
-      A subclass of Cultural Form for indicating a person's self-reported ethnicity, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. For more information on this property, see @@#Ethnicity@@.
+      A subproperty of @@#personalPropertySelfReported@@ for indicating a person's self-reported ethnicity, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. For more information on this property, see @@#Ethnicity@@.
     </skos:definition>
     <skos:definition xml:lang="fr">
-      Une sous-classe de Forme Culturelle qui indique l’ethnicité autodéclarée, accompagnée du contexte fourni par les annotations de @@#RaceEthnicityContext@@ là ou il est disponible. Pour plus d’informations sur cette propriété, voir @@#Ethnicity@@.
+      Une sous-propriété de @@#personalPropertySelfReported@@ qui indique l’ethnicité autodéclarée, accompagnée du contexte fourni par les annotations de @@#RaceEthnicityContext@@ là ou il est disponible. Pour plus d’informations sur cette propriété, voir @@#Ethnicity@@.
     </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
