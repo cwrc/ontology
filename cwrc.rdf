@@ -902,6 +902,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <skos:definition xml:lang="fr">
       Indique le refus des catégories genrées dominantes et de  la cisnormativité, l’identification aux deux, à aucun, ou à une combinaison des rôles genrés dominants. Le terme est fortement associé associé à la fin du 20e siècle et au 21e siècle. Il provient des théories déconstructionnistes et poststructuralistes, et fut formulé pour la première fois par  <![CDATA[<a href="#cwrc:fab56e35-9796-4e6d-861d-a6b626f5714d">Teresa de Lauretis lors d'une conférence en 1990</a>]]>. Du fait que le terme «queer» est assez récent, il est toujours sujet à des discussions parmi les chercheurs et les activistes. Même s’il ne possède pas de définition définitive, le terme est de plus en plus utilisé pour référer à une large catégorie de personnes qui ne sont pas «hétérosexuel/les», dans un sens qui va au-delà de l’orientation sexuelle. Selon <![CDATA[<a href="cwrc:825995b3-3b66-4e0a-a62d-d8649aaead78">Judith Butler</a>]]>, l’identité queer ne peut pas être compris comme une essence, mais est plutôt performative et s’actualise à travers des actions, au sein d’une posture délibérément  à contre-courant des acceptions traditionnelles du genre. Voir See <![CDATA[<a href="https://fr.wikipedia.org/wiki/Non-binaire">Non-binaire — Wikipédia</a>]]>. 
     </skos:definition>
+    <skos:broader rdf:resource="#queerLabel"/>
     <rdf:type rdf:resource="http://www.w8.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5199,6 +5200,22 @@ At the heart of a persona is an identity that is interacted with by others and t
       <owl:Thing rdf:about="#cisWoman"/>
       <owl:Thing rdf:about="#transWoman"/>
       <owl:Thing rdf:about="#lesbian"/>
+    </owl:oneOf>
+    <skos:inScheme rdf:resource="#TextLabels"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="#queerLabel">
+    <rdfs:label xml:lang="en">queer</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:literalForm xml:lang="en">queer</cwrc:literalForm>
+    <cwrc:literalForm xml:lang="fr"/>
+    <foaf:name xml:lang="en">queer (Label)</foaf:name>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="#TextLabels"/>
+    <owl:oneOf rdf:parseType="Collection">
+      <owl:Thing rdf:about="#GenderQueer"/>
     </owl:oneOf>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
