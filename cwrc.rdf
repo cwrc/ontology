@@ -720,10 +720,10 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-  <cwrc:GeographicalHeritage rdf:about="#england">
+  <cwrc:GeographicalHeritage rdf:about="#englishGeographicHeritage">
     <rdfs:label xml:lang="en">England</rdfs:label>
     <rdfs:label xml:lang="fr">Angleterre</rdfs:label>
-    <foaf:name xml:lang="en">England (Geographical Heritage)</foaf:name>
+    <foaf:name xml:lang="en">England (Geographic Heritage)</foaf:name>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#GeographicalHeritage"/>
     <skos:definition xml:lang="en"/>
@@ -736,7 +736,7 @@ At the heart of a persona is an identity that is interacted with by others and t
   <cwrc:GeographicalHeritage rdf:about="#jewishGeographicalHeritage">
     <rdfs:label xml:lang="en">Jewish</rdfs:label>
     <rdfs:label xml:lang="fr">Juif</rdfs:label>
-    <foaf:name xml:lang="en">Jewish (Geographical Heritage)</foaf:name>
+    <foaf:name xml:lang="en">Jewish (Geographic Heritage)</foaf:name>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#GeographicalHeritage"/>
     <skos:definition xml:lang="en"/>
@@ -5694,6 +5694,24 @@ At the heart of a persona is an identity that is interacted with by others and t
   </owl:DeprecatedClass>
 
   <!-- Deprecated Instances -->
+  <rdf:Description rdf:about="#england">
+    <rdfs:label xml:lang="en">England</rdfs:label>
+    <rdfs:label xml:lang="fr">Angleterre</rdfs:label>
+    <foaf:name xml:lang="en">England (Geographical Heritage)</foaf:name>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#GeographicalHeritage"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <skos:broader rdf:resource="#englishLabel"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:sameAs rdf:resource="http://eurovoc.europa.eu/5438"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#englishGeographicHeritage@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#englishGeographicHeritage@@.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#englishGeographicHeritage"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
   <rdf:Description rdf:about="#maleLabel">
       <rdf:value>male</rdf:value>
       <rdfs:label xml:lang="en">male</rdfs:label>
@@ -6082,7 +6100,7 @@ At the heart of a persona is an identity that is interacted with by others and t
       <vs:term_status xml:lang="en">deprecated</vs:term_status>
     </rdf:Description>
     
-
+  
     <rdf:Description rdf:about="#EnglishNationalHeritage">
       <rdfs:label xml:lang="en">English</rdfs:label>
       <rdfs:label xml:lang="fr">Anglais</rdfs:label>
@@ -6343,22 +6361,6 @@ At the heart of a persona is an identity that is interacted with by others and t
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
-<!--   <rdf:Description rdf:about="#societyOfFriends">
-    <rdfs:label xml:lang="en">Society of Friends</rdfs:label>
-    <rdfs:label xml:lang="fr">Société religieuse des Amis</rdfs:label>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="#Religion"/>
-    <skos:broaderTransitive rdf:resource="#christianity"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#quakerism@@.</rdfs:comment>
-    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#quakerism@@.</rdfs:comment>
-    <dcterms:isReplacedBy rdf:resource="#quakerism"/>
-    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    <vs:term_status xml:lang="en">deprecated</vs:term_status>
-  </rdf:Description> -->
   <rdf:Description rdf:about="#unitarianChurch">
     <rdfs:label xml:lang="en">Unitarian Church</rdfs:label>
     <rdfs:label xml:lang="fr">Église unitarienne</rdfs:label>
@@ -6394,7 +6396,6 @@ At the heart of a persona is an identity that is interacted with by others and t
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
-
   <rdf:Description rdf:about="#black">
     <rdfs:label xml:lang="en">black (race)</rdfs:label>
     <rdfs:label xml:lang="fr">noir (race)</rdfs:label>
