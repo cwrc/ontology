@@ -634,7 +634,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">héritage national</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">A subclass of Cultural Form, this property indicates a person's national heritage, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. National Heritage is composed of various elements related to national identity, often transmitted from previous generations and influenced by a subject’s national historical background or geographical heritage. It can be multiple and can be different from a person’s national identity, current or official citizenship, or the geographical region or territory in which a person resides. Those using this class and its subclasses are encouraged to consult associated @@#NationalityContext@@ excerpts or annotations, if available.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of Cultural Form, this property indicates a person's national heritage, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. National Heritage is composed of various elements related to national identity, often transmitted from previous generations and influenced by a subject’s national historical background or @@#GeographicalHeritage@@. It can be multiple and can be different from a person’s national identity, current or official citizenship, or the geographical region or territory in which a person resides. Those using this class and its subclasses are encouraged to consult associated @@#NationalityContext@@ excerpts or annotations, if available.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-catégorie de Forme Culturelle, cette propriété indique l’héritage national d’une personne, accompagné du @@#NationalityContext@@ lorsqu'il est disponible. Héritage National est composé de divers éléments relatifs à l’identité nationale, et est souvent transmis par des générations antérieures, influencé par le milieu historique et l’héritage géographique. Il peut être puluriel et peut se distinguer de l’identité nationale, de la citoyenneté actuelle ou officielle, de la région géographique ou du territoire de résidence. Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les extraits ou les annotations de @@#NationalityContext@@ lorsque ceux-ci sont disponibles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -711,7 +711,7 @@ At the heart of a persona is an identity that is interacted with by others and t
   </owl:Class>
   <!-- Geographic Heritages -->
   <owl:Class rdf:ID="GeographicalHeritage">
-    <rdfs:label xml:lang="en">geographical heritage</rdfs:label>
+    <rdfs:label xml:lang="en">geographic heritage</rdfs:label>
     <rdfs:label xml:lang="fr">héritage géographique</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
