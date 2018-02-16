@@ -5156,7 +5156,7 @@ At the heart of a persona is an identity that is interacted with by others and t
       <owl:Thing rdf:about="#EnglishNationalHeritage"/>
       <owl:Thing rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
       <owl:Thing rdf:about="#EnglishNationalIdentity"/>
-      <owl:Thing rdf:about="#england"/>
+      <owl:Thing rdf:about="#englishGeographicHeritage"/>
     </owl:oneOf>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5235,22 +5235,6 @@ At the heart of a persona is an identity that is interacted with by others and t
       <owl:Thing rdf:about="#jewishEthnicity"/>
       <owl:Thing rdf:about="#jewishGeographicalHeritage"/>
       <owl:Thing rdf:about="#jewishNationalIdentity"/>
-    </owl:oneOf>
-    <skos:inScheme rdf:resource="#TextLabels"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="#englandLabel">
-    <rdfs:label xml:lang="en">England</rdfs:label>
-    <rdfs:label xml:lang="fr">Angleterre</rdfs:label>
-    <cwrc:literalForm xml:lang="en">England</cwrc:literalForm>
-    <cwrc:literalForm xml:lang="fr">Angleterre</cwrc:literalForm>
-    <foaf:name xml:lang="en">England</foaf:name>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="#TextLabels"/>
-    <owl:oneOf rdf:parseType="Collection">
-      <owl:Thing rdf:about="#england"/>
     </owl:oneOf>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5709,6 +5693,27 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#englishGeographicHeritage@@.</rdfs:comment>
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#englishGeographicHeritage@@.</rdfs:comment>
     <dcterms:isReplacedBy rdf:resource="#englishGeographicHeritage"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#englandLabel">
+    <rdfs:label xml:lang="en">England</rdfs:label>
+    <rdfs:label xml:lang="fr">Angleterre</rdfs:label>
+    <cwrc:literalForm xml:lang="en">England</cwrc:literalForm>
+    <cwrc:literalForm xml:lang="fr">Angleterre</cwrc:literalForm>
+    <foaf:name xml:lang="en">England</foaf:name>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="#TextLabels"/>
+    <owl:oneOf rdf:parseType="Collection">
+      <owl:Thing rdf:about="#england"/>
+    </owl:oneOf>
+    <skos:inScheme rdf:resource="#TextLabels"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#englishLabel@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#englishLabel@@.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#englishLabel"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
