@@ -781,6 +781,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <skos:definition xml:lang="fr">
       Indique l’identification ou l’assignation au genre masculin, et qui est souvent mais non nécessairement de sexe masculin.  
     </skos:definition>
+    <skos:broader rdf:resource="#manlabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -796,6 +797,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <skos:definition xml:lang="fr">
       Indique l’identification ou l’assignation au genre féminin, et qui est souvent mais non nécessairement de sexe féminin. «On ne naît pas femme, on le devient»: Simone de Beauvoir, Le deuxième sexe <![CDATA[<a href="#cwrc:c6a678e5-8fc6-41bc-8631-7cfb7116017e"> (1973) </a>]]>
     </skos:definition>
+    <skos:broader rdf:resource="#womanlabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -824,6 +826,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <skos:definition xml:lang="fr">
       Indique une femme cisgenre. 
     </skos:definition>
+    <skos:broader rdf:resource="#womanlabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -838,6 +841,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <skos:definition xml:lang="fr">
       Indique un homme cisgenre. 
     </skos:definition>
+    <skos:broader rdf:resource="#manlabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -867,6 +871,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <skos:definition xml:lang="fr">
       Indique habituellement  l’identification en tant qu’homme alors que le sexe «féminin» a été assigné à la naissance. Certains hommes trans renoncent à la mention «trans» et préfèrent utiliser le terme «homme» seul. (<![CDATA[<a href="#cwrc:7b624412-74a3-4560-a038-d59b747ee9c7">TSER, 2017</a>]]>). Cette définition inclut également les garçons trans.
     </skos:definition>
+    <skos:broader rdf:resource="#manlabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -882,6 +887,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <skos:definition xml:lang="fr">
       Indique habituellement l’identification en tant que femme alors que le sexe «masculin» a été assigné à la naissance. Certaines femmes trans renoncent à la mention «trans» et préfèrent utiliser le terme «femme» seul. (<![CDATA[<a href="#cwrc:7b624412-74a3-4560-a038-d59b747ee9c7">TSER, 2017</a>]]>). Cette définition inclut également les filles trans.
     </skos:definition>
+    <skos:broader rdf:resource="#womanlabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -5171,6 +5177,8 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#man"/>
+      <owl:Thing rdf:about="#cisMan"/>
+      <owl:Thing rdf:about="#transMan"/>
     </owl:oneOf>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5188,6 +5196,9 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#woman"/>
+      <owl:Thing rdf:about="#cisWoman"/>
+      <owl:Thing rdf:about="#transWoman"/>
+      <owl:Thing rdf:about="#lesbian"/>
     </owl:oneOf>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
