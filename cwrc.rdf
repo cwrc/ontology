@@ -656,7 +656,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as Welsh as an inherited national identity.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <skos:closeMatch rdf:resource="http://dbpedia.org/page/Welsh_people"/>
+    <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Welsh_people"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broader rdf:resource="#welshLabel"/>
@@ -682,8 +682,8 @@ At the heart of a persona is an identity that is interacted with by others and t
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as Jewish or Israeli as a national identity.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <skos:broader rdf:resource="#jewishlabel"/>
-    <skos:closeMatch rdf:resource="http://dbpedia.org/page/Israelis"/>
-    <skos:relatedMatch rdf:resource="http://dbpedia.org/page/Zionism"/>
+    <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Israelis"/>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/resource/Zionism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:NationalIdentity>
@@ -697,7 +697,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:sameAs rdf:resource="http://eurovoc.europa.eu/5438"/>
-    <skos:closeMatch rdf:resource="http://dbpedia.org/page/English_national_identity"/>
+    <skos:closeMatch rdf:resource="http://dbpedia.org/resource/English_national_identity"/>
     <skos:broader rdf:resource="#englishLabel"/>
   </cwrc:NationalIdentity>
   
@@ -746,7 +746,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as of Jewish heritage in relation to a place, which may or may not be Israel.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <skos:broader rdf:resource="#jewishLabel"/>
-    <skos:closeMatch rdf:resource="http://dbpedia.org/page/Jewish_identity"/>
+    <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Jewish_identity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:GeographicalHeritage>
@@ -2097,7 +2097,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <skos:definition xml:lang="fr">45xCe modèle est-il pertinent ? Cliquez pour en voir d'autres.Cet article ne respecte pas la neutralité de point de vue (indiquez la date de pose grâce au paramètre date). Considérez son contenu avec précaution et/ou discutez-en. Il est possible de préciser les sections non neutres en utilisant {{section non neutre}} et de souligner les passages problématiques avec {{passage non neutre}}. 45xCe modèle est-il pertinent ? Cliquez pour en voir d'autres.Cet article ne cite pas suffisamment ses sources (indiquez la date de pose grâce au paramètre date).</skos:definition>
     <rdfs:comment xml:lang="en">This term is a CWRC specific addition not in the original Orlando tag set.</rdfs:comment>
     <skos:note>Overlaps with the @@#professional@@ class.</skos:note>
-    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/page/Upper_middle_class"/>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Upper_middle_class"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
@@ -5415,7 +5415,7 @@ At the heart of a persona is an identity that is interacted with by others and t
 
   <owl:ObjectProperty rdf:ID="grandDaughterOf">
     <rdf:value>GRANDDAUGHTER</rdf:value>
-    <rdfs:label xml:lang="en">grand-daughter of</rdfs:label>
+    <rdfs:label xml:lang="en">granddaughter of</rdfs:label>
     <rdfs:label xml:lang="fr">petite fille de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#grandChildOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5424,8 +5424,8 @@ At the heart of a persona is an identity that is interacted with by others and t
 
   <owl:ObjectProperty rdf:ID="grandSonOf">
     <rdf:value>GRANDSON</rdf:value>
-    <rdfs:label xml:lang="en">grand-son of</rdfs:label>
-    <rdfs:label xml:lang="fr">petit-fils de</rdfs:label>
+    <rdfs:label xml:lang="en">grandson of</rdfs:label>
+    <rdfs:label xml:lang="fr">petit fils de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#grandChildOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5530,7 +5530,7 @@ At the heart of a persona is an identity that is interacted with by others and t
 
   <owl:ObjectProperty rdf:ID="grandMotherOf">
     <rdf:value>GRANDMOTHER</rdf:value>
-    <rdfs:label xml:lang="en">grand mother of</rdfs:label>
+    <rdfs:label xml:lang="en">grandmother of</rdfs:label>
     <rdfs:label xml:lang="fr">grand-mère de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#grandParentOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5539,7 +5539,7 @@ At the heart of a persona is an identity that is interacted with by others and t
 
   <owl:ObjectProperty rdf:ID="grandFatherOf">
     <rdf:value>GRANDFATHER</rdf:value>
-    <rdfs:label xml:lang="en">grand father of</rdfs:label>
+    <rdfs:label xml:lang="en">grandfather of</rdfs:label>
     <rdfs:label xml:lang="fr">grand-père de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#grandParentOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
