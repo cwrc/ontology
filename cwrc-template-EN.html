@@ -9,10 +9,6 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/cwrc.css" rel="stylesheet" type="text/css" />
     <link rel="mvcb:generatorAgent" type="application/rdf+xml" title="DOAP" href="https://raw.githubusercontent.com/muninn/ontology-tools/master/rdf/voidDescription.rdf#specgenMarkII" />
-  <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
@@ -36,34 +32,34 @@
     <div class="table-contents">
       <ul>
         <li><a href="#introduction">1. Introduction</a></li>
-        <li><a href="#status">2. Status of this Document</a></li>
+        <li><a href="#status">2. Status of this document</a></li>
         <li><a href="#status_ontology">3. Status of this dynamic ontology</a></li>
         <li><a href="#background">4. Background on the Orlando source data</a></li>
         <li><a href="#goals">5. Basic ontological goals</a></li>
         <ul>
           <li><a href="#principals">a. Principles</a></li>
-          <li><a href="#linkages">b. Linkages to other ontologies</a></li>
-          <li><a href="#provenance">c. Provenance and contexts</a></li>
-          <li><a href="#labelsandvalues">d. Labels and values</a></li>
-          <li><a href="#culturalformationsgeneric">e. Cultural Form</a></li>
+          <li><a href="#competency">b. Competency Questions</a></li>
+          <li><a href="#tools">c. Anticipated Tools and Functionalities</a></li>
+          <li><a href="#linkages">d. Linkages to other ontologies</a></li>
+          <li><a href="#provenance">e. Provenance and contexts</a></li>
+          <li><a href="#labelsandvalues">f. Labels and values</a></li>
+          <li><a href="#culturalformationsgeneric">g. Cultural Form</a></li>
         </ul>
         <li><a href="#structures">6. CWRC ontological structures</a></li>
         <ul>
-          <li><a href="#culturalformationsontology">a. Cultural Form</a></li>
-          <li><a href="#contextontology">b. Contexts</a></li>
-          <li><a href="#granularproperties">c. Granular Properties</a></li>
-          <li><a href="#taxonomiesontology">d. Built-in Taxonomies</a></li>
+          <li><a href="#persona">a. Persons, Personas and Roles</a></li>
+          <li><a href="#culturalformationsontology">b. Cultural Form</a></li>
+          <ul>
+            <li><a href="#contextontology">i. Contexts</a></li>
+            <li><a href="#granularproperties">ii. Granular Properties</a></li>
+          </ul>
+          <li><a href="#taxonomiesontology">c. Built-in Taxonomies</a></li>
           <ul>
             <li><a href="#religion_taxonomy">i. Religion</a></li>
             <li><a href="#politicalAffliation_taxonomy">ii. Political Affiliation</a></li>
             <li><a href="#genre_taxonomy">iii. Literary Genre</a></li>
-            <!-- <li><a href="#gender_taxonomy">iii. Gender, Sex and Orientation</a></li> -->
           </ul>
-          <li><a href="#notesEvent">e. Notes on CWRC Events</a></li>
-          <ul>
-            <li><a href="#event_nomenclature">i. Notes on nomenclature</a></li>
-          </ul>
-          <li><a href="#changeSets">f. Notes on ChangeSets</a></li>
+          <li><a href="#changeSets">d. Notes on ChangeSets</a></li>
         </ul>
         <li><a href="#definition_list">7. Global Cross-Reference</a></li>
         <li><a href="#reference">8. Detailed references for all terms, classes and properties</a></li>
@@ -106,8 +102,118 @@
     <h4 id="principals">a. Principles</h4>
     <p>The schema covers entities, classes, and relationships associated with the domains of literature and literary and cultural history as understood from an intersectional feminist perspective. The ontology design responds to the challenges of shifting from semi-structured to structured data (<a href="#james_smith_working_2013">Smith, 2013</a>). Although linked data triples stand on their own formally, many are derived from discursive prose and are best read in an environment that links back to their original context. The CWRC ontology design avoids representing RDF extractions from Orlando data as positivist assertions, and yet produces machine-readable OWL/RDF-compliant graph structures. It allows references to, without endorsing, external ontological vocabularies that are nevertheless part of documenting cultural processes and identities.</p>
 
+    <h4 id="competency">b. Competency Questions</h4>
+    <p>Competency questions are meant to provide a sense of scope to an ontology, that can serve a number of purposes including giving users a sense of what kind of information they might find in datasets that employ the ontology, and giving the ontology developers criteria against which to measure the success of the ontology. The CWRC ontology represents a wide range of information about writers’ lives, literary careers, and literary works. Moreover, as with other humanities data, this information may be put to a wide range of uses, many of which will not be foreseeable. For instance, the nineteenth-century novels of Susanna Moodie have been searched for evidence of specific weather events by researchers into climate change. This list will therefore not be exhaustive, but it should give some sense of the range of questions we would expect the ontology to be able to address. The fact that the datasets represented by this ontology cannot be comprehensive also needs to be stressed: the unevenness of the archival and published record plus the necessarily selective and variously prioritized ways in which the information has been collected and recorded mean that any sense of statistical significance or representativeness related to the kind of data for which this ontology is designed must be highly qualified and contextualized.</p>
 
-    <h4 id="linkages">b. Linkages to other ontologies</h4>
+    <h5>Biography-based questions</h5>
+    <ol>
+      <li>What people are known to have attended school in a certain city over a particular period of time?</li>
+      <li>What British authors attended the same schools as each other?</li>
+      <li>What writers were taught by or schooled alongside another woman writer?</li>
+      <li>Who is recorded to have died from a particular cause of death in a particular time period?</li>
+      <li>What family members is a particular person recorded to have had, and how they were related? </li>
+      <li>Which queer/lesbian identified authors are recorded as having attended single-sex institution?</li>
+    </ol>
+    <h5>Cultural Formation</h5>
+    <ol start="7">
+      <li>What people were identified with a particular race, colour, or nationality?</li>
+      <li>What women during the Victorian period were associated with multiple nationalities?</li>
+      <li>What writers had some form of Jewishness in common?</li>
+      <li>What British writers were associated with both Protestantism and Catholicism in the nineteenth century?</li>
+      <li>What literary texts engage with a particular religion or denomination?</li>
+      <li>What is the breakdown by the different genders represented in this dataset of novels published during a particular period?</li>
+      <li>Which writers are associated with a particular political affiliation?</li>
+      <li>Are writers more likely to be associated with gender-related causes at particular points in history?</li>
+    </ol>
+    <h5>Human Relationships</h5>
+    <ol start="15">
+      <li>Does a connection exist between two particular people?</li>
+      <li>How close is the connection? Is it asserted frequently in the data, as opposed to occurring only once or twice?</li>
+      <li>What types of connections to other people does a particular person have?</li>
+      <li>What family ties does this person have?</li>
+      <li>If two people are not connected, what is the shortest path between them via relationships with other people, or with other entities such as organizations or texts?</li>
+      <li>What connections exist between a set of people during a specified period in time?</li>
+      <li>How many people cite a particular author as influential in their own work?</li>
+      <li>How many writers are related to a particular organization? More specifically, which feminist organizations were supported by two or more generations of writers from a single family?</li>
+      <li>Who are all the people note here with whom this author collaborated professionally (editor to writer relationships; author to author; editor to editor, etc.)?</li>
+      <li>Who had a relative involved in professional publishing spheres?</li>
+    </ol>
+    <h5>Clustering/Networking People</h5>
+    <ol start=25>
+      <li>What authors are most interconnected with other authors in terms of their influence?</li>
+      <li>Can we identify clusters of writers who seem to be operating as a community in terms of having a tight network of friendships, literary relationships, use of the same publishers, reviewing each other’s works, etc.?</li>
+      <li>Can we identify individuals who were key connections between different groups?</li>
+      <li>Whose work was influenced by British and/or international writers of colour?</li>
+      <li>Who was involved in both feminist groups and animal welfare activism? </li>
+      <li>Who was in touch with non-literary artistic groups?</li>
+    </ol>
+    <h5>Texts/Works based questions</h5>
+    <ol start="31">
+      <li>What books were important to this author’s education? </li>
+      <li>What journals does a particular author have works published in?</li>
+      <li>What reviews exist for a particular book?</li>
+      <li>In what languages has a particular work been published?</li>
+      <li>Is there any acknowledged intertextual relation between X and Y? </li>
+      <li>In which journals does a particular author’s work appear?</li>
+      <li>How many intertextual relationships does an author have to female-authored literary works?</li>
+      <li>Find all the responses to this book that are deemed to be gendered. </li>
+      <li>Which works are represented as the most translated?</li>
+      <li>Find particular themes and topics in texts, such as which works of the imagination contain depictions of women’s colleges? Which depict political organizations?</li>
+      <li>Which authors wrote for the same journal and in the same time period?</li>
+      <li>Which fictional works allude to a particular type of activism? </li>
+      <li>Are there references to fictional works in this author’s non-fictional work? </li>
+      <li>Which European fictional texts are set outside of Europe? </li>
+      <li>Who destroyed her own works? Whose works were destroyed by others?</li>
+      <li>Which works seem to have been influenced by certain theorists or philosophers? </li>
+    </ol>
+    <h5>Geography based questions</h5>
+    <ol start="47">
+      <li>Which texts were or were not published in a particular country?</li>
+      <li>Which texts were or were not reviewed in a particular country?</li>
+      <li>In which cities or nations did a particular author reside?</li>
+      <li>Which cities or nations are depicted or discussed in an author’s work?</li>
+      <li>Which people played a particular role in all performances of a particular play over time?</li>
+      <li>Which works were written during travels? </li>
+      <li>Which texts were published or otherwise shared in countries outside of Europe? Which texts were reviewed in countries outside of Europe? </li>
+    </ol>
+    <h5>Time- (and Event-) Related Questions</h5>
+    <ol start="54">
+      <li>What are the most discussed texts of a particular temporal period within this dataset?</li>
+      <li>Trace the impact of a particular text through time and space.</li>
+      <li>What is the relative rise or fall of a writer’s reputation over time, in relation to other writers in the period?</li>
+      <li>What events in this person’s life were related to aspects of social identity such as religion, social class, or political affiliation?</li>
+      <li>What changes over time are recorded in the frequency of the kinds of relationships that the data describes, across numerous writers? E.g. Does this dataset record greater degrees of intertextuality with male writers or female writers, relatively speaking, at different points in time? </li>
+      <li>What major social or historical events and developments are reflected in the literary record?</li>
+      <li>Can we target exploration of the data at particular temporal periods, such as the Victorian period?</li>
+      <li>Which authors are likely to have known each other, due to overlapping chronologies, locations, and other connections in common?</li>
+    </ol>
+    <h5>Complex questions (probably not sparql queries)</h5>
+    <p>In many cases the ontology will play a part in investigating a more complex question or as a component of a larger hermeneutical process. For instance:</p>
+    <ol>
+      <li>Let me compare the publication patterns of writers, distinguishing by gender and by the number of children that they had. Looking at it over time, does their rate of literary productivity increase or decrease in relation to the number of children they have?</li>
+      <li>Show all the elements of both her self-taught and her formal education (books, subjects, instructors) that are also alluded to in a writer’s works.</li>
+      <li>Trace the impact of developments in writing, such as the emergence of a particular theme or formal feature, to a larger social development.</li>
+      <li>Test claims about the rise of genres or literary movements and see how they look when inflected by a dataset focused on women’s writing.</li>
+    </ol>
+    <h4 id="tools">c. Anticipated tools and functionalities</h4>
+    <p>Also relevant to the structure of the ontology are the kinds of tools and functionalities that it aims to support. These are:</p>
+    <ol>
+      <li>Searches through SPARQL queries;</li>
+      <li>Browsing, including faceting according to various criteria based on the ontology, including temporal periods, geographical locations, or the properties of writers;</li>
+      <li>Linking to our instance data by way of their URIs;</li>
+      <li>Discovery of significant information about instances through dereferenceable web pages;</li>
+      <li>Discovery of materials across the web that reference instances or other components of the ontology;</li>
+      <li>Graph Visualization of the structure of the ontology, including the properties and relationships it contains;</li>
+      <li>Network Visualization of the relationships between people and other people, and influence and relationship graphs showing connections between people and other entities such as books, indicating the directionality of relationships where appropriate.</li>
+      <li>Mapping of components of the data associated with geospatial information;</li>
+      <li>Timelines of components of the data associated with temporal information;</li>
+      <li>Use of SPIN rules and other logical inferencing tools to check for data errors, omissions, and consistencies;</li>
+      <li>Use of SPIN rules and other inferencing tools to derive new information from the combination of existing data and the ontologies;</li>
+      <li>Expose the unevenness of datasets by enabling the tracking of sources, provenance; and degrees of certainty in order to provide insight into gaps in the knowledge base;</li>
+      <li>Expose conflicts, contradictions, and outliers within datasets as a basis for inquiry.</li>
+    </ol>
+
+    <h4 id="linkages">d. Linkages to other ontologies</h4>
     <p>We employ a number of strategies for linking to other ontologies. Our architecture does not import other ontologies wholesale, but relates to large vocabularies in defined ways. We try not to abuse sameAs predicates (<a href="#halpin_when_2010">Halpin, Hayes et al., 2010</a>).</p>
     <p> We adopt external namespaces and associated classes and terms wherever possible when they are in widespread use and their vocabularies are broadly compatible with ours, as in the case of the <a href="http://xmlns.com/foaf/spec/">FOAF</a> and <a href="http://bibliontology.com/">BIBO</a> vocabularies. For some terms, such as those for religious denominations or genres, we are happy to draw on other vocabularies’ terms and definitions in part or in whole, as in the case of terms from the <a href="#_getty_2017">Getty Art and Architecture Thesaurus</a> (<a href="http://www.getty.edu/research/index.html">Getty Research Institute</a>). Other terms are referenced, but at a distance. This is particularly common in relation to the vocabulary associated with Cultural Form (see below), which is understood primarily as representational, and within which identity terms are typed as labels and related to other internal narrower instances of labels that indicate the intersection of that term with one or more type of identity categorization. These are in turn related to external ontologies with <code>&lt;rdfs:subClassOf&gt;</code> (or <code>&lt;owl:equivalentClass&gt;</code>, <code>&lt;skos:narrower&gt;</code>, <code>&lt;skos:broader&gt;</code>, etc...) with a view to indicating that, although related, the terms and their definitions are not commensurate with those used in the CWRC vocabulary. By means of this structure, our vocabulary positions all terms associated with processes of Cultural Form as in effect "labels", retaining the ambiguity of terms implicated in the complex social construction of identities within a narrative.</p>
     <p>Vocabulary reuse presented some challenges to the CWRC in that the vocabularies used in the markup from which the RDF is derived can be ambiguously employed to an extent that reuse is difficult. A typical example is that of religion, where much ambiguity exists as to whether the term actually represents the religion as a belief system, formal membership in the associated religious organization, the social and often secular behaviours or affiliations associated with the religion, or any combination of the above.</p>
@@ -127,16 +233,16 @@
     <p>Established ontologies and vocabularies including <a href="http://eurovoc.europa.eu/">EuroVoc</a>, <a href="http://www.getty.edu/research/tools/vocabularies/">Getty Vocabularies</a>, <a href="http://id.loc.gov/vocabulary/languages.html">Library of Congress Languages</a> and <a href="http://geonames.org/">geonames</a> are used in the definition of numerous classes and instances. For instance, the religious terms of the <a href="http://www.getty.edu/research/tools/vocabularies/aat/">Getty Art and Architecture Thesaurus</a> provided suitable definitions for many religions, as does <a href="http://dbpedia.org/">DBPedia</a> and other scholarly sources. Quotation marks around the text of the description indicate wholesale adoption of the source definition. Where the description is surrounded by quotation marks, the term has been defined by the CWRC team, but links to may be provided to external resources such as a scholarly article or closely related DBpedia entry. </p>
 
 
-    <h4 id="provenance">c. Provenance and contexts</h4>
+    <h4 id="provenance">e. Provenance and contexts</h4>
     <p>As noted above, some data associated with this ontology has been generated from XML structures (<a href="#brown_curious_2013">Simpson and Brown, 2013</a>). Provenance is thus particularly important, given that such data was not produced natively in RDF but rather in the form of tags embedded in a discursive context. In such cases, the relevant portions of the text are provided in the form of snippets, which within the dataset become instances of contextual notes or human-readable annotations to which the data set nodes are directly tied. </p>
     <p>The wholesale import of entire vocabularies within the CWRC ontology was likely to cause logical and ontological problems. To this end, we opted not to use the <code>&lt;owl:import&gt;</code> construct and instead either to link to vocabularies externally or to clone specific sets of terms from selected vocabularies. Similarly, not all vocabularies are well-defined from an ontological standpoint, but drawing from their narrative or some of their properties proved useful. To this end, we avoided the use of <code>&lt;owl:sameAs&gt;</code> so as not to bring unintended properties or ontological structures into the CWRC ontology. In other cases, the Provenance ontology property <code>&lt;prov:derivedFrom&gt;</code> is used to indicate that the term was constructed using information from other terms without necessarily being equivalent. Direct linkages to other ontologies are usually made through the use of subClasses or <code>&lt;owl:equivalentClass&gt;</code>.</p>
 
 
-    <h4 id="labelsandvalues">d. Labels and values</h4>
+    <h4 id="labelsandvalues">f. Labels and values</h4>
     <p>As noted above, label terms are not only used here to indicate the particular terms associated with an element of the ontology, but to indicate, when used to type a class, its representationality or discursivity. </p>
 
 
-    <h4 id="culturalformationsgeneric">e. Cultural diversity</h4>
+    <h4 id="culturalformationsgeneric">g. Cultural diversity</h4>
     <p>Cultural diversity has been an increasing source of debate beyond and within the digital humanities community. The concentration within the <i>Debates in Digital Humanities</i> series (<a href="#matthew_k._gold_debates_2012">Gold, 2012</a>; <a href="#matthew_k._gold_debates_2016">Gold and Klein, 2016</a>) of pieces reflecting the increasing prominence of matters related to race, gender, cultural diversity, and difference is but one marker of the extent to which diversity matters. This ontology seeks to convey an intersectional understanding of identity categories, as instantiated in The Orlando Project’s XML Biography schema.</p>
     <p>The Cultural Form portion of the ontology recognizes categorization as endemic to social experience, while incorporating variation in terminology and the contextualization of identity categories. It understands social classification as culturally produced, intersecting, and discursively embedded. We invoke categories as the grounds for cultural investigation rather than fixed classifications, since such categories have never been stable or mutually exclusive (<a href="#mark_algee-hewitt_representing_2016">Algee-Hewitt, Porter, and Walser, 2016</a>). For a more detailed explication of cultural formation, see <a href="#brown_cultural_2017">Brown et al 2017</a>. </p>
 
@@ -146,23 +252,43 @@
     <p>While full, integrated traceability has always been a core need of repeatable experiments, this comes at a complexity cost within a linked open data set in that the queries required to retrieve basic information become unwieldy. To this end, the CWRC ontology records information in two different ways: through a series of <a href="#Context">Contexts</a> that link the information to its associated source text in Orlando or other materials, and through a series of granular properties that simply link individuals to their personal attributes. In this way, both rapid retrieval and deep provenance tracking are enabled.</p>
     <p>Two basic structures are used within the ontology to achieve this: <a href="#Context">Context</a>s and <a href="#CulturalForm">Cultural Form</a>. A cultural formation represents elements of lived social subjectivities and/or classification of people through categories such as race, gender, language, sexuality, or religion. Contexts are used to link a fragment of Orlando prose to the individual whom it references as well as to the specific cultural formation that is being assigned to the person. In addition, properties are separated in two categories: reported and self-reported, allowing for the qualification of individual statements.</p>
 
+    <h4 id="persona">a. Persons, Personas and Roles</h4>
+    <p>The distinction between persons, personas, and roles is an important component of the complexity of human experiences and relationships.</p>
+    
+    <p>This ontology adopts the broad FOAF definition of a <a href="http://xmlns.com/foaf/spec/#term_Person"><code>foaf:person</code></a>, which can be be applied to any entity considered to be a person, including non-humans. We define two subclasses of Person: a NaturalPerson or human being, and a FictionalPerson, since fictional characters are important to literary studies. If a historical person who is a NaturalPerson is fictionalized as a <code>#Character</code> [not yet created] in a text, they also become a FictionalPerson. If a text simply alludes or refers to a NaturalPerson, however, they are not also a FictionalPerson.</p>
 
-    <h4 id="culturalformationsontology">a. Cultural Form</h4>
+    <p>In some cases, a Person will be associated with a Persona.</p>
+
+    <p>The author Michael Field offers an example of the extent to which “personhood is both a complex and a crucial characteristic that ontologies must be designed to capture appropriately” (Brown and Simpson 2013). The persona of Michael Field was produced by the artistic and lived collaboration between Katherine Harris Bradley and Edith Emma Cooper at the turn of the twentieth century. Even though he was not a biological person, Michael Field had an important role in the two women’s careers, their social lives, and their personal relationship. “Michael Field” can neither be assigned to one of the authors over the other, nor can it be considered only a shared pseudonym. Michael Field is associated with two natural persons at the same time. We seek in the CWRC ontology to capture such manifestations of the originality and the plurality of personhood. The ontology thus includes the “persona” class of person to describe entities such as Michael Field.</p>
+
+    <p>It might be argued that such personae are simply pen-names or stage names, such as  “Currer Bell” for Charlotte Brontë. However, personae are more than alternative signatures. Personae inflect the ways in which artists socially, symbolically, intimately or artistically embody authorship. While a pen-name can be described as a publication strategy related to a specific context, a persona has its own performed personality that goes beyond a signature. A contemporary example is the <a href="https://en.wikipedia.org/wiki/FASTW%C3%9CRMS">FASTWÜRMS art collective</a>. The collective operates as more than a creative identity, to the point of holding a single academic position at the University of Guelph.</p>
+
+    <p>A particular persona is an original creation, often bearing meaning related to the biographical, historical and sociological context of its creator. A persona in this sense is also not generally associated with mental illness or multiple personality disorders that result from distorted or uncontrolled perceptions of reality.  At the heart of a persona is an identity with which others interact and that can be confused with a Natural Person. It is incarnated and developed by a natural person, may have specific properties such as gender or sexuality that differ from those of the natural person with whom it is associated, and may engage in social, literary, artistic or political activities. Although Personae are FOAF Persons, they are distinct from the CWRC Natural Persons who embody them and from Fictional Persons, unless they become fictionalized by themselves or others.</p>
+
+    <p>As documented for the recent Persona tag incorporated in the Text Encoding Initiative Guidelines, personae are not <a href="#Role"><code>#Role</code></a>s either: “A role may be assumed by different people on different occasions, whereas a persona is unique to a particular person, even though it may resemble others. Similarly, when an actor takes on or enacts the role of a historical person, they do not thereby acquire a new persona.” (<a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDPERSE">http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDPERSE</a>).</p>
+
+    <p>A Role can be adopted by either personae or natural persons, but a persona cannot be adopted by people generally: it is specific to one natural person, or more rarely several natural persons (as in the case of the collaborative Field and the artistic collective <a href="https://en.wikipedia.org/wiki/FASTW%C3%9CRMS">https://en.wikipedia.org/wiki/FASTW%C3%9CRMS</a>).</p>
+
+    <p>Roles are characters or functions performed in specific occasions and situations, which is to say events. Dramatic roles, that is to say <code>#Character</code> in a creative work, are adopted by actors for particular performances. By analogy, social roles are adopted by particular individuals in relation to particular events or occurrences, which may be of brief or long duration. Key roles in relation to events are those of agents, spectators, and commentators. Occupations, jobs, or significant activities are not the same as roles, although they may be related to them, as may familial or social relationships. Roles will be further fleshed out in relation to the event component of the ontology, which is currently under development.</p>
+
+
+
+    <h4 id="culturalformationsontology">b. Cultural Form</h4>
     <p>The <a href="#CulturalForm">Cultural Form</a> classes recognize categorization as endemic to social experience, while incorporating variation in terminology and contextualization of identity categories by employing instances at different discursive levels.</p>
     <p>Cultural Form sub-classes and instances describe the subject positions of individuals through both <a href="#Context">Context</a>s and granular properties. This arrangement has its roots in the Orlando arrangement of Cultural Form encodings that points users towards a framework for raising and debating complex matters for cultural investigation rather than invoking reified categories.</p>
     <p>The shift from embedded semantic markup to a linked open data approach presented the challenge of making this approach compatible with linkages to other ontologies and data sets outside of the Orlando frame of reference. The move from "strings to links" or "strings to things" was in some sense at odds with the former embrace of the ambiguity of strings such as white, black, English, etc.: white and black can represent race or ethnicity, while English can also be invoked as an ethnicity, nationality, or a national heritage. Orlando marks these strings using its Cultural Forms tagset as specific to, for example, the context of race or ethnicity, mandating a similar association, within the linked data representation, with a specific instance of Cultural Form. Thus, there exist Cultural Form instances that point to the discursive construction of <a href="#whiteRace">white</a> as a race and <a href="#whiteEthnicity">white</a> as an ethnicity. Lastly, there also exists a <a href="#whiteLabel">white</a> label that can be instantiated as either race or ethnicity, but not both within the same assertion (although multiple assertions are possible).</p>
     <p>This is a departure from previous (non-linked open data) controlled vocabularies, in that the appearance of the term or label (in this case "white") does not indicate the specific cultural formation being invoked, the specific instance does. This also means that linkages to other data sets or vocabularies can be made appropriately, since multiple representations of the same label are present within the CWRC ontology. As a last resort, or for data mining purposes, the term is also available as a concept whose actual Cultural Form is undecided amongst the CWRC-defined options. This allows for linkages to an external ontology, such as can be required by text mining, without endorsing the corresponding definition or interpretation of the term.</p>
 
 
-    <h4 id="contextontology">b. Contexts</h4>
+    <h5 id="contextontology">i. Contexts</h4>
     <!--Insert summary here of how contexts are related to both properties and snippets through OA. -->
 
 
-    <h4 id="granularproperties">c. Granular Properties</h4>
+    <h5 id="granularproperties">ii. Granular Properties</h4>
     <p> Granular properties provide a simple means of indicating cultural categories as as presumed, perceived, or otherwise assigned to a person according to cultural conventions, or as self-reported by the person themselves. Some of the properties are associations inherited from forebears.</p>
 
 
-    <h4 id="taxonomiesontology">d. Built-in Taxonomies</h4>
+    <h4 id="taxonomiesontology">c. Built-in Taxonomies</h4>
 
 
     <h5 id="religion_taxonomy">i. Religion</h5>
@@ -183,31 +309,7 @@
     <p><a href="figures/genreTaxonomy-EN.svg">The specific taxonomy is:</a></p>
     <object type="image/svg+xml" data="figures/genreTaxonomy-EN.svg"></object>
 
-
-    <h4 id="notesEvent">e. CWRC Events</h4>
-    <p>The CWRC ontology was meant to handle data from projects such as Orlando that contain data that is often imprecise or incomplete. Furthermore, a by-product of the heterogeneous nature of the data sources referenced within the Orlando dataset was that the date information was recorded at different levels of granularities. While the formatting used to record the data is consistent with ISO/8601, a number of edge cases exists within the markup for inconsistent or incomplete data which needed a consistent structure. Secondly, the events are in many cases defined through a narrative instead of discrete event types where the relationship of individual agents to the event is ambiguous.</p>
-    <p>The XML Schemas provide some support for poorly dated events through their reuse of the ISO/8601 standards. However, the specific flavor of ISO/8601 handling varies dramatically according to the application with the result that different parsers only support limited varieties of data type. Most concerning is that the handling of imprecise ISO/8601 dates is inconsistent across implementations, resulting in the year 1901 possibly being represented as January 1, 1901 or 1901-??-??, making reliable interpretation impossible.</p>
-    <p>An aspect of temporal data that is similarly frustrating is that in a number of cases events are known to exist but whose Gregorian dates are missing. However, the ordering of these events may be well known against well defined events but the lack of a date/time stamp makes the recording of that event problematic in most database. To this end, we required that the event model be able to handle both incomplete time and data stamps as well as temporal relationships against other events such as before, after, during, etc...</p>
-    <p>To this end, events classes within the CWRC ontology are implemented using Time-OWL's TemporalEntity which gives us the ability to ground an event in a partial ISO8601 date and/or relate it against other events. While the <a href="https://www.w3.org/TR/owl-time/">Time-OWL ontology</a> comes with the classes needed to work consistently with Gregorian Calendar entries, hooks are provided for the materialization of other calendars such as Islamic, Chinese Lunar and business quarter reporting.</p>
-    <p>Because of the humanistic nature of the Orlando data, the following specific event types are defined specifically for biographical purposes: a person's birth, a person's death, events that occurred during the lifetime of a person and events that occurred after the death of a person.</p>
-    <figure>
-      <img src="figures/eventStructures.png" style="display: block; margin: auto;width 60%;"/>
-      <figcaption>Figure 1 - Events have a sub classed structure.</figcaption>
-    </figure>
-    <p>The rational behind this lies both in the literary nature of the Orlando project and in data quality concerns with the original source data. It was a goal to track literary influences across works within Orlando before and after the lifetime of the author. Furthermore, some events within Orlando are known to have been mislabeled or from erroneous sources. The ability to describe certain events as having had taken place within the lifetime (or after) enables the checking of biographical entries at generation time.</p>
-    <p>The specific term eventElement is used to link the event to the agent that performs a certain part within the event. The use of the <code>foaf:agent</code> as a domain means that essentially anything can perform a part to an event, including personae, pets, inanimate objects (such as ships) and the elements (eg: storms).</p>
-    <figure>
-      <img src="figures/StevieSmith.png" style="display: block; margin: auto;width 60%;"/>
-      <figcaption>Figure 2 - A representation of the RDF triples marking up Stevie Smith obtaining two different awards.</figcaption>
-    </figure>
-    <p>The example above represents two different awards given to Stevie Smith three years apart and is an example of the possibility of using TimeOwl as a means of recording both imprecise and relative temporal data. 3 years separate both awards and a duration node separates both of them.</p>
-
-
-    <h5 id="event_nomenclature">i. Notes about nomenclature</h5>
-    <p>Roles, Actor, Agent, Character, Performance as words that have related semantic meanings in the vernacular but whose formal definitions have different meanings in different domains. Furthermore different standards see each terms as either properties or classes. While primary based on the Orlando schemas, additional structures were required to be created in the CWRC ontology so that a variety of events could be represented ranging from life events to specific performances of a theatrical play staged by a theatrical group. We are aware that different arrangements of nomenclatures are possible, but these represent the best arrangement with the least ambiguity.</p>
-
-
-    <h4 id="changeSets">f. Notes on ChangeSets</h4>
+    <h4 id="changeSets">d. Notes on ChangeSets</h4>
     <p>Change Sets exist to track changes to instances, terms, and classes within the ontology, they are therefore used by both the authors of the ontology as well as users who are making addtions or modifications. Changesets are instances that are linked either to or from a structure in the ontology. This is done through the object properties <i>affected entity</i> or through the <code>skos:changeNote</code>. A single changeset may apply to several entities therefore the <code>affected entity</code> relation may be applied 0 or more times. Changesets also track the user through the <code>altered by</code> relation and may link to any <code>CWRC:Person</code>. In addition dates and times are kept track of through <code>time:inXSDDateTimeStamp</code> using xsd:dateStamps to track the instant the change was applied to the ontology. This will allow changesets to be used as release by selecting them between a particular date to show major changes. Through provenance Change Sets may link to external resources allowing extended discussion to be kept out of the ontology. Shorter descriptions are included through the <code>skos:changeNote</code> relation as well as a title using a standard <code>rdfs:label</code>. Change Sets are to be used anytime an issue is completed by ontology developers or an instance is changed by a user. Automated mechanisms will be used to offset some of the work required.</p>
     <figure>
       <img src="figures/ChangeSets.png" style="display: block; margin: auto;width 60%;"/>
