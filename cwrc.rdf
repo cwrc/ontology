@@ -4947,7 +4947,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">de héritage national</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#NationalHeritage"/>
-    <skos:definition xml:lang="en">Describes a person's @@#NationalHeritage@@.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's national heritage. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#NationalHeritage@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -4956,7 +4956,7 @@ At the heart of a persona is an identity that is interacted with by others and t
   <owl:ObjectProperty rdf:ID="hasNationalHeritageSelfReported">
     <rdfs:label xml:lang="en">has national heritage (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">de héritage national (autodéclarée)</rdfs:label>
-    <skos:definition xml:lang="en">This describes a person's self-reported @@#NationalHeritage@@.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's self-reported national heritage. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#NationalHeritage@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#NationalHeritage"/>
@@ -5066,7 +5066,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#PoliticalAffiliation"/>
-    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="en">Describes a person's political affiliation. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#PoliticalAffiliation@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5075,7 +5075,7 @@ At the heart of a persona is an identity that is interacted with by others and t
   <owl:ObjectProperty rdf:ID="hasPoliticalAffiliationSelfReported">
     <rdfs:label xml:lang="en">has political affiliation (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="en">Describes a person's self-reported political affiliation. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#PoliticalAffiliation@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#PoliticalAffiliation"/>
