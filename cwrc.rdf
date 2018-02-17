@@ -5256,12 +5256,12 @@ At the heart of a persona is an identity that is interacted with by others and t
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </skos:Concept>
   <skos:Concept rdf:about="#queerLabel">
-    <rdfs:label xml:lang="en">queer</rdfs:label>
+    <rdfs:label xml:lang="en">queer identity</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <cwrc:literalForm xml:lang="en">queer</cwrc:literalForm>
     <cwrc:literalForm xml:lang="fr"/>
     <foaf:name xml:lang="en">queer (Label)</foaf:name>
-    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabel@@, this discursive label reflects the ambiguity of queerness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "Queer" (e.g. @@#GenderQueer@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
