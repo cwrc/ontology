@@ -421,57 +421,64 @@ At the heart of a persona is an identity that is interacted with by others and t
 <!-- Education -->
 
     <owl:Class rdf:ID="EducationContext">
-    <rdfs:comment>This optional attribute attached to Education records the mode of education and allows us to distinguish the important material effects between a domestic and an institutional education. This attribute allows us to trace the historical developments in women's access to education, for example, the informal domestic education of women writers in the early periods versus women's entrance to post-secondary education in the twentieth century.</rdfs:comment>
-    <rdfs:label>Education context</rdfs:label>
+    <rdfs:comment xml:lang="en">This optional attribute attached to Education records the mode of education and allows us to distinguish the important material effects between a domestic and an institutional education. This attribute allows us to trace the historical developments in women's access to education, for example, the informal domestic education of women writers in the early periods versus women's entrance to post-secondary education in the twentieth century.</rdfs:comment>
+    <rdfs:label xml:lang="en">Education context</rdfs:label>
     <rdfs:subClassOf rdf:resource="#Context"/>
   </owl:Class>
 
   <owl:Class rdf:ID="SelfTaughtEducationContext">
-    <rdfs:label>Self taught education context</rdfs:label>
+    <rdfs:label xml:lang="en">Self taught education context</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationContext"/>
     </rdfs:subClassOf>
+    <skos:definition xml:lang="en">Education or learning conducted independently.</skos:definition>
+    <skos:related rdf:resource="https://en.wikipedia.org/wiki/Autodidacticism"/>
   </owl:Class>
 
   <owl:Class rdf:ID="DomesticEducationContext">
-    <rdfs:label>Domestic education context</rdfs:label>
+    <rdfs:label xml:lang="en">Domestic education context</rdfs:label>
     <rdfs:subClassOf rdf:resource="#EducationContext"/>
+     <skos:definition xml:lang="en">Education that takes place at home. For example, if a woman writer in the Victorian period was taught by her brother or a governess.</skos:definition>
+    <skos:closeMatch rdf:resource="https://en.wikipedia.org/wiki/Homeschooling"/>
   </owl:Class>
 
   <owl:Class rdf:ID="InstitutionalEducationContext">
-    <rdfs:label>Institutional education context</rdfs:label>
+    <rdfs:label xml:lang="en">Institutional education context</rdfs:label>
+    <skos:definition xml:lang="en">Education or learning that takes place in an institutional setting.</skos:definition>
+    <skos:related rdf:resource="https://en.wikipedia.org/wiki/School"/>
     <rdfs:subClassOf rdf:resource="#EducationContext"/>
   </owl:Class>
 
   <owl:ObjectProperty rdf:ID="hasEducation">
     <rdfs:range rdf:resource="#EducationContext"/>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
-    <rdfs:label>has education</rdfs:label>
+    <rdfs:label xml:lang="en">has education</rdfs:label>
   </owl:ObjectProperty>
 
   <owl:Class rdf:ID="EducationalAward">
-    <rdfs:label>Educational award</rdfs:label>
+    <rdfs:label xml:lang="en">Educational award</rdfs:label>
     <rdfs:subClassOf rdf:resource="#EducationContext"/>
   </owl:Class>
 
   <cwrc:EducationalAward rdf:ID="EducationalAward_Prize">
-    <rdfs:label>Educational award Prize</rdfs:label>
+    <rdfs:label xml:lang="en">Educational award Prize</rdfs:label>
+    <skos:definition xml:lang="en">An educational prize is a medal or award, monetary or otherwise, presented by either an institution or person of authority to an individual who has excelled beyond their peers, reached a great achievement, and/or produced a very high standard of work.</skos:definition>
   </cwrc:EducationalAward>
 
   <cwrc:EducationalAward rdf:ID="EducationalAward_Scholarship">
-    <skos:definition>A scholarship is an award of financial aid for a student to further their education. Scholarships are awarded based upon various criteria, which usually reflect the values and purposes of the donor or founder of the award. Scholarship money is not required to be repaid.</skos:definition>
-    <rdfs:label>Educational award Scholarship</rdfs:label>
+    <skos:definition xml:lang="en">A scholarship is an award of financial aid for a student to further their education. Scholarships are awarded based upon various criteria, which usually reflect the values and purposes of the donor or founder of the award. Scholarship money is not required to be repaid.</skos:definition>
+    <rdfs:label xml:lang="en">Educational award Scholarship</rdfs:label>
   </cwrc:EducationalAward>
 
   <owl:ObjectProperty rdf:ID="hasAward">
     <owl:inverseOf>
       <owl:ObjectProperty rdf:ID="awardedTo"/>
     </owl:inverseOf>
-    <rdfs:label>has award</rdfs:label>
+    <rdfs:label xml:lang="en">has award</rdfs:label>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#awardedTo">
-    <rdfs:label>awarded to</rdfs:label>
+    <rdfs:label xml:lang="en">awarded to</rdfs:label>
   </owl:ObjectProperty>
 
 
