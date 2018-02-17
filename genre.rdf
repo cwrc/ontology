@@ -153,7 +153,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <skos:definition xml:lang="en">Literary genres are used to classify texts within an ever-evolving spectrum of literary forms and practices. There is debate over whether genre inheres in texts themselves or emerges from contexts of reception, but the shifts in historical definitions indicate that genres, literary and more broadly, have a strong social component (Dubrow, 1982; Miller 1984). Genres are most frequently related to formal features such as the English sonnet's fourteen lines of iambic pentameter, to characteristic subject matter such as themes of romance, horror, comedy, or tragedy, to aspects of style such as hard-boiled detective fiction, or to the purpose of a text. Within the context of literary studies, the question of &quot;purpose,&quot; especially when considered within a political context, is of keen interest to literary scholars. For example, feminist literary scholars like Cynthia Huff (&quot;‘That Profoundly Female, and Feminist Genre’: The Diary as Feminist Practice&quot;, Giancarlo Lombardi (Rooms with a View: Feminist Diary Fiction, 1952-1999), Rita Felski (Beyond Feminist Aesthetics: Feminist Literature and Social Change) and others read "diary fiction" as a powerful genre used to spur on women’s movements. For more on literary genre, see the introduction to this ontology.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Literary_genre"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300055907"/>
+    <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Literary_genre"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
