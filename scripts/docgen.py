@@ -178,7 +178,9 @@ def specgen(template, language):
         spec_url = namespace_dict['']
 
     spec_ns = rdflib.Namespace(spec_url)
-    get_high_lvl_nodes()
+    # print(get_high_lvl_nodes())
+    # for x in get_high_lvl_nodes():
+    #     print(x)
     deprecated_html = create_deprecated_html(o_graph)
 
     # Gets sorted classes & property labels
@@ -193,8 +195,6 @@ def specgen(template, language):
     # skos_concepts = [get_uri_term(s) for s, p, o in sorted(o_graph.triples((None, RDF.type, SKOS.ConceptScheme)))]
     classes_i = sorted([x for x in class_list if (None, RDF.type, get_full_uri(x)) in o_graph])
     instance_list = get_instances(class_list)
-    # print(instance_list)
-    # print(instance_list)
 
     # Build HTML list of terms.
     dict_str = trans_dict["dicts"][l_index] + ":"
@@ -250,6 +250,8 @@ def create_term_extra(term_dict, uri):
         pred_dict.update(get_prefix_ns_with_link(x).items())
 
     html_str += """<div class="term_extra">\n"""
+
+    pred_dict.pop("foaf1:subject", None)
     for x in sorted(pred_dict.keys()):
         html_str += "<dl>\n"
         html_str += """<dt><a href="%s">%s</a>:</dt>\n""" % (pred_dict[x], x)
