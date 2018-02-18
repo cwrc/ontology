@@ -420,7 +420,7 @@ At the heart of a persona is an identity that is interacted with by others and t
 
 <!-- Education -->
 
-  <owl:Class rdf:Id="EducationalOrganization">
+  <owl:Class rdf:ID="EducationalOrganization">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#Organization"/>
     </rdfs:subClassOf>
@@ -431,7 +431,7 @@ At the heart of a persona is an identity that is interacted with by others and t
   </owl:Class>
 
 
-  <owl:Class rdf:Id="BoardingSchool">
+  <owl:Class rdf:ID="BoardingSchool">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
@@ -443,7 +443,7 @@ At the heart of a persona is an identity that is interacted with by others and t
   </owl:Class>
 
 
-  <owl:Class rdf:Id="GrammarSchool">
+  <owl:Class rdf:ID="GrammarSchool">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
@@ -454,7 +454,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Grammar_school"/>
   </owl:Class>
 
-  <owl:Class rdf:Id="PrivateSchool">
+  <owl:Class rdf:ID="PrivateSchool">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
@@ -465,7 +465,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Private_school"/>
   </owl:Class>
 
-  <owl:Class rdf:Id="StateSchool">
+  <owl:Class rdf:ID="StateSchool">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
@@ -476,7 +476,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/State_school"/>
   </owl:Class>
 
-  <owl:Class rdf:Id="DameSchool">
+  <owl:Class rdf:ID="DameSchool">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
@@ -487,7 +487,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Dame_school"/>
   </owl:Class>
 
-  <owl:Class rdf:Id="DaySchool">
+  <owl:Class rdf:ID="DaySchool">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
@@ -498,7 +498,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Day_school"/>
   </owl:Class>
 
-  <owl:Class rdf:Id="ComprehensiveSchool">
+  <owl:Class rdf:ID="ComprehensiveSchool">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
@@ -509,7 +509,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Comprehensive_school"/>
   </owl:Class>
 
-<owl:Class rdf:Id="SecondaryModernSchool">
+<owl:Class rdf:ID="SecondaryModernSchool">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
@@ -521,7 +521,7 @@ At the heart of a persona is an identity that is interacted with by others and t
   </owl:Class>
 
 
-  <owl:Class rdf:Id="TradeSchool">
+  <owl:Class rdf:ID="TradeSchool">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
@@ -533,7 +533,7 @@ At the heart of a persona is an identity that is interacted with by others and t
   </owl:Class>
 
 
-  <owl:Class rdf:Id="PrimarySchool">
+  <owl:Class rdf:ID="PrimarySchool">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
@@ -545,7 +545,7 @@ At the heart of a persona is an identity that is interacted with by others and t
   </owl:Class>
 
 
-  <owl:Class rdf:Id="SecondarySchool">
+  <owl:Class rdf:ID="SecondarySchool">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
@@ -559,7 +559,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
   </owl:Class>
 
 
-  <owl:Class rdf:Id="PostSecondarySchool">
+  <owl:Class rdf:ID="PostSecondarySchool">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
@@ -570,7 +570,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Higher_education"/>
   </owl:Class>
 
-  <owl:Class rdf:Id="PrepSchool">
+  <owl:Class rdf:ID="PrepSchool">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
@@ -579,7 +579,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
-  <owl:Class rdf:Id="ReligiousSchool">
+  <owl:Class rdf:ID="ReligiousSchool">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
@@ -589,7 +589,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
-  <owl:Class rdf:Id="SecularSchool">
+  <owl:Class rdf:ID="SecularSchool">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
@@ -599,7 +599,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
-  <owl:Class rdf:Id="SingleSexSchool">
+  <owl:Class rdf:ID="SingleSexSchool">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
@@ -610,7 +610,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Single-sex_education"/>
   </owl:Class>
 
-  <owl:Class rdf:Id="CoEducationalSchool">
+  <owl:Class rdf:ID="CoEducationalSchool">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
@@ -636,10 +636,8 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <skos:definition xml:lang="en">Indicates attending or having attended for education either a particular school or a particular type of schooling.</skos:definition>
     <rdfs:range rdf:resource="#School"/>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:ID="hasStudent"/>
-    </owl:inverseOf>
-     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <owl:inverseOf rdf:resource="#hasStudent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
