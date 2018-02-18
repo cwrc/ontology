@@ -92,10 +92,7 @@ clean-all:
 doc: scripts/docgen.py
 	./scripts/docgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).rdf $(ONTOLOGY)-template-FR.html  $(ONTOLOGY)-$(ONTOLOGY_DATE)-FR.html fr
 	./scripts/docgen.py $(ONTOLOGY)-$(ONTOLOGY_DATE).rdf $(ONTOLOGY)-template-EN.html  $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html  en
-	# ./scripts/docgen.py genre.rdf genre genre-template-FR.html  genre-FR-$(ONTOLOGY_DATE).html  fr
-	# ./scripts/docgen.py genre.rdf genre genre-template-EN.html  genre-EN-$(ONTOLOGY_DATE).html  en
 doctest: scripts/docgen.py
 	./scripts/docgen.py $(ONTOLOGY).rdf $(ONTOLOGY)-template2-$(ONTOLOGY_DATE)-$(O_LANG).html  $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html  en
-
 cross:
 	./scripts/crossRef.py cwrc.rdf > Testing.rdf
