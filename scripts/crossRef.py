@@ -117,6 +117,7 @@ def get_definitions(element):
                     if uri[0] == '#':
                         language = x.get("{http://www.w3.org/XML/1998/namespace}lang")
                         if x.text.find(string + "s") != -1:
+                            string += "s"
                             hyperlink = create_hyperlink(uri, get_label(get_full_uri(uri), language) + "s")
                         else:
                             hyperlink = create_hyperlink(uri, get_label(get_full_uri(uri), language))

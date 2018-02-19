@@ -261,7 +261,7 @@ def create_term_extra(term_dict, uri):
 
         for y in term_dict[pred_uri]:
             if x == "owl:oneOf":
-                html_str += '<dd>Contents Currently Unavaliable</dd>'
+                html_str += '<dd>Contents Currently Unavailable</dd>'
                 # for s, p, o in o_graph.triples((y, None, None)):
                 #     # print(s)
                 #     # print(p)
