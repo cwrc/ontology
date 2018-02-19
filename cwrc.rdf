@@ -228,7 +228,7 @@
 
   <owl:ObjectProperty rdf:about="#alteredBy">
     <rdfs:label xml:lang="en">altered by</rdfs:label>
-    <skos:definition xml:lang="en">Links a person to a Changeset entry</skos:definition>
+    <skos:definition xml:lang="en">Links a person to a change set entry.</skos:definition>
     <rdfs:domain rdf:resource="#ChangeSet"/>
     <rdfs:range rdf:resource="#NaturalPerson"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -249,8 +249,8 @@
   <owl:Class rdf:ID="FictionalPerson">
     <rdfs:label xml:lang="en">fictional person</rdfs:label>
     <skos:definition xml:lang="en">A person, broadly defined, who features in an imaginative work such as a literary work, as a character or in some other way that distinguishes the reference to them from the natural person who is being represented. In other words, there is a distinction between a simple allusion to a @@#NaturalPerson@@, and the fictionalization of that person within a text or other work of art.</skos:definition>
-     <rdfs:label xml:lang="fr">personne fictive</rdfs:label>
-    <skos:definition xml:lang="fr">Définie de façon large, personne figurant dans une œuvre créative telle qu'une œuvre littéraire, dans laquelle elle est un personnage ou représentée d'une façon qui diffère de la personne physique à laquelle elle renvoie. Autrement dit, il existe une différence entre la simple allusion à une @@#NaturalPerson@@ et la version romancée de cette personne dans un texte ou tout autre oeuvre d'art. </skos:definition>
+     <rdfs:label xml:lang="en">personne fictive</rdfs:label>
+    <skos:definition xml:lang="en">Définie de façon large, personne figurant dans une œuvre créative telle qu'une œuvre littéraire, dans laquelle elle est un personnage ou représentée d'une façon qui diffère de la personne physique à laquelle elle renvoie. Autrement dit, il existe une différence entre la simple allusion à une @@#NaturalPerson@@ et la version romancée de cette personne dans un texte ou tout autre oeuvre d'art. </skos:definition>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:Class>
@@ -258,7 +258,8 @@
   <owl:Class rdf:ID="Persona">
     <rdfs:label xml:lang="en">persona</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <skos:definition xml:lang="en">A persona, unlike a role, cannot be adopted by people generally, but is specific to one natural person, or more rarely several natural persons. A persona is an original creation, often bearing meaning regarding the biographical, historical and sociological context to which its/their creator/s is/are attached. Personas as defined here should not be associated with mental illness or multiple personality disorder, since they are not the product of a distorted or uncontrolled perception of reality. At the heart of a persona is an identity that is interacted with by others and that at times can be confused with an actual natural person. It is incarnated and developed by a natural person, and may have a social, literary, artistic or political activity.</skos:definition>
+    <skos:definition xml:lang="en">The persona, unlike the role, cannot be adopted by people generally, but is specific to one natural person, or more rarely several natural persons. The persona is an original creation, often bearing meaning about the biographical, historical and sociological context to which its/their creator/s is/are attached. It is also important to recall that the persona cannot be associated with mental illness or multiple personality disorders, since they are not the product of a distorted or uncontrolled perception of reality. 
+At the heart of a persona is an identity that is interacted with by others and that at times can be confused with an actual natural person. It is incarnated and developed by a natural person, and may have a social, literary, artistic or political activity.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -421,7 +422,7 @@
     <rdfs:label xml:lang="en">after life event</rdfs:label>
     <rdfs:label xml:lang="fr">évènement posthume</rdfs:label>
     <rdfs:label xml:lang="de">nachlebensereignis</rdfs:label>
-    <skos:definition xml:lang="en">An event whose principal is a person that is deceased. Could be used for a funeral, an influence over a living author or the estate of a deceased person.</skos:definition>
+    <skos:definition xml:lang="en">An event whose principal is a person that is deceased. Could be used for a funeral, an influence over a living author, or the estate of a deceased person.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -635,7 +636,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
 
   <owl:ObjectProperty rdf:ID="hasStudent">
     <rdfs:label xml:lang="en">has Student</rdfs:label>
-    <skos:definition xml:lang="en">Indicates that the student was educated by the entity in question,—an instructor, an educational institution, or a particular type of schooling.</skos:definition>
+    <skos:definition xml:lang="en">Indicates attending or having attended for education either a particular school or a particular type of schooling.</skos:definition>
     <rdfs:range rdf:resource="#NaturalPerson"/>
     <rdfs:domain rdf:resource="#School"/>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -655,7 +656,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
 
 
     <owl:Class rdf:ID="EducationContext">
-    <rdfs:comment xml:lang="en">Education Context is a significant subclass of Context. Annotations typed as Education Context provide information about and discussions of a person's education.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This optional attribute attached to Education records the mode of education and allows us to distinguish the important material effects between a domestic and an institutional education. This attribute allows us to trace the historical developments in women's access to education, for example, the informal domestic education of women writers in the early periods versus women's entrance to post-secondary education in the twentieth century.</rdfs:comment>
     <rdfs:label xml:lang="en">Education context</rdfs:label>
     <rdfs:subClassOf rdf:resource="#Context"/>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -792,7 +793,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
   <!-- Will inherit oa:hasBody and oa:hasTarget from the Annotation -->
 
   <owl:Class rdf:ID="Role">
-    <skos:definition xml:lang="en">A role of a Person or Actor in some Event, CreativeWork or Organisation</skos:definition>
+    <skos:definition xml:lang="en">A role of a Person or Actor in some Event, CreativeWork, or Organisation.</skos:definition>
     <rdfs:label xml:lang="en">role</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -874,7 +875,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
     <dcterms:subject rdf:resource="#SocialClass"/>
-    <skos:definition xml:lang="en">Social Class Context is a significant subclass of context. Annotations typed as Social Class Context provide information about and discussions of a person's cultural formation in relation to social class identities and sometimes other intersecting Cultural Forms. Social Class Context provides depth to more granular indications of Social class through the Social Class property.<![CDATA[<a href="cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Orlando, 2006)</a>]]></skos:definition>
+    <skos:definition xml:lang="en">Social Class Context is a significant subclass of context. Annotations typed as Social Class Context provide information about and discussions of a person's cultural formation in relation to social class identities and sometimes other intersecting Cultural Forms. Social Class Context provides depth to more granular indications of social class through the Social Class property.<![CDATA[<a href="cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Orlando, 2006)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">Contexte Social est une sous-classe de contexte importante. Les annotations entrées en tant que Contexte Social fournissent des informations et des discussions sur un sujet en lien avec sa classe sociale et parfois avec d’autres Formes Culturelles. Contexte Social explore plus en détails les indications granulaires sur l’affiliation politique à travers les propriétés de Classe Sociale.<![CDATA[<a href="cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Orlando, 2006)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -897,7 +898,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
     <dcterms:subject rdf:resource="#NationalHeritage"/>
     <dcterms:subject rdf:resource="#NationalIdentity"/>
-    <dcterms:subject rdf:resource="#GeographicalHeritage"/>
+    <dcterms:subject rdf:resource="#GeographicHeritage"/>
     <skos:definition xml:lang="en">Nationality Context is a significant subclass of context. Annotations typed as Nationality Context provide information about and discussions of a person's cultural formation in relation to their national identity, national heritage, and geographic heritage -- which are not always aligned. Nationality Context provides depth to more granular indications of national identity through the nationality, National Heritage, and Geographic Heritage properties.</skos:definition>
     <skos:definition xml:lang="fr">Contexte National est une sous-classe de contexte importante. Les annotations entrées en tant que Contexte National fournissent des informations et des discussions sur la formation culturelle d’une personne, en lien avec son identité nationale, son héritage national et son héritage géographique qui ne sont pas toujours équivalents. Contexte National explore plus en détails les indications granulaires sur l’identité nationale à travers les propriétés Nationalité, Héritage National et Héritage Géographique.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -949,7 +950,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <rdfs:label xml:lang="fr">héritage national</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">A subclass of Cultural Form, this property describes a person's national heritage, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. National Heritage is composed of various elements related to national identity, often transmitted from previous generations and influenced by a subject’s national historical background or @@#GeographicalHeritage@@. It can be multiple and can be different from a person’s national identity, current or official citizenship, or the geographical region or territory in which a person resides. Those using this class and its subclasses are encouraged to consult associated @@#NationalityContext@@ excerpts or annotations, if available.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of Cultural Form, this property indicates a person's national heritage, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. National Heritage is composed of various elements related to national identity, often transmitted from previous generations and influenced by a subject’s national historical background or @@#GeographicalHeritage@@. It can be multiple and can be different from a person’s national identity, current or official citizenship, or the geographical region or territory in which a person resides. Those using this class and its subclasses are encouraged to consult associated @@#NationalityContext@@ excerpts or annotations, if available.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-catégorie de Forme Culturelle, cette propriété indique l’héritage national d’une personne, accompagné du @@#NationalityContext@@ lorsqu'il est disponible. Héritage National est composé de divers éléments relatifs à l’identité nationale, et est souvent transmis par des générations antérieures, influencé par le milieu historique et l’héritage géographique. Il peut être puluriel et peut se distinguer de l’identité nationale, de la citoyenneté actuelle ou officielle, de la région géographique ou du territoire de résidence. Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les extraits ou les annotations de @@#NationalityContext@@ lorsque ceux-ci sont disponibles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -984,7 +985,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <rdfs:label xml:lang="fr">nationalité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">A subclass of Cultural Form, this property describes a person's nationality, either as self-reported or as assigned by others, with accompanying context, where present,provided by @@#NationalityContext@@ annotations. It is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. Like other identity categories, nationality may be plural, fluid, or contingent, and it can intersect with @@#NationalHeritage@@ or @@#GeographicalHeritage@@ as well as other identity categories. Those using this class and its subclasses are encouraged to consult associated @@#NationalityContext@@ annotations, if available.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of Cultural Form, this property indicates a person's nationality, either as self-reported or as assigned by others, with accompanying context, where present,provided by @@#NationalityContext@@ annotations. It is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. Like other identity categories, nationality may be plural, fluid, or contingent, and it can intersect with @@#NationalHeritage@@ or @@#GeographicalHeritage@@ as well as other identity categories. Those using this class and its subclasses are encouraged to consult associated @@#NationalityContext@@ annotations, if available.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-catégorie de Forme Culturelle, cette propriété indique la nationalité d’une personne, accompagnée du contexte fourni par les annotations de @@#NationalityContext@@ lorsqu'il est disponible. Elle diffère de la citoyenneté et n’est pas proportionnelle à la zone géographique ou au lieu de résidence. Comme d’autres catégories identitaires, la nationalité peut être plurielle, fluide ou contingente, et recoupe avec @@#NationalHeritage@@ ainsi qu’avec d’autres catégories identitaires. Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les annotations de @@#NationalityContext@@ lorsqu’elles sont disponibles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1022,7 +1023,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <foaf:name xml:lang="en">language</foaf:name>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">These terms do not differentiate between spoken and/or written.</skos:definition>
+    <skos:definition xml:lang="en">These terms do not differentiate between spoken and/or written. For operational reasons this class is a direct equivalent to ISO639 language code as published by the Library of Congress.</skos:definition>
     <skos:definition xml:lang="fr">Écrit ou Parlé. Pour des raisons opérationnelles, cette classe est équivalente à la classe de langage iso639 publiée par la Library of Congress.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1034,7 +1035,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <rdfs:label xml:lang="fr">héritage géographique</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">A subclass of @@#CulturalForm@@, this property describes  a person's geographic heritage, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. Geographic heritage involves the geographical origins of a person's family, which often contributes to an understanding of their racial and ethnic background. It offers a way to capture individuals identified as &quot;South-Asian,&quot; for example, when no more precise national heritage is indicated. See @@#RaceEthnicityContext@@ for a detailed description of the complexities of this class.  It can be multiple and it can be different from a person’s national identity or national heritage, current or official citizenship, or the geographical region or territory in which a person resides. Those using this class and its subclasses are encouraged to consult associated @@#NationalityContext@@ excerpts or annotations, if available.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of @@#CulturalForm@@, this property indicates  a person's geographic heritage, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. Geographic heritage involves the geographical origins of a person's family, which often contributes to an understanding of their racial and ethnic background. It offers a way to capture individuals identified as &quot;South-Asian,&quot; for example, when no more precise national heritage is indicated. See @@#RaceEthnicityContext@@ for a detailed description of the complexities of this class.  It can be multiple and it can be different from a person’s national identity or national heritage, current or official citizenship, or the geographical region or territory in which a person resides. Those using this class and its subclasses are encouraged to consult associated @@#NationalityContext@@ excerpts or annotations, if available.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe de @@#CulturalForm@@, Héritage Géographique indique l’héritage géographique d’une personne, accompagné du contexte fourni par @@#NationalityContext@@ lorsqu'il est disponible. L’héritage géographique inclut les origines géographiques de la famille du sujet, souvent utiles à la compréhension de son milieu ethnique et raciale. Cela permet par exemple de saisir l’identité des femmes qui se déclarent «sud-asiatiques», alors que nous n'en savons pas plus sur leur héritage national. Voir @@#RaceEthnicityContext@@ pour un compte-rendu détaillé de la complexité de cette classe. L'héritage géographique peut être pluriel et peut différer de l’identité ou de l’héritage national, de la citoyenneté actuelle ou officielle, et de la région géographique ou du lieu de résidence. Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les extraits ou les annotations de @@#NationalityContext@@ lorsqu’ils sont disponibles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1287,8 +1288,8 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <rdf:value>LESBIAN</rdf:value>
     <rdf:value>LESBIANISM</rdf:value>
     <foaf:name xml:lang="en">lesbian (sexual identity)</foaf:name>
-    <skos:definition xml:lang="en">Lesbianism indicates the sexual attraction of women to other women. Yet, lesbian feminist thinkers underline that this common definition is reductive. Drawing on Kathleen Gough and within an understanding of heterosexuality as compulsory for women within patriarchy, Adrienne Rich describes a lesbian continuum, the &quot;range—through each woman's life and throughout history—of woman-identified experiences, not simply the fact that a woman has had or consciously desired genital sexual experience with another woman&quot; <![CDATA[<a href="#3A8049540f-3673-4ca0-920c-cb5326d7c466">(Rich, 1983)</a>]]>. In a heteronormative context, lesbianism is not only a question of sexuality but also has complex political implications.</skos:definition>
-    <skos:definition xml:lang="fr">Le lesbianisme indique l’attraction sexuelle entre les femmes. Cependant, certaines intellectuelles lesbiennes féministes soulignent l’aspect réducteur d’une telle définition. S’appuyant sur Kathleen Gough, Adrienne Rich interprète l’hétérosexualité comme obligatoire pour les femmes dans un contexte patriarcal, et évoque un continuum lesbien, les «diverses expériences spécifiques aux femmes—au cours de leur existence ou à travers l’Histoire— et non simplement le fait qu’une femme a eu ou a consciemment désiré avoir des expériences sexuelles avec une autre femme» <![CDATA[<a href="#3A8049540f-3673-4ca0-920c-cb5326d7c466">(Rich, 1983)</a>]]>. Dans un contexte hétéronormatif, le lesbianisme ne relève donc pas seulement de la sexualité mais implique aussi des questions politiques complexes.</skos:definition>
+    <skos:definition xml:lang="en">Lesbianism indicates the sexual attraction of women to other women. Yet, lesbian feminist thinkers underline that this common definition is reductive. Drawing on Kathleen Gough and within an understanding of heterosexuality as compulsory for women within patriarchy, Adrienne Rich describes a lesbian continuum, the &quot;range—through each woman's life and throughout history—of woman-identified experiences, not simply the fact that a woman has had or consciously desired genital sexual experience with another woman&quot; <![CDATA[<a href="#3A8049540f-3673-4ca0-920c-cb5326d7c466">(Of Blood Bread and Poetry, 1983)</a>]]>. In a heteronormative context, lesbianism is not only a question of sexuality but also has complex political implications.</skos:definition>
+    <skos:definition xml:lang="fr">Le lesbianisme indique l’attraction sexuelle entre les femmes. Cependant, certaines intellectuelles lesbiennes féministes soulignent l’aspect réducteur d’une telle définition. S’appuyant sur Kathleen Gough, Adrienne Rich interprète l’hétérosexualité comme obligatoire pour les femmes dans un contexte patriarcal, et évoque un continuum lesbien, les «diverses expériences spécifiques aux femmes—au cours de leur existence ou à travers l’Histoire— et non simplement le fait qu’une femme a eu ou a consciemment désiré avoir des expériences sexuelles avec une autre femme» <![CDATA[<a href="#3A8049540f-3673-4ca0-920c-cb5326d7c466">(Of Blood and Poetry, 1983)</a>]]>. Dans un contexte hétéronormatif, le lesbianisme ne relève donc pas seulement de la sexualité mais implique aussi des questions politiques complexes.</skos:definition>
     <skos:inScheme rdf:resource="#Sexuality"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <owl:sameAs rdf:resource="http://homosaurus.org/terms/lesbianIdentity"/>
@@ -1360,7 +1361,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">
-      A subclass of Cultural Form, this property describes a person's race or colour, often as presumed, perceived, or otherwise assigned according to cultural conventions, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. Despite the ways in which categories of race or colour frequently serve heinous interests, their ideological and material impacts in the formation of identities requires recognition. These are shifting, historically constituted, and interestedly deployed categories whose use must be situated contextually and which are understood here finally as discursive or representational although they have real material impacts. They are thus as social constructs: &quot;There is nothing more to being, or not being, a given race than the social acceptance and societal ascription of a race to a person&quot; <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>. This ontology therefore does not attempt to lay out an exact, fully defined, or mutually exclusive set of racial categories: this is an impossibility given their shifting use and the overlap among them and with identity categories for ethnicity, geography, and nationality. Those applying this class and its subclasses are encouraged not to let privileged identities operate as an unspoken given or to use this class solely in relation to the marginalized. Those concerned about &quot;white&quot; and &quot;black&quot; as homogenizing categories are encouraged to reach for specificity through plural categories and representations of intersectionality, and to consult @@#RaceEthnicityContext@@ annotations, if available.
+      A subclass of Cultural Form, this property indicates a person's race or colour, often as presumed, perceived, or otherwise assigned according to cultural conventions, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. Despite the ways in which categories of race or colour frequently serve heinous interests, their ideological and material impacts in the formation of identities requires recognition. These are shifting, historically constituted, and interestedly deployed categories whose use must be situated contextually and which are understood here finally as discursive or representational although they have real material impacts. They are thus as social constructs: &quot;There is nothing more to being, or not being, a given race than the social acceptance and societal ascription of a race to a person&quot; <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>. This ontology therefore does not attempt to lay out an exact, fully defined, or mutually exclusive set of racial categories: this is an impossibility given their shifting use and the overlap among them and with identity categories for ethnicity, geography, and nationality. Those applying this class and its subclasses are encouraged not to let privileged identities operate as an unspoken given or to use this class solely in relation to the marginalized. Those concerned about &quot;white&quot; and &quot;black&quot; as homogenizing categories are encouraged to reach for specificity through plural categories and representations of intersectionality, and to consult @@#RaceEthnicityContext@@ annotations, if available.
     </skos:definition>
     <skos:definition xml:lang="fr">
       Sous-classe de Forme Culturelle, cette propriété indique l’appartenance raciale ou la couleur d’une personne, souvent telle qu’elle est présupposée, perçue ou autrement assignée selon des conventions culturelles, en parallèle avec le contexte fourni par les annotation de Race ou Ethnicité lorsqu’il est présent. Même si les catégories de race ou de couleur sont fréquemment manipulées au service d'intérêts déplorables, leurs répercussions idéologiques et matérielles sur la formation identitaire requiert qu'on les prenne en compte. Ces catégories changeantes, historiquement constituées, développées de façon intéressée, et dont l’usage doit être resitué en contexte sont enfin comprises ici comme discursives et représentationnelles, même si leurs répercussions matérielles sont bien réelles. Ce sont donc des constructions sociales: «Le fait d’appartenir ou non à une race donnée n’est rien de plus que l’acceptation sociale et l’attribution sociétale d’une race à une personne» <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>. 
@@ -5188,7 +5189,9 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <rdfs:label xml:lang="fr">est de genre (autodéclaré)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#Gender"/>
-    <skos:definition xml:lang="en">Describes a person's self-defined gender. For more information on this property, see @@#Gender@@.</skos:definition>
+    <skos:definition xml:lang="en">
+      A personal property, this indicates a person's self-defined gender. For more information on this property, see @@#Gender@@.
+    </skos:definition>
     <skos:definition xml:lang="fr">
       Une propriété personnelle, qui indique le genre autoproclamé d’une personne. Pour plus d’information, voir @@#Gender@@.
     </skos:definition>
@@ -5255,7 +5258,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
   <owl:ObjectProperty rdf:ID="hasNationalitySelfReported">
     <rdfs:label xml:lang="en">has nationality (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">de nationalité (autodéclarée)</rdfs:label>
-    <skos:definition xml:lang="en">A subproperty of personal property (self-reported), this property describes a person's self-defined nationality/ies and is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. For more information on this property see @@#NationalIdentity@@.</skos:definition>
+    <skos:definition xml:lang="en">A subproperty of personal property (self-reported), this property indicates a person's self-defined nationality/ies and is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. For more information on this property see @@#NationalIdentity@@.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-propriété de propriété personnelle autodéclarée, cette propriété indique la/les nationalité(s) autoproclamée(s) d’une personne, différant de la citoyenneté et n’étant pas proportionnelle à la zone géographique ou au territoire sur lequel elle réside.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#NationalIdentity"/>
@@ -5265,11 +5268,11 @@ Secondary schools typically follow on from primary schools and lead into vocatio
 
 
   <owl:ObjectProperty rdf:ID="hasRaceColour">
-    <rdfs:label xml:lang="en">has race or colour</rdfs:label>
-    <rdfs:label xml:lang="fr">est de race ou couleur</rdfs:label>
+    <rdfs:label xml:lang="en">has race</rdfs:label>
+    <rdfs:label xml:lang="fr">est de race</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#RaceColour"/>
-    <skos:definition xml:lang="en">A subproperty of @@#personalProperty@@, this describes a person's racial identity. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
+    <skos:definition xml:lang="en">A subproperty of @@#personalProperty@@, this describes a person's racial identity. For further information about this property, see @@#RaceColour@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5280,7 +5283,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <rdfs:label xml:lang="fr">race ou couleur autodéclarée</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#RaceColour"/>
-    <skos:definition xml:lang="en">A subproperty of @@#personalPropertySelfReported@@, this property describes a person's self-reported race or colour.  For further information about this property, see @@#RaceColour@@.</skos:definition>
+    <skos:definition xml:lang="en">A subproperty of personal property self reported, this property indicates a person's self-reported race or colour.  For further information about this property, see @@#RaceColour@@.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-propriété de propriété personnelle autodéclarée, cette propriété indique l’appartenance raciale ou la couleur autodéclarées d’une personne.  Pour plus d’informations à propre de cette propriété, voir @@#RaceColour@@. </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5329,7 +5332,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
   <owl:ObjectProperty rdf:ID="hasReligionSelfReported">
     <rdfs:label xml:lang="en">has religious affiliation (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">religion (autodéclarée)</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's self-reported religion(s) or belief system(s).</skos:definition>
+    <skos:definition xml:lang="en">A personal property, this indicates a person's self-reported religion(s) or belief system(s).</skos:definition>
     <skos:definition xml:lang="fr">Une propriété personnelle qui indique la/les religion(s) ou le(s) système(s) de croyance autoproclamé(s) par une personne.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#Religion"/>
@@ -5373,7 +5376,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
   <owl:ObjectProperty rdf:ID="hasSocialClassSelfReported">
     <rdfs:label xml:lang="en">has social class (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">de classe sociale (autodéclarés)</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's self-reported social class. For further information about this property, see @@#SocialClass@@.</skos:definition>
+    <skos:definition xml:lang="en">A subproperty of Personal Property Self-Reported indicating a person's self-reported social class.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-propriété de propriété personnelle autodéclarée qui indique la classe sociale autodéclarée d’une personne.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#SocialClass"/>
@@ -5387,7 +5390,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <rdfs:label xml:lang="fr">connait la langue</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
-    <skos:definition xml:lang="en">Knowledge of the language for writing or reading. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
+    <skos:definition xml:lang="en">Knowledge of the language for writing or reading.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5396,7 +5399,6 @@ Secondary schools typically follow on from primary schools and lead into vocatio
   <owl:ObjectProperty rdf:ID="hasLinguisticAbilitySelfReported">
     <rdfs:label xml:lang="en">language known (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">connait la langue (autodéclaré)</rdfs:label>
-    <skos:definition xml:lang="en">Self-reported oral or written ability with a language. For further information about this property, see @@#LinguisticAbility@@</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5409,7 +5411,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <rdfs:label xml:lang="fr">a une langue maternelle</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
-    <skos:definition xml:lang="en">Knowledge of the language, acquired during a person’s upbringing, for writing or reading. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
+    <skos:definition xml:lang="en">Knowledge of the language for writing or reading.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5420,7 +5422,6 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <rdfs:label xml:lang="fr">a une langue maternelle (autodéclaré)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbilitySelfReported"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
-    <skos:definition xml:lang="en">Self-reported knowledge of the language, acquired during a person’s upbringing, for writing or reading.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5443,7 +5444,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <rdfs:label xml:lang="fr">a une orientation sexuelle autodéclarée</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#Sexuality"/>
-    <skos:definition xml:lang="en">This describes a person's self-reported sexuality. For more information, see @@#Sexuality@@ and @@#SexualityContext@@.</skos:definition>
+    <skos:definition xml:lang="en">A subproperty of Personal Property Self-reported, this describes a person's self-reported sexuality. For more information, see @@#Sexuality@@ and @@#SexualityContext@@.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-propriété de propriété personnelle autodéclarée qui décrit la sexualité autodéclarée d’une personne. Pour plus d’information, voir @@#Sexuality@@ et @@#SexualityContext@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5479,7 +5480,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <foaf:name xml:lang="en">white</foaf:name>
     <cwrc:literalForm xml:lang="en">white</cwrc:literalForm>
     <cwrc:literalForm xml:lang="fr">blanc</cwrc:literalForm>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of whiteness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "White" (e.g. whiteNationality, whiteRace) cultural identities.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabel@@, this discursive label reflects the ambiguity of whiteness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "White" (e.g. whiteNationality, whiteRace) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
@@ -5497,7 +5498,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <foaf:name xml:lang="en">black</foaf:name>
     <cwrc:literalForm xml:lang="en">black</cwrc:literalForm>
     <cwrc:literalForm xml:lang="fr">noir</cwrc:literalForm>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of blackness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "Black" (e.g. @@#blackEthnicity@@, @@#blackRaceColour@@) cultural identities.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabel@@, this discursive label reflects the ambiguity of blackness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "Black" (e.g. @@#blackEthnicity@@, @@#blackRaceColour@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#blackEthnicity"/>
@@ -5512,7 +5513,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
   <skos:Concept rdf:about="#eurasianLabel">
     <rdfs:label xml:lang="en">Eurasian identity</rdfs:label>
     <rdfs:label xml:lang="fr">identité Eurasian</rdfs:label>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of the term eurasian as associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "Eurasian" (e.g. eurasianGeographicHeritage, eurasianRace) cultural identities.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabel@@, this discursive label reflects the ambiguity of the term eurasian as associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "Eurasian" (e.g. eurasianGeographicHeritage, eurasianRace) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <cwrc:literalForm xml:lang="en">eurasian</cwrc:literalForm>
     <cwrc:literalForm xml:lang="fr">eurasien</cwrc:literalForm>
@@ -5534,7 +5535,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <foaf:name xml:lang="en">english</foaf:name>
     <cwrc:literalForm xml:lang="en">english</cwrc:literalForm>
     <cwrc:literalForm xml:lang="fr">anglais</cwrc:literalForm>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of Englishness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "English" (e.g. @@#englishNationalIdentity@@, @@#englishGeographicHeritage@@) cultural identities.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabel@@, this discursive label reflects the ambiguity of Englishness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "English" (e.g. @@#englishNationalIdentity@@, @@#englishGeographicHeritage@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
@@ -5558,7 +5559,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <cwrc:literalForm xml:lang="en">man</cwrc:literalForm>
     <cwrc:literalForm xml:lang="fr">homme</cwrc:literalForm>
     <foaf:name xml:lang="en">Man (Label)</foaf:name>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of manhood, masculinity, or maleness as associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "man" (e.g. @@#man@@, @@#cisMan@@) cultural identities.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabel@@, this discursive label reflects the ambiguity of manhood, masculinity, or maleness as associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "man" (e.g. @@#man@@, @@#cisMan@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
@@ -5577,7 +5578,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <cwrc:literalForm xml:lang="en">woman</cwrc:literalForm>
     <cwrc:literalForm xml:lang="fr">femme</cwrc:literalForm>
     <foaf:name xml:lang="en">Woman (Label)</foaf:name>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of womanhood, femininity, or femaleness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "woman" (e.g. @@#woman@@, @@#transWoman@@) cultural identities.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabel@@, this discursive label reflects the ambiguity of womanhood, femininity, or femaleness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "woman" (e.g. @@#woman@@, @@#transWoman@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
@@ -5612,7 +5613,7 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <foaf:name xml:lang="en">Jewish</foaf:name>
     <cwrc:literalForm xml:lang="en">Jewish</cwrc:literalForm>
     <cwrc:literalForm xml:lang="fr">Juif</cwrc:literalForm>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of Jewishness associated with different @@#CulturalForm@@ s. It provides a means of aggregating and searching multiple instances of "Jewish" (e.g. @@#jewishNationalIdentity@@, @@#jewishRaceColour@@) cultural identities.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabel@@, this discursive label reflects the ambiguity of Jewishness associated with different @@#CulturalForm@@ s. It provides a means of aggregating and searching multiple instances of "Jewish" (e.g. @@#jewishNationalIdentity@@, @@#jewishRaceColour@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
