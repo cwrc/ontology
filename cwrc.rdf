@@ -915,18 +915,6 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-  <owl:Class rdf:ID="EthnicityContext">
-    <rdfs:label xml:lang="en">racial, colour or ethnicity context</rdfs:label>
-    <rdfs:label xml:lang="fr">contexte racial, de couleur de peau ou d'ethnicité</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
-    <dcterms:subject rdf:resource="#Ethnicity"/>
-    <dcterms:subject rdf:resource="#RaceColour"/>
-    <skos:definition xml:lang="en">Ethnicity Context is a significant subclass of context. It is associated with the Cultural Form subclass Ethnicity, and sometimes other intersecting Cultural Forms. Annotations typed as Ethnicity Context provide information about and discussions of a person's subjectivity with regards to their perceived or self-reported ethnicity. Ethnicity Context provides depth to more granular categorizations of a person indicated by the properties @@#hasEthnicity@@ or @@#hasEthnicitySelfReported@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
   <owl:Class rdf:ID="GenderContext">
     <rdfs:label xml:lang="en">Gender Context</rdfs:label>
     <rdfs:label xml:lang="fr">Genre En Contexte</rdfs:label>
@@ -6007,6 +5995,24 @@ Secondary schools typically follow on from primary schools and lead into vocatio
   </owl:DeprecatedProperty>
 
   <!-- Deprecated classes go here for sanity -->
+  <DeprecatedClass rdf:ID="EthnicityContext">
+    <rdfs:label xml:lang="en">racial, colour or ethnicity context</rdfs:label>
+    <rdfs:label xml:lang="fr">contexte racial, de couleur de peau ou d'ethnicité</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
+    <dcterms:subject rdf:resource="#Ethnicity"/>
+    <dcterms:subject rdf:resource="#RaceColour"/>
+    <skos:definition xml:lang="en">Ethnicity Context is a significant subclass of context. It is associated with the Cultural Form subclass Ethnicity, and sometimes other intersecting Cultural Forms. Annotations typed as Ethnicity Context provide information about and discussions of a person's subjectivity with regards to their perceived or self-reported ethnicity. Ethnicity Context provides depth to more granular categorizations of a person indicated by the properties @@#hasEthnicity@@ or @@#hasEthnicitySelfReported@@.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of class @@#RaceEthnicityContext@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe @@#RaceEthnicityContext@@.</rdfs:comment>
+    <owl:equivalentClass rdf:resource="#RaceEthnicityContext"/>
+    <dcterms:isReplacedBy rdf:resource="#RaceEthnicityContext"/>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </DeprecatedClass>
+
   <owl:DeprecatedClass rdf:ID="CulturalFormation">
     <rdfs:label xml:lang="en">cultural formation </rdfs:label>
     <rdfs:label xml:lang="fr">formation culturelle</rdfs:label>
