@@ -95,4 +95,5 @@ doc: scripts/docgen.py
 doctest: scripts/docgen.py
 	./scripts/docgen.py $(ONTOLOGY).rdf $(ONTOLOGY)-template2-$(ONTOLOGY_DATE)-$(O_LANG).html  $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html  en
 cross:
-	./scripts/crossRef.py cwrc.rdf > Testing.rdf
+	./scripts/crossRef.py cwrc.rdf
+	# ./scripts/crossRef.py cwrc.rdf > Testing.rdf
