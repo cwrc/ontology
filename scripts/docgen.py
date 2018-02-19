@@ -644,7 +644,7 @@ def get_header_html():
     else:
         url += "-EN.html"
 
-    html_str += """(<a href="%s">Version %s</a>)</h3>\n""" % (url, version_type)
+    html_str += """ (<a href="%s">Version %s</a>)</h3>\n""" % (url, version_type)
     html_str += "<dl>\n"
     if header["prior"]:
         prior = header["prior"][0]
