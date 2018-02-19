@@ -47,19 +47,19 @@
         </ul>
         <li><a href="#structures">6. CWRC ontological structures</a></li>
         <ul>
-          <li><a href="#persona">a. Persons, Personas and Roles</a></li>
-          <li><a href="#culturalformationsontology">b. Cultural Form</a></li>
+          <li><a href="#contextontology">a. Contexts</a></li>
+          <li><a href="#persona">b. Persons, Personas and Roles</a></li>
+          <li><a href="#culturalformationsontology">c. Cultural Form</a></li>
           <ul>
-            <li><a href="#contextontology">i. Contexts</a></li>
-            <li><a href="#granularproperties">ii. Granular Properties</a></li>
+            <li><a href="#granularproperties">i. Granular Properties</a></li>
           </ul>
-          <li><a href="#taxonomiesontology">c. Built-in Taxonomies</a></li>
+          <li><a href="#taxonomiesontology">d. Built-in Taxonomies</a></li>
           <ul>
             <li><a href="#religion_taxonomy">i. Religion</a></li>
             <li><a href="#politicalAffliation_taxonomy">ii. Political Affiliation</a></li>
             <li><a href="#genre_taxonomy">iii. Literary Genre</a></li>
           </ul>
-          <li><a href="#changeSets">d. Notes on ChangeSets</a></li>
+          <li><a href="#changeSets">e. Notes on ChangeSets</a></li>
         </ul>
         <li><a href="#definition_list">7. Global Cross-Reference</a></li>
         <li><a href="#reference">8. Detailed references for all terms, classes and properties</a></li>
@@ -252,7 +252,12 @@
     <p>While full, integrated traceability has always been a core need of repeatable experiments, this comes at a complexity cost within a linked open data set in that the queries required to retrieve basic information become unwieldy. To this end, the CWRC ontology records information in two different ways: through a series of <a href="#Context">Contexts</a> that link the information to its associated source text in Orlando or other materials, and through a series of granular properties that simply link individuals to their personal attributes. In this way, both rapid retrieval and deep provenance tracking are enabled.</p>
     <p>Two basic structures are used within the ontology to achieve this: <a href="#Context">Context</a>s and <a href="#CulturalForm">Cultural Form</a>. A cultural formation represents elements of lived social subjectivities and/or classification of people through categories such as race, gender, language, sexuality, or religion. Contexts are used to link a fragment of Orlando prose to the individual whom it references as well as to the specific cultural formation that is being assigned to the person. In addition, properties are separated in two categories: reported and self-reported, allowing for the qualification of individual statements.</p>
 
-    <h4 id="persona">a. Persons, Personas and Roles</h4>
+    <h4 id="contextontology">a. Contexts</h4>
+    <!--Insert summary here of how contexts are related to both properties and snippets through OA. -->
+    <p>The Context class provides the discursive context for assertions in the ontology. Where the assertions have been generated from a web-accessible source text, Context provides the text, or the relevant snippet of a longer text, from which they have been extracted. Contexts help to ground the data in its source materials, which can provide users with a sense of the nuance and complexity of assertions related to human subjects and cultural phenomena.</p>
+    <p>Contexts are typed by major semantic categories including, for biographical material, CulturalFormation, Birth, Death, Education, Occupation, and Politics, and, for literary content, Production, Reception, and Textual Features. DC subject links connect these contexts to associated concepts in the ontology, and are also linked where possible using the provenance ontology to the full text from which they were extracted. The triples are linked to their associated contexts using The Web Annotation Data Model.</p>
+
+    <h4 id="persona">b. Persons, Personas and Roles</h4>
     <p>The distinction between persons, personas, and roles is an important component of the complexity of human experiences and relationships.</p>
     
     <p>This ontology adopts the broad FOAF definition of a <a href="http://xmlns.com/foaf/spec/#term_Person"><code>foaf:person</code></a>, which can be be applied to any entity considered to be a person, including non-humans. We define two subclasses of Person: a NaturalPerson or human being, and a FictionalPerson, since fictional characters are important to literary studies. If a historical person who is a NaturalPerson is fictionalized as a <code>#Character</code> [not yet created] in a text, they also become a FictionalPerson. If a text simply alludes or refers to a NaturalPerson, however, they are not also a FictionalPerson.</p>
@@ -273,22 +278,18 @@
 
 
 
-    <h4 id="culturalformationsontology">b. Cultural Form</h4>
+    <h4 id="culturalformationsontology">c. Cultural Form</h4>
     <p>The <a href="#CulturalForm">Cultural Form</a> classes recognize categorization as endemic to social experience, while incorporating variation in terminology and contextualization of identity categories by employing instances at different discursive levels.</p>
     <p>Cultural Form sub-classes and instances describe the subject positions of individuals through both <a href="#Context">Context</a>s and granular properties. This arrangement has its roots in the Orlando arrangement of Cultural Form encodings that points users towards a framework for raising and debating complex matters for cultural investigation rather than invoking reified categories.</p>
     <p>The shift from embedded semantic markup to a linked open data approach presented the challenge of making this approach compatible with linkages to other ontologies and data sets outside of the Orlando frame of reference. The move from "strings to links" or "strings to things" was in some sense at odds with the former embrace of the ambiguity of strings such as white, black, English, etc.: white and black can represent race or ethnicity, while English can also be invoked as an ethnicity, nationality, or a national heritage. Orlando marks these strings using its Cultural Forms tagset as specific to, for example, the context of race or ethnicity, mandating a similar association, within the linked data representation, with a specific instance of Cultural Form. Thus, there exist Cultural Form instances that point to the discursive construction of <a href="#whiteRace">white</a> as a race and <a href="#whiteEthnicity">white</a> as an ethnicity. Lastly, there also exists a <a href="#whiteLabel">white</a> label that can be instantiated as either race or ethnicity, but not both within the same assertion (although multiple assertions are possible).</p>
     <p>This is a departure from previous (non-linked open data) controlled vocabularies, in that the appearance of the term or label (in this case "white") does not indicate the specific cultural formation being invoked, the specific instance does. This also means that linkages to other data sets or vocabularies can be made appropriately, since multiple representations of the same label are present within the CWRC ontology. As a last resort, or for data mining purposes, the term is also available as a concept whose actual Cultural Form is undecided amongst the CWRC-defined options. This allows for linkages to an external ontology, such as can be required by text mining, without endorsing the corresponding definition or interpretation of the term.</p>
 
 
-    <h5 id="contextontology">i. Contexts</h4>
-    <!--Insert summary here of how contexts are related to both properties and snippets through OA. -->
-
-
-    <h5 id="granularproperties">ii. Granular Properties</h4>
+    <h5 id="granularproperties">i. Granular Properties</h4>
     <p> Granular properties provide a simple means of indicating cultural categories as as presumed, perceived, or otherwise assigned to a person according to cultural conventions, or as self-reported by the person themselves. Some of the properties are associations inherited from forebears.</p>
 
 
-    <h4 id="taxonomiesontology">c. Built-in Taxonomies</h4>
+    <h4 id="taxonomiesontology">d. Built-in Taxonomies</h4>
 
 
     <h5 id="religion_taxonomy">i. Religion</h5>
@@ -309,7 +310,7 @@
     <p><a href="figures/genreTaxonomy-EN.svg">The specific taxonomy is:</a></p>
     <object type="image/svg+xml" data="figures/genreTaxonomy-EN.svg"></object>
 
-    <h4 id="changeSets">d. Notes on ChangeSets</h4>
+    <h4 id="changeSets">e. Notes on ChangeSets</h4>
     <p>Change Sets exist to track changes to instances, terms, and classes within the ontology, they are therefore used by both the authors of the ontology as well as users who are making additions or modifications. Changesets are instances that are linked either to or from a structure in the ontology. This is done through the object properties <i>affected entity</i> or through the <code>skos:changeNote</code>. A single changeset may apply to several entities therefore the <code>affected entity</code> relation may be applied 0 or more times. Changesets also track the user through the <code>altered by</code> relation and may link to any <code>CWRC:Person</code>. In addition dates and times are kept track of through <code>time:inXSDDateTimeStamp</code> using xsd:dateStamps to track the instant the change was applied to the ontology. This will allow changesets to be used as release by selecting them between a particular date to show major changes. Through provenance Change Sets may link to external resources allowing extended discussion to be kept out of the ontology. Shorter descriptions are included through the <code>skos:changeNote</code> relation as well as a title using a standard <code>rdfs:label</code>. Change Sets are to be used anytime an issue is completed by ontology developers or an instance is changed by a user. Automated mechanisms will be used to offset some of the work required.</p>
     <figure>
       <img src="figures/ChangeSets.png" style="display: block; margin: auto;width 60%;"/>
