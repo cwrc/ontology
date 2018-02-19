@@ -857,18 +857,6 @@ Secondary schools typically follow on from primary schools and lead into vocatio
     <dcterms:subject rdf:resource="#Sexuality"/>
     <dcterms:subject rdf:resource="#Gender"/>
   </owl:Class>
-  <owl:Class rdf:ID="LanguageContext">
-    <rdfs:label xml:lang="en">language context</rdfs:label>
-    <rdfs:label xml:lang="fr">contexte linguistique</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
-    <dcterms:subject rdf:resource="#LinguisticAbility"/>
-    <skos:definition xml:lang="en">Language Context is a significant subclass of context. Annotations typed as Cultural Formation Context provide information about and discussions of a person's linguistic ability or abilities. Language Context provides depth to more granular indications of linguistic ability indicated through the property Language.</skos:definition>
-    <skos:definition xml:lang="fr">Langue en Contexte est une sous-classe de contexte importante. Les annotations entrées en tant que Contexte de Formation Culturelle fournissent des informations et des discussions sur la ou les aptitudes linguistiques d’une personne. Langue en Contexte fournit de la profondeur aux indications granulaires sur les aptitudes linguistiques grâce à la propriété Langage.</skos:definition>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <dcterms:subject rdf:resource="#Language"/>
-  </owl:Class>
   <owl:Class rdf:ID="SocialClassContext">
     <rdfs:label xml:lang="en">social class context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte social</rdfs:label>
@@ -5995,6 +5983,23 @@ Secondary schools typically follow on from primary schools and lead into vocatio
   </owl:DeprecatedProperty>
 
   <!-- Deprecated classes go here for sanity -->
+  <DeprecatedClass rdf:ID="LanguageContext">
+    <rdfs:label xml:lang="en">language context</rdfs:label>
+    <rdfs:label xml:lang="fr">contexte linguistique</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
+    <dcterms:subject rdf:resource="#LinguisticAbility"/>
+    <skos:definition xml:lang="en">Language Context is a significant subclass of context. Annotations typed as Cultural Formation Context provide information about and discussions of a person's linguistic ability or abilities. Language Context provides depth to more granular indications of linguistic ability indicated through the property Language.</skos:definition>
+    <skos:definition xml:lang="fr">Langue en Contexte est une sous-classe de contexte importante. Les annotations entrées en tant que Contexte de Formation Culturelle fournissent des informations et des discussions sur la ou les aptitudes linguistiques d’une personne. Langue en Contexte fournit de la profondeur aux indications granulaires sur les aptitudes linguistiques grâce à la propriété Langage.</skos:definition>
+    <rdfs:comment xml:lang="en">Deprecated in favour of class @@#CulturalFormContext@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe @@#CulturalFormContext@@.</rdfs:comment>
+    <owl:equivalentClass rdf:resource="#CulturalFormContext"/>
+    <dcterms:isReplacedBy rdf:resource="#CulturalFormContext"/>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <dcterms:subject rdf:resource="#Language"/>
+  </DeprecatedClass>
   <DeprecatedClass rdf:ID="EthnicityContext">
     <rdfs:label xml:lang="en">racial, colour or ethnicity context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte racial, de couleur de peau ou d'ethnicité</rdfs:label>
