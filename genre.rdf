@@ -354,6 +354,7 @@
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300055540"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:broaderTransitive rdf:resource="#genrePoliticalwriting"/>
+    <skos:broaderTransitive rdf:resource="#genreDrama"/>
     <skos:definition xml:lang="fr">&quot;Le terme est dérivé de &quot;propagande d'agitation&quot; et incite à l'action politique. En référence à l'art visuel, il renvoie plus particulièrement au mouvement artistique en essor durant la période qui suit la révolution bolchévique en URSS.  &quot;</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreAllegory">
@@ -628,6 +629,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A work that rewords the text of the Bible, often to improve clarity or to make it accessible to a wider audience.</skos:definition>
     <skos:definition xml:lang="fr">Texte qui reprend les paroles de la Bible, souvent dans l'objectif d'en améliorer la clarté ou de la rendre plus accessibleau large public.</skos:definition>
+    <skos:broaderTransitive rdf:resource="#genreReligious"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreBildungsroman">
     <rdf:value>BILDUNGSROMAN</rdf:value>
@@ -659,7 +661,7 @@
     <skos:inScheme rdf:resource="#Genre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A reference text containing biographical entries on multiple people, often with a common link between them (for example, a biographical dictionary of women), and typically arranged alphabetically.</skos:definition>
-    <skos:broaderTransitive rdf:resource="#genreScholarship"/>
+    <skos:broaderTransitive rdf:resource="#genreDictionary"/>
     <skos:definition xml:lang="fr">Texte de référence contenant des entrées biographiques à propos de plusieurs personnes, souvent reliées par un thème commun (par exemple, un dictionnaire biographique de femmes) et généralement classées par ordre alphabétique.</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreBiography">
@@ -697,6 +699,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Fiction dealing with bisexuality.</skos:definition>
     <skos:definition xml:lang="fr">Fiction abordant le thème de la bisexualité.</skos:definition>
+    <skos:broaderTransitive rdf:resource="#genreFiction"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreBlackcomedy">
     <rdf:value>BLACKCOMEDY</rdf:value>
@@ -1121,6 +1124,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:inScheme rdf:resource="#Genre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Fiction in which courtship is a major part of the plot.</skos:definition>
+    <skos:broaderTransitive rdf:resource="#genreFiction"/>
     <skos:broaderTransitive rdf:resource="#genreRomance"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreCriminology">
@@ -1132,7 +1136,6 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:inScheme rdf:resource="#Genre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Scholarship, typically non-fiction, dealing with the study of crime, criminals, and criminal justice.</skos:definition>
-    <skos:broaderTransitive rdf:resource="#genreScholarship"/>
     <skos:broaderTransitive rdf:resource="#genreSocialscience"/>
     <skos:definition xml:lang="fr">Science de l'étude des crimes, des criminels et de la justice pénale, généralement non fictionnelle.</skos:definition>
   </genre:Genre>
@@ -1183,6 +1186,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Christian_devotional_literature"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <skos:definition xml:lang="fr">La littérature de dévotion chrétienne est une écriture religieuse qui n'est ni doctrinale ni théologique, mais conçue pour les individus à lire pour leur édification personnelle et leur formation spirituelle. Le théologien Karl Holl a suggéré que la littérature de dévotion s'est définitivement développée au moment du piétisme pendant la seconde moitié du 17ème siècle.</skos:definition>
+    <skos:broaderTransitive rdf:resource="#genreReligious"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreDialogueofthedead">
     <rdf:value>DIALOGUEOFTHEDEAD</rdf:value>
@@ -1396,6 +1400,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
     <cwrc:contraryTo rdf:resource="#genreUtopia"/>
     <skos:definition xml:lang="fr">Une dystopie est un récit de fiction dépeignant une société imaginaire organisée de telle façon qu'elle empêche ses membres d'atteindre le bonheur. Une dystopie peut également être considérée, entre autres, comme une utopie qui vire au cauchemar et conduit donc à une contre-utopie. L'auteur entend ainsi mettre en garde le lecteur en montrant les conséquences néfastes d’une idéologie (ou d’une pratique) présente à notre époque. L'impact que ces romans ont eu sur la science-fiction a souvent amené à qualifier de dystopie toute œuvre d'anticipation sociale décrivant un avenir sombre.</skos:definition>
+    <skos:broaderTransitive rdf:resource="#genreFiction"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreEclogue">
     <rdf:value>ECLOGUE</rdf:value>
@@ -1882,6 +1887,7 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="zh-hant">超自然的散文體故事，敘述活人與死者現形的靈魂相遇。 (<![CDATA[<a href="#_getty_2017">Getty, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300254823"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <skos:broaderTransitive rdf:resource="#genreFiction"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreGiftbook">
     <rdf:value>GIFTBOOK</rdf:value>
@@ -1940,6 +1946,7 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="fr">La grammaire est l'étude systématique des éléments constitutifs d'une langue. Par extension, on nomme aussi grammaire un manuel ou un ensemble de documents décrivant des règles grammaticales.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Grammar"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
+    <skos:broaderTransitive rdf:resource="#genrePedagogy"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreGraveyardpoetry">
     <rdf:value>GRAVEYARDPOETRY</rdf:value>
@@ -2178,6 +2185,7 @@ s épîtres.</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-629?rskey=HtykbC%26result=621"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</owl:comment>
     <skos:definition xml:lang="fr">Drame réaliste centré sur la vie domestique de personnages de la classe ouvrière, apparu en Angleterre dans les années 50.</skos:definition>
+    <skos:broaderTransitive rdf:resource="#genreDrama"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreKunstlerroman">
     <rdf:value>KUNSTLERROMAN</rdf:value>
@@ -2293,6 +2301,7 @@ s épîtres.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Moralised case-histories in the form of letters in which the dead strive to reclaim the living beloved by persuading them to repent and reform. Often include features of lively fiction: character-drawing, narrative, suspense, surprise, humour, and love-situations including transgression of all kinds.</skos:definition>
     <skos:definition xml:lang="fr">Histoires illustrant des leçons morales sous forme de lettres dans lesquelles les morts s'efforcent de persuader des proches toujours en vie de se repentir et d'améliorer leur conduite. Inclut souvent des caractéristiques propre à la fiction divertissante, comme le portrait de personnage, le récit, le suspense, la surprise, l'humour et les romances, y compris des transgressions de toutes sortes.</skos:definition>
+    <skos:broaderTransitive rdf:resource="#genreEpistolary"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreLibretto">
     <rdf:value>LIBRETTO</rdf:value>
@@ -2529,6 +2538,7 @@ s épîtres.</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-745?rskey=1MnHpb%26result=741"/>
     <prov:wasDerivedFrom rdf:resource="http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-753?rskey=XphoRT%26result=751"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</owl:comment>
+    <skos:broaderTransitive rdf:resource="#genreDrama"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreMultimedia">
     <rdf:value>MULTIMEDIA</rdf:value>
@@ -2714,6 +2724,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="zh-hant">以兒童為對象，用押韻詩文講述的故事。 (<![CDATA[<a href="#_getty_2017">Getty, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300202593"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <skos:broaderTransitive rdf:resource="#genrePoetry"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreObituary">
     <rdf:value>OBITUARY</rdf:value>
@@ -3870,7 +3881,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300026677"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</owl:comment>
     <skos:broaderTransitive rdf:resource="#genreDictionary"/>
-    <skos:broaderTransitive rdf:resource="#genreScholarship"/>
     <skos:definition xml:lang="fr">Synonyme de Dictionnaire (Dictionarium) : Dictionnarium seu Thesaurus... du XVI° au XVII ° s. À la Renaissance, le thesaurus, venant du grec thesauros, et traduction latine du mot trésor, est un dictionnaire de mots dans les langues anciennes, le mot trésor étant réservé à la langue alors contemporaine, le français. Les premiers thesaurus furent ceux des Estienne, Robert Estienne, imprimeur et libraire du Roi, et Henri Estienne, et voisins des dictionnaires de grec et de latin comme le Dictionnarium Latino-Gallicum (1538), le Dictionnaire françois-latin, (1540). Ce nom a peut-être été emprunté à Hésiode, « La langue est un trésor de mots » car le mot thesaurus existait déjà dans le domaine de l'encyclopédie dans la littérature médiévale (voir Thesaurus:homonymie) ou signifiant comme aujourd’hui un recueil de textes.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Thesaurus"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
@@ -4026,11 +4036,11 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">An imaginary place or government in which political and social perfection has been reached in the material world as opposed to some spiritual afterlife as discussed in the Christian Bible or the Elysian fields of The Odyssey. The citizens of such utopias are typically universally clean, virtuous, healthy, and happy, or at least those who are criminals are always captured and appropriately punished. A utopian society is one that has cured all social ills. See discussion under Utopian literature, below. Contrast with dystopia. UTOPIAN (<![CDATA[<a href="#_wheeler_2017">L. K Wheeler, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://web.cn.edu/kwheeler/lit_terms_u.html"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
-    <skos:narrowerTransitive rdf:resource="#genre"/>
-    <cwrc:contraryTo rdf:resource="#genreDystopia"/>
     <skos:definition xml:lang="fr">L’utopie (mot forgé par l'écrivain anglais Thomas More, du grec οὐ-τόπος « en aucun lieu ») est une représentation d'une réalité idéale et sans défaut. C'est un genre d'apologue qui se traduit, dans les écrits, par un régime politique idéal (qui gouvernerait parfaitement les hommes), une société parfaite (sans injustice par exemple, comme la Callipolis de Platon ou la découverte de l'Eldorado dans Candide) ou encore une communauté d'individus vivant heureux et en harmonie (l'abbaye de Thélème dans Gargantua de Rabelais en 1534), souvent écrites pour dénoncer les injustices et dérives de leurs temps.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Utopia"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
+    <skos:broaderTransitive rdf:resource="#genreFiction"/>
+    <cwrc:contraryTo rdf:resource="#genreDystopia"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreVersenovel">
     <rdf:value>VERSENOVEL</rdf:value>
@@ -4046,6 +4056,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <skos:broaderTransitive rdf:resource="#genreNovel"/>
     <skos:broaderTransitive rdf:resource="#genreFiction"/>
+    <skos:broaderTransitive rdf:resource="#genrePoetry"/>
     <skos:definition xml:lang="fr">Un roman en vers est un type de narration poétique dans laquelle un récit de la longueur d'un roman est raconté sous la forme de la poésie plutôt que de la prose. L'auteur peut utiliser des formes métriques simples ou complexes, mais incluera normalement un grand nombre de personnages, des voix multiples, un dialogue, une narration, une description et une action de manière romanesque.</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreVignette">
