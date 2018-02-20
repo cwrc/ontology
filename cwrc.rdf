@@ -2726,7 +2726,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Dalit"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:broaderTransitive rdf:resource="#socialReform"/>
-    <skos:broaderTransitive rdf:resource="#feminism"/>
+    <skos:related rdf:resource="#feminism"/>
     <skos:broaderTransitive rdf:resource="#civilRights"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -3013,6 +3013,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Anti-nuclear_movement"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broaderTransitive rdf:resource="#environmentalism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
@@ -3146,6 +3147,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <skos:related rdf:resource="#feminism"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-War">
@@ -3211,6 +3213,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Antisemitism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <skos:broaderTransitive rdf:resource="#racism"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#artsAdvocacy">
@@ -3266,6 +3269,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/African-American_Civil_Rights_Movement_(1954%E2%80%931968)"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:broaderTransitive rdf:resource="#civilRights"/>
+    <skos:broaderTransitive rdf:resource="#racialEquality"/>
     <skos:related rdf:resource="#abolitionism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -3323,6 +3327,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">nationalisme anglais</rdfs:label>
     <skos:definition xml:lang="en">&quot;British nationalism asserts that the British are a nation and promotes the cultural unity of the British, in a definition of Britishness that may include people of English, Scottish, Welsh, Ulster, Scots and Irish descent. British nationalism is closely associated with British unionism, which seeks to uphold the political union that is the United Kingdom, or strengthen the links between the countries of the United Kingdom. British nationalism's unifying identity descends from the ancient Britons who dwelt on the island of Great Britain. British nationalism grew to include people outside Great Britain, in Ireland, because of the 1542 Crown of Ireland Act, which declared that the crown of Ireland was to be held by the ruling monarch of England as well as Anglo-Irish calls for unity with Britain. It is characterised as a &quot;powerful but ambivalent force in British politics&quot;. In its moderate form, British nationalism has been a civic nationalism, emphasising both cohesion and diversity of the people of the United Kingdom, its dependencies, and its former colonies. Recently however, nativist nationalism has arisen based on fear of Britain being swamped by immigrants; this anti-immigrant nativist nationalism has manifested politically in the British National Party and other nativist nationalist movements. Politicians, such as British Prime Minister David Cameron of the Conservative Party and his direct predecessor Gordon Brown of the Labour Party, have sought to promote British nationalism as a progressive cause.&quot; <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:broaderTransitive rdf:resource="#nationalism"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/British_nationalism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -3529,6 +3534,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Tories_(British_political_party)"/>
     <skos:related rdf:resource="#toryPartyUk"/>
+    <skos:broaderTransitive rdf:resource="#conservatism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -3572,7 +3578,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:related rdf:resource="#feminism"/>
+    <skos:broaderTransitive rdf:resource="#feminism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#dreyfusard">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3644,7 +3650,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:related rdf:resource="#civilRights"/>
+    <skos:broaderTransitive rdf:resource="#civilRights"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#environmentalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3729,7 +3735,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:related rdf:resource="#civilRights"/>
+    <skos:broaderTransitive rdf:resource="#civilRights"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#feministAnti-ViolenceActivism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3793,6 +3799,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr">&quot;Le nationalisme en France est apparu au cours du XVIIIe siècle dans la bourgeoisie, sous la plume des philosophes des Lumières. Le nationalisme signifiait pour eux, à cette époque, que c'est le peuple qui incarne le pays, par opposition à la vision de l'ancien régime pour lequel le pays est incarné par le Roi de France. Au XIXe siècle, le nationalisme devient une opposition aux autres nations, voire aux autres peuples, cette idée prenant clairement forme à la fin de ce siècle, dans les mouvements politiques entrant en jeu dans le système démocratique français, est née en 1870, avec la Troisième République. À cette époque, tous les partis manifestent ostensiblement de telles idées nationalistes et anti-allemandes : la Prusse venait de gagner une guerre et avait pris l'Alsace-Lorraine.&quot; <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <skos:broaderTransitive rdf:resource="#nationalism"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/French_nationalism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -3812,7 +3819,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:related rdf:resource="#civilRights"/>
+    <skos:broaderTransitive rdf:resource="#civilRights"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#germanNationalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3823,6 +3830,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/German_nationalism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <skos:broaderTransitive rdf:resource="#nationalism"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#girondin">
@@ -3891,7 +3899,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:related rdf:resource="#socialReform"/>
+    <skos:broaderTransitive rdf:resource="#socialReform"/>
     <skos:related rdf:resource="#civilRights"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#humanRights">
@@ -3967,6 +3975,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#civilRights"/>
     <skos:related rdf:resource="#humanRights"/>
     <skos:related rdf:resource="#anti-Imperialism"/>
   </cwrc:PoliticalAffiliation>
@@ -4105,6 +4114,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#revolutionaryPolitics"/>
     <skos:related rdf:resource="#girondin"/>
   </cwrc:PoliticalAffiliation>
     <cwrc:PoliticalAffiliation rdf:about="#jacobinism">
@@ -4120,6 +4130,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#revolutionaryPolitics"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#jacobitism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -4132,6 +4143,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Jacobitism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broaderTransitive rdf:resource="#pro-Catholicism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
@@ -4147,6 +4159,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#civilRights"/>
     <cwrc:contraryTo rdf:resource="#antisemitism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#labourMovement">
@@ -4203,7 +4216,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <cwrc:contraryTo rdf:resource="#irishHomeRuleMovement"/>
-    <skos:related rdf:resource="#liberalism"/>
+    <skos:broaderTransitive rdf:resource="#liberalism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#liberalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -4513,6 +4526,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#socialReform"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#prisonReform">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -4578,7 +4592,6 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:contraryTo rdf:resource="#feminism"/>
     <skos:related rdf:resource="#feminism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#pro-European">
@@ -4603,6 +4616,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#racism"/>
     <cwrc:contraryTo rdf:resource="#blackAnti-Oppression"/>
     <cwrc:contraryTo rdf:resource="#anti-Racism"/>
   </cwrc:PoliticalAffiliation>
@@ -4791,6 +4805,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#feminism"/>
     <skos:related rdf:resource="#socialPurity"/>
     <skos:related rdf:resource="#pro-Choice"/>
   </cwrc:PoliticalAffiliation>
@@ -4803,6 +4818,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Social_purity_movement"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:related rdf:resource="#feminism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
@@ -4949,6 +4965,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:related rdf:resource="#feminism"/>
     <skos:related rdf:resource="#conservatism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#toryPartyBritain">
@@ -4959,7 +4976,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <skos:definition xml:lang="en">&quot;The Tories were members of two political parties which existed, sequentially, in the Kingdom of England, the Kingdom of Great Britain and later the United Kingdom of Great Britain and Ireland from the 17th to the early 19th centuries. The first Tories emerged in 1678 in England, when they opposed the Whig-supported Exclusion Bill which set out to disinherit the heir presumptive James, Duke of York (who eventually became James II of England and VII of Scotland). This party ceased to exist as an organised political entity in the early 1760s, although it was used as a term of self-description by some political writers. A few decades later, a new Tory party would rise to establish a hold on government between 1783 and 1830, with William Pitt the Younger followed by Robert Jenkinson, 2nd Earl of Liverpool. The Earl of Liverpool was succeeded by fellow Tory Arthur Wellesley, 1st Duke of Wellington, whose term included the Catholic Emancipation, which occurred mostly due to the election of Daniel O'Connell as a Catholic MP from Ireland. When the Whigs subsequently regained control, the Representation of the People Act 1832 removed the rotten boroughs, many of which were controlled by Tories. In the following general election, the Tory ranks were reduced to 180 MPs. Under the leadership of Robert Peel, the Tamworth Manifesto was issued, which began to transform the Tories into the Conservative Party. However, Peel lost many of his supporters by repealing the Corn Laws, causing the party to break apart. One faction, led by the Earl of Derby and Benjamin Disraeli, survived to become the modern Conservative Party, whose members are commonly still referred to as Tories.&quot; <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Tories_(British_political_party)"/>
-    <skos:related rdf:resource="#conservatism"/>
+    <skos:broaderTransitive rdf:resource="#conservatism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5091,11 +5108,12 @@ At the heart of a persona is an identity that is interacted with by others and t
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Female_education"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Category:Women_and_education"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
-    <skos:broaderTransitive rdf:resource="#educationReform"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:contraryTo rdf:resource="#anti-feminism"/>    
+    <skos:broaderTransitive rdf:resource="#educationReform"/>
+    <skos:broaderTransitive rdf:resource="#feminism"/>
+    <cwrc:contraryTo rdf:resource="#anti-feminism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#womensEmploymentReform">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
