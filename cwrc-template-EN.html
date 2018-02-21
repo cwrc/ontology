@@ -312,10 +312,10 @@
 
     <h4 id="changeSets">d. Notes on ChangeSets</h4>
     <p>Change Sets exist to track changes to instances, terms, and classes within the ontology, they are therefore used by both the authors of the ontology as well as users who are making additions or modifications. Change sets are instances that are linked either to or from a structure in the ontology. This is done through the object properties <i>affected entity</i> or through the <code>skos:changeNote</code>. A single change set may apply to several entities therefore the <code>affected entity</code> relation may be applied 0 or more times. Change sets also track the user through the <code>altered by</code> relation and may link to any <code>CWRC:Person</code>. In addition dates and times are kept track of through <code>time:inXSDDateTimeStamp</code> using xsd:dateStamps to track the instant the change was applied to the ontology. This will allow change sets to be used as release by selecting them between a particular date to show major changes. Through provenance Change Sets may link to external resources allowing extended discussion to be kept out of the ontology. Shorter descriptions are included through the <code>skos:changeNote</code> relation as well as a title using a standard <code>rdfs:label</code>. Change Sets are to be used anytime an issue is completed by ontology developers or an instance is changed by a user. Automated mechanisms will be used to offset some of the work required.</p>
-    <figure>
+    <!-- <figure>
       <img src="figures/ChangeSets.png" style="display: block; margin: auto;width 60%;"/>
       <figcaption>Figure 3 - Change Set Example using both external descriptions and internal descriptions</figcaption>
-    </figure>
+    </figure> -->
 
 
     <h3 id="definition_list">7. Global Cross-Reference</h3>
