@@ -857,7 +857,6 @@
     <prov:wasDerivedFrom rdf:resource="https://www.britannica.com/topic/charade-game"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Encyclopædia Britannica.</owl:comment>
     <skos:definition xml:lang="fr">Divertissement verbal qui consiste à faire deviner un mot sommairement défini (appelé mon tout ou mon entier) d'après la définition d'un homonyme (appelé mon premier, mon second, etc.) de chacune de ses syllabes.</skos:definition>
-    <skos:broaderTransitive rdf:resource="#genrePoetry"/>
     <prov:derivedFrom rdf:resource="https://dvlf.uchicago.edu/mot/charade"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the DVLF (Dictionnaire Vivant de la Langue Française).</owl:comment>
   </genre:Genre>
@@ -1160,6 +1159,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:definition xml:lang="fr">Le genre policier, ou polar, est un genre caractérisant certaines œuvres narratives et qui se distingue par sa mise en scène d'une énigme que le protagoniste tente de résoudre, souvent par une enquête de police. En ressortent notamment, en littérature le roman policier, au cinéma le film policier et à la télévision la série télévisée policière.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Crime_fiction"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
+    <skos:broaderTransitive rdf:resource="#genreFiction"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreDevotional">
     <rdf:value>DEVOTIONAL</rdf:value>
@@ -1989,6 +1989,7 @@ s épîtres.</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300404208"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="fr">Forme de poésie qui présente de longs récits célébrant les aventures et les actes d'une ou plusieurs figures héroïques, d'ordinaire concernant un sujet sérieux important pour une culture ou une nation. La poésie épique classique emploie l'hexamètre dactylique et raconte un voyage.</skos:definition>
+    <skos:broaderTransitive rdf:resource="#genrePoetry"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreHistorical">
     <rdf:value>HISTORICAL</rdf:value>
@@ -2587,7 +2588,6 @@ l'identité propre.</skos:definition>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from The Cambridge Companion to the Irish Novel.</owl:comment>
     <skos:broaderTransitive rdf:resource="#genreHistorical"/>
     <skos:broaderTransitive rdf:resource="#genreNovel"/>
-    <skos:broaderTransitive rdf:resource="#genreFiction"/>
     <skos:definition xml:lang="fr">Genre romantique développé au début du XIXe siècle, en particulier associé à l'Irlande et à l'Écosse, dans lequel la dimension historique s'inscrit dans des récits autour de sujets tels que la formation ou la défense d'une nation, ou le conflit politique à propos de la nationalité, de l'identité et de la culture nationale .</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreNotebook">
@@ -2992,6 +2992,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="nl">De schelmenroman is een literair genre dat in Spanje ontstond in de 16e en 17e eeuw. Schelmenromans worden ook picareske romans genoemd (naar het Spaanse picaro, dat schelm betekent). De schelmenroman is een subtype van de roman. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Picaresque_novel"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
+    <skos:broaderTransitive rdf:resource="#genreFiction"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genrePindaric">
     <rdf:value>PINDARIC</rdf:value>
@@ -3362,7 +3363,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="zh-hant">指用韻文或散文創作之文學作品，作品凸顯人類的愚蠢與惡習，而加以奚落、嘲弄、或揶揄。 (<![CDATA[<a href="#_getty_2017">Getty, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300251297"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
-    <skos:broaderTransitive rdf:resource="#genreComedy"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreScholarship">
     <rdf:value>SCHOLARSHIP</rdf:value>
@@ -3834,7 +3834,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">A experimental literary work--either a play or prose piece of fiction--containing elements common to both comedies and tragedies. The genre is marked by characters of both high and low degree, even though classical drama required upper-class characters for tragedy and lower-class characters for comedy. Tragicomedies were of some interest in the Renaissance, but some modern dramas might be considered examples as well. Typically, the early stages of the play resembled those of a tragedy, but an abrupt reversal of circumstance prevent the tragedy.  (<![CDATA[<a href="#_wheeler_2017">L. K Wheeler, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://web.cn.edu/kwheeler/lit_terms_t.html"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
-    <skos:broaderTransitive rdf:resource="#genreComedy"/>
     <skos:broaderTransitive rdf:resource="#genreDrama"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreTranslation">
