@@ -717,7 +717,7 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Black_comedy"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
-    <skos:broaderTransitive rdf:resource="#genreDrama"/>
+    <skos:broaderTransitive rdf:resource="#genreComedy"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreBoutsrimes">
     <rdf:value>BOUTSRIMES</rdf:value>
@@ -730,6 +730,7 @@
     <skos:definition xml:lang="en">The result of a game popularized in 17th-century France in which a poet must write a logical poem using a list of random rhyming words written by someone else. (<![CDATA[<a href="cwrcid_3A4c227091-6bf0-4325-b846-9733fae19e61">Oxford, 2015</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-142?rskey=3RXM0b%26result=141"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</owl:comment>
+    <skos:broaderTransitive rdf:resource="#genrePoetry"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreBroadside">
     <rdf:value>BROADSIDE</rdf:value>
@@ -757,7 +758,7 @@
     <skos:definition xml:lang="en">A form of comic drama set to music, first popularized in the 1700s. (<![CDATA[<a href="cwrcid_3A2f09376c-f784-4a46-9f04-5a21aa311f27">Penguin, 1999</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://www.politicalavenue.com/10862/ENGLISH-LANGUAGE-BOOKS/English%20-%20Penguin%20Dictionary%20Of%20Literary%20Terms%20And%20Literary%20Theory.pdf"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Penguin Dictionary of Literary Terms &amp; Literary Theory, 4th ed.</owl:comment>
-    <skos:broaderTransitive rdf:resource="#genreDrama"/>
+    <skos:broaderTransitive rdf:resource="#genreComedy"/>
     <skos:definition xml:lang="fr">Burletta (« petite plaisanterie » en italien, parfois aussi burla ou burlettina), est un terme musical pour qualifier un bref opéra comique italien (ou, plus tard anglais). Le terme est utilisé au XVIIIe siècle pour désigner les intermezzos comiques entre les actes d'un opéra seria mais est parfois donné à des œuvres de plus grande envergure. La serva padrona de Pergolese est appelée burletta lors de sa création à Londres en 1750.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Burletta"/>
     <owl:comment xml:lang="en"></owl:comment>
@@ -856,7 +857,6 @@
     <skos:definition xml:lang="en">A form of riddle in which clues are given about each syllable of a word so that the entire word may be guessed. Originally, these riddles were written, often in the form of a poem, but it soon gained popularity as a parlour game in which the clues were mimed rather than written in verse. (<![CDATA[<a href="cwrcid_3A7ff0c640-f273-46f5-be8d-e50aa27dce59">Encyclopædia Britannica, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://www.britannica.com/topic/charade-game"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Encyclopædia Britannica.</owl:comment>
-    <skos:broaderTransitive rdf:resource="#genrePoetry"/>
     <skos:definition xml:lang="fr">Divertissement verbal qui consiste à faire deviner un mot sommairement défini (appelé mon tout ou mon entier) d'après la définition d'un homonyme (appelé mon premier, mon second, etc.) de chacune de ses syllabes.</skos:definition>
     <prov:derivedFrom rdf:resource="https://dvlf.uchicago.edu/mot/charade"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the DVLF (Dictionnaire Vivant de la Langue Française).</owl:comment>
@@ -959,8 +959,6 @@
     <skos:definition xml:lang="en">A dramatic form popularized in the 16th century in which the comedy depends on complex plots, surprising twists, and ridiculous situations. The characters and their development tend to be secondary to plot in importance. (<![CDATA[<a href="cwrcid_3A2f09376c-f784-4a46-9f04-5a21aa311f27">Penguin, 1999</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://www.politicalavenue.com/10862/ENGLISH-LANGUAGE-BOOKS/English%20-%20Penguin%20Dictionary%20Of%20Literary%20Terms%20And%20Literary%20Theory.pdf"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Penguin Dictionary of Literary Terms &amp; Literary Theory, 4th ed.</owl:comment>
-    <skos:broaderTransitive rdf:resource="#genreComedy"/>
-    <skos:broaderTransitive rdf:resource="#genreDrama"/>
     <skos:definition xml:lang="fr">Genre de comédie rendue populaire au 16ème siècle, dans laquelle la pièce repose sur des intrigues complexes, des revirement surprenants et des situations ridicules. Les personnages et leur développement ont généralement une importance seconde par rapport à l'intrigue.</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreComedyofmanners">
@@ -991,8 +989,6 @@
     <skos:definition xml:lang="en">A type of comedic drama in which the dark humour stems from the main characters’ fear, irrational or not, that some dark force threatens them. (<![CDATA[<a href="cwrcid_3A2f09376c-f784-4a46-9f04-5a21aa311f27">Penguin, 1999</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://www.politicalavenue.com/10862/ENGLISH-LANGUAGE-BOOKS/English%20-%20Penguin%20Dictionary%20Of%20Literary%20Terms%20And%20Literary%20Theory.pdf"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Penguin Dictionary of Literary Terms &amp; Literary Theory, 4th ed.</owl:comment>
-    <skos:broaderTransitive rdf:resource="#genreComedy"/>
-    <skos:broaderTransitive rdf:resource="#genreDrama"/>
     <skos:definition xml:lang="fr">Type de drame comique dans lequel l'humour noir dérive de la peur, irrationnelle ou non, des personnages principaux en réponse à la menace de quelque force obscure.</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreComicbook">
@@ -1373,6 +1369,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:definition xml:lang="es">El monólogo dramático puede ser dos cosas: (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Dramatic_monologue"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
+    <skos:broaderTransitive rdf:resource="#genrePoetry"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreDreamvision">
     <rdf:value>DREAMVISION</rdf:value>
@@ -2198,7 +2195,7 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="en">German for “artist-novel.” A novel in which an artist is the main character, often following the development of his or her life and artistic growth, as in a bildungsroman. (<![CDATA[<a href="cwrcid_3A4c227091-6bf0-4325-b846-9733fae19e61">Oxford, 2015</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-632?rskey=HtykbC%26result=624"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</owl:comment>
-    <skos:broaderTransitive rdf:resource="#genreNovel"/>
+    <skos:broaderTransitive rdf:resource="#genreBildungsroman"/>
     <skos:definition xml:lang="fr">Allemand pour "roman d'artiste". Roman dans lequel le personnage principal est un artiste, dont on suit généralement le développement et sa carrière artistique, sur le modèle du bildungsroman.</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreLais">
@@ -2484,6 +2481,7 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="fr">Le mélodrame, du grec μέλος = chant ou musique + δράμα = action théâtrale, est un genre théâtral dramatique et populaire, qui signifie étymologiquement drame avec musique très populaire au XIXe siècle, se caractérisant par des situations invraisemblables et des personnages manichéens (bons contre méchants).(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Melodrama"/>
     <owl:comment xml:lang="en"></owl:comment>
+    <skos:broaderTransitive rdf:resource="#genreDrama"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreMixedmedia">
     <rdf:value>MIXEDMEDIA</rdf:value>
@@ -2525,6 +2523,7 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="nl">Een monoloog is alleenspraak; een betoog van één persoon die aan het woord is (en blijft), vaak zonder dat er toehoorders zijn. Monoloog komt van het Grieks, waar μονος (monos) één en alleen betekent, en λογος (logos) woord of idee betekent. In het theater is het een toneeloptreden van één acteur binnen een toneelstuk. Daarvoor wordt vaak de term soliloque gebruikt. In een gesprek op een bijeenkomst betekent een monoloog dat de andere aanwezigen niet aan het woord kunnen of mogen komen. Een toespraak dus. Het is het tegengestelde van een dialoog. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Monologue"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
+    <skos:broaderTransitive rdf:resource="#genreDrama"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreMoralitymysteryplay">
     <rdf:value>MORALITYMYSTERYPLAY</rdf:value>
@@ -3209,7 +3208,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:inScheme rdf:resource="#Genre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Writing by members of the working-classes or poor, including that by those who consider themselves members of the proletariat, and sometimes also writing produced to raise awareness of poor economic or labour conditions.</skos:definition>
-    <skos:broaderTransitive rdf:resource="#genrePoliticalwriting"/>
     <skos:definition xml:lang="fr">La littérature prolétarienne est un courant littéraire qu'Henry Poulaille, fondateur du « Groupe des écrivains prolétariens de langue française », connu aussi sous le nom d'« école prolétarienne » (terme que Poulaille désapprouvait), fut le premier à définir et organiser en France dans les années 1930. Est défini comme auteur prolétarien tout auteur : * né de parents ouvriers ou paysans, * autodidacte (ayant quitté tôt l'école pour travailler, ou à la rigueur ayant bénéficié d'une bourse - en général pour devenir instituteur dans le système primaire, « l'école des pauvres », à l'époque où deux systèmes scolaires cohabitaient), * et qui témoigne dans ses écrits des conditions d'existence de sa classe sociale. La définition première précise aussi que l'auteur prolétarien doit continuer de gagner sa vie comme ouvrier ou comme paysan, mais plusieurs auteurs faisant exception à cette règle (à commencer par Poulaille lui-même qui a exercé divers métiers de 13 à 27 ans, mais s'est consacré ensuite à des activités moins « ouvrières » dans l'édition et le journalisme) sont cependant considérés comme auteurs prolétariens, du fait que leurs ouvrages et leur action restent orientés vers la défense du prolétariat et d'une expression littéraire spécifiquement ouvrière.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Proletarian_literature"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
@@ -3475,7 +3473,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="zh-hant">指用韻文或散文創作之文學作品，作品凸顯人類的愚蠢與惡習，而加以奚落、嘲弄、或揶揄。 (<![CDATA[<a href="#_getty_2017">Getty, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300251297"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
-    <skos:broaderTransitive rdf:resource="#genreComedy"/>
     <skos:narrowerTransitive rdf:resource="#genreLampoon"/>
     <skos:narrowerTransitive rdf:resource="#genreMockforms"/>
   </genre:Genre>
@@ -3579,7 +3576,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Sensation_novel"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <skos:broaderTransitive rdf:resource="#genreNovel"/>
-    <skos:broaderTransitive rdf:resource="#genreFiction"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreSentimental">
     <rdf:value>SENTIMENTAL</rdf:value>
@@ -3929,7 +3925,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300027211"/>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300220572"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</owl:comment>
-    <skos:broaderTransitive rdf:resource="#genrePoliticalwriting"/>
     <skos:definition xml:lang="fr">Un tract, un prospectus ou en français feuille volante, en anglais flyer (le terme pamphlet est également utilisé au Québec, et le terme manifeste en suisse francophone) est un texte ou une publicité sur support papier qui est distribué de la main à la main dans les espaces publics, en particulier sur les trottoirs, ou directement déposé dans les boîtes aux lettres par des personnes employées à cette tâche ou agissant par militantisme afin de faire passer des idées, de promouvoir un produit ou d'annoncer un événement artistique, culturel ou politique. Lorsque l'objet est purement commercial, on parle plutôt de prospectus.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Flyer_(pamphlet)"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
@@ -4089,6 +4084,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="fr">D’origine italienne, la villanelle, de l’italien villanella dérivant du latin villanus (paysan), est, en littérature, une sorte de petite poésie pastorale à forme fixe et divisée en couplets qui finissent par le même refrain. En musique, c’est une ancienne danse rustique accompagnée de chant ainsi qu’une mélodie, un air d’instruments composé sur le modèle de cette danse.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Villanelle"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
+    <skos:broaderTransitive rdf:resource="#genrePoetry"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreYoungadultwriting">
     <rdf:value>YOUNGADULTWRITING</rdf:value>
