@@ -1,4 +1,4 @@
-nursery<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xml:base="http://sparql.cwrc.ca/ontologies/genre#" 
   xmlns="http://sparql.cwrc.ca/ontologies/genre#" 
   xmlns:as="http://www.w3.org/ns/activitystreams#" 
@@ -4046,4 +4046,57 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#Genre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">A verse novel is a type of narrative poetry in which a novel-length narrative is told through the medium of poetry
+    <skos:definition xml:lang="en">A verse novel is a type of narrative poetry in which a novel-length narrative is told through the medium of poetry rather than prose. Either simple or complex stanzaic verse-forms may be used, but there will usually be a large cast, multiple voices, dialogue, narration, description, and action in a novelistic manner. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
+    <skos:definition xml:lang="de">Der Versroman ist eine als Roman geschriebene Erzählung in Vers­form; in erster Linie der Ritterroman der höfischen Dichtung des Mittelalters. Dazu zählen beispielsweise: (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Verse_novel"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
+    <skos:broaderTransitive rdf:resource="#genreNovel"/>
+    <skos:broaderTransitive rdf:resource="#genreFiction"/>
+    <skos:broaderTransitive rdf:resource="#genrePoetry"/>
+    <skos:definition xml:lang="fr">Un roman en vers est un type de narration poétique dans laquelle un récit de la longueur d'un roman est raconté sous la forme de la poésie plutôt que de la prose. L'auteur peut utiliser des formes métriques simples ou complexes, mais incluera normalement un grand nombre de personnages, des voix multiples, un dialogue, une narration, une description et une action de manière romanesque.</skos:definition>
+  </genre:Genre>
+  <genre:Genre rdf:about="#genreVignette">
+    <rdf:value>VIGNETTE</rdf:value>
+    <rdfs:label xml:lang="en">vignette</rdfs:label>
+    <rdfs:label xml:lang="fr">micronouvelle</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#Genre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">In theatrical script writing, sketch stories, and poetry, a vignette is a short impressionistic scene that focuses on one moment or gives a trenchant impression about a character, idea, setting, or object.[citation needed] This type of scene is more common in recent postmodern theater, where less emphasis is placed on adhering to the conventions of theatrical structure and story development. Vignettes have been particularly influenced by contemporary notions of a scene as shown in film, video and television scripting. It is also a part of something bigger than itself: for example, a vignette about a house belonging to a collection of vignettes or a whole story, such as The House On Mango Street, by Sandra Cisneros. A blog can provide a form of vignette. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
+    <skos:definition xml:lang="nl">In proza en poëzie is een vignet een kort, impressionistisch tafereel dat een beeld schetst van een bepaald moment en een bepaalde plaats. Typisch is het de bedoeling om een scherp beeld van een personage, een idee, of een omgeving te geven. Dit type scène komt vaker voor bij het recente postmoderne theater, dat de naleving van de conventies en structuur van een verhaal ter discussie stelt. De manier waarop een scène wordt weergegeven is duidelijk beïnvloed door de hedendaagse snelle beeldcultuur van film, video en televisie. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Vignette_(literature)"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
+    <skos:definition xml:lang="fr">La micronouvelle (parfois aussi appelée microroman) est un récit imaginaire, suggestif, parfois caustique, rédigé en un nombre extrêmement restreint de mots. C'est la forme la plus concise de récit littéraire prosaïque, parfois proche du poème par le rythme qu'il imprime. L'ironie et l'interactivité qui la caractérisent la rattachent au postmodernisme en littérature. Elle est connue dans les littératures anglaise et hispanique sous les locutions micro-fiction, short-short story et microconte. La microfiction, aussi appelée nanofiction ou fiction éclair, est « l’ancêtre » de la micronouvelle. Adaptée à la littérature française, parfois sur Twitter (aussi dite « twittérature ») pour son fonctionnement aux nombres très limités de mots qui se prête parfaitement à la micronouvelle, par des auteurs comme Fuentealba, Berthiaume, Gechter, Bastin, Le Blanc et Fréchette, elle passe aujourd'hui sous la plume d'auteurs comme Thierry Crouzet, Bernard Pivot, Alexandre Jardin, et Michel Tremblay(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
+    <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Flash_fiction"/>
+    <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
+  </genre:Genre>
+  <genre:Genre rdf:about="#genreVillanelle">
+    <rdf:value>VILLANELLE</rdf:value>
+    <rdfs:label xml:lang="en">villanelle</rdfs:label>
+    <rdfs:label xml:lang="fr">villanelle</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#Genre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A versatile genre of poetry consisting of nineteen lines--five tercets and a concluding quatrain. The form requires that whole lines be repeated in a specific order, and that only two rhyming sounds occur in the course of the poem. A number of English poets, including Oscar Wilde, W. E. Henley, and W. H. Auden have experimented with it. Here is an example of an opening stanza to one poem by W. E. Henley: Probably the most famous English villanelle is Dylan Thomas's "Do Not Go Gentle Into That Good Night." (<![CDATA[<a href="#_wheeler_2017">L. K Wheeler, 2017</a>]]>)</skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://web.cn.edu/kwheeler/lit_terms_v.html"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
+    <skos:definition xml:lang="fr">D’origine italienne, la villanelle, de l’italien villanella dérivant du latin villanus (paysan), est, en littérature, une sorte de petite poésie pastorale à forme fixe et divisée en couplets qui finissent par le même refrain. En musique, c’est une ancienne danse rustique accompagnée de chant ainsi qu’une mélodie, un air d’instruments composé sur le modèle de cette danse.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
+    <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Villanelle"/>
+    <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
+    <skos:broaderTransitive rdf:resource="#genrePoetry"/>
+  </genre:Genre>
+  <genre:Genre rdf:about="#genreYoungadultwriting">
+    <rdf:value>YOUNGADULTWRITING</rdf:value>
+    <rdfs:label xml:lang="en">young adult writing</rdfs:label>
+    <rdfs:label xml:lang="fr">littérature jeunes adultes</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#Genre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Writing aimed at a young adult audience.</skos:definition>
+    <skos:broaderTransitive rdf:resource="#genreChildrensLiterature"/>
+    <skos:definition xml:lang="fr">Littérature destinée à un public de jeunes adultes.</skos:definition>
+  </genre:Genre>
+</rdf:RDF>
