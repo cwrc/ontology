@@ -293,6 +293,7 @@
     <prov:wasDerivedFrom rdf:resource="http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-15?rskey=BDrsna%26result=11"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</owl:comment>
     <skos:definition xml:lang="fr">Fiction remplie de péripéties dans laquelle la ou le protagoniste échappe à son quotidien pour entreprendre un voyage ou une quête. En chemin, elle ou il est exposé.e à des événements extraordinaires et à des dangers physiques qui mettent à l'épreuve ses vertus, par exemple la bravoure.</skos:definition>
+    <skos:broaderTransitive rdf:resource="#genreFiction"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreAdvertisingcopy">
     <rdf:value>ADVERTISINGCOPY</rdf:value>
@@ -528,9 +529,6 @@
     <skos:definition xml:lang="de">Biographie einer Person, die von ihr selbst verfasst wurde. (<![CDATA[<a href="#_getty_2017">Getty, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300080104"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
-    <skos:narrowerTransitive rdf:resource="#genreDiary"/>
-    <skos:narrowerTransitive rdf:resource="#genreSlavenarrative"/>
-    <skos:narrowerTransitive rdf:resource="#genreCaptivitynarrative"/>
     <skos:definition xml:lang="fr">&quot;Tous types de documents étant des biographies d'individus écrits par eux-mêmes. Pour un aperçue d'ensemble du genre, utiliser &quot;autobiographie&quot; (genre).&quot;</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreBallade">
@@ -859,6 +857,7 @@
     <prov:wasDerivedFrom rdf:resource="https://www.britannica.com/topic/charade-game"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Encyclopædia Britannica.</owl:comment>
     <skos:definition xml:lang="fr">Divertissement verbal qui consiste à faire deviner un mot sommairement défini (appelé mon tout ou mon entier) d'après la définition d'un homonyme (appelé mon premier, mon second, etc.) de chacune de ses syllabes.</skos:definition>
+    <skos:broaderTransitive rdf:resource="#genrePoetry"/>
     <prov:derivedFrom rdf:resource="https://dvlf.uchicago.edu/mot/charade"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the DVLF (Dictionnaire Vivant de la Langue Française).</owl:comment>
   </genre:Genre>
@@ -876,8 +875,6 @@
     <skos:definition xml:lang="zh-hant">為兒童寫作、出版的文學。 (<![CDATA[<a href="#_getty_2017">Getty, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300263209"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
-    <skos:narrowerTransitive rdf:resource="#genreNurseryryhme"/>
-    <skos:narrowerTransitive rdf:resource="#genreYoungadultwriting"/>
     <skos:definition xml:lang="fr">&quot;Littérature écrite et publiée pour les enfants.&quot;</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreClerihew">
@@ -940,12 +937,6 @@
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300055911"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:broaderTransitive rdf:resource="#genreDrama"/>
-    <skos:narrowerTransitive rdf:resource="#genreComedyofmenace"/>
-    <skos:narrowerTransitive rdf:resource="#genreComedyofmanners"/>
-    <skos:narrowerTransitive rdf:resource="#genreComedyofintrigue"/>
-    <skos:narrowerTransitive rdf:resource="#genreTragicomedy"/>
-    <skos:narrowerTransitive rdf:resource="#genreSatire"/>
-    <skos:narrowerTransitive rdf:resource="#genreFarce"/>
     <skos:definition xml:lang="fr">&quot;Genre concernant les formes du théâtre, de la littérature et de l'improvisation qui ont pour principal objectif de divertir et de provoquer le rire. La comédie est généralement opposée à la tragédie et peut prendre soit la forme d'une critique sociale à travers la satire et l'humour d'esprit politique ou intellectuel, soit la forme de spectacle pur à travers la farce ou le burlesque.&quot;</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreComedyofintrigue">
@@ -1212,7 +1203,6 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:definition xml:lang="en">A text made up of a conversation between two or more characters, often in which the characters take up opposing sides of an argument. (<![CDATA[<a href="cwrcid_3A4c227091-6bf0-4325-b846-9733fae19e61">Oxford, 2015</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-310?rskey=TydJW0%26result=301"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</owl:comment>
-    <skos:narrowerTransitive rdf:resource="#genreDialogueofthedead"/>
     <skos:definition xml:lang="fr">Oeuvre littéraire en forme de conversation entre deux ou plusieurs personnes, où l'exposé contradictoire des idées permet à l'auteur d'exposer ses opinions morales, philosophiques, religieuses, etc.</skos:definition>
     <prov:derivedFrom rdf:resource="http://data.bnf.fr/12281035/dialogues/"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from data.bnf.fr.</owl:comment>
@@ -1248,10 +1238,6 @@ Closely related to the industrial novel because of its interest in the impact of
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300026186"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:broaderTransitive rdf:resource="#genreScholarship"/>
-    <skos:narrowerTransitive rdf:resource="#genreBibliographicaldictionary"/>
-    <skos:narrowerTransitive rdf:resource="#genreDirectory"/>
-    <skos:narrowerTransitive rdf:resource="#genreEncyclopedia"/>
-    <skos:narrowerTransitive rdf:resource="#genreThesaurus"/>
     <skos:definition xml:lang="fr">&quot;Sources de références, contenant des listes alphabétiques dans lesquelles chaque mot est associé à des informations données. Elles incluent généralement les différentes significations, la prononciation, l'étymologie et des conseils sur l'usage des mots. &quot;</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreDidactic">
@@ -1335,25 +1321,6 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:definition xml:lang="en">A composition in prose or verse presenting, in pantomime and dialogue, a narrative involving conflict between a character or characters and some external or internal force (see conflict). Playwrights usually design dramas for presentation on a stage in front of an audience. Aristotle called drama "imitated human action." Drama may have originated in religious ceremonies. Thespis of Attica (sixth century BCE) was the first recorded composer of a tragedy. Tragedies in their earliest stage were performed by a single actor who interacted with the chorus. The playwright Aeschylus added a second actor on the stage (deuteragonist) to allow additional conflict and dialogue. Sophocles and Euripides added a third (tritagonist). Medieval drama may have evolved independently from rites commemorating the birth and death of Christ. During the late medieval period and the early Renaissance, drama gradually altered to the form we know today. The mid-sixteenth century in England in particular was one of the greatest periods of world drama. In traditional Greek drama, as defined by Aristotle, a play was to consist of five acts and follow the three dramatic unities. In more recent drama (i.e., during the last two centuries), plays have frequently consisted of three acts, and playwrights have felt more comfortable disregarding the confines of Aristotelian rules involving verisimilitude. See also unities, comedy, tragedy, revenge play, miracle play, morality play, and mystery play. An individual work of drama is called a play. DRAMATIC CONVENTION: See convention. DRAMATIC IRONY: See irony. DRAMATIC (<![CDATA[<a href="#_wheeler_2017">L. K Wheeler, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://web.cn.edu/kwheeler/lit_terms_d.html"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
-    <skos:narrowerTransitive rdf:resource="#genreAfterpiece"/>
-    <skos:narrowerTransitive rdf:resource="#genreBlackcomedy"/>
-    <skos:narrowerTransitive rdf:resource="#genreBalladopera"/>
-    <skos:narrowerTransitive rdf:resource="#genreBurletta"/>
-    <skos:narrowerTransitive rdf:resource="#genreComedy"/>
-    <skos:narrowerTransitive rdf:resource="#genreComedyofintrigue"/>
-    <skos:narrowerTransitive rdf:resource="#genreComedyofmenace"/>
-    <skos:narrowerTransitive rdf:resource="#genreClosetdrama"/>
-    <skos:narrowerTransitive rdf:resource="#genreKitchensinkdrama"/>
-    <skos:narrowerTransitive rdf:resource="#genreOneactplay"/>
-    <skos:narrowerTransitive rdf:resource="#genreMoralitymysteryplay"/>
-    <skos:narrowerTransitive rdf:resource="#genrePantomime"/>
-    <skos:narrowerTransitive rdf:resource="#genrePageant"/>
-    <skos:narrowerTransitive rdf:resource="#genreRadiodrama"/>
-    <skos:narrowerTransitive rdf:resource="#genreTheatreofcruelty"/>
-    <skos:narrowerTransitive rdf:resource="#genreTheatreoftheabsurd"/>
-    <skos:narrowerTransitive rdf:resource="#genrePanegyric"/>
-    <skos:narrowerTransitive rdf:resource="#genreTragedy"/>
-    <skos:narrowerTransitive rdf:resource="#genreTragicomedy"/>
     <skos:definition xml:lang="fr">(du grec "drama", action) Formes littéraires, presque toujours sous forme de dialogues (en vers ou un prose) destinés à être joués par des acteurs lors d'une représentation scénique.</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreDramaticmonologue">
@@ -1449,7 +1416,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:definition xml:lang="en">Books, set of books, or disks, containing informational articles on subjects in every field of knowledge, or limited to a special field or subject, usually arranged in alphabetical order. (<![CDATA[<a href="#_getty_2017">Getty, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300129439"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
-    <skos:broaderTransitive rdf:resource="#genreScholarship"/>
+    <skos:broaderTransitive rdf:resource="#genreDictionary"/>
     <skos:definition xml:lang="fr">Livres, séries de livres ou de disques contenant des articles informatifs, habituellement classés par ordre alphabétique, portant sur différents domaines du savoir général, ou se limitant à un domaine ou un sujet spécifique.</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreEpic">
@@ -1535,8 +1502,6 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="de">Briefgedicht ist eine Sammelbezeichnung für alle Arten von in Gedichtform verfassten echten oder fingierten Briefen. Beispiele für Briefgedichte reichen bis in die Antike zurück, am bekanntesten sind Ovids Heroides, in elegischen Distichen verfasste fingierte Briefe mythologischer Frauen an ihre männlichen Partner, in denen sie sich über Vernachlässigung und/oder schlechte Behandlung beklagen, sowie die in Hexametern verfassten Epistulae des Horaz. Aus dem Mittelalter sind spezielle Formen der Minnebrief, ein in Reimpaaren verfasster Liebesgruß an die Geliebte und im Frankreich der Trobadore der Salut d’amour.Im Barock wird von Hofmannswaldau die Ovidsche Form wieder aufgenommen (Helden-Briefe 1664), weitere Beispiele finden sich im französischen Rokoko und der deutschen Anakreontik bei Goeckingk, Gleim, Rabener und Wieland. In der Weimarer Klassik sind die Briefgedichte Goethes an Frau von Stein, Augusta zu Stolberg, Marianne von Willemer und Bettina Brentano die bedeutendsten Beispiele der Gattung in der deutschen Literatur und zugleich Muster einer Gelegenheitsdichtung auf hohem Niveau. Als Beispiel Goethes Gedicht an Charlotte von Stein: Nach der Klassik finden sich vereinzelt Briefgedichte bei Heinrich Heine, Clemens Brentano, Friedrich de la Motte Fouqué, Annette von Droste-Hülshoff, Theodor Fontane, Detlev von Liliencron, Rainer Maria Rilke (Briefwechsel mit Erika Mitterer) und Joachim Ringelnatz. In der französischen Literatur finden sich Briefgedichte bei Clément Marot und in der englischen unter anderem bei John Donne, John Dryden, Alexander Pope und John Keats. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Epistolary_poem"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
-    <skos:narrowerTransitive rdf:resource="#genreEpistle"/>
-    <skos:narrowerTransitive rdf:resource="#genreLetter"/>
     <skos:definition xml:lang="fr">Romans écrits sous forme d'une série de correspondances, d'entrées de journal intime, de coupures de journaux ou d'autres documents.</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreEpitaph">
@@ -1660,7 +1625,6 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="en">A brief story illustrating human tendencies through animal characters. Unlike the parables, fables often include talking animals or animated objects as the principal characters. The interaction of these animals or objects reveals general truths about human nature, i.e., a person can learn practical lessons from the fictional antics in a fable. However, unlike a parable, the lesson learned is not necessarily allegorical. Each animal is not necessarily a symbol for something else. Instead, the reader learns the lesson as an exemplum--an example of what one should or should not do. The sixth century (BCE) Greek writer Aesop is most credited as an author of fables, but Phaedrus and Babrius in the first century (CE) expanded on his works to produce the tales we know today. A famous collection of Indian fables was the Sanskrit Bidpai (circa 300 CE), and in the medieval period, Marie de France (c. 1200 CE) composed 102 fables in verse. After the 1600s, fables increasingly became common as a form of children's literature. See also allegory, beast fable, and parable. Click here for a PDF handout discussing the difference between fables and parables.  (<![CDATA[<a href="#_wheeler_2017">L. K Wheeler, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://web.cn.edu/kwheeler/lit_terms_f.html"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
-    <skos:narrowerTransitive rdf:resource="#genreFabliau"/>
     <skos:definition xml:lang="fr">Récits fictifs habituellement avec des animaux ou des objets inanimés comme protagonistes, destinés à véhiculer une signification cachée concernant la conduite humaine.</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreFabliau">
@@ -1671,7 +1635,7 @@ s épîtres.</skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#Genre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">plural, fabliaux): A humorous, frequently ribald or "dirty" narrative popular with French poets, who traditionally wrote the story in octosyllabic couplets. The tales frequently revolve around trickery, practical jokes, sexual mishaps, scatology, mistaken identity, and bodily humor. Chaucer included several fabliaux in The Canterbury Tales, including the stories of the Shipman, the Friar, the Miller, the Reeve, and the Cook. Examples from French literature include Les Quatre Souhais Saint Martin, Audigier, and Beranger au Long Cul (Beranger of the Long Ass).  (<![CDATA[<a href="#_wheeler_2017">L. K Wheeler, 2017</a>]]>)</skos:definition>
+    <skos:definition xml:lang="en">A humorous, frequently ribald or "dirty" narrative popular with French poets, who traditionally wrote the story in octosyllabic couplets. The tales frequently revolve around trickery, practical jokes, sexual mishaps, scatology, mistaken identity, and bodily humor. Chaucer included several fabliaux in The Canterbury Tales, including the stories of the Shipman, the Friar, the Miller, the Reeve, and the Cook. Examples from French literature include Les Quatre Souhais Saint Martin, Audigier, and Beranger au Long Cul (Beranger of the Long Ass).  (<![CDATA[<a href="#_wheeler_2017">L. K Wheeler, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://web.cn.edu/kwheeler/lit_terms_f.html"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
     <skos:broaderTransitive rdf:resource="#genreFable"/>
@@ -1745,7 +1709,6 @@ s épîtres.</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://web.cn.edu/kwheeler/lit_terms_f.html"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
     <skos:broaderTransitive rdf:resource="#genrePoliticalwriting"/>
-    <skos:narrowerTransitive rdf:resource="#genreFeministtheory"/>
     <skos:definition xml:lang="fr">Textes qui peuvent être considérés comme féministes dans la mesure où ils abordent de façon critique et consciente les inégalités entre hommes et femmes, ou parmi les individus d'identités genrées diverses. Un texte, fictif ou non, entre généralement dans cette catégorie s'il reflète des théories féministes ou est engagé dans des mouvements politiques féministes. Les aspects féministes d'un texte peuvent être explicites ou implicites, et sont fortement sujets à débat étant donné la grande pluralité de type de féminisme.</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreFeministtheory">
@@ -1780,20 +1743,6 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="zh-hant">指作品由作者想像力引發創作，且不必然給予事實的類型。文學中，小說通常指長篇小說、中篇、短篇小說和詩的形式。(<![CDATA[<a href="#_getty_2017">Getty, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300055918"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
-    <skos:narrowerTransitive rdf:resource="#genreAdventure"/>
-    <skos:narrowerTransitive rdf:resource="#genreMagicrealism"/>
-    <skos:narrowerTransitive rdf:resource="#genreMystery"/>
-    <skos:narrowerTransitive rdf:resource="#genreNationaltale"/>
-    <skos:narrowerTransitive rdf:resource="#genreNovel"/>
-    <skos:narrowerTransitive rdf:resource="#genreRealist"/>
-    <skos:narrowerTransitive rdf:resource="#genreSchoolfiction"/>
-    <skos:narrowerTransitive rdf:resource="#genreSciencefiction"/>
-    <skos:narrowerTransitive rdf:resource="#genreSensationnovel"/>
-    <skos:narrowerTransitive rdf:resource="#genreSexualawakeningfiction"/>
-    <skos:narrowerTransitive rdf:resource="#genreShortstory"/>
-    <skos:narrowerTransitive rdf:resource="#genreSilverforknovel"/>
-    <skos:narrowerTransitive rdf:resource="#genreThriller"/>
-    <skos:narrowerTransitive rdf:resource="#genreVersenovel"/>
     <skos:definition xml:lang="fr">Genre that refers to works evoked from the imagination of the writer and not conferred as fact. In literature, fiction generally refers to the novel, novella, short story, and poetic forms.</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreFilmtvscript">
@@ -2056,8 +2005,6 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="zh-hant">標明一區域在過往時期的政治行政界線或其他特點的地圖。通常包括地方的歷史名稱、歷史上的人口排列、與地表特徵的歷史狀態等。 (<![CDATA[<a href="#_getty_2017">Getty, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300028233"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
-    <skos:narrowerTransitive rdf:resource="#genreHistory"/>
-    <skos:narrowerTransitive rdf:resource="#genreNationaltale"/>
     <skos:definition xml:lang="fr">La fiction historique est un genre de fiction qui situe le récit dans le cadre historique précis d'un passé proche ou lointain. Des exemples connus de fiction historique sont le roman Sinouhé l'Égyptien, la bande dessinée L'Épervier ou le film Meurtre dans un jardin anglais. D'autres romans tels que Les Piliers de la Terre se placent également dans un contexte réaliste, respectant scrupuleusement les faits historiques, tout en déroulant un fil principal à caractère fictionnel : Ainsi, le livre reprend le thème du Moyen Âge central et narre la vie d'un bâtisseur de l'époque.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Historical_fiction"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
@@ -2391,6 +2338,7 @@ s épîtres.</skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://www.britannica.com/art/magic-realism"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Encyclopædia Britannica.</owl:comment>
     <skos:definition xml:lang="fr">Le réalisme magique est une appellation utilisée par la critique littéraire et la critique d’art depuis 1925 pour rendre compte de productions où des éléments perçus et décrétés comme « magiques », « surnaturels » et « irrationnels » qui surgissent dans un environnement défini comme « réaliste », à savoir un cadre historique, géographique et culturel vraisemblable. Ainsi la réalité reconnaissable devient-elle le lieu naturel de manifestations paranormales et oniriques. Aujourd'hui, cette appellation est surtout associée à certains auteurs de la littérature latino-américaine du XXe siècle comme les Mexicains Carlos Fuentes et Juan Rulfo, les Argentins Adolfo Bioy Casares et Julio Cortázar, le Bolivien Jaime Sáenz et le Colombien Gabriel García Márquez, prix Nobel de littérature en 1982, dont le roman Cent ans de solitude publié en 1967, est cité comme exemplaire. L’origine de ce terme et sa portée sont pourtant beaucoup plus généraux et ont été utilisés pour qualifier une grande variété de romans, de poèmes, de peintures et de réalisations cinématographiques. Par ailleurs, le réalisme magique connaît plusieurs déclinaisons et peut caractériser divers styles, esthétiques, genres, courants et mouvements en Asie, en Europe ou en Amérique. De manière plus récente, il est rapproché de la world literature. Généralement, il cherche à tisser des liens étroits entre des courants habituellement opposés tels que le naturalisme, le merveilleux et le fantastique afin de peindre une réalité transfigurée par l'imaginaire et dans laquelle le rationalisme est rejeté. Néanmoins, il n'existe pas de définition rigoureuse et son application dépend de la démarche intellectuelle et stylistique de l'écrivain ou l'artiste qui y a recours.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
+    <skos:broaderTransitive rdf:resource="#genreFiction"/>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Magic_realism"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
   </genre:Genre>
@@ -2677,16 +2625,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300202580"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:broaderTransitive rdf:resource="#genreFiction"/>
-    <skos:narrowerTransitive rdf:resource="#genreBildungsroman"/>
-    <skos:narrowerTransitive rdf:resource="#genreConditionofenglandnovel"/>
-    <skos:narrowerTransitive rdf:resource="#genreIndustrialnovel"/>
-    <skos:narrowerTransitive rdf:resource="#genreKunstlerroman"/>
-    <skos:narrowerTransitive rdf:resource="#genreNationaltale"/>
-    <skos:narrowerTransitive rdf:resource="#genreNovella"/>
-    <skos:narrowerTransitive rdf:resource="#genreSensationnovel"/>
-    <skos:narrowerTransitive rdf:resource="#genreSilverforknovel"/>
-    <skos:narrowerTransitive rdf:resource="#genreVersenovel"/>
-    <skos:narrowerTransitive rdf:resource="#genreÀclef"/>
     <skos:definition xml:lang="fr">Le roman est un genre littéraire, caractérisé pour l'essentiel par une narration fictionnelle plus ou moins longue.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/ontology/Novel"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
@@ -2725,6 +2663,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300202593"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:broaderTransitive rdf:resource="#genrePoetry"/>
+    <skos:broaderTransitive rdf:resource="#genreChildrensLiterature"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreObituary">
     <rdf:value>OBITUARY</rdf:value>
@@ -2797,8 +2736,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">"Dramatic musical performances in which most roles are sung with instrumental accompanyment, usually including arias, recitives, and choruses. Typically, they are intended to be staged with costumes, sets, and dramatic movement." (<![CDATA[<a href="#_getty_2017">Getty, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300054147"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</owl:comment>
-    <skos:narrowerTransitive rdf:resource="#genreBalladopera"/>
-    <skos:narrowerTransitive rdf:resource="#genreLibretto"/>
     <skos:definition xml:lang="fr">Un opéra est une œuvre destinée à être chantée sur une scène, appartenant à un genre musical vocal du même nom ; l'opéra est l’une des formes du théâtre musical occidental regroupées sous l’appellation d’art lyrique. L'œuvre, chantée par des interprètes possédant un registre vocal déterminé en fonction du rôle et accompagnés par un orchestre, parfois symphonique, parfois de chambre, parfois destiné exclusivement au seul répertoire d'opéra, est constituée d'un livret mis en musique sous forme d'airs, de récitatifs, de chœurs, d'intermèdes souvent précédés d'une ouverture, et parfois agrémentée de ballets. Le genre musical est décliné selon les pays et les époques et recouvre des œuvres d’appellations et de formes différentes. Aujourd’hui, les œuvres sont jouées dans des salles d’opéra spécifiquement affectées ou tout simplement sur des scènes de théâtre ou dans des salles de concerts. Les représentations sont organisées par des institutions du secteur public ou privé, parfois désignées sous le vocable de « maison d'opéra », qui peuvent regrouper les compagnies d’artistes (orchestre, chœur et ballet) et les services administratifs et techniques nécessaires à l’organisation des saisons culturelles. (fr)(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Opera"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
@@ -2914,12 +2851,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">Text surrounding the main body of a written work that contains supplementary information about the body, such as a preface, afterword, footnote, or glossary. (<![CDATA[<a href="cwrcid_3A4c227091-6bf0-4325-b846-9733fae19e61">Oxford, 2015</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://books.google.ca/books?id=s4FMCAAAQBAJ&amp;printsec=frontcover&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</owl:comment>
-    <skos:narrowerTransitive rdf:resource="#genreAfterword"/>
-    <skos:narrowerTransitive rdf:resource="#genreDedication"/>
-    <skos:narrowerTransitive rdf:resource="#genreEpilogue"/>
-    <skos:narrowerTransitive rdf:resource="#genreIntroduction"/>
-    <skos:narrowerTransitive rdf:resource="#genrePrefatorypiece"/>
-    <skos:narrowerTransitive rdf:resource="#genrePrologue"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreParody">
     <rdf:value>PARODY</rdf:value>
@@ -2965,8 +2896,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <prov:wasDerivedFrom rdf:resource="http://www.oxfordreference.com/view/10.1093/acref/9780199571123.001.0001/m_en_gb0614030?rskey=II64E5%26result=68781"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of English, 3rd ed.</owl:comment>
     <skos:broaderTransitive rdf:resource="#genreScholarship"/>
-    <skos:narrowerTransitive rdf:resource="#genreTextbook"/>
-    <skos:narrowerTransitive rdf:resource="#genreQuiz"/>
     <skos:definition xml:lang="fr">La pédagogie (du grec παιδαγωγία, direction ou éducation des enfants) désigne l'art de l'éducation. Le terme rassemble les méthodes et pratiques d'enseignement requises pour transmettre des connaissances, c'est-à-dire un savoir, un savoir-faire ou un savoir-être. Plus généralement, l'expression « Faire preuve de pédagogie » signifie l'aptitude à enseigner et à transmettre à un individu ou un groupe d'individus — de tous âges et de toutes conditions — un savoir ou une expérience par l'usage des méthodes les plus adaptées à l'audience concernée.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Pedagogy"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
@@ -3030,8 +2959,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Writing engaging in philosophical questions, that may or may not be considered philosophy per se.</skos:definition>
     <skos:broaderTransitive rdf:resource="#genreScholarship"/>
-    <skos:narrowerTransitive rdf:resource="#genrePhilosophy"/>
-    <skos:narrowerTransitive rdf:resource="#genreFeministtheory"/>
     <skos:definition xml:lang="fr">Textes qui abordent des questions philosophiques, qui sont ou non considérés comme de la philosophie à proprement parler.</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genrePhilosophy">
@@ -3097,28 +3024,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="nl">Poëzie of dichtkunst (van het Griekse 'poiesis'/ποίησις: maken, scheppen, vormen) is een vorm van literatuur die de esthetische en ritmische eigenschappen van taal zoals metrum en geluidssymboliek benut om betekenissen te genereren ter aanvulling, vervanging of ondermijning van de prozaïsche, ogenschijnlijke betekenis. Poëzie heeft een lange geschiedenis die teruggaat tot het Soemerische epos Gilgamesj. Vroege gedichten ontwikkelden zich uit volksliederen zoals de Chinese Sjijing, of uit de noodzaak om orale epiek steeds opnieuw te vertellen, zoals in de Veda's uit het Sanskriet, het Zoroastrische Gathas en de Homerische epossen Ilias en Odyssee. Antieke pogingen om poëzie te omschrijven, zoals de Poetica van Aristoteles, benadrukten het spraakgebruik in retorica, drama, lied en komedie. Latere pogingen concentreerden zich op kenmerken als herhaling, versvorm en rijm en benadrukten de esthetica die poëzie onderscheidt van meer objectief informatieve, prozaïsche vormen van schrift. Vanaf het midden der twintigste eeuw wordt de dichtkunst soms meer algemeen beschouwd als een wezenlijk creatieve handeling waarbij taal gebruikt wordt. In poëzie worden vormen en conventies gebruikt om een andere interpretatie van woorden te suggereren, of om een gevoelsmatige respons teweeg te brengen. Middelen zoals assonantie, alliteratie, onomatopeeën en ritme worden soms gebruikt om bezwerende of muzikale effecten te bereiken. Het gebruik van ambiguïteit, symboliek, ironie en andere stilistische elementen van de poëtische voordracht maken vaak een veelheid van interpretaties mogelijk. Op dezelfde wijze schept beeldspraak zoals metafoor, vergelijking (al dan niet Homerisch) en metonymie resonantie tussen anderszins ongelijksoortige beelden - een gelaagdheid van betekenissen waarbij niet eerder waargenomen connecties worden gevormd. Tussen individuele versregels kunnen verwante vormen van resonantie aanwezig zijn in hun patronen van rijm of ritme. De genoegens die de poëzie aan lezer of luisteraar verschaft, worden teweeggebracht door de bijzondere combinatie van vorm, klank en betekenis die eigen is aan het vers, en deze genoegens kunnen van emotionele (bijvoorbeeld ontroering of bezwering), intellectuele (bijvoorbeeld inzicht of nuancering) of humoristische aard zijn. Ontvankelijkheid voor poëzie of versgevoeligheid is mede afhankelijk van de mate waarin deze wordt gecultiveerd. Poëzie heeft een lange geschiedenis, vanaf de vroegste mondeling gereciteerde en gezongen verzen tot de hedendaagse schriftelijke, al dan niet gestructureerde vormen van dichtkunst. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Poetry"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
-    <skos:narrowerTransitive rdf:resource="#genreAnagram"/>
-    <skos:narrowerTransitive rdf:resource="#genreApology"/>
-    <skos:narrowerTransitive rdf:resource="#genreBallade"/>
-    <skos:narrowerTransitive rdf:resource="#genreBoutrimes"/>
-    <skos:narrowerTransitive rdf:resource="#genreCharade"/>
-    <skos:narrowerTransitive rdf:resource="#genreClerihew"/>
-    <skos:narrowerTransitive rdf:resource="#genreGeorgic"/>
-    <skos:narrowerTransitive rdf:resource="#genreGraveyardpoetry"/>
-    <skos:narrowerTransitive rdf:resource="#genreHaiku"/>
-    <skos:narrowerTransitive rdf:resource="#genreHymn"/>
-    <skos:narrowerTransitive rdf:resource="#genreLais"/>
-    <skos:narrowerTransitive rdf:resource="#genreLyric"/>
-    <skos:narrowerTransitive rdf:resource="#genreNarrativepoetry"/>
-    <skos:narrowerTransitive rdf:resource="#genreNurseryrhyme"/>
-    <skos:narrowerTransitive rdf:resource="#genreOccasionalpoetry"/>
-    <skos:narrowerTransitive rdf:resource="#genreOde"/>
-    <skos:narrowerTransitive rdf:resource="#genrePerformancepoetry"/>
-    <skos:narrowerTransitive rdf:resource="#genrePindaric"/>
-    <skos:narrowerTransitive rdf:resource="#genrePsalm"/>
-    <skos:narrowerTransitive rdf:resource="#genreSonnet"/>
-    <skos:narrowerTransitive rdf:resource="#genreTopographicalpoetry"/>
-    <skos:narrowerTransitive rdf:resource="#genreVillainelle"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genrePolemic">
     <rdf:value>POLEMIC</rdf:value>
@@ -3138,6 +3043,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300252982"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
   </genre:Genre>
+  
   <genre:Genre rdf:about="#genrePoliticalwriting">
     <rdf:value>POLITICALWRITING</rdf:value>
     <rdfs:label xml:lang="en">political writing</rdfs:label>
@@ -3147,14 +3053,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:inScheme rdf:resource="#Genre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Writing on the subject of politics, often persuasive in tone and written in favour of a particular political party or cause.</skos:definition>
-    <skos:narrowerTransitive rdf:resource="#genreAgitprop"/>
-    <skos:narrowerTransitive rdf:resource="#genreProletarianwriting"/>
-    <skos:narrowerTransitive rdf:resource="#genrePetition"/>
-    <skos:narrowerTransitive rdf:resource="#genreTractpamphlet"/>
-    <skos:narrowerTransitive rdf:resource="#genreFeminist"/>
-    <skos:narrowerTransitive rdf:resource="#genreConditionofenglandnovel"/>
-    <skos:narrowerTransitive rdf:resource="#genreManifesto"/>
-    <skos:narrowerTransitive rdf:resource="#genrePropaganda"/>
     <skos:definition xml:lang="fr">Écrit au sujet de la politique, généralement écrit dans un ton persuasif en faveur d'un parti ou d'une cause politique particulière.</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genrePopular">
@@ -3212,6 +3110,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="fr">La littérature prolétarienne est un courant littéraire qu'Henry Poulaille, fondateur du « Groupe des écrivains prolétariens de langue française », connu aussi sous le nom d'« école prolétarienne » (terme que Poulaille désapprouvait), fut le premier à définir et organiser en France dans les années 1930. Est défini comme auteur prolétarien tout auteur : * né de parents ouvriers ou paysans, * autodidacte (ayant quitté tôt l'école pour travailler, ou à la rigueur ayant bénéficié d'une bourse - en général pour devenir instituteur dans le système primaire, « l'école des pauvres », à l'époque où deux systèmes scolaires cohabitaient), * et qui témoigne dans ses écrits des conditions d'existence de sa classe sociale. La définition première précise aussi que l'auteur prolétarien doit continuer de gagner sa vie comme ouvrier ou comme paysan, mais plusieurs auteurs faisant exception à cette règle (à commencer par Poulaille lui-même qui a exercé divers métiers de 13 à 27 ans, mais s'est consacré ensuite à des activités moins « ouvrières » dans l'édition et le journalisme) sont cependant considérés comme auteurs prolétariens, du fait que leurs ouvrages et leur action restent orientés vers la défense du prolétariat et d'une expression littéraire spécifiquement ouvrière.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Proletarian_literature"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
+    <skos:broaderTransitive rdf:resource="#genrePoliticalwriting"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genrePrologue">
     <rdf:value>PROLOGUE</rdf:value>
@@ -3367,16 +3266,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:inScheme rdf:resource="#Genre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Writing dealing with religion or spirituality.</skos:definition>
-    <skos:narrowerTransitive rdf:resource="#genreTheology"/>
-    <skos:narrowerTransitive rdf:resource="#genreCatechism"/>
-    <skos:narrowerTransitive rdf:resource="#genreDevotionalliterature"/>
-    <skos:narrowerTransitive rdf:resource="#genrePrayer"/>
-    <skos:narrowerTransitive rdf:resource="#genrePsalm"/>
-    <skos:narrowerTransitive rdf:resource="#genreLiturgy"/>
-    <skos:narrowerTransitive rdf:resource="#genreHagiography"/>
-    <skos:narrowerTransitive rdf:resource="#genreHymn"/>
-    <skos:narrowerTransitive rdf:resource="#genreProphecy"/>
-    <skos:narrowerTransitive rdf:resource="#genreSermon"/>
     <skos:definition xml:lang="fr">Écrits traitent de la religion ou de la spiritualité.</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreReview">
@@ -3439,7 +3328,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="zh-hant">描述英雄事蹟、幻想，或超自然事件的詩文或散文體記敘文，常設定於中世紀時期。 (<![CDATA[<a href="#_getty_2017">Getty, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300191065"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
-    <skos:narrowerTransitive rdf:resource="#genreCourtshipfiction"/>
     <cwrc:contraryTo rdf:resource="#genreAntiromance"/>
     <skos:definition xml:lang="fr">Œuvre habituellement fictionnelle, qui tirent leur origines des romans chevaleresques du Moyen Âge et de la Renaissance représentant des chevaliers et des aventures merveilleuses. La romance traite des relations sentimentales, familiales et sexuelles, et s'articule souvent autours de récits hétéronormés qui se concluent par une union romantique ou un mariage. La catégorie comprend les œuvres reconnues pour leur qualité littéraire, ainsi que la littérature commerciale ou de genre produite pour un public de masse. Les sous-genres de la romance comprennent la littérature gothique, la romance historique et celles écrites durant la Régence anglaise.</skos:definition>
   </genre:Genre>
@@ -3474,8 +3362,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="zh-hant">指用韻文或散文創作之文學作品，作品凸顯人類的愚蠢與惡習，而加以奚落、嘲弄、或揶揄。 (<![CDATA[<a href="#_getty_2017">Getty, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300251297"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
-    <skos:narrowerTransitive rdf:resource="#genreLampoon"/>
-    <skos:narrowerTransitive rdf:resource="#genreMockforms"/>
+    <skos:broaderTransitive rdf:resource="#genreComedy"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreScholarship">
     <rdf:value>SCHOLARSHIP</rdf:value>
@@ -3486,24 +3373,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:inScheme rdf:resource="#Genre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Writing by a scholar, either amateur or professional, typically focused on a specific field or topic in which the author is an expert.</skos:definition>
-    <skos:narrowerTransitive rdf:resource="#genreDissertation"/>
-    <skos:narrowerTransitive rdf:resource="#genreArtcriticism"/>
-    <skos:narrowerTransitive rdf:resource="#genreBiographicaldictionary"/>
-    <skos:narrowerTransitive rdf:resource="#genreCompanion"/>
-    <skos:narrowerTransitive rdf:resource="#genreCriminology"/>
-    <skos:narrowerTransitive rdf:resource="#genreFeministtheory"/>
-    <skos:narrowerTransitive rdf:resource="#genreLiteraryCriticism"/>
-    <skos:narrowerTransitive rdf:resource="#genreLegalwriting"/>
-    <skos:narrowerTransitive rdf:resource="#genreMedicalwriting"/>
-    <skos:narrowerTransitive rdf:resource="#genreMusicology"/>
-    <skos:narrowerTransitive rdf:resource="#genrePedagogy"/>
-    <skos:narrowerTransitive rdf:resource="#genrePhilosophical"/>
-    <skos:narrowerTransitive rdf:resource="#genrePsychoanalytical"/>
-    <skos:narrowerTransitive rdf:resource="#genreScientificwriting"/>
-    <skos:narrowerTransitive rdf:resource="#genreSocialscience"/>
-    <skos:narrowerTransitive rdf:resource="#genreThesaurus"/>
-    <skos:narrowerTransitive rdf:resource="#genreDictionary"/>
-    <skos:narrowerTransitive rdf:resource="#genreEncyclopaedia"/>
     <skos:definition xml:lang="fr">Travaux écrits d'un intellectuel, amateur ou professionnel, normalement centré sur un domain ou un sujet spécifique dans lequel l'auteure est experte.</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreSchoolfiction">
@@ -3733,7 +3602,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Writing dealing with the study of human societies and relationships across several fields of scientific study, including anthropology, political science, and sociology.</skos:definition>
     <skos:broaderTransitive rdf:resource="#genreScholarship"/>
-    <skos:narrowerTransitive rdf:resource="#genreCriminology"/>
     <skos:definition xml:lang="fr">Travaux écrits qui étudient les sociétés et les rapports humains à travers plusieurs disciplines scientifiques incluant l'anthropologie, les sciences politiques et la sociologie.</skos:definition>
   </genre:Genre>
   <genre:Genre rdf:about="#genreSong">
@@ -3747,8 +3615,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">A lyric poem with a number of repeating stanzas (called refrains), written to be set to music in either vocal performance or with accompaniment of musical instruments. See dawn song and lyric, above and stanza, below.  (<![CDATA[<a href="#_wheeler_2017">L. K Wheeler, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://web.cn.edu/kwheeler/lit_terms_s.html"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
-    <skos:narrowerTransitive rdf:resource="#genreFolksong"/>
-    <skos:narrowerTransitive rdf:resource="#genreAnthem"/>
     <skos:definition xml:lang="fr">Une chanson ou un chant est une œuvre musicale composée d'un texte et d'une mélodie destinée à être interprétée par la voix humaine. Cette interprétation peut se faire sans accompagnement instrumental, c'est-à-dire a cappella, ou au contraire être accompagnée d'un ou plusieurs instruments (guitare, piano, groupe, voire un big band ou un grand orchestre symphonique). Elle peut être à une voix (monodie) ou à plusieurs (polyphonie) comme dans un choral.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Song"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
@@ -3929,6 +3795,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="fr">Un tract, un prospectus ou en français feuille volante, en anglais flyer (le terme pamphlet est également utilisé au Québec, et le terme manifeste en suisse francophone) est un texte ou une publicité sur support papier qui est distribué de la main à la main dans les espaces publics, en particulier sur les trottoirs, ou directement déposé dans les boîtes aux lettres par des personnes employées à cette tâche ou agissant par militantisme afin de faire passer des idées, de promouvoir un produit ou d'annoncer un événement artistique, culturel ou politique. Lorsque l'objet est purement commercial, on parle plutôt de prospectus.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Flyer_(pamphlet)"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
+    <skos:broaderTransitive rdf:resource="#genrePoliticalwriting"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreTragedy">
     <rdf:value>TRAGEDY</rdf:value>

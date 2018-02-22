@@ -38,7 +38,7 @@ $(ONTOLOGY)-$(ONTOLOGY_DATE).rdf: $(ONTOLOGY)-$(ONTOLOGY_DATE).unique $(ONTOLOGY
 $(ONTOLOGY)-$(ONTOLOGY_DATE).bibli:
 	./scripts/getFedoraCollection.sh $(ONTOLOGY) $(ONTOLOGY)-$(ONTOLOGY_DATE).bibli
 
-$(ONTOLOGY)-template-$(ONTOLOGY_DATE)-$(O_LANG).html: $(ONTOLOGY)-template-$(O_LANG).html figures/religionTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg figures/politicalAffiliationTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg #figures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg
+$(ONTOLOGY)-template-$(ONTOLOGY_DATE)-$(O_LANG).html: $(ONTOLOGY)-template-$(O_LANG).html figures/religionTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg figures/politicalAffiliationTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg figures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg
 	sed "s/PREVIOUS_ONTOLOGY/$(PREVIOUS_ONTOLOGY)/g"  < $(ONTOLOGY)-template-$(O_LANG).html | sed "s/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g" | sed "s/ONTOLOGY_NAME/$(ONTOLOGY)/g"  | sed "s/ONTOLOGY_DATE/$(ONTOLOGY_DATE)/g" |  sed "s/ONTOLOGY_LONGDATE/$(ONTOLOGY_LONGDATE)/g"  | sed "s/ONTOLOGY_VERSION/$(ONTOLOGY_VERSION)/g"  | sed 's/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g'  > $(ONTOLOGY)-template-$(ONTOLOGY_DATE)-$(O_LANG).html
 $(ONTOLOGY)-template2-$(ONTOLOGY_DATE)-$(O_LANG).html: $(ONTOLOGY)-template-$(ONTOLOGY_DATE)-$(O_LANG).html $(ONTOLOGY)-citations.html
 	 m4 -P $(ONTOLOGY)-template-$(ONTOLOGY_DATE)-$(O_LANG).html > $(ONTOLOGY)-template2-$(ONTOLOGY_DATE)-$(O_LANG).html
@@ -56,8 +56,8 @@ figures/religionTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: cwrc.rdf scripts/create
 	./scripts/createTaxonomy.pl cwrc.rdf Religion $(O_LANG) | unflatten -l 5 -c 10 | dot -ofigures/religionTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
 figures/politicalAffiliationTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: cwrc.rdf scripts/createTaxonomy.pl
 	./scripts/createTaxonomy.pl cwrc.rdf PoliticalAffiliation $(O_LANG) | unflatten -l 5 -c 10 | dot -ofigures/politicalAffiliationTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
-#figures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: genre.rdf scripts/createTaxonomy.pl
-#	./scripts/createTaxonomy.pl genre.rdf Genre $(O_LANG) | unflatten -l 5 -c 10 | dot -ofigures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
+figures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: genre.rdf scripts/createTaxonomy.pl
+	./scripts/createTaxonomy.pl genre.rdf Genre $(O_LANG) | unflatten -l 5 -c 10 | dot -ofigures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
 
 $(ONTOLOGY).html: $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html $(ONTOLOGY).html
