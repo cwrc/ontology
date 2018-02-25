@@ -59,7 +59,8 @@
             <li><a href="#politicalAffliation_taxonomy">ii. Political Affiliation</a></li>
             <li><a href="#genre_taxonomy">iii. Literary Genre</a></li>
           </ul>
-          <li><a href="#changeSets">d. Notes on ChangeSets</a></li>
+          <li><a href="#event">e. Events</a></li>
+          <li><a href="#changeSets">f. Notes on ChangeSets</a></li>
         </ul>
         <li><a href="#definition_list">7. Global Cross-Reference</a></li>
         <li><a href="#reference">8. Detailed references for all terms, classes and properties</a></li>
@@ -313,7 +314,20 @@
     <p><a href="figures/genreTaxonomy-ONTOLOGY_DATE-EN.svg">The specific taxonomy is:</a></p>
     <object type="image/svg+xml" data="figures/genreTaxonomy-ONTOLOGY_DATE-EN.svg"></object>
 
-    <h4 id="changeSets">d. Notes on ChangeSets</h4>
+    <h4 id="event">e. Events</h4>
+    <p>Events are a generic structure used to model both real past events as well as events that are part of literay works. The event modelling is partially based on the W3C recommended <a href="https://www.w3.org/TR/owl-time/">Time Ontology</a> and adds extensions for the purpose of modelling Orlando and TEI datasets. Events in CWRC have two types: single boundary, and two boundary. Single boundary events are those which have a start but not an end. Single boundary events are used to model events like published works or ideas which once created continue to exist throughout time. Two boundary events represent people and things that have a lifespan. Additionally events are considered recursive, that is, an can exist within another event -- a sub event. Furthermore being based on time events have an ordering.
+
+      <h5 id="eventOrdering">i. Event Ordering</h5>
+      <ul>
+        <li>An event can occur before another event: Event A occurs after Event B the time boundaries do not overlap</li>
+        <li>An event can occur at the same time as another event, resulting in overlap</li>
+      </ul>
+      <p>Events can be implicitely ordered through using time predicates to define boundaries or through using <code>before</code> and <code>after</code> predicates to explicitely assign ordering where time is not present. As an example this would be used to define the ordering the acts of a play where explict start and end times are not known.</p>
+
+
+
+
+    <h4 id="changeSets">f. Notes on ChangeSets</h4>
     <p>Change Sets exist to track changes to instances, terms, and classes within the ontology, they are therefore used by both the authors of the ontology as well as users who are making additions or modifications. Change sets are instances that are linked either to or from a structure in the ontology. This is done through the object properties <i>affected entity</i> or through the <code>skos:changeNote</code>. A single change set may apply to several entities therefore the <code>affected entity</code> relation may be applied 0 or more times. Change sets also track the user through the <code>altered by</code> relation and may link to any <code>CWRC:Person</code>. In addition dates and times are kept track of through <code>time:inXSDDateTimeStamp</code> using xsd:dateStamps to track the instant the change was applied to the ontology. This will allow change sets to be used as release by selecting them between a particular date to show major changes. Through provenance Change Sets may link to external resources allowing extended discussion to be kept out of the ontology. Shorter descriptions are included through the <code>skos:changeNote</code> relation as well as a title using a standard <code>rdfs:label</code>. Change Sets are to be used anytime an issue is completed by ontology developers or an instance is changed by a user. Automated mechanisms will be used to offset some of the work required.</p>
     <figure>
       <img src="figures/ChangeSets.png" style="display: block; margin: auto;width 60%;"/>
