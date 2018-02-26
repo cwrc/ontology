@@ -55,9 +55,9 @@ cwrc-ref.bib:
 figures/religionTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: cwrc.rdf scripts/createTaxonomy.pl
 	./scripts/createTaxonomy.pl cwrc.rdf Religion $(O_LANG) | unflatten -l 5 -c 10 | dot -ofigures/religionTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
 figures/politicalAffiliationTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: cwrc.rdf scripts/createTaxonomy.pl
-	./scripts/createTaxonomy.pl cwrc.rdf PoliticalAffiliation $(O_LANG) | unflatten -l 5 -c 10 | dot -ofigures/politicalAffiliationTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
+	./scripts/createTaxonomy.pl cwrc.rdf PoliticalAffiliation $(O_LANG) | unflatten -l 20 -c 20 | dot -ofigures/politicalAffiliationTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
 figures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: genre.rdf scripts/createTaxonomy.pl
-	./scripts/createTaxonomy.pl genre.rdf Genre $(O_LANG) | unflatten -l 5 -c 10 | dot -ofigures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
+	./scripts/createTaxonomy.pl genre.rdf Genre $(O_LANG) | unflatten -l 20 -c 30 | dot -ofigures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
 
 $(ONTOLOGY).html: $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html $(ONTOLOGY).html
@@ -77,6 +77,21 @@ testing: all
 	ln -sf /var/www/html/testing/$(ONTOLOGY)-$(ONTOLOGY_DATE).ttl /var/www/html/testing/$(ONTOLOGY).ttl
 	cp -f figures/* /var/www/html/testing/figures/.	
 	cp -f -R css /var/www/html/testing/.
+deploy: all
+	cp $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html /var/www/html/ontology/$(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html
+	cp $(ONTOLOGY)-$(ONTOLOGY_DATE)-FR.html /var/www/html/ontology/$(ONTOLOGY)-$(ONTOLOGY_DATE)-FR.html
+	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).rdf /var/www/html/ontology/.
+	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).nt /var/www/html/ontology/.
+	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE).ttl /var/www/html/ontology/.	
+	ln -sf /var/www/html/ontology/$(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html /var/www/html/ontology/$(ONTOLOGY).html
+	ln -sf /var/www/html/ontology/$(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html /var/www/html/ontology/$(ONTOLOGY)-$(ONTOLOGY_DATE).html
+	ln -sf /var/www/html/ontology/$(ONTOLOGY)-$(ONTOLOGY_DATE)-FR.html /var/www/html/ontology/$(ONTOLOGY)-FR.html
+	ln -sf /var/www/html/ontology/$(ONTOLOGY)-$(ONTOLOGY_DATE).rdf /var/www/html/ontology/$(ONTOLOGY).rdf
+	ln -sf /var/www/html/ontology/$(ONTOLOGY)-$(ONTOLOGY_DATE).nt /var/www/html/ontology/$(ONTOLOGY).nt
+	ln -sf /var/www/html/ontology/$(ONTOLOGY)-$(ONTOLOGY_DATE).ttl /var/www/html/ontology/$(ONTOLOGY).ttl
+	cp -f figures/* /var/www/html/ontology/figures/.	
+	cp -f -R css /var/www/html/ontology/.
+
 
 push: cwrc.rdf genre.rdf
 	rapper cwrc.rdf -c
