@@ -634,8 +634,8 @@ def get_header_html():
     html_str += """<h3 id="mymw-doctype">%s &mdash; %s""" % (trans_dict["draft"][l_index], header["date_str"])
 
     url = "/".join(spec_url.split("/")[:-1]) + "/" + spec_pre + "-" + header["date"]
+    latest_url = url.replace("-" + header["date"], "")
     curr_url = url
-    latest_url = url[:-1]
     version_type = "English"
 
     if lang == "en":

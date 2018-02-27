@@ -210,6 +210,7 @@
   <owl:Class rdf:ID="ChangeSet">
     <rdfs:label xml:lang="en">change set</rdfs:label>
     <skos:definition xml:lang="en">A Changeset represents changes or additions made to the ontology by ontology editors or through users where instances were affected. Change Sets will also be used to translate and contain Orlando recordInfo instances.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.w3.org/2006/time/Instant"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -221,6 +222,7 @@
   <owl:ObjectProperty rdf:about="#affectedEntity">
     <rdfs:label xml:lang="en">affected entity</rdfs:label>
     <skos:definition xml:lang="en">Affected Entities link to the Object or Class that was modified within a ChangeSet, this can be any rdf:resource. A ChangeSet may have 0 to many AffectedEntities.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#ChangeSet"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -229,6 +231,7 @@
   <owl:ObjectProperty rdf:about="#alteredBy">
     <rdfs:label xml:lang="en">altered by</rdfs:label>
     <skos:definition xml:lang="en">Links a person to a change set entry.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#ChangeSet"/>
     <rdfs:range rdf:resource="#NaturalPerson"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -239,8 +242,8 @@
 
   <owl:Class rdf:ID="NaturalPerson">
     <rdfs:label xml:lang="en">natural person</rdfs:label>
+    <rdfs:label xml:lang="fr">personne physique</rdfs:label>
     <skos:definition xml:lang="en">A human being who is alive, or was alive at some point in time. Natural persons may be fictionalized, in which case they are also classed as a @@#FictionalPerson@@.</skos:definition>
-     <rdfs:label xml:lang="fr">personne physique</rdfs:label>
     <skos:definition xml:lang="fr"> Être humain en vie ou ayant vécu à un moment donné. Les personnes physiques peuvent être objets de fiction, auquel cas elles sont classées en tant que @@#FictionalPerson@@.</skos:definition>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -248,18 +251,19 @@
 
   <owl:Class rdf:ID="FictionalPerson">
     <rdfs:label xml:lang="en">fictional person</rdfs:label>
+    <rdfs:label xml:lang="fr">personne fictive</rdfs:label>
     <skos:definition xml:lang="en">A person, broadly defined, who features in an imaginative work such as a literary work, as a character or in some other way that distinguishes the reference to them from the natural person who is being represented. In other words, there is a distinction between a simple allusion to a @@#NaturalPerson@@, and the fictionalization of that person within a text or other work of art.</skos:definition>
-     <rdfs:label xml:lang="en">personne fictive</rdfs:label>
-    <skos:definition xml:lang="en">Définie de façon large, personne figurant dans une œuvre créative telle qu'une œuvre littéraire, dans laquelle elle est un personnage ou représentée d'une façon qui diffère de la personne physique à laquelle elle renvoie. Autrement dit, il existe une différence entre la simple allusion à une @@#NaturalPerson@@ et la version romancée de cette personne dans un texte ou tout autre oeuvre d'art. </skos:definition>
+    <skos:definition xml:lang="fr">Définie de façon large, personne figurant dans une œuvre créative telle qu'une œuvre littéraire, dans laquelle elle est un personnage ou représentée d'une façon qui diffère de la personne physique à laquelle elle renvoie. Autrement dit, il existe une différence entre la simple allusion à une @@#NaturalPerson@@ et la version romancée de cette personne dans un texte ou tout autre oeuvre d'art. </skos:definition>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:Class>
 
   <owl:Class rdf:ID="Persona">
     <rdfs:label xml:lang="en">persona</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <skos:definition xml:lang="en">The persona, unlike the role, cannot be adopted by people generally, but is specific to one natural person, or more rarely several natural persons. The persona is an original creation, often bearing meaning about the biographical, historical and sociological context to which its/their creator/s is/are attached. It is also important to recall that the persona cannot be associated with mental illness or multiple personality disorders, since they are not the product of a distorted or uncontrolled perception of reality. 
-At the heart of a persona is an identity that is interacted with by others and that at times can be confused with an actual natural person. It is incarnated and developed by a natural person, and may have a social, literary, artistic or political activity.</skos:definition>
+    <skos:definition xml:lang="en">The persona, unlike the role, cannot be adopted by people generally, but is specific to one natural person, or more rarely several natural persons. The persona is an original creation, often bearing meaning about the biographical, historical and sociological context to which its/their creator/s is/are attached. It is also important to recall that the persona cannot be associated with mental illness or multiple personality disorders, since they are not the product of a distorted or uncontrolled perception of reality. At the heart of a persona is an identity that is interacted with by others and that at times can be confused with an actual natural person. It is incarnated and developed by a natural person, and may have a social, literary, artistic or political activity.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -267,7 +271,9 @@ At the heart of a persona is an identity that is interacted with by others and t
 
   <owl:ObjectProperty rdf:ID="hasPersona">
     <rdfs:label xml:lang="en">has persona</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Associates a @@#Persona@@ with one more @@#NaturalPerson@@(s). </skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#Persona"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -276,6 +282,9 @@ At the heart of a persona is an identity that is interacted with by others and t
   
   <owl:ObjectProperty rdf:ID="personaOf">
     <rdfs:label xml:lang="en">persona of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
     <owl:inverseOf rdf:resource="#hasPersona"/>
     <rdfs:domain rdf:resource="#Persona"/>
     <rdfs:range rdf:resource="#NaturalPerson"/>
@@ -291,6 +300,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">évènement</rdfs:label>
     <rdfs:label xml:lang="de">event</rdfs:label>
     <skos:definition xml:lang="en">An event that occurs in time.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time/TemporalEntity"/>
     <owl:sameAs rdf:resource="http://erlangen-crm.org/current/E5.Event"/>
     <owl:sameAs rdf:resource="http://linkedevents.org/ontology/Event"/>
@@ -304,6 +314,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="en">has Sub Element</rdfs:label>
     <rdfs:label xml:lang="fr">a un sous évènement</rdfs:label>
     <skos:definition xml:lang="en">Associates a sub event to a master event.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#Event"/>
     <rdfs:range rdf:resource="#Event"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -314,6 +325,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="en">has Element</rdfs:label>
     <rdfs:label xml:lang="fr">a un élément</rdfs:label>
     <skos:definition xml:lang="en">Associates an event or event element.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#Event"/>
     <rdfs:range rdf:resource="#EventElement"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -325,6 +337,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="en">Event Element</rdfs:label>
     <rdfs:label xml:lang="fr">élément d'évènement</rdfs:label>
     <skos:definition xml:lang="en">An event element by an agent in an event under a specific context, be it in a role, character or responsibility.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -335,6 +348,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="en">has Actor</rdfs:label>
     <rdfs:label xml:lang="fr">a un acteur</rdfs:label>
     <skos:definition xml:lang="en">Associates an event element to a person.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#EventElement"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -345,6 +359,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="en">has Character</rdfs:label>
     <rdfs:label xml:lang="fr">a un personnage</rdfs:label>
     <skos:definition xml:lang="en">Associates an event element to a (story) character.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#EventElement"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -354,6 +369,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="en">has Role</rdfs:label>
     <rdfs:label xml:lang="fr">a un rôle</rdfs:label>
     <skos:definition xml:lang="en">Associates an event element to a role.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#EventElement"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -361,7 +377,9 @@ At the heart of a persona is an identity that is interacted with by others and t
 
   <owl:ObjectProperty rdf:ID="actorTo">
     <rdfs:label xml:lang="en">actor to</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">The Events that the Actor is associated with.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     <rdfs:range rdf:resource="#EventElement"/>
     <owl:inverseOf rdf:resource="#hasActor"/>
@@ -371,15 +389,13 @@ At the heart of a persona is an identity that is interacted with by others and t
   </owl:ObjectProperty>
 
 
-
-
-
   <owl:Class rdf:ID="BirthEvent">
     <foaf:name>birth</foaf:name>
     <rdfs:label xml:lang="en">birth</rdfs:label>
     <rdfs:label xml:lang="fr">naissance</rdfs:label>
     <rdfs:label xml:lang="de">geburt</rdfs:label>
     <skos:definition xml:lang="en">The birth event of a person.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -394,6 +410,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">mort</rdfs:label>
     <rdfs:label xml:lang="de">tod</rdfs:label>
     <skos:definition xml:lang="en">The death event of a person.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -408,6 +425,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">évènement au cours de la vie</rdfs:label>
     <rdfs:label xml:lang="de">lebensereignis</rdfs:label>
     <skos:definition xml:lang="en">An event during the life of a person.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -423,6 +441,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">évènement posthume</rdfs:label>
     <rdfs:label xml:lang="de">nachlebensereignis</rdfs:label>
     <skos:definition xml:lang="en">An event whose principal is a person that is deceased. Could be used for a funeral, an influence over a living author, or the estate of a deceased person.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
