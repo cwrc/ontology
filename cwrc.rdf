@@ -950,7 +950,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">héritage national</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">A subclass of Cultural Form, this property indicates a person's national heritage, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. National Heritage is composed of various elements related to national identity, often transmitted from previous generations and influenced by a subject’s national historical background or @@#GeographicalHeritage@@. It can be multiple and can be different from a person’s national identity, current or official citizenship, or the geographical region or territory in which a person resides. Those using this class and its subclasses are encouraged to consult associated @@#NationalityContext@@ excerpts or annotations, if available.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of Cultural Form, this property indicates a person's national heritage, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. National Heritage is composed of various elements related to national identity, often transmitted from previous generations and influenced by a subject’s national historical background or @@#GeographicHeritage@@. It can be multiple and can be different from a person’s national identity, current or official citizenship, or the geographical region or territory in which a person resides. Those using this class and its subclasses are encouraged to consult associated @@#NationalityContext@@ excerpts or annotations, if available.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-catégorie de Forme Culturelle, cette propriété indique l’héritage national d’une personne, accompagné du @@#NationalityContext@@ lorsqu'il est disponible. Héritage National est composé de divers éléments relatifs à l’identité nationale, et est souvent transmis par des générations antérieures, influencé par le milieu historique et l’héritage géographique. Il peut être puluriel et peut se distinguer de l’identité nationale, de la citoyenneté actuelle ou officielle, de la région géographique ou du territoire de résidence. Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les extraits ou les annotations de @@#NationalityContext@@ lorsque ceux-ci sont disponibles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -985,7 +985,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">nationalité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">A subclass of Cultural Form, this property indicates a person's nationality, either as self-reported or as assigned by others, with accompanying context, where present,provided by @@#NationalityContext@@ annotations. It is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. Like other identity categories, nationality may be plural, fluid, or contingent, and it can intersect with @@#NationalHeritage@@ or @@#GeographicalHeritage@@ as well as other identity categories. Those using this class and its subclasses are encouraged to consult associated @@#NationalityContext@@ annotations, if available.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of Cultural Form, this property indicates a person's nationality, either as self-reported or as assigned by others, with accompanying context, where present,provided by @@#NationalityContext@@ annotations. It is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. Like other identity categories, nationality may be plural, fluid, or contingent, and it can intersect with @@#NationalHeritage@@ or @@#GeographicHeritage@@ as well as other identity categories. Those using this class and its subclasses are encouraged to consult associated @@#NationalityContext@@ annotations, if available.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-catégorie de Forme Culturelle, cette propriété indique la nationalité d’une personne, accompagnée du contexte fourni par les annotations de @@#NationalityContext@@ lorsqu'il est disponible. Elle diffère de la citoyenneté et n’est pas proportionnelle à la zone géographique ou au lieu de résidence. Comme d’autres catégories identitaires, la nationalité peut être plurielle, fluide ou contingente, et recoupe avec @@#NationalHeritage@@ ainsi qu’avec d’autres catégories identitaires. Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les annotations de @@#NationalityContext@@ lorsqu’elles sont disponibles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1030,7 +1030,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/iso639-1/iso639-1_Language"/>
   </owl:Class>
   <!-- Geographic Heritages -->
-  <owl:Class rdf:ID="GeographicalHeritage">
+  <owl:Class rdf:ID="GeographicHeritage">
     <rdfs:label xml:lang="en">geographic heritage</rdfs:label>
     <rdfs:label xml:lang="fr">héritage géographique</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
@@ -1040,32 +1040,32 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-  <cwrc:GeographicalHeritage rdf:about="#englishGeographicHeritage">
+  <cwrc:GeographicHeritage rdf:about="#englishGeographicHeritage">
     <rdfs:label xml:lang="en">England</rdfs:label>
     <rdfs:label xml:lang="fr">Angleterre</rdfs:label>
     <foaf:name xml:lang="en">England (Geographic Heritage)</foaf:name>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="#GeographicalHeritage"/>
+    <skos:inScheme rdf:resource="#GeographicHeritage"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labeling as of English heritage in relation to a place, often England.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <skos:broader rdf:resource="#englishLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:sameAs rdf:resource="http://eurovoc.europa.eu/5438"/>
-  </cwrc:GeographicalHeritage>
-  <cwrc:GeographicalHeritage rdf:about="#jewishGeographicalHeritage">
+  </cwrc:GeographicHeritage>
+  <cwrc:GeographicHeritage rdf:about="#jewishGeographicHeritage">
     <rdfs:label xml:lang="en">Jewish</rdfs:label>
     <rdfs:label xml:lang="fr">Juif</rdfs:label>
     <foaf:name xml:lang="en">Jewish (Geographic Heritage)</foaf:name>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="#GeographicalHeritage"/>
+    <skos:inScheme rdf:resource="#GeographicHeritage"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as of Jewish heritage in relation to a place, which may or may not be Israel.</skos:definition>
     <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie ou s'est vu assigner une identité juive par rapport à un endroit, qui peut ou non être Israël.</skos:definition>
     <skos:broader rdf:resource="#jewishLabel"/>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Jewish_identity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:GeographicalHeritage>
+  </cwrc:GeographicHeritage>
   <owl:Class rdf:ID="Gender">
     <rdfs:label xml:lang="en">gender</rdfs:label>
     <rdfs:label xml:lang="fr">genre</rdfs:label>
@@ -5213,7 +5213,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="en">has Geographic Heritage</rdfs:label>
     <rdfs:label xml:lang="fr">A un héritage géographique</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
-    <rdfs:range rdf:resource="#GeographicalHeritage"/>
+    <rdfs:range rdf:resource="#GeographicHeritage"/>
     <skos:definition xml:lang="en">Describes a person's heritage in relation to a place. Place names and boundaries change over time, and a conception of geographical heritage from one historical period may not be commensurate with those from an earlier or later period, even if they go by the same name. Similarly, a sense of geographical heritage may differ from a sense of identity with a political entity that goes by the same name. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#GeographicHeritage@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit l'héritage d'une personne en lien avec une situation géographique. Comme les toponomies et les frontières changent au cours du temps, une description de l'héritage géographique associée à une période historique donnée ne correspond pas toujours à celles des périodes antérieures ou postérieures, et ce même si elles possèdent le même nom. De même, le sentiment d'appartenance à un héritage géographique peut différer du sentiement d'appartenance à une entité politique du même nom. De même que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#GeographicHeritage@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5224,9 +5224,9 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="en">has geographic heritage (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">a un héritage géographique (autodéclaré)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
-    <skos:definition xml:lang="en">This describes a person's self-reported @@#GeographicalHeritage@@.</skos:definition>
+    <skos:definition xml:lang="en">This describes a person's self-reported @@#GeographicHeritage@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <rdfs:range rdf:resource="#GeographicalHeritage"/>
+    <rdfs:range rdf:resource="#GeographicHeritage"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5630,7 +5630,7 @@ At the heart of a persona is an identity that is interacted with by others and t
       <owl:Thing rdf:about="#judaism"/>
       <owl:Thing rdf:about="#jewishRaceColour"/>
       <owl:Thing rdf:about="#jewishEthnicity"/>
-      <owl:Thing rdf:about="#jewishGeographicalHeritage"/>
+      <owl:Thing rdf:about="#jewishGeographicHeritage"/>
       <owl:Thing rdf:about="#jewishNationalIdentity"/>
     </owl:oneOf>
     <skos:inScheme rdf:resource="#TextLabels"/>
@@ -6017,7 +6017,22 @@ At the heart of a persona is an identity that is interacted with by others and t
   </owl:DeprecatedProperty>
 
   <!-- Deprecated classes go here for sanity -->
-  <DeprecatedClass rdf:ID="LanguageContext">
+  <owl:DeprecatedClass rdf:ID="GeographicalHeritage">
+    <rdfs:label xml:lang="en">geographic heritage</rdfs:label>
+    <rdfs:label xml:lang="fr">héritage géographique</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
+    <skos:definition xml:lang="en">A subclass of @@#CulturalForm@@, this property indicates  a person's geographic heritage, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. Geographic heritage involves the geographical origins of a person's family, which often contributes to an understanding of their racial and ethnic background. It offers a way to capture individuals identified as &quot;South-Asian,&quot; for example, when no more precise national heritage is indicated. See @@#RaceEthnicityContext@@ for a detailed description of the complexities of this class.  It can be multiple and it can be different from a person’s national identity or national heritage, current or official citizenship, or the geographical region or territory in which a person resides. Those using this class and its subclasses are encouraged to consult associated @@#NationalityContext@@ excerpts or annotations, if available.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-classe de @@#CulturalForm@@, Héritage Géographique indique l’héritage géographique d’une personne, accompagné du contexte fourni par @@#NationalityContext@@ lorsqu'il est disponible. L’héritage géographique inclut les origines géographiques de la famille du sujet, souvent utiles à la compréhension de son milieu ethnique et raciale. Cela permet par exemple de saisir l’identité des femmes qui se déclarent «sud-asiatiques», alors que nous n'en savons pas plus sur leur héritage national. Voir @@#RaceEthnicityContext@@ pour un compte-rendu détaillé de la complexité de cette classe. L'héritage géographique peut être pluriel et peut différer de l’identité ou de l’héritage national, de la citoyenneté actuelle ou officielle, et de la région géographique ou du lieu de résidence. Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les extraits ou les annotations de @@#NationalityContext@@ lorsqu’ils sont disponibles.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of class @@#GeographicHeritage@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe @@#GeographicHeritage@@.</rdfs:comment>
+    <owl:equivalentClass rdf:resource="#GeographicHeritage"/>
+    <dcterms:isReplacedBy rdf:resource="#GeographicHeritage"/>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </owl:DeprecatedClass>
+  <owl:DeprecatedClass rdf:ID="LanguageContext">
     <rdfs:label xml:lang="en">language context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte linguistique</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -6033,8 +6048,8 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <dcterms:subject rdf:resource="#Language"/>
-  </DeprecatedClass>
-  <DeprecatedClass rdf:ID="EthnicityContext">
+  </owl:DeprecatedClass>
+  <owl:DeprecatedClass rdf:ID="EthnicityContext">
     <rdfs:label xml:lang="en">racial, colour or ethnicity context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte racial, de couleur de peau ou d'ethnicité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -6050,13 +6065,13 @@ At the heart of a persona is an identity that is interacted with by others and t
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </DeprecatedClass>
+  </owl:DeprecatedClass>
 
   <owl:DeprecatedClass rdf:ID="CulturalFormation">
     <rdfs:label xml:lang="en">cultural formation </rdfs:label>
     <rdfs:label xml:lang="fr">formation culturelle</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">Cultural formation refers to the processes of lived social subjectivities of people and is often combined with predicates indicating the identity positions as they relate to the following discursive constructions of Class, Religion, Ethnicity, Gender, GeographicalHeritage, LinguisticAbility, NationalHeritage, NationalIdentity, PoliticalAffiliation, RaceColour, and Sexuality. These categories are not understood as transhistorical or isolated categories. Rather, they facilitate analysis of how such situationally contingent, changing, and negotiated labels are assigned to or adopted by a particular individual. The tensions endemic to practices of classification demand critical engagement and inquiry into the situatedness of particular cultural identities.</skos:definition>
+    <skos:definition xml:lang="en">Cultural formation refers to the processes of lived social subjectivities of people and is often combined with predicates indicating the identity positions as they relate to the following discursive constructions of Class, Religion, Ethnicity, Gender, GeographicHeritage, LinguisticAbility, NationalHeritage, NationalIdentity, PoliticalAffiliation, RaceColour, and Sexuality. These categories are not understood as transhistorical or isolated categories. Rather, they facilitate analysis of how such situationally contingent, changing, and negotiated labels are assigned to or adopted by a particular individual. The tensions endemic to practices of classification demand critical engagement and inquiry into the situatedness of particular cultural identities.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6115,7 +6130,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">Angleterre</rdfs:label>
     <foaf:name xml:lang="en">England (Geographical Heritage)</foaf:name>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="#GeographicalHeritage"/>
+    <skos:inScheme rdf:resource="#GeographicHeritage"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <skos:broader rdf:resource="#englishLabel"/>
@@ -6525,7 +6540,7 @@ At the heart of a persona is an identity that is interacted with by others and t
       <rdfs:label xml:lang="en">has geographic heritage (self declared)</rdfs:label>
       <rdfs:label xml:lang="fr">a un héritage géographique (autodéclaré)</rdfs:label>
       <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
-      <rdfs:range rdf:resource="#GeographicalHeritage"/>
+      <rdfs:range rdf:resource="#GeographicHeritage"/>
       <skos:definition xml:lang="en"/>
       <skos:definition xml:lang="fr"/>
       <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
