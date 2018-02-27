@@ -899,7 +899,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
     <dcterms:subject rdf:resource="#Religion"/>
     <skos:definition xml:lang="en">Religion Context is a significant subclass of context. It is associated with the Cultural Form subclass Religion, and sometimes other intersecting Cultural Forms. Annotations typed as Religion Context provide information about and discussions of a person's subjectivity with regards to their religion. Religion Context provides depth to more granular categorizations of a person indicated by the properties @@#hasReligion@@ or @@#hasReligionSelfReported@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Contexte Religieux est une sous-classe de contexte importante. Elle est associée à Religion, sous-classe de Forme Culturelle, et recoupe parfois avec d'autres Formes Culturelles. Les annotations entrées en tant que Contexte Religieux fournissent des informations et des discussions sur la subjectivité d’une personne en lien avec sa religion. Contexte Religieux explore plus en détails les catégories granulaires d'une personne grâce aux propriétés @@#hasReligion@@ Ou @@#hasReligionSelfReported@@..</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -923,7 +923,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
     <dcterms:subject rdf:resource="#PoliticalAffiliation"/>
     <skos:definition xml:lang="en">Political Context is a significant subclass of context. It is associated with the Cultural Form subclass Ethnicity, and sometimes other intersecting Cultural Forms. Annotations typed as Political Context provide information about and discussions of a person's subjectivity with regards to their political identity. Political Context provides depth to more granular categorizations of a person indicated by the properties @@#hasPoliticalAffiliation@@ and @@#hasPoliticalAffiliationSelfReported@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Contexte Politique est une sous-classe de contexte importante. Elle est associée à Ethnicité, sous-classe de Forme Culturelle, et recoupe parfois avec d'autres Formes Culturelles. Les annotations entrées en tant que Contexte Politique fournissent des informations et des discussions sur la subjectivité d’une personne en lien avec son activité politique. Contexte Politique explore plus en détails les catégories granulaires d'une personne grâce aux propriétés @@#hasPoliticalAffiliation@@ ou @@#hasPoliticalAffiliationSelfReported@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -960,7 +960,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">Anglais</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as English as an inherited national identity.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie à ou s'est vu assigner un héritage national anglais.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:sameAs rdf:resource="http://sws.geonames.org/6269131/"/>
@@ -971,7 +971,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">Gallois</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as Welsh as an inherited national identity.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie à ou s'est vu assigner un héritage national gallois.</skos:definition>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Welsh_people"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -996,7 +996,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#NationalIdentity"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as Jewish or Israeli as a national identity.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie à ou s'est vu assigner une identité nationale juive ou israélienne.</skos:definition>
     <skos:broader rdf:resource="#jewishlabel"/>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Israelis"/>
     <skos:relatedMatch rdf:resource="http://dbpedia.org/resource/Zionism"/>
@@ -1009,7 +1009,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#NationalIdentity"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as English as a national identity.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie à ou s'est vu assigner une identité nationale anglaise.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:sameAs rdf:resource="http://eurovoc.europa.eu/5438"/>
@@ -1060,7 +1060,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#GeographicalHeritage"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as of Jewish heritage in relation to a place, which may or may not be Israel.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie ou s'est vu assigner une identité juive par rapport à un endroit, qui peut ou non être Israël.</skos:definition>
     <skos:broader rdf:resource="#jewishLabel"/>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Jewish_identity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1469,7 +1469,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <skos:definition xml:lang="en">
       A Eurasian is a person of mixed Asian and European ancestry. In 19th-century British India, Eurasians — later called Anglo-Indians — were of mixed Portuguese, Dutch, British, Indian or, more rarely, French descent, but now their parentage may be from other parts of South, East or Southeast Asia. The term has been used in anthropological literature since the 1960s. It may also be extended to those with Central Asian heritage.
     </skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un·e Eurasien·ne e est une personne d'ascendance mixte asiatique et européenne. Dans l'Inde britannique du XIXe siècle, les personnes d'ascendance eurasienne (plus tard anglo-indienne) étaient d'origine mixte portugaise, hollandaise, britannique, indienne ou, plus rarement, française, mais leur ascendance pouvait provenir d'autres régions de l'Asie du Sud, de l'Est ou du Sud-Est. Le terme est utilisé en anthropologie depuis les années 1960. Il peut également être étendu aux personnes possédant des origines d'Asie centrale.</skos:definition>
     <skos:inScheme rdf:resource="#RaceColour"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -2156,7 +2156,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="en">Methodism</rdfs:label>
     <rdfs:label xml:lang="fr">Église méthodiste</rdfs:label>
     <skos:definition xml:lang="en">&quot;Or United Methodists, an English Nonconformist community formed in 1907 by the union of the Methodist New Connexion (1797), the Bible Christians (1815), and the United Methodist Free Churches (1857). The act of parliament which enabled this amalgamation received the royal assent on the 26th of July 1907, and authorized the union &quot;to deal with real and personal property belonging to the said three churches or denominations, to provide for the vesting of the said property in trust for the United Church so formed and for the assimilation of the trusts thereof, and for other purposes.&quot; The union was completed on the 16th of September 1907 in Wesley's Chapel, City Road, London.&quot; <![CDATA[<a href="#_britannica_1911">(Encyclopedia Britannica, 1911)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Issu d'un schisme avec l'Église anglicane, le méthodisme est un courant du protestantisme regroupant de nombreuses Églises d'orientations diverses, mais trouvant leur inspiration dans la prédication de John Wesley au XVIIIe siècle. Aujourd'hui, 80 millions de personnes se revendiquent méthodistes. Historiquement, le méthodisme est l'initiateur et le grand propagateur du Réveil qui va se propager à travers le monde, touchant des millions de personnes et revitalisant profondément le protestantisme.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
     <skos:broaderTransitive rdf:resource="#dissentProtestant"/>
@@ -2195,7 +2195,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="fr">occultisme</rdfs:label>
     <skos:definition xml:lang="en">&quot;Any religious or philosophic ideology based on mystical insight into the nature of God and/or divine truth. This insight is attained only through direct experience of the divine. The term is sometimes used to specifically refer to the principles of the Theosophical Society founded in New York in 1875 by Madame Blavatsky and H. S. Olcott which incorporated aspects of Buddhism and Brahmanism.&quot; <![CDATA[<a href="#_getty_2017">(Getty, 2017)</a>]]></skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300056000"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">L’occultisme désigne l'ensemble des arts et sciences occultes (alchimie, astrologie, magie, divination, médecine occulte) touchant aux secrets de la nature, à ce qui est non visible. L'expression « sciences occultes » remonterait au titre d'un livre d'Eusèbe de Salverte, en 1829 (Des sciences occultes). Le mot « occultisme » en français ferait son apparition en 1842. Dès 1884 l'occultiste Joséphin Péladan entend par « occultisme » : « l'ensemble des sciences occultes ». En anglais, occultism date de 1881. Le néo-occultisme traite avec Papus des « facultés occultes de l'Homme » et des « forces invisibles de la Nature ».</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -2418,7 +2418,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">The upper middle class is a sociological concept referring to the social group constituted by higher status members of the middle class. This is in contrast to the term "lower middle class", which is used for the group at the opposite end of the middle class stratum, and to the broader term "middle class". There is considerable debate as to how the upper middle class might be defined. According to sociologist Max Weber the upper middle class consists of well-educated professionals with graduate degrees and comfortable incomes.</skos:definition>
-    <skos:definition xml:lang="fr">45xCe modèle est-il pertinent ? Cliquez pour en voir d'autres.Cet article ne respecte pas la neutralité de point de vue (indiquez la date de pose grâce au paramètre date). Considérez son contenu avec précaution et/ou discutez-en. Il est possible de préciser les sections non neutres en utilisant {{section non neutre}} et de souligner les passages problématiques avec {{passage non neutre}}. 45xCe modèle est-il pertinent ? Cliquez pour en voir d'autres.Cet article ne cite pas suffisamment ses sources (indiquez la date de pose grâce au paramètre date).</skos:definition>
+    <skos:definition xml:lang="fr">La classe moyenne supérieure est une classe sociale qui regroupe les individus de la classe moyenne dont les revenus sont les plus élevés (en France, supérieurs à 30 000 euros par an). En tant que membres de la classe moyenne, leurs revenus restent inférieurs à ceux de l'élite entrepreneuriale et des professions libérales. On y trouve surtout des cadres, parfois des artisans indépendants. La classe moyenne supérieure a tendance à se confondre avec la petite bourgeoisie, on y trouve par exemple un actionnariat développé ainsi qu'un niveau d'éducation élevé. Depuis les crises économiques des années 1970, la classe moyenne supérieure se distingue de plus en plus de la fausse jumelle, la classe moyenne inférieure ; la première étant caractérisée par son ascension sociale, l'autre par son déclassement.</skos:definition>
     <rdfs:comment xml:lang="en">This term is a CWRC specific addition not in the original Orlando tag set.</rdfs:comment>
     <skos:note>Overlaps with the @@#professional@@ class.</skos:note>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Upper_middle_class"/>
@@ -2472,7 +2472,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">Describes a person's proficiency in a language (speaking, reading, or writing).</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Décrit l'aptitude d'une personne pour parler, lire ou écrire une langue.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -2541,6 +2541,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="en">American nationalism</rdfs:label>
     <rdfs:label xml:lang="fr">nationalisme américain</rdfs:label>
     <skos:definition xml:lang="en">American nationalism emphasizes the distinctiveness of American language, culture, and history, and calls for a celebration of &quot;Americanness,&quot; which might include white nationalist pride and anti-immigration.</skos:definition>
+    <skos:definition xml:lang="fr">Le nationalisme américain souligne la spécificité de la langue, de la culture et de l'histoire américaine et revendique la célébration de l'"américanité", pouvant inclure le nationalisme blanc et la lutte contre l'immigration.</skos:definition>
     <skos:broaderTransitive rdf:resource="#nationalism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -4554,7 +4555,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="en">pro-American</rdfs:label>
     <rdfs:label xml:lang="fr">pro-américain</rdfs:label>
     <skos:definition xml:lang="en">A pro-American or "Americanophile" stance favours the policies, actions, or culture of the United States of America.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Le proaméricanisme ou posture "américanophile" défend la politique, les actions ou la culture des États-Unis d'Amérique.</skos:definition>
     <skos:related rdf:resource="#nationalism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5214,7 +5215,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#GeographicalHeritage"/>
     <skos:definition xml:lang="en">Describes a person's heritage in relation to a place. Place names and boundaries change over time, and a conception of geographical heritage from one historical period may not be commensurate with those from an earlier or later period, even if they go by the same name. Similarly, a sense of geographical heritage may differ from a sense of identity with a political entity that goes by the same name. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#GeographicHeritage@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Décrit l'héritage d'une personne en lien avec une situation géographique. Comme les toponomies et les frontières changent au cours du temps, une description de l'héritage géographique associée à une période historique donnée ne correspond pas toujours à celles des périodes antérieures ou postérieures, et ce même si elles possèdent le même nom. De même, le sentiment d'appartenance à un héritage géographique peut différer du sentiement d'appartenance à une entité politique du même nom. De même que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#GeographicHeritage@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5259,7 +5260,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#NationalIdentity"/>
     <skos:definition xml:lang="en">Describes a person's nationality. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#NationalIdentity@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Décrit la nationalité d'une personne. De même que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#NationalIdentity@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5282,7 +5283,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#RaceColour"/>
     <skos:definition xml:lang="en">A subproperty of @@#personalProperty@@, this describes a person's racial identity. For further information about this property, see @@#RaceColour@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Sous-propriété de propriété personnelle, décrit l'identité raciale d'une personne. Pour plus d'information sur cette propriété, voir @@#RaceColour@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5306,7 +5307,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#Ethnicity"/>
     <skos:definition xml:lang="en">Describes a person's ethnicity. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#Ethnicity@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Décrit l'ethnicité d'une personne. De même que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#Ethnicity@@</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5333,7 +5334,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#Religion"/>
     <skos:definition xml:lang="en">Describes a person's religion. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#Religion@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Décrit la religion d'une personne. De même que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#Religion@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5377,7 +5378,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#SocialClass"/>
     <skos:definition xml:lang="en">Describes a person's social class. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#SocialClass@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Décrit la classe sociale d'une personne. De même que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#SocialClass@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5400,7 +5401,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
     <skos:definition xml:lang="en">Knowledge of the language for writing or reading.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Capacité d'écrire ou de lire une langue.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5421,7 +5422,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
     <skos:definition xml:lang="en">Knowledge of the language for writing or reading.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Capacité d'écrire ou de lire une langue.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5443,7 +5444,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#Sexuality"/>
     <skos:definition xml:lang="en">Describes a person's sexuality. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#Sexuality@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Décrit la sexualité d'une personne. De même que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#Sexuality@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5466,7 +5467,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <rdfs:label xml:lang="en">textual label</rdfs:label>
     <rdfs:label xml:lang="fr">étiquette</rdfs:label>
     <skos:definition xml:lang="en">Collection of all ambiguous labels within the Orlando markup.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Ensemble des étiquettes ambigues au sein du jeu d'étiquettes d'Orlando.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:related rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
@@ -5489,8 +5490,8 @@ At the heart of a persona is an identity that is interacted with by others and t
     <foaf:name xml:lang="en">white</foaf:name>
     <cwrc:literalForm xml:lang="en">white</cwrc:literalForm>
     <cwrc:literalForm xml:lang="fr">blanc</cwrc:literalForm>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of whiteness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "White" (e.g. whiteNationality, whiteRace) cultural identities.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of whiteness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of &quot;White&quot; (e.g. @@#whiteEthnicity@@, @@#whiteRaceColour@@) cultural identities.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la blancheur de peau en tant que charactérique physique associée à diverses formes culturelles. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «blanches" (par exemple @@#whiteEthnicity@@, @@#whiteRaceColour@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#whiteEthnicity"/>
@@ -5507,8 +5508,8 @@ At the heart of a persona is an identity that is interacted with by others and t
     <foaf:name xml:lang="en">black</foaf:name>
     <cwrc:literalForm xml:lang="en">black</cwrc:literalForm>
     <cwrc:literalForm xml:lang="fr">noir</cwrc:literalForm>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of blackness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "Black" (e.g. @@#blackEthnicity@@, @@#blackRaceColour@@) cultural identities.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of blackness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of &quot;Black&quot; (e.g. @@#blackEthnicity@@, @@#blackRaceColour@@) cultural identities.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la noirceur de peau en tant que charactérique physique associée à diverses formes culturelles. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «noires» (par exemple @@#blackEthnicity@@, @@#blackRaceColour@@).</skos:definition>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#blackEthnicity"/>
       <owl:Thing rdf:about="#blackRaceColour"/>
@@ -5522,8 +5523,8 @@ At the heart of a persona is an identity that is interacted with by others and t
   <skos:Concept rdf:about="#eurasianLabel">
     <rdfs:label xml:lang="en">Eurasian identity</rdfs:label>
     <rdfs:label xml:lang="fr">identité Eurasian</rdfs:label>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of the term eurasian as associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "Eurasian" (e.g. eurasianGeographicHeritage, eurasianRace) cultural identities.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of the term eurasian as associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of &quot;Eurasian&quot; (e.g. @@#eurasianRace@@) cultural identities.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité du terme «eurasien·ne». Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «eurasiennes» (par exemple @@#eurasianRace@@)</skos:definition>
     <cwrc:literalForm xml:lang="en">eurasian</cwrc:literalForm>
     <cwrc:literalForm xml:lang="fr">eurasien</cwrc:literalForm>
     <owl:oneOf rdf:parseType="Collection">
@@ -5544,8 +5545,8 @@ At the heart of a persona is an identity that is interacted with by others and t
     <foaf:name xml:lang="en">english</foaf:name>
     <cwrc:literalForm xml:lang="en">english</cwrc:literalForm>
     <cwrc:literalForm xml:lang="fr">anglais</cwrc:literalForm>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of Englishness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "English" (e.g. @@#englishNationalIdentity@@, @@#englishGeographicHeritage@@) cultural identities.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of Englishness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of &quot;English&quot; (e.g. @@#englishNationalIdentity@@, @@#englishGeographicHeritage@@) cultural identities.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité du terme «anglais·e». Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «anglaises» (par exemple @@#englishNationalIdentity@@, @@#englishGeographicHeritage@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#EnglishNationalHeritage"/>
@@ -5568,8 +5569,8 @@ At the heart of a persona is an identity that is interacted with by others and t
     <cwrc:literalForm xml:lang="en">man</cwrc:literalForm>
     <cwrc:literalForm xml:lang="fr">homme</cwrc:literalForm>
     <foaf:name xml:lang="en">Man (Label)</foaf:name>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of manhood, masculinity, or maleness as associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "man" (e.g. @@#man@@, @@#cisMan@@) cultural identities.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of manhood, masculinity, or maleness as associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of &quot;man&quot; (e.g. @@#man@@, @@#cisMan@@) cultural identities.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la masculinité, ou de la virilité. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «masculines» (par exemple @@#man@@, @@#cisMan@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#man"/>
@@ -5587,8 +5588,8 @@ At the heart of a persona is an identity that is interacted with by others and t
     <cwrc:literalForm xml:lang="en">woman</cwrc:literalForm>
     <cwrc:literalForm xml:lang="fr">femme</cwrc:literalForm>
     <foaf:name xml:lang="en">Woman (Label)</foaf:name>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of womanhood, femininity, or femaleness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "woman" (e.g. @@#woman@@, @@#transWoman@@) cultural identities.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of womanhood, femininity, or femaleness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of &quot;woman&quot; (e.g. @@#woman@@, @@#transWoman@@) cultural identities.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la féminité. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «féminines» (par exemple @@#woman@@, @@#transWoman@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#woman"/>
@@ -5606,7 +5607,7 @@ At the heart of a persona is an identity that is interacted with by others and t
     <cwrc:literalForm xml:lang="en">queer</cwrc:literalForm>
     <cwrc:literalForm xml:lang="fr"/>
     <foaf:name xml:lang="en">queer (Label)</foaf:name>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of queerness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "Queer" (e.g. @@#GenderQueer@@) cultural identities.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of queerness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of &quot;Queer&quot; (e.g. @@#GenderQueer@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
@@ -5622,8 +5623,8 @@ At the heart of a persona is an identity that is interacted with by others and t
     <foaf:name xml:lang="en">Jewish</foaf:name>
     <cwrc:literalForm xml:lang="en">Jewish</cwrc:literalForm>
     <cwrc:literalForm xml:lang="fr">Juif</cwrc:literalForm>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of Jewishness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "Jewish" (e.g. @@#jewishNationalIdentity@@, @@#jewishRaceColour@@) cultural identities.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of Jewishness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of &quot;Jewish&quot; (e.g. @@#jewishNationalIdentity@@, @@#jewishRaceColour@@) cultural identities.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la juidaïcité. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «juives» (par exemple @@#jewishNationalIdentity@@, @@#jewishRaceColour@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#judaism"/>
