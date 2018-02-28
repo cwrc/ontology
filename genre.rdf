@@ -267,6 +267,7 @@
     <skos:definition xml:lang="zh-hant">各行首字母可組成一個字、詞，或座右銘的短詩或散文作品。 (<![CDATA[<a href="#_getty_2017">Getty, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300256198"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <skos:broaderTransitive rdf:resource="#genrePoetry"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreAdaptation">
     <rdf:value>ADAPTATION</rdf:value>
@@ -598,6 +599,7 @@
     <skos:definition xml:lang="fr">La bergamasque est une danse traditionnelle provenant de la ville de Bergame dans le nord de l'Italie. Son existence est attestée depuis le début du XVIe siècle. Danse de couples disposés en cercle jusqu'au XVIIe siècle, vive et sautillante, elle est souvent utilisée dans la commedia dell'arte. La bergamasque d'un compositeur français se trouve dans le Thesaurus harmonicus (1603) de Jean-Baptiste Besard.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Bergamask"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
+    <skos:broaderTransitive rdf:resource="#genreDrama"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreBestiary">
     <rdf:value>BESTIARY</rdf:value>
@@ -2754,6 +2756,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="fr">Un oratorio est une œuvre lyrique dramatique représentée sans mise en scène, ni costumes, ni décors. Généralement composé pour voix solistes, chœur et orchestre symphonique, avec parfois un narrateur, son sujet est le plus souvent religieux (épisode extrait de la Bible, de la vie de Jésus, d’un(e) saint(e)… ) mais peut être aussi profane (héros mythologique, sujet historique, hymne à la nature…). Formellement assez proche de la cantate et de l’opéra, l'oratorio comprend généralement une ouverture, des récitatifs, des airs et des chœurs.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Oratorio"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
+    <skos:broaderTransitive rdf:resource="#genreSong"/>
   </genre:Genre>
   <genre:Genre rdf:about="#genreOriental">
     <rdf:value>ORIENTAL</rdf:value>
@@ -3612,7 +3615,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#Genre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">A lyric poem with a number of repeating stanzas (called refrains), written to be set to music in either vocal performance or with accompaniment of musical instruments. See dawn song and lyric, above and stanza, below.  (<![CDATA[<a href="#_wheeler_2017">L. K Wheeler, 2017</a>]]>)</skos:definition>
+    <skos:definition xml:lang="en">A lyric poem with a number of repeating stanzas (called refrains), written to be set to music in either vocal performance or with accompaniment of musical instruments. (<![CDATA[<a href="#_wheeler_2017">L. K Wheeler, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://web.cn.edu/kwheeler/lit_terms_s.html"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
     <skos:definition xml:lang="fr">Une chanson ou un chant est une œuvre musicale composée d'un texte et d'une mélodie destinée à être interprétée par la voix humaine. Cette interprétation peut se faire sans accompagnement instrumental, c'est-à-dire a cappella, ou au contraire être accompagnée d'un ou plusieurs instruments (guitare, piano, groupe, voire un big band ou un grand orchestre symphonique). Elle peut être à une voix (monodie) ou à plusieurs (polyphonie) comme dans un choral.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
