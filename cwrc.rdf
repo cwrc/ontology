@@ -1906,6 +1906,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broaderTransitive rdf:resource="#abrahamicReligions"/>
+    <skos:narrowerTransitive rdf:resource="#buddhism"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#christianScience">
     <rdfs:label xml:lang="en">Christian Science</rdfs:label>
@@ -2661,7 +2662,7 @@
     <skos:definition xml:lang="en">&quot;Opposition to the Second Boer War in Britain was modest when the war began on 11 October 1899 and was always less widespread than support for it, let alone prevailing indifference. However, influential groups formed immediately and ineffectually against the war, including the South African Conciliation Committee and W. T. Stead's Stop the War Committee.&quot; <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Opposition_to_the_Second_Boer_War"/>
-    <skos:related rdf:resource="#anti-WarMovement"/>
+    <skos:related rdf:resource="#anti-War"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -2807,7 +2808,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:contraryTo rdf:resource="#pro-communism"/>  
+    <cwrc:contraryTo rdf:resource="#communism"/>  
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Conscriptionism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2817,11 +2818,11 @@
     <skos:definition xml:lang="en">Opposition to compulsory enlistment of people in either war or peacetime into a national service, usually military service.</skos:definition>
     <skos:definition xml:lang="fr">Opposition à la conscription militaire obligatoire pour le service nationale en temps de guerre ou de paix, généralement à travers le service militaire. Voir @@https://fr.wikipedia.org/wiki/Antimilitarisme@@ </skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
-    <skos:related rdf:resource="#anti-WarMovement"/>
+    <skos:related rdf:resource="#anti-War"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:contraryTo rdf:resource="#pro-communism"/>    
+    <cwrc:contraryTo rdf:resource="#communism"/>    
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-ContagiousDiseasesAct">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3132,7 +3133,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:contraryTo rdf:resource="#labourMouvement"/>
+    <cwrc:contraryTo rdf:resource="#labourMovement"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Urbanism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3276,7 +3277,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broaderTransitive rdf:resource="#socialReform"/>
     <skos:related rdf:resource="#feminism"/>
-    <skos:related rdf:resource="#pro-choice"/>
+    <skos:related rdf:resource="#pro-Choice"/>
     <skos:related rdf:resource="#sexualReform"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#blackAnti-Oppression">
@@ -3559,7 +3560,7 @@
     <skos:definition xml:lang="en">&quot;The Tories were members of two political parties which existed, sequentially, in the Kingdom of England, the Kingdom of Great Britain, and later the United Kingdom of Great Britain and Ireland from the 17th to the early 19th centuries. The first Tories emerged in 1678 in England, when they opposed the Whig-supported Exclusion Bill which set out to disinherit the heir presumptive James, Duke of York (who eventually became James II of England and VII of Scotland). This party ceased to exist as an organised political entity in the early 1760s, although it was used as a term of self-description by some political writers. A few decades later, a new Tory party would rise to establish a hold on government between 1783 and 1830, with William Pitt the Younger followed by Robert Jenkinson, 2nd Earl of Liverpool. The Earl of Liverpool was succeeded by fellow Tory Arthur Wellesley, 1st Duke of Wellington, whose term included the Catholic Emancipation, which occurred mostly due to the election of Daniel O'Connell as a Catholic MP from Ireland. When the Whigs subsequently regained control, the Representation of the People Act 1832 removed the rotten boroughs, many of which were controlled by Tories. In the following general election, the Tory ranks were reduced to 180 MPs. Under the leadership of Robert Peel, the Tamworth Manifesto was issued, which began to transform the Tories into the Conservative Party. However, Peel lost many of his supporters by repealing the Corn Laws, causing the party to break apart. One faction, led by the Earl of Derby and Benjamin Disraeli, survived to become the modern Conservative Party, whose members are commonly still referred to as Tories.&quot; <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Tories_(British_political_party)"/>
-    <skos:related rdf:resource="#toryPartyUk"/>
+    <skos:related rdf:resource="#toryPartyBritain"/>
     <skos:broaderTransitive rdf:resource="#conservatism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -3619,7 +3620,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:contraryTo rdf:resource="#antisematism"/>
+    <cwrc:contraryTo rdf:resource="#antisemitism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#educationReform">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -4395,7 +4396,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:contraryTo rdf:resource="#anti-antisemitism"/>
+    <cwrc:contraryTo rdf:resource="#anti-Antisemitism"/>
     <skos:related rdf:resource="#antisemitism"/>
     <skos:related rdf:resource="#fascism"/>
   </cwrc:PoliticalAffiliation>
@@ -4466,7 +4467,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:related rdf:resource="#anti-WarMovement"/>
+    <skos:related rdf:resource="#anti-War"/>
     <skos:related rdf:resource="#anti-Conscriptionism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#parliamentarianism">
@@ -5118,8 +5119,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:contraryTo rdf:resource="#anti-feminism"/>
-    <skos:related rdf:resource="#anti-racism"/>
+    <cwrc:contraryTo rdf:resource="#anti-Feminism"/>
+    <skos:related rdf:resource="#anti-Racism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#womensEducationReform">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -5142,7 +5143,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broaderTransitive rdf:resource="#educationReform"/>
     <skos:broaderTransitive rdf:resource="#feminism"/>
-    <cwrc:contraryTo rdf:resource="#anti-feminism"/>
+    <cwrc:contraryTo rdf:resource="#anti-Feminism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#womensEmploymentReform">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -5161,7 +5162,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:contraryTo rdf:resource="#anti-feminism"/>
+    <cwrc:contraryTo rdf:resource="#anti-Feminism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#zionism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
