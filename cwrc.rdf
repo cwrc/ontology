@@ -362,9 +362,29 @@
     <rdfs:range rdf:resource="#Event"/>
     <owl:inverseOf rdf:resource="#hasParticipant"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasLocation">
+    <rdfs:label xml:lang="en">has Location</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">The location of a thing. For example where an event took place or a organization is located</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="locationOf">
+    <rdfs:label xml:lang="en">location Of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Things that are or were at this location at some point in time.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:inverseOf rdf:resource="#hasLocation"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty> 
 
 
 <!-- Education -->
