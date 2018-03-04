@@ -332,18 +332,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
-  <owl:Class rdf:ID="EventElement">
-    <foaf:name>performance</foaf:name>
-    <rdfs:label xml:lang="en">Event Element</rdfs:label>
-    <rdfs:label xml:lang="fr">élément d'évènement</rdfs:label>
-    <skos:definition xml:lang="en">An event element by an agent in an event under a specific context, be it in a role, character or responsibility.</skos:definition>
-    <skos:definition xml:lang="fr"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subClassOf rdf:resource="#Event"/>
-  </owl:Class>
-
   <owl:ObjectProperty rdf:ID="hasActor">
     <rdfs:label xml:lang="en">has Actor</rdfs:label>
     <rdfs:label xml:lang="fr">a un acteur</rdfs:label>
@@ -388,67 +376,6 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-
-  <owl:Class rdf:ID="BirthEvent">
-    <foaf:name>birth</foaf:name>
-    <rdfs:label xml:lang="en">birth</rdfs:label>
-    <rdfs:label xml:lang="fr">naissance</rdfs:label>
-    <rdfs:label xml:lang="de">geburt</rdfs:label>
-    <skos:definition xml:lang="en">The birth event of a person.</skos:definition>
-    <skos:definition xml:lang="fr"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subClassOf rdf:resource="#Event"/>
-    <time:before rdf:resource="#DeathEvent"/>
-  </owl:Class>
-
-
-  <owl:Class rdf:ID="DeathEvent">
-    <foaf:name>death</foaf:name>
-    <rdfs:label xml:lang="en">death</rdfs:label>
-    <rdfs:label xml:lang="fr">mort</rdfs:label>
-    <rdfs:label xml:lang="de">tod</rdfs:label>
-    <skos:definition xml:lang="en">The death event of a person.</skos:definition>
-    <skos:definition xml:lang="fr"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subClassOf rdf:resource="#Event"/>
-    <time:after rdf:resource="#BirthEvent"/>
-  </owl:Class>
-
-
-  <owl:Class rdf:ID="LifeEvent">
-    <foaf:name>life event</foaf:name>
-    <rdfs:label xml:lang="en">life event</rdfs:label>
-    <rdfs:label xml:lang="fr">évènement au cours de la vie</rdfs:label>
-    <rdfs:label xml:lang="de">lebensereignis</rdfs:label>
-    <skos:definition xml:lang="en">An event during the life of a person.</skos:definition>
-    <skos:definition xml:lang="fr"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subClassOf rdf:resource="#Event"/>
-    <time:after rdf:resource="#BirthEvent"/>
-    <time:before rdf:resource="#DeathEvent"/>
-  </owl:Class>
-
-
-  <owl:Class rdf:ID="AfterLifeEvent">
-    <foaf:name>after life event</foaf:name>
-    <rdfs:label xml:lang="en">after life event</rdfs:label>
-    <rdfs:label xml:lang="fr">évènement posthume</rdfs:label>
-    <rdfs:label xml:lang="de">nachlebensereignis</rdfs:label>
-    <skos:definition xml:lang="en">An event whose principal is a person that is deceased. Could be used for a funeral, an influence over a living author, or the estate of a deceased person.</skos:definition>
-    <skos:definition xml:lang="fr"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subClassOf rdf:resource="#Event"/>
-    <time:after rdf:resource="#BirthEvent"/>
-    <time:after rdf:resource="#DeathEvent"/>
-  </owl:Class>
 
 <!-- Education -->
 
