@@ -315,8 +315,19 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Associates a subject with an event</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <rdfs:domain rdf:resource="#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:range rdf:resource="#Event"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="eventOf">
+    <rdfs:label xml:lang="en">event Of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Associates an event with a subject or an event with another event.</skos:definition>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="#Event"/>
+    <owl:inverseOf rdf:resource="#hasEvent"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
