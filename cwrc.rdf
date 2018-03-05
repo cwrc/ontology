@@ -292,6 +292,78 @@
   </owl:ObjectProperty>
 
 
+  <!-- Certainty -->
+
+  <owl:Class rdf:ID="Certainty">
+    <rdfs:label xml:lang="en">Certainty</rdfs:label>
+    <skos:definition xml:lang="en">Certainty describes the quality of a fact in the ontology. It is used primarily to represent information that may not be fact.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <skos:closeMatch rdf:resource="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.certainty.html"/>
+  </owl:Class>
+
+  <cwrc:Certainty rdf:about="lowCertainty">
+    <rdfs:label xml:lang="en">Low Certainty</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">A predefined value of Certainty that represents cases where where a fact is considered of low quality</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </cwrc:Certainty>
+
+  <cwrc:Certainty rdf:about="mediumCertainty">
+    <rdfs:label xml:lang="en">medium certainty</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">A predefined value of Certainty that represents cases where where a fact is considered of medium quality</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </cwrc:Certainty>
+
+  <cwrc:Certainty rdf:about="highCertainty">
+    <rdfs:label xml:lang="en">high certainty</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">A predefined value of Certainty that represents cases where where a fact is considered of high quality</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </cwrc:Certainty>
+
+  <cwrc:Certainty rdf:about="highCertainty">
+    <rdfs:label xml:lang="en">unkown certainty</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">A predefined value of Certainty that is used when one does not want to assert an opinion on certainty</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </cwrc:Certainty>
+
+  <owl:ObjectProperty rdf:ID="hasCertainty">
+    <rdfs:label xml:lang="en">has certainty</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Associates a level of certainty for a source</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <owl:range rdf:resource="#Certainty"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="certaintyOf">
+    <rdfs:label xml:lang="en">certainty of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Links a level of certainty to a source</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <owl:domain rdf:resource="#Certainty"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+
   <!-- Events and Actors -->
 
   <owl:Class rdf:ID="Event">
