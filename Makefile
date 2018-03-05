@@ -52,12 +52,12 @@ genre-ref.bib:
 cwrc-ref.bib:
 	curl  "https://api.zotero.org/groups/1018142/items/top?start=0&limit=100&format=bibtex&v=1" | grep -v "abstract = {" | grep -v "keywords = {" > cwrc-ref.bib
 
-figures/religionTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: cwrc.rdf scripts/createTaxonomy.pl
-	./scripts/createTaxonomy.pl cwrc.rdf Religion $(O_LANG) | unflatten -l 5 -c 10 | dot -ofigures/religionTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
-figures/politicalAffiliationTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: cwrc.rdf scripts/createTaxonomy.pl
-	./scripts/createTaxonomy.pl cwrc.rdf PoliticalAffiliation $(O_LANG) | unflatten -l 20 -c 20 | dot -ofigures/politicalAffiliationTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
-figures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: genre.rdf scripts/createTaxonomy.pl
-	./scripts/createTaxonomy.pl genre.rdf Genre $(O_LANG) | unflatten -l 20 -c 30 | dot -ofigures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
+figures/religionTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: cwrc.rdf scripts/createTaxonomy.py
+	./scripts/createTaxonomy.py cwrc.rdf Religion $(O_LANG) | unflatten -l 5 -c 10 | dot -ofigures/religionTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
+figures/politicalAffiliationTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: cwrc.rdf scripts/createTaxonomy.py
+	./scripts/createTaxonomy.py cwrc.rdf PoliticalAffiliation $(O_LANG) | unflatten -l 20 -c 20 | dot -ofigures/politicalAffiliationTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
+figures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg: genre.rdf scripts/createTaxonomy.py
+	./scripts/createTaxonomy.py genre.rdf Genre $(O_LANG) | unflatten -l 20 -c 30 | dot -ofigures/genreTaxonomy-$(ONTOLOGY_DATE)-$(O_LANG).svg -Tsvg 
 
 $(ONTOLOGY).html: $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html
 	cp -f $(ONTOLOGY)-$(ONTOLOGY_DATE)-EN.html $(ONTOLOGY).html

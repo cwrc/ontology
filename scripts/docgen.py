@@ -394,7 +394,7 @@ def create_dictionary_html(dictionary):
         html_str += """<div class="defn">%s</div>""" % (get_defn_html(get_definition_list(uri)))
         html_str += """<div class = "conceptlist">"""
         # instance_list = [str(s).split("#")[1] for s, p, o in o_graph.triples((None, SKOS.inScheme, uri))]
-        instance_list = [str(s).split("#")[1] for s, p, o in o_graph.triples(
+        instance_list = [get_uri_term(str(s)) for s, p, o in o_graph.triples(
             (None, RDF.type, uri)) if str(s) not in deprecated_uris]
         html_str += create_link_lists(sorted(instance_list), "Concepts:")
         html_str += "</div>\n"
