@@ -305,7 +305,7 @@
     <skos:closeMatch rdf:resource="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.certainty.html"/>
   </owl:Class>
 
-  <cwrc:Certainty rdf:about="lowCertainty">
+  <cwrc:Certainty rdf:about="#lowCertainty">
     <rdfs:label xml:lang="en">Low Certainty</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">A predefined value of Certainty that represents cases where where a fact is considered of low quality</skos:definition>
@@ -314,7 +314,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </cwrc:Certainty>
 
-  <cwrc:Certainty rdf:about="mediumCertainty">
+  <cwrc:Certainty rdf:about="#mediumCertainty">
     <rdfs:label xml:lang="en">medium certainty</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">A predefined value of Certainty that represents cases where where a fact is considered of medium quality</skos:definition>
@@ -323,7 +323,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </cwrc:Certainty>
 
-  <cwrc:Certainty rdf:about="highCertainty">
+  <cwrc:Certainty rdf:about="#highCertainty">
     <rdfs:label xml:lang="en">high certainty</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">A predefined value of Certainty that represents cases where where a fact is considered of high quality</skos:definition>
@@ -332,7 +332,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </cwrc:Certainty>
 
-  <cwrc:Certainty rdf:about="unknownCertainty">
+  <cwrc:Certainty rdf:about="#unknownCertainty">
     <rdfs:label xml:lang="en">unknown certainty</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">A predefined value of Certainty that is used when one does not want to assert an opinion on certainty</skos:definition>
@@ -1409,6 +1409,8 @@
     <skos:definition xml:lang="fr">
       «Le terme Blanc est employé, dans le langage courant, pour désigner des êtres humains caractérisés notamment par une couleur de peau claire. Le terme est généralement employé pour désigner les individus présentant des caractéristiques physiques qui sont historiquement associées aux populations européennes. La définition d'un «individu blanc» diffère sensiblement d'après les contextes historiques, légaux, culturels, et géographiques. Dans certains contextes, en particulier aux États-Unis, le terme «caucasien» est utilisé comme synonyme. D'un point de vue biologique, la peau blanche est une adaptation génétique issue de la sélection naturelle favorisant la synthèse de la vitamine D en milieu faiblement ensoleillé en permettant une pénétration plus profonde des rayons de soleil dans l'épiderme du fait d'un taux de mélanine plus bas. Les latitudes tempérées sont moins soumises aux risques liés au rayonnement ultraviolet, à l'inverse des milieux fortement ensoleillés dans lesquels les individus ont la peau plus foncée.» <![CDATA[<a href="http://dbpedia.org/page/Blanc_(humain)">(DBpedia, 2017)</a>]]>
     </skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/White_people"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#RaceColour"/>
@@ -1432,6 +1434,8 @@
     <skos:definition xml:lang="fr">
       «Le terme métis (du mot latin mixtīcius ou mixtus qui signifie «mélangé»/«mêlé») est employé, dans le langage courant, pour désigner des personnes nées de parents aux origines géographiques ou aux phénotypes différents. Le métissage humain est appelé créolisation aux Antilles, à La Réunion, à l'île Maurice, en Guyane ou au Brésil. Le métissage peut être aussi entendu comme un processus culturel (linguistique, artistique…). La pertinence analytique de la notion est contestée par des chercheurs en sciences sociales car elle supposerait qu'il existe des «entités pures», ou des races, distinctes au sein de l'espèce humaine.«Au Canada,»Métis (avec majuscule) désigne un peuple autochtone habitant principalement le centre du pays, descendant des femmes cries, ojibwés, saulteaux et de colons pour la plupart français.» <![CDATA[<a href="https://fr.wikipedia.org/wiki/M%C3%A9tis">(Wikipedia, 2017)</a>]]>
     </skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Multiracial"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#RaceColour"/>
@@ -1451,6 +1455,8 @@
     <skos:definition xml:lang="fr">
       «La catégorie Noir(e) est généralement employée en français pour distinguer un être humain ayant la peau foncée. S'il désigne souvent des êtres humains originaires d'Afrique subsaharienne, ce terme peut être utilisé pour qualifier des personnes asiatiques (Papous...) ou océaniennes (Aborigènes...). Les études scientifiques, fondées depuis le milieu du xxe siècle sur la génétique, ont affirmé que le concept de race n'est pas pertinent pour caractériser les différents sous-groupes géographiques de l'espèce humaine car la variabilité génétique entre individus d'un même sous-groupe est plus importante que la variabilité génétique moyenne entre sous-groupes géographiques. Le consensus scientifique actuel rejette en tout état de cause la présence d'arguments biologiques pour légitimer la notion de race, reléguée à une représentation arbitraire selon des critères morphologiques, ethnico-sociaux, culturels ou politiques, comme les identités. D'un point de vue biologique la peau foncée est un épiderme qui comporte un fort taux de mélanine, c'est donc une adaptation génétique issue de la sélection naturelle permettant une protection face aux radiations UV dans les milieux fortement ensoleillés. Ces milieux sont moins soumis au risque de carence en vitamine D à l'inverse des pays faiblement ensoleillés dans lesquels les individus ont la peau claire.» <![CDATA[<a href="http://dbpedia.org/page/Noir_(humain)">(DBpedia, 2017)</a>]]>
     </skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Black_people"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#RaceColour"/>
@@ -1468,6 +1474,8 @@
     <skos:definition xml:lang="fr">
       «Le terme asiatique désigne une personne originaire d'Asie, et présentant des caractéristiques physiques d'Asie de l'Est, d'Asie du Sud-Est et de certaines régions d'Asie centrale. En français, l'adjectif asiatique désigne, au sens large, tout ce qui se rapporte à l'Asie : dans le langage courant, quand il se rapporte à des personnes, il est cependant essentiellement utilisé pour désigner les populations originaires de ces régions asiatiques. Les personnes originaires d'autres régions d'Asie comme le Moyen-Orient ou le sous-continent indien ne sont que rarement appelées Asiatiques, bien qu'elles le soient également au sens géographique.»
     </skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Asian_people"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#RaceColour"/>
@@ -1484,6 +1492,8 @@
     <skos:definition xml:lang="fr">
       «Les Juifs (en hébreu : יְהוּדִים / yehoudim, en grec ancien : Ἰουδαῖοι / Ioudaĩoi, en latin : Iudaei, etc.) sont les membres d’un peuple lié à sa propre religion, le judaïsme, et au sens large du terme à une appartenance ethnique et religieuse. La tradition juive relie leur ascendance aux patriarches Abraham, Isaac et Jacob également appelé Israël. Ils peuplent la Judée et le royaume d'Israël, structurant leur quotidien autour de la Bible hébraïque, laquelle comprend les cinq Livres de la Torah attribués à Moïse, les Livres des prophètes ultérieurs et d’autres écrits. La Bible définit leurs croyances, leur histoire, leur identité nationale et légifère dans tous les domaines de leur vie. À la suite des aléas de leur histoire, les Juifs migrent ou sont déportés de la Judée et essaiment à travers le monde. La diaspora juive résulte principalement de la conjonction de deux facteurs, une volonté d'essaimage et la nécessité de fuir des persécutions. Tentant de conserver leur mode de vie ancestral au sein des populations avoisinantes dans lesquelles ils s’acculturent, ils développent des traditions religieuses, culinaires et des langues propres ainsi que d’autres traits spécifiques. Réciproquement, ils exercent un certain attrait sur leurs populations d’accueil et l’on enregistre dans l’Empire romain un nombre important de conversions au judaïsme. L’impact et la proportion de ces conversions font débat au sein des historiens. Leur histoire sur plus de deux millénaires en Europe est marquée par des persécutions qui culminent au xxe siècle avec la Shoah. Les grandes révolutions de l’ère moderne entraînent chez nombre d’entre eux une perte ou un abandon de tout ou partie des repères traditionnels. Plusieurs tentatives sont menées pour les redéfinir en tant qu’entité confessionnelle, nationale ou culturelle de sorte qu’en français, l'usage commun distingue entre les Juifs (avec une majuscule — les «personnes descendant de l'ancien peuple d'Israël») et les juifs (sans majuscule — «personnes qui professent le judaïsme»). Le nombre total des Juifs contemporains est difficile à estimer avec précision, et fait l'objet de controverses, mais, selon une estimation effectuée en 2013, il serait d'environ 13,8 millions. La majorité d'entre eux vit en Israël et aux États-Unis, et les autres principalement en Europe, au Canada et en Amérique latine.» <![CDATA[<a href="http://dbpedia.org/page/Jews">(DBpedia, 2017)</a>]]>
     </skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Jews"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#RaceColour"/>
@@ -1495,9 +1505,11 @@
     <rdfs:label xml:lang="fr">eurasien</rdfs:label>
     <foaf:name xml:lang="en">eurasian (race colour)</foaf:name>
     <skos:definition xml:lang="en">
-      A Eurasian is a person of mixed Asian and European ancestry. In 19th-century British India, Eurasians — later called Anglo-Indians — were of mixed Portuguese, Dutch, British, Indian or, more rarely, French descent, but now their parentage may be from other parts of South, East or Southeast Asia. The term has been used in anthropological literature since the 1960s. It may also be extended to those with Central Asian heritage.
+      &quot;A Eurasian is a person of mixed Asian and European ancestry. In 19th-century British India, Eurasians — later called Anglo-Indians — were of mixed Portuguese, Dutch, British, Indian or, more rarely, French descent, but now their parentage may be from other parts of South, East or Southeast Asia. The term has been used in anthropological literature since the 1960s. It may also be extended to those with Central Asian heritage.&quot; <![CDATA[<a href="http://dbpedia.org/page/Eurasian_(mixed_ancestry)">(DBpedia, 2017)</a>]]>
     </skos:definition>
-    <skos:definition xml:lang="fr">Un·e Eurasien·ne e est une personne d'ascendance mixte asiatique et européenne. Dans l'Inde britannique du XIXe siècle, les personnes d'ascendance eurasienne (plus tard anglo-indienne) étaient d'origine mixte portugaise, hollandaise, britannique, indienne ou, plus rarement, française, mais leur ascendance pouvait provenir d'autres régions de l'Asie du Sud, de l'Est ou du Sud-Est. Le terme est utilisé en anthropologie depuis les années 1960. Il peut également être étendu aux personnes possédant des origines d'Asie centrale.</skos:definition>
+    <skos:definition xml:lang="fr">«Un·e Eurasien·ne e est une personne d'ascendance mixte asiatique et européenne. Dans l'Inde britannique du XIXe siècle, les personnes d'ascendance eurasienne (plus tard anglo-indienne) étaient d'origine mixte portugaise, hollandaise, britannique, indienne ou, plus rarement, française, mais leur ascendance pouvait provenir d'autres régions de l'Asie du Sud, de l'Est ou du Sud-Est. Le terme est utilisé en anthropologie depuis les années 1960. Il peut également être étendu aux personnes possédant des origines d'Asie centrale.» <![CDATA[<a href="http://dbpedia.org/page/Eurasian_(mixed_ancestry)">(DBpedia, 2017)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <skos:inScheme rdf:resource="#RaceColour"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1541,6 +1553,8 @@
     <skos:definition xml:lang="fr">
       «Cet article propose une liste des groupes ethniques d'Afrique, non exhaustive (on peut en dénombrer près de 2 000 sur le continent africain et à Madagascar) et en cours d'élaboration. Comme il s'agit de sociétés vivantes, ces distinctions et divisions sont toujours discutées et en évolution, il n'en existe donc pas de représentation unique. La notion d'ethnie est controversée au sein de l'anthropologie contemporaine, notamment francophone. En particulier, il n'existe pas d'accord sur des critères permettant de délimiter tous les groupes (langue, culture, territoire, sentiment d'appartenance…) Ce répertoire alphabétique a donc surtout une finalité pratique. Il appartient à chaque article d'apporter précisions et mise en perspective historique.»<![CDATA[<a href="http://dbpedia.org/page/Liste_des_groupes_ethniques_d%27Afrique">(DBpedia, 2017)</a>]]>
     </skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/List_of_ethnic_groups_of_Africa"/>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1558,6 +1572,8 @@
     <skos:definition xml:lang="fr">
       «Les Afro-Américains, également appelés Noirs américains ou, plus rarement, Africains-Américains, sont les citoyens des États-Unis ayant des ancêtres originaires d'Afrique noire. La grande majorité des Afro-Américains est descendante des esclaves déportés entre le début du xviie et le début du xixe siècle. Longtemps victimes de l'esclavage, de la ségrégation raciale et de la discrimination (en), la reconstruction après la guerre de Sécession, la déségrégation et le Mouvement des droits civiques constituent autant d'étapes vers la reconnaissance des droits des Afro-Américains. L’accession de Barack Obama à la tête des États-Unis en 2009 constitue bien d’un certain point de vue la fin de ce long cheminement mais n'empêche pas que les classes sociales afro-Américaines les plus démunies soient toujours confrontées au racisme et à la discrimination, notamment par certains membres des forces de police américaine.»<![CDATA[<a href="http://dbpedia.org/page/Afro-Américains">(DBpedia, 2017)</a>]]>
     </skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/African_Americans"/>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1576,6 +1592,8 @@
     <skos:definition xml:lang="fr">
       «L'appellation Ashkénaze, Ashkenaze ou Achkenaze désigne 'les Juifs de l'Europe occidentale, centrale et orientale qui sont d'origine et de langue germaniques par opposition à ceux qui sont originaires d'Espagne et sont dits séfarades (sefardim)'  et aux Juifs descendant des communautés juives des régions proche et moyen-orientales dits Mizrahim. Leur nom vient du patriarche biblique Ashkenaz. Les communautés ashkénazes se sont principalement concentrées en Allemagne, en Pologne, en Russie, dans l'ancien Empire austro-hongrois et, de façon plus clairsemée, dans le reste de l'Europe centrale et orientale. Les Ashkénazes sont caractérisés par des coutumes, un héritage culturel et des traditions religieuses particulières. À la différence des communautés séfarades ou mizrahim, la langue vernaculaire des Ashkénazes est le yiddish5, variété de moyen-haut allemand enrichie d’emprunts à l’hébreu, au polonais et au russe6). Certaines sources attestent de leur présence dans toute l'Europe du nord-ouest au début du Moyen  ge. Les Ashkénazes constituent aujourd'hui la catégorie la plus nombreuse du judaïsme mondial.» <![CDATA[<a href="http://dbpedia.org/page/Ashkénaze">(DBpedia, 2017)</a>]]>
     </skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Ashkenazi_Jews"/>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1592,6 +1610,8 @@
     <skos:definition xml:lang="fr">
       «Les Bengalis (Bengali: বাঙালি Bangali) sont le principal groupe ethnique de la région du Bengale partagée entre le Bangladesh et l'Inde. Les langues Bengalis sont les principales langues maternelles des Bengalis. Ils sont majoritaires au Bangladesh et dans les États du Bengale-Occidental et de Tripura d'Inde. Ils représentent quelque 150 millions d'individus au Bangladesh, 70 millions en Inde, 3 millions au Pakistan et forment d'importantes minorités d'Arabie Saoudite et des Émirats arabes unis. Environ 65 % des Bengalis sont Musulmans, 34 % Hindous, et moins de 1% sont de diverses confessions (dont Chrétiens). Les Bengalis Musulmans vivent principalement au Bangladesh, ou ils constituent plus de 80 % des croyants. Le reste des Bengalis, Hindous, vivent en Inde, surtout au Bengale-occidental. Au Bangladesh, entre 11 et 15% de la population Bengalie est Hindoue.» <![CDATA[<a href="http://dbpedia.org/page/Bengalis_(peuple)">(DBpedia, 2017)</a>]]>
     </skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Bengalis"/>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1607,6 +1627,8 @@
     <skos:definition xml:lang="fr">
       «La catégorie Noir(e) est généralement employée en français pour distinguer un être humain ayant la peau foncée. S'il désigne souvent des êtres humains originaires d'Afrique subsaharienne, ce terme peut être utilisé pour qualifier des personnes asiatiques (Papous...) ou océaniennes (Aborigènes…). Les études scientifiques, fondées depuis le milieu du xxe siècle sur la génétique, ont affirmé que le concept de race n'est pas pertinent pour caractériser les différents sous-groupes géographiques de l'espèce humaine car la variabilité génétique entre individus d'un même sous-groupe est plus importante que la variabilité génétique moyenne entre sous-groupes géographiques. Le consensus scientifique actuel rejette en tout état de cause la présence d'arguments biologiques pour légitimer la notion de race, reléguée à une représentation arbitraire selon des critères morphologiques, ethnico-sociaux, culturels ou politiques, comme les identités. D'un point de vue biologique la peau foncée est un épiderme qui comporte un fort taux de mélanine, c'est donc une adaptation génétique issue de la sélection naturelle permettant une protection face aux radiations UV dans les milieux fortement ensoleillés. Ces milieux sont moins soumis au risque de carence en vitamine D à l'inverse des pays faiblement ensoleillés dans lesquels les individus ont la peau claire.» <![CDATA[<a href="http://dbpedia.org/page/Noir_(humain)">(DBpedia, 2017)</a>]]>
     </skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Black_people"/>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1625,6 +1647,8 @@
     <skos:definition xml:lang="fr">
       «Les Celtes constituent une civilisation protohistorique qui se définit par l'usage de langues celtiques et par certains particularismes culturels. Ils ont jadis été présents sur une grande partie du continent européen et en Asie mineure. L'apogée de l'expansion celte se situe entre le viiie siècle av. J.-C. et le iiie siècle, marqué notamment par la civilisation laténienne au ve siècle av. J.-C. Une succession de conquêtes et de migrations les mènent jusqu'en Galatie, en Asie mineure. Ainsi, leur domination s'étendait dans l'Europe actuelle de Galice jusqu'à Galați.» <![CDATA[<a href="http://dbpedia.org/page/Celtes">(DBpedia, 2017)</a>]]>
     </skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Celts_(modern)"/>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1641,6 +1665,8 @@
       Les Européens sont les habitants de l'Europe. Au sens anthropologique, ils peuvent, plus simplement, être désignés par leur couleur de peau, c'est-à-dire comme «Blancs», bien que ce dernier terme soit moins précis car n'étant pas exclusif aux populations européennes. Du fait de la colonisation et de l'émigration européennes durant les siècles passés, de nombreux Européens ont quitté l'Europe, et le monde d'aujourd’hui se caractérise par une 'diaspora' européenne dans de nombreux pays (Amérique du Nord, Australie, Nouvelle-Zélande, pays du Sud de l'Amérique latine…), qui forment le monde occidental. Ce gentilé peut aussi désigner, selon une conception strictement géographique, les habitants du continent européen ; on peut plus rarement désigner comme Européens les citoyens de l'Union européenne (même si tout Européen n'est pas nécessairement citoyen de l'Union Européenne).
       <![CDATA[<a href="https://fr.wikipedia.org/wiki/Europ%C3%A9ens">Wikipédia</a>]]>
     </skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Ethnic_groups_in_Europe"/>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1658,6 +1684,8 @@
 
       À l'étranger, la langue Celte Irlandaise n'est pratiquement pas parlée, et cette langue s'efface surtout au profit de l'Anglais, en Amérique du Nord et en Océanie.» <![CDATA[<a href="http://dbpedia.org/page/Irlandais_(peuple)">(DBpedia, 2017)</a>]]>
     </skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Irish_people"/>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1674,6 +1702,8 @@
     <skos:definition xml:lang="fr">
       «Les Séfarades (parfois orthographié Sépharades) constituent une branche du judaïsme qui suit le judaïsme liturgique espagnol et portugais (en particulier dans la prononciation des mots des prières). Certains ont contribué aux sciences et techniques en al-Andalus comme Maïmonide, Abraham ibn Ezra, Juda Halevi, Nahmanide, Salomon ibn Gabirol et Moïse de Léon. Par extension, le terme «Séfarade» désigne aussi souvent les Juifs non ashkénazes qui ont souvent adopté le rite séfarade au contact des Juifs issus de l'émigration consécutive à l'expulsion des Juifs d'Espagne.» <![CDATA[<a href="http://dbpedia.org/page/Séfarade">(DBpedia, 2017)</a>]]>
     </skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Sephardi_Jews"/>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1690,6 +1720,8 @@
     <skos:definition xml:lang="fr">
       «Le terme Blanc est employé, dans le langage courant, pour désigner des êtres humains caractérisés notamment par une couleur de peau claire. Le terme est généralement employé pour désigner les individus présentant des caractéristiques physiques qui sont historiquement associées aux populations européennes. La définition d'un 'individu blanc' diffère sensiblement d'après les contextes historiques, légaux, culturels, et géographiques. Dans certains contextes, en particulier aux États-Unis, le terme 'caucasien' est utilisé comme synonyme. D'un point de vue biologique, la peau blanche est une adaptation génétique issue de la sélection naturelle favorisant la synthèse de la vitamine D en milieu faiblement ensoleillé en permettant une pénétration plus profonde des rayons de soleil dans l'épiderme du fait d'un taux de mélanine plus bas2,3. Les latitudes tempérées sont moins soumises aux risques liés au rayonnement ultraviolet, à l'inverse des milieux fortement ensoleillés dans lesquels les individus ont la peau plus foncée.» <![CDATA[<a href="http://dbpedia.org/page/Blanc_(humain)">(DBpedia, 2017)</a>]]>
     </skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="#whiteLabel"/>
@@ -1724,6 +1756,8 @@
     </skos:definition>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Jews"/>
     <skos:broader rdf:resource="#jewishLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1745,6 +1779,8 @@
      </skos:definition>
      <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Romani_people"/>
      <skos:inScheme rdf:resource="#Ethnicity"/>
+     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
      <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1759,6 +1795,8 @@
      <skos:definition xml:lang="fr">
        «Les Thraces constituaient un peuple de langue paléo-balkanique (donc indo-européenne) dont les tribus, signalées dans les Balkans en même temps que les Achéens, les Éoliens et les Ioniens, partageaient un ensemble de croyances, un mode de vie et une même langue avec des variantes et dialectes. Leur civilisation, encore mal connue, s'est épanouie du IIe millénaire av. J.‑C. au iiie siècle av. J.-C., sur un substrat anté-indo-européen dit «pélasge» développé dès le Ve millénaire av. J.‑C. comme civilisation agricole et pourvue de nécropoles richement dotées en or. L'étymologie de ce nom reste incertaine. Orale, la culture des Thraces était faite de légendes et de mythes incluant la croyance en l'immortalité sous la forme de l'«orphisme», décrit par Hérodote. Les connaissances que nous avons de ce peuple viennent des auteurs grecs anciens et de découvertes archéologiques récentes.» <![CDATA[<a href="http://dbpedia.org/page/Thraces">(DBpedia, 2017)</a>]]>
      </skos:definition>
+     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
      <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Thracians"/>
      <skos:inScheme rdf:resource="#Ethnicity"/>
      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1775,6 +1813,8 @@
      <skos:definition xml:lang="fr">
        «Le nom de Wendes, transcription germanique du latin Venedi, peut avoir plusieurs sens : Les Wendes (Venedi) en l'an 125, dans la perspective historique. Le mot désigne l'ensemble des Slaves. dans une perspective historique, communément admise par les milieux universitaires, l'ethnonyme Wenden désigne toutes les tribus slaves en allemand : c'est le nom donné au Moyen  ge par les Allemands à tous les peuples slaves établis sur le territoire délimité par l'Oder, la Spree, la Saale et les monts Métallifères. Les Wendes de la basse Elbe et de la côte Baltique étaient des Polabes et des Obodrites, ceux du sud-est des Slovinces et ceux de l'Elbe supérieure des Sorabes.»<![CDATA[<a href="http://dbpedia.org/page/Wendes">(DBpedia, 2017)</a>]]>
      </skos:definition>
+     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
      <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Wends"/>
      <skos:inScheme rdf:resource="#Ethnicity"/>
      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1810,6 +1850,7 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="fr">&quot;L'anglicanisme est une confession chrétienne présente principalement dans les pays qui ont pu être imprégnés par la culture anglaise incluant notamment, outre l'Angleterre, les anciennes colonies britanniques en Amérique et en Afrique. On retrouve tout de même plusieurs communauté anglicanes dans le monde, notamment en France. L'origine de cette confession remonte à la période antique de l'Église d'Angleterre, lorsque celle-ci était unie canoniquement et juridiquement à l'évêque de Rome. Puis, au XVIe siècle, lorsque le roi d'Angleterre Henri VIII rompit avec le pape de Rome pour causes politiques et théologiques. Ainsi, Henri VIII ne créa rien de nouveau : il extirpa l'autorité du pape de son royaume, sans pour autant modifier ou jeter de nouvelles bases théologiques pour l'Église, et remplaça l'autorité papale par la sienne propre. Depuis la reine Elizabeth Ire, le monarque a le titre de «gouverneur suprême», mais n'a qu'un rôle de maintien de l'ordre et du bon déroulement de la vie ecclésiale, mais aucune réelle autorité décisionnelle comme celle d'un évêque ou d'un synode. L'Archevêque de Canterbury porte le titre de «primat de toute l'Angleterre» et l'archevêque d'York porte quant à lui le titre de «primat de l'Angleterre». L'Église anglicane, tout comme l'Église orthodoxe, est une communion d'églises autocéphales, mais néanmoins interdépendantes. Bien que plusieurs églises anglicanes existent à travers le monde, comme c'est le cas pour l'Église catholique romaine (présente en France, en Espagne, etc.), ou encore pour l'Église orthodoxe (présente en Russie, en Serbie, etc.), il ne s'agit que d'une seule Église. Elles sont rassemblées dans la Communion anglicane , au sein de laquelle l'Église d'Angleterre et son primat, l'archevêque de Canterbury, ne jouissent que d'une primauté d'honneur. Ces églises sont en pleine communion (doctrinale, spirituelle, épiscopale, sacramentelle) les unes avec les autres et représentent ensemble environ 85 millions de fidèles. Les Églises de la Communion anglicane ont une structure épiscopale. Elles se disent à la fois catholiques et réformées, et l'anglicanisme a souvent été présenté comme une via media entre le catholicisme romain et le protestantisme. Elles se présentent comme des Églises catholiques non romaines, parce qu'elles se veulent en continuité avec la tradition apostolique (ainsi la patristique est très développée dans le monde anglican) et affirment avoir conservé la succession apostolique. L'Église orthodoxe du patriarcat œcuménique de Constantinople a reconnu la validité de la succession apostolique en 1922 ; cependant, d'autres patriarcats, comme celui de Russie, ne saurait reconnaître une quelconque succession apostolique, en autre par le fait de l'ordination épiscopale de femme, depuis janvier 2015. L'Église catholique romaine ne leur reconnait pas cette qualité : ainsi par la lettre apostolique Apostolicae Curae le pape Léon XIII déclare en 1896 «nulles et sans valeur» les ordinations anglicanes (doctrine confirmée par le motu proprio Ad Tuendam Fidem en 1998). Les archevêques anglicans de Canterbury et d'York ont donné leur réponse dans Saepius officio. Pour autant, lors du concile Vatican II est affirmée la «place particulière» des Anglicans, «qui gardent en partie les traditions et les structures catholiques». Par ailleurs, les Églises anglicanes se disent réformées parce qu'elles ont adhéré à certains principes nouveaux issus de la Réforme protestante en matière de doctrine et de liturgie.À l'origine, la doctrine anglicane est énoncée dans les Trente-neuf articles (Bill of XXXIX articles) qui ont longtemps eu une valeur impérative. L'éventail entre les positions doctrinales s'est ensuite élargi et donne lieu à de nombreuses classifications (Haute Église, Basse Église, Broad Church (en), Anglo-catholicisme, Évangélisme…). Alors que pendant longtemps la coexistence apaisée entre de telles positions divergentes était considérée comme une spécificité de l'anglicanisme, la communion est depuis la fin du XXe siècle soumise à de forts tiraillements sur certaines questions, notamment l'ordination des femmes et la position par rapport à l'homosexualité.&quot; <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Anglicanism"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
