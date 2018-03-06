@@ -262,7 +262,7 @@
     <rdfs:label xml:lang="en">persona</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <skos:definition xml:lang="en">The persona, unlike the role, cannot be adopted by people generally, but is specific to one natural person, or more rarely several natural persons. The persona is an original creation, often bearing meaning about the biographical, historical and sociological context to which its/their creator/s is/are attached. It is also important to recall that the persona cannot be associated with mental illness or multiple personality disorders, since they are not the product of a distorted or uncontrolled perception of reality. At the heart of a persona is an identity that is interacted with by others and that at times can be confused with an actual natural person. It is incarnated and developed by a natural person, and may have a social, literary, artistic or political activity.</skos:definition>
+    <skos:definition xml:lang="en">A persona, unlike a role, cannot be adopted by people generally, but is specific to one natural person, or more rarely several natural persons. A persona is an original creation, often bearing meaning regarding the biographical, historical and sociological context to which its/their creator/s is/are attached. Personas as defined here should not be associated with mental illness or multiple personality disorder, since they are not the product of a distorted or uncontrolled perception of reality. At the heart of a persona is an identity that is interacted with by others and that at times can be confused with an actual natural person. It is incarnated and developed by a natural person, and may have a social, literary, artistic or political activity.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -682,7 +682,7 @@
 
   <owl:ObjectProperty rdf:ID="hasStudent">
     <rdfs:label xml:lang="en">has Student</rdfs:label>
-    <skos:definition xml:lang="en">Indicates attending or having attended for education either a particular school or a particular type of schooling.</skos:definition>
+    <skos:definition xml:lang="en">Indicates that the student was educated by the entity in question,—an instructor, an educational institution, or a particular type of schooling.</skos:definition>
     <rdfs:range rdf:resource="#NaturalPerson"/>
     <rdfs:domain rdf:resource="#School"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1316,8 +1316,8 @@
     <rdf:value>LESBIAN</rdf:value>
     <rdf:value>LESBIANISM</rdf:value>
     <foaf:name xml:lang="en">lesbian (sexual identity)</foaf:name>
-    <skos:definition xml:lang="en">Lesbianism indicates the sexual attraction of women to other women. Yet, lesbian feminist thinkers underline that this common definition is reductive. Drawing on Kathleen Gough and within an understanding of heterosexuality as compulsory for women within patriarchy, Adrienne Rich describes a lesbian continuum, the &quot;range—through each woman's life and throughout history—of woman-identified experiences, not simply the fact that a woman has had or consciously desired genital sexual experience with another woman&quot; <![CDATA[<a href="#3A8049540f-3673-4ca0-920c-cb5326d7c466">(Of Blood Bread and Poetry, 1983)</a>]]>. In a heteronormative context, lesbianism is not only a question of sexuality but also has complex political implications.</skos:definition>
-    <skos:definition xml:lang="fr">Le lesbianisme indique l’attraction sexuelle entre les femmes. Cependant, certaines intellectuelles lesbiennes féministes soulignent l’aspect réducteur d’une telle définition. S’appuyant sur Kathleen Gough, Adrienne Rich interprète l’hétérosexualité comme obligatoire pour les femmes dans un contexte patriarcal, et évoque un continuum lesbien, les «diverses expériences spécifiques aux femmes—au cours de leur existence ou à travers l’Histoire— et non simplement le fait qu’une femme a eu ou a consciemment désiré avoir des expériences sexuelles avec une autre femme» <![CDATA[<a href="#3A8049540f-3673-4ca0-920c-cb5326d7c466">(Of Blood and Poetry, 1983)</a>]]>. Dans un contexte hétéronormatif, le lesbianisme ne relève donc pas seulement de la sexualité mais implique aussi des questions politiques complexes.</skos:definition>
+    <skos:definition xml:lang="en">Lesbianism indicates the sexual attraction of women to other women. Yet, lesbian feminist thinkers underline that this common definition is reductive. Drawing on Kathleen Gough and within an understanding of heterosexuality as compulsory for women within patriarchy, Adrienne Rich describes a lesbian continuum, the &quot;range—through each woman's life and throughout history—of woman-identified experiences, not simply the fact that a woman has had or consciously desired genital sexual experience with another woman&quot; <![CDATA[<a href="#3A8049540f-3673-4ca0-920c-cb5326d7c466">(Rich, 1983)</a>]]>. In a heteronormative context, lesbianism is not only a question of sexuality but also has complex political implications.</skos:definition>
+    <skos:definition xml:lang="fr">Le lesbianisme indique l’attraction sexuelle entre les femmes. Cependant, certaines intellectuelles lesbiennes féministes soulignent l’aspect réducteur d’une telle définition. S’appuyant sur Kathleen Gough, Adrienne Rich interprète l’hétérosexualité comme obligatoire pour les femmes dans un contexte patriarcal, et évoque un continuum lesbien, les «diverses expériences spécifiques aux femmes—au cours de leur existence ou à travers l’Histoire— et non simplement le fait qu’une femme a eu ou a consciemment désiré avoir des expériences sexuelles avec une autre femme» <![CDATA[<a href="#3A8049540f-3673-4ca0-920c-cb5326d7c466">(Rich, 1983)</a>]]>. Dans un contexte hétéronormatif, le lesbianisme ne relève donc pas seulement de la sexualité mais implique aussi des questions politiques complexes.</skos:definition>
     <skos:inScheme rdf:resource="#Sexuality"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <owl:sameAs rdf:resource="http://homosaurus.org/terms/lesbianIdentity"/>
@@ -5307,11 +5307,11 @@
 
 
   <owl:ObjectProperty rdf:ID="hasRaceColour">
-    <rdfs:label xml:lang="en">has race</rdfs:label>
-    <rdfs:label xml:lang="fr">est de race</rdfs:label>
+    <rdfs:label xml:lang="en">has race or colour</rdfs:label>
+    <rdfs:label xml:lang="fr">est de race our couleur</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#RaceColour"/>
-    <skos:definition xml:lang="en">A subproperty of @@#personalProperty@@, this describes a person's racial identity. For further information about this property, see @@#RaceColour@@.</skos:definition>
+    <skos:definition xml:lang="en">A subproperty of @@#personalProperty@@, this describes a person's racial identity. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
     <skos:definition xml:lang="fr">Sous-propriété de propriété personnelle, décrit l'identité raciale d'une personne. Pour plus d'information sur cette propriété, voir @@#RaceColour@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5415,7 +5415,7 @@
   <owl:ObjectProperty rdf:ID="hasSocialClassSelfReported">
     <rdfs:label xml:lang="en">has social class (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">de classe sociale (autodéclarés)</rdfs:label>
-    <skos:definition xml:lang="en">A subproperty of Personal Property Self-Reported indicating a person's self-reported social class.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's self-reported social class. For further information about this property, see social class.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-propriété de propriété personnelle autodéclarée qui indique la classe sociale autodéclarée d’une personne.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#SocialClass"/>
@@ -5429,14 +5429,14 @@
     <rdfs:label xml:lang="fr">connait la langue</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
-    <skos:definition xml:lang="en">Knowledge of the language for writing or reading.</skos:definition>
+    <skos:definition xml:lang="en">Knowledge of the language for writing or reading. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
     <skos:definition xml:lang="fr">Capacité d'écrire ou de lire une langue.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
  
   <owl:ObjectProperty rdf:ID="hasLinguisticAbilitySelfReported">
-    <rdfs:label xml:lang="en">language known (self reported)</rdfs:label>
+    <rdfs:label xml:lang="en">Self-reported oral or written ability with a language. For further information about this property, see @@#linguisticAbility@@.</rdfs:label>
     <rdfs:label xml:lang="fr">connait la langue (autodéclaré)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
@@ -5446,8 +5446,8 @@
  
   
   <owl:ObjectProperty rdf:ID="hasNativeLinguisticAbility">
-    <rdfs:label xml:lang="en">natively known language</rdfs:label>
-    <rdfs:label xml:lang="fr">a une langue maternelle</rdfs:label>
+    <rdfs:label xml:lang="en">Knowledge of the language, acquired during a person’s upbringing, for writing or reading. As with other cultural forms, an individual may have more than one property or descriptor of this type.</rdfs:label>
+    <rdfs:label xml:lang="fr">A une langue maternelle.</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
     <skos:definition xml:lang="en">Knowledge of the language for writing or reading.</skos:definition>
@@ -5457,7 +5457,7 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasNativeLinguisticAbilitySelfReported">
-    <rdfs:label xml:lang="en">natively known language (self reported)</rdfs:label>
+    <rdfs:label xml:lang="en">Self-reported knowledge of the language, acquired during a person’s upbringing, for writing or reading.</rdfs:label>
     <rdfs:label xml:lang="fr">a une langue maternelle (autodéclaré)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbilitySelfReported"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
