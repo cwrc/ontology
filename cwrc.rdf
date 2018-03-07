@@ -16,6 +16,7 @@
   xmlns:prov="http://www.w3.org/ns/prov#" 
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+  xmlns:schema="http://schema.org/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
   xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#" 
   xmlns:time="http://www.w3.org/2006/time#" 
@@ -791,7 +792,7 @@
     <rdfs:label xml:lang="fr">adresse</rdfs:label>
     <skos:definition xml:lang="en">A mailing or street address.</skos:definition>
     <skos:definition xml:lang="fr">Une adresse postale ou de rue.</skos:definition>
-    <skos:definition xml:lang="en">The postal address is the equivalent of a schema.org address and inherits all of the data from that vocabulary to markup a modern postal address.</skos:definition>
+    <rdfs:comment xml:lang="en">CWRC address is the equivalent of a schema.org Postal Address and uses the predicates from schema Postal Address.</rdfs:comment>
     <owl:sameAs rdf:resource="http://schema.org/PostalAddress"/>
     <rdfs:subClassOf rdf:resource="#Place"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
