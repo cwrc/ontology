@@ -5488,8 +5488,10 @@
   </owl:ObjectProperty>
  
   <owl:ObjectProperty rdf:ID="hasLinguisticAbilitySelfReported">
-    <rdfs:label xml:lang="en">Self-reported oral or written ability with a language. For further information about this property, see @@#linguisticAbility@@.</rdfs:label>
+    <rdfs:label xml:lang="en">language known (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">connait la langue (autodéclaré)</rdfs:label>
+    <skos:definition xml:lang="en">Self-reported oral or written ability with a language. For further information about this property, see @@#linguisticAbility@@.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5498,19 +5500,21 @@
  
   
   <owl:ObjectProperty rdf:ID="hasNativeLinguisticAbility">
-    <rdfs:label xml:lang="en">Knowledge of the language, acquired during a person’s upbringing, for writing or reading. As with other cultural forms, an individual may have more than one property or descriptor of this type.</rdfs:label>
-    <rdfs:label xml:lang="fr">A une langue maternelle.</rdfs:label>
+    <rdfs:label xml:lang="en">natively known language</rdfs:label>
+    <rdfs:label xml:lang="fr">a une langue maternelle</rdfs:label>
+    <skos:definition xml:lang="en">Knowledge of the language, acquired during a person’s upbringing, for writing or reading. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
+    <skos:definition xml:lang="fr">Capacité d'écrire ou de lire une langue.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
-    <skos:definition xml:lang="en">Knowledge of the language for writing or reading.</skos:definition>
-    <skos:definition xml:lang="fr">Capacité d'écrire ou de lire une langue.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasNativeLinguisticAbilitySelfReported">
-    <rdfs:label xml:lang="en">Self-reported knowledge of the language, acquired during a person’s upbringing, for writing or reading.</rdfs:label>
+    <rdfs:label xml:lang="en">natively known language (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">a une langue maternelle (autodéclaré)</rdfs:label>
+    <skos:definition xml:lang="en">Self-reported knowledge of the language, acquired during a person’s upbringing, for writing or reading.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbilitySelfReported"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
