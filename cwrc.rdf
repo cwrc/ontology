@@ -927,7 +927,7 @@
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
     <dcterms:subject rdf:resource="#SocialClass"/>
     <skos:definition xml:lang="en">Social Class Context is a significant subclass of context. Annotations typed as Social Class Context provide information about and discussions of a person's cultural formation in relation to social class identities and sometimes other intersecting Cultural Forms. Social Class Context provides depth to more granular indications of social class through the Social Class property<![CDATA[<a href="cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Orlando, 2006).</a>]]></skos:definition>
-    <skos:definition xml:lang="fr">Contexte Social est une sous-classe de contexte importante. Les annotations entrées en tant que Contexte Social fournissent des informations et des discussions sur un sujet en lien avec sa classe sociale et parfois avec d’autres Formes Culturelles. Contexte Social explore plus en détails les indications granulaires sur l’affiliation politique à travers les propriétés de Classe Sociale.<![CDATA[<a href="cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Orlando, 2006)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">Contexte Social est une sous-classe de contexte importante. Les annotations de Contexte Social fournissent des informations et des discussions relatives à la classe sociale et parfois à d’autres Formes Culturelles d'une personne. Contexte Social explore plus en détails les indications granulaires sur la classe sociale à travers les propriétés de Classe Sociale.<![CDATA[<a href="cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Orlando, 2006)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -1691,7 +1691,7 @@
       &quot;The Irish people (Irish: Muintir na hÉireann or Na hÉireannaigh) are a nation and ethnic group native to the island of Ireland, who share a common Irish ancestry, identity and culture. Ireland has been inhabited for about 9,000 years according to archaeological studies (see Prehistoric Ireland). For most of Ireland's recorded history, the Irish have been primarily a Gaelic people (see Gaelic Ireland). Anglo-Normans conquered parts of Ireland in the 12th century, while England's 16th/17th century (re)conquest and colonization of Ireland brought a large number of English and Lowland Scots to parts of the island, especially the north. Today, Ireland is made up of the Republic of Ireland (an independent state), and the smaller Northern Ireland (a part of the United Kingdom).&quot; <![CDATA[<a href="http://dbpedia.org/page/Irish_people">(DBpedia, 2017)</a>]]>
     </skos:definition>
     <skos:definition xml:lang="fr">
-      «Le peuple irlandais (en irlandais : Muintir na hÉireann, na hÉireannaigh ou na Gaeil) est un groupe ethnique d'Europe de l'Ouest originaire d'Irlande, une île de l'archipel des îles Britanniques. Les personnes d'appartenance ethnique irlandaise, vivant en dehors de ce pays, sont communes dans beaucoup de pays du monde occidental, particulièrement dans les pays anglophones. D'ailleurs, ce sont les États-Unis qui accueillent le plus grand nombre de personnes d'ascendance irlandaise avec environ la moitié de la population irlandaise mondiale, c'est-à-dire dix fois plus qu'en Irlande elle-même. Néanmoins, ce n'est qu'en République d'Irlande et en Irlande du Nord qu'ils forment la majorité de la population.
+      «Le peuple irlandais (en irlandais : Muintir na héireann, na héireannaigh ou na Gaeil) est un groupe ethnique d'Europe de l'Ouest originaire d'Irlande, une île de l'archipel des îles Britanniques. Les personnes d'appartenance ethnique irlandaise, vivant en dehors de ce pays, sont communes dans beaucoup de pays du monde occidental, particulièrement dans les pays anglophones. D'ailleurs, ce sont les États-Unis qui accueillent le plus grand nombre de personnes d'ascendance irlandaise avec environ la moitié de la population irlandaise mondiale, c'est-à-dire dix fois plus qu'en Irlande elle-même. Néanmoins, ce n'est qu'en République d'Irlande et en Irlande du Nord qu'ils forment la majorité de la population.
 
       À l'étranger, la langue Celte Irlandaise n'est pratiquement pas parlée, et cette langue s'efface surtout au profit de l'Anglais, en Amérique du Nord et en Océanie.» <![CDATA[<a href="http://dbpedia.org/page/Irlandais_(peuple)">(DBpedia, 2017)</a>]]>
     </skos:definition>
@@ -2403,21 +2403,21 @@
   </owl:Class>
   <cwrc:SocialClass rdf:about="#lowerMiddleClass">
     <rdfs:label xml:lang="en">lower-middle class</rdfs:label>
-    <rdfs:label xml:lang="fr">classe-moyenne inférieure</rdfs:label>
+    <rdfs:label xml:lang="fr">classe moyenne inférieure</rdfs:label>
     <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Employees, clerical workers, teachers, governesses. Note, however, that some teachers go into Professions (<![CDATA[<a href="https://en.wikipedia.org/wiki/Goodbye,_Mr._Chips_(1939_film)">Mr. Chips from the 1939 film of that name</a>]]>) and women starting schools and then managing them also go into Professions.</skos:definition>
-    <skos:definition xml:lang="fr">Cette classe inclut &quot;les employés/es, les travailleurs/euses du clergé, les instituteurs/trices et les gouvernantes. Notez toutefois que certains instituteurs/trices étaient considérés comme Professionnel (Mr. Chips)&quot;, de même que les femmes qui ouvrent et dirigent des écoles.</skos:definition>
+    <skos:definition xml:lang="fr">Cette classe inclut &quot;les employé•e•s, le personnel de bureau, les instituteur•ice•s et les gouvernantes. Il faut toutefois rappeler que certains des instituteur•ice•s entrent dans la catégorie des Professions (<![CDATA[<a href="https://fr.wikipedia.org/wiki/Au_revoir_Mr._Chips">Mr. Chips dans le film du même nom (1939)</a>]]>) ainsi que les femmes qui ouvrent et dirigent les écoles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#entrepreneurial-industrialist">
     <rdfs:label xml:lang="en">entrepreneurial</rdfs:label>
-    <rdfs:label xml:lang="fr">propriétaire industriel</rdfs:label>
+    <rdfs:label xml:lang="fr">entreprenariat</rdfs:label>
     <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">This class comprises the owners of large-scale enterprises such as factories, those who back such enterprises through investing money, or especially in the earlier historical periods when women were rarely economic agents, the wives and daughters of those who do, for instance, Elizabeth Montagu or Beatrice Webb.<![CDATA[<a href="#3Ad596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(brown_orlando, 2006)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr">Cette classe comprend les grands/es propriétaires industriels/les tels que les directeurs/trices d’usines, ceux/celles qui soutiennent les entreprises en y investissant des fonds, ou leurs épouses et leurs filles comme Elizabeth Montagu ou Beatrice Webb, en particulier pour les périodes historiques les plus reculées durant lesquelles il était rare que les femmes soient des acteurs financiers.</skos:definition>
+    <skos:definition xml:lang="fr">Cette classe comprend les propriétaires de grandes entreprises comme les usines, les individus qui soutiennent ces entreprises en y investissant des fonds, ou plus particulièrement les femmes et les filles de ces derniers, telles que Elizabeth Montagu ou Beatrice Webb, pour les périodes historiques anciennes au cours desquelles les les agents économiques étaient rarement des femmes.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
@@ -2454,22 +2454,22 @@
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#gentry">
     <rdfs:label xml:lang="en">gentry</rdfs:label>
-    <rdfs:label xml:lang="fr">bourgeoisie</rdfs:label>
+    <rdfs:label xml:lang="fr">aristocratie</rdfs:label>
     <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Membership in the gentry indicates property-ownership or relation to the same; property can be land or stocks and bonds. It &quot;begins in the idea of owning arms and having a coat of arms, but is distinguished from nobility insofar as money is not necessarily related to blood and title. Disinterested gentlemen are of this class (i.e. Mr. Bennett in Jane Austen).(&quot;<![CDATA[<a href="#3Ad596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(brown_orlando, 2006)</a>]]>&quot;)Gentlewomen belong to this class, even though they may not themselves own much property but instead be supported by a father or brother, or they may be distressed, which is to say, impoverished gentlewomen, as in the case of Jane Eyre or Austen's Jane Fairfax.</skos:definition>
-    <skos:definition xml:lang="fr">L’appartenance à la bourgeoisie indique la possession d’une propriété, qui peut être une terre ou des actions. Cela «commence par la possession d’armes, et ensuite d’armoiries, mais se distingue de la noblesse en cela que l’argent n’est pas nécessairement lié au sang et au titre. Les gentlemen désintéressés sont membres de cette classe (i.e. Mr Bennett dans Jane Austen).» Même si elles ne possèdent pas beaucoup de biens qui leur soient propres, les dames appartiennent également à cette classe, notamment lorsqu’elles sont entretenues par a père ou un frère, ou lorsqu’elles sont sinistrées, ou rendues pauvres, comme c’est le cas de Jane Eyre ou Jane Fairfax de Austen.</skos:definition>
+    <skos:definition xml:lang="fr">L’appartenance à l'aristocratie indique la possession d’une propriété, sous la forme de terres, d'actions ou d'obligations. Elle "indique d'abord la possession d’armes et d’armoiries, mais se distingue de la noblesse car les biens financiers ne sont pas nécessairement liés à un sang ou un titre nobles. Les gentlemen désintéressés font partie de cette classe (i.e. Mr Bennett dans Jane Austen)." Les gentlewomen appartiennent également à cette classe, y compris dans le cas où elles sont entretenues par un père ou un frère au lieu d'être propriétaires, ou lorsqu'elles se retrouvent en difficulté, c'est-à-dire passées à un état de précarité financière, comme c’est le cas de Jane Eyre ou la Jane Fairfax de Austen.</skos:definition>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Gentry"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#indigent">
     <rdfs:label xml:lang="en">indigent</rdfs:label>
-    <rdfs:label xml:lang="fr">indigente</rdfs:label>
+    <rdfs:label xml:lang="fr">indigent•e•s</rdfs:label>
     <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">This social class is &quot;poor, destitute, unemployed,&quot; supported by charity, or on social security. <![CDATA[<a href="#3Ad596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(brown_orlando, 2006)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr">Cette classe sociale inclut «les pauvres, les indigents/tes, les chômeurs/euses» soutenus/es par les actions de charité ou les aides sociales.</skos:definition>
+    <skos:definition xml:lang="fr">Cette classe sociale inclut &quot;les pauvres, les indigent•e•s, les chômeur•euse•s &quot; dépendant des actions de charité ou des aides sociales.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
@@ -5455,20 +5455,20 @@
   
   <owl:ObjectProperty rdf:ID="hasSocialClass">
     <rdfs:label xml:lang="en">has social class</rdfs:label>
-    <rdfs:label xml:lang="fr">de classe sociale</rdfs:label>
+    <rdfs:label xml:lang="fr">a une classe sociale</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#SocialClass"/>
     <skos:definition xml:lang="en">Describes a person's social class. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#SocialClass@@.</skos:definition>
-    <skos:definition xml:lang="fr">Décrit la classe sociale d'une personne. De même que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#SocialClass@@.</skos:definition>
+    <skos:definition xml:lang="fr">Décrit la classe sociale d'une personne. Comme pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#SocialClass@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasSocialClassSelfReported">
     <rdfs:label xml:lang="en">has social class (self reported)</rdfs:label>
-    <rdfs:label xml:lang="fr">de classe sociale (autodéclarés)</rdfs:label>
+    <rdfs:label xml:lang="fr">a classe sociale autodéclarée</rdfs:label>
     <skos:definition xml:lang="en">Describes a person's self-reported social class. For further information about this property, see social class.</skos:definition>
-    <skos:definition xml:lang="fr">Une sous-propriété de propriété personnelle autodéclarée qui indique la classe sociale autodéclarée d’une personne.</skos:definition>
+    <skos:definition xml:lang="fr">Décrit la classe social autodéclarée d'une personne. Pour plus d'informations sur cette propriété, voir Classe Sociale. </skos:definition>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#SocialClass"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5478,7 +5478,7 @@
   
   <owl:ObjectProperty rdf:ID="hasLinguisticAbility">
     <rdfs:label xml:lang="en">language known</rdfs:label>
-    <rdfs:label xml:lang="fr">connait la langue</rdfs:label>
+    <rdfs:label xml:lang="fr">maîtrise une langue</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
     <skos:definition xml:lang="en">Knowledge of the language for writing or reading. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
@@ -5489,10 +5489,11 @@
  
   <owl:ObjectProperty rdf:ID="hasLinguisticAbilitySelfReported">
     <rdfs:label xml:lang="en">language known (self reported)</rdfs:label>
-    <rdfs:label xml:lang="fr">connait la langue (autodéclaré)</rdfs:label>
+    <rdfs:label xml:lang="fr">maîtrise une langue (autodéclaré)</rdfs:label>
     <skos:definition xml:lang="en">Self-reported oral or written ability with a language. For further information about this property, see @@#linguisticAbility@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
-    <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
+    <skos:definition xml:lang="fr"/>Le sujet déclare maîtriser une langue à l'oral ou à l'écrit. Pour plus d'information sur cette propriété, voir Habilité linguistique.
+    <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
+    <skos:definition xml:lang="fr"/>Le sujet déclare maîtriser 
     <rdfs:range rdf:resource="#LinguisticAbility"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5501,9 +5502,9 @@
   
   <owl:ObjectProperty rdf:ID="hasNativeLinguisticAbility">
     <rdfs:label xml:lang="en">natively known language</rdfs:label>
-    <rdfs:label xml:lang="fr">a une langue maternelle</rdfs:label>
+    <rdfs:label xml:lang="fr">langue maternelle</rdfs:label>
     <skos:definition xml:lang="en">Knowledge of the language, acquired during a person’s upbringing, for writing or reading. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
-    <skos:definition xml:lang="fr">Capacité d'écrire ou de lire une langue.</skos:definition>
+    <skos:definition xml:lang="fr">Capacité d'écrire ou de lire une langue acquise dès l'enfance. Comme pour d'autres formes culturelles, un individu peut avoir plus d'une propriété ou descripteur de ce type. </skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5512,9 +5513,9 @@
 
   <owl:ObjectProperty rdf:ID="hasNativeLinguisticAbilitySelfReported">
     <rdfs:label xml:lang="en">natively known language (self reported)</rdfs:label>
-    <rdfs:label xml:lang="fr">a une langue maternelle (autodéclaré)</rdfs:label>
+    <rdfs:label xml:lang="fr">langue maternelle (autodéclarée)</rdfs:label>
     <skos:definition xml:lang="en">Self-reported knowledge of the language, acquired during a person’s upbringing, for writing or reading.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"/> Le sujet déclare lire et écrire une langue maîtrisée depuis l'enfance. </skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbilitySelfReported"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5529,7 +5530,7 @@
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#Sexuality"/>
     <skos:definition xml:lang="en">Describes a person's sexuality. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#Sexuality@@.</skos:definition>
-    <skos:definition xml:lang="fr">Décrit la sexualité d'une personne. De même que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#Sexuality@@.</skos:definition>
+    <skos:definition xml:lang="fr">Décrit la sexualité d'une personne. Comme que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#Sexualité@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5561,7 +5562,7 @@
   <!-- this is essentially a clone of the xkos-xl properly, except for the uniqueness restriction since we have translations. -->  
   <owl:ObjectProperty rdf:ID="literalForm">
     <rdfs:label xml:lang="en">has literal form</rdfs:label>
-    <rdfs:label xml:lang="fr">a une forme litteralle</rdfs:label>
+    <rdfs:label xml:lang="fr">a une forme littérale</rdfs:label>
     <rdfs:range rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -5576,7 +5577,7 @@
     <cwrc:literalForm xml:lang="en">white</cwrc:literalForm>
     <cwrc:literalForm xml:lang="fr">blanc</cwrc:literalForm>
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of whiteness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of &quot;White&quot; (e.g. @@#whiteEthnicity@@, @@#whiteRaceColour@@) cultural identities.</skos:definition>
-    <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la blancheur de peau en tant que charactérique physique associée à diverses formes culturelles. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «blanches" (par exemple @@#whiteEthnicity@@, @@#whiteRaceColour@@).</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-classe d'Étiquettes Textuelles, cette étiquette discursive reflète l'ambiguité de la blancheur de peau en tant que charactérique physique associée à diverses formes culturelles. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «blanches" (par exemple @@#whiteEthnicity@@, @@#whiteRaceColour@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#whiteEthnicity"/>
