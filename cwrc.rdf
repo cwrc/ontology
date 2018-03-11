@@ -206,6 +206,25 @@
 
   <!-- End Boilerplate -->
 
+  <!-- CWRC Shareable Properties -->
+
+  <owl:ObjectProperty rdf:about="#rangeIncludes">
+    <rdfs:label xml:lang="en">range includes</rdfs:label>
+    <skos:definition xml:lang="en">Specifies a particular class type that is acceptable to use for a relation's range</skos:definition>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#domainIncludes">
+    <rdfs:label xml:lang="en">domain includes</rdfs:label>
+    <skos:definition xml:lang="en">Specifies a particular class type that is acceptable to use for a relation's domain</skos:definition>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+
   <!-- Change Sets -->
 
   <owl:Class rdf:ID="ChangeSet">
