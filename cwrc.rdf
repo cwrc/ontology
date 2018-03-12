@@ -241,7 +241,7 @@
 
   <owl:ObjectProperty rdf:about="#affectedEntity">
     <rdfs:label xml:lang="en">affected entity</rdfs:label>
-    <skos:definition xml:lang="en">Affected Entities link to the Object or Class that was modified within a ChangeSet, this can be any rdf:resource. A ChangeSet may have 0 to many AffectedEntities.</skos:definition>
+    <skos:definition xml:lang="en">Affected Entities link to the Object or Class that was modified within a ChangeSet, this can be any rdf:resource. A @@#ChangeSet@@ may have 0 to many AffectedEntities.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#ChangeSet"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -250,7 +250,7 @@
 
   <owl:ObjectProperty rdf:about="#alteredBy">
     <rdfs:label xml:lang="en">altered by</rdfs:label>
-    <skos:definition xml:lang="en">Links a person to a change set entry.</skos:definition>
+    <skos:definition xml:lang="en">Links a person to a @@#ChangeSet@@ entry.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#ChangeSet"/>
     <rdfs:range rdf:resource="#NaturalPerson"/>
@@ -385,7 +385,7 @@
   <owl:ObjectProperty rdf:ID="certaintyOf">
     <rdfs:label xml:lang="en">certainty of</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Links a level of certainty to a source</skos:definition>
+    <skos:definition xml:lang="en">Links a level of @@#Certainty@@ to a source</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
     <owl:domain rdf:resource="#Certainty"/>
@@ -867,7 +867,7 @@
 
   <owl:ObjectProperty rdf:ID="culturalFormOf">
     <rdfs:label xml:lang="en">cultural form of</rdfs:label>
-    <skos:definition xml:lang="en">This is the inverse of has a cultural form.</skos:definition>
+    <skos:definition xml:lang="en">This is the inverse of @@##hasCulturalForm@@.</skos:definition>
     <owl:inverseOf rdf:resource="#hasCulturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -913,11 +913,11 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
     <skos:definition xml:lang="en">
-      Race or Ethnicity Context is a subclass of @@#CulturalFormContext@@, and is associated with the Cultural Form subclasses Race or Colour and ethnicity, and sometimes other cultural forms. Annotations typed as Race or Ethnicity Context provide contextualizing information about and discussions related to a person's perceived or self-reported identity with regards to race and/or ethnicity (Race or Colour or ethnicity). 
+      Race or Ethnicity Context is a subclass of @@#CulturalFormContext@@, and is associated with the @@#CulturalForm@@ subclasses @@#RaceColour@@ and @@#Ethnicity@@, and sometimes other cultural forms. Annotations typed as Race or Ethnicity Context provide contextualizing information about and discussions related to a person's perceived or self-reported identity with regards to race and/or ethnicity (Race or Colour or ethnicity). 
       Despite the ways in which categories of Race or Colour and ethnicity frequently serve heinous interests, their ideological and material impacts in the formation of identities requires recognition. These are shifting, historically constituted, and interestedly deployed categories whose use must be situated contextually and are understood here finally as discursive or representational  although they have real material impacts. They are thus social constructs: &quot;There is nothing more to being, or not being, a given race than the social acceptance and societal ascription of a race to a person&quot; <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>.   
     </skos:definition>
     <skos:definition xml:lang="fr">
-      Contexte Ethnique ou Racial est une sous-classe importante de Contexte, et est associée aux sous-classes Race ou Couleur et Ethnicité. Les annotations entrées en tant que Contexte Ethnique ou Racial fournissent des renseignements de contextualisation et des discussions sur l’identité d’un sujet concernant son appartenance raciale et/ou son ethnicité. 
+      Contexte Ethnique ou Racial est une sous-classe importante de Contexte, et est associée aux sous-classes @@#RaceColour@@ et @@#Ethnicity@@. Les annotations entrées en tant que Contexte Ethnique ou Racial fournissent des renseignements de contextualisation et des discussions sur l’identité d’un sujet concernant son appartenance raciale et/ou son ethnicité. 
       Même si les catégories de race et d'ethnicité sont fréquemment manipulées au service d'intérêts déplorables, leurs répercussions idéologiques et matérielles sur la formation identitaire requièrent qu'on les prenne en compte. Ces catégories sont changeantes, historiquement constituées, développées de façon intéressée, et leur usage doit être resitué dans leur contexte; elles sont finalement comprises ici comme discursives et représentationnelles, même si elles ont de réelles répercussions matérielles. Elles sont entendues comme des constructions sociales: «Le fait d’être ou de ne pas être d’une certaine race n’est rien de plus que l’acceptation sociale et l’attribution sociétale d’une race à une personne» <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>
     </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -969,8 +969,8 @@
     <dcterms:subject rdf:resource="#NationalHeritage"/>
     <dcterms:subject rdf:resource="#NationalIdentity"/>
     <dcterms:subject rdf:resource="#GeographicHeritage"/>
-    <skos:definition xml:lang="en">Nationality Context is a significant subclass of context. Annotations typed as Nationality Context provide information about and discussions of a person's cultural formation in relation to their national identity, national heritage, and geographic heritage -- which are not always aligned. Nationality Context provides depth to more granular indications of national identity through the nationality, National Heritage, and Geographic Heritage properties.</skos:definition>
-    <skos:definition xml:lang="fr">Contexte National est une sous-classe de contexte importante. Les annotations entrées en tant que Contexte National fournissent des informations et des discussions sur la formation culturelle d’une personne, en lien avec son identité nationale, son héritage national et son héritage géographique qui ne sont pas toujours équivalents. Contexte National explore plus en détails les indications granulaires sur l’identité nationale à travers les propriétés Nationalité, Héritage National et Héritage Géographique.</skos:definition>
+    <skos:definition xml:lang="en">Nationality Context is a significant subclass of context. Annotations typed as Nationality Context provide information about and discussions of a person's cultural formation in relation to their national identity, national heritage, and geographic heritage -- which are not always aligned. Nationality Context provides depth to more granular indications of national identity through the @@#NationalHeritage@@, @@#NationalIdentity@@, and @@#GeographicHeritage@@ properties.</skos:definition>
+    <skos:definition xml:lang="fr">Contexte National est une sous-classe de contexte importante. Les annotations entrées en tant que Contexte National fournissent des informations et des discussions sur la formation culturelle d’une personne, en lien avec son identité nationale, son héritage national et son héritage géographique qui ne sont pas toujours équivalents. Contexte National explore plus en détails les indications granulaires sur l’identité nationale à travers les propriétés @@#NationalHeritage@@, @@#NationalIdentity@@ et @@#GeographicHeritage@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -1130,19 +1130,19 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">
-      A subclass of Cultural Form for indicating a person's gender, whether attributed or self-defined, with accompanying context, where present, provided by Gender Context annotations.
+      A subclass of @@#CulturalForm@@ for indicating a person's gender, whether attributed or self-defined, with accompanying context, where present, provided by @@#GenderContext@@ annotations.
       Although in popular culture gender and biological sex are conflated and understood to be binary, the concept of gender stresses the relationality, constructedness, and performativity of gendered identities and gendered behaviour, whose categories are historically contingent and shifting, and the boundaries between them blurry. Simone de Beauvoir <![CDATA[<a href="#cwrc:c6a678e5-8fc6-41bc-8631-7cfb7116017e"> (1973) </a>]]> stated &quot;One is not born, but rather becomes, a woman,&quot; a belief that has been taken up by many other theorists of gender including Judith Butler <![CDATA[<a href="#cwrc:825995b3-3b66-4e0a-a62d-d8649aaead78">(1990)</a>]]>. Gender studies to date has investigated the social construction of femininity more than that of masculinity. The multi-layered constructedness of gender is also underlined by Donna Haraway who understands it as a &quot;socially, historically, and semiotically positioned difference&quot; <![CDATA[<a href="#cwrc:f62e94d6-bd04-494c-9282-53af0a3f3376">(Donna Haraway, 1988)</a>]]>.
       Gender is understood as fluid, situational, and sometimes plural, and it is related to, though not commensurate with, sexual identity and orientation, just as it is related to but not defined by specific forms of embodiment. Rather than seeing biological sex as a pre-social or natural given, the body is understood as a site of inscription (cf. <![CDATA[<a href="#cwrc:3d49dc32-ac97-4abd-a252-573c52b463cf"> (Elizabeth Grosz, 1994)</a>]]>) which is also socially constructed and indeed epigenetically shaped by environmental factors <![CDATA[<a href="#cwrc:5e45242f-0c2e-4aaa-8ddb-ac54dd0e6249">(N. Katherine Hayles, 2012)</a>]]>. As articulated by feminist neurologist Gillian Einstein, <![CDATA[<a href="#cwrc:842ffbb4-11de-4212-8e6e-9d4d8d28d3a5">(2012)</a>]]>&quot;The world writes on the body&quot;. This ontology therefore does not provide separate terms for sex as distinct from gender. Instead, it privileges terms associated with gender, recognizing that they are conventionally but not necessarily associated with sex, and that there is constant slippage between gender and sex in the way that these categories circulate through discourses, actions, and institutions. Far from indicating a universal facet of experience, gender intersects with other identity categories and axes of oppression such as class, race or colour, or geographical heritage to produced quite different interests and experiences among people of the same gender, as with the intersection of religion and white masculine identity in the Muscular Christianity movement in nineteenth-century Britain. Being a woman of colour often compounds the impacts of gender oppression. Such interaction between different forms of oppression is termed &quot;intersectionality&quot; <![CDATA[<a href="#cwrc:b9eeccf9-9380-4341-99dc-a83f5ee32909">(Kimberlé Crenshaw, 1989).</a>]]>
       Those using this class and its subclasses are encouraged to consult associated @@#GenderContext@@ annotations, if available.
     </skos:definition>
     <skos:definition xml:lang="fr">
-      Cette sous-classe de Forme Culturelle indique le genre d’une personne, qu’il soit attribué par d’autres ou autoproclamé, accompagné du contexte fourni par les annotations de Genre Contexte lorsque celui-ci est disponible. 
+      Cette sous-classe de @@#CulturalForm@@ indique le genre d’une personne, qu’il soit attribué par d’autres ou autoproclamé, accompagné du contexte fourni par les annotations de @@#GenderContext@@ lorsque celui-ci est disponible. 
       Même si dans la culture populaire le genre et le sexe biologique sont confondus et compris comme binaires, le concept de genre souligne la dimension relationnelle, construite et performative des identités et des comportements genrés, dont les catégories sont contingentes et changent au cours de l’Histoire, sans qu’elles soient clairement délimitées. Cf 
       <![CDATA[<a href="#cwrc:c6a678e5-8fc6-41bc-8631-7cfb7116017e"> Simone de Beauvoir </a>]]>: «On ne naît pas femme, on le devient,» et d’autres nombreuses théoriciennes du genre, dont Judith Butler en 1990
       <![CDATA[<a href="cwrc:825995b3-3b66-4e0a-a62d-d8649aaead78">(Judith Butler, 1990)</a>]]>. À ce jour, les études de genres se sont davantage intéressées à la construction de la féminité qu’à celle de la masculinité. Cette construction du genre à plusieurs niveaux est également soulignée par Donna Haraway qui le définit comme une «différence socialement, historiquement et sémiotiquement située» 
       <![CDATA[<a href="#cwrc:f62e94d6-bd04-494c-9282-53af0a3f3376">(Donna Haraway,1988)</a>]]>. 
       Le genre est interprété comme fluide, situationnel, parfois pluriel ainsi que lié à l’identité et l’orientation sexuelles sans leur être proportionnel, tout comme il est relié à certaines façons spécifiques de vivre et de présenter son corps, qui ne définissent pas non plus le genre. Plutôt que de voir le sexe biologique comme présocial ou un fait naturel,  le corps est compris comme un lieu d’inscriptions  (cf. <![CDATA[<a href="#cwrc:3d49dc32-ac97-4abd-a252-573c52b463cf"> (Elizabeth Grosz, 1994)</a>]]>) qui est aussi socialement construit et épigénétiquement modelé par des facteurs environnementaux <![CDATA[<a href="#cwrc:5e45242f-0c2e-4aaa-8ddb-ac54dd0e6249">(N. Katherine Hayles, 2012)</a>]]>. Selon la formulation de la neurologiste féministe Gillian Einstein, «Le monde écrit sur le corps» <![CDATA[<a href="#cwrc:842ffbb4-11de-4212-8e6e-9d4d8d28d3a5">(Gillian Einstein, 2012)</a>]]>. Cette ontologie ne fournit donc pas de termes séparés pour le sexe et le genre en tant qu’entités distinctes. Au contraire, elle privilégie les termes associés au genre, en admettant qu’ils sont conventionnellement mais non nécessairement associés au sexe, et qu’il existe un glissement constant de ces catégories au fil des discours, des actions et des institutions. Loin d’indiquer une part d’expérience universelle, le genre rencontre d’autres catégories identitaires et divers vecteurs d’oppression comme la classe, la race, la couleur ou l’héritage géographique, produisant des expériences et des intérêts très différents pour les personnes d’un même genre. Un exemple est le mouvement de la Chrétienté Musculaire, formé au Royaume-Uni au 19ème siècle, qui relie la religion à l’identité masculine. Une telle interaction entre différentes formes d’oppression est appelée «intersectionnalité» <![CDATA[<a href="#cwrc:b9eeccf9-9380-4341-99dc-a83f5ee32909">(Kimberlé Crenshaw, 1989)</a>]]>.
-      Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les annotations associées fournies par Genre Contexte, si disponibles. 
+      Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les annotations associées fournies par @@#GenderContext@@, si disponibles. 
     </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1419,10 +1419,10 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">
-      A subclass of Cultural Form, this property indicates a person's race or colour, often as presumed, perceived, or otherwise assigned according to cultural conventions, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. Despite the ways in which categories of race or colour frequently serve heinous interests, their ideological and material impacts in the formation of identities requires recognition. These are shifting, historically constituted, and interestedly deployed categories whose use must be situated contextually and which are understood here finally as discursive or representational although they have real material impacts. They are thus as social constructs: &quot;There is nothing more to being, or not being, a given race than the social acceptance and societal ascription of a race to a person&quot; <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>. This ontology therefore does not attempt to lay out an exact, fully defined, or mutually exclusive set of racial categories: this is an impossibility given their shifting use and the overlap among them and with identity categories for ethnicity, geography, and nationality. Those applying this class and its subclasses are encouraged not to let privileged identities operate as an unspoken given or to use this class solely in relation to the marginalized. Those concerned about &quot;white&quot; and &quot;black&quot; as homogenizing categories are encouraged to reach for specificity through plural categories and representations of intersectionality, and to consult @@#RaceEthnicityContext@@ annotations, if available.
+      A subclass of @@#CulturalForm@@, this property indicates a person's race or colour, often as presumed, perceived, or otherwise assigned according to cultural conventions, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. Despite the ways in which categories of race or colour frequently serve heinous interests, their ideological and material impacts in the formation of identities requires recognition. These are shifting, historically constituted, and interestedly deployed categories whose use must be situated contextually and which are understood here finally as discursive or representational although they have real material impacts. They are thus as social constructs: &quot;There is nothing more to being, or not being, a given race than the social acceptance and societal ascription of a race to a person&quot; <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>. This ontology therefore does not attempt to lay out an exact, fully defined, or mutually exclusive set of racial categories: this is an impossibility given their shifting use and the overlap among them and with identity categories for ethnicity, geography, and nationality. Those applying this class and its subclasses are encouraged not to let privileged identities operate as an unspoken given or to use this class solely in relation to the marginalized. Those concerned about &quot;white&quot; and &quot;black&quot; as homogenizing categories are encouraged to reach for specificity through plural categories and representations of intersectionality, and to consult @@#RaceEthnicityContext@@ annotations, if available.
     </skos:definition>
     <skos:definition xml:lang="fr">
-      Sous-classe de Forme Culturelle, cette propriété indique l’appartenance raciale ou la couleur d’une personne, souvent telle qu’elle est présupposée, perçue ou autrement assignée selon des conventions culturelles, en parallèle avec le contexte fourni par les annotation de Race ou Ethnicité lorsqu’il est présent. Même si les catégories de race ou de couleur sont fréquemment manipulées au service d'intérêts déplorables, leurs répercussions idéologiques et matérielles sur la formation identitaire requiert qu'on les prenne en compte. Ces catégories changeantes, historiquement constituées, développées de façon intéressée, et dont l’usage doit être resitué en contexte sont enfin comprises ici comme discursives et représentationnelles, même si leurs répercussions matérielles sont bien réelles. Ce sont donc des constructions sociales: «Le fait d’appartenir ou non à une race donnée n’est rien de plus que l’acceptation sociale et l’attribution sociétale d’une race à une personne» <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>. 
+      Sous-classe de @@#CulturalForm@@, cette propriété indique l’appartenance raciale ou la couleur d’une personne, souvent telle qu’elle est présupposée, perçue ou autrement assignée selon des conventions culturelles, en parallèle avec le contexte fourni par les annotation de Race ou Ethnicité lorsqu’il est présent. Même si les catégories de race ou de couleur sont fréquemment manipulées au service d'intérêts déplorables, leurs répercussions idéologiques et matérielles sur la formation identitaire requiert qu'on les prenne en compte. Ces catégories changeantes, historiquement constituées, développées de façon intéressée, et dont l’usage doit être resitué en contexte sont enfin comprises ici comme discursives et représentationnelles, même si leurs répercussions matérielles sont bien réelles. Ce sont donc des constructions sociales: «Le fait d’appartenir ou non à une race donnée n’est rien de plus que l’acceptation sociale et l’attribution sociétale d’une race à une personne» <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>. 
       Cette ontologie ne prétend donc pas offrir un ensemble de catégories raciales exact, complètement défini, ou mutuellement exclusif, ce qui est impossible étant donné leur utilisation en changement constant et leur chevauchement mutuel ou avec d’autres catégories identitaires utilisées pour l’ethnicité, la géographie ou la nationalité. Les personnes qui appliquent ces catégories et sous-catégories sont encouragées à ne pas faire fonctionner les identités privilégiées comme si elles étaient consensuelles et évidentes, ou à utiliser cette classe seulement en relation avec des populations marginalisées. Les personnes préoccupées par le fait que «blanc» et «noir» sont des catégories homogénéisantes sont encouragées à atteindre la spécificité à travers la pluralité des catégories et les représentations intersectionnelles, ainsi qu’à consulter les annotations associés à @@#RaceEthnicityContext@@ s’ils sont fournis. 
     </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5440,8 +5440,8 @@
   <owl:ObjectProperty rdf:ID="hasReligionSelfReported">
     <rdfs:label xml:lang="en">has religious affiliation (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">religion (autodéclarée)</rdfs:label>
-    <skos:definition xml:lang="en">A personal property, this indicates a person's self-reported religion(s) or belief system(s).</skos:definition>
-    <skos:definition xml:lang="fr">Une propriété personnelle qui indique la/les religion(s) ou le(s) système(s) de croyance autoproclamé(s) par une personne.</skos:definition>
+    <skos:definition xml:lang="en">A personal property, this indicates a person's self-reported religion(s) or belief system(s). For further information about this property, see @@#Religion@@.</skos:definition>
+    <skos:definition xml:lang="fr">Une propriété personnelle qui indique la/les religion(s) ou le(s) système(s) de croyance autoproclamé(s) par une personne. Pour plus d'informations sur cette propriété, voir @@#Religion@@.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5484,8 +5484,8 @@
   <owl:ObjectProperty rdf:ID="hasSocialClassSelfReported">
     <rdfs:label xml:lang="en">has social class (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">a classe sociale autodéclarée</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's self-reported social class. For further information about this property, see social class.</skos:definition>
-    <skos:definition xml:lang="fr">Décrit la classe social autodéclarée d'une personne. Pour plus d'informations sur cette propriété, voir Classe Sociale. </skos:definition>
+    <skos:definition xml:lang="en">Describes a person's self-reported social class. For further information about this property, see @@#SocialClass@@.</skos:definition>
+    <skos:definition xml:lang="fr">Décrit la classe social autodéclarée d'une personne. Pour plus d'informations sur cette propriété, voir @@#SocialClass@@. </skos:definition>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#SocialClass"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5507,8 +5507,8 @@
   <owl:ObjectProperty rdf:ID="hasLinguisticAbilitySelfReported">
     <rdfs:label xml:lang="en">language known (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">maîtrise une langue (autodéclaré)</rdfs:label>
-    <skos:definition xml:lang="en">Self-reported oral or written ability with a language. For further information about this property, see @@#linguisticAbility@@.</skos:definition>
-    <skos:definition xml:lang="fr">Le sujet déclare maîtriser une langue à l'oral ou à l'écrit. Pour plus d'information sur cette propriété, voir Habilité linguistique.</skos:definition>
+    <skos:definition xml:lang="en">Self-reported oral or written ability with a language. For further information about this property, see @@#LinguisticAbility@@.</skos:definition>
+    <skos:definition xml:lang="fr">Le sujet déclare maîtriser une langue à l'oral ou à l'écrit. Pour plus d'information sur cette propriété, voir @@#LinguisticAbility@@.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5546,7 +5546,7 @@
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#Sexuality"/>
     <skos:definition xml:lang="en">Describes a person's sexuality. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#Sexuality@@.</skos:definition>
-    <skos:definition xml:lang="fr">Décrit la sexualité d'une personne. Comme que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#Sexualité@@.</skos:definition>
+    <skos:definition xml:lang="fr">Décrit la sexualité d'une personne. Comme que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#Sexuality@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
