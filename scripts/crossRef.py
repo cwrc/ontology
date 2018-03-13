@@ -106,7 +106,7 @@ def get_webpage_title(url):
 
 def get_definitions(element):
     for x in element:
-        if "definition" or "comment" in str(x.tag):
+        if "definition" or "comment" or "note" in str(x.tag):
             if x.text and "@@" in x.text:
                 pattern = re.compile('@@(.*?)@@')
                 matches = pattern.finditer(x.text)
@@ -116,6 +116,8 @@ def get_definitions(element):
                     uri = string[2:-2]
                     if uri[0] == '#':
                         language = x.get("{http://www.w3.org/XML/1998/namespace}lang")
+                        if language is None:
+                            language = "EN"
                         if x.text.find(string + "s") != -1:
                             string += "s"
                             hyperlink = create_hyperlink(uri, get_label(get_full_uri(uri), language) + "s")
@@ -133,14 +135,13 @@ def create_hyperlink(uri, label):
 
 def get_label(uri, lang):
     query_str = """
-                select distinct ?label  where {
-                                OPTIONAL { <%s> rdfs:label ?label. }.
-                                filter(
-                                                langMatches(lang(?label), "%s")
-                                )
-                }
-                                """ % (uri, lang)
-    label = ""
+        select distinct ?label  where {
+            OPTIONAL { <%s> rdfs:label ?label. }.
+            filter(
+                langMatches(lang(?label), "%s")
+            )
+        }""" % (uri, lang)
+    label = "[%s]" % uri
     for row in o_graph.query(query_str):
         label = row.label
 
