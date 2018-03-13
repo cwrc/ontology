@@ -867,7 +867,7 @@
 
   <owl:ObjectProperty rdf:ID="culturalFormOf">
     <rdfs:label xml:lang="en">cultural form of</rdfs:label>
-    <skos:definition xml:lang="en">This is the inverse of @@##hasCulturalForm@@.</skos:definition>
+    <skos:definition xml:lang="en">This is the inverse of @@#hasCulturalForm@@.</skos:definition>
     <owl:inverseOf rdf:resource="#hasCulturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6475,8 +6475,8 @@
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
       <void:inDataset rdf:resource="#datasetdefinition"/>
-      <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#entrepreneurial@@.</rdfs:comment>
-      <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#entrepreneurial@@.</rdfs:comment>
+      <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#entrepreneurial-industrialist@@.</rdfs:comment>
+      <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#entrepreneurial-industrialist@@.</rdfs:comment>
       <dcterms:isReplacedBy rdf:resource="#entrepreneurial-industrialist"/>
       <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
       <vs:term_status xml:lang="en">deprecated</vs:term_status>
@@ -6805,9 +6805,9 @@
     <skos:broaderTransitive rdf:resource="#christianity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#congragationalism@@.</rdfs:comment>
-    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#congragationalism@@.</rdfs:comment>
-    <dcterms:isReplacedBy rdf:resource="#congragationalism"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#congregationalism@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#congregationalism@@.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#congregationalism"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
