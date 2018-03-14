@@ -199,7 +199,9 @@
 
   <owl:AnnotationProperty rdf:ID="CompetencyQuestion">
     <rdfs:label xml:lang="en">Competency Question</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">A Question that can be asked of the ontology and will be used to specify the high level requirements of the CWRC Ontology allowing decisions about structure and components to be made.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:AnnotationProperty>
@@ -210,7 +212,9 @@
 
   <owl:ObjectProperty rdf:about="#rangeIncludes">
     <rdfs:label xml:lang="en">range includes</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Specifies a particular class type that is acceptable to use for a relation's range</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -218,7 +222,9 @@
 
   <owl:ObjectProperty rdf:about="#domainIncludes">
     <rdfs:label xml:lang="en">domain includes</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Specifies a particular class type that is acceptable to use for a relation's domain</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -229,6 +235,7 @@
 
   <owl:Class rdf:ID="ChangeSet">
     <rdfs:label xml:lang="en">change set</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">A Changeset represents changes or additions made to the ontology by ontology editors or through users where instances were affected. Change Sets will also be used to translate and contain Orlando recordInfo instances.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -241,6 +248,7 @@
 
   <owl:ObjectProperty rdf:about="#affectedEntity">
     <rdfs:label xml:lang="en">affected entity</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Affected Entities link to the Object or Class that was modified within a ChangeSet, this can be any rdf:resource. A @@#ChangeSet@@ may have 0 to many AffectedEntities.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#ChangeSet"/>
@@ -250,6 +258,7 @@
 
   <owl:ObjectProperty rdf:about="#alteredBy">
     <rdfs:label xml:lang="en">altered by</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Links a person to a @@#ChangeSet@@ entry.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#ChangeSet"/>
@@ -260,6 +269,7 @@
 
   <owl:ObjectProperty rdf:about="#madeAlteration">
     <rdfs:label xml:lang="en">made alteration</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Links an alteration to a person</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
@@ -326,9 +336,9 @@
 
   <owl:Class rdf:ID="Certainty">
     <rdfs:label xml:lang="en">Certainty</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Certainty describes the quality of a fact in the ontology. It is used primarily to represent information that may not be fact.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <rdfs:label xml:lang="fr"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -508,12 +518,15 @@
 
 
   <owl:Class rdf:ID="BoardingSchool">
+    <rdfs:label xml:lang="en">Boarding School</rdfs:label>
+    <rdfs:label xml:lang="fr">Internat</rdfs:label>
+    <skos:definition xml:lang="en">&quot;A boarding school provides education for pupils who live on the premises, as opposed to a day school. The word "boarding” is used in the sense of "room and board" i.e., lodging and meals. As they have existed for many centuries, and now extend across many countries, their function and ethos varies greatly.&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">«Un internat est une branche d'un établissement scolaire (école, collège, lycée, école d'enseignement supérieur...) qui offre la possibilité de loger et nourrir les élèves et les étudiants. À cette fin, un internat comprend généralement un dortoir ou des chambres, un réfectoire et des salles d'études, douche ou de divertissement.» <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">Boarding School</rdfs:label>
-    <skos:definition xml:lang="en">&quot;A boarding school provides education for pupils who live on the premises, as opposed to a day school. The word "boarding” is used in the sense of "room and board" i.e., lodging and meals. As they have existed for many centuries, and now extend across many countries, their function and ethos varies greatly.&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
-    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Boarding_school"/>
@@ -521,24 +534,30 @@
 
 
   <owl:Class rdf:ID="GrammarSchool">
+    <rdfs:label xml:lang="en">grammar school</rdfs:label>
+    <rdfs:label xml:lang="fr">grammar school</rdfs:label>
+    <skos:definition xml:lang="en">&quot;A grammar school is one of several different types of school in the history of education in the United Kingdom and other English-speaking countries, originally a school teaching Latin, but more recently an academically-oriented secondary school, differentiated in recent years from less academic Secondary Modern Schools.&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">«Une grammar school est, dans les pays anglophones, un établissement d'enseignement secondaire ou, plus rarement, d'enseignement primaire. Les origines des grammar schools remontent à l'Europe médiévale.» <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">Grammar School</rdfs:label>
-    <skos:definition xml:lang="en">&quot;A grammar school is one of several different types of school in the history of education in the United Kingdom and other English-speaking countries, originally a school teaching Latin, but more recently an academically-oriented secondary school, differentiated in recent years from less academic Secondary Modern Schools.&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
-    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Grammar_school"/>
   </owl:Class>
 
   <owl:Class rdf:ID="PrivateSchool">
+    <rdfs:label xml:lang="en">private school</rdfs:label>
+    <rdfs:label xml:lang="fr">école privée</rdfs:label>
+    <skos:definition xml:lang="en">&quot;Private schools, also known as independent schools, non-governmental, or nonstate schools,[1] are not administered by local, state or national governments; thus, they retain the right to select their students and are funded in whole or in part by charging their students tuition, rather than relying on mandatory taxation through public (government) funding; at some private schools students may be able to get a scholarship, lowering this tuition fee, dependent on a student's talents or abilities (e.g. sport scholarship, art scholarship, academic scholarship), need for financial aid, or tax credit scholarships that might be available.&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">«Les écoles privées sont des écoles qui ne sont pas administrées par leur gouvernement local, étatique ou national et qui conservent donc le droit de sélectionner leurs élèves et sont financées, en tout ou en partie grâce aux frais de scolarité qu'elle demande à ses élèves, plutôt qu'entièrement par des fonds gouvernementaux. La plupart des écoles privées offrent des bourses d'étude qui permettent de rendre la fréquentation plus abordable pour des étudiants possédant un talent quelconque, généralement au niveau académique ou sportif. Le terme école privée désigne habituellement une école primaire ou secondaire et n'est que très rarement utilisé pour désigner une université.» <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">Private School</rdfs:label>
-    <skos:definition xml:lang="en">&quot;Private schools, also known as independent schools, non-governmental, or nonstate schools,[1] are not administered by local, state or national governments; thus, they retain the right to select their students and are funded in whole or in part by charging their students tuition, rather than relying on mandatory taxation through public (government) funding; at some private schools students may be able to get a scholarship, lowering this tuition fee, dependent on a student's talents or abilities (e.g. sport scholarship, art scholarship, academic scholarship), need for financial aid, or tax credit scholarships that might be available.&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
-    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Private_school"/>
@@ -549,7 +568,9 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">State School</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">&quot;State schools (also known as public schools outside England and Wales[note 1]) are generally primary or secondary schools mandated for or offered to all children without charge, funded in whole or in part by taxation. These schools are generally inclusive (non-selective) in admitting all students within the geographical area that they serve.&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -561,8 +582,11 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Dame School</rdfs:label>
+    <rdfs:label xml:lang="fr">Dame School</rdfs:label>
     <skos:definition xml:lang="en">&quot;A dame school was an early form of a private elementary school in English-speaking countries. They were usually taught by women and were often located in the home of the teacher.&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">«On désigne sous le nom de Dame schools les premières écoles primaires privées dans les pays de langue anglaise. C'étaient d'ordinaire des femmes qui enseignaient à leur propre domicile. Il y en avait de toutes sortes : certaines étaient de simples garderies tenues par des femmes analphabètes, alors que d'autres donnaient aux élèves des bases solides. Les lacunes de ce système furent mises en évidence en 1838 par une étude de la Statistical Society of London1. Cette étude affirmait que la moitié des élèves des Dame school n'apprenaient que l'alphabet, une proportion négligeable pratiquant les mathématiques et la grammaire. Les Dame schools se firent plus rares en Grande-Bretagne après que l'enseignement eut été rendu obligatoire en 1880 : les écoles où les cours ne couvraient pas le programme fixé par le gouvernement pouvaient être fermées. Dans la première école d'Australie, qui était une Dame school créée en 1789, c'est une détenue, Isabella Rossen, qui enseignait les bases aux enfants.» <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Dame_school"/>
@@ -573,7 +597,9 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Day School</rdfs:label>
+    <rdfs:label xml:lang="fr">École Externe</rdfs:label>
     <skos:definition xml:lang="en">&quot;A day school—as opposed to a boarding school—is an institution where children (or high-school age adolescents) are given educational instruction during the day, after which the students return to their homes. The term can also be used to emphasize the length of full-day programs as opposed to after-school programs, as in Jewish day school.&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -585,7 +611,9 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Comprehensive School</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">&quot;A comprehensive school is a secondary school or middle school that is a state school and does not select its intake on the basis of academic achievement or aptitude. This is in contrast to the selective school system, where admission is restricted on the basis of selection criteria. The term is commonly used in relation to England and Wales, where comprehensive schools were introduced on an experimental basis in the 1940s and became more widespread from 1965. About 90% of British secondary school pupils now attend comprehensive schools. They correspond broadly to the public high school in the United States and Canada and to the German Gesamtschule.&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -597,7 +625,9 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Secondary Modern School</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">&quot;A secondary modern school is a type of secondary school that once existed throughout England, Wales and Northern Ireland, from 1944 until the 1970s under the Tripartite System and still persist in Northern Ireland, where they are usually referred to simply as Secondary schools, and in areas of England, such as Buckinghamshire (where they are referred to as community schools), Lincolnshire, Wirral Medway and Kent where they are called high schools. &quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -610,7 +640,9 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Trade School</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">&quot;A vocational school, sometimes called a trade school or vocational college, is a post-secondary educational institution designed to provide vocational education, or technical skills required to perform the tasks of a particular and specific job. Vocational schools are traditionally distinguished from four-year colleges by their focus on job-specific training to students who are typically bound for one of the skilled trades, rather than providing academic training for students pursuing careers in a professional discipline. While many schools have largely adhered to this convention, the purely vocational focus of other trade schools began to shift in the 1990s &quot;toward a broader preparation that develops the academic&quot; as well as technical skills of their students.&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -623,7 +655,9 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Primary School</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">&quot;A primary school (or elementary school in American English and often in Canadian English) is a school in which children receive primary or elementary education from the age of about five to twelve, coming after preschool and before secondary school. (In some countries there is an intermediate stage of middle school between primary and secondary education.)&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -636,7 +670,9 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Secondary School</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">&quot;A secondary school is both an organization that provides secondary education and the building where this takes place. Some secondary schools can provide both lower secondary education and upper secondary education (levels 2 and 3 of the ISCED scale), but these can also be provided in separate schools, as in the American middle school- high school system. Secondary schools typically follow on from primary schools and lead into vocational and tertiary education. Attendance is compulsory in most countries for students between the ages of 11 and 16. The organisations, buildings, and terminology are more or less unique in each country.&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -649,7 +685,9 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Post-Secondary School</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">&quot;Higher education, post-secondary education, or third level education is an optional final stage of formal learning that occurs after secondary education. Often delivered at universities, academies, colleges, seminaries, and institutes of technology, higher education is also available through certain college-level institutions, including vocational schools, trade schools, and other career colleges that award academic degrees or professional certifications. Tertiary education at non-degree level is sometimes referred to as further education or continuing education as distinct from higher education. The right of access to higher education is mentioned in a number of international human rights instruments. The UN International Covenant on Economic, Social and Cultural Rights of 1966 declares, in Article 13, that "higher education shall be made equally accessible to all, on the basis of capacity, by every appropriate means, and in particular by the progressive introduction of free education". In Europe, Article 2 of the First Protocol to the European Convention on Human Rights, adopted in 1950, obliges all signatory parties to guarantee the right to education&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -661,7 +699,9 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Prep School</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Within a North American context, prep schools are private educational institutions that prepare students for college. Within a British context, they are private schools for students -- the age range of the students can vary significantly depending on when they went to school, though typically ranging from ages seven (though sometimes three) to thirteen.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -671,7 +711,9 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Religious School</rdfs:label>
+    <rdfs:label xml:lang="en">École Non Laïque</rdfs:label>
     <skos:definition xml:lang="en">A school associated formally in some way with a religion, ranging from parochial schools to faith-based schools.</skos:definition>
+    <skos:definition xml:lang="fr">Établissement éducatif officiellement associé de quelque façon avec une religion, allant des écoles paroissiales aux écoles confessionnelles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -681,7 +723,9 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Secular School</rdfs:label>
+    <rdfs:label xml:lang="fr">École Laïque</rdfs:label>
     <skos:definition xml:lang="en">A school that is not formally associated with a religious organization and/or one that as avowedly secular in its educational principles, often by not always publically-funded institutions that are funded by countries with a separation between religion and the state.</skos:definition>
+    <skos:definition xml:lang="fr">École qui n'est pas formellement associée à quelque organisation religieuse et/ou officiellement laïque dans ses principes éducatifs, souvent (mais pas toujours) financée publiquement dans les pays où la religion est séparée de l'État.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -691,7 +735,9 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Single-sex School</rdfs:label>
+    <rdfs:label xml:lang="fr">ÉducationNonMixte</rdfs:label>
     <skos:definition xml:lang="en">&quot;Single-sex education, also known as single-gender education, is the practice of conducting education where male and female students attend separate classes or in separate buildings or schools. The practice was common before the twentieth century, particularly in secondary education and higher education. Single-sex education in many cultures is advocated on the basis of tradition as well as religion, and is practiced in many parts of the world. Recently, there has been a surge of interest and establishment of single-sex schools due to educational research. Single sex education is practiced in many Muslim majority countries; while in the West it is most popular in Belgium, Chile, Singapore, the United Kingdom, Hong Kong, Israel, New Zealand, Australia, South Korea. Motivations for such education range from religious ideas of sex segregation to beliefs that the sexes learn and behave differently, and, as such, they thrive in a single sex environment. In the 19th century, in Western countries, single sex girls' finishing schools, and women's colleges offered women a chance to education at a time when they were denied access to mainstream educational institutions. The former were especially common in Switzerland, the latter in the US and the UK, which were pioneers in women's education.&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">L'éducation non mixte, également connue sous le nom d'éducation unisexe, désigne un type d'éducation qui implique la séparation des élèves en fonction de leur sexe de naissance, qui sont réparti·e·s dans des classes, des bâtiments ou des écoles séparés.</skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -703,8 +749,11 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Co-ed School</rdfs:label>
+    <rdfs:label xml:lang="fr">Éducation Mixte</rdfs:label>
     <skos:definition xml:lang="en">&quot;Mixed-sex education, also known as mixed-gender education, co-education or coeducation (abbreviated to co-ed or coed), is a system of education where males and females are educated together. Whereas single-sex education was more common up to the 19th century, mixed-sex education has since become standard in many cultures, particularly in Western countries. Single-sex education, however, remains prevalent in many Muslim countries. The relative merits of both systems have been the subject of debate.&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">«La mixité ou, dans son sens ancien, la coéducation1 est l'instruction et l'éducation en commun des garçons et des filles, dans des groupes mixtes.» <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Mixed-sex_education"/>
@@ -723,6 +772,7 @@
   <owl:ObjectProperty rdf:ID="attends">
     <rdfs:label xml:lang="en">attends</rdfs:label>
     <skos:definition xml:lang="en">Indicates attending or having attended for education either a particular school or a particular type of schooling.</skos:definition>
+    <skos:definition xml:lang="fr"> Indique que le sujet fréquente ou a fréquenté un établissement éducatif en particulier ou a reçu une forme d'enseignement spécifique</skos:definition>
     <rdfs:range rdf:resource="#School"/>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
     <owl:inverseOf rdf:resource="#hasStudent"/>
@@ -732,8 +782,8 @@
 
 
     <owl:Class rdf:ID="EducationContext">
-    <rdfs:comment xml:lang="en">This optional attribute attached to Education records the mode of education and allows us to distinguish the important material effects between a domestic and an institutional education. This attribute allows us to trace the historical developments in women's access to education, for example, the informal domestic education of women writers in the early periods versus women's entrance to post-secondary education in the twentieth century.</rdfs:comment>
     <rdfs:label xml:lang="en">Education context</rdfs:label>
+    <rdfs:comment xml:lang="en">This optional attribute attached to Education records the mode of education and allows us to distinguish the important material effects between a domestic and an institutional education. This attribute allows us to trace the historical developments in women's access to education, for example, the informal domestic education of women writers in the early periods versus women's entrance to post-secondary education in the twentieth century.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="#Context"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -772,28 +822,36 @@
     <rdfs:range rdf:resource="#EducationContext"/>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:label xml:lang="en">has education</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
   <owl:Class rdf:ID="EducationalAward">
-    <rdfs:label xml:lang="en">Educational award</rdfs:label>
+    <rdfs:label xml:lang="en">educational award</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Describes the different kinds of educational awards (scholarship, prize, etc.) that can be awarded to a person. An entrance scholarship to Oxford is different from winning first prize in a Spelling Bee and distinguishing between awards will help understand the material conditions affecting the subject's access to education.</skos:definition>
+    <skos:definition xml:lang="fr"/>
     <rdfs:subClassOf rdf:resource="#EducationContext"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
   <cwrc:EducationalAward rdf:ID="educationalAwardPrize">
-    <rdfs:label xml:lang="en">Educational award Prize</rdfs:label>
+    <rdfs:label xml:lang="en">educational award prize</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">An educational prize is a medal or award, monetary or otherwise, presented by either an institution or person of authority to an individual who has excelled beyond their peers, reached a great achievement, and/or produced a very high standard of work.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#EducationalAward"/>
   </cwrc:EducationalAward>
 
   <cwrc:EducationalAward rdf:ID="educationalAwardScholarship">
-    <rdfs:label xml:lang="en">Educational award Scholarship</rdfs:label>
+    <rdfs:label xml:lang="en">educational award scholarship</rdfs:label>
     <skos:definition xml:lang="en">A scholarship is an award of financial aid for a student to further their education. Scholarships are awarded based upon various criteria, which usually reflect the values and purposes of the donor or founder of the award. Scholarship money is not required to be repaid.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
