@@ -784,8 +784,10 @@
 
 
     <owl:Class rdf:ID="EducationContext">
-    <rdfs:label xml:lang="en">Education context</rdfs:label>
-    <rdfs:comment xml:lang="en">This optional attribute attached to Education records the mode of education and allows us to distinguish the important material effects between a domestic and an institutional education. This attribute allows us to trace the historical developments in women's access to education, for example, the informal domestic education of women writers in the early periods versus women's entrance to post-secondary education in the twentieth century.</rdfs:comment>
+    <rdfs:label xml:lang="en">education context</rdfs:label>
+    <rdfs:label xml:lang="fr">contexte éducatif</rdfs:label>
+    <skos:definition xml:lang="en">This optional attribute attached to Education records the mode of education and allows us to distinguish the important material effects between a domestic and an institutional education. This attribute allows us to trace the historical developments in women's access to education, for example, the informal domestic education of women writers in the early periods versus women's entrance to post-secondary education in the twentieth century.</skos:definition>
+    <skos:definition xml:lang="fr">Cet attribut facultatif attaché à Éducation renseigne le mode d'éducation et distingue l'incidence matérielle significative en fonction d'une éducation domestique et une éducation institutionnelle. L'attribut permet de retracer l'évolution de l'accès des femmes à l'éducation au cours de l'Histoire, en opposant par exemple l'éducation domestique informelle des auteures des périodes antérieures avec l'entrée des femmes dans les établissements post-secondaires au XXe siècle.</skos:definition>
     <rdfs:subClassOf rdf:resource="#Context"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -803,17 +805,21 @@
   </owl:Class>
 
   <owl:Class rdf:ID="DomesticEducationContext">
-    <rdfs:label xml:lang="en">Domestic education context</rdfs:label>
+    <rdfs:label xml:lang="en">domestic education context</rdfs:label>
+    <rdfs:label xml:lang="fr">contexte éducatif domestique</rdfs:label>
     <rdfs:subClassOf rdf:resource="#EducationContext"/>
     <skos:definition xml:lang="en">Education that takes place at home. For example, if a woman writer in the Victorian period was taught by her brother or a governess.</skos:definition>
+    <skos:definition xml:lang="fr">L'éducation a lieu à domicile. Par exemple, une auteure de la période victorienne qui a reçu son instruction d'un frère ou d'une gouvernante.</skos:definition>
     <skos:closeMatch rdf:resource="https://en.wikipedia.org/wiki/Homeschooling"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
   <owl:Class rdf:ID="InstitutionalEducationContext">
-    <rdfs:label xml:lang="en">Institutional education context</rdfs:label>
+    <rdfs:label xml:lang="en">institutional education context</rdfs:label>
+    <rdfs:label xml:lang="fr">contexte éducatif institutionnel</rdfs:label>
     <skos:definition xml:lang="en">Education or learning that takes place in an institutional setting.</skos:definition>
+    <skos:definition xml:lang="fr">L'instruction ou l'apprentissage a lieu dans un cadre institutionnel.</skos:definition>
     <skos:related rdf:resource="https://en.wikipedia.org/wiki/School"/>
     <rdfs:subClassOf rdf:resource="#EducationContext"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
