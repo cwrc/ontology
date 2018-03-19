@@ -625,8 +625,8 @@
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">Secondary Modern School</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="en">secondary modern school</rdfs:label>
+    <rdfs:label xml:lang="fr">école secondaire moderne</rdfs:label>
     <skos:definition xml:lang="en">&quot;A secondary modern school is a type of secondary school that once existed throughout England, Wales and Northern Ireland, from 1944 until the 1970s under the Tripartite System and still persist in Northern Ireland, where they are usually referred to simply as Secondary schools, and in areas of England, such as Buckinghamshire (where they are referred to as community schools), Lincolnshire, Wirral Medway and Kent where they are called high schools. &quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">«Les écoles secondaires modernes, ou Secondary Technical Schools (en), avaient pour objectif une professionnalisation rapide de leur élèves.» <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
@@ -773,6 +773,7 @@
 
   <owl:ObjectProperty rdf:ID="attends">
     <rdfs:label xml:lang="en">attends</rdfs:label>
+    <rdfs:label xml:lang="fr">scolarisation</rdfs:label>
     <skos:definition xml:lang="en">Indicates attending or having attended for education either a particular school or a particular type of schooling.</skos:definition>
     <skos:definition xml:lang="fr"> Indique que le sujet fréquente ou a fréquenté un établissement éducatif en particulier ou a reçu une forme d'enseignement spécifique</skos:definition>
     <rdfs:range rdf:resource="#School"/>
@@ -852,7 +853,6 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">An educational prize is a medal or award, monetary or otherwise, presented by either an institution or person of authority to an individual who has excelled beyond their peers, reached a great achievement, and/or produced a very high standard of work.</skos:definition>
     <skos:definition xml:lang="fr"/>
-
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#EducationalAward"/>
