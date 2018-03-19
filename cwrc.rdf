@@ -498,6 +498,17 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty> 
 
+  <owl:Class rdf:ID="Organization">
+    <rdfs:label xml:lang="en">organization</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:comment xml:lang="fr"/>
+    <rdfs:comment xml:lang="en"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <!-- Possibly typing or subclassing http://xmlns.com/foaf/0.1/Organization-->
+  </owl:Class>
 
 <!-- Education -->
 
