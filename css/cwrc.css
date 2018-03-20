@@ -1,169 +1,119 @@
-
 body {
-
- margin-left: 2em;
- margin-right: 2em;
- text-align: justify;
- padding: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: justify;
+    padding: 2em;
+    background-color: #f1f1f1;
+    font-family: "Lato",Arial,Helvetica,sans-serif;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    padding-top: 4em;
+    margin-top: -2em;
 }
 
-
-div.specterm {
-
-        border: 1px solid black;
-  	background: 	#F0F0F0  ;
-	  padding: 1em;
+table {
+    /*table-layout: fixed;*/
+    word-wrap: break-word;
+    width: 100%
+}
+.global-ref table{
+    border: solid 2px lightgrey;
+}
+.global-ref td {
+  -webkit-columns: 5 250px;
+    -moz-columns: 5 250px;
+      columns: 5 250px;
+    width: 75%;
+}
+.global-ref ul {
+    padding: 0;
+}
+.global-ref li {
+    list-style: none;
+}
+.global-ref th {
 }
 
-.archaic {
-/*        background: #5E2612; 
-The CSS here could do with some love...
-*/
-color: #5E2612;     
-} 
-
-.termdetails {
+th {
+    width: 25%;
+}
+td a:after {
+    content: ",";
+}
+td a:last-child:after {
+    content: none;
 }
 
-div.rdf-proplist {
-        background-color: #ddf;
-        border: 1px solid black;
-        float: left;
-/*        width: 26%; */
-        margin: 0.3em 1%; 
-}
-img { border: 0 } 
-
-.example {
-        border: 1px solid black;
-        background-color: #D9E3E9; 
-	padding: 5px;
-	width: 100%;
-}
-
- .editorial {
-        border: 2px solid green;
-        padding: 5px;
-}
-
-div.rdf-classlist {
-        background-color: #eef;
-        border: 1px solid black;
-        float: left;
-        margin: 0.3em 1%;
-        width: 26%;
-}
-
-div.rdf-proplist h3 {
-        background-color: #bbf;
-        font-size: 100%;
-        margin: 0;
-        padding: 5px;
-}
-
-div.rdf-classlist h3 {
-        background-color: #ccf;
-        font-size: 100%;
-        margin: 0;
-        padding: 5px;
-}
-
-h3.specterm {
-/*      foreground-color: #000; */
-        background-color: #bbf;
-        font-size: 100%;
-        margin: 0;
-        padding: 3px;
-}
-
-.specterm dl>dd:first-child {
-    margin-left: 0;
-}
-
-.defn {
-    margin-right: 10%;
-    margin: 0% 5%;
+section .table thead>tr>th, section .table tbody>tr>th, section .table tfoot>tr>th, section .table thead>tr>td, section .table tbody>tr>td, section .table tfoot>tr>td {
+    border: none;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    max-width: 60px; 
 }
 dl {
     margin: 0;
     margin-top: 0.5em;
 }
-
-.specterm dd {
-    display: inline-block;
-    margin-right: 0;
-    padding-left: 0;
-    margin-left: 0.5em;
-}
-.specterm dd::after { 
-    content: ", ";
+img {
+    border: 0
 }
 
-.azlist { 
-	padding: 5px; 
-	border: solid; 
-	background-color: #ddd;
+:target {
+  animation: highlight 3s ease;
+}
+@keyframes highlight {
+  from { background: #ae0030; }
+  to { background: #f1f1f1; }
 }
 
-.conceptlist {
-    padding: 5px; 
-    border: dotted; 
-    background-color: #ddd
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
 }
 
-div.az_list {
-    padding: 1em; 
-    border: dotted; 
-    background-color: #ddd;
+main a {
+    color: #000;
+    font-weight: bold;
+    border-bottom: 1px dashed #999;
 }
 
-.uri, .specterm dd a {
-    font-family:monospace; 
-    font-size:1em;
+main a:hover {
+    color: #444;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+
+/*
+Bootstrap Modifications
+*/
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.nav-link.active {
+    color: #818182 !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+
+.main-content {
+    background-color: white;
+    height: max-content;
 }
 
 #top {
     float: right; 
     font-size: small;
     margin-top: 0px;
+    display: none;
 }
 
-span.list-item {
-    display: inline-block;
-    margin-right: 5px; 
-}
-
-span.list-item:first-child {
-    margin-left: 5px; 
-}
-
-.table-contents ul {
-    list-style: none;
-}
-.az_list.deprecated_list {
-    background-color: #eecccc;
-}
-
-.deprecated_term .specterm {
-    background-color: #f8e9e9;
-}
-div.comment p {
-    padding-bottom: 0;
-    margin: 0;
-}
-
-object[type="image/svg+xml"] {
-    width: 100%;
-}
-
-div.figure {
-  float: right;
-  width: 30%;
-  text-align: center;
-  font-style: italic;
-  font-size: smaller;
-  text-indent: 0;
-  border: thin silver solid;
-  margin: 0.5em;
-  padding: 0.5em;
-}
