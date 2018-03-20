@@ -507,7 +507,7 @@
     <rdfs:comment xml:lang="en"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <!-- Possibly typing or subclassing http://xmlns.com/foaf/0.1/Organization-->
+    <!-- Possibly typing or subclassing or broader some sort of relation http://xmlns.com/foaf/0.1/Organization-->
   </owl:Class>
 
 <!-- Education -->
@@ -724,7 +724,7 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Religious School</rdfs:label>
-    <rdfs:label xml:lang="en">École Non Laïque</rdfs:label>
+    <rdfs:label xml:lang="fr">École Non Laïque</rdfs:label>
     <skos:definition xml:lang="en">A school associated formally in some way with a religion, ranging from parochial schools to faith-based schools.</skos:definition>
     <skos:definition xml:lang="fr">Établissement éducatif officiellement associé de quelque façon avec une religion, allant des écoles paroissiales aux écoles confessionnelles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
