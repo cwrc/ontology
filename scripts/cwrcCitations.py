@@ -12,9 +12,9 @@ import sys
 # corresponds to this entry http://beta.cwrc.ca/islandora/object/cwrc:8049540f-3673-4ca0-920c-cb5326d7c466
 # It will scrape the available citation if page available
 # The structure of this page is subject to change as beta.cwrc.ca grows
-# As of March 22nd 2018 it grabs text from
-# <div class="csl-bib-body"><div style="  text-indent: -25px; padding-left: 25px;"><div class="csl-entry">Petersen, T. <span style="font-style: italic;" >Art & Architecture Thesaurus</span>. no date. Oxford University Press, no date.</div></div></div></div>
-# Using the class="csl-bib-body" of a div
+# As of March 23nd 2018 it grabs the div element from
+# <div class="csl-entry">Petersen, T. <span style="font-style: italic;" >Art & Architecture Thesaurus</span>. no date. Oxford University Press, no date.</div>
+# Using the class="csl-entry" of a div
 
 if len(sys.argv) != 2:
     print("Insufficent Arguments provided")
@@ -34,11 +34,10 @@ try:
 except Exception as e:
     raise e
 
-# TODO: figure out why this break serialization
-# It still works just reports error messages, this may be due to structuring of the bibonodes in the rdf
-
 
 def etreetag_to_uri(tag):
+    # TODO: figure out why this break serialization
+    # It still works just reports error messages, this may be due to structuring of the bibonodes in the rdf
     return rdflib.term.URIRef(str(tag)[1:].replace("}", ""))
 
 parser = etree.XMLParser(strip_cdata=False)
@@ -59,9 +58,8 @@ def get_citation(url):
         print("<!-- Unable to retrieve citation from webpage.\n-->")
     soup = BeautifulSoup(page, 'html.parser')
     # Grabs citation from a div element looking like this --> this is subject to change with changes in cwrc
-    # <div class="csl-bib-body"><div style="  text-indent: -25px; padding-left: 25px;"><div class="csl-entry">Petersen, T. <span style="font-style: italic;" >Art & Architecture Thesaurus</span>. no date. Oxford University Press, no date.</div></div></div></div>
-    citation_block = soup.find("div", attrs={"class": "csl-bib-body"})
-    citation = citation_block.text
+    # <div class="csl-entry">Petersen, T. <span style="font-style: italic;" >Art & Architecture Thesaurus</span>. no date. Oxford University Press, no date.</div>
+    citation = soup.find("div", attrs={"class": "csl-entry"})
     return citation
 
 
@@ -72,15 +70,21 @@ def main():
                           o in o_graph.triples((None, RDF.type, x)) if "-partof" not in s]
     citation_dict = {}
     for x in citation_urls:
-        citation_dict[get_citation(x)] = x
+        citation_element = get_citation(x)
+        citation_dict[citation_element.text] = [x, citation_element]
 
-    print("<div class= 'bibliography'")
+    print('<div class= "bibliography">')
+    soup = BeautifulSoup("",'html.parser')
     for x in sorted(citation_dict.keys()):
-        print('<p id="%s">' % citation_dict[x])
-        print(x)
-        link_str = "http://beta.cwrc.ca/islandora/object/" + citation_dict[x]
-        print('[<a href="%s">link</a>]' % link_str)
-        print("</p>")
+        print('<div class="citation" id="%s">' % citation_dict[x][0])
+        link_str = "http://beta.cwrc.ca/islandora/object/" + citation_dict[x][0]
+        new_tag = soup.new_tag("a", href=link_str)
+        new_tag.string = "link"
+        citation_dict[x][1].append('[')
+        citation_dict[x][1].append(new_tag)
+        citation_dict[x][1].append(']')
+        print(citation_dict[x][1])
+        print("</div>")
     print("</div>")
 
 
