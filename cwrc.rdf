@@ -5965,6 +5965,7 @@
     <rdfs:range rdf:resource="#Person"/>
     <rdfs:domain rdf:resource="#Person"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Parent"/>
+    <owl:sameAs rdf:resource="http://schema.org/parent"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="parentOf">
@@ -5974,6 +5975,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
     <owl:inverseOf rdf:resource="#hasParent"/>
+    <owl:sameAs rdf:resource="http://schema.org/parent"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="motherOf">
@@ -5994,6 +5996,7 @@
     <rdfs:subPropertyOf rdf:resource="#hasParent"/>
     <rdfs:range rdf:resource="#Person"/>
     <rdfs:domain rdf:resource="#Person"/>
+    <skos:broader rdf:resource="http://schema.org/parent"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="fatherOf">
