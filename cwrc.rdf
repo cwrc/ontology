@@ -5804,24 +5804,25 @@
 
   <!-- Personal / family relationships. -->
   <owl:ObjectProperty rdf:ID="interpersonalRelationship">
-    <rdf:value>OTHER</rdf:value>
     <rdfs:label xml:lang="en">interpersonal relationship</rdfs:label>
     <rdfs:label xml:lang="fr">relation interpersonnelle</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+
+
   <owl:ObjectProperty rdf:ID="relativeOf">
-    <rdf:value>FAMILY</rdf:value>
     <rdfs:label xml:lang="en">relative of</rdfs:label>
     <rdfs:label xml:lang="fr">liens de famille</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdfs:subPropertyOf rdf:resource="#interpersonalRelationship"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="#Person"/>
+    <rdfs:domain rdf:resource="#Person"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="forebearOf">
-    <rdf:value>FOREBEAR</rdf:value>
     <rdfs:label xml:lang="en">forebear of</rdfs:label>
     <rdfs:label xml:lang="fr">ancêtre de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
@@ -5831,7 +5832,6 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="guardianOf">
-    <rdf:value>GUARDIAN</rdf:value>
     <rdfs:label xml:lang="en">guardian of</rdfs:label>
     <rdfs:label xml:lang="fr">tuteur (‑trice) / gardien (ne)</rdfs:label>
     <skos:definition xml:lang="en">A (young) adult officially placed in charge of the care of a minor. (eg: <![CDATA[<i>in loco parentis</i>]]>)</skos:definition>
@@ -5842,7 +5842,6 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="siblingOf">
-    <rdf:value>SIBLING</rdf:value>
     <rdfs:label xml:lang="en">sibling of</rdfs:label>
     <rdfs:label xml:lang="fr">frères et soeurs de</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5851,7 +5850,6 @@
   </owl:ObjectProperty>
   
   <owl:ObjectProperty rdf:ID="sisterOf">
-    <rdf:value>SISTER</rdf:value>
     <rdfs:label xml:lang="en">sister of</rdfs:label>
     <rdfs:label xml:lang="fr">soeur de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#siblingOf"/>
@@ -5860,7 +5858,6 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="brotherOf">
-    <rdf:value>BROTHER</rdf:value>
     <rdfs:label xml:lang="en">brother of</rdfs:label>
     <rdfs:label xml:lang="fr">frère de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#siblingOf"/>
@@ -5869,7 +5866,6 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepSisterOf">
-    <rdf:value>STEPSISTER</rdf:value>
     <rdfs:label xml:lang="en">sister of</rdfs:label>
     <rdfs:label xml:lang="fr">soeur de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#sisterOf"/>
@@ -5878,7 +5874,6 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepBrotherOf">
-    <rdf:value>STEPBROTHER</rdf:value>
     <rdfs:label xml:lang="en">brother of</rdfs:label>
     <rdfs:label xml:lang="fr">frère de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#brotherOf"/>
@@ -5887,7 +5882,6 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="childOf">
-    <rdf:value>CHILD</rdf:value>
     <rdfs:label xml:lang="en">child of</rdfs:label>
     <rdfs:label xml:lang="fr">enfant de</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5897,7 +5891,6 @@
 
 
   <owl:ObjectProperty rdf:ID="daughterOf">
-    <rdf:value>DAUGHTER</rdf:value>
     <rdfs:label xml:lang="en">daughter of</rdfs:label>
     <rdfs:label xml:lang="fr">fille de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#childOf"/>
@@ -5906,7 +5899,6 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="sonOf">
-    <rdf:value>SON</rdf:value>
     <rdfs:label xml:lang="en">son of</rdfs:label>
     <rdfs:label xml:lang="fr">fil de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#childOf"/>
@@ -5915,7 +5907,6 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="grandChildOf">
-    <rdf:value>GRANDCHILD</rdf:value>
     <rdfs:label xml:lang="en">grand child of</rdfs:label>
     <rdfs:label xml:lang="fr">petit enfant de</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5924,7 +5915,6 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="grandDaughterOf">
-    <rdf:value>GRANDDAUGHTER</rdf:value>
     <rdfs:label xml:lang="en">granddaughter of</rdfs:label>
     <rdfs:label xml:lang="fr">petite fille de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#grandChildOf"/>
@@ -5933,7 +5923,6 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="grandSonOf">
-    <rdf:value>GRANDSON</rdf:value>
     <rdfs:label xml:lang="en">grandson of</rdfs:label>
     <rdfs:label xml:lang="fr">petit fils de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#grandChildOf"/>
@@ -5943,7 +5932,6 @@
 
 
   <owl:ObjectProperty rdf:ID="stepChildOf">
-    <rdf:value>STEPCHILD</rdf:value>
     <rdfs:label xml:lang="en">step-child of</rdfs:label>
     <rdfs:label xml:lang="fr">enfant d'un autre mariage</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5952,7 +5940,6 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepDaughterOf">
-    <rdf:value>STEPDAUGHTER</rdf:value>
     <rdfs:label xml:lang="en">step-daughter of</rdfs:label>
     <rdfs:label xml:lang="fr">belle-fille de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#stepChildOf"/>
@@ -5961,7 +5948,6 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepSonOf">
-    <rdf:value>STEPSON</rdf:value>
     <rdfs:label xml:lang="en">step-son of</rdfs:label>
     <rdfs:label xml:lang="fr">beau-fils de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#stepChildOf"/>
@@ -5969,17 +5955,28 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:ID="hasParent">
+    <rdfs:label xml:lang="en">has parent</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">A parent is a caregiver of the offspring in their own species. In humans, a parent is the caretaker of a child (where "child" refers to offspring, not necessarily age). This predicate links a parent to the subject.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="#Person"/>
+    <rdfs:domain rdf:resource="#Person"/>
+    <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Parent"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:ID="parentOf">
-    <rdf:value>PARENTS</rdf:value>
     <rdfs:label xml:lang="en">parent of</rdfs:label>
     <rdfs:label xml:lang="fr">parent de</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
+    <owl:inverseOf rdf:resource="#hasParent"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="motherOf">
-    <rdf:value>MOTHER</rdf:value>
     <rdfs:label xml:lang="en">mother of</rdfs:label>
     <rdfs:label xml:lang="fr">mère de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#parentOf"/>
@@ -5987,13 +5984,25 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+<owl:ObjectProperty rdf:ID="hasFather">
+    <rdfs:label xml:lang="en">has father</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">A father is the male parent of a child. Besides the paternal bonds of a father to his children, the father may have a parental, legal, and social relationship with the child that carries with it certain rights and obligations. This predicate links a father to a subject.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#hasParent"/>
+    <rdfs:range rdf:resource="#Person"/>
+    <rdfs:domain rdf:resource="#Person"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:ID="fatherOf">
-    <rdf:value>FATHER</rdf:value>
     <rdfs:label xml:lang="en">father of</rdfs:label>
     <rdfs:label xml:lang="fr">père de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#parentOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasFather"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepParentOf">
