@@ -6332,7 +6332,6 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepMotherOf">
-    <rdf:value>STEPMOTHER</rdf:value>
     <rdfs:label xml:lang="en">step mother of</rdfs:label>
     <rdfs:label xml:lang="fr">belle-mère de</rdfs:label>
     <skos:definition xml:lang="en">Please be aware of the ambiguous nature of the french label for this term, which means here a person taking on the role of mother to a child while not being the child's birth mother.</skos:definition>
@@ -6358,7 +6357,6 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepFatherOf">
-    <rdf:value>STEPFATHER</rdf:value>
     <rdfs:label xml:lang="en">father of</rdfs:label>
     <rdfs:label xml:lang="fr">beau-père de</rdfs:label>
     <skos:definition xml:lang="en">Please be aware of the ambiguous nature of the french label for this term, which means here a person taking on the role of father to a child while not being the child's biological father.</skos:definition>
@@ -6386,7 +6384,6 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="grandParentOf">
-    <rdf:value>GRANDPARENTS</rdf:value>
     <rdfs:label xml:lang="en">grand parent of</rdfs:label>
     <rdfs:label xml:lang="fr">grand parent de</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6408,7 +6405,6 @@
   <owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="grandMotherOf">
-    <rdf:value>GRANDMOTHER</rdf:value>
     <rdfs:label xml:lang="en">grandmother of</rdfs:label>
     <rdfs:label xml:lang="fr">grand-mère de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#grandParentOf"/>
@@ -6432,7 +6428,6 @@
   <owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="grandFatherOf">
-    <rdf:value>GRANDFATHER</rdf:value>
     <rdfs:label xml:lang="en">grandfather of</rdfs:label>
     <rdfs:label xml:lang="fr">grand-père de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#grandParentOf"/>
@@ -6458,7 +6453,6 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="auntOf">
-    <rdf:value>AUNT</rdf:value>
     <rdfs:label xml:lang="en">aunt of</rdfs:label>
     <rdfs:label xml:lang="fr">tante de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
