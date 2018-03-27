@@ -5833,7 +5833,7 @@
   <owl:ObjectProperty rdf:ID="hasForebear">
     <rdfs:label xml:lang="en">has forebear</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">An ancestor or forebear is a parent or (recursively) the parent of an antecedent (i.e., a grandparent, great-grandparent, great-great-grandparent, and so forth). Ancestor is "any person from whom one is descended. This predicate indicates the forebear of the subject.</skos:definition>
+    <skos:definition xml:lang="en">An ancestor or forebear is a parent or (recursively) the parent of an antecedent (i.e., a grandparent, great-grandparent, great-great-grandparent, and so forth). Ancestor is "any person from whom one is descended". This predicate indicates the forebear of the subject.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:range rdf:resource="#Person"/>
     <rdfs:domain rdf:resource="#Person"/>
@@ -5896,6 +5896,8 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
     <owl:inverseOf rdf:resource="#hasSibling"/>
+    <rdfs:range rdf:resource="#Person"/>
+    <rdfs:domain rdf:resource="#Person"/>
   </owl:ObjectProperty>
   
   <owl:ObjectProperty rdf:ID="hasSister"/>
@@ -5952,7 +5954,7 @@
   <owl:ObjectProperty rdf:ID="hasStepSister">
     <rdfs:label xml:lang="en">has step sister</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">A stepsibling or stepsib is the offspring of one's stepparent. A Step Sister is a female step sibling</skos:definition/>
+    <skos:definition xml:lang="en">A stepsibling or stepsib is the offspring of one's stepparent. A Step Sister is a female step sibling.</skos:definition/>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepsibling"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5978,7 +5980,7 @@
   <owl:ObjectProperty rdf:ID="hasStepBrother">
     <rdfs:label xml:lang="en">has step brother</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">A stepsibling or stepsib is the offspring of one's stepparent. A Step Sister is a male step sibling</skos:definition/>
+    <skos:definition xml:lang="en">A stepsibling or stepsib is the offspring of one's stepparent. A Step Brother is a male step sibling.</skos:definition/>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepsibling"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6016,6 +6018,7 @@
     <rdfs:range rdf:resource="#Person"/>
     <rdfs:domain rdf:resource="#Person"/>
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
+    <owl:inverseOf rdf:resource="#hasChild"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasDaughter">
@@ -6119,7 +6122,7 @@
   <owl:ObjectProperty rdf:ID="hasGrandSon">
     <rdfs:label xml:lang="en">has grand son</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">a child's son</skos:definition>
+    <skos:definition xml:lang="en">A child's son.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Family#Roles"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6151,7 +6154,7 @@
     <rdfs:domain rdf:resource="#Person"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepchild"/>
     <rdfs:subPropertyOf rdf:resource="#hasRelative"/>
-    <skos:related rdf:resource="https://schema.org/children">
+    <skos:related rdf:resource="https://schema.org/children"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepChildOf">
@@ -6163,7 +6166,7 @@
     <owl:inverseOf rdf:resource="#hasStepChild"/>
     <rdfs:range rdf:resource="#Person"/>
     <rdfs:domain rdf:resource="#Person"/>
-    <skos:related rdf:resource="https://schema.org/parent">
+    <skos:related rdf:resource="https://schema.org/parent"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasStepDaughter">
@@ -6178,7 +6181,7 @@
     <rdfs:range rdf:resource="#Person"/>
     <rdfs:domain rdf:resource="#Person"/>
     <rdfs:subPropertyOf rdf:resource="#hasStepChild"/>
-    <skos:related rdf:resource="https://schema.org/children">
+    <skos:related rdf:resource="https://schema.org/children"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepDaughterOf">
@@ -6190,7 +6193,7 @@
     <rdfs:range rdf:resource="#Person"/>
     <rdfs:domain rdf:resource="#Person"/>
     <owl:inverseOf rdf:resource="#hasStepDaughter"/>
-    <skos:related rdf:resource="https://schema.org/parent">
+    <skos:related rdf:resource="https://schema.org/parent"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasStepSon">
@@ -6205,7 +6208,7 @@
     <rdfs:range rdf:resource="#Person"/>
     <rdfs:domain rdf:resource="#Person"/>
     <rdfs:subPropertyOf rdf:resource="#hasStepChild"/>
-    <skos:related rdf:resource="https://schema.org/children">
+    <skos:related rdf:resource="https://schema.org/children"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepSonOf">
@@ -6215,7 +6218,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:inverseOf rdf:resource="#hasStepSon"/>
-    <skos:related rdf:resource="https://schema.org/parent">
+    <skos:related rdf:resource="https://schema.org/parent"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasParent">
@@ -6251,6 +6254,7 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Mother"/>
     <skos:broader rdf:resource="http://schema.org/parent"/>
     <rdfs:range rdf:resource="#Person"/>
     <rdfs:domain rdf:resource="#Person"/>
@@ -6274,6 +6278,7 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">A father is the male parent of a child. Besides the paternal bonds of a father to his children, the father may have a parental, legal, and social relationship with the child that carries with it certain rights and obligations. This predicate links a father to a subject.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Father"/>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#hasParent"/>
@@ -6290,13 +6295,14 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:inverseOf rdf:resource="#hasFather"/>
-    <skos:broader rdf:resource="https://schema.org/children">
+    <skos:broader rdf:resource="https://schema.org/children"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasStepParent">
     <rdfs:label xml:lang="en">has step parent</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">A step-parent is a non-biological figure who is married to one's parent.</skos:definition>
+    <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepfather"/>
     <skos:definition xml:lang="fr"/>
     <rdfs:range rdf:resource="#Person"/>
     <rdfs:domain rdf:resource="#Person"/>
@@ -6327,6 +6333,8 @@
     <rdfs:domain rdf:resource="#Person"/>
     <owl:inverseOf rdf:resource="#hasStepParent"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepmother"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#hasStepParent"/>
     <skos:broader rdf:resource="http://schema.org/parent"/>
   </owl:ObjectProperty>
@@ -6351,6 +6359,8 @@
     <rdfs:range rdf:resource="#Person"/>
     <rdfs:domain rdf:resource="#Person"/>
     <owl:inverseOf rdf:resource="#hasStepParent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepfather"/>
     <rdfs:subPropertyOf rdf:resource="#hasStepParent"/>
     <skos:broader rdf:resource="http://schema.org/parent"/>
@@ -6387,6 +6397,8 @@
     <rdfs:label xml:lang="en">grand parent of</rdfs:label>
     <rdfs:label xml:lang="fr">grand parent de</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdfs:range rdf:resource="#Person"/>
+    <rdfs:domain rdf:resource="#Person"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
     <owl:inverseOf rdf:resource="#hasGrandParent"/>
@@ -6397,6 +6409,7 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">A Grandmother is the mother of a person's father or mother – paternal or maternal.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Grandparent"/>
     <rdfs:range rdf:resource="#Person"/>
     <rdfs:domain rdf:resource="#Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6570,11 +6583,24 @@
     <skos:broader rdf:resource="http://schema.org/relatedTo"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:ID="hasPartner">
+    <rdfs:label xml:lang="en">has partner</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    This term is intended for romantic / emotional / familial relationships and not for business relationships.</skos:definition>
+    <skos:definition xml:lang="fr">Ce terme représente uniquement les relations affectives, amoureuses ou familiales et non des relations d'affaires.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="#Person"/>
+    <rdfs:domain rdf:resource="#Person"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:ID="partnerOf">
     <rdfs:label xml:lang="en">partner of</rdfs:label>
     <rdfs:label xml:lang="fr">conjoint de</rdfs:label>
     <skos:definition xml:lang="en">This term is intended for romantic / emotional / familial relationships and not for business relationships.</skos:definition>
     <skos:definition xml:lang="fr">Ce terme représente uniquement les relations affectives, amoureuses ou familiales et non des relations d'affaires.</skos:definition>
+    <rdfs:range rdf:resource="#Person"/>
+    <rdfs:domain rdf:resource="#Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
@@ -6586,11 +6612,13 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">A wife is a female partner in a continuing marital relationship. A wife refers to a woman.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Wife"/>
     <rdfs:range rdf:resource="#Person"/>
     <rdfs:domain rdf:resource="#Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broader rdf:resource="https://schema.org/spouse"/>
+    <rdfs:subPropertyOf rdf:resource="#hasPartner"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="wifeOf">
@@ -6616,6 +6644,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broader rdf:resource="https://schema.org/spouse"/>
+    <rdfs:subPropertyOf rdf:resource="#hasPartner"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="husbandOf">
@@ -6623,6 +6652,8 @@
     <rdfs:label xml:lang="fr">mari de</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="#Person"/>
+    <rdfs:domain rdf:resource="#Person"/>
     <rdfs:subPropertyOf rdf:resource="#partnerOf"/>
     <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Partnership"/>
     <skos:broader rdf:resource="https://schema.org/spouse"/>
