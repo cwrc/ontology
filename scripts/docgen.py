@@ -228,6 +228,7 @@ def all_terms_html(nodes):
                         (None, RDF.type, y)) if str(s) not in deprecated_uris]
                     string += '<hr/>'
                     string += '<h4 id="%s">%s</h4>\n' % (get_prefix(y), get_prefix(y))
+                    string += create_term_html(get_uri_term(y))
                     string += create_terms_html(sorted(instances), get_prefix(y))
     return string
 
@@ -265,13 +266,6 @@ def specgen(template, language):
     # template = template.replace("{_bibliography_}", newAZ(bibo_nodes) + bibliography_html)
 
     return template
-
-
-def create_term_header(list_type, term, uri):
-    html_str = '<p id="top">[<a href="#definition_list">back to top</a>]</p>\n'
-    html_str += '<h5>%s:%s</h5>\n' % (spec_pre, term)
-    html_str += """<p class="uri">URI: <a href="#%s">%s</a></p>\n""" % (term, uri)
-    return html_str
 
 
 def create_term_main(term, uri):
@@ -376,23 +370,26 @@ def create_term_domran(uri):
 def create_terms_html(term_list, list_type):
     html_str = ""
     for uri in term_list:
-        full_uri = get_full_uri(uri)
-        html_str += '<section class="specterm" id="%s">\n' % uri
-        # html_str += create_term_header(list_type, uri, full_uri)
-        html_str += create_term_main(uri, full_uri)
+        html_str += create_term_html(uri)
+    return html_str
 
-        term_dict = {}
-        predicates = sorted(list(set([p for s, p, o in o_graph.triples(
-            (full_uri, None, None)) if (p not in term_main_uris) and (p not in term_ignore_uris)])))
 
-        for predicate in predicates:
-            objects = [o for o in o_graph.objects(full_uri, predicate) if(type(o) == rdflib.term.Literal and (
-                o.language == lang or o.language is None)) or (type(o) is not rdflib.term.Literal)]
-            term_dict[predicate] = sorted(objects)
+def create_term_html(uri):
+    html_str = ""
+    full_uri = get_full_uri(uri)
+    html_str += '<section class="specterm" id="%s">\n' % uri
+    html_str += create_term_main(uri, full_uri)
 
-        html_str += create_term_extra(term_dict, full_uri, uri)
-        html_str += '</section>\n'
+    term_dict = {}
+    predicates = sorted(list(set([p for s, p, o in o_graph.triples(
+        (full_uri, None, None)) if (p not in term_main_uris) and (p not in term_ignore_uris)])))
 
+    for predicate in predicates:
+        objects = [o for o in o_graph.objects(full_uri, predicate) if(type(o) == rdflib.term.Literal and (
+            o.language == lang or o.language is None)) or (type(o) is not rdflib.term.Literal)]
+        term_dict[predicate] = sorted(objects)
+
+    html_str += create_term_extra(term_dict, full_uri, uri) + '\n</section>\n'
     return html_str
 
 
@@ -566,10 +563,10 @@ select * where {
     deprecated_uris = sorted(deprecated_uris)
     terms = [get_uri_term(s) for s in deprecated_uris]
 
-    html_str = '<h4 id="deprecated_list" >Global Cross Reference of Deprecated Terms</h4>'
+    html_str = '<h3 id="deprecated_list" >Global Cross Reference of Deprecated Terms</h3>'
     html_str += '<div class="az_list deprecated_list">'
     html_str += create_link_lists(terms, "Deprecated Terms:<br/>")
-    html_str += '</div><h4>Terms and details</h4>'
+    html_str += '</div><h3>Terms and details</h3>'
     html_str += "<div class=\"deprecated_term\">"
 
     for uri in deprecated_uris:
