@@ -653,12 +653,14 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Trade School</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">Lycée professionnel</rdfs:label>
     <skos:definition xml:lang="en">&quot;A vocational school, sometimes called a trade school or vocational college, is a post-secondary educational institution designed to provide vocational education, or technical skills required to perform the tasks of a particular and specific job. Vocational schools are traditionally distinguished from four-year colleges by their focus on job-specific training to students who are typically bound for one of the skilled trades, rather than providing academic training for students pursuing careers in a professional discipline. While many schools have largely adhered to this convention, the purely vocational focus of other trade schools began to shift in the 1990s &quot;toward a broader preparation that develops the academic&quot; as well as technical skills of their students.&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">«En France, le lycée professionnel (LP) est un établissement d'enseignement professionnel qui offre un enseignement professionnel en relation avec les métiers des entreprises, afin d'acquérir des compétences, des connaissances et des savoir-faire dans un domaine professionnel. Son but est l'insertion socioprofessionnelle.» <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Secondary_education_in_France"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Vocational_school"/>
   </owl:Class>
 
@@ -668,10 +670,12 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Primary School</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">École primaire</rdfs:label>
     <skos:definition xml:lang="en">&quot;A primary school (or elementary school in American English and often in Canadian English) is a school in which children receive primary or elementary education from the age of about five to twelve, coming after preschool and before secondary school. (In some countries there is an intermediate stage of middle school between primary and secondary education.)&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"> «L’enseignement primaire, ou l’école primaire, est, dans plusieurs pays, le premier degré de l’enseignement. Il permet notamment l'apprentissage de la lecture, de l'écriture et des bases des mathématiques. Les enfants débutent leurs études primaires vers l’âge de 6 ans et les achèvent vers l’âge de 11 ans.» <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]>
+    </skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Primary_school"/>
@@ -683,10 +687,11 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Secondary School</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">Collège</rdfs:label>
     <skos:definition xml:lang="en">&quot;A secondary school is both an organization that provides secondary education and the building where this takes place. Some secondary schools can provide both lower secondary education and upper secondary education (levels 2 and 3 of the ISCED scale), but these can also be provided in separate schools, as in the American middle school- high school system. Secondary schools typically follow on from primary schools and lead into vocational and tertiary education. Attendance is compulsory in most countries for students between the ages of 11 and 16. The organisations, buildings, and terminology are more or less unique in each country.&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">«En France, le collège est un établissement d'enseignement — public ou privé — qui se situe entre l'école primaire et le lycée et assure le premier niveau de l'enseignement secondaire (de la 6e à la 3e) en principe de 11 à 14 / 15 ans environ (l'âge obligatoire minimum de sortie scolaire est de 16 ans en France).» <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Secondary_school"/>
@@ -698,10 +703,11 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Post-Secondary School</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">Post-Secondary School</rdfs:label>
     <skos:definition xml:lang="en">&quot;Higher education, post-secondary education, or third level education is an optional final stage of formal learning that occurs after secondary education. Often delivered at universities, academies, colleges, seminaries, and institutes of technology, higher education is also available through certain college-level institutions, including vocational schools, trade schools, and other career colleges that award academic degrees or professional certifications. Tertiary education at non-degree level is sometimes referred to as further education or continuing education as distinct from higher education. The right of access to higher education is mentioned in a number of international human rights instruments. The UN International Covenant on Economic, Social and Cultural Rights of 1966 declares, in Article 13, that "higher education shall be made equally accessible to all, on the basis of capacity, by every appropriate means, and in particular by the progressive introduction of free education". In Europe, Article 2 of the First Protocol to the European Convention on Human Rights, adopted in 1950, obliges all signatory parties to guarantee the right to education&quot; <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">«Le terme d'études supérieures désigne généralement l'éducation dispensée par les universités, les collèges anglo-saxons, avec en France un système plus dual de grandes écoles et d'autres institutions comme les grands établissements décernant des grades universitaires ou autres diplômes de l’enseignement supérieur. Ces études visent à acquérir un niveau "supérieur" de compétences, généralement via une inscription ou concours d'entrée, un cursus ponctués par des examens. Historiquement, il s’agissait autrefois d'abord de former les élites recrutées par les États, les armées et les religions, puis (à partir de la révolution industrielle) par les monde économique et industriel et de la culture ou de l'enseignement. Mais d'autres dimensions, socioculturelles et éthiques ou de développement durable sont apparues à la fin du XXe siècle, ajoutant une dimension de service public visant à permettre aux étudiants, de trouver leur voie ou domaine d'excellence, de se préparer aux métiers futurs tout en faisant progresser le savoir. Ces études se déroulent souvent autour de campus, dans un système public ou privé selon les cas, et souvent catégorisés en « Sciences dures », « sciences de l'ingénieur » et « sciences humaines et sociales ». Les types de diplômes évoluent avec le temps, mais tendent à s'homogénéiser aux niveaux européens et internationaux avec les licences, des masters, et des doctorats pour faciliter les systèmes d'équivalence ou de reconnaissance mutuelle de diplômes. Cette formation inclut des cours et des stages, et peut également comporter des participations à la recherche scientifique (notamment au niveau du doctorat) et intégrer de la formation continue, mais accepte souvent aussi des « auditeurs libres » qui viennent simplement accroître leur culture générale ou spécialisée.» <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Higher_education"/>
@@ -712,9 +718,11 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Prep School</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">École préparatoire</rdfs:label>
     <skos:definition xml:lang="en">Within a North American context, prep schools are private educational institutions that prepare students for college. Within a British context, they are private schools for students -- the age range of the students can vary significantly depending on when they went to school, though typically ranging from ages seven (though sometimes three) to thirteen.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">«Une école préparatoire (preparatory school, souvent abrévié prep-school) est, dans le système éducatif britannique, une école préparant les enfants âgés entre 2 et 13 ans aux concours d'entrée aux écoles privées de plus ou moins grande renommée, les public school, telles que Eton College, Harrow School, Winchester College ou encore Marlborough College. Les élèves fréquentent la plupart du temps les prep-schools en tant que demi-pensionnaires, mais il est possible dans certains établissements d'être pensionnaire. Ces écoles préparatoires sont dites indépendantes, sont mixtes ou bien réservées aux garçons ou aux filles seulement, et les frais de scolarité sont généralement élevés, pouvant aller jusqu'à quatorze mille livres sterling par an. Certaines écoles se spécialisent dans les premières années de l'enseignement, accueillant les élèves de 2 à 8 ans, et sont appelées écoles pré-préparatoires (pre-preparatory school, abrévié prep-prep school). Ce système d'éducation indépendante se distingue du système public en ce que les élèves changent d'école à des âges différents. Ainsi, un élève issu du système privé suivra en principe le parcours suivant : De 2 à 8 ans : école pré-préparatoire De 8 à 13 ans : école préparatoire De 13 à 18 ans : public school Alors qu'un élève du système financé intégralement par le gouvernement britannique suivra la scolarité suivante : De 4 à 11 ans : école primaire De 11 à 18 ans : école secondaire (Noter que les écoles secondaires publiques se divisent en deux catégories, les comprehensive schools, ouvertes à tous, et les grammar school, accessibles sur sélection par concours d'entrée.)» <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Preparatory_school_(United_Kingdom)"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -774,7 +782,9 @@
 
   <owl:ObjectProperty rdf:ID="hasStudent">
     <rdfs:label xml:lang="en">has Student</rdfs:label>
+    <rdfs:label xml:lang="fr">a Un·e Étudiant·e</rdfs:label>
     <skos:definition xml:lang="en">Indicates that the student was educated by the entity in question,—an instructor, an educational institution, or a particular type of schooling.</skos:definition>
+    <skos:definition xml:lang="fr">Indique que l'étudiant·e a été éduqué·e par l'entité en question (instructeur·rice, établissement éducatif,ou type d'éducation particulière).</skos:definition>
     <rdfs:range rdf:resource="#NaturalPerson"/>
     <rdfs:domain rdf:resource="#School"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -807,10 +817,12 @@
 
   <owl:Class rdf:ID="SelfTaughtEducationContext">
     <rdfs:label xml:lang="en">Self taught education context</rdfs:label>
+    <rdfs:label xml:lang="fr">Contexte Éducatif Autodidacte</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationContext"/>
     </rdfs:subClassOf>
     <skos:definition xml:lang="en">Education or learning conducted independently.</skos:definition>
+    <skos:definition xml:lang="fr">Éducation ou apprentissage acquis en autodidacte.</skos:definition>
     <skos:related rdf:resource="https://en.wikipedia.org/wiki/Autodidacticism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -851,9 +863,9 @@
 
   <owl:Class rdf:ID="EducationalAward">
     <rdfs:label xml:lang="en">educational award</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">récompenses scolaires</rdfs:label>
     <skos:definition xml:lang="en">Describes the different kinds of educational awards (scholarship, prize, etc.) that can be awarded to a person. An entrance scholarship to Oxford is different from winning first prize in a Spelling Bee and distinguishing between awards will help understand the material conditions affecting the subject's access to education.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Décrit les différents types de récompenses liées au parcours scolaire (bourse, prix, etc) qui peuvent être décernées à une personne. Une bourse d'entrée à Oxford étant différente d'un premier prix au concours d'orthographe, distinguer les différents types de récompenses aide à comprendre les conditions matérielles affectant l'accès du sujet à l'éducation.</skos:definition>
     <rdfs:subClassOf rdf:resource="#EducationContext"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -871,7 +883,9 @@
 
   <cwrc:EducationalAward rdf:ID="educationalAwardScholarship">
     <rdfs:label xml:lang="en">educational award scholarship</rdfs:label>
+    <rdfs:label xml:lang="fr">bourse d'étude</rdfs:label>
     <skos:definition xml:lang="en">A scholarship is an award of financial aid for a student to further their education. Scholarships are awarded based upon various criteria, which usually reflect the values and purposes of the donor or founder of the award. Scholarship money is not required to be repaid.</skos:definition>
+    <skos:definition xml:lang="fr">Une bourse d'études est une aide financière qui permet à un·e étudiant·e de poursuivre sa formation. Les bourses sont accordées en fonction de divers critères qui reflètent généralement les valeurs et les objectifs de l'organisation donatrice ou fondatrice de la récompense. L'argent d'une bourse d'études ne peut pas être remboursé.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#EducationalAward"/>
