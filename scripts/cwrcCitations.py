@@ -36,17 +36,16 @@ except Exception as e:
 
 
 def etreetag_to_uri(tag):
-    # TODO: figure out why this break serialization
-    # It still works just reports error messages, this may be due to structuring of the bibonodes in the rdf
-    return rdflib.term.URIRef(str(tag)[1:].replace("}", ""))
+    return rdflib.term.URIRef(tag[1:].replace("}", ""))
 
 parser = etree.XMLParser(strip_cdata=False)
 with open(file, "rb") as source:
     tree = etree.parse(source, parser=parser)
     root = tree.getroot()
-    types = sorted(list(set([etreetag_to_uri(x.tag) for x in root])))
+    types = sorted(list(set([str(x.tag) for x in root])))
     # grabbing bibo nodes
-    bibo_nodes = [x for x in types if ("purl.org/ontology/bibo/" in str(x)) if "Collection" not in x]
+    bibo_nodes = [etreetag_to_uri(x) for x in types if (
+        "purl.org/ontology/bibo/" in str(x)) if "Collection" not in x]
 
 
 def get_citation(url):
@@ -74,7 +73,7 @@ def main():
         citation_dict[citation_element.text] = [x, citation_element]
 
     print('<div class= "bibliography">')
-    soup = BeautifulSoup("",'html.parser')
+    soup = BeautifulSoup("", 'html.parser')
     for x in sorted(citation_dict.keys()):
         print('<div class="citation" id="%s">' % citation_dict[x][0])
         link_str = "http://beta.cwrc.ca/islandora/object/" + citation_dict[x][0]
