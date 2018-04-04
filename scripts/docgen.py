@@ -131,6 +131,7 @@ def get_high_lvl_nodes():
                    rdflib.term.URIRef("http://www.w3.org/2002/07/owl#Ontology"),
                    rdflib.term.URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#Description"),
                    rdflib.term.URIRef("http://www.w3.org/2002/07/owl#DeprecatedClass"),
+                   # Most instances are also typed as concepts, resulting in redundant types in the main listing
                    rdflib.term.URIRef("http://www.w3.org/2004/02/skos/core#Concept"),
                    rdflib.term.URIRef("http://www.w3.org/2002/07/owl#DeprecatedProperty")]
     types = sorted(list(set([etreetag_to_uri(x.tag) for x in root if etreetag_to_uri(x.tag) not in ignore_uris])))
@@ -208,9 +209,15 @@ def newAZ(nodes):
     return string
 
 
+def grandchildren_exist(instances):
+    for x in instances:
+        if any(s in s for s, p, o in o_graph.triples((None, RDF.type, x)) if str(s) not in deprecated_uris):
+            return True
+    return False
+
+
 def all_terms_html(nodes):
     types = [x for x in nodes if spec_url not in x]
-    instanceTypes = sorted(list(set(nodes) - set(types)))
     string = ""
     for x in types:
         string += '<div class="type">'
@@ -220,16 +227,19 @@ def all_terms_html(nodes):
         string += '<div/>'
 
     for x in types:
-        if any((y, RDF.type, x) in o_graph for y in instanceTypes):
+        instances = sorted([x for x in o_graph.subjects(None, x)])
+        if any((y, RDF.type, x) in o_graph for y in instances) and grandchildren_exist(instances):
             string += '<h3>%s Instances</h3>\n' % get_prefix(x)
-            for y in instanceTypes:
-                if (y, RDF.type, x) in o_graph:
-                    instances = [get_uri_term(s) for s, p, o in o_graph.triples(
+            for y in instances:
+                if any(s in s for s, p, o in o_graph.triples(
+                        (None, RDF.type, y)) if str(s) not in deprecated_uris):
+                    instances2 = [get_uri_term(s) for s, p, o in o_graph.triples(
                         (None, RDF.type, y)) if str(s) not in deprecated_uris]
-                    string += '<hr/>'
+                    string += '<div class="instancestype">'
                     string += '<h4 id="%s">%s</h4>\n' % (get_prefix(y), get_prefix(y))
                     string += create_term_html(get_uri_term(y))
-                    string += create_terms_html(sorted(instances), get_prefix(y))
+                    string += '</div>'
+                    string += create_terms_html(sorted(instances2), get_prefix(y))
     return string
 
 
@@ -329,7 +339,7 @@ def create_term_extra(term_dict, uri, term):
     if instance_list:
         html_str += "<tr>\n"
         html_str += """<th><a href="#%s" title="%s Instances" >Concepts</a>:</th>\n""" % (
-            spec_pre + ":" + term, spec_pre + ":" + term)
+            spec_pre + "%3A" + term, spec_pre + ":" + term)
         html_str += create_row(sorted(instance_list), listitem=False)
         html_str += "</tr>\n"
 
