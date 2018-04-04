@@ -17,7 +17,7 @@ force:	$(ONTOLOGY).rdf
 	touch $(ONTOLOGY)-template-$(O_LANG).html	
 	rm -f cwrc-ref.bib
 
-all: $(ONTOLOGY_W_DATE).rdf $(ONTOLOGY_W_DATE)-$(O_LANG).html $(ONTOLOGY).html
+all: $(ONTOLOGY_W_DATE).rdf $(ONTOLOGY_W_DATE)-$(O_LANG).html $(ONTOLOGY).html $(ONTOLOGY)-preamble-$(O_LANG).html
 
 $(ONTOLOGY_W_DATE).tmp: $(ONTOLOGY).rdf $(ONTOLOGY_W_DATE).bibli
 	echo $(ONTOLOGY_LOGO)
@@ -40,6 +40,8 @@ $(ONTOLOGY_W_DATE).rdf: $(ONTOLOGY_W_DATE).unique $(ONTOLOGY_W_DATE).counts $(ON
 $(ONTOLOGY_W_DATE).bibli:
 	./scripts/getFedoraCollection.sh $(ONTOLOGY) $@
 
+$(ONTOLOGY)-preamble-$(O_LANG).html: $(ONTOLOGY)-preamble-template-$(O_LANG).html figures/religionTaxonomy-$(DATE_W_LANG).svg figures/politicalAffiliationTaxonomy-$(DATE_W_LANG).svg figures/genreTaxonomy-$(DATE_W_LANG).svg
+	sed "s/PREVIOUS_ONTOLOGY/$(PREVIOUS_ONTOLOGY)/g"  < $(ONTOLOGY)-preamble-template-$(O_LANG).html | sed "s/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g" | sed "s/ONTOLOGY_NAME/$(ONTOLOGY)/g"  | sed "s/ONTOLOGY_DATE/$(ONTOLOGY_DATE)/g" |  sed "s/ONTOLOGY_LONGDATE/$(ONTOLOGY_LONGDATE)/g"  | sed "s/ONTOLOGY_VERSION/$(ONTOLOGY_VERSION)/g"  | sed 's/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g'  > $@
 $(ONTOLOGY)-template-$(DATE_W_LANG).html: $(ONTOLOGY)-template-$(O_LANG).html figures/religionTaxonomy-$(DATE_W_LANG).svg figures/politicalAffiliationTaxonomy-$(DATE_W_LANG).svg figures/genreTaxonomy-$(DATE_W_LANG).svg
 	sed "s/PREVIOUS_ONTOLOGY/$(PREVIOUS_ONTOLOGY)/g"  < $(ONTOLOGY)-template-$(O_LANG).html | sed "s/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g" | sed "s/ONTOLOGY_NAME/$(ONTOLOGY)/g"  | sed "s/ONTOLOGY_DATE/$(ONTOLOGY_DATE)/g" |  sed "s/ONTOLOGY_LONGDATE/$(ONTOLOGY_LONGDATE)/g"  | sed "s/ONTOLOGY_VERSION/$(ONTOLOGY_VERSION)/g"  | sed 's/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g'  > $@
 $(ONTOLOGY)-template2-$(DATE_W_LANG).html: $(ONTOLOGY)-template-$(DATE_W_LANG).html $(ONTOLOGY)-citations.html
@@ -69,6 +71,7 @@ testing-deploy: force all
 testing: all
 	cat $(ONTOLOGY_W_DATE)-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY_W_DATE)-EN.html
 	cat $(ONTOLOGY_W_DATE)-FR.html  | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY_W_DATE)-FR.html
+	cat $(ONTOLOGY)-preamble-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY)-preamble-EN.html
 	cp -f $(ONTOLOGY_W_DATE).rdf /var/www/html/testing/.
 	cp -f $(ONTOLOGY_W_DATE).nt /var/www/html/testing/.
 	cp -f $(ONTOLOGY_W_DATE).ttl /var/www/html/testing/.	
