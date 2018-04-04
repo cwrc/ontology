@@ -44,7 +44,7 @@ $(ONTOLOGY)-template-$(DATE_W_LANG).html: $(ONTOLOGY)-template-$(O_LANG).html fi
 	sed "s/PREVIOUS_ONTOLOGY/$(PREVIOUS_ONTOLOGY)/g"  < $(ONTOLOGY)-template-$(O_LANG).html | sed "s/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g" | sed "s/ONTOLOGY_NAME/$(ONTOLOGY)/g"  | sed "s/ONTOLOGY_DATE/$(ONTOLOGY_DATE)/g" |  sed "s/ONTOLOGY_LONGDATE/$(ONTOLOGY_LONGDATE)/g"  | sed "s/ONTOLOGY_VERSION/$(ONTOLOGY_VERSION)/g"  | sed 's/ONTOLOGY_LOGO/$(ONTOLOGY_LOGO)/g'  > $@
 $(ONTOLOGY)-template2-$(DATE_W_LANG).html: $(ONTOLOGY)-template-$(DATE_W_LANG).html $(ONTOLOGY)-citations.html
 	 m4 -P $(ONTOLOGY)-template-$(DATE_W_LANG).html > $@
-$(ONTOLOGY_W_DATE)-$(O_LANG).html: $(ONTOLOGY_W_DATE).rdf $(ONTOLOGY)-template2-$(DATE_W_LANG).html
+$(ONTOLOGY_W_DATE)-$(O_LANG).html: $(ONTOLOGY_W_DATE).rdf $(ONTOLOGY)-template2-$(DATE_W_LANG).html ./scripts/docgen.py
 	./scripts/docgen.py $(ONTOLOGY_W_DATE).rdf $(ONTOLOGY)-template2-$(DATE_W_LANG).html  $@  $(O_LANG)
 
 $(ONTOLOGY)-citations.html: $(ONTOLOGY_W_DATE).bibli ./scripts/cwrcCitations.py
@@ -108,8 +108,8 @@ clean-all:
 	@ls | grep '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].*'| xargs -p rm -v
 
 doc: scripts/docgen.py
-	./scripts/docgen.py $(ONTOLOGY_W_DATE).rdf $(ONTOLOGY)-template-FR.html  $(ONTOLOGY_W_DATE)-FR.html fr
 	./scripts/docgen.py $(ONTOLOGY_W_DATE).rdf $(ONTOLOGY)-template-EN.html  $(ONTOLOGY_W_DATE)-EN.html  en
+	# ./scripts/docgen.py $(ONTOLOGY_W_DATE).rdf $(ONTOLOGY)-template-FR.html  $(ONTOLOGY_W_DATE)-FR.html fr
 doctest: scripts/docgen.py
 	./scripts/docgen.py $(ONTOLOGY).rdf $(ONTOLOGY)-template2-$(DATE_W_LANG).html  $(ONTOLOGY_W_DATE)-EN.html  en
 cross:

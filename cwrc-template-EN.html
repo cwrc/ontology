@@ -6,11 +6,14 @@
 
     <title>CWRC Ontology Specification - ONTOLOGY_VERSION</title>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
     <link href="css/cwrc.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon"/>
     <link rel="icon" href="css/favicon.ico" type="image/x-icon"/>
+
+
   </head>
 
   <body>
@@ -35,46 +38,35 @@
     <div class="container-fluid">
       <div class="row">
         
-<!--               
-        <nav class="col-md-2 col-sm-8 d-none d-xl-inline-block bg-light sidebar">
+        
+        <nav class="col-xl-2 col-lg-3 col-md-12 d-none d-lg-block bg-light sidebar">
           <div class="sidebar-sticky">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Table of Contents<span class="sr-only">(current)</span>
-                </a>
-              </li>
-            </ul>
 
-            <div class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <div class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
               <span>Table of Contents</span>
-              <a class="d-flex align-items-center text-muted" href="#">
-              </a>
-            </p>
-            <ul class="nav flex-column mb-2">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Current month
-                </a>
-              </li>
-            </ul> 
+              <a class="d-flex align-items-center text-muted" href="#"></a>
               <div id="toc">
-                Auto Generated TOC
+                <!-- Table of Contents -->
               </div>
+
             </div>
           </div>
         </nav>
-          -->
+        <!-- <header id="header" class="col-md-12 ml-sm-auto col-lg-10 pt-3 px-4"> -->
+        <header id="header" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto  pt-3 px-4">
+         
 
-        <main role="main" class="col-md-12 ml-sm-auto col-lg-10 pt-3 px-4">
           {_header_}
           <p class="copyright"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
           <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png"/></a>
           <br/>
           This work is licensed under a 
           <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
+        </header>
 
-
+        <main role="main" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto pt-3 px-4" data-spy="scroll" data-target="#toc">
+        <!-- <main role="main" class="col-md-12 ml-sm-auto col-lg-10 pt-3 px-4" data-spy="scroll" data-target="#toc"> -->
+          
           <h2 id="definition_list">1. Global Cross-Reference</h2>
           <!-- The list of classes and properties goes here -->
           {_azlist_}
@@ -84,9 +76,10 @@
           <!-- The following is the script-generated list of classes and properties -->
           {_terms_}
           <!-- End of the terms list -->
-
-          <h2 id="deprecated">3. Deprecated Terms</h2>
-          {_deprecated_}
+          <div class="deprecated">
+            <h2 id="deprecated">3. Deprecated Terms</h2>
+            {_deprecated_}
+          </div>
           
           <h2 id="bibliography">4. Bibliography</h2>
           m4_include(cwrc-citations.html)
@@ -102,6 +95,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+  <script src="js/toc.js"></script>
 
+  <script>
+      var options = {
+          selector: 'h2, h3, h4',
+          scope: 'main'
+      };
+      // for jQuery version
+      // $('.toc.jquery').initTOC(options);
+      // for non-jQuery version
+      var container = document.querySelector('#toc');
+      var toc = initTOC(options);
+      container.appendChild(toc);
+
+
+  </script>
   </body>
 </html>
