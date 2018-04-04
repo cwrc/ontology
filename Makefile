@@ -83,6 +83,7 @@ testing: all
 	ln -sf /var/www/html/testing/$(ONTOLOGY_W_DATE).ttl /var/www/html/testing/$(ONTOLOGY).ttl
 	cp -f figures/* /var/www/html/testing/figures/.	
 	cp -f -R css /var/www/html/testing/.
+	cp -f -R js /var/www/html/testing/.
 deploy: all
 	cp $(ONTOLOGY_W_DATE)-EN.html /var/www/html/ontology/$(ONTOLOGY_W_DATE)-EN.html
 	cp $(ONTOLOGY_W_DATE)-FR.html /var/www/html/ontology/$(ONTOLOGY_W_DATE)-FR.html
