@@ -60,7 +60,7 @@ cwrc-ref.bib:
 figures/religionTaxonomy-$(DATE_W_LANG).svg: cwrc.rdf scripts/createTaxonomy.py
 	./scripts/createTaxonomy.py cwrc.rdf Religion $(O_LANG) | unflatten -l 5 -c 10 | dot -o$@ -Tsvg 
 figures/politicalAffiliationTaxonomy-$(DATE_W_LANG).svg: cwrc.rdf scripts/createTaxonomy.py
-	./scripts/createTaxonomy.py cwrc.rdf PoliticalAffiliation $(O_LANG) | unflatten -l 20 -c 20 | dot -o$@ -Tsvg 
+	./scripts/createTaxonomy.py cwrc.rdf PoliticalAffiliation $(O_LANG) | unflatten -l 20 -c 30 | dot -o$@ -Tsvg 
 figures/genreTaxonomy-$(DATE_W_LANG).svg: genre.rdf scripts/createTaxonomy.py
 	./scripts/createTaxonomy.py genre.rdf Genre $(O_LANG) | unflatten -l 20 -c 30 | dot -o$@ -Tsvg 
 

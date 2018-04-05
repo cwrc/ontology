@@ -277,19 +277,19 @@
         <p>We use a taxonomy for enumerating the categories associated with this spectrum. The taxonomy in itself is SKOS-based and represents a loose mixture of the shared beliefs and historical offshoots.</p>
         <p>The taxonomy attempts to trace in a subjective way the theological and/or historical lineage of the belief system. Like applying the labels to an individual, this is an interpretive process.</p>
         <p><a href="figures/religionTaxonomy-ONTOLOGY_DATE-EN.svg">The specific taxonomy is:</a></p>
-        <object type="image/svg+xml" data="figures/religionTaxonomy-ONTOLOGY_DATE-EN.svg"></object>
+        <object type="image/svg+xml" id="religion-tax" data="figures/religionTaxonomy-ONTOLOGY_DATE-EN.svg"></object>
 
 
         <h5 id="politicalAffliation_taxonomy">ii. Political Affiliation</h5>
         <p>Political affiliation categories cover a broad range of political parties, more and less organized movements, and various causes. The instances here involve a strong emphasis on British political matters historically of interest to women and a recognition that movements such as feminism are contested and change with time and location. Some affiliations are linked via SKOS relations, but there are other cross-currents among different groups that cannot be captured here as well as in the contextualized data itself. As for the other components of this ontology, this vocabulary makes no claims to comprehensiveness, having been derived from the Orlando dataset, and is open to expansion as needed.</p>
         <p><a href="figures/politicalAffiliationTaxonomy-ONTOLOGY_DATE-EN.svg">The specific taxonomy is:</a></p>
-        <object type="image/svg+xml" data="figures/politicalAffiliationTaxonomy-ONTOLOGY_DATE-EN.svg"></object>
+        <object type="image/svg+xml" id="pa-tax" data="figures/politicalAffiliationTaxonomy-ONTOLOGY_DATE-EN.svg"></object>
 
 
         <h5 id="genre_taxonomy">iii. Genre </h5>
         <p>The Literary Genre ontology contains a taxonomy of literary genres based on a <a href="https://www.w3.org/2004/02/skos/">SKOS</a> approach. This provides limited transitive narrower/broader definitions that can be used to search for relevant creative works using the taxonomy. The taxonomical tree is built on an ad-hoc topic relevance standard meant for document retrieval and that may not be suited to all applications. One distinctive feature of the ontology is the use of adjectival terms such as &apos;philosophical&apos; or &apos;detective&apos; to denote a particularly type of text. Such terms can be employed in conjunction with genres that relate more to form, such as &apos;poem&apos; or &apos;novel&apos;, so as to denote, for instance, &apos;feminist novel&apos;.</p>
         <p><a href="figures/genreTaxonomy-ONTOLOGY_DATE-EN.svg">The specific taxonomy is:</a></p>
-        <object type="image/svg+xml" data="figures/genreTaxonomy-ONTOLOGY_DATE-EN.svg"></object>
+        <object type="image/svg+xml" id="genre-tax" data="figures/genreTaxonomy-ONTOLOGY_DATE-EN.svg"></object>
 
         <h4 id="changeSets">d. Notes on ChangeSets</h4>
         <p>Change Sets exist to track changes to instances, terms, and classes within the ontology, they are therefore used by both the authors of the ontology as well as users who are making additions or modifications. Change sets are instances that are linked either to or from a structure in the ontology. This is done through the object properties <i>affected entity</i> or through the <code>skos:changeNote</code>. A single change set may apply to several entities therefore the <a href="cwrc.html#affectedEntity">cwrc:affectedEntity</a> relation may be applied 0 or more times. Change sets also track the user through the <a href="cwrc.html#alteredBy">cwrc:alteredBy</a> relation and may link to any <code>CWRC:Person</code>. In addition dates and times are kept track of through <code>time:inXSDDateTimeStamp</code> using xsd:dateStamps to track the instant the change was applied to the ontology. This will allow change sets to be used as release by selecting them between a particular date to show major changes. Through provenance Change Sets may link to external resources allowing extended discussion to be kept out of the ontology. Shorter descriptions are included through the <code>skos:changeNote</code> relation as well as a title using a standard <code>rdfs:label</code>. Change Sets are to be used anytime an issue is completed by ontology developers or an instance is changed by a user. Automated mechanisms will be used to offset some of the work required.</p>
@@ -344,19 +344,42 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
   <script src="js/toc.js"></script>
+  <script src="js/svg-pan-zoom.min.js"></script>
 
   <script>
+
+      window.onload = function() {
       var options = {
-          selector: 'h2, h3, h4',
+          selector: 'h2, h3, h4, h5',
           scope: 'main'
       };
-      // for jQuery version
-      // $('.toc.jquery').initTOC(options);
-      // for non-jQuery version
+
       var container = document.querySelector('#toc');
       var toc = initTOC(options);
       container.appendChild(toc);
-
+        // Expose variable for testing purposes
+        window.panZoomPA = svgPanZoom('#pa-tax', {
+          zoomEnabled: true,
+          minZoom: 1,
+          controlIconsEnabled: true,
+          fit: true,
+          center: true
+        });
+        window.panZoomR = svgPanZoom('#religion-tax', {
+          zoomEnabled: true,
+          minZoom: 1,
+          controlIconsEnabled: true,
+          fit: true,
+          center: true
+        });
+        window.panZoomG = svgPanZoom('#genre-tax', {
+          zoomEnabled: true,
+          minZoom: 1,
+          controlIconsEnabled: true,
+          fit: true,
+          center: true
+        });
+      };
 
   </script>
   </body>
