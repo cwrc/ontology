@@ -62,7 +62,7 @@ figures/religionTaxonomy-$(DATE_W_LANG).svg: cwrc.rdf scripts/createTaxonomy.py
 figures/politicalAffiliationTaxonomy-$(DATE_W_LANG).svg: cwrc.rdf scripts/createTaxonomy.py
 	./scripts/createTaxonomy.py cwrc.rdf PoliticalAffiliation $(O_LANG) | unflatten -l 20 -c 30 | dot -o$@ -Tsvg 
 figures/genreTaxonomy-$(DATE_W_LANG).svg: genre.rdf scripts/createTaxonomy.py
-	./scripts/createTaxonomy.py genre.rdf Genre $(O_LANG) | unflatten -l 20 -c 30 | dot -o$@ -Tsvg 
+	./scripts/createTaxonomy.py genre.rdf LiteraryGenre $(O_LANG) | unflatten -l 20 -c 30 | dot -o$@ -Tsvg 
 
 $(ONTOLOGY).html: $(ONTOLOGY_W_DATE)-EN.html
 	cp -f $(ONTOLOGY_W_DATE)-EN.html $@
