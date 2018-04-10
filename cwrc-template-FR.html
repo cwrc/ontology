@@ -2,15 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
     <title>Spécifications d'ontologie CWRC - ONTOLOGY_VERSION</title>
-    <meta http-equiv="content-type" content="text/xhtml+xml; charset=utf-8" />
+    <meta charset="utf-8"/>
     <link rel="mvcb:generatorAgent" type="application/rdf+xml" title="DOAP" href="https://raw.githubusercontent.com/muninn/ontology-tools/master/rdf/voidDescription.rdf#specgenMarkII" />
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
     <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
     <link href="css/cwrc.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="css/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="css/favicon.ico" type="image/x-icon"/>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="/">
@@ -27,21 +29,36 @@
           <li class="nav-item"><a class="nav-link" href="our-team-FR.html">Notre Équipe</a></li>
           <li class="nav-item"><a class="nav-link" href="https://github.com/cwrc/ontology">Github</a></li>
         </ul>
-        <span class="navbar-text">The Ontology of the Canadian Writing Research Collaboratory</span>
+        <span class="navbar-text">L'Ontologie du Collaboratoire scientifique des écrits du Canada</span>
       </div>
     </nav>
     <div class="container-fluid">
       <div class="row">
-        <main role="main" class="col-md-12 ml-sm-auto col-lg-10 pt-3 px-4">
+
+        <nav class="col-xl-2 col-lg-3 col-md-12 d-none d-lg-block bg-light sidebar">
+          <div class="sidebar-sticky">
+
+            <div class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Tables des Matières</span>
+              <a class="d-flex align-items-center text-muted" href="#"></a>
+              <div id="toc">
+                <!-- Table of Contents -->
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <header id="header" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto  pt-3 px-4">
           {_header_}
           <p class="copyright"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
           <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png"/></a>
           <br/> Cette oeuvre est sous une licence
           <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
-          <hr/>
-          
+        </header>
 
-          <h3 id="definition_list">1. Référence Globales</h3>
+        <main role="main" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto pt-3 px-4">
+          <hr/>
+          <h2 id="definition_list">1. Référence Globales</h2>
           <!-- The list of classes and properties goes here -->
           {_azlist_}
           <!-- End of the terms list -->
@@ -49,8 +66,10 @@
           <!-- The following is the script-generated list of classes and properties -->
           {_terms_}
           <!-- End of the terms list -->
-          <h2 id="deprecated">3. Termes désuet</h2> 
-          {_deprecated_}
+          <div class="deprecated">
+            <h2 id="deprecated">3. Termes désuet</h2> 
+            {_deprecated_}
+          </div>
           <h2 id="bibliography">4. Bibliographie</h2>
           <!-- Will be generated and replaced by cwrcCitations -->
           m4_include(cwrc-citations.html)
@@ -58,5 +77,25 @@
         </main>
       </div>
     </div>
+
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+
+    <script src="js/toc.js"></script>
+    <script>
+        var options = {
+            selector: 'h2, h3, h4',
+            scope: 'main'
+        };
+        var container = document.querySelector('#toc');
+        var toc = initTOC(options);
+        container.appendChild(toc);
+    </script>
+
   </body>
 </html>

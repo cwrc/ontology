@@ -1,10 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-
     <title>CWRC Ontology Specification - ONTOLOGY_VERSION</title>
+    <meta charset="utf-8"/>
     <link rel="mvcb:generatorAgent" type="application/rdf+xml" title="DOAP" href="https://raw.githubusercontent.com/muninn/ontology-tools/master/rdf/voidDescription.rdf#specgenMarkII" />
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
@@ -13,8 +11,6 @@
     <link href="css/cwrc.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon"/>
     <link rel="icon" href="css/favicon.ico" type="image/x-icon"/>
-
-
   </head>
 
   <body>
@@ -39,7 +35,6 @@
     <div class="container-fluid">
       <div class="row">
         
-        
         <nav class="col-xl-2 col-lg-3 col-md-12 d-none d-lg-block bg-light sidebar">
           <div class="sidebar-sticky">
 
@@ -52,10 +47,8 @@
             </div>
           </div>
         </nav>
-        <!-- <header id="header" class="col-md-12 ml-sm-auto col-lg-10 pt-3 px-4"> -->
-        <header id="header" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto  pt-3 px-4">
-         
 
+        <header id="header" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto  pt-3 px-4">
           {_header_}
           <p class="copyright"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
           <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png"/></a>
@@ -65,8 +58,7 @@
         </header>
 
         <main role="main" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto pt-3 px-4" data-spy="scroll" data-target="#toc">
-        <!-- <main role="main" class="col-md-12 ml-sm-auto col-lg-10 pt-3 px-4" data-spy="scroll" data-target="#toc"> -->
-          
+          <hr/>
           <h2 id="definition_list">1. Global Cross-Reference</h2>
           <!-- The list of classes and properties goes here -->
           {_azlist_}
@@ -80,8 +72,14 @@
             <h2 id="deprecated">3. Deprecated Terms</h2>
             {_deprecated_}
           </div>
-          
-          <h2 id="bibliography">4. Bibliography</h2>
+
+          <h2 id="version_history">4. Version History</h2>
+          <ul>
+            <li><p>0.99 - Initial public release.</p></li>
+            <li><p>0.99.2 - Periodic release with updated logos, genres, documentation, and proper masthead data.</p></li>
+            <li><p>0.99.6 - Periodic release with updated styling, competency questions and documentation regarding events and changesets</p></li>
+          </ul>          
+          <h2 id="bibliography">5. Bibliography</h2>
           m4_include(cwrc-citations.html)
 
         </main>
@@ -95,21 +93,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
-  <script src="js/toc.js"></script>
 
+  <script src="js/toc.js"></script>
   <script>
       var options = {
           selector: 'h2, h3, h4',
           scope: 'main'
       };
-      // for jQuery version
-      // $('.toc.jquery').initTOC(options);
-      // for non-jQuery version
+
       var container = document.querySelector('#toc');
       var toc = initTOC(options);
       container.appendChild(toc);
-
-
   </script>
+
   </body>
 </html>
