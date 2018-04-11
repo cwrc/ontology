@@ -114,6 +114,9 @@ m4_include(genre-citations.html)
           scope: 'main'
       };
 
+      var container = document.querySelector('#toc');
+      var toc = initTOC(options);
+      container.appendChild(toc);
         window.panZoomG = svgPanZoom('#genre-tax', {
           zoomEnabled: true,
           minZoom: 1,
