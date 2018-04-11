@@ -85,7 +85,9 @@ testing: all
 	cat $(ONTOLOGY_W_DATE)-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY_W_DATE)-EN.html
 	cat $(ONTOLOGY_W_DATE)-FR.html  | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY_W_DATE)-FR.html
 	cat $(ONTOLOGY)-preamble-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY)-preamble-EN.html
-	cat $(ONTOLOGY)-preamble-FR.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY)-preamble-EN.html
+	cat $(ONTOLOGY)-preamble-FR.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/$(ONTOLOGY)-preamble-FR.html
+	cat our-team-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/our-team-EN.html
+	cat our-team-FR.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/testing/our-team-FR.html
 	
 	cp -f $(ONTOLOGY_W_DATE).rdf /var/www/html/testing/.
 	cp -f $(ONTOLOGY_W_DATE).nt /var/www/html/testing/.
