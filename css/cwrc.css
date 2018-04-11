@@ -13,12 +13,12 @@ object {
   width: inherit;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    padding-top: 4em;
-    margin-top: -3em;
+    padding-top: 3em;
+    margin-top: -2em;
     clear: both;
 }
 .instancestype > .specterm h5 {
-    padding: 0;
+    /*padding: 0;*/
 }
 table {
     /*table-layout: fixed;*/
@@ -75,8 +75,8 @@ img {
 }
 
 :target {
-    border: 1px solid #f1f1f1;
-    animation: border-fade 5s ease;
+    border-bottom: 1px solid #f1f1f1;
+    animation: border-fade 3s ease;
 }
 
 .bibliography .citation {
