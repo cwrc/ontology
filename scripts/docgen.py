@@ -194,6 +194,8 @@ def newAZ(nodes):
                     title_str = ""
                     if spec_url in y:
                         title_str = ' title="' + str(get_label_dict(y)) + '" '
+                    else:
+                        title_str = ' target="_blank"'
                     name = '<a href="%s"%s style="font-weight:bold;">%s:</a>' % (
                         get_link(y), title_str, get_prefix(y))
                     instances = [get_uri_term(s) for s, p, o in o_graph.triples(
@@ -313,6 +315,9 @@ def create_term_extra(term_dict, uri, term):
         title_str = ""
         if pred_dict[x][0] == '#':
             title_str = ' title="' + str(get_label_dict(get_full_uri(pred_dict[x][1:]))) + '" '
+        else:
+            title_str = ' target="_blank"'
+
         html_str += """<th><a href="%s"%s>%s</a>:</th>\n""" % (pred_dict[x], title_str, x)
         pred_uri = pred_dict[x]
         if pred_dict[x][0] == '#':
@@ -326,6 +331,8 @@ def create_term_extra(term_dict, uri, term):
                 title_str = ""
                 if spec_url in y:
                     title_str = ' title="' + str(get_label_dict(y)) + '" '
+                else:
+                    title_str = ' target="_blank"'
                 html_str += '<a href="%s"%s>%s</a>' % (
                     get_link(y), title_str, get_prefix(y))
             else:
