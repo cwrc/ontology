@@ -791,6 +791,34 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:ID="hasCompanion">
+    <rdfs:label xml:lang="en">has companion</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Describes a relationship with a person, usually a peer, in the context of the subject's education.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:range rdf:resource="#NaturalPerson"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasContestedBehaviour">
+    <rdfs:label xml:lang="en">has contested behaviour</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Describes behaviour, which is perceived as negative, in the context of the subject's education. Often indicative of struggle against systemic discrimination, including within the structures of educational institutions.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasInstructor">
+    <rdfs:label xml:lang="en">has instructor</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Describes the subject's relationship with an educational instructor or mentor, formal or informal.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:range rdf:resource="#NaturalPerson"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="attends">
     <rdfs:label xml:lang="en">attends</rdfs:label>
@@ -804,7 +832,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-
+  <!-- Education Contexts -->
     <owl:Class rdf:ID="EducationContext">
     <rdfs:label xml:lang="en">education context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte éducatif</rdfs:label>
@@ -861,6 +889,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <!-- Education Awards -->
   <owl:Class rdf:ID="EducationalAward">
     <rdfs:label xml:lang="en">educational award</rdfs:label>
     <rdfs:label xml:lang="fr">récompenses scolaires</rdfs:label>
