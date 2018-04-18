@@ -363,7 +363,8 @@ def create_term_domran(uri):
         html_str += """<td>\n"""
         for x in domain_dict[str(uri)]:
             if str(x) not in deprecated_uris:
-                html_str += '<a href="%s">%s</a> ' % (get_link(x), get_prefix(x))
+                html_str += '<a href="%s" title="%s">%s</a> ' % (get_link(x),
+                                                                 str(get_label_dict(x)), get_prefix(x))
         html_str += "</td>\n"
         html_str += "</tr>\n"
     if str(uri) in range_dict:
@@ -372,8 +373,8 @@ def create_term_domran(uri):
         html_str += "<td>\n"
         for x in range_dict[str(uri)]:
             if str(x) not in deprecated_uris:
-                html_str += '<a href="%s">%s</a> ' % (
-                    get_link(x), get_prefix(x))
+                html_str += '<a href="%s" title="%s">%s</a> ' % (
+                    get_link(x), str(get_label_dict(x)), get_prefix(x))
         html_str += "</td>\n"
         html_str += "</tr>\n"
     return html_str
