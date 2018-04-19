@@ -134,7 +134,8 @@ push: cwrc.rdf genre.rdf
 
 # soft clean
 clean:
-	rm -f $(ONTOLOGY)-citations.html
+	rm -f *-citations.html
+	rm -f *.bib
 	rm -f *$(ONTOLOGY_DATE).* 
 # Hard clean of all generated files minus figure files (DO NOT RUN ON SERVER) 
 clean-all:
