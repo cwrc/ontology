@@ -1405,6 +1405,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300026285"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="fr">L’élégie (en grec ancien ἐλεγεία / elegeía, signifiant « chant de mort ») fut une forme de poème dans l'Antiquité, avant de devenir un genre poétique à partir de la Renaissance. Dans l’Antiquité, était appelé « élégie » tout poème alternant hexamètres et pentamètres en distiques : ce sont les vers élégiaques. De nos jours, l’élégie est considérée comme un genre au sein de la poésie lyrique, en tant que poème de longueur et de forme variables caractérisé par son ton plaintif particulièrement adapté à l’évocation d’un mort ou à l’expression d’une souffrance amoureuse due à un abandon ou à une absence. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
+    <skos:broaderTransitive rdf:resource="#genrePoetry"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Elegy"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
   </genre:LiteraryGenre>
@@ -2836,6 +2837,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="fr">Une parabole (du grec παραϐολή, « rapprochement, comparaison ») est une des variétés de l’allégorie. La parabole est une figure de rhétorique consistant en une courte histoire qui utilise les événements quotidiens pour illustrer un enseignement, une morale ou une doctrine. Tandis que celle-ci, en général, présente directement le fait qu’elle a en vue, la parabole offre, sous ses couleurs véritables, un fait qui doit servir à la démonstration d’une vérité d’un autre ordre, avec laquelle elle a une relation plus ou moins facile à saisir. « Substituez dans la parabole, dit l’abbé Girard, le véritable fait à celui qu’elle expose, vous changerez le fond du discours : substituez dans l’allégorie les véritables couleurs à celles qu’elle emprunte, vous ne changerez que la forme. » On la trouve également dans le discours argumentatif lorsqu’un récit illustre la thèse défendue pour faciliter la compréhension du lecteur. La parabole est également un récit allégorique qui permet de dispenser un enseignement moral ou religieux. Présente dans la Bible où elle joue le rôle de l’apologue et de la fable, surtout les Évangiles, qui l'ont empruntée au midrash hébreu, la parabole est reprise dans les sermons des orateurs chrétiens. Le Nouveau Testament en contient un très grand nombre : le grain de sénevé ou l’Église, le Bon Samaritain ou l’amour de l’humanité, le levain ou la grâce, les loups ravisseurs sous des peaux d’agneaux ou les instituteurs de fausses doctrines, le travail des ouvriers de la vigne ou les œuvres du salut, le mauvais riche ou l’obligation de l’aumône, le bon pasteur, etc. Les paraboles sont plus fréquentes encore dans la littérature bouddhique ; les Avadanas, le Hitopadekas donnent à peine l’idée des recueils plus vastes dont ils sont extraits et dont l’un s’appelle le Yu-Lin, c’est-à-dire la « Forêt de comparaisons». Dans les littératures modernes, les Allemands ont surtout cultivé la parabole ; Lessing, Herder, Krummacher y ont particulièrement réussi. Dans le Bouc émissaire, page 270, René Girard remarque que « paraballo signifie jeter quelque chose en pâture à la foule pour apaiser son appétit de violence, de préférence une victime, un condamné à mort ; c'est ainsi qu'on se tire soi-même d'une situation épineuse, de toute évidence. C'est pour empêcher la foule de se retourner contre l'orateur que celui-ci recourt à la parabole, c'est-à-dire à la métaphore. » (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Parable"/>
+    <skos:BroaderTransitive rdf:resource="#Didactic"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <skos:definition xml:lang="en">Short, fictitious stories that illustrate a moral attitude or religious principle. (<![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>]]>)</skos:definition>
     <skos:definition xml:lang="de">Kurze, fiktive Geschichte, die eine moralische Haltung oder ein religiöses Prinzip veranschaulicht. (<![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>]]>)</skos:definition>
@@ -3508,7 +3510,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:inScheme rdf:resource="#LiteraryGenre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Fiction in which a character, typically an adolescent, experiences sexual desires for the first time or has a first sexual encounter.</skos:definition>
-    <skos:broaderTransitive rdf:resource="#fiction"/>
+    <skos:broaderTransitive rdf:resource="#autobiographical"/>
     <skos:definition xml:lang="fr">Œuvres de fiction dans lesquelles un personnage, généralement un adolescent, éprouve des désirs sexuels pour la première fois ou connait sa première expérience sexuelle.</skos:definition>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#shortStory">
@@ -3938,7 +3940,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Vignette_(literature)"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <skos:definition xml:lang="fr">La micronouvelle (parfois aussi appelée microroman) est un récit imaginaire, suggestif, parfois caustique, rédigé en un nombre extrêmement restreint de mots. C'est la forme la plus concise de récit littéraire prosaïque, parfois proche du poème par le rythme qu'il imprime. L'ironie et l'interactivité qui la caractérisent la rattachent au postmodernisme en littérature. Elle est connue dans les littératures anglaise et hispanique sous les locutions micro-fiction, short-short story et microconte. La microfiction, aussi appelée nanofiction ou fiction éclair, est « l’ancêtre » de la micronouvelle. Adaptée à la littérature française, parfois sur Twitter (aussi dite « twittérature ») pour son fonctionnement aux nombres très limités de mots qui se prête parfaitement à la micronouvelle, par des auteurs comme Fuentealba, Berthiaume, Gechter, Bastin, Le Blanc et Fréchette, elle passe aujourd'hui sous la plume d'auteurs comme Thierry Crouzet, Bernard Pivot, Alexandre Jardin, et Michel Tremblay(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
-    <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Flash_fiction"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#villanelle">
@@ -5013,7 +5014,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="fr">Qui se rapporte au processus de révélation publique de sa sexualité.</skos:definition>
     <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#comingOut@@.</rdfs:comment>
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#comingOut@@.</rdfs:comment>
-    <dcterms:isReplacedBy rdf:resource="#comingOut"/>
+	<skos:BroaderTransitive rdf:resource="#Didactic"/><dcterms:isReplacedBy rdf:resource="#autobiography"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
@@ -7630,7 +7631,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="nl">De schelmenroman is een literair genre dat in Spanje ontstond in de 16e en 17e eeuw. Schelmenromans worden ook picareske romans genoemd (naar het Spaanse picaro, dat schelm betekent). De schelmenroman is een subtype van de roman. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Picaresque_novel"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
-    <skos:broaderTransitive rdf:resource="#genreFiction"/>
+    <skos:broaderTransitive rdf:resource="#genreNovel"/>
     <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#picaresque@@.</rdfs:comment>
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#picaresque@@.</rdfs:comment>
     <dcterms:isReplacedBy rdf:resource="#picaresque"/>
@@ -8909,7 +8910,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:inScheme rdf:resource="#Genre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Writing aimed at a young adult audience.</skos:definition>
-    <skos:broaderTransitive rdf:resource="#genreChildrensLiterature"/>
+    <skos:related rdf:resource="#genreChildrensLiterature"/>
     <skos:definition xml:lang="fr">Littérature destinée à un public de jeunes adultes.</skos:definition>
     <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#youngAdultWriting@@.</rdfs:comment>
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#youngAdultWriting@@.</rdfs:comment>
