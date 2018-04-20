@@ -23,7 +23,7 @@ fi
 #STOPNOW="islandora/object/cwrc%3Aontologysources"
 if [ ! -f "scripts/mods2rdf.pl" ]
 then
- wget -O "scripts/mods2rdf.pl" "https://raw.githubusercontent.com/muninn/ontology-tools/master/mods2rdf.pl"
+ wget -O "scripts/mods2rdf.pl" "https://raw.githubusercontent.com/muninn/ontology-tools/master/bib/mods2rdf.pl"
  chmod 700 scripts/mods2rdf.pl
 fi
 rm -f ${WORKFILE}

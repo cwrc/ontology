@@ -79,6 +79,13 @@ def get_relation(instances, relation):
     return relation_list
 
 
+def make_list(node_list):
+    html_str = ""
+    for x in node_list:
+        html_str += '<a href="#%s">%s</a>,\n' % (x.split("#")[1], get_label(x, lang))
+    return html_str
+
+
 def main():
     parser = argparse.ArgumentParser(
         description='Generate a diagraph of relations within an ontology.', add_help=True)
@@ -87,6 +94,7 @@ def main():
     parser.add_argument('LANG', action="store")
     parser.add_argument('-all', '-a', action="store_true")
     parser.add_argument('-hide', action="store_true")
+    parser.add_argument('-disconnected', '-lonely', action="store_true")
     parser.add_argument('-related', '-r', action="store_true")
     parser.add_argument('-contrary', '-c', action="store_true")
     parser.add_argument('-format', '-f', action="store", dest="format",
@@ -95,6 +103,7 @@ def main():
 
     ontology_file = args.file
     taxonomy = args.taxonomy
+    global lang
     lang = args.LANG
 
     open_graph(ontology_file)
@@ -124,6 +133,12 @@ def main():
     subgraph_nodes = ["__" + get_uri_term(str(x)).replace("-", "_") + "__" +
                       " [label=\"" + get_label(x, lang) + "\" " + "URL=\"" + str(x) + "\"]" for x in lonely_nodes]
     # printing Diagraph
+    # if args.disconnected:
+    #     print("<div>")
+    #     # print(*lonely_nodes, sep='\n')
+    #     print(make_list(lonely_nodes))
+    #     print("</div>")
+    #     exit()
     print("digraph %s_Taxonomy {" % taxonomy)
     if args.format:
         print(args.format)
@@ -132,8 +147,9 @@ def main():
         print("size=\"25,25\";")
         print("ratio=compress;")
 
-    print(*relation_list, sep='\n')
-    print(*diagraph_nodes, sep='\n')
+    if not args.disconnected:
+        print(*relation_list, sep='\n')
+        print(*diagraph_nodes, sep='\n')
 
     if not args.hide:
         print("subgraph b{margin=0;rank = sink;")

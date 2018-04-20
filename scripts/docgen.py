@@ -89,18 +89,6 @@ def get_uri_term(uri):
     return (substring)
 
 
-def get_instances(class_list):
-    instances = []
-    for owl_class in class_list:
-        class_uri = spec_ns[owl_class]
-        for s, p, o in o_graph.triples((None, RDF.type, class_uri)):
-            if str(s) not in deprecated_uris:
-                instances.append(get_uri_term(s))
-
-    instances = sorted(list(set(instances)))
-    return instances
-
-
 def create_link_lists(list, name):
     string = "<p>%s\n" % name
     for x in list:
@@ -109,14 +97,6 @@ def create_link_lists(list, name):
     string += "</p>\n"
     ' '.join(string.split())
     return(string)
-
-
-def get_azlist_html(az_dict, list):
-    string = '<div class="az_list">'
-    for key in list:
-        string += create_link_lists(az_dict[key], key)
-    string += '</div>'
-    return string
 
 
 def open_graph(specloc):
@@ -151,6 +131,8 @@ def get_high_lvl_nodes():
                    rdflib.term.URIRef("http://www.w3.org/2002/07/owl#Ontology"),
                    rdflib.term.URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#Description"),
                    rdflib.term.URIRef("http://www.w3.org/2002/07/owl#DeprecatedClass"),
+                   # Most instances are also typed as concepts, resulting in redundant types in the main listing
+                   rdflib.term.URIRef("http://www.w3.org/2004/02/skos/core#Concept"),
                    rdflib.term.URIRef("http://www.w3.org/2002/07/owl#DeprecatedProperty")]
     types = sorted(list(set([etreetag_to_uri(x.tag) for x in root if etreetag_to_uri(x.tag) not in ignore_uris])))
     bibo_nodes = [x for x in types if ("purl.org/ontology/bibo/" in str(x))]
@@ -159,6 +141,108 @@ def get_high_lvl_nodes():
         types.remove(x)
 
     return types
+
+
+def create_row(list, listitem=True):
+    string = "<td>\n"
+    if listitem:
+        string += "<ul>\n"
+    for x in list:
+        title = str(get_label_dict(get_full_uri(x)))
+        if listitem:
+            string += '\t\t<li><a href="#%s" title="%s">%s</a></li>\n' % (x, title, x)
+        else:
+            string += '\t\t<a href="#%s" title="%s">%s</a>\n' % (x, title, x)
+    if listitem:
+        string += "</ul>\n"
+    string += "</td>\n"
+    ' '.join(string.split())
+    return(string)
+
+
+def newAZ(nodes):
+    types = [x for x in nodes if spec_url not in x]
+    instanceTypes = sorted(list(set(nodes) - set(types)))
+    string = ""
+    string += '<div class="global-ref">'
+
+    string += '<table class="table table-hover">'
+    string += '<thead>\n\t<tr>'
+    string += '    <th scope="col">rdf:type</th>'
+    string += '    <th scope="col">Instance</th>'
+    string += '  </tr>\n\t</thead>\n<tbody>'
+    for x in types:
+        string += '<tr>'
+        name = '<a href="%s" style="font-weight:bold;">%s:</a>' % (get_link(x), get_prefix(x))
+        string += '  <th scope="row">%s</th>' % name
+        instances = [get_uri_term(x) for x in o_graph.subjects(None, x)]
+        string += create_row(sorted(instances))
+        string += '</tr>'
+    string += '</tbody>\n</table>'
+
+    for x in types:
+
+        if any((y, RDF.type, x) in o_graph for y in instanceTypes):
+            string += '<br/>\n'
+            string += '<table class="table table-hover">\n'
+            string += '<thead>\n\t<tr>'
+            string += '    <th scope="col">%s</th>' % get_prefix(x)
+            string += '    <th scope="col">Instance</th>'
+            string += '  </tr>\n\t</thead>\n<tbody>'
+            for y in instanceTypes:
+                if (y, RDF.type, x) in o_graph:
+                    title_str = ""
+                    if spec_url in y:
+                        title_str = ' title="' + str(get_label_dict(y)) + '" '
+                    else:
+                        title_str = ' target="_blank"'
+                    name = '<a href="%s"%s style="font-weight:bold;">%s:</a>' % (
+                        get_link(y), title_str, get_prefix(y))
+                    instances = [get_uri_term(s) for s, p, o in o_graph.triples(
+                        (None, RDF.type, y)) if str(s) not in deprecated_uris]
+                    string += '<tr>'
+                    string += '  <th scope="row">%s</th>' % name
+                    string += create_row(sorted(instances))
+                    string += '</tr>'
+            string += '</tbody>'
+            string += '</table>'
+    string += '</div>'
+
+    return string
+
+
+def grandchildren_exist(instances):
+    for x in instances:
+        if any(s in s for s, p, o in o_graph.triples((None, RDF.type, x)) if str(s) not in deprecated_uris):
+            return True
+    return False
+
+
+def all_terms_html(nodes):
+    types = [x for x in nodes if spec_url not in x]
+    string = ""
+    for x in types:
+        string += '<div class="type">'
+        string += '<h3 id="%s">%s</h3>\n' % (get_prefix(x), get_prefix(x))
+        instances = [get_uri_term(x) for x in o_graph.subjects(None, x)]
+        string += create_terms_html(sorted(instances), get_prefix(x))
+        string += '<div/>'
+
+    for x in types:
+        instances = sorted([x for x in o_graph.subjects(None, x)])
+        if any((y, RDF.type, x) in o_graph for y in instances) and grandchildren_exist(instances):
+            string += '<h3>%s Instances</h3>\n' % get_prefix(x)
+            for y in instances:
+                if any(s in s for s, p, o in o_graph.triples(
+                        (None, RDF.type, y)) if str(s) not in deprecated_uris):
+                    instances2 = [get_uri_term(s) for s, p, o in o_graph.triples(
+                        (None, RDF.type, y)) if str(s) not in deprecated_uris]
+                    string += '<div class="instancestype">'
+                    string += '<h4 id="%s">%s</h4>\n' % (get_prefix(y), get_prefix(y))
+                    string += create_term_html(get_uri_term(y))
+                    string += '</div>'
+                    string += create_terms_html(sorted(instances2), get_prefix(y))
+    return string
 
 
 def specgen(template, language):
@@ -178,126 +262,121 @@ def specgen(template, language):
         spec_url = namespace_dict['']
 
     spec_ns = rdflib.Namespace(spec_url)
-    # print(get_high_lvl_nodes())
-    # for x in get_high_lvl_nodes():
-    #     print(x)
     deprecated_html = create_deprecated_html(o_graph)
-
-    # Gets sorted classes & property labels
-    class_list = [get_uri_term((x)) for x in sorted(o_graph.subjects(None, OWL.Class))]
-    prop_list = [get_uri_term((x)) for x in sorted(o_graph.subjects(None, OWL.ObjectProperty))]
 
     global domain_dict
     global range_dict
     domain_dict, range_dict = get_domain_range_dict()
+    azlist_html = newAZ(get_high_lvl_nodes())
+    terms_html = all_terms_html(get_high_lvl_nodes())
+    # bibliography_html = all_terms_html(bibo_nodes)
 
-    # Dict_list in specgen
-    # skos_concepts = [get_uri_term(s) for s, p, o in sorted(o_graph.triples((None, RDF.type, SKOS.ConceptScheme)))]
-    classes_i = sorted([x for x in class_list if (None, RDF.type, get_full_uri(x)) in o_graph])
-    instance_list = get_instances(class_list)
-
-    # Build HTML list of terms.
-    dict_str = trans_dict["dicts"][l_index] + ":"
-    props_str = trans_dict["props"][l_index] + ":"
-
-    az_dict = {
-        "Classes:": class_list,
-        props_str: prop_list,
-        "Instances:": instance_list,
-        dict_str: classes_i,
-    }
-    temp_list = [dict_str, "Classes:", props_str, "Instances:"]
-
-    # create global cross reference
-    azlist_html = get_azlist_html(az_dict, temp_list)
-
-    # Creating rest of html
-    dict_html = create_dictionary_html(classes_i)
-    classes_html = "<h3 id='classes'>Classes</h3>" + create_terms_html(class_list, "Class")
-    prop_html = "<h3 id='properties'>%s</h3>" % props_str[:-1] + create_terms_html(prop_list, "Property")
-    instance_html = "<h3 id='instances'>Instances</h3>" + create_terms_html(instance_list, "Instance")
-
-    terms_html = dict_html + classes_html + prop_html + instance_html
-
-    template = template.format(_header_=get_header_html(), _azlist_=azlist_html,
-                               _terms_=terms_html, _deprecated_=deprecated_html)
+    template = template.replace("{_header_}", get_header_html())
+    template = template.replace("{_azlist_}", azlist_html)
+    template = template.replace("{_terms_}", terms_html)
+    template = template.replace("{_deprecated_}", deprecated_html)
+    # template = template.replace("{_bibliography_}", newAZ(bibo_nodes) + bibliography_html)
 
     return template
-
-
-def create_term_header(list_type, term, uri):
-    html_str = '<p id="top">[<a href="#definition_list">back to top</a>]</p>\n'
-    html_str += '<h3>%s: %s:%s</h3>\n' % (list_type, spec_pre, term)
-    html_str += """<p class="uri">URI: <a href="#%s">%s</a></p>\n""" % (term, uri)
-    return html_str
 
 
 def create_term_main(term, uri):
     label = str(get_label_dict(uri))
     defn = get_definition_list(uri)
     comment = get_comment_list(uri)
-    html_str = """<p><em>%s</em></p>""" % (label)
+
+    html_str = '<p id="top">[<a href="#definition_list">back to top</a>]</p>\n'
+    html_str += '<h5>%s</h5>\n' % (label)
     html_str += """<div class="defn">%s</div>""" % (get_defn_html(defn))
     if comment:
         html_str += get_comment_html(comment)
     return html_str
 
 
-def create_term_extra(term_dict, uri):
+def create_term_extra(term_dict, uri, term):
     html_str = ""
     pred_dict = {}
     for x in term_dict:
         pred_dict.update(get_prefix_ns_with_link(x).items())
 
-    html_str += """<div class="term_extra">\n"""
+    html_str += """<table class="term_extra table table-hover">\n"""
+    html_str += """\t<tbody>\n"""
+    html_str += "<tr>\n"
+    html_str += "<th>URI:</th>\n"
+    html_str += """<td class="uri"><a href="#%s">%s</a></td>\n""" % (term, uri)
+    html_str += "</tr>\n"
+    html_str += "<th>Tag:</th>\n"
+    html_str += """<td>%s:%s</td>\n""" % (spec_pre, term)
+    html_str += "</tr>\n"
 
     pred_dict.pop("foaf1:subject", None)
     for x in sorted(pred_dict.keys()):
-        html_str += "<dl>\n"
-        html_str += """<dt><a href="%s">%s</a>:</dt>\n""" % (pred_dict[x], x)
+        html_str += "<tr>\n"
+        title_str = ""
+        if pred_dict[x][0] == '#':
+            title_str = ' title="' + str(get_label_dict(get_full_uri(pred_dict[x][1:]))) + '" '
+        else:
+            title_str = ' target="_blank"'
+
+        html_str += """<th><a href="%s"%s>%s</a>:</th>\n""" % (pred_dict[x], title_str, x)
         pred_uri = pred_dict[x]
         if pred_dict[x][0] == '#':
             pred_uri = get_full_uri(pred_dict[x][1:])
 
+        html_str += "<td>"
         for y in term_dict[pred_uri]:
             if x == "owl:oneOf":
-                html_str += '<dd>Contents Currently Unavailable</dd>'
-                # for s, p, o in o_graph.triples((y, None, None)):
-                #     # print(s)
-                #     # print(p)
-                #     print(o)
-                #     print()
+                html_str += 'Contents Currently Unavailable'
             elif type(y) is not rdflib.term.Literal:
-                for key, value in get_prefix_ns_with_link(y).items():
-                    html_str += '<dd><a href="%s" style="font-family: monospace;">%s</a></dd>' % (
-                        value, key)
+                title_str = ""
+                if spec_url in y:
+                    title_str = ' title="' + str(get_label_dict(y)) + '" '
+                else:
+                    title_str = ' target="_blank"'
+                html_str += '<a href="%s"%s>%s</a>' % (
+                    get_link(y), title_str, get_prefix(y))
             else:
-                html_str += '<dd>%s</dd>' % (y)
-        html_str += "</dl>\n"
-
+                html_str += '%s' % (y)
+            html_str += ' '
+        html_str += "</td>"
+        html_str += "</tr>\n"
     html_str += create_term_domran(uri)
-    html_str += "</div>\n"
+    instance_list = [get_uri_term(str(s)) for s, p, o in o_graph.triples(
+        (None, RDF.type, uri)) if str(s) not in deprecated_uris]
+    if instance_list:
+        html_str += "<tr>\n"
+        html_str += """<th><a href="#%s" title="%s Instances" >Concepts</a>:</th>\n""" % (
+            spec_pre + "%3A" + term, spec_pre + ":" + term)
+        html_str += create_row(sorted(instance_list), listitem=False)
+        html_str += "</tr>\n"
+
+    html_str += "</tbody>\n"
+    html_str += "</table>\n"
     return html_str
 
 
 def create_term_domran(uri):
     html_str = ""
     if str(uri) in domain_dict:
-        html_str += "<dl>\n"
-        html_str += """<dt>Within Domain:</dt>\n"""
+        html_str += "<tr>\n"
+        html_str += """<th>Within Domain:</th>\n"""
+        html_str += """<td>\n"""
         for x in domain_dict[str(uri)]:
-            for key, value in get_prefix_ns_with_link(x).items():
-                html_str += '<dd><a href="%s" style="font-family: monospace;">%s</a></dd>' % (
-                    value, key)
-        html_str += "</dl>\n"
+            if str(x) not in deprecated_uris:
+                html_str += '<a href="%s" title="%s">%s</a> ' % (get_link(x),
+                                                                 str(get_label_dict(x)), get_prefix(x))
+        html_str += "</td>\n"
+        html_str += "</tr>\n"
     if str(uri) in range_dict:
-        html_str += "<dl>\n"
-        html_str += """<dt>Within Range:</dt>\n"""
+        html_str += "<tr>\n"
+        html_str += """<th>Within Range:</th>\n"""
+        html_str += "<td>\n"
         for x in range_dict[str(uri)]:
-            for key, value in get_prefix_ns_with_link(x).items():
-                html_str += '<dd><a href="%s" style="font-family: monospace;">%s</a></dd>' % (
-                    value, key)
-        html_str += "</dl>\n"
+            if str(x) not in deprecated_uris:
+                html_str += '<a href="%s" title="%s">%s</a> ' % (
+                    get_link(x), str(get_label_dict(x)), get_prefix(x))
+        html_str += "</td>\n"
+        html_str += "</tr>\n"
     return html_str
 
 # def createOneOfCollectionHTML(uri):
@@ -309,23 +388,26 @@ def create_term_domran(uri):
 def create_terms_html(term_list, list_type):
     html_str = ""
     for uri in term_list:
-        full_uri = get_full_uri(uri)
-        html_str += '<div class="specterm" id="%s">\n' % uri
-        html_str += create_term_header(list_type, uri, full_uri)
-        html_str += create_term_main(uri, full_uri)
+        html_str += create_term_html(uri)
+    return html_str
 
-        term_dict = {}
-        predicates = sorted(list(set([p for s, p, o in o_graph.triples(
-            (full_uri, None, None)) if (p not in term_main_uris) and (p not in term_ignore_uris)])))
 
-        for predicate in predicates:
-            objects = [o for o in o_graph.objects(full_uri, predicate) if(type(o) == rdflib.term.Literal and (
-                o.language == lang or o.language is None)) or (type(o) is not rdflib.term.Literal)]
-            term_dict[predicate] = objects
+def create_term_html(uri):
+    html_str = ""
+    full_uri = get_full_uri(uri)
+    html_str += '<section class="specterm" id="%s">\n' % uri
+    html_str += create_term_main(uri, full_uri)
 
-        html_str += create_term_extra(term_dict, full_uri)
-        html_str += '</div>\n'
+    term_dict = {}
+    predicates = sorted(list(set([p for s, p, o in o_graph.triples(
+        (full_uri, None, None)) if (p not in term_main_uris) and (p not in term_ignore_uris)])))
 
+    for predicate in predicates:
+        objects = [o for o in o_graph.objects(full_uri, predicate) if(type(o) == rdflib.term.Literal and (
+            o.language == lang or o.language is None)) or (type(o) is not rdflib.term.Literal)]
+        term_dict[predicate] = sorted(objects)
+
+    html_str += create_term_extra(term_dict, full_uri, uri) + '\n</section>\n'
     return html_str
 
 
@@ -340,6 +422,41 @@ def get_label_dict(uri):
         if x.language == lang:
             return x
     return (None)
+
+
+def get_prefix(uri):
+    uri_list = []
+    if "#" in uri:
+        uri_list.append(uri.split("#")[0] + "#")
+        uri_list.append(uri.split("#")[1])
+    else:
+        if uri[-1] == '/':
+            temp = uri[:-1].split("/")
+        else:
+            temp = uri.split("/")
+        ident = temp[-1]
+        uri_list.append(uri.split(ident)[0])
+        uri_list.append(ident)
+
+    for k, v in namespace_dict.items():
+        if uri_list[0] == str(v):
+            if k == "":
+                # Must be base xml
+                temp = uri_list[0].split("/")[-1][:-1]
+                tempkey = (temp) + ":" + uri_list[1]
+                return tempkey
+            else:
+                tempkey = str(k) + ":" + uri_list[1]
+                return tempkey
+
+    return uri
+
+
+def get_link(uri):
+    if spec_url in uri:
+        return("#" + uri.split(spec_url)[1])
+    else:
+        return uri
 
 
 def get_prefix_ns_with_link(uri):
@@ -378,39 +495,12 @@ def get_definition_list(uri):
     return [str(x) for x in defn if x.language == lang]
 
 
-def create_dictionary_html(dictionary):
-    html_str = "<h3 id= 'dictionaries'>%s</h3>" % trans_dict["dicts"][l_index]
-
-    for term in dictionary:
-        uri = spec_url + term
-        label = get_label_dict(uri)
-        comment = get_comment_list(uri)
-
-        html_str += '<div class="specterm" id="%s">\n' % term
-        html_str += '<p id="top">[<a href="#definition_list">back to top</a>]</p>'
-        html_str += '<h3>Dictionary: %s:%s</h3>\n' % (spec_pre, term)
-        html_str += """<p class="uri">URI: <a href="#%s">%s</a></p>\n""" % (term, uri)
-        html_str += """<p><em>%s</em></p>""" % (label)
-        html_str += """<div class="defn">%s</div>""" % (get_defn_html(get_definition_list(uri)))
-        html_str += """<div class = "conceptlist">"""
-        # instance_list = [str(s).split("#")[1] for s, p, o in o_graph.triples((None, SKOS.inScheme, uri))]
-        instance_list = [get_uri_term(str(s)) for s, p, o in o_graph.triples(
-            (None, RDF.type, uri)) if str(s) not in deprecated_uris]
-        html_str += create_link_lists(sorted(instance_list), "Concepts:")
-        html_str += "</div>\n"
-
-        if comment:
-            html_str += get_comment_html(comment)
-        html_str += "</div>\n"
-    return html_str
-
-
 def get_comment_html(comm_list):
     html_str = "<div class=\"comment\">"
-    html_str += "<p>Comment:</p>\n<p>"
+    html_str += "<p>Comment: "
     for x in comm_list:
         if x:
-            html_str += "%s<br>" % x
+            html_str += "%s<br/>" % x
     html_str += "</p></div>\n"
     return html_str
 
@@ -459,7 +549,7 @@ def get_dep_term_html(term_dict):
     html_str = ""
     html_str += '<div class="specterm" id="%s">\n' % term
     html_str += '<p id="top">[<a href="#deprecated_list">back to top</a>]</p>'
-    html_str += '<h3>Term: %s:%s</h3>\n' % (spec_pre, term)
+    html_str += '<h5>%s:%s</h5>\n' % (spec_pre, term)
     html_str += """<p class="uri">URI: <a href="%s">%s</a></p>\n""" % (uri, uri)
     if label:
         html_str += "<p><em>%s</em></p>" % label
@@ -493,8 +583,8 @@ select * where {
 
     html_str = '<h3 id="deprecated_list" >Global Cross Reference of Deprecated Terms</h3>'
     html_str += '<div class="az_list deprecated_list">'
-    html_str += create_link_lists(terms, "Deprecated Terms:<br>")
-    html_str += '</div><h3>Detailed references for all terms, classes and properties</h3>'
+    html_str += create_link_lists(terms, "Deprecated Terms:<br/>")
+    html_str += '</div><h3>Terms and details</h3>'
     html_str += "<div class=\"deprecated_term\">"
 
     for uri in deprecated_uris:
@@ -553,10 +643,6 @@ def get_contributors():
             OPTIONAL { ?name foaf:homepage ?y }.
         }
     """
-    # filter(
-    #     langMatches(lang(?name), "%s"))
-    # )
-    # % lang
     names = {}
     for row in o_graph.query(query_str):
         if row.x.language == lang or row.x.language is None:
@@ -628,7 +714,7 @@ def get_header_html():
                                                        trans_dict["specification"][l_index],
                                                        header["version"][0])
     if header["logo"]:
-        html_str += """<img src="%s" align="right" width="350">\n""" % header["logo"][0]
+        html_str += """<img src="%s" align="right" width="350"/>\n""" % header["logo"][0]
 
     html_str += """<h2 id="subtitle">%s</h2>\n""" % header["desc"][0]
     html_str += """<h3 id="mymw-doctype">%s &mdash; %s""" % (trans_dict["draft"][l_index], header["date_str"])
@@ -677,6 +763,7 @@ def get_header_html():
         html_str += '<a href="%s">%s</a>' % (subj, get_webpage_title(subj))
         html_str += "</dd>\n"
 
+    html_str += "</dl>\n"
     return(html_str)
 
 

@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html 
+  xmlns="http://www.w3.org/1999/xhtml"
+  xml:lang="fr"
+> 
+
+  <head>
+    <title>Spécifications de l'ontologie des genres littéraires CSÉC - ONTOLOGY_VERSION</title>
+    <meta http-equiv="content-type" content="text/xhtml+xml; charset=utf-8" />
+    <link rel="mvcb:generatorAgent" type="application/rdf+xml" title="DOAP" href="https://raw.githubusercontent.com/muninn/ontology-tools/master/rdf/voidDescription.rdf#specgenMarkII" />
+    <meta http-equiv="content-type" content="text/xhtml+xml; charset=utf-8" />
+    
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    
+    <link href="css/cwrc.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="css/favicon.ico" type="image/x-icon"/>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/">
+      <img src="http://sparql.cwrc.ca/images/cwrclogo-vert-white.png" height="30" class="align-top" alt="CWRC Logo"/> CWRC Ontologies</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sparql">SPARQL</a></li>
+          <li class="nav-item"><a class="nav-link active" href="genre-preamble-EN.html">Preamble</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Spécifications <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="our-team-FR.html">Notre Équipe</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/cwrc/ontology">Github</a></li>
+        </ul>
+        <span class="navbar-text">L'Ontologie des Genres Littéraires CSÉC</span>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <nav class="col-xl-2 col-lg-3 col-md-12 d-none d-lg-block bg-light sidebar">
+          <div class="sidebar-sticky">
+
+            <div class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Tables des Matières</span>
+              <a class="d-flex align-items-center text-muted" href="#"></a>
+              <div id="toc">
+                <!-- Table of Contents -->
+              </div>
+            </div>
+          </div>
+        </nav>
+        <header id="header" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto  pt-3 px-4">
+          {_header_}
+          <p class="copyright"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br/>Cette oeuvre est sous une licence 
+          <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
+        </header>
+
+  <main role="main" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto pt-3 px-4" data-spy="scroll" data-target="#toc">
+
+    <hr />
+
+    <h2 id="abstract">Résumé</h2>
+    <p>L'Ontologie des genres littéraires CSÉC est l'ontologie utilisée par le Collaboratoire scientifique des écrits du Canada
+    (<a href="http://www.cwrc.ca/fr">cwrc.ca</a>)
+    pour assigner des genres à des écrits littéraires.</p>
+
+    
+     <h2 id="introduction">1. Introduction</h2>
+
+     <p>Une partie des données de bibliographie extensive fournies par les
+     documents du projet Orlando sur les genres littéraires a été rassemblée
+     en web de données ontologique.  Son objectif principal était d'annoter
+     les références bibliographiques dans jeu de données avec un vocabulaire
+     adaptable qui pourrait également être utilisé pour la recherche
+     d’œuvres appartenant à un genre spécifique.</p>
+
+     <h2 id="background">2. Contexte</h2>
+
+<p> Dans un article influent, <a href="">Carolyn R.  Miller</a> le soutient que le genre
+littéraire n’est pas inhérent à “une substance ou une forme du discours”,
+mais doit plutôt être conçu en termes d’activité rhétorique rattachée à une
+situation spécifique, bien que sa définition soit plus compliquée que cette
+brève formulation le suggère, puisqu'elle soutient que "l'activité englobe à
+la fois la substance et la forme" (151, 152).  </p>
+     
+  <p> Deux types d’activités principales sont associées au genre littéraire. 
+  Miller s'interroge sur la façon dont certains actes ou cas de discours
+  particuliers, c’est-à-dire les textes au sens large, viennent eux-même
+  incarner des caractéristiques génériques; celles-ci émanent de situations
+  rhétoriques, qui sont des constructions sociales par lesquelles des
+  intentions individuelles sont traduites en actes discursifs socialement
+  reconnaissables et interprétables (Miller, 1984).  Mais il existe aussi
+  l’action d’attribuer une balise générique à un texte, ce qui représente
+  un autre type d'acte discursif opérant dans un large panel de contextes et
+  à des fins variées.  La catégorisation générique est fondamentale pour les
+  études littéraires, elle organise des matériaux primaires et secondaires,
+  définit des spécialisations et des mouvements littéraires, et joue un rôle
+  majeur dans l'organisation et l’articulation théorique, critique et
+  historique de la littérature.  En tant que fonction majeure des systèmes
+  de classification des bibliothèques, l'étiquetage des genres sert à la
+  recherche dans toutes les disciplines.  Il sert à organiser les librairies
+  ainsi que les fonds d’édition, et est utilisé par les lecteurs lorsqu’ils
+  échangent leurs expériences de lecture et discutent de leurs préférences
+  littéraires.  </p>
+     
+  <p> Dans une telle variété de contextes, la catégorisation par genre
+littéraire de textes spécifiques couvre une large spectre de méthodes,
+allant des catalogues professionnels qui appliquent des vocabulaires
+d’autorité rigoureusement contrôlés  produits par des "sources de confiance"
+(<a href="">Harper</a>) aux utilisateurs de systèmes en ligne qui conçoivent ad hoc des
+catégories entièrement issue de l’indexation personnelle—ce que <a href="">Clay
+Shirky</a> a qualifié de “rupture radicale avec les stratégies de catégorisation
+antérieures, au lieu d’une extension de celles-ci".  De nombreuses études
+ont montré que si des termes correspondants peuvent être déployés dans ces
+différents contextes, ils ne sont pas systématiquement appliqués (<a
+href="">Lester</a>; <a href="">Lu</a>; <a href="">Rolla</a>). C'est une telle interprétation du genre littéraire qui façonne la présente ontolgie. Celle-ci considère qu'une taxonomie définitive des formes littéraires est impossible et ne prétend donc pas élaborer une classification de la sorte. Elle conçoit plutôt les genres littéraires de façon très large et dans une approche pragmatique, tels qu'ils sont apparus au fil des ouvrages académiques sur les femmes de lettres et leurs oeuvres, et tient en compte de la future apparition d'approches formulées dans d'autres langues et provenant de contextes différents. Du fait de son inscription dans un environnement en données ouvertes liées (Linked Open Data), l'ontologie reconnait que diverses approches du genre littéraire seront amenées à se croiser, à se confronter ou à interargir de quelque autre manière, et s'inscrit volontiers dans une perspective d'extension continue, d'expansion ou de liaison avec d'autres vocabulaires pendant que le Collaboratoire Scientifique des Écrits du Canada poursuit son développement au sein avec la communauté LOD. </p>
+       
+    <h2 id="#datasources">3. Sources de données</h2>
+   <p> La liste des genres utilisés dans cette ontologie s’appuie sur les
+   genres littéraires initialement répertoriés par le projet d'Orlando.  La
+   liste est étroitement couplée aux objectifs originaux du projet mais est
+   substantielle.  </p>
+  
+   <p> Comme le projet original d'Orlando n'a pas publié de définitions ou
+     de descriptions des genres qu'il utilisait, ces dernières ont dû être
+     créées spécialement pour cette ontologie.  Lorsque cela était possible,
+     les définitions ont été écrites d’après des jeux de données ouverts
+     provenant de DBpedia/Wikipedia, Getty Art &amp; Architecture Thesaurus
+     ou de <i> <a href="http://web.cn.edu/kwheeler/lit_terms.html"> Termes
+     et définitions littéraires </a> </i> de la page web du Dr.  L.  Kip
+     Wheeler.  Les références aux descriptions sont réalisées grâce à
+     l’utilisation d’<a href="https://www.w3.org/TR/prov-o/"> ontologie de
+     provenance </a>, de citations html intégrées au texte et à des balises
+     de  &lt;rdfs:commentaires&gt;.  Tags.  </p>
+
+
+     <h2 id="taxonomie"> 4. Construction de taxonomie </h2>
+ 
+       <p> L'ontologie des Genres Littéraires contient une taxonomie des
+       genres basée sur une approache <a href="https://www.w3.org/2004/02/skos/"> SKOS (Système Simple
+       d’Organisation des connaissances)</a>.  Elle fournit des relations
+       sémantiques limitées indiquer des termes plus génériques/plus
+       spécifiques et peuvent être utilisées pour la recherche pertinente
+       d’oeuvres en utilisant la taxonomie.  L'arbre taxonomique est basé
+       sur un standard définiton de sujets pertinents ad hoc voué à
+       l’extraction de documents et ne convient pas pour toutes les
+       utilisations. Une caractéristique distinctive de l'ontologie est l'utilisation de formes adjectivales telles que &apos;philosophique&apos; ou &apos;policier&apos; qui désignent un type de texte particulier. Ces termes peuvent être utilisés conjointement avec des genres littéraires référant davantage à une forme, tels que &apos;poème&apos; ou &apos;roman&apos;, ce qui permet de désigner par exemple un &apos;roman féministe&apos;.</p>
+
+
+       <p><a href="figures/genreTaxonomy-ONTOLOGY_DATE-FR.svg">La taxonomie spécifique est la suivante:</a></p>
+       <p> 
+       <object type="image/svg+xml" id="genre-tax" data="figures/genreTaxonomy-ONTOLOGY_DATE-FR.svg"></object>  
+       </p>
+       
+     <h2 id="usingthisontology">5. Utilization de cette ontologie</h2>
+
+     <p>Cette ontologie a été élaborée pour appuyer les efforts du projet du
+     CSÉC tout en autorisant une utilisation autonome par des projets
+     externes.  Les genres littéraires existent à la fois sous forme
+     d’instances de la classe <a href="#Genre">&lt;genre:GenreLittéraire&gt;</a> et en tant que  <a
+     href="https://www.w3.org/2009/08/skos-reference/skos.html#Concept">&lt;skos:Concept&gt;</a>s
+     d’une genre <a
+     href="https://www.w3.org/2009/08/skos-reference/skos.html#ConceptScheme">&lt;ConceptScheme&gt;</a>. 
+     L’accès aux instances peut se faire directement ou bien via les
+     propriétés taxonomiques SKOS intégrées.  Une propriété de <a
+     href="genre-FR.html#hasGenre">&lt;genre littéraire:hasGenre&gt;</a> fournie sans <a
+     href="https://www.w3.org/TR/owl-ref/#domain-def">&lt;rdfs:domaine&gt;</a>
+     permet d’assignement aisément un genre à une oeuvre sans engager de
+     type spécifique de création.  </p>
+     
+ <p>Cette ontologie peut être jumelée avec <a
+ href="http://sparql.cwrc.ca/ontology/cwrc">
+ l’ontologie du CSÉC </a> même si cela n’est pas requis.  L’objectif
+ ontologique du CSÉC est de décrire et de relier les études littéraires et
+ l’histoire de la Littérature, en mettant l'accent sur les questions de
+ genre (&quot;gender studies&quot;) et l'intersectionnalité en raison de ses
+ liens avec le projet Orlando, une histoire littéraire des femmes de lettres
+ britanniques.  Compte tenu de la complexité et de la spécificité de
+ l'ontologie du CSÉC, nous avons décidé de la séparer de l'ontologie des
+ genres littéraires afin que les utilisateurs puissent tirer profit d’une
+ taxonomie de genres littéraires disponible  à portée de main, sans avoir à
+ importer dans leur intégralité certaines assertions ontologiques plus
+ controversées du CSÉC (par exemple Formation Culturelle).  Nous espérons
+ néanmoins que les utilisateurs s’intéresseront aux deux ontologies.</p>
+
+
+
+    <!-- End of the terms list -->
+    <h2 id="notesSKOS">6. Règles de conception de l'ontologie Genre</h2>
+    <ol>
+    <li>Les définitions en Français et Anglais (ainsi bien que les définitions circonstancielles en d'autre langues) ne sont pas des traductions mot à mot et sont des définitions à part entière.</li>
+    </ol>
+
+ <h2 id="conclusion">7. Conclusion et travail futur</h2>
+    <p>Cette ontologie devra être considérée comme stable par nature, accompagnée d’ajouts ponctuels et de précisions qui seront effectuées de temps à autre.  Son développement dépendra de notre découverte progressive de ce qu’implique une ontologie multilingue dédiée aux genre littéraires.
+</p>
+    <h2 id="version_history">8. Historiques des versions</h2>
+
+    <ul>
+    <li><p>0.1 - Ontologie séparée de l’ontologie principale du CSÉC.</p></li>
+    </ul>
+    
+    <h2 id="bibliography">9. Bibliographie</h2>    
+m4_include(genre-citations.html)
+
+      </main>
+    </div>
+  </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+  <script src="js/toc.js"></script>
+  <script src="js/svg-pan-zoom.min.js"></script>
+
+  <script>
+
+      window.onload = function() {
+      var options = {
+          selector: 'h2, h2, h4',
+          scope: 'main'
+      };
+
+      var container = document.querySelector('#toc');
+      var toc = initTOC(options);
+      container.appendChild(toc);
+        // Expose variable for testing purposes
+
+        window.panZoomG = svgPanZoom('#genre-tax', {
+          zoomEnabled: true,
+          minZoom: 1,
+          controlIconsEnabled: true,
+          fit: true,
+          center: true
+        });
+      };
+
+  </script>
+
+  </body>
+
+</html>

@@ -6,173 +6,127 @@
 
   <head>
     <title>CWRC Literary Genre Ontology Specification - ONTOLOGY_VERSION</title>
-    <meta http-equiv="content-type" content="text/xhtml+xml; charset=utf-8" />
-    <!-- With Apologies to Dan Brickley and Libby Miller -->
-    <link href="css/xmlns-style.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet"  type="text/css" />
     <link rel="mvcb:generatorAgent" type="application/rdf+xml" title="DOAP" href="https://raw.githubusercontent.com/muninn/ontology-tools/master/rdf/voidDescription.rdf#specgenMarkII" />
-    <script
-      src="http://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
-        <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link href="css/cwrc.css" rel="stylesheet"  type="text/css" />
+    <meta http-equiv="content-type" content="text/xhtml+xml; charset=utf-8" />
+    
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    
+    <link href="css/cwrc.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="css/favicon.ico" type="image/x-icon"/>
   </head>
 
   <body>
 
-{_header_}
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/">
+        <img src="http://sparql.cwrc.ca/images/cwrclogo-vert-white.png" height="30" class="align-top" alt="CWRC Logo"/> CWRC Ontologies</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sparql">SPARQL</a></li>
+          <li class="nav-item"><a class="nav-link" href="genre-preamble-EN.html">Preamble</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Specification <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="our-team-EN.html">Our Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/cwrc/ontology">Github</a></li>
+        </ul>
+        <span class="navbar-text">The Literary Genre Ontology of the Canadian Writing Research Collaboratory</span>
+      </div>
+    </nav>
 
-    <p class="copyright"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-xl-2 col-lg-3 col-md-12 d-none d-lg-block bg-light sidebar">
+          <div class="sidebar-sticky">
 
-    <!-- ===================================================================== -->
+            <div class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Table of Contents</span>
+              <a class="d-flex align-items-center text-muted" href="#"></a>
+              <div id="toc">
+                <!-- Table of Contents -->
+              </div>
+            </div>
+          </div>
+        </nav>
+
+    <header id="header" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto  pt-3 px-4">
+     
+
+      {_header_}
+      <p class="copyright"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
+      <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png"/></a>
+      <br/>
+      This work is licensed under a 
+      <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
+    </header>
+
+    <main role="main" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto pt-3 px-4" data-spy="scroll" data-target="#toc">
 
     <hr />
 
-    <h2 id="abstract">Abstract</h2>
-    <p>The CWRC Literary Genre Ontology is the ontology used by the Canadian Writing Research Collaboratory (<a href="http://www.cwrc.ca/en">cwrc.ca</a>) to assign Literary Genres to different documents.</p>
-
-    <h2 id="contents">Table of Contents</h2>
-    
-    <ul style="list-style-type: none">
-    <li><a href="#introduction">1. Introduction</a></li> 
-    <li><a href="#background">2. Background</a></li> 
-    <li><a href="#datasources">3. Data sources</a></li> 
-    <li><a href="#taxonomy">4. Taxonomy construction</a></li>
-    <li><a href="#usingthisontology">5. Using this ontology</a></li>
-    <li><a href="#definition_list">6. Global Cross-Reference</a></li>
-    <li><a href="#reference">7. Detailed references for all terms, classes and instances.</a></li>
-    <li><a href="#notesSKOS">8. Genre Ontology Design Rules</a></li>
-    <li><a href="#conclusion">9. Conclusion and Future Work</a></li>
-    <li><a href="#version_history">10. Version History</a></li>
-    <li><a href="#bibliography">11. Bibliography</a></li>    
-
-    </ul>
-     <h3 id="introduction">1. Introduction</h3>
-     
-     <p>This is a linked data representation of the genre vocabulary of the Canadian Writing Research Collaboratory (CWRC), an extension of the genre vocabulary of the Orlando Project. It includes literary genres associated with the literary tradition in English, broadly conceived, as well as related genres that often interact with literature or that are frequently subjected to literary analysis. We welcome suggestions of additions and improvements from related projects wishing to use the vocabulary.</p>
-     
-     <h3 id="background">2. Background</h3>
-     <p>Genre, Carolyn R.  Miller contends in an influential article, does
-     not inhere in “substance or form of discourse” but must rather be
-     conceived of in terms of situationally-specific rhetorical action,
-     although her definition is more complicated than this brief
-     articulation would suggest, since she argues that “action encompasses
-     both substance and form” (151,152).</p> 
-     
-     <p>Two primary types of action are associated with genre.  Miller addresses how particular speech acts
-     or instances of discourse, that is, texts in a broad sense, come
-     themselves to embody generic features; these, she argues, emerge from
-     rhetorical situations which are social constructs by which private
-     intentions are translated into socially recognizable and interpretable
-     discursive acts (Miller 1984).  But there is also the act of applying a
-     generic label to a text, another kind of discursive act that operates
-     in a wide range of contexts for different purposes.  Generic
-     categorization is foundational to literary studies, organizing both
-     primary and secondary materials, defining specializations and literary
-     movements, and playing a major role in the organization and
-     articulation of literary theory, criticism, and history.  As a major
-     feature of library classification systems, genre labeling serves
-     research across the disciplines.  It organizes bookstores and
-     publishers’ lists, and is used by readers to share and discuss their
-     tastes in texts.</p> 
-     
-     <p>Within these wide-ranging contexts, methods of
-     categorizing specific texts by genre fall into a spectrum ranging from
-     the application by professional cataloguers of tightly controlled
-     authoritative vocabularies produced by “trusted sources” (Harper),
-     though to entirely folksonomic categories devised ad hoc by users of
-     online systems--what Clay Shirky has described as “a radical break with
-     previous categorization strategies, rather than an extension of them.”
-     Numerous studies have indicated that while the terms deployed in these
-     various contexts may overlap, they are not consistently applied
-       (Lester; Lu; Rolla).</p>  
-     <p>This is the understanding of genre that informs this ontology. It does not claim to have arrived at a definitive taxonomy of literary forms, and considers such a taxonomy to be impossible. Rather, it represents a pragmatic approach to literary genres, very broadly conceived, as they have emerged from a scholary history of women's writing, and recognizes that other languages and approaches will emerge from other contexts. It recognizes that in a Linked Open Data (LOD) environment various approaches to genre will intersect, collide, and otherwise interact, and welcomes the prospect of ongoing expansion, revision, and linking of this ontology to other vocabularies, as the Canadian Writing Research Collaboratory continues to grow in conversation with the LOD community.</p>
-     
-     <h3 id="datasources">3. Data sources</h3>
-     
-     <p>The list of genres used within this ontology is based on
-     the genres originally listed by the Orlando Project. The list is
-     tightly coupled to the project's original objectives but is
-     substantive.</p>
-     <p>As the original Orlando project did not post definitions or
-     descriptions of the genres it used, these had to be created for this
-     ontology. Whenever possible, these were adapted from the linked open
-     data sets of DBpedia/Wikipedia, the Getty Art &amp; Architecture Thesaurus, or from the <i><a href="http://web.cn.edu/kwheeler/lit_terms.html">Literary Terms and
-     Definitions</a></i> webpage of  
-     Dr. L. Kip Wheeler. The indebtedness of the description is done using
-     the <a href="https://www.w3.org/TR/prov-o/">provenance ontology</a>, inline html citations and within
-     &lt;rdfs:comment&gt;
-     tags.</p> 
-     
-     <h3 id="taxonomy">4. Taxonomy construction</h3>
-       <p>The Literary Genre ontology contains a taxonomy of literary genres based on a
-       <a href="https://www.w3.org/2004/02/skos/">SKOS</a> approach. This
-       provides limited transitive narrower/broader definitions that can be used
-       to search for relevant creative works using the taxonomy. The
-       taxonomical tree is built on an ad-hoc topic relevance standard meant
-       for document retrieval and that may not be suited to all
-       applications. One distinctive feature of the ontology is the use of adjectival terms such as &apos;philosophical&apos; or &apos;detective&apos; to denote a particularly type of text. Such terms can be employed in conjunction with genres that relate more to form, such as &apos;poem&apos; or &apos;novel&apos;, so as to denote, for instance, &apos;feminist novel&apos;.</p>
-       <p><a href="figures/genreTaxonomy-ONTOLOGY_DATE-EN.svg">The specific taxonomy is:</a></p>
-       <object type="image/svg+xml" data="figures/genreTaxonomy-ONTOLOGY_DATE-EN.svg"></object>  
-       
-     <h3 id="usingthisontology">5. Using this ontology</h3>
-
-     <p>This ontology was constructed to support the efforts of the CWRC
-     project while enabling its stand-alone use by outside projects. Genres
-     exist both as typed instances of the <a href="#Genre">&lt;genre:Genre&gt;</a> class and as
-     <a href="https://www.w3.org/2009/08/skos-reference/skos.html#Concept">&lt;skos:Concept&gt;</a>s
-     of a Genre <a href="https://www.w3.org/2009/08/skos-reference/skos.html#ConceptScheme">&lt;ConceptScheme&gt;</a>. Instances can be both accessed directly or
-     through the built in SKOS taxonomical properties. A provided property
-     <a href="#hasGenre">&lt;genre:hasGenre&gt;</a> with no <a href="https://www.w3.org/TR/owl-ref/#domain-def">&lt;rdfs:domain&gt;</a>
-     permits the easy assignment of a genre to a work without committing to
-     a specific type of creative work.</p>
-      <p>This ontology can be paired with the <a href="http://sparql.cwrc.ca/">CWRC ontology</a>, though it is certainly not required. The focus of the CWRC ontology is on &quot;describing and relating aspects
-      of literary studies and literary history, with a strong emphasis on gender and intersectional analysis indebted to its roots in The Orlando Project, a history of women’s writing in the British Isles.&quot; Given the CWRC ontology's complexity and specificity, we have decided to split it off from the genre ontology so that users may reap the joys of having a taxonomy of genre at their fingertips without having to import some of CWRC's more contentious ontological assertions (eg. cultural formation) wholesale. We do, however, hope users will engage with both ontologies.</p>
-    <h3 id="definition_list">6. Global Cross-Reference</h3>
-    
+    <h2 id="definition_list">1. Global Cross-Reference</h2>
     <!-- The list of classes and properties goes here -->
     {_azlist_}
     <!-- End of the terms list -->
 
-    <h3 id="reference">7. Detailed references for all terms, classes and
-    properties</h3>
-
+    <h2 id="reference">2. Terms and Details</h2>
     <!-- The following is the script-generated list of classes and properties -->
     {_terms_}
     <!-- End of the terms list -->
-    <h3 id="notesSKOS">8. Genre Ontology Design Rules</h3>
-    <ol>
-    <li>Definitions in French, English (and other serendipitously available languages) are never word for word translations and are definitions in their own right.</li>
-    </ol>
+    <div class="deprecated">
+      <h2 id="deprecated">3. Deprecated Terms</h2>
+      {_deprecated_}
+    </div>
     
-    <h3 id="conclusion">9. Conclusion and Future Work</h3>
-    <p>
-    This ontology should be considered stable in nature with occasional
-    additions and refinements being made from time to time. 
-    It will continue to be developed as we
-    discover the implications of a multilingual ontology dedicated to literary
-    genres.</p>
-    <h3 id="version_history">10. Version History</h3>
+    <h2 id="version_history"> 4. Version History</h2>
 
     <ul>
     <li><p>0.1 - Ontology separated off from main cwrc ontology.</p></li>
+    <li><p>0.2 - Definitions and translations added.</p></li>
+    <li><p>0.3 - Deprecating of all genre instances and new uris, and instances being typed as Literary Genre.</p></li>
     </ul>
-    
-    <h3 id="bibliography">11. Bibliography</h3>    
+    <h2 id="bibliography">5. Bibliography</h2>
 m4_include(genre-citations.html)
 
-    <!-- ===================================================================== 
+      </main>
+    </div>
+  </div>
 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+  <script src="js/toc.js"></script>
+  <script src="js/svg-pan-zoom.min.js"></script>
 
-     ===================================================================== -->
+  <script>
 
+      window.onload = function() {
+      var options = {
+          selector: 'h2, h3, h4',
+          scope: 'main'
+      };
 
+      var container = document.querySelector('#toc');
+      var toc = initTOC(options);
+      container.appendChild(toc);
+        window.panZoomG = svgPanZoom('#genre-tax', {
+          zoomEnabled: true,
+          minZoom: 1,
+          controlIconsEnabled: true,
+          fit: true,
+          center: true
+        });
+      };
+
+  </script>
   </body>
 
 </html>
