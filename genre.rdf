@@ -2766,13 +2766,13 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#oriental">
     <rdf:value>ORIENTAL</rdf:value>
-    <rdfs:label xml:lang="en">oriental</rdfs:label>
+    <rdfs:label xml:lang="en">orientalist</rdfs:label>
     <rdfs:label xml:lang="fr">orientalisme</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#LiteraryGenre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">Writing about the East by Western writers and with a Western perspective, encompassing everything from fiction to scientific writing. In Oriental writing, even if not looked down upon as inferior, Eastern cultures are represented as foreign and exotic, and in need of translation, interpretation, or explanation. (<![CDATA[<a href="#cwrc:2f09376c-f784-4a46-9f04-5a21aa311f27">Penguin, 1999</a>]]>)</skos:definition>
+    <skos:definition xml:lang="en">Writing about the East by Western writers and with a Western perspective, encompassing everything from fiction to scientific writing. In Orientalist writing, even if not looked down upon as inferior, Eastern cultures are represented as foreign and exotic, and in need of translation, interpretation, or explanation. (<![CDATA[<a href="#cwrc:2f09376c-f784-4a46-9f04-5a21aa311f27">Penguin, 1999</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://www.politicalavenue.com/10862/ENGLISH-LANGUAGE-BOOKS/English%20-%20Penguin%20Dictionary%20Of%20Literary%20Terms%20And%20Literary%20Theory.pdf"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Penguin Dictionary of Literary Terms &amp; Literary Theory, 4th ed.</owl:comment>
     <skos:definition xml:lang="fr">L'orientalisme est un mouvement littéraire et artistique né en Occident au XIXe siècle. Il existe cependant un orientalisme prémoderne humaniste et classique qui remonte à la fin du Moyen Âge et au début de la Renaissance, lorsque les explorations commencèrent, avec par exemple Marco Polo, et qui atteint son apogée avec les turqueries et le goût oriental du XVIIIe siècle baroque puis rococo. Ce goût oriental hérite aussi du contact de l'époque des Croisades avec le monde islamique. Cet article traite donc plutôt de l'orientalisme à partir du XIXe siècle. C'est un mouvement qui marque l'intérêt de cette époque pour les cultures d'Afrique du Nord, turque et arabe, et toutes les régions dominées par l'Empire ottoman, jusqu'au Caucase.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
@@ -3729,6 +3729,18 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="fr">Le théâtre de l’absurde est un style de théâtre apparu au XXe siècle, à l'époque de la Seconde Guerre mondiale, qui se caractérise par une rupture totale par rapport aux genres plus classiques, tels que la tragédie ou la comédie. C'est un genre traitant fréquemment de l’absurdité de l’Homme et de la vie en général, celle-ci menant toujours à une fin tragique. L’origine de ce mouvement est sans conteste essentiellement liée à la chute de l’humanisme et au traumatisme causé par la Première Guerre mondiale. Ce mouvement littéraire s'est inspiré des surréalistes et des dadaïstes mais est radicalement opposé au réalisme.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Theatre_of_the_Absurd"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
+  </genre:LiteraryGenre>
+  <genre:LiteraryGenre rdf:about="#thematicWriting">
+    <rdfs:label xml:lang="en">thematic writing</rdfs:label>
+    <rdfs:label xml:lang="fr">écriture thématique</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#LiteraryGenre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Indicates a type of writing associated with some aspect of the text’s content or purpose, broadly conceived.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
+    <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
+    <skos:broaderTransitive rdf:resource="#drama"/>
+    <skos:definition xml:lang="fr"></skos:definition>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#theology">
     <rdf:value>THEOLOGY</rdf:value>
