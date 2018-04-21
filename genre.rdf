@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xml:base="http://sparql.cwrc.ca/ontologies/genre#" 
-  xmlns="http://sparql.cwrc.ca/ontologies/genre#" 
-  xmlns:as="http://www.w3.org/ns/activitystreams#" 
-  xmlns:cc="http://creativecommons.org/ns#" 
-  xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" 
-  xmlns:dbpedia="http://dbpedia.org/resource/" 
-  xmlns:dcterms="http://purl.org/dc/terms/" 
-  xmlns:doap="http://usefulinc.com/ns/doap#" 
-  xmlns:eurovoc="http://eurovoc.europa.eu/" 
-  xmlns:foaf="http://xmlns.com/foaf/0.1/" 
-  xmlns:genre="http://sparql.cwrc.ca/ontologies/genre#" 
-  xmlns:geonames="http://sws.geonames.org/" 
-  xmlns:loc="http://id.loc.gov/vocabulary/relators/" 
-  xmlns:nif="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#" 
-  xmlns:oa="http://www.w3.org/ns/oa#" 
-  xmlns:owl="http://www.w3.org/2002/07/owl#" 
-  xmlns:prov="http://www.w3.org/ns/prov#" 
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
-  xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#" 
-  xmlns:time="http://www.w3.org/2006/time#" 
-  xmlns:vann="http://purl.org/vocab/vann/" 
-  xmlns:void="http://rdfs.org/ns/void#" 
-  xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#" 
+<rdf:RDF xml:base="http://sparql.cwrc.ca/ontologies/genre#"
+  xmlns="http://sparql.cwrc.ca/ontologies/genre#"
+  xmlns:as="http://www.w3.org/ns/activitystreams#"
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#"
+  xmlns:dbpedia="http://dbpedia.org/resource/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:doap="http://usefulinc.com/ns/doap#"
+  xmlns:eurovoc="http://eurovoc.europa.eu/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:genre="http://sparql.cwrc.ca/ontologies/genre#"
+  xmlns:geonames="http://sws.geonames.org/"
+  xmlns:loc="http://id.loc.gov/vocabulary/relators/"
+  xmlns:nif="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#"
+  xmlns:oa="http://www.w3.org/ns/oa#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:prov="http://www.w3.org/ns/prov#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+  xmlns:time="http://www.w3.org/2006/time#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:void="http://rdfs.org/ns/void#"
+  xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 
   <owl:Ontology rdf:about="">
@@ -1065,7 +1065,7 @@
     <skos:inScheme rdf:resource="#LiteraryGenre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broaderTransitive rdf:resource="#novel"/>
-    <skos:definition xml:lang="en">A form of narrative fiction, named for a phrase from Thomas Carlyle's “Chartism” (1839), that addresses Victorian social and political issues with a focus on political unrest and class conflict, and typically seeks to instill empathy for the poor and understanding of social iniquities and injustices. 
+    <skos:definition xml:lang="en">A form of narrative fiction, named for a phrase from Thomas Carlyle's “Chartism” (1839), that addresses Victorian social and political issues with a focus on political unrest and class conflict, and typically seeks to instill empathy for the poor and understanding of social iniquities and injustices.
 Closely related to the industrial novel because of its interest in the impact of the industrial revolution.</skos:definition>
     <skos:broaderTransitive rdf:resource="#novel"/>
     <skos:broaderTransitive rdf:resource="#politicalWriting"/>
@@ -1162,7 +1162,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:definition xml:lang="fr">Le genre policier, ou polar, est un genre caractérisant certaines œuvres narratives et qui se distingue par sa mise en scène d'une énigme que le protagoniste tente de résoudre, souvent par une enquête de police. En ressortent notamment, en littérature le roman policier, au cinéma le film policier et à la télévision la série télévisée policière.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Crime_fiction"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
-    <skos:broaderTransitive rdf:resource="#fiction"/>
+    <skos:broaderTransitive rdf:resource="#mystery"/>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#devotional">
     <rdf:value>DEVOTIONAL</rdf:value>
@@ -1309,6 +1309,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:inScheme rdf:resource="#LiteraryGenre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Domestic realism normally refers to the genre of nineteenth-century novels popular with women readers. This body of writing is also known as "sentimental fiction" or "woman's fiction". The genre is mainly reflected in the novel though short-stories and non-fiction works such as Harriet Beecher Stowe's "Our Country Neighbors" and The New Housekeeper's Manual written by Stowe and her sister-in-law Catharine Beecher are works of domestic realism. The style's particular characteristics are: "1. Plot focuses on a heroine who embodies one of two types of exemplar: the angel and the practical woman (Reynolds) who sometimes exist in the same work. Baym says that this heroine is contrasted with the passive woman (incompetent, cowardly, ignorant; often the heroine's mother is this type) and the "belle," who is deprived of a proper education. 2. The heroine struggles for self-mastery, learning the pain of conquering her own passions (Tompkins, Sensational Designs, 172). 3. The heroine learns to balance society's demands for self-denial with her own desire for autonomy, a struggle often addressed in terms of religion. 4. She suffers at the hands of abusers of power before establishing a network of surrogate kin. 5. The plots "repeatedly identify immersion in feeling as one of the great temptations and dangers for a developing woman. They show that feeling must be controlled. . . " (Baym 25). Frances Cogan notes that the heroines thus undergo a full education within which to realize feminine obligations (The All-American Girl). 6. The tales generally end with marriage, usually one of two possible kinds: A. Reforming the bad or "wild" male, as in Augusta Evans's St. Elmo (1867) B. Marrying the solid male who already meets her qualifications.Examples: Maria Cummins, The Lamplighter (1854) and Susan Warner, The Wide, Wide World (1850) 7. The novels may use a "language of tears" that evokes sympathy from the readers. 8. Richard Brodhead (Cultures of Letters) sees class as an important issue, as the ideal family or heroine is poised between a lower-class family exemplifying poverty and domestic disorganization and upper-class characters exemplifying an idle, frivolous existence (94)." An example of this style of novel is Jane Smiley's A Thousand Acres in which the main character's confinement is emphasized in such a way. Some early exponents of the genre of domestic realism were Jane Austen and Elizabeth Barrett Browning. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
+    <skos:broaderTransitive rdf:resource="#novel"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Domestic_realism"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <skos:definition xml:lang="fr">Le réalisme domestique se réfère généralement au genre des romans du dix-neuvième siècle populaires auprès des lectrices des femmes. Ce corps d'écriture est également connu sous le nom de "fiction sentimentale" Ou "la fiction de la femme". Le genre se reflète principalement dans le roman, bien que des histoires courtes et des œuvres non-fiction telles que Harriet Beecher Stowe's Our Country Neighbours &amp; quot; Et The New Housekeeper's Manual écrit par Stowe et sa belle-sœur Catharine Beecher sont des œuvres de réalisme domestique. Les caractéristiques particulières du style sont: &amp; quot; 1. Plot se concentre sur une héroïne qui incarne l'un des deux types d'exemples: l'ange et la femme pratique (Reynolds) qui existent parfois dans le même travail. Baym dit que cette héroïne est contrastée avec la femme passive (incompétente, lâche, ignorante, souvent la mère de l'héroïne est de ce type) et la «belle», qui est privée d'une éducation adéquate. 2. L'héroïne lutte pour la maîtrise de soi, apprenant la douleur causée par la nécessité de vaincre ses propres passions (Tompkins, Sensational Designs, 172). 3. L'héroïne apprend à trouver un équilibre entre l’impératif social du sacrifice de soi et son propre désir d'autonomie, une lutte souvent abordée en terme de religion. 4. Elle souffre aux mains d’auteurs de maltraitance, avant d'établir un réseau de parents de substitution. 5. Les intrigues &quot;identifient à plusieurs reprises l’immersion dans la vie sentimentale comme synonyme de grandes tentations et de dangers pour une femme en développement. Ils montrent que les sentiments doivent être contrôlés. . . &quot; (Baym 25). Frances Cogan note que les héroïnes sont suivent une éducation complète dans le but de remplir des obligations féminines (The All-American Girl). 6. Les histoires finissent habituellement par un mariage, correspondant en général à un des deux types possibles: A. Celui qui réhabilite un personnage masculin mauvais ou "sauvage", comme dans le Saint-Elmo d'Augusta Evans (1867) B. Celui qui marrie la protagoniste avec un homme stable qui répond déjà à ses exigences.Exemples: Maria Cummins, The Lamplighter (1854) et Susan Warner, The Wide, Wide World (1850) 7. Les romans peuvent utiliser un &quot;langage larmoyant&quot; qui provoque la sympathie des lecteurs. 8. Richard Brodhead (Cultures of Letters) voit la classe comme une question importante, car la famille idéale ou l'héroïne se situe entre une famille de classe inférieure illustrant la pauvreté et la désorganisation domestique et des personnages de classe supérieure illustrant une existence inactive et frivole (94). &quot; Un exemple de ce style de roman est A Thousand Acres de Jane Smiley, dans lequel le confinement du personnage principal est souligné d’une telle manière. On compte Jane Austen et Elizabeth Barrett Browning comme des premières représentantes du réalisme domestique.</skos:definition>
@@ -1533,6 +1534,7 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="fr">L'épithalame (en grec ancien ἐπιθαλάμιον / epithalámion) est une sorte de poème lyrique composé chez les Anciens à l'occasion d'un mariage et à la louange des nouveaux époux. En Grèce, il était chanté par un chœur, soit de jeunes vierges seules, soit de jeunes filles[réf. nécessaire] et de jeunes garçons, avec accompagnement de danses. On le nommait aussi catakoemèse (de catakoimân, envoyer dormir). (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <skos:definition xml:lang="de">Ein Epithalamion (von griech. έπί epi bei und ϑάλαμος thálamos Schlafgemach; lat. epithalamium; dt. Hochzeitsgedicht, Brautlied; Plural: -ien) ist ein üblicherweise pastorales Gelegenheitsgedicht, verfasst und meist chorisch vorgetragen zur Feier einer Hochzeit. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <skos:definition xml:lang="es">El epitalamio es una poesía lírica, subgénero lírico griego imitado después por los romanos, consistente en un canto de boda. El nombre epitalamio es griego, compuesto sobre y tálamo (en griego θάλαμος) lecho nupcial. Se cantaba regularmente a la puerta de la habitación de los novios por coros de jóvenes y doncellas acompañados de flautas o de otros instrumentos suaves y armónicos. Entre quienes compusieron epitalamios en la antigüedad, se encuentra los poetas griegos Safo y Calímaco y el romano Catulo. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
+    <skos:broaderTransitive rdf:resource="#poetry"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Epithalamium"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
   </genre:LiteraryGenre>
@@ -1642,7 +1644,6 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="en">A humorous, frequently ribald or "dirty" narrative popular with French poets, who traditionally wrote the story in octosyllabic couplets. The tales frequently revolve around trickery, practical jokes, sexual mishaps, scatology, mistaken identity, and bodily humor. Chaucer included several fabliaux in The Canterbury Tales, including the stories of the Shipman, the Friar, the Miller, the Reeve, and the Cook. Examples from French literature include Les Quatre Souhais Saint Martin, Audigier, and Beranger au Long Cul (Beranger of the Long Ass).  (<![CDATA[<a href="#_wheeler_2017">L. K Wheeler, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://web.cn.edu/kwheeler/lit_terms_f.html"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
-    <skos:broaderTransitive rdf:resource="#fable"/>
     <skos:definition xml:lang="fr">Fabliau (du picard, lui-même issu du latin fabula qui donna en français « fable », signifie littéralement « petit récit ») est le nom qu'on donne dans la littérature française du Moyen Âge à de petites histoires simples et amusantes, définies par Bédier comme des contes à rire en vers. Leur vocation est de distraire ou faire rire les auditeurs et lecteurs, mais ils peuvent prétendre offrir une leçon morale, parfois ambiguë.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Fabliau"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
@@ -1663,6 +1664,7 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="nl">Verhalen die zich afspelen in een ver verleden en waarin gebeurtenissen worden beschreven die in de echte wereld onmogelijk zouden kunnen plaatsvinden.  Hoewel het vaak magische verhalen zijn waarin allerlei fantasiefiguren voorkomen, worden de hoofdrollen door mensen vertolkt. (<![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>]]>)</skos:definition>
     <skos:definition xml:lang="es">Conjunto de narraciones situadas en el pasado distante que narran sucesos imposibles en el mundo real, a veces mágicos y con hadas, pero con seres humanos como héroes o heroínas. (<![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>]]>)</skos:definition>
     <skos:definition xml:lang="zh-hant">背景設定在遙遠的過去，敘述在真實世界不可能發生的故事。常有魔法與仙女，但男女主角為人類。 (<![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>]]>)</skos:definition>
+    <skos:related rdf:resource="#childrensLiterature"/>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300185684"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="fr">Récits se déroulant dans un passé lointain et racontant des événements impossibles dans la réalité, souvent magiques et avec des fées, mais avec des humains comme héros et héroïnes.</skos:definition>
@@ -1682,6 +1684,7 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="de">Fantasy (von engl. fantasy „Phantasie“) ist ein Genre der Phantastik, dessen Wurzeln sich in der Mythologie und den Sagen finden. Ähnlich wie die benachbarten Genres Science-Fiction und Horror, findet Fantasy ihre wichtigsten Ausprägungen in Literatur und Film, außerdem aber auch in Musik und bildender Kunst sowie im Bereich der Gesellschaftsspiele, Computerspiele sowie Pen-&amp;-Paper- und Live-Rollenspiele.</skos:definition>
     <skos:definition xml:lang="es">El género fantástico, comúnmente llamado fantasía, es un género artístico en el cual los elementos principales del argumento son imaginarios, irreales y sobrenaturales. En su sentido más amplio, el género fantástico se halla presente en la literatura, cinematografía, historieta, videojuegos, juegos de rol, pintura, escultura, drama y, sobre todo, en la mitología y relatos antiguos, donde tuvo su origen. Se caracteriza por no dar prioridad a una representación realista que respete las leyes de funcionamiento del mundo real. En ese sentido se suele decir que el género fantástico es subversivo, pues viola las normas de la realidad. Generalmente se lo distingue de otras formas artísticas como la ciencia ficción –en la que también se subvierten los mecanismos de funcionamiento de la realidad conocida– aduciendo que la causa de los fenómenos observados en obras de corte fantástico siempre tienen que ver con fuerzas sobrenaturales mientras que en la ciencia ficción hay causas “cientifizadas”, con explicaciones que buscan la racionalidad dentro de su ruptura con el orden conocido. Por eso, algunos autores opinan que la diferencia entre el relato fantástico y el de ciencia-ficción radica no tanto en los hechos sobrenaturales sino en el modo en que el autor presenta y explica los mismos.</skos:definition>
     <skos:definition xml:lang="nl">Fantasy is een apart genre binnen diverse media-, kunst- en cultuurvormen zoals films, televisie, literatuur, computerspellen, festivals, muziek, en dergelijke. Het is een genre dat zich kenmerkt door het gebruik van fictieve verhalen, verzonnen wezens en imaginaire werelden. Bovendien spelen magie en andere bovennatuurlijke elementen veelal een belangrijke rol in het genre. Toch is fantasy meestal duidelijk te onderscheiden van aanverwante genres als sciencefiction en horror, die de meeste van de bovenstaande kenmerken ook kunnen bezitten. Dit onderscheid is vooral te vinden in de toon, de stijl en de manier waarop diverse thema's behandeld worden. Daarnaast focussen sciencefiction en horror zich respectievelijk op bepaalde elementen als 'toekomst en techniek' en 'angst en mysterie', terwijl in fantasy de bovengenoemde kenmerken centraal staan. Vaak lijken fantasy-verhalen zich af te spelen in een onbestemd en mythisch verleden, waarin "bovennatuurlijke" verschijnselen of een daarmee samenhangende sfeer alledaags lijken (zoals tovenarij), terwijl het met name bij sciencefiction daarentegen veelal gaat om een setting in een al dan niet onbestemd "futuristisch" verschiet, waarin technisch vernuft een belangrijke rol speelt (zoals ruimtereizen). (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
+    <skos:broaderTransitive rdf:resource="#fiction"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Fantasy"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
   </genre:LiteraryGenre>
@@ -2604,6 +2607,7 @@ l'identité propre.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Notebook is a style of writing where people jot down what they have thought or heard at the spur of moment. The contents of a notebook are unorganized, and the number of subjects covered in a notebook are unlimited: a paragraph of autobiography can be followed immediately by one on astronomy or one on history. Some famous authors are also famous for the notebooks they left. The Italian poet Giacomo Leopardi kept a notebook, called Zibaldone, from 1817 to 1832. The idea of keeping that, which contains no fewer than 4,526 pages, was possibly suggested by a priest who fled from the French Revolution and came to live in the poet's hometown. The priest suggested that "every literary man should have a written chaos such as this: notebook containing sottiseries, adrersa, excerpta, pugillares, commentaria... the store-house out of which fine literature of every kind may come, as the sun, moon, and stars issued out of chaos." There are writers who earned their posthumous fame solely by their notebooks, such as the German scientist and humorous writer Georg Lichtenberg. He called his notebooks "waste book," using the English book-keeping term. He explains the purpose of his "waste book" in his notebook E: The notebooks of scientists, such as those of Michael Faraday and Charles Darwin, can reveal the development of their scientific theories. On the other hand, the notebooks used by scientists for recording their experiments are called lab notebooks. The notebooks used by artists are usually referred as sketchbooks, which may contain more than sketches. Leonardo da Vinci's notebooks contain his writings on painting, sculpture, architecture, anatomy, mining, inventions and music, as well as his sketches, his grocery lists and the names of people who owed him money. In Chinese literature, "notebook" or biji is a distinct genre, and has a broader meaning. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <skos:definition xml:lang="de">Pinselnotizen oder Pinselaufzeichnungen (chinesisch 筆記 / 笔记, Pinyin bǐjì) sind eine schwer abgrenzbare Gattung von Kurzprosa überwiegend aus der klassischen chinesischen Literatur. Das Wort lässt sich grob mit „Notizbuch“ oder „Aufzeichnungen“ übersetzen (als Schreibmaterial diente der Schreibpinsel). Pinselnotizen bestehen meist aus kurzen Gedankenskizzen, Literaturkritik, Tagebuchaufzeichnungen, Anekdoten, Zitaten, auch Reiseberichten, Abenteuer- und Geistergeschichten, Witzen, Rätseln und Kleinprosa jeglicher Art. Das Genre bildete sich während der Wei- und Jin-Dynastie in der Zeit der Sechs Dynastien heraus und reifte in der Zeit der Tang-Dynastie heran. In voller Blüte stand die Biji-Literatur während der Zeit der Song-Dynastie. Auch in späteren Epochen wurde diese Literaturgattung ausgiebig gepflegt. Die Prosastücke wurden oft in Sammlungen herausgegeben und sind heute als wertvolle kulturgeschichtliche Quellen geschätzt. Berühmte Pinselnotizen sind die Werke Shishuo xinyu (世說新語) von Liu Yiqing (劉義慶) (Song-Dynastie der Südlichen Dynastien), Youyang zazu (酉陽雜俎) von Duan Chengshi (Tang-Dynastie), Song Jingwen biji (宋景文笔记) von Song Qi (宋祁) (Song-Dynastie), Chouchi biji (仇池笔记) von Su Shi (苏轼), Mengxi bitan (夢溪筆談) von Shen Kuo (auch: Shen Gua) (沈括) (Song-Dynastie) und Rongzhai suibi (容齋隨筆) von Hong Mai (Song-Dynastie), Dongjing meng Hua lu (東京夢華錄) von Meng Yuanlao (孟元老) (Südliche Song-Dynastie), Shanju xinhua (山居新话) von Yang Yu (杨瑀) Yuan-Dynastie, Wuli xiaoshi (物理小識) von Fang Yizhi (Ming-Dynastie), Yuewei caotang biji (閱微草堂筆記) von Ji Yun (紀昀) (Qing-Dynastie). Viele Pinselnotizen sind in sogenannten congshu („Sammelwerken“) überliefert, wie beispielsweise dem Shuofu (说郛), oder für spätere Epochen den Sammelwerken Ming Qing biji congkan (明清笔记丛刊) oder „Qingdai biji congkan“ (清代笔记丛刊). (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
+    <skos:related rdf:resource="#commonplaceBook"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Notebook_(style)"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <skos:definition xml:lang="fr">Écrivant au jour le jour, au fil des événements, ou à une fréquence moins&#13;
@@ -2677,11 +2681,11 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#LiteraryGenre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">Obituary poetry, in the broad sense, includes any poem that commemorates a person or group of people's death: an elegy. In its stricter sense, though, it refers to a genre of popular verse or folk poetry that had its greatest popularity in the nineteenth century, especially in the United States of America. The genre consists largely of sentimental narrative verse that tells the story of the demise of its typically named subjects, and seeks to console their mourners with descriptions of their happy afterlife. The genre achieved its peak of popularity in the decade of the 1870s. While usually full chiefly of conventional pious sentiments, the obituary poets in one sense continue the program of meditations on death begun by the eighteenth-century graveyard poets, such as Edward Young's Night Thoughts, and as such continue one of the themes that went into literary Romanticism. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
-    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Obituary_poetry"/>
+    <skos:definition xml:lang="en">An obituary (obit for short) is a news article that reports the recent death of a person, typically along with an account of the person's life and information about the upcoming funeral. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2018</a>]]>)</skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/page/Obituary"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <skos:definition xml:lang="fr">L’élégie (en grec ancien ἐλεγεία / elegeía, signifiant « chant de mort ») fut une forme de poème dans l'Antiquité, avant de devenir un genre poétique à partir de la Renaissance. Dans l’Antiquité, était appelé « élégie » tout poème alternant hexamètres et pentamètres en distiques : ce sont les vers élégiaques. De nos jours, l’élégie est considérée comme un genre au sein de la poésie lyrique, en tant que poème de longueur et de forme variables caractérisé par son ton plaintif particulièrement adapté à l’évocation d’un mort ou à l’expression d’une souffrance amoureuse due à un abandon ou à une absence.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
-    <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Elegy"/>
+    <prov:derivedFrom rdf:resource="http://dbpedia.org/page/Obituary"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#occasionalPoetry">
@@ -3050,7 +3054,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300252982"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
   </genre:LiteraryGenre>
-  
+
   <genre:LiteraryGenre rdf:about="#politicalWriting">
     <rdf:value>POLITICALWRITING</rdf:value>
     <rdfs:label xml:lang="en">political writing</rdfs:label>
@@ -3303,6 +3307,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300026480"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="fr">Une revue est un genre théâtral qui associe musique, danse et sketches qui font la satire de personnes contemporaines, de l'actualité ou de la littérature. Comme les formes apparentées de l'opérette et de la comédie musicale, la revue allie musique, danse et comédie pour former un spectacle complet. Contrairement à celles-ci, elle ne possède cependant pas d'histoire suivie. Un thème général est plutôt utilisé pour un enchaînement de numéros au cours desquels solos et ensembles de danse se relaient.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
+    <skos:broaderTransitive rdf:resource="#journalism"/>
     <prov:derivedFrom rdf:resource="http://dbpedia.org/resource/Revue"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
   </genre:LiteraryGenre>
@@ -3408,6 +3413,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="de">Science-Fiction [ˌsaɪəns ˈfɪkʃən̩] (engl. science „Wissenschaft“, fiction „Fiktion“) ist ein Genre der Literatur und des Films, aber auch anderer Bereiche wie etwa der bildenden Kunst oder der Videospiele, das den Einzelnen, die Gesellschaft oder die Umwelt in (oft radikal) alternativen Konstellationen betrachtet. Science-Fiction entwirft – häufig in die Zukunft verlegte, teilweise auch räumlich entfernte – Konstellationen des Möglichen und beschreibt deren Auswirkungen. Dabei werden reale wissenschaftliche und technische Möglichkeiten mit fiktionalen Spekulationen angereichert. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <skos:definition xml:lang="es">Ciencia ficción es la denominación popular con que se conoce a uno de los géneros derivados de la literatura de ficción, junto con la literatura fantástica y la narrativa de terror. Nacida como subgénero literario distinguido en la década de 1920 (aunque hay obras reconocibles muy anteriores) y exportada posteriormente a otros medios, como el cinematográfico, historietístico y televisivo, gozó de un gran auge en la segunda mitad del sigloxx debido al interés popular acerca del futuro que despertó el espectacular avance tanto científico como tecnológico alcanzado durante todos estos años. Es un género especulativo que relata acontecimientos posibles desarrollados en un marco puramente imaginario, cuya verosimilitud se fundamenta narrativamente en los campos de las ciencias físicas, naturales y sociales. La acción puede girar en torno a un abanico grande de posibilidades (viajes interestelares, conquista del espacio, consecuencias de una hecatombe terrestre o cósmica, evolución humana a causa de mutaciones, evolución de los robots, realidad virtual, existencia de civilizaciones alienígenas, etc.). Esta acción puede tener lugar en un tiempo pasado, presente o futuro, o, incluso, en tiempos alternativos ajenos a la realidad conocida, y tener por escenario espacios físicos (reales o imaginarios, terrestres o extraterrestres) o el espacio interno de la mente. Los personajes son igualmente diversos: a partir del patrón natural humano, recorre y explota modelos antropomórficos hasta desembocar en la creación de entidades artificiales de forma humana (robot, androide, cíborg) o en criaturas no antropomórficas. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <skos:definition xml:lang="nl">Sciencefiction (afgekort sf, scifi of essef, in het Engels als science fiction gespeld), is tegenwoordig een belangrijk genre dat vooral opgeld heeft gedaan in literatuur, stripverhalen, films, televisieseries, hoorspelen en computerspellen. Het Engelse "science fiction" betekent letterlijk vertaald "wetenschapsfictie", en dit is dan ook de betekenis die de bedenker van de term, Hugo Gernsback, eraan heeft willen geven. Voor Gernsback was de sciencefiction vooral bedoeld als een middel tot popularisatie van de wetenschap en van wetenschappelijke ontdekkingen, maar de geschiedenis ervan laat zien dat deze gedachte door latere schrijvers slechts beperkt is nagestreefd. In het genre worden tegenwoordig vooral toekomstbeelden met verzonnen technologische vooruitgang en wetenschappelijke ontwikkelingen gebruikt. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
+    <skos:related rdf:resource="#fantasy"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Science_fiction"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <skos:broaderTransitive rdf:resource="#fiction"/>
@@ -5085,7 +5091,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:inScheme rdf:resource="#Genre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broaderTransitive rdf:resource="#genreNovel"/>
-    <skos:definition xml:lang="en">A form of narrative fiction, named for a phrase from Thomas Carlyle's “Chartism” (1839), that addresses Victorian social and political issues with a focus on political unrest and class conflict, and typically seeks to instill empathy for the poor and understanding of social iniquities and injustices. 
+    <skos:definition xml:lang="en">A form of narrative fiction, named for a phrase from Thomas Carlyle's “Chartism” (1839), that addresses Victorian social and political issues with a focus on political unrest and class conflict, and typically seeks to instill empathy for the poor and understanding of social iniquities and injustices.
 Closely related to the industrial novel because of its interest in the impact of the industrial revolution.</skos:definition>
     <skos:broaderTransitive rdf:resource="#genreNovel"/>
     <skos:broaderTransitive rdf:resource="#genrePoliticalwriting"/>
