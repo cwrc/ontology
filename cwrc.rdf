@@ -6043,6 +6043,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broader rdf:resource="http://schema.org/sibling"/>
+    <owl:inverseOf rdf:resource="#hasStepBrother"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasChild">
@@ -6089,6 +6090,7 @@
     <rdfs:range rdf:resource="#Person"/>
     <rdfs:domain rdf:resource="#Person"/>
     <skos:broader rdf:resource="http://schema.org/parent"/>
+    <owl:inverseOf rdf:resource="#hasDaughter"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasSon">
@@ -6403,7 +6405,6 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:range rdf:resource="#Person"/>
     <rdfs:domain rdf:resource="#Person"/>
-    <owl:inverseOf rdf:resource="#hasStepParent"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepfather"/>
@@ -6423,6 +6424,7 @@
     <rdfs:domain rdf:resource="#Person"/>
     <prov:wasDerivedFrom rdf:resource="#hasStepFather"/>
     <skos:broader rdf:resource="http://schema.org/children"/>
+    <owl:inverseOf rdf:resource="#hasStepFather"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasGrandParent">
@@ -6651,6 +6653,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
     <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Partnership"/>
+    <owl:inverseOf rdf:resource="#hasPartner"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasWife">
