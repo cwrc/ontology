@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xml:base="http://sparql.cwrc.ca/ontologies/cwrc#" 
-  xmlns="http://sparql.cwrc.ca/ontologies/cwrc#" 
-  xmlns:bio="http://purl.org/vocab/bio/0.1/" 
-  xmlns:cc="http://creativecommons.org/ns#" 
-  xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" 
-  xmlns:dbpedia="http://dbpedia.org/resource/" 
-  xmlns:dcterms="http://purl.org/dc/terms/" 
-  xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+<rdf:RDF xml:base="http://sparql.cwrc.ca/ontologies/cwrc#"
+  xmlns="http://sparql.cwrc.ca/ontologies/cwrc#"
+  xmlns:bio="http://purl.org/vocab/bio/0.1/"
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#"
+  xmlns:dbpedia="http://dbpedia.org/resource/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:eurovoc="http://eurovoc.europa.eu/"
   xmlns:geonames="http://sws.geonames.org/"
-  xmlns:loc="http://id.loc.gov/vocabulary/relators/" 
+  xmlns:loc="http://id.loc.gov/vocabulary/relators/"
   xmlns:bibo="http://purl.org/ontology/bibo/"
-  xmlns:oa="http://www.w3.org/ns/oa#" 
-  xmlns:owl="http://www.w3.org/2002/07/owl#" 
-  xmlns:prov="http://www.w3.org/ns/prov#" 
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+  xmlns:oa="http://www.w3.org/ns/oa#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:prov="http://www.w3.org/ns/prov#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:schema="http://schema.org/"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
-  xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#" 
-  xmlns:time="http://www.w3.org/2006/time#" 
-  xmlns:vann="http://purl.org/vocab/vann/" 
-  xmlns:voaf="http://purl.org/vocommons/voaf#" 
-  xmlns:void="http://rdfs.org/ns/void#" 
-  xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#" 
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+  xmlns:time="http://www.w3.org/2006/time#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:voaf="http://purl.org/vocommons/voaf#"
+  xmlns:void="http://rdfs.org/ns/void#"
+  xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
- 
+
   <owl:Ontology rdf:about="">
     <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
     <vann:preferredNamespacePrefix>cwrc</vann:preferredNamespacePrefix>
@@ -319,7 +319,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
-  
+
   <owl:ObjectProperty rdf:ID="personaOf">
     <rdfs:label xml:lang="en">persona of</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -454,7 +454,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
-  
+
   <owl:ObjectProperty rdf:ID="hasRole">
     <rdfs:label xml:lang="en">has role</rdfs:label>
     <rdfs:label xml:lang="fr">a un rôle</rdfs:label>
@@ -485,7 +485,7 @@
     <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty> 
+  </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="locationOf">
     <rdfs:label xml:lang="en">location Of</rdfs:label>
@@ -496,7 +496,7 @@
     <owl:inverseOf rdf:resource="#hasLocation"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty> 
+  </owl:ObjectProperty>
 
   <owl:Class rdf:ID="Organization">
     <rdfs:label xml:lang="en">organization</rdfs:label>
@@ -1033,11 +1033,11 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
     <skos:definition xml:lang="en">
-      Race or Ethnicity Context is a subclass of @@#CulturalFormContext@@, and is associated with the @@#CulturalForm@@ subclasses @@#RaceColour@@ and @@#Ethnicity@@, and sometimes other cultural forms. Annotations typed as Race or Ethnicity Context provide contextualizing information about and discussions related to a person's perceived or self-reported identity with regards to race and/or ethnicity (Race or Colour or ethnicity). 
-      Despite the ways in which categories of Race or Colour and ethnicity frequently serve heinous interests, their ideological and material impacts in the formation of identities requires recognition. These are shifting, historically constituted, and interestedly deployed categories whose use must be situated contextually and are understood here finally as discursive or representational although they have real material impacts. They are thus social constructs: &quot;There is nothing more to being, or not being, a given race than the social acceptance and societal ascription of a race to a person&quot; <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>. 
+      Race or Ethnicity Context is a subclass of @@#CulturalFormContext@@, and is associated with the @@#CulturalForm@@ subclasses @@#RaceColour@@ and @@#Ethnicity@@, and sometimes other cultural forms. Annotations typed as Race or Ethnicity Context provide contextualizing information about and discussions related to a person's perceived or self-reported identity with regards to race and/or ethnicity (Race or Colour or ethnicity).
+      Despite the ways in which categories of Race or Colour and ethnicity frequently serve heinous interests, their ideological and material impacts in the formation of identities requires recognition. These are shifting, historically constituted, and interestedly deployed categories whose use must be situated contextually and are understood here finally as discursive or representational although they have real material impacts. They are thus social constructs: &quot;There is nothing more to being, or not being, a given race than the social acceptance and societal ascription of a race to a person&quot; <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>.
     </skos:definition>
     <skos:definition xml:lang="fr">
-      Contexte Ethnique ou Racial est une sous-classe importante de Contexte, et est associée aux sous-classes @@#RaceColour@@ et @@#Ethnicity@@. Les annotations entrées en tant que Contexte Ethnique ou Racial fournissent des renseignements de contextualisation et des discussions sur l’identité d’un sujet concernant son appartenance raciale et/ou son ethnicité. 
+      Contexte Ethnique ou Racial est une sous-classe importante de Contexte, et est associée aux sous-classes @@#RaceColour@@ et @@#Ethnicity@@. Les annotations entrées en tant que Contexte Ethnique ou Racial fournissent des renseignements de contextualisation et des discussions sur l’identité d’un sujet concernant son appartenance raciale et/ou son ethnicité.
       Même si les catégories de race et d'ethnicité sont fréquemment manipulées au service d'intérêts déplorables, leurs répercussions idéologiques et matérielles sur la formation identitaire requièrent qu'on les prenne en compte. Ces catégories sont changeantes, historiquement constituées, développées de façon intéressée, et leur usage doit être resitué dans leur contexte; elles sont finalement comprises ici comme discursives et représentationnelles, même si elles ont de réelles répercussions matérielles. Elles sont entendues comme des constructions sociales: «Le fait d’être ou de ne pas être d’une certaine race n’est rien de plus que l’acceptation sociale et l’attribution sociétale d’une race à une personne» <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>
     </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1154,7 +1154,7 @@
   </cwrc:NationalHeritage>
 
 <!-- Nationalities -->
-  <owl:Class rdf:ID="NationalIdentity"> 
+  <owl:Class rdf:ID="NationalIdentity">
     <rdfs:label xml:lang="en">nationality</rdfs:label>
     <rdfs:label xml:lang="fr">nationalité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
@@ -1190,7 +1190,7 @@
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/English_national_identity"/>
     <skos:broader rdf:resource="#englishLabel"/>
   </cwrc:NationalIdentity>
-  
+
   <owl:Class rdf:ID="Language">
     <rdfs:label xml:lang="en">language</rdfs:label>
     <rdfs:label xml:lang="fr">langue</rdfs:label>
@@ -1246,19 +1246,19 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">
-      A subclass of @@#CulturalForm@@ for indicating a person's gender, whether attributed or self-defined, with accompanying context, where present, provided by @@#GenderContext@@ annotations.
+      A subclass of @@#CulturalForm@@ for indicating a person's gender, whether attributed or self-reported, with accompanying context, where present, provided by @@#GenderContext@@ annotations.
       Although in popular culture gender and biological sex are conflated and understood to be binary, the concept of gender stresses the relationality, constructedness, and performativity of gendered identities and gendered behaviour, whose categories are historically contingent and shifting, and the boundaries between them blurry. Simone de Beauvoir <![CDATA[<a href="#cwrc:c6a678e5-8fc6-41bc-8631-7cfb7116017e"> (1973) </a>]]> stated &quot;One is not born, but rather becomes, a woman,&quot; a belief that has been taken up by many other theorists of gender including Judith Butler <![CDATA[<a href="#cwrc:825995b3-3b66-4e0a-a62d-d8649aaead78">(1990)</a>]]>. Gender studies to date has investigated the social construction of femininity more than that of masculinity. The multi-layered constructedness of gender is also underlined by Donna Haraway who understands it as a &quot;socially, historically, and semiotically positioned difference&quot; <![CDATA[<a href="#cwrc:f62e94d6-bd04-494c-9282-53af0a3f3376">(Donna Haraway, 1988)</a>]]>.
       Gender is understood as fluid, situational, and sometimes plural, and it is related to, though not commensurate with, sexual identity and orientation, just as it is related to but not defined by specific forms of embodiment. Rather than seeing biological sex as a pre-social or natural given, the body is understood as a site of inscription (cf. <![CDATA[<a href="#cwrc:3d49dc32-ac97-4abd-a252-573c52b463cf"> (Elizabeth Grosz, 1994)</a>]]>) which is also socially constructed and indeed epigenetically shaped by environmental factors <![CDATA[<a href="#cwrc:5e45242f-0c2e-4aaa-8ddb-ac54dd0e6249">(N. Katherine Hayles, 2012)</a>]]>. As articulated by feminist neurologist Gillian Einstein, <![CDATA[<a href="#cwrc:842ffbb4-11de-4212-8e6e-9d4d8d28d3a5">(2012)</a>]]>&quot;The world writes on the body&quot;. This ontology therefore does not provide separate terms for sex as distinct from gender. Instead, it privileges terms associated with gender, recognizing that they are conventionally but not necessarily associated with sex, and that there is constant slippage between gender and sex in the way that these categories circulate through discourses, actions, and institutions. Far from indicating a universal facet of experience, gender intersects with other identity categories and axes of oppression such as class, race or colour, or geographical heritage to produced quite different interests and experiences among people of the same gender, as with the intersection of religion and white masculine identity in the Muscular Christianity movement in nineteenth-century Britain. Being a woman of colour often compounds the impacts of gender oppression. Such interaction between different forms of oppression is termed &quot;intersectionality&quot; <![CDATA[<a href="#cwrc:b9eeccf9-9380-4341-99dc-a83f5ee32909">(Kimberlé Crenshaw, 1989).</a>]]>
       Those using this class and its subclasses are encouraged to consult associated @@#GenderContext@@ annotations, if available.
     </skos:definition>
     <skos:definition xml:lang="fr">
-      Cette sous-classe de @@#CulturalForm@@ indique le genre d’une personne, qu’il soit attribué par d’autres ou autoproclamé, accompagné du contexte fourni par les annotations de @@#GenderContext@@ lorsque celui-ci est disponible. 
-      Même si dans la culture populaire le genre et le sexe biologique sont confondus et compris comme binaires, le concept de genre souligne la dimension relationnelle, construite et performative des identités et des comportements genrés, dont les catégories sont contingentes et changent au cours de l’Histoire, sans qu’elles soient clairement délimitées. Cf 
+      Cette sous-classe de @@#CulturalForm@@ indique le genre d’une personne, qu’il soit attribué par d’autres ou autoproclamé, accompagné du contexte fourni par les annotations de @@#GenderContext@@ lorsque celui-ci est disponible.
+      Même si dans la culture populaire le genre et le sexe biologique sont confondus et compris comme binaires, le concept de genre souligne la dimension relationnelle, construite et performative des identités et des comportements genrés, dont les catégories sont contingentes et changent au cours de l’Histoire, sans qu’elles soient clairement délimitées. Cf
       <![CDATA[<a href="#cwrc:c6a678e5-8fc6-41bc-8631-7cfb7116017e"> Simone de Beauvoir </a>]]>: «On ne naît pas femme, on le devient,» et d’autres nombreuses théoriciennes du genre, dont Judith Butler en 1990
-      <![CDATA[<a href="cwrc:825995b3-3b66-4e0a-a62d-d8649aaead78">(Judith Butler, 1990)</a>]]>. À ce jour, les études de genres se sont davantage intéressées à la construction de la féminité qu’à celle de la masculinité. Cette construction du genre à plusieurs niveaux est également soulignée par Donna Haraway qui le définit comme une «différence socialement, historiquement et sémiotiquement située» 
-      <![CDATA[<a href="#cwrc:f62e94d6-bd04-494c-9282-53af0a3f3376">(Donna Haraway,1988)</a>]]>. 
+      <![CDATA[<a href="cwrc:825995b3-3b66-4e0a-a62d-d8649aaead78">(Judith Butler, 1990)</a>]]>. À ce jour, les études de genres se sont davantage intéressées à la construction de la féminité qu’à celle de la masculinité. Cette construction du genre à plusieurs niveaux est également soulignée par Donna Haraway qui le définit comme une «différence socialement, historiquement et sémiotiquement située»
+      <![CDATA[<a href="#cwrc:f62e94d6-bd04-494c-9282-53af0a3f3376">(Donna Haraway,1988)</a>]]>.
       Le genre est interprété comme fluide, situationnel, parfois pluriel ainsi que lié à l’identité et l’orientation sexuelles sans leur être proportionnel, tout comme il est relié à certaines façons spécifiques de vivre et de présenter son corps, qui ne définissent pas non plus le genre. Plutôt que de voir le sexe biologique comme présocial ou un fait naturel, le corps est compris comme un lieu d’inscriptions (cf. <![CDATA[<a href="#cwrc:3d49dc32-ac97-4abd-a252-573c52b463cf"> (Elizabeth Grosz, 1994)</a>]]>) qui est aussi socialement construit et épigénétiquement modelé par des facteurs environnementaux <![CDATA[<a href="#cwrc:5e45242f-0c2e-4aaa-8ddb-ac54dd0e6249">(N. Katherine Hayles, 2012)</a>]]>. Selon la formulation de la neurologiste féministe Gillian Einstein, «Le monde écrit sur le corps» <![CDATA[<a href="#cwrc:842ffbb4-11de-4212-8e6e-9d4d8d28d3a5">(Gillian Einstein, 2012)</a>]]>. Cette ontologie ne fournit donc pas de termes séparés pour le sexe et le genre en tant qu’entités distinctes. Au contraire, elle privilégie les termes associés au genre, en admettant qu’ils sont conventionnellement mais non nécessairement associés au sexe, et qu’il existe un glissement constant de ces catégories au fil des discours, des actions et des institutions. Loin d’indiquer une part d’expérience universelle, le genre rencontre d’autres catégories identitaires et divers vecteurs d’oppression comme la classe, la race, la couleur ou l’héritage géographique, produisant des expériences et des intérêts très différents pour les personnes d’un même genre. Un exemple est le mouvement de la Chrétienté Musculaire, formé au Royaume-Uni au 19ème siècle, qui relie la religion à l’identité masculine. Une telle interaction entre différentes formes d’oppression est appelée «intersectionnalité» <![CDATA[<a href="#cwrc:b9eeccf9-9380-4341-99dc-a83f5ee32909">(Kimberlé Crenshaw, 1989)</a>]]>.
-      Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les annotations associées fournies par @@#GenderContext@@, si disponibles. 
+      Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les annotations associées fournies par @@#GenderContext@@, si disponibles.
     </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1273,7 +1273,7 @@
       Indicates identification with or labelling as the gender man, and who is often but not necessarily understood to be sexed male.
     </skos:definition>
     <skos:definition xml:lang="fr">
-      Indique l’identification ou l’assignation au genre masculin, et qui est souvent mais non nécessairement de sexe masculin. 
+      Indique l’identification ou l’assignation au genre masculin, et qui est souvent mais non nécessairement de sexe masculin.
     </skos:definition>
     <skos:broader rdf:resource="#manlabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1318,7 +1318,7 @@
       Indicates a cisgendered woman.
     </skos:definition>
     <skos:definition xml:lang="fr">
-      Indique une femme cisgenre. 
+      Indique une femme cisgenre.
     </skos:definition>
     <skos:broader rdf:resource="#womanlabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1333,7 +1333,7 @@
       Indicates a cisgendered man.
     </skos:definition>
     <skos:definition xml:lang="fr">
-      Indique un homme cisgenre. 
+      Indique un homme cisgenre.
     </skos:definition>
     <skos:broader rdf:resource="#manlabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1394,7 +1394,7 @@
       Indicates refusal of dominant gender categories and cisnormativity, and identification with both, a combination, or neither of the dominant binary gender roles. The term is strongly associated with the late twentieth and twenty-first centuries. It comes from deconstructionist and post-structuralist theory, and was coined by <![CDATA[<a href="#cwrc:fab56e35-9796-4e6d-861d-a6b626f5714d">Teresa de Lauretis at a conference in 1990</a>]]>. Because &quot;queer&quot; identity is recent, its definition is still debated among scholars and activists. Even though it is not rigidly defined, the term is increasingly deployed to refer to a large category of people who are not &quot;straight&quot;, in a sense that is not restricted to sexual orientation. Following <![CDATA[<a href="cwrc:825995b3-3b66-4e0a-a62d-d8649aaead78">Judith Butler</a>]]>, queerness is not understood as an essence, but best described as a doing or performance, a way to situate oneself deliberately against traditional notions of gender. See <![CDATA[<a href="https://en.wikipedia.org/wiki/Genderqueer">Genderqueer - Wikipedia</a>]]>.
     </skos:definition>
     <skos:definition xml:lang="fr">
-      Indique le refus des catégories genrées dominantes et de la cisnormativité, l’identification aux deux, à aucun, ou à une combinaison des rôles genrés dominants. Le terme est fortement associé associé à la fin du 20e siècle et au 21e siècle. Il provient des théories déconstructionnistes et poststructuralistes, et fut formulé pour la première fois par <![CDATA[<a href="#cwrc:fab56e35-9796-4e6d-861d-a6b626f5714d">Teresa de Lauretis lors d'une conférence en 1990</a>]]>. Du fait que le terme «queer» est assez récent, il est toujours sujet à des discussions parmi les chercheurs et les activistes. Même s’il ne possède pas de définition définitive, le terme est de plus en plus utilisé pour référer à une large catégorie de personnes qui ne sont pas «hétérosexuel/les», dans un sens qui va au-delà de l’orientation sexuelle. Selon <![CDATA[<a href="cwrc:825995b3-3b66-4e0a-a62d-d8649aaead78">Judith Butler</a>]]>, l’identité queer ne peut pas être compris comme une essence, mais est plutôt performative et s’actualise à travers des actions, au sein d’une posture délibérément à contre-courant des acceptions traditionnelles du genre. Voir See <![CDATA[<a href="https://fr.wikipedia.org/wiki/Non-binaire">Non-binaire — Wikipédia</a>]]>. 
+      Indique le refus des catégories genrées dominantes et de la cisnormativité, l’identification aux deux, à aucun, ou à une combinaison des rôles genrés dominants. Le terme est fortement associé associé à la fin du 20e siècle et au 21e siècle. Il provient des théories déconstructionnistes et poststructuralistes, et fut formulé pour la première fois par <![CDATA[<a href="#cwrc:fab56e35-9796-4e6d-861d-a6b626f5714d">Teresa de Lauretis lors d'une conférence en 1990</a>]]>. Du fait que le terme «queer» est assez récent, il est toujours sujet à des discussions parmi les chercheurs et les activistes. Même s’il ne possède pas de définition définitive, le terme est de plus en plus utilisé pour référer à une large catégorie de personnes qui ne sont pas «hétérosexuel/les», dans un sens qui va au-delà de l’orientation sexuelle. Selon <![CDATA[<a href="cwrc:825995b3-3b66-4e0a-a62d-d8649aaead78">Judith Butler</a>]]>, l’identité queer ne peut pas être compris comme une essence, mais est plutôt performative et s’actualise à travers des actions, au sein d’une posture délibérément à contre-courant des acceptions traditionnelles du genre. Voir See <![CDATA[<a href="https://fr.wikipedia.org/wiki/Non-binaire">Non-binaire — Wikipédia</a>]]>.
     </skos:definition>
     <skos:broader rdf:resource="#queerLabel"/>
     <rdf:type rdf:resource="http://www.w8.org/2004/02/skos/core#Concept"/>
@@ -1538,8 +1538,8 @@
       A subclass of @@#CulturalForm@@, this property indicates a person's race or colour, often as presumed, perceived, or otherwise assigned according to cultural conventions, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. Despite the ways in which categories of race or colour frequently serve heinous interests, their ideological and material impacts in the formation of identities requires recognition. These are shifting, historically constituted, and interestedly deployed categories whose use must be situated contextually and which are understood here finally as discursive or representational although they have real material impacts. They are thus as social constructs: &quot;There is nothing more to being, or not being, a given race than the social acceptance and societal ascription of a race to a person&quot; <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>. This ontology therefore does not attempt to lay out an exact, fully defined, or mutually exclusive set of racial categories: this is an impossibility given their shifting use and the overlap among them and with identity categories for ethnicity, geography, and nationality. Those applying this class and its subclasses are encouraged not to let privileged identities operate as an unspoken given or to use this class solely in relation to the marginalized. Those concerned about &quot;white&quot; and &quot;black&quot; as homogenizing categories are encouraged to reach for specificity through plural categories and representations of intersectionality, and to consult @@#RaceEthnicityContext@@ annotations, if available.
     </skos:definition>
     <skos:definition xml:lang="fr">
-      Sous-classe de @@#CulturalForm@@, cette propriété indique l’appartenance raciale ou la couleur d’une personne, souvent telle qu’elle est présupposée, perçue ou autrement assignée selon des conventions culturelles, en parallèle avec le contexte fourni par les annotation de Race ou Ethnicité lorsqu’il est présent. Même si les catégories de race ou de couleur sont fréquemment manipulées au service d'intérêts déplorables, leurs répercussions idéologiques et matérielles sur la formation identitaire requiert qu'on les prenne en compte. Ces catégories changeantes, historiquement constituées, développées de façon intéressée, et dont l’usage doit être resitué en contexte sont enfin comprises ici comme discursives et représentationnelles, même si leurs répercussions matérielles sont bien réelles. Ce sont donc des constructions sociales: «Le fait d’appartenir ou non à une race donnée n’est rien de plus que l’acceptation sociale et l’attribution sociétale d’une race à une personne» <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>. 
-      Cette ontologie ne prétend donc pas offrir un ensemble de catégories raciales exact, complètement défini, ou mutuellement exclusif, ce qui est impossible étant donné leur utilisation en changement constant et leur chevauchement mutuel ou avec d’autres catégories identitaires utilisées pour l’ethnicité, la géographie ou la nationalité. Les personnes qui appliquent ces catégories et sous-catégories sont encouragées à ne pas faire fonctionner les identités privilégiées comme si elles étaient consensuelles et évidentes, ou à utiliser cette classe seulement en relation avec des populations marginalisées. Les personnes préoccupées par le fait que «blanc» et «noir» sont des catégories homogénéisantes sont encouragées à atteindre la spécificité à travers la pluralité des catégories et les représentations intersectionnelles, ainsi qu’à consulter les annotations associés à @@#RaceEthnicityContext@@ s’ils sont fournis. 
+      Sous-classe de @@#CulturalForm@@, cette propriété indique l’appartenance raciale ou la couleur d’une personne, souvent telle qu’elle est présupposée, perçue ou autrement assignée selon des conventions culturelles, en parallèle avec le contexte fourni par les annotation de Race ou Ethnicité lorsqu’il est présent. Même si les catégories de race ou de couleur sont fréquemment manipulées au service d'intérêts déplorables, leurs répercussions idéologiques et matérielles sur la formation identitaire requiert qu'on les prenne en compte. Ces catégories changeantes, historiquement constituées, développées de façon intéressée, et dont l’usage doit être resitué en contexte sont enfin comprises ici comme discursives et représentationnelles, même si leurs répercussions matérielles sont bien réelles. Ce sont donc des constructions sociales: «Le fait d’appartenir ou non à une race donnée n’est rien de plus que l’acceptation sociale et l’attribution sociétale d’une race à une personne» <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>.
+      Cette ontologie ne prétend donc pas offrir un ensemble de catégories raciales exact, complètement défini, ou mutuellement exclusif, ce qui est impossible étant donné leur utilisation en changement constant et leur chevauchement mutuel ou avec d’autres catégories identitaires utilisées pour l’ethnicité, la géographie ou la nationalité. Les personnes qui appliquent ces catégories et sous-catégories sont encouragées à ne pas faire fonctionner les identités privilégiées comme si elles étaient consensuelles et évidentes, ou à utiliser cette classe seulement en relation avec des populations marginalisées. Les personnes préoccupées par le fait que «blanc» et «noir» sont des catégories homogénéisantes sont encouragées à atteindre la spécificité à travers la pluralité des catégories et les représentations intersectionnelles, ainsi qu’à consulter les annotations associés à @@#RaceEthnicityContext@@ s’ils sont fournis.
     </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -2712,7 +2712,7 @@
    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty> 
+  </owl:ObjectProperty>
 <!-- Political affiliation Instances go here -->
   <cwrc:PoliticalAffiliation rdf:about="#abolitionism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2772,10 +2772,10 @@
     <rdfs:label xml:lang="fr">Anarchisme</rdfs:label>
     <skos:definition xml:lang="en">&quot;Anarchism is a political philosophy that advocates self-governed societies based on voluntary institutions. These are often described as stateless societies, although several authors have defined them more specifically as institutions based on non-hierarchical free associations. Anarchism holds the state to be undesirable, unnecessary, and harmful. While anti-statism is central, anarchism entails opposing authority or hierarchical organisation in the conduct of all human relations, including, but not limited to, the state system. Anarchism does not offer a fixed body of doctrine from a single particular world view, instead fluxing and flowing as a philosophy. Many types and traditions of anarchism exist, not all of which are mutually exclusive. Anarchist schools of thought can differ fundamentally, supporting anything from extreme individualism to complete collectivism. Strains of anarchism have often been divided into the categories of social and individualist anarchism or similar dual classifications. Anarchism is usually considered a radical left-wing ideology, and much of anarchist economics and anarchist legal philosophy reflect anti-authoritarian interpretations of communism, collectivism, syndicalism, mutualism, or participatory economics.&quot; <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
-    <skos:definition xml:lang="fr">L'anarchisme est un courant de philosophie politique développé depuis le XIXe siècle sur un ensemble de théories et de pratiques anti-autoritaires d'égalité sociale. Le terme libertaire, souvent utilisé comme synonyme d'anarchisme, est un néologisme créé en 1857 par Joseph Déjacque pour renforcer le caractère égalitaire. Fondé sur la négation du principe d'autorité dans l'organisation sociale et le refus de toute contrainte découlant des institutions basées sur ce principe, l'anarchisme a pour but de développer une société sans domination et sans exploitation, où les individus-producteurs coopèrent librement dans une dynamique d'autogestion et de fédéralisme. Contre l'oppression, l'anarchisme propose une société basée sur la solidarité comme solution aux antagonismes, la complémentarité de la liberté de chacun et celle de la collectivité, l'égalité des conditions de vie et la propriété commune autogérée. Il s'agit donc d'un mode politique qui cherche non pas à résoudre les différences opposant les membres constituants de la société mais à associer des forces autonomes et contradictoires. Le terme «anarchisme» et ses dérivés sont employés tantôt péjorativement, comme synonymes de désordre social dans le sens commun ou courant et qui se rapproche de l’anomie, tantôt comme un but pratique, car l'anarchisme défend l'idée que l'absence d'une structure de pouvoir n'est pas synonyme de désorganisation sociale. Les anarchistes rejettent en général la conception courante de l'anarchie (utilisée par les médias et les pouvoirs politiques). Pour eux, l'ordre naît de la liberté, tandis que les pouvoirs engendrent le désordre. Certains anarchistes useront du terme «acratie» (du grec «kratos», le pouvoir), donc littéralement «absence de pouvoir», plutôt que du terme «anarchie» qui leur semble devenu ambigu. De même, certains anarchistes auront plutôt tendance à utiliser le terme de «libertaires». Pour ses partisans, l'anarchie n'est justement pas le désordre social. C’est plutôt le contraire, soit l'ordre social absolu, grâce notamment au collectivisme anti-capitaliste. Ce collectivisme, contrairement à l'idée de possessions privées capitalisées, suggère celle de possessions individuelles ne garantissant aucun droit de propriété, notamment celle touchant l'accumulation de biens non utilisés. En outre, ce collectivisme s’exprime par une liberté politique organisée autour du mandatement impératif, de l'autogestion, du fédéralisme et de la démocratie directe. L'anarchie est donc organisée et structurée : c'est l'ordre moins le pouvoir. L'anarchisme est un mouvement pluriel qui embrasse l'ensemble des secteurs de la vie et de la société. Concept philosophique, c’est également «une idée pratique et matérielle, un mode d’être de la vie et des relations entre les êtres qui naît tout autant de la pratique que de la philosophie ; ou pour être plus précis qui naît toujours de la pratique, la philosophie n’étant elle-même qu’une pratique, importante mais parmi d’autres». En 1928, Sébastien Faure, dans La Synthèse anarchiste, définit quatre grands courants qui cohabitent tout au long de l'histoire du mouvement : 
-  * l'individualisme libertaire qui insiste sur l'autonomie individuelle contre toute autorité ; 
-  * le socialisme libertaire qui propose une gestion collective égalitaire de la société ; 
-  * le communisme libertaire, qui de l'aphorisme «De chacun selon ses moyens, à chacun selon ses besoins» créé par Louis Blanc, veut économiquement partir du besoin des individus, pour ensuite produire le nécessaire pour y répondre ; 
+    <skos:definition xml:lang="fr">L'anarchisme est un courant de philosophie politique développé depuis le XIXe siècle sur un ensemble de théories et de pratiques anti-autoritaires d'égalité sociale. Le terme libertaire, souvent utilisé comme synonyme d'anarchisme, est un néologisme créé en 1857 par Joseph Déjacque pour renforcer le caractère égalitaire. Fondé sur la négation du principe d'autorité dans l'organisation sociale et le refus de toute contrainte découlant des institutions basées sur ce principe, l'anarchisme a pour but de développer une société sans domination et sans exploitation, où les individus-producteurs coopèrent librement dans une dynamique d'autogestion et de fédéralisme. Contre l'oppression, l'anarchisme propose une société basée sur la solidarité comme solution aux antagonismes, la complémentarité de la liberté de chacun et celle de la collectivité, l'égalité des conditions de vie et la propriété commune autogérée. Il s'agit donc d'un mode politique qui cherche non pas à résoudre les différences opposant les membres constituants de la société mais à associer des forces autonomes et contradictoires. Le terme «anarchisme» et ses dérivés sont employés tantôt péjorativement, comme synonymes de désordre social dans le sens commun ou courant et qui se rapproche de l’anomie, tantôt comme un but pratique, car l'anarchisme défend l'idée que l'absence d'une structure de pouvoir n'est pas synonyme de désorganisation sociale. Les anarchistes rejettent en général la conception courante de l'anarchie (utilisée par les médias et les pouvoirs politiques). Pour eux, l'ordre naît de la liberté, tandis que les pouvoirs engendrent le désordre. Certains anarchistes useront du terme «acratie» (du grec «kratos», le pouvoir), donc littéralement «absence de pouvoir», plutôt que du terme «anarchie» qui leur semble devenu ambigu. De même, certains anarchistes auront plutôt tendance à utiliser le terme de «libertaires». Pour ses partisans, l'anarchie n'est justement pas le désordre social. C’est plutôt le contraire, soit l'ordre social absolu, grâce notamment au collectivisme anti-capitaliste. Ce collectivisme, contrairement à l'idée de possessions privées capitalisées, suggère celle de possessions individuelles ne garantissant aucun droit de propriété, notamment celle touchant l'accumulation de biens non utilisés. En outre, ce collectivisme s’exprime par une liberté politique organisée autour du mandatement impératif, de l'autogestion, du fédéralisme et de la démocratie directe. L'anarchie est donc organisée et structurée : c'est l'ordre moins le pouvoir. L'anarchisme est un mouvement pluriel qui embrasse l'ensemble des secteurs de la vie et de la société. Concept philosophique, c’est également «une idée pratique et matérielle, un mode d’être de la vie et des relations entre les êtres qui naît tout autant de la pratique que de la philosophie ; ou pour être plus précis qui naît toujours de la pratique, la philosophie n’étant elle-même qu’une pratique, importante mais parmi d’autres». En 1928, Sébastien Faure, dans La Synthèse anarchiste, définit quatre grands courants qui cohabitent tout au long de l'histoire du mouvement :
+  * l'individualisme libertaire qui insiste sur l'autonomie individuelle contre toute autorité ;
+  * le socialisme libertaire qui propose une gestion collective égalitaire de la société ;
+  * le communisme libertaire, qui de l'aphorisme «De chacun selon ses moyens, à chacun selon ses besoins» créé par Louis Blanc, veut économiquement partir du besoin des individus, pour ensuite produire le nécessaire pour y répondre ;
   * l'anarcho-syndicalisme, qui&quot; propose une méthode, le syndicalisme, comme moyen de lutte et d'organisation de la société. Depuis, de nouvelles sensibilités se sont affirmées, telles l'anarcha-féminisme ou l'écologie sociale. La pertinence de cette section est remise en cause, considérez son contenu avec précaution. En discuter ? Pour Vivien Garcia dans L'Anarchisme aujourd'hui (2007), l'anarchisme «ne peut être conçu comme un monument théorique achevé. La réflexion anarchiste n'a rien du système. […] L'anarchisme se constitue comme une nébuleuse de pensées qui peuvent se renvoyer de façon contingente les unes aux autres plutôt que comme une doctrine close» Selon l'historien américain Paul Avrich : «Les anarchistes ont exercé et continuent d'exercer une grande influence. Leur internationalisme rigoureux et leur antimilitarisme, leurs expériences d'autogestion ouvrière, leur lutte pour la libération de la femme et pour l'émancipation sexuelle, leurs écoles et universités libres, leur aspiration écologique à un équilibre entre la ville et la campagne, entre l'homme et la nature, tout cela est d'une actualité criante.»&quot; <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Anarchism"/>
@@ -2880,7 +2880,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:contraryTo rdf:resource="#bolshevism"/> 
+    <cwrc:contraryTo rdf:resource="#bolshevism"/>
    </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Bonapartism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -2971,7 +2971,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:contraryTo rdf:resource="#pro-Catholicism"/> 
+    <cwrc:contraryTo rdf:resource="#pro-Catholicism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Censorship">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3006,7 +3006,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:contraryTo rdf:resource="#communism"/> 
+    <cwrc:contraryTo rdf:resource="#communism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Conscriptionism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3020,7 +3020,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:contraryTo rdf:resource="#communism"/> 
+    <cwrc:contraryTo rdf:resource="#communism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-ContagiousDiseasesAct">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3093,7 +3093,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:contraryTo rdf:resource="#fascism"/> 
+    <cwrc:contraryTo rdf:resource="#fascism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Federalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -3102,8 +3102,8 @@
     <rdfs:label xml:lang="fr">Antifédéralisme</rdfs:label>
     <skos:definition xml:lang="en">&quot;Anti-Federalism refers to a movement that opposed the creation of a stronger U.S. federal government and which later opposed the ratification of the 1787 Constitution. The previous constitution, called the Articles of Confederation, gave state governments more authority. Led by Patrick Henry of Virginia, Anti-Federalists worried, among other things, that the position of president, then a novelty, might evolve into a monarchy.&quot; <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
-    <skos:definition xml:lang="fr">Antifédéralisme fut le nom donné à deux mouvements politiques distincts à la fin du XVIIIe siècle aux États-Unis: 
-  * Le premier mouvement antifédéraliste des années 1780, s'opposa à la création d'un gouvernement national plus fort, tel que le permettait la Constitution et chercha à le conserver tel qu'il était institué dans les Articles de la Confédération de 1777. 
+    <skos:definition xml:lang="fr">Antifédéralisme fut le nom donné à deux mouvements politiques distincts à la fin du XVIIIe siècle aux États-Unis:
+  * Le premier mouvement antifédéraliste des années 1780, s'opposa à la création d'un gouvernement national plus fort, tel que le permettait la Constitution et chercha à le conserver tel qu'il était institué dans les Articles de la Confédération de 1777.
   * Le second mouvement antifédéraliste se&quot; constitua en réaction aux lois fiscales d'Alexander Hamilton lors du premier mandat de George Washington. Ce mouvement est parfois nommé l'Anti-Administration Party qui deviendra plus tard le Parti républicain-démocrate de Thomas Jefferson et James Madison.&quot; <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Anti-Federalism"/>
@@ -3523,8 +3523,8 @@
     <rdfs:label xml:lang="fr">Bonapartisme</rdfs:label>
     <skos:definition xml:lang="en">&quot;Bonapartism is the political ideology of Napoleon Bonaparte and his followers and successors. It was later used to refer to persons who hoped to restore the House of Bonaparte and its style of government. After Napoleon, the term was applied to the French politicians who seized power in the coup of 18 Brumaire, ruling in the French Consulate and subsequently in the First and Second French Empires under the House of Bonaparte (the family of Bonaparte and his nephew Louis). The term was used more generally for a political movement that advocated a dictatorship or authoritarian centralized state, with a strongman charismatic leader based on anti-elitist rhetoric, army support, and conservatism. Marxism and Leninism developed a vocabulary of political terms that included Bonapartism, derived from their analysis of the career of Napoleon Bonaparte. Karl Marx was a student of Jacobinism and the French Revolution, and was a contemporary critic of the Second Republic and Second Empire. He used &quot;Bonapartism&quot; to refer to a situation in which counter-revolutionary military officers seize power from revolutionaries, and use selective reforms to co-opt the radicalism of the popular classes. Marx argued that in the process, Bonapartists preserve and mask the power of a narrower ruling class. According to his essay &quot;The Eighteenth Brumaire of Louis Napoleon&quot; (1852), Marx believed that both Bonaparte and his nephew Napoleon III had corrupted revolutions in France in this way. In this document, he drew attention to what he calls the phenomenon's repetitive history by saying: &quot;History repeats itself, first as tragedy, then as farce.&quot; More generally, &quot;Bonapartism&quot; may be used to describe the replacement of civilian leadership by military leadership within revolutionary movements or governments. Many modern-day Trotskyists and other leftists use the phrase &quot;left Bonapartist&quot; to describe those, such as Stalin and Mao, who controlled 20th-century bureaucratic socialist regimes. In addition, Leon Trotsky was accused of using his position as commander of the Red Army to gain top-level power after Lenin's death. Noted political scientists and historians greatly differ on the definition and interpretation of Bonapartism. Sudhir Hazareesingh's book The Legend of Napoleon explores numerous interpretations of the term. He says that it refers to a &quot;popular national leader confirmed by popular election, above party politics, promoting equality, progress, and social change, with a belief in religion as an adjunct to the State, a belief that the central authority can transform society and a belief in the 'nation' and its glory and a fundamental belief in national unity.&quot; Hazareesingh believes that although recent research shows Napoleon used forced conscription of French troops, some men must have fought believing in Napoleon's ideals. He says that to argue Bonapartism co-opted the masses is an example of the Marxist perspective of false consciousness: the idea that the masses can be manipulated by a few determined leaders in the pursuit of ends. Scholar Raymond Hinnebusch has characterized Hafez al-Asad's regime in Syria as Bonapartist.&quot; <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
-    <skos:definition xml:lang="fr">Le bonapartisme est une famille de pensée politique française, qui s'inspire de l'action de l'empereur Napoléon Ier. Le terme a deux acceptions : 
-  * au sens strict, le bonapartisme vise à établir un régime républicain impérial en France à la tête duquel serait placé un membre de la famille de Napoléon Bonaparte ; 
+    <skos:definition xml:lang="fr">Le bonapartisme est une famille de pensée politique française, qui s'inspire de l'action de l'empereur Napoléon Ier. Le terme a deux acceptions :
+  * au sens strict, le bonapartisme vise à établir un régime républicain impérial en France à la tête duquel serait placé un membre de la famille de Napoléon Bonaparte ;
   * au sens large, le&quot; bonapartisme vise à établir un État national à exécutif fort et centralisé mais d'essence républicaine et assis sur la consultation régulière du peuple par le biais de plébiscites. Le bonapartisme n'implique donc pas forcément l'adhésion à un système d'organisation politique héréditaire mais peut au contraire s'accommoder d'une forme républicaine de gouvernement. Il repose sur la fusion des élites et l'adhésion populaire. Ces deux facettes peuvent être distinctes ou confondues, selon les personnes et périodes.&quot; <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Bonapartism"/>
@@ -4393,7 +4393,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:contraryTo rdf:resource="#anti-Trade-Unionism"/> 
+    <cwrc:contraryTo rdf:resource="#anti-Trade-Unionism"/>
     <skos:related rdf:resource="#socialism"/>
     <skos:related rdf:resource="#socialReform"/>
   </cwrc:PoliticalAffiliation>
@@ -4419,7 +4419,7 @@
     <rdfs:label xml:lang="fr">Parti libéral unioniste</rdfs:label>
     <skos:definition xml:lang="en">&quot;The Liberal Unionist Party was a British political party that was formed in 1886 by a faction that broke away from the Liberal Party. Led by Lord Hartington (later the Duke of Devonshire) and Joseph Chamberlain, the party formed a political alliance with the Conservative Party in opposition to Irish Home Rule. The two parties formed the ten-year-long, coalition Unionist Government 1895–1905 but kept separate political funds and their own party organisations until a complete merger was agreed in May 1912.&quot; <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
-    <skos:definition xml:lang="fr">Le Liberal Unionist Party est un parti politique britannique qui se sépara du Parti libéral en 1886. Dirigé par Spencer Cavendish (Lord Hartington, et plus tard duc du Devonshire) et Joseph Chamberlain, le parti a formé une alliance politique avec le Parti conservateur dans l'opposition à l’Home Rule de l'Irlande. Les deux partis ont formé un gouvernement de coalition en 1895, mais gardèrent un fonctionnement séparés jusqu'à une fusion complète en mai 1912. 
+    <skos:definition xml:lang="fr">Le Liberal Unionist Party est un parti politique britannique qui se sépara du Parti libéral en 1886. Dirigé par Spencer Cavendish (Lord Hartington, et plus tard duc du Devonshire) et Joseph Chamberlain, le parti a formé une alliance politique avec le Parti conservateur dans l'opposition à l’Home Rule de l'Irlande. Les deux partis ont formé un gouvernement de coalition en 1895, mais gardèrent un fonctionnement séparés jusqu'à une fusion complète en mai 1912.
   * Portail de la politique britannique&quot; Portail de la politique britannique&quot; <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Liberal_Unionist_Party"/>
@@ -4528,10 +4528,10 @@
     <rdfs:label xml:lang="fr">Multiculturalisme</rdfs:label>
     <skos:definition xml:lang="en">&quot;Multiculturalism describes the existence, acceptance, and/or promotion of multiple cultural traditions within a single jurisdiction, usually considered in terms of the culture associated with an aboriginal ethnic group and foreigner ethnic groups. This can happen when a jurisdiction is created or expanded by amalgamating areas with two or more different cultures (e.g. French Canada and English Canada) or through immigration from different jurisdictions around the world (e.g. Australia, Canada, United States, United Kingdom, and many other countries). Multicultural ideologies and policies vary widely, ranging from the advocacy of equal respect to the various cultures in a society, to a policy of promoting the maintenance of cultural diversity, to policies in which people of various ethnic and religious groups are addressed by the authorities as defined by the group to which they belong. Multiculturalism that promotes maintaining the distinctiveness of multiple cultures is often contrasted to other settlement policies such as social integration, cultural assimilation, and racial segregation. Multiculturalism has been described as a &quot;salad bowl&quot; and &quot;cultural mosaic&quot;. Two different and seemingly inconsistent strategies have developed through different government policies and strategies. The first focuses on interaction and communication between different cultures; this approach is also often known as interculturalism. The second centers on diversity and cultural uniqueness which can sometimes result in intercultural competition over jobs among other things and may lead to ethnic conflict. Cultural isolation can protect the uniqueness of the local culture of a nation or area and also contribute to global cultural diversity. A common aspect of many policies following the second approach is that they avoid presenting any specific ethnic, religious, or cultural community values as central.&quot; <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
-    <skos:definition xml:lang="fr">Le multiculturalisme est un terme sujet à diverses interprétations. Il peut simplement désigner la coexistence de différentes cultures (ethniques, religieuses, etc.) au sein d'un même ensemble (pays, par exemple). Il peut aussi désigner différentes politiques volontaristes : 
-  * anti-discriminatoires, visant à assurer un statut social égal aux membres des diverses cultures ; 
-  * communautaires, permettant l'existence de statuts (légaux, administratifs…) spécifiques aux membres de telle ou telle communauté culturelle ; 
-  * identitaires, visant à favoriser l'expression des particularités des diverses cultures ; 
+    <skos:definition xml:lang="fr">Le multiculturalisme est un terme sujet à diverses interprétations. Il peut simplement désigner la coexistence de différentes cultures (ethniques, religieuses, etc.) au sein d'un même ensemble (pays, par exemple). Il peut aussi désigner différentes politiques volontaristes :
+  * anti-discriminatoires, visant à assurer un statut social égal aux membres des diverses cultures ;
+  * communautaires, permettant l'existence de statuts (légaux, administratifs…) spécifiques aux membres de telle ou telle communauté culturelle ;
+  * identitaires, visant à favoriser l'expression des particularités des diverses cultures ;
   * et aujourd’hui le multiculturalisme se&quot; centre sur le thème religieux (pluralisme). Multiculturalisme s’oppose à interculturalisme. Dans une société interculturelle les immigrés ou leurs descendants participent à l’ensemble des activités de la société d’accueil. Une intégration culturelle réussie nécessite l’abandon d’une partie de la culture d’origine qui ne serait pas compatible avec les valeurs de la société d’accueil.&quot; <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Multiculturalism"/>
@@ -5247,7 +5247,7 @@
     <rdfs:label xml:lang="fr">Nationalisme gallois</rdfs:label>
     <skos:definition xml:lang="en">&quot;Welsh nationalism (Welsh: Cenedlaetholdeb Cymreig) emphasises the distinctiveness of Welsh language, culture, and history, and calls for more self-determination for Wales, which might include more devolved powers for the Welsh Assembly or full independence from the United Kingdom.&quot; <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
-    <skos:definition xml:lang="fr">Le nationalisme gallois consiste dans le projet de défense de l'identité du Pays de Galles, de la culture et de la langue galloise. Ses revendications vont de l'autonomisme, visant à obtenir des pouvoirs accrus pour l'Assemblée nationale du Pays de Galles et le gouvernement gallois, à l'indépendantisme, défendu notamment par le parti Plaid Cymru. 
+    <skos:definition xml:lang="fr">Le nationalisme gallois consiste dans le projet de défense de l'identité du Pays de Galles, de la culture et de la langue galloise. Ses revendications vont de l'autonomisme, visant à obtenir des pouvoirs accrus pour l'Assemblée nationale du Pays de Galles et le gouvernement gallois, à l'indépendantisme, défendu notamment par le parti Plaid Cymru.
   * Portail de la politique britannique Portail de la politique britannique
   * Portail du pays de Galles&quot; Portail du pays de Galles&quot; <![CDATA[<a href="#_dbpedia_2017">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
@@ -5403,7 +5403,7 @@
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#Gender"/>
     <skos:definition xml:lang="en">
-      A personal property, this indicates a person's self-defined gender. For more information on this property, see @@#Gender@@.
+      A personal property, this indicates a person's self-reported gender. For more information on this property, see @@#Gender@@.
     </skos:definition>
     <skos:definition xml:lang="fr">
       Une propriété personnelle, qui indique le genre autoproclamé d’une personne. Pour plus d’information, voir @@#Gender@@.
@@ -5422,7 +5422,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  
+
   <owl:ObjectProperty rdf:ID="hasGeographicHeritageSelfReported">
     <rdfs:label xml:lang="en">has geographic heritage (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">a un héritage géographique (autodéclaré)</rdfs:label>
@@ -5471,7 +5471,7 @@
   <owl:ObjectProperty rdf:ID="hasNationalitySelfReported">
     <rdfs:label xml:lang="en">has nationality (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">de nationalité (autodéclarée)</rdfs:label>
-    <skos:definition xml:lang="en">A subproperty of personal property (self-reported), this property indicates a person's self-defined nationality/ies and is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. For more information on this property see @@#NationalIdentity@@.</skos:definition>
+    <skos:definition xml:lang="en">A subproperty of personal property (self-reported), this property indicates a person's self-reported nationality/ies and is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. For more information on this property see @@#NationalIdentity@@.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-propriété de propriété personnelle autodéclarée, cette propriété indique la/les nationalité(s) autoproclamée(s) d’une personne, différant de la citoyenneté et n’étant pas proportionnelle à la zone géographique ou au territoire sur lequel elle réside.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#NationalIdentity"/>
@@ -5492,8 +5492,8 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasRaceColourSelfReported">
-    <rdfs:label xml:lang="en">race or colour self-defined</rdfs:label>
-    <rdfs:label xml:lang="fr">race ou couleur autodéclarée</rdfs:label>
+    <rdfs:label xml:lang="en">race or colour (self-reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">race ou couleur (autodéclarée)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfReported"/>
     <rdfs:range rdf:resource="#RaceColour"/>
     <skos:definition xml:lang="en">A subproperty of personal property self reported, this property indicates a person's self-reported race or colour. For further information about this property, see @@#RaceColour@@.</skos:definition>
@@ -5541,7 +5541,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-   
+
   <owl:ObjectProperty rdf:ID="hasReligionSelfReported">
     <rdfs:label xml:lang="en">has religious affiliation (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">religion (autodéclarée)</rdfs:label>
@@ -5552,7 +5552,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
- 
+
   <owl:ObjectProperty rdf:ID="hasPoliticalAffiliation">
     <rdfs:label xml:lang="en">has political affiliation</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -5563,7 +5563,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-   
+
   <owl:ObjectProperty rdf:ID="hasPoliticalAffiliationSelfReported">
     <rdfs:label xml:lang="en">has political affiliation (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -5574,7 +5574,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  
+
   <owl:ObjectProperty rdf:ID="hasSocialClass">
     <rdfs:label xml:lang="en">has social class</rdfs:label>
     <rdfs:label xml:lang="fr">a une classe sociale</rdfs:label>
@@ -5596,8 +5596,8 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  
-  
+
+
   <owl:ObjectProperty rdf:ID="hasLinguisticAbility">
     <rdfs:label xml:lang="en">language known</rdfs:label>
     <rdfs:label xml:lang="fr">maîtrise une langue</rdfs:label>
@@ -5608,7 +5608,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
- 
+
   <owl:ObjectProperty rdf:ID="hasLinguisticAbilitySelfReported">
     <rdfs:label xml:lang="en">language known (self reported)</rdfs:label>
     <rdfs:label xml:lang="fr">maîtrise une langue (autodéclaré)</rdfs:label>
@@ -5619,8 +5619,8 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
- 
-  
+
+
   <owl:ObjectProperty rdf:ID="hasNativeLinguisticAbility">
     <rdfs:label xml:lang="en">natively known language</rdfs:label>
     <rdfs:label xml:lang="fr">langue maternelle</rdfs:label>
@@ -5655,7 +5655,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  
+
   <owl:ObjectProperty rdf:ID="hasSexualitySelfReported">
     <rdfs:label xml:lang="en">has self-reported sexual orientation</rdfs:label>
     <rdfs:label xml:lang="fr">a une orientation sexuelle autodéclarée</rdfs:label>
@@ -5680,7 +5680,7 @@
     <skos:related rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
   </owl:Class>
 
-  <!-- this is essentially a clone of the xkos-xl properly, except for the uniqueness restriction since we have translations. --> 
+  <!-- this is essentially a clone of the xkos-xl properly, except for the uniqueness restriction since we have translations. -->
   <owl:ObjectProperty rdf:ID="literalForm">
     <rdfs:label xml:lang="en">has literal form</rdfs:label>
     <rdfs:label xml:lang="fr">a une forme littérale</rdfs:label>
@@ -5689,7 +5689,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  
+
   <!-- add rdfvalue to everything -->
   <skos:Concept rdf:about="#whiteLabel">
     <rdfs:label xml:lang="en">white identity</rdfs:label>
@@ -5942,7 +5942,7 @@
     <rdfs:range rdf:resource="#Person"/>
     <rdfs:domain rdf:resource="#Person"/>
   </owl:ObjectProperty>
-  
+
   <owl:ObjectProperty rdf:ID="hasSister">
     <rdfs:label xml:lang="en">has sister</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -7143,7 +7143,7 @@
       <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
       <vs:term_status xml:lang="en">deprecated</vs:term_status>
     </rdf:Description>
-    
+
     <rdf:Description rdf:about="#hasGenderSelfDeclared">
       <rdfs:label xml:lang="en">has gender (self declared)</rdfs:label>
       <rdfs:label xml:lang="fr">est de genre (autodéclaré)</rdfs:label>
@@ -7159,7 +7159,7 @@
       <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
       <vs:term_status xml:lang="en">deprecated</vs:term_status>
     </rdf:Description>
-    
+
     <rdf:Description rdf:about="#hasNationalitySelfDeclared">
       <rdfs:label xml:lang="en">has nationality (self declared)</rdfs:label>
       <rdfs:label xml:lang="fr">de nationalité (autodéclarée)</rdfs:label>
@@ -7175,7 +7175,7 @@
       <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
       <vs:term_status xml:lang="en">deprecated</vs:term_status>
     </rdf:Description>
-    
+
     <rdf:Description rdf:about="#hasRaceColourSelfDeclared">
       <rdfs:label xml:lang="en">has race (self declared)</rdfs:label>
       <rdfs:label xml:lang="fr">est de race (autodéclarée)</rdfs:label>
@@ -7190,7 +7190,7 @@
       <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
       <vs:term_status xml:lang="en">deprecated</vs:term_status>
     </rdf:Description>
-    
+
     <rdf:Description rdf:about="#hasEthnicitySelfDefined">
       <rdfs:label xml:lang="en">has ethnicity (self defined)</rdfs:label>
       <rdfs:label xml:lang="fr">d'ethnicité (autodéclarée)</rdfs:label>
@@ -7222,7 +7222,7 @@
       <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
       <vs:term_status xml:lang="en">deprecated</vs:term_status>
     </rdf:Description>
-    
+
     <rdf:Description rdf:about="#hasSocialClassSelfDefined">
       <rdfs:label xml:lang="en">has social class (self defined)</rdfs:label>
       <rdfs:label xml:lang="fr">de classe sociale (autodéclarés)</rdfs:label>
@@ -7238,7 +7238,7 @@
       <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
       <vs:term_status xml:lang="en">deprecated</vs:term_status>
     </rdf:Description>
-    
+
     <rdf:Description rdf:about="#hasLinguisticAbilitySelfDeclared">
       <rdfs:label xml:lang="en">language known (self declared)</rdfs:label>
       <rdfs:label xml:lang="fr">connait la langue (autodéclaré)</rdfs:label>
@@ -7270,7 +7270,7 @@
       <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
       <vs:term_status xml:lang="en">deprecated</vs:term_status>
     </rdf:Description>
-    
+
     <rdf:Description rdf:about="#hasSexualitySelfDeclared">
       <rdfs:label xml:lang="en">has sexual orientation (self declared)</rdfs:label>
       <rdfs:label xml:lang="fr">a une orientation sexuelle (autodéclarée)</rdfs:label>
@@ -7286,7 +7286,7 @@
       <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
       <vs:term_status xml:lang="en">deprecated</vs:term_status>
     </rdf:Description>
-    
+
     <rdf:Description rdf:about="#hasGeographicHeritageSelfDeclared">
       <rdfs:label xml:lang="en">has geographic heritage (self declared)</rdfs:label>
       <rdfs:label xml:lang="fr">a un héritage géographique (autodéclaré)</rdfs:label>
@@ -7302,8 +7302,8 @@
       <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
       <vs:term_status xml:lang="en">deprecated</vs:term_status>
     </rdf:Description>
-    
-  
+
+
     <rdf:Description rdf:about="#EnglishNationalHeritage">
       <rdfs:label xml:lang="en">English</rdfs:label>
       <rdfs:label xml:lang="fr">Anglais</rdfs:label>
@@ -7357,7 +7357,7 @@
       <rdfs:comment xml:lang="en">Deprecated in favour of foreign instance <![CDATA[<a href="http://id.loc.gov/vocabulary/languages/fre">fre</a>]]>.</rdfs:comment>
       <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance <![CDATA[<a href="http://id.loc.gov/vocabulary/languages/fre">fre</a>]]>.</rdfs:comment>
     </rdf:Description>
- 
+
   <rdf:Description rdf:about="#baptistChurch">
     <rdfs:label xml:lang="en">Baptist</rdfs:label>
     <rdfs:label xml:lang="zh-hant">浸禮宗</rdfs:label>
@@ -7390,7 +7390,7 @@
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
-  
+
   <rdf:Description rdf:about="#catholicChurch">
     <rdfs:label xml:lang="en">Roman Catholic</rdfs:label>
     <rdfs:label xml:lang="nl">Rooms-Katholicisme</rdfs:label>
@@ -7690,5 +7690,5 @@
     <rdfs:comment xml:lang="fr">Désapprouver de l'ancienne ontologie Orlando.</rdfs:comment>
   </owl:DeprecatedProperty>
 
-  
+
 </rdf:RDF>
