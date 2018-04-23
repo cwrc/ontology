@@ -274,7 +274,7 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#ChangeSet"/>
-        <void:inDataset rdf:resource="#datasetdefinition"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
@@ -401,6 +401,7 @@
     <rdfs:domain rdf:resource="#Certainty"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <owl:inverseOf rdf:resource="#hasCertainty"/>
   </owl:ObjectProperty>
 
 
@@ -1012,7 +1013,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
   <!-- Cheat to ensure that the provenance is hooked into the Cultural Context -->
-  <rdf:Description rdf:about="http://www.w3.org/ns/prov#derivedFrom">
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
     <rdfs:range rdf:resource="#Context"/>
   </rdf:Description>
 
