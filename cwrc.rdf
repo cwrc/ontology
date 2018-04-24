@@ -345,6 +345,29 @@
     <skos:closeMatch rdf:resource="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.certainty.html"/>
   </owl:Class>
 
+  <owl:ObjectProperty rdf:ID="hasCertainty">
+    <rdfs:label xml:lang="en">has certainty</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Associates a level of @@#Certainty@@ for a source</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="#Certainty"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="certaintyOf">
+    <rdfs:label xml:lang="en">certainty of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Links a level of @@#Certainty@@ to a source</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="#Certainty"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <owl:inverseOf rdf:resource="#hasCertainty"/>
+  </owl:ObjectProperty>
+
   <cwrc:Certainty rdf:about="#lowCertainty">
     <rdfs:label xml:lang="en">low certainty</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -381,28 +404,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </cwrc:Certainty>
 
-  <owl:ObjectProperty rdf:ID="hasCertainty">
-    <rdfs:label xml:lang="en">has certainty</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Associates a level of @@#Certainty@@ for a source</skos:definition>
-    <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:range rdf:resource="#Certainty"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:ID="certaintyOf">
-    <rdfs:label xml:lang="en">certainty of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Links a level of @@#Certainty@@ to a source</skos:definition>
-    <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-    <rdfs:domain rdf:resource="#Certainty"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <owl:inverseOf rdf:resource="#hasCertainty"/>
-  </owl:ObjectProperty>
 
 
   <!-- Events and Actors -->
@@ -456,16 +457,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="hasRole">
-    <rdfs:label xml:lang="en">has role</rdfs:label>
-    <rdfs:label xml:lang="fr">a un rôle</rdfs:label>
-    <skos:definition xml:lang="en">Associates an event element to a role.</skos:definition>
-    <skos:definition xml:lang="fr"/>
-    <rdfs:domain rdf:resource="#Event"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-  </owl:ObjectProperty>
-
   <owl:ObjectProperty rdf:ID="participantOf">
     <rdfs:label xml:lang="en">participant of</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -477,6 +468,17 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasRole">
+    <rdfs:label xml:lang="en">has role</rdfs:label>
+    <rdfs:label xml:lang="fr">a un rôle</rdfs:label>
+    <skos:definition xml:lang="en">Associates an event element to a role.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:domain rdf:resource="#Event"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
 
   <owl:ObjectProperty rdf:ID="hasLocation">
     <rdfs:label xml:lang="en">has location</rdfs:label>
@@ -901,6 +903,30 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
+  <owl:ObjectProperty rdf:ID="hasAward">
+    <rdfs:label xml:lang="en">has award</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:domain rdf:resource="#EducationalAward"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="awardedTo"/>
+    </owl:inverseOf>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#awardedTo">
+    <rdfs:label xml:lang="en">awarded to</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:range rdf:resource="#EducationalAward"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+
   <cwrc:EducationalAward rdf:ID="educationalAwardPrize">
     <rdfs:label xml:lang="en">educational award prize</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -920,21 +946,6 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#EducationalAward"/>
   </cwrc:EducationalAward>
-
-  <owl:ObjectProperty rdf:ID="hasAward">
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:ID="awardedTo"/>
-    </owl:inverseOf>
-    <rdfs:label xml:lang="en">has award</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:about="#awardedTo">
-    <rdfs:label xml:lang="en">awarded to</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
 
 
   <owl:Class rdf:ID="Address">
