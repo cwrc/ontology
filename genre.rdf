@@ -1410,7 +1410,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300026285"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="fr">L’élégie (en grec ancien ἐλεγεία / elegeía, signifiant « chant de mort ») fut une forme de poème dans l'Antiquité, avant de devenir un genre poétique à partir de la Renaissance. Dans l’Antiquité, était appelé « élégie » tout poème alternant hexamètres et pentamètres en distiques : ce sont les vers élégiaques. De nos jours, l’élégie est considérée comme un genre au sein de la poésie lyrique, en tant que poème de longueur et de forme variables caractérisé par son ton plaintif particulièrement adapté à l’évocation d’un mort ou à l’expression d’une souffrance amoureuse due à un abandon ou à une absence. (<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
-    <skos:broaderTransitive rdf:resource="#genrePoetry"/>
+    <skos:broaderTransitive rdf:resource="#poetry"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Elegy"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
   </genre:LiteraryGenre>
@@ -3543,7 +3543,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:inScheme rdf:resource="#LiteraryGenre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Fiction in which a character, typically an adolescent, experiences sexual desires for the first time or has a first sexual encounter.</skos:definition>
-    <skos:broaderTransitive rdf:resource="#autobiographical"/>
+    <skos:broaderTransitive rdf:resource="#autobiography"/>
     <skos:definition xml:lang="fr">Œuvres de fiction dans lesquelles un personnage, généralement un adolescent, éprouve des désirs sexuels pour la première fois ou connait sa première expérience sexuelle.</skos:definition>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#shortStory">
@@ -4016,7 +4016,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:broaderTransitive rdf:resource="#childrensLiterature"/>
     <skos:definition xml:lang="fr">Littérature destinée à un public de jeunes adultes.</skos:definition>
   </genre:LiteraryGenre>
-
 <!-- Deprecated Genres -->
   <rdf:Description rdf:about="#genreAbridgement">
     <rdf:value>ABRIDGEMENT</rdf:value>
@@ -5060,7 +5059,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="fr">Qui se rapporte au processus de révélation publique de sa sexualité.</skos:definition>
     <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#comingOut@@.</rdfs:comment>
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#comingOut@@.</rdfs:comment>
-	<skos:BroaderTransitive rdf:resource="#Didactic"/><dcterms:isReplacedBy rdf:resource="#autobiography"/>
+  <skos:BroaderTransitive rdf:resource="#Didactic"/><dcterms:isReplacedBy rdf:resource="#autobiography"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
@@ -8964,5 +8963,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
+
 
 </rdf:RDF>
