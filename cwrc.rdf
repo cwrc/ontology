@@ -5988,9 +5988,9 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasStepSister">
-    <rdfs:label xml:lang="en">has step sister</rdfs:label>
+    <rdfs:label xml:lang="en">has stepsister</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">A stepsibling or stepsib is the offspring of one's stepparent. A Step Sister is a female step sibling.</skos:definition>
+    <skos:definition xml:lang="en">A stepsibling or stepsib is the offspring of one's stepparent. A stepsister is a female stepsibling.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepsibling"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6014,9 +6014,9 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasStepBrother">
-    <rdfs:label xml:lang="en">has step brother</rdfs:label>
+    <rdfs:label xml:lang="en">has stepbrother</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:definition xml:lang="en">A stepsibling or stepsib is the offspring of one's stepparent. A Step Brother is a male step sibling.</skos:definition>
+    <skos:definition xml:lang="en">A stepsibling or stepsib is the offspring of one's stepparent. A stepbrother is a male stepsibling.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepsibling"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6182,7 +6182,7 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasStepChild">
-    <rdfs:label xml:lang="en">has step child</rdfs:label>
+    <rdfs:label xml:lang="en">has stepchild</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">A stepchild or stepkid is the offspring of one's spouse, but not one's own offspring, neither biological nor through adoption.</skos:definition>
     <skos:definition xml:lang="fr"/>
@@ -6196,7 +6196,7 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepChildOf">
-    <rdfs:label xml:lang="en">step-child of</rdfs:label>
+    <rdfs:label xml:lang="en">stepchild of</rdfs:label>
     <rdfs:label xml:lang="fr">enfant d'un autre mariage</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6208,7 +6208,7 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasStepDaughter">
-    <rdfs:label xml:lang="en">has step daughter</rdfs:label>
+    <rdfs:label xml:lang="en">has stepdaughter</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">A female offspring of one's spouse, but not one's own offspring, neither biological nor through adoption.</skos:definition>
     <skos:definition xml:lang="fr"/>
@@ -6223,7 +6223,7 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepDaughterOf">
-    <rdfs:label xml:lang="en">step-daughter of</rdfs:label>
+    <rdfs:label xml:lang="en">stepdaughter of</rdfs:label>
     <rdfs:label xml:lang="fr">belle-fille de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#stepChildOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6235,7 +6235,7 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasStepSon">
-    <rdfs:label xml:lang="en">has step son</rdfs:label>
+    <rdfs:label xml:lang="en">has stepson</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">A male offspring of one's spouse, but not one's own offspring, neither biological nor through adoption.</skos:definition>
     <skos:definition xml:lang="fr"/>
@@ -6250,7 +6250,7 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepSonOf">
-    <rdfs:label xml:lang="en">step-son of</rdfs:label>
+    <rdfs:label xml:lang="en">stepson of</rdfs:label>
     <rdfs:label xml:lang="fr">beau-fils de</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#stepChildOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6337,9 +6337,9 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasStepParent">
-    <rdfs:label xml:lang="en">has step parent</rdfs:label>
+    <rdfs:label xml:lang="en">has stepparent</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">A step-parent is a non-biological figure who is married to one's parent.</skos:definition>
+    <skos:definition xml:lang="en">A stepparent is a non-biological figure who is married to one's parent.</skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepfather"/>
     <skos:definition xml:lang="fr"/>
     <rdfs:range rdf:resource="#Person"/>
@@ -6351,8 +6351,8 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepParentOf">
-    <rdfs:label xml:lang="en">step parent of</rdfs:label>
-    <rdfs:label xml:lang="fr">step parent de</rdfs:label>
+    <rdfs:label xml:lang="en">stepparent of</rdfs:label>
+    <rdfs:label xml:lang="fr">stepparent de</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
@@ -6363,7 +6363,7 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasStepMother">
-    <rdfs:label xml:lang="en">has step mother</rdfs:label>
+    <rdfs:label xml:lang="en">has stepmother</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">A stepmother is the current wife of one's natural father.</skos:definition>
     <skos:definition xml:lang="fr"/>
@@ -6378,7 +6378,7 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepMotherOf">
-    <rdfs:label xml:lang="en">step mother of</rdfs:label>
+    <rdfs:label xml:lang="en">stepmother of</rdfs:label>
     <rdfs:label xml:lang="fr">belle-mère de</rdfs:label>
     <skos:definition xml:lang="en">Please be aware of the ambiguous nature of the french label for this term, which means here a person taking on the role of mother to a child while not being the child's birth mother.</skos:definition>
     <skos:definition xml:lang="fr">Une personne qui prend le rôle d'une mère pour un enfant sans être sa mère biologique. Notez-bien l’ambiguïté avec le text français pour le rôle de la femme d'une soeur or d'un frère.</skos:definition>
@@ -6390,7 +6390,7 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasStepFather">
-    <rdfs:label xml:lang="en">has step father</rdfs:label>
+    <rdfs:label xml:lang="en">has stepfather</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">A stepfather or stepdad is a non-biological father figure who is married to one's parent.</skos:definition>
     <skos:definition xml:lang="fr"/>
@@ -6404,7 +6404,7 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepFatherOf">
-    <rdfs:label xml:lang="en">step father of</rdfs:label>
+    <rdfs:label xml:lang="en">stepfather of</rdfs:label>
     <rdfs:label xml:lang="fr">beau-père de</rdfs:label>
     <skos:definition xml:lang="en">Please be aware of the ambiguous nature of the french label for this term, which means here a person taking on the role of father to a child while not being the child's biological father.</skos:definition>
     <skos:definition xml:lang="fr">Une personne qui prend le rôle d'un père pour un enfant sans être son père biologique. Notez-bien l’ambiguïté avec le text français pour le rôle du mari d'une soeur or d'un frère.</skos:definition>
@@ -6494,7 +6494,7 @@
     <rdfs:label xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:definition xml:lang="en">An aunt is a person who is the sister, half-sister, step-sister, or sister-in-law of a parent, but can also be an affectionate title for an older nurturing woman. Aunts are second-degree relatives.</skos:definition>
+    <skos:definition xml:lang="en">An aunt is a person who is the sister, half-sister, stepsister, or sister-in-law of a parent, but can also be an affectionate title for an older nurturing woman. Aunts are second-degree relatives.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:range rdf:resource="#Person"/>
     <rdfs:domain rdf:resource="#Person"/>
@@ -6518,7 +6518,7 @@
   <owl:ObjectProperty rdf:ID="hasUncle">
     <rdfs:label xml:lang="en">has uncle</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Uncle (from Latin: avunculus the diminutive of avus "grandfather") is a male family relationship or kinship within an extended or immediate family. An uncle is the brother, half-brother, step-brother, or brother-in-law of one's parent, or the husband of one's aunt.
+    <skos:definition xml:lang="en">Uncle (from Latin: avunculus the diminutive of avus "grandfather") is a male family relationship or kinship within an extended or immediate family. An uncle is the brother, half-brother, stepbrother, or brother-in-law of one's parent, or the husband of one's aunt.
     </skos:definition>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Uncle"/>
