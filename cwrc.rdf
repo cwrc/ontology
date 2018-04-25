@@ -5708,7 +5708,7 @@
   <owl:ObjectProperty rdf:ID="hasLinguisticAbility">
     <rdfs:label xml:lang="en">language known</rdfs:label>
     <rdfs:label xml:lang="fr">maîtrise une langue</rdfs:label>
-    <skos:definition xml:lang="en">Knowledge of the language for writing or reading, which may be self-reported or reported by another. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
+    <skos:definition xml:lang="en">Knowledge of the language for speaking, writing, or reading, which may be self-reported or reported by another. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
     <skos:definition xml:lang="fr">Capacité d'écrire ou de lire une langue.</skos:definition>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Language"/>
@@ -5719,7 +5719,7 @@
   <owl:ObjectProperty rdf:ID="hasLinguisticAbilitySelfReported">
     <rdfs:label xml:lang="en">language known (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">maîtrise une langue (autodéclaré)</rdfs:label>
-    <skos:definition xml:lang="en">Self-reported oral or written ability with a language. For further information about this property, see @@#LinguisticAbility@@.</skos:definition>
+    <skos:definition xml:lang="en">Self-reported knowledge of the language for speaking, writing, or reading ability. For further information about this property, see @@#LinguisticAbility@@.</skos:definition>
     <skos:definition xml:lang="fr">Le sujet déclare maîtriser une langue à l'oral ou à l'écrit. Pour plus d'information sur cette propriété, voir @@#LinguisticAbility@@.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5731,7 +5731,7 @@
   <owl:ObjectProperty rdf:ID="hasLinguisticAbilityReported">
     <rdfs:label xml:lang="en">language known (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">maîtrise une langue (déclaré)</rdfs:label>
-    <skos:definition xml:lang="en">Reported oral or written ability with a language. For further information about this property, see @@#LinguisticAbility@@.</skos:definition>
+    <skos:definition xml:lang="en">Reported knowledge of the language for speaking, writing, or reading ability. For further information about this property, see @@#LinguisticAbility@@.</skos:definition>
     <skos:definition xml:lang="fr">Le sujet déclare maîtriser une langue à l'oral ou à l'écrit. Pour plus d'information sur cette propriété, voir @@#LinguisticAbility@@.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5744,7 +5744,7 @@
   <owl:ObjectProperty rdf:ID="hasNativeLinguisticAbility">
     <rdfs:label xml:lang="en">natively known language</rdfs:label>
     <rdfs:label xml:lang="fr">langue maternelle</rdfs:label>
-    <skos:definition xml:lang="en">Knowledge of the language, acquired during a person’s upbringing, for writing or reading, which may be self-reported or reported by another. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
+    <skos:definition xml:lang="en">Knowledge of the language, acquired during a person’s upbringing, for speaking, writing or reading, which may be self-reported or reported by another. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
     <skos:definition xml:lang="fr">Capacité d'écrire ou de lire une langue acquise dès l'enfance. Comme pour d'autres formes culturelles, un individu peut avoir plus d'une propriété ou descripteur de ce type. </skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5756,7 +5756,7 @@
   <owl:ObjectProperty rdf:ID="hasNativeLinguisticAbilitySelfReported">
     <rdfs:label xml:lang="en">natively known language (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">langue maternelle (autodéclarée)</rdfs:label>
-    <skos:definition xml:lang="en">Self-reported knowledge of the language, acquired during a person’s upbringing, for writing or reading.</skos:definition>
+    <skos:definition xml:lang="en">Self-reported knowledge of the language, acquired during a person’s upbringing, for speaking, writing, or reading.</skos:definition>
     <skos:definition xml:lang="fr"> Le sujet déclare lire et écrire une langue maîtrisée depuis l'enfance. </skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbilitySelfReported"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5768,7 +5768,7 @@
   <owl:ObjectProperty rdf:ID="hasNativeLinguisticAbilityReported">
     <rdfs:label xml:lang="en">natively known language (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">langue maternelle (déclarée)</rdfs:label>
-    <skos:definition xml:lang="en">Reported knowledge of the language, acquired during a person’s upbringing, for writing or reading.</skos:definition>
+    <skos:definition xml:lang="en">Reported knowledge of the language, acquired during a person’s upbringing, for speaking, writing, or reading.</skos:definition>
     <skos:definition xml:lang="fr"> Le sujet déclare lire et écrire une langue maîtrisée depuis l'enfance. </skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbilitySelfReported"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
