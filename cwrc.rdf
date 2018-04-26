@@ -5371,27 +5371,6 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
 
-<!-- To Be Deprecated -->
-  <owl:ObjectProperty rdf:ID="personalProperty">
-    <rdfs:label xml:lang="en">personal property</rdfs:label>
-    <rdfs:label xml:lang="fr">propriété personnelle</rdfs:label>
-    <skos:definition xml:lang="en">A property that is ascribed to a person.</skos:definition>
-    <skos:definition xml:lang="fr">Une propriété qui est attribuée à une personne.</skos:definition>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:ID="personalPropertySelfReported">
-    <rdfs:label xml:lang="en">personal property self-reported</rdfs:label>
-    <rdfs:label xml:lang="fr">propriété personnelle autodéclarée</rdfs:label>
-    <skos:definition xml:lang="en">This is a personal property that is self-reported.</skos:definition>
-    <skos:definition xml:lang="fr">Une propriété personnelle autodéclarée.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-
-
 
   <owl:ObjectProperty rdf:ID="hasGender">
     <rdfs:label xml:lang="en">has gender</rdfs:label>
@@ -6874,6 +6853,42 @@
 
 <!-- All Deprecated things(properties, classes, instances in that order) -->
   <!-- Deprecated Properties -->
+  <owl:DeprecatedProperty rdf:ID="personalProperty">
+    <rdfs:label xml:lang="en">personal property</rdfs:label>
+    <rdfs:label xml:lang="fr">propriété personnelle</rdfs:label>
+    <skos:definition xml:lang="en">A property that is ascribed to a person.</skos:definition>
+    <skos:definition xml:lang="fr">Une propriété qui est attribuée à une personne.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated, with no current equivalence.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver sans équivalence.</rdfs:comment>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+  </owl:DeprecatedProperty>
+  <owl:DeprecatedProperty rdf:ID="personalPropertySelfReported">
+    <rdfs:label xml:lang="en">personal property self-reported</rdfs:label>
+    <rdfs:label xml:lang="fr">propriété personnelle autodéclarée</rdfs:label>
+    <skos:definition xml:lang="en">This is a personal property that is self-reported.</skos:definition>
+    <skos:definition xml:lang="fr">Une propriété personnelle autodéclarée.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated, with no current equivalence.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver sans équivalence.</rdfs:comment>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+  </owl:DeprecatedProperty>
+  <owl:DeprecatedProperty rdf:ID="bloodRelativeOf">
+    <rdfs:label xml:lang="en">blood relative of</rdfs:label>
+    <rdfs:label xml:lang="fr">liens de sang</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated, with no current equivalence, in favour of definition of family relationships as more fluid and expansive than blood relations.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver sans équivalence.</rdfs:comment>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+  </owl:DeprecatedProperty>
   <owl:DeprecatedProperty rdf:ID="hasCulturalForms">
     <rdfs:label xml:lang="en">has a cultural form</rdfs:label>
     <rdfs:label xml:lang="fr">a une forme culturelle</rdfs:label>
@@ -6888,18 +6903,6 @@
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedProperty>
 
-  <!-- <owl:ObjectProperty rdf:ID="bloodRelativeOf"> -->
-  <owl:DeprecatedProperty rdf:ID="bloodRelativeOf">
-    <rdfs:label xml:lang="en">blood relative of</rdfs:label>
-    <rdfs:label xml:lang="fr">liens de sang</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:comment xml:lang="en">Deprecated, with no current equivalence, in favour of definition of family relationships as more fluid and expansive than blood relations.</rdfs:comment>
-    <rdfs:comment xml:lang="fr">Désapprouver sans équivalence.</rdfs:comment>
-    <vs:term_status xml:lang="en">deprecated</vs:term_status>
-    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-  </owl:DeprecatedProperty>
 
   <!-- Deprecated classes go here for sanity -->
   <owl:DeprecatedClass rdf:ID="LinguisticAbility">
