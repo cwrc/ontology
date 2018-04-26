@@ -438,6 +438,7 @@
     <skos:inScheme rdf:resource="#LiteraryGenre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A song in which the lyrics promote pride in and allegiance to the identity and values of a particular group, such as a nation, sports team, or social cause. (<![CDATA[<a href="#cwrc:4c227091-6bf0-4325-b846-9733fae19e61">Oxford, 2015</a>]]>)</skos:definition>
+    <skos:broaderTransitive rdf:resource="#musicalWriting"/>
     <prov:wasDerivedFrom rdf:resource="http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-61?rskey=9jlyTO%26result=61"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</owl:comment>
     <skos:broaderTransitive rdf:resource="#song"/>
@@ -837,16 +838,16 @@
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#character">
     <rdf:value>CHARACTER</rdf:value>
-    <rdfs:label xml:lang="en">character</rdfs:label>
-    <rdfs:label xml:lang="fr">personnage</rdfs:label>
+    <rdfs:label xml:lang="en">character sketch</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#LiteraryGenre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">Any representation of an individual being presented in a dramatic or narrative work through extended dramatic or verbal representation. The reader can interpret characters as endowed with moral and dispositional qualities expressed in what they say (dialogue) and what they do (action).  (<![CDATA[<a href="#_wheeler_2017">L. K Wheeler, 2017</a>]]>)</skos:definition>
-    <prov:wasDerivedFrom rdf:resource="http://web.cn.edu/kwheeler/lit_terms_c.html"/>
-    <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
-    <skos:definition xml:lang="fr">Représentation textuelle d'êtres humains ou d'autres instances personnifiées, comme des animaux ou encore des objets inanimés.</skos:definition>
+    <skos:definition xml:lang="en">A character sketch is an abbreviated portrayal of a particular characteristic of people. The term originates in portraiture, where the character sketch is a common academic exercise. Following the translation of Theophrastus's Characters into English, a number of British and American painters attempted to illustrate the "types" of humanity. As late as William Hogarth, portraitists were doing studies of (in his case) Nine heads. The artist performing a character sketch attempts to capture an expression or gesture that goes beyond coincident actions and gets to the essence of the individual.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Character_sketch"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
+    <skos:definition xml:lang="fr"></skos:definition>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#charade">
     <rdf:value>CHARADE</rdf:value>
@@ -2058,6 +2059,7 @@ s épîtres.</skos:definition>
     <skos:broaderTransitive rdf:resource="#poetry"/>
     <skos:broaderTransitive rdf:resource="#religious"/>
     <skos:definition xml:lang="fr">Des chants d'éloge en l'honneur des dieux, de pays, de personnes célèbres ou d'autres objets de haute estime, en particulier les textes métrique en strophes non bibliques destinés à être chantés durant les services religieux.</skos:definition>
+    <skos:broaderTransitive rdf:resource="#musicalWriting"/>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#imitation">
     <rdf:value>IMITATION</rdf:value>
@@ -2537,6 +2539,15 @@ l'identité propre.</skos:definition>
 <prov:wasDerivedFrom rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T69-7979"/>
 <owl:comment xml:lang="en">This term and its description were created from data gathered from the Thésaurus de la désignation des objets mobiliers (2014).</owl:comment>
   </genre:LiteraryGenre>
+  <genre:LiteraryGenre rdf:about="#musicalWriting">
+    <rdfs:label xml:lang="en">musical writing</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#LiteraryGenre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Writing associated with some form of music.</skos:definition>
+  </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#musicology">
     <rdf:value>MUSICOLOGY</rdf:value>
     <rdfs:label xml:lang="en">musicology</rdfs:label>
@@ -2768,6 +2779,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <owl:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</owl:comment>
     <skos:definition xml:lang="fr">Un opéra est une œuvre destinée à être chantée sur une scène, appartenant à un genre musical vocal du même nom ; l'opéra est l’une des formes du théâtre musical occidental regroupées sous l’appellation d’art lyrique. L'œuvre, chantée par des interprètes possédant un registre vocal déterminé en fonction du rôle et accompagnés par un orchestre, parfois symphonique, parfois de chambre, parfois destiné exclusivement au seul répertoire d'opéra, est constituée d'un livret mis en musique sous forme d'airs, de récitatifs, de chœurs, d'intermèdes souvent précédés d'une ouverture, et parfois agrémentée de ballets. Le genre musical est décliné selon les pays et les époques et recouvre des œuvres d’appellations et de formes différentes. Aujourd’hui, les œuvres sont jouées dans des salles d’opéra spécifiquement affectées ou tout simplement sur des scènes de théâtre ou dans des salles de concerts. Les représentations sont organisées par des institutions du secteur public ou privé, parfois désignées sous le vocable de « maison d'opéra », qui peuvent regrouper les compagnies d’artistes (orchestre, chœur et ballet) et les services administratifs et techniques nécessaires à l’organisation des saisons culturelles. (fr)(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Opera"/>
+    <skos:broaderTransitive rdf:resource="#musicalWriting"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#oratorio">
@@ -2801,6 +2813,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="fr">L'orientalisme est un mouvement littéraire et artistique né en Occident au XIXe siècle. Il existe cependant un orientalisme prémoderne humaniste et classique qui remonte à la fin du Moyen Âge et au début de la Renaissance, lorsque les explorations commencèrent, avec par exemple Marco Polo, et qui atteint son apogée avec les turqueries et le goût oriental du XVIIIe siècle baroque puis rococo. Ce goût oriental hérite aussi du contact de l'époque des Croisades avec le monde islamique. Cet article traite donc plutôt de l'orientalisme à partir du XIXe siècle. C'est un mouvement qui marque l'intérêt de cette époque pour les cultures d'Afrique du Nord, turque et arabe, et toutes les régions dominées par l'Empire ottoman, jusqu'au Caucase.(<![CDATA[<a href="#_dbpedia_2017">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Orientalism"/>
     <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
+    <skos:broaderTransitive rdf:resource="#musicalWriting"/>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#pageant">
     <rdf:value>PAGEANT</rdf:value>
