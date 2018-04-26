@@ -5654,9 +5654,9 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasSocialClass">
-    <rdfs:label xml:lang="en">has social class</rdfs:label>
+    <rdfs:label xml:lang="en">has class identity</rdfs:label>
     <rdfs:label xml:lang="fr">a une classe sociale</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's social class, which may be self-reported or reported by another. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#SocialClass@@.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's class identity, which may be self-reported or reported by another. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#SocialClass@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la classe sociale d'une personne. Comme pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#SocialClass@@.</skos:definition>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#SocialClass"/>
@@ -5665,9 +5665,9 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasSocialClassSelfReported">
-    <rdfs:label xml:lang="en">has social class (self-reported)</rdfs:label>
+    <rdfs:label xml:lang="en">has class identity (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">a classe sociale autodéclarée</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's self-reported social class. For further information about this property, see @@#SocialClass@@.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's self-reported class identity. For further information about this property, see @@#SocialClass@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la classe social autodéclarée d'une personne. Pour plus d'informations sur cette propriété, voir @@#SocialClass@@. </skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasSocialClass"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5677,9 +5677,9 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasSocialClassReported">
-    <rdfs:label xml:lang="en">has social class (reported)</rdfs:label>
+    <rdfs:label xml:lang="en">has class identity (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">a classe sociale déclarée</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's reported social class. For further information about this property, see @@#SocialClass@@.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's reported class identity. For further information about this property, see @@#SocialClass@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la classe social déclarée d'une personne. Pour plus d'informations sur cette propriété, voir @@#SocialClass@@. </skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasSocialClass"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
