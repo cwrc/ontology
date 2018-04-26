@@ -364,7 +364,7 @@ def create_term_domran(uri):
         for x in domain_dict[str(uri)]:
             if str(x) not in deprecated_uris:
                 html_str += '<a href="%s" title="%s">%s</a> ' % (get_link(x),
-                                                                 str(get_label_dict(x)), get_prefix(x))
+                                                                 str(get_label_dict(rdflib.term.URIRef(x))), get_prefix(x))
         html_str += "</td>\n"
         html_str += "</tr>\n"
     if str(uri) in range_dict:
@@ -374,7 +374,7 @@ def create_term_domran(uri):
         for x in range_dict[str(uri)]:
             if str(x) not in deprecated_uris:
                 html_str += '<a href="%s" title="%s">%s</a> ' % (
-                    get_link(x), str(get_label_dict(x)), get_prefix(x))
+                    get_link(x), str(get_label_dict(rdflib.term.URIRef(x))), get_prefix(x))
         html_str += "</td>\n"
         html_str += "</tr>\n"
     return html_str
@@ -833,7 +833,15 @@ def main():
         print_usage()
 
     open_graph(specloc)
-    spec_pre = [str(o) for s, p, o in o_graph.triples(((None, VANN.preferredNamespacePrefix, None)))][0]
+    # TODO add alternate way of getting the namespace uri/prefix
+    spec_pre = [str(o) for s, p, o in o_graph.triples(((None, VANN.preferredNamespacePrefix, None)))]
+    if spec_pre:
+        spec_pre = spec_pre[0]
+    #     print(spec_pre)
+    #     # exit()
+    # else:
+    #     print("fail")
+    #     exit()
 
     print("\n" * 3)
 
