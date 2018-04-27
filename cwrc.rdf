@@ -1172,11 +1172,11 @@
 
 <!-- Nationalities -->
   <owl:Class rdf:ID="NationalIdentity">
-    <rdfs:label xml:lang="en">nationality</rdfs:label>
+    <rdfs:label xml:lang="en">national identity</rdfs:label>
     <rdfs:label xml:lang="fr">nationalité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">A subclass of @@#CulturalForm@@, this property indicates a person's nationality, either as self-reported or as assigned by others, with accompanying context, where present,provided by @@#NationalityContext@@ annotations. It is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. Like other identity categories, nationality may be plural, fluid, or contingent, and it can intersect with @@#NationalHeritage@@ or @@#GeographicHeritage@@ as well as other identity categories. Those using this class and its subclasses are encouraged to consult associated @@#NationalityContext@@ annotations, if available.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of @@#CulturalForm@@, this property indicates a person's national identity, either as self-reported or as assigned by others, with accompanying context, where present,provided by @@#NationalityContext@@ annotations. It is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. Like other identity categories, nationality may be plural, fluid, or contingent, and it can intersect with @@#NationalHeritage@@ or @@#GeographicHeritage@@ as well as other identity categories. Those using this class and its subclasses are encouraged to consult associated @@#NationalityContext@@ annotations, if available.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-catégorie de @@#CulturalForm@@, cette propriété indique la nationalité d'une personne, accompagnée du contexte fourni par les annotations de @@#NationalityContext@@ lorsqu'il est disponible. Elle diffère de la citoyenneté et n'est pas proportionnelle à la zone géographique ou au lieu de résidence. Comme d'autres catégories identitaires, la nationalité peut être plurielle, fluide ou contingente, et recoupe avec @@#NationalHeritage@@ ainsi qu'avec d'autres catégories identitaires. Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les annotations de @@#NationalityContext@@ lorsqu'elles sont disponibles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
