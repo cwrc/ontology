@@ -543,7 +543,7 @@ def get_dep_term_html(term_dict):
     uri = str(term_dict["uri"])
     term = get_uri_term(uri)
     comment = term_dict["comment"]
-    defn = str(term_dict["defn"])
+    defn = term_dict["defn"]
     replacement = str(term_dict["replacement"])
 
     html_str = ""
@@ -554,7 +554,7 @@ def get_dep_term_html(term_dict):
     if label:
         html_str += "<p><em>%s</em></p>" % label
     if defn:
-        html_str += """<p>%s</p>""" % (defn)
+        html_str += """<p>%s</p>""" % (str(defn))
     if comment:
         html_str += "<p>Comment: %s</p>" % comment
     if replacement:
@@ -589,16 +589,13 @@ select * where {
 
     for uri in deprecated_uris:
         query_str = """
-        select distinct ?label ?y ?defn ?comment where {
-            OPTIONAL { <%s> rdfs:comment ?comment. }.
-            OPTIONAL { <%s> rdfs:label ?label. }.
-            OPTIONAL { <%s> skos:definition ?defn. }.
+        select ?label ?y ?comment ?defn where {
+            OPTIONAL { <%s> rdfs:comment ?comment. FILTER(langMatches(lang(?comment), "%s"))}.
+            OPTIONAL { <%s> rdfs:label ?label.  FILTER(langMatches(lang(?label), "%s"))}.
+            OPTIONAL { <%s> skos:definition ?defn. FILTER(langMatches(lang(?defn), "%s"))}.
             OPTIONAL { <%s> dcterms:isReplacedBy ?y. }.
-            filter(
-                langMatches(lang(?defn), "%s") && langMatches(lang(?label), "%s")
-            )
         }
-            """ % (uri, uri, uri, uri, lang, lang)
+            """ % (uri, lang, uri, lang, uri, lang, uri)
 
         label = ""
         comment = ""
