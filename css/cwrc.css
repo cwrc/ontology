@@ -74,6 +74,14 @@ img {
   to { border-color: #f1f1f1; }
 }
 
+p > a[href^="#"]:not(p > a[href^="#cwrc:"]) { 
+  font-style: italic;
+}
+
+a[href^="cwrc.html#"] { 
+  font-style: italic;
+}
+
 :target {
     border-bottom: 1px solid #f1f1f1;
     animation: border-fade 3s ease;
@@ -87,6 +95,13 @@ section:target {
 .bibliography .citation {
     padding-top: 4em;
     margin-top: -3em;
+}
+
+.deprecated_term .specterm, .az_list.deprecated_list{
+    background: #ff000010;
+}
+.deprecated_term .specterm h5 {
+    background-color: #f1f1f1;
 }
 
 
