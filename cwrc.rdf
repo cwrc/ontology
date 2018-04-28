@@ -5818,23 +5818,11 @@
     <skos:related rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
   </owl:Class>
 
-  <!-- this is essentially a clone of the xkos-xl properly, except for the uniqueness restriction since we have translations. -->
-  <owl:ObjectProperty rdf:ID="literalForm">
-    <rdfs:label xml:lang="en">has literal form</rdfs:label>
-    <rdfs:label xml:lang="fr">a une forme littérale</rdfs:label>
-    <rdfs:range rdf:resource="#TextLabels"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-
   <!-- add rdfvalue to everything -->
   <skos:Concept rdf:about="#whiteLabel">
     <rdfs:label xml:lang="en">white identity</rdfs:label>
     <rdfs:label xml:lang="fr">identité blanche</rdfs:label>
     <foaf:name xml:lang="en">white</foaf:name>
-    <cwrc:literalForm xml:lang="en">white</cwrc:literalForm>
-    <cwrc:literalForm xml:lang="fr">blanc</cwrc:literalForm>
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of whiteness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of &quot;White&quot; (e.g. @@#whiteEthnicity@@, @@#whiteRaceColour@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'Étiquettes Textuelles, cette étiquette discursive reflète l'ambiguité de la blancheur de peau en tant que charactérique physique associée à diverses formes culturelles. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «blanches" (par exemple @@#whiteEthnicity@@, @@#whiteRaceColour@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
@@ -5851,8 +5839,6 @@
     <rdfs:label xml:lang="en">black identity</rdfs:label>
     <rdfs:label xml:lang="fr">identité noir</rdfs:label>
     <foaf:name xml:lang="en">black</foaf:name>
-    <cwrc:literalForm xml:lang="en">black</cwrc:literalForm>
-    <cwrc:literalForm xml:lang="fr">noir</cwrc:literalForm>
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of blackness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of &quot;Black&quot; (e.g. @@#blackEthnicity@@, @@#blackRaceColour@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la noirceur de peau en tant que charactérique physique associée à diverses formes culturelles. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «noires» (par exemple @@#blackEthnicity@@, @@#blackRaceColour@@).</skos:definition>
     <owl:oneOf rdf:parseType="Collection">
@@ -5870,8 +5856,6 @@
     <rdfs:label xml:lang="fr">identité Eurasian</rdfs:label>
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of the term eurasian as associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of &quot;Eurasian&quot; (e.g. @@#eurasianRace@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité du terme «eurasien·ne». Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «eurasiennes» (par exemple @@#eurasianRace@@)</skos:definition>
-    <cwrc:literalForm xml:lang="en">eurasian</cwrc:literalForm>
-    <cwrc:literalForm xml:lang="fr">eurasien</cwrc:literalForm>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#eurasianRace"/>
     </owl:oneOf>
@@ -5886,8 +5870,6 @@
     <rdfs:label xml:lang="en">Jewish Identity</rdfs:label>
     <rdfs:label xml:lang="fr">identité Juif</rdfs:label>
     <foaf:name xml:lang="en">Jewish</foaf:name>
-    <cwrc:literalForm xml:lang="en">Jewish</cwrc:literalForm>
-    <cwrc:literalForm xml:lang="fr">Juif</cwrc:literalForm>
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of Jewishness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of &quot;Jewish&quot; (e.g. @@#jewishNationalIdentity@@, @@#jewishRaceColour@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la juidaïcité. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «juives» (par exemple @@#jewishNationalIdentity@@, @@#jewishRaceColour@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
@@ -5908,8 +5890,6 @@
     <rdfs:label xml:lang="en">english identity</rdfs:label>
     <rdfs:label xml:lang="fr">identité anglais</rdfs:label>
     <foaf:name xml:lang="en">english</foaf:name>
-    <cwrc:literalForm xml:lang="en">english</cwrc:literalForm>
-    <cwrc:literalForm xml:lang="fr">anglais</cwrc:literalForm>
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of Englishness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of &quot;English&quot; (e.g. @@#englishNationalIdentity@@, @@#englishGeographicHeritage@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité du terme «anglais·e». Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «anglaises» (par exemple @@#englishNationalIdentity@@, @@#englishGeographicHeritage@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
@@ -5931,8 +5911,6 @@
     <skos:altLabel xml:lang="en">man</skos:altLabel>
     <rdfs:label xml:lang="en">man</rdfs:label>
     <rdfs:label xml:lang="fr">homme</rdfs:label>
-    <cwrc:literalForm xml:lang="en">man</cwrc:literalForm>
-    <cwrc:literalForm xml:lang="fr">homme</cwrc:literalForm>
     <foaf:name xml:lang="en">Man (Label)</foaf:name>
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of manhood, masculinity, or maleness as associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of &quot;man&quot; (e.g. @@#man@@, @@#cisMan@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la masculinité, ou de la virilité. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «masculines» (par exemple @@#man@@, @@#cisMan@@).</skos:definition>
@@ -5950,8 +5928,6 @@
     <skos:altLabel xml:lang="en">woman</skos:altLabel>
     <rdfs:label xml:lang="en">woman</rdfs:label>
     <rdfs:label xml:lang="fr">femme</rdfs:label>
-    <cwrc:literalForm xml:lang="en">woman</cwrc:literalForm>
-    <cwrc:literalForm xml:lang="fr">femme</cwrc:literalForm>
     <foaf:name xml:lang="en">Woman (Label)</foaf:name>
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of womanhood, femininity, or femaleness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of &quot;woman&quot; (e.g. @@#woman@@, @@#transWoman@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la féminité. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «féminines» (par exemple @@#woman@@, @@#transWoman@@).</skos:definition>
@@ -5969,8 +5945,6 @@
   <skos:Concept rdf:about="#queerLabel">
     <rdfs:label xml:lang="en">queer identity</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <cwrc:literalForm xml:lang="en">queer</cwrc:literalForm>
-    <cwrc:literalForm xml:lang="fr"/>
     <foaf:name xml:lang="en">queer (Label)</foaf:name>
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of queerness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of &quot;Queer&quot; (e.g. @@#GenderQueer@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr"/>
@@ -6863,6 +6837,18 @@
 
 <!-- All Deprecated things(properties, classes, instances in that order) -->
   <!-- Deprecated Properties -->
+  <owl:DeprecatedProperty rdf:ID="literalForm">
+    <rdfs:label xml:lang="en">has literal form</rdfs:label>
+    <rdfs:label xml:lang="fr">a une forme littérale</rdfs:label>
+    <rdfs:range rdf:resource="#TextLabels"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated, with no current equivalence.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver sans équivalence.</rdfs:comment>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+  </owl:DeprecatedProperty>
   <owl:DeprecatedProperty rdf:ID="personalProperty">
     <rdfs:label xml:lang="en">personal property</rdfs:label>
     <rdfs:label xml:lang="fr">propriété personnelle</rdfs:label>
@@ -7079,8 +7065,6 @@
   <rdf:Description rdf:about="#englandLabel">
     <rdfs:label xml:lang="en">England</rdfs:label>
     <rdfs:label xml:lang="fr">Angleterre</rdfs:label>
-    <cwrc:literalForm xml:lang="en">England</cwrc:literalForm>
-    <cwrc:literalForm xml:lang="fr">Angleterre</cwrc:literalForm>
     <foaf:name xml:lang="en">England</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
