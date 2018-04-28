@@ -2707,7 +2707,7 @@
     <rdfs:label xml:lang="fr">affiliation politique</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">This subclass of CulturalForm tracks the affiliations, connections and associations which designate a person's political involvement. These affiliations can be both formal connections to a party or organisation and informal political positions held by the writer. We hope to point our readers towards women writers associated with different political positions and help researchers make links between political beliefs and writing. For this reason, we are defining political affiliations broadly and include things like &quot;against capital punishment&quot; or &quot;strong supporter of the Empire&quot; in addition to more straightforward affiliations such as &quot;marxist&quot; or &quot;conservative.&quot;</skos:definition>
+    <skos:definition xml:lang="en">This subclass of CulturalForm indicates affiliations, connections and associations which designate a person's political involvement. These affiliations can be both formal connections to a party or organisation and informal political positions held by the writer. Political affiliations are defined broadly and include things like &quot;against capital punishment&quot; or &quot;strong supporter of the Empire&quot; in addition to more straightforward affiliations such as &quot;marxist&quot; or &quot;conservative. Political affiliations can be multiple, sometimes contradictory, and may change over time.&quot;</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe de Forme Culturelle, Affiliation Politique indique l'engagement politiques d'une personne ainsi que les connexions, les associations et les opinions qui y sont liées. Les affiliations renvoient à la fois aux connexions formelles avec un parti ou une organisation —telle que l'adhésion au parti— et aux autres partis pris politiques informels du sujet. Les affiliations politiques peuvent être multiple, parfois contradictoires ou en tension, et peuvent changer au cours du temps.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5377,7 +5377,7 @@
     <rdfs:label xml:lang="fr">est de genre</rdfs:label>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Gender"/>
-    <skos:definition xml:lang="en">Describes a person's @@#Gender@@ identity, which may be self-reported or reported by another. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's @@#Gender@@ identity, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#GenderContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5386,7 +5386,7 @@
   <owl:ObjectProperty rdf:ID="hasGenderSelfReported">
     <rdfs:label xml:lang="en">has gender identity (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">est de genre (autodéclaré)</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's self-reported  @@#Gender@@ identity.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's self-reported @@#Gender@@ identity, with accompanying context, where present, provided by @@#GenderContext@@ annotations.</skos:definition>
     <skos:definition xml:lang="fr">Cela indique le @@#Gender@@ autoproclamé d'une personne.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasGender"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5397,7 +5397,7 @@
   <owl:ObjectProperty rdf:ID="hasGenderReported">
     <rdfs:label xml:lang="en">has gender identity (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">est de genre (déclaré)</rdfs:label>
-    <skos:definition xml:lang="en">This indicates a person's reported @@#Gender@@ identity.</skos:definition>
+    <skos:definition xml:lang="en">Indicates a person's reported @@#Gender@@ identity, with accompanying context, where present, provided by @@#GenderContext@@ annotations.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Gender"/>
@@ -5410,7 +5410,7 @@
   <owl:ObjectProperty rdf:ID="hasGeographicHeritage">
     <rdfs:label xml:lang="en">has geographic heritage</rdfs:label>
     <rdfs:label xml:lang="fr">A un héritage géographique</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's heritage in relation to a place, which may be self-reported or reported by another. Place names and boundaries change over time, and a conception of geographical heritage from one historical period may not be commensurate with those from an earlier or later period, even if they go by the same name. Similarly, a sense of geographical heritage may differ from a sense of identity with a political entity that goes by the same name. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#GeographicHeritage@@.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's heritage in relation to a place, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. Place names and boundaries change over time, and a conception of geographical heritage from one historical period may not be commensurate with those from an earlier or later period, even if they go by the same name. Similarly, a sense of geographical heritage may differ from a sense of identity with a political entity that goes by the same name. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#GeographicHeritage@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit l'héritage d'une personne en lien avec une situation géographique. Comme les toponomies et les frontières changent au cours du temps, une description de l'héritage géographique associée à une période historique donnée ne correspond pas toujours à celles des périodes antérieures ou postérieures, et ce même si elles possèdent le même nom. De même, le sentiment d'appartenance à un héritage géographique peut différer du sentiement d'appartenance à une entité politique du même nom. De même que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#GeographicHeritage@@.</skos:definition>
     <rdfs:range rdf:resource="#GeographicHeritage"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5421,7 +5421,7 @@
   <owl:ObjectProperty rdf:ID="hasGeographicHeritageSelfReported">
     <rdfs:label xml:lang="en">has geographic heritage (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">a un héritage géographique (autodéclaré)</rdfs:label>
-    <skos:definition xml:lang="en">This describes a person's self-reported @@#GeographicHeritage@@.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's self-reported @@#GeographicHeritage@@, with accompanying context, where present, provided by @@#NationalityContext@@ annotations.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#GeographicHeritage"/>
@@ -5432,7 +5432,7 @@
   <owl:ObjectProperty rdf:ID="hasGeographicHeritageReported">
     <rdfs:label xml:lang="en">has geographic heritage (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">a un héritage géographique (déclaré)</rdfs:label>
-    <skos:definition xml:lang="en">This describes a person's reported @@#GeographicHeritage@@.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's reported @@#GeographicHeritage@@, with accompanying context, where present, provided by @@#NationalityContext@@ annotations.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#GeographicHeritage"/>
@@ -5444,7 +5444,7 @@
   <owl:ObjectProperty rdf:ID="hasNationalHeritage">
     <rdfs:label xml:lang="en">has national heritage</rdfs:label>
     <rdfs:label xml:lang="fr">de héritage national</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's @@#NationalHeritage@@, which may be self-reported or reported by another. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's @@#NationalHeritage@@, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#NationalHeritage"/>
@@ -5455,7 +5455,7 @@
   <owl:ObjectProperty rdf:ID="hasNationalHeritageSelfReported">
     <rdfs:label xml:lang="en">has national heritage (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">de héritage national (autodéclarée)</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's self-reported @@#NationalHeritage@@. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's self-reported @@#NationalHeritage@@, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#NationalHeritage"/>
@@ -5466,7 +5466,7 @@
   <owl:ObjectProperty rdf:ID="hasNationalHeritageReported">
     <rdfs:label xml:lang="en">has national heritage (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">de héritage national (déclarée)</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's reported @@#NationalHeritage@@. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's reported @@#NationalHeritage@@, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#NationalHeritage"/>
@@ -5479,7 +5479,7 @@
   <owl:ObjectProperty rdf:ID="hasNationality">
     <rdfs:label xml:lang="en">has national identity</rdfs:label>
     <rdfs:label xml:lang="fr">de nationalité</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's @@#NationalIdentity@@ identity, which may be self-reported or reported by another. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's @@#NationalIdentity@@ identity, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la @@#NationalIdentity@@ d'une personne. De même que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type.</skos:definition>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#NationalIdentity"/>
@@ -5490,8 +5490,8 @@
   <owl:ObjectProperty rdf:ID="hasNationalitySelfReported">
     <rdfs:label xml:lang="en">has national identity (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">de nationalité (autodéclarée)</rdfs:label>
-    <skos:definition xml:lang="en">This property indicates a person's self-reported nationality/ies and is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. For more information on this property see @@#NationalIdentity@@.</skos:definition>
-    <skos:definition xml:lang="fr">Cette propriété indique la/les nationalité(s) autoproclamée(s) d'une personne, différant de la citoyenneté et n'étant pas proportionnelle à la zone géographique ou au territoire sur lequel elle réside.</skos:definition>
+    <skos:definition xml:lang="en">This property indicates a person's self-reported national identity, with with accompanying context, where present, provided by @@#NationalityContext@@ annotations. It is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. For more information on this property see @@#NationalIdentity@@.</skos:definition>
+    <skos:definition xml:lang="fr">Décrit la/les nationalité(s) autoproclamée(s) d'une personne, différant de la citoyenneté et n'étant pas proportionnelle à la zone géographique ou au territoire sur lequel elle réside.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasNationality"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#NationalIdentity"/>
@@ -5501,8 +5501,8 @@
   <owl:ObjectProperty rdf:ID="hasNationalityReported">
     <rdfs:label xml:lang="en">has national identity (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">de nationalité (déclarée)</rdfs:label>
-    <skos:definition xml:lang="en">This property indicates a person's reported nationality/ies and is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. For more information on this property see @@#NationalIdentity@@.</skos:definition>
-    <skos:definition xml:lang="fr">Cette propriété indique la/les nationalité(s) proclamée(s) d'une personne, différant de la citoyenneté et n'étant pas proportionnelle à la zone géographique ou au territoire sur lequel elle réside.</skos:definition>
+    <skos:definition xml:lang="en">This property indicates a person's reported national identity, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. It is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides. For more information on this property see @@#NationalIdentity@@.</skos:definition>
+    <skos:definition xml:lang="fr">Décrit la/les nationalité(s) proclamée(s) d'une personne, différant de la citoyenneté et n'étant pas proportionnelle à la zone géographique ou au territoire sur lequel elle réside.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasNationality"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#NationalIdentity"/>
@@ -5514,7 +5514,7 @@
   <owl:ObjectProperty rdf:ID="hasRaceColour">
     <rdfs:label xml:lang="en">has race or colour identity</rdfs:label>
     <rdfs:label xml:lang="fr">est de race our couleur</rdfs:label>
-    <skos:definition xml:lang="en">This describes a person's racial identity, which may be self-reported or reported by another. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
+    <skos:definition xml:lang="en">This describes a person's identity with respect to race or colour, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. As with other cultural forms, an individual may have more than one property or descriptor of this type. For more information on this property see @@#RaceColour@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit l'identité raciale d'une personne. Pour plus d'information sur cette propriété, voir @@#RaceColour@@.</skos:definition>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#RaceColour"/>
@@ -5525,8 +5525,8 @@
   <owl:ObjectProperty rdf:ID="hasRaceColourSelfReported">
     <rdfs:label xml:lang="en">has race or colour identity (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">race ou couleur (autodéclarée)</rdfs:label>
-    <skos:definition xml:lang="en">This property indicates a person's self-reported racial identity. For further information about this property, see @@#RaceColour@@.</skos:definition>
-    <skos:definition xml:lang="fr">Cette propriété indique l'appartenance raciale ou la couleur autodéclarées d'une personne. Pour plus d'informations à propre de cette propriété, voir @@#RaceColour@@. </skos:definition>
+    <skos:definition xml:lang="en">Indicates a person's self-reported identity with respect to race or colour, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. For further information about this property, see @@#RaceColour@@.</skos:definition>
+    <skos:definition xml:lang="fr">Décrit l'appartenance raciale ou la couleur autodéclarées d'une personne. Pour plus d'informations à propre de cette propriété, voir @@#RaceColour@@. </skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasRaceColour"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#RaceColour"/>
@@ -5537,8 +5537,8 @@
   <owl:ObjectProperty rdf:ID="hasRaceColourReported">
     <rdfs:label xml:lang="en">has race or colour identity (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">race ou couleur (déclarée)</rdfs:label>
-    <skos:definition xml:lang="en">This property indicates a person's reported racial identity. For further information about this property, see @@#RaceColour@@.</skos:definition>
-    <skos:definition xml:lang="fr">Cette propriété indique l'appartenance raciale ou la couleur déclarées d'une personne. Pour plus d'informations à propre de cette propriété, voir @@#RaceColour@@. </skos:definition>
+    <skos:definition xml:lang="en">Indicates a person's reported identity with respect to race or colour, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. For further information about this property, see @@#RaceColour@@.</skos:definition>
+    <skos:definition xml:lang="fr">Décrit l'appartenance raciale ou la couleur déclarées d'une personne. Pour plus d'informations à propre de cette propriété, voir @@#RaceColour@@. </skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasRaceColour"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#RaceColour"/>
@@ -5551,7 +5551,7 @@
   <owl:ObjectProperty rdf:ID="hasEthnicity">
     <rdfs:label xml:lang="en">has ethnic identity</rdfs:label>
     <rdfs:label xml:lang="fr">d'ethnicité</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's ethnic identity, which may be self-reported or reported by another. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#Ethnicity@@.</skos:definition>
+    <skos:definition xml:lang="en">Indicates a person's ethnic identity, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#Ethnicity@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit l'ethnicité d'une personne. De même que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#Ethnicity@@</skos:definition>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Ethnicity"/>
@@ -5562,7 +5562,7 @@
   <owl:ObjectProperty rdf:ID="hasEthnicitySelfReported">
     <rdfs:label xml:lang="en">has ethnic identity (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">d'ethnicité (autodéclarée)</rdfs:label>
-    <skos:definition xml:lang="en">This property indicates a person's self-reported ethnic identity, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. For more information on this property, see @@#Ethnicity@@.</skos:definition>
+    <skos:definition xml:lang="en">Indicates a person's self-reported ethnic identity, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. For more information on this property, see @@#Ethnicity@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit l'ethnicité autodéclarée, accompagnée du contexte fourni par les annotations de @@#RaceEthnicityContext@@ là ou il est disponible. Pour plus d'informations sur cette propriété, voir @@#Ethnicity@@.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasEthnicity"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5574,7 +5574,7 @@
   <owl:ObjectProperty rdf:ID="hasEthnicityReported">
     <rdfs:label xml:lang="en">has ethnic identity (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">d'ethnicité (déclarée)</rdfs:label>
-    <skos:definition xml:lang="en">This property indicates a person's reported ethnic identity, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. For more information on this property, see @@#Ethnicity@@.</skos:definition>
+    <skos:definition xml:lang="en">Indicates a person's reported ethnic identity, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. For more information on this property, see @@#Ethnicity@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit l'ethnicité déclarée, accompagnée du contexte fourni par les annotations de @@#RaceEthnicityContext@@ là ou il est disponible. Pour plus d'informations sur cette propriété, voir @@#Ethnicity@@.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasEthnicity"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5587,7 +5587,7 @@
   <owl:ObjectProperty rdf:ID="hasReligion">
     <rdfs:label xml:lang="en">has religious affiliation</rdfs:label>
     <rdfs:label xml:lang="fr">est de confession</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's religion, which may be self-reported or reported by another. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#Religion@@.</skos:definition>
+    <skos:definition xml:lang="en">Indicates a person's religion or belief system, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#CulturalFormContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#Religion@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la religion d'une personne. De même que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#Religion@@.</skos:definition>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Religion"/>
@@ -5598,7 +5598,7 @@
   <owl:ObjectProperty rdf:ID="hasReligionSelfReported">
     <rdfs:label xml:lang="en">has religious affiliation (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">religion (autodéclarée)</rdfs:label>
-    <skos:definition xml:lang="en">This indicates a person's self-reported religion(s) or belief system(s). For further information about this property, see @@#Religion@@.</skos:definition>
+    <skos:definition xml:lang="en">Indicates a person's self-reported religion or belief system, with accompanying context, where present, provided by @@#CulturalFormContext@@ annotations. For further information about this property, see @@#Religion@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit indique la/les religion(s) ou le(s) système(s) de croyance autoproclamé(s) par une personne. Pour plus d'informations sur cette propriété, voir @@#Religion@@.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasReligion"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5609,7 +5609,7 @@
   <owl:ObjectProperty rdf:ID="hasReligionReported">
     <rdfs:label xml:lang="en">has religious affiliation (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">religion (déclarée)</rdfs:label>
-    <skos:definition xml:lang="en">This indicates a person's reported religion(s) or belief system(s). For further information about this property, see @@#Religion@@.</skos:definition>
+    <skos:definition xml:lang="en">Indicates a person's reported religion or belief system, with accompanying context, where present, provided by @@#CulturalFormContext@@ annotations. For further information about this property, see @@#Religion@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit indique la/les religion(s) ou le(s) système(s) de croyance proclamé(s) par une personne. Pour plus d'informations sur cette propriété, voir @@#Religion@@.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasReligion"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5621,7 +5621,7 @@
   <owl:ObjectProperty rdf:ID="hasPoliticalAffiliation">
     <rdfs:label xml:lang="en">has political affiliation</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Describes a person's political affiliation, which may be self-reported or reported by another. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#PoliticalAffiliation@@.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's political affiliation, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#PoliticalContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#PoliticalAffiliation@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#PoliticalAffiliation"/>
@@ -5656,7 +5656,7 @@
   <owl:ObjectProperty rdf:ID="hasSocialClass">
     <rdfs:label xml:lang="en">has class identity</rdfs:label>
     <rdfs:label xml:lang="fr">a une classe sociale</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's class identity, which may be self-reported or reported by another. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#SocialClass@@.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's class identity, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#CulturalFormContext@@. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#SocialClass@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la classe sociale d'une personne. Comme pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#SocialClass@@.</skos:definition>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#SocialClass"/>
@@ -5667,7 +5667,7 @@
   <owl:ObjectProperty rdf:ID="hasSocialClassSelfReported">
     <rdfs:label xml:lang="en">has class identity (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">a classe sociale autodéclarée</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's self-reported class identity. For further information about this property, see @@#SocialClass@@.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's self-reported class identity, with accompanying context, where present, provided by @@#CulturalFormContext@@. For further information about this property, see @@#SocialClass@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la classe social autodéclarée d'une personne. Pour plus d'informations sur cette propriété, voir @@#SocialClass@@. </skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasSocialClass"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5679,7 +5679,7 @@
   <owl:ObjectProperty rdf:ID="hasSocialClassReported">
     <rdfs:label xml:lang="en">has class identity (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">a classe sociale déclarée</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's reported class identity. For further information about this property, see @@#SocialClass@@.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's reported class identity, with accompanying context, where present, provided by @@#CulturalFormContext@@. For further information about this property, see @@#SocialClass@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la classe social déclarée d'une personne. Pour plus d'informations sur cette propriété, voir @@#SocialClass@@. </skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasSocialClass"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5692,7 +5692,7 @@
   <owl:ObjectProperty rdf:ID="hasLinguisticAbility">
     <rdfs:label xml:lang="en">language known</rdfs:label>
     <rdfs:label xml:lang="fr">maîtrise une langue</rdfs:label>
-    <skos:definition xml:lang="en">Knowledge of the language for speaking, writing, or reading, which may be self-reported or reported by another. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
+    <skos:definition xml:lang="en">Knowledge of the language for speaking, writing, or reading, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#CulturalFormContext@@. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
     <skos:definition xml:lang="fr">Capacité d'écrire ou de lire une langue.</skos:definition>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Language"/>
@@ -5703,7 +5703,7 @@
   <owl:ObjectProperty rdf:ID="hasLinguisticAbilitySelfReported">
     <rdfs:label xml:lang="en">language known (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">maîtrise une langue (autodéclaré)</rdfs:label>
-    <skos:definition xml:lang="en">Self-reported knowledge of the language for speaking, writing, or reading ability. For further information about this property, see @@#LinguisticAbility@@.</skos:definition>
+    <skos:definition xml:lang="en">Self-reported knowledge of the language for speaking, writing, or reading, with accompanying context, where present, provided by @@#CulturalFormContext@@. For further information about this property, see @@#LinguisticAbility@@.</skos:definition>
     <skos:definition xml:lang="fr">Le sujet déclare maîtriser une langue à l'oral ou à l'écrit. Pour plus d'information sur cette propriété, voir @@#LinguisticAbility@@.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5715,7 +5715,7 @@
   <owl:ObjectProperty rdf:ID="hasLinguisticAbilityReported">
     <rdfs:label xml:lang="en">language known (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">maîtrise une langue (déclaré)</rdfs:label>
-    <skos:definition xml:lang="en">Reported knowledge of the language for speaking, writing, or reading ability. For further information about this property, see @@#LinguisticAbility@@.</skos:definition>
+    <skos:definition xml:lang="en">Reported knowledge of the language for speaking, writing, or reading, with accompanying context, where present, provided by @@#CulturalFormContext@@. For further information about this property, see @@#LinguisticAbility@@.</skos:definition>
     <skos:definition xml:lang="fr">Le sujet déclare maîtriser une langue à l'oral ou à l'écrit. Pour plus d'information sur cette propriété, voir @@#LinguisticAbility@@.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5728,7 +5728,7 @@
   <owl:ObjectProperty rdf:ID="hasNativeLinguisticAbility">
     <rdfs:label xml:lang="en">natively known language</rdfs:label>
     <rdfs:label xml:lang="fr">langue maternelle</rdfs:label>
-    <skos:definition xml:lang="en">Knowledge of the language, acquired during a person’s upbringing, for speaking, writing or reading, which may be self-reported or reported by another. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
+    <skos:definition xml:lang="en">Knowledge of the language, acquired during a person’s upbringing, for speaking, writing or reading, which may be self-reported or reported by another, and with accompanying context, where present, provided by @@#CulturalFormContext@@. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
     <skos:definition xml:lang="fr">Capacité d'écrire ou de lire une langue acquise dès l'enfance. Comme pour d'autres formes culturelles, un individu peut avoir plus d'une propriété ou descripteur de ce type. </skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5740,7 +5740,7 @@
   <owl:ObjectProperty rdf:ID="hasNativeLinguisticAbilitySelfReported">
     <rdfs:label xml:lang="en">natively known language (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">langue maternelle (autodéclarée)</rdfs:label>
-    <skos:definition xml:lang="en">Self-reported knowledge of the language, acquired during a person’s upbringing, for speaking, writing, or reading.</skos:definition>
+    <skos:definition xml:lang="en">Self-reported knowledge of the language, acquired during a person’s upbringing, for speaking, writing, or reading,  with accompanying context, where present, provided by @@#CulturalFormContext@@.</skos:definition>
     <skos:definition xml:lang="fr"> Le sujet déclare lire et écrire une langue maîtrisée depuis l'enfance. </skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbilitySelfReported"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5752,7 +5752,7 @@
   <owl:ObjectProperty rdf:ID="hasNativeLinguisticAbilityReported">
     <rdfs:label xml:lang="en">natively known language (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">langue maternelle (déclarée)</rdfs:label>
-    <skos:definition xml:lang="en">Reported knowledge of the language, acquired during a person’s upbringing, for speaking, writing, or reading.</skos:definition>
+    <skos:definition xml:lang="en">Reported knowledge of the language, acquired during a person’s upbringing, for speaking, writing, or reading,  with accompanying context, where present, provided by @@#CulturalFormContext@@.</skos:definition>
     <skos:definition xml:lang="fr"> Le sujet déclare lire et écrire une langue maîtrisée depuis l'enfance. </skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbilitySelfReported"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5765,7 +5765,7 @@
   <owl:ObjectProperty rdf:ID="hasSexuality">
     <rdfs:label xml:lang="en">has sexual identity</rdfs:label>
     <rdfs:label xml:lang="fr">a une orientation sexuelle</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's sexual identity, which may be self-reported or reported by another. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#Sexuality@@.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's sexual identity, which may be self-reported or reported by another,  with accompanying context, where present, provided by @@#SexualityContext@@. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#Sexuality@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la sexualité d'une personne. Comme que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#Sexuality@@.</skos:definition>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Sexuality"/>
@@ -5776,7 +5776,7 @@
   <owl:ObjectProperty rdf:ID="hasSexualitySelfReported">
     <rdfs:label xml:lang="en">has sexual identity (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">a une orientation sexuelle (autodéclarée)</rdfs:label>
-    <skos:definition xml:lang="en">Describes a person's self-reported sexual identity. For more information, see @@#Sexuality@@ and @@#SexualityContext@@.</skos:definition>
+    <skos:definition xml:lang="en">Describes a person's self-reported sexual identity,  with accompanying context, where present, provided by @@#SexualityContext@@. For more information, see @@#Sexuality@@ and @@#SexualityContext@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la sexualité autodéclarée d'une personne. Pour plus d'information, voir @@#Sexuality@@ et @@#SexualityContext@@.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasSexuality"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5788,7 +5788,7 @@
   <owl:ObjectProperty rdf:ID="hasSexualityReported">
     <rdfs:label xml:lang="en">has sexual identity (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">a une orientation sexuelle (déclarée)</rdfs:label>
-    <skos:definition xml:lang="en">This describes a person's reported sexual identity. For more information, see @@#Sexuality@@ and @@#SexualityContext@@.</skos:definition>
+    <skos:definition xml:lang="en">This describes a person's reported sexual identity,  with accompanying context, where present, provided by @@#SexualityContext@@. For more information, see @@#Sexuality@@ and @@#SexualityContext@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la sexualité déclarée d'une personne. Pour plus d'information, voir @@#Sexuality@@ et @@#SexualityContext@@.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasSexuality"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -5803,7 +5803,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:label xml:lang="en">textual label</rdfs:label>
     <rdfs:label xml:lang="fr">étiquette</rdfs:label>
-    <skos:definition xml:lang="en">Collection of all ambiguous labels within the Orlando markup.</skos:definition>
+    <skos:definition xml:lang="en">Collection of ambiguous or overloaded labels associated with contested concepts.</skos:definition>
     <skos:definition xml:lang="fr">Ensemble des étiquettes ambigues au sein du jeu d'étiquettes d'Orlando.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -7355,7 +7355,7 @@
       <rdfs:label xml:lang="fr">est de race (autodéclarée)</rdfs:label>
       <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
       <rdfs:range rdf:resource="#Race"/>
-      <skos:definition xml:lang="en">This describes a person's self-reported racial identity.</skos:definition>
+      <skos:definition xml:lang="en">This describes a person's self-reported identity with respect to race or colour.</skos:definition>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
       <void:inDataset rdf:resource="#datasetdefinition"/>
       <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#hasNationalitySelfReported@@.</rdfs:comment>
