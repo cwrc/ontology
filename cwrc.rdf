@@ -250,13 +250,29 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="#represents">
+    <rdfs:label xml:lang="en">represents</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Relates particularly contested concepts to ambiguous or overloaded terms, classed as @@#TextLabel@@, that also represent one or more related concepts.  For instance, @@#englishLabel@@ is a @@#TextLabel@@ that represents both @@#englishNationalIdentity@@ and @@#englishNationalHeritage@@.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#representedBy">
+    <rdfs:label xml:lang="en">represents</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Relates ambiguous or overloaded terms to two or more particularly contested and related concepts. Often used for @@#CulturalForm@@; for instance @@#englishNationalIdentity@@ and @@#englishNationalHeritage@@ are both represented by @@#englishLabel@@.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <owl:inverseOf rdf:resource="#represents"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
 
   <!-- Change Sets -->
 
   <owl:Class rdf:ID="ChangeSet">
     <rdfs:label xml:lang="en">change set</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">A Changeset represents changes or additions made to the ontology by ontology editors or through users where instances were affected. Change Sets will also be used to translate and contain Orlando recordInfo instances.</skos:definition>
+    <skos:definition xml:lang="en">A change set represents changes or additions made to the ontology by ontology editors or through users where instances were affected. Change sets will also be used to translate and contain Orlando recordInfo instances.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.w3.org/2006/time/Instant"/>
@@ -269,7 +285,7 @@
   <owl:ObjectProperty rdf:about="#affectedEntity">
     <rdfs:label xml:lang="en">affected entity</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Affected Entities link to the Object or Class that was modified within a ChangeSet, this can be any rdf:resource. A @@#ChangeSet@@ may have 0 to many AffectedEntities.</skos:definition>
+    <skos:definition xml:lang="en">Affected entities link to the Object or Class that was modified within a change set, this can be any rdf:resource. A @@#ChangeSet@@ may have 0 to many affected entities.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#ChangeSet"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -279,7 +295,7 @@
   <owl:ObjectProperty rdf:about="#alteredBy">
     <rdfs:label xml:lang="en">altered by</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Links a person to a @@#ChangeSet@@ entry.</skos:definition>
+    <skos:definition xml:lang="en">Links a @@#NaturalPerson@@ to a @@#ChangeSet@@ entry.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#ChangeSet"/>
     <rdfs:range rdf:resource="#NaturalPerson"/>
@@ -290,10 +306,11 @@
   <owl:ObjectProperty rdf:about="#madeAlteration">
     <rdfs:label xml:lang="en">made alteration</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Links an alteration to a person</skos:definition>
+    <skos:definition xml:lang="en">Links an @@#ChangeSet@@ to a @@#NaturalPerson@@</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#ChangeSet"/>
+    <owl:inverseOf rdf:resource="#alteredBy"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
@@ -5971,6 +5988,8 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
+
+
 
   <owl:ObjectProperty rdf:ID="hasRelative">
     <rdfs:label xml:lang="en">has relative</rdfs:label>
