@@ -6002,6 +6002,7 @@
   <owl:ObjectProperty rdf:ID="hasGuardian">
     <rdfs:label xml:lang="en">has guardian</rdfs:label>
     <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Describes a person (usually a minor) placed in the charge of another, usually an adult. This term stretches beyond the legal definition of &quot;guardian&quot; to include a broader social relation between dependant and dependee (e.g.: <![CDATA[<i>in loco parentis</i>]]>)</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -6012,7 +6013,7 @@
   <owl:ObjectProperty rdf:ID="guardianOf">
     <rdfs:label xml:lang="en">guardian of</rdfs:label>
     <rdfs:label xml:lang="fr">tuteur (‑trice) / gardien (ne)</rdfs:label>
-    <skos:definition xml:lang="en">Describes a subject (usually an adult) placed in charge of, or one who cares for, a minor. This term stretches beyond the legal definition of &quot;guardian&quot; to include a broader social relation between dependant and dependee. (eg: <![CDATA[<i>in loco parentis</i>]]>)</skos:definition>
+    <skos:definition xml:lang="en">
     <skos:definition xml:lang="fr">Une personne placé en charge du bienfait d'un personne mineure.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdfs:subPropertyOf rdf:resource="#interpersonalRelationship"/>
