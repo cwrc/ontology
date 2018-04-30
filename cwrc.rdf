@@ -5987,17 +5987,6 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="hasForebear">
-    <rdfs:label xml:lang="en">has forebear</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">An ancestor or forebear is a parent or (recursively) the parent of an antecedent (i.e., a grandparent, great-grandparent, great-great-grandparent, and so forth). Ancestor is "any person from whom one is descended". This predicate indicates the forebear of the subject.</skos:definition>
-    <skos:definition xml:lang="fr"/>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Ancestor"/>
-    <rdfs:subPropertyOf rdf:resource="#hasRelative"/>
-  </owl:ObjectProperty>
-
   <owl:ObjectProperty rdf:ID="forebearOf">
     <rdfs:label xml:lang="en">forebear of</rdfs:label>
     <rdfs:label xml:lang="fr">ancêtre de</rdfs:label>
