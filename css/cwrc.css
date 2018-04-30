@@ -52,7 +52,25 @@ td a:after {
 td a:last-child:after {
     content: none;
 }
+/*.altlabel {
+    display: flex;
+    font-style: italic;
+}
 
+.altlabel p:last-child:after {
+    content: none;
+}
+
+.altlabel p:first-child:after {
+    font-style: bold;
+    content: none;
+}
+
+.altlabel p:after {
+    content: ";";
+    margin-right: 2px;
+}
+*/
 section .table thead>tr>th, section .table tbody>tr>th, section .table tfoot>tr>th, section .table thead>tr>td, section .table tbody>tr>td, section .table tfoot>tr>td {
     border: none;
     border-top: 1px solid #444;
@@ -74,8 +92,12 @@ img {
   to { border-color: #f1f1f1; }
 }
 
-p > a[href^="#"]:not(p > a[href^="#cwrc:"]) { 
+p > a[href^="#"] { 
   font-style: italic;
+}
+
+p > a[href^="#cwrc:"] {
+  font-style: normal;
 }
 
 a[href^="cwrc.html#"] { 

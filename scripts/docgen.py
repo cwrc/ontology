@@ -44,7 +44,8 @@ trans_dict = {
     "dicts": ["Dictionaries", "Dictionnaires"]
 }
 term_main_uris = [rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), rdflib.term.URIRef(
-    'http://www.w3.org/2004/02/skos/core#definition'),
+    'http://www.w3.org/2004/02/skos/core#definition'), rdflib.term.URIRef(
+    'http://www.w3.org/2004/02/skos/core#altLabel'),
     rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#comment')]
 term_ignore_uris = [rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#value'), rdflib.term.URIRef(
     'http://rdfs.org/ns/void#inDataset'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#isDefinedBy')]
@@ -72,12 +73,18 @@ def get_domain_range_dict():
     domain_dict = {}
     for domain_class in domain_list:
         query_str = "select ?x where {?x rdfs:domain <" + str(domain_class) + ">}"
-        domain_dict[str(domain_class)] = [str(row.x) for row in o_graph.query(query_str)]
+        domain_dict[str(domain_class)] = [str(row.x)
+                                          for row in o_graph.query(query_str) if str(row.x) not in deprecated_uris]
+        if domain_dict[str(domain_class)] == []:
+            del domain_dict[str(domain_class)]
 
     range_dict = {}
     for range_class in range_list:
         query_str = "select ?x where {?x rdfs:range <" + str(range_class) + ">}"
-        range_dict[str(range_class)] = [str(row.x) for row in o_graph.query(query_str)]
+        range_dict[str(range_class)] = [str(row.x)
+                                        for row in o_graph.query(query_str) if str(row.x) not in deprecated_uris]
+        if range_dict[str(range_class)] == []:
+            del range_dict[str(range_class)]
 
     return domain_dict, range_dict
 
@@ -288,8 +295,16 @@ def create_term_main(term, uri):
     html_str = '<p id="top">[<a href="#definition_list">back to top</a>]</p>\n'
     html_str += '<h5>%s</h5>\n' % (label)
     html_str += """<div class="defn">%s</div>""" % (get_defn_html(defn))
+
     if comment:
         html_str += get_comment_html(comment)
+    # alt_terms = [o for s, p, o in o_graph.triples(((uri, SKOS.altLabel, None)))]
+    # if alt_terms:
+    #     html_str += '<div class="altlabel">\n'
+    #     html_str += '<p>skos:altLabel</p>[\n'
+    #     for x in alt_terms:
+    #         html_str += '<p>%s</p>\n' % (x)
+    #     html_str += ']</div>\n'
     return html_str
 
 
