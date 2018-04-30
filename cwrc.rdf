@@ -517,7 +517,7 @@
   <owl:Class rdf:ID="Organization">
     <rdfs:label xml:lang="en">organization</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en"/>A social or corporate institution such as a publisher, school, political group, or company.</skos:definition>
+    <skos:definition xml:lang="en">A social or corporate institution such as a publisher, school, political group, or company.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <owl:sameAs rdf:resource="http://schema.org/Organization"/>
     <owl:sameAs rdf:resource="http://xmlns.com/foaf/spec/#term_Organization"/>
@@ -901,7 +901,7 @@
     <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:label xml:lang="en">has education</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en"/>Links a person to information about their education in @@#EducationContext@@.</skos:definition>
+    <skos:definition xml:lang="en">Links a person to information about their education in @@#EducationContext@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -921,7 +921,7 @@
   <owl:ObjectProperty rdf:ID="hasAward">
     <rdfs:label xml:lang="en">has award</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en"/>Indicates an award, prize, or recognition that a person has won, such as a literary award or an @@#educationalAwardPrize@@.</skos:definition>
+    <skos:definition xml:lang="en">Indicates an award, prize, or recognition that a person has won, such as a literary award or an @@#educationalAwardPrize@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#EducationalAward"/>
     <owl:inverseOf>
@@ -6011,7 +6011,7 @@
   <owl:ObjectProperty rdf:ID="guardianOf">
     <rdfs:label xml:lang="en">guardian of</rdfs:label>
     <rdfs:label xml:lang="fr">tuteur (‑trice) / gardien (ne)</rdfs:label>
-    <skos:definition xml:lang="en">
+    <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr">Une personne placé en charge du bienfait d'un personne mineure.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdfs:subPropertyOf rdf:resource="#interpersonalRelationship"/>
