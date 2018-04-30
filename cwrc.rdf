@@ -1796,6 +1796,7 @@
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <cwrc:representedBy rdf:resource="#jewishLabel"/>
+    <skos:broaderTransitive rdf:resource="#jewishEthnicity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Ethnicity>
@@ -1904,6 +1905,7 @@
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Sephardi_Jews"/>
     <skos:inScheme rdf:resource="#Ethnicity"/>
+    <skos:broaderTransitive rdf:resource="#jewishEthnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
