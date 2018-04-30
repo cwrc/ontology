@@ -253,7 +253,7 @@
   <owl:ObjectProperty rdf:about="#represents">
     <rdfs:label xml:lang="en">represents</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates particularly contested concepts to ambiguous or overloaded terms, classed as @@#TextLabel@@, that also represent one or more related concepts.  For instance, @@#englishLabel@@ is a @@#TextLabel@@ that represents both @@#englishNationalIdentity@@ and @@#englishNationalHeritage@@.</skos:definition>
+    <skos:definition xml:lang="en">Relates particularly contested concepts to ambiguous or overloaded terms, classed as @@#TextLabels@@, that also represent one or more related concepts.  For instance, @@#englishLabel@@ is a @@#TextLabels@@ that represents both @@#englishNationalIdentity@@ and @@#englishNationalHeritage@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -1189,7 +1189,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:sameAs rdf:resource="http://sws.geonames.org/6269131/"/>
-    <skos:broader rdf:resource="#englishLabel"/>
+    <cwrc:representedBy rdf:resource="#englishLabel"/>
   </cwrc:NationalHeritage>
    <cwrc:NationalHeritage rdf:about="#welshNationalHeritage">
     <rdfs:label xml:lang="en">Welsh</rdfs:label>
@@ -1200,7 +1200,7 @@
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Welsh_people"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broader rdf:resource="#welshLabel"/>
+    <cwrc:representedBy rdf:resource="#welshLabel"/>
     <owl:sameAs rdf:resource="http://sws.geonames.org/2634895/"/>
   </cwrc:NationalHeritage>
 
@@ -1222,7 +1222,7 @@
     <skos:inScheme rdf:resource="#NationalIdentity"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as Jewish or Israeli as a national identity.</skos:definition>
     <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie à ou s'est vu assigner une identité nationale juive ou israélienne.</skos:definition>
-    <skos:broader rdf:resource="#jewishlabel"/>
+    <cwrc:representedBy rdf:resource="#jewishlabel"/>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Israelis"/>
     <skos:relatedMatch rdf:resource="http://dbpedia.org/resource/Zionism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1239,7 +1239,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:sameAs rdf:resource="http://eurovoc.europa.eu/5438"/>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/English_national_identity"/>
-    <skos:broader rdf:resource="#englishLabel"/>
+    <cwrc:representedBy rdf:resource="#englishLabel"/>
   </cwrc:NationalIdentity>
 
   <owl:Class rdf:ID="Language">
@@ -1273,7 +1273,7 @@
     <skos:inScheme rdf:resource="#GeographicHeritage"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labeling as of English heritage in relation to a place, often England.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#englishLabel"/>
+    <cwrc:representedBy rdf:resource="#englishLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:sameAs rdf:resource="http://eurovoc.europa.eu/5438"/>
@@ -1286,7 +1286,7 @@
     <skos:inScheme rdf:resource="#GeographicHeritage"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as of Jewish heritage in relation to a place, which may or may not be Israel.</skos:definition>
     <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie ou s'est vu assigner une identité juive par rapport à un endroit, qui peut ou non être Israël.</skos:definition>
-    <skos:broader rdf:resource="#jewishLabel"/>
+    <cwrc:representedBy rdf:resource="#jewishLabel"/>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Jewish_identity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1326,7 +1326,7 @@
     <skos:definition xml:lang="fr">
       Indique l'identification ou l'assignation au genre masculin, et qui est souvent mais non nécessairement de sexe masculin.
     </skos:definition>
-    <skos:broader rdf:resource="#manlabel"/>
+    <cwrc:representedBy rdf:resource="#manlabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -1342,7 +1342,7 @@
     <skos:definition xml:lang="fr">
       Indique l'identification ou l'assignation au genre féminin, et qui est souvent mais non nécessairement de sexe féminin. «On ne naît pas femme, on le devient»: Simone de Beauvoir, Le deuxième sexe <![CDATA[<a href="#cwrc:c6a678e5-8fc6-41bc-8631-7cfb7116017e"> (1973) </a>]]>
     </skos:definition>
-    <skos:broader rdf:resource="#womanlabel"/>
+    <cwrc:representedBy rdf:resource="#womanlabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -1371,7 +1371,7 @@
     <skos:definition xml:lang="fr">
       Indique une femme cisgenre.
     </skos:definition>
-    <skos:broader rdf:resource="#womanlabel"/>
+    <cwrc:representedBy rdf:resource="#womanlabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -1386,7 +1386,7 @@
     <skos:definition xml:lang="fr">
       Indique un homme cisgenre.
     </skos:definition>
-    <skos:broader rdf:resource="#manlabel"/>
+    <cwrc:representedBy rdf:resource="#manlabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -1416,7 +1416,7 @@
     <skos:definition xml:lang="fr">
       Indique habituellement l'identification en tant qu'homme alors que le sexe «féminin» a été assigné à la naissance. Certains hommes trans renoncent à la mention «trans» et préfèrent utiliser le terme «homme» seul. (<![CDATA[<a href="#cwrc:7b624412-74a3-4560-a038-d59b747ee9c7">TSER, 2017</a>]]>). Cette définition inclut également les garçons trans.
     </skos:definition>
-    <skos:broader rdf:resource="#manlabel"/>
+    <cwrc:representedBy rdf:resource="#manlabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -1432,7 +1432,7 @@
     <skos:definition xml:lang="fr">
       Indique habituellement l'identification en tant que femme alors que le sexe «masculin» a été assigné à la naissance. Certaines femmes trans renoncent à la mention «trans» et préfèrent utiliser le terme «femme» seul. (<![CDATA[<a href="#cwrc:7b624412-74a3-4560-a038-d59b747ee9c7">TSER, 2017</a>]]>). Cette définition inclut également les filles trans.
     </skos:definition>
-    <skos:broader rdf:resource="#womanlabel"/>
+    <cwrc:representedBy rdf:resource="#womanlabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -1447,7 +1447,7 @@
     <skos:definition xml:lang="fr">
       Indique le refus des catégories genrées dominantes et de la cisnormativité, l'identification aux deux, à aucun, ou à une combinaison des rôles genrés dominants. Le terme est fortement associé associé à la fin du 20e siècle et au 21e siècle. Il provient des théories déconstructionnistes et poststructuralistes, et fut formulé pour la première fois par <![CDATA[<a href="#cwrc:fab56e35-9796-4e6d-861d-a6b626f5714d">Teresa de Lauretis lors d'une conférence en 1990</a>]]>. Du fait que le terme «queer» est assez récent, il est toujours sujet à des discussions parmi les chercheurs et les activistes. Même s'il ne possède pas de définition définitive, le terme est de plus en plus utilisé pour référer à une large catégorie de personnes qui ne sont pas «hétérosexuel/les», dans un sens qui va au-delà de l'orientation sexuelle. Selon <![CDATA[<a href="cwrc:825995b3-3b66-4e0a-a62d-d8649aaead78">Judith Butler</a>]]>, l'identité queer ne peut pas être compris comme une essence, mais est plutôt performative et s'actualise à travers des actions, au sein d'une posture délibérément à contre-courant des acceptions traditionnelles du genre. Voir See <![CDATA[<a href="https://fr.wikipedia.org/wiki/Non-binaire">Non-binaire — Wikipédia</a>]]>.
     </skos:definition>
-    <skos:broader rdf:resource="#queerLabel"/>
+    <cwrc:representedBy rdf:resource="#queerLabel"/>
     <rdf:type rdf:resource="http://www.w8.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1611,7 +1611,7 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/White_people"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#RaceColour"/>
-    <skos:broader rdf:resource="#whiteLabel"/>
+    <cwrc:representedBy rdf:resource="#whiteLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broader rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#SkinColorSimpleWhite"/>
@@ -1636,7 +1636,7 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Multiracial"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#RaceColour"/>
-    <skos:broader rdf:resource="#whiteLabel"/>
+    <cwrc:representedBy rdf:resource="#whiteLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broader rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#SkinColorSimpleWhite"/>
@@ -1657,7 +1657,7 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Black_people"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#RaceColour"/>
-    <skos:broader rdf:resource="#blackLabel"/>
+    <cwrc:representedBy rdf:resource="#blackLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:RaceColour>
@@ -1712,7 +1712,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broader rdf:resource="#eurasianLabel"/>
+    <cwrc:representedBy rdf:resource="#eurasianLabel"/>
     <rdfs:subClassOf rdf:resource="#eurasianLabel"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Eurasian_(mixed_ancestry)"/>
   </cwrc:RaceColour>
@@ -1756,7 +1756,7 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/List_of_ethnic_groups_of_Africa"/>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:broader rdf:resource="#blackLabel"/>
+    <cwrc:representedBy rdf:resource="#blackLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Ethnicity>
@@ -1775,7 +1775,7 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/African_Americans"/>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:broader rdf:resource="#blackLabel"/>
+    <cwrc:representedBy rdf:resource="#blackLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Ethnicity>
@@ -1795,7 +1795,7 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Ashkenazi_Jews"/>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:broader rdf:resource="#jewishLabel"/>
+    <cwrc:representedBy rdf:resource="#jewishLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Ethnicity>
@@ -1830,7 +1830,7 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Black_people"/>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:broader rdf:resource="#blackLabel"/>
+    <cwrc:representedBy rdf:resource="#blackLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Ethnicity>
@@ -1922,7 +1922,7 @@
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:broader rdf:resource="#whiteLabel"/>
+    <cwrc:representedBy rdf:resource="#whiteLabel"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/White_people"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1957,7 +1957,7 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Jews"/>
-    <skos:broader rdf:resource="#jewishLabel"/>
+    <cwrc:representedBy rdf:resource="#jewishLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
    </cwrc:Ethnicity>
@@ -2262,7 +2262,7 @@
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
-    <skos:broader rdf:resource="#jewishLabel"/>
+    <cwrc:representedBy rdf:resource="#jewishLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broaderTransitive rdf:resource="#abrahamicReligions"/>
@@ -5852,10 +5852,8 @@
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of whiteness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "White" (e.g. @@#whiteEthnicity@@, @@#whiteRaceColour@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'Étiquettes Textuelles, cette étiquette discursive reflète l'ambiguité de la blancheur de peau en tant que charactérique physique associée à diverses formes culturelles. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «blanches" (par exemple @@#whiteEthnicity@@, @@#whiteRaceColour@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
-    <owl:oneOf rdf:parseType="Collection">
-      <owl:Thing rdf:about="#whiteEthnicity"/>
-      <owl:Thing rdf:about="#whiteRaceColour"/>
-    </owl:oneOf>
+    <cwrc:represents rdf:resource="#whiteEthnicity"/>
+    <cwrc:represents rdf:resource="#whiteRaceColour"/>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5867,10 +5865,8 @@
     <foaf:name xml:lang="en">black</foaf:name>
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of blackness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "Black" (e.g. @@#blackEthnicity@@, @@#blackRaceColour@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la noirceur de peau en tant que charactérique physique associée à diverses formes culturelles. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «noires» (par exemple @@#blackEthnicity@@, @@#blackRaceColour@@).</skos:definition>
-    <owl:oneOf rdf:parseType="Collection">
-      <owl:Thing rdf:about="#blackEthnicity"/>
-      <owl:Thing rdf:about="#blackRaceColour"/>
-    </owl:oneOf>
+    <cwrc:represents rdf:resource="#blackEthnicity"/>
+    <cwrc:represents rdf:resource="#blackRaceColour"/>
     <rdf:type rdf:resource="#TextLabels"/>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5882,9 +5878,7 @@
     <rdfs:label xml:lang="fr">identité Eurasian</rdfs:label>
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of the term eurasian as associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "Eurasian" (e.g. @@#eurasianRace@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité du terme «eurasien·ne». Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «eurasiennes» (par exemple @@#eurasianRace@@)</skos:definition>
-    <owl:oneOf rdf:parseType="Collection">
-      <owl:Thing rdf:about="#eurasianRace"/>
-    </owl:oneOf>
+    <cwrc:represents rdf:resource="#eurasianRace"/>
     <rdf:type rdf:resource="#TextLabels"/>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5898,13 +5892,11 @@
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of Jewishness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "Jewish" (e.g. @@#jewishNationalIdentity@@, @@#jewishRaceColour@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la juidaïcité. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «juives» (par exemple @@#jewishNationalIdentity@@, @@#jewishRaceColour@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
-    <owl:oneOf rdf:parseType="Collection">
-      <owl:Thing rdf:about="#judaism"/>
-      <owl:Thing rdf:about="#jewishRaceColour"/>
-      <owl:Thing rdf:about="#jewishEthnicity"/>
-      <owl:Thing rdf:about="#jewishGeographicHeritage"/>
-      <owl:Thing rdf:about="#jewishNationalIdentity"/>
-    </owl:oneOf>
+    <cwrc:represents rdf:resource="#judaism"/>
+    <cwrc:represents rdf:resource="#jewishRaceColour"/>
+    <cwrc:represents rdf:resource="#jewishEthnicity"/>
+    <cwrc:represents rdf:resource="#jewishGeographicHeritage"/>
+    <cwrc:represents rdf:resource="#jewishNationalIdentity"/>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5917,12 +5909,10 @@
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of Englishness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "English" (e.g. @@#englishNationalIdentity@@, @@#englishGeographicHeritage@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité du terme «anglais·e». Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «anglaises» (par exemple @@#englishNationalIdentity@@, @@#englishGeographicHeritage@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
-    <owl:oneOf rdf:parseType="Collection">
-      <owl:Thing rdf:about="#EnglishNationalHeritage"/>
-      <owl:Thing rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
-      <owl:Thing rdf:about="#EnglishNationalIdentity"/>
-      <owl:Thing rdf:about="#englishGeographicHeritage"/>
-    </owl:oneOf>
+    <cwrc:represents rdf:resource="#EnglishNationalHeritage"/>
+    <cwrc:represents rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <cwrc:represents rdf:resource="#EnglishNationalIdentity"/>
+    <cwrc:represents rdf:resource="#englishGeographicHeritage"/>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5939,11 +5929,9 @@
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of manhood, masculinity, or maleness as associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "man" (e.g. @@#man@@, @@#cisMan@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la masculinité, ou de la virilité. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «masculines» (par exemple @@#man@@, @@#cisMan@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
-    <owl:oneOf rdf:parseType="Collection">
-      <owl:Thing rdf:about="#man"/>
-      <owl:Thing rdf:about="#cisMan"/>
-      <owl:Thing rdf:about="#transMan"/>
-    </owl:oneOf>
+    <cwrc:represents rdf:resource="#man"/>
+    <cwrc:represents rdf:resource="#cisMan"/>
+    <cwrc:represents rdf:resource="#transMan"/>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5956,12 +5944,10 @@
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of womanhood, femininity, or femaleness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "woman" (e.g. @@#woman@@, @@#transWoman@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la féminité. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «féminines» (par exemple @@#woman@@, @@#transWoman@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
-    <owl:oneOf rdf:parseType="Collection">
-      <owl:Thing rdf:about="#woman"/>
-      <owl:Thing rdf:about="#cisWoman"/>
-      <owl:Thing rdf:about="#transWoman"/>
-      <owl:Thing rdf:about="#lesbian"/>
-    </owl:oneOf>
+    <cwrc:represents rdf:resource="#woman"/>
+    <cwrc:represents rdf:resource="#cisWoman"/>
+    <cwrc:represents rdf:resource="#transWoman"/>
+    <cwrc:represents rdf:resource="#lesbian"/>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5973,9 +5959,7 @@
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of queerness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "Queer" (e.g. @@#GenderQueer@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="#TextLabels"/>
-    <owl:oneOf rdf:parseType="Collection">
-      <owl:Thing rdf:about="#GenderQueer"/>
-    </owl:oneOf>
+    <cwrc:represents rdf:resource="#GenderQueer"/>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -7068,7 +7052,7 @@
     <skos:inScheme rdf:resource="#GeographicHeritage"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <skos:broader rdf:resource="#englishLabel"/>
+    <cwrc:representedBy rdf:resource="#englishLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:sameAs rdf:resource="http://eurovoc.europa.eu/5438"/>
@@ -7258,7 +7242,7 @@
       <foaf:name xml:lang="en">Jewish (Ethnicity)</foaf:name>
       <skos:definition xml:lang="en"/>
       <skos:definition xml:lang="fr"/>
-      <skos:broader rdf:resource="#jewishLabel"/>
+      <cwrc:representedBy rdf:resource="#jewishLabel"/>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
       <void:inDataset rdf:resource="#datasetdefinition"/>
       <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#jewishEthnicity@@.</rdfs:comment>
@@ -7288,7 +7272,7 @@
       <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:inScheme rdf:resource="#Religion"/>
-      <skos:broader rdf:resource="#jewishLabel"/>
+      <cwrc:representedBy rdf:resource="#jewishLabel"/>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
       <void:inDataset rdf:resource="#datasetdefinition"/>
       <skos:broaderTransitive rdf:resource="#abrahamicReligions"/>
