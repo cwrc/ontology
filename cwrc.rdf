@@ -6002,7 +6002,7 @@
   <owl:ObjectProperty rdf:ID="hasGuardian">
     <rdfs:label xml:lang="en">has guardian</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Describes a person (usually a minor) placed in the charge of another, usually an adult. This term stretches beyond the legal definition of &quot;guardian&quot; to include a broader social relation between dependant and dependee (e.g.: <![CDATA[<i>in loco parentis</i>]]>)</skos:definition>
+    <skos:definition xml:lang="en">Relates a person (usually a minor) to another, usually an adult who is charged with their care. This term stretches beyond the legal definition of &quot;guardian&quot; to include a broader social relation between dependant and dependee (e.g.: <![CDATA[<i>in loco parentis</i>]]>)</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -6050,7 +6050,7 @@
   <owl:ObjectProperty rdf:ID="hasSister">
     <rdfs:label xml:lang="en">has sister</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">A relationship to the subject that describes a female-identifying sibling. Although the term typically refers to consanguineal relationships, it is often used to describe relatioships beyond &quot;blood ties.&quot;
+    <skos:definition xml:lang="en">Relates a person to a female-identified sibling. Although the term typically refers to consanguineal relationships, it is often used to describe relatioships beyond &quot;blood ties&quot;.
     </skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6076,7 +6076,7 @@
   <owl:ObjectProperty rdf:ID="hasBrother">
     <rdfs:label xml:lang="en">has Brother</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">A relationship to the subject that describes a male-identifying sibling. Although the term typically refers to consanguineal relationships, it is often used to describe relatioships beyond &quot;blood ties.&quot;
+    <skos:definition xml:lang="en">Relates a person to a male-identified sibling. Although the term typically refers to consanguineal relationships, it is often used to describe relatioships beyond &quot;blood ties.&quot;
     </skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6103,7 +6103,7 @@
   <owl:ObjectProperty rdf:ID="hasStepSister">
     <rdfs:label xml:lang="en">has stepsister</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">A relationship to the subject that describes a female-identifying stepsibling, that is, a child of the subject&apos;s stepparent.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to a female-identified stepsibling, that is, a child of the person&apos;s stepparent.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepsibling"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6129,7 +6129,7 @@
   <owl:ObjectProperty rdf:ID="hasStepBrother">
     <rdfs:label xml:lang="en">has stepbrother</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:definition xml:lang="en">A relationship to the subject that describes a male-identifying stepsibling, that is, a child of the subject&apos;s stepparent.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to a male-identified stepsibling, that is, a child of the person&apos;s stepparent.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepsibling"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6153,7 +6153,7 @@
   <owl:ObjectProperty rdf:ID="hasChild">
     <rdfs:label xml:lang="en">has child</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Describes the subject as having a child, consaguinally related or otherwise.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to a child, consanguineal or otherwise.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6176,7 +6176,7 @@
   <owl:ObjectProperty rdf:ID="hasDaughter">
     <rdfs:label xml:lang="en">has daughter</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Describes the subject as having a female-identified child, consaguinally related or otherwise.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to a female-identified child, consanguineal or otherwise.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Daughter"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6202,7 +6202,7 @@
   <owl:ObjectProperty rdf:ID="hasSon">
     <rdfs:label xml:lang="en">has son</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Describes the subject as having a male-identified child, consaguinally related or otherwise.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to a male-identified child, consanguineal or otherwise.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6227,7 +6227,7 @@
   <owl:ObjectProperty rdf:ID="hasGrandChild">
     <rdfs:label xml:lang="en">has grandchild</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates the subject to a child of their child.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to a child of a person's child.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Family#Roles"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6251,7 +6251,7 @@
   <owl:ObjectProperty rdf:ID="hasGrandDaughter">
     <rdfs:label xml:lang="en">has granddaughter</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates the subject to a female-identified child of their child.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to a female-identified child of a person's child.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Family#Roles"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6275,7 +6275,7 @@
   <owl:ObjectProperty rdf:ID="hasGrandSon">
     <rdfs:label xml:lang="en">has grandson</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates the subject to a male-identified child of their child.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to a male-identified child of a person's child.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Family#Roles"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6299,7 +6299,7 @@
   <owl:ObjectProperty rdf:ID="hasStepChild">
     <rdfs:label xml:lang="en">has stepchild</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates a subject to the child of their spouse, but is not what is commonly referred to as the &quot;biological parent&quot; of said child.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to the child of that person's spouse, in contrast to what is commonly referred to as the &quot;biological parent&quot; of said child.</skos:definition>
     <skos:definition xml:lang="fr"/>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6325,7 +6325,7 @@
   <owl:ObjectProperty rdf:ID="hasStepDaughter">
     <rdfs:label xml:lang="en">has stepdaughter</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates a subject to the female-identified child of their spouse, but is not what is commonly referred to as the &quot;biological parent&quot; of said child.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to a female-identified child of that person's spouse, in contrast to what is commonly referred to as the &quot;biological parent&quot; of said child.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepchild"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6352,7 +6352,7 @@
   <owl:ObjectProperty rdf:ID="hasStepSon">
     <rdfs:label xml:lang="en">has stepson</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates a subject to the male-identified child of their spouse, but is not what is commonly referred to as the &quot;biological parent&quot; of said child.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to a male-identified child of that person's spouse, in contrast to what is commonly referred to as the &quot;biological parent&quot; of said child.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepchild"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6377,7 +6377,7 @@
   <owl:ObjectProperty rdf:ID="hasParent">
     <rdfs:label xml:lang="en">has parent</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates the subject to their father, mother, or, in certain cases, their guardian.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to their father, mother, or, in certain cases, their guardian.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6403,7 +6403,7 @@
   <owl:ObjectProperty rdf:ID="hasMother">
     <rdfs:label xml:lang="en">has mother</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates the subject to their mother, the female-identified parent, consanguinally related or otherwise.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to their mother, the female-identified parent, consanguineal or otherwise.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6429,7 +6429,7 @@
 <owl:ObjectProperty rdf:ID="hasFather">
     <rdfs:label xml:lang="en">has father</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates the subject to their father, the male-identified parent, consanguinally related or otherwise.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to their father, the male-identified parent, consanguineal or otherwise.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Father"/>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6454,7 +6454,7 @@
   <owl:ObjectProperty rdf:ID="hasStepParent">
     <rdfs:label xml:lang="en">has stepparent</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates the subject to their stepparent, that is, a parent married to the subject's so-called &quot;biological parent&quot; but not related to the subject consanguinally themselves.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to their stepparent, that is, a parent married to that person's so-called &quot;biological parent&quot;, in contrast to a consanguineal relationship.</skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepfather"/>
     <skos:definition xml:lang="fr"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -6480,7 +6480,7 @@
   <owl:ObjectProperty rdf:ID="hasStepMother">
     <rdfs:label xml:lang="en">has stepmother</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates the subject to their stepmother, that is, a parent married to the subject's so-called &quot;biological parent&quot; but not related to the subject consanguinally themselves.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to their stepmother, that is, a parent married to that person's so-called &quot;biological parent&quot;, in contrast to a consanguineal relationship.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -6507,7 +6507,7 @@
   <owl:ObjectProperty rdf:ID="hasStepFather">
     <rdfs:label xml:lang="en">has stepfather</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates the subject to their stepfather, that is, a parent married to the subject's so-called &quot;biological parent&quot; but not related to the subject consanguinally themselves.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to their stepfather, that is, a parent married to that person's so-called &quot;biological parent&quot;, in contrast to a consanguineal relationship.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -6536,7 +6536,7 @@
   <owl:ObjectProperty rdf:ID="hasGrandParent">
     <rdfs:label xml:lang="en">has grandparent</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates the subject to the parent of their mother or father.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to the parent of their mother or father.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Grandparent"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -6560,7 +6560,7 @@
   <owl:ObjectProperty rdf:ID="hasGrandMother">
     <rdfs:label xml:lang="en">has grandmother</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates the subject to the mother of their mother or father.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to the mother of their mother or father.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Grandparent"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -6584,7 +6584,7 @@
   <owl:ObjectProperty rdf:ID="hasGrandFather">
     <rdfs:label xml:lang="en">has grandfather</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates the subject to the father of their mother or father.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to the father of their mother or father.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6609,7 +6609,7 @@
     <rdfs:label xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:definition xml:lang="en">Relates the subject to the sister of their father or mother, but can also refer to any materteral relationship with the subject and need not be reduced to a consanguinal relation.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to the sister of their father or mother, but can also refer to any materteral relationship and need not be restricted to a consanguineal relation.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -6633,7 +6633,7 @@
   <owl:ObjectProperty rdf:ID="hasUncle">
     <rdfs:label xml:lang="en">has uncle</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates the subject to the sister of their father or mother, but can also refer to any avuncular relationship with the subject and need not be reduced to a consanguinal relation.
+    <skos:definition xml:lang="en">Relates a person to the sister of their father or mother, but can also refer to any avuncular relationship and need not be restricted to a consanguineal relation.
     </skos:definition>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Uncle"/>
@@ -6661,7 +6661,7 @@
   <owl:ObjectProperty rdf:ID="hasNiece">
     <rdfs:label xml:lang="en">has niece</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates the subject to the daughter of their sibling.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to the daughter of their sibling.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6687,7 +6687,7 @@
   <owl:ObjectProperty rdf:ID="hasNephew">
     <rdfs:label xml:lang="en">has nephew</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates the subject to the son of their sibling.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to the son of their sibling.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6713,7 +6713,7 @@
   <owl:ObjectProperty rdf:ID="hasCousin">
     <rdfs:label xml:lang="en">has cousin</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates a subject to the child of their aunt or uncle; a person belonging to the same extended family, whether consanguinally or otherwise.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to the child of their aunt or uncle; a person belonging to the same extended family, consanguineal or otherwise.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6740,7 +6740,7 @@
   <owl:ObjectProperty rdf:ID="hasPartner">
     <rdfs:label xml:lang="en">has partner</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition>Relates a subject to a romantic, emotional, or spousal relationship with a person.</skos:definition>
+    <skos:definition>Relates two people through a romantic, emotional, or spousal relationship. Distinct from a business or corporate partnership.</skos:definition>
     <skos:definition xml:lang="fr">Ce terme représente uniquement les relations affectives, amoureuses ou familiales et non des relations d'affaires.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6765,7 +6765,7 @@
   <owl:ObjectProperty rdf:ID="hasWife">
     <rdfs:label xml:lang="en">has wife</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates the subject to a female-identified partner in a marital relationship.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to a female-identified partner in a marital relationship.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Wife"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -6792,7 +6792,7 @@
   <owl:ObjectProperty rdf:ID="hasHusband">
     <rdfs:label xml:lang="en">has husband</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates the subject to a male-identified partner in a marital relationship.</skos:definition>
+    <skos:definition xml:lang="en">Relates a person to a male-identified partner in a marital relationship.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
