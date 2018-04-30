@@ -5997,18 +5997,6 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="forebearOf">
-    <rdfs:label xml:lang="en">forebear of</rdfs:label>
-    <rdfs:label xml:lang="fr">ancêtre de</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
-    <owl:inverseOf rdf:resource="#hasForebear"/>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </owl:ObjectProperty>
-
   <owl:ObjectProperty rdf:ID="hasGuardian">
     <rdfs:label xml:lang="en">has guardian</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -6839,6 +6827,20 @@
 
 <!-- All Deprecated things(properties, classes, instances in that order) -->
   <!-- Deprecated Properties -->
+  <owl:ObjectProperty rdf:ID="forebearOf">
+    <rdfs:label xml:lang="en">forebear of</rdfs:label>
+    <rdfs:label xml:lang="fr">ancêtre de</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:comment xml:lang="en">Deprecated, with no current equivalence.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver sans équivalence.</rdfs:comment>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+  </owl:ObjectProperty>
   <owl:DeprecatedProperty rdf:ID="literalForm">
     <rdfs:label xml:lang="en">has literal form</rdfs:label>
     <rdfs:label xml:lang="fr">a une forme littérale</rdfs:label>
@@ -6851,7 +6853,8 @@
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
   </owl:DeprecatedProperty>
-  <owl:DeprecatedProperty rdf:ID="personalProperty">
+  <!-- Possibly to be undeprecated -->
+  <owl:DeprecatedProperty rdf:ID="personalProperty"> 
     <rdfs:label xml:lang="en">personal property</rdfs:label>
     <rdfs:label xml:lang="fr">propriété personnelle</rdfs:label>
     <skos:definition xml:lang="en">A property that is ascribed to a person.</skos:definition>
