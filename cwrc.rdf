@@ -854,7 +854,7 @@
     <owl:Class rdf:ID="EducationContext">
     <rdfs:label xml:lang="en">education context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte éducatif</rdfs:label>
-    <skos:definition xml:lang="en">This optional attribute attached to Education records the mode of education and allows us to distinguish the important material effects between a domestic and an institutional education. This attribute allows us to trace the historical developments in women's access to education, for example, the informal domestic education of women writers in the early periods versus women's entrance to post-secondary education in the twentieth century.</skos:definition>
+    <skos:definition xml:lang="en">Education Context is a significant subclass of context. It has subclasses for @@#DomesticEducationContext@@, @@#InstitutionalEducationContext@@, and @@#SelfTaughtEducationContext@@. Annotations typed as Education Context or a subclass provide information about and discussions of a person's education, whether formal or informal.</skos:definition>
     <skos:definition xml:lang="fr">Cet attribut facultatif attaché à Éducation renseigne le mode d'éducation et distingue l'incidence matérielle significative en fonction d'une éducation domestique et une éducation institutionnelle. L'attribut permet de retracer l'évolution de l'accès des femmes à l'éducation au cours de l'Histoire, en opposant par exemple l'éducation domestique informelle des auteures des périodes antérieures avec l'entrée des femmes dans les établissements post-secondaires au XXe siècle.</skos:definition>
     <rdfs:subClassOf rdf:resource="#Context"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -867,7 +867,7 @@
     <rdfs:subClassOf>
       <owl:Class rdf:about="#EducationContext"/>
     </rdfs:subClassOf>
-    <skos:definition xml:lang="en">Education or learning conducted independently.</skos:definition>
+    <skos:definition xml:lang="en">Education context related to learning conducted independently.</skos:definition>
     <skos:definition xml:lang="fr">Éducation ou apprentissage acquis en autodidacte.</skos:definition>
     <skos:related rdf:resource="https://en.wikipedia.org/wiki/Autodidacticism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -878,7 +878,7 @@
     <rdfs:label xml:lang="en">domestic education context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte éducatif domestique</rdfs:label>
     <rdfs:subClassOf rdf:resource="#EducationContext"/>
-    <skos:definition xml:lang="en">Education that takes place at home. For example, if a woman writer in the Victorian period was taught by her brother or a governess.</skos:definition>
+    <skos:definition xml:lang="en">Context for education that takes place at home. For example, of a woman writer in the Victorian period taught by her brother or a governess.</skos:definition>
     <skos:definition xml:lang="fr">L'éducation a lieu à domicile. Par exemple, une auteure de la période victorienne qui a reçu son instruction d'un frère ou d'une gouvernante.</skos:definition>
     <skos:closeMatch rdf:resource="https://en.wikipedia.org/wiki/Homeschooling"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -888,7 +888,7 @@
   <owl:Class rdf:ID="InstitutionalEducationContext">
     <rdfs:label xml:lang="en">institutional education context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte éducatif institutionnel</rdfs:label>
-    <skos:definition xml:lang="en">Education or learning that takes place in an institutional setting.</skos:definition>
+    <skos:definition xml:lang="en">Context for education or learning within an institutional setting.</skos:definition>
     <skos:definition xml:lang="fr">L'instruction ou l'apprentissage a lieu dans un cadre institutionnel.</skos:definition>
     <skos:related rdf:resource="https://en.wikipedia.org/wiki/School"/>
     <rdfs:subClassOf rdf:resource="#EducationContext"/>
@@ -901,7 +901,7 @@
     <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:label xml:lang="en">has education</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="en"/>Links a person to information about their education in @@#EducationContext@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -921,7 +921,7 @@
   <owl:ObjectProperty rdf:ID="hasAward">
     <rdfs:label xml:lang="en">has award</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="en"/>Indicates an award, prize, or recognition that a person has won, such as a literary award or an @@#educationalAwardPrize@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#EducationalAward"/>
     <owl:inverseOf>
