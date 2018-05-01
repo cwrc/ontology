@@ -52,30 +52,30 @@ td a:after {
 td a:last-child:after {
     content: none;
 }
-/*.altlabel {
-    display: flex;
+.altlabel {
     font-style: italic;
+    display: none;
 }
 
-.altlabel p:last-child:after {
-    content: none;
+
+.altlabel:first-child p {
+    font-weight: bold;
 }
 
-.altlabel p:first-child:after {
-    font-style: bold;
-    content: none;
-}
-
-.altlabel p:after {
+.altlabel span:after {
     content: ";";
     margin-right: 2px;
 }
-*/
+.altlabel span:last-child:after {
+    content: none;
+}
+
 section .table thead>tr>th, section .table tbody>tr>th, section .table tfoot>tr>th, section .table thead>tr>td, section .table tbody>tr>td, section .table tfoot>tr>td {
     border: none;
     border-top: 1px solid #444;
     border-bottom: 1px solid #444;
-    max-width: 60px; 
+    max-width: 60px;
+    line-break:;
 }
 dl {
     margin: 0;
@@ -96,7 +96,7 @@ p > a[href^="#"] {
   font-style: italic;
 }
 
-p > a[href^="#cwrc:"] {
+p > a[href^="#cwrc:"],p > a[href^="#_"] {
   font-style: normal;
 }
 
@@ -138,6 +138,7 @@ header a, main a {
     color: #000;
     font-weight: bold;
     border-bottom: 1px dashed #999;
+    line-break:;
 }
 
 header a:hover, main a:hover {

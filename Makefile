@@ -67,8 +67,9 @@ $(ONTOLOGY)-preamble-$(O_LANG).html: $(ONTOLOGY)-preamble-template2-$(O_LANG).ht
 figures/religionTaxonomy-$(DATE_W_LANG).svg: cwrc.rdf scripts/createTaxonomy.py
 	python3 scripts/createTaxonomy.py cwrc.rdf Religion $(O_LANG) | unflatten -l 5 -c 10 | dot -o$@ -Tsvg 
 figures/politicalAffiliationTaxonomy-$(DATE_W_LANG).svg: cwrc.rdf scripts/createTaxonomy.py
-	python3 scripts/createTaxonomy.py cwrc.rdf PoliticalAffiliation $(O_LANG) -hide | unflatten -l 20 -c 30 | dot -o$@ -Tsvg 
-	python3 scripts/createTaxonomy.py cwrc.rdf PoliticalAffiliation $(O_LANG) -disconnected | unflatten -l 20 -c 30 | dot -ofigures/d_politicalAffiliationTaxonomy-$(DATE_W_LANG).svg -Tsvg 
+	python3 scripts/createTaxonomy.py cwrc.rdf PoliticalAffiliation $(O_LANG) | unflatten -l 20 -c 30 | dot -o$@ -Tsvg 
+	# python3 scripts/createTaxonomy.py cwrc.rdf PoliticalAffiliation $(O_LANG) -hide | unflatten -l 20 -c 30 | dot -o$@ -Tsvg 
+	# python3 scripts/createTaxonomy.py cwrc.rdf PoliticalAffiliation $(O_LANG) -disconnected | unflatten -l 20 -c 30 | dot -ofigures/d_politicalAffiliationTaxonomy-$(DATE_W_LANG).svg -Tsvg 
 figures/genreTaxonomy-$(DATE_W_LANG).svg: genre.rdf scripts/createTaxonomy.py
 	python3 scripts/createTaxonomy.py genre.rdf LiteraryGenre $(O_LANG) | unflatten -l 20 -c 30 | dot -o$@ -Tsvg 
 
@@ -125,7 +126,7 @@ deploy: all
 	
 	cp -f figures/* /var/www/html/ontology/figures/.	
 	cp -f -R css /var/www/html/ontology/.
-	cp -f -R js /var/www/html/testing/.
+	cp -f -R js /var/www/html/ontology/.
 
 # tests rdf files aren't broken before push, make push --> then commit
 push: cwrc.rdf genre.rdf

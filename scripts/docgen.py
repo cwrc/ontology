@@ -298,13 +298,15 @@ def create_term_main(term, uri):
 
     if comment:
         html_str += get_comment_html(comment)
-    # alt_terms = [o for s, p, o in o_graph.triples(((uri, SKOS.altLabel, None)))]
-    # if alt_terms:
-    #     html_str += '<div class="altlabel">\n'
-    #     html_str += '<p>skos:altLabel</p>[\n'
-    #     for x in alt_terms:
-    #         html_str += '<p>%s</p>\n' % (x)
-    #     html_str += ']</div>\n'
+    alt_terms = [o for s, p, o in o_graph.triples(((uri, SKOS.altLabel, None)))]
+    if alt_terms:
+        html_str += '<div class="altlabel">\n'
+        html_str += '<p>[skos:altLabel: \n'
+        html_str += '\n'
+        for x in alt_terms:
+            html_str += '<span>%s</span>\n' % (x)
+        html_str += ']</p>\n'
+        html_str += '</div>\n'
     return html_str
 
 
@@ -575,11 +577,11 @@ def get_dep_term_html(term_dict):
     if replacement:
         if spec_pre in replacement:
             html_str += """<p class="uri">Replaced by: <a href="#%s">%s</a></p>\n""" % (replacement.split("#")[
-                1], replacement)
+                1], get_prefix(replacement))
         else:
             if replacement != "None":
                 html_str += """<p class="uri">Replaced by: <a href="%s">%s</a></p>\n""" % (
-                    replacement, replacement)
+                    replacement, get_prefix(replacement))
 
     html_str += "</div>\n"
     return html_str
@@ -666,7 +668,7 @@ def get_contributors():
     for x in name_list:
         html_str += "<dd>\n"
         if names[x] != 'None':
-            html_str += '<a href="%s">%s</a>' % (names[x], x)
+            html_str += '<a href="%s" target="_blank">%s</a>' % (names[x], x)
         else:
             html_str += x
         html_str += "</dd>\n"
@@ -692,7 +694,7 @@ def get_authors_html():
     for x in name_list:
         html_str += "<dd>\n"
         if names[x] != 'None':
-            html_str += '<a href="%s">%s</a>' % (names[x], x)
+            html_str += '<a href="%s" target="_blank">%s</a>' % (names[x], x)
         else:
             html_str += x
         html_str += "</dd>\n"
@@ -748,22 +750,32 @@ def get_header_html():
         prior = header["prior"][0]
         html_str += """<dt>%s:</dt>\n""" % trans_dict["previous_ver"][l_index]
         html_str += """<dd><a href="%s">%s</a>\n""" % (prior, prior)
-        html_str += """(<a href="%s.owl">owl - rdf/xml</a>, """ % (prior)
+        html_str += """(<a href="%s.rdf">owl - rdf/xml</a>, """ % (prior)
         html_str += """<a href="%s.ttl">ttl</a>, <a href="%s.nt">nt</a>)\n""" % (prior, prior)
         html_str += """</dd>\n"""
 
     html_str += """<dt>%s:</dt>\n""" % (trans_dict["current_ver"][l_index])
     html_str += """<dd><a href="%s.html">%s.html</a>\n""" % (curr_url, curr_url)
-    html_str += """(<a href="%s.owl">owl-rdf/xml</a>,\n""" % (curr_url)
+    html_str += """(<a href="%s.rdf">owl-rdf/xml</a>,\n""" % (curr_url)
     html_str += """<a href="%s.ttl">ttl</a>,\n""" % (curr_url)
     html_str += """<a href="%s.nt">nt</a>)\n""" % (curr_url)
     html_str += """</dd>\n"""
 
     html_str += """<dt>%s:</dt>\n""" % (trans_dict["latest_ver"][l_index])
-    html_str += """<dd><a href="%s.html">%s.html</a>\n""" % (latest_url, latest_url)
-    html_str += """(<a href="%s.owl">owl-rdf/xml</a>,\n""" % (latest_url)
+    if lang == "en":
+        html_str += """<dd><a href="%s.html">%s.html</a>\n""" % (latest_url, latest_url)
+    else:
+        html_str += """<dd><a href="%s-FR.html">%s.html</a>\n""" % (latest_url, latest_url)
+
+    html_str += """(<a href="%s.rdf">owl-rdf/xml</a>,\n""" % (latest_url)
     html_str += """<a href="%s.ttl">ttl</a>,\n""" % (latest_url)
     html_str += """<a href="%s.nt">nt</a>)\n""" % (latest_url)
+
+    if lang == "en":
+        html_str += """<a href="%s-FR.html">(Version %s)</a>\n""" % (latest_url, version_type)
+    else:
+        html_str += """<a href="%s.html">(Version %s)</a>\n""" % (latest_url, version_type)
+
     html_str += """</dd>\n"""
     html_str += """<dt>%s: %s</dt>\n""" % (trans_dict["last_ver"][l_index], header["version"][0])
     html_str += """<dd>Date: %s</dd>\n""" % header["date_str"]
@@ -772,7 +784,7 @@ def get_header_html():
     html_str += "<dt>%s:</dt>\n" % trans_dict["subjects"][l_index]
     for subj in header["subj"]:
         html_str += "<dd>\n"
-        html_str += '<a href="%s">%s</a>' % (subj, get_webpage_title(subj))
+        html_str += '<a href="%s" target="_blank">%s</a>' % (subj, get_webpage_title(subj))
         html_str += "</dd>\n"
 
     html_str += "</dl>\n"
