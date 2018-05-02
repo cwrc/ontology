@@ -728,7 +728,7 @@ def get_header_html():
                                                        trans_dict["specification"][l_index],
                                                        header["version"][0])
     if header["logo"]:
-        html_str += """<img src="%s" align="right" width="350"/>\n""" % header["logo"][0]
+        html_str += """<img src="%s" class="logo" width="350"/>\n""" % header["logo"][0]
 
     html_str += """<h2 id="subtitle">%s</h2>\n""" % header["desc"][0]
     html_str += """<h3 id="mymw-doctype">%s &mdash; %s""" % (trans_dict["draft"][l_index], header["date_str"])
