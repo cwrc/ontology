@@ -6332,7 +6332,7 @@
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:subPropertyOf rdf:resource="#hasStepChild"/>
-    <skos:related rdf:resource="https://schema.org/children"/>
+	<skos:related rdf:resource="https://schema.org/children"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepDaughterOf">
@@ -6460,7 +6460,8 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#hasRelative"/>
-    <skos:broader rdf:resource="http://schema.org/parent"/>
+	<skos:broader rdf:resource="http://schema.org/parent"/>
+	<owl:inverseOf rdf:resource="#hasStepChild"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepParentOf">
