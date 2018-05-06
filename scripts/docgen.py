@@ -16,6 +16,8 @@ lang = None
 bibo_nodes = None
 o_graph = None
 deprecated_uris = None
+inverse_r = None
+symmetric_r = None
 
 # Important nspaces
 RDF = rdflib.Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
@@ -51,6 +53,25 @@ term_ignore_uris = [rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-
     'http://rdfs.org/ns/void#inDataset'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#isDefinedBy')]
 
 
+def parse_relations():
+    import json
+    import os.path
+    # TODO add error handling for missing relation json file
+    with open(os.path.join(os.path.dirname(__file__), 'relations.json')) as f:
+        data = json.load(f)
+
+    global inverse_r
+    global symmetric_r
+    inverse_r = data["inverse"]
+    symmetric_r = [rdflib.term.URIRef(x) for x in data["symmetric"]]
+    expand_symmetric_r()
+
+
+def expand_symmetric_r():
+    global symmetric_r
+    symmetric_r += set(sorted(o_graph.subjects(None, OWL.SymmetricProperty)))
+
+
 def print_usage():
     script = sys.argv[0]
     print("Usage:")
@@ -66,27 +87,30 @@ def print_usage():
     sys.exit(-1)
 
 
-def get_domain_range_dict():
-    range_list = set(sorted(o_graph.objects(None, RDFS.range)))
-    domain_list = set(sorted(o_graph.objects(None, RDFS.domain)))
+def create_symmetric_dict():
+    symmetric_dict = {}
+    for x in symmetric_r:
+        symmetric_dict[str(x)] = {}
+        for s, p, o in o_graph.triples(((None, x, None))):
+            symmetric_dict[str(x)][str(o)] = str(s)
+    return(symmetric_dict)
 
-    domain_dict = {}
-    for domain_class in domain_list:
-        query_str = "select ?x where {?x rdfs:domain <" + str(domain_class) + ">}"
-        domain_dict[str(domain_class)] = [str(row.x)
+
+def create_inverse_dict():
+    inverse_dict = {}
+    for x in inverse_r.keys():
+        temp_list = [y for y in set(sorted(o_graph.objects(None, rdflib.term.URIRef(x)))) if spec_url in y]
+        temp_dict = {}
+        for temp_class in temp_list:
+            query_str = "select ?x where {?x <" + x + "> <" + str(temp_class) + ">}"
+            temp_dict[str(temp_class)] = [str(row.x)
                                           for row in o_graph.query(query_str) if str(row.x) not in deprecated_uris]
-        if domain_dict[str(domain_class)] == []:
-            del domain_dict[str(domain_class)]
+            if temp_dict[str(temp_class)] == []:
+                del temp_dict[str(temp_class)]
 
-    range_dict = {}
-    for range_class in range_list:
-        query_str = "select ?x where {?x rdfs:range <" + str(range_class) + ">}"
-        range_dict[str(range_class)] = [str(row.x)
-                                        for row in o_graph.query(query_str) if str(row.x) not in deprecated_uris]
-        if range_dict[str(range_class)] == []:
-            del range_dict[str(range_class)]
+        inverse_dict[x] = temp_dict
 
-    return domain_dict, range_dict
+    return(inverse_dict)
 
 
 def get_uri_term(uri):
@@ -257,6 +281,8 @@ def specgen(template, language):
     global spec_ns
     global ns_list
     global namespace_dict
+    global symmetric_dict
+    global inverse_dict
 
     # getting all namespaces from o_graph
     all_ns = [n for n in o_graph.namespace_manager.namespaces()]
@@ -271,9 +297,10 @@ def specgen(template, language):
     spec_ns = rdflib.Namespace(spec_url)
     deprecated_html = create_deprecated_html(o_graph)
 
-    global domain_dict
-    global range_dict
-    domain_dict, range_dict = get_domain_range_dict()
+    parse_relations()
+    symmetric_dict = create_symmetric_dict()
+    inverse_dict = create_inverse_dict()
+
     azlist_html = newAZ(get_high_lvl_nodes())
     terms_html = all_terms_html(get_high_lvl_nodes())
     # bibliography_html = all_terms_html(bibo_nodes)
@@ -357,7 +384,9 @@ def create_term_extra(term_dict, uri, term):
             html_str += ' '
         html_str += "</td>"
         html_str += "</tr>\n"
-    html_str += create_term_domran(uri)
+    html_str += create_term_symmetric_html(uri)
+    html_str += create_term_inverse_html(uri)
+
     instance_list = [get_uri_term(str(s)) for s, p, o in o_graph.triples(
         (None, RDF.type, uri)) if str(s) not in deprecated_uris]
     if instance_list:
@@ -372,34 +401,39 @@ def create_term_extra(term_dict, uri, term):
     return html_str
 
 
-def create_term_domran(uri):
+def create_term_inverse_html(uri):
     html_str = ""
-    if str(uri) in domain_dict:
-        html_str += "<tr>\n"
-        html_str += """<th>Within Domain:</th>\n"""
-        html_str += """<td>\n"""
-        for x in domain_dict[str(uri)]:
-            if str(x) not in deprecated_uris:
-                html_str += '<a href="%s" title="%s">%s</a> ' % (get_link(x),
-                                                                 str(get_label_dict(rdflib.term.URIRef(x))), get_prefix(x))
-        html_str += "</td>\n"
-        html_str += "</tr>\n"
-    if str(uri) in range_dict:
-        html_str += "<tr>\n"
-        html_str += """<th>Within Range:</th>\n"""
-        html_str += "<td>\n"
-        for x in range_dict[str(uri)]:
-            if str(x) not in deprecated_uris:
-                html_str += '<a href="%s" title="%s">%s</a> ' % (
-                    get_link(x), str(get_label_dict(rdflib.term.URIRef(x))), get_prefix(x))
-        html_str += "</td>\n"
-        html_str += "</tr>\n"
+    for x in inverse_dict.keys():
+        if str(uri) in inverse_dict[x]:
+            html_str += "<tr>\n"
+            html_str += """<th>%s:</th>\n""" % inverse_r[x]
+            html_str += "<td>\n"
+            for y in inverse_dict[x][str(uri)]:
+                if str(y) not in deprecated_uris:
+                    html_str += '<a href="%s" title="%s">%s</a> ' % (
+                        get_link(y), str(get_label_dict(rdflib.term.URIRef(y))), get_prefix(y))
+            html_str += "</td>\n"
+            html_str += "</tr>\n"
+
     return html_str
 
-# def createOneOfCollectionHTML(uri):
-#     p
-#     # if https://www.w3.org/2002/07/owl#oneOf:
-#         # pass
+
+def create_term_symmetric_html(uri):
+    html_str = ""
+    for x in symmetric_dict.keys():
+        if str(uri) in symmetric_dict[x]:
+            html_str += "<tr>\n"
+            html_str += """<th>*%s:</th>\n""" % get_prefix(x)
+            html_str += "<td>\n"
+
+            sym_uri = symmetric_dict[x][str(uri)]
+            if str(sym_uri) not in deprecated_uris:
+                html_str += '<a href="%s" title="%s">%s</a> ' % (
+                    get_link(sym_uri), str(get_label_dict(rdflib.term.URIRef(sym_uri))), get_prefix(sym_uri))
+            html_str += "</td>\n"
+            html_str += "</tr>\n"
+
+    return html_str
 
 
 def create_terms_html(term_list, list_type):
