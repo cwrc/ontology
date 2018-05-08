@@ -258,7 +258,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#representedBy">
-    <rdfs:label xml:lang="en">represents</rdfs:label>
+    <rdfs:label xml:lang="en">represented by</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Relates ambiguous or overloaded terms to two or more particularly contested and related concepts. Often used for @@#CulturalForm@@; for instance @@#englishNationalIdentity@@ and @@#englishNationalHeritage@@ are both represented by @@#englishLabel@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
@@ -6072,7 +6072,7 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasBrother">
-    <rdfs:label xml:lang="en">has Brother</rdfs:label>
+    <rdfs:label xml:lang="en">has brother</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Relates a person to a male-identified sibling. Although the term typically refers to consanguineal relationships, it is often used to describe relationships beyond "blood ties."</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
@@ -6327,7 +6327,6 @@
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepchild"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:subPropertyOf rdf:resource="#hasStepChild"/>
@@ -6354,7 +6353,6 @@
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepchild"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:subPropertyOf rdf:resource="#hasStepChild"/>
