@@ -8,17 +8,22 @@ import argparse
 # Important nspaces
 RDF = rdflib.Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 VANN = rdflib.Namespace("http://purl.org/vocab/vann/")
+
 relations = {
     "broaderTransitive": "http://www.w3.org/2004/02/skos/core#broaderTransitive",
     "related": "http://www.w3.org/2004/02/skos/core#related",
     "narrowerTransitive": "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
     "contraryTo": "http://sparql.cwrc.ca/ontologies/cwrc#contraryTo",
+    "subPropertyOf": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+    "subClassOf": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
 }
 relation_style = {
     "broaderTransitive": "",
     "related": " [style=dashed,dir=none]",
     "narrowerTransitive": " [dir=back]",
     "contraryTo": " [color=red dir=none]",
+    "subPropertyOf": "[color=blue]",
+    "subClassOf": "[color=blue]",
 }
 
 
@@ -35,17 +40,25 @@ def open_graph(o_file):
         print_usage()
 
 
-def get_namespace():
-    global onto_url
+def get_class_uri(taxonomy):
     onto_pre = [str(o) for s, p, o in o_graph.triples(((None, VANN.preferredNamespacePrefix, None)))][0]
 
     # getting all namespaces from o_graph & creating a dictionary of the names spaces - {identifier:uri}
     all_ns = [n for n in o_graph.namespace_manager.namespaces()]
     namespace_dict = {key: value for (key, value) in all_ns}
+
     if onto_pre in namespace_dict:
-        onto_url = namespace_dict[onto_pre]
+        class_uri = namespace_dict[onto_pre]
     else:
-        onto_url = namespace_dict['']
+        class_uri = namespace_dict['']
+
+    if ":" in taxonomy:
+        temp = taxonomy.split(":")[0]
+        class_uri = namespace_dict[temp]
+        taxonomy = taxonomy.split(":")[1]
+
+    class_uri += taxonomy
+    return(class_uri)
 
 
 def get_deprecated_terms():
@@ -64,8 +77,7 @@ def get_label(uri, lang):
 
 def get_uri_term(uri):
     index = max(uri.rfind('#'), uri.rfind('/')) + 1
-    substring = str(uri)[index:]
-    return (substring)
+    return str(uri)[index:]
 
 
 def get_relation(instances, relation):
@@ -90,38 +102,43 @@ def main():
     parser = argparse.ArgumentParser(
         description='Generate a diagraph of relations within an ontology.', add_help=True)
     parser.add_argument('file', action="store", help="file of ontology")
-    parser.add_argument('taxonomy', action="store", help="Class you'd like to build a taxonomy of")
+    parser.add_argument('taxonomy', action="store",
+                        help="Class/Datatype you'd like to build a taxonomy of, ex. PoliticalAffiliation or owl:Class")
     parser.add_argument('LANG', action="store")
     parser.add_argument('-all', '-a', action="store_true")
     parser.add_argument('-hide', action="store_true")
     parser.add_argument('-disconnected', '-lonely', action="store_true")
-    parser.add_argument('-related', '-r', action="store_true")
-    parser.add_argument('-contrary', '-c', action="store_true")
     parser.add_argument('-format', '-f', action="store", dest="format",
                         help="'margin=0;size=\"25,25\";ratio=compress;'")
-    args = parser.parse_args()
 
+    for x in relations.keys():
+        parser.add_argument('-' + x, '-' + x[:4], action="store_true")
+
+    args = parser.parse_args()
     ontology_file = args.file
     taxonomy = args.taxonomy
     global lang
     lang = args.LANG
 
     open_graph(ontology_file)
-    get_namespace()
-
+    class_uri = get_class_uri(taxonomy)
     deprecated_uris = get_deprecated_terms()
-    class_uri = onto_url + taxonomy
     instances = sorted([s for s, p, o in o_graph.triples(
         (None, RDF.type, class_uri)) if str(s) not in deprecated_uris])
 
-    relation_list = get_relation(instances, "broaderTransitive")
+    if args.subPropertyOf:
+        relation_list = get_relation(instances, "subPropertyOf")
+    elif args.subClassOf:
+        relation_list = get_relation(instances, "subClassOf")
+    else:
+        relation_list = get_relation(instances, "broaderTransitive")
 
     if args.all:
         relation_list += get_relation(instances, "related") + get_relation(instances, "contraryTo")
     else:
         if args.related:
             relation_list += get_relation(instances, "related")
-        if args.contrary:
+        if args.contraryTo:
             relation_list += get_relation(instances, "contraryTo")
 
     # organizing node details --> abrahamicReligions [label="Abrahamic religions" URL="http://sparql.cwrc.ca/ontologies/cwrc#abrahamicReligions"]
@@ -138,8 +155,10 @@ def main():
     #     # print(*lonely_nodes, sep='\n')
     #     print(make_list(lonely_nodes))
     #     print("</div>")
-    #     exit()
-    print("digraph %s_Taxonomy {" % taxonomy)
+    # print(*relation_list, sep="")
+    # exit()
+
+    print("digraph %s_Taxonomy {" % taxonomy.replace(":", ""))
     if args.format:
         print(args.format)
     else:
