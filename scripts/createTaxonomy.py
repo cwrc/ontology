@@ -16,6 +16,7 @@ relations = {
     "contraryTo": "http://sparql.cwrc.ca/ontologies/cwrc#contraryTo",
     "subPropertyOf": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
     "subClassOf": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+    "inverseOf": "http://www.w3.org/2002/07/owl#inverseOf",
 }
 relation_style = {
     "broaderTransitive": "",
@@ -24,6 +25,7 @@ relation_style = {
     "contraryTo": " [color=red dir=none]",
     "subPropertyOf": "[color=blue]",
     "subClassOf": "[color=blue]",
+    "inverseOf": "[color=red dir=both]",
 }
 
 
@@ -127,7 +129,7 @@ def main():
         (None, RDF.type, class_uri)) if str(s) not in deprecated_uris])
 
     if args.subPropertyOf:
-        relation_list = get_relation(instances, "subPropertyOf")
+        relation_list = get_relation(instances, "subPropertyOf") + get_relation(instances, "inverseOf")
     elif args.subClassOf:
         relation_list = get_relation(instances, "subClassOf")
     else:
