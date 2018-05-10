@@ -829,7 +829,7 @@
     <rdfs:label xml:lang="fr">a un·e étudiant·e</rdfs:label>
     <skos:definition xml:lang="en">Indicates that the student was educated by the entity in question,—an instructor, an educational institution, or a particular type of schooling.</skos:definition>
     <skos:definition xml:lang="fr">Indique que l'étudiant·e a été éduqué·e par l'entité en question (instructeur·rice, établissement éducatif,ou type d'éducation particulière).</skos:definition>
-    <rdfs:range rdf:resource="#NaturalPerson"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#School"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -840,8 +840,8 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Describes a relationship with a person, usually a peer, in the context of the subject's education.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <rdfs:range rdf:resource="#NaturalPerson"/>
-    <rdfs:domain rdf:resource="#NaturalPerson"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -850,7 +850,7 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Describes behaviour, which is perceived as negative, in the context of the subject's education. Often indicative of struggle against systemic discrimination, including within the structures of educational institutions.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <rdfs:domain rdf:resource="#NaturalPerson"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -859,7 +859,7 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Describes the subject's relationship with an educational instructor or mentor, formal or informal.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <rdfs:range rdf:resource="#NaturalPerson"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -870,7 +870,7 @@
     <skos:definition xml:lang="en">Indicates attending or having attended for education either a particular school or a particular type of schooling.</skos:definition>
     <skos:definition xml:lang="fr"> Indique que le sujet fréquente ou a fréquenté un établissement éducatif en particulier ou a reçu une forme d'enseignement spécifique</skos:definition>
     <rdfs:range rdf:resource="#School"/>
-    <rdfs:domain rdf:resource="#NaturalPerson"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <owl:inverseOf rdf:resource="#hasStudent"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6007,7 +6007,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:subPropertyOf rdf:resource="#hasRelative"/>
+    <rdfs:subPropertyOf rdf:resource="#interpersonalRelationship"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="guardianOf">
