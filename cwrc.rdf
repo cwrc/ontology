@@ -255,13 +255,15 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Relates particularly contested concepts to ambiguous or overloaded terms, classed as @@#TextLabels@@, that also represent one or more related concepts.  For instance, @@#englishLabel@@ is a @@#TextLabels@@ that represents both @@#englishNationalIdentity@@ and @@#englishNationalHeritage@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <rdfs:domain rdf:resource="#TextLabels"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#representedBy">
     <rdfs:label xml:lang="en">represented by</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates ambiguous or overloaded terms to two or more particularly contested and related concepts. Often used for @@#CulturalForm@@; for instance @@#englishNationalIdentity@@ and @@#englishNationalHeritage@@ are both represented by @@#englishLabel@@.</skos:definition>
+    <skos:definition xml:lang="en">Relates ambiguous or overloaded terms, classed as @@#TextLabels@@ to two or more particularly contested and related concepts. Often used for @@#CulturalForm@@; for instance @@#englishNationalIdentity@@ and @@#englishNationalHeritage@@ are both represented by @@#englishLabel@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <rdfs:range rdf:resource="#TextLabels"/>
     <owl:inverseOf rdf:resource="#represents"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
