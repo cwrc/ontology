@@ -13,7 +13,6 @@ spec_url = None
 spec_ns = None
 spec_pre = None
 lang = None
-bibo_nodes = None
 o_graph = None
 deprecated_uris = None
 inverse_r = None
@@ -64,15 +63,11 @@ def parse_relations():
     global symmetric_r
     inverse_r = data["inverse"]
     symmetric_r = [rdflib.term.URIRef(x) for x in data["symmetric"]]
-    expand_symmetric_r()
-
-
-def expand_symmetric_r():
-    global symmetric_r
     symmetric_r += set(sorted(o_graph.subjects(None, OWL.SymmetricProperty)))
 
 
 def print_usage():
+    # add use of arg parser
     script = sys.argv[0]
     print("Usage:")
     print("\t%s ontology template destination lang\n" % script)
@@ -91,7 +86,7 @@ def create_symmetric_dict():
     symmetric_dict = {}
     for x in symmetric_r:
         symmetric_dict[str(x)] = {}
-        for s, p, o in o_graph.triples(((None, x, None))):
+        for s, o in o_graph.subject_predicates(x):
             symmetric_dict[str(x)][str(o)] = str(s)
     return(symmetric_dict)
 
@@ -109,7 +104,6 @@ def create_inverse_dict():
                 del temp_dict[str(temp_class)]
 
         inverse_dict[x] = temp_dict
-
     return(inverse_dict)
 
 
@@ -150,7 +144,6 @@ def etreetag_to_uri(tag):
 
 def get_high_lvl_nodes():
     file = sys.argv[1]
-    global bibo_nodes
 
     from lxml import etree
     parser = etree.XMLParser(strip_cdata=False, remove_comments=True)
@@ -165,13 +158,11 @@ def get_high_lvl_nodes():
                    # Most instances are also typed as concepts, resulting in redundant types in the main listing
                    rdflib.term.URIRef("http://www.w3.org/2004/02/skos/core#Concept"),
                    rdflib.term.URIRef("http://www.w3.org/2002/07/owl#DeprecatedProperty")]
-    types = sorted(list(set([etreetag_to_uri(x.tag) for x in root if etreetag_to_uri(x.tag) not in ignore_uris])))
-    bibo_nodes = [x for x in types if ("purl.org/ontology/bibo/" in str(x))]
 
-    for x in bibo_nodes:
-        types.remove(x)
+    types = {etreetag_to_uri(x.tag) for x in root if etreetag_to_uri(x.tag) not in ignore_uris}
+    bibo_nodes = {x for x in types if ("purl.org/ontology/bibo/" in str(x))}
 
-    return types
+    return list(types - bibo_nodes)
 
 
 def create_row(list, listitem=True):
@@ -229,8 +220,8 @@ def newAZ(nodes):
                         title_str = ' target="_blank"'
                     name = '<a href="%s"%s style="font-weight:bold;">%s:</a>' % (
                         get_link(y), title_str, get_prefix(y))
-                    instances = [get_uri_term(s) for s, p, o in o_graph.triples(
-                        (None, RDF.type, y)) if str(s) not in deprecated_uris]
+                    instances = [get_uri_term(s) for s in o_graph.subjects(
+                        RDF.type, y) if str(s) not in deprecated_uris]
                     string += '<tr>'
                     string += '  <th scope="row">%s</th>' % name
                     string += create_row(sorted(instances))
@@ -244,7 +235,7 @@ def newAZ(nodes):
 
 def grandchildren_exist(instances):
     for x in instances:
-        if any(s in s for s, p, o in o_graph.triples((None, RDF.type, x)) if str(s) not in deprecated_uris):
+        if any(s in s for s in o_graph.subjects(RDF.type, x) if str(s) not in deprecated_uris):
             return True
     return False
 
@@ -254,8 +245,10 @@ def all_terms_html(nodes):
     string = ""
     for x in types:
         string += '<div class="type">'
-        string += '<h3 id="%s">%s</h3>\n' % (get_prefix(x), get_prefix(x))
         instances = [get_uri_term(x) for x in o_graph.subjects(None, x)]
+        string += '<h3 id="%s">%s<span> (%s)</span></h3>\n' % (get_prefix(x), get_prefix(x), len(instances))
+        string += '<table class="table list-table"><tbody><tr>' + \
+            create_row(sorted(instances)) + '</tr></tbody></table>'
         string += create_terms_html(sorted(instances), get_prefix(x))
         string += '<div/>'
 
@@ -264,10 +257,9 @@ def all_terms_html(nodes):
         if any((y, RDF.type, x) in o_graph for y in instances) and grandchildren_exist(instances):
             string += '<h3>%s Instances</h3>\n' % get_prefix(x)
             for y in instances:
-                if any(s in s for s, p, o in o_graph.triples(
-                        (None, RDF.type, y)) if str(s) not in deprecated_uris):
-                    instances2 = [get_uri_term(s) for s, p, o in o_graph.triples(
-                        (None, RDF.type, y)) if str(s) not in deprecated_uris]
+                if any(s in s for s in o_graph.subjects(RDF.type, y) if str(s) not in deprecated_uris):
+                    instances2 = [get_uri_term(s) for s in o_graph.subjects(
+                        RDF.type, y) if str(s) not in deprecated_uris]
                     string += '<div class="instancestype">'
                     string += '<h4 id="%s">%s</h4>\n' % (get_prefix(y), get_prefix(y))
                     string += create_term_html(get_uri_term(y))
@@ -289,6 +281,7 @@ def specgen(template, language):
 
     # creating a dictionary of the names spaces - {identifier:uri}
     namespace_dict = {key: value for (key, value) in all_ns}
+
     if spec_pre in namespace_dict:
         spec_url = namespace_dict[spec_pre]
     else:
@@ -303,12 +296,13 @@ def specgen(template, language):
 
     azlist_html = newAZ(get_high_lvl_nodes())
     terms_html = all_terms_html(get_high_lvl_nodes())
-    # bibliography_html = all_terms_html(bibo_nodes)
+    if spec_pre:
+        template = template.replace("{_header_}", get_header_html())
 
-    template = template.replace("{_header_}", get_header_html())
     template = template.replace("{_azlist_}", azlist_html)
     template = template.replace("{_terms_}", terms_html)
     template = template.replace("{_deprecated_}", deprecated_html)
+    # bibliography_html = all_terms_html(bibo_nodes)
     # template = template.replace("{_bibliography_}", newAZ(bibo_nodes) + bibliography_html)
 
     return template
@@ -325,7 +319,7 @@ def create_term_main(term, uri):
 
     if comment:
         html_str += get_comment_html(comment)
-    alt_terms = [o for s, p, o in o_graph.triples(((uri, SKOS.altLabel, None)))]
+    alt_terms = [o for o in o_graph.objects(uri, SKOS.altLabel)]
     if alt_terms:
         html_str += '<div class="altlabel">\n'
         html_str += '<p>[skos:altLabel: \n'
@@ -387,8 +381,8 @@ def create_term_extra(term_dict, uri, term):
     html_str += create_term_symmetric_html(uri)
     html_str += create_term_inverse_html(uri)
 
-    instance_list = [get_uri_term(str(s)) for s, p, o in o_graph.triples(
-        (None, RDF.type, uri)) if str(s) not in deprecated_uris]
+    instance_list = [get_uri_term(str(s)) for s in o_graph.subjects(
+        RDF.type, uri) if str(s) not in deprecated_uris]
     if instance_list:
         html_str += "<tr>\n"
         html_str += """<th><a href="#%s" title="%s Instances" >Instances</a>:</th>\n""" % (
@@ -450,8 +444,8 @@ def create_term_html(uri):
     html_str += create_term_main(uri, full_uri)
 
     term_dict = {}
-    predicates = sorted(list(set([p for s, p, o in o_graph.triples(
-        (full_uri, None, None)) if (p not in term_main_uris) and (p not in term_ignore_uris)])))
+    predicates = sorted(list(set([p for p in o_graph.predicates(full_uri, None)
+                                  if (p not in term_main_uris) and (p not in term_ignore_uris)])))
 
     for predicate in predicates:
         objects = [o for o in o_graph.objects(full_uri, predicate) if(type(o) == rdflib.term.Literal and (
@@ -463,12 +457,12 @@ def create_term_html(uri):
 
 
 def get_comment_list(uri):
-    comment = [o for s, p, o in o_graph.triples(((uri, RDFS.comment, None)))]
+    comment = o_graph.objects(uri, RDFS.comment)
     return [str(x) for x in comment if x.language == lang]
 
 
 def get_label_dict(uri):
-    label = [o for s, p, o in o_graph.triples(((uri, RDFS.label, None)))]
+    label = o_graph.objects(uri, RDFS.label)
     for x in label:
         if x.language == lang:
             return x
@@ -542,7 +536,7 @@ def get_prefix_ns_with_link(uri):
 
 
 def get_definition_list(uri):
-    defn = [o for s, p, o in o_graph.triples(((uri, SKOS.definition, None)))]
+    defn = o_graph.objects(uri, SKOS.definition)
     return [str(x) for x in defn if x.language == lang]
 
 
@@ -624,7 +618,7 @@ def get_dep_term_html(term_dict):
 def get_deprecated_terms(o_graph):
     query_str = """
 select * where {
-    ?uri vs:term_status ?literal.
+    ?uri <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> ?literal.
 }
     """
     global deprecated_uris
@@ -829,22 +823,16 @@ def get_header():
     import datetime
     header_info = {}
     ontology_uri = rdflib.URIRef(spec_url[:-1])
-    header_info["desc"] = [str(o) for s, p, o in o_graph.triples(
-        (ontology_uri, DCTERMS.description, None)) if o.language == lang]
-    header_info["title"] = [str(o) for s, p, o in o_graph.triples(
-        (ontology_uri, DCTERMS.title, None)) if o.language == lang]
-    header_info["version"] = [str(o) for s, p, o in o_graph.triples(
-        (ontology_uri, OWL.versionInfo, None))]
-    header_info["logo"] = [str(o) for s, p, o in o_graph.triples(
-        (ontology_uri, FOAF.logo, None))]
-    header_info["prior"] = [str(o) for s, p, o in o_graph.triples(
-        (ontology_uri, OWL.priorVersion, None))]
-    header_info["rights"] = [str(o) for s, p, o in o_graph.triples(
-        (ontology_uri, DCTERMS.rights, None))]
-    header_info["subj"] = [str(o) for s, p, o in o_graph.triples(
-        (ontology_uri, DCTERMS.subject, None))]
-    pre_date = [str(o) for s, p, o in o_graph.triples(
-        (ontology_uri, DCTERMS.date, None))][0].split("-")
+
+    header_info["desc"] = [str(o) for o in o_graph.objects(
+        ontology_uri, DCTERMS.description) if o.language == lang]
+    header_info["title"] = [str(o) for o in o_graph.objects(ontology_uri, DCTERMS.title) if o.language == lang]
+    header_info["version"] = [str(o) for o in o_graph.objects(ontology_uri, OWL.versionInfo)]
+    header_info["logo"] = [str(o) for o in o_graph.objects(ontology_uri, FOAF.logo)]
+    header_info["prior"] = [str(o) for o in o_graph.objects(ontology_uri, OWL.priorVersion)]
+    header_info["rights"] = [str(o) for o in o_graph.objects(ontology_uri, DCTERMS.rights)]
+    header_info["subj"] = [str(o) for o in o_graph.objects(ontology_uri, DCTERMS.subject)]
+    pre_date = [str(o) for o in o_graph.objects(ontology_uri, DCTERMS.date)][0].split("-")
     if len(pre_date) != 3:
         header_info["date_str"] = str(datetime.date.today().strftime("%d %B %Y"))
         header_info["date"] = str(datetime.date.today())
@@ -892,14 +880,12 @@ def main():
 
     open_graph(specloc)
     # TODO add alternate way of getting the namespace uri/prefix
-    spec_pre = [str(o) for s, p, o in o_graph.triples(((None, VANN.preferredNamespacePrefix, None)))]
+    spec_pre = [str(o) for o in o_graph.objects(None, VANN.preferredNamespacePrefix)]
     if spec_pre:
         spec_pre = spec_pre[0]
-    #     print(spec_pre)
+    else:
+        spec_pre = None
     #     # exit()
-    # else:
-    #     print("fail")
-    #     exit()
 
     print("\n" * 3)
 

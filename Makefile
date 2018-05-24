@@ -143,14 +143,17 @@ clean-all:
 
 # Testing of scripts 
 doc: scripts/docgen.py
-	python3 scripts/docgen.py $(ONTOLOGY_W_DATE).rdf $(ONTOLOGY)-template-EN.html  $(ONTOLOGY_W_DATE)-EN.html  en
-	python3 scripts/docgen.py $(ONTOLOGY_W_DATE).rdf $(ONTOLOGY)-template-FR.html  $(ONTOLOGY_W_DATE)-FR.html fr
+	# python3 scripts/docgen.py HumanDO.owl $(ONTOLOGY)-template-EN.html  $(ONTOLOGY_W_DATE)-EN.html  en
+	# python3 scripts/docgen.py cldi.owl $(ONTOLOGY)-template-EN.html  $(ONTOLOGY_W_DATE)-EN.html  en
+	# python3 scripts/docgen.py $(ONTOLOGY_W_DATE).rdf $(ONTOLOGY)-template-EN.html  $(ONTOLOGY_W_DATE)-EN.html  en
+	python3 scripts/docgen.py $(ONTOLOGY_W_DATE).rdf $(ONTOLOGY)-template-EN.html  test-EN.html  en
+	# python3 scripts/docgen.py $(ONTOLOGY_W_DATE).rdf $(ONTOLOGY)-template-FR.html  $(ONTOLOGY_W_DATE)-FR.html fr
 doctest: scripts/docgen.py
 	python3 scripts/docgen.py $(ONTOLOGY).rdf $(ONTOLOGY)-template2-$(DATE_W_LANG).html  $(ONTOLOGY_W_DATE)-EN.html  en
 cross:
 	python3 scripts/crossRef.py cwrc.rdf
 taxtest:
-	python3 scripts/createTaxonomy.py cwrc.rdf PoliticalAffiliation $(O_LANG) -hide | unflatten -l 20 -c 30 | dot -oPA.svg -Tsvg 
-	python3 scripts/createTaxonomy.py cwrc.rdf owl:ObjectProperty $(O_LANG) -subPropertyOf -hide| dot -oObjectProperty.svg -Tsvg 
-	python3 scripts/createTaxonomy.py cwrc.rdf owl:Class $(O_LANG) -subClassOf | circo -oClass.svg -Tsvg 
+	# python3 scripts/createTaxonomy.py cwrc.rdf PoliticalAffiliation $(O_LANG) -hide | unflatten -l 20 -c 30 | dot -oPA.svg -Tsvg 
+	python3 scripts/createTaxonomy.py cwrc.rdf owl:ObjectProperty $(O_LANG) -subPropertyOf | dot -oObjectProperty.svg -Tsvg 
+	# python3 scripts/createTaxonomy.py cwrc.rdf owl:Class $(O_LANG) -subClassOf | circo -oClass.svg -Tsvg 
 	# python3 scripts/createTaxonomy.py cwrc.rdf owl:ObjectProperty $(O_LANG) -subPropertyOf | unflatten -l 20 -c 30 | dot -o$@ -Tsvg 
