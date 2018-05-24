@@ -5837,7 +5837,6 @@
 
   <!-- Labels -->
   <owl:Class rdf:ID="TextLabels">
-    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:label xml:lang="en">textual label</rdfs:label>
     <rdfs:label xml:lang="fr">étiquette</rdfs:label>
@@ -5853,7 +5852,7 @@
     <rdfs:label xml:lang="en">white identity</rdfs:label>
     <rdfs:label xml:lang="fr">identité blanche</rdfs:label>
     <foaf:name xml:lang="en">white</foaf:name>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of whiteness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "White" (e.g. @@#whiteEthnicity@@, @@#whiteRaceColour@@) cultural identities.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of whiteness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "White" cultural identities (e.g. the cultural forms of @@#whiteEthnicity@@, white in the discursive context of ethnicity, and @@#whiteRaceColour@@, white in the discursive context of race or colour).</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'Étiquettes Textuelles, cette étiquette discursive reflète l'ambiguité de la blancheur de peau en tant que charactérique physique associée à diverses formes culturelles. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «blanches" (par exemple @@#whiteEthnicity@@, @@#whiteRaceColour@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
     <cwrc:represents rdf:resource="#whiteEthnicity"/>
@@ -6854,7 +6853,7 @@
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
   </owl:DeprecatedProperty>
   <!-- Possibly to be undeprecated -->
-  <owl:DeprecatedProperty rdf:ID="personalProperty"> 
+  <owl:DeprecatedProperty rdf:ID="personalProperty">
     <rdfs:label xml:lang="en">personal property</rdfs:label>
     <rdfs:label xml:lang="fr">propriété personnelle</rdfs:label>
     <skos:definition xml:lang="en">A property that is ascribed to a person.</skos:definition>
