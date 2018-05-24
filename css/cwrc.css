@@ -23,12 +23,13 @@ object {
 table {
     /*table-layout: fixed;*/
     word-wrap: break-word;
-    width: 100%
-}
-.global-ref table{
+    width: 100%;
     border: solid 2px lightgrey;
 }
-.global-ref td {
+section table{
+    border: none;
+}
+table td {
   -webkit-columns: 5 280px;
     -moz-columns: 5 280px;
       columns: 5 280px;
@@ -41,6 +42,10 @@ table {
     list-style: none;
 }
 .global-ref th {
+}
+
+table li{
+    list-style: none;
 }
 
 th {
