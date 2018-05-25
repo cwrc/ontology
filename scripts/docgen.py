@@ -86,7 +86,7 @@ def create_symmetric_dict():
     symmetric_dict = {}
     for x in symmetric_r:
         symmetric_dict[str(x)] = {}
-        for s, o in o_graph.subject_predicates(x):
+        for s, o in o_graph.subject_objects(x):
             symmetric_dict[str(x)][str(o)] = str(s)
     return(symmetric_dict)
 
