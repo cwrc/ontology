@@ -6111,7 +6111,7 @@
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <skos:broader rdf:resource="http://schema.org/sibling"/>
-    <rdfs:subPropertyOf rdf:resource="#hasSibling"/>
+    <rdfs:subPropertyOf rdf:resource="#hasSister"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepSisterOf">
@@ -6137,7 +6137,7 @@
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <skos:broader rdf:resource="http://schema.org/sibling"/>
-    <rdfs:subPropertyOf rdf:resource="#hasSibling"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBrother"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepBrotherOf">
