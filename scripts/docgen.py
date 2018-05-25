@@ -261,8 +261,11 @@ def all_terms_html(nodes):
                     instances2 = [get_uri_term(s) for s in o_graph.subjects(
                         RDF.type, y) if str(s) not in deprecated_uris]
                     string += '<div class="instancestype">'
-                    string += '<h4 id="%s">%s</h4>\n' % (get_prefix(y), get_prefix(y))
-                    string += create_term_html(get_uri_term(y))
+                    string += '<h4 id="%s">%s<span> (%s)</span></h4>\n' % (get_prefix(y),
+                                                                           get_prefix(y), len(instances2))
+                    string += '<table class="table list-table"><tbody><tr>' + \
+                        create_row(sorted(instances2)) + '</tr></tbody></table>'
+                    # string += create_term_html(get_uri_term(y))
                     string += '</div>'
                     string += create_terms_html(sorted(instances2), get_prefix(y))
     return string

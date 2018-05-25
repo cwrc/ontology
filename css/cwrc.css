@@ -35,6 +35,12 @@ table td {
       columns: 5 280px;
     width: 75%;
 }
+section table td {
+  /*-webkit-columns: 5 280px;*/
+    /*-moz-columns: 5 280px;*/
+  columns: auto;
+    width: 75%;
+}
 .global-ref ul {
     padding: 0;
 }
