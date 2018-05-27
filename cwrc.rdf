@@ -448,7 +448,6 @@
   <!-- Events and Actors -->
 
   <owl:Class rdf:ID="Event">
-    <foaf:name>Event</foaf:name>
     <rdfs:label xml:lang="en">event</rdfs:label>
     <rdfs:label xml:lang="fr">évènement</rdfs:label>
     <rdfs:label xml:lang="de">event</rdfs:label>
@@ -1004,8 +1003,6 @@
   <owl:Class rdf:ID="Place">
     <rdfs:label xml:lang="en">place</rdfs:label>
     <rdfs:label xml:lang="fr">endroit</rdfs:label>
-    <foaf:name xml:lang="en">Place</foaf:name>
-    <foaf:name xml:lang="fr">Endroit</foaf:name>
     <skos:definition xml:lang="en">A named place, whether incorporated, settled, or occupied.</skos:definition>
     <skos:definition xml:lang="fr">Un endroit nommé, qu'il soit déclaré, peuplé ou occupé.</skos:definition>
     <skos:definition xml:lang="en">It may be, but is not necessarily, a populated place. Some places, such as cross-roads, do not have a population or settlement per se. Geonames will sometimes categorize places that are now abandoned as "populated places."</skos:definition>
@@ -1247,7 +1244,6 @@
   <owl:Class rdf:ID="Language">
     <rdfs:label xml:lang="en">language</rdfs:label>
     <rdfs:label xml:lang="fr">langue</rdfs:label>
-    <foaf:name xml:lang="en">language</foaf:name>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">These terms do not differentiate between spoken and/or written.</skos:definition>
@@ -1270,7 +1266,6 @@
   <cwrc:GeographicHeritage rdf:about="#englishGeographicHeritage">
     <rdfs:label xml:lang="en">England</rdfs:label>
     <rdfs:label xml:lang="fr">Angleterre</rdfs:label>
-    <foaf:name xml:lang="en">England (Geographic Heritage)</foaf:name>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#GeographicHeritage"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labeling as of English heritage in relation to a place, often England.</skos:definition>
@@ -1283,7 +1278,6 @@
   <cwrc:GeographicHeritage rdf:about="#jewishGeographicHeritage">
     <rdfs:label xml:lang="en">Jewish</rdfs:label>
     <rdfs:label xml:lang="fr">Juif</rdfs:label>
-    <foaf:name xml:lang="en">Jewish (Geographic Heritage)</foaf:name>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#GeographicHeritage"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as of Jewish heritage in relation to a place, which may or may not be Israel.</skos:definition>
@@ -1319,7 +1313,6 @@
   <cwrc:Gender rdf:about="#man">
     <rdfs:label xml:lang="en">man</rdfs:label>
     <rdfs:label xml:lang="fr">homme</rdfs:label>
-    <foaf:name xml:lang="en">man (gender)</foaf:name>
     <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">
@@ -1335,7 +1328,6 @@
   <cwrc:Gender rdf:about="#woman">
     <rdfs:label xml:lang="en">woman</rdfs:label>
     <rdfs:label xml:lang="fr">femme</rdfs:label>
-    <foaf:name xml:lang="en">woman (gender)</foaf:name>
     <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">
@@ -1409,7 +1401,6 @@
   <cwrc:Gender rdf:about="#transMan">
     <rdfs:label xml:lang="en">transman/transmale</rdfs:label>
     <rdfs:label xml:lang="fr">homme trans</rdfs:label>
-    <foaf:name xml:lang="en">transman/transmale (gender)</foaf:name>
     <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">
@@ -1425,7 +1416,6 @@
   <cwrc:Gender rdf:about="#transWoman">
     <rdfs:label xml:lang="en">transwoman/transfemale</rdfs:label>
     <rdfs:label xml:lang="fr">femme trans</rdfs:label>
-    <foaf:name xml:lang="en">transwoman/transfemale (gender)</foaf:name>
     <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">
@@ -1486,7 +1476,6 @@
     <rdfs:label xml:lang="fr">hétérosexualité</rdfs:label>
     <skos:altLabel xml:lang="en">HETEROSEXUAL</skos:altLabel>
     <skos:altLabel xml:lang="en">HETEROSEXUALITY</skos:altLabel>
-    <foaf:name xml:lang="en">heterosexual (sexual identity)</foaf:name>
     <skos:definition xml:lang="en">Heterosexuality indicates sexual attraction to the so-called "opposite sex," that is, sexual attraction between men and women. This understanding relies, like bisexual, on a binary understanding of sex and gender that also often conflates sex with gender. Adrienne Rich draws on Kathleen Gough in articulating an understanding of heterosexuality as compulsory for women within patriarchy. In her essay "The Straight Mind" (first published in 1980) Monique Wittig understands heterosexuality as a semiotic, linguistic, political, and ontological construct. It constitutes itself as a normative system through the oppression of women by men and the "necessity of the different/other at every level." The straight mind "creates the doctrine of the difference between sexes to justify this oppression."</skos:definition>
     <skos:definition xml:lang="fr">L'hétérosexualité indique l'attraction sexuelle pour le sexe prétendument «opposé», c'est-à-dire entre les hommes et les femmes. Cette compréhension du terme repose, comme pour la bisexualité, sur une interprétation binaire du sexe et du genre, qui confond habituellement les deux notions. S'appuyant sur Kathleen Gough, Adrienne Rich interprète l'hétérosexualité comme obligatoire pour les femmes dans un contexte patriarcal. Dans son article «La pensée straight» (publiée pour la première fois en 1980) Monique Wittig interprète l'hétérosexualité comme une construction sémiotique, linguistique, politique et ontologique. Elle se constitue comme un système normatif qui passe par l'oppression des femmes par les hommes et la «la nécessité de l'autre différent à tous les niveaux». La pensée straight «produit la doctrine de la différence entre les sexes pour justifier cette oppression».</skos:definition>
     <skos:inScheme rdf:resource="#Sexuality"/>
@@ -1498,7 +1487,6 @@
   <cwrc:Sexuality rdf:about="#homosexual">
     <rdfs:label xml:lang="en">homosexuality</rdfs:label>
     <rdfs:label xml:lang="fr">homosexualité</rdfs:label>
-    <foaf:name xml:lang="en">homosexual (sexual identity)</foaf:name>
     <skos:altLabel xml:lang="en">HOMOSEXUAL</skos:altLabel>
     <skos:altLabel xml:lang="en">HOMOSEXUALITY</skos:altLabel>
     <skos:altLabel xml:lang="en">MALE HOMOSEXUAL</skos:altLabel>
@@ -1514,7 +1502,6 @@
     <rdfs:label xml:lang="fr">lesbianisme</rdfs:label>
     <skos:altLabel xml:lang="en">LESBIAN</skos:altLabel>
     <skos:altLabel xml:lang="en">LESBIANISM</skos:altLabel>
-    <foaf:name xml:lang="en">lesbian (sexual identity)</foaf:name>
     <skos:definition xml:lang="en">Lesbianism indicates the sexual attraction of women to other women. Yet, lesbian feminist thinkers underline that this common definition is reductive. Drawing on Kathleen Gough and within an understanding of heterosexuality as compulsory for women within patriarchy, Adrienne Rich describes a lesbian continuum, the "range—through each woman's life and throughout history—of woman-identified experiences, not simply the fact that a woman has had or consciously desired genital sexual experience with another woman" <![CDATA[<a href="#cwrc:8049540f-3673-4ca0-920c-cb5326d7c466">(Rich, 1983)</a>]]>. In a heteronormative context, lesbianism is not only a question of sexuality but also has complex political implications.</skos:definition>
     <skos:definition xml:lang="fr">Le lesbianisme indique l'attraction sexuelle entre les femmes. Cependant, certaines intellectuelles lesbiennes féministes soulignent l'aspect réducteur d'une telle définition. S'appuyant sur Kathleen Gough, Adrienne Rich interprète l'hétérosexualité comme obligatoire pour les femmes dans un contexte patriarcal, et évoque un continuum lesbien, les «diverses expériences spécifiques aux femmes—au cours de leur existence ou à travers l'Histoire— et non simplement le fait qu'une femme a eu ou a consciemment désiré avoir des expériences sexuelles avec une autre femme» <![CDATA[<a href="#cwrc:8049540f-3673-4ca0-920c-cb5326d7c466">(Rich, 1983)</a>]]>. Dans un contexte hétéronormatif, le lesbianisme ne relève donc pas seulement de la sexualité mais implique aussi des questions politiques complexes.</skos:definition>
     <skos:inScheme rdf:resource="#Sexuality"/>
@@ -1528,7 +1515,6 @@
     <rdfs:label xml:lang="fr">bisexualité</rdfs:label>
     <skos:altLabel xml:lang="en">BISEXUAL</skos:altLabel>
     <skos:altLabel xml:lang="en">BISEXUALITY</skos:altLabel>
-    <foaf:name xml:lang="en">bisexual (sexual identity)</foaf:name>
     <skos:definition xml:lang="en">Bisexuality indicates sexual attraction to both genders. In terms of binary understandings of sex or gender, bisexuality is often defined as being sexually attracted to "both sexes".</skos:definition>
     <skos:definition xml:lang="fr">La bisexualité réfère à l'attraction sexuelle pour les deux genres. En terme d'acceptation binaire du sexe ou du genre, la bisexualité est souvent définie comme attraction sexuelle pour les «deux sexes».</skos:definition>
     <skos:inScheme rdf:resource="#Sexuality"/>
@@ -1600,7 +1586,6 @@
   <cwrc:RaceColour rdf:about="#whiteRaceColour">
     <rdfs:label xml:lang="en">white</rdfs:label>
     <rdfs:label xml:lang="fr">blanc</rdfs:label>
-    <foaf:name xml:lang="en">white (race colour)</foaf:name>
     <skos:altLabel xml:lang="en">creole (typically caucasian (european settler descendants)</skos:altLabel>
     <skos:definition xml:lang="en">
       "White people is a racial classification specifier, used for people of Europid ancestry, with the exact implications dependent on context. The contemporary usage of 'white people' or a 'white race' as a large group of (mainly European) populations contrasting with 'black', American Indian, colored' or non-white originates in the 17th century. It is today particularly used as a racial classifier in multiracial societies, such as the United States (White American), the United Kingdom (White British), Brazil (White Brazilian), and South Africa (White South African). Various social constructions of whiteness have been significant to national identity, public policy, religion, population statistics, racial segregation, affirmative action, white privilege, eugenics, racial marginalization and racial quotas. The term 'white race' or 'white people' entered the major European languages in the later 17th century, in the context of racialized slavery and unequal status in European colonies. Description of populations as 'white' in reference to their skin color predates this notion and is found in Greco-Roman ethnography and other ancient sources. Scholarship on race generally distinguishes the modern concept from pre-modern descriptions of collective difference." <![CDATA[<a href="http://dbpedia.org/page/White_people">(DBpedia, 2017)</a>]]>
@@ -1646,7 +1631,6 @@
   <cwrc:RaceColour rdf:about="#blackRaceColour">
     <rdfs:label xml:lang="en">black</rdfs:label>
     <rdfs:label xml:lang="fr">noir</rdfs:label>
-    <foaf:name xml:lang="en">black (race colour)</foaf:name>
     <skos:altLabel xml:lang="en">blackwoman</skos:altLabel>
     <skos:definition xml:lang="en">
       "Black people (seen both capitalized and with lowercase 'b') is a term used in certain countries, often in socially based systems of racial classification or of ethnicity, to describe persons who are perceived to be dark-skinned compared to other given populations. As such, the meaning of the expression varies widely both between and within societies, and depends significantly on context. For many other individuals, communities and countries, 'black' is also perceived as a derogatory, outdated, reductive or otherwise unrepresentative label, and as a result is neither used nor defined. Different societies apply different criteria regarding who is classified as 'black', and these social constructs have also changed over time. In a number of countries, societal variables affect classification as much as skin color, and the social criteria for 'blackness' vary. For example, in North America the term black people is not necessarily an indicator of skin color or ethnic origin, but is instead a socially based racial classification related to being African American, with a family history associated with institutionalized slavery. In South Africa and Latin America, mixed-race people are generally not classified as 'black'. In other regions such as Australasia, settlers applied the term 'black' or it was used by local populations with different histories and ancestral backgrounds." <![CDATA[<a href="http://dbpedia.org/page/Black_people">(DBpedia, 2017)</a>]]>
@@ -1666,7 +1650,6 @@
   <cwrc:RaceColour rdf:about="#asianRaceColour">
     <rdfs:label xml:lang="en">Asian</rdfs:label>
     <rdfs:label xml:lang="fr">Asiatique</rdfs:label>
-    <foaf:name xml:lang="en">asian (race colour)</foaf:name>
     <skos:definition xml:lang="en">
       "Asian people or Asiatic people are people who descend from a portion of Asia's population. There are varieties of definition and geographical data presented by organisations and individuals for classifying the ethnic groups in Asia."<![CDATA[<a href="http://dbpedia.org/page/Asian_people">(DBpedia, 2017)</a>]]>
     </skos:definition>
@@ -1684,7 +1667,6 @@
   <cwrc:RaceColour rdf:about="#jewishRaceColour">
     <rdfs:label xml:lang="en">Jewish</rdfs:label>
     <rdfs:label xml:lang="fr">Juif</rdfs:label>
-    <foaf:name xml:lang="en">jewish (race colour)</foaf:name>
     <skos:altLabel xml:lang="en">jew</skos:altLabel>
     <skos:definition xml:lang="en">
       "The Jews (/dʒuːz/; Hebrew: יְהוּדִים ISO 259-3 Yehudim, Israeli pronunciation [jehuˈdim]), also known as the Jewish people, are an ethnoreligious group originating from the Israelites, or Hebrews, of the Ancient Near East. Jewish ethnicity, nationhood and religion are strongly interrelated, as Judaism is the traditional faith of the Jewish nation, while its observance varies from strict observance to complete nonobservance. Jews originated as a national and religious group in the Middle East during the second millennium BCE, in the part of the Levant known as the Land of Israel. The Merneptah Stele appears to confirm the existence of a people of Israel, associated with the god El, somewhere in Canaan as far back as the 13th century BCE (Late Bronze Age). The Israelites, as an outgrowth of the Canaanite population, consolidated their hold with the emergence of the Kingdom of Israel, and the Kingdom of Judah. Some consider that these Canaanite sedentary Israelites melded with incoming nomadic groups known as 'Hebrews'. Though few sources in the Bible mention the exilic periods in detail, the experience of diaspora life, from the Ancient Egyptian rule over the Levant, to Assyrian Captivity and Exile, to Babylonian Captivity and Exile, to Seleucid Imperial rule, to the Roman occupation, and the historical relations between Israelites and their homeland, became a major feature of Jewish history, identity and memory. The worldwide Jewish population reached a peak of 16.7 million prior to World War II, but approximately 6 million Jews were systematically murdered during the Holocaust. Since then the population has slowly risen again, and as of 2015 was estimated at 14.3 million by the Berman Jewish DataBank, or less than 0.2% of the total world population (roughly one in every 514 people). According to the report, about 43% of all Jews reside in Israel (6.4 million), and 40% in the United States (5.7 million), with most of the remainder living in Europe (1.4 million) and Canada (0.4 million). These numbers include all those who self-identified as Jews in a socio-demographic study or were identified as such by a respondent in the same household. The exact world Jewish population, however, is difficult to measure. In addition to issues with census methodology, disputes among proponents of halakhic, secular, political, and ancestral identification factors regarding who is a Jew may affect the figure considerably depending on the source. Israel is the only country where Jews form a majority of the population. The modern State of Israel was established as a Jewish state and defines itself as such in its Declaration of Independence and Basic Laws. Its Law of Return grants the right of citizenship to any Jew who requests it. Despite their small percentage of the world's population, Jews have significantly influenced and contributed to human progress in many fields, including philosophy, ethics, literature, business, fine arts and architecture, religion, music, theatre and cinema, medicine, as well as science and technology, both historically and in modern times." <![CDATA[<a href="http://dbpedia.org/page/Jews">(DBpedia, 2017)</a>]]>
@@ -1703,7 +1685,6 @@
   <cwrc:RaceColour rdf:about="#eurasianRace">
     <rdfs:label xml:lang="en">eurasian</rdfs:label>
     <rdfs:label xml:lang="fr">eurasien</rdfs:label>
-    <foaf:name xml:lang="en">eurasian (race colour)</foaf:name>
     <skos:definition xml:lang="en">
       "A Eurasian is a person of mixed Asian and European ancestry. In 19th-century British India, Eurasians — later called Anglo-Indians — were of mixed Portuguese, Dutch, British, Indian or, more rarely, French descent, but now their parentage may be from other parts of South, East or Southeast Asia. The term has been used in anthropological literature since the 1960s. It may also be extended to those with Central Asian heritage." <![CDATA[<a href="http://dbpedia.org/page/Eurasian_(mixed_ancestry)">(DBpedia, 2017)</a>]]>
     </skos:definition>
@@ -1745,7 +1726,6 @@
   <cwrc:Ethnicity rdf:about="#africanEthnicity">
     <rdfs:label xml:lang="en">African</rdfs:label>
     <rdfs:label xml:lang="fr">Africain</rdfs:label>
-    <foaf:name xml:lang="en">African (ethnicity)</foaf:name>
     <skos:altLabel xml:lang="en">black African descent</skos:altLabel>
     <skos:definition xml:lang="en">
       "The ethnic groups of Africa number in the thousands, each generally having its own language (or dialect of a language) and culture. The ethnolinguistic groups include various Afro-Asiatic, Khoisan, Niger-Congo and Nilo-Saharan populations." <![CDATA[<a href="http://dbpedia.org/page/List_of_ethnic_groups_of_Africa">(DBpedia, 2017)</a>]]>
@@ -1915,7 +1895,6 @@
   <cwrc:Ethnicity rdf:about="#whiteEthnicity">
     <rdfs:label xml:lang="en">white</rdfs:label>
     <rdfs:label xml:lang="fr">blanc</rdfs:label>
-    <foaf:name xml:lang="en">white (ethnicity)</foaf:name>
     <skos:definition xml:lang="en">
       "White people is a racial classification specifier, used for people of Europid ancestry, with the exact implications dependent on context. The contemporary usage of 'white people' or a 'white race; as a large group of (mainly European) populations contrasting with 'black', American Indian, 'colored' or non-white originates in the 17th century. It is today particularly used as a racial classifier in multiracial societies, such as the United States (White American), the United Kingdom (White British), Brazil (White Brazilian), and South Africa (White South African). Various social constructions of whiteness have been significant to national identity, public policy, religion, population statistics, racial segregation, affirmative action, white privilege, eugenics, racial marginalization and racial quotas. The term 'white race' or 'white people' entered the major European languages in the later 17th century, in the context of racialized slavery and unequal status in European colonies. Description of populations as 'white' in reference to their skin color predates this notion and is found in Greco-Roman ethnography and other ancient sources. Scholarship on race generally distinguishes the modern concept from pre-modern descriptions of collective difference." <![CDATA[<a href="http://dbpedia.org/page/White_people">(DBpedia, 2017)</a>]]>
     </skos:definition>
@@ -1934,7 +1913,6 @@
   <cwrc:Ethnicity rdf:about="#jewishEthnicity">
     <rdfs:label xml:lang="en">Jewish</rdfs:label>
     <rdfs:label xml:lang="fr">Juif</rdfs:label>
-    <foaf:name xml:lang="en">Jewish (Ethnicity)</foaf:name>
     <skos:altLabel xml:lang="en">a Jewish</skos:altLabel>
     <skos:altLabel xml:lang="en">Jewish</skos:altLabel>
     <skos:altLabel xml:lang="en">Jew</skos:altLabel>
@@ -5851,7 +5829,6 @@
   <skos:Concept rdf:about="#whiteLabel">
     <rdfs:label xml:lang="en">white identity</rdfs:label>
     <rdfs:label xml:lang="fr">identité blanche</rdfs:label>
-    <foaf:name xml:lang="en">white</foaf:name>
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of whiteness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "White" cultural identities (e.g. the cultural forms of @@#whiteEthnicity@@, white in the discursive context of ethnicity, and @@#whiteRaceColour@@, white in the discursive context of race or colour).</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'Étiquettes Textuelles, cette étiquette discursive reflète l'ambiguité de la blancheur de peau en tant que charactérique physique associée à diverses formes culturelles. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «blanches" (par exemple @@#whiteEthnicity@@, @@#whiteRaceColour@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
@@ -5865,7 +5842,6 @@
   <skos:Concept rdf:about="#blackLabel">
     <rdfs:label xml:lang="en">black identity</rdfs:label>
     <rdfs:label xml:lang="fr">identité noir</rdfs:label>
-    <foaf:name xml:lang="en">black</foaf:name>
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of blackness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "Black" (e.g. @@#blackEthnicity@@, @@#blackRaceColour@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la noirceur de peau en tant que charactérique physique associée à diverses formes culturelles. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «noires» (par exemple @@#blackEthnicity@@, @@#blackRaceColour@@).</skos:definition>
     <cwrc:represents rdf:resource="#blackEthnicity"/>
@@ -5928,7 +5904,6 @@
     <skos:altLabel xml:lang="en">man</skos:altLabel>
     <rdfs:label xml:lang="en">man</rdfs:label>
     <rdfs:label xml:lang="fr">homme</rdfs:label>
-    <foaf:name xml:lang="en">Man (Label)</foaf:name>
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of manhood, masculinity, or maleness as associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "man" (e.g. @@#man@@, @@#cisMan@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la masculinité, ou de la virilité. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «masculines» (par exemple @@#man@@, @@#cisMan@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
@@ -5943,7 +5918,6 @@
     <skos:altLabel xml:lang="en">woman</skos:altLabel>
     <rdfs:label xml:lang="en">woman</rdfs:label>
     <rdfs:label xml:lang="fr">femme</rdfs:label>
-    <foaf:name xml:lang="en">Woman (Label)</foaf:name>
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of womanhood, femininity, or femaleness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "woman" (e.g. @@#woman@@, @@#transWoman@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la féminité. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «féminines» (par exemple @@#woman@@, @@#transWoman@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
@@ -5958,7 +5932,6 @@
   <skos:Concept rdf:about="#queerLabel">
     <rdfs:label xml:lang="en">queer identity</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <foaf:name xml:lang="en">queer (Label)</foaf:name>
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of queerness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "Queer" (e.g. @@#GenderQueer@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="#TextLabels"/>
@@ -7059,7 +7032,6 @@
   <rdf:Description rdf:about="#england">
     <rdfs:label xml:lang="en">England</rdfs:label>
     <rdfs:label xml:lang="fr">Angleterre</rdfs:label>
-    <foaf:name xml:lang="en">England (Geographical Heritage)</foaf:name>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#GeographicHeritage"/>
     <skos:definition xml:lang="en"/>
@@ -7077,7 +7049,6 @@
   <rdf:Description rdf:about="#englandLabel">
     <rdfs:label xml:lang="en">England</rdfs:label>
     <rdfs:label xml:lang="fr">Angleterre</rdfs:label>
-    <foaf:name xml:lang="en">England</foaf:name>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="#TextLabels"/>
@@ -7097,7 +7068,6 @@
       <skos:altLabel xml:lang="en">male</skos:altLabel>
       <rdfs:label xml:lang="en">male</rdfs:label>
       <rdfs:label xml:lang="fr">male</rdfs:label>
-      <foaf:name xml:lang="en">Male (Label)</foaf:name>
       <skos:definition xml:lang="en"/>
       <skos:definition xml:lang="fr"/>
       <rdf:type rdf:resource="#TextLabels"/>
@@ -7117,7 +7087,6 @@
       <skos:altLabel xml:lang="en">female</skos:altLabel>
       <rdfs:label xml:lang="en">female</rdfs:label>
       <rdfs:label xml:lang="fr">femelle</rdfs:label>
-      <foaf:name xml:lang="en">Female (Label)</foaf:name>
       <skos:definition xml:lang="en"/>
       <skos:definition xml:lang="fr"/>
       <rdf:type rdf:resource="#TextLabels"/>
@@ -7136,7 +7105,6 @@
   <rdf:Description rdf:about="#genderManMale">
     <rdfs:label xml:lang="en">man/male</rdfs:label>
     <rdfs:label xml:lang="fr">homme/mâle</rdfs:label>
-    <foaf:name xml:lang="en">man/male (gender)</foaf:name>
     <skos:definition xml:lang="en"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -7150,7 +7118,6 @@
   <rdf:Description rdf:about="#genderWomanFemale">
     <rdfs:label xml:lang="en">Woman/Female</rdfs:label>
     <rdfs:label xml:lang="fr">Femme/Femelle</rdfs:label>
-    <foaf:name xml:lang="en">Woman/Female (gender)</foaf:name>
     <skos:definition xml:lang="en"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -7164,7 +7131,6 @@
   <rdf:Description rdf:about="#genderTransMan">
     <rdfs:label xml:lang="en">Transman/Transmale</rdfs:label>
     <rdfs:label xml:lang="fr">Homme Trans</rdfs:label>
-    <foaf:name xml:lang="en">Transman/Transmale (gender)</foaf:name>
     <skos:definition xml:lang="en"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -7178,7 +7144,6 @@
   <rdf:Description rdf:about="#genderTransWoman">
     <rdfs:label xml:lang="en">Transwoman/Transfemale</rdfs:label>
     <rdfs:label xml:lang="fr">Femme Trans</rdfs:label>
-    <foaf:name xml:lang="en">Transwoman/Transfemale (gender)</foaf:name>
     <skos:definition xml:lang="en"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -7192,7 +7157,6 @@
   <rdf:Description rdf:about="#maleSex">
       <rdfs:label xml:lang="en">Male</rdfs:label>
       <rdfs:label xml:lang="fr">Mâle</rdfs:label>
-      <foaf:name xml:lang="en">Male (Sex)</foaf:name>
       <skos:definition xml:lang="en"/>
       <skos:definition xml:lang="fr"/>
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -7207,7 +7171,6 @@
     <rdf:Description rdf:about="#femaleSex">
       <rdfs:label xml:lang="en">Female</rdfs:label>
       <rdfs:label xml:lang="fr">Femelle</rdfs:label>
-      <foaf:name xml:lang="en">Female (Sex)</foaf:name>
       <skos:definition xml:lang="en"/>
       <skos:definition xml:lang="fr"/>
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -7222,7 +7185,6 @@
     <rdf:Description rdf:about="#unknownSex">
       <rdfs:label xml:lang="en">Unknown</rdfs:label>
       <rdfs:label xml:lang="fr">Inconnue</rdfs:label>
-      <foaf:name xml:lang="en">Unknown (Sex)</foaf:name>
       <skos:definition xml:lang="en"/>
       <skos:definition xml:lang="fr"/>
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -7235,7 +7197,6 @@
     <rdf:Description rdf:about="#whiteRace">
       <rdfs:label xml:lang="en">white</rdfs:label>
       <rdfs:label xml:lang="fr">blanc</rdfs:label>
-      <foaf:name xml:lang="en">White (Race Colour)</foaf:name>
       <skos:definition xml:lang="en"/>
       <skos:definition xml:lang="fr"/>
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -7251,7 +7212,6 @@
     <rdf:Description rdf:about="#JewishEthnicity">
       <rdfs:label xml:lang="en">Jewish</rdfs:label>
       <rdfs:label xml:lang="fr">Juif</rdfs:label>
-      <foaf:name xml:lang="en">Jewish (Ethnicity)</foaf:name>
       <skos:definition xml:lang="en"/>
       <skos:definition xml:lang="fr"/>
       <cwrc:representedBy rdf:resource="#jewishLabel"/>
@@ -7825,7 +7785,6 @@
   </owl:DeprecatedProperty>
 
   <owl:DeprecatedClass rdf:ID="Performance">
-    <foaf:name>performance</foaf:name>
     <rdfs:label xml:lang="en">performance</rdfs:label>
     <rdfs:label xml:lang="fr">interprétation</rdfs:label>
     <rdfs:label xml:lang="de">Leistung</rdfs:label>
