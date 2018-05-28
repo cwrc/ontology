@@ -180,6 +180,14 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="genreOf">
+    <rdfs:label xml:lang="en">genre of</rdfs:label>
+    <rdfs:label xml:lang="fr">genre de</rdfs:label>
+    <rdfs:domain rdf:resource="#Genre"/>
+    <owl:inverseOf rdf:resource="#hasGenre"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
   <void:Dataset rdf:about="#datasetdefinition">
     <dcterms:title xml:lang="en">The CWRC Ontology</dcterms:title>
     <rdfs:label xml:lang="en">The CWRC Ontology</rdfs:label>
