@@ -316,12 +316,26 @@ def create_term_main(term, uri):
     defn = get_definition_list(uri)
     comment = get_comment_list(uri)
 
+    inverse_uri = None
+    if (uri, RDF.type, OWL.ObjectProperty) in o_graph and defn == []:
+        if (uri, OWL.inverseOf, None) in o_graph:
+            inverse_uri = [o for o in o_graph.objects(uri, OWL.inverseOf)][0]
+        elif (None, OWL.inverseOf, uri) in o_graph:
+            inverse_uri = [s for s in o_graph.subjects(OWL.inverseOf, uri)][0]
+
     html_str = '<p id="top">[<a href="#definition_list">back to top</a>]</p>\n'
     html_str += '<h5>%s</h5>\n' % (label)
-    html_str += """<div class="defn">%s</div>""" % (get_defn_html(defn))
+    if inverse_uri:
+        html_str += """<div class="defn">This is the inverse of """
+        html_str += '<a href="%s">%s</a>' % (get_link(inverse_uri), str(get_label_dict(inverse_uri)))
+        html_str += ' whose definition is as follows: <div class="inverse"'
+        html_str += '%s</div></div>' % (get_defn_html(get_definition_list(inverse_uri)))
+    else:
+        html_str += """<div class="defn">%s</div>""" % (get_defn_html(defn))
 
     if comment:
         html_str += get_comment_html(comment)
+
     alt_terms = [o for o in o_graph.objects(uri, SKOS.altLabel)]
     if alt_terms:
         html_str += '<div class="altlabel">\n'
@@ -540,7 +554,7 @@ def get_prefix_ns_with_link(uri):
 
 def get_definition_list(uri):
     defn = o_graph.objects(uri, SKOS.definition)
-    return [str(x) for x in defn if x.language == lang]
+    return [str(x) for x in defn if x.language == lang and str(x) != ""]
 
 
 def get_comment_html(comm_list):
