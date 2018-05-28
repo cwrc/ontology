@@ -109,6 +109,9 @@ deploy: all
 	cp $(ONTOLOGY)-preamble-EN.html /var/www/html/ontology/$(ONTOLOGY)-preamble-EN.html
 	cp $(ONTOLOGY)-preamble-FR.html /var/www/html/ontology/$(ONTOLOGY)-preamble-FR.html
 	
+	cp our-team-EN.html /var/www/html/ontology/our-team-EN.html
+	cp our-team-FR.html /var/www/html/ontology/our-team-FR.html
+
 	cp -f $(ONTOLOGY_W_DATE).rdf /var/www/html/ontology/.
 	cp -f $(ONTOLOGY_W_DATE).nt /var/www/html/ontology/.
 	cp -f $(ONTOLOGY_W_DATE).ttl /var/www/html/ontology/.	

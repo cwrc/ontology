@@ -129,7 +129,7 @@ def main():
         (None, RDF.type, class_uri)) if str(s) not in deprecated_uris])
 
     if args.subPropertyOf:
-        relation_list = get_relation(instances, "subPropertyOf") + get_relation(instances, "inverseOf")
+        relation_list = get_relation(instances, "subPropertyOf") #+ get_relation(instances, "inverseOf")
     elif args.subClassOf:
         relation_list = get_relation(instances, "subClassOf")
     else:
