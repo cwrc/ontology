@@ -5714,7 +5714,7 @@
     <rdfs:label xml:lang="fr">d'ethnicité</rdfs:label>
     <skos:definition xml:lang="en">Indicates a person's ethnic identity, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#Ethnicity@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit l'ethnicité d'une personne. De même que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#Ethnicity@@</skos:definition>
-    <owl:inverseOf rdf:resource="#ethnicityOf">
+    <owl:inverseOf rdf:resource="#ethnicityOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Ethnicity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5725,7 +5725,7 @@
     <rdfs:label xml:lang="fr">d'ethnicité (autodéclarée)</rdfs:label>
     <skos:definition xml:lang="en">Indicates a person's self-reported ethnic identity, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. For more information on this property, see @@#Ethnicity@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit l'ethnicité autodéclarée, accompagnée du contexte fourni par les annotations de @@#RaceEthnicityContext@@ là ou il est disponible. Pour plus d'informations sur cette propriété, voir @@#Ethnicity@@.</skos:definition>
-    <owl:inverseOf rdf:resource="#ethnicitySelfReportedOf">
+    <owl:inverseOf rdf:resource="#ethnicitySelfReportedOf"/>
     <rdfs:subPropertyOf rdf:resource="#hasEthnicity"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Ethnicity"/>
@@ -5737,7 +5737,7 @@
     <rdfs:label xml:lang="fr">d'ethnicité (déclarée)</rdfs:label>
     <skos:definition xml:lang="en">Indicates a person's reported ethnic identity, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. For more information on this property, see @@#Ethnicity@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit l'ethnicité déclarée, accompagnée du contexte fourni par les annotations de @@#RaceEthnicityContext@@ là ou il est disponible. Pour plus d'informations sur cette propriété, voir @@#Ethnicity@@.</skos:definition>
-    <owl:inverseOf rdf:resource="#ethnicityReportedOf">
+    <owl:inverseOf rdf:resource="#ethnicityReportedOf"/>
     <rdfs:subPropertyOf rdf:resource="#hasEthnicity"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Ethnicity"/>
@@ -5778,6 +5778,7 @@
     <rdfs:label xml:lang="fr">est de confession</rdfs:label>
     <skos:definition xml:lang="en">Indicates a person's religion or belief system, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#CulturalFormContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#Religion@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la religion d'une personne. De même que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#Religion@@.</skos:definition>
+    <owl:inverseOf rdf:resource="#religionOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5788,6 +5789,7 @@
     <rdfs:label xml:lang="fr">religion (autodéclarée)</rdfs:label>
     <skos:definition xml:lang="en">Indicates a person's self-reported religion or belief system, with accompanying context, where present, provided by @@#CulturalFormContext@@ annotations. For further information about this property, see @@#Religion@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit indique la/les religion(s) ou le(s) système(s) de croyance autoproclamé(s) par une personne. Pour plus d'informations sur cette propriété, voir @@#Religion@@.</skos:definition>
+    <owl:inverseOf rdf:resource="#religionSelfReportedOf"/>
     <rdfs:subPropertyOf rdf:resource="#hasReligion"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Religion"/>
@@ -5799,9 +5801,37 @@
     <rdfs:label xml:lang="fr">religion (déclarée)</rdfs:label>
     <skos:definition xml:lang="en">Indicates a person's reported religion or belief system, with accompanying context, where present, provided by @@#CulturalFormContext@@ annotations. For further information about this property, see @@#Religion@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit indique la/les religion(s) ou le(s) système(s) de croyance proclamé(s) par une personne. Pour plus d'informations sur cette propriété, voir @@#Religion@@.</skos:definition>
+    <owl:inverseOf rdf:resource="#religionReportedOf"/>
     <rdfs:subPropertyOf rdf:resource="#hasReligion"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="religionOf">
+    <rdfs:label xml:lang="en">religious affiliation of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="religionSelfReportedOf">
+    <rdfs:label xml:lang="en">religious affiliation (self-reported) of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="religionOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="religionReportedOf">
+    <rdfs:label xml:lang="en">religious affiliation (reported) of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="religionOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5812,6 +5842,7 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Describes a person's political affiliation, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#PoliticalContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#PoliticalAffiliation@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <owl:inverseOf rdf:resource="#politicalAffiliationof"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#PoliticalAffiliation"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5822,6 +5853,7 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Describes a person's self-reported political affiliation. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#PoliticalAffiliation@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <owl:inverseOf rdf:resource="#politicalAffiliationSelfReportedof"/>
     <rdfs:subPropertyOf rdf:resource="#hasPoliticalAffiliation"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#PoliticalAffiliation"/>
@@ -5833,9 +5865,37 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Describes a person's reported political affiliation. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#PoliticalAffiliation@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <owl:inverseOf rdf:resource="#politicalAffiliationReportedof"/>
     <rdfs:subPropertyOf rdf:resource="#hasPoliticalAffiliation"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#PoliticalAffiliation"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="politicalAffiliationOf">
+    <rdfs:label xml:lang="en">political affiliation of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#PoliticalAffiliation"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="politicalAffiliationSelfReportedOf">
+    <rdfs:label xml:lang="en">political affiliation (self-reported) of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#politicalAffiliationOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#PoliticalAffiliation"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="politicalAffiliationReportedOf">
+    <rdfs:label xml:lang="en">political affiliation (reported) of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#politicalAffiliationOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#PoliticalAffiliation"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5846,6 +5906,7 @@
     <rdfs:label xml:lang="fr">a une classe sociale</rdfs:label>
     <skos:definition xml:lang="en">Describes a person's class identity, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#CulturalFormContext@@. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#SocialClass@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la classe sociale d'une personne. Comme pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#SocialClass@@.</skos:definition>
+    <owl:inverseOf rdf:resource="#socialClassOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#SocialClass"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5856,6 +5917,7 @@
     <rdfs:label xml:lang="fr">a classe sociale autodéclarée</rdfs:label>
     <skos:definition xml:lang="en">Describes a person's self-reported class identity, with accompanying context, where present, provided by @@#CulturalFormContext@@. For further information about this property, see @@#SocialClass@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la classe social autodéclarée d'une personne. Pour plus d'informations sur cette propriété, voir @@#SocialClass@@. </skos:definition>
+    <owl:inverseOf rdf:resource="#socialClassSelfReportedOf"/>
     <rdfs:subPropertyOf rdf:resource="#hasSocialClass"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#SocialClass"/>
@@ -5867,9 +5929,37 @@
     <rdfs:label xml:lang="fr">a classe sociale déclarée</rdfs:label>
     <skos:definition xml:lang="en">Describes a person's reported class identity, with accompanying context, where present, provided by @@#CulturalFormContext@@. For further information about this property, see @@#SocialClass@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la classe social déclarée d'une personne. Pour plus d'informations sur cette propriété, voir @@#SocialClass@@. </skos:definition>
+    <owl:inverseOf rdf:resource="#socialClassReportedOf"/>
     <rdfs:subPropertyOf rdf:resource="#hasSocialClass"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#SocialClass"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="socialClassOf">
+    <rdfs:label xml:lang="en">class identity of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#SocialClass"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="socialClassSelfReportedOf">
+    <rdfs:label xml:lang="en">class identity (self-reported) of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#socialClassOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#SocialClass"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="socialClassReportedOf">
+    <rdfs:label xml:lang="en">class identity (reported) of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#socialClassOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#SocialClass"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5880,6 +5970,7 @@
     <rdfs:label xml:lang="fr">maîtrise une langue</rdfs:label>
     <skos:definition xml:lang="en">Knowledge of the language for speaking, writing, or reading, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#CulturalFormContext@@. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
     <skos:definition xml:lang="fr">Capacité d'écrire ou de lire une langue.</skos:definition>
+    <owl:inverseOf rdf:resource="#linguisticAbilityOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Language"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5890,6 +5981,7 @@
     <rdfs:label xml:lang="fr">maîtrise une langue (autodéclaré)</rdfs:label>
     <skos:definition xml:lang="en">Self-reported knowledge of the language for speaking, writing, or reading, with accompanying context, where present, provided by @@#CulturalFormContext@@. For further information about this property, see @@#LinguisticAbility@@.</skos:definition>
     <skos:definition xml:lang="fr">Le sujet déclare maîtriser une langue à l'oral ou à l'écrit. Pour plus d'information sur cette propriété, voir @@#LinguisticAbility@@.</skos:definition>
+    <owl:inverseOf rdf:resource="#linguisticAbilitySelfReportedOf"/>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Language"/>
@@ -5901,9 +5993,37 @@
     <rdfs:label xml:lang="fr">maîtrise une langue (déclaré)</rdfs:label>
     <skos:definition xml:lang="en">Reported knowledge of the language for speaking, writing, or reading, with accompanying context, where present, provided by @@#CulturalFormContext@@. For further information about this property, see @@#LinguisticAbility@@.</skos:definition>
     <skos:definition xml:lang="fr">Le sujet déclare maîtriser une langue à l'oral ou à l'écrit. Pour plus d'information sur cette propriété, voir @@#LinguisticAbility@@.</skos:definition>
+    <owl:inverseOf rdf:resource="#linguisticAbilityReportedOf"/>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Language"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="linguisticAbilityOf">
+    <rdfs:label xml:lang="en">language known of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#Language"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="linguisticAbilitySelfReportedOf">
+    <rdfs:label xml:lang="en">language known (self-reported) of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#linguisticAbilityOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#Language"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="linguisticAbilityReportedOf">
+    <rdfs:label xml:lang="en">language known (reported) of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#linguisticAbilityOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#Language"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5917,6 +6037,7 @@
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Language"/>
+    <owl:inverseOf rdf:resource="nativeLinguisticAbilityOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5925,9 +6046,10 @@
     <rdfs:label xml:lang="fr">langue maternelle (autodéclarée)</rdfs:label>
     <skos:definition xml:lang="en">Self-reported knowledge of the language, acquired during a person’s upbringing, for speaking, writing, or reading,  with accompanying context, where present, provided by @@#CulturalFormContext@@.</skos:definition>
     <skos:definition xml:lang="fr"> Le sujet déclare lire et écrire une langue maîtrisée depuis l'enfance. </skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbilitySelfReported"/>
+    <rdfs:subPropertyOf rdf:resource="#hasNativeLinguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Language"/>
+    <owl:inverseOf rdf:resource="nativeLinguisticAbilitySelfReportedOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5936,9 +6058,38 @@
     <rdfs:label xml:lang="fr">langue maternelle (déclarée)</rdfs:label>
     <skos:definition xml:lang="en">Reported knowledge of the language, acquired during a person’s upbringing, for speaking, writing, or reading,  with accompanying context, where present, provided by @@#CulturalFormContext@@.</skos:definition>
     <skos:definition xml:lang="fr"> Le sujet déclare lire et écrire une langue maîtrisée depuis l'enfance. </skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbilitySelfReported"/>
+    <rdfs:subPropertyOf rdf:resource="#hasNativeLinguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Language"/>
+    <owl:inverseOf rdf:resource="nativeLinguisticAbilityReportedOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="nativeLinguisticAbilityOf">
+    <rdfs:label xml:lang="en">natively known language of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#Language"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="nativeLinguisticAbilitySelfReportedOf">
+    <rdfs:label xml:lang="en">natively known language (self-reported) of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#nativeLinguisticAbilityOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#Language"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="nativeLinguisticAbilityReportedOf">
+    <rdfs:label xml:lang="en">natively known language (reported) of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#nativeLinguisticAbilityOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#Language"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5950,6 +6101,7 @@
     <skos:definition xml:lang="en">Describes a person's sexual identity, which may be self-reported or reported by another,  with accompanying context, where present, provided by @@#SexualityContext@@. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#Sexuality@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la sexualité d'une personne. Comme que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#Sexuality@@.</skos:definition>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:inverseOf rdf:resource="#sexualityOf"/>
     <rdfs:range rdf:resource="#Sexuality"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5960,6 +6112,7 @@
     <skos:definition xml:lang="en">Describes a person's self-reported sexual identity,  with accompanying context, where present, provided by @@#SexualityContext@@. For more information, see @@#Sexuality@@ and @@#SexualityContext@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la sexualité autodéclarée d'une personne. Pour plus d'information, voir @@#Sexuality@@ et @@#SexualityContext@@.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasSexuality"/>
+    <owl:inverseOf rdf:resource="#sexualitySelfReportedOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Sexuality"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5971,8 +6124,36 @@
     <skos:definition xml:lang="en">This describes a person's reported sexual identity,  with accompanying context, where present, provided by @@#SexualityContext@@. For more information, see @@#Sexuality@@ and @@#SexualityContext@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la sexualité déclarée d'une personne. Pour plus d'information, voir @@#Sexuality@@ et @@#SexualityContext@@.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasSexuality"/>
+    <owl:inverseOf rdf:resource="#sexualityReportedOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Sexuality"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="sexualityOf">
+    <rdfs:label xml:lang="en">sexual identity of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#Sexuality"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="sexualitySelfReportedOf">
+    <rdfs:label xml:lang="en">sexual identity (self-reported) of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#sexualityOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#Sexuality"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="sexualityReportedOf">
+    <rdfs:label xml:lang="en">sexual identity (reported) of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#sexualityOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#Sexuality"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
