@@ -128,8 +128,6 @@ def open_graph(specloc):
     # Creating rdf o_graph
     global o_graph
     o_graph = rdflib.Graph()
-    namespace_manager = rdflib.namespace.NamespaceManager(rdflib.Graph())
-    o_graph.namespace_manager = namespace_manager
     try:
         o_graph.open("store", create=True)
         o_graph.parse(specloc)

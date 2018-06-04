@@ -157,7 +157,6 @@
     <dcterms:description xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</dcterms:description>
     <skos:definition xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</skos:definition>
     <rdfs:comment xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</rdfs:comment>
-    <!-- -->
     <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc/4.0/"/>
     <cc:Jurisdiction rdf:resource="http://dbpedia.org/resource/Canada"/>
     <cc:attributionURL rdf:resource="http://www.cwrc.ca/"/>
@@ -1314,6 +1313,7 @@
     <rdfs:label xml:lang="en">man</rdfs:label>
     <rdfs:label xml:lang="fr">homme</rdfs:label>
     <skos:inScheme rdf:resource="#Gender"/>
+    <skos:altLabel xml:lang="en">MALE</skos:altLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">
       Indicates identification with or labelling as the gender man, and who is often but not necessarily understood to be sexed male.
@@ -1328,6 +1328,7 @@
   <cwrc:Gender rdf:about="#woman">
     <rdfs:label xml:lang="en">woman</rdfs:label>
     <rdfs:label xml:lang="fr">femme</rdfs:label>
+    <skos:altLabel xml:lang="en">FEMALE</skos:altLabel>
     <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">
@@ -1387,6 +1388,7 @@
   <cwrc:Gender rdf:about="#transGender">
     <rdfs:label xml:lang="en">transgender</rdfs:label>
     <rdfs:label xml:lang="fr">transgenre</rdfs:label>
+    <skos:altLabel xml:lang="en">TRANSGENDERED</skos:altLabel>
     <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">
@@ -1401,6 +1403,7 @@
   <cwrc:Gender rdf:about="#transMan">
     <rdfs:label xml:lang="en">transman/transmale</rdfs:label>
     <rdfs:label xml:lang="fr">homme trans</rdfs:label>
+    <skos:altLabel xml:lang="en">TRANSGENDERED FEMALE TO MALE</skos:altLabel>
     <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">
@@ -1416,6 +1419,7 @@
   <cwrc:Gender rdf:about="#transWoman">
     <rdfs:label xml:lang="en">transwoman/transfemale</rdfs:label>
     <rdfs:label xml:lang="fr">femme trans</rdfs:label>
+    <skos:altLabel xml:lang="en">TRANSGENDERED MALE TO FEMALE</skos:altLabel>
     <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">
