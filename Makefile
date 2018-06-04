@@ -157,6 +157,7 @@ cross:
 	python3 scripts/crossRef.py cwrc.rdf
 taxtest:
 	# python3 scripts/createTaxonomy.py cwrc.rdf PoliticalAffiliation $(O_LANG) -hide | unflatten -l 20 -c 30 | dot -oPA.svg -Tsvg 
-	python3 scripts/createTaxonomy.py cwrc.rdf owl:ObjectProperty $(O_LANG) -subPropertyOf | dot -oObjectProperty.svg -Tsvg 
+	python3 scripts/createTaxonomy.py famcwrc.rdf owl:ObjectProperty $(O_LANG) -subPropertyOf | dot -oObjectProperty.svg -Tsvg 
+	# python3 scripts/createTaxonomy.py cwrc.rdf owl:ObjectProperty $(O_LANG) -subPropertyOf | dot -oObjectProperty.svg -Tsvg 
 	# python3 scripts/createTaxonomy.py cwrc.rdf owl:Class $(O_LANG) -subClassOf | circo -oClass.svg -Tsvg 
 	# python3 scripts/createTaxonomy.py cwrc.rdf owl:ObjectProperty $(O_LANG) -subPropertyOf | unflatten -l 20 -c 30 | dot -o$@ -Tsvg 

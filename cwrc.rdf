@@ -7084,6 +7084,7 @@
     <skos:definition xml:lang="fr">Ce terme représente uniquement les relations affectives, amoureuses ou familiales et non des relations d'affaires.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#interpersonalRelationship"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <owl:sameAs rdf:resource="#partnerOf"/>
@@ -7098,7 +7099,7 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
+    <rdfs:subPropertyOf rdf:resource="#interpersonalRelationship"/>
     <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Partnership"/>
     <owl:inverseOf rdf:resource="#hasPartner"/>
   </owl:ObjectProperty>
