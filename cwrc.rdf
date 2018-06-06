@@ -1325,6 +1325,17 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
+  <cwrc:Gender rdf:about="#undefinedGender">
+    <rdfs:label xml:lang="en">undefined</rdfs:label>
+    <rdfs:label xml:lang="fr">indéfini</rdfs:label>
+    <skos:inScheme rdf:resource="#Gender"/>
+    <skos:altLabel xml:lang="en">UNDEFINED</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Indicates that the person's gender is not disclosed by them or is not indicated in the source.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Gender>
   <cwrc:Gender rdf:about="#woman">
     <rdfs:label xml:lang="en">woman</rdfs:label>
     <rdfs:label xml:lang="fr">femme</rdfs:label>
