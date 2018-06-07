@@ -6319,6 +6319,8 @@
   <owl:ObjectProperty rdf:ID="interpersonalRelationship">
     <rdfs:label xml:lang="en">interpersonal relationship</rdfs:label>
     <rdfs:label xml:lang="fr">relation interpersonnelle</rdfs:label>
+    <skos:definition xml:lang="en">"An interpersonal relationship is a strong, deep, or close association or acquaintance between two or more people that may range in duration from brief to enduring. This association may be based on inference, love, solidarity, regular business interactions, or some other type of social commitment. Interpersonal relationships are formed in the context of social, cultural and other influences. The context can vary from family or kinship relations, friendship, marriage, relations with associates, work, clubs, neighborhoods, and places of worship. They may be regulated by law, custom, or mutual agreement, and are the basis of social groups and society as a whole." <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">«Une relation humaine implique au moins deux êtres humains et est souvent décrite via des typologies différentes, selon la personne s'intéressant à la nature de la relation ou plutôt aux personnes en relation. Ces relations peuvent se fonder sur l'amour, la fraternité, la solidarité, la compagnie, des interactions professionnelles ou d'autres types d'activités sociales. Les relations interpersonnelles (amoureuses ou familiales) appartiennent au contexte de la relation humaine et culturelle.» <![CDATA[<a href="#_dbpedia_2018">(DBpedia, 2018)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -6328,6 +6330,8 @@
   <owl:ObjectProperty rdf:ID="hasRelative">
     <rdfs:label xml:lang="en">has relative</rdfs:label>
     <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdfs:subPropertyOf rdf:resource="#interpersonalRelationship"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
