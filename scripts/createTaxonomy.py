@@ -8,6 +8,7 @@ import argparse
 # Important nspaces
 RDF = rdflib.Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 VANN = rdflib.Namespace("http://purl.org/vocab/vann/")
+OWL = rdflib.Namespace("http://www.w3.org/2002/07/owl#")
 
 relations = {
     "broaderTransitive": "http://www.w3.org/2004/02/skos/core#broaderTransitive",
@@ -43,16 +44,24 @@ def open_graph(o_file):
 
 
 def get_class_uri(taxonomy):
-    onto_pre = [str(o) for s, p, o in o_graph.triples(((None, VANN.preferredNamespacePrefix, None)))][0]
+    onto_prefix = [str(o) for s, p, o in o_graph.triples(((None, VANN.preferredNamespacePrefix, None)))]
 
     # getting all namespaces from o_graph & creating a dictionary of the names spaces - {identifier:uri}
     all_ns = [n for n in o_graph.namespace_manager.namespaces()]
     namespace_dict = {key: value for (key, value) in all_ns}
 
-    if onto_pre in namespace_dict:
-        class_uri = namespace_dict[onto_pre]
+    if onto_prefix:
+        onto_prefix = onto_prefix[0]
     else:
+        onto_prefix = None
+
+    if onto_prefix in namespace_dict:
+        class_uri = namespace_dict[onto_prefix]
+    elif "" in namespace_dict:
         class_uri = namespace_dict['']
+    else:
+        class_uri = [x for x in o_graph.subjects(RDF.type, OWL.Ontology)][0]
+        onto_prefix = {value: key for (key, value) in all_ns}[class_uri]
 
     if ":" in taxonomy:
         temp = taxonomy.split(":")[0]
@@ -64,14 +73,16 @@ def get_class_uri(taxonomy):
 
 
 def get_deprecated_terms():
-    query_str = """select * where {?uri vs:term_status ?literal.}"""
+    query_str = """select * where {?uri <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> ?literal.}"""
     return sorted([str(row.uri) for row in o_graph.query(query_str) if str(row.literal) == "deprecated"])
 
 
 def get_label(uri, lang):
     query_str = """select distinct ?label  where {OPTIONAL { <%s> rdfs:label ?label. }.filter(langMatches(lang(?label), "%s"))}""" % (
         uri, lang)
-    label = ""
+    # if no label should return clean uri term
+    # for some reason not grabbing labels :/ on test.owl
+    label = get_uri_term(uri)
     for row in o_graph.query(query_str):
         label = row.label
     return label
@@ -129,9 +140,11 @@ def main():
         (None, RDF.type, class_uri)) if str(s) not in deprecated_uris])
 
     if args.subPropertyOf:
-        relation_list = get_relation(instances, "subPropertyOf") #+ get_relation(instances, "inverseOf")
+        relation_list = get_relation(instances, "subPropertyOf")  # + get_relation(instances, "inverseOf")
     elif args.subClassOf:
         relation_list = get_relation(instances, "subClassOf")
+    elif args.inverseOf:
+        relation_list = get_relation(instances, "inverseOf")
     else:
         relation_list = get_relation(instances, "broaderTransitive")
 

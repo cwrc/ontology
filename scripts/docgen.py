@@ -110,8 +110,7 @@ def create_inverse_dict():
 def get_uri_term(uri):
     string = str(uri)
     index = max(uri.rfind('#'), uri.rfind('/')) + 1
-    substring = string[index:]
-    return (substring)
+    return string[index:]
 
 
 def create_link_lists(list, name):
@@ -272,6 +271,7 @@ def all_terms_html(nodes):
 def specgen(template, language):
     global spec_url
     global spec_ns
+    global spec_pre
     global ns_list
     global namespace_dict
     global symmetric_dict
@@ -285,8 +285,11 @@ def specgen(template, language):
 
     if spec_pre in namespace_dict:
         spec_url = namespace_dict[spec_pre]
-    else:
+    elif "" in namespace_dict:
         spec_url = namespace_dict['']
+    else:
+        spec_url = [x for x in o_graph.subjects(RDF.type, OWL.Ontology)][0]
+        spec_pre = {value: key for (key, value) in all_ns}[spec_url]
 
     spec_ns = rdflib.Namespace(spec_url)
     deprecated_html = create_deprecated_html(o_graph)
@@ -297,12 +300,16 @@ def specgen(template, language):
 
     azlist_html = newAZ(get_high_lvl_nodes())
     terms_html = all_terms_html(get_high_lvl_nodes())
-    if spec_pre:
-        template = template.replace("{_header_}", get_header_html())
+
+    # if spec_pre:
+    #     template = template.replace("{_header_}", get_header_html())
 
     template = template.replace("{_azlist_}", azlist_html)
     template = template.replace("{_terms_}", terms_html)
-    template = template.replace("{_deprecated_}", deprecated_html)
+    if deprecated_uris:
+        template = template.replace("{_deprecated_}", deprecated_html)
+    else:
+        template = template.replace("{_deprecated_}", "")
     # bibliography_html = all_terms_html(bibo_nodes)
     # template = template.replace("{_bibliography_}", newAZ(bibo_nodes) + bibliography_html)
 
@@ -477,11 +484,13 @@ def get_comment_list(uri):
 
 
 def get_label_dict(uri):
+    temp = get_uri_term(uri)
     label = o_graph.objects(uri, RDFS.label)
     for x in label:
+        temp = x
         if x.language == lang:
             return x
-    return (None)
+    return (temp)
 
 
 def get_prefix(uri):
