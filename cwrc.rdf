@@ -1618,6 +1618,23 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broader rdf:resource="http://rdf.muninn-project.org/ontologies/appearances#SkinColorSimpleWhite"/>
   </cwrc:RaceColour>
+  <cwrc:RaceColour rdf:about="#eurasianRaceColour">
+    <rdfs:label xml:lang="en">eurasian</rdfs:label>
+    <rdfs:label xml:lang="fr">eurasien</rdfs:label>
+    <skos:definition xml:lang="en">
+      "A Eurasian is a person of mixed Asian and European ancestry. In 19th-century British India, Eurasians — later called Anglo-Indians — were of mixed Portuguese, Dutch, British, Indian or, more rarely, French descent, but now their parentage may be from other parts of South, East or Southeast Asia. The term has been used in anthropological literature since the 1960s. It may also be extended to those with Central Asian heritage." <![CDATA[<a href="http://dbpedia.org/page/Eurasian_(mixed_ancestry)">(DBpedia, 2017)</a>]]>
+    </skos:definition>
+    <skos:definition xml:lang="fr">«Un·e Eurasien·ne e est une personne d'ascendance mixte asiatique et européenne. Dans l'Inde britannique du XIXe siècle, les personnes d'ascendance eurasienne (plus tard anglo-indienne) étaient d'origine mixte portugaise, hollandaise, britannique, indienne ou, plus rarement, française, mais leur ascendance pouvait provenir d'autres régions de l'Asie du Sud, de l'Est ou du Sud-Est. Le terme est utilisé en anthropologie depuis les années 1960. Il peut également être étendu aux personnes possédant des origines d'Asie centrale.» <![CDATA[<a href="http://dbpedia.org/page/Eurasian_(mixed_ancestry)">(DBpedia, 2017)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <skos:inScheme rdf:resource="#RaceColour"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:representedBy rdf:resource="#eurasianLabel"/>
+    <rdfs:subClassOf rdf:resource="#eurasianLabel"/>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Eurasian_(mixed_ancestry)"/>
+  </cwrc:RaceColour>
   <cwrc:RaceColour rdf:about="#mixedRaceColour">
     <rdfs:label xml:lang="en">mixed-race</rdfs:label>
     <rdfs:label xml:lang="fr">métis</rdfs:label>
@@ -1696,23 +1713,6 @@
     <skos:inScheme rdf:resource="#RaceColour"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:RaceColour>
-  <cwrc:RaceColour rdf:about="#eurasianRace">
-    <rdfs:label xml:lang="en">eurasian</rdfs:label>
-    <rdfs:label xml:lang="fr">eurasien</rdfs:label>
-    <skos:definition xml:lang="en">
-      "A Eurasian is a person of mixed Asian and European ancestry. In 19th-century British India, Eurasians — later called Anglo-Indians — were of mixed Portuguese, Dutch, British, Indian or, more rarely, French descent, but now their parentage may be from other parts of South, East or Southeast Asia. The term has been used in anthropological literature since the 1960s. It may also be extended to those with Central Asian heritage." <![CDATA[<a href="http://dbpedia.org/page/Eurasian_(mixed_ancestry)">(DBpedia, 2017)</a>]]>
-    </skos:definition>
-    <skos:definition xml:lang="fr">«Un·e Eurasien·ne e est une personne d'ascendance mixte asiatique et européenne. Dans l'Inde britannique du XIXe siècle, les personnes d'ascendance eurasienne (plus tard anglo-indienne) étaient d'origine mixte portugaise, hollandaise, britannique, indienne ou, plus rarement, française, mais leur ascendance pouvait provenir d'autres régions de l'Asie du Sud, de l'Est ou du Sud-Est. Le terme est utilisé en anthropologie depuis les années 1960. Il peut également être étendu aux personnes possédant des origines d'Asie centrale.» <![CDATA[<a href="http://dbpedia.org/page/Eurasian_(mixed_ancestry)">(DBpedia, 2017)</a>]]></skos:definition>
-    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
-    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
-    <skos:inScheme rdf:resource="#RaceColour"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:representedBy rdf:resource="#eurasianLabel"/>
-    <rdfs:subClassOf rdf:resource="#eurasianLabel"/>
-    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Eurasian_(mixed_ancestry)"/>
   </cwrc:RaceColour>
   <owl:Class rdf:ID="RaceEthnicity">
     <rdfs:label xml:lang="en">race or ethnicity</rdfs:label>
@@ -6229,14 +6229,14 @@
   <skos:Concept rdf:about="#eurasianLabel">
     <rdfs:label xml:lang="en">Eurasian identity</rdfs:label>
     <rdfs:label xml:lang="fr">identité Eurasian</rdfs:label>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of the term Eurasian as associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "Eurasian" (e.g. @@#eurasianRace@@) cultural identities.</skos:definition>
-    <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité du terme «eurasien·ne». Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «eurasiennes» (par exemple @@#eurasianRace@@)</skos:definition>
-    <cwrc:represents rdf:resource="#eurasianRace"/>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of the term Eurasian as associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "Eurasian" (e.g. @@#eurasianRaceColour@@) cultural identities.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité du terme «eurasien·ne». Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «eurasiennes» (par exemple @@#eurasianRaceColour@@)</skos:definition>
+    <cwrc:represents rdf:resource="#eurasianRaceColour"/>
     <rdf:type rdf:resource="#TextLabels"/>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:narrower rdf:resource="#eurasianRace"/>
+    <skos:narrower rdf:resource="#eurasianRaceColour"/>
   </skos:Concept>
 
   <skos:Concept rdf:about="#jewishLabel">
@@ -7383,6 +7383,28 @@
   </owl:DeprecatedClass>
 
   <!-- Deprecated Instances -->
+    <rdf:Description rdf:about="#eurasianRace">
+      <rdfs:label xml:lang="en">eurasian</rdfs:label>
+      <rdfs:label xml:lang="fr">eurasien</rdfs:label>
+      <skos:definition xml:lang="en">
+        "A Eurasian is a person of mixed Asian and European ancestry. In 19th-century British India, Eurasians — later called Anglo-Indians — were of mixed Portuguese, Dutch, British, Indian or, more rarely, French descent, but now their parentage may be from other parts of South, East or Southeast Asia. The term has been used in anthropological literature since the 1960s. It may also be extended to those with Central Asian heritage." <![CDATA[<a href="http://dbpedia.org/page/Eurasian_(mixed_ancestry)">(DBpedia, 2017)</a>]]>
+      </skos:definition>
+      <skos:definition xml:lang="fr">«Un·e Eurasien·ne e est une personne d'ascendance mixte asiatique et européenne. Dans l'Inde britannique du XIXe siècle, les personnes d'ascendance eurasienne (plus tard anglo-indienne) étaient d'origine mixte portugaise, hollandaise, britannique, indienne ou, plus rarement, française, mais leur ascendance pouvait provenir d'autres régions de l'Asie du Sud, de l'Est ou du Sud-Est. Le terme est utilisé en anthropologie depuis les années 1960. Il peut également être étendu aux personnes possédant des origines d'Asie centrale.» <![CDATA[<a href="http://dbpedia.org/page/Eurasian_(mixed_ancestry)">(DBpedia, 2017)</a>]]></skos:definition>
+      <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+      <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+      <skos:inScheme rdf:resource="#RaceColour"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+      <void:inDataset rdf:resource="#datasetdefinition"/>
+      <cwrc:representedBy rdf:resource="#eurasianLabel"/>
+      <rdfs:subClassOf rdf:resource="#eurasianLabel"/>
+      <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Eurasian_(mixed_ancestry)"/>
+      <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#eurasianRaceColour@@.</rdfs:comment>
+      <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#eurasianRaceColour@@.</rdfs:comment>
+      <dcterms:isReplacedBy rdf:resource="#eurasianRaceColour"/>
+      <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+      <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    </rdf:Description>
     <rdf:Description rdf:about="#jacobism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <rdfs:label xml:lang="en">Jacobism</rdfs:label>
