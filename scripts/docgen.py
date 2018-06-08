@@ -301,8 +301,8 @@ def specgen(template, language):
     azlist_html = newAZ(get_high_lvl_nodes())
     terms_html = all_terms_html(get_high_lvl_nodes())
 
-    # if spec_pre:
-    #     template = template.replace("{_header_}", get_header_html())
+    if spec_pre:
+        template = template.replace("{_header_}", get_header_html())
 
     template = template.replace("{_azlist_}", azlist_html)
     template = template.replace("{_terms_}", terms_html)
