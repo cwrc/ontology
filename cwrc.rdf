@@ -1707,16 +1707,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:RaceColour>
-  <owl:Class rdf:ID="RaceEthnicity">
-    <rdfs:label xml:lang="en">race or ethnicity</rdfs:label>
-    <rdfs:label xml:lang="fr">race ou ethnicité</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
   <owl:Class rdf:ID="Ethnicity">
     <rdfs:label xml:lang="en">ethnicity</rdfs:label>
     <rdfs:label xml:lang="fr">ethnicité</rdfs:label>
@@ -7257,6 +7247,17 @@
 
 
   <!-- Deprecated classes go here for sanity -->
+  <owl:DeprecatedClass rdf:ID="RaceEthnicity">
+    <rdfs:label xml:lang="en">race or ethnicity</rdfs:label>
+    <rdfs:label xml:lang="fr">race ou ethnicité</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:resource="#CulturalForm"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of class @@#RaceColour@@ and @@#Ethnicity@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe @@#RaceColour@@ et @@#Ethnicity@@.</rdfs:comment>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </owl:DeprecatedClass>
   <owl:DeprecatedClass rdf:ID="LinguisticAbility">
     <rdfs:label xml:lang="en">linguistic ability (spoken and/or writen)</rdfs:label>
     <rdfs:label xml:lang="fr">aptitude linguistique (écrit ou parlé)</rdfs:label>
