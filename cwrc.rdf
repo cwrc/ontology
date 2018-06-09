@@ -1239,6 +1239,17 @@
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/English_national_identity"/>
     <cwrc:representedBy rdf:resource="#englishLabel"/>
   </cwrc:NationalIdentity>
+  <cwrc:NationalIdentity rdf:about="#mohawkNationalIdentity">
+    <rdfs:label xml:lang="en">Mohawk</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#NationalIdentity"/>
+    <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as Mohawk as a national identity.</skos:definition>
+    <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie à ou s'est vu assigner une identité nationale mohawk.</skos:definition>
+    <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Mohawk"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:NationalIdentity>
 
   <owl:Class rdf:ID="Language">
     <rdfs:label xml:lang="en">language</rdfs:label>
