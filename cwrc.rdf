@@ -252,7 +252,7 @@
   <owl:ObjectProperty rdf:about="#represents">
     <rdfs:label xml:lang="en">represents</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates a concept to ambiguous or overloaded terms, classed as @@#TextLabels@@, that designate multivalent and frequently contested concepts.  For instance, @@#englishLabel@@ is a @@#TextLabels@@ that represents both @@#englishNationalIdentity@@ and @@#englishNationalHeritage@@.</skos:definition>
+    <skos:definition xml:lang="en">Relates a concept to ambiguous or overloaded terms, classed as @@#TextLabels@@, that designate multivalent and frequently contested concepts.  For instance, @@#englishLabel@@ is a @@#TextLabels@@ that represents both ISO 3166-2:GB-ENG and @@#englishNationalHeritage@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="#TextLabels"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -260,7 +260,7 @@
   <owl:ObjectProperty rdf:about="#representedBy">
     <rdfs:label xml:lang="en">represented by</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates ambiguous or overloaded terms, classed as @@#TextLabels@@ to two or more particularly contested and related concepts. Often used for @@#CulturalForm@@; for instance @@#englishNationalIdentity@@ and @@#englishNationalHeritage@@ are both represented by @@#englishLabel@@.</skos:definition>
+    <skos:definition xml:lang="en">Relates ambiguous or overloaded terms, classed as @@#TextLabels@@ to two or more particularly contested and related concepts. Often used for @@#CulturalForm@@; for instance ISO 3166-2:GB-ENG and @@#englishNationalHeritage@@ are both represented by @@#englishLabel@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:range rdf:resource="#TextLabels"/>
     <owl:inverseOf rdf:resource="#represents"/>
@@ -1226,19 +1226,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:NationalIdentity>
-  <cwrc:NationalIdentity rdf:about="#englishNationalIdentity">
-    <rdfs:label xml:lang="en">English</rdfs:label>
-    <rdfs:label xml:lang="fr">Anglais</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="#NationalIdentity"/>
-    <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as English as a national identity.</skos:definition>
-    <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie à ou s'est vu assigner une identité nationale anglaise.</skos:definition>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <owl:sameAs rdf:resource="http://eurovoc.europa.eu/5438"/>
-    <skos:closeMatch rdf:resource="http://dbpedia.org/resource/English_national_identity"/>
-    <cwrc:representedBy rdf:resource="#englishLabel"/>
-  </cwrc:NationalIdentity>
   <cwrc:NationalIdentity rdf:about="#mohawkNationalIdentity">
     <rdfs:label xml:lang="en">Mohawk</rdfs:label>
     <rdfs:label xml:lang="fr">mohawk</rdfs:label>
@@ -1247,6 +1234,17 @@
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as Mohawk as a national identity.</skos:definition>
     <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie à ou s'est vu assigner une identité nationale mohawk.</skos:definition>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Mohawk"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:NationalIdentity>
+  <cwrc:NationalIdentity rdf:about="#statelessNationalIdentity">
+    <rdfs:label xml:lang="en">stateless</rdfs:label>
+    <rdfs:label xml:lang="fr">apatride</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#NationalIdentity"/>
+    <skos:definition xml:lang="en">In international law, statelessness is the lack of citizenship. A stateless person is someone who is "not considered as a national by any state under the operation of its law". Some stateless persons are also refugees. However, not all refugees are stateless, and many persons who are stateless have never crossed an international border. Most people belonging to a stateless nation, despite lacking their own nation state, nonetheless hold citizenship in one or more countries, in some cases effectively as second-class citizens.</skos:definition>
+    <skos:definition xml:lang="fr">Un apatride est, selon la convention de New York du 28 septembre 1954, « toute personne qu'aucun État ne considère comme son ressortissant par application de sa législation ». Plus simplement, un apatride est une personne dépourvue de nationalité, qui ne bénéficie de la protection d'aucun État. Il y aurait plus de 12 millions d'apatrides, selon le Haut Commissariat des Nations unies pour les réfugiés (HCR). Le mot « apatride  » est composé du préfixe privatif a- et du grec patris, (« terre des ancêtres »).Le terme allemand heimatlos, dont il est le synonyme, s'utilise, en français, pour désigner les allemands ayant fui l'Allemagne nazie durant la Seconde Guerre mondiale.[réf. nécessaire]</skos:definition>
+    <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Statelessness"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:NationalIdentity>
@@ -1614,7 +1612,7 @@
   <cwrc:RaceColour rdf:about="#whiteRaceColour">
     <rdfs:label xml:lang="en">white</rdfs:label>
     <rdfs:label xml:lang="fr">blanc</rdfs:label>
-    <skos:altLabel xml:lang="en">creole (typically caucasian (european settler descendants)</skos:altLabel>
+    <skos:altLabel xml:lang="en">presumably white</skos:altLabel>
     <skos:definition xml:lang="en">
       "White people is a racial classification specifier, used for people of Europid ancestry, with the exact implications dependent on context. The contemporary usage of 'white people' or a 'white race' as a large group of (mainly European) populations contrasting with 'black', American Indian, colored' or non-white originates in the 17th century. It is today particularly used as a racial classifier in multiracial societies, such as the United States (White American), the United Kingdom (White British), Brazil (White Brazilian), and South Africa (White South African). Various social constructions of whiteness have been significant to national identity, public policy, religion, population statistics, racial segregation, affirmative action, white privilege, eugenics, racial marginalization and racial quotas. The term 'white race' or 'white people' entered the major European languages in the later 17th century, in the context of racialized slavery and unequal status in European colonies. Description of populations as 'white' in reference to their skin color predates this notion and is found in Greco-Roman ethnography and other ancient sources. Scholarship on race generally distinguishes the modern concept from pre-modern descriptions of collective difference." <![CDATA[<a href="http://dbpedia.org/page/White_people">(DBpedia, 2017)</a>]]>
     </skos:definition>
@@ -1652,6 +1650,7 @@
   <cwrc:RaceColour rdf:about="#mixedRaceColour">
     <rdfs:label xml:lang="en">mixed-race</rdfs:label>
     <rdfs:label xml:lang="fr">métis</rdfs:label>
+    <skos:altLabel xml:lang="en">mixed white and black (or, in her own word, colored)</skos:altLabel>
     <skos:altLabel xml:lang="en">mixed-race</skos:altLabel>
     <skos:altLabel xml:lang="en">mixed-blood</skos:altLabel>
     <skos:altLabel xml:lang="en">mixed</skos:altLabel>
@@ -6398,12 +6397,12 @@
     <skos:altLabel xml:lang="en">english</skos:altLabel>
     <rdfs:label xml:lang="en">English identity</rdfs:label>
     <rdfs:label xml:lang="fr">identité anglais</rdfs:label>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of Englishness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "English" (e.g. @@#englishNationalIdentity@@, @@#englishGeographicHeritage@@) cultural identities.</skos:definition>
-    <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité du terme «anglais·e». Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «anglaises» (par exemple @@#englishNationalIdentity@@, @@#englishGeographicHeritage@@).</skos:definition>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of Englishness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "English" (e.g. ISO 3166-2:GB-ENG, @@#englishGeographicHeritage@@) cultural identities.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité du terme «anglais·e». Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «anglaises» (par exemple ISO 3166-2:GB-ENG, @@#englishGeographicHeritage@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
     <cwrc:represents rdf:resource="#EnglishNationalHeritage"/>
     <cwrc:represents rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
-    <cwrc:represents rdf:resource="#EnglishNationalIdentity"/>
+    <cwrc:represents>ISO 3166-2:GB-ENG</cwrc:represents>
     <cwrc:represents rdf:resource="#englishGeographicHeritage"/>
     <skos:inScheme rdf:resource="#TextLabels"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -7537,6 +7536,23 @@
   </owl:DeprecatedClass>
 
   <!-- Deprecated Instances -->
+  <rdf:Description rdf:about="#englishNationalIdentity">
+    <rdfs:label xml:lang="en">English</rdfs:label>
+    <rdfs:label xml:lang="fr">Anglais</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#NationalIdentity"/>
+    <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as English as a national identity.</skos:definition>
+    <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie à ou s'est vu assigner une identité nationale anglaise.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:sameAs rdf:resource="http://eurovoc.europa.eu/5438"/>
+    <skos:closeMatch rdf:resource="http://dbpedia.org/resource/English_national_identity"/>
+    <cwrc:representedBy rdf:resource="#englishLabel"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of foreign instance ISO 3166-2:GB-ENG.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance ISO 3166-2:GB-ENG.</rdfs:comment>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
     <rdf:Description rdf:about="#eurasianRace">
       <rdfs:label xml:lang="en">eurasian</rdfs:label>
       <rdfs:label xml:lang="fr">eurasien</rdfs:label>
@@ -8014,8 +8030,8 @@
       <skos:definition xml:lang="fr"/>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
       <void:inDataset rdf:resource="#datasetdefinition"/>
-      <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#englishNationalIdentity@@.</rdfs:comment>
-      <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#englishNationalIdentity@@.</rdfs:comment>
+      <rdfs:comment xml:lang="en">Deprecated in favour of instance ISO 3166-2:GB-ENG.</rdfs:comment>
+      <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance ISO 3166-2:GB-ENG.</rdfs:comment>
       <dcterms:isReplacedBy rdf:resource="#englishNationalIdentity"/>
       <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
       <vs:term_status xml:lang="en">deprecated</vs:term_status>
