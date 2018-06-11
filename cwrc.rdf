@@ -1258,7 +1258,7 @@
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A human language or dialect, whether spoken and/or written.</skos:definition>
     <skos:definition xml:lang="fr">Écrit ou Parlé. Pour des raisons opérationnelles, cette classe est équivalente à la classe de langage iso639 publiée par la Library of Congress.</skos:definition>
-    <skos:note><a href="http://id.loc.gov/vocabulary/languages.html">Library of Congress Languages</a></li> codes are typically used for instances of <i>language</i>.<\skos:note>
+    <skos:note><![CDATA[<a href="http://id.loc.gov/vocabulary/languages.html">Library of Congress Languages</a></li>]]> codes are typically used for instances of <![CDATA[<i>language</i>]]>.</skos:note>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/iso639-1/iso639-1_Language"/>
@@ -1271,7 +1271,7 @@
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A subclass of @@#CulturalForm@@, this property indicates a person's geographic heritage, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. Geographic heritage involves the geographical origins of a person's family, which often contributes to an understanding of their racial and ethnic background. It offers a way to capture individuals identified as "South-Asian," for example, when no more precise national heritage is indicated. See @@#RaceEthnicityContext@@ for a detailed description of the complexities of this class. It can be multiple and it can be different from a person's national identity or national heritage, current or official citizenship, or the geographical region or territory in which a person resides. Those using this class and its subclasses are encouraged to consult associated @@#NationalityContext@@ excerpts or annotations, if available.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe de @@#CulturalForm@@, Héritage Géographique indique l'héritage géographique d'une personne, accompagné du contexte fourni par @@#NationalityContext@@ lorsqu'il est disponible. L'héritage géographique inclut les origines géographiques de la famille du sujet, souvent utiles à la compréhension de son milieu ethnique et raciale. Cela permet par exemple de saisir l'identité des femmes qui se déclarent «sud-asiatiques», alors que nous n'en savons pas plus sur leur héritage national. Voir @@#RaceEthnicityContext@@ pour un compte-rendu détaillé de la complexité de cette classe. L'héritage géographique peut être pluriel et peut différer de l'identité ou de l'héritage national, de la citoyenneté actuelle ou officielle, et de la région géographique ou du lieu de résidence. Les personnes qui utilisent cette classe et ses sous-classes sont encouragées à consulter les extraits ou les annotations de @@#NationalityContext@@ lorsqu'ils sont disponibles.</skos:definition>
-    <skos:note><a href="http://geonames.org/">Geonames</a> terms are often used for locations and for many instances of <i><a href="cwrc.html#GeographicHeritage">geographic heritage</a></i>.</skos:note>
+    <skos:note><![CDATA[<a href="http://geonames.org/">Geonames</a>]]> terms are often used for locations and for many instances of @@#GeographicHeritage@@.</skos:note>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -2698,14 +2698,14 @@
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#slave-forced-labourer">
     <rdfs:label xml:lang="en">slave or forced labourer</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr"/>
     <skos:altLabel xml:lang="en">serf</skos:altLabel>
     <skos:altLabel xml:lang="en">slave</skos:altLabel>
     <skos:altLabel xml:lang="en">bonded labourer</skos:altLabel>
     <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">The category of slaves and forced labourers covers the spectrum from chattel slaves through indentured servants to serfs, including those bonded to servitude with no hope of paying their debt.</skos:definition>
-    <skos:definition xml:lang="fr"></rdfs:comment>
+    <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Slavery"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Indentured_servitude"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
