@@ -6639,6 +6639,61 @@
     <owl:inverseOf rdf:resource="#hasStepBrother"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:ID="hasHalfSister">
+    <rdfs:label xml:lang="en">has half-sister</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Relates a female-identified person to the someone with whom they have one parent in common.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <skos:note>Comment: This term is a CWRC-specific addition not in the original Orlando tag set.</skos:note>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <skos:broader rdf:resource="http://schema.org/sibling"/>
+    <rdfs:subPropertyOf rdf:resource="#hasSister"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="halfSisterOf">
+    <rdfs:label xml:lang="en">half-sister of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:note>Comment: This term is a CWRC-specific addition not in the original Orlando tag set.</skos:note>
+    <rdfs:subPropertyOf rdf:resource="#sisterOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:inverseOf rdf:resource="#hasHalfSister"/>
+    <skos:broader rdf:resource="http://schema.org/sibling"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasHalfBrother">
+    <rdfs:label xml:lang="en">has half-brother</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Relates a male-identified person to the someone with whom they have one parent in common.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <skos:note>Comment: This term is a CWRC-specific addition not in the original Orlando tag set.</skos:note>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <skos:broader rdf:resource="http://schema.org/sibling"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBrother"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="halfBrotherOf">
+    <rdfs:label xml:lang="en">half-brother of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:note>Comment: This term is a CWRC-specific addition not in the original Orlando tag set.</skos:note>
+    <rdfs:subPropertyOf rdf:resource="#sisterOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:inverseOf rdf:resource="#hasHalfBrother"/>
+    <skos:broader rdf:resource="http://schema.org/sibling"/>
+  </owl:ObjectProperty>
+
+
   <owl:ObjectProperty rdf:ID="hasChild">
     <rdfs:label xml:lang="en">has child</rdfs:label>
     <rdfs:label xml:lang="fr"/>
