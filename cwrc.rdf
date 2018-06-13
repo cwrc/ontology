@@ -2709,9 +2709,11 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#professional">
-    <skos:altLabel xml:lang="en">PROFESSIONAL</skos:altLabel>
     <rdfs:label xml:lang="en">professional</rdfs:label>
     <rdfs:label xml:lang="fr">professionelle</rdfs:label>
+    <skos:altLabel xml:lang="en">PROFESSIONAL</skos:altLabel>
+    <skos:altLabel xml:lang="en">professional classes</skos:altLabel>
+    <skos:altLabel xml:lang="en">professional class</skos:altLabel>
     <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Doctors, lawyers, guild members, and those of high calling such as members of the clergy (Church of England) belong to this class. It implies social respect and intellectual requirements. Examples are Ann Hunter, who was married to a surgeon, and Virginia Woolf, daughter of an intellectual. <![CDATA[<a href="#cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Brown, 2006)</a>]]></skos:definition>
@@ -2758,6 +2760,7 @@
     <rdfs:label xml:lang="en">indigent</rdfs:label>
     <rdfs:label xml:lang="fr">indigent•e•s</rdfs:label>
     <skos:altLabel xml:lang="en">INDIGENT</skos:altLabel>
+    <skos:altLabel xml:lang="en">poverty</skos:altLabel>
     <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">This social class is "poor, destitute, unemployed," supported by charity, or on social security. <![CDATA[<a href="#cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Brown, 2006)</a>]]></skos:definition>
