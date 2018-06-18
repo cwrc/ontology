@@ -2686,6 +2686,65 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+
+  <cwrc:SocialClass rdf:about="#middleClass">
+    <rdfs:label xml:lang="en">middle class</rdfs:label>
+    <rdfs:label xml:lang="fr">classe moyenne</rdfs:label>
+    <skos:altLabel xml:lang="en">middle-class</skos:altLabel>
+    <skos:altLabel xml:lang="en">middling ranks</skos:altLabel>
+    <skos:altLabel xml:lang="en">bourgeois</skos:altLabel>
+    <skos:altLabel xml:lang="en">middle classes</skos:altLabel>
+    <skos:altLabel xml:lang="en">middle ranks</skos:altLabel>
+    <skos:altLabel xml:lang="en">middle</skos:altLabel>
+    <skos:altLabel xml:lang="en">middling sort</skos:altLabel>
+    <skos:inScheme rdf:resource="#SocialClass"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">"The middle class is a class of people in the middle of a social hierarchy. In Weberian socio-economic terms, the middle class is the broad group of people in contemporary society who fall socio-economically between the working class and upper class. The common measures of what constitutes middle class vary significantly among cultures. A sizable and healthy middle-class can be viewed as a characteristic of a healthy society." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">«La classe sociale dite « classe moyenne » rassemble un ensemble de populations hétérogènes. Sur une échelle basée principalement sur le niveau de vie, la classe moyenne se situe « au-dessus » des classes pauvres (ou classe ouvrière) et « en dessous » des classes aisées (on parle aussi de classe supérieure ou élite, principalement le patronat et les cadres supérieurs). La question de sa définition exacte reste délicate et explique que l'on parle aussi des « classes moyennes » au pluriel avec une classe moyenne inférieure et une classe moyenne supérieure. Les critères majeurs de définition étant le niveau de vie, autrement dit les revenus mais cela peut également s'élargir au patrimoine, et l'appartenance ressentie à un statut social, il est patent que la notion varie suivant les pays et dans le temps.» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Middle_class"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:SocialClass>
+  <cwrc:SocialClass rdf:about="#workingClass">
+    <rdfs:label xml:lang="en">working class</rdfs:label>
+    <rdfs:label xml:lang="fr">classe ouvrière</rdfs:label>
+    <skos:altLabel xml:lang="en">urban working class</skos:altLabel>
+    <skos:altLabel xml:lang="en">working classes</skos:altLabel>
+    <skos:altLabel xml:lang="en">working woman</skos:altLabel>
+    <skos:altLabel xml:lang="en">rural working class parents</skos:altLabel>
+    <skos:inScheme rdf:resource="#SocialClass"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">"The working class (also labouring class and proletariat) are the people employed for wages, especially in manual-labour occupations and in skilled, industrial work. Working-class occupations include blue-collar jobs, some white-collar jobs, and most service-work jobs. The working class only rely upon their earnings from wage labour, thereby, the category includes most of the working population of industrialized economies, of the urban areas (cities, towns, villages) of non-industrialized economies, and of the rural workforce. In Marxist theory and in socialist literature, the term working class usually is synonymous and interchangeable with the term proletariat, and includes all workers who expend either physical labour or mental labour (salaried knowledge workers and white-collar workers) to produce economic value for the owners of the means of production, the bourgeoisie. Since working-class wages can be very low, and because the state of unemployment is defined as a lack of independent means of generating an income and a lack wage-labour employment, the term working class also includes the lumpenproletariat, unemployed people who are extremely poor." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">«La notion de classe ouvrière se détermine par le sentiment d'appartenance à la catégorie sociale des ouvriers, qui ne disposent pas de la propriété des moyens de production et vendent leur force de travail.» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Working_class"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:SocialClass>
+  <cwrc:SocialClass rdf:about="#bohemianism">
+    <rdfs:label xml:lang="en">Bohemianism</rdfs:label>
+    <rdfs:label xml:lang="fr">Bohème</rdfs:label>
+    <skos:altLabel xml:lang="en">alternative society of young artists, dropouts, and nonconformists</skos:altLabel>
+    <skos:altLabel xml:lang="en">bohemian with upper-class connections</skos:altLabel>
+    <skos:altLabel xml:lang="en">classlessness</skos:altLabel>
+    <skos:inScheme rdf:resource="#SocialClass"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">"Bohemianism is the practice of an unconventional lifestyle, often in the company of like-minded people, with few permanent ties, involving musical, artistic, or literary pursuits. In this context, Bohemians may be wanderers, adventurers, or vagabonds. This use of the word bohemian first appeared in the English language in the nineteenth century to describe the non-traditional lifestyles of marginalized and impoverished artists, writers, journalists, musicians, and actors in major European cities." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">«La bohème est une façon de vivre au jour le jour dans la pauvreté mais aussi dans l’insouciance. Elle correspond à un mouvement littéraire et artistique du XIXe siècle, en marge du mouvement romantique plus « aristocratique ». C’est à la fois un style de vie qui rejette la domination bourgeoise et sa rationalité dans le cadre de la société industrielle, et la recherche d’un idéal artistique. Si l’expression avait connu un certain déclin à partir des Trente Glorieuses et des années 1960, période de la normalisation technocratique de Paris, l’expression « bourgeois bohème », ou « bobo », lui donne un certain regain. Le concept s’appuie évidemment sur la métaphore des « peuples bohémiens » ou des tziganes, qui étaient associés, au XIXe siècle, au mouvement romantique.» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Bohemianism"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:SocialClass>
+  <cwrc:SocialClass rdf:about="#brahmin">
+    <rdfs:label xml:lang="en">Brahmin</rdfs:label>
+    <rdfs:label xml:lang="fr">Brahmane</rdfs:label>
+    <skos:inScheme rdf:resource="#SocialClass"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">"Brahmin is a varna (class) in Hinduism specialising as priests, teachers (acharya) and protectors of sacred learning across generations. Brahmins were traditionally responsible for religious rituals in temples, as intermediaries between temple deities and devotees, as well as rite of passage rituals such as solemnising a wedding with hymns and prayers. However, Indian texts suggest that Brahmins were often agriculturalists and warriors in ancient and medieval India." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">«Un brahmane (sanskrit : brāhmaṇa ; devanagari : ब्राह्मण ; lié au sacré) est un membre d'une des quatre castes en Inde (varṇa), regroupant notamment les prêtres, les sacrificateurs, les professeurs et les hommes de loi – ou plus largement les enseignants du Brahman comme l'indique clairement le titre de « brâhmane ». Le brahmane a pour devoir principal d'incarner le dharma, de le défendre, et de le faire respecter par les autres castes sacrées, afin de maintenir le bon ordre cosmique. La caste des brahmanes représente environ 6 % de la population de l'Inde. La vie du brahmane se divise en quatre stades (ashrama). Lors de son enfance, il reçoit une initiation (upanayana) qui représente une deuxième naissance, il devient alors dvija, « deux fois né ». Il n'y a jamais eu de tentation politique pour les brahmanes . Plus généralement, un brahmane est un homme de lettres disposant de connaissances importantes sur le monde ; il peut ainsi être appelé Pandit, qui est le titre le plus glorieux que peut avoir un brahmane du fait de sa large connaissance philosophique, scientifique ou artistique.» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Bohemianism"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#lowerMiddleClass">
     <rdfs:label xml:lang="en">lower-middle class</rdfs:label>
     <rdfs:label xml:lang="fr">classe moyenne inférieure</rdfs:label>
@@ -2696,6 +2755,7 @@
     <skos:definition xml:lang="fr">Cette classe inclut "les employé•e•s, le personnel de bureau, les instituteur•ice•s et les gouvernantes. Il faut toutefois rappeler que certains des instituteur•ice•s entrent dans la catégorie des Professions (<![CDATA[<a href="https://fr.wikipedia.org/wiki/Au_revoir_Mr._Chips">Mr. Chips dans le film du même nom (1939)</a>]]>) ainsi que les femmes qui ouvrent et dirigent les écoles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#middleClass"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#entrepreneurial-industrialist">
     <rdfs:label xml:lang="en">entrepreneurial</rdfs:label>
@@ -2737,6 +2797,10 @@
     <rdfs:label xml:lang="en">nobility</rdfs:label>
     <rdfs:label xml:lang="fr">noblesse</rdfs:label>
     <skos:altLabel xml:lang="en">NOBILITY</skos:altLabel>
+    <skos:altLabel xml:lang="en">royal</skos:altLabel>
+    <skos:altLabel xml:lang="en">royalty</skos:altLabel>
+    <skos:altLabel xml:lang="en">royal descent</skos:altLabel>
+    <skos:altLabel xml:lang="en">royal, but not expected to become queen</skos:altLabel>
     <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">This group refers to "those holding a title or of close family relation to someone holding a title (such as Lady Mary Wortley Montagu, Lord Byron, or Nancy Mitford)". <![CDATA[<a href="#cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Brown, 2006)</a>]]></skos:definition>
@@ -2748,6 +2812,7 @@
     <rdfs:label xml:lang="en">gentry</rdfs:label>
     <rdfs:label xml:lang="fr">aristocratie</rdfs:label>
     <skos:altLabel xml:lang="en">GENTRY</skos:altLabel>
+    <skos:altLabel xml:lang="en">gentility</skos:altLabel>
     <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Membership in the gentry indicates property-ownership or relation to the same; property can be land or stocks and bonds. It "begins in the idea of owning arms and having a coat of arms, but is distinguished from nobility insofar as money is not necessarily related to blood and title. Disinterested gentlemen are of this class (i.e. Mr. Bennett in Jane Austen)."<![CDATA[<a href="#cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Brown, 2006)</a>]]> Gentlewomen belong to this class, even though they may not themselves own much property but instead be supported by a father or brother, or they may be distressed, which is to say, impoverished gentlewomen, as in the case of Jane Eyre or Austen's Jane Fairfax.</skos:definition>
@@ -2761,6 +2826,7 @@
     <rdfs:label xml:lang="fr">indigent•e•s</rdfs:label>
     <skos:altLabel xml:lang="en">INDIGENT</skos:altLabel>
     <skos:altLabel xml:lang="en">poverty</skos:altLabel>
+    <skos:altLabel xml:lang="en">impoverished</skos:altLabel>
     <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">This social class is "poor, destitute, unemployed," supported by charity, or on social security. <![CDATA[<a href="#cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Brown, 2006)</a>]]></skos:definition>
@@ -2802,11 +2868,13 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Upper_middle_class"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#middleClass"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#slave-forced-labourer">
     <rdfs:label xml:lang="en">slave or forced labourer</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:altLabel xml:lang="en">serf</skos:altLabel>
+    <skos:altLabel xml:lang="en">serfs</skos:altLabel>
     <skos:altLabel xml:lang="en">slave</skos:altLabel>
     <skos:altLabel xml:lang="en">bonded labourer</skos:altLabel>
     <skos:inScheme rdf:resource="#SocialClass"/>
