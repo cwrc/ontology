@@ -210,9 +210,9 @@
 
   <owl:AnnotationProperty rdf:ID="CompetencyQuestion">
     <rdfs:label xml:lang="en">Competency Question</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">A Question that can be asked of the ontology and will be used to specify the high level requirements of the CWRC Ontology allowing decisions about structure and components to be made.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:AnnotationProperty>
@@ -223,9 +223,9 @@
 
   <owl:ObjectProperty rdf:about="#rangeIncludes">
     <rdfs:label xml:lang="en">range includes</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Specifies a particular class type that is acceptable to use for a relation's range</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -233,9 +233,9 @@
 
   <owl:ObjectProperty rdf:about="#domainIncludes">
     <rdfs:label xml:lang="en">domain includes</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Specifies a particular class type that is acceptable to use for a relation's domain</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -243,25 +243,25 @@
 
   <owl:ObjectProperty rdf:about="#hasFunctionalRelation">
     <rdfs:label xml:lang="en">has functional relation</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates terms within the CWRC ontology to external terms that are semantically incommensurate but that may be pragmatically related for processing purposes such as search and retrieval. For example, the @@#Gender@@ instance @@#woman@@ relates functionally to appearances:SexISO5218-2 because important datasets employ the ISO5218 value "female". hasFunctionalRelation can be leveraged by search tools to broaden the results returned.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#represents">
     <rdfs:label xml:lang="en">represents</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a concept to ambiguous or overloaded terms, classed as @@#TextLabels@@, that designate multivalent and frequently contested concepts.  For instance, @@#englishLabel@@ is a @@#TextLabels@@ that represents both ISO 3166-2:GB-ENG and @@#englishNationalHeritage@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:domain rdf:resource="#TextLabels"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#representedBy">
     <rdfs:label xml:lang="en">represented by</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates ambiguous or overloaded terms, classed as @@#TextLabels@@ to two or more particularly contested and related concepts. Often used for @@#CulturalForm@@; for instance ISO 3166-2:GB-ENG and @@#englishNationalHeritage@@ are both represented by @@#englishLabel@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:range rdf:resource="#TextLabels"/>
     <owl:inverseOf rdf:resource="#represents"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -272,9 +272,9 @@
 
   <owl:Class rdf:ID="ChangeSet">
     <rdfs:label xml:lang="en">change set</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">A change set represents changes or additions made to the ontology by ontology editors or through users where instances were affected. Change sets will also be used to translate and contain Orlando recordInfo instances.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.w3.org/2006/time/Instant"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -285,9 +285,9 @@
 
   <owl:ObjectProperty rdf:about="#affectedEntity">
     <rdfs:label xml:lang="en">affected entity</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Affected entities link to the Object or Class that was modified within a change set, this can be any rdf:resource. A @@#ChangeSet@@ may have 0 to many affected entities.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:domain rdf:resource="#ChangeSet"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -295,9 +295,9 @@
 
   <owl:ObjectProperty rdf:about="#alteredBy">
     <rdfs:label xml:lang="en">altered by</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Links a @@#NaturalPerson@@ to a @@#ChangeSet@@ entry.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:domain rdf:resource="#ChangeSet"/>
     <rdfs:range rdf:resource="#NaturalPerson"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -306,9 +306,9 @@
 
   <owl:ObjectProperty rdf:about="#madeAlteration">
     <rdfs:label xml:lang="en">made alteration</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Links an @@#ChangeSet@@ to a @@#NaturalPerson@@</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#ChangeSet"/>
     <owl:inverseOf rdf:resource="#alteredBy"/>
@@ -338,10 +338,10 @@
 
   <owl:Class rdf:ID="Persona">
     <rdfs:label xml:lang="en">persona</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <skos:definition xml:lang="en">A persona, unlike a role, cannot be adopted by people generally, but is specific to one natural person, or more rarely several natural persons. A persona is an original creation, often bearing meaning regarding the biographical, historical and sociological context to which its/their creator/s is/are attached. Personas as defined here should not be associated with mental illness or multiple personality disorder, since they are not the product of a distorted or uncontrolled perception of reality. At the heart of a persona is an identity that is interacted with by others and that at times can be confused with an actual natural person. It is incarnated and developed by a natural person, and may have a social, literary, artistic or political activity.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -349,9 +349,9 @@
 
   <owl:ObjectProperty rdf:ID="hasPersona">
     <rdfs:label xml:lang="en">has persona</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Associates a @@#Persona@@ with one more @@#NaturalPerson@@(s). </skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#Persona"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -360,9 +360,9 @@
 
   <owl:ObjectProperty rdf:ID="personaOf">
     <rdfs:label xml:lang="en">persona of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <owl:inverseOf rdf:resource="#hasPersona"/>
     <rdfs:domain rdf:resource="#Persona"/>
     <rdfs:range rdf:resource="#NaturalPerson"/>
@@ -374,9 +374,9 @@
 
   <owl:Class rdf:ID="Certainty">
     <rdfs:label xml:lang="en">certainty</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Certainty describes the quality of a fact in the ontology. It is used primarily to represent information that may not be fact.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -385,9 +385,9 @@
 
   <owl:ObjectProperty rdf:ID="hasCertainty">
     <rdfs:label xml:lang="en">has certainty</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Associates a level of @@#Certainty@@ for a source</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="#Certainty"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -396,9 +396,9 @@
 
   <owl:ObjectProperty rdf:ID="certaintyOf">
     <rdfs:label xml:lang="en">certainty of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Links a level of @@#Certainty@@ to a source</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
     <rdfs:domain rdf:resource="#Certainty"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -408,36 +408,36 @@
 
   <cwrc:Certainty rdf:about="#lowCertainty">
     <rdfs:label xml:lang="en">low certainty</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that represents cases where where a fact is considered of low quality</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </cwrc:Certainty>
 
   <cwrc:Certainty rdf:about="#mediumCertainty">
     <rdfs:label xml:lang="en">medium certainty</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that represents cases where where a fact is considered of medium quality</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </cwrc:Certainty>
 
   <cwrc:Certainty rdf:about="#highCertainty">
     <rdfs:label xml:lang="en">high certainty</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that represents cases where where a fact is considered of high quality</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </cwrc:Certainty>
 
   <cwrc:Certainty rdf:about="#unknownCertainty">
     <rdfs:label xml:lang="en">unknown certainty</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that is used when one does not want to assert an opinion on certainty</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </cwrc:Certainty>
@@ -451,7 +451,7 @@
     <rdfs:label xml:lang="fr">évènement</rdfs:label>
     <rdfs:label xml:lang="de">event</rdfs:label>
     <skos:definition xml:lang="en">An event that occurs in time.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
     <owl:sameAs rdf:resource="http://erlangen-crm.org/current/E5.Event"/>
     <owl:sameAs rdf:resource="http://linkedevents.org/ontology/Event"/>
@@ -463,9 +463,9 @@
 
   <owl:ObjectProperty rdf:ID="hasEvent">
     <rdfs:label xml:lang="en">has event</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Associates a subject with an event</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:range rdf:resource="#Event"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -474,7 +474,7 @@
 
   <owl:ObjectProperty rdf:ID="eventOf">
     <rdfs:label xml:lang="en">event of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Associates an event with a subject or an event with another event.</skos:definition>
     <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:range rdf:resource="#Event"/>
@@ -487,7 +487,7 @@
     <rdfs:label xml:lang="en">has Participant</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Associates an event with a person.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:domain rdf:resource="#Event"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -496,9 +496,9 @@
 
   <owl:ObjectProperty rdf:ID="participantOf">
     <rdfs:label xml:lang="en">participant of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">The event that the Person is associated with.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Event"/>
     <owl:inverseOf rdf:resource="#hasParticipant"/>
@@ -510,7 +510,7 @@
     <rdfs:label xml:lang="en">has role</rdfs:label>
     <rdfs:label xml:lang="fr">a un rôle</rdfs:label>
     <skos:definition xml:lang="en">Associates an event element to a role.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:domain rdf:resource="#Event"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -519,9 +519,9 @@
 
   <owl:ObjectProperty rdf:ID="hasLocation">
     <rdfs:label xml:lang="en">has location</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">The location of a thing. For example where an event took place or a organization is located</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -529,9 +529,9 @@
 
   <owl:ObjectProperty rdf:ID="locationOf">
     <rdfs:label xml:lang="en">location Of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Things that are or were at this location at some point in time.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <owl:inverseOf rdf:resource="#hasLocation"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -540,12 +540,12 @@
 
   <owl:Class rdf:ID="Organization">
     <rdfs:label xml:lang="en">organization</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">A social or corporate institution such as a publisher, school, political group, or company.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <owl:sameAs rdf:resource="http://schema.org/Organization"/>
     <owl:sameAs rdf:resource="http://xmlns.com/foaf/spec/#term_Organization"/>
-    <rdfs:comment xml:lang="fr"/>
+    <rdfs:comment xml:lang="fr"></rdfs:comment>
     <rdfs:comment xml:lang="en"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -559,7 +559,7 @@
       <owl:Class rdf:about="#Organization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">educational organization</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">"A school is an institution designed to provide learning spaces and learning environments for the teaching of students (or "pupils") under the direction of teachers." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">«Une école est un établissement où l'on accueille des individus appelés « écoliers » afin que des professeurs leur dispensent un enseignement de façon collective.» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
@@ -621,9 +621,9 @@
       <owl:Class rdf:about="#EducationalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">state school</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">"State schools (also known as public schools outside of England and Wales) generally refer to primary or secondary schools mandated for or offered to all children without charge, funded in whole or in part by taxation. The term may also refer to public institutions of post-secondary education." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -667,7 +667,7 @@
     <rdfs:label xml:lang="en">comprehensive school</rdfs:label>
     <rdfs:label xml:lang="fr">école</rdfs:label>
     <skos:definition xml:lang="en">"A comprehensive school is a secondary school or middle school that is a state school and does not select its intake on the basis of academic achievement or aptitude. This is in contrast to the selective school system, where admission is restricted on the basis of selection criteria. The term is commonly used in relation to England and Wales, where comprehensive schools were introduced on an experimental basis in the 1940s and became more widespread from 1965. About 90% of British secondary school pupils now attend comprehensive schools. They correspond broadly to the public high school in the United States and Canada and to the German Gesamtschule." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -835,9 +835,9 @@
 
   <owl:ObjectProperty rdf:ID="hasCompanion">
     <rdfs:label xml:lang="en">has companion</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Describes a relationship with a person, usually a peer, in the context of the subject's education.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -845,18 +845,18 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasContestedBehaviour">
     <rdfs:label xml:lang="en">has contested behaviour</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Describes behaviour, which is perceived as negative, in the context of the subject's education. Often indicative of struggle against systemic discrimination, including within the structures of educational institutions.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasInstructor">
     <rdfs:label xml:lang="en">has instructor</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Describes the subject's relationship with an educational instructor or mentor, formal or informal.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -924,9 +924,9 @@
     <rdfs:range rdf:resource="#EducationContext"/>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:label xml:lang="en">has education</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Links a person to information about their education in @@#EducationContext@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -944,9 +944,9 @@
 
   <owl:ObjectProperty rdf:ID="hasAward">
     <rdfs:label xml:lang="en">has award</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Indicates an award, prize, or recognition that a person has won, such as a literary award or an @@#educationalAwardPrize@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:domain rdf:resource="#EducationalAward"/>
     <owl:inverseOf>
       <owl:ObjectProperty rdf:ID="awardedTo"/>
@@ -957,9 +957,9 @@
 
   <owl:ObjectProperty rdf:about="#awardedTo">
     <rdfs:label xml:lang="en">awarded to</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:range rdf:resource="#EducationalAward"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -968,9 +968,9 @@
 
   <cwrc:EducationalAward rdf:ID="educationalAwardPrize">
     <rdfs:label xml:lang="en">educational award prize</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">An educational prize is a medal or award, monetary or otherwise, presented by either an institution or person of authority to an individual who has excelled beyond their peers, reached a great achievement, and/or produced a very high standard of work.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#EducationalAward"/>
@@ -1056,7 +1056,7 @@
     <rdfs:label xml:lang="fr">contexte</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">The Context class provides the discursive context for assertions in the ontology. Where the assertions have been generated from a source text, Context provides the text, or the relevant snippet of a longer text, from which they have been extracted.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -1178,6 +1178,41 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+
+  <cwrc:NationalHeritage rdf:about="#huguenotNationalHeritage">
+    <rdfs:label xml:lang="en">Huguenot</rdfs:label>
+    <rdfs:label xml:lang="fr">Huguenot</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#NationalHeritage"/>
+    <skos:definition xml:lang="en">"A Huguenot (/ˈhjuːɡənɒt/, /ˈhjuːɡənoʊ/ or /ˌhjuːɡəˈnoʊ/; French: [yɡ(ə)nõ]) is a designation for a French Protestant who follows the Reformed tradition. It was used frequently to describe members of the French Reformed Church until the beginning of the 19th century. The term traces back its origin to 16th century France. Historically, Huguenots were French Protestants inspired by the writings of John Calvin. Huguenots endorsed the Reformed tradition of Protestantism, as opposed to largely German Lutheran population in Alsace, Moselle, and around Montbéliard. Hans J. Hillerbrand in his Encyclopedia of Protestantism: 4-volume Set claims the Huguenot community reached as much as 10% of the French population on the eve of the St. Bartholomew's Day massacre, declining to 7-8% by the end of the 16th century, and further after heavy persecution began once again with the Revocation of the Edict of Nantes by Louis XIV of France. Huguenot numbers peaked near an estimated two million by 1562, concentrated mainly in the southern and western parts of France. As Huguenots gained influence and more openly displayed their faith, Catholic hostility grew, in spite of political concessions and edicts of toleration from the French crown. A series of religious conflicts followed, known as the French Wars of Religion, fought intermittently from 1562 to 1598. The wars finally ended with the granting of the Edict of Nantes, which granted the Huguenots substantial religious, political, and military autonomy. Huguenot rebellions in the 1620s prompted the abolishment of their political and military privileges; they retained the religious provisions of the Edict of Nantes until the rule of Louis XIV. Louis XIV gradually increased persecution of them until he issued the Edict of Fontainebleau (1685), ending any legal recognition of Protestantism in France, and forcing the Huguenots to convert or flee in a wave of violent dragonnades. Louis XIV claimed the French Huguenot population of 800,000 to 900,000 individuals was reduced to 1,000 or 1,500 individuals; a huge overestimate, although dragonnades were indeed the most devastating event for the minority. Nevertheless, now tiny minority of Huguenots remained, and faced continued persecution under Louis XV. Persecution of Protestants diminished significantly in France after the death of Louis XIV in 1715, and then after the death of Louis XV in 1774. It officially ended with the Edict of Versailles, commonly called the Edict of Tolerance, signed by Louis XVI in 1787. Two years later, with the Declaration of the Rights of Man and Citizen of 1789, Protestants gained equal rights as citizens. The bulk of Huguenot émigrés relocated to Protestant nations such as England, Wales, Scotland, Denmark, Sweden, Switzerland, the Dutch Republic, the Electorate of Brandenburg and Electorate of the Palatinate in the Holy Roman Empire, the Duchy of Prussia, the Channel Islands, and Ireland. They also spread to the Dutch Cape Colony in South Africa, the Dutch East Indies, the Caribbean, New Netherland, several of the English colonies in North America, and Quebec, where they were generally accepted and allowed to worship freely. In the 21st century, most Huguenots have been assimilated into various societies and cultures, but remnant communities of Camisards in the Cévennes and French members of the largely German Protestant Reformed Church of Alsace and Lorraine, as well as Huguenot diaspora in England and Australia still retain their beliefs, and Huguenot designation." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">«Les huguenots sont les Français protestants pendant les guerres de Religion (seconde moitié du XVIe siècle), au cours desquelles ils ont été – sous ce nom – en conflit avec les catholiques. Environ 300 000 d’entre eux ont quitté la France à la suite des dragonnades et de la révocation de l’édit de Nantes le 18 octobre 1685. À partir du XVIIe siècle, les huguenots sont appelés religionnaires, car les actes royaux ne parlaient pas de protestantisme mais de « religion prétendue réformée ».» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Huguenot"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:NationalHeritage>
+  <cwrc:NationalHeritage rdf:about="#normanNationalHeritage">
+    <rdfs:label xml:lang="en">Norman</rdfs:label>
+    <rdfs:label xml:lang="fr">Normand</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#NationalHeritage"/>
+    <skos:definition xml:lang="en">"The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse ("Norman" comes from "Norseman") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Gallo-Roman populations, their descendants would gradually adopt the Carolingian-based cultures of West Francia, ultimately resulting in their own assimilation into the Romance society. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries. The Norman dynasty had a major political, cultural and military impact on medieval Europe and even the Near East. The Normans were famed for their martial spirit and eventually for their Christian piety, becoming exponents of the Catholic orthodoxy into which they assimilated. They adopted the Gallo-Romance language of the Frankish land they settled, their dialect becoming known as Norman, Normaund or Norman French, an important literary language. The Duchy of Normandy, which they formed by treaty with the French crown, was a great fief of medieval France, and under Richard I of Normandy was forged into a cohesive and formidable principality in feudal tenure. The Normans are noted both for their culture, such as their unique Romanesque architecture and musical traditions, and for their significant military accomplishments and innovations. Norman adventurers founded the Kingdom of Sicily under Roger II after conquering southern Italy from the Saracens and Byzantines, and an expedition on behalf of their duke, William the Conqueror, led to the Norman conquest of England at the Battle of Hastings in 1066. Norman cultural and military influence spread from these new European centres to the Crusader states of the Near East, where their prince Bohemond I founded the Principality of Antioch in the Levant, to Scotland and Wales in Great Britain, to Ireland, and to the coasts of north Africa and the Canary Islands. The legacy of the Normans persists today through the regional languages and dialects of France, England, and Sicily, as well as the various cultural, judicial and political arrangements they introduced in their conquered territories." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">«Les Normands sont actuellement les habitants de la Normandie, mais le terme désigne aussi historiquement les habitants du duché de Normandie. Autrefois, le mot de Normands était employé pour qualifier les Vikings. C'est pourquoi son étymologie s'explique par le francique ou le scandinave et signifie littéralement « Hommes du nord »» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Normans"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:NationalHeritage>
+  <cwrc:NationalHeritage rdf:about="#westIndianNationalHeritage">
+    <rdfs:label xml:lang="en">West Indian</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#NationalHeritage"/>
+    <skos:definition xml:lang="en">"A West Indian is a native or inhabitant of the West Indies (the Antilles and the Lucayan Archipelago). For more than 100 years the words West Indian specifically described natives of the West Indies, but by 1661 Europeans had begun to use it also to describe the descendants of European colonists who stayed in the West Indies. Some West Indian people reserve this term for citizens or natives of the British West Indies." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/West_Indian"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:NationalHeritage>
+
 <!-- Nationalities -->
   <owl:Class rdf:ID="NationalIdentity">
     <rdfs:label xml:lang="en">national identity</rdfs:label>
@@ -1189,6 +1224,17 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+<!--   <cwrc:NationalIdentity rdf:about="#saxonNationalIdentity">
+    <rdfs:label xml:lang="en">Saxon</rdfs:label>
+    <rdfs:label xml:lang="fr">Saxon</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#NationalIdentity"/>
+    <skos:definition xml:lang="en">"The Saxons (Latin: Saxones, Old English: Seaxe, Old Saxon: Sahson, Low German: Sassen, German: Sachsen, Dutch: Saksen) were a group of Germanic tribes first mentioned as living near the North Sea coast of what is now Germany (Old Saxony), in late Roman times. They were soon mentioned as raiding and settling in many North Sea areas, as well as pushing south inland towards the Franks. Significant numbers settled in large parts of Great Britain in the early Middle Ages and formed part of the merged group of Anglo-Saxons who eventually organised the first united Kingdom of England. Many Saxons however remained in Germania, where they resisted the expanding Frankish Empire through the leadership of the semi-legendary Saxon hero, Widukind." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">«Les Saxons sont un peuple germanique, rattaché sur le plan ethnolinguistique au rameau occidental. Ils sont mentionnés pour la première fois par le grec Ptolémée sur la carte Germania Magna au IIe siècle de l'ère chrétienne. Il situe alors leurs terres au sud-ouest du Jutland, ce qui correspond à peu près à l'actuel Holstein, d'où ils semblent s'être étendus au sud et à l'ouest.» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Saxons"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:NationalIdentity> -->
   <cwrc:NationalIdentity rdf:about="#jewishNationalIdentity">
     <rdfs:label xml:lang="en">Jewish</rdfs:label>
     <rdfs:label xml:lang="fr">Juif</rdfs:label>
@@ -1213,13 +1259,14 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:NationalIdentity>
+
   <cwrc:NationalIdentity rdf:about="#statelessNationalIdentity">
     <rdfs:label xml:lang="en">stateless</rdfs:label>
     <rdfs:label xml:lang="fr">apatride</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#NationalIdentity"/>
-    <skos:definition xml:lang="en">In international law, statelessness is the lack of citizenship. A stateless person is someone who is "not considered as a national by any state under the operation of its law". Some stateless persons are also refugees. However, not all refugees are stateless, and many persons who are stateless have never crossed an international border. Most people belonging to a stateless nation, despite lacking their own nation state, nonetheless hold citizenship in one or more countries, in some cases effectively as second-class citizens.</skos:definition>
-    <skos:definition xml:lang="fr">Un apatride est, selon la convention de New York du 28 septembre 1954, « toute personne qu'aucun État ne considère comme son ressortissant par application de sa législation ». Plus simplement, un apatride est une personne dépourvue de nationalité, qui ne bénéficie de la protection d'aucun État. Il y aurait plus de 12 millions d'apatrides, selon le Haut Commissariat des Nations unies pour les réfugiés (HCR). Le mot « apatride  » est composé du préfixe privatif a- et du grec patris, (« terre des ancêtres »).Le terme allemand heimatlos, dont il est le synonyme, s'utilise, en français, pour désigner les allemands ayant fui l'Allemagne nazie durant la Seconde Guerre mondiale.[réf. nécessaire]</skos:definition>
+    <skos:definition xml:lang="en">"In international law, statelessness is the lack of citizenship. A stateless person is someone who is "not considered as a national by any state under the operation of its law". Some stateless persons are also refugees. However, not all refugees are stateless, and many persons who are stateless have never crossed an international border. Most people belonging to a stateless nation, despite lacking their own nation state, nonetheless hold citizenship in one or more countries, in some cases effectively as second-class citizens." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">Un apatride est, selon la convention de New York du 28 septembre 1954, « toute personne qu'aucun État ne considère comme son ressortissant par application de sa législation ». Plus simplement, un apatride est une personne dépourvue de nationalité, qui ne bénéficie de la protection d'aucun État. Il y aurait plus de 12 millions d'apatrides, selon le Haut Commissariat des Nations unies pour les réfugiés (HCR). Le mot « apatride  » est composé du préfixe privatif a- et du grec patris, (« terre des ancêtres »).Le terme allemand heimatlos, dont il est le synonyme, s'utilise, en français, pour désigner les allemands ayant fui l'Allemagne nazie durant la Seconde Guerre mondiale.[réf. nécessaire] <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Statelessness"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1255,7 +1302,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#GeographicHeritage"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labeling as of English heritage in relation to a place, often England.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <cwrc:representedBy rdf:resource="#englishLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1319,7 +1366,7 @@
     <skos:altLabel xml:lang="en">UNDEFINED</skos:altLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Indicates that the person's gender is not disclosed by them or is not indicated in the source.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -1689,7 +1736,7 @@
     <rdfs:label xml:lang="en">Creole</rdfs:label>
     <rdfs:label xml:lang="fr">Créole</rdfs:label>
     <skos:definition xml:lang="en">Describes a person often born in a European (often British) colony, of "mixed race" parentage, usually but not always the child of both "White" and so-called "non-White" ancestry. The term originally designated "parts of the population made up of Caribbean descendants of colonists, born and brought up in the New World. In the context of postcolonial studies, the term 'creolization' is conceived as 'the process of intermixing and cultural change that produces a Creole society,' especially in the Caribbean <![CDATA[<a href="#cwrc:a647a149-3420-4a0d-8462-03900131060e">(Ashcrofts, Griffiths, and Tiffin 1998, 58)</a>]]>" <![CDATA[<a href="#cwrc:aa8dae29-558b-4bda-9859-9ed43faede36">(Hawley et al., Encyclopedia of Post Colonial Studies 116)</a>]]>.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#RaceColour"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1709,6 +1756,24 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+  <cwrc:Ethnicity rdf:about="#gaelEthnicity">
+    <rdfs:label xml:lang="en">Gael</rdfs:label>
+    <rdfs:label xml:lang="fr">Gael</rdfs:label>
+    <skos:altLabel xml:lang="en">highland</skos:altLabel>
+    <skos:definition xml:lang="en">
+      "The Gaels (English pronunciation: /ɡeːlˠ/; Irish: Na Gaeil; Scottish Gaelic: Na Gàidheil), also known as Goidels, are an ethnolinguistic group indigenous to northwestern Europe. They are associated with the Gaelic languages; a branch of the Celtic languages comprising Irish, Manx and Scottish Gaelic. Other ethnonyms historically associated with the Gaels include Irish and Scots, but the scope of those nationalities is today more complex. Gaelic language and culture originated in Ireland, extending to Dál Riata in southwest Scotland. In the Middle Ages, it became dominant throughout Scotland and the Isle of Man also. However, in most areas, the Gaels were gradually anglicized and the Gaelic languages supplanted by English. The modern descendants of the Gaels have spread throughout much of Great Britain and as far as the Americas and Oceania." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2017)</a>]]>
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      «Les Gaels ou Goidels étaient un peuple celtique implanté dans les îles Britanniques (principalement en Écosse, en Irlande et sur l'île de Man) lors de la période protohistorique. Les Gaels auraient donné leur nom aux différents peuples gaéliques et à la famille des langues gaéliques. Le nom « Gael » a été adopté en 1810 à partir du gaélique écossais Gaidheal (en irlandais Gael et vieil irlandais Goidhel-Goídeleg) pour désigner un montagnard (EOD). Gael ou Goídeleg ont d'abord été utilisés comme un terme générique pour décrire les habitants d'Irlande. Dans son œuvre, Celtic Culture: Aberdeen breviary-celticism, John T. Koch , professeur de langue et littérature celtiques précise que la racine de ce mot correspond au vieil irlandais, fíad, au vieux breton, guoid, et au moyen gallois, gŵyh, tous signifiant sauvage, et donc Gael signifierait peuple de la forêt ou sauvages. Beaucoup de personnes qui ne parlent pas le gaélique se considèrent comme Gaels dans un sens plus large, en raison de leur ascendance historique et de leur héritage.»<![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2017)</a>]]>
+    </skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Gaels"/>
+    <skos:inScheme rdf:resource="#Ethnicity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Ethnicity>
   <cwrc:Ethnicity rdf:about="#africanEthnicity">
     <rdfs:label xml:lang="en">African</rdfs:label>
     <rdfs:label xml:lang="fr">Africain</rdfs:label>
@@ -1964,7 +2029,7 @@
      <rdfs:label xml:lang="en">Chinese</rdfs:label>
      <rdfs:label xml:lang="fr">Chinois</rdfs:label>
      <skos:definition xml:lang="en">"Chinese people are the various individuals or groups of people associated with China (or Greater China), either by reason of ancestry, heredity, ethnicity, nationality, citizenship, place of residence, or other affiliation." <![CDATA[<a href="http://dbpedia.org/page/Chinese_people">(DBpedia, 2018)</a>]]></skos:definition>
-     <skos:definition xml:lang="fr"/>
+     <skos:definition xml:lang="fr"></skos:definition>
      <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
      <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Chinese_people"/>
      <skos:inScheme rdf:resource="#Ethnicity"/>
@@ -2081,7 +2146,7 @@
      <rdfs:label xml:lang="en">Jamaican</rdfs:label>
      <rdfs:label xml:lang="fr">Jamaïquain</rdfs:label>
      <skos:definition xml:lang="en">"Jamaicans are the citizens of Jamaica and their descendants in the Jamaican diaspora. Most Jamaicans are of African descent, with smaller minorities of Europeans, East Indians, Chinese, Mixed-Race, and others. The bulk of the Jamaican diaspora resides in Canada, United States, Panama and the United Kingdom and in the other Anglophone countries." <![CDATA[<a href="http://dbpedia.org/page/Jamaicans">(DBpedia, 2018)</a>]]></skos:definition>
-     <skos:definition xml:lang="fr"/>
+     <skos:definition xml:lang="fr"></skos:definition>
      <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
      <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Jamaicans"/>
      <skos:inScheme rdf:resource="#Ethnicity"/>
@@ -2093,7 +2158,7 @@
      <rdfs:label xml:lang="en">Punjabi</rdfs:label>
      <rdfs:label xml:lang="fr">Punjabi</rdfs:label>
      <skos:definition xml:lang="en">"The Punjabis (Punjabi: پنجابی, ਪੰਜਾਬੀ, पंजाबी), or Punjabi people, are an Indo-Aryan ethnic group originating from the Punjab region, found in Pakistan and northern India. Punjab literally means the land of five waters (Persian: panj ("five") āb ("waters"). The name of the region was introduced by the Turko-Persian conquerors of India and more formally popularised during the Mughal Empire. Punjab is often referred to as the breadbasket in both Pakistan and India. The coalescence of the various tribes, castes and the inhabitants of the Punjab into a broader common "Punjabi" identity initiated from the onset of the 18th century CE. Prior to that the sense and perception of a common "Punjabi" ethno-cultural identity and community did not exist, even though the majority of the various communities of the Punjab had long shared linguistic, cultural and racial commonalities. Traditionally, Punjabi identity is primarily linguistic, geographical and cultural. Its identity is independent of historical origin or religion, and refers to those who reside in the Punjab region, or associate with its population, and those who consider the Punjabi language their mother tongue. Integration and assimilation are important parts of Punjabi culture, since Punjabi identity is not based solely on tribal connections. More or less all Punjabis share the same cultural background. Historically, the Punjabi people were a heterogeneous group and were subdivided into a number of clans called biradari (literally meaning "brotherhood") or tribes, with each person bound to a clan. However, Punjabi identity also included those who did not belong to any of the historical tribes. With the passage of time tribal structures are coming to an end and are being replaced with a more cohesive and holistic society, as community building and group cohesiveness form the new pillars of Punjabi society." <![CDATA[<a href="http://dbpedia.org/page/Punjabis">(DBpedia, 2018)</a>]]></skos:definition>
-     <skos:definition xml:lang="fr"/>
+     <skos:definition xml:lang="fr"></skos:definition>
      <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
      <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Punjabis"/>
      <skos:inScheme rdf:resource="#Ethnicity"/>
@@ -2103,9 +2168,9 @@
    </cwrc:Ethnicity>
    <cwrc:Ethnicity rdf:about="#westIndianEthnicity">
      <rdfs:label xml:lang="en">West Indian</rdfs:label>
-     <rdfs:label xml:lang="fr"/>
+     <rdfs:label xml:lang="fr"></rdfs:label>
      <skos:definition xml:lang="en">"A West Indian is a native or inhabitant of the West Indies (the Antilles and the Lucayan Archipelago). For more than 100 years the words West Indian specifically described natives of the West Indies, but by 1661 Europeans had begun to use it also to describe the descendants of European colonists who stayed in the West Indies. Some West Indian people reserve this term for citizens or natives of the British West Indies." <![CDATA[<a href="http://dbpedia.org/page/West_Indian">(DBpedia, 2018)</a>]]></skos:definition>
-     <skos:definition xml:lang="fr"/>
+     <skos:definition xml:lang="fr"></skos:definition>
      <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
      <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/West_Indian"/>
      <skos:inScheme rdf:resource="#Ethnicity"/>
@@ -2872,7 +2937,7 @@
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#slave-forced-labourer">
     <rdfs:label xml:lang="en">slave or forced labourer</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:altLabel xml:lang="en">serf</skos:altLabel>
     <skos:altLabel xml:lang="en">serfs</skos:altLabel>
     <skos:altLabel xml:lang="en">slave</skos:altLabel>
@@ -2880,7 +2945,7 @@
     <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">The category of slaves and forced labourers covers the spectrum from chattel slaves through indentured servants to serfs, including those bonded to servitude with no hope of paying their debt.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Slavery"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Indentured_servitude"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -4582,7 +4647,7 @@
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#jacobitism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
-    <skos:altLabel xml:lang="en">jacobite</skos:altLabel>
+    <skos:altLabel xml:lang="en">jacobites</skos:altLabel>
     <rdfs:label xml:lang="en">Jacobitism</rdfs:label>
     <rdfs:label xml:lang="fr">Jacobitisme</rdfs:label>
     <skos:definition xml:lang="en">"Jacobitism (/ˈdʒækəbaɪˌtɪzm/ JAK-ə-beye-TIZ-əm;Irish: Seacaibíteachas, Séamusachas, Scottish Gaelic: Seumasachas) was a political movement in Great Britain and Ireland that aimed to restore the Roman Catholic Stuart King James VII of Scotland, II of England and Ireland, and his heirs to the thrones of England, Scotland and Ireland. The movement took its name from Jacobus, the Renaissance Latin form of Iacomus, the original Latin form of James. Adherents rebelled against the British government on several occasions between 1688 and 1746. After James II was deposed in 1688 and replaced by his daughter Mary II, ruling jointly with her husband and first cousin (James's nephew) William III, the Stuarts lived in exile, occasionally attempting to regain the throne. The strongholds of Jacobitism were parts of the Scottish Highlands and the lowland north-east of Scotland, Ireland, and parts of Northern England (mostly within the counties of Northumberland and Lancashire). Significant support also existed in Wales and South-West England. The Jacobites believed that parliamentary interference with the line of succession to the English and Scottish thrones was illegal. Catholics also hoped the Stuarts would end recusancy. In Scotland, the Jacobite cause became intertwined with the last throes of the warrior clan system. The emblem of the Jacobites is the White Cockade. White Rose Day is celebrated on 10 June, the anniversary of the birth of the Old Pretender in 1688." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -5019,6 +5084,7 @@
     <skos:altLabel xml:lang="en">catholic</skos:altLabel>
     <skos:altLabel xml:lang="en">roman catholic</skos:altLabel>
     <skos:altLabel xml:lang="en">non-compounder</skos:altLabel>
+    <skos:altLabel xml:lang="en">pro-Catholic</skos:altLabel>
     <rdfs:label xml:lang="en">pro-Catholicism</rdfs:label>
     <rdfs:label xml:lang="fr">procatholicisme</rdfs:label>
     <skos:definition xml:lang="en">Favouring the political re-establishment of Catholicism as a component of the state or the extension of civil rights to Catholics. See @@https://en.wikipedia.org/wiki/Category:Catholicism-related_controversies@@</skos:definition>
@@ -5610,7 +5676,7 @@
     <rdfs:range rdf:resource="#Gender"/>
     <owl:inverseOf rdf:resource="#genderOf"/>
     <skos:definition xml:lang="en">Describes a person's @@#Gender@@ identity, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#GenderContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -5630,7 +5696,7 @@
     <rdfs:label xml:lang="en">has gender identity (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">est de genre (déclaré)</rdfs:label>
     <skos:definition xml:lang="en">Indicates a person's reported @@#Gender@@ identity, with accompanying context, where present, provided by @@#GenderContext@@ annotations.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <owl:inverseOf rdf:resource="#genderReportedOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Gender"/>
@@ -5641,7 +5707,7 @@
 
   <owl:ObjectProperty rdf:ID="genderOf">
     <rdfs:label xml:lang="en">gender identity of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Gender"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5649,7 +5715,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="genderSelfReportedOf">
     <rdfs:label xml:lang="en">gender identity (self-reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#genderOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Gender"/>
@@ -5658,7 +5724,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="genderReportedOf">
     <rdfs:label xml:lang="en">gender identity (reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Gender"/>
     <rdfs:subPropertyOf rdf:resource="#genderOf"/>
@@ -5682,7 +5748,7 @@
     <rdfs:label xml:lang="en">has geographic heritage (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">a un héritage géographique (autodéclaré)</rdfs:label>
     <skos:definition xml:lang="en">Describes a person's self-reported @@#GeographicHeritage@@, with accompanying context, where present, provided by @@#NationalityContext@@ annotations.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <owl:inverseOf rdf:resource="#geographicHeritageSelfReportedOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#GeographicHeritage"/>
@@ -5694,7 +5760,7 @@
     <rdfs:label xml:lang="en">has geographic heritage (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">a un héritage géographique (déclaré)</rdfs:label>
     <skos:definition xml:lang="en">Describes a person's reported @@#GeographicHeritage@@, with accompanying context, where present, provided by @@#NationalityContext@@ annotations.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <owl:inverseOf rdf:resource="#geographicHeritageReportedOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#GeographicHeritage"/>
@@ -5705,7 +5771,7 @@
 
   <owl:ObjectProperty rdf:ID="geographicHeritageOf">
     <rdfs:label xml:lang="en">geographic heritage of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#GeographicHeritage"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5713,7 +5779,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="geographicHeritageSelfReportedOf">
     <rdfs:label xml:lang="en">geographic heritage (self-reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#GeographicHeritage"/>
     <rdfs:subPropertyOf rdf:resource="#geographicHeritageOf"/>
@@ -5722,7 +5788,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="geographicHeritageReportedOf">
     <rdfs:label xml:lang="en">geographic heritage (reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#GeographicHeritage"/>
     <rdfs:subPropertyOf rdf:resource="#geographicHeritageOf"/>
@@ -5735,7 +5801,7 @@
     <rdfs:label xml:lang="en">has national heritage</rdfs:label>
     <rdfs:label xml:lang="fr">de héritage national</rdfs:label>
     <skos:definition xml:lang="en">Describes a person's @@#NationalHeritage@@, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <owl:inverseOf rdf:resource="#nationalHeritageOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#NationalHeritage"/>
@@ -5746,7 +5812,7 @@
     <rdfs:label xml:lang="en">has national heritage (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">de héritage national (autodéclarée)</rdfs:label>
     <skos:definition xml:lang="en">Describes a person's self-reported @@#NationalHeritage@@, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <owl:inverseOf rdf:resource="#nationalHeritageSelfReportedOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#NationalHeritage"/>
@@ -5758,7 +5824,7 @@
     <rdfs:label xml:lang="en">has national heritage (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">de héritage national (déclarée)</rdfs:label>
     <skos:definition xml:lang="en">Describes a person's reported @@#NationalHeritage@@, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <owl:inverseOf rdf:resource="#nationalHeritageReportedOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#NationalHeritage"/>
@@ -5769,7 +5835,7 @@
 
   <owl:ObjectProperty rdf:ID="nationalHeritageOf">
     <rdfs:label xml:lang="en">national heritage of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#NationalHeritage"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5777,7 +5843,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="nationalHeritageSelfReportedOf">
     <rdfs:label xml:lang="en">national heritage (self-reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#NationalHeritage"/>
     <rdfs:subPropertyOf rdf:resource="#nationalHeritageOf"/>
@@ -5786,7 +5852,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="nationalHeritageReportedOf">
     <rdfs:label xml:lang="en">national heritage (reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#NationalHeritage"/>
     <rdfs:subPropertyOf rdf:resource="#nationalHeritageOf"/>
@@ -5833,7 +5899,7 @@
 
   <owl:ObjectProperty rdf:ID="nationalityOf">
     <rdfs:label xml:lang="en">national identity of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#NationalIdentity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5841,7 +5907,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="nationalitySelfReportedOf">
     <rdfs:label xml:lang="en">national identity (self-reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#nationalityOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#NationalIdentity"/>
@@ -5850,7 +5916,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="nationalityReportedOf">
     <rdfs:label xml:lang="en">national identity (reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#nationalityOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#NationalIdentity"/>
@@ -5897,7 +5963,7 @@
 
   <owl:ObjectProperty rdf:ID="raceColourOf">
     <rdfs:label xml:lang="en">race or colour identity of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#RaceColour"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5905,7 +5971,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="raceColourSelfReportedOf">
     <rdfs:label xml:lang="en">race or colour identity (self-reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#raceColourOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#RaceColour"/>
@@ -5914,7 +5980,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="raceColourReportedOf">
     <rdfs:label xml:lang="en">race or colour identity (reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#raceColourOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#RaceColour"/>
@@ -5961,7 +6027,7 @@
 
   <owl:ObjectProperty rdf:ID="ethnicityOf">
     <rdfs:label xml:lang="en">ethnic identity of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Ethnicity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5969,7 +6035,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="ethnicitySelfReportedOf">
     <rdfs:label xml:lang="en">ethnic identity (self-reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#ethnicityOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Ethnicity"/>
@@ -5978,7 +6044,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="ethnicityReportedOf">
     <rdfs:label xml:lang="en">ethnic identity (reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#ethnicityOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Ethnicity"/>
@@ -6025,7 +6091,7 @@
 
   <owl:ObjectProperty rdf:ID="religionOf">
     <rdfs:label xml:lang="en">religious affiliation of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6033,7 +6099,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="religionSelfReportedOf">
     <rdfs:label xml:lang="en">religious affiliation (self-reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="religionOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Religion"/>
@@ -6042,7 +6108,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="religionReportedOf">
     <rdfs:label xml:lang="en">religious affiliation (reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="religionOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Religion"/>
@@ -6053,9 +6119,9 @@
 
   <owl:ObjectProperty rdf:ID="hasPoliticalAffiliation">
     <rdfs:label xml:lang="en">has political affiliation</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Describes a person's political affiliation, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#PoliticalContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#PoliticalAffiliation@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <owl:inverseOf rdf:resource="#politicalAffiliationOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#PoliticalAffiliation"/>
@@ -6064,9 +6130,9 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasPoliticalAffiliationSelfReported">
     <rdfs:label xml:lang="en">has political affiliation (self-reported)</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Describes a person's self-reported political affiliation. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#PoliticalAffiliation@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <owl:inverseOf rdf:resource="#politicalAffiliationSelfReportedOf"/>
     <rdfs:subPropertyOf rdf:resource="#hasPoliticalAffiliation"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -6076,9 +6142,9 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasPoliticalAffiliationReported">
     <rdfs:label xml:lang="en">has political affiliation (reported)</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Describes a person's reported political affiliation. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#PoliticalAffiliation@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <owl:inverseOf rdf:resource="#politicalAffiliationReportedOf"/>
     <rdfs:subPropertyOf rdf:resource="#hasPoliticalAffiliation"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -6089,7 +6155,7 @@
 
   <owl:ObjectProperty rdf:ID="politicalAffiliationOf">
     <rdfs:label xml:lang="en">political affiliation of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#PoliticalAffiliation"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6097,7 +6163,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="politicalAffiliationSelfReportedOf">
     <rdfs:label xml:lang="en">political affiliation (self-reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#politicalAffiliationOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#PoliticalAffiliation"/>
@@ -6106,7 +6172,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="politicalAffiliationReportedOf">
     <rdfs:label xml:lang="en">political affiliation (reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#politicalAffiliationOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#PoliticalAffiliation"/>
@@ -6153,7 +6219,7 @@
 
   <owl:ObjectProperty rdf:ID="socialClassOf">
     <rdfs:label xml:lang="en">class identity of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#SocialClass"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6161,7 +6227,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="socialClassSelfReportedOf">
     <rdfs:label xml:lang="en">class identity (self-reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#socialClassOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#SocialClass"/>
@@ -6170,7 +6236,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="socialClassReportedOf">
     <rdfs:label xml:lang="en">class identity (reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#socialClassOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#SocialClass"/>
@@ -6217,7 +6283,7 @@
 
   <owl:ObjectProperty rdf:ID="linguisticAbilityOf">
     <rdfs:label xml:lang="en">language known of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Language"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6225,7 +6291,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="linguisticAbilitySelfReportedOf">
     <rdfs:label xml:lang="en">language known (self-reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#linguisticAbilityOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Language"/>
@@ -6234,7 +6300,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="linguisticAbilityReportedOf">
     <rdfs:label xml:lang="en">language known (reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#linguisticAbilityOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Language"/>
@@ -6282,7 +6348,7 @@
 
   <owl:ObjectProperty rdf:ID="nativeLinguisticAbilityOf">
     <rdfs:label xml:lang="en">natively known language of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#linguisticAbilityOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Language"/>
@@ -6291,7 +6357,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="nativeLinguisticAbilitySelfReportedOf">
     <rdfs:label xml:lang="en">natively known language (self-reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#nativeLinguisticAbilityOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Language"/>
@@ -6300,7 +6366,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="nativeLinguisticAbilityReportedOf">
     <rdfs:label xml:lang="en">natively known language (reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#nativeLinguisticAbilityOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Language"/>
@@ -6347,7 +6413,7 @@
 
   <owl:ObjectProperty rdf:ID="sexualityOf">
     <rdfs:label xml:lang="en">sexual identity of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Sexuality"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6355,7 +6421,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="sexualitySelfReportedOf">
     <rdfs:label xml:lang="en">sexual identity (self-reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#sexualityOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Sexuality"/>
@@ -6364,7 +6430,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="sexualityReportedOf">
     <rdfs:label xml:lang="en">sexual identity (reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#sexualityOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Sexuality"/>
@@ -6490,9 +6556,9 @@
   </skos:Concept>
   <skos:Concept rdf:about="#queerLabel">
     <rdfs:label xml:lang="en">queer identity</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of queerness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "Queer" (e.g. @@#GenderQueer@@) cultural identities.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
     <cwrc:represents rdf:resource="#GenderQueer"/>
     <skos:inScheme rdf:resource="#TextLabels"/>
@@ -6514,9 +6580,9 @@
 
   <owl:ObjectProperty rdf:ID="hasRelative">
     <rdfs:label xml:lang="en">has relative</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdfs:subPropertyOf rdf:resource="#interpersonalRelationship"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6537,7 +6603,7 @@
 
   <owl:ObjectProperty rdf:ID="hasGuardian">
     <rdfs:label xml:lang="en">has guardian</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person (usually a minor) to another, usually an adult who is charged with their care. This term stretches beyond the legal definition of "guardian" to include a broader social relation between dependant and dependee (e.g.: <![CDATA[<i>in loco parentis</i>]]>)</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6559,9 +6625,9 @@
 
   <owl:ObjectProperty rdf:ID="hasSibling">
     <rdfs:label xml:lang="en">has sibling</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Describes a relationship in which two or more individuals share the same parentage.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -6586,7 +6652,7 @@
 
   <owl:ObjectProperty rdf:ID="hasSister">
     <rdfs:label xml:lang="en">has sister</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to a female-identified sibling. Although the term typically refers to consanguineal relationships, it is often used to describe relationships beyond "blood ties".
     </skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
@@ -6612,7 +6678,7 @@
 
   <owl:ObjectProperty rdf:ID="hasBrother">
     <rdfs:label xml:lang="en">has brother</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to a male-identified sibling. Although the term typically refers to consanguineal relationships, it is often used to describe relationships beyond "blood ties."</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6638,9 +6704,9 @@
 
   <owl:ObjectProperty rdf:ID="hasStepSister">
     <rdfs:label xml:lang="en">has stepsister</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to a female-identified stepsibling, that is, a child of the person's stepparent.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepsibling"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6652,7 +6718,7 @@
 
   <owl:ObjectProperty rdf:ID="stepSisterOf">
     <rdfs:label xml:lang="en">stepsister of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#sisterOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6666,7 +6732,7 @@
     <rdfs:label xml:lang="en">has stepbrother</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to a male-identified stepsibling, that is, a child of the person's stepparent.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepsibling"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6678,7 +6744,7 @@
 
   <owl:ObjectProperty rdf:ID="stepBrotherOf">
     <rdfs:label xml:lang="en">stepbrother of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#brotherOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6688,9 +6754,9 @@
 
   <owl:ObjectProperty rdf:ID="hasHalfSister">
     <rdfs:label xml:lang="en">has half-sister</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a female-identified person to the someone with whom they have one parent in common.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <skos:note>Comment: This term is a CWRC-specific addition not in the original Orlando tag set.</skos:note>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6702,7 +6768,7 @@
 
   <owl:ObjectProperty rdf:ID="halfSisterOf">
     <rdfs:label xml:lang="en">half-sister of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:note>Comment: This term is a CWRC-specific addition not in the original Orlando tag set.</skos:note>
     <rdfs:subPropertyOf rdf:resource="#sisterOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6715,9 +6781,9 @@
 
   <owl:ObjectProperty rdf:ID="hasHalfBrother">
     <rdfs:label xml:lang="en">has half-brother</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a male-identified person to the someone with whom they have one parent in common.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <skos:note>Comment: This term is a CWRC-specific addition not in the original Orlando tag set.</skos:note>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6729,7 +6795,7 @@
 
   <owl:ObjectProperty rdf:ID="halfBrotherOf">
     <rdfs:label xml:lang="en">half-brother of</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:note>Comment: This term is a CWRC-specific addition not in the original Orlando tag set.</skos:note>
     <rdfs:subPropertyOf rdf:resource="#sisterOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -6743,9 +6809,9 @@
 
   <owl:ObjectProperty rdf:ID="hasChild">
     <rdfs:label xml:lang="en">has child</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to a child, consanguineal or otherwise.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -6766,9 +6832,9 @@
 
   <owl:ObjectProperty rdf:ID="hasDaughter">
     <rdfs:label xml:lang="en">has daughter</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to a female-identified child, consanguineal or otherwise.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Daughter"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6792,9 +6858,9 @@
 
   <owl:ObjectProperty rdf:ID="hasSon">
     <rdfs:label xml:lang="en">has son</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to a male-identified child, consanguineal or otherwise.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -6817,9 +6883,9 @@
 
   <owl:ObjectProperty rdf:ID="hasGrandChild">
     <rdfs:label xml:lang="en">has grandchild</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to a child of a person's child.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Family#Roles"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6841,9 +6907,9 @@
 
   <owl:ObjectProperty rdf:ID="hasGrandDaughter">
     <rdfs:label xml:lang="en">has granddaughter</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to a female-identified child of a person's child.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Family#Roles"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6865,9 +6931,9 @@
 
   <owl:ObjectProperty rdf:ID="hasGrandSon">
     <rdfs:label xml:lang="en">has grandson</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to a male-identified child of a person's child.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Family#Roles"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6889,9 +6955,9 @@
 
   <owl:ObjectProperty rdf:ID="hasStepChild">
     <rdfs:label xml:lang="en">has stepchild</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to the child of that person's spouse, in contrast to what is commonly referred to as the "biological parent" of said child.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -6915,9 +6981,9 @@
 
   <owl:ObjectProperty rdf:ID="hasStepDaughter">
     <rdfs:label xml:lang="en">has stepdaughter</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to a female-identified child of that person's spouse, in contrast to what is commonly referred to as the "biological parent" of said child.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepchild"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6941,9 +7007,9 @@
 
   <owl:ObjectProperty rdf:ID="hasStepSon">
     <rdfs:label xml:lang="en">has stepson</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to a male-identified child of that person's spouse, in contrast to what is commonly referred to as the "biological parent" of said child.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepchild"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6965,9 +7031,9 @@
 
   <owl:ObjectProperty rdf:ID="hasParent">
     <rdfs:label xml:lang="en">has parent</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to their father, mother, or, in certain cases, their guardian.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -6993,9 +7059,9 @@
 
   <owl:ObjectProperty rdf:ID="hasMother">
     <rdfs:label xml:lang="en">has mother</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to their mother, the female-identified parent, consanguineal or otherwise.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Mother"/>
@@ -7019,9 +7085,9 @@
 
 <owl:ObjectProperty rdf:ID="hasFather">
     <rdfs:label xml:lang="en">has father</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to their father, the male-identified parent, consanguineal or otherwise.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Father"/>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -7044,10 +7110,10 @@
 
   <owl:ObjectProperty rdf:ID="hasStepParent">
     <rdfs:label xml:lang="en">has stepparent</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to their stepparent, that is, a parent married to that person's so-called "biological parent", in contrast to a consanguineal relationship.</skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepfather"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -7071,9 +7137,9 @@
 
   <owl:ObjectProperty rdf:ID="hasStepMother">
     <rdfs:label xml:lang="en">has stepmother</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to their stepmother, that is, a parent married to that person's so-called "biological parent", in contrast to a consanguineal relationship.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <owl:inverseOf rdf:resource="#stepMotherOf"/>
@@ -7097,9 +7163,9 @@
 
   <owl:ObjectProperty rdf:ID="hasStepFather">
     <rdfs:label xml:lang="en">has stepfather</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to their stepfather, that is, a parent married to that person's so-called "biological parent", in contrast to a consanguineal relationship.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -7126,9 +7192,9 @@
 
   <owl:ObjectProperty rdf:ID="hasGrandParent">
     <rdfs:label xml:lang="en">has grandparent</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to the parent of their mother or father.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Grandparent"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -7152,9 +7218,9 @@
 
   <owl:ObjectProperty rdf:ID="hasGrandMother">
     <rdfs:label xml:lang="en">has grandmother</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to the mother of their mother or father.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Grandparent"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -7176,9 +7242,9 @@
 
   <owl:ObjectProperty rdf:ID="hasGrandFather">
     <rdfs:label xml:lang="en">has grandfather</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to the father of their mother or father.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#hasGrandParent"/>
@@ -7199,11 +7265,11 @@
 
   <owl:ObjectProperty rdf:ID="hasAunt">
     <rdfs:label xml:lang="en">has aunt</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:definition xml:lang="en">Relates a person to the sister of their father or mother, but can also refer to any maternal relationship and need not be restricted to a consanguineal relation.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Aunt"/>
@@ -7225,10 +7291,10 @@
 
   <owl:ObjectProperty rdf:ID="hasUncle">
     <rdfs:label xml:lang="en">has uncle</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to the sister of their father or mother, but can also refer to any avuncular relationship and need not be restricted to a consanguineal relation.
     </skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Uncle"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -7253,9 +7319,9 @@
 
   <owl:ObjectProperty rdf:ID="hasNiece">
     <rdfs:label xml:lang="en">has niece</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to the daughter of their sibling.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -7279,9 +7345,9 @@
 
   <owl:ObjectProperty rdf:ID="hasNephew">
     <rdfs:label xml:lang="en">has nephew</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to the son of their sibling.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -7305,9 +7371,9 @@
 
   <owl:ObjectProperty rdf:ID="hasCousin">
     <rdfs:label xml:lang="en">has cousin</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to the child of their aunt or uncle; a person belonging to the same extended family, consanguineal or otherwise.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#hasRelative"/>
@@ -7333,7 +7399,7 @@
 
   <owl:ObjectProperty rdf:ID="hasPartner">
     <rdfs:label xml:lang="en">has partner</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates two people through a romantic, emotional, or spousal relationship. Distinct from a business or corporate partnership.</skos:definition>
     <skos:definition xml:lang="fr">Ce terme représente uniquement les relations affectives, amoureuses ou familiales et non des relations d'affaires.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -7360,9 +7426,9 @@
 
   <owl:ObjectProperty rdf:ID="hasWife">
     <rdfs:label xml:lang="en">has wife</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to a female-identified partner in a marital relationship.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Wife"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -7387,9 +7453,9 @@
 
   <owl:ObjectProperty rdf:ID="hasHusband">
     <rdfs:label xml:lang="en">has husband</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Relates a person to a male-identified partner in a marital relationship.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -7520,7 +7586,7 @@
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
     <rdfs:range rdf:resource="#Gender"/>
     <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#hasGenderSelfReported@@.</rdfs:comment>
@@ -7536,7 +7602,7 @@
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
     <rdfs:range rdf:resource="#NationalIdentity"/>
     <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#hasNationalitySelfReported@@.</rdfs:comment>
@@ -7567,7 +7633,7 @@
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDefined"/>
     <rdfs:range rdf:resource="#Ethnicity"/>
     <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#hasEthnicitySelfReported@@.</rdfs:comment>
@@ -7583,7 +7649,7 @@
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDefined"/>
     <rdfs:range rdf:resource="#Religion"/>
     <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#hasReligionSelfReported@@.</rdfs:comment>
@@ -7599,7 +7665,7 @@
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDefined"/>
     <rdfs:range rdf:resource="#SocialClass"/>
     <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#hasSocialClassSelfReported@@.</rdfs:comment>
@@ -7615,7 +7681,7 @@
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
     <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#hasLinguisticAbilitySelfReported@@.</rdfs:comment>
@@ -7631,7 +7697,7 @@
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbilitySelfDeclared"/>
     <rdfs:range rdf:resource="#LinguisticAbility"/>
     <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#hasLinguisticAbilitySelfReported@@.</rdfs:comment>
@@ -7647,7 +7713,7 @@
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
     <rdfs:range rdf:resource="#Sexuality"/>
     <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#hasSexualitySelfReported@@.</rdfs:comment>
@@ -7663,7 +7729,7 @@
     <rdfs:subPropertyOf rdf:resource="#personalProperty"/>
     <rdfs:range rdf:resource="#GeographicHeritage"/>
     <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#hasGeographicHeritageSelfReported@@.</rdfs:comment>
@@ -7778,7 +7844,7 @@
     <dcterms:subject rdf:resource="#Ethnicity"/>
     <dcterms:subject rdf:resource="#RaceColour"/>
     <skos:definition xml:lang="en">Ethnicity Context is a significant subclass of @@#Context@@. It is associated with the @@#CulturalForm@@ subclass Ethnicity, and sometimes other intersecting Cultural Forms. Annotations typed as Ethnicity Context provide information about and discussions of a person's subjectivity with regards to their perceived or self-reported ethnicity. Ethnicity Context provides depth to more granular categorizations of a person indicated by the properties @@#hasEthnicity@@ or @@#hasEthnicitySelfReported@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:comment xml:lang="en">Deprecated in favour of class @@#RaceEthnicityContext@@.</rdfs:comment>
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe @@#RaceEthnicityContext@@.</rdfs:comment>
     <owl:equivalentClass rdf:resource="#RaceEthnicityContext"/>
@@ -7793,7 +7859,7 @@
     <rdfs:label xml:lang="fr">formation culturelle</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Cultural formation refers to the processes of lived social subjectivities of people and is often combined with predicates indicating the identity positions as they relate to the following discursive constructions of Class, Religion, Ethnicity, Gender, GeographicHeritage, LinguisticAbility, NationalHeritage, NationalIdentity, PoliticalAffiliation, RaceColour, and Sexuality. These categories are not understood as transhistorical or isolated categories. Rather, they facilitate analysis of how such situationally contingent, changing, and negotiated labels are assigned to or adopted by a particular individual. The tensions endemic to practices of classification demand critical engagement and inquiry into the situatedness of particular cultural identities.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:comment xml:lang="en">Deprecated in favour of class @@#CulturalForm@@.</rdfs:comment>
@@ -7960,7 +8026,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#GeographicHeritage"/>
     <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <cwrc:representedBy rdf:resource="#englishLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -7975,7 +8041,7 @@
     <rdfs:label xml:lang="en">England</rdfs:label>
     <rdfs:label xml:lang="fr">Angleterre</rdfs:label>
     <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
     <owl:oneOf rdf:parseType="Collection">
       <owl:Thing rdf:about="#england"/>
@@ -7994,7 +8060,7 @@
       <rdfs:label xml:lang="en">male</rdfs:label>
       <rdfs:label xml:lang="fr">male</rdfs:label>
       <skos:definition xml:lang="en"/>
-      <skos:definition xml:lang="fr"/>
+      <skos:definition xml:lang="fr"></skos:definition>
       <rdf:type rdf:resource="#TextLabels"/>
       <owl:oneOf rdf:parseType="Collection">
         <owl:Thing rdf:about="#genderManMale"/>
@@ -8013,7 +8079,7 @@
       <rdfs:label xml:lang="en">female</rdfs:label>
       <rdfs:label xml:lang="fr">femelle</rdfs:label>
       <skos:definition xml:lang="en"/>
-      <skos:definition xml:lang="fr"/>
+      <skos:definition xml:lang="fr"></skos:definition>
       <rdf:type rdf:resource="#TextLabels"/>
       <owl:oneOf rdf:parseType="Collection">
         <owl:Thing rdf:about="#genderWomanFemale"/>
@@ -8083,7 +8149,7 @@
       <rdfs:label xml:lang="en">Male</rdfs:label>
       <rdfs:label xml:lang="fr">Mâle</rdfs:label>
       <skos:definition xml:lang="en"/>
-      <skos:definition xml:lang="fr"/>
+      <skos:definition xml:lang="fr"></skos:definition>
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
       <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -8097,7 +8163,7 @@
       <rdfs:label xml:lang="en">Female</rdfs:label>
       <rdfs:label xml:lang="fr">Femelle</rdfs:label>
       <skos:definition xml:lang="en"/>
-      <skos:definition xml:lang="fr"/>
+      <skos:definition xml:lang="fr"></skos:definition>
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
       <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -8111,7 +8177,7 @@
       <rdfs:label xml:lang="en">Unknown</rdfs:label>
       <rdfs:label xml:lang="fr">Inconnue</rdfs:label>
       <skos:definition xml:lang="en"/>
-      <skos:definition xml:lang="fr"/>
+      <skos:definition xml:lang="fr"></skos:definition>
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
       <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -8123,7 +8189,7 @@
       <rdfs:label xml:lang="en">white</rdfs:label>
       <rdfs:label xml:lang="fr">blanc</rdfs:label>
       <skos:definition xml:lang="en"/>
-      <skos:definition xml:lang="fr"/>
+      <skos:definition xml:lang="fr"></skos:definition>
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <rdfs:subClassOf rdf:resource="#whiteLabel"/>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -8138,7 +8204,7 @@
       <rdfs:label xml:lang="en">Jewish</rdfs:label>
       <rdfs:label xml:lang="fr">Juif</rdfs:label>
       <skos:definition xml:lang="en"/>
-      <skos:definition xml:lang="fr"/>
+      <skos:definition xml:lang="fr"></skos:definition>
       <cwrc:representedBy rdf:resource="#jewishLabel"/>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
       <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -8183,7 +8249,7 @@
       <rdfs:label xml:lang="en">entrepreneurial industrialism</rdfs:label>
       <rdfs:label xml:lang="fr">entrepreneuriat industriel</rdfs:label>
       <skos:definition xml:lang="en"/>
-      <skos:definition xml:lang="fr"/>
+      <skos:definition xml:lang="fr"></skos:definition>
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
       <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -8199,7 +8265,7 @@
       <rdfs:label xml:lang="fr">Anglais</rdfs:label>
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:definition xml:lang="en"/>
-      <skos:definition xml:lang="fr"/>
+      <skos:definition xml:lang="fr"></skos:definition>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
       <void:inDataset rdf:resource="#datasetdefinition"/>
       <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#englishNationalHeritage@@.</rdfs:comment>
@@ -8213,7 +8279,7 @@
       <rdfs:label xml:lang="fr">Anglais</rdfs:label>
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:definition xml:lang="en"/>
-      <skos:definition xml:lang="fr"/>
+      <skos:definition xml:lang="fr"></skos:definition>
      <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
       <void:inDataset rdf:resource="#datasetdefinition"/>
       <rdfs:comment xml:lang="en">Deprecated in favour of instance ISO 3166-2:GB-ENG.</rdfs:comment>
@@ -8353,7 +8419,7 @@
     <rdfs:label xml:lang="en">Dissenters</rdfs:label>
     <rdfs:label xml:lang="fr">dissidents (ou non-conformistes)</rdfs:label>
     <skos:definition xml:lang="en">"One who dissents or disagrees in matters of opinion, belief, &amp;c. The term "dissenter" is, however, practically restricted to the special sense of a member of a religious body in England which has, for one reason or another, separated from the Established Church. Strictly, the term includes the English Roman Catholics, who in the original draft of the Relief Act of 1791 were styled "Protesting Catholic Dissenters." It is in practice, however, restricted to the "Protestant Dissenters" referred to in sec. ii. of the Toleration Act of 1688. "<![CDATA[<a href="#cwrc:7c123714-5956-4ce5-bf15-39f3f7c5deed">(Encyclopedia Britannica, 1911)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -8455,9 +8521,9 @@
   </rdf:Description>
   <rdf:Description rdf:about="#rationalDissenter">
     <rdfs:label xml:lang="en">Rational Dissenter</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">"An 18th-century, group much closer to the Anglicanism of their day than other Dissenting sects; however, they believed that state religions impinged on the freedom of conscience. They were fiercely opposed to the hierarchical structure of the Established Church and the financial ties between it and the government."<![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/English_Dissenters#Rational_Dissenters"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
@@ -8476,7 +8542,7 @@
     <skos:definition xml:lang="en">"Unitarian church usually refers to a church (either a single church or a group of churches and/or its followers) which follows Unitarianism, a Christian theology. It can also more broadly refer to a church which is a member of an umbrella group with "Unitarian" in its title, such as the Unitarian Universalist Association in the U.S., the Canadian Unitarian Council, and similar bodies." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Unitarian_church"/>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:altLabel xml:lang="en">unitarianChurch</skos:altLabel>
     <skos:broaderTransitive rdf:resource="#christianity"/>
@@ -8490,9 +8556,9 @@
   </rdf:Description>
   <rdf:Description rdf:about="#churchOfEngland">
     <rdfs:label xml:lang="en">Church of England</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     <skos:inScheme rdf:resource="#Religion"/>
