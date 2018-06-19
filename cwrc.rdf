@@ -4055,12 +4055,14 @@
   <cwrc:PoliticalAffiliation rdf:about="#conservativePartyUk">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <skos:altLabel xml:lang="en">conservative party</skos:altLabel>
+    <skos:altLabel xml:lang="en">tory</skos:altLabel>
+    <skos:altLabel xml:lang="en">Tory Party (Britain)</skos:altLabel>
+    <skos:altLabel xml:lang="en">Tory Party</skos:altLabel>
     <rdfs:label xml:lang="en">Conservative Party (UK)</rdfs:label>
     <rdfs:label xml:lang="fr">Parti Conservateur (Royaume-Uni)</rdfs:label>
     <skos:definition xml:lang="en">"The Tories were members of two political parties which existed, sequentially, in the Kingdom of England, the Kingdom of Great Britain, and later the United Kingdom of Great Britain and Ireland from the 17th to the early 19th centuries. The first Tories emerged in 1678 in England, when they opposed the Whig-supported Exclusion Bill which set out to disinherit the heir presumptive James, Duke of York (who eventually became James II of England and VII of Scotland). This party ceased to exist as an organised political entity in the early 1760s, although it was used as a term of self-description by some political writers. A few decades later, a new Tory party would rise to establish a hold on government between 1783 and 1830, with William Pitt the Younger followed by Robert Jenkinson, 2nd Earl of Liverpool. The Earl of Liverpool was succeeded by fellow Tory Arthur Wellesley, 1st Duke of Wellington, whose term included the Catholic Emancipation, which occurred mostly due to the election of Daniel O'Connell as a Catholic MP from Ireland. When the Whigs subsequently regained control, the Representation of the People Act 1832 removed the rotten boroughs, many of which were controlled by Tories. In the following general election, the Tory ranks were reduced to 180 MPs. Under the leadership of Robert Peel, the Tamworth Manifesto was issued, which began to transform the Tories into the Conservative Party. However, Peel lost many of his supporters by repealing the Corn Laws, causing the party to break apart. One faction, led by the Earl of Derby and Benjamin Disraeli, survived to become the modern Conservative Party, whose members are commonly still referred to as Tories." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Tories_(British_political_party)"/>
-    <skos:related rdf:resource="#toryPartyBritain"/>
     <skos:broaderTransitive rdf:resource="#conservatism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -5483,20 +5485,6 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:related rdf:resource="#feminism"/>
     <skos:related rdf:resource="#conservatism"/>
-  </cwrc:PoliticalAffiliation>
-  <cwrc:PoliticalAffiliation rdf:about="#toryPartyBritain">
-    <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
-    <skos:altLabel xml:lang="en">tory</skos:altLabel>
-    <rdfs:label xml:lang="en">Tory Party (Britain)</rdfs:label>
-    <rdfs:label xml:lang="fr">Parti Tory (Royaume-Uni)</rdfs:label>
-    <skos:definition xml:lang="en">"The Tories were members of two political parties which existed, sequentially, in the Kingdom of England, the Kingdom of Great Britain and later the United Kingdom of Great Britain and Ireland from the 17th to the early 19th centuries. The first Tories emerged in 1678 in England, when they opposed the Whig-supported Exclusion Bill which set out to disinherit the heir presumptive James, Duke of York (who eventually became James II of England and VII of Scotland). This party ceased to exist as an organised political entity in the early 1760s, although it was used as a term of self-description by some political writers. A few decades later, a new Tory party would rise to establish a hold on government between 1783 and 1830, with William Pitt the Younger followed by Robert Jenkinson, 2nd Earl of Liverpool. The Earl of Liverpool was succeeded by fellow Tory Arthur Wellesley, 1st Duke of Wellington, whose term included the Catholic Emancipation, which occurred mostly due to the election of Daniel O'Connell as a Catholic MP from Ireland. When the Whigs subsequently regained control, the Representation of the People Act 1832 removed the rotten boroughs, many of which were controlled by Tories. In the following general election, the Tory ranks were reduced to 180 MPs. Under the leadership of Robert Peel, the Tamworth Manifesto was issued, which began to transform the Tories into the Conservative Party. However, Peel lost many of his supporters by repealing the Corn Laws, causing the party to break apart. One faction, led by the Earl of Derby and Benjamin Disraeli, survived to become the modern Conservative Party, whose members are commonly still referred to as Tories." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
-    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
-    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Tories_(British_political_party)"/>
-    <skos:broaderTransitive rdf:resource="#conservatism"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:contraryTo rdf:resource="#whiggism"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#tradeUnionism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -7930,6 +7918,25 @@
   </owl:DeprecatedClass>
 
   <!-- Deprecated Instances -->
+  <rdf:Description rdf:about="#toryPartyBritain">
+    <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
+    <skos:altLabel xml:lang="en">tory</skos:altLabel>
+    <rdfs:label xml:lang="en">Tory Party (Britain)</rdfs:label>
+    <rdfs:label xml:lang="fr">Parti Tory (Royaume-Uni)</rdfs:label>
+    <skos:definition xml:lang="en">"The Tories were members of two political parties which existed, sequentially, in the Kingdom of England, the Kingdom of Great Britain and later the United Kingdom of Great Britain and Ireland from the 17th to the early 19th centuries. The first Tories emerged in 1678 in England, when they opposed the Whig-supported Exclusion Bill which set out to disinherit the heir presumptive James, Duke of York (who eventually became James II of England and VII of Scotland). This party ceased to exist as an organised political entity in the early 1760s, although it was used as a term of self-description by some political writers. A few decades later, a new Tory party would rise to establish a hold on government between 1783 and 1830, with William Pitt the Younger followed by Robert Jenkinson, 2nd Earl of Liverpool. The Earl of Liverpool was succeeded by fellow Tory Arthur Wellesley, 1st Duke of Wellington, whose term included the Catholic Emancipation, which occurred mostly due to the election of Daniel O'Connell as a Catholic MP from Ireland. When the Whigs subsequently regained control, the Representation of the People Act 1832 removed the rotten boroughs, many of which were controlled by Tories. In the following general election, the Tory ranks were reduced to 180 MPs. Under the leadership of Robert Peel, the Tamworth Manifesto was issued, which began to transform the Tories into the Conservative Party. However, Peel lost many of his supporters by repealing the Corn Laws, causing the party to break apart. One faction, led by the Earl of Derby and Benjamin Disraeli, survived to become the modern Conservative Party, whose members are commonly still referred to as Tories." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Tories_(British_political_party)"/>
+    <skos:broaderTransitive rdf:resource="#conservatism"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <cwrc:contraryTo rdf:resource="#whiggism"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#conservativePartyUk@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#conservativePartyUk@@.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#conservativePartyUk"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
   <rdf:Description rdf:about="#englishNationalHeritage">
     <rdfs:label xml:lang="en">English</rdfs:label>
     <rdfs:label xml:lang="fr">Anglais</rdfs:label>
