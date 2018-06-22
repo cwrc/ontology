@@ -1394,6 +1394,17 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:NationalIdentity>
+  <cwrc:NationalIdentity rdf:about="#sephardicJewishNationalIdentity">
+    <rdfs:label xml:lang="en">Sephardic Jewish</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#NationalIdentity"/>
+    <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as Sephardic Jewish as a national identity.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:broaderTransitive rdf:resource="#jewishNationalIdentity"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:NationalIdentity>
   <cwrc:NationalIdentity rdf:about="#hanoverianNationalIdentity">
     <rdfs:label xml:lang="en">Hanoverian</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
@@ -1816,6 +1827,7 @@
     <rdfs:label xml:lang="en">Scottish</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:altLabel xml:lang="en">Scots</skos:altLabel>
+    <skos:altLabel xml:lang="en">Scotch</skos:altLabel>
     <skos:altLabel xml:lang="en">Scottish</skos:altLabel>
     <skos:definition xml:lang="en">
       "The Scottish people (Scots: Scots Fowk, Scottish Gaelic: Albannaich), or Scots, are a nation and socially defined ethnic group resident in Scotland. Historically, they emerged from an amalgamation of two groups—the Picts and Gaels—who founded the Kingdom of Scotland (or Alba) in the 9th century, and thought to have been ethnolinguistically Celts. Later, the neighbouring Cumbrian Britons, who also spoke a Celtic language, as well as Germanic-speaking Anglo-Saxons and Norse, were incorporated into the Scottish nation." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]>
@@ -1864,7 +1876,6 @@
   <cwrc:RaceColour rdf:about="#indianRaceColour">
     <rdfs:label xml:lang="en">Indian</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en">presumably white</skos:altLabel>
     <skos:definition xml:lang="en">
       "Indian people or Indians are citizens of India, the second most populous nation containing 17.50% of the world's population. "Indian" refers to nationality, but not ethnicity or language. The Indian nationality consists of many regional ethno-linguistic groups, reflecting the rich and complex history of India. India hosts all major ethnic groups found in the Indian Subcontinent. The diaspora populations with Indian ancestry, as a result of emigration, are somewhat widespread most notably in the UAE, Southeast Asia, United Kingdom, North America, Australia, New Zealand, South Africa, the Caribbean, and Southern Europe. Population estimates vary from a conservative 12 million to 20 million diaspora." <![CDATA[<a href="http://dbpedia.org/page/Indian_people">(DBpedia, 2017)</a>]]>
     </skos:definition>
@@ -1992,7 +2003,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-  <cwrc:Ethnicity rdf:about="#indigenousPeoplesOfAmericas">
+  <cwrc:Ethnicity rdf:about="#indigenousPeoplesOfAmericasEthnicity">
     <rdfs:label xml:lang="en">Indigenous (of the Americas)</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:altLabel xml:lang="en">Amer-Indians</skos:altLabel>
@@ -2398,6 +2409,7 @@
    <cwrc:Ethnicity rdf:about="#slavEthnicity">
      <rdfs:label xml:lang="en">Slav</rdfs:label>
      <rdfs:label xml:lang="fr">Slave</rdfs:label>
+     <skos:altLabel xml:lang="en">Slavic</skos:altLabel>
      <skos:definition xml:lang="en">"Slavs are the largest Indo-European ethno-linguistic group in Europe. They are native to Central Europe, Eastern Europe, Southeast Europe, Northeastern Europe, North Asia and Central Asia. Slavs speak Indo-European Slavic languages. From the early 6th century they spread to inhabit most of Central and Eastern Europe and Southeast Europe. States with slavic-based languages comprise over 50% of the territory of Europe.Present-day Slavic people are classified into West Slavs (chiefly Poles, Czechs and Slovaks), East Slavs (chiefly Russians, Belarusians, and Ukrainians), and South Slavs (chiefly Serbs, Croats, Bosniaks, ethnic Macedonians, Slovenes, Montenegrins of the Former Yugoslavia and Bulgarians). Modern Slavic nations and ethnic groups are considerably diverse both genetically and culturally, and relations between them – even within the individual ethnic groups themselves – are varied, ranging from a sense of connection to mutual feelings of hostility." <![CDATA[<a href="http://dbpedia.org/page/Slavs">(DBpedia, 2018)</a>]]></skos:definition>
      <skos:definition xml:lang="fr">«Les Slaves sont des peuples d'origine européenne. Les Slaves sont surtout présents en Europe centrale et en Europe de l'Est. Les ancêtres Indo-Européens des Slaves, proches des Baltes et des Germains sur le plan ethnolinguistique, sont connus depuis la fin du Ier millénaire avant notre ère. Ils sont situés le plus souvent au nord de l'Ukraine et au sud de la Biélorussie, dans une région située à la confluence du Dniepr et de la rivière Pripiat. Mais, les auteurs anciens ne commencent réellement à les mentionner qu'à partir du VIe siècle de notre ère.» <![CDATA[<a href="http://dbpedia.org/page/Slavs">(DBpedia, 2018)</a>]]></skos:definition>
      <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
@@ -3447,6 +3459,7 @@
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <rdfs:label xml:lang="en">anti-apartheid</rdfs:label>
     <rdfs:label xml:lang="fr">anti-apartheid</rdfs:label>
+    <skos:altLabel xml:lang="en">the struggle to end Apartheid</skos:altLabel>
     <skos:definition xml:lang="en">"The Anti-Apartheid Movement (AAM), originally known as the Boycott Movement, was a British organisation that was at the centre of the international movement opposing South Africa's system of apartheid and supporting South Africa's non-whites." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Anti-Apartheid_Movement"/>
@@ -3758,6 +3771,7 @@
     <skos:altLabel xml:lang="en">anti-colonialism</skos:altLabel>
     <skos:altLabel xml:lang="en">anti-colonialist</skos:altLabel>
     <skos:altLabel xml:lang="en">anti-colonial</skos:altLabel>
+    <skos:altLabel xml:lang="en">Zulu resistance to colonial rule</skos:altLabel>
     <rdfs:label xml:lang="en">Anti-imperialism</rdfs:label>
     <rdfs:label xml:lang="fr">Anti-impérialisme</rdfs:label>
     <skos:definition xml:lang="en">""Anti-imperialism" in political science and international relations is a term used in a variety of contexts, usually by nationalist movements, who want to secede from a larger polity (usually in the form of an empire, but also in a multi-ethnic sovereign state) or as a specific theory opposed to capitalism in Marxist–Leninist discourse, derived from Vladimir Lenin's work Imperialism, the Highest Stage of Capitalism. A less common usage is by isolationists who oppose an interventionist foreign policy. People who categorise themselves as anti-imperialists, often state that they are opposed to colonialism, colonial empire, hegemony, imperialism, and territorial expansion of a country beyond its established borders. The phrase gained a wide currency after the Second World War and at the onset of the Cold War as political movements in colonies of European powers promoted national sovereignty. Some "anti-imperialist" groups who opposed the United States supported the power of the Soviet Union, such as in Guevarism, while in Maoism, this was criticized as "social imperialism". In the Arab and Muslim world, the term is often used in the context of Anti-Zionist nationalist and religious movements." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -3814,6 +3828,7 @@
   <cwrc:PoliticalAffiliation rdf:about="#anti-Monarchism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <skos:altLabel xml:lang="en">anti-monarchist</skos:altLabel>
+    <skos:altLabel xml:lang="en">anti-royalist</skos:altLabel>
     <rdfs:label xml:lang="en">anti-monarchism</rdfs:label>
     <rdfs:label xml:lang="fr">antimonarchisme</rdfs:label>
     <skos:definition xml:lang="en">"The abolition of monarchy has occurred throughout history, either through revolutions, coups d'état, wars, or legislative reforms (such as abdications). The founding of the Roman Republic is a noteworthy example and became part of the nation's traditions including as justification for the assassination of Julius Caesar. The twentieth century saw a major acceleration of this process, with many monarchies violently overthrown by revolution or war, or else abolished as part of the process of decolonisation. By contrast, the restoration of monarchies is rare in modern times, with only two major examples, Spain and Cambodia." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -3926,6 +3941,7 @@
   <cwrc:PoliticalAffiliation rdf:about="#anti-Trade-Unionism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <skos:altLabel xml:lang="en">anti-trade-unionist</skos:altLabel>
+    <skos:altLabel xml:lang="en">anti-Union</skos:altLabel>
     <rdfs:label xml:lang="en">anti-trade-unionism</rdfs:label>
     <rdfs:label xml:lang="fr">opposition au syndicalisme</rdfs:label>
     <skos:definition xml:lang="en">Opposed to trade unions or the trade union movement. See @@https://en.wikipedia.org/wiki/Trade_union@@</skos:definition>
@@ -4178,6 +4194,18 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
+  <cwrc:PoliticalAffiliation rdf:about="#chartism">
+    <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
+    <rdfs:label xml:lang="en">Chartist</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Chartism was a working-class movement for political reform in Britain which existed from 1838 to 1858. It took its name from the People's Charter of 1838 and was a national protest movement, with particular strongholds of support in Northern England, the East Midlands, the Staffordshire Potteries, the Black Country, and the South Wales Valleys. Support for the movement was at its highest in 1839, 1842, and 1848, when petitions signed by millions of working people were presented to the House of Commons. The strategy employed was to use the scale of support which these petitions and the accompanying mass meetings demonstrated to put pressure on politicians to concede manhood suffrage.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Chartism"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#childrensWelfare">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <skos:altLabel xml:lang="en">children's rights</skos:altLabel>
@@ -4372,6 +4400,7 @@
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#covenanters">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
+    <skos:altLabel xml:lang="en">Covenanting</skos:altLabel>
     <rdfs:label xml:lang="en">Covenanters</rdfs:label>
     <rdfs:label xml:lang="fr">Covenantaire</rdfs:label>
     <skos:definition xml:lang="en">"The Covenanters were a Scottish Presbyterian movement that played an important part in the history of Scotland, and to a lesser extent that of England and Ireland, during the 17th century. Presbyterian denominations tracing their history to the Covenanters and often incorporating the name continue the ideas and traditions in Scotland and internationally. They derive their name from the term covenant after the Covenant between God and the Israelites in the Old Testament. There were two important covenants in Scottish history, the National Covenant and the Solemn League and Covenant." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -4379,6 +4408,16 @@
     <skos:definition xml:lang="fr">«Les Covenantaires formèrent un important mouvement religieux et politique en Écosse au XVIIe siècle. Du point de vue religieux, ce mouvement s'attacha surtout à promouvoir et à développer le presbytérianisme, et à en faire une forme de gouvernement souhaitée par le peuple, en opposition avec l'Épiscopalisme, qui avait les faveurs de la couronne. Du point de vue politique, ce mouvement vit d'importantes évolutions du caractère et du fonctionnement du Parlement écossais, qui commença à se démarquer progressivement de ses origines médiévales. Dans son ensemble, ce mouvement était essentiellement conservateur dans le ton, mais il amorça une révolution qui embrasa l'Écosse, l'Angleterre et l'Irlande, et qui fut appelée les guerres des Trois Royaumes. Le nom Covenantaire provient de «covenant», qui est un mot de l'ancien français, passé dans le moyen anglais, qui signifiait à l'origine convention, chose convenue, et qui désigna, dans la loi anglaise, un accord formel, une promesse solennelle. En Écosse, le terme prit le sens biblique d'«Alliance» ou de «Promesse». Le premier engagement de ce genre fut signé par les Écossais de toutes les classes, en 1588, lorsque Philippe II menaçait l'Angleterre et la Réforme par sa fameuse Invincible Armada. Il contenait une profession de foi protestante, une réprobation de l'Église romaine et un serment de défense mutuelle et d'union. La destruction de la flotte espagnole rendit cette confédération sans objet. Au siècle suivant, le «National Covenant» de 1638, qui prit comme base des documents précédents du même genre, était surtout intéressé à préserver la Réforme de toute innovation issue de la couronne britannique. Son document jumeau de 1643, «Solemn League and Covenant», se préoccupait également de religion, même s'il s'agissait principalement d'un traité d'alliance entre les covenantaires d'Écosse et le Parlement d'Angleterre, soucieux de se soutenir lors de la guerre civile de plus en plus violente contre le roi Charles Ier.» <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Covenanter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:PoliticalAffiliation>
+  <cwrc:PoliticalAffiliation rdf:about="#democrat">
+    <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
+    <rdfs:label xml:lang="en">democrat</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">An advocate of democracy. See @@https://en.wikipedia.org/wiki/Democracy@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -4546,17 +4585,20 @@
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#feminism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
-    <skos:altLabel xml:lang="en">feminist</skos:altLabel>
-    <skos:altLabel xml:lang="en">proto-feminist</skos:altLabel>
-    <skos:altLabel xml:lang="en">anti-sexist</skos:altLabel>
     <skos:altLabel xml:lang="en">activist for women and children</skos:altLabel>
+    <skos:altLabel xml:lang="en">anti-sexist</skos:altLabel>
     <skos:altLabel xml:lang="en">equal rights</skos:altLabel>
+    <skos:altLabel xml:lang="en">Equality Feminism</skos:altLabel>
+    <skos:altLabel xml:lang="en">feminist</skos:altLabel>
     <skos:altLabel xml:lang="en">gender egalitarian</skos:altLabel>
     <skos:altLabel xml:lang="en">health activist</skos:altLabel>
     <skos:altLabel xml:lang="en">moderate feminist</skos:altLabel>
     <skos:altLabel xml:lang="en">pro-family</skos:altLabel>
+    <skos:altLabel xml:lang="en">proto-feminist consciousness</skos:altLabel>
+    <skos:altLabel xml:lang="en">proto-feminist</skos:altLabel>
     <skos:altLabel xml:lang="en">salary reform</skos:altLabel>
     <skos:altLabel xml:lang="en">women's rights</skos:altLabel>
+    <skos:altLabel xml:lang="en">women's rights activist</skos:altLabel>
     <rdfs:label xml:lang="en">feminism</rdfs:label>
     <rdfs:label xml:lang="fr">Féminisme</rdfs:label>
     <skos:definition xml:lang="en">"Feminism is a range of political movements, ideologies, and social movements that share a common goal: to define, establish, and achieve political, economic, personal, and social rights for women that are equal to those of men. This includes seeking to establish equal opportunities for women in education and employment. Feminist movements have campaigned and continue to campaign for women's rights, including the right to vote, to hold public office, to work, to earn fair wages or equal pay, to own property, to receive education, to enter contracts, to have equal rights within marriage, and to have maternity leave. Feminists have also worked to promote bodily autonomy and integrity, and to protect women and girls from rape, sexual harassment, and domestic violence. Feminist campaigns are generally considered to be one of the main forces behind major historical societal changes for women's rights, particularly in the West, where they are near-universally credited with having achieved women's suffrage, gender neutrality in English, reproductive rights for women (including access to contraceptives and abortion), and the right to enter into contracts and own property. Although feminist advocacy is, and has been, mainly focused on women's rights, some feminists, including bell hooks, argue for the inclusion of men's liberation within its aims because men are also harmed by traditional gender roles. Feminist theory, which emerged from feminist movements, aims to understand the nature of gender inequality by examining women's social roles and lived experience; it has developed theories in a variety of disciplines in order to respond to issues concerning gender. Numerous feminist movements and ideologies have developed over the years and represent different viewpoints and aims. Some forms of feminism have been criticized for taking into account only white, middle class, and educated perspectives. This criticism led to the creation of ethnically specific or multicultural forms of feminism, including black feminism and intersectional feminism." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -4693,6 +4735,7 @@
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#guelphPartyFlorence">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
+    <skos:altLabel xml:lang="en">Guelph</skos:altLabel>
     <rdfs:label xml:lang="en">Guelph party (Florence)</rdfs:label>
     <rdfs:label xml:lang="fr">Guelfes et gibelins</rdfs:label>
     <skos:definition xml:lang="en">The Guelphs and Ghibellines were factions supporting the Pope and the Holy Roman Emperor, respectively, in the Italian city-states of Central and Northern Italy. During the 12th and 13th centuries, rivalry between these two parties formed a particularly important aspect of the internal politics of medieval Italy. The struggle for power between the Papacy and the Holy Roman Empire had arisen with the Investiture Controversy, which began in 1075 and ended with the Concordat of Worms in 1122. The division between the Guelphs and Ghibellines in Italy, however, persisted until the 15th century.</skos:definition>
@@ -4782,6 +4825,7 @@
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <skos:altLabel xml:lang="en">pro-independence (indian)</skos:altLabel>
     <skos:altLabel xml:lang="en">indian nationalist</skos:altLabel>
+    <skos:altLabel xml:lang="en">Indian self-government</skos:altLabel>
     <rdfs:label xml:lang="en">Indian independence movement</rdfs:label>
     <rdfs:label xml:lang="fr">Mouvement pour l'indépendance de l'Inde</rdfs:label>
     <skos:definition xml:lang="en">"The Indian Independence Movement encompassed activities and ideas aiming to end the East India Company rule (1757–1858) and the British Raj (1858–1947) in the Indian subcontinent. The Movement spanned a total of 190 years (1757-1947). The very first organised militant movements were in Bengal, but they later took movement in the then newly formed Indian National Congress with prominent moderate leaders seeking only their basic right to appear for Indian Civil Service examinations, as well as more rights, economic in nature, for the people of the soil. The early part of the 20th century saw a more radical approach towards political self-rule proposed by leaders such as the Lal, Bal, Pal and Aurobindo Ghosh, V. O. Chidambaram Pillai. The last stages of the self-rule struggle from the 1920s onwards saw Congress adopt Mohandas Karamchand Gandhi's policy of nonviolence and civil resistance, Muhammad Ali Jinnah's constitutional struggle for the rights of minorities in India, and several other campaigns. Activists Netaji Subhas Chandra Bose and Bhagat Singh preached armed revolution to achieve self-rule. Poets and writers such as Rabindranath Tagore, Subramaniya Bharathi, Allama Iqbal, Josh Malihabadi, Mohammad Ali Jouhar, Bankim Chandra Chattopadhyay, and Kazi Nazrul Islam used literature, poetry, and speech as a tool for political awareness. Feminists such as Sarojini Naidu and Begum Rokeya promoted the emancipation of Indian women and their participation in national politics. Babasaheb Ambedkar championed the cause of the disadvantaged sections of Indian society within the larger self-rule movement. The period of the Second World War saw the peak of the campaigns by the Quit India movement led by Mahatma Gandhi and the Indian National Army movement led by Netaji Subhas Chandra Bose. The Indian self-rule movement was a mass-based movement that encompassed various sections of society. It also underwent a process of constant ideological evolution. Although the basic ideology of the movement was anti-colonial, it was supported by a vision of independent capitalist economic development coupled with a secular, democratic, republican, and civil-libertarian political structure. After the 1930s, the movement took on a strong socialist orientation, due to the increasing influence of left-wing elements in the Congress as well as the rise and growth of the Communist Party of India. The All-India Muslim League was formed in 1906 as a separate Muslim party which later in 1940 called for separate state of Pakistan. The work of these various movements led ultimately to the Indian Independence Act 1947, which ended the suzerainty in India and the creation of Pakistan. India remained a Dominion of the Crown until 26 January 1950, when the Constitution of India came into force, establishing the Republic of India; Pakistan was a dominion until 1956, when it adopted its first republican constitution. In 1971, East Pakistan declared independence as the People's Republic of Bangladesh." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -4795,6 +4839,18 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:related rdf:resource="#socialReform"/>
     <skos:related rdf:resource="#civilRights"/>
+  </cwrc:PoliticalAffiliation>
+  <cwrc:PoliticalAffiliation rdf:about="#indianUnification">
+    <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
+    <rdfs:label xml:lang="en">Indian unification</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">"At the time of Indian independence in 1947, India was divided into two sets of territories, one under the control of the British Empire, and the other over which the Crown had suzerainty, but which were under the control of their hereditary rulers. In addition, there were several colonial enclaves controlled by France and Portugal. The political integration of these territories into India was a declared objective of the Indian National Congress, and the Government of India pursued this over the next decade." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Political_integration_of_India"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#indigenousRights">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -4982,6 +5038,8 @@
   <cwrc:PoliticalAffiliation rdf:about="#labourMovement">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <skos:altLabel xml:lang="en">labour activist</skos:altLabel>
+    <skos:altLabel xml:lang="en">Labour party</skos:altLabel>
+    <skos:altLabel xml:lang="en">labour</skos:altLabel>
     <skos:altLabel xml:lang="en">labour advocate</skos:altLabel>
     <skos:altLabel xml:lang="en">labour activism</skos:altLabel>
     <skos:altLabel xml:lang="en">labour organizer</skos:altLabel>
@@ -5002,6 +5060,19 @@
     <cwrc:contraryTo rdf:resource="#anti-Trade-Unionism"/>
     <skos:related rdf:resource="#socialism"/>
     <skos:related rdf:resource="#socialReform"/>
+  </cwrc:PoliticalAffiliation>
+  <cwrc:PoliticalAffiliation rdf:about="#landReform">
+    <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
+    <skos:altLabel xml:lang="en">Irish land nationalization</skos:altLabel>
+    <rdfs:label xml:lang="en">land reform</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">"Land reform (also agrarian reform, though that can have a broader meaning) involves the changing of laws, regulations or customs regarding land ownership. Land reform may consist of a government-initiated or government-backed property redistribution, generally of agricultural land. Land reform can, therefore, refer to transfer of ownership from the more powerful to the less powerful, such as from a relatively small number of wealthy (or noble) owners with extensive land holdings (e.g., plantations, large ranches, or agribusiness plots) to individual ownership by those who work the land. Such transfers of ownership may be with or without compensation; compensation may vary from token amounts to the full value of the land." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Land_reform"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#left-Wing">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -5038,6 +5109,7 @@
   <cwrc:PoliticalAffiliation rdf:about="#liberalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <skos:altLabel xml:lang="en">liberal</skos:altLabel>
+    <skos:altLabel xml:lang="en">radical liberal</skos:altLabel>
     <rdfs:label xml:lang="en">liberalism</rdfs:label>
     <rdfs:label xml:lang="fr">Libéralisme</rdfs:label>
     <skos:definition xml:lang="en">"Liberalism is a political philosophy or worldview founded on ideas of liberty and equality. Whereas classical liberalism emphasises the role of liberty, social liberalism stresses the importance of equality. Liberals espouse a wide array of views depending on their understanding of these principles, but generally they support ideas and programmes such as freedom of speech, freedom of the press, freedom of religion, free markets, civil rights, democratic societies, secular governments, gender equality, and international cooperation. Liberalism first became a distinct political movement during the Age of Enlightenment, when it became popular among philosophers and economists in the Western world. Liberalism rejected the prevailing social and political norms of hereditary privilege, state religion, absolute monarchy, and the Divine Right of Kings. The 17th-century philosopher John Locke is often credited with founding liberalism as a distinct philosophical tradition. Locke argued that each man has a natural right to life, liberty, and property, while adding that governments must not violate these rights based on the social contract. Liberals opposed traditional conservatism and sought to replace absolutism in government with representative democracy and the rule of law. Prominent revolutionaries in the Glorious Revolution, the American Revolution, and the French Revolution used liberal philosophy to justify the armed overthrow of what they saw as tyrannical rule. Liberalism started to spread rapidly especially after the French Revolution. The 19th century saw liberal governments established in nations across Europe, South America, and North America. In this period, the dominant ideological opponent of classical liberalism was conservatism, but liberalism later survived major ideological challenges from new opponents, such as fascism and communism. During the 20th century, liberal ideas spread even further as liberal democracies found themselves on the winning side in both world wars. In Europe and North America, the establishment of social liberalism became a key component in the expansion of the welfare state. Today, liberal parties continue to wield power and influence throughout the world." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -5116,6 +5188,7 @@
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <skos:altLabel xml:lang="en">royalist</skos:altLabel>
     <skos:altLabel xml:lang="en">monarchist</skos:altLabel>
+    <skos:altLabel xml:lang="en">constitutional monarchist</skos:altLabel>
     <rdfs:label xml:lang="en">monarchism</rdfs:label>
     <rdfs:label xml:lang="fr">Monarchisme</rdfs:label>
     <skos:definition xml:lang="en">"Monarchism is the advocacy of a monarch or monarchical rule. A monarchist is an individual who supports this form of government, independent of any specific monarch; one who espouses a particular monarch is a royalist. Conversely, the opposition to monarchical rule is sometimes referred to as republicanism. Depending on the country, a monarchist may advocate for the rule of the person who sits on the throne, a pretender, or someone who would otherwise occupy the throne but has been deposed." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -5244,6 +5317,7 @@
   <cwrc:PoliticalAffiliation rdf:about="#pacifism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <skos:altLabel xml:lang="en">pacifist</skos:altLabel>
+    <skos:altLabel xml:lang="en">socialist pacifist</skos:altLabel>
     <skos:altLabel xml:lang="en">peace movement</skos:altLabel>
     <skos:altLabel xml:lang="en">pacifist supporter</skos:altLabel>
     <rdfs:label xml:lang="en">pacifism</rdfs:label>
@@ -5507,6 +5581,7 @@
   <cwrc:PoliticalAffiliation rdf:about="#radicalism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <skos:altLabel xml:lang="en">radical</skos:altLabel>
+    <skos:altLabel xml:lang="en">political radical</skos:altLabel>
     <rdfs:label xml:lang="en">radicalism</rdfs:label>
     <rdfs:label xml:lang="fr">radicalisme</rdfs:label>
     <skos:definition xml:lang="en">"The term political radicalism (or simply, in political science, radicalism) denotes political principles focused on altering social structures through revolutionary means and changing value systems in fundamental ways. Derived from the Latin radix (root), the denotation of radical has changed since its eighteenth-century coinage to comprehend the entire political spectrum—yet retains the "change at the root" connotation fundamental to revolutionary societal change. Historically, radicalism has referred exclusively to the radical left (under the single category of far-left politics) and rarely incorporating far-right politics, though these may have revolutionary elements; the prominent exception is in the United States where some consider radicalism to include both political extremes of the radical left and the radical right. In traditional labels of the spectrum of political thought, the opposite of radical on the "right" of the political spectrum is termed reactionary. The nineteenth-century Cyclopaedia of Political Science (1881, 1889) reports that "radicalism is characterized less by its principles than by the manner of their application". Conservatives often used the term radical pejoratively, whereas contemporary left radicals used the term conservative derogatorily; thus contemporary denotations of radical, radicalism, and political radicalism comprehend far left (hard left, radical left), and far right (hard right, radical right). The Encyclopædia Britannica records the first political usage of radical as ascribed to the British Whig Party parliamentarian Charles James Fox, who, in 1797, proposed a "radical reform" of the electoral system, franchise to provide universal manhood suffrage, thereby, idiomatically establishing radical to denote supporters of the reformation of the British Parliament. Throughout the nineteenth century, the term was combined with political notions and doctrines, thus working class radicalism, middle class-, philosophic-, democratic- bourgeois-, Tory-, and plebeian radicalism. In the event, politically influential radical leaders give rise to their own trend of political radicalism, e.g. Spencean radicalism and Carlilean radicalism. Philosophically, the French political scientist Jean-Jacques Rousseau (1712–78), is the principal theoretician proposing political radicalism as feasible in republican political philosophy, viz the French Revolution (1789–99), and other modern revolutions—the antithesis to the liberalism of John Locke." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -5663,6 +5738,7 @@
   <cwrc:PoliticalAffiliation rdf:about="#socialism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <skos:altLabel xml:lang="en">socialist</skos:altLabel>
+    <skos:altLabel xml:lang="en">radical socialist</skos:altLabel>
     <skos:altLabel xml:lang="en">socialist and feminist</skos:altLabel>
     <skos:altLabel xml:lang="en">socialist feminist</skos:altLabel>
     <skos:altLabel xml:lang="en">owenite socialism</skos:altLabel>
@@ -5733,6 +5809,8 @@
   <cwrc:PoliticalAffiliation rdf:about="#suffrage">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <skos:altLabel xml:lang="en">suffrage</skos:altLabel>
+    <skos:altLabel xml:lang="en">suffrage organisations</skos:altLabel>
+    <skos:altLabel xml:lang="en">suffragettes</skos:altLabel>
     <skos:altLabel xml:lang="en">suffragist</skos:altLabel>
     <skos:altLabel xml:lang="en">women's suffrage</skos:altLabel>
     <skos:altLabel xml:lang="en">female suffrage</skos:altLabel>
@@ -5814,6 +5892,20 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Urban_renewal"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:broaderTransitive rdf:resource="#socialReform"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:PoliticalAffiliation>
+  <cwrc:PoliticalAffiliation rdf:about="#utilitarianism">
+    <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
+    <rdfs:label xml:lang="en">utilitarianism</rdfs:label>
+    <rdfs:label xml:lang="fr">Utilitarisme</rdfs:label>
+    <skos:definition xml:lang="en">"Utilitarianism is a theory about what we ought to do. It states that the best action is the one that maximizes utility. "Utility" is defined in various ways, usually in terms of the well-being of sentient entities, such as human beings and other animals. Jeremy Bentham, the founder of utilitarianism, gave this definition of "utility": it is the sum of all pleasure that results from an action, minus the suffering of anyone involved in the action. The philosopher John Stuart Mill developed this concept further. He included not only the quantity of the pleasure, but also the quality of pleasure. He focused on rules, instead of individual actions. Others have proposed a theory called "negative utilitarianism." They define utility only in terms of suffering. Utilitarianism is a version of what Elizabeth Anscombe called "consequentialism". Consequentialism states that the consequences of any action are the only standard of right and wrong. Contrast this view with virtue ethics, which enshrines virtue as a moral good. Some believe that one's intentions are also ethically important. Unlike other forms of consequentialism, such as egoism, utilitarianism considers all interests equally. Proponents of utilitarianism have disagreed on a number of points. Should individual acts should conform to utility (act utilitarianism)? Or, should agents conform to ethical rules (rule utilitarianism)? Should utility should be calculated as an aggregate (total utilitarianism) or as an average (average utilitarianism)? Though the seeds of the theory can be found in the hedonists Aristippus and Epicurus, who viewed happiness as the only good, the tradition of utilitarianism properly begins with Bentham, and has included John Stuart Mill, Henry Sidgwick, R. M. Hare and Peter Singer. It has been applied the suffering of non-human animals, and the ethics of raising animals for food. Opponents of utilitarianism have raised a number of objections. Some say that utilitarianism ignores justice. Others call it impractical. Specific criticisms have included the mere addition paradox and the utility monster." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <skos:definition xml:lang="fr">«L'utilitarisme est une doctrine en philosophie politique ou en éthique sociale qui prescrit d'agir (ou de ne pas agir) de manière à maximiser le bien-être collectif, entendu comme la somme ou la moyenne de bien-être (bien-être agrégé) de l'ensemble des êtres sensibles et affectés. Les utilitaristes perçoivent donc le gaspillage de bien-être (production de bien-être total ou moyen inférieur au maximum possible) comme une injustice.» <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Utilitarianism"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -5943,6 +6035,7 @@
   <cwrc:PoliticalAffiliation rdf:about="#zionism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <skos:altLabel xml:lang="en">zionist</skos:altLabel>
+    <skos:altLabel xml:lang="en">proto-Zionist</skos:altLabel>
     <rdfs:label xml:lang="en">Zionism</rdfs:label>
     <rdfs:label xml:lang="fr">Sionisme</rdfs:label>
     <skos:definition xml:lang="en">"Zionism is a nationalist political movement of Jews and Jewish culture that supports the re-establishment of a Jewish homeland in the territory defined as the historic Land of Israel (roughly corresponding to Palestine, Canaan or the Holy Land). Zionism emerged in the late 19th century in central and eastern Europe as a national revival movement, in reaction to anti-Semitic and exclusionary nationalist movements in Europe. Soon after this, most leaders of the movement associated the main goal with creating the desired state in Palestine, then an area controlled by the Ottoman Empire. Until 1948, the primary goals of Zionism were the re-establishment of Jewish sovereignty in the Land of Israel, ingathering of the exiles, and liberation of Jews from the antisemitic discrimination and persecution that they experienced during their diaspora. Since the establishment of the State of Israel in 1948, Zionism continues primarily to advocate on behalf of Israel and address threats to its continued existence and security. A religious variety of Zionism supports Jews upholding their Jewish identity defined as adherence to religious Judaism, opposes the assimilation of Jews into other societies, and has advocated the return of Jews to Israel as a means for Jews to be a majority nation in their own state. A variety of Zionism, called cultural Zionism, founded and represented most prominently by Ahad Ha'am, fostered a secular vision of a Jewish "spiritual center" in Israel. Unlike Herzl, the founder of political Zionism, Ahad Ha'am strived for Israel to be "a Jewish state and not merely a state of Jews". Advocates of Zionism view it as a national liberation movement for the repatriation of a persecuted people residing as minorities in a variety of nations to their ancestral homeland. Critics of Zionism view it as a colonialist, racist, and exceptionalist ideology that led advocates to violence during Mandatory Palestine, followed by the forced exodus of Palestinians, and the subsequent denial of their human rights." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
