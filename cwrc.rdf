@@ -42,8 +42,8 @@
     <dcterms:description xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</dcterms:description>
     <skos:definition xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</skos:definition>
     <rdfs:comment xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</rdfs:comment>
-    <owl:versionInfo>0.99.7</owl:versionInfo>
-    <owl:priorVersion rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-2018-02-22"/>
+    <owl:versionInfo>0.99.75</owl:versionInfo>
+    <owl:priorVersion rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-2018-05-27"/>
     <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">ONTOLOGY_DATE</dcterms:date>
     <dcterms:rights rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
     <vs:term_status xml:lang="en">Testing</vs:term_status>
@@ -1887,7 +1887,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:RaceColour>
-  <cwrc:RaceColour rdf:about="#anglo-irishRaceColour">
+  <cwrc:RaceColour rdf:about="#anglo-IrishRaceColour">
     <rdfs:label xml:lang="en">Anglo-Irish</rdfs:label>
     <rdfs:label xml:lang="fr">Anglo-irlandais</rdfs:label>
     <skos:definition xml:lang="en">"Anglo-Irish (Irish: Angla-Éireannach) was a term used primarily in the 19th and early 20th centuries to identify a privileged social class in Ireland, whose members were mostly the descendants and successors of the Protestant Ascendancy. They mostly belonged to the Anglican Church of Ireland, which was the established church of Ireland until 1871, or to a lesser extent one of the English dissenting churches, such as the Methodist church. Its members tended to follow English practices in matters of culture, science, law, agriculture and politics. Many became eminent as administrators in the British Empire and as senior army and naval officers." <![CDATA[<a href="http://dbpedia.org/page/Anglo-Irish_people">(DBpedia, 2018)</a>]]></skos:definition>
@@ -6914,7 +6914,7 @@
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of Englishness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "English" (e.g. ISO 3166-2:GB-ENG, @@#englishGeographicHeritage@@) cultural identities.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité du terme «anglais·e». Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «anglaises» (par exemple ISO 3166-2:GB-ENG, @@#englishGeographicHeritage@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
-    <cwrc:represents rdf:resource="#EnglishNationalHeritage"/>
+    <cwrc:represents rdf:resource="#englishRaceColour"/>
     <cwrc:represents rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
     <cwrc:represents>ISO 3166-2:GB-ENG</cwrc:represents>
     <cwrc:represents rdf:resource="#englishGeographicHeritage"/>
