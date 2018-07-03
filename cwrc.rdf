@@ -6718,7 +6718,7 @@
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Language"/>
-    <owl:inverseOf rdf:resource="nativeLinguisticAbilityOf"/>
+    <owl:inverseOf rdf:resource="#nativeLinguisticAbilityOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -6730,7 +6730,7 @@
     <rdfs:subPropertyOf rdf:resource="#hasNativeLinguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Language"/>
-    <owl:inverseOf rdf:resource="nativeLinguisticAbilitySelfReportedOf"/>
+    <owl:inverseOf rdf:resource="#nativeLinguisticAbilitySelfReportedOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -6742,7 +6742,7 @@
     <rdfs:subPropertyOf rdf:resource="#hasNativeLinguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Language"/>
-    <owl:inverseOf rdf:resource="nativeLinguisticAbilityReportedOf"/>
+    <owl:inverseOf rdf:resource="#nativeLinguisticAbilityReportedOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
