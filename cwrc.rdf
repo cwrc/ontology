@@ -1822,6 +1822,20 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+  <cwrc:RaceColour rdf:about="#blackWomanRaceColour">
+    <rdfs:label xml:lang="en">blackwoman</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">
+      An intersectional identity that co-occurs with but is not reducible to the combination of "@@#hasGender@@ @@#woman@@" and "@@#hasRaceColour@@ @@#blackRaceColour@@". See @@https://en.wikipedia.org/wiki/Black_women@@ and <![CDATA[<a href="#cwrc:b9eeccf9-9380-4341-99dc-a83f5ee32909">(Kimberlé Crenshaw, 1989)</a>]]>. 
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+    </skos:definition>
+    <skos:inScheme rdf:resource="#RaceColour"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Gender"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:RaceColour>
   <cwrc:RaceColour rdf:about="#afro-CaribbeanRaceColour">
     <rdfs:label xml:lang="en">Afro-Caribbean</rdfs:label>
     <rdfs:label xml:lang="fr">Afro-Caribéens</rdfs:label>
