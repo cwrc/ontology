@@ -1823,6 +1823,40 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+  <cwrc:RaceColour rdf:about="#afro-CaribbeanRaceColour">
+    <rdfs:label xml:lang="en">Afro-Caribbean</rdfs:label>
+    <rdfs:label xml:lang="fr">Afro-Caribéens</rdfs:label>
+    <skos:definition xml:lang="en">
+      "African-Caribbeans are Caribbean people who trace their heritage to Africa in the period since Christopher Columbus's arrival in the region in 1492. Other names for the group include African-Caribbean (especially in the UK branch of the diaspora), Afro-Antillean or Afro-West Indian. Between the 16th and 19th centuries, European-led triangular trade brought African people to work as slaves in the Caribbean on various plantations. Many Afro-Caribbeans also have non-African ancestry, such as European, South Asian, East Asian, Middle Eastern and Native American, as there has been intermarriage over the centuries." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]>
+    </skos:definition>
+    <skos:definition xml:lang="fr">
+      «Les Afro-Caribéens (Afro-Caribbeans) sont des habitants de la Caraïbe d'origine africaine, dont l'arrivée est postérieure à la découverte du continent américain par Christophe Colomb en 1492. Ils sont parfois nommés Africains-Caribéens (notamment dans la diaspora au Royaume-Uni), Afro-antillais ou Afro-Indiens de l'Ouest.» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]>
+    </skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Afro-Caribbean"/>
+    <skos:inScheme rdf:resource="#RaceColour"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:RaceColour>
+  <cwrc:RaceColour rdf:about="#indigenousPeoplesOfAmericasRaceColour">
+    <rdfs:label xml:lang="en">Indigenous (of the Americas)</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en">Native American</skos:altLabel>
+    <skos:definition xml:lang="en">
+      "The indigenous peoples of the Americas are the pre-Columbian peoples of the Americans and their descendants. Pueblos indígenas or indígenas (lit. "indigenous peoples") is a common term in Spanish-speaking countries, and pueblos nativos or nativos (lit. "native peoples" in the sense of descendants of non-immigrants) may also be heard, while aborigen (aborigine) is used in Argentina, and pueblos aborígenes (aboriginal peoples) is common in Chile. The term "Amerindian" (short for "'Indians' of the Americas)" is used in Quebec, The Guianas, and the English-speaking Caribbean. Indigenous peoples are commonly known in Canada as Aboriginal peoples, which includes not only First Nations and Arctic Inuit, but also the minority population of First Nations-European mixed-race Métis people who identify culturally and ethnically with indigenous peoplehood. This is contrasted, for instance, to the American Indian-European mixed-race mestizos of Hispanic America (caboclos in Brazil) who, with their larger population (in most Latin American countries constituting either outright majorities, pluralities, or at the least large minorities), identify largely as a new ethnic group distinct from both Europeans and Indigenous Americans, but still considering themselves a subset of the European-derived Hispanic peoplehood in culture and ethnicity. Indigenous peoples of the United States are commonly known as Native Americans or American Indians, and Alaska Natives. Application of the term "Indian" originated with Christopher Columbus, who, in his search for Asia, thought that he had arrived in the East Indies. Eventually, the Americas came to be known as the "West Indies", a name still used to refer to the islands of the Caribbean Sea. This led to the blanket term "Indies" and "Indians" (Spanish "indios") for the indigenous inhabitants, which implied some kind of racial or cultural unity among the indigenous peoples of the Americas. This unifying concept, codified in law, religion, and politics, was not originally accepted by the myriad groups of indigenous peoples themselves, but has since been embraced by many over the last two centuries. Even though the term "Indian" does not include the culturally and linguistically distinct indigenous peoples of the Arctic regions of the Americas — such as the Aleuts, Inuit, or Yupik peoples, who entered the continent as a second more recent wave of migration several thousand years ago, and have much more recent genetic and cultural commonalities with the aboriginal peoples of the Asiatic Arctic Russian Far East — these groups are nonetheless considered "indigenous peoples of the Americas". Although some indigenous peoples of the Americas were traditionally hunter-gatherers—and many, especially in Amazonia, still are—many groups practiced aquaculture and agriculture. The impact of their agricultural endowment to the world is a testament to their time and work in reshaping and cultivating the flora indigenous to the Americas. Although some societies depended heavily on agriculture, others practiced a mix of farming, hunting, and gathering. In some regions the indigenous peoples created monumental architecture, large-scale organized cities, chiefdoms, states, and empires. Many parts of the Americas are still populated by indigenous peoples; some countries have sizable populations, especially Belize, Bolivia, Chile, Ecuador, Greenland, Guatemala, Mexico, and Peru. At least a thousand different indigenous languages are spoken in the Americas. Some, such as the Quechuan languages, Aymara, Guaraní, Mayan languages, and Nahuatl, count their speakers in millions. Many also maintain aspects of indigenous cultural practices to varying degrees, including religion, social organization, and subsistence practices. Like most cultures, over time, cultures specific to many indigenous peoples have evolved to incorporate traditional aspects, but also cater to modern needs. Some indigenous peoples still live in relative isolation from Western culture and a few are still counted as uncontacted peoples." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2017)</a>]]> The term is deeply contested. See: @@https://en.wikipedia.org/wiki/Native_American_name_controversy@@</skos:definition>
+    <skos:definition xml:lang="fr">
+      «Les Amérindiens, Indiens d'Amérique, Indiens ou encore Américains natifs, comme revendiqué par certaines peuplades, sont les habitants d'Amérique avant la colonisation européenne des Amériques.»<![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2017)</a>]]>
+    </skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Indigenous_peoples_of_the_Americas"/>
+    <skos:inScheme rdf:resource="#RaceColour"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:RaceColour>
   <cwrc:RaceColour rdf:about="#scottishRaceColour">
     <rdfs:label xml:lang="en">Scottish</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
