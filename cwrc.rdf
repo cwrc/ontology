@@ -12,6 +12,7 @@
   xmlns:loc="http://id.loc.gov/vocabulary/relators/"
   xmlns:bibo="http://purl.org/ontology/bibo/"
   xmlns:oa="http://www.w3.org/ns/oa#"
+  xmlns:org="http://www.w3.org/ns/org#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:prov="http://www.w3.org/ns/prov#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -538,25 +539,12 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <owl:Class rdf:ID="Organization">
-    <rdfs:label xml:lang="en">organization</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:definition xml:lang="en">A social or corporate institution such as a publisher, school, political group, or company.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
-    <owl:sameAs rdf:resource="http://schema.org/Organization"/>
-    <owl:sameAs rdf:resource="http://xmlns.com/foaf/spec/#term_Organization"/>
-    <rdfs:comment xml:lang="fr"></rdfs:comment>
-    <rdfs:comment xml:lang="en"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <!-- Possibly typing or subclassing or broader some sort of relation http://xmlns.com/foaf/0.1/Organization-->
-  </owl:Class>
 
 <!-- Education -->
 
   <owl:Class rdf:ID="EducationalOrganization">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#Organization"/>
+      <owl:Class rdf:about="http://www.w3.org/ns/org#FormalOrganization"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">educational organization</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
@@ -8227,6 +8215,22 @@
   </owl:DeprecatedProperty>
 
   <!-- Deprecated classes go here for sanity -->
+  <owl:DeprecatedClass rdf:ID="Organization">
+    <rdfs:label xml:lang="en">organization</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">A social or corporate institution such as a publisher, school, political group, or company.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:sameAs rdf:resource="http://schema.org/Organization"/>
+    <owl:sameAs rdf:resource="http://xmlns.com/foaf/spec/#term_Organization"/>
+    <rdfs:comment xml:lang="fr"></rdfs:comment>
+    <rdfs:comment xml:lang="en"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of class <![CDATA[<a href="https://www.w3.org/TR/vocab-org/#class-formalorganization">org:formalOrganization</a>]]> </rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe <![CDATA[<a href="https://www.w3.org/TR/vocab-org/#class-formalorganization">org:formalOrganization</a>]]>.</rdfs:comment>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    <!-- Possibly typing or subclassing or broader some sort of relation http://xmlns.com/foaf/0.1/Organization-->
+  </owl:DeprecatedClass>
   <owl:DeprecatedClass rdf:ID="RaceEthnicity">
     <rdfs:label xml:lang="en">race or ethnicity</rdfs:label>
     <rdfs:label xml:lang="fr">race ou ethnicité</rdfs:label>
