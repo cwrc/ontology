@@ -349,9 +349,9 @@
 
   <owl:ObjectProperty rdf:ID="hasPersona">
     <rdfs:label xml:lang="en">has persona</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">a persona</rdfs:label>
     <skos:definition xml:lang="en">Associates a @@#Persona@@ with one more @@#NaturalPerson@@(s). </skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">Associe un persona à une ou plusieurs personne(s) physique(s).</skos:definition>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#Persona"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -360,7 +360,7 @@
 
   <owl:ObjectProperty rdf:ID="personaOf">
     <rdfs:label xml:lang="en">persona of</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">persona de</rdfs:label>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"></skos:definition>
     <owl:inverseOf rdf:resource="#hasPersona"/>
@@ -762,8 +762,7 @@
     <rdfs:label xml:lang="en">prep school</rdfs:label>
     <rdfs:label xml:lang="fr">école préparatoire</rdfs:label>
     <skos:definition xml:lang="en">Within a North American context, prep schools are private educational institutions that prepare students for college. Within a British context, they are private schools for students -- the age range of the students can vary significantly depending on when they went to school, though typically ranging from ages seven (though sometimes three) to thirteen.</skos:definition>
-    <skos:definition xml:lang="fr">«Une école préparatoire (preparatory school, souvent abrévié prep-school) est, dans le système éducatif britannique, une école préparant les enfants âgés entre 2 et 13 ans aux concours d'entrée aux écoles privées de plus ou moins grande renommée, les public school, telles que Eton College, Harrow School, Winchester College ou encore Marlborough College. Les élèves fréquentent la plupart du temps les prep-schools en tant que demi-pensionnaires, mais il est possible dans certains établissements d'être pensionnaire. Ces écoles préparatoires sont dites indépendantes, sont mixtes ou bien réservées aux garçons ou aux filles seulement, et les frais de scolarité sont généralement élevés, pouvant aller jusqu'à quatorze mille livres sterling par an. Certaines écoles se spécialisent dans les premières années de l'enseignement, accueillant les élèves de 2 à 8 ans, et sont appelées écoles pré-préparatoires (pre-preparatory school, abrévié prep-prep school). Ce système d'éducation indépendante se distingue du système public en ce que les élèves changent d'école à des âges différents. Ainsi, un élève issu du système privé suivra en principe le parcours suivant : De 2 à 8 ans : école pré-préparatoire De 8 à 13 ans : école préparatoire De 13 à 18 ans : public school Alors qu'un élève du système financé intégralement par le gouvernement britannique suivra la scolarité suivante : De 4 à 11 ans : école primaire De 11 à 18 ans : école secondaire (Noter que les écoles secondaires publiques se divisent en deux catégories, les comprehensive schools, ouvertes à tous, et les grammar school, accessibles sur sélection par concours d'entrée.)» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
-    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <skos:definition xml:lang="fr">Dans le contexte nord-américain, les écoles préparatoires sont des établissements d'enseignement privés qui préparent les étudiant·e·s à l'université. Dans le contexte britannique, ce sont des écoles privées pour les étudiants; la tranche d'âge des élèves peut varier considérablement en fonction du début de leur scolarisation, mais elle va généralement de sept (parfois trois) à treize ans.</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Preparatory_school_(United_Kingdom)"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -879,7 +878,7 @@
     <rdfs:label xml:lang="en">education context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte éducatif</rdfs:label>
     <skos:definition xml:lang="en">Education Context is a significant subclass of context. It has subclasses for @@#DomesticEducationContext@@, @@#InstitutionalEducationContext@@, and @@#SelfTaughtEducationContext@@. Annotations typed as Education Context or a subclass provide information about and discussions of a person's education, whether formal or informal.</skos:definition>
-    <skos:definition xml:lang="fr">Cet attribut facultatif attaché à Éducation renseigne le mode d'éducation et distingue l'incidence matérielle significative en fonction d'une éducation domestique et une éducation institutionnelle. L'attribut permet de retracer l'évolution de l'accès des femmes à l'éducation au cours de l'Histoire, en opposant par exemple l'éducation domestique informelle des auteures des périodes antérieures avec l'entrée des femmes dans les établissements post-secondaires au XXe siècle.</skos:definition>
+    <skos:definition xml:lang="fr">Contexte Éducatif est une sous-classe de contexte important. Elle contient les sous-classes de contexte @@#DomesticEducationContext@@, @@#InstitutionalEducationContext@@ et @@#SelfTaughtEducationContext@@. Les annotations entrées en tant que Contexte Éducatif ou en tant que sous-classe fournissent des informations et des discussions sur l'éducation d'une personne, qu'elle soit formelle ou informelle.</skos:definition>
     <rdfs:subClassOf rdf:resource="#Context"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -892,7 +891,7 @@
       <owl:Class rdf:about="#EducationContext"/>
     </rdfs:subClassOf>
     <skos:definition xml:lang="en">Education context related to learning conducted independently.</skos:definition>
-    <skos:definition xml:lang="fr">Éducation ou apprentissage acquis en autodidacte.</skos:definition>
+    <skos:definition xml:lang="fr">Contexte éducatif lié à l'apprentissage mené de façon autonome.</skos:definition>
     <skos:related rdf:resource="https://en.wikipedia.org/wiki/Autodidacticism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -924,9 +923,9 @@
     <rdfs:range rdf:resource="#EducationContext"/>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:label xml:lang="en">has education</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">a une éducation</rdfs:label>
     <skos:definition xml:lang="en">Links a person to information about their education in @@#EducationContext@@.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">Relie une personne à des renseignements sur son contexte éducatif.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -944,9 +943,9 @@
 
   <owl:ObjectProperty rdf:ID="hasAward">
     <rdfs:label xml:lang="en">has award</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">a une récompense</rdfs:label>
     <skos:definition xml:lang="en">Indicates an award, prize, or recognition that a person has won, such as a literary award or an @@#educationalAwardPrize@@.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">Indique une récompense, un prix ou une distinction qu'une personne a gagné, tel qu'un prix littéraire ou un prix d'éducation.</skos:definition>
     <rdfs:domain rdf:resource="#EducationalAward"/>
     <owl:inverseOf>
       <owl:ObjectProperty rdf:ID="awardedTo"/>
@@ -968,9 +967,9 @@
 
   <cwrc:EducationalAward rdf:ID="educationalAwardPrize">
     <rdfs:label xml:lang="en">educational award prize</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">prix éducatif</rdfs:label>
     <skos:definition xml:lang="en">An educational prize is a medal or award, monetary or otherwise, presented by either an institution or person of authority to an individual who has excelled beyond their peers, reached a great achievement, and/or produced a very high standard of work.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">Un prix éducatif est une médaille ou une récompense, financière ou autre, attribuée par une institution ou une personne d'autorité à un individu ayant excellé par rapport à ses camarades, a concrétisé un projet d'envergure et/ou a fourni un travail de grande qualité.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#EducationalAward"/>
@@ -980,7 +979,7 @@
     <rdfs:label xml:lang="en">educational award scholarship</rdfs:label>
     <rdfs:label xml:lang="fr">bourse d'étude</rdfs:label>
     <skos:definition xml:lang="en">A scholarship is an award of financial aid for a student to further their education. Scholarships are awarded based upon various criteria, which usually reflect the values and purposes of the donor or founder of the award. Scholarship money is not required to be repaid.</skos:definition>
-    <skos:definition xml:lang="fr">Une bourse d'études est une aide financière qui permet à un·e étudiant·e de poursuivre sa formation. Les bourses sont accordées en fonction de divers critères qui reflètent généralement les valeurs et les objectifs de l'organisation donatrice ou fondatrice de la récompense. L'argent d'une bourse d'études ne peut pas être remboursé.</skos:definition>
+    <skos:definition xml:lang="fr">Une bourse d'études est une bourse d'aide financière qui permet à un·e étudiant·e de poursuivre ses études. Les bourses sont accordées en fonction de critères variés, qui reflètent généralement les valeurs et les objectifs du/de la donateur·ice ou fondateur·ice de la bourse. Les bourses d'études ne sont pas destinées à être remboursées.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#EducationalAward"/>
@@ -6745,7 +6744,7 @@
 
   <owl:ObjectProperty rdf:ID="hasNativeLinguisticAbility">
     <rdfs:label xml:lang="en">natively known language</rdfs:label>
-    <rdfs:label xml:lang="fr">langue maternelle</rdfs:label>
+    <rdfs:label xml:lang="fr">langue native</rdfs:label>
     <skos:definition xml:lang="en">Knowledge of the language, acquired during a person’s upbringing, for speaking, writing or reading, which may be self-reported or reported by another, and with accompanying context, where present, provided by @@#CulturalFormContext@@. As with other cultural forms, an individual may have more than one property or descriptor of this type.</skos:definition>
     <skos:definition xml:lang="fr">Capacité d'écrire ou de lire une langue acquise dès l'enfance. Comme pour d'autres formes culturelles, un individu peut avoir plus d'une propriété ou descripteur de ce type. </skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasLinguisticAbility"/>
@@ -6757,9 +6756,9 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasNativeLinguisticAbilitySelfReported">
     <rdfs:label xml:lang="en">natively known language (self-reported)</rdfs:label>
-    <rdfs:label xml:lang="fr">langue maternelle (autodéclarée)</rdfs:label>
+    <rdfs:label xml:lang="fr">langue native (autodéclarée)</rdfs:label>
     <skos:definition xml:lang="en">Self-reported knowledge of the language, acquired during a person’s upbringing, for speaking, writing, or reading,  with accompanying context, where present, provided by @@#CulturalFormContext@@.</skos:definition>
-    <skos:definition xml:lang="fr"> Le sujet déclare lire et écrire une langue maîtrisée depuis l'enfance. </skos:definition>
+    <skos:definition xml:lang="fr">Connaissance parlée, écrite ou lue d'une langue acquise durant l'éducation, qui peut être autodéclarée ou assignée par une autre personne, accompagné par le contexte fourni par le contexte de @@#CulturalFormContext@@ lorsqu'il est disponible. Comme pour d'autres formes culturelles, un individu peut avoir plus d'une propriété ou descripteur de ce type.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasNativeLinguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Language"/>
@@ -6769,7 +6768,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasNativeLinguisticAbilityReported">
     <rdfs:label xml:lang="en">natively known language (reported)</rdfs:label>
-    <rdfs:label xml:lang="fr">langue maternelle (déclarée)</rdfs:label>
+    <rdfs:label xml:lang="fr">langue native (déclarée)</rdfs:label>
     <skos:definition xml:lang="en">Reported knowledge of the language, acquired during a person’s upbringing, for speaking, writing, or reading,  with accompanying context, where present, provided by @@#CulturalFormContext@@.</skos:definition>
     <skos:definition xml:lang="fr"> Le sujet déclare lire et écrire une langue maîtrisée depuis l'enfance. </skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasNativeLinguisticAbility"/>
