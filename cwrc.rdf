@@ -540,6 +540,80 @@
   </owl:ObjectProperty>
 
 
+<!-- Birth -->
+  <owl:Class rdf:ID="BirthContext">
+    <rdfs:label xml:lang="en">birth context</rdfs:label>
+    <rdfs:label xml:lang="fr">naissance en contexte</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Context"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as birth context provide information about and discussions of a person's birth. See @@http://dbpedia.org/page/Birth@@.</skos:definition>
+    <skos:definition xml:lang="fr">Classe de @@#Context@@ importante. Les annotations entrées en tant que contexte de naissance fournissent des informations sur la naissance d'une personne. Voir @@http://dbpedia.org/page/Birth@@ </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="hasBirthPosition">
+    <rdfs:label xml:lang="en">has birth position</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates a person's @@#BirthPosition@@ relative to their siblings, with accompanying context provided by @@#BirthContext@@ annotations.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#BirthPosition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="BirthPosition">
+    <rdfs:label xml:lang="en">birth position</rdfs:label>
+    <rdfs:label xml:lang="fr">ordre de naissance</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Indicates the birth position of a foaf:person, that is, whether they are the @@#eldestChild@@, @@#youngestChild@@, or @@#onlyChild@@ in their family. Birth position claims can be made in relation to biological, adopted, or step siblings, and there is not systematic handling of deceased siblings that might affect one's understanding of birth order.</skos:definition>
+    <skos:definition xml:lang="fr">Indique l'ordre de naissance d'une foaf:person, qu'elle soit aînée, cadette ou enfant unique de sa famille. Les déclarations sur l'odre de naissance peuvent être formulées en lien avec les frères et soeurs biologiques, adoptif·ve·s ou par alliance, sans traitement systématique des frères et soeurs décédé·e·s susceptibles de modifier l'ordre de naissance.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <cwrc:BirthPosition rdf:about="#eldestChild">
+    <rdfs:label xml:lang="en">eldest</rdfs:label>
+    <rdfs:label xml:lang="fr">aîné·e</rdfs:label>
+    <skos:definition xml:lang="en">Indicates that the subject is the eldest child in the family.</skos:definition>
+    <skos:definition xml:lang="fr">Indique que la personne est l'enfant le plus âgé de la famille.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:BirthPosition>
+
+  <cwrc:BirthPosition rdf:about="#middleChild">
+    <rdfs:label xml:lang="en">middle</rdfs:label>
+    <rdfs:label xml:lang="fr">cadet·te</rdfs:label>
+    <skos:definition xml:lang="en">Indicates that the subject is the middle child in the family.</skos:definition>
+    <skos:definition xml:lang="fr">Indique que la personne n'est ni l'enfant le plus jeune ni le plus âgé de la famille.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:BirthPosition>
+
+  <cwrc:BirthPosition rdf:about="#youngestChild">
+    <rdfs:label xml:lang="en">youngest</rdfs:label>
+    <rdfs:label xml:lang="fr">benjamin·e</rdfs:label>
+    <skos:definition xml:lang="en">Indicates that the subject is the youngest child in the family.</skos:definition>
+    <skos:definition xml:lang="fr">Indique que la personne est l'enfant le plus jeune de la famille.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:BirthPosition>
+
+  <cwrc:BirthPosition rdf:about="#onlyChild">
+    <rdfs:label xml:lang="en">only child</rdfs:label>
+    <rdfs:label xml:lang="fr">enfant unique</rdfs:label>
+    <skos:definition xml:lang="en">Indicates that the subject is the only child in the family.</skos:definition>
+    <skos:definition xml:lang="fr">Indique que la personne est l'unique enfant de la famille.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:BirthPosition>
+
+
 <!-- Organizations -->
   <owl:ObjectProperty rdf:ID="hasOrganization">
     <rdfs:label xml:lang="en">has organization</rdfs:label>
@@ -1041,11 +1115,12 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-  <!-- Cheat to ensure that the provenance is hooked into the Cultural Context -->
+  <!-- Cheat to ensure that the provenance is hooked into the Cultural Context -ROB -->
   <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
     <rdfs:range rdf:resource="#Context"/>
   </rdf:Description>
 
+ 
   <owl:Class rdf:ID="CulturalFormContext">
     <rdfs:label xml:lang="en">cultural form context</rdfs:label>
     <rdfs:label xml:lang="fr">forme culturelle en contexte</rdfs:label>
