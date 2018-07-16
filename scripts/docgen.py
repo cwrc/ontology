@@ -333,10 +333,16 @@ def create_term_main(term, uri):
     html_str = '<p id="top">[<a href="#definition_list">back to top</a>]</p>\n'
     html_str += '<h5>%s</h5>\n' % (label)
     if inverse_uri:
-        html_str += """<div class="defn">This is the inverse of """
-        html_str += '<a href="%s">%s</a>' % (get_link(inverse_uri), str(get_label_dict(inverse_uri)))
-        html_str += ' whose definition is as follows: <div class="inverse"'
-        html_str += '%s</div></div>' % (get_defn_html(get_definition_list(inverse_uri)))
+        if lang == "fr":
+            html_str += """<div class="defn">Inverse de a """
+            html_str += '<a href="%s">%s</a>' % (get_link(inverse_uri), str(get_label_dict(inverse_uri)))
+            html_str += ' dont la définition est la suivante: <div class="inverse"'
+            html_str += '%s</div></div>' % (get_defn_html(get_definition_list(inverse_uri)))
+        else:
+            html_str += """<div class="defn">This is the inverse of """
+            html_str += '<a href="%s">%s</a>' % (get_link(inverse_uri), str(get_label_dict(inverse_uri)))
+            html_str += ' whose definition is as follows: <div class="inverse"'
+            html_str += '%s</div></div>' % (get_defn_html(get_definition_list(inverse_uri)))
     else:
         html_str += """<div class="defn">%s</div>""" % (get_defn_html(defn))
 
