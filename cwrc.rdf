@@ -277,9 +277,9 @@
     <skos:definition xml:lang="en">A change set represents changes or additions made to the ontology by ontology editors or through users where instances were affected. Change sets will also be used to translate and contain Orlando recordInfo instances.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="http://www.w3.org/2006/time/Instant"/>
+    <rdf:type rdf:resource="https://www.w3.org/2006/time#Instant"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
+    <!-- <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#note"/> -->
     <prov:wasDerivedFrom rdf:resource="http://vocab.org/changeset/"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:Class>
@@ -1740,7 +1740,7 @@
       Indique le refus des catégories genrées dominantes et de la cisnormativité, l'identification aux deux, à aucun, ou à une combinaison des rôles genrés dominants. Le terme est fortement associé associé à la fin du 20e siècle et au 21e siècle. Il provient des théories déconstructionnistes et poststructuralistes, et fut formulé pour la première fois par <![CDATA[<a href="#cwrc:fab56e35-9796-4e6d-861d-a6b626f5714d">Teresa de Lauretis lors d'une conférence en 1990</a>]]>. Du fait que le terme «queer» est assez récent, il est toujours sujet à des discussions parmi les chercheurs et les activistes. Même s'il ne possède pas de définition définitive, le terme est de plus en plus utilisé pour référer à une large catégorie de personnes qui ne sont pas «hétérosexuel/les», dans un sens qui va au-delà de l'orientation sexuelle. Selon <![CDATA[<a href="#cwrc:825995b3-3b66-4e0a-a62d-d8649aaead78">Judith Butler</a>]]>, l'identité queer ne peut pas être compris comme une essence, mais est plutôt performative et s'actualise à travers des actions, au sein d'une posture délibérément à contre-courant des acceptions traditionnelles du genre. Voir See <![CDATA[<a href="https://fr.wikipedia.org/wiki/Non-binaire">Non-binaire — Wikipédia</a>]]>.
     </skos:definition>
     <cwrc:representedBy rdf:resource="#queerLabel"/>
-    <rdf:type rdf:resource="http://www.w8.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -2040,7 +2040,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <cwrc:representedBy rdf:resource="#eurasianLabel"/>
-    <rdfs:subClassOf rdf:resource="#eurasianLabel"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Eurasian_(mixed_ancestry)"/>
   </cwrc:RaceColour>
   <cwrc:RaceColour rdf:about="#mixedRaceColour">
@@ -3121,7 +3120,6 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Spiritualism"/>
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -3138,7 +3136,6 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
     <skos:broaderTransitive rdf:resource="#anglicanism"/>
-    <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Oxford_Movement"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Religion>
@@ -3163,7 +3160,6 @@
     <skos:altLabel xml:lang="en">unitarianMovement</skos:altLabel>
     <skos:inScheme rdf:resource="#Religion"/>
     <skos:broaderTransitive rdf:resource="#dissentProtestant"/>
-    <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Unitarianism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Religion>
@@ -8535,7 +8531,6 @@
       <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
       <void:inDataset rdf:resource="#datasetdefinition"/>
       <cwrc:representedBy rdf:resource="#eurasianLabel"/>
-      <rdfs:subClassOf rdf:resource="#eurasianLabel"/>
       <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Eurasian_(mixed_ancestry)"/>
       <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#eurasianRaceColour@@.</rdfs:comment>
       <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#eurasianRaceColour@@.</rdfs:comment>
