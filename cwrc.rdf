@@ -581,6 +581,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#BirthPosition"/>
   </cwrc:BirthPosition>
 
   <cwrc:BirthPosition rdf:about="#middleChild">
@@ -591,6 +592,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#BirthPosition"/>
   </cwrc:BirthPosition>
 
   <cwrc:BirthPosition rdf:about="#youngestChild">
@@ -601,6 +603,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#BirthPosition"/>
   </cwrc:BirthPosition>
 
   <cwrc:BirthPosition rdf:about="#onlyChild">
@@ -611,6 +614,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#BirthPosition"/>
   </cwrc:BirthPosition>
 
 
@@ -8134,7 +8138,7 @@
   <owl:DeprecatedProperty rdf:about="#hasEthnicitySelfDefined">
     <rdfs:label xml:lang="en">has ethnicity (self defined)</rdfs:label>
     <rdfs:label xml:lang="fr">d'ethnicité (autodéclarée)</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDefined"/>
+    <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
     <rdfs:range rdf:resource="#Ethnicity"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"></skos:definition>
@@ -8150,7 +8154,7 @@
   <owl:DeprecatedProperty rdf:about="#hasReligionSelfDefined">
     <rdfs:label xml:lang="en">has religious affilication (self defined)</rdfs:label>
     <rdfs:label xml:lang="fr">religion (autodéclarée)</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDefined"/>
+    <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
     <rdfs:range rdf:resource="#Religion"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"></skos:definition>
@@ -8166,7 +8170,7 @@
   <owl:DeprecatedProperty rdf:about="#hasSocialClassSelfDefined">
     <rdfs:label xml:lang="en">has social class (self defined)</rdfs:label>
     <rdfs:label xml:lang="fr">de classe sociale (autodéclarés)</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDefined"/>
+    <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
     <rdfs:range rdf:resource="#SocialClass"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"></skos:definition>
