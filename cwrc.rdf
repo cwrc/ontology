@@ -575,7 +575,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
-  
+
   <owl:Class rdf:ID="OccupationContext">
     <rdfs:label xml:lang="en">occupation context</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
@@ -1174,7 +1174,7 @@
     <rdfs:range rdf:resource="#Context"/>
   </rdf:Description>
 
- 
+
   <owl:Class rdf:ID="CulturalFormContext">
     <rdfs:label xml:lang="en">cultural form context</rdfs:label>
     <rdfs:label xml:lang="fr">forme culturelle en contexte</rdfs:label>
@@ -1209,7 +1209,7 @@
     <rdfs:label xml:lang="fr">sexualité en contexte</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
-    <skos:definition xml:lang="en">Sexuality Context is a significant subclass of @@#Context@@. Annotations typed as Sexuality Context provide information about and discussions of a person's subjectivity with regards to their sexuality and sexual identity. Sexuality Context provides depth to more granular categorizations of a person through the sexuality or Sexuality Self-Reported properties. It does not provide context for individual sexual experiences and relationships, although specific relationships may be invoked to indicate the impact on a subject's life and understanding of her own sexuality. Contextualizations allow recognition of the complicated politics of sexuality, for example, considerations regarding outing, the historical specificity of some categories such as "congenital invert," the appropriation of derogatory terms, and the multiplicity of constructions. There are important politics of privacy with respect to the disclosure of a subject's sexuality, sexual orientation, and sexual identity. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See (<![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>]]>)
+    <skos:definition xml:lang="en">Sexuality Context is a significant subclass of @@#CulturalFormContext@@. Annotations typed as Sexuality Context provide information about and discussions of a person's subjectivity with regards to their sexuality and sexual identity. Sexuality Context provides depth to more granular categorizations of a person through the sexuality or sexuality self-reported properties. It does not provide context for individual sexual experiences and relationships (for which see @@IntimateRelationshipContext@@), although specific relationships may be invoked to indicate the impact on a subject's life and understanding of their own sexuality. Contextualizations allow recognition of the complicated politics of sexuality, for example, considerations regarding outing, the historical specificity of some categories such as "congenital invert," the appropriation of derogatory terms, and the multiplicity of constructions. There are important politics of privacy with respect to the disclosure of a subject's sexuality, sexual orientation, and sexual identity. As far as living persons are concerned, recommended practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See (<![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>]]>)
     </skos:definition>
     <skos:definition xml:lang="fr">Sexualité En Contexte est une sous-classe de contexte importante. Les annotations de Sexualité En Contexte fournissent des renseignements et des discussions sur la sexualité et l'identité sexuelle d'une personne grâce à Sexualité ou Sexualité Autodéclarée. Elle n'est pas vouée à répertorier les expériences sexuelles et les relations intimes, même si certaines d'entre elles peuvent être évoquées pour indiquer leurs conséquences sur la vie du sujet ou la connaissance qu'elle a de sa propre sexualité. Ces efforts de contextualisation permettent de reconnaître l'existence de questions complexes qui entourent la sexualité, comme par exemple les politiques de délation, la spécificité historique de certaines catégories comme "inversion sexuelle", la réappropriation de termes dénigrants ou les mutliples constructions discursives. Il existe d'importantes politiques de confidentialité qui protègent les personnes contre la divulgation d'informations privées sur leur sexualité, leur orientation sexuelle et leur identité sexuelle. Pour les personnes toujours en vie, notre pratique est donc de ne nous appuyer que sur des sources ou des déclarations publiques venant des sujets eux-mêmes, afin de ne pas dévoiler par inadvertance des informations privées sur leur sexualité. Voir (<![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>]]>)
     </skos:definition>
@@ -1294,7 +1294,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#NationalHeritage"/>
     <skos:definition xml:lang="en">"Anglo-Irish (Irish: Angla-Éireannach) was a term used primarily in the 19th and early 20th centuries to identify a privileged social class in Ireland, whose members were mostly the descendants and successors of the Protestant Ascendancy. They mostly belonged to the Anglican Church of Ireland, which was the established church of Ireland until 1871, or to a lesser extent one of the English dissenting churches, such as the Methodist church. Its members tended to follow English practices in matters of culture, science, law, agriculture and politics. Many became eminent as administrators in the British Empire and as senior army and naval officers." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr">«Les Anglo-irlandais sont une population relativement privilégiée d'Irlande, du XIXe siècle et du début du XXe, descendant de colons protestants. Le terme s'applique également pour décrire les relations bilatérales entre la République d'Irlande et le Royaume-Uni comme pour le traité anglo-irlandais ou le Anglo-Irish Agreement. 
+    <skos:definition xml:lang="fr">«Les Anglo-irlandais sont une population relativement privilégiée d'Irlande, du XIXe siècle et du début du XXe, descendant de colons protestants. Le terme s'applique également pour décrire les relations bilatérales entre la République d'Irlande et le Royaume-Uni comme pour le traité anglo-irlandais ou le Anglo-Irish Agreement.
 * Portail de l’Irlande Portail de l’Irlande * Portail du Royaume-Uni Portail du Royaume-Uni» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Anglo-Irish_people"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1379,7 +1379,7 @@
   </cwrc:NationalHeritage>
   <cwrc:NationalHeritage rdf:about="#mohawkNationalHeritage">
     <rdfs:label xml:lang="en">Mohawk</rdfs:label>
-    <rdfs:label xml:lang="fr">Mohawks</rdfs:label> 
+    <rdfs:label xml:lang="fr">Mohawks</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#NationalHeritage"/>
     <skos:definition xml:lang="en">"The Mohawk people (who identify as Kanien'kehá:ka) are the most easterly tribe of the Haudenosaunee, or Iroquois Confederacy. The name means "People of the Flint Place." They are an Iroquoian-speaking indigenous people of North America. The Mohawk were historically based in the Mohawk Valley in present-day upstate New York west of the Hudson River; their territory ranged north to the St. Lawrence River, southern Quebec and eastern Ontario; south to greater New Jersey and into Pennsylvania; eastward to the Green Mountains of Vermont; and westward to the border with the Iroquoian Oneida Nation's traditional homeland territory. As one of the five original members of the Iroquois League, the Mohawk were known as the Keepers of the Eastern Door. For hundreds of years, they guarded the Iroquois" <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
@@ -1937,7 +1937,7 @@
     <rdfs:label xml:lang="en">blackwoman</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">
-      An intersectional identity that co-occurs with but is not reducible to the combination of "@@#hasGender@@ @@#woman@@" and "@@#hasRaceColour@@ @@#blackRaceColour@@". See @@https://en.wikipedia.org/wiki/Black_women@@ and <![CDATA[<a href="#cwrc:b9eeccf9-9380-4341-99dc-a83f5ee32909">(Kimberlé Crenshaw, 1989)</a>]]>. 
+      An intersectional identity that co-occurs with but is not reducible to the combination of "@@#hasGender@@ @@#woman@@" and "@@#hasRaceColour@@ @@#blackRaceColour@@". See @@https://en.wikipedia.org/wiki/Black_women@@ and <![CDATA[<a href="#cwrc:b9eeccf9-9380-4341-99dc-a83f5ee32909">(Kimberlé Crenshaw, 1989)</a>]]>.
     </skos:definition>
     <skos:definition xml:lang="fr">
     </skos:definition>
