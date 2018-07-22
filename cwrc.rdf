@@ -1483,6 +1483,16 @@
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:NationalIdentity><cwrc:NationalIdentity rdf:about="#BritishNationalIdentity">
+    <rdfs:label xml:lang="en">British</rdfs:label>
+    <rdfs:label xml:lang="fr">Brittaniques</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#NationalIdentity"/>
+    <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as British as a national identity. See @@https://en.wikipedia.org/wiki/British_people@@.</skos:definition>
+    <skos:definition xml:lang="fr">«Les Britanniques, également appelés en anglais les Britons (en français, les Bretons insulaires), familièrement les Brits, et de manière archaïque les Britishers, se définissent comme les citoyens ou les natifs du Royaume-Uni, des dépendances de la Couronne et des territoires britanniques d’Outre-mer, ainsi que leurs descendants». @@https://fr.wikipedia.org/wiki/Britanniques@@<![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/British_people"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:NationalIdentity>
   <cwrc:NationalIdentity rdf:about="#europeanNationalIdentity">
     <rdfs:label xml:lang="en">European</rdfs:label>
