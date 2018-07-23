@@ -238,7 +238,7 @@ def grandchildren_exist(instances):
 
 
 def all_terms_html(nodes):
-    types = [x for x in nodes if spec_url not in x]
+    types = sorted([x for x in nodes if spec_url not in x])
     string = ""
     for x in types:
         string += '<div class="type">'
@@ -574,7 +574,10 @@ def get_definition_list(uri):
 
 def get_comment_html(comm_list):
     html_str = "<div class=\"comment\">"
-    html_str += "<p>Comment: "
+    if lang == "fr":
+        html_str += "<p>Note: "
+    else:
+        html_str += "<p>Comment: "
     for x in comm_list:
         if x:
             html_str += "%s<br/>" % x
