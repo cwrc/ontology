@@ -1209,7 +1209,7 @@
     <rdfs:label xml:lang="fr">sexualité en contexte</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
-    <skos:definition xml:lang="en">Sexuality Context is a significant subclass of @@#CulturalFormContext@@. Annotations typed as Sexuality Context provide information about and discussions of a person's subjectivity with regards to their sexuality and sexual identity. Sexuality Context provides depth to more granular categorizations of a person through the sexuality or sexuality self-reported properties. It does not provide context for individual sexual experiences and relationships (for which see @@IntimateRelationshipContext@@), although specific relationships may be invoked to indicate the impact on a subject's life and understanding of their own sexuality. Contextualizations allow recognition of the complicated politics of sexuality, for example, considerations regarding outing, the historical specificity of some categories such as "congenital invert," the appropriation of derogatory terms, and the multiplicity of constructions. There are important politics of privacy with respect to the disclosure of a subject's sexuality, sexual orientation, and sexual identity. As far as living persons are concerned, recommended practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See (<![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>]]>)
+    <skos:definition xml:lang="en">Sexuality Context is a significant subclass of @@#CulturalFormContext@@. Annotations typed as Sexuality Context provide information about and discussions of a person's subjectivity with regards to their sexuality and sexual identity. Sexuality Context provides depth to more granular categorizations of a person through the sexuality or sexuality self-reported properties. It does not provide context for individual sexual experiences and relationships (for which see @@#IntimateRelationshipContext@@), although specific relationships may be invoked to indicate the impact on a subject's life and understanding of their own sexuality. Contextualizations allow recognition of the complicated politics of sexuality, for example, considerations regarding outing, the historical specificity of some categories such as "congenital invert," the appropriation of derogatory terms, and the multiplicity of constructions. There are important politics of privacy with respect to the disclosure of a subject's sexuality, sexual orientation, and sexual identity. As far as living persons are concerned, recommended practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See (<![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>]]>)
     </skos:definition>
     <skos:definition xml:lang="fr">Sexualité En Contexte est une sous-classe de contexte importante. Les annotations de Sexualité En Contexte fournissent des renseignements et des discussions sur la sexualité et l'identité sexuelle d'une personne grâce à Sexualité ou Sexualité Autodéclarée. Elle n'est pas vouée à répertorier les expériences sexuelles et les relations intimes, même si certaines d'entre elles peuvent être évoquées pour indiquer leurs conséquences sur la vie du sujet ou la connaissance qu'elle a de sa propre sexualité. Ces efforts de contextualisation permettent de reconnaître l'existence de questions complexes qui entourent la sexualité, comme par exemple les politiques de délation, la spécificité historique de certaines catégories comme "inversion sexuelle", la réappropriation de termes dénigrants ou les mutliples constructions discursives. Il existe d'importantes politiques de confidentialité qui protègent les personnes contre la divulgation d'informations privées sur leur sexualité, leur orientation sexuelle et leur identité sexuelle. Pour les personnes toujours en vie, notre pratique est donc de ne nous appuyer que sur des sources ou des déclarations publiques venant des sujets eux-mêmes, afin de ne pas dévoiler par inadvertance des informations privées sur leur sexualité. Voir (<![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>]]>)
     </skos:definition>
@@ -1449,8 +1449,8 @@
     <rdfs:label xml:lang="fr">nationalité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">A subclass of @@#CulturalForm@@, this property indicates a person's national identity, either as self-reported or as assigned by others, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. It is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides, although it is usually associated with a current or former country or geographic region. For this reason, the (see <![CDATA[<a href="https://en.wikipedia.org/wiki/ISO_3166-2>ISO 2-digit Codes for the representation of names of countries and their subdivisions – Part 2: Country subdivision codes</a>]]>) are used where possible to represent instances of national identities, and only terms for which country codes do not exist appear in this ontology. Like other identity categories, nationality may be plural, fluid, or contingent, and terms used for national identities can intersect with @@#NationalHeritage@@, @@#GeographicHeritage@@, and @@#Ethnicity@@ as well as other identity categories. Those using this class and its instances are encouraged to consult associated @@#NationalityContext@@ annotations, if available.</skos:definition>
-    <skos:definition xml:lang="fr">Une sous-catégorie de @@#CulturalForm@@, cette propriété indique la nationalité d'une personne, accompagnée du contexte fourni par les annotations de @@#NationalityContext@@ lorsqu'il est disponible. Elle diffère de la citoyenneté et n'est pas proportionnelle à la zone géographique ou au territoire de la personne, même si elle est généralement liée au pays ou à la zone géographique actuelle ou passée. Pour cette raison, (vois <![CDATA[<a href="https://fr.wikipedia.org/wiki/ISO_3166-2>les codes de la norme ISO 2 pour la représentation des pays et de leurs subdivisions-Partie 2 : Codes des subdivisions des pays</a>]]>) sont utilisés dans la mesure du possible pour représenter les instances de nationalités, et seuls les termes pour lesquels aucun code pays n'existe apparaissent dans l'ontologie. Comme d'autres catégories identitaires, la nationalité peut être plurielle, fluide ou contingente, et recoupe avec @@#NationalHeritage@@ ainsi qu'avec d'autres catégories identitaires. Les personnes qui utilisent cette classe et ses instances sont encouragées à consulter les annotations de @@#NationalityContext@@ lorsqu'elles sont disponibles.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of @@#CulturalForm@@, this property indicates a person's national identity, either as self-reported or as assigned by others, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. It is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides, although it is usually associated with a current or former country or geographic region. For this reason, the (see <![CDATA[<a href="https://en.wikipedia.org/wiki/ISO_3166-2">ISO 2-digit Codes for the representation of names of countries and their subdivisions – Part 2: Country subdivision codes</a>]]>) are used where possible to represent instances of national identities, and only terms for which country codes do not exist appear in this ontology. Like other identity categories, nationality may be plural, fluid, or contingent, and terms used for national identities can intersect with @@#NationalHeritage@@, @@#GeographicHeritage@@, and @@#Ethnicity@@ as well as other identity categories. Those using this class and its instances are encouraged to consult associated @@#NationalityContext@@ annotations, if available.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-catégorie de @@#CulturalForm@@, cette propriété indique la nationalité d'une personne, accompagnée du contexte fourni par les annotations de @@#NationalityContext@@ lorsqu'il est disponible. Elle diffère de la citoyenneté et n'est pas proportionnelle à la zone géographique ou au territoire de la personne, même si elle est généralement liée au pays ou à la zone géographique actuelle ou passée. Pour cette raison, (vois <![CDATA[<a href="https://fr.wikipedia.org/wiki/ISO_3166-2">les codes de la norme ISO 2 pour la représentation des pays et de leurs subdivisions-Partie 2 : Codes des subdivisions des pays</a>]]>) sont utilisés dans la mesure du possible pour représenter les instances de nationalités, et seuls les termes pour lesquels aucun code pays n'existe apparaissent dans l'ontologie. Comme d'autres catégories identitaires, la nationalité peut être plurielle, fluide ou contingente, et recoupe avec @@#NationalHeritage@@ ainsi qu'avec d'autres catégories identitaires. Les personnes qui utilisent cette classe et ses instances sont encouragées à consulter les annotations de @@#NationalityContext@@ lorsqu'elles sont disponibles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -1483,7 +1483,7 @@
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:NationalIdentity><cwrc:NationalIdentity rdf:about="#BritishNationalIdentity">
+  </cwrc:NationalIdentity><cwrc:NationalIdentity rdf:about="#britishNationalIdentity">
     <rdfs:label xml:lang="en">British</rdfs:label>
     <rdfs:label xml:lang="fr">Brittaniques</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1658,7 +1658,7 @@
     <rdfs:label xml:lang="en">man</rdfs:label>
     <rdfs:label xml:lang="fr">homme</rdfs:label>
     <skos:inScheme rdf:resource="#Gender"/>
-    <skos:altLabel xml:lang="en">MALE</skos:altLabel>
+    <skos:altLabel xml:lang="en">male</skos:altLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">
       Indicates identification with or labelling as the gender man, and who is often but not necessarily understood to be sexed male.
@@ -1674,7 +1674,7 @@
     <rdfs:label xml:lang="en">undefined</rdfs:label>
     <rdfs:label xml:lang="fr">indéfini</rdfs:label>
     <skos:inScheme rdf:resource="#Gender"/>
-    <skos:altLabel xml:lang="en">UNDEFINED</skos:altLabel>
+    <skos:altLabel xml:lang="en">undefined</skos:altLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Indicates that the person's gender is not disclosed by them or is not indicated in the source.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
@@ -1684,7 +1684,7 @@
   <cwrc:Gender rdf:about="#woman">
     <rdfs:label xml:lang="en">woman</rdfs:label>
     <rdfs:label xml:lang="fr">femme</rdfs:label>
-    <skos:altLabel xml:lang="en">FEMALE</skos:altLabel>
+    <skos:altLabel xml:lang="en">female</skos:altLabel>
     <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">
@@ -1744,7 +1744,7 @@
   <cwrc:Gender rdf:about="#transGender">
     <rdfs:label xml:lang="en">transgender</rdfs:label>
     <rdfs:label xml:lang="fr">transgenre</rdfs:label>
-    <skos:altLabel xml:lang="en">TRANSGENDERED</skos:altLabel>
+    <skos:altLabel xml:lang="en">transgendered</skos:altLabel>
     <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">
@@ -1759,7 +1759,7 @@
   <cwrc:Gender rdf:about="#transMan">
     <rdfs:label xml:lang="en">transman/transmale</rdfs:label>
     <rdfs:label xml:lang="fr">homme trans</rdfs:label>
-    <skos:altLabel xml:lang="en">TRANSGENDERED FEMALE TO MALE</skos:altLabel>
+    <skos:altLabel xml:lang="en">transgendered female to male</skos:altLabel>
     <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">
@@ -1775,7 +1775,7 @@
   <cwrc:Gender rdf:about="#transWoman">
     <rdfs:label xml:lang="en">transwoman/transfemale</rdfs:label>
     <rdfs:label xml:lang="fr">femme trans</rdfs:label>
-    <skos:altLabel xml:lang="en">TRANSGENDERED MALE TO FEMALE</skos:altLabel>
+    <skos:altLabel xml:lang="en">transgendered male to female</skos:altLabel>
     <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">
