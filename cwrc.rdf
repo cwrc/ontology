@@ -543,7 +543,7 @@
   <owl:Class rdf:ID="WealthContext">
     <rdfs:label xml:lang="en">wealth context</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Context"/>
+    <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as Wealth Context provide information about and discussions of a person's economic standing, including inheritance, property ownership, pensions, and personal financial disasters. See also the @@#OccupationContext@@ and @@#CulturalFormContext@@, particularly for @@#SocialClassContext@@.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
@@ -554,7 +554,7 @@
   <owl:Class rdf:ID="ViolenceContext">
     <rdfs:label xml:lang="en">violence context</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Context"/>
+    <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as Violence Context provide information about and discussions of instances of physical, sexual, and undue emotional abuse, whether the person was subject to the violence or perpetrated it. Broadly conceived to include the effect of exposure to violence of which the person was neither perpetrator nor survivor.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
@@ -565,7 +565,7 @@
   <owl:Class rdf:ID="LeisureContext">
     <rdfs:label xml:lang="en">leisure context</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Context"/>
+    <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as Leisure Context provide information about and discussions of instances of the leisure and social activities of a person including hobbies, sporting life and cultural activitites, for example mountain climbing or hosting a literary salon.  Notions of leisure are both gendered and classed, and vary by cultural context. This context is meant to capture a person's social life within their larger community, not simply an elite, fashionable social circle.</skos:definition>
     <!-- Waiting for significant activity to be defined -->
@@ -579,7 +579,7 @@
   <owl:Class rdf:ID="OccupationContext">
     <rdfs:label xml:lang="en">occupation context</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Context"/>
+    <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as occupation provide information about and discussions of positions and activities significant to a person's life, including paid, unpaid, and voluntary work both beyond and within the home. Although writing as a career sometimes overlaps with occupation, literary activities are often described in writing contexts.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
@@ -594,7 +594,7 @@
   <owl:Class rdf:ID="BirthContext">
     <rdfs:label xml:lang="en">birth context</rdfs:label>
     <rdfs:label xml:lang="fr">naissance en contexte</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Context"/>
+    <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as birth context provide information about and discussions of a person's birth. See @@http://dbpedia.org/page/Birth@@.</skos:definition>
     <skos:definition xml:lang="fr">Classe de @@#Context@@ importante. Les annotations entrées en tant que contexte de naissance fournissent des informations sur la naissance d'une personne. Voir @@http://dbpedia.org/page/Birth@@ </skos:definition>
@@ -989,7 +989,7 @@
     <rdfs:label xml:lang="fr">contexte éducatif</rdfs:label>
     <skos:definition xml:lang="en">Education Context is a significant subclass of context. It has subclasses for @@#DomesticEducationContext@@, @@#InstitutionalEducationContext@@, and @@#SelfTaughtEducationContext@@. Annotations typed as Education Context or a subclass provide information about and discussions of a person's education, whether formal or informal.</skos:definition>
     <skos:definition xml:lang="fr">Contexte Éducatif est une sous-classe de contexte important. Elle contient les sous-classes de contexte @@#DomesticEducationContext@@, @@#InstitutionalEducationContext@@ et @@#SelfTaughtEducationContext@@. Les annotations entrées en tant que Contexte Éducatif ou en tant que sous-classe fournissent des informations et des discussions sur l'éducation d'une personne, qu'elle soit formelle ou informelle.</skos:definition>
-    <rdfs:subClassOf rdf:resource="#Context"/>
+    <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -1174,11 +1174,22 @@
     <rdfs:range rdf:resource="#Context"/>
   </rdf:Description>
 
+  <owl:Class rdf:ID="BiographyContext">
+    <rdfs:label xml:lang="en">biography context</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Context"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Biography Context is a major subclass of @@#Context@@. Annotations typed as Biography Context provide information about and discussions of a person's biography or personal history, through the use of biographical properties and relationships and through subclasses of Biographical Context such as @@#BirthContext@@, @@#CulturalFormContext@@, or @@#OccupationContext@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
 
   <owl:Class rdf:ID="CulturalFormContext">
     <rdfs:label xml:lang="en">cultural form context</rdfs:label>
     <rdfs:label xml:lang="fr">forme culturelle en contexte</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Context"/>
+    <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Cultural Form Context is a significant subclass of @@#Context@@. Annotations typed as Cultural Form Context provide information about and discussions of a person's social identity or subjectivity through the use of @@#CulturalForm@@ properties, which when multiple often indicate intersectional identities.</skos:definition>
     <skos:definition xml:lang="fr">Formation Culturelle En Contexte est une sous-classe de @@#Context@@ importante. Les annotations entrées en tant Formation Culturelle En Contexte fournissent des renseignements et des discussions sur l'identité sociales ou la subjectivité d'une personne à travers l'utilisation des propriétés Formes Culturelles, qui lorsqu'elles sont multiples indiquent souvent des identités intersectionnelles. </skos:definition>
@@ -1834,8 +1845,8 @@
   <cwrc:Sexuality rdf:about="#heterosexual">
     <rdfs:label xml:lang="en">heterosexuality</rdfs:label>
     <rdfs:label xml:lang="fr">hétérosexualité</rdfs:label>
-    <skos:altLabel xml:lang="en">HETEROSEXUAL</skos:altLabel>
-    <skos:altLabel xml:lang="en">HETEROSEXUALITY</skos:altLabel>
+    <skos:altLabel xml:lang="en">heterosexual</skos:altLabel>
+    <skos:altLabel xml:lang="en">heterosexuality</skos:altLabel>
     <skos:definition xml:lang="en">Heterosexuality indicates sexual attraction to the so-called "opposite sex," that is, sexual attraction between men and women. This understanding relies, like bisexual, on a binary understanding of sex and gender that also often conflates sex with gender. Adrienne Rich draws on Kathleen Gough in articulating an understanding of heterosexuality as compulsory for women within patriarchy. In her essay "The Straight Mind" (first published in 1980) Monique Wittig understands heterosexuality as a semiotic, linguistic, political, and ontological construct. It constitutes itself as a normative system through the oppression of women by men and the "necessity of the different/other at every level." The straight mind "creates the doctrine of the difference between sexes to justify this oppression."</skos:definition>
     <skos:definition xml:lang="fr">L'hétérosexualité indique l'attraction sexuelle pour le sexe prétendument «opposé», c'est-à-dire entre les hommes et les femmes. Cette compréhension du terme repose, comme pour la bisexualité, sur une interprétation binaire du sexe et du genre, qui confond habituellement les deux notions. S'appuyant sur Kathleen Gough, Adrienne Rich interprète l'hétérosexualité comme obligatoire pour les femmes dans un contexte patriarcal. Dans son article «La pensée straight» (publiée pour la première fois en 1980) Monique Wittig interprète l'hétérosexualité comme une construction sémiotique, linguistique, politique et ontologique. Elle se constitue comme un système normatif qui passe par l'oppression des femmes par les hommes et la «la nécessité de l'autre différent à tous les niveaux». La pensée straight «produit la doctrine de la différence entre les sexes pour justifier cette oppression».</skos:definition>
     <skos:inScheme rdf:resource="#Sexuality"/>
@@ -1847,9 +1858,9 @@
   <cwrc:Sexuality rdf:about="#homosexual">
     <rdfs:label xml:lang="en">homosexuality</rdfs:label>
     <rdfs:label xml:lang="fr">homosexualité</rdfs:label>
-    <skos:altLabel xml:lang="en">HOMOSEXUAL</skos:altLabel>
-    <skos:altLabel xml:lang="en">HOMOSEXUALITY</skos:altLabel>
-    <skos:altLabel xml:lang="en">MALE HOMOSEXUAL</skos:altLabel>
+    <skos:altLabel xml:lang="en">homosexual</skos:altLabel>
+    <skos:altLabel xml:lang="en">homosexuality</skos:altLabel>
+    <skos:altLabel xml:lang="en">male HOMOSEXUAL</skos:altLabel>
     <skos:definition xml:lang="en">Homosexuality indicates sexual attraction to subjects of the same gender. Like @@#sexualityBisexuality@@, it draws on a binary understanding of sex and gender that also often conflates sex with gender. Homosexual is often used as an umbrella term for lesbian and gay sexuality.</skos:definition>
     <skos:definition xml:lang="fr">L'homosexualité indique l'attraction sexuelle entre des sujets du même genre. Comme bisexuel, le terme repose sur une interprétation binaire et souvent indifférenciée du sexe et du genre. Homosexuel est souvent utilisé comme terme générique pour les sexualités lesbienne et gay.</skos:definition>
     <skos:inScheme rdf:resource="#Sexuality"/>
@@ -1860,8 +1871,8 @@
   <cwrc:Sexuality rdf:about="#lesbian">
     <rdfs:label xml:lang="en">lesbianism</rdfs:label>
     <rdfs:label xml:lang="fr">lesbianisme</rdfs:label>
-    <skos:altLabel xml:lang="en">LESBIAN</skos:altLabel>
-    <skos:altLabel xml:lang="en">LESBIANISM</skos:altLabel>
+    <skos:altLabel xml:lang="en">lesbian</skos:altLabel>
+    <skos:altLabel xml:lang="en">lesbianism</skos:altLabel>
     <skos:definition xml:lang="en">Lesbianism indicates the sexual attraction of women to other women. Yet, lesbian feminist thinkers underline that this common definition is reductive. Drawing on Kathleen Gough and within an understanding of heterosexuality as compulsory for women within patriarchy, Adrienne Rich describes a lesbian continuum, the "range—through each woman's life and throughout history—of woman-identified experiences, not simply the fact that a woman has had or consciously desired genital sexual experience with another woman" <![CDATA[<a href="#cwrc:8049540f-3673-4ca0-920c-cb5326d7c466">(Rich, 1983)</a>]]>. In a heteronormative context, lesbianism is not only a question of sexuality but also has complex political implications.</skos:definition>
     <skos:definition xml:lang="fr">Le lesbianisme indique l'attraction sexuelle entre les femmes. Cependant, certaines intellectuelles lesbiennes féministes soulignent l'aspect réducteur d'une telle définition. S'appuyant sur Kathleen Gough, Adrienne Rich interprète l'hétérosexualité comme obligatoire pour les femmes dans un contexte patriarcal, et évoque un continuum lesbien, les «diverses expériences spécifiques aux femmes—au cours de leur existence ou à travers l'Histoire— et non simplement le fait qu'une femme a eu ou a consciemment désiré avoir des expériences sexuelles avec une autre femme» <![CDATA[<a href="#cwrc:8049540f-3673-4ca0-920c-cb5326d7c466">(Rich, 1983)</a>]]>. Dans un contexte hétéronormatif, le lesbianisme ne relève donc pas seulement de la sexualité mais implique aussi des questions politiques complexes.</skos:definition>
     <skos:inScheme rdf:resource="#Sexuality"/>
@@ -1873,8 +1884,8 @@
   <cwrc:Sexuality rdf:about="#sexualityBisexuality">
     <rdfs:label xml:lang="en">bisexuality</rdfs:label>
     <rdfs:label xml:lang="fr">bisexualité</rdfs:label>
-    <skos:altLabel xml:lang="en">BISEXUAL</skos:altLabel>
-    <skos:altLabel xml:lang="en">BISEXUALITY</skos:altLabel>
+    <skos:altLabel xml:lang="en">bisexual</skos:altLabel>
+    <skos:altLabel xml:lang="en">bisexuality</skos:altLabel>
     <skos:definition xml:lang="en">Bisexuality indicates sexual attraction to both genders. In terms of binary understandings of sex or gender, bisexuality is often defined as being sexually attracted to "both sexes".</skos:definition>
     <skos:definition xml:lang="fr">La bisexualité réfère à l'attraction sexuelle pour les deux genres. En terme d'acceptation binaire du sexe ou du genre, la bisexualité est souvent définie comme attraction sexuelle pour les «deux sexes».</skos:definition>
     <skos:inScheme rdf:resource="#Sexuality"/>
@@ -1886,7 +1897,7 @@
   <cwrc:Sexuality rdf:about="#sexualityCelibacy">
     <rdfs:label xml:lang="en">celibacy</rdfs:label>
     <rdfs:label xml:lang="fr">célibat</rdfs:label>
-    <skos:altLabel xml:lang="en">CELIBATE</skos:altLabel>
+    <skos:altLabel xml:lang="en">celibate</skos:altLabel>
     <skos:definition xml:lang="en">Celibacy indicates abstention from sex, and can stem from personal choice, religious prescriptions, or with religious occupations such as being a nun or priest. Celibacy is not the be confused with asexuality, which describes a lack of interest in sex or sexual attraction to other subjects.</skos:definition>
     <skos:definition xml:lang="fr">Le célibat indique l'abstinence sexuelle, et peut être dû à un choix personnel, à des impératifs religieux ou des professions cléricales comme religieuse ou prêtre. Le célibat ne doit pas être confondu avec l'asexualité, qui décrit une absence d'intérêt pour les pratiques sexuelles ou d'attirance sexuelle pour d'autres personnes.</skos:definition>
     <skos:inScheme rdf:resource="#Sexuality"/>
@@ -1898,7 +1909,7 @@
   <cwrc:Sexuality rdf:about="#sexualityFrigidity">
     <rdfs:label xml:lang="en">frigidity</rdfs:label>
     <rdfs:label xml:lang="fr">frigidité</rdfs:label>
-    <skos:altLabel xml:lang="en">FRIGID</skos:altLabel>
+    <skos:altLabel xml:lang="en">frigid</skos:altLabel>
     <skos:definition xml:lang="en">Frigidity labels a female subject as sexually withdrawn or unenthusiastic (read: non-consenting) in relation to the sexual advance, usually of men within a heterosexual framework, and suggests a lack of pleasure from sexual activities. Unlike asexual and celibate, this term is often ascribed to women, as opposed to self-referential. The term "frigid" was coined in the 1920s by sexologists (Sex and Society, Vol. 1, 285). Its use in discourse surrounding female sexuality is waning.</skos:definition>
     <skos:definition xml:lang="fr">La frigidité est attribuée aux femmes qui se montrent distantes ou peu enthousiastes (comprendre non consentantes) face aux avances sexuelles, le plus souvent de la part d'hommes dans un cadre hétéronormé, et suggère un manque de plaisir associé aux pratiques sexuelles. Contrairement à l'asexualité et au célibat, ce terme est souvent assigné à des femmes, et n'est donc pas autoréférentiel. Le terme «frigide» a été formulé dans les années 20 par des sexologues (Sex and Society, Vol. 1, 285). Son usage est en déclin dans les discours à propos de la sexualité féminine.</skos:definition>
     <skos:inScheme rdf:resource="#Sexuality"/>
@@ -1909,7 +1920,7 @@
   <cwrc:Sexuality rdf:about="#sexualityPromiscuity">
     <rdfs:label xml:lang="en">promiscuity</rdfs:label>
     <rdfs:label xml:lang="fr">promiscuité</rdfs:label>
-    <skos:altLabel xml:lang="en">PROMISCUOUS</skos:altLabel>
+    <skos:altLabel xml:lang="en">promiscuous</skos:altLabel>
     <skos:definition xml:lang="en">Promiscuity indicates sex with multiple partners in a casual or indiscriminate fashion and in opposition to socially sanctioned sexual behaviour. Promiscuity is differently constructed for women and men in most historical and cultural contexts, being closely connected to the control of female sexuality and reproduction. It includes libertinism, a form of hedonistic sexual politics frequently ascribed to or adopted by men.</skos:definition>
     <skos:definition xml:lang="fr">La promiscuité indique l'activité sexuelle avec des partenaires multiples de façon décomplexée et indifférenciée, en opposition aux pratiques sexuelles socialement acceptées. La promiscuité est différemment interprétée pour les femmes et les hommes dans la plupart des contextes historiques et culturelles, étant étroitement liée au contrôle de la sexualité féminine et de la reproduction. Elle inclut le libertinage, une forme de sexualité hédoniste fréquemment attribuée à ou adoptée par des hommes.</skos:definition>
     <skos:inScheme rdf:resource="#Sexuality"/>
@@ -1920,7 +1931,7 @@
   <cwrc:Sexuality rdf:about="#sexualityLibertinism">
     <rdfs:label xml:lang="en">libertinism</rdfs:label>
     <rdfs:label xml:lang="fr">libertinage</rdfs:label>
-    <skos:altLabel xml:lang="en">LIBERTINISM</skos:altLabel>
+    <skos:altLabel xml:lang="en">libertinism</skos:altLabel>
     <skos:definition xml:lang="en">Libertinism refers to a type of sexual identity (often tied to men) used to describe a subject who subscribes to hedonistic sexual politics.</skos:definition>
     <skos:definition xml:lang="fr">Le libertinage réfère à un type d'identité sexuelle (souvent pour des hommes) utilisé pour décrire un sujet adhérant aux idées et pratiques hédonistes.</skos:definition>
     <skos:inScheme rdf:resource="#Sexuality"/>
@@ -7145,7 +7156,7 @@
 
   <owl:Class rdf:ID="FriendsAndAssociatesContext">
     <rdfs:label xml:lang="en">friends and associates context</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Context"/>
+    <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Friends and connections context is a significant subclass of context. Annotations typed as friends and connections contexts discuss a broad spectrum of social relations ranging from friendship to enmities and casual associations. Other context annotations treat related aspects of social connections, including @@#LeisureContext@@ and @@#IntimateRelationshipsContext@@.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
@@ -7179,7 +7190,7 @@
 <!-- Intimate Relations -->
   <owl:Class rdf:ID="IntimateRelationshipsContext">
     <rdfs:label xml:lang="en">intimate relationships context</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Context"/>
+    <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Intimate relationships context is a significant subclass of context. Annotations typed intimate relationships discuss any type of intimacy ranging from emotional through psychological or material to sexual.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
@@ -7377,7 +7388,7 @@
 <!-- Family Stuff -->
   <owl:Class rdf:ID="FamilyContext">
     <rdfs:label xml:lang="en">family context</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Context"/>
+    <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Family Context is a significant subclass of context. Annotations typed as Family Context provide information about and discussions of a person's familial relations.  Family relationships are social bonds assumed between a group of people affiliated by blood, marriage, co-residence, or other affiliation. For more information, see @@http://dbpedia.org/page/Family@@.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
