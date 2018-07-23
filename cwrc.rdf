@@ -49,64 +49,64 @@
     <dcterms:rights rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
     <vs:term_status xml:lang="en">Testing</vs:term_status>
     <dcterms:creator>
-      <foaf:Person rdf:about="#JohnSimpson">
+      <cwrc:NaturalPerson rdf:about="#JohnSimpson">
         <foaf:name>John Simpson</foaf:name>
-      </foaf:Person>
+      </cwrc:NaturalPerson>
     </dcterms:creator>
     <dcterms:creator>
-      <foaf:Person rdf:about="#AbigelLemak">
+      <cwrc:NaturalPerson rdf:about="#AbigelLemak">
         <foaf:name>Abigel Lemak</foaf:name>
-      </foaf:Person>
+      </cwrc:NaturalPerson>
     </dcterms:creator>
     <dcterms:creator>
-      <foaf:Person rdf:about="#JadePenancier">
+      <cwrc:NaturalPerson rdf:about="#JadePenancier">
         <foaf:name>Jade Penancier</foaf:name>
-      </foaf:Person>
+      </cwrc:NaturalPerson>
     </dcterms:creator>
     <dcterms:creator>
-      <foaf:Person rdf:about="#KimMartin">
+      <cwrc:NaturalPerson rdf:about="#KimMartin">
         <foaf:name>Kim Martin</foaf:name>
-      </foaf:Person>
+      </cwrc:NaturalPerson>
     </dcterms:creator>
     <dcterms:creator rdf:resource="#SusanBrown"/>
     <dcterms:creator>
-      <foaf:Person rdf:about="#ColinFaulkner">
+      <cwrc:NaturalPerson rdf:about="#ColinFaulkner">
         <foaf:name>Colin Faulkner</foaf:name>
-      </foaf:Person>
+      </cwrc:NaturalPerson>
     </dcterms:creator>
     <dcterms:creator>
-      <foaf:Person rdf:about="#RobWarren">
+      <cwrc:NaturalPerson rdf:about="#RobWarren">
         <foaf:name>Robert Warren</foaf:name>
         <owl:sameAs rdf:resource="http://rdf.muninn-project.org/ww1/2011/11/11/Person/Warren"/>
         <foaf:homepage rdf:resource="http://www.dbdump.org/"/>
         <foaf:img rdf:resource="http://sparql.cwrc.ca/images/rob.jpeg"/>
-      </foaf:Person>
+      </cwrc:NaturalPerson>
     </dcterms:creator>
     <dcterms:creator>
-      <foaf:Person rdf:about="#AlliyyaMo">
+      <cwrc:NaturalPerson rdf:about="#AlliyyaMo">
         <foaf:name>Alliyya Mo</foaf:name>
-      </foaf:Person>
+      </cwrc:NaturalPerson>
     </dcterms:creator>
     <dcterms:creator>
-      <foaf:Person rdf:about="#JasmineDrudgeWillson">
+      <cwrc:NaturalPerson rdf:about="#JasmineDrudgeWillson">
         <foaf:name>Jasmine Drudge-Willson</foaf:name>
-      </foaf:Person>
+      </cwrc:NaturalPerson>
     </dcterms:creator>
     <dcterms:creator>
-      <foaf:Person rdf:about="#GurjapSingh">
+      <cwrc:NaturalPerson rdf:about="#GurjapSingh">
         <foaf:name>Gurjap Singh</foaf:name>
-      </foaf:Person>
+      </cwrc:NaturalPerson>
     </dcterms:creator>
     <dcterms:creator>
-      <foaf:Person rdf:about="#JoelCummings">
+      <cwrc:NaturalPerson rdf:about="#JoelCummings">
         <foaf:name>Joel Cummings</foaf:name>
-      </foaf:Person>
+      </cwrc:NaturalPerson>
     </dcterms:creator>
     <dcterms:creator>
-      <foaf:Person rdf:about="#DebStacey">
+      <cwrc:NaturalPerson rdf:about="#DebStacey">
         <foaf:name>Deborah Stacey</foaf:name>
         <foaf:homepage rdf:resource="http://ontology.socs.uoguelph.ca/"/>
-      </foaf:Person>
+      </cwrc:NaturalPerson>
     </dcterms:creator>
     <dcterms:publisher>
       <foaf:Organization rdf:about="#cwrc">
@@ -117,16 +117,16 @@
       </foaf:Organization>
     </dcterms:publisher>
     <loc:pdr>
-      <foaf:Person rdf:about="#SusanBrown">
+      <cwrc:NaturalPerson rdf:about="#SusanBrown">
         <foaf:name>Susan Brown</foaf:name>
         <owl:sameAs rdf:resource="http://orcid.org/0000-0002-0267-7344"/>
         <foaf:homepage rdf:resource="http://www.uoguelph.ca/~sbrown/"/>
-      </foaf:Person>
+      </cwrc:NaturalPerson>
     </loc:pdr>
     <loc:ctb>
-      <foaf:Person rdf:about="#ConstanceCrompton">
+      <cwrc:NaturalPerson rdf:about="#ConstanceCrompton">
         <foaf:name>Constance Crompton</foaf:name>
-      </foaf:Person>
+      </cwrc:NaturalPerson>
     </loc:ctb>
     <loc:ctb rdf:resource="#originalOrlandoAuthor"/>
     <loc:fnd>
@@ -1209,7 +1209,7 @@
     <rdfs:label xml:lang="fr">sexualité en contexte</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
-    <skos:definition xml:lang="en">Sexuality Context is a significant subclass of @@#CulturalFormContext@@. Annotations typed as Sexuality Context provide information about and discussions of a person's subjectivity with regards to their sexuality and sexual identity. Sexuality Context provides depth to more granular categorizations of a person through the sexuality or sexuality self-reported properties. It does not provide context for individual sexual experiences and relationships (for which see @@#IntimateRelationshipContext@@), although specific relationships may be invoked to indicate the impact on a subject's life and understanding of their own sexuality. Contextualizations allow recognition of the complicated politics of sexuality, for example, considerations regarding outing, the historical specificity of some categories such as "congenital invert," the appropriation of derogatory terms, and the multiplicity of constructions. There are important politics of privacy with respect to the disclosure of a subject's sexuality, sexual orientation, and sexual identity. As far as living persons are concerned, recommended practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See (<![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>]]>)
+    <skos:definition xml:lang="en">Sexuality Context is a significant subclass of @@#CulturalFormContext@@. Annotations typed as Sexuality Context provide information about and discussions of a person's subjectivity with regards to their sexuality and sexual identity. Sexuality Context provides depth to more granular categorizations of a person through the sexuality or sexuality self-reported properties. It does not provide context for individual sexual experiences and relationships (for which see @@#IntimateRelationshipsContext@@), although specific relationships may be invoked to indicate the impact on a subject's life and understanding of their own sexuality. Contextualizations allow recognition of the complicated politics of sexuality, for example, considerations regarding outing, the historical specificity of some categories such as "congenital invert," the appropriation of derogatory terms, and the multiplicity of constructions. There are important politics of privacy with respect to the disclosure of a subject's sexuality, sexual orientation, and sexual identity. As far as living persons are concerned, recommended practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See (<![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>]]>)
     </skos:definition>
     <skos:definition xml:lang="fr">Sexualité En Contexte est une sous-classe de contexte importante. Les annotations de Sexualité En Contexte fournissent des renseignements et des discussions sur la sexualité et l'identité sexuelle d'une personne grâce à Sexualité ou Sexualité Autodéclarée. Elle n'est pas vouée à répertorier les expériences sexuelles et les relations intimes, même si certaines d'entre elles peuvent être évoquées pour indiquer leurs conséquences sur la vie du sujet ou la connaissance qu'elle a de sa propre sexualité. Ces efforts de contextualisation permettent de reconnaître l'existence de questions complexes qui entourent la sexualité, comme par exemple les politiques de délation, la spécificité historique de certaines catégories comme "inversion sexuelle", la réappropriation de termes dénigrants ou les mutliples constructions discursives. Il existe d'importantes politiques de confidentialité qui protègent les personnes contre la divulgation d'informations privées sur leur sexualité, leur orientation sexuelle et leur identité sexuelle. Pour les personnes toujours en vie, notre pratique est donc de ne nous appuyer que sur des sources ou des déclarations publiques venant des sujets eux-mêmes, afin de ne pas dévoiler par inadvertance des informations privées sur leur sexualité. Voir (<![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>]]>)
     </skos:definition>
@@ -7130,25 +7130,380 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </skos:Concept>
 
+ 
   <!-- Personal / family relationships. -->
-  <owl:ObjectProperty rdf:ID="interpersonalRelationship">
-    <rdfs:label xml:lang="en">interpersonal relationship</rdfs:label>
-    <rdfs:label xml:lang="fr">relation interpersonnelle</rdfs:label>
-    <skos:definition xml:lang="en">"An interpersonal relationship is a strong, deep, or close association or acquaintance between two or more people that may range in duration from brief to enduring. This association may be based on inference, love, solidarity, regular business interactions, or some other type of social commitment. Interpersonal relationships are formed in the context of social, cultural and other influences. The context can vary from family or kinship relations, friendship, marriage, relations with associates, work, clubs, neighborhoods, and places of worship. They may be regulated by law, custom, or mutual agreement, and are the basis of social groups and society as a whole." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr">«Une relation humaine implique au moins deux êtres humains et est souvent décrite via des typologies différentes, selon la personne s'intéressant à la nature de la relation ou plutôt aux personnes en relation. Ces relations peuvent se fonder sur l'amour, la fraternité, la solidarité, la compagnie, des interactions professionnelles ou d'autres types d'activités sociales. Les relations interpersonnelles (amoureuses ou familiales) appartiennent au contexte de la relation humaine et culturelle.» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+  <owl:ObjectProperty rdf:ID="hasSocialRelationshipWith">
+    <rdfs:label xml:lang="en">has social relationship with</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Any relationship between persons. See @@https://en.wikipedia.org/wiki/Social_relation@@ </skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="FriendsAndAssociatesContext">
+    <rdfs:label xml:lang="en">friends and associates context</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Context"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Friends and connections context is a significant subclass of context. Annotations typed as friends and connections contexts discuss a broad spectrum of social relations ranging from friendship to enmities and casual associations. Other context annotations treat related aspects of social connections, including @@#LeisureContext@@ and @@#IntimateRelationshipsContext@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="hasInterpersonalRelationshipWith">
+    <rdfs:label xml:lang="en">has interpersonal relationship with</rdfs:label>
+    <rdfs:label xml:lang="fr">a relation interpersonnelle avec</rdfs:label>
+    <skos:definition xml:lang="en">Indicates personal knowledge of someone, covering a broad spectrum of social relations ranging from friendship to enmities and casual associations: it can include a writer having coffee with Samuel Johnson on one notable day, without needing a historical record of whether they were necessarily friends, through to substantial longlasting relationships. See also @@#hasIntimateRelationshipWith@@, @@#hasEroticRelationshipWith@@, @@#hasPossiblyEroticRelationshipWith@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#hasSocialRelationshipWith"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasCohabitant">
+    <rdfs:label xml:lang="en">has cohabitant</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Describes a relationship of cohabitation which may or may not be an intimate or erotic relationship, since historical evidence with respect to the nature of such relationships is often lacking.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#hasInterpersonalRelationshipWith"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:ObjectProperty>
+
+<!-- Intimate Relations -->
+  <owl:Class rdf:ID="IntimateRelationshipsContext">
+    <rdfs:label xml:lang="en">intimate relationships context</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Context"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Intimate relationships context is a significant subclass of context. Annotations typed intimate relationships discuss any type of intimacy ranging from emotional through psychological or material to sexual.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="hasIntimateRelationshipWith">
+    <rdfs:label xml:lang="en">has intimate relationship with</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates a relationship that involves any type of intimacy ranging from emotional through psychological or material to sexual. Counters the traditional assumption that the only intimate relations happen within the context of marriage or heterosexual relations between sexual partners, challenging the historical and ideological silence placed upon same-sex relationships. For instance, it includes lifelong female friendships, defining psychological connections, or erotically-charged same sex or opposite sex relationships. It may or may not be erotic, and may apply to both brief sexual affairs and lifelong non-sexual relationships. Biographical information concerning these relationships is often scant; therefore this predicate recognizes these relations as significant while not assuming that they were sexual. See @@#hasInterpersonalRelationshipWith@@, @@#hasEroticRelationshipWith@@, @@#hasPossiblyEroticRelationshipWith@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#hasInterpersonalRelationshipWith"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasEroticRelationshipWith">
+    <rdfs:label xml:lang="en">has erotic relationship with</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Describes intimate relationships that are erotic and/or explicitly sexual. Erotic in this context sometimes suggests that sexuality was an issue in the relationship, whether or not it was acted upon. In not wishing to assume that heterosexual relations between sexual partners are the only standard for intimate relationships, we include both erotic and non-erotic relations as central to a subject’s life and use @@#hasEroticRelationshipWith@@ to distinguish between the two. See @@#hasInterpersonalRelationshipWith@@, @@#hasEroticRelationshipWith@@, @@#hasIntimateRelationshipWith@@, @@#hasPossiblyEroticRelationshipWith@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIntimateRelationshipWith"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasNonEroticRelationshipWith">
+    <rdfs:label xml:lang="en">has non-erotic relationship with</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Describes an intimate relationship with the subject that is neither erotic nor sexual in nature. See @@#hasInterpersonalRelationshipWith@@, @@#hasEroticRelationshipWith@@, @@#hasIntimateRelationshipWith@@, @@#hasPossiblyEroticRelationshipWith@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIntimateRelationshipWith"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasPossiblyEroticRelationshipWith">
+    <rdfs:label xml:lang="en">has possibly erotic relationship with</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Describes an intimate relationship that may or may not be erotic in nature. This predicate seeks to redress the historical and ideological silence placed upon same sex relationships; it recognizes that biographical information concerning these relationships often is impossible to uncover. @@#hasPossiblyEroticRelationshipWith@@ registers the possibility of a sexual relationship, when, in the absence of biographical proof, it is impossible to claim such as fact. See @@#hasInterpersonalRelationshipWith@@, @@#hasEroticRelationshipWith@@, @@#hasIntimateRelationshipWith@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIntimateRelationshipWith"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:ObjectProperty>
+
+<!-- Childlessness -->
+  <owl:ObjectProperty rdf:ID="hasChildren">
+    <rdfs:label xml:lang="en">has children</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates the number of the subject's children. Values range from zero upwards, and modes of counting vary according to context because families and reproduction are complex matters. Children need not necessarily be biologically related to the subject: they may be adopted or otherwise considered a person's child. See related property @@#hasReproductiveHistory@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:related rdf:resource="#hasReproductiveHistory"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:subPropertyOf rdf:resource="#hasRelative"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasReproductiveHistory">
+    <rdfs:label xml:lang="en">has reproductive history</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Describes an aspect of a person's reproductive history.  May relate to childlessness, birth control, adoption, abortion, difficulties with childbearing, loss of a child, whether biologically related, adopted, or otherwise considered kin, difficulties with child-bearing. See also the related property @@#hasChildren@@.</skos:definition>
+    <!-- and related @@#IllnessesAndInjuries@@. to be added when-->
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#ReproductiveHistory"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="ReproductiveHistory">
+    <rdfs:label xml:lang="en">reproductive history</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en"></skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <cwrc:ReproductiveHistory rdf:about="#unspecifiedReproductiveHistory">
+    <rdfs:label xml:lang="en">unspecified</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Some aspect of the subject's reproductive history.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#ReproductiveHistory"/>
+  </cwrc:ReproductiveHistory>
+
+  <cwrc:ReproductiveHistory rdf:about="#miscarriage">
+    <rdfs:label xml:lang="en">miscarriage</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en">miscarried</skos:altLabel>
+    <skos:definition xml:lang="en">Related to a miscarriage of a pregnancy.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#ReproductiveHistory"/>
+  </cwrc:ReproductiveHistory>
+
+  <cwrc:ReproductiveHistory rdf:about="#stillbirth">
+    <rdfs:label xml:lang="en">stillbirth</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en">still birth</skos:altLabel>
+    <skos:altLabel xml:lang="en">stillborn</skos:altLabel>
+    <skos:definition xml:lang="en">Related to a stillborn child.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#ReproductiveHistory"/>
+  </cwrc:ReproductiveHistory>
+
+  <cwrc:ReproductiveHistory rdf:about="#abortion">
+    <rdfs:label xml:lang="en">abortion</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en">aborted</skos:altLabel>
+    <skos:definition xml:lang="en">Related to an abortion of a pregnancy.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#ReproductiveHistory"/>
+  </cwrc:ReproductiveHistory>
+
+  <cwrc:ReproductiveHistory rdf:about="#birthControl">
+    <rdfs:label xml:lang="en">birth control</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en">contraception</skos:altLabel>
+    <skos:altLabel xml:lang="en">family planning</skos:altLabel>
+    <skos:definition xml:lang="en">Related to birth control.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#ReproductiveHistory"/>
+  </cwrc:ReproductiveHistory>
+  
+  <cwrc:ReproductiveHistory rdf:about="#venerealDisease">
+    <rdfs:label xml:lang="en">venereal disease</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en">syphilis</skos:altLabel>
+    <skos:altLabel xml:lang="en">venereal</skos:altLabel>
+    <skos:altLabel xml:lang="en">VD</skos:altLabel>
+    <skos:definition xml:lang="en">Related to venereal disease.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#ReproductiveHistory"/>
+  </cwrc:ReproductiveHistory>
+
+  <cwrc:ReproductiveHistory rdf:about="#childlessness">
+    <rdfs:label xml:lang="en">childlessness</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en">childless</skos:altLabel>
+    <skos:altLabel xml:lang="en">no children</skos:altLabel>
+    <skos:altLabel xml:lang="en">no surviving children</skos:altLabel>
+    <skos:definition xml:lang="en">Related to voluntary or involuntary childlessness.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#ReproductiveHistory"/>
+  </cwrc:ReproductiveHistory>
+
+  <cwrc:ReproductiveHistory rdf:about="#adoption">
+    <rdfs:label xml:lang="en">adoption</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Related to adoption.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#ReproductiveHistory"/>
+  </cwrc:ReproductiveHistory>
+
+<!-- Family Stuff -->
+  <owl:Class rdf:ID="FamilyContext">
+    <rdfs:label xml:lang="en">family context</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Context"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Family Context is a significant subclass of context. Annotations typed as Family Context provide information about and discussions of a person's familial relations.  Family relationships are social bonds assumed between a group of people affiliated by blood, marriage, co-residence, or other affiliation. For more information, see @@http://dbpedia.org/page/Family@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="hasGuardian">
+    <rdfs:label xml:lang="en">has guardian</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Relates a person (usually a minor) to another, usually an adult who is charged with their care. This term stretches beyond the legal definition of "guardian" to include a broader social relation between dependant and dependee (e.g.: <![CDATA[<i>in loco parentis</i>]]>)</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#hasInterpersonalRelationshipWith"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="guardianOf">
+    <rdfs:label xml:lang="en">guardian of</rdfs:label>
+    <rdfs:label xml:lang="fr">tuteur (‑trice) / gardien (ne)</rdfs:label>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr">Une personne placé en charge du bienfait d'un personne mineure.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdfs:subPropertyOf rdf:resource="#hasInterpersonalRelationshipWith"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasGuardian"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasPartner">
+    <rdfs:label xml:lang="en">has partner</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Relates two people through a romantic, emotional, or spousal relationship. Distinct from a business or corporate partnership.</skos:definition>
+    <skos:definition xml:lang="fr">Ce terme représente uniquement les relations affectives, amoureuses ou familiales et non des relations d'affaires.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#hasRelative"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIntimateRelationshipWith"/>
+    <!-- <skos:related rdf:resource="#hasIntimateRelationshipWith"/> -->
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:sameAs rdf:resource="#partnerOf"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="partnerOf">
+    <rdfs:label xml:lang="en">partner of</rdfs:label>
+    <rdfs:label xml:lang="fr">conjoint de</rdfs:label>
+    <skos:definition xml:lang="en"></skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <!-- <skos:related rdf:resource="#hasIntimateRelationshipWith"/> -->
+    <rdfs:subPropertyOf rdf:resource="#hasIntimateRelationshipWith"/>
+    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
+    <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Partnership"/>
+    <owl:inverseOf rdf:resource="#hasPartner"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasWife">
+    <rdfs:label xml:lang="en">has wife</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Relates a person to a female-identified partner in a marital relationship.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Wife"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broader rdf:resource="https://schema.org/spouse"/>
+    <rdfs:subPropertyOf rdf:resource="#hasPartner"/>
+    <!-- <skos:related rdf:resource="#hasIntimateRelationshipWith"/> -->
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="wifeOf">
+    <rdfs:label xml:lang="en">wife of</rdfs:label>
+    <rdfs:label xml:lang="fr">femme de</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#partnerOf"/>
+    <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Partnership"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:inverseOf rdf:resource="#hasWife"/>
+    <skos:broader rdf:resource="https://schema.org/spouse"/>
+    <!-- <skos:related rdf:resource="#hasIntimateRelationshipWith"/> -->
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasHusband">
+    <rdfs:label xml:lang="en">has husband</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Relates a person to a male-identified partner in a marital relationship.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broader rdf:resource="https://schema.org/spouse"/>
+    <rdfs:subPropertyOf rdf:resource="#hasPartner"/>
+    <!-- <skos:related rdf:resource="#hasIntimateRelationshipWith"/> -->
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="husbandOf">
+    <rdfs:label xml:lang="en">husband of</rdfs:label>
+    <rdfs:label xml:lang="fr">mari de</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#partnerOf"/>
+    <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Partnership"/>
+    <skos:broader rdf:resource="https://schema.org/spouse"/>
+    <owl:inverseOf rdf:resource="#hasHusband"/>
+    <!-- <skos:related rdf:resource="#hasIntimateRelationshipWith"/> -->
   </owl:ObjectProperty>
 
 
-
+<!-- Relatives -->
   <owl:ObjectProperty rdf:ID="hasRelative">
     <rdfs:label xml:lang="en">has relative</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="en">Has a familial relationship to a person. hasRelative and its subproperties indicate social aspects of familial relations as opposed to biological ones; for example, @@#hasMother@@ is not necessarily a consanguineal relationship -- although both can be present. Family relationships are subproperties of social relationships. For more information, see @@http://dbpedia.org/page/Family@@. This property indicates either a general familial relationship or one that is complicated or not easily categorisable in traditional kinship terms.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdfs:subPropertyOf rdf:resource="#interpersonalRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#hasSocialRelationshipWith"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -7159,32 +7514,35 @@
     <rdfs:label xml:lang="en">relative of</rdfs:label>
     <rdfs:label xml:lang="fr">liens de famille</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdfs:subPropertyOf rdf:resource="#interpersonalRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#hasSocialRelationshipWith"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:inverseOf rdf:resource="#hasRelative"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="hasGuardian">
-    <rdfs:label xml:lang="en">has guardian</rdfs:label>
+  <owl:ObjectProperty rdf:ID="hasAncestor">
+    <rdfs:label xml:lang="en">has ancestor</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:definition xml:lang="en">Relates a person (usually a minor) to another, usually an adult who is charged with their care. This term stretches beyond the legal definition of "guardian" to include a broader social relation between dependant and dependee (e.g.: <![CDATA[<i>in loco parentis</i>]]>)</skos:definition>
+    <skos:altLabel xml:lang="en">forebear</skos:altLabel>
+    <skos:definition xml:lang="en">Relates a person to an ancestor or forebear, usually at a remove of two generations or more.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:subPropertyOf rdf:resource="#interpersonalRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#hasRelative"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="guardianOf">
-    <rdfs:label xml:lang="en">guardian of</rdfs:label>
-    <rdfs:label xml:lang="fr">tuteur (‑trice) / gardien (ne)</rdfs:label>
-    <skos:definition xml:lang="en"/>
-    <skos:definition xml:lang="fr">Une personne placé en charge du bienfait d'un personne mineure.</skos:definition>
+  <owl:ObjectProperty rdf:ID="ancestorOf">
+    <rdfs:label xml:lang="en">ancestor of</rdfs:label>
+    <rdfs:label xml:lang="fr">ancestor de</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdfs:subPropertyOf rdf:resource="#interpersonalRelationship"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <owl:inverseOf rdf:resource="#hasGuardian"/>
+    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
+    <owl:inverseOf rdf:resource="#hasAncestor"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasSibling">
@@ -7527,7 +7885,7 @@
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Stepchild"/>
-    <rdfs:subPropertyOf rdf:resource="#hasRelative"/>
+    <rdfs:subPropertyOf rdf:resource="#hasChild"/>
     <skos:related rdf:resource="https://schema.org/children"/>
   </owl:ObjectProperty>
 
@@ -7536,7 +7894,7 @@
     <rdfs:label xml:lang="fr">enfant d'un autre mariage</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
+    <rdfs:subPropertyOf rdf:resource="#childOf"/>
     <owl:inverseOf rdf:resource="#hasStepChild"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -7554,7 +7912,7 @@
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:subPropertyOf rdf:resource="#hasStepChild"/>
-	<skos:related rdf:resource="https://schema.org/children"/>
+  <skos:related rdf:resource="https://schema.org/children"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepDaughterOf">
@@ -7682,9 +8040,9 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subPropertyOf rdf:resource="#hasRelative"/>
-	<skos:broader rdf:resource="http://schema.org/parent"/>
-	<owl:inverseOf rdf:resource="#hasStepChild"/>
+    <rdfs:subPropertyOf rdf:resource="#hasParent"/>
+    <skos:broader rdf:resource="http://schema.org/parent"/>
+   <owl:inverseOf rdf:resource="#hasStepChild"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="stepParentOf">
@@ -7692,7 +8050,7 @@
     <rdfs:label xml:lang="fr">stepparent de</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
+    <rdfs:subPropertyOf rdf:resource="#parentOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <owl:inverseOf rdf:resource="#hasStepParent"/>
@@ -7961,85 +8319,6 @@
     <skos:broader rdf:resource="http://schema.org/relatedTo"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="hasPartner">
-    <rdfs:label xml:lang="en">has partner</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:definition xml:lang="en">Relates two people through a romantic, emotional, or spousal relationship. Distinct from a business or corporate partnership.</skos:definition>
-    <skos:definition xml:lang="fr">Ce terme représente uniquement les relations affectives, amoureuses ou familiales et non des relations d'affaires.</skos:definition>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subPropertyOf rdf:resource="#interpersonalRelationship"/>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <owl:sameAs rdf:resource="#partnerOf"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:ID="partnerOf">
-    <rdfs:label xml:lang="en">partner of</rdfs:label>
-    <rdfs:label xml:lang="fr">conjoint de</rdfs:label>
-    <skos:definition xml:lang="en"></skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subPropertyOf rdf:resource="#interpersonalRelationship"/>
-    <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Partnership"/>
-    <owl:inverseOf rdf:resource="#hasPartner"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:ID="hasWife">
-    <rdfs:label xml:lang="en">has wife</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:definition xml:lang="en">Relates a person to a female-identified partner in a marital relationship.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
-    <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Wife"/>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broader rdf:resource="https://schema.org/spouse"/>
-    <rdfs:subPropertyOf rdf:resource="#hasPartner"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:ID="wifeOf">
-    <rdfs:label xml:lang="en">wife of</rdfs:label>
-    <rdfs:label xml:lang="fr">femme de</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subPropertyOf rdf:resource="#partnerOf"/>
-    <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Partnership"/>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <owl:inverseOf rdf:resource="#hasWife"/>
-    <skos:broader rdf:resource="https://schema.org/spouse"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:ID="hasHusband">
-    <rdfs:label xml:lang="en">has husband</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:definition xml:lang="en">Relates a person to a male-identified partner in a marital relationship.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broader rdf:resource="https://schema.org/spouse"/>
-    <rdfs:subPropertyOf rdf:resource="#hasPartner"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:ID="husbandOf">
-    <rdfs:label xml:lang="en">husband of</rdfs:label>
-    <rdfs:label xml:lang="fr">mari de</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:subPropertyOf rdf:resource="#partnerOf"/>
-    <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Partnership"/>
-    <skos:broader rdf:resource="https://schema.org/spouse"/>
-    <owl:inverseOf rdf:resource="#hasHusband"/>
-  </owl:ObjectProperty>
 
 <!-- Instances of roles -->
   <cwrc:Role rdf:about="#Actor">
@@ -8055,6 +8334,20 @@
 
 <!-- All Deprecated things(properties, classes, instances in that order) -->
   <!-- Deprecated Properties -->
+  <owl:DeprecatedProperty rdf:ID="interpersonalRelationship">
+    <rdfs:label xml:lang="en">interpersonal relationship</rdfs:label>
+    <rdfs:label xml:lang="fr">relation interpersonnelle</rdfs:label>
+    <skos:definition xml:lang="en">Indicates personal knowledge of someone, covering a broad spectrum of social relations ranging from friendship to enmities and casual associations: it can include a writer having coffee with Samuel Johnson on one notable day, without needing a historical record of whether they were necessarily friends, through to substantial longlasting relationships. See also @@#hasIntimateRelationshipWith@@, @@#hasEroticRelationshipWith@@, @@#hasPossiblyEroticRelationshipWith@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#hasSocialRelationshipWith"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#hasInterpersonalRelationshipWith@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#hasInterpersonalRelationshipWith@@.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#hasInterpersonalRelationshipWith"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </owl:DeprecatedProperty>
   <owl:DeprecatedProperty rdf:ID="forebearOf">
     <rdfs:label xml:lang="en">forebear of</rdfs:label>
     <rdfs:label xml:lang="fr">ancêtre de</rdfs:label>
