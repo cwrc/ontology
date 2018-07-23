@@ -130,7 +130,7 @@ def get_definitions(element):
 
 
 def create_hyperlink(uri, label):
-    return ('<![CDATA[<a href="%s">%s</a>]]>' % (uri, label))
+    return ('<![CDATA[<a href="%s" title="%s">%s</a>]]>' % (uri,uri, label))
 
 
 def get_label(uri, lang):

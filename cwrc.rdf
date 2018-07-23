@@ -210,9 +210,9 @@
   </skos:Concept>
 
   <owl:AnnotationProperty rdf:ID="CompetencyQuestion">
-    <rdfs:label xml:lang="en">Competency Question</rdfs:label>
+    <rdfs:label xml:lang="en">competency question</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:definition xml:lang="en">A Question that can be asked of the ontology and will be used to specify the high level requirements of the CWRC Ontology allowing decisions about structure and components to be made.</skos:definition>
+    <skos:definition xml:lang="en">A question that can be asked of the ontology and will be used to specify the high level requirements of the CWRC Ontology allowing decisions about structure and components to be made.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -342,7 +342,7 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <skos:definition xml:lang="en">A persona, unlike a role, cannot be adopted by people generally, but is specific to one natural person, or more rarely several natural persons. A persona is an original creation, often bearing meaning regarding the biographical, historical and sociological context to which its/their creator/s is/are attached. Personas as defined here should not be associated with mental illness or multiple personality disorder, since they are not the product of a distorted or uncontrolled perception of reality. At the heart of a persona is an identity that is interacted with by others and that at times can be confused with an actual natural person. It is incarnated and developed by a natural person, and may have a social, literary, artistic or political activity.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">Un persona, contrairement à un rôle, ne peut être incarné par quiconque, mais est spécifique à une personne physique, ou plus rarement à plusieurs d'entre elles. Un persona est une création originale, souvent inspiré par le contexte biographique, historique et sociologique auquel son/ses créateur·ice(s) est/sont attaché·e(s). Les personae tels qu'ils sont définis ici ne doivent pas être confondus avecune maladie mentale ou à un trouble dissociatif de l'identité, car ils ne relèvent pas d'une perception déformée ou incontrôlée de la réalité. Le persona est avant tout une entité identitaire capable d'interargir avec le monde extérieur et qui peut parfois être confondue avec une personne physique réelle. Il est incarné et développé par une personne physique, et peut avoir une activité sociale, littéraire, artistique ou politique.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -377,7 +377,7 @@
     <rdfs:label xml:lang="en">certainty</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Certainty describes the quality of a fact in the ontology. It is used primarily to represent information that may not be fact.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">La probabilité décrit la qualité d'un fait dans l'ontologie. Elle est principalement utilisée pour représenter des informations qui peuvent être des faits non avérés.</skos:definition>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -702,7 +702,7 @@
   <owl:Class rdf:ID="EducationalOrganization">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <rdfs:label xml:lang="en">educational organization</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">établissement éducatif</rdfs:label>
     <skos:definition xml:lang="en">"A school is an institution designed to provide learning spaces and learning environments for the teaching of students (or "pupils") under the direction of teachers." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">«Une école est un établissement où l'on accueille des individus appelés « écoliers » afin que des professeurs leur dispensent un enseignement de façon collective.» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
@@ -757,9 +757,9 @@
   <owl:Class rdf:ID="StateSchool">
     <rdfs:subClassOf rdf:resource="#EducationalOrganization"/>
     <rdfs:label xml:lang="en">state school</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">state school</rdfs:label>
     <skos:definition xml:lang="en">"State schools (also known as public schools outside of England and Wales) generally refer to primary or secondary schools mandated for or offered to all children without charge, funded in whole or in part by taxation. The term may also refer to public institutions of post-secondary education." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">State school est un terme utilisé en Australie, en Nouvelle-Zélande et au Royaume-Uni pour distinguer les écoles gérées par le gouvernement des écoles privées.</skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -797,11 +797,13 @@
     <rdfs:label xml:lang="en">comprehensive school</rdfs:label>
     <rdfs:label xml:lang="fr">école</rdfs:label>
     <skos:definition xml:lang="en">"A comprehensive school is a secondary school or middle school that is a state school and does not select its intake on the basis of academic achievement or aptitude. This is in contrast to the selective school system, where admission is restricted on the basis of selection criteria. The term is commonly used in relation to England and Wales, where comprehensive schools were introduced on an experimental basis in the 1940s and became more widespread from 1965. About 90% of British secondary school pupils now attend comprehensive schools. They correspond broadly to the public high school in the United States and Canada and to the German Gesamtschule." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">«Après l'école primaire, on a le choix entre deux types d'établissement : grammar school (lycée) et comprehensive state (lycée général). Pour entrer dans une grammar school, il faut passer un examen nommé "11+". Les Grammar schools étant pour les étudiants les plus doués, et les places étant limitées, la grande majorité des enfants fréquentent les state comprehensive.» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Comprehensive_school"/>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Education_in_the_United_Kingdom"/>
   </owl:Class>
 
 <owl:Class rdf:ID="SecondaryModernSchool">
@@ -1154,7 +1156,9 @@
 
   <owl:Class rdf:ID="Role">
     <skos:definition xml:lang="en">A role of a Person or Actor in some Event, CreativeWork, or Organisation.</skos:definition>
+    <skos:definition xml:lang="fr">Le rôle d'une Personne ou d'un·e Acteur·ice au sein d'un Évènement, d'une Œuvre Créative ou une Organisation.</skos:definition>
     <rdfs:label xml:lang="en">role</rdfs:label>
+    <rdfs:label xml:lang="fr">Rôle</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -1203,11 +1207,11 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
     <skos:definition xml:lang="en">
-      Race or Ethnicity Context is a subclass of @@#CulturalFormContext@@, and is associated with the @@#CulturalForm@@ subclasses @@#RaceColour@@ and @@#Ethnicity@@, and sometimes other cultural forms. Annotations typed as Race or Ethnicity Context provide contextualizing information about and discussions related to a person's perceived or self-reported identity with regards to race and/or ethnicity (Race or Colour or ethnicity).
+      Race or Ethnicity Context is a subclass of @@#CulturalFormContext@@, and is associated with the @@#CulturalForm@@ subclasses @@#RaceColour@@ and @@#Ethnicity@@, and sometimes other @@#CulturalForm@@s. Annotations typed as Race or Ethnicity Context provide contextualizing information about and discussions related to a person's perceived or self-reported identity with regards to race and/or ethnicity (Race or Colour or ethnicity).
       Despite the ways in which categories of Race or Colour and ethnicity frequently serve heinous interests, their ideological and material impacts in the formation of identities requires recognition. These are shifting, historically constituted, and interestedly deployed categories whose use must be situated contextually and are understood here finally as discursive or representational although they have real material impacts. They are thus social constructs: "There is nothing more to being, or not being, a given race than the social acceptance and societal ascription of a race to a person" <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>.
     </skos:definition>
     <skos:definition xml:lang="fr">
-      Contexte Ethnique ou Racial est une sous-classe importante de Contexte, et est associée aux sous-classes @@#RaceColour@@ et @@#Ethnicity@@. Les annotations entrées en tant que Contexte Ethnique ou Racial fournissent des renseignements de contextualisation et des discussions sur l'identité d'un sujet concernant son appartenance raciale et/ou son ethnicité.
+      Contexte Ethnique ou Racial est une sous-classe importante de Contexte, et est associée aux sous-classes @@#RaceColour@@ et @@#Ethnicity@@ et parfois à d'autres formes culturelles. Les annotations entrées en tant que Contexte Ethnique ou Racial fournissent des renseignements de contextualisation et des discussions sur l'identité d'un sujet concernant son appartenance raciale et/ou son ethnicité.
       Même si les catégories de race et d'ethnicité sont fréquemment manipulées au service d'intérêts déplorables, leurs répercussions idéologiques et matérielles sur la formation identitaire requièrent qu'on les prenne en compte. Ces catégories sont changeantes, historiquement constituées, développées de façon intéressée, et leur usage doit être resitué dans leur contexte; elles sont finalement comprises ici comme discursives et représentationnelles, même si elles ont de réelles répercussions matérielles. Elles sont entendues comme des constructions sociales: «Le fait d'être ou de ne pas être d'une certaine race n'est rien de plus que l'acceptation sociale et l'attribution sociétale d'une race à une personne» <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>
     </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1271,7 +1275,7 @@
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
     <dcterms:subject rdf:resource="#PoliticalAffiliation"/>
     <skos:definition xml:lang="en">Politics Context is a significant subclass of @@#Context@@. It is associated with the @@#CulturalForm@@ subclass @@#PoliticalAffiliation@@, and sometimes other intersecting Cultural Forms. Annotations typed as Politics Context provide information about and discussions of a person's subjectivity with regards to their political identity. Politics Context provides depth to more granular categorizations of a person indicated by the properties @@#hasPoliticalAffiliation@@ and its subproperties.</skos:definition>
-    <skos:definition xml:lang="fr">Contexte Politique est une sous-classe de contexte importante. Elle est associée à @@#PoliticalAffiliation@@, sous-classe de @@#CulturalForm@@, et recoupe parfois avec d'autres Formes Culturelles. Les annotations entrées en tant que Contexte Politique fournissent des informations et des discussions sur la subjectivité d'une personne en lien avec son activité politique. Contexte Politique explore plus en détails les catégories granulaires d'une personne grâce aux propriétés @@#hasPoliticalAffiliation@@ ou @@#hasPoliticalAffiliationSelfReported@@.</skos:definition>
+    <skos:definition xml:lang="fr">Contexte Politique est une sous-classe de @@#Context@@ importante. Elle est associée à @@#PoliticalAffiliation@@, sous-classe de @@#CulturalForm@@, et recoupe parfois avec d'autres Formes Culturelles. Les annotations entrées en tant que Contexte Politique fournissent des informations et des discussions sur la subjectivité d'une personne en lien avec son activité politique. Contexte Politique explore plus en détails les catégories granulaires d'une personne grâce aux propriétés @@#hasPoliticalAffiliation@@ ou @@#hasPoliticalAffiliationSelfReported@@).</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -1457,11 +1461,11 @@
 <!-- Nationalities -->
   <owl:Class rdf:ID="NationalIdentity">
     <rdfs:label xml:lang="en">national identity</rdfs:label>
-    <rdfs:label xml:lang="fr">nationalité</rdfs:label>
+    <rdfs:label xml:lang="fr">identité nationale</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A subclass of @@#CulturalForm@@, this property indicates a person's national identity, either as self-reported or as assigned by others, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. It is neither the same as citizenship nor commensurate with the geographical region or territory in which a person resides, although it is usually associated with a current or former country or geographic region. For this reason, the (see <![CDATA[<a href="https://en.wikipedia.org/wiki/ISO_3166-2">ISO 2-digit Codes for the representation of names of countries and their subdivisions – Part 2: Country subdivision codes</a>]]>) are used where possible to represent instances of national identities, and only terms for which country codes do not exist appear in this ontology. Like other identity categories, nationality may be plural, fluid, or contingent, and terms used for national identities can intersect with @@#NationalHeritage@@, @@#GeographicHeritage@@, and @@#Ethnicity@@ as well as other identity categories. Those using this class and its instances are encouraged to consult associated @@#NationalityContext@@ annotations, if available.</skos:definition>
-    <skos:definition xml:lang="fr">Une sous-catégorie de @@#CulturalForm@@, cette propriété indique la nationalité d'une personne, accompagnée du contexte fourni par les annotations de @@#NationalityContext@@ lorsqu'il est disponible. Elle diffère de la citoyenneté et n'est pas proportionnelle à la zone géographique ou au territoire de la personne, même si elle est généralement liée au pays ou à la zone géographique actuelle ou passée. Pour cette raison, (vois <![CDATA[<a href="https://fr.wikipedia.org/wiki/ISO_3166-2">les codes de la norme ISO 2 pour la représentation des pays et de leurs subdivisions-Partie 2 : Codes des subdivisions des pays</a>]]>) sont utilisés dans la mesure du possible pour représenter les instances de nationalités, et seuls les termes pour lesquels aucun code pays n'existe apparaissent dans l'ontologie. Comme d'autres catégories identitaires, la nationalité peut être plurielle, fluide ou contingente, et recoupe avec @@#NationalHeritage@@ ainsi qu'avec d'autres catégories identitaires. Les personnes qui utilisent cette classe et ses instances sont encouragées à consulter les annotations de @@#NationalityContext@@ lorsqu'elles sont disponibles.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-catégorie de @@#CulturalForm@@, cette propriété indique la nationalité d'une personne, qu'elle soit autodéclarée ou attribuée par d'autres, accompagnée du contexte fourni par les annotations de @@#NationalityContext@@ lorsqu'il est disponible. Elle diffère de la citoyenneté et n'est pas proportionnelle à la zone géographique ou au territoire de la personne, même si elle est généralement liée au pays ou à la zone géographique actuelle ou passée. Pour cette raison, (vois <![CDATA[<a href="https://fr.wikipedia.org/wiki/ISO_3166-2">les codes de la norme ISO 2 pour la représentation des pays et de leurs subdivisions-Partie 2 : Codes des subdivisions des pays</a>]]>) sont utilisés dans la mesure du possible pour représenter les instances de nationalités, et seuls les termes pour lesquels aucun code pays n'existe apparaissent dans l'ontologie. Comme d'autres catégories identitaires, la nationalité peut être plurielle, fluide ou contingente, et recoupe avec @@#NationalHeritage@@ ainsi qu'avec d'autres catégories identitaires. Les personnes qui utilisent cette classe et ses instances sont encouragées à consulter les annotations de @@#NationalityContext@@ lorsqu'elles sont disponibles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -1600,8 +1604,9 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A human language or dialect, whether spoken and/or written.</skos:definition>
-    <skos:definition xml:lang="fr">Écrit ou Parlé. Pour des raisons opérationnelles, cette classe est équivalente à la classe de langage iso639 publiée par la Library of Congress.</skos:definition>
-    <skos:note> <![CDATA[<a href="http://id.loc.gov/vocabulary/languages.html">Library of Congress Languages</a>]]> codes are typically used for instances of <![CDATA[<i>language</i>]]> .</skos:note>
+    <skos:definition xml:lang="fr">Une langue ou un dialecte humain, à l'oral et/ou à l'écrit.</skos:definition>
+    <skos:note xml:lang="en"> <![CDATA[<a href="http://id.loc.gov/vocabulary/languages.html">Library of Congress Languages</a>]]> codes are typically used for instances of <![CDATA[<i>language</i>]]> .</skos:note>
+    <skos:note xml:lang="fr"> Les codes de la <![CDATA[<a href="http://id.loc.gov/vocabulary/languages.html">Bibliothèque du congrès</a>]]> sont normalement utilisés pour les instances de <![CDATA[<i>language</i>]]>.</skos:note>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/iso639-1/iso639-1_Language"/>
@@ -1614,7 +1619,8 @@
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A subclass of @@#CulturalForm@@, this property indicates a person's geographic heritage, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. Geographic heritage involves the geographical origins of a person's family, which often contributes to an understanding of their racial and ethnic background. It offers a way to capture individuals identified as "South-Asian," for example, when no more precise national heritage is indicated. See @@#RaceEthnicityContext@@ for a detailed description of the complexities of this class. It can be multiple and it can be different from a person's national identity or national heritage, current or official citizenship, or the geographical region or territory in which a person resides. Those using this class and its instances are encouraged to consult associated @@#NationalityContext@@ excerpts or annotations, if available.</skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe de @@#CulturalForm@@, Héritage Géographique indique l'héritage géographique d'une personne, accompagné du contexte fourni par @@#NationalityContext@@ lorsqu'il est disponible. L'héritage géographique inclut les origines géographiques de la famille du sujet, souvent utiles à la compréhension de son milieu ethnique et raciale. Cela permet par exemple de saisir l'identité des femmes qui se déclarent «sud-asiatiques», alors que nous n'en savons pas plus sur leur héritage national. Voir @@#RaceEthnicityContext@@ pour un compte-rendu détaillé de la complexité de cette classe. L'héritage géographique peut être pluriel et peut différer de l'identité ou de l'héritage national, de la citoyenneté actuelle ou officielle, et de la région géographique ou du lieu de résidence. Les personnes qui utilisent cette classe et ses instances sont encouragées à consulter les extraits ou les annotations de @@#NationalityContext@@ lorsqu'ils sont disponibles.</skos:definition>
-    <skos:note> <![CDATA[<a href="http://geonames.org/">Geonames</a>]]> terms are often used for locations and for many instances of @@#GeographicHeritage@@.</skos:note>
+    <skos:note xml:lang="en"><![CDATA[<a href="http://geonames.org/">Geonames</a>]]> terms are often used for locations and for many instances of @@#GeographicHeritage@@.</skos:note>
+    <skos:note xml:lang="fr">Les termes <![CDATA[<a href="http://geonames.org/">Geonames</a>]]> sont souvent utilisés pour les lieux et de nombreuses instances @@#GeographicHeritage@@.</skos:note>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -1835,8 +1841,8 @@
     <rdfs:label xml:lang="fr">sexualité</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">A subclass of @@#CulturalForm@@ and linked to @@#SexualityContext@@, Sexuality properties indicate in a word or phrase identifications or aspects of sexuality (i.e., "lesbian," "monogamous," "heterosexual" but also "promiscuous") not as a means of shutting down but advancing investigation and critical analysis of these identifications. The association assumes that sexual identity does not function in an essentialist manner but can be plural and fluid, so multiple designations can be applied to a single person can be associated with multiple terms. Sexual identity may come from the subject her/himself or be ascribed by others. Terms may be in tension or mutually exclusive, they may reflect different life stages, and they may or may not reflect actual sexual practices. Linking a person to the term "lesbian" as a sexualityIdentity class, for instance, does not necessarily signify that the subject was in any definitive sense a lesbian; such identifications are often impossible for reasons of historical gaps and silences. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See (<![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>]]>)</skos:definition>
-    <skos:definition xml:lang="fr">Une sous-classe de @@#CulturalForm@@ liée à @@#SexualityContext@@, les propriétés de Sexualité indiquent en un mot ou en une phrase les identifications ou les aspects de la sexualité (par exemple «lesbienne», «monogame», «hétérosexuelle», mais aussi «ouverte»), non pas pour clore la discussion mais pour développer l'étude et l'analyse critique de ces catégories. Comme l'identité sexuelle peut être plurielle et fluide, une même personne est susceptible d'être associée à plusieurs termes. L'identité sexuelle peut être formulée par la personne elle-même ou être assignée par d'autres individus. Les termes utilisés peuvent se trouver en tension ou se montrer incompatibles, et reflètent différentes périodes de l'existence. Par exemple, lier une personne au terme «lesbienne» comme classe de sexualité ne signifie pas nécessairement que cette dernière était définitivement lesbienne, car une telle identification est souvent impossible à cause de lacunes et de silences historiques. En ce qui concerne les personnes toujours en vie, nous ne nous appuyons que sur des sources ou des déclarations publiques faites par le sujet elle/lui-même afin de ne pas dévoiler par inadvertance des informations privées sur sa sexualité. Voir <![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan 2016</a>]]></skos:definition>
+    <skos:definition xml:lang="en">A subclass of @@#CulturalForm@@ and linked to @@#SexualityContext@@, Sexuality properties indicate in a word or phrase identifications or aspects of sexuality (i.e., "lesbian," "monogamous," "heterosexual" but also "promiscuous") not as a means of shutting down but advancing investigation and critical analysis of these identifications. The association assumes that sexual identity does not function in an essentialist manner but can be plural and fluid, so multiple designations can be applied to a single person can be associated with multiple terms. Sexual identity may come from the subject her/himself or be ascribed by others. Terms may be in tension or mutually exclusive, they may reflect different life stages, and they may or may not reflect actual sexual practices. Linking a person to the term @@#lesbian@@ as a sexual identity, for instance, does not necessarily signify that the subject was in any definitive sense a lesbian; such identifications are often impossible for reasons of historical gaps and silences. As far as living persons are concerned, our practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See (<![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>]]>)</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-classe de @@#CulturalForm@@ liée à @@#SexualityContext@@, les propriétés de Sexualité indiquent en un mot ou en une phrase les identifications ou les aspects de la sexualité (par exemple «lesbienne», «monogame», «hétérosexuelle», mais aussi «promiscuité»), non pas pour clore la discussion mais pour développer l'étude et l'analyse critique de ces catégories. Comme l'identité sexuelle peut être plurielle et fluide, une même personne est susceptible d'être associée à plusieurs termes. L'identité sexuelle peut être formulée par la personne elle-même ou être assignée par d'autres individus. Les termes utilisés peuvent se trouver en tension ou se montrer incompatibles, et reflètent différentes périodes de l'existence. Par exemple, lier une personne au terme «lesbienne» comme classe de sexualité ne signifie pas nécessairement que cette dernière était définitivement lesbienne, car une telle identification est souvent impossible à cause de lacunes et de silences historiques. En ce qui concerne les personnes toujours en vie, nous ne nous appuyons que sur des sources ou des déclarations publiques faites par le sujet elle/lui-même afin de ne pas dévoiler par inadvertance des informations privées sur sa sexualité. Voir <![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan 2016</a>]]></skos:definition>
     <owl:sameAs rdf:resource="http://homosaurus.org/terms/sexualIdentity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1948,7 +1954,7 @@
       A subclass of @@#CulturalForm@@, this property indicates a person's race or colour, often as presumed, perceived, or otherwise assigned according to cultural conventions, with accompanying context, where present, provided by @@#RaceEthnicityContext@@ annotations. Despite the ways in which categories of race or colour frequently serve heinous interests, their ideological and material impacts in the formation of identities requires recognition. These are shifting, historically constituted, and interestedly deployed categories whose use must be situated contextually and which are understood here finally as discursive or representational although they have real material impacts. They are thus as social constructs: "There is nothing more to being, or not being, a given race than the social acceptance and societal ascription of a race to a person" <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>. This ontology therefore does not attempt to lay out an exact, fully defined, or mutually exclusive set of racial categories: this is an impossibility given their shifting use and the overlap among them and with identity categories for ethnicity, geography, and nationality. Those applying this class and its instances are encouraged not to let privileged identities operate as an unspoken given or to use this class solely in relation to the marginalized. Those concerned about "white" and "black" as homogenizing categories are encouraged to reach for specificity through plural categories and representations of intersectionality, and to consult @@#RaceEthnicityContext@@ annotations, if available.
     </skos:definition>
     <skos:definition xml:lang="fr">
-      Sous-classe de @@#CulturalForm@@, cette propriété indique l'appartenance raciale ou la couleur d'une personne, souvent telle qu'elle est présupposée, perçue ou autrement assignée selon des conventions culturelles, en parallèle avec le contexte fourni par les annotation de Race ou Ethnicité lorsqu'il est présent. Même si les catégories de race ou de couleur sont fréquemment manipulées au service d'intérêts déplorables, leurs répercussions idéologiques et matérielles sur la formation identitaire requiert qu'on les prenne en compte. Ces catégories changeantes, historiquement constituées, développées de façon intéressée, et dont l'usage doit être resitué en contexte sont enfin comprises ici comme discursives et représentationnelles, même si leurs répercussions matérielles sont bien réelles. Ce sont donc des constructions sociales: «Le fait d'appartenir ou non à une race donnée n'est rien de plus que l'acceptation sociale et l'attribution sociétale d'une race à une personne» <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>.
+      Sous-classe de @@#CulturalForm@@, cette propriété indique l'appartenance raciale ou la couleur d'une personne, souvent telle qu'elle est présupposée, perçue ou autrement assignée selon des conventions culturelles, en parallèle avec le contexte fourni par les annotation de @@#RaceEthnicityContext@@ lorsqu'il est présent. Même si les catégories de race ou de couleur sont fréquemment manipulées au service d'intérêts déplorables, leurs répercussions idéologiques et matérielles sur la formation identitaire requiert qu'on les prenne en compte. Ces catégories changeantes, historiquement constituées, développées de façon intéressée, et dont l'usage doit être resitué en contexte sont enfin comprises ici comme discursives et représentationnelles, même si leurs répercussions matérielles sont bien réelles. Ce sont donc des constructions sociales: «Le fait d'appartenir ou non à une race donnée n'est rien de plus que l'acceptation sociale et l'attribution sociétale d'une race à une personne» <![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>.
       Cette ontologie ne prétend donc pas offrir un ensemble de catégories raciales exact, complètement défini, ou mutuellement exclusif, ce qui est impossible étant donné leur utilisation en changement constant et leur chevauchement mutuel ou avec d'autres catégories identitaires utilisées pour l'ethnicité, la géographie ou la nationalité. Les personnes qui appliquent ces catégories et sous-catégories sont encouragées à ne pas faire fonctionner les identités privilégiées comme si elles étaient consensuelles et évidentes, ou à utiliser cette classe seulement en relation avec des populations marginalisées. Les personnes préoccupées par le fait que «blanc» et «noir» sont des catégories homogénéisantes sont encouragées à atteindre la spécificité à travers la pluralité des catégories et les représentations intersectionnelles, ainsi qu'à consulter les annotations associés à @@#RaceEthnicityContext@@ s'ils sont fournis.
     </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -2678,7 +2684,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">A subclass of @@#CulturalForm@@, this describes a person's religion(s) or belief system(s). Note that while atheism denotes the absence of religion, we use the Religion label for convenience.</skos:definition>
-    <skos:definition xml:lang="fr">Une sous-classe de @@#CulturalForm@@, les propriétés de religion associent les sujets à une religion ou un système de croyance particulier. Les types d'affiliation et les pratiques changent au cours du temps car elles varient considérablement en fonction de la religion, de la personne et des différents contextes. Cette propriété peut inclure ou non indiquer l'adhésion formelle à une organisation religieuse associée.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-classe de @@#CulturalForm@@,décrit la/les religion(s) ou le(s) système(s) de croyance d'une personne. Notez que par commodité nous utilisons l'étiquette Religion pour l'athéisme, même si le terme indique l'absence de religion.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -3506,11 +3512,11 @@
   <!-- Political Affiliations -->
   <owl:Class rdf:ID="PoliticalAffiliation">
     <rdfs:label xml:lang="en">political affiliation</rdfs:label>
-    <rdfs:label xml:lang="fr">affiliation politique</rdfs:label>
+    <rdfs:label xml:lang="fr">appartenance politique</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
     <skos:definition xml:lang="en">This subclass of CulturalForm indicates affiliations, connections and associations which designate a person's political involvement. These affiliations can be both formal connections to a party or organisation and informal political positions held by the writer. Political affiliations are defined broadly and include things like "against capital punishment" or "strong supporter of the Empire" in addition to more straightforward affiliations such as "marxist" or "conservative. Political affiliations can be multiple, sometimes contradictory, and may change over time."</skos:definition>
-    <skos:definition xml:lang="fr">Une sous-classe de Forme Culturelle, Affiliation Politique indique l'engagement politiques d'une personne ainsi que les connexions, les associations et les opinions qui y sont liées. Les affiliations renvoient à la fois aux connexions formelles avec un parti ou une organisation —telle que l'adhésion au parti— et aux autres partis pris politiques informels du sujet. Les affiliations politiques peuvent être multiple, parfois contradictoires ou en tension, et peuvent changer au cours du temps.</skos:definition>
+    <skos:definition xml:lang="fr">Cette sous-classe de forme culturelle indique les appartenances, les connexions et les associations qui font partie de l'engagement politique d'une personne. Elles renvoient aussi bien aux connexions formelles avec un parti ou une organisation qu'aux autres partis pris politiques informels de l'auteur·e. Les appartenances politiques sont définies au sens large et incluent des exemples comme « lutte contre la peine de mort » ou « fervent·e défenseur·se de l'Empire » en plus d'appartenance plus directes telles que « marxiste » ou « conservateur·ice ». Les appartenances politiques peuvent être multiple, parfois contradictoires ou en tension, et peuvent changer au cours du temps.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -6694,7 +6700,7 @@
 
   <owl:ObjectProperty rdf:ID="hasPoliticalAffiliation">
     <rdfs:label xml:lang="en">has political affiliation</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">a une appartenance politique</rdfs:label>
     <skos:definition xml:lang="en">Describes a person's political affiliation, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#PoliticalContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#PoliticalAffiliation@@.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <owl:inverseOf rdf:resource="#politicalAffiliationOf"/>
@@ -6705,7 +6711,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasPoliticalAffiliationSelfReported">
     <rdfs:label xml:lang="en">has political affiliation (self-reported)</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">a une appartenance politique (autodéclarée)</rdfs:label>
     <skos:definition xml:lang="en">Describes a person's self-reported political affiliation. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#PoliticalAffiliation@@.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <owl:inverseOf rdf:resource="#politicalAffiliationSelfReportedOf"/>
@@ -7017,7 +7023,7 @@
   <owl:Class rdf:ID="TextLabels">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:label xml:lang="en">textual label</rdfs:label>
-    <rdfs:label xml:lang="fr">étiquette</rdfs:label>
+    <rdfs:label xml:lang="fr">étiquettes textuelles</rdfs:label>
     <skos:definition xml:lang="en">Collection of ambiguous or overloaded labels associated with contested concepts.</skos:definition>
     <skos:definition xml:lang="fr">Ensemble des étiquettes ambigues au sein du jeu d'étiquettes d'Orlando.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -7030,7 +7036,7 @@
     <rdfs:label xml:lang="en">white identity</rdfs:label>
     <rdfs:label xml:lang="fr">identité blanche</rdfs:label>
     <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of whiteness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "White" cultural identities (e.g. the cultural forms of @@#whiteEthnicity@@, white in the discursive context of ethnicity, and @@#whiteRaceColour@@, white in the discursive context of race or colour).</skos:definition>
-    <skos:definition xml:lang="fr">Une sous-classe d'Étiquettes Textuelles, cette étiquette discursive reflète l'ambiguité de la blancheur de peau en tant que charactérique physique associée à diverses formes culturelles. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «blanches" (par exemple @@#whiteEthnicity@@, @@#whiteRaceColour@@).</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-classe d'Étiquettes Textuelles, cette étiquette discursive reflète l'ambiguité de la blancheur de peau en tant que charactérique physique associée à diverses formes culturelles. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «blanches» (par exemple @@#whiteEthnicity@@, @@#whiteRaceColour@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
     <cwrc:represents rdf:resource="#whiteEthnicity"/>
     <cwrc:represents rdf:resource="#whiteRaceColour"/>
