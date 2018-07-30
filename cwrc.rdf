@@ -538,8 +538,8 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-<!-- Other Contexts -->
 
+<!-- Other Contexts -->
   <owl:Class rdf:ID="WealthContext">
     <rdfs:label xml:lang="en">wealth context</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
@@ -666,6 +666,177 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#BirthPosition"/>
   </cwrc:BirthPosition>
+
+<!-- Death -->
+  <owl:Class rdf:ID="DeathContext">
+    <rdfs:label xml:lang="en">death context</rdfs:label>
+    <rdfs:label xml:lang="fr">décès en contexte</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#BiographyContext"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as death context provide information about and discussions of a person's death. See @@http://dbpedia.org/page/Death@@.</skos:definition>
+    <skos:definition xml:lang="fr">Classe de @@#Context@@ importante. Les annotations entrées comme contexte de décès fournissent des renseignements et des discussions sur le décès de la personne. Voir @@http://dbpedia.org/page/Death@@ </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="hasCauseOfDeath">
+    <rdfs:label xml:lang="en">has cause of death</rdfs:label>
+    <rdfs:label xml:lang="fr">a une cause de décès</rdfs:label>
+    <skos:definition xml:lang="en">Describes a person's death.</skos:definition>
+    <skos:definition xml:lang="fr">Décrit le décès d'une personne.</skos:definition>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+<!-- Location -->
+  <owl:Class rdf:ID="SpatialContext">
+    <rdfs:label xml:lang="en">spatial context</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#BiographyContext"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as spatial context provide information about and discussions of aspects of a person's connections to geospatial locations. Spatial information is also associated in a range of ways with other properties and events such as a person's @@#GeographicHeritage@@, a place of publication, or the setting of literary texts.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="relatesSpatiallyTo">
+    <rdfs:label xml:lang="en">related spatially to</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates an entity's connection to a geospatial location.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="inhabits">
+    <rdfs:label xml:lang="en">inhabited</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates that a person lived in this place.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:inverseOf rdf:resource="#hasInhabitant"/>
+    <rdfs:subPropertyOf rdf:resource="#relatesSpatiallyTo"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasInhabitant">
+    <rdfs:label xml:lang="en">has inhabitant</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#relatesSpatiallyTo"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="travelsTo">
+    <rdfs:label xml:lang="en">travelled to</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates that a person travelled to this place.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:inverseOf rdf:resource="#hasTraveller"/>
+    <rdfs:subPropertyOf rdf:resource="#relatesSpatiallyTo"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasTraveller">
+    <rdfs:label xml:lang="en">has traveller</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#relatesSpatiallyTo"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="relocatesTo">
+    <rdfs:label xml:lang="en">moved to</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates that a person moved to this place.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:inverseOf rdf:resource="#hasRelocatee"/>
+    <rdfs:subPropertyOf rdf:resource="#inhabits"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasRelocatee">
+    <rdfs:label xml:lang="en">has relocatee</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#hasInhabitant"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="migratesFrom">
+    <rdfs:label xml:lang="en">emigrated from</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates that a person migrated from this place.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:inverseOf rdf:resource="#hasEmigrant"/>
+    <rdfs:subPropertyOf rdf:resource="#inhabits"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasEmigrant">
+    <rdfs:label xml:lang="en">has emigrant</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#hasInhabitant"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="migratesTo">
+    <rdfs:label xml:lang="en">immigrated to</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates that a person immigrated to this place.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:inverseOf rdf:resource="#hasImmigrant"/>
+    <rdfs:subPropertyOf rdf:resource="#inhabits"/>
+    <rdfs:subPropertyOf rdf:resource="#travelsTo"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasImmigrant">
+    <rdfs:label xml:lang="en">has relocatee</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#hasInhabitant"/>
+    <rdfs:subPropertyOf rdf:resource="#hasTraveller"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="visits">
+    <rdfs:label xml:lang="en">immigrated to</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates that a person visited this place.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:inverseOf rdf:resource="#hasVistor"/>
+    <rdfs:subPropertyOf rdf:resource="#travelledTo"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasVistor">
+    <rdfs:label xml:lang="en">has vistor</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#hasTraveller"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
 
 
 <!-- Organizations -->
@@ -6705,10 +6876,112 @@
     <skos:definition xml:lang="fr"></skos:definition>
     <owl:inverseOf rdf:resource="#politicalAffiliationOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:range rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
+<!-- New terms -->
+  <!-- <owl:ObjectProperty rdf:ID="hasPoliticalParticipantIn">
+    <rdfs:label xml:lang="en">has political participation in</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates some level of political involvement.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:inverseOf rdf:resource="#politicalParticipantOf"/>
+    <rdfs:subPropertyOf rdf:resource="#hasPoliticalAffiliation"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="politicalParticipantOf">
+    <rdfs:label xml:lang="en">political participant of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#politicalAffiliationOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:domainIncludes rdf:resource="#PoliticalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasPoliticalMembershipIn">
+    <rdfs:label xml:lang="en">has political membership in</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates some degree of sustained engagement with an organization such as a political group or literary movement. Does not necessarily denote formal membership, but rather points to clear evidence of a link with an organization without indication of more active participation: a person may have been a member of the @@#sanitaryMovement@@ or participated in a reading associated with a particular literary movement.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:inverseOf rdf:resource="#hasPoliticalMember"/>
+    <rdfs:subPropertyOf rdf:resource="hasPoliticalParticipantIn"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasPoliticalMember">
+    <rdfs:label xml:lang="en">has political member</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#politicalParticipantOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:domainIncludes rdf:resource="#PoliticalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasActivistInvolvement">
+    <rdfs:label xml:lang="en">has activist involvement</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates the highest level of political involvement in a particular cause. It indicates such activities as suffragists chaining themselves to railings or women camping out at Greenham Common, as well as very active leadership roles in a political organization. Thus Josephine Butler, founder of the Ladies' National Association Against the Contagious Diseases Acts, qualifies as activist for having founded the organization, directed its activities, and for speaking publicly at meetings at considerable personal risk.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:inverseOf rdf:resource="#activistInvolvementOf"/>
+    <rdfs:subPropertyOf rdf:resource="#hasPoliticalMembershipIn"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="activistInvolvementOf">
+    <rdfs:label xml:lang="en">activist involvement of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#hasPoliticalMember"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:domainIncludes rdf:resource="#PoliticalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasGenderedPoliticalActivity">
+    <rdfs:label xml:lang="en">has gendered political activity</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en"></skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:inverseOf rdf:resource="#genderedPoliticalActivityOf"/>
+    <rdfs:subPropertyOf rdf:resource="#hasPoliticalAffiliation"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="genderedPoliticalActivityOf">
+    <rdfs:label xml:lang="en">gendered political activity of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#politicalAffiliationOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:domainIncludes rdf:resource="#PoliticalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty> -->
+
   <owl:ObjectProperty rdf:ID="hasPoliticalAffiliationSelfReported">
     <rdfs:label xml:lang="en">has political affiliation (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">a une appartenance politique (autodéclarée)</rdfs:label>
@@ -6717,7 +6990,8 @@
     <owl:inverseOf rdf:resource="#politicalAffiliationSelfReportedOf"/>
     <rdfs:subPropertyOf rdf:resource="#hasPoliticalAffiliation"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:range rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -6729,7 +7003,8 @@
     <owl:inverseOf rdf:resource="#politicalAffiliationReportedOf"/>
     <rdfs:subPropertyOf rdf:resource="#hasPoliticalAffiliation"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:range rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -6738,7 +7013,8 @@
     <rdfs:label xml:lang="en">political affiliation of</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:domain rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:domainIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:domainIncludes rdf:resource="#PoliticalOrganization"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -6747,7 +7023,8 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#politicalAffiliationOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:domain rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:domainIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:domainIncludes rdf:resource="#PoliticalOrganization"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -6756,7 +7033,8 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#politicalAffiliationOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:domain rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:domainIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:domainIncludes rdf:resource="#PoliticalOrganization"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
