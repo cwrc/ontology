@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xml:base="http://sparql.cwrc.ca/ontologies/cwrc#"
   xmlns="http://sparql.cwrc.ca/ontologies/cwrc#"
+  xmlns:bibo="http://purl.org/ontology/bibo/"
   xmlns:bio="http://purl.org/vocab/bio/0.1/"
   xmlns:cc="http://creativecommons.org/ns#"
   xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#"
   xmlns:dbpedia="http://dbpedia.org/resource/"
   xmlns:dcterms="http://purl.org/dc/terms/"
-  xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:eurovoc="http://eurovoc.europa.eu/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:geonames="http://sws.geonames.org/"
+  xmlns:gvp="http://vocab.getty.edu/ontology#"
   xmlns:loc="http://id.loc.gov/vocabulary/relators/"
-  xmlns:bibo="http://purl.org/ontology/bibo/"
   xmlns:oa="http://www.w3.org/ns/oa#"
   xmlns:org="http://www.w3.org/ns/org#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -485,7 +486,7 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasParticipant">
-    <rdfs:label xml:lang="en">has Participant</rdfs:label>
+    <rdfs:label xml:lang="en">has participant</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Associates an event with a person.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
@@ -808,7 +809,7 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasImmigrant">
-    <rdfs:label xml:lang="en">has relocatee</rdfs:label>
+    <rdfs:label xml:lang="en">has immigrant</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#hasInhabitant"/>
     <rdfs:subPropertyOf rdf:resource="#hasTraveller"/>
@@ -818,12 +819,12 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="visits">
-    <rdfs:label xml:lang="en">immigrated to</rdfs:label>
+    <rdfs:label xml:lang="en">visits</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Indicates that a person visited this place.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <owl:inverseOf rdf:resource="#hasVistor"/>
-    <rdfs:subPropertyOf rdf:resource="#travelledTo"/>
+    <rdfs:subPropertyOf rdf:resource="#travelsTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -3686,7 +3687,7 @@
     <rdfs:label xml:lang="fr">appartenance politique</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:subClassOf rdf:resource="#CulturalForm"/>
-    <skos:definition xml:lang="en">This subclass of CulturalForm indicates affiliations, connections and associations which designate a person's political involvement. These affiliations can be both formal connections to a party or organisation and informal political positions held by the writer. Political affiliations are defined broadly and include things like "against capital punishment" or "strong supporter of the Empire" in addition to more straightforward affiliations such as "marxist" or "conservative. Political affiliations can be multiple, sometimes contradictory, and may change over time."</skos:definition>
+    <skos:definition xml:lang="en">This subclass of CulturalForm indicates affiliations, connections and associations which designate a person's political involvement. These affiliations can be both formal connections to a party or organisation and informal political positions held by the writer. Political affiliations are defined broadly and include things like "against capital punishment" or "strong supporter of the Empire" in addition to more straightforward affiliations such as "marxist" or "conservative". Political affiliations can be multiple, sometimes contradictory, and may change over time.</skos:definition>
     <skos:definition xml:lang="fr">Cette sous-classe de forme culturelle indique les appartenances, les connexions et les associations qui font partie de l'engagement politique d'une personne. Elles renvoient aussi bien aux connexions formelles avec un parti ou une organisation qu'aux autres partis pris politiques informels de l'auteur·e. Les appartenances politiques sont définies au sens large et incluent des exemples comme « lutte contre la peine de mort » ou « fervent·e défenseur·se de l'Empire » en plus d'appartenance plus directes telles que « marxiste » ou « conservateur·ice ». Les appartenances politiques peuvent être multiple, parfois contradictoires ou en tension, et peuvent changer au cours du temps.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -6881,13 +6882,14 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
+
 <!-- New terms -->
-  <!-- <owl:ObjectProperty rdf:ID="hasPoliticalParticipantIn">
-    <rdfs:label xml:lang="en">has political participation in</rdfs:label>
+  <owl:ObjectProperty rdf:ID="hasGenderedPoliticalActivity">
+    <rdfs:label xml:lang="en">has gendered political activity</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:definition xml:lang="en">Indicates some level of political involvement.</skos:definition>
+    <skos:definition xml:lang="en"></skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
-    <owl:inverseOf rdf:resource="#politicalParticipantOf"/>
+    <owl:inverseOf rdf:resource="#hasGenderedPoliticalActivityFrom"/>
     <rdfs:subPropertyOf rdf:resource="#hasPoliticalAffiliation"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
@@ -6895,9 +6897,32 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasGenderedPoliticalActivityFrom">
+    <rdfs:label xml:lang="en">has gendered political activity from</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#politicalAffiliationOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:domainIncludes rdf:resource="#PoliticalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty> 
 
-  <owl:ObjectProperty rdf:ID="politicalParticipantOf">
-    <rdfs:label xml:lang="en">political participant of</rdfs:label>
+  <owl:ObjectProperty rdf:ID="hasPoliticalInvolvementIn">
+    <rdfs:label xml:lang="en">has political involvement in</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates some level of political involvement.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:inverseOf rdf:resource="#hasPoliticalInvolvementFrom"/>
+    <rdfs:subPropertyOf rdf:resource="#hasPoliticalAffiliation"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasPoliticalInvolvementFrom">
+    <rdfs:label xml:lang="en">has political involvement from</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#politicalAffiliationOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -6906,38 +6931,38 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-
+  
   <owl:ObjectProperty rdf:ID="hasPoliticalMembershipIn">
     <rdfs:label xml:lang="en">has political membership in</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Indicates some degree of sustained engagement with an organization such as a political group or literary movement. Does not necessarily denote formal membership, but rather points to clear evidence of a link with an organization without indication of more active participation: a person may have been a member of the @@#sanitaryMovement@@ or participated in a reading associated with a particular literary movement.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
-    <owl:inverseOf rdf:resource="#hasPoliticalMember"/>
-    <rdfs:subPropertyOf rdf:resource="hasPoliticalParticipantIn"/>
+    <owl:inverseOf rdf:resource="#hasPoliticalMembershipFrom"/>
+    <rdfs:subPropertyOf rdf:resource="hasPoliticalInvolvementIn"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:ID="hasPoliticalMember">
-    <rdfs:label xml:lang="en">has political member</rdfs:label>
+  <owl:ObjectProperty rdf:ID="hasPoliticalMembershipFrom">
+    <rdfs:label xml:lang="en">has political membership from</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#politicalParticipantOf"/>
+    <rdfs:subPropertyOf rdf:resource="#hasPoliticalInvolvementFrom"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:domainIncludes rdf:resource="#PoliticalAffiliation"/>
     <cwrc:domainIncludes rdf:resource="#PoliticalOrganization"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
+  
 
-  <owl:ObjectProperty rdf:ID="hasActivistInvolvement">
-    <rdfs:label xml:lang="en">has activist involvement</rdfs:label>
+  <owl:ObjectProperty rdf:ID="hasActivistInvolvementIn">
+    <rdfs:label xml:lang="en">has activist involvement in</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Indicates the highest level of political involvement in a particular cause. It indicates such activities as suffragists chaining themselves to railings or women camping out at Greenham Common, as well as very active leadership roles in a political organization. Thus Josephine Butler, founder of the Ladies' National Association Against the Contagious Diseases Acts, qualifies as activist for having founded the organization, directed its activities, and for speaking publicly at meetings at considerable personal risk.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
-    <owl:inverseOf rdf:resource="#activistInvolvementOf"/>
+    <owl:inverseOf rdf:resource="#hasActivistInvolvementFrom"/>
     <rdfs:subPropertyOf rdf:resource="#hasPoliticalMembershipIn"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
@@ -6946,41 +6971,16 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="activistInvolvementOf">
-    <rdfs:label xml:lang="en">activist involvement of</rdfs:label>
+  <owl:ObjectProperty rdf:ID="hasActivistInvolvementFrom">
+    <rdfs:label xml:lang="en">has activist involvement from</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#hasPoliticalMember"/>
+    <rdfs:subPropertyOf rdf:resource="#hasPoliticalMembershipFrom"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:domainIncludes rdf:resource="#PoliticalAffiliation"/>
     <cwrc:domainIncludes rdf:resource="#PoliticalOrganization"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:ID="hasGenderedPoliticalActivity">
-    <rdfs:label xml:lang="en">has gendered political activity</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:definition xml:lang="en"></skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
-    <owl:inverseOf rdf:resource="#genderedPoliticalActivityOf"/>
-    <rdfs:subPropertyOf rdf:resource="#hasPoliticalAffiliation"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
-    <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:ID="genderedPoliticalActivityOf">
-    <rdfs:label xml:lang="en">gendered political activity of</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#politicalAffiliationOf"/>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:domainIncludes rdf:resource="#PoliticalAffiliation"/>
-    <cwrc:domainIncludes rdf:resource="#PoliticalOrganization"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty> -->
 
   <owl:ObjectProperty rdf:ID="hasPoliticalAffiliationSelfReported">
     <rdfs:label xml:lang="en">has political affiliation (self-reported)</rdfs:label>
