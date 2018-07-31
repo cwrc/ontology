@@ -5,6 +5,16 @@
 import rdflib
 import argparse
 
+# TODO:
+
+# Optional labels on edges
+
+# Handle external terms ex cwrc:NaturalPerson subclass of foaf:Person
+# auto do relations depending if it's a class or object property
+
+# do something with lonely nodes
+# option to used uris vs labels, default goes with label if available else uses last bit of uri 
+
 # Important nspaces
 RDF = rdflib.Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 VANN = rdflib.Namespace("http://purl.org/vocab/vann/")
@@ -18,15 +28,19 @@ relations = {
     "subPropertyOf": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
     "subClassOf": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
     "inverseOf": "http://www.w3.org/2002/07/owl#inverseOf",
+    "SymmetricProperty": "http://www.w3.org/2002/07/owl#SymmetricProperty",
+    "sameAs": "http://www.w3.org/2002/07/owl#sameAs",
 }
 relation_style = {
     "broaderTransitive": "",
-    "related": " [style=dashed,dir=none]",
-    "narrowerTransitive": " [dir=back]",
-    "contraryTo": " [color=red dir=none]",
-    "subPropertyOf": "[color=blue]",
-    "subClassOf": "[color=blue]",
-    "inverseOf": "[color=red dir=both]",
+    "related": " [style=dashed,dir=none ]",  # label=related]",
+    "narrowerTransitive": " [dir=back ]",  # label=narrowerTransitive]",
+    "contraryTo": " [color=red dir=none ]",  # label=contraryTo]",
+    "subPropertyOf": "[color=blue ]",  # label=subPropertyOf]",
+    "subClassOf": "[color=blue ]",  # label=subClassOf]",
+    "inverseOf": "[color=red dir=both ]",  # label=inverseOf]",
+    "SymmetricProperty": "[color=green dir=both ]",  # label=SymmetricProperty]",
+    "sameAs": "[dir=none ]",  # label=sameAs]",
 }
 
 
@@ -54,14 +68,21 @@ def get_class_uri(taxonomy):
         onto_prefix = onto_prefix[0]
     else:
         onto_prefix = None
-
+# TODO: GET uri to only show relations for cwrc properties
+    # print(onto_prefix)
+    # print(namespace_dict)
+    # print(namespace_dict[onto_prefix])
+    # print(*namespace_dict, sep="\n")
+    # exit()
     if onto_prefix in namespace_dict:
         class_uri = namespace_dict[onto_prefix]
-    elif "" in namespace_dict:
+    elif '' in namespace_dict:
         class_uri = namespace_dict['']
+        # print(class_uri)
     else:
         class_uri = [x for x in o_graph.subjects(RDF.type, OWL.Ontology)][0]
         onto_prefix = {value: key for (key, value) in all_ns}[class_uri]
+        # spec_uri =
 
     if ":" in taxonomy:
         temp = taxonomy.split(":")[0]
@@ -93,14 +114,37 @@ def get_uri_term(uri):
     return str(uri)[index:]
 
 
+def get_symmetric(instances):
+    relation = "SymmetricProperty"
+    relation_list = []
+    # for s, p, o in o_graph.triples((None, RDF.type, rdflib.term.URIRef(relations[relation]))):
+    #     print(s, p, o)
+    for x in instances:
+        # print(type(x))
+        # print(o_graph)
+        # if (x, RDF.type, relations[relation]) in o_graph:
+        #     print(x)
+        #     print(relations[relation])
+
+        if (x, RDF.type, rdflib.term.URIRef(relations[relation])) in o_graph:
+            # print(relations[relation])
+            origTerm = "__" + get_uri_term(str(x)).replace("-", "_") + "__"
+            relation_list.append(origTerm + "->" + origTerm + relation_style[relation])
+    # exit()
+    return relation_list
+
+
 def get_relation(instances, relation):
     relation_list = []
     for x in instances:
         query_str = "SELECT * WHERE { <%s>  <%s> ?upper . }" % (x, relations[relation])
         origTerm = "__" + get_uri_term(str(x)).replace("-", "_") + "__"
         for row in o_graph.query(query_str):
+            # if :
+            #     pass
+            new_term = "__" + get_uri_term(str(row[0])).replace("-", "_") + "__"
             relation_list.append(
-                origTerm + "->" + "__" + get_uri_term(str(row[0])).replace("-", "_") + "__" + relation_style[relation])
+                origTerm + "->" + new_term + relation_style[relation])
     return relation_list
 
 
@@ -141,6 +185,8 @@ def main():
 
     if args.subPropertyOf:
         relation_list = get_relation(instances, "subPropertyOf")  # + get_relation(instances, "inverseOf")
+        if args.inverseOf:
+            relation_list += get_relation(instances, "inverseOf")
     elif args.subClassOf:
         relation_list = get_relation(instances, "subClassOf")
     elif args.inverseOf:
@@ -155,6 +201,10 @@ def main():
             relation_list += get_relation(instances, "related")
         if args.contraryTo:
             relation_list += get_relation(instances, "contraryTo")
+        if args.sameAs:
+            relation_list += get_relation(instances, "sameAs")
+        if args.SymmetricProperty:
+            relation_list += get_symmetric(instances)
 
     # organizing node details --> abrahamicReligions [label="Abrahamic religions" URL="http://sparql.cwrc.ca/ontologies/cwrc#abrahamicReligions"]
     lonely_nodes = [x for x in instances if not any(

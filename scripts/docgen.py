@@ -8,6 +8,12 @@ import urllib.request
 # from log import *
 # log = Log("log/docgen")
 # log.test_name("Debugging Document Generator")
+# TODO:
+# Handle ontologies that use rdfs:comment as definitions
+# Handle terms that don't have a label but a foaf name
+# Handle definitions with no language attributes
+# Fix Protege support
+# Fix inverse term with language support
 
 spec_url = None
 spec_ns = None
@@ -324,7 +330,7 @@ def create_term_main(term, uri):
     comment = get_comment_list(uri)
 
     inverse_uri = None
-    if (uri, RDF.type, OWL.ObjectProperty) in o_graph and defn == []:
+    if (uri, RDF.type, OWL.ObjectProperty) in o_graph and defn == [] and comment == []:
         if (uri, OWL.inverseOf, None) in o_graph:
             inverse_uri = [o for o in o_graph.objects(uri, OWL.inverseOf)][0]
         elif (None, OWL.inverseOf, uri) in o_graph:
@@ -432,7 +438,7 @@ def create_term_inverse_html(uri):
             html_str += "<tr>\n"
             html_str += """<th>%s:</th>\n""" % inverse_r[x]
             html_str += "<td>\n"
-            for y in inverse_dict[x][str(uri)]:
+            for y in sorted(inverse_dict[x][str(uri)]):
                 if str(y) not in deprecated_uris:
                     html_str += '<a href="%s" title="%s">%s</a> ' % (
                         get_link(y), str(get_label_dict(rdflib.term.URIRef(y))), get_prefix(y))
@@ -488,7 +494,13 @@ def create_term_html(uri):
 
 def get_comment_list(uri):
     comment = o_graph.objects(uri, RDFS.comment)
-    return [str(x) for x in comment if x.language == lang]
+    test = [str(x) for x in comment if x.language == lang]
+    # comment = [str(x) for x in comment]
+    if test:
+        return test
+
+    for s, p, o in o_graph.triples((uri, RDFS.comment, None)):
+        return[o]
 
 
 def get_label_dict(uri):
