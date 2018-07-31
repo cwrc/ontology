@@ -222,7 +222,6 @@
   <!-- End Boilerplate -->
 
   <!-- CWRC Shareable Properties -->
-
   <owl:ObjectProperty rdf:about="#rangeIncludes">
     <rdfs:label xml:lang="en">range includes</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
@@ -269,9 +268,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-
   <!-- Change Sets -->
-
   <owl:Class rdf:ID="ChangeSet">
     <rdfs:label xml:lang="en">change set</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
@@ -576,7 +573,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
-
+<!--Occupation  -->
   <owl:Class rdf:ID="OccupationContext">
     <rdfs:label xml:lang="en">occupation context</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
@@ -588,7 +585,105 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
+  <owl:Class rdf:ID="Occupation">
+    <rdfs:label xml:lang="en">occupation</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A position, activity, job, or profession, whether paid, unpaid, or voluntary.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
 
+  <owl:ObjectProperty rdf:ID="hasOccupation">
+    <rdfs:label xml:lang="en">has occupation</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates a regular position or activity significant to a person's life, including paid, unpaid, and voluntary work.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:inverseOf rdf:resource="#occupationOf"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Occupation"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="occupationOf">
+    <rdfs:label xml:lang="en">occupation of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#Occupation"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasVolunteerOccupation">
+    <rdfs:label xml:lang="en">has volunteer occupation</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates a regular role or activity that was voluntary rather than paid, including philanthropic activity.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasOccupation"/>
+    <owl:inverseOf rdf:resource="#volunteerOccupationOf"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Occupation"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="volunteerOccupationOf">
+    <rdfs:label xml:lang="en">volunteer occupation of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#occupationOf"/>
+    <rdfs:domain rdf:resource="#Occupation"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasPaidOccupation">
+    <rdfs:label xml:lang="en">has paid occupation</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates a position or activity for which a person was paid.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasOccupation"/>
+    <owl:inverseOf rdf:resource="#paidOccupationOf"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Occupation"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="paidOccupationOf">
+    <rdfs:label xml:lang="en">paid occupation of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#occupationOf"/>
+    <rdfs:domain rdf:resource="#Occupation"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasFamilyBasedOccupation">
+    <rdfs:label xml:lang="en">has family-based occupation</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates a position or activity that was family-directed, typically bread-winning businesses rather than domestic work although the two may overlap.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasOccupation"/>
+    <owl:inverseOf rdf:resource="#familyBasedOccupationOf"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Occupation"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="familyBasedOccupationOf">
+    <rdfs:label xml:lang="en">family-based occupation of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#occupationOf"/>
+    <rdfs:domain rdf:resource="#Occupation"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  
+    
+  
 
 
 <!-- Birth -->
@@ -1230,10 +1325,7 @@
     <rdfs:label xml:lang="fr">a une récompense</rdfs:label>
     <skos:definition xml:lang="en">Indicates an award, prize, or recognition that a person has won, such as a literary award or an @@#educationalAwardPrize@@.</skos:definition>
     <skos:definition xml:lang="fr">Indique une récompense, un prix ou une distinction qu'une personne a gagné, tel qu'un prix littéraire ou un prix d'éducation.</skos:definition>
-    <rdfs:domain rdf:resource="#EducationalAward"/>
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:ID="awardedTo"/>
-    </owl:inverseOf>
+    <owl:inverseOf rdf:resource="#awardedTo"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -1243,7 +1335,6 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"></skos:definition>
-    <rdfs:range rdf:resource="#EducationalAward"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -7051,6 +7142,15 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="socialClassOf">
+    <rdfs:label xml:lang="en">class identity of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#SocialClass"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:ID="hasSocialClassSelfReported">
     <rdfs:label xml:lang="en">has class identity (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">a classe sociale autodéclarée</rdfs:label>
@@ -7063,6 +7163,16 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="socialClassSelfReportedOf">
+    <rdfs:label xml:lang="en">class identity (self-reported) of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#socialClassOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#SocialClass"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:ID="hasSocialClassReported">
     <rdfs:label xml:lang="en">has class identity (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">a classe sociale déclarée</rdfs:label>
@@ -7072,24 +7182,6 @@
     <rdfs:subPropertyOf rdf:resource="#hasSocialClass"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#SocialClass"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:ID="socialClassOf">
-    <rdfs:label xml:lang="en">class identity of</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:domain rdf:resource="#SocialClass"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="socialClassSelfReportedOf">
-    <rdfs:label xml:lang="en">class identity (self-reported) of</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#socialClassOf"/>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:domain rdf:resource="#SocialClass"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
