@@ -72,6 +72,7 @@ figures/genreTaxonomy-$(DATE_W_LANG).svg: genre.rdf scripts/createTaxonomy.py
 # generating spec
 $(ONTOLOGY_W_DATE)-$(O_LANG).html: $(ONTOLOGY_W_DATE).rdf $(ONTOLOGY)-template2-$(DATE_W_LANG).html scripts/docgen.py
 	python3 scripts/docgen.py $(ONTOLOGY_W_DATE).rdf $(ONTOLOGY)-template2-$(DATE_W_LANG).html  $@  $(O_LANG)
+	cp -f $(ONTOLOGY_W_DATE)-$(O_LANG).html $(ONTOLOGY)-$(O_LANG).html
 $(ONTOLOGY).html: $(ONTOLOGY_W_DATE)-EN.html
 	cp -f $(ONTOLOGY_W_DATE)-EN.html $@
 

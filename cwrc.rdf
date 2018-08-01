@@ -681,8 +681,49 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:ID="hasOccupationIncome">
+    <rdfs:label xml:lang="en">has occupation income</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Describes or provides information regarding a person's incomes related to an occupation.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:related rdf:resource="#hasOccupation"/>
+    <owl:inverseOf rdf:resource="#occupationIncomeOf"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="occupationIncomeOf">
+    <rdfs:label xml:lang="en">occupation income of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
 
-
+  <owl:ObjectProperty rdf:ID="hasEmployer">
+    <rdfs:label xml:lang="en">has employer</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates a person's employer.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:related rdf:resource="#hasOccupation"/>
+    <owl:inverseOf rdf:resource="#hasEmployee"/>
+    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasEmployee">
+    <rdfs:label xml:lang="en">has employee</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
 
 
 
