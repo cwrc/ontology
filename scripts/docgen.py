@@ -9,6 +9,7 @@ import urllib.request
 # log = Log("log/docgen")
 # log.test_name("Debugging Document Generator")
 # TODO:
+# Make instances in def'n table into 5 column chart that's more readable
 # Handle ontologies that use rdfs:comment as definitions
 # Handle terms that don't have a label but a foaf name
 # Handle definitions with no language attributes

@@ -5,7 +5,11 @@
     "http://sparql.cwrc.ca/ontologies/cwrc#domainIncludes": "Within Domain",
     "http://sparql.cwrc.ca/ontologies/cwrc#rangeIncludes": "Within Range",
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": "Children Properties",
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": "Children Classes"
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": "Children Classes",
+    "http://www.w3.org/2004/02/skos/core#broaderTransitive": "skos:narrowerTransitive",
+    "http://www.w3.org/2004/02/skos/core#narrowerTransitive": "skos:broaderTransitive",
+    "http://www.w3.org/2004/02/skos/core#broader": "skos:narrower",
+    "http://www.w3.org/2004/02/skos/core#narrower": "skos:broader"
   },
   "symmetric": [
     "http://www.w3.org/2002/07/owl#inverseOf",
