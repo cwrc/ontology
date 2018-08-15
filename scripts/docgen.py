@@ -8,13 +8,29 @@ import urllib.request
 # from log import *
 # log = Log("log/docgen")
 # log.test_name("Debugging Document Generator")
+
 # TODO:
-# Make instances in def'n table into 5 column chart that's more readable
-# Handle ontologies that use rdfs:comment as definitions
-# Handle terms that don't have a label but a foaf name
-# Handle definitions with no language attributes
-# Fix Protege support
+# 1 Make instances in def'n table into 5 column chart that's more readable
+# 2 Double check validity of uris when they're relative uris
+ # search ontology for if it's a term
+# 3 Fix Protege support
+
+# External testing
+ # Handle ontologies that use rdfs:comment as definitions
+ # Handle terms that don't have a label but a foaf name
+ # Handle definitions with no language attributes
+
 # Fix inverse term with language support
+# Create relations.json by loading ontologies in the namespace
+# Collapse inferred inverse relations with declarative ones?
+
+# Move out translations to external file
+
+# General error handling
+ # unable to load ontology
+ # missing json file
+ # no namespace uri
+ # no namespace prefix
 
 spec_url = None
 spec_ns = None
