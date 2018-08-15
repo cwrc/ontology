@@ -827,6 +827,25 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:ID="hasBurialPlace">
+    <rdfs:label xml:lang="en">has burial place</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates where a person was buried after death.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasInhabitant"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="burialPlaceOf">
+    <rdfs:label xml:lang="en">burial place of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
 <!-- Location -->
   <owl:Class rdf:ID="SpatialContext">
     <rdfs:label xml:lang="en">spatial context</rdfs:label>
