@@ -221,6 +221,15 @@
 
   <!-- End Boilerplate -->
 
+  <owl:ObjectProperty rdf:about="#hasIDependencyOn">
+    <rdfs:label xml:lang="en">has ID dependency on</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates that the subject entity is dependent upon the identifications made in the object entity. For instance, this predicate can be used to link web annotations with bodies containing RDF triples to annotations that identify entities used in those triples.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:domain rdf:resource="#Context"/>
+    <rdfs:range rdf:resource="#Context"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
   <!-- CWRC Shareable Properties -->
   <owl:ObjectProperty rdf:about="#rangeIncludes">
     <rdfs:label xml:lang="en">range includes</rdfs:label>
