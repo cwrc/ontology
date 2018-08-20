@@ -27,6 +27,12 @@ p.h4.text-muted {
 .instancestype > .specterm h5 {
     /*padding: 0;*/
 }
+
+.instances td > ul {
+    padding-left: 0;
+    columns: 5 280px;
+}
+
 table {
     /*table-layout: fixed;*/
     word-wrap: break-word;
@@ -96,8 +102,10 @@ section .table thead>tr>th, section .table tbody>tr>th, section .table tfoot>tr>
     border: none;
     border-top: 1px solid #444;
     border-bottom: 1px solid #444;
-    max-width: 60px;
+    max-width: 60%;
     line-break:;
+    /* column-count: 5; */
+    /* columns: 5 280px; */
 }
 dl {
     margin: 0;

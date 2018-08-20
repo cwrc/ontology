@@ -402,6 +402,7 @@ def create_term_extra(term_dict, uri, term):
     html_str += """<td>%s:%s</td>\n""" % (spec_pre, term)
     html_str += "</tr>\n"
 
+    #TODO: figure out why this occurs 
     pred_dict.pop("foaf1:subject", None)
     for x in sorted(pred_dict.keys()):
         html_str += "<tr>\n"
@@ -439,10 +440,11 @@ def create_term_extra(term_dict, uri, term):
     instance_list = [get_uri_term(str(s)) for s in o_graph.subjects(
         RDF.type, uri) if str(s) not in deprecated_uris]
     if instance_list:
-        html_str += "<tr>\n"
+        html_str += "<tr class=\"instances\">\n"
         html_str += """<th><a href="#%s" title="%s Instances" >Instances</a>:</th>\n""" % (
             spec_pre + "%3A" + term, spec_pre + ":" + term)
-        html_str += create_row(sorted(instance_list), listitem=False)
+        # html_str += create_row(sorted(instance_list), listitem=False)
+        html_str += create_row(sorted(instance_list))
         html_str += "</tr>\n"
 
     html_str += "</tbody>\n"
