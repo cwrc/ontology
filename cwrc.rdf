@@ -214,7 +214,7 @@
     <rdfs:label xml:lang="en">competency question</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">A question that can be asked of the ontology and will be used to specify the high level requirements of the CWRC Ontology allowing decisions about structure and components to be made.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">Une question qui peut être posée à l’ontologie et servira à déterminer les exigences ontologiques de haut niveau du CSÉC, permettant ainsi de prendre des décisions sur sa structure et ses composants.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:AnnotationProperty>
@@ -383,7 +383,7 @@
 
   <owl:Class rdf:ID="Certainty">
     <rdfs:label xml:lang="en">certainty</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">probabilité</rdfs:label>
     <skos:definition xml:lang="en">Certainty describes the quality of a fact in the ontology. It is used primarily to represent information that may not be fact.</skos:definition>
     <skos:definition xml:lang="fr">La probabilité décrit la qualité d'un fait dans l'ontologie. Elle est principalement utilisée pour représenter des informations qui peuvent être des faits non avérés.</skos:definition>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -417,36 +417,36 @@
 
   <cwrc:Certainty rdf:about="#lowCertainty">
     <rdfs:label xml:lang="en">low certainty</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">faible probabilité</rdfs:label>
     <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that represents cases where where a fact is considered of low quality</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">Une valeur de probabilité prédéfinie utilisée dans le cas où un fait est considéré comme une information de basse qualité.</skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </cwrc:Certainty>
 
   <cwrc:Certainty rdf:about="#mediumCertainty">
     <rdfs:label xml:lang="en">medium certainty</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">probabilité moyenne</rdfs:label>
     <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that represents cases where where a fact is considered of medium quality</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">Une valeur de probabilité prédéfinie utilisée dans le cas où un fait est considéré comme une information de qualité moyenne.</skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </cwrc:Certainty>
 
   <cwrc:Certainty rdf:about="#highCertainty">
     <rdfs:label xml:lang="en">high certainty</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">forte probabilité</rdfs:label>
     <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that represents cases where where a fact is considered of high quality</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">Une valeur de probabilité prédéfinie utilisée dans le cas où un fait est considéré comme une information de haute qualité.</skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </cwrc:Certainty>
 
   <cwrc:Certainty rdf:about="#unknownCertainty">
     <rdfs:label xml:lang="en">unknown certainty</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">probabilité inconnue</rdfs:label>
     <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that is used when one does not want to assert an opinion on certainty</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">Une valeur de probabilité prédéfinie utilisée lorsque l'on ne veut pas exprimer d'opinion sur la probabilité.</skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </cwrc:Certainty>
@@ -1647,6 +1647,8 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Anglo-Irish_people"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
   </cwrc:NationalHeritage>
   <cwrc:NationalHeritage rdf:about="#bengaliNationalHeritage">
     <rdfs:label xml:lang="en">bengali</rdfs:label>
@@ -1655,6 +1657,8 @@
     <skos:inScheme rdf:resource="#NationalHeritage"/>
     <skos:definition xml:lang="en">"Bengal (bɛŋgəl; Bengali: বাংলা and বঙ্গ) is a region in Asia which is located in the eastern part of the Indian subcontinent at the apex of the Bay of Bengal. Geographically, it is made up by the Ganges-Brahmaputra delta system, the largest such formation in the world; along with mountains in its north (bordering the Himalayan states) and east (bordering Northeast India and Burma). Politically, Bengal is divided between the sovereign republic of Bangladesh, which covers two-thirds of the region, and West Bengal, which is a part of the Republic of India, in the western part of the region. In 2011, the population of Bengal was estimated to be 250 million, making it the most densely populated region in South Asia. An estimated 160 million people live in Bangladesh, while 91.3 million people live in West Bengal. The predominant ethno-linguistic group are the Bengali people, who speak the Indo-Aryan Bengali language. Bengali Muslims are the majority in Bangladesh. Bengali Hindus are the majority in West Bengal. Outside Bengal proper, the Indian territories of Tripura, the Barak Valley of Assam and the Andaman and Nicobar Islands; as well as Myanmar's Rakhine State; are also home to significant communities with Bengali heritage. Dense woodlands, including hilly rainforests, cover Bengal's northern and eastern areas; while an elevated forested plateau covers its central area. In the littoral southwest are the Sunderbans, the world's largest mangrove forest and home of the Bengal tiger. In the coastal southeast lies Cox's Bazaar, the longest beach in the world at 125 km (78 mi). The Bengali calendar divides the region's climate into six seasons. Bengal has played a major role in the history of Asia. In antiquity, its kingdoms were known as seafaring nations. At times an independent regional empire, or a bastion of larger empires, the historical region was a leading power of the Indian subcontinent and the Islamic East. It had extensive trade networks. Bengali culture has had a significant influence on other cultures, especially in the fields of literature, music, art, architecture, sports, commerce, politics and cuisine." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">«Le Bengale désigne aujourd'hui une zone géographique de l'est du sous-continent indien aujourd'hui partagée entre l'Inde et le Bangladesh. Le nom de Bengale n'a pas recouvert exactement la même zone au fil des siècles. Cette zone recoupe également plus ou moins l'aire de distribution de la langue bengali.» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Bengal"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1666,17 +1670,21 @@
     <skos:inScheme rdf:resource="#NationalHeritage"/>
     <skos:definition xml:lang="en">"Cornish people or Cornish (Cornish: Kernowyon) are an ethnic group associated with Cornwall, in the south west of Great Britain, administered as part of England, and a recognised national minority in the United Kingdom. The Cornish thus represent a distinct ethnic group within the UK, which can trace its roots to the ancient Britons who inhabited southern and central Great Britain before the Roman conquest, and some in the county today continue to assert a distinct identity, separately or in addition to English or British identities. Cornish identity has been adopted by migrants into Cornwall, as well as by emigrant and descendant communities from Cornwall, the latter sometimes referred to as the Cornish diaspora. Although not included as an explicit option in the UK census, the numbers of" <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">«Les Corniques sont un groupe ethnique originaire des Cornouailles, en Angleterre (à ne pas confondre avec les Cornouaillais qui sont les habitants de la Cornouaille — sans « s » —, région de Bretagne). C'est un peuple celtique qui parlait la langue cornique jusqu'au XVIIIe siècle et qui s'est mis à la cultiver de nouveau depuis le XXe siècle, bien que de manière minoritaire. Selon une enquête de 2004, 35 % des habitants des Cornouailles se considèrent corniques (environ 181 000 personnes).» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Cornish_people"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:NationalHeritage>
   <cwrc:NationalHeritage rdf:about="#africanNationalHeritage">
     <rdfs:label xml:lang="en">African</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">Africain</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#NationalHeritage"/>
     <skos:definition xml:lang="en">"The African diaspora refers to the communities throughout the world that have resulted by descent from the movement in historic times of peoples from Africa, predominantly to the Americas, Europe, the Middle East, Asia, and among other areas around the globe. The term has been historically applied in particular to the descendants of the West and Central Africans who were enslaved and shipped to the Americas in the Atlantic slave trade between the 16th and 19th centuries, with their largest populations in Brazil (see Afro-Brazilian), the United States, and others. Some scholars identify "four circulatory phases" of migration out of Africa." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">«La diaspora africaine est une population qui résulte de la déportation d'Africains à l'époque de la traite esclavagiste du XVIe au XIXe siècle et de leurs descendants à travers le monde d'une part, et du phénomène d'émigration d'autre part. Ils habitent plus particulièrement sur le continent américain dans les Caraïbes, aux Guyanes (Guyane, Guyana et Suriname), aux États-Unis, au Canada, en Amérique centrale et en Amérique du Sud (dans tous les pays sauf au Chili et Argentine). Ils sont minoritaires partout sauf aux Antilles, où la population résulte du métissage entre Européens et Africains.» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/African_diaspora"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1688,6 +1696,8 @@
     <skos:inScheme rdf:resource="#NationalHeritage"/>
     <skos:definition xml:lang="en">"The Dutch (Dutch: ), occasionally referred to as Netherlanders—a term that is cognate to the Dutch word for Dutch people, "Nederlanders"—are a Germanic ethnic group native to the Netherlands. They share a common culture and speak the Dutch language. Dutch people and their descendants are found in migrant communities worldwide, notably in Aruba, Suriname, Guyana, Curaçao, Argentina, Brazil, Canada, Australia, South Africa, New Zealand, and the United States." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">«Le peuple néerlandais est un groupe ethnique originaire des Pays-Bas. Les Néerlandais partagent une culture commune et parlent le néerlandais. Le peuple néerlandais et ses descendants sont présents sur tous les continents des suites de la colonisation européenne, et particulièrement au Suriname, au Chili, au Brésil, au Canada, en Australie, en Afrique du Sud, en Nouvelle-Zélande et aux États-Unis.» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Dutch_people"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1699,6 +1709,8 @@
     <skos:inScheme rdf:resource="#NationalHeritage"/>
     <skos:definition xml:lang="en">"The Flemish or Flemings (Dutch: Vlamingen) are a Germanic ethnic group, who speak Flemish Dutch. They are mostly found in the contemporary region of Flanders. They are one of two principal ethnic groups in Belgium, the other being the French-speaking Walloons. The Flemings make up the majority of the Belgian population (about 60%). Historically, all inhabitants of the medieval County of Flanders were called Flemings, irrespective of the language spoken. The contemporary region of Flanders comprises a part of this historical county, as well as parts of the medieval duchy of Brabant and the medieval county of Loon." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">«La « Flandre » ou les « Flandres » est un toponyme à la source de confusions et de débats dû à ses multiples usages pour définir au fil du temps des zones géographiquement, politiquement, historiquement, linguistiquement et ethniquement différentes. Les occupants successifs de ce territoire ont nommé de la même manière des entités diverses et des formes différentes d'une unique entité, ce qui entraîne des divergences de perception aussi bien pour ses habitants que pour les étrangers. Ces derniers ont préféré occulter leurs origines flamandes et se définir comme :» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Flemish_people"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1710,17 +1722,21 @@
     <skos:inScheme rdf:resource="#NationalHeritage"/>
     <skos:definition xml:lang="en">"The Iroquois (/ˈɪrəkwɔɪ/ or /ˈɪrəkwɑː/) or Haudenosaunee (/ˈhoʊdənoʊˈʃoʊni/) are a historically powerful and important northeast Native American confederacy. They were known during the colonial years to the French as the "Iroquois League," and later as the "Iroquois Confederacy," and to the English as the "Five Nations" (before 1722), and later as the "Six Nations," comprising the Mohawk, Onondaga, Oneida, Cayuga, Seneca, and Tuscarora peoples." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">«Les Iroquois (ou Haudenosaunee) connus aussi par l'expression Cinq-Nations comprennent effectivement cinq et puis plus tard six nations amérindiennes de langues iroquoises vivant historiquement dans le nord de l'État de New York aux États-Unis, au sud du lac Ontario et du fleuve Saint-Laurent. La plupart des quelque 125 000 Iroquois vivent aujourd'hui en Ontario au Canada et dans l'État de New York. D'autres vivent au Wisconsin, au Québec et en Oklahoma. Seule une petite minorité des Iroquois parle aujourd'hui une des langues iroquoises dont notamment près de 1 500 locuteurs du mohawk dans le village Kahnawake, au sud de Montréal.» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Iroquois"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:NationalHeritage>
   <cwrc:NationalHeritage rdf:about="#jewishNationalHeritage">
     <rdfs:label xml:lang="en">Jewish</rdfs:label>
-    <rdfs:label xml:lang="fr">Juifs</rdfs:label>
+    <rdfs:label xml:lang="fr">Juif</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#NationalHeritage"/>
     <skos:definition xml:lang="en">"The Jews (/dʒuːz/; Hebrew: יְהוּדִים ISO 259-3 Yehudim, Israeli pronunciation [jehuˈdim]), also known as the Jewish people, are an ethnoreligious group originating from the Israelites, or Hebrews, of the Ancient Near East. Jewish ethnicity, nationhood and religion are strongly interrelated, as Judaism is the traditional faith of the Jewish nation, while its observance varies from strict observance to complete nonobservance." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">«Les Juifs (en hébreu : יְהוּדִים / yehoudim, en grec ancien : Ἰουδαῖοι / Ioudaĩoi, en latin : Iudaei, etc.) sont les membres d’un peuple lié à sa propre religion, le judaïsme, et au sens large du terme à une appartenance ethnique et religieuse.» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Jews"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1731,7 +1747,9 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#NationalHeritage"/>
     <skos:definition xml:lang="en">"The Mohawk people (who identify as Kanien'kehá:ka) are the most easterly tribe of the Haudenosaunee, or Iroquois Confederacy. The name means "People of the Flint Place." They are an Iroquoian-speaking indigenous people of North America. The Mohawk were historically based in the Mohawk Valley in present-day upstate New York west of the Hudson River; their territory ranged north to the St. Lawrence River, southern Quebec and eastern Ontario; south to greater New Jersey and into Pennsylvania; eastward to the Green Mountains of Vermont; and westward to the border with the Iroquoian Oneida Nation's traditional homeland territory. As one of the five original members of the Iroquois League, the Mohawk were known as the Keepers of the Eastern Door. For hundreds of years, they guarded the Iroquois" <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">«Les Kanien'kehá:ka, autrefois dénommés Agniers en français mais aujourd'hui plus connus sous le nom anglais de Mohawks, sont l'une des Six-Nations iroquoises, lesquelles sont, d’ouest en est : les Tuscaroras, les Sénécas (Tsonnontouans), les Cayugas (Goyogoins), les Onondagas (Onontagués), les Oneidas (Onnéiouts) et les Mohawks (Agniers).»</skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Mohawk_people"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1743,17 +1761,19 @@
     <skos:inScheme rdf:resource="#NationalHeritage"/>
     <skos:definition xml:lang="en">"The Tatars are a Turkic people living in Asia and Europe who were one of the five major tribal confederations (khanlig) in the Mongolian plateau in the 12th century CE. The name "Tatar" first appears in written form on the Kul Tigin monument as 𐱃𐱃𐰺 (TaTaR). Today the term Tatars refers to people who speak one of the Turkic languages. The Mongol Empire, established under Genghis Khan in 1206, subjugated the Tatars. Under the leadership of Genghis Khan's grandson Batu Khan (c. 1207–1255), the Mongols moved westwards, driving with them many of the Mongol tribes toward the plains of Russia. The "Tatar" clan still exists among the Mongols and Hazaras. Russians and Europeans used the name Tatar to denote Mongols as well as Turkic peoples under Mongol rule (especially in the Golden Horde). Later, it applied to any Turkic- or Mongolic-speaking people encountered by Russians. Eventually, however, the name became associated with the Turkic Muslims of Ukraine and Russia, namely the descendants of Muslim Volga Bulgars, Kipchaks, Cumans, and Turkicized Mongols or Turko-Mongols (Nogais), as well as other Turkic-speaking peoples (Siberian Tatars, Qasim Tatars, and Mishar Tatars) in the territory of the former Russian Empire (and as such generally includes all Northwestern Turkic-speaking peoples). The Tatars formed the Turkic-speaking population of Tartary—the lands ruled by Mongol élites from the 14th century until their conquest by the Russian Empire in the 18th to 19th centuries. The largest group by far that the Russians have called "Tatars" are the Volga Tatars, native to the Volga region (Tatarstan and Bashkortostan), who for this reason are often also simply known as "Tatars", with their language known as the Tatar language. As of 2002 they had an estimated population close to 6 million." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">«Les Tatars (ou Tartares) est un nom collectif donné à des peuples turcs d'Europe orientale et d'Asie du Nord. La plupart des Tatars vivent au centre et au sud de la Russie, en Ukraine, en Bulgarie, en Chine, au Kazakhstan, en Roumanie, en Turquie, et en Ouzbékistan. On en dénombrait plus de huit millions à la fin du XXe siècle. Ils forment par ailleurs l'un des cinquante-six groupes ethniques recensés par la République populaire de Chine. Il existe des distinctions entre les Tatars eux-mêmes, parmi lesquels les Nogaïs. Aujourd'hui, parmi les Tatars, on trouve des musulmans et des chrétiens orthodoxes (notamment en Russie). Le terme tartare était également désigné par confusion chez les occidentaux pour désigner les peuples mongols et donna lieu à l’appellation de Tartarie pour les régions habitées par les peuples turco-mongols» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Tatars"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:NationalHeritage>
   <cwrc:NationalHeritage rdf:about="#europeanNationalHeritage">
     <rdfs:label xml:lang="en">European</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">Européen</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#NationalHeritage"/>
     <skos:definition xml:lang="en">Indicates a subject's identity or labelling as of European national heritage.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">indique l'identité ou l'étiquetage d'un sujet à l'héritage national européen.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:NationalHeritage>
@@ -1765,6 +1785,8 @@
     <skos:inScheme rdf:resource="#NationalHeritage"/>
     <skos:definition xml:lang="en">"A Huguenot (/ˈhjuːɡənɒt/, /ˈhjuːɡənoʊ/ or /ˌhjuːɡəˈnoʊ/; French: [yɡ(ə)nõ]) is a designation for a French Protestant who follows the Reformed tradition. It was used frequently to describe members of the French Reformed Church until the beginning of the 19th century. The term traces back its origin to 16th century France. Historically, Huguenots were French Protestants inspired by the writings of John Calvin. Huguenots endorsed the Reformed tradition of Protestantism, as opposed to largely German Lutheran population in Alsace, Moselle, and around Montbéliard. Hans J. Hillerbrand in his Encyclopedia of Protestantism: 4-volume Set claims the Huguenot community reached as much as 10% of the French population on the eve of the St. Bartholomew's Day massacre, declining to 7-8% by the end of the 16th century, and further after heavy persecution began once again with the Revocation of the Edict of Nantes by Louis XIV of France. Huguenot numbers peaked near an estimated two million by 1562, concentrated mainly in the southern and western parts of France. As Huguenots gained influence and more openly displayed their faith, Catholic hostility grew, in spite of political concessions and edicts of toleration from the French crown. A series of religious conflicts followed, known as the French Wars of Religion, fought intermittently from 1562 to 1598. The wars finally ended with the granting of the Edict of Nantes, which granted the Huguenots substantial religious, political, and military autonomy. Huguenot rebellions in the 1620s prompted the abolishment of their political and military privileges; they retained the religious provisions of the Edict of Nantes until the rule of Louis XIV. Louis XIV gradually increased persecution of them until he issued the Edict of Fontainebleau (1685), ending any legal recognition of Protestantism in France, and forcing the Huguenots to convert or flee in a wave of violent dragonnades. Louis XIV claimed the French Huguenot population of 800,000 to 900,000 individuals was reduced to 1,000 or 1,500 individuals; a huge overestimate, although dragonnades were indeed the most devastating event for the minority. Nevertheless, now tiny minority of Huguenots remained, and faced continued persecution under Louis XV. Persecution of Protestants diminished significantly in France after the death of Louis XIV in 1715, and then after the death of Louis XV in 1774. It officially ended with the Edict of Versailles, commonly called the Edict of Tolerance, signed by Louis XVI in 1787. Two years later, with the Declaration of the Rights of Man and Citizen of 1789, Protestants gained equal rights as citizens. The bulk of Huguenot émigrés relocated to Protestant nations such as England, Wales, Scotland, Denmark, Sweden, Switzerland, the Dutch Republic, the Electorate of Brandenburg and Electorate of the Palatinate in the Holy Roman Empire, the Duchy of Prussia, the Channel Islands, and Ireland. They also spread to the Dutch Cape Colony in South Africa, the Dutch East Indies, the Caribbean, New Netherland, several of the English colonies in North America, and Quebec, where they were generally accepted and allowed to worship freely. In the 21st century, most Huguenots have been assimilated into various societies and cultures, but remnant communities of Camisards in the Cévennes and French members of the largely German Protestant Reformed Church of Alsace and Lorraine, as well as Huguenot diaspora in England and Australia still retain their beliefs, and Huguenot designation." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">«Les huguenots sont les Français protestants pendant les guerres de Religion (seconde moitié du XVIe siècle), au cours desquelles ils ont été – sous ce nom – en conflit avec les catholiques. Environ 300 000 d’entre eux ont quitté la France à la suite des dragonnades et de la révocation de l’édit de Nantes le 18 octobre 1685. À partir du XVIIe siècle, les huguenots sont appelés religionnaires, car les actes royaux ne parlaient pas de protestantisme mais de « religion prétendue réformée ».» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Huguenot"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1776,6 +1798,8 @@
     <skos:inScheme rdf:resource="#NationalHeritage"/>
     <skos:definition xml:lang="en">"The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse ("Norman" comes from "Norseman") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Gallo-Roman populations, their descendants would gradually adopt the Carolingian-based cultures of West Francia, ultimately resulting in their own assimilation into the Romance society. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries. The Norman dynasty had a major political, cultural and military impact on medieval Europe and even the Near East. The Normans were famed for their martial spirit and eventually for their Christian piety, becoming exponents of the Catholic orthodoxy into which they assimilated. They adopted the Gallo-Romance language of the Frankish land they settled, their dialect becoming known as Norman, Normaund or Norman French, an important literary language. The Duchy of Normandy, which they formed by treaty with the French crown, was a great fief of medieval France, and under Richard I of Normandy was forged into a cohesive and formidable principality in feudal tenure. The Normans are noted both for their culture, such as their unique Romanesque architecture and musical traditions, and for their significant military accomplishments and innovations. Norman adventurers founded the Kingdom of Sicily under Roger II after conquering southern Italy from the Saracens and Byzantines, and an expedition on behalf of their duke, William the Conqueror, led to the Norman conquest of England at the Battle of Hastings in 1066. Norman cultural and military influence spread from these new European centres to the Crusader states of the Near East, where their prince Bohemond I founded the Principality of Antioch in the Levant, to Scotland and Wales in Great Britain, to Ireland, and to the coasts of north Africa and the Canary Islands. The legacy of the Normans persists today through the regional languages and dialects of France, England, and Sicily, as well as the various cultural, judicial and political arrangements they introduced in their conquered territories." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">«Les Normands sont actuellement les habitants de la Normandie, mais le terme désigne aussi historiquement les habitants du duché de Normandie. Autrefois, le mot de Normands était employé pour qualifier les Vikings. C'est pourquoi son étymologie s'explique par le francique ou le scandinave et signifie littéralement « Hommes du nord »» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Normans"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1786,7 +1810,9 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#NationalHeritage"/>
     <skos:definition xml:lang="en">"A West Indian is a native or inhabitant of the West Indies (the Antilles and the Lucayan Archipelago). For more than 100 years the words West Indian specifically described natives of the West Indies, but by 1661 Europeans had begun to use it also to describe the descendants of European colonists who stayed in the West Indies. Some West Indian people reserve this term for citizens or natives of the British West Indies." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">«La population [antillaise] est mixte et donc de provenance diverse. Composée majoritairement de noirs d'origines africaines et de métis comme à la Jamaïque ou en Haïti, elle comprend aussi des individus d'origine européenne, hindoue, arabe, juive. À noter un très faible pourcentage d'Asiatiques. Quelques rares survivants des premiers occupants de ces régions, les Amérindiens, y sont encore présents, comme les Caraïbes à l’île de la Dominique.» <![CDATA[<a href="http://dbpedia.org/page/Antilles">(DBpedia, 2018)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/West_Indian"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1809,27 +1835,27 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#NationalIdentity"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as African as a national identity.</skos:definition>
-    <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie à ou s'est vu assigner une identité nationale Africain.</skos:definition>
+    <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie à ou s'est vu assigner une identité nationale africaine.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:NationalIdentity>
   <cwrc:NationalIdentity rdf:about="#anglo-IndianNationalIdentity">
     <rdfs:label xml:lang="en">Anglo-Indian</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">Anglo-Indienne</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#NationalIdentity"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as Anglo-Indian as a national identity.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie à ou s'est vu assigner une identité nationale anglo-indienne.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:NationalIdentity>
   <cwrc:NationalIdentity rdf:about="#anglo-IrishNationalIdentity">
     <rdfs:label xml:lang="en">Anglo-Irish</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">Anglo-Irlandaise</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#NationalIdentity"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as Anglo-Irish as a national identity.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie à ou s'est vu assigner une identité nationale anglo-irlandaise.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:NationalIdentity><cwrc:NationalIdentity rdf:about="#britishNationalIdentity">
@@ -1855,43 +1881,43 @@
   </cwrc:NationalIdentity>
   <cwrc:NationalIdentity rdf:about="#florentineNationalIdentity">
     <rdfs:label xml:lang="en">Florentine</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">Florentin</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#NationalIdentity"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as Florentine as a national identity.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie à ou s'est vu assigner une identité nationale florentine.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:NationalIdentity>
   <cwrc:NationalIdentity rdf:about="#sephardicJewishNationalIdentity">
     <rdfs:label xml:lang="en">Sephardic Jewish</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">Séfarade</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#NationalIdentity"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as Sephardic Jewish as a national identity.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie à ou s'est vu assigner une identité nationale sérafade.</skos:definition>
     <skos:broaderTransitive rdf:resource="#jewishNationalIdentity"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:NationalIdentity>
   <cwrc:NationalIdentity rdf:about="#hanoverianNationalIdentity">
     <rdfs:label xml:lang="en">Hanoverian</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">Hanovrien</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#NationalIdentity"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as Hanoverian as a national identity. See @@https://en.wikipedia.org/wiki/Hanover@@.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie à ou s'est vu assigner une identité nationale hanovrienne. Voir @@https://fr.wikipedia.org/wiki/Hanovre@@.</skos:definition>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Hanover"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:NationalIdentity>
   <cwrc:NationalIdentity rdf:about="#saxonNationalIdentity">
     <rdfs:label xml:lang="en">Saxon</rdfs:label>
-    <rdfs:label xml:lang="fr">Saxons</rdfs:label>
+    <rdfs:label xml:lang="fr">Saxon</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#NationalIdentity"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labelling as Saxon as a national identity. See @@https://en.wikipedia.org/wiki/Saxons@@.</skos:definition>
-    <skos:definition xml:lang="fr">«Les Saxons sont un peuple germanique, rattaché sur le plan ethnolinguistique au rameau occidental. Ils sont mentionnés pour la première fois par le grec Ptolémée sur la carte Germania Magna au IIe siècle de l'ère chrétienne. Il situe alors leurs terres au sud-ouest du Jutland, ce qui correspond à peu près à l'actuel Holstein, d'où ils semblent s'être étendus au sud et à l'ouest.» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie à ou s'est vu assigner une identité nationale saxonne. Voir @@https://fr.wikipedia.org/wiki/Saxons@@.</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Saxons"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1927,6 +1953,8 @@
     <skos:inScheme rdf:resource="#NationalIdentity"/>
     <skos:definition xml:lang="en">"In international law, statelessness is the lack of citizenship. A stateless person is someone who is "not considered as a national by any state under the operation of its law". Some stateless persons are also refugees. However, not all refugees are stateless, and many persons who are stateless have never crossed an international border. Most people belonging to a stateless nation, despite lacking their own nation state, nonetheless hold citizenship in one or more countries, in some cases effectively as second-class citizens." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">Un apatride est, selon la convention de New York du 28 septembre 1954, « toute personne qu'aucun État ne considère comme son ressortissant par application de sa législation ». Plus simplement, un apatride est une personne dépourvue de nationalité, qui ne bénéficie de la protection d'aucun État. Il y aurait plus de 12 millions d'apatrides, selon le Haut Commissariat des Nations unies pour les réfugiés (HCR). Le mot « apatride  » est composé du préfixe privatif a- et du grec patris, (« terre des ancêtres »).Le terme allemand heimatlos, dont il est le synonyme, s'utilise, en français, pour désigner les allemands ayant fui l'Allemagne nazie durant la Seconde Guerre mondiale.[réf. nécessaire] <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Statelessness"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1964,7 +1992,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#GeographicHeritage"/>
     <skos:definition xml:lang="en">Indicates a subject's identification with or labeling as of English heritage in relation to a place, often England.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">Indique qu'un sujet s'identifie ou s'est vu assigner une identité anglaise par rapport à un endroit, généralement l'Angleterre.</skos:definition>
     <cwrc:representedBy rdf:resource="#englishLabel"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -2023,12 +2051,11 @@
   </cwrc:Gender>
   <cwrc:Gender rdf:about="#undefinedGender">
     <rdfs:label xml:lang="en">undefined</rdfs:label>
-    <rdfs:label xml:lang="fr">indéfini</rdfs:label>
+    <rdfs:label xml:lang="fr">genre indéterminé</rdfs:label>
     <skos:inScheme rdf:resource="#Gender"/>
-    <skos:altLabel xml:lang="en">undefined</skos:altLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Indicates that the person's gender is not disclosed by them or is not indicated in the source.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">Indique que le genre de la personne n'est pas déterminé par elle·lui-même ou n'est pas indiqué dans la source.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Gender>
@@ -2039,7 +2066,7 @@
     <skos:inScheme rdf:resource="#Gender"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">
-      Indicates a subject identification with or labelling as the gender woman, and who is often but not necessarily understood to be sexed female. "One is not born, but rather becomes, woman" <![CDATA[<a href="#cwrc:c6a678e5-8fc6-41bc-8631-7cfb7116017e"> (Simone de Beauvoir, 1973)</a>]]>
+      Indicates a subject identification with or labelling as the gender woman, and who is often but not necessarily understood to be sexed female. "One is not born, but rather becomes, woman." <![CDATA[<a href="#cwrc:c6a678e5-8fc6-41bc-8631-7cfb7116017e"> (Simone de Beauvoir, 1973)</a>]]>
     </skos:definition>
     <skos:definition xml:lang="fr">
       Indique l'identification ou l'assignation au genre féminin, et qui est souvent mais non nécessairement de sexe féminin. «On ne naît pas femme, on le devient»: Simone de Beauvoir, Le deuxième sexe <![CDATA[<a href="#cwrc:c6a678e5-8fc6-41bc-8631-7cfb7116017e"> (1973) </a>]]>
@@ -2141,8 +2168,7 @@
   </cwrc:Gender>
   <cwrc:Gender rdf:about="#GenderQueer">
     <rdfs:label xml:lang="en">genderqueer</rdfs:label>
-    <rdfs:label xml:lang="fr">non-binaire</rdfs:label>
-    <skos:note>Listed as non-binary? in french</skos:note>
+    <rdfs:label xml:lang="fr">queer</rdfs:label>
     <skos:inScheme rdf:resource="#Gender"/>
     <skos:definition xml:lang="en">
       Indicates refusal of dominant gender categories and cisnormativity, and identification with both, a combination, or neither of the dominant binary gender roles. The term is strongly associated with the late twentieth and twenty-first centuries. It comes from deconstructionist and post-structuralist theory, and was coined by <![CDATA[<a href="#cwrc:fab56e35-9796-4e6d-861d-a6b626f5714d">Teresa de Lauretis at a conference in 1990</a>]]>. Because "queer" identity is recent, its definition is still debated among scholars and activists. Even though it is not rigidly defined, the term is increasingly deployed to refer to a large category of people who are not "straight", in a sense that is not restricted to sexual orientation. Following <![CDATA[<a href="#cwrc:825995b3-3b66-4e0a-a62d-d8649aaead78">Judith Butler</a>]]>, queerness is not understood as an essence, but best described as a doing or performance, a way to situate oneself deliberately against traditional notions of gender. See <![CDATA[<a href="https://en.wikipedia.org/wiki/Genderqueer">Genderqueer - Wikipedia</a>]]>.
@@ -2296,11 +2322,10 @@
   </owl:Class>
   <cwrc:RaceColour rdf:about="#blackWomanRaceColour">
     <rdfs:label xml:lang="en">blackwoman</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:definition xml:lang="en">
-      An intersectional identity that co-occurs with but is not reducible to the combination of "@@#hasGender@@ @@#woman@@" and "@@#hasRaceColour@@ @@#blackRaceColour@@". See @@https://en.wikipedia.org/wiki/Black_women@@ and <![CDATA[<a href="#cwrc:b9eeccf9-9380-4341-99dc-a83f5ee32909">(Kimberlé Crenshaw, 1989)</a>]]>.
+    <rdfs:label xml:lang="fr">femme noire</rdfs:label>
+    <skos:definition xml:lang="en">An intersectional identity that co-occurs with but is not reducible to the combination of "@@#hasGender@@ @@#woman@@" and "@@#hasRaceColour@@ @@#blackRaceColour@@". See @@https://en.wikipedia.org/wiki/Black_women@@ and <![CDATA[<a href="#cwrc:b9eeccf9-9380-4341-99dc-a83f5ee32909">(Kimberlé Crenshaw, 1989)</a>]]>.
     </skos:definition>
-    <skos:definition xml:lang="fr">
+    <skos:definition xml:lang="fr">Une identité intersectionnelle qui résulte de la combinaison de "a le genre femme" et de "a une identité de race ou de couleur noire". Voir @@https://fr.wikipedia.org/wiki/Afrof%C3%A9minisme@@ et <![CDATA[<a href="#cwrc:b9eeccf9-9380-4341-99dc-a83f5ee32909">(Kimberlé Crenshaw, 1989)</a>]]>.
     </skos:definition>
     <skos:inScheme rdf:resource="#RaceColour"/>
     <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Gender"/>
@@ -2541,7 +2566,7 @@
   </owl:Class>
   <cwrc:Ethnicity rdf:about="#indigenousPeoplesOfAmericasEthnicity">
     <rdfs:label xml:lang="en">Indigenous (of the Americas)</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">Indigenous/Amérindiens</rdfs:label>
     <skos:altLabel xml:lang="en">Amer-Indians</skos:altLabel>
     <skos:definition xml:lang="en">
       "The indigenous peoples of the Americas are the pre-Columbian peoples of the Americans and their descendants. Pueblos indígenas or indígenas (lit. "indigenous peoples") is a common term in Spanish-speaking countries, and pueblos nativos or nativos (lit. "native peoples" in the sense of descendants of non-immigrants) may also be heard, while aborigen (aborigine) is used in Argentina, and pueblos aborígenes (aboriginal peoples) is common in Chile. The term "Amerindian" (short for "'Indians' of the Americas)" is used in Quebec, The Guianas, and the English-speaking Caribbean. Indigenous peoples are commonly known in Canada as Aboriginal peoples, which includes not only First Nations and Arctic Inuit, but also the minority population of First Nations-European mixed-race Métis people who identify culturally and ethnically with indigenous peoplehood. This is contrasted, for instance, to the American Indian-European mixed-race mestizos of Hispanic America (caboclos in Brazil) who, with their larger population (in most Latin American countries constituting either outright majorities, pluralities, or at the least large minorities), identify largely as a new ethnic group distinct from both Europeans and Indigenous Americans, but still considering themselves a subset of the European-derived Hispanic peoplehood in culture and ethnicity. Indigenous peoples of the United States are commonly known as Native Americans or American Indians, and Alaska Natives. Application of the term "Indian" originated with Christopher Columbus, who, in his search for Asia, thought that he had arrived in the East Indies. Eventually, the Americas came to be known as the "West Indies", a name still used to refer to the islands of the Caribbean Sea. This led to the blanket term "Indies" and "Indians" (Spanish "indios") for the indigenous inhabitants, which implied some kind of racial or cultural unity among the indigenous peoples of the Americas. This unifying concept, codified in law, religion, and politics, was not originally accepted by the myriad groups of indigenous peoples themselves, but has since been embraced by many over the last two centuries. Even though the term "Indian" does not include the culturally and linguistically distinct indigenous peoples of the Arctic regions of the Americas — such as the Aleuts, Inuit, or Yupik peoples, who entered the continent as a second more recent wave of migration several thousand years ago, and have much more recent genetic and cultural commonalities with the aboriginal peoples of the Asiatic Arctic Russian Far East — these groups are nonetheless considered "indigenous peoples of the Americas". Although some indigenous peoples of the Americas were traditionally hunter-gatherers—and many, especially in Amazonia, still are—many groups practiced aquaculture and agriculture. The impact of their agricultural endowment to the world is a testament to their time and work in reshaping and cultivating the flora indigenous to the Americas. Although some societies depended heavily on agriculture, others practiced a mix of farming, hunting, and gathering. In some regions the indigenous peoples created monumental architecture, large-scale organized cities, chiefdoms, states, and empires. Many parts of the Americas are still populated by indigenous peoples; some countries have sizable populations, especially Belize, Bolivia, Chile, Ecuador, Greenland, Guatemala, Mexico, and Peru. At least a thousand different indigenous languages are spoken in the Americas. Some, such as the Quechuan languages, Aymara, Guaraní, Mayan languages, and Nahuatl, count their speakers in millions. Many also maintain aspects of indigenous cultural practices to varying degrees, including religion, social organization, and subsistence practices. Like most cultures, over time, cultures specific to many indigenous peoples have evolved to incorporate traditional aspects, but also cater to modern needs. Some indigenous peoples still live in relative isolation from Western culture and a few are still counted as uncontacted peoples." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2017)</a>]]> The term is deeply contested. See: @@https://en.wikipedia.org/wiki/Native_American_name_controversy@@</skos:definition>
@@ -2558,13 +2583,13 @@
   </cwrc:Ethnicity>
   <cwrc:Ethnicity rdf:about="#scottishEthnicity">
     <rdfs:label xml:lang="en">Scottish</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:label xml:lang="fr">Écossais</rdfs:label>
     <skos:altLabel xml:lang="en">highland</skos:altLabel>
-    <skos:definition xml:lang="en">
-      "The Scottish people (Scots: Scots Fowk, Scottish Gaelic: Albannaich), or Scots, are a nation and socially defined ethnic group resident in Scotland. Historically, they emerged from an amalgamation of two groups—the Picts and Gaels—who founded the Kingdom of Scotland (or Alba) in the 9th century, and thought to have been ethnolinguistically Celts. Later, the neighbouring Cumbrian Britons, who also spoke a Celtic language, as well as Germanic-speaking Anglo-Saxons and Norse, were incorporated into the Scottish nation." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]>
+    <skos:definition xml:lang="en">"The Scottish people (Scots: Scots Fowk, Scottish Gaelic: Albannaich), or Scots, are a nation and socially defined ethnic group resident in Scotland. Historically, they emerged from an amalgamation of two groups—the Picts and Gaels—who founded the Kingdom of Scotland (or Alba) in the 9th century, and thought to have been ethnolinguistically Celts. Later, the neighbouring Cumbrian Britons, who also spoke a Celtic language, as well as Germanic-speaking Anglo-Saxons and Norse, were incorporated into the Scottish nation." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]>
     </skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr">Les Écossais correspondent au peuple et à la nation qui occupent l'Écosse. Ils sont les descendants des anciens Pictes, Gaëls, avec des apports de Bretons insulaires, d'Angles, de Saxons et de Normands (Vikings norrois, danois et plus tard les Normands de France).<![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Scottish_people"/>
     <skos:inScheme rdf:resource="#Ethnicity"/>
     <skos:broaderTransitive rdf:resource="#europeanEthnicity"/>
@@ -2853,8 +2878,9 @@
      <rdfs:label xml:lang="en">Chinese</rdfs:label>
      <rdfs:label xml:lang="fr">Chinois</rdfs:label>
      <skos:definition xml:lang="en">"Chinese people are the various individuals or groups of people associated with China (or Greater China), either by reason of ancestry, heredity, ethnicity, nationality, citizenship, place of residence, or other affiliation." <![CDATA[<a href="http://dbpedia.org/page/Chinese_people">(DBpedia, 2018)</a>]]></skos:definition>
-     <skos:definition xml:lang="fr"></skos:definition>
+     <skos:definition xml:lang="fr">«Les Chinois sont les différents individus ou groupes de personnes associés à la Chine (ou à la Grande Chine), en raison de leur ascendance, leur hérédité, leur ethnie, leur nationalité, leur citoyenneté, leur lieu de résidence ou d'autre affiliation.» <![CDATA[<a href="http://dbpedia.org/page/Chinese_people">(DBpedia, 2018)</a>]]></skos:definition>
      <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
      <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Chinese_people"/>
      <skos:inScheme rdf:resource="#Ethnicity"/>
      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2973,11 +2999,12 @@
    </cwrc:Ethnicity>
    <cwrc:Ethnicity rdf:about="#jamaicanEthnicity">
      <rdfs:label xml:lang="en">Jamaican</rdfs:label>
-     <rdfs:label xml:lang="fr">Jamaïquain</rdfs:label>
+     <rdfs:label xml:lang="fr">Jamaïcains</rdfs:label>
      <skos:altLabel xml:lang="en">Jamaican-born</skos:altLabel>
      <skos:definition xml:lang="en">"Jamaicans are the citizens of Jamaica and their descendants in the Jamaican diaspora. Most Jamaicans are of African descent, with smaller minorities of Europeans, East Indians, Chinese, Mixed-Race, and others. The bulk of the Jamaican diaspora resides in Canada, United States, Panama and the United Kingdom and in the other Anglophone countries." <![CDATA[<a href="http://dbpedia.org/page/Jamaicans">(DBpedia, 2018)</a>]]></skos:definition>
-     <skos:definition xml:lang="fr"></skos:definition>
+     <skos:definition xml:lang="fr">«Les Jamaïcains sont les citoyens de la Jamaïque et leurs descendants dans la diaspora jamaïcaine. La plupart des Jamaïcains sont d’ascendance africaine, avec des minorités moins nombreuses d’Européens, d’Indiens de l’Est, de Chinois, de métis et d’autres. La majeure partie de la diaspora jamaïcaine réside au Canada, aux États-Unis, au Panama et au Royaume-Uni et dans d'autres pays anglophones.» <![CDATA[<a href="http://dbpedia.org/page/Jamaicans">(DBpedia, 2018)</a>]]></skos:definition>
      <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
      <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Jamaicans"/>
      <skos:inScheme rdf:resource="#Ethnicity"/>
      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2986,10 +3013,11 @@
    </cwrc:Ethnicity>
    <cwrc:Ethnicity rdf:about="#punjabiEthnicity">
      <rdfs:label xml:lang="en">Punjabi</rdfs:label>
-     <rdfs:label xml:lang="fr">Punjabi</rdfs:label>
+     <rdfs:label xml:lang="fr">Pendjabis</rdfs:label>
      <skos:definition xml:lang="en">"The Punjabis (Punjabi: پنجابی, ਪੰਜਾਬੀ, पंजाबी), or Punjabi people, are an Indo-Aryan ethnic group originating from the Punjab region, found in Pakistan and northern India. Punjab literally means the land of five waters (Persian: panj ("five") āb ("waters"). The name of the region was introduced by the Turko-Persian conquerors of India and more formally popularised during the Mughal Empire. Punjab is often referred to as the breadbasket in both Pakistan and India. The coalescence of the various tribes, castes and the inhabitants of the Punjab into a broader common "Punjabi" identity initiated from the onset of the 18th century CE. Prior to that the sense and perception of a common "Punjabi" ethno-cultural identity and community did not exist, even though the majority of the various communities of the Punjab had long shared linguistic, cultural and racial commonalities. Traditionally, Punjabi identity is primarily linguistic, geographical and cultural. Its identity is independent of historical origin or religion, and refers to those who reside in the Punjab region, or associate with its population, and those who consider the Punjabi language their mother tongue. Integration and assimilation are important parts of Punjabi culture, since Punjabi identity is not based solely on tribal connections. More or less all Punjabis share the same cultural background. Historically, the Punjabi people were a heterogeneous group and were subdivided into a number of clans called biradari (literally meaning "brotherhood") or tribes, with each person bound to a clan. However, Punjabi identity also included those who did not belong to any of the historical tribes. With the passage of time tribal structures are coming to an end and are being replaced with a more cohesive and holistic society, as community building and group cohesiveness form the new pillars of Punjabi society." <![CDATA[<a href="http://dbpedia.org/page/Punjabis">(DBpedia, 2018)</a>]]></skos:definition>
-     <skos:definition xml:lang="fr"></skos:definition>
+     <skos:definition xml:lang="fr">Les Pendjabis (en pendjabi : پنجابی / ਪੰਜਾਬੀ) sont un groupe ethnolinguistique associé à la région du Pendjab, parlant le pendjabi, une langue indo-aryenne. Pendjab signifie littéralement « terre des cinq eaux » (du persan : panj (« cinq »), āb (« eaux »)). Cette région a été mentionnée chez les Grecs sous le nom de Pentapotamie20, qui fut traduit plus tard en persan par les conquérants turco-persans21 de l'Asie du Sud et qui seront plus connus durant l'Empire moghol. Le Pendjab est souvent qualifié de grenier à blé du Pakistan et de l'Inde. La coalescence de diverses tribus, castes et des habitants du Pendjab en une identité pendjabie plus large a commencé au début du xviiie siècle. Avant cela, le sentiment et l'idée d'une identité et d'une communauté ethnoculturelles pendjabies n'existaient pas, même si une majorité des communautés du Pendjab partageaient depuis longtemps des points communs linguistiques, culturels et ethniques. Traditionnellement, l'identité pendjabie est principalement linguistique, géographique et culturelle. Son identité est indépendante de l'origine historique ou de la région, et désigne ceux qui résident dans la région du Pendjab, ou se sentent associés avec ses habitants, et ceux qui considèrent le pendjabi comme leur langue maternelle. L'intégration et l'assimilation sont des éléments importants de la culture pendjabie, puisque l'identité pendjabie n'est pas basée uniquement sur des liens tribaux. Tous les Pendjabis partagent plus ou moins un même socle culturel.<![CDATA[<a href="http://dbpedia.org/page/Punjabis">(DBpedia, 2018)</a>]]></skos:definition>
      <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
      <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Punjabis"/>
      <skos:inScheme rdf:resource="#Ethnicity"/>
      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -3000,9 +3028,11 @@
      <rdfs:label xml:lang="en">West Indian</rdfs:label>
      <rdfs:label xml:lang="fr"></rdfs:label>
      <skos:definition xml:lang="en">"A West Indian is a native or inhabitant of the West Indies (the Antilles and the Lucayan Archipelago). For more than 100 years the words West Indian specifically described natives of the West Indies, but by 1661 Europeans had begun to use it also to describe the descendants of European colonists who stayed in the West Indies. Some West Indian people reserve this term for citizens or natives of the British West Indies." <![CDATA[<a href="http://dbpedia.org/page/West_Indian">(DBpedia, 2018)</a>]]></skos:definition>
-     <skos:definition xml:lang="fr"></skos:definition>
+     <skos:definition xml:lang="fr">«La population [antillaise] est mixte et donc de provenance diverse. Composée majoritairement de noirs d'origines africaines et de métis comme à la Jamaïque ou en Haïti, elle comprend aussi des individus d'origine européenne, hindoue, arabe, juive. À noter un très faible pourcentage d'Asiatiques. Quelques rares survivants des premiers occupants de ces régions, les Amérindiens, y sont encore présents, comme les Caraïbes à l’île de la Dominique.» <![CDATA[<a href="http://dbpedia.org/page/Antilles">(DBpedia, 2018)</a>]]></skos:definition>
      <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
      <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/West_Indian"/>
+     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Antilles"/>
      <skos:inScheme rdf:resource="#Ethnicity"/>
      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>

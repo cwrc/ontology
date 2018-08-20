@@ -62,7 +62,7 @@ trans_dict = {
     "last_ver": ["Last update", "Dernière version"],
     "authors": ["Authors", "Auteurs"],
     "contrib": ["Contributors", "Contributeurs"],
-    "subjects": ["Subject Headings", "Sujects"],
+    "subjects": ["Subject Headings", "Sujets"],
     "listterm": ["Detailed references for all terms, classes and properties",
                  "Références détaillées pour tous les termes, classes et propriétés"],
     "classes": ["Classes", "Classes"],
