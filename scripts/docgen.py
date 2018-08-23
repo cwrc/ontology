@@ -10,25 +10,24 @@ import urllib.request
 # log.test_name("Debugging Document Generator")
 
 """TODO:
-1) Make instances in def'n table into 5 column chart that's more readable
-2) Double check validity of uris when they're relative uris
+1) Double check validity of uris when they're relative uris
     search ontology for if it's a term
-3) Fix Protege support
+2) Fix Protege support
     -Full uris vs relative ones
     - Named Individual support
 
-4) External testing
+3) External testing
  # Handle ontologies that use rdfs:comment as definitions
  # Handle terms that don't have a label but a foaf name
  # Handle definitions with no language attributes
 
-5) Fix inverse term with language support
-6) Create relations.json by loading ontologies in the namespace
-7) Collapse inferred inverse relations with declarative ones?
+4) Fix inverse term with language support
+5) Create relations.json by loading ontologies in the namespace
+6) Collapse inferred inverse relations with declarative ones?
 
-8) Move out translations to external file
+7) Move out translations to external file
 
-9) General error handling
+8) General error handling
  - unable to load ontology
  - missing json file
  - no namespace uri
