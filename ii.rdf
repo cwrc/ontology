@@ -129,6 +129,7 @@
     <!-- http://sparql.cwrc.ca/ontologies/ii#hasCWRCCode -->
 
     <owl:DatatypeProperty rdf:about="http://sparql.cwrc.ca/ontologies/ii#hasCWRCCode">
+        <rdfs:label xml:lang="en">hasCWRCCode</rdfs:label>
         <skos:note rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Since both ICD-10 and ICD-10-SMoL (WHO) assign codes to entries, there is an unique code assigned to each entry in Illness and Injury.</skos:note>
     </owl:DatatypeProperty>
     
@@ -137,6 +138,7 @@
     <!-- http://sparql.cwrc.ca/ontologies/ii#hasWHOChapter -->
 
     <owl:DatatypeProperty rdf:about="http://sparql.cwrc.ca/ontologies/ii#hasWHOChapter">
+        <rdfs:label xml:lang="en">hasWHOChapter</rdfs:label>
         <skos:note rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This code refers to the chapter in the ICS-10-SMoL (WHO) documentation that the illness or injury entry is in.
 
 Not yet used in the ontology.</skos:note>
@@ -148,6 +150,7 @@ Not yet used in the ontology.</skos:note>
 
     <owl:DatatypeProperty rdf:about="http://sparql.cwrc.ca/ontologies/ii#hasWHOCode">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">hasWHOCode</rdfs:label>
         <skos:note rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each entry in the ICD-10-SMoL (WHO) is assigned a code and we include it here for reference.
 
 Not yet entered for all of our entries.  Some of our entries will not have a WHO code since they do not appear in the ICD-10-SMoL  Some of these entries do have an ICD-10 code or they are not in either ICD-10 or ICD-10-SMoL and are unique to CWRC.</skos:note>
@@ -214,7 +217,6 @@ Not yet entered for all of our entries.  Some of our entries will not have a WHO
 
     <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_blood">
         <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
-        <rdfs:label xml:lang="en">Diseases_of_the_blood</rdfs:label>
     </owl:Class>
     
 
@@ -263,7 +265,6 @@ Not yet entered for all of our entries.  Some of our entries will not have a WHO
 
     <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_musculoskeletal_system">
         <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
-        <rdfs:label xml:lang="en">Diseases_of_the_musculoskeletal_system</rdfs:label>
     </owl:Class>
     
 
@@ -417,6 +418,22 @@ http://www.who.int/healthinfo/civil_registration/ICD_10_SMoL.pdf?ua=1</skos:note
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15.1</hasCWRCCode>
         <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-79</hasWHOCode>
         <rdfs:label xml:lang="en">Abortion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Addisons_disease -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Addisons_disease">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Endocrine_nutritional_and_metabolic_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.2</hasCWRCCode>
+        <rdfs:label xml:lang="en">Addisons_disease</rdfs:label>
+        <skos:note>Description from the Mayo Clinic
+(https://www.mayoclinic.org/diseases-conditions/addisons-disease/symptoms-causes/syc-20350293)
+
+&quot;Addison&apos;s disease is a disorder that occurs when your body produces insufficient amounts of certain hormones produced by your adrenal glands. In Addison&apos;s disease, your adrenal glands produce too little cortisol and often insufficient levels of aldosterone as well.
+
+Also called adrenal insufficiency, Addison&apos;s disease occurs in all age groups and affects both sexes. Addison&apos;s disease can be life-threatening.&quot;</skos:note>
     </owl:NamedIndividual>
     
 
@@ -978,7 +995,6 @@ If you have celiac disease, eating gluten triggers an immune response in your sm
     <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_blood">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_blood"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</hasCWRCCode>
-        <rdfs:label xml:lang="en">Diseases_of_the_blood</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1036,7 +1052,6 @@ If you have celiac disease, eating gluten triggers an immune response in your sm
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_musculoskeletal_system"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13</hasCWRCCode>
         <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-76</hasWHOCode>
-        <rdfs:label xml:lang="en">Diseases_of_the_musculoskeletal_system</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1311,6 +1326,17 @@ Because thyroid hormones affect a number of different body systems, signs and sy
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.21</hasCWRCCode>
         <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-19-1</hasWHOCode>
         <rdfs:label xml:lang="en">Hepatitis_B</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Hodgkins_lymphoma -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Hodgkins_lymphoma">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.21</hasCWRCCode>
+        <rdfs:label xml:lang="en">Hodgkins_lymphoma</rdfs:label>
+        <skos:altLabel>Hodgkin&apos;s disease</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -2104,33 +2130,6 @@ http://www.who.int/features/2010/smallpox/en/</skos:note>
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Addisons_disease -->
-
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Addisons_disease">
-        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Endocrine_nutritional_and_metabolic_diseases"/>
-        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.2</hasCWRCCode>
-        <rdfs:label xml:lang="en">Addisons_disease</rdfs:label>
-        <skos:note>Description from the Mayo Clinic
-(https://www.mayoclinic.org/diseases-conditions/addisons-disease/symptoms-causes/syc-20350293)
-
-&quot;Addison&apos;s disease is a disorder that occurs when your body produces insufficient amounts of certain hormones produced by your adrenal glands. In Addison&apos;s disease, your adrenal glands produce too little cortisol and often insufficient levels of aldosterone as well.
-
-Also called adrenal insufficiency, Addison&apos;s disease occurs in all age groups and affects both sexes. Addison&apos;s disease can be life-threatening.&quot;</skos:note>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Hodgkins_lymphoma -->
-
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Hodgkins_lymphoma">
-        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
-        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.21</hasCWRCCode>
-        <rdfs:label xml:lang="en">Hodgkins_lymphoma</rdfs:label>
-        <skos:altLabel>Hodgkin&apos;s disease</skos:altLabel>
-    </owl:NamedIndividual>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2141,6 +2140,9 @@ Also called adrenal insufficiency, Addison&apos;s disease occurs in all age grou
 
     <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Congenital_malformations_deformations_and_chromosomal_abnormalities">
         <rdfs:label xml:lang="en">Congenital_malformations_deformations_and_chromosomal_abnormalities</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_blood">
+        <rdfs:label xml:lang="en">Diseases_of_the_blood</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_circulatory_system">
         <rdfs:label xml:lang="en">Diseases_of_the_circulatory_system</rdfs:label>
@@ -2156,6 +2158,9 @@ Also called adrenal insufficiency, Addison&apos;s disease occurs in all age grou
     </rdf:Description>
     <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_genitourinary_system">
         <rdfs:label xml:lang="en">Diseases_of_the_genitourinary_system</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_musculoskeletal_system">
+        <rdfs:label xml:lang="en">Diseases_of_the_musculoskeletal_system</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_nervous_system">
         <rdfs:label xml:lang="en">Diseases_of_the_nervous_system</rdfs:label>
