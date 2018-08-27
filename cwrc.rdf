@@ -749,6 +749,43 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
+  <owl:ObjectProperty rdf:ID="hasBirthPlace">
+    <rdfs:label xml:lang="en">has birth place</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates where a person was born.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#birthPlaceOf"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="birthPlaceOf">
+    <rdfs:label xml:lang="en">birth place of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasBirthDate">
+    <rdfs:label xml:lang="en">has birth date</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates the date of which a person was born.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#birthDateOf"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="birthDateOf">
+    <rdfs:label xml:lang="en">birth date of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+
   <owl:ObjectProperty rdf:ID="hasBirthPosition">
     <rdfs:label xml:lang="en">has birth position</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
@@ -844,11 +881,47 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <owl:inverseOf rdf:resource="#hasInhabitant"/>
+    <owl:inverseOf rdf:resource="#burialPlaceOf"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="burialPlaceOf">
     <rdfs:label xml:lang="en">burial place of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasDeathPlace">
+    <rdfs:label xml:lang="en">has death place</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates where a person has died.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#deathPlaceOf"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="deathPlaceOf">
+    <rdfs:label xml:lang="en">death place of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasDeathDate">
+    <rdfs:label xml:lang="en">has death date</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates the date of which a person has died.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#deathDateOf"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="deathDateOf">
+    <rdfs:label xml:lang="en">death date of</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
