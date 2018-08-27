@@ -19,6 +19,7 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:schema="http://schema.org/"
+  xmlns:sem="http://semanticweb.cs.vu.nl/2009/11/sem/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
   xmlns:time="http://www.w3.org/2006/time#"
@@ -402,7 +403,6 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
-
   <owl:ObjectProperty rdf:ID="certaintyOf">
     <rdfs:label xml:lang="en">certainty of</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
@@ -414,6 +414,45 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <owl:inverseOf rdf:resource="#hasCertainty"/>
   </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasTimeCertainty">
+    <rdfs:label xml:lang="en">has time certainty</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates the degree of certainty or precision of the temporal value or values associated with a time-based phenomenon such as an event or birth date</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#hasCertainty"/>
+    <rdfs:range rdf:resource="#Certainty"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="timeCertaintyOf">
+    <rdfs:label xml:lang="en">time certainty of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#certaintyOf"/>
+    <rdfs:domain rdf:resource="#Certainty"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <owl:inverseOf rdf:resource="#hasTimeCertainty"/>
+  </owl:ObjectProperty>
+
+  <sem:TimeType rdf:about="#PunctiveTime">
+    <rdfs:label xml:lang="en">punctive time</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates a point or location in time. Punctive time can be used to anchor an event that has a duration, such as a wedding or an election. It may be represented by various levels of granularity, for instance a second or a year, or by two dates between which an event was known to occur.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </sem:TimeType>
+  <sem:TimeType rdf:about="#IntervalTime">
+    <rdfs:label xml:lang="en">interval time</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates a span of time, usually represented in the form of a start and end date.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </sem:TimeType>
 
   <cwrc:Certainty rdf:about="#lowCertainty">
     <rdfs:label xml:lang="en">low certainty</rdfs:label>
@@ -757,7 +796,6 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <owl:inverseOf rdf:resource="#birthPlaceOf"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="birthPlaceOf">
     <rdfs:label xml:lang="en">birth place of</rdfs:label>
@@ -765,6 +803,7 @@
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasBirthPlace"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasBirthDate">
@@ -775,7 +814,6 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <owl:inverseOf rdf:resource="#birthDateOf"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="birthDateOf">
     <rdfs:label xml:lang="en">birth date of</rdfs:label>
@@ -783,6 +821,7 @@
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasBirthDate"/>
   </owl:ObjectProperty>
 
 
@@ -881,7 +920,6 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <owl:inverseOf rdf:resource="#burialPlaceOf"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="burialPlaceOf">
@@ -890,6 +928,7 @@
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasBurialPlace"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasDeathPlace">
@@ -900,7 +939,6 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <owl:inverseOf rdf:resource="#deathPlaceOf"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="deathPlaceOf">
     <rdfs:label xml:lang="en">death place of</rdfs:label>
@@ -908,6 +946,7 @@
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasDeathPlace"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasDeathDate">
@@ -926,6 +965,7 @@
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasDeathDate"/>
   </owl:ObjectProperty>
 
 <!-- Location -->
