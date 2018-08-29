@@ -13,7 +13,7 @@ import argparse
 # auto do relations depending if it's a class or object property
 
 # do something with lonely nodes
-# option to used uris vs labels, default goes with label if available else uses last bit of uri 
+# option to used uris vs labels, default goes with label if available else uses last bit of uri
 
 # Important nspaces
 RDF = rdflib.Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
@@ -80,7 +80,17 @@ def get_class_uri(taxonomy):
         class_uri = namespace_dict['']
         # print(class_uri)
     else:
-        class_uri = [x for x in o_graph.subjects(RDF.type, OWL.Ontology)][0]
+        class_uri = [x for x in o_graph.subjects(RDF.type, OWL.Ontology)]
+        if class_uri:
+            class_uri = class_uri[0]
+        else:
+            print("Unable to able to find the uri of your ontology")
+            # TODO: create optional argument that specifies the uri
+            # Please rerun with the following command
+            exit()
+            # print("Please provide the uri of your ontology")
+            # class_uri = rdflib.URIRef(input("URI:"))
+
         onto_prefix = {value: key for (key, value) in all_ns}[class_uri]
         # spec_uri =
 

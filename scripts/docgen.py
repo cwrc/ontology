@@ -314,7 +314,14 @@ def specgen(template, language):
     elif "" in namespace_dict:
         spec_url = namespace_dict['']
     else:
-        spec_url = [x for x in o_graph.subjects(RDF.type, OWL.Ontology)][0]
+        spec_url = [x for x in o_graph.subjects(RDF.type, OWL.Ontology)]
+        if spec_url:
+            spec_url = spec_url[0]
+        else:
+            print("Unable to able to find the uri of your ontology")
+            print("Please provide the uri of your ontology")
+            spec_url = rdflib.URIRef(input("URI:"))
+        # spec_url = rdflib.URIRef("http://semanticweb.cs.vu.nl/2009/11/sem/")
         spec_pre = {value: key for (key, value) in all_ns}[spec_url]
 
     spec_ns = rdflib.Namespace(spec_url)
@@ -328,7 +335,8 @@ def specgen(template, language):
     terms_html = all_terms_html(get_high_lvl_nodes())
 
     if spec_pre:
-        template = template.replace("{_header_}", get_header_html())
+        if "{_header_}" in template:
+            template = template.replace("{_header_}", get_header_html())
 
     template = template.replace("{_azlist_}", azlist_html)
     template = template.replace("{_terms_}", terms_html)
@@ -401,7 +409,7 @@ def create_term_extra(term_dict, uri, term):
     html_str += """<td>%s:%s</td>\n""" % (spec_pre, term)
     html_str += "</tr>\n"
 
-    #TODO: figure out why this occurs 
+    # TODO: figure out why this occurs
     pred_dict.pop("foaf1:subject", None)
     for x in sorted(pred_dict.keys()):
         html_str += "<tr>\n"
