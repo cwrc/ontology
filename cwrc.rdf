@@ -492,9 +492,90 @@
   </cwrc:Certainty>
 
 
-
+  <!-- Event typing -->
+  <owl:Class rdf:ID="PoliticalClimate">
+    <rdfs:label xml:lang="en">political climate</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">An event having political implications within its geopolitical context, often nationally or internationally. Includes the accession of' monarchs, changing governing structures including revolutions, the establishment of major organizations, and other markers of political change.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="LiteraryClimate">
+    <rdfs:label xml:lang="en">literary climate</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">An event associated with the climate for literature and writing, broadly conceived, ranging from publication or performance events to information about print technologies and copyright.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <!-- TODO: possibly revise this -->
+  <owl:Class rdf:ID="BritishWomenWriters">
+    <rdfs:label xml:lang="en">british women writers</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">An event associated with British women writers, including the creation, publication and reception of their works, as well as the material conditions amd other aspects of their lives.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:subClassOf rdf:resource="#LiteraryClimate"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SocialClimate">
+    <rdfs:label xml:lang="en">social climate</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Events, including indications of larger trends, with social implications, such as shifts in technology, science, medicine, law, or education, domestic conditions such as housing, clothes, or food and food supply, or the changing positions and civic involvements of marginalized groups.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="HistoricSignificance">
+    <rdfs:label xml:lang="en">historic significance</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates a very high level of significance appropriate to a historical overview.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PeriodSignificance">
+    <rdfs:label xml:lang="en">period significance</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates a moderate level of significance appropriate to an understanding of a historical period.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DecadeSignficance">
+    <rdfs:label xml:lang="en">decade significance</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates a low level of significance appropriate to a detailed understanding of a decade.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="IndividualSignificance">
+    <rdfs:label xml:lang="en">individual significance</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates a level of significance appropriate to an understanding of an individual person or entity.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  
   <!-- Events and Actors -->
-
   <owl:Class rdf:ID="Event">
     <rdfs:label xml:lang="en">event</rdfs:label>
     <rdfs:label xml:lang="fr">évènement</rdfs:label>
@@ -509,6 +590,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+  
+
 
   <owl:ObjectProperty rdf:ID="hasEvent">
     <rdfs:label xml:lang="en">has event</rdfs:label>
@@ -516,7 +599,7 @@
     <skos:definition xml:lang="en">Associates a subject with an event</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:range rdf:resource="#Event"/>
+    <rdfs:range rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Event"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
@@ -525,8 +608,8 @@
     <rdfs:label xml:lang="en">event of</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Associates an event with a subject or an event with another event.</skos:definition>
-    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:range rdf:resource="#Event"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Event"/>
     <owl:inverseOf rdf:resource="#hasEvent"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
