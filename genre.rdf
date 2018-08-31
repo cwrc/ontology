@@ -311,6 +311,7 @@
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#adventureWriting">
     <skos:altLabel xml:lang="en">ADVENTUREWRITING</skos:altLabel>
+    <skos:altLabel xml:lang="en">adventure story</skos:altLabel>
     <rdfs:label xml:lang="en">adventure writing</rdfs:label>
     <rdfs:label xml:lang="fr">roman d'aventures</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -560,6 +561,23 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="fr">&quot;Tous types de documents étant des biographies d'individus écrits par eux-mêmes. Pour un aperçue d'ensemble du genre, utiliser &quot;autobiographie&quot; (genre).&quot;</skos:definition>
   </genre:LiteraryGenre>
+  <genre:LiteraryGenre rdf:about="#ballad">
+    <skos:altLabel xml:lang="en">BALLAD</skos:altLabel>
+    <rdfs:label xml:lang="en">ballad</rdfs:label>
+    <rdfs:label xml:lang="fr">ballade</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#LiteraryGenre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A ballad /ˈbæləd/ is a form of verse, often a narrative set to music. Ballads derive from the medieval French chanson balladée or ballade, which were originally "dancing songs". Ballads were particularly characteristic of the popular poetry and song of the British Isles from the later medieval period until the 19th century and used extensively across Europe and later the Americas, Australia and North Africa.(<![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>]]>)</skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Ballad"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <skos:definition xml:lang="fr">«Ballade désigne, au sens ancien, un poème médiéval à forme fixe composé de trois couplets et d'une demi-strophe appelée envoi, chacune étant terminée par un vers refrain, qui rappelle la forme chantée des origines. L'histoire de la poésie retient en particulier les ballades aux strophes carrées (le nombre de vers est égal au nombre de syllabes de chaque vers) de huit ou dix vers et aux thèmes très variés qu'ont composées des poètes comme Guillaume de Machaut, Eustache Deschamps (fin xiv siècle), Christine de Pisan et François Villon (début et milieu du xve siècle) ou encore Clément Marot au xvie, alors que la Pléiade rejette le genre de la ballade comme vieilli, privilégiant des formes nouvelles comme le sonnet ou l'ode.» (<![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>]]>)</skos:definition>
+    <skos:broaderTransitive rdf:resource="#poetry"/>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Ballad"/>
+    <owl:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</owl:comment>
+  </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#ballade">
     <skos:altLabel xml:lang="en">BALLAD</skos:altLabel>
     <rdfs:label xml:lang="en">ballade</rdfs:label>
@@ -576,7 +594,7 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Ballade_(classical_music)"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
-    <skos:broaderTransitive rdf:resource="#poetry"/>
+    <skos:broaderTransitive rdf:resource="#music"/>
     <skos:definition xml:lang="fr">«Ballade désigne, au sens ancien, un poème médiéval à forme fixe composé de trois couplets et d'une demi-strophe appelée envoi, chacune étant terminée par un vers refrain, qui rappelle la forme chantée des origines. L'histoire de la poésie retient en particulier les ballades aux strophes carrées (le nombre de vers est égal au nombre de syllabes de chaque vers) de huit ou dix vers et aux thèmes très variés qu'ont composées des poètes comme Guillaume de Machaut, Eustache Deschamps (fin XIVe siècle), Christine de Pisan et François Villon (début et milieu du XVe siècle) ou encore Clément Marot au XVIe, alors que la Pléiade rejette le genre de la ballade comme vieilli, privilégiant des formes nouvelles comme le sonnet ou l'ode.» (<![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Ballad"/>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
@@ -1225,6 +1243,7 @@ Closely related to the industrial novel because of its interest in the impact of
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#dialogueOrDebate">
     <skos:altLabel xml:lang="en">DIALOGUEORDEBATE</skos:altLabel>
+    <skos:altLabel xml:lang="en">dialogue</skos:altLabel>
     <rdfs:label xml:lang="en">dialogue or debate</rdfs:label>
     <rdfs:label xml:lang="fr">dialogue ou débat</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1587,6 +1606,7 @@ s épîtres.</skos:definition>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#eroticaPornography">
     <skos:altLabel xml:lang="en">EROTICAPORNOGRAPHY</skos:altLabel>
+    <skos:altLabel xml:lang="en">erotica</skos:altLabel>
     <rdfs:label xml:lang="en">erotica pornography</rdfs:label>
     <rdfs:label xml:lang="fr">littérature érotique</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1787,6 +1807,7 @@ s épîtres.</skos:definition>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#filmTvScript">
     <skos:altLabel xml:lang="en">FILMTVSCRIPT</skos:altLabel>
+    <skos:altLabel xml:lang="en">films script</skos:altLabel>
     <rdfs:label xml:lang="en">film tv script</rdfs:label>
     <rdfs:label xml:lang="fr">script</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1814,8 +1835,8 @@ s épîtres.</skos:definition>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#gardeningBook">
     <skos:altLabel xml:lang="en">GARDENINGBOOK</skos:altLabel>
-    <rdfs:label xml:lang="en">gardening book</rdfs:label>
-    <rdfs:label xml:lang="fr">livre de jardinage</rdfs:label>
+    <rdfs:label xml:lang="en">gardening</rdfs:label>
+    <rdfs:label xml:lang="fr">jardinage</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#LiteraryGenre"/>
@@ -1912,6 +1933,7 @@ s épîtres.</skos:definition>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#governmentReport">
     <skos:altLabel xml:lang="en">GOVERNMENTREPORT</skos:altLabel>
+    <skos:altLabel xml:lang="en">governmental report</skos:altLabel>
     <rdfs:label xml:lang="en">government report</rdfs:label>
     <rdfs:label xml:lang="fr">rapport gouvernemental</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -2037,8 +2059,8 @@ s épîtres.</skos:definition>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#historical">
     <skos:altLabel xml:lang="en">HISTORICAL</skos:altLabel>
-    <rdfs:label xml:lang="en">historical</rdfs:label>
-    <rdfs:label xml:lang="fr">historique</rdfs:label>
+    <rdfs:label xml:lang="en">historical writing</rdfs:label>
+    <rdfs:label xml:lang="fr">écrivage historique</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#LiteraryGenre"/>
@@ -2056,6 +2078,7 @@ s épîtres.</skos:definition>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#history">
     <skos:altLabel xml:lang="en">HISTORY</skos:altLabel>
+    <skos:altLabel xml:lang="en">historical overview</skos:altLabel>
     <rdfs:label xml:lang="en">history</rdfs:label>
     <rdfs:label xml:lang="fr">histoire</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -2237,6 +2260,7 @@ s épîtres.</skos:definition>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#legalWriting">
     <skos:altLabel xml:lang="en">LEGALWRITING</skos:altLabel>
+    <skos:altLabel xml:lang="en">legal</skos:altLabel>
     <rdfs:label xml:lang="en">legal writing</rdfs:label>
     <rdfs:label xml:lang="fr">rédaction juridique</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -2251,6 +2275,7 @@ s épîtres.</skos:definition>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#legendFolktale">
     <skos:altLabel xml:lang="en">LEGENDFOLKTALE</skos:altLabel>
+    <skos:altLabel xml:lang="en">legend</skos:altLabel>
     <rdfs:label xml:lang="en">legend folktale</rdfs:label>
     <rdfs:label xml:lang="fr">légende conte folklorique</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -2273,9 +2298,25 @@ s épîtres.</skos:definition>
     <skos:inScheme rdf:resource="#LiteraryGenre"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broaderTransitive rdf:resource="#thematicWriting"/>
+    <skos:broaderTransitive rdf:resource="#lgbtq"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Lesbian_literature"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <skos:definition xml:lang="fr">Fiction traitant du lesbianisme et/ou écrite par des auteures qui s'identifient comme lesbiennes.</skos:definition>
+  </genre:LiteraryGenre>
+  <genre:LiteraryGenre rdf:about="#lgbtq">
+    <skos:altLabel xml:lang="en">LGBTQ</skos:altLabel>
+    <rdfs:label xml:lang="en">LGBTQ</rdfs:label>
+    <rdfs:label xml:lang="fr">LGBTQ</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#LiteraryGenre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">"LGBT, or GLBT, is an initialism that stands for lesbian, gay, bisexual, and transgender. In use since the 1990s, the term is an adaptation of the initialism LGB, which was used to replace the term gay in reference to the LGBT community beginning in the mid-to-late 1980s. Activists believed that the term gay community did not accurately represent all those to whom it referred. Whether or not LGBT people openly identify themselves may depend on local political concerns and whether they live in a discriminatory environment, as well as on the status of LGBT rights where they live." (<![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>]]>)</skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/page/LGBT"/>
+    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
+    <skos:definition xml:lang="fr">«Les couleurs de l'arc-en-ciel font partie des symboles LGBT. Manifestation du 16 décembre 2012 en faveur du mariage pour tous à Toulouse. L'expression « Lesbiennes, gays, bisexuels et trans » et son sigle « LGBT » — avec souvent un « + » ajouté à la fin du sigle « LGBT », afin d'englober toutes les identités de genres et orientations sexuelles méconnues — sont utilisés pour désigner les personnes non hétérosexuelles et/ou non cisgenres.» (<![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>]]>)</skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/page/LGBT"/>
+    <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#letter">
     <skos:altLabel xml:lang="en">LETTER</skos:altLabel>
@@ -2535,6 +2576,7 @@ s épîtres.</skos:definition>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#moralityOrMysteryPlay">
     <skos:altLabel xml:lang="en">MORALITYMYSTERYPLAY</skos:altLabel>
+    <skos:altLabel xml:lang="en">morality play</skos:altLabel>
     <rdfs:label xml:lang="en">morality or mystery play</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -2627,6 +2669,7 @@ l'identité propre.</skos:definition>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#narrativePoetry">
     <skos:altLabel xml:lang="en">NARRATIVEPOETRY</skos:altLabel>
+    <skos:altLabel xml:lang="en">narrative poem</skos:altLabel>
     <rdfs:label xml:lang="en">narrative poetry</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -2782,6 +2825,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#oneActPlay">
     <skos:altLabel xml:lang="en">ONEACTPLAY</skos:altLabel>
+    <skos:altLabel xml:lang="en">one-act-drama</skos:altLabel>
     <rdfs:label xml:lang="en">one-act play</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3102,6 +3146,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#polemic">
     <skos:altLabel xml:lang="en">POLEMIC</skos:altLabel>
+    <skos:altLabel xml:lang="en">polemics</skos:altLabel>
     <rdfs:label xml:lang="en">polemic</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3121,6 +3166,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
 
   <genre:LiteraryGenre rdf:about="#politicalWriting">
     <skos:altLabel xml:lang="en">POLITICALWRITING</skos:altLabel>
+    <skos:altLabel xml:lang="en">political</skos:altLabel>
     <rdfs:label xml:lang="en">political writing</rdfs:label>
     <rdfs:label xml:lang="fr">écrits politiques</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3457,6 +3503,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#schoolFiction">
     <skos:altLabel xml:lang="en">SCHOOLFICTION</skos:altLabel>
+    <skos:altLabel xml:lang="en">school story</skos:altLabel>
     <rdfs:label xml:lang="en">school fiction</rdfs:label>
     <rdfs:label xml:lang="fr">fiction scolaire</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3516,6 +3563,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#sensationNovel">
     <skos:altLabel xml:lang="en">SENSATIONNOVEL</skos:altLabel>
+    <skos:altLabel xml:lang="en">sensational</skos:altLabel>
     <rdfs:label xml:lang="en">sensation novel</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3659,6 +3707,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#slaveNarrative">
     <skos:altLabel xml:lang="en">SLAVENARRATIVE</skos:altLabel>
+    <skos:altLabel xml:lang="en">slavery</skos:altLabel>
     <rdfs:label xml:lang="en">slave narrative</rdfs:label>
     <rdfs:label xml:lang="fr">récit d'esclave</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -4048,6 +4097,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#youngAdultWriting">
     <skos:altLabel xml:lang="en">YOUNGADULTWRITING</skos:altLabel>
+    <skos:altLabel xml:lang="en">young adult</skos:altLabel>
     <rdfs:label xml:lang="en">young adult writing</rdfs:label>
     <rdfs:label xml:lang="fr">littérature jeunes adultes</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -6114,8 +6164,8 @@ s épîtres.</skos:definition>
   </rdf:Description>
   <rdf:Description rdf:about="#genreGardeningbook">
     <skos:altLabel xml:lang="en">GARDENINGBOOK</skos:altLabel>
-    <rdfs:label xml:lang="en">gardening book</rdfs:label>
-    <rdfs:label xml:lang="fr">livre de jardinage</rdfs:label>
+    <rdfs:label xml:lang="en">gardening</rdfs:label>
+    <rdfs:label xml:lang="fr">jardinage</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#Genre"/>
@@ -6403,8 +6453,8 @@ s épîtres.</skos:definition>
   </rdf:Description>
   <rdf:Description rdf:about="#genreHistorical">
     <skos:altLabel xml:lang="en">HISTORICAL</skos:altLabel>
-    <rdfs:label xml:lang="en">historical</rdfs:label>
-    <rdfs:label xml:lang="fr">historique</rdfs:label>
+    <rdfs:label xml:lang="en">historical writing</rdfs:label>
+    <rdfs:label xml:lang="fr">écrivage historique</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#Genre"/>
