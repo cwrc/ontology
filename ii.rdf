@@ -8,17 +8,21 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#"
+     xmlns:ii="http://sparql.cwrc.ca/ontologies/ii#"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/">
-    <owl:Ontology rdf:about="http://sparql.cwrc.ca/ontologies/ii">
+    <owl:Ontology rdf:about="">
         <loc:pdr rdf:resource="http://sparql.cwrc.ca/ontologies/ii#SusanBrown"/>
         <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85013838"/>
         <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/ii#datasetdefinition"/>
         <vs:term_status xml:lang="en">Testing</vs:term_status>
         <dcterms:title xml:lang="en">The CWRC Illness and Injury Ontology</dcterms:title>
+        <vann:preferredNamespacePrefix>ii</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://sparql.cwrc.ca/ontologies/ii#</vann:preferredNamespaceUri>
         <loc:ctb rdf:resource="http://sparql.cwrc.ca/ontologies/ii#ConstanceCrompton"/>
         <foaf:logo rdf:resource="http://sparql.cwrc.ca/images/CWRCLogo-Horz-FullColour.png"/>
         <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/ii#DebStacey"/>

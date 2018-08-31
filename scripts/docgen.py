@@ -206,6 +206,9 @@ def create_row(list, listitem=True):
 def newAZ(nodes):
     types = [x for x in nodes if spec_url not in x]
     instanceTypes = sorted(list(set(nodes) - set(types)))
+    if rdflib.term.URIRef('http://www.w3.org/2002/07/owl#NamedIndividual') in types:
+        types.remove(rdflib.term.URIRef('http://www.w3.org/2002/07/owl#NamedIndividual'))
+
     string = ""
     string += '<div class="global-ref">'
 
@@ -215,12 +218,13 @@ def newAZ(nodes):
     string += '    <th scope="col">Instance</th>'
     string += '  </tr>\n\t</thead>\n<tbody>'
     for x in types:
-        string += '<tr>'
-        name = '<a href="%s" style="font-weight:bold;">%s:</a>' % (get_link(x), get_prefix(x))
-        string += '  <th scope="row">%s</th>' % name
-        instances = [get_uri_term(x) for x in o_graph.subjects(None, x)]
-        string += create_row(sorted(instances))
-        string += '</tr>'
+        instances = [get_uri_term(x) for x in o_graph.subjects(None, x) if spec_url in x]
+        if instances:
+            string += '<tr>'
+            name = '<a href="%s" style="font-weight:bold;">%s:</a>' % (get_link(x), get_prefix(x))
+            string += '  <th scope="row">%s</th>' % name
+            string += create_row(sorted(instances))
+            string += '</tr>'
     string += '</tbody>\n</table>'
 
     for x in types:
@@ -263,15 +267,18 @@ def grandchildren_exist(instances):
 
 def all_terms_html(nodes):
     types = sorted([x for x in nodes if spec_url not in x])
+    if rdflib.term.URIRef('http://www.w3.org/2002/07/owl#NamedIndividual') in types:
+        types.remove(rdflib.term.URIRef('http://www.w3.org/2002/07/owl#NamedIndividual'))
     string = ""
     for x in types:
-        string += '<div class="type">'
-        instances = [get_uri_term(x) for x in o_graph.subjects(None, x)]
-        string += '<h3 id="%s">%s<span> (%s)</span></h3>\n' % (get_prefix(x), get_prefix(x), len(instances))
-        string += '<table class="table list-table"><tbody><tr>' + \
-            create_row(sorted(instances)) + '</tr></tbody></table>'
-        string += create_terms_html(sorted(instances), get_prefix(x))
-        string += '<div/>'
+        instances = [get_uri_term(x) for x in o_graph.subjects(None, x) if spec_url in x]
+        if instances:
+            string += '<div class="type">'
+            string += '<h3 id="%s">%s<span> (%s)</span></h3>\n' % (get_prefix(x), get_prefix(x), len(instances))
+            string += '<table class="table list-table"><tbody><tr>' + \
+                create_row(sorted(instances)) + '</tr></tbody></table>'
+            string += create_terms_html(sorted(instances), get_prefix(x))
+            string += '<div/>'
 
     for x in types:
         instances = sorted([x for x in o_graph.subjects(None, x)])
