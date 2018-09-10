@@ -4,6 +4,7 @@
   xmlns:bibo="http://purl.org/ontology/bibo/"
   xmlns:bio="http://purl.org/vocab/bio/0.1/"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:cidoc="http://www.cidoc-crm.org/cidoc-crm/"
   xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#"
   xmlns:dbpedia="http://dbpedia.org/resource/"
   xmlns:dcterms="http://purl.org/dc/terms/"
@@ -670,6 +671,7 @@
   </owl:ObjectProperty>
 
 <!-- Other Contexts -->
+
   <owl:Class rdf:ID="WealthContext">
     <rdfs:label xml:lang="en">wealth context</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
@@ -704,6 +706,359 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+
+<!-- Personname -->
+
+<owl:Class rdf:ID="NameContext">
+    <rdfs:label xml:lang="en">name context</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="$BiographyContext"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="fr">A significant subclass of @@#Context@@. Annotations typed as name context provide the name or names associated with a person, at times with contextual information.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="PersonalName">
+    <rdfs:label xml:lang="en">personal name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"/>
+    <owl:sameAs rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+    <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300266386"/>
+    <skos:exactMatch rdf:resource="http://id.loc.gov/authorities/subjects/sh85089622.html"/>
+    <skos:definition xml:lang="en">A person's name, containing a proper noun or proper-noun phrase referring to a person. Has subclasses for types of names such as @@#Pseudonym@@ and may have @@#NameType@@, and may have associated parts. This term is derived from the Text Encoding Initiative P5 schema &gt;persname&lt; element. See also @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-persName.html@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="hasName">
+    <rdfs:label xml:lang="en">has name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasNamePart">
+    <rdfs:label xml:lang="en">has name part</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates a component of a name. Order of name parts is indicated by @@#hasSortOrder@@</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <cwrc:rangeIncludes rdf:resource="#PersonalName"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasSortOrder">
+    <rdfs:label xml:lang="en">has sort order</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates the order in which the parts of a name occur.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <cwrc:rangeIncludes rdf:resource="#PersonalName"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="NameType">
+    <rdfs:label xml:lang="en">name type</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#PersonalName"/>
+    <skos:definition xml:lang="en">An aspect of a person's name, including its use, connotations, or significance. </skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="AuthorialName">
+    <rdfs:label xml:lang="en">authorial name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
+    <skos:definition xml:lang="en">A name under which a writer wrote or published.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="PreferredName">
+    <rdfs:label xml:lang="en">preferred name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <cwrc:rangeIncludes rdf:resource="#PersonalName"/>
+    <cwrc:rangeIncludes rdf:resource="#Organization"/>
+    <skos:definition xml:lang="en">Indicates the form of name preferred by an authority or institution.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="preferredBy">
+    <rdfs:label xml:lang="en">preferred by</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates the authority or institution by which the name form is preferred.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="Nickname">
+    <rdfs:label xml:lang="en">nickname</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
+    <skos:definition xml:lang="en">Indicates familiar, humorous, or abusive name given to a person, applied instead of or in addition to their real name. May have @@#NameType@@, @@#abusiveName@@ or @@#honorificName@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="AbusiveName">
+    <rdfs:label xml:lang="en">abusive name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
+    <skos:definition xml:lang="en">A name constructed with the intent to abuse, satirize, or slander. For example, Constance Gore-Booth was known in the press by the nickname of "Red Countess" and this nickname had negative connotations.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="HonorificName">
+    <rdfs:label xml:lang="en">honorific name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
+    <skos:definition xml:lang="en">A positive name which celebrates or honours a person. </skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="CrypticName">
+    <rdfs:label xml:lang="en">cryptic name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
+    <skos:definition xml:lang="en">A name deliberately obscured, as in an anagram. Cryptic names have lexical meaning such as "The Scotch Milkmaid,""A Housewife," or "A Placid Reader." See also @@#AllusiveAuthorship@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="LocalName">
+    <rdfs:label xml:lang="en">local name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
+    <skos:definition xml:lang="en">A name with a geographic connotation, for example, "Julian of Norwich."</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="RomanceName">
+    <rdfs:label xml:lang="en">romance name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
+    <skos:definition xml:lang="en">Indicates cases where the person has a name associated with writing romances, or with romantic writing, for example, Swift's Stella.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="LiteraryName">
+    <rdfs:label xml:lang="en">literary name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
+    <skos:definition xml:lang="en"></skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="FamilliarName">
+    <rdfs:label xml:lang="en">familliar name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
+    <skos:definition xml:lang="en"></skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Pseudonym">
+    <rdfs:label xml:lang="en">pseudonym</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en">pseudonym</skos:altLabel>
+    <skos:altLabel xml:lang="fr"></skos:altLabel>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
+    <skos:definition xml:lang="en">Indicates both names and descriptive phrases (e.g. "A Lover of Her Sex" is a pseudonym for Mary Astell) used in publishing to conceal the identity of the author or to represent a persona.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Birthname">
+    <rdfs:label xml:lang="en">birthname</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
+    <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300404681"/>
+    <skos:definition xml:lang="en">Indicates the name a person was assigned at birth.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Forename">
+    <rdfs:label xml:lang="en">forename</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
+    <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300404681"/>
+    <skos:definition xml:lang="en">A subject's given or baptismal name. This term is derived from the Text Encoding Initiative P5 schema &gt;forename&lt; element. See also @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-forename.html@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Surname">
+    <rdfs:label xml:lang="en">surname</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
+    <owl:equivalentClass rdf:resource="http://metadataregistry.org/concept/show/id/8581.html"/>
+    <skos:definition xml:lang="en">A subject's last name at birth, often a family (inherited) name, as opposed to a @@#Forename@@ or @@#NickName@@." This term is derived from the Text Encoding Initiative P5 schema &gt;surname&lt; element. See also @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-surname.html@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="ProfessionalTitle">
+    <rdfs:label xml:lang="en">professional title</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#RoleName"/>
+    <skos:definition xml:lang="en">A person's professional role (e.g. Doctor Jane Smith) or designates membership in a professional society (e.g. John Smith, Esquire).</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="IndexedName">
+    <rdfs:label xml:lang="en">indexed name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
+    <skos:definition xml:lang="en">Name under which a person's work is indexed by an institution or organization.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="indexedBy">
+    <rdfs:label xml:lang="en">indexed by</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates an organization's use of this name form in its index.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="MarriedName">
+    <rdfs:label xml:lang="en">married name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
+    <skos:definition xml:lang="en">A surname adopted in marriage. </skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="ReligousName">
+    <rdfs:label xml:lang="en">religious name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
+    <skos:definition xml:lang="en">A name acquired through a religious role or practice.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="RoyalName">
+    <rdfs:label xml:lang="en">royal name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#RoleName"/>
+    <skos:definition xml:lang="en">A name based on royal status.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="SelfConstructedName">
+    <rdfs:label xml:lang="en">self constructed name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#AdditionalName"/>
+    <skos:definition xml:lang="en">A self-chosen name used in everyday life rather than only on title-pages as is the case for a @@#pseudonym@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="StyledName">
+    <rdfs:label xml:lang="en">styled name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#RoleName"/>
+    <skos:definition xml:lang="en">A courtesy title associated with the British or other peerage.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TitledName">
+    <rdfs:label xml:lang="en">titled name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#RoleName"/>
+    <skos:definition xml:lang="en">A formal title in the British and other peerages, including of a life peer. Peeresses may be described as titled, although in strict terms, unless one holds a title "in her own right", these are @@#StyledName@@s or courtesy titles.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="SystemName">
+    <rdfs:label xml:lang="en">system name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#PersonalName"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/accountName"/>
+    <skos:definition xml:lang="en">A name by which a person holds an account for a platform or service.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="RoleName">
+    <rdfs:label xml:lang="en">role name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">A name which "indicates that a person has a particular role or position in society, such as an official title or rank." This term is derived from the Text Encoding Initiative P5 schema for the &gt;roleName&lt; element. See @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-roleName.html@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="AdditionalName">
+    <rdfs:label xml:lang="en">additional name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">An additional name, &quot;such as a nickname, epithet, or alias.&quot; This term is derived from the Text Encoding Initiative P5 schema for the &gt;addName&lt; element. See @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-addName.html@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="NameLink">
+    <rdfs:label xml:lang="en">name link</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">"A connecting phrase or link used within a name but not regarded as part of it, such as van der or of." This term is derived from the Text Encoding Initiative P5 schema for the &gt;NameLink&lt; element. See @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-nameLink.html@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="GenerationalName">
+    <rdfs:label xml:lang="en">generational name</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">A name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named." This term is derived from the Text Encoding Initiative P5 schema for the &gt;genName&lt; element. See @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-genName.html@@.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
 
 <!--Occupation  -->
   <owl:Class rdf:ID="OccupationContext">
