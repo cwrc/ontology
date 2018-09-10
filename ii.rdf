@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://sparql.cwrc.ca/ontologies/ii#"
-     xml:base="http://sparql.cwrc.ca/ontologies/ii#"
+     xml:base="http://sparql.cwrc.ca/ontologies/ii"
      xmlns:loc="http://id.loc.gov/vocabulary/relators/"
      xmlns:void="http://rdfs.org/ns/void#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -8,26 +8,22 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#"
-     xmlns:ii="http://sparql.cwrc.ca/ontologies/ii#"
-     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/">
-    <owl:Ontology rdf:about="">
+    <owl:Ontology rdf:about="http://sparql.cwrc.ca/ontologies/ii">
         <loc:pdr rdf:resource="http://sparql.cwrc.ca/ontologies/ii#SusanBrown"/>
         <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85013838"/>
         <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/ii#datasetdefinition"/>
         <vs:term_status xml:lang="en">Testing</vs:term_status>
         <dcterms:title xml:lang="en">The CWRC Illness and Injury Ontology</dcterms:title>
-        <vann:preferredNamespacePrefix>ii</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>http://sparql.cwrc.ca/ontologies/ii#</vann:preferredNamespaceUri>
         <loc:ctb rdf:resource="http://sparql.cwrc.ca/ontologies/ii#ConstanceCrompton"/>
         <foaf:logo rdf:resource="http://sparql.cwrc.ca/images/CWRCLogo-Horz-FullColour.png"/>
         <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/ii#DebStacey"/>
         <rdfs:comment xml:lang="en">The CWRC Illness and Injury Ontology is an ontology developed and used by the Canadian Writing Research Collaboratory.</rdfs:comment>
-        <owl:versionInfo>1.0</owl:versionInfo>
+        <owl:versionInfo>1.1</owl:versionInfo>
         <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/ii#JasmineDrudgeWillson"/>
         <rdfs:label xml:lang="en">The CWRC Illness and Injury Ontology</rdfs:label>
         <loc:ctb rdf:resource="http://sparql.cwrc.ca/ontologies/ii#originalOrlandoAuthor"/>
@@ -901,9 +897,9 @@ If you have celiac disease, eating gluten triggers an immune response in your sm
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Congenital_malformations_deformations_and_chromosomal_abnormalities -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Congenital_malformation_deformation_or_chromosomal_abnormality -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Congenital_malformations_deformations_and_chromosomal_abnormalities">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Congenital_malformation_deformation_or_chromosomal_abnormality">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Congenital_malformations_deformations_and_chromosomal_abnormalities"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17</hasCWRCCode>
     </owl:NamedIndividual>
@@ -994,36 +990,36 @@ If you have celiac disease, eating gluten triggers an immune response in your sm
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_blood -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_blood -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_blood">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_blood">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_blood"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</hasCWRCCode>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_circulatory_system -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_circulatory_system -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_circulatory_system">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_circulatory_system">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_circulatory_system"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9</hasCWRCCode>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_digestive_system -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_digestive_system -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_digestive_system">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_digestive_system">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_digestive_system"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11</hasCWRCCode>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_ear -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_ear -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_ear">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_ear">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_ear"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7</hasCWRCCode>
         <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-59</hasWHOCode>
@@ -1031,9 +1027,9 @@ If you have celiac disease, eating gluten triggers an immune response in your sm
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_eye -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_eye -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_eye">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_eye">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_eye"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8</hasCWRCCode>
         <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-58</hasWHOCode>
@@ -1041,18 +1037,18 @@ If you have celiac disease, eating gluten triggers an immune response in your sm
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_genitourinary_system -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_genitourinary_system -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_genitourinary_system">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_genitourinary_system">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_genitourinary_system"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14</hasCWRCCode>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_musculoskeletal_system -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_musculoskeletal_system -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_musculoskeletal_system">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_musculoskeletal_system">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_musculoskeletal_system"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13</hasCWRCCode>
         <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-76</hasWHOCode>
@@ -1060,27 +1056,27 @@ If you have celiac disease, eating gluten triggers an immune response in your sm
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_nervous_system -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_nervous_system -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_nervous_system">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_nervous_system">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_nervous_system"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</hasCWRCCode>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_respiratory_system -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_respiratory_system -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_respiratory_system">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_respiratory_system">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_respiratory_system"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</hasCWRCCode>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_skin -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_skin -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_skin">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_skin">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_skin"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</hasCWRCCode>
         <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-75</hasWHOCode>
@@ -1148,9 +1144,9 @@ Dr James&apos;s powder was a  patent remedy.  It was also called Dr. James’s F
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Endocrine_nutritional_and_metabolic_diseases -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Endocrine_nutritional_or_metabolic_disease -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Endocrine_nutritional_and_metabolic_diseases">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Endocrine_nutritional_or_metabolic_disease">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Endocrine_nutritional_and_metabolic_diseases"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</hasCWRCCode>
     </owl:NamedIndividual>
@@ -1181,9 +1177,9 @@ Dr James&apos;s powder was a  patent remedy.  It was also called Dr. James’s F
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#External_causes -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#External_cause -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#External_causes">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#External_cause">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#External_causes"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20</hasCWRCCode>
     </owl:NamedIndividual>
@@ -1370,18 +1366,18 @@ Because thyroid hormones affect a number of different body systems, signs and sy
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Infant_death -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#InfantDeath -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Infant_death">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#InfantDeath">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infant_death"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16</hasCWRCCode>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Infectious_disease -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Infectious_disease">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</hasCWRCCode>
     </owl:NamedIndividual>
@@ -1399,9 +1395,9 @@ Because thyroid hormones affect a number of different body systems, signs and sy
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Injuries -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Injury -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Injuries">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Injury">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Injuries"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19</hasCWRCCode>
     </owl:NamedIndividual>
@@ -1635,9 +1631,9 @@ As described in &apos;GLOSSARY OF MEDICAL TERMS USED IN THE 18TH AND 19TH CENTUR
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Mental_and_behavioural_disorders -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Mental_and_behavioural_disorder -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Mental_and_behavioural_disorders">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Mental_and_behavioural_disorder">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Mental_and_behavioural_disorders"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</hasCWRCCode>
     </owl:NamedIndividual>
@@ -1704,23 +1700,6 @@ As described in &apos;GLOSSARY OF MEDICAL TERMS USED IN THE 18TH AND 19TH CENTUR
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15.3</hasCWRCCode>
         <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-81</hasWHOCode>
         <rdfs:label xml:lang="en">Obstructed labour</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Other_direct_obstetric_deaths -->
-
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Other_direct_obstetric_deaths">
-        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19</hasCWRCCode>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Other_mental_and_behavioural_disorders -->
-
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Other_mental_and_behavioural_disorders">
-        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.99</hasCWRCCode>
-        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-54</hasWHOCode>
     </owl:NamedIndividual>
     
 
@@ -1816,9 +1795,9 @@ As described in &apos;GLOSSARY OF MEDICAL TERMS USED IN THE 18TH AND 19TH CENTUR
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Pregnancy_childbirth -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Pregnancy_or_childbirth -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Pregnancy_childbirth">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Pregnancy_or_childbirth">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Pregnancy_childbirth"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15</hasCWRCCode>
     </owl:NamedIndividual>
@@ -1992,9 +1971,9 @@ http://www.who.int/features/2010/smallpox/en/</skos:note>
     
 
 
-    <!-- http://sparql.cwrc.ca/ontologies/ii#Symptoms_unspecified_unknown -->
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Unspecified_unknown -->
 
-    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Symptoms_unspecified_unknown">
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Unspecified_unknown">
         <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Symptoms_unspecified_unknown"/>
         <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18</hasCWRCCode>
         <hasWHOChapter rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18</hasWHOChapter>
