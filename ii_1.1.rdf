@@ -1,0 +1,2188 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://sparql.cwrc.ca/ontologies/ii#"
+     xml:base="http://sparql.cwrc.ca/ontologies/ii"
+     xmlns:loc="http://id.loc.gov/vocabulary/relators/"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <owl:Ontology rdf:about="http://sparql.cwrc.ca/ontologies/ii">
+        <loc:pdr rdf:resource="http://sparql.cwrc.ca/ontologies/ii#SusanBrown"/>
+        <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85013838"/>
+        <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/ii#datasetdefinition"/>
+        <vs:term_status xml:lang="en">Testing</vs:term_status>
+        <dcterms:title xml:lang="en">The CWRC Illness and Injury Ontology</dcterms:title>
+        <loc:ctb rdf:resource="http://sparql.cwrc.ca/ontologies/ii#ConstanceCrompton"/>
+        <foaf:logo rdf:resource="http://sparql.cwrc.ca/images/CWRCLogo-Horz-FullColour.png"/>
+        <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/ii#DebStacey"/>
+        <rdfs:comment xml:lang="en">The CWRC Illness and Injury Ontology is an ontology developed and used by the Canadian Writing Research Collaboratory.</rdfs:comment>
+        <owl:versionInfo>1.1</owl:versionInfo>
+        <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/ii#JasmineDrudgeWillson"/>
+        <rdfs:label xml:lang="en">The CWRC Illness and Injury Ontology</rdfs:label>
+        <loc:ctb rdf:resource="http://sparql.cwrc.ca/ontologies/ii#originalOrlandoAuthor"/>
+        <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85077519"/>
+        <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85019388"/>
+        <loc:fnd rdf:resource="http://sparql.cwrc.ca/ontologies/ii#sshrc"/>
+        <skos:definition xml:lang="en">The CWRC Illness and Injury Ontology is an ontology developed and used by the Canadian Writing Research Collaboratory.</skos:definition>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">ONTOLOGY_DATE</dcterms:date>
+        <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/ii#AlliyyaMo"/>
+        <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/ii#GurjapSingh"/>
+        <foaf:name xml:lang="en">The CWRC Illness and Injury Ontology</foaf:name>
+        <dcterms:rights rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
+        <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/ii#JadePenancier"/>
+        <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/ii#KimMartin"/>
+        <dcterms:publisher rdf:resource="http://sparql.cwrc.ca/ontologies/ii#cwrc"/>
+        <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/ii#AbigelLemak"/>
+        <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85043777"/>
+        <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/ii#ColinFaulkner"/>
+        <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/ii#JoelCummings"/>
+        <dcterms:description xml:lang="en">The CWRC Illness and Injury Ontology is an ontology developed and used by the Canadian Writing Research Collaboratory.</dcterms:description>
+        <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/ii#SusanBrown"/>
+        <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2009007122"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/logo -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/logo"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/nick -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/nick"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#hasCWRCCode -->
+
+    <owl:DatatypeProperty rdf:about="http://sparql.cwrc.ca/ontologies/ii#hasCWRCCode">
+        <rdfs:label xml:lang="en">has CWRC Code</rdfs:label>
+        <skos:note rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Since both ICD-10 and ICD-10-SMoL (WHO) assign codes to entries, there is an unique code assigned to each entry in Illness and Injury.</skos:note>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#hasWHOChapter -->
+
+    <owl:DatatypeProperty rdf:about="http://sparql.cwrc.ca/ontologies/ii#hasWHOChapter">
+        <rdfs:label xml:lang="en">has WHO Chapter</rdfs:label>
+        <skos:note rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This code refers to the chapter in the ICS-10-SMoL (WHO) documentation that the illness or injury entry is in.
+
+Not yet used in the ontology.</skos:note>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#hasWHOCode -->
+
+    <owl:DatatypeProperty rdf:about="http://sparql.cwrc.ca/ontologies/ii#hasWHOCode">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">has WHO Code</rdfs:label>
+        <skos:note rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each entry in the ICD-10-SMoL (WHO) is assigned a code and we include it here for reference.
+
+Not yet entered for all of our entries.  Some of our entries will not have a WHO code since they do not appear in the ICD-10-SMoL  Some of these entries do have an ICD-10 code or they are not in either ICD-10 or ICD-10-SMoL and are unique to CWRC.</skos:note>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson"/>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cancers -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cancers">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+        <owl:disjointWith rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Congenital_malformations_deformations_and_chromosomal_abnormalities"/>
+        <owl:disjointWith rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_blood"/>
+        <owl:disjointWith rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_circulatory_system"/>
+        <owl:disjointWith rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_digestive_system"/>
+        <owl:disjointWith rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_ear"/>
+        <owl:disjointWith rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_eye"/>
+        <owl:disjointWith rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_genitourinary_system"/>
+        <owl:disjointWith rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_musculoskeletal_system"/>
+        <owl:disjointWith rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_nervous_system"/>
+        <owl:disjointWith rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_respiratory_system"/>
+        <owl:disjointWith rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_skin"/>
+        <owl:disjointWith rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Endocrine_nutritional_and_metabolic_diseases"/>
+        <owl:disjointWith rdf:resource="http://sparql.cwrc.ca/ontologies/ii#External_causes"/>
+        <owl:disjointWith rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infant_death"/>
+        <owl:disjointWith rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <owl:disjointWith rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Mental_and_behavioural_disorders"/>
+        <owl:disjointWith rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Pregnancy_childbirth"/>
+        <rdfs:label xml:lang="en">Cancers</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neoplasms</skos:altLabel>
+        <skos:closeMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10/C00-D48.9"/>
+        <skos:note rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notes from ICD-10-SMoL: Includes all neoplasms of all organ systems, including cancer.</skos:note>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cancers</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Congenital_malformations_deformations_and_chromosomal_abnormalities -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Congenital_malformations_deformations_and_chromosomal_abnormalities">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_blood -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_blood">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_circulatory_system -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_circulatory_system">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_digestive_system -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_digestive_system">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_ear -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_ear">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_eye -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_eye">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_genitourinary_system -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_genitourinary_system">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_musculoskeletal_system -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_musculoskeletal_system">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_nervous_system -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_nervous_system">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_respiratory_system -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_respiratory_system">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_skin -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_skin">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Endocrine_nutritional_and_metabolic_diseases -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Endocrine_nutritional_and_metabolic_diseases">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#External_causes -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#External_causes">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#IllnessInjury -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury">
+        <skos:altLabel>Morbidity and Mortality</skos:altLabel>
+        <skos:note>This list of Illness and Injury (Morbidity and Mortality) classifications is an abbreviated version of the World Health Organization&apos;s (WHO) Startup Mortality List (ICD-10-SMoL).  ICD-10-SMoL is the WHO&apos;s application of ICD-10 for low-resource settings initial cause of death collection.
+
+ICD-10-SMoL was chosen because it is a simplified version of the ICD-10.
+ICD (International Classification of Diseases) &quot;is the foundation for the identification of health trends and statistics globally, and the international standard for reporting diseases and health conditions. It is the diagnostic classification standard for all clinical and research purposes. ICD defines the universe of diseases, disorders, injuries and other related health conditions&quot; [http://www.who.int/classifications/icd/en/].
+
+Version 1.0 of this ontology was compiled for the CWRC ontology project and reflects the need to have causes of death and health issues organized in a way to allow for analysis of cultural data.  A simplified list was deemed sufficient since the domain under study (cultural documents) will not have detailed medical information with regards to cause of death or health issues.  But instead of accepting a list of general usage terms for causes of death or health issues that appear in some sources (e.g. Wikipedia, Wikidata, etc.), a standardized, medical classification was selected so that it could be of use for future analysis regarding questions involving the intersection of health and culture.
+
+ICD-10-SMoL was chosen since it was the latest version of this list (June, 2018).  A stable version of ICD-11 was to be available in June 2018 but there was no ICD-11-SMoL available at this time.
+
+To obtain the ICD10-SMoL:
+http://www.who.int/healthinfo/civil_registration/ICD_10_SMoL.pdf?ua=1</skos:note>
+        <skos:prefLabel>Illness and Injury</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Infant_death -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Infant_death">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Injuries -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Injuries">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Mental_and_behavioural_disorders -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Mental_and_behavioural_disorders">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Pregnancy_childbirth -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Pregnancy_childbirth">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Symptoms_unspecified_unknown -->
+
+    <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/ii#Symptoms_unspecified_unknown">
+        <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://orcid.org/0000-0002-0267-7344 -->
+
+    <owl:NamedIndividual rdf:about="http://orcid.org/0000-0002-0267-7344">
+        <owl:sameAs rdf:resource="http://sparql.cwrc.ca/ontologies/ii#SusanBrown"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#AbigelLemak -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#AbigelLemak">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson"/>
+        <foaf:name>Abigel Lemak</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Abortion -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Abortion">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Pregnancy_childbirth"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15.1</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-79</hasWHOCode>
+        <rdfs:label xml:lang="en">Abortion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Addisons_disease -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Addisons_disease">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Endocrine_nutritional_and_metabolic_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.2</hasCWRCCode>
+        <rdfs:label xml:lang="en">Addison&apos;s disease</rdfs:label>
+        <skos:note>Description from the Mayo Clinic
+(https://www.mayoclinic.org/diseases-conditions/addisons-disease/symptoms-causes/syc-20350293)
+
+&quot;Addison&apos;s disease is a disorder that occurs when your body produces insufficient amounts of certain hormones produced by your adrenal glands. In Addison&apos;s disease, your adrenal glands produce too little cortisol and often insufficient levels of aldosterone as well.
+
+Also called adrenal insufficiency, Addison&apos;s disease occurs in all age groups and affects both sexes. Addison&apos;s disease can be life-threatening.&quot;</skos:note>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Alcohol_poisoning -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Alcohol_poisoning">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#External_causes"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20.8</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-102-1</hasWHOCode>
+        <rdfs:label xml:lang="en">Alcohol poisoning</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Alcohol_use_disorders -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Alcohol_use_disorders">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Mental_and_behavioural_disorders"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.1</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-52</hasWHOCode>
+        <rdfs:label xml:lang="en">Alcohol use disorders</rdfs:label>
+        <skos:note>Orlando terms include
+   - delirium tremens</skos:note>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#AlliyyaMo -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#AlliyyaMo">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson"/>
+        <foaf:name>Alliyya Mo</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Alzheimers_disease_dementias -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Alzheimers_disease_dementias">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_nervous_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.2</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-56</hasWHOCode>
+        <rdfs:label xml:lang="en">Alzheimer&apos;s disease, dementias</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Anaemia -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Anaemia">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_blood"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.1</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-47</hasWHOCode>
+        <rdfs:label xml:lang="en">Anaemia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Appendicitis -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Appendicitis">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_digestive_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11.2</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-72</hasWHOCode>
+        <rdfs:label xml:lang="en">Appendicitis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Asphyxia -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Asphyxia">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Symptoms_unspecified_unknown"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19.9</hasCWRCCode>
+        <rdfs:label xml:lang="en">Asphyxia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Asphyxiation -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Asphyxiation">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#External_causes"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20.14</hasCWRCCode>
+        <rdfs:label xml:lang="en">Asphyxiation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Assault -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Assault">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#External_causes"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20.11</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-104</hasWHOCode>
+        <rdfs:label xml:lang="en">Assault</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Asthma -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Asthma">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_respiratory_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.3</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-69</hasWHOCode>
+        <rdfs:label xml:lang="en">Asthma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Benign_tumours -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Benign_tumours">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.20</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-46</hasWHOCode>
+        <rdfs:label xml:lang="en">Benign tumours</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Birth_trauma -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Birth_trauma">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infant_death"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16.3</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-88</hasWHOCode>
+        <rdfs:label xml:lang="en">Birth trauma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Broken_bones -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Broken_bones">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Injuries"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19.3</hasCWRCCode>
+        <rdfs:label xml:lang="en">Broken bones</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cancer -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cancer">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</hasCWRCCode>
+        <hasWHOChapter rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</hasWHOChapter>
+        <rdfs:label xml:lang="en">Cancer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cancer_of_bladder -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cancer_of_bladder">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.15</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-40</hasWHOCode>
+        <rdfs:label xml:lang="en">Cancer of the bladder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cancer_of_breast -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cancer_of_breast">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.10</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-35</hasWHOCode>
+        <rdfs:label xml:lang="en">Cancer of the breast</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cancer_of_central_nervous_system -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cancer_of_central_nervous_system">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.16</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-41</hasWHOCode>
+        <rdfs:label xml:lang="en">Cancer of the central nervous system</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cancer_of_cervix -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cancer_of_cervix">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.11</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-36</hasWHOCode>
+        <rdfs:label xml:lang="en">Cancer of the cervix</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cancer_of_colon_rectum_anus -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cancer_of_colon_rectum_anus">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.4</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-29</hasWHOCode>
+        <rdfs:label xml:lang="en">Cancer of the colon, rectum, anus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cancer_of_larynx -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cancer_of_larynx">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.7</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-32</hasWHOCode>
+        <rdfs:label xml:lang="en">Cancer of the larynx</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cancer_of_lip_oral_cavity_and_pharynx -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cancer_of_lip_oral_cavity_and_pharynx">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.1</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-26</hasWHOCode>
+        <rdfs:label xml:lang="en">Cancer of the lip, oral cavity and pharynx</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cancer_of_liver -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cancer_of_liver">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.5</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-30</hasWHOCode>
+        <rdfs:label xml:lang="en">Cancer of the liver</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cancer_of_oesophagus -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cancer_of_oesophagus">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.2</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-27</hasWHOCode>
+        <rdfs:label xml:lang="en">Cancer of the oesophagus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cancer_of_ovary -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cancer_of_ovary">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.13</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-38</hasWHOCode>
+        <rdfs:label xml:lang="en">Cancer of the ovary</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cancer_of_pancreas -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cancer_of_pancreas">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.6</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-31</hasWHOCode>
+        <rdfs:label xml:lang="en">Cancer of the pancreas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cancer_of_prostate -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cancer_of_prostate">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.14</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-39</hasWHOCode>
+        <rdfs:label xml:lang="en">Cancer of the prostate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cancer_of_skin -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cancer_of_skin">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.9</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-34</hasWHOCode>
+        <rdfs:label xml:lang="en">Cancer of the skin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cancer_of_stomach -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cancer_of_stomach">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.3</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-28</hasWHOCode>
+        <rdfs:label xml:lang="en">Cancer of the stomach</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cancer_of_trachea_bronchus_and_lung -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cancer_of_trachea_bronchus_and_lung">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.8</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-33</hasWHOCode>
+        <rdfs:label xml:lang="en">Cancer of trachea, bronchus and lung</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cancer_of_uterus -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cancer_of_uterus">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.12</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-37</hasWHOCode>
+        <rdfs:label xml:lang="en">Cancer of the uterus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Celiac_disease -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Celiac_disease">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_digestive_system"/>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11.5</hasWHOCode>
+        <rdfs:label xml:lang="en">Celiac disease</rdfs:label>
+        <skos:altLabel>Coeliac disease</skos:altLabel>
+        <skos:altLabel>Sprue</skos:altLabel>
+        <skos:note>Description from Mayo Clinic 
+(https://www.mayoclinic.org/diseases-conditions/celiac-disease/symptoms-causes/syc-20352220)
+
+&quot;Celiac disease (gluten-sensitive enteropathy), sometimes called sprue or coeliac, is an immune reaction to eating gluten, a protein found in wheat, barley and rye.
+
+If you have celiac disease, eating gluten triggers an immune response in your small intestine. Over time, this reaction damages your small intestine&apos;s lining and prevents absorption of some nutrients (malabsorption). The intestinal damage often causes diarrhea, fatigue, weight loss, bloating and anemia, and can lead to serious complications.&quot;</skos:note>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cerebrovascular_diseases_stroke -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cerebrovascular_diseases_stroke">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_circulatory_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9.4</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-64</hasWHOCode>
+        <rdfs:label xml:lang="en">Cerebrovascular diseases, stroke</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Chill -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Chill">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Symptoms_unspecified_unknown"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18.6</hasCWRCCode>
+        <rdfs:label xml:lang="en">Chill</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cholera -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cholera">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-1</hasWHOCode>
+        <rdfs:label xml:lang="en">Cholera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Cold -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Cold">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_respiratory_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.4</hasCWRCCode>
+        <rdfs:label xml:lang="en">Cold</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#ColinFaulkner -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#ColinFaulkner">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson"/>
+        <foaf:name>Colin Faulkner</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Coma -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Coma">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Symptoms_unspecified_unknown"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18.7</hasCWRCCode>
+        <rdfs:label xml:lang="en">Coma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Complications_of_pregnancy_labour_delivery -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Complications_of_pregnancy_labour_delivery">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infant_death"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16.1</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-86</hasWHOCode>
+        <rdfs:label xml:lang="en">Complications of pregnancy, labour, delivery</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Complications_of_surgery -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Complications_of_surgery">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Injuries"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19.2</hasCWRCCode>
+        <rdfs:label xml:lang="en">Complications of surgery</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Concussion -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Concussion">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Injuries"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19.1</hasCWRCCode>
+        <rdfs:label xml:lang="en">Concussion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Conflict_and_war -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Conflict_and_war">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#External_causes"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20.12</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-105</hasWHOCode>
+        <rdfs:label xml:lang="en">Conflict and war</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Congenital_hydrocephalus_spina_bifida -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Congenital_hydrocephalus_spina_bifida">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Congenital_malformations_deformations_and_chromosomal_abnormalities"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17.1</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-91</hasWHOCode>
+        <rdfs:label xml:lang="en">Congenital hydrocephalus, spina bifida</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Congenital_malformation_deformation_or_chromosomal_abnormality -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Congenital_malformation_deformation_or_chromosomal_abnormality">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Congenital_malformations_deformations_and_chromosomal_abnormalities"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17</hasCWRCCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Congenital_malformations_of_the_heart -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Congenital_malformations_of_the_heart">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Congenital_malformations_deformations_and_chromosomal_abnormalities"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17.2</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-92</hasWHOCode>
+        <rdfs:label xml:lang="en">Congenital malformations of the heart</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#ConstanceCrompton -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#ConstanceCrompton">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson"/>
+        <foaf:name>Constance Crompton</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Convulsions -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Convulsions">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Symptoms_unspecified_unknown"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18.4</hasCWRCCode>
+        <rdfs:label xml:lang="en">Convulsions</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#DebStacey -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#DebStacey">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson"/>
+        <foaf:homepage rdf:resource="http://ontology.socs.uoguelph.ca/"/>
+        <foaf:name>Deborah Stacey</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Dengue -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Dengue">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.16</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-15</hasWHOCode>
+        <rdfs:label xml:lang="en">Dengue</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Diabetes -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diabetes">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Endocrine_nutritional_and_metabolic_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.1</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-49</hasWHOCode>
+        <rdfs:label xml:lang="en">Diabetes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Diarrhoeal_diseases -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diarrhoeal_diseases">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.3</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-3</hasWHOCode>
+        <rdfs:label xml:lang="en">Diarrhoeal diseases</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Diphtheria -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diphtheria">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.8</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-8</hasWHOCode>
+        <rdfs:label xml:lang="en">Diphtheria</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_blood -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_blood">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_blood"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</hasCWRCCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_circulatory_system -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_circulatory_system">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_circulatory_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9</hasCWRCCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_digestive_system -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_digestive_system">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_digestive_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11</hasCWRCCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_ear -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_ear">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_ear"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-59</hasWHOCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_eye -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_eye">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_eye"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-58</hasWHOCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_genitourinary_system -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_genitourinary_system">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_genitourinary_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14</hasCWRCCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_musculoskeletal_system -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_musculoskeletal_system">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_musculoskeletal_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-76</hasWHOCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_nervous_system -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_nervous_system">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_nervous_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</hasCWRCCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_respiratory_system -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_respiratory_system">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_respiratory_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</hasCWRCCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_skin -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Disease_of_the_skin">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_skin"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-75</hasWHOCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Down_syndrome -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Down_syndrome">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Congenital_malformations_deformations_and_chromosomal_abnormalities"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17.3</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-93</hasWHOCode>
+        <rdfs:label xml:lang="en">Down syndrome</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Drowning -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Drowning">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#External_causes"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20.4</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-99</hasWHOCode>
+        <rdfs:label xml:lang="en">Drowning</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Drug_poisoning -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Drug_poisoning">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#External_causes"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20.9</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-102-2</hasWHOCode>
+        <rdfs:label xml:lang="en">Drug poisoning</rdfs:label>
+        <skos:note>In Orlando there is a reference to Cause of Death from Dr. James&apos;s Powder.
+Dr James&apos;s powder was a  patent remedy.  It was also called Dr. James’s Fever Powder, circa 1746.
+
+(https://www.the-scientist.com/uncategorized/dr-james-fever-powder-circa-1746-43055)
+&quot;Dr. James’s fever powder, patented by English physician Robert James, claimed to cure fevers and various other maladies, from gout and scurvy to distemper in cattle. Though its efficacy was often questioned, the powder had &apos;a long tradition of usage&apos;, from its introduction in 1746 well into the 20th century, says John Crellin, a professor of medical humanities at Memorial University of Newfoundland. It was even prescribed to King George III when he was suffering from cataracts, rheumatism and dementia at the end of his life.&quot;</skos:note>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Drug_use_disorders -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Drug_use_disorders">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Mental_and_behavioural_disorders"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.2</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-53</hasWHOCode>
+        <rdfs:label xml:lang="en">Drug use disorders</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Eating_disorders -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Eating_disorders">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Mental_and_behavioural_disorders"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.4</hasCWRCCode>
+        <rdfs:label xml:lang="en">Eating disorders</rdfs:label>
+        <skos:note>This classification is for self-imposed starvation and not to be used when the starvation/malnutrition is not voluntary.</skos:note>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Endocrine_nutritional_or_metabolic_disease -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Endocrine_nutritional_or_metabolic_disease">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Endocrine_nutritional_and_metabolic_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</hasCWRCCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Epilepsy -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Epilepsy">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_nervous_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.3</hasCWRCCode>
+        <rdfs:label xml:lang="en">Epilepsy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Erysipelas -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Erysipelas">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.25</hasCWRCCode>
+        <rdfs:label xml:lang="en">Erysipelas</rdfs:label>
+        <skos:note rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description from Wikipedia
+(https://en.wikipedia.org/wiki/Erysipelas)
+
+&quot;Erysipelas is an acute infection typically with a skin rash, usually on any of the legs and toes, face, arms, and fingers. It is an infection of the upper dermis and superficial lymphatics, usually caused by beta-hemolytic group A Streptococcus bacteria on scratches or otherwise infected areas.&quot;</skos:note>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#External_cause -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#External_cause">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#External_causes"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20</hasCWRCCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Falls -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Falls">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#External_causes"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20.3</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-98</hasWHOCode>
+        <rdfs:label xml:lang="en">Falls</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Female_infertility -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Female_infertility">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_genitourinary_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14.2</hasCWRCCode>
+        <rdfs:label xml:lang="en">Female infertility</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sterility</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Fever -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Fever">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Symptoms_unspecified_unknown"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18.1</hasCWRCCode>
+        <rdfs:label xml:lang="en">Fever</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Fire -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Fire">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#External_causes"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20.5</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-100</hasWHOCode>
+        <rdfs:label xml:lang="en">Fire</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Forces_of_nature -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Forces_of_nature">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#External_causes"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20.6</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-101</hasWHOCode>
+        <rdfs:label xml:lang="en">Forces of nature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Gangrene -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Gangrene">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Symptoms_unspecified_unknown"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18.5</hasCWRCCode>
+        <rdfs:label xml:lang="en">Gangrene</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Gastric_and_duodenal_ulcer -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Gastric_and_duodenal_ulcer">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_digestive_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11.1</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-71</hasWHOCode>
+        <rdfs:label xml:lang="en">Gastric and duodenal ulcer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Gravess_disease -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Gravess_disease">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Endocrine_nutritional_and_metabolic_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.3</hasCWRCCode>
+        <rdfs:label xml:lang="en">Graves&apos; disease</rdfs:label>
+        <skos:note>Description from the Mayo Clinic
+(https://www.mayoclinic.org/diseases-conditions/graves-disease/symptoms-causes/syc-20356240)
+
+&quot;Graves&apos; disease is an immune system disorder that results in the overproduction of thyroid hormones (hyperthyroidism). Although a number of disorders may result in hyperthyroidism, Graves&apos; disease is a common cause.
+
+Because thyroid hormones affect a number of different body systems, signs and symptoms associated with Graves&apos; disease can be wide ranging and significantly influence your overall well-being. Although Graves&apos; disease may affect anyone, it&apos;s more common among women and before the age of 40.&quot;</skos:note>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#GurjapSingh -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#GurjapSingh">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson"/>
+        <foaf:name>Gurjap Singh</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#HIV -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#HIV">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.22</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-20</hasWHOCode>
+        <rdfs:label xml:lang="en">HIV</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Hepatitis -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Hepatitis">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.19</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-19</hasWHOCode>
+        <rdfs:label xml:lang="en">Hepatitis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Hepatitis_A -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Hepatitis_A">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.20</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-19</hasWHOCode>
+        <rdfs:label xml:lang="en">Hepatitis A</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Hepatitis_B -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Hepatitis_B">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.21</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-19-1</hasWHOCode>
+        <rdfs:label xml:lang="en">Hepatitis B</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Hodgkins_lymphoma -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Hodgkins_lymphoma">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.21</hasCWRCCode>
+        <rdfs:label xml:lang="en">Hodgkin&apos;s lymphoma</rdfs:label>
+        <skos:altLabel>Hodgkin&apos;s disease</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Hypertensive_heart_diseases -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Hypertensive_heart_diseases">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_circulatory_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9.2</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-61</hasWHOCode>
+        <rdfs:label xml:lang="en">Hypertensive heart diseases</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Indirect_obstetric_deaths -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Indirect_obstetric_deaths">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Pregnancy_childbirth"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15.7</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-85</hasWHOCode>
+        <rdfs:label xml:lang="en">Indirect obstetric deaths</rdfs:label>
+        <skos:note rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From ICD-10:
+
+&quot;Death from any obstetric cause (direct or indirect) occurring one year or more after delivery&quot;</skos:note>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#InfantDeath -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#InfantDeath">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infant_death"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16</hasCWRCCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Infectious_disease -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Infectious_disease">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</hasCWRCCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Influenza -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Influenza">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_respiratory_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.1</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-66</hasWHOCode>
+        <rdfs:label xml:lang="en">Influenza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Injury -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Injury">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Injuries"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19</hasCWRCCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Intentional_self-harm -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Intentional_self-harm">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#External_causes"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20.10</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-103</hasWHOCode>
+        <rdfs:label xml:lang="en">Intentional self-harm</rdfs:label>
+        <skos:prefLabel xml:lang="en">Suicide</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Intestinal_malabsorption -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Intestinal_malabsorption">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_digestive_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11.4</hasCWRCCode>
+        <rdfs:label xml:lang="en">Intestinal malabsorption</rdfs:label>
+        <skos:note>Orlando term - malabsorption disease</skos:note>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#JadePenancier -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#JadePenancier">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson"/>
+        <foaf:name>Jade Penancier</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#JasmineDrudgeWillson -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#JasmineDrudgeWillson">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson"/>
+        <foaf:name>Jasmine Drudge-Willson</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Jaundice -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Jaundice">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Symptoms_unspecified_unknown"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18.3</hasCWRCCode>
+        <rdfs:label xml:lang="en">Jaundice</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#JoelCummings -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#JoelCummings">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson"/>
+        <foaf:name>Joel Cummings</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Kidney_stones -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Kidney_stones">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_genitourinary_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14.1</hasCWRCCode>
+        <rdfs:label xml:lang="en">Kidney stones</rdfs:label>
+        <skos:note>In Orlando, there is a reference to &apos;gravel&apos;.  This is an older medical term for kidney stones.
+
+As described in &apos;GLOSSARY OF MEDICAL TERMS USED IN THE 18TH AND 19TH CENTURIES&apos;
+(https://www.thornber.net/medicine/html/medgloss.html)
+
+&quot;Gravel:  a disease characterised by small stones which are formed in the kidneys, passed along the ureters to the bladder, and expelled with the urine.  See also stranguary.  Synonym: kidney stone.  Sandy matter concreted in the kidneys.&quot;</skos:note>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#KimMartin -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#KimMartin">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson"/>
+        <foaf:name>Kim Martin</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Leprosy -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Leprosy">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.6</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-6</hasWHOCode>
+        <rdfs:label xml:lang="en">Leprosy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Leukaemia -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Leukaemia">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.19</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-44</hasWHOCode>
+        <rdfs:label xml:lang="en">Leukaemia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Liver_cirrhosis -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Liver_cirrhosis">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_digestive_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11.3</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-73</hasWHOCode>
+        <rdfs:label xml:lang="en">Liver cirrhosis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Malaise_and_fatigue -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Malaise_and_fatigue">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Symptoms_unspecified_unknown"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18.10</hasCWRCCode>
+        <rdfs:label xml:lang="en">Malaise and fatigue</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Malaria -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Malaria">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.23</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-21</hasWHOCode>
+        <rdfs:label xml:lang="en">Malaria</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Male_infertility -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Male_infertility">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_genitourinary_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14.3</hasCWRCCode>
+        <rdfs:label xml:lang="en">Male infertility</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sterility</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Malnutrition -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Malnutrition">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Endocrine_nutritional_and_metabolic_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.4</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-50</hasWHOCode>
+        <rdfs:label xml:lang="en">Malnutrition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Maternal_haemorrhage -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Maternal_haemorrhage">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Pregnancy_childbirth"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15.4</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-82</hasWHOCode>
+        <rdfs:label xml:lang="en">Maternal haemorrhage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Maternal_hypertensive_disorders -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Maternal_hypertensive_disorders">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Pregnancy_childbirth"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15.2</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-80</hasWHOCode>
+        <rdfs:label xml:lang="en">Maternal hypertensive disorders</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Maternal_sepsis -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Maternal_sepsis">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Pregnancy_childbirth"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15.5</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-83</hasWHOCode>
+        <rdfs:label xml:lang="en">Maternal sepsis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Measles -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Measles">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.18</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-18</hasWHOCode>
+        <rdfs:label xml:lang="en">Measles</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Meningitis -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Meningitis">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_nervous_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.1</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-55</hasWHOCode>
+        <rdfs:label xml:lang="en">Meningitis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Meningococcal_infection -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Meningococcal_infection">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.10</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-10</hasWHOCode>
+        <rdfs:label xml:lang="en">Meningococcal infection</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Mental_and_behavioural_disorder -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Mental_and_behavioural_disorder">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Mental_and_behavioural_disorders"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</hasCWRCCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Miscarriage -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Miscarriage">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Pregnancy_childbirth"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15.7</hasCWRCCode>
+        <rdfs:label xml:lang="en">Miscarriage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Multiple_myeloma -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Multiple_myeloma">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.18</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-43</hasWHOCode>
+        <rdfs:label xml:lang="en">Multiple myeloma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Multiple_sclerosis -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Multiple_sclerosis">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_nervous_system"/>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.6</hasWHOCode>
+        <rdfs:label xml:lang="en">Multiple sclerosis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Myocardial_infarction_heart_attack -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Myocardial_infarction_heart_attack">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_circulatory_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9.3</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-62</hasWHOCode>
+        <rdfs:label xml:lang="en">Myocardial infarction, heart attack</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Non-Hodgkin_lymphoma -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Non-Hodgkin_lymphoma">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Cancers"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.17</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-42</hasWHOCode>
+        <rdfs:label xml:lang="en">Non-Hodgkin lymphoma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Obstructed_labour -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Obstructed_labour">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Pregnancy_childbirth"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15.3</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-81</hasWHOCode>
+        <rdfs:label xml:lang="en">Obstructed labour</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Other_transport_accidents -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Other_transport_accidents">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#External_causes"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20.2</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-97</hasWHOCode>
+        <rdfs:label xml:lang="en">Other transport accidents</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Paralysis -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Paralysis">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_nervous_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.5</hasCWRCCode>
+        <rdfs:label xml:lang="en">Paralysis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Parkinson_disease -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Parkinson_disease">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_nervous_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.4</hasCWRCCode>
+        <rdfs:label xml:lang="en">Parkinson disease</rdfs:label>
+        <skos:altLabel>Parkinson&apos;s disease</skos:altLabel>
+        <skos:prefLabel>Parkinson disease</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Plague -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Plague">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.5</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-5</hasWHOCode>
+        <rdfs:label xml:lang="en">Plague</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Pleurisy -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Pleurisy">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_respiratory_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.5</hasCWRCCode>
+        <rdfs:label xml:lang="en">Pleurisy</rdfs:label>
+        <skos:altLabel>Pleuritis</skos:altLabel>
+        <skos:note rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description from (http://www.pleuritis.net/)
+
+&quot;Pleurisy, also known as pleuritus, is an inflammation of the pleura, or the lining of the lungs. This can often be very painful and can be debilitating to a point where a person cannot do much activity because of the pain. This can cause problems breathing and may even make a person run out of breath to a point in which they could pass out. The complications from this disorder can be very serious and in some cases it can be fatal.&quot;</skos:note>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Pneumonia -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Pneumonia">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_respiratory_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.2</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-67</hasWHOCode>
+        <rdfs:label xml:lang="en">Pneumonia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Poisoning -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Poisoning">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#External_causes"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20.7</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-102</hasWHOCode>
+        <rdfs:label xml:lang="en">Poisoning</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Poliomyelitis -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Poliomyelitis">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.14</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-13</hasWHOCode>
+        <rdfs:label xml:lang="en">Poliomyelitis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Pregnancy_or_childbirth -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Pregnancy_or_childbirth">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Pregnancy_childbirth"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15</hasCWRCCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Prematurity_low_birth_weight -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Prematurity_low_birth_weight">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infant_death"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16.2</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-87</hasWHOCode>
+        <rdfs:label xml:lang="en">Prematurity, low birth weight</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Rabies -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Rabies">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.15</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-14</hasWHOCode>
+        <rdfs:label xml:lang="en">Rabies</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Rheumatic_fever -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Rheumatic_fever">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_circulatory_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9.1</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-60</hasWHOCode>
+        <rdfs:label xml:lang="en">Rheumatic fever</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Rheumatoid_Arthritis -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Rheumatoid_Arthritis">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_musculoskeletal_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13.1</hasCWRCCode>
+        <rdfs:label xml:lang="en">Rheumatoid Arthritis</rdfs:label>
+        <skos:note>In Orlando, this is a considered a Cause of Death even though it technically is not a fatal condition.  It does, though, make sufferers susceptible to other illness that are fatal.</skos:note>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Road_traffic_accidents -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Road_traffic_accidents">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#External_causes"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20.1</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-96</hasWHOCode>
+        <rdfs:label xml:lang="en">Road traffic accidents</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Septicaemia -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Septicaemia">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.11</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-11</hasWHOCode>
+        <rdfs:label xml:lang="en">Septicaemia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Severe_stress_and_adjustment_disorders -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Severe_stress_and_adjustment_disorders">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Mental_and_behavioural_disorders"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.3</hasCWRCCode>
+        <rdfs:label xml:lang="en">Severe stress and adjustment disorders</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10/F40-F48.9"/>
+        <skos:note>This category is not in the ICD-10-SMoL.  It is in ICD-10 as category F43 and includes:
+   F43.0   Acute stress reaction
+   F43.1   Post-traumatic stress disorder
+   F43.2   Adjustment disorders
+
+This category will be used for Causes of Death such as:
+   - grief
+   - nervous shock 
+
+Note about &quot;nervous shock&quot; - this is a legal term NOT a medical term.
+Definitions include:
+   - from LawTeacher   
+(https://www.lawteacher.net/free-law-essays/common-law/what-is-nervous-shock.php)
+&quot;Nervous shock is the onset of a psychiatric illness caused by witnessing the negligent action, or the results thereof, of another. For the purposes of succeeding in a suit it must be diagnosed as more than grief or sorrow i.e. an actual psychiatric illness.&quot;
+   - from Wikipedia
+(https://en.wikipedia.org/wiki/Nervous_shock_in_English_law)
+&quot;In English law, a nervous shock is a psychiatric illness or injury inflicted upon a person by intentional or negligent actions or omissions of another. Often it is a psychiatric disorder triggered by witnessing an accident, for example an injury caused to one&apos;s parents or spouse. Although the term &quot;nervous shock&quot; has been described as &quot;inaccurate&quot; and &quot;misleading&quot;, it continues to be applied as a useful abbreviation for a complex concept. The possibility of recovering damages for nervous shock, particularly caused by negligence, is strongly limited in English law.&quot;</skos:note>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Sexually_transmitted_diseases -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Sexually_transmitted_diseases">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.12</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-12</hasWHOCode>
+        <rdfs:label xml:lang="en">Sexually transmitted diseases</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Venereal diseases</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Shock -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Shock">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Symptoms_unspecified_unknown"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18.2</hasCWRCCode>
+        <rdfs:label xml:lang="en">Shock</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Smallpox -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Smallpox">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.24</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eradicated (ICD10 code = B03)</hasWHOCode>
+        <rdfs:label xml:lang="en">Smallpox</rdfs:label>
+        <skos:note>&quot;Smallpox is an acute contagious disease caused by the variola virus, a member of the orthopoxvirus family. It was one of the world&apos;s most devastating diseases known to humanity. The last known natural case was in Somalia in 1977. It was declared eradicated in 1980 following a global immunization campaign led by the World Health Organization.&quot;
+
+&quot;Smallpox is a devastating disease caused by the variola virus. In 1980, following an historic global campaign of surveillance and vaccination, the World Health Assembly declared smallpox eradicated – the only infectious disease to achieve this distinction.&quot;
+
+Reference: World Health Organization
+http://www.who.int/csr/disease/smallpox/en/
+
+The Smallpox Eradication Programme - SEP (1966-1980)
+http://www.who.int/features/2010/smallpox/en/</skos:note>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Stillbirth -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Stillbirth">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infant_death"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16.4</hasCWRCCode>
+        <rdfs:label xml:lang="en">Stillbirth</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fetal death</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Stings -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Stings">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#External_causes"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20.13</hasCWRCCode>
+        <rdfs:label xml:lang="en">Stings</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#SusanBrown -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#SusanBrown">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson"/>
+        <foaf:homepage rdf:resource="http://www.uoguelph.ca/~sbrown/"/>
+        <foaf:name>Susan Brown</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Unspecified_unknown -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Unspecified_unknown">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Symptoms_unspecified_unknown"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18</hasCWRCCode>
+        <hasWHOChapter rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18</hasWHOChapter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Syphilis -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Syphilis">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.13</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-12-1</hasWHOCode>
+        <rdfs:label xml:lang="en">Syphilis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Tachycardia -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Tachycardia">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Symptoms_unspecified_unknown"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18.11</hasCWRCCode>
+        <rdfs:label xml:lang="en">Tachycardia</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rapid heart beat</skos:altLabel>
+        <skos:note>Rapid heart beat - many causes.</skos:note>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Tetanus -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Tetanus">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.7</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-7</hasWHOCode>
+        <rdfs:label xml:lang="en">Tetanus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Throat_infection -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Throat_infection">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_respiratory_system"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.6</hasCWRCCode>
+        <rdfs:label xml:lang="en">Throat infection</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Tuberculosis -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Tuberculosis">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.4</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-4</hasWHOCode>
+        <rdfs:label xml:lang="en">Tuberculosis</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consumption</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Typhoid -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Typhoid">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2</hasWHOCode>
+        <rdfs:label xml:lang="en">Typhoid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Typhus -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Typhus">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.26</hasCWRCCode>
+        <rdfs:label xml:lang="en">Typhus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Unspecified_Unknown_Cause_of_Death -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Unspecified_Unknown_Cause_of_Death">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Symptoms_unspecified_unknown"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18.8</hasCWRCCode>
+        <rdfs:label xml:lang="en">Unspecified, Unknown Cause of Death</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Whooping_cough -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Whooping_cough">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.9</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-9</hasWHOCode>
+        <rdfs:label xml:lang="en">Whooping cough</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#Yellow_fever -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#Yellow_fever">
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases"/>
+        <hasCWRCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.17</hasCWRCCode>
+        <hasWHOCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-16</hasWHOCode>
+        <rdfs:label xml:lang="en">Yellow fever</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#cwrc -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#cwrc">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:homepage rdf:resource="http://www.cwrc.ca/"/>
+        <foaf:logo rdf:resource="http://sparql.cwrc.ca/images/CWRCLogo-Horz-FullColour.png"/>
+        <foaf:name xml:lang="fr">Le Collaboratoire scientifique des écrits du Canada</foaf:name>
+        <foaf:name xml:lang="en">The Canadian Writing Research Collaboratory</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sparql.cwrc.ca/ontologies/ii#sshrc -->
+
+    <owl:NamedIndividual rdf:about="http://sparql.cwrc.ca/ontologies/ii#sshrc">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:name xml:lang="fr">Conseil de recherches en sciences humaines</foaf:name>
+        <foaf:name xml:lang="en">Social Sciences and Humanities Research Council</foaf:name>
+        <foaf:nick>SSHRC</foaf:nick>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Congenital_malformations_deformations_and_chromosomal_abnormalities">
+        <rdfs:label xml:lang="en">Congenital malformations, deformations and chromosomal abnormalities</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_blood">
+        <rdfs:label xml:lang="en">Diseases of the blood</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_circulatory_system">
+        <rdfs:label xml:lang="en">Diseases of the circulatory system</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_digestive_system">
+        <rdfs:label xml:lang="en">Diseases of the digestive system</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_ear">
+        <rdfs:label xml:lang="en">Diseases of the ear</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_eye">
+        <rdfs:label xml:lang="en">Diseases of the eye</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_genitourinary_system">
+        <rdfs:label xml:lang="en">Diseases of the genitourinary system</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_musculoskeletal_system">
+        <rdfs:label xml:lang="en">Diseases of the musculoskeletal system</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_nervous_system">
+        <rdfs:label xml:lang="en">Diseases of the nervous system</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_respiratory_system">
+        <rdfs:label xml:lang="en">Diseases of the respiratory system</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Diseases_of_the_skin">
+        <rdfs:label xml:lang="en">Diseases of the skin</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Endocrine_nutritional_and_metabolic_diseases">
+        <rdfs:label xml:lang="en">Endocrine, nutritional and metabolic diseases</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#External_causes">
+        <rdfs:label xml:lang="en">External causes</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Infant_death">
+        <rdfs:label xml:lang="en">Infant death</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Infectious_diseases">
+        <skos:closeMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10/A00-B99.9"/>
+        <rdfs:label xml:lang="en">Infectious diseases</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infectious diseases</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Injuries">
+        <rdfs:label xml:lang="en">Injuries</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Mental_and_behavioural_disorders">
+        <rdfs:label xml:lang="en">Mental and behavioural disorders</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Pregnancy_childbirth">
+        <rdfs:label xml:lang="en">Pregnancy, childbirth</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://sparql.cwrc.ca/ontologies/ii#Symptoms_unspecified_unknown">
+        <rdfs:label xml:lang="en">Symptoms, unspecified, unknown</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
