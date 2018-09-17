@@ -804,7 +804,7 @@
     <rdfs:label xml:lang="en">nickname</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
-    <skos:definition xml:lang="en">Indicates familiar, humorous, or abusive name given to a person, applied instead of or in addition to their real name. May have @@#NameType@@, @@#abusiveName@@ or @@#honorificName@@.</skos:definition>
+    <skos:definition xml:lang="en">Indicates familiar, humorous, or abusive name given to a person, applied instead of or in addition to their real name. May have @@#NameType@@, @@#AbusiveName@@ or @@#HonorificName@@.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -883,8 +883,6 @@
   <owl:Class rdf:ID="Pseudonym">
     <rdfs:label xml:lang="en">pseudonym</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en">pseudonym</skos:altLabel>
-    <skos:altLabel xml:lang="fr"></skos:altLabel>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">Indicates both names and descriptive phrases (e.g. "A Lover of Her Sex" is a pseudonym for Mary Astell) used in publishing to conceal the identity of the author or to represent a persona.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
@@ -919,7 +917,7 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <owl:equivalentClass rdf:resource="http://metadataregistry.org/concept/show/id/8581.html"/>
-    <skos:definition xml:lang="en">A subject's last name at birth, often a family (inherited) name, as opposed to a @@#Forename@@ or @@#NickName@@." This term is derived from the Text Encoding Initiative P5 schema 'surname' element. See also @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-surname.html@@.</skos:definition>
+    <skos:definition xml:lang="en">A subject's last name at birth, often a family (inherited) name, as opposed to a @@#Forename@@ or @@#Nickname@@." This term is derived from the Text Encoding Initiative P5 schema 'surname' element. See also @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-surname.html@@.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
