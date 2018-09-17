@@ -517,7 +517,7 @@
   <owl:Class rdf:ID="BritishWomenLiteraryClimate">
     <rdfs:label xml:lang="en">british women writers literary climate</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:definition xml:lang="en">An event associated with British women writers, including the creation, publication and reception of their works, as well as the material conditions amd other aspects of their lives.</skos:definition>
+    <skos:definition xml:lang="en">An event associated with British women writers, including the creation, publication and reception of their works, as well as the material conditions and other aspects of their lives.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:subClassOf rdf:resource="#LiteraryClimate"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -699,7 +699,7 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as Leisure Context provide information about and discussions of instances of the leisure and social activities of a person including hobbies, sporting life and cultural activitites, for example mountain climbing or hosting a literary salon.  Notions of leisure are both gendered and classed, and vary by cultural context. This context is meant to capture a person's social life within their larger community, not simply an elite, fashionable social circle.</skos:definition>
+    <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as Leisure Context provide information about and discussions of instances of the leisure and social activities of a person including hobbies, sporting life and cultural activities, for example mountain climbing or hosting a literary salon.  Notions of leisure are both gendered and classed, and vary by cultural context. This context is meant to capture a person's social life within their larger community, not simply an elite, fashionable social circle.</skos:definition>
     <!-- Waiting for significant activity to be defined -->
     <!-- <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as Leisure Context provide information about and discussions of instances of the leisure and social activities of a person including hobbies, sporting life and cultural activitites, for example mountain climbing or hosting a literary salon.  Notions of leisure are both gendered and classed, and vary by cultural context. This context is meant to capture a person's social life within their larger community, not simply an elite, fashionable social circle. For individual friendships, see @@#FriendsAndAssociatesContext@@, and for volunteer philanthropic activities, see @@#OccupationContext@@, particularly @@#hasVolunteerOccupation@@.</skos:definition> -->
     <skos:definition xml:lang="fr"></skos:definition>
@@ -714,7 +714,7 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="fr">A significant subclass of @@#Context@@. Annotations typed as name context provide the name or names associated with a person, at times with contextual information.</skos:definition>
+    <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as name context provide the name or names associated with a person, at times with contextual information.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -736,6 +736,7 @@
   <owl:ObjectProperty rdf:ID="hasName">
     <rdfs:label xml:lang="en">has name</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates a person's name.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -870,8 +871,8 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="FamilliarName">
-    <rdfs:label xml:lang="en">familliar name</rdfs:label>
+  <owl:Class rdf:ID="FamiliarName">
+    <rdfs:label xml:lang="en">familiar name</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en"></skos:definition>
