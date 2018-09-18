@@ -2313,6 +2313,197 @@
   </cwrc:EducationalAward>
 
 
+  <owl:ObjectProperty rdf:about="#hasCredentialIn">
+    <rdfs:label xml:lang="en">has credential in</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates the subject for which a person has received a formal credential.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#credentialHeldBy">
+    <rdfs:label xml:lang="en">credential held by</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en"></skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:inverseOf rdf:resource="#hasCredentialIn"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#studies">
+    <rdfs:label xml:lang="en">studies</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates a text studied by a person in the course of their education, whether formal or informal, institutional or domestic.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#studiedBy">
+    <rdfs:label xml:lang="en">studied by</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en"></skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:inverseOf rdf:resource="#studies"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#teachesEducationalSubject">
+    <rdfs:label xml:lang="en">teaches educational subject</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates a subject, field, art, or skill taught by an instructor or educational organization.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#attendsPrimarySchool">
+    <rdfs:label xml:lang="en">attends primary school</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates attending or having attended for education a primary school.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:subPropertyOf rdf:resource="#attends"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#attendsSecondarySchool">
+    <rdfs:label xml:lang="en">attends secondary school</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates attending or having attended for education a secondary school.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:subPropertyOf rdf:resource="#attends"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#attendsPostSecondarySchool">
+    <rdfs:label xml:lang="en">attends post-secondary school</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates attending or having attended for education a post-secondary school.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:subPropertyOf rdf:resource="#attends"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+
+  <owl:Class rdf:ID="EducationalSubject">
+    <rdfs:label xml:lang="en">educational subject</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">A subject or field of study or practice. Educational subjects are typically designated by Library of Congress Subject Headings (http://id.loc.gov/authorities/subjects.html). However, given the omissions, biases, and US-centricity of this vocabulary, other terms or strings may be used.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:related rdf:resource="http://id.loc.gov/ontologies/bibframe/subject"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Oeuvre">
+    <rdfs:label xml:lang="en">oeuvre</rdfs:label>
+    <rdfs:label xml:lang="fr">oeuvre</rdfs:label>
+    <skos:definition xml:lang="en">Indicates the  works of an author or other creative practioner regarded collectively.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="EducationalText">
+    <rdfs:label xml:lang="en">educational text</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en"></skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Scholarship">
+    <rdfs:label xml:lang="en">scholarship</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">A scholarship is an award of financial aid for a student to further their education. Scholarships are awarded based upon various criteria, which usually reflect the values and purposes of the donor or founder of the award. Scholarship money is not required to be repaid.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:subClassOf rdf:resource="#EducationalAward"/>
+    <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Scholarship"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="EducationalPrize">
+    <rdfs:label xml:lang="en">educational prize</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">A medal or award, monetary or otherwise, presented by either an institution or person of authority to an individual who has excelled in some aspect of their education.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:subClassOf rdf:resource="#EducationalAward"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Fellowship">
+    <rdfs:label xml:lang="en">fellowship</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">An educational award or academic position usually associated with research or advanced standing in a field and sometimes involving labour such as teaching.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:subClassOf rdf:resource="#EducationalAward"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="EssayAward">
+    <rdfs:label xml:lang="en">essay award</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">An award given in an educational context on the strength of the recipient's essay.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:subClassOf rdf:resource="#EducationalAward"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Bursary">
+    <rdfs:label xml:lang="en">bursary</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">A bursary is a monetary award made by an institution to individuals or groups of people who cannot afford to pay full fees. In return for the bursary the individual is usually obligated to be employed at the institution for the duration as the bursary.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Bursary"/>
+    <owl:subClassOf rdf:resource="#EducationalAward"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Exhibition">
+    <rdfs:label xml:lang="en">exhibition (scholarship)</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">An exhibition is a type of scholarship award or bursary.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Exhibition_(scholarship)"/>
+    <owl:subClassOf rdf:resource="EducationalAward"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Distinction">
+    <rdfs:label xml:lang="en">distinction</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">An educational award indicating that a person has achieved honours or distinction in their studies.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:subClassOf rdf:resource="#EducationalAward"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Studentship">
+    <rdfs:label xml:lang="en">studentship</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">A Studentship is a type of academic scholarship.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Studentship"/>
+    <owl:subClassOf rdf:resource="#EducationalAward"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
   <owl:Class rdf:ID="Address">
     <rdfs:label xml:lang="en">address</rdfs:label>
     <rdfs:label xml:lang="fr">adresse</rdfs:label>
