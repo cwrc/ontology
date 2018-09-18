@@ -835,7 +835,7 @@
     <rdfs:label xml:lang="en">cryptic name</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
-    <skos:definition xml:lang="en">A name deliberately obscured, as in an anagram. Cryptic names have lexical meaning such as "The Scotch Milkmaid,""A Housewife," or "A Placid Reader." See also @@#AllusiveAuthorship@@.</skos:definition>
+    <skos:definition xml:lang="en">A name deliberately obscured, as in an anagram. Cryptic names have lexical meaning such as "The Scotch Milkmaid,""A Housewife," or "A Placid Reader." <!-- See also @@#AllusiveAuthorship@@. --></skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -865,7 +865,7 @@
     <rdfs:label xml:lang="en">literary name</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
-    <skos:definition xml:lang="en"></skos:definition>
+    <skos:definition xml:lang="en">A name applied to a writer by others, for example in reviews or at readings, which orginate in the person's status as a writer.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -875,7 +875,7 @@
     <rdfs:label xml:lang="en">familiar name</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
-    <skos:definition xml:lang="en"></skos:definition>
+    <skos:definition xml:lang="en">A version of a name used by those familiar with a person, such as family, friends, or co-workers.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -2365,7 +2365,7 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Indicates attending or having attended for education a primary school.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
-    <owl:subPropertyOf rdf:resource="#attends"/>
+    <rdfs:subPropertyOf rdf:resource="#attends"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -2375,7 +2375,7 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Indicates attending or having attended for education a secondary school.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
-    <owl:subPropertyOf rdf:resource="#attends"/>
+    <rdfs:subPropertyOf rdf:resource="#attends"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -2385,7 +2385,7 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Indicates attending or having attended for education a post-secondary school.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
-    <owl:subPropertyOf rdf:resource="#attends"/>
+    <rdfs:subPropertyOf rdf:resource="#attends"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
