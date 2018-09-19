@@ -72,8 +72,10 @@ term_main_uris = [rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#label
     'http://www.w3.org/2004/02/skos/core#definition'), rdflib.term.URIRef(
     'http://www.w3.org/2004/02/skos/core#altLabel'),
     rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#comment')]
-term_ignore_uris = [rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#value'), rdflib.term.URIRef(
-    'http://rdfs.org/ns/void#inDataset'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#isDefinedBy')]
+term_ignore_uris = [rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#value'),
+                    rdflib.term.URIRef('http://www.w3.org/2004/02/skos/core#hiddenLabel'),
+                    rdflib.term.URIRef('http://rdfs.org/ns/void#inDataset'),
+                    rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#isDefinedBy')]
 
 
 def parse_relations():
