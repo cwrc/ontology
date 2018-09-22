@@ -20,6 +20,7 @@ RDF = rdflib.Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 VANN = rdflib.Namespace("http://purl.org/vocab/vann/")
 OWL = rdflib.Namespace("http://www.w3.org/2002/07/owl#")
 
+all_nodes = []
 relations = {
     "broaderTransitive": "http://www.w3.org/2004/02/skos/core#broaderTransitive",
     "related": "http://www.w3.org/2004/02/skos/core#related",
@@ -113,7 +114,8 @@ def get_label(uri, lang):
         uri, lang)
     # if no label should return clean uri term
     # for some reason not grabbing labels :/ on test.owl
-    label = get_uri_term(uri)
+    label = "__" + get_uri_term(uri) + "__"
+
     for row in o_graph.query(query_str):
         label = row.label
     return label
@@ -145,14 +147,15 @@ def get_symmetric(instances):
 
 
 def get_relation(instances, relation):
+    global all_nodes
     relation_list = []
     for x in instances:
         query_str = "SELECT * WHERE { <%s>  <%s> ?upper . }" % (x, relations[relation])
         origTerm = "__" + get_uri_term(str(x)).replace("-", "_") + "__"
+        all_nodes.append(x)
         for row in o_graph.query(query_str):
-            # if :
-            #     pass
             new_term = "__" + get_uri_term(str(row[0])).replace("-", "_") + "__"
+            all_nodes.append(row[0])
             relation_list.append(
                 origTerm + "->" + new_term + relation_style[relation])
     return relation_list
@@ -185,6 +188,7 @@ def main():
     ontology_file = args.file
     taxonomy = args.taxonomy
     global lang
+    global all_nodes
     lang = args.LANG
 
     open_graph(ontology_file)
@@ -219,8 +223,17 @@ def main():
     # organizing node details --> abrahamicReligions [label="Abrahamic religions" URL="http://sparql.cwrc.ca/ontologies/cwrc#abrahamicReligions"]
     lonely_nodes = [x for x in instances if not any(
         get_uri_term(x).replace("-", "_") in term for term in relation_list)]
+    # print(*instances, sep="\n")
+    # print()
+    # all_nodes = list(set(all_nodes))
+    # print(*all_nodes, sep="\n")
+    # print(len(instances))
+    # print(len(all_nodes))
+    # diagraph_nodes = ["__" + get_uri_term(str(x)).replace("-", "_") + "__" +
+    #                   " [label=\"" + get_label(x, lang) + "\" " + "URL=\"" + str(x) + "\"]" for x in instances if x not in lonely_nodes]
+
     diagraph_nodes = ["__" + get_uri_term(str(x)).replace("-", "_") + "__" +
-                      " [label=\"" + get_label(x, lang) + "\" " + "URL=\"" + str(x) + "\"]" for x in instances if x not in lonely_nodes]
+                      " [label=\"" + get_label(x, lang) + "\" " + "URL=\"" + str(x) + "\"]" for x in all_nodes if x not in lonely_nodes]
 
     subgraph_nodes = ["__" + get_uri_term(str(x)).replace("-", "_") + "__" +
                       " [label=\"" + get_label(x, lang) + "\" " + "URL=\"" + str(x) + "\"]" for x in lonely_nodes]
