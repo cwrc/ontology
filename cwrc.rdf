@@ -1316,6 +1316,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
     <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition" />
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
+    <skos:related rdf:resource="#academic"/>
 </cwrc:Occupation>
 <cwrc:Occupation rdf:about="#witness">
     <rdfs:label xml:lang="en">witness</rdfs:label>
@@ -3563,6 +3564,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
     <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition" />
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
+    <skos:related rdf:resource="#transcriber"/>
 </cwrc:Occupation>
 <cwrc:Occupation rdf:about="#linguist">
     <rdfs:label xml:lang="en">linguist</rdfs:label>
@@ -3843,6 +3845,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
     <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition" />
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
+    <skos:related rdf:resource="#royal"/>
+    <skos:broaderTransitive rdf:resource="#higherGovernment"/>
 </cwrc:Occupation>
 <cwrc:Occupation rdf:about="#researcher">
     <rdfs:label xml:lang="en">researcher</rdfs:label>
@@ -3858,6 +3862,9 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
     <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition" />
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
+    <skos:related rdf:resource="#scientist"/>
+    <skos:related rdf:resource="#intellectual"/>
+    <skos:related rdf:resource="#academic"/>
 </cwrc:Occupation>
 <cwrc:Occupation rdf:about="#mistress">
     <rdfs:label xml:lang="en">mistress</rdfs:label>
@@ -3869,6 +3876,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
     <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition" />
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
+    <skos:related rdf:resource="#sexWorker"/>
 </cwrc:Occupation>
 <cwrc:Occupation rdf:about="#reformer">
     <rdfs:label xml:lang="en">reformer</rdfs:label>
@@ -3899,6 +3907,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
     <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition" />
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
+    <skos:related rdf:resource="#socialWork"/>
+    <skos:related rdf:resource="#politics"/>
 </cwrc:Occupation>
 <cwrc:Occupation rdf:about="#dressmaking">
     <rdfs:label xml:lang="en">dressmaking</rdfs:label>
@@ -3918,6 +3928,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
     <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition" />
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
+      <skos:related rdf:resource="#tailor"/>
+      <skos:broaderTransitive rdf:resource="#clothingProduction"/>
 </cwrc:Occupation>
 <cwrc:Occupation rdf:about="#masterOfTheRevels">
     <rdfs:label xml:lang="en">master or mistress of the revels</rdfs:label>
@@ -3931,6 +3943,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
     <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition" />
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
+    <skos:related rdf:resource="#theatreWork"/>
+    <skos:related rdf:resource="#government"/>
 </cwrc:Occupation>
 <cwrc:Occupation rdf:about="#visualArtist">
     <rdfs:label xml:lang="en">visual artist</rdfs:label>
