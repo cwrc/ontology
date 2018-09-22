@@ -1212,6 +1212,20 @@
   </owl:ObjectProperty>
 
 <!-- Occupation instances -->
+<cwrc:Occupation rdf:about="#bookbinder">
+    <rdfs:label xml:lang="en">bookbinder</rdfs:label>
+    <rdfs:label xml:lang="fr" />
+    <skos:altLabel xml:lang="en">book binder</skos:altLabel>
+    <skos:altLabel xml:lang="en">bookbinding</skos:altLabel>
+    <skos:definition xml:lang="en" />
+    <skos:definition xml:lang="fr" />
+    <skos:inScheme rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#Occupation" />
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
+    <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition" />
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
+    <skos:broaderTransitive rdf:resource="#bookProduction"/>
+    <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/relators/bnd"/>
+</cwrc:Occupation>
 <cwrc:Occupation rdf:about="#seaCaptain">
     <rdfs:label xml:lang="en">sea captain</rdfs:label>
     <rdfs:label xml:lang="fr" />
@@ -1811,7 +1825,6 @@
 <cwrc:Occupation rdf:about="#radioIndustry">
     <rdfs:label xml:lang="en">radio industry</rdfs:label>
     <rdfs:label xml:lang="fr" />
-    <skos:altLabel xml:lang="en">broadcaster</skos:altLabel>
     <skos:altLabel xml:lang="en">educational radio producer</skos:altLabel>
     <skos:altLabel xml:lang="en">educational radio programmer</skos:altLabel>
     <skos:altLabel xml:lang="en">radio announcer</skos:altLabel>
@@ -1825,7 +1838,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
     <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition" />
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
-    <skos:broaderTransitive rdf:resource="#broadcaster"/>
+    <skos:broaderTransitive rdf:resource="#broadcasting"/>
 </cwrc:Occupation>
 <cwrc:Occupation rdf:about="#televisionIndustry">
     <rdfs:label xml:lang="en">television industry</rdfs:label>
@@ -1837,7 +1850,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
     <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition" />
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
-    <skos:broaderTransitive rdf:resource="#broadcaster"/>
+    <skos:broaderTransitive rdf:resource="#broadcasting"/>
 </cwrc:Occupation>
 <cwrc:Occupation rdf:about="#businessOwner">
     <rdfs:label xml:lang="en">business owner</rdfs:label>
@@ -2104,7 +2117,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
     <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition" />
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
-    <skos:broaderTransitive rdf:resource="#educator"/>
+    <skos:broaderTransitive rdf:resource="#education"/>
 </cwrc:Occupation>
 <cwrc:Occupation rdf:about="#governess">
     <rdfs:label xml:lang="en">governess</rdfs:label>
@@ -2116,7 +2129,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
     <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition" />
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
-    <skos:broaderTransitive rdf:resource="#educator"/>
+    <skos:broaderTransitive rdf:resource="#education"/>
 </cwrc:Occupation>
 <cwrc:Occupation rdf:about="#dairyWork">
     <rdfs:label xml:lang="en">dairy work</rdfs:label>
@@ -2515,7 +2528,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
     <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition" />
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
-    <skos:broaderTransitive rdf:resource="#leatherworker"/>
+    <skos:broaderTransitive rdf:resource="#leatherWorker"/>
 </cwrc:Occupation>
 <cwrc:Occupation rdf:about="#lawyer">
     <rdfs:label xml:lang="en">lawyer</rdfs:label>
@@ -3409,7 +3422,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
     <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition" />
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
-    <skos:broaderTransitive rdf:resource="#theatre"/>
+    <skos:broaderTransitive rdf:resource="#theatreWork"/>
 </cwrc:Occupation>
 <cwrc:Occupation rdf:about="#shipping">
     <rdfs:label xml:lang="en">shipping</rdfs:label>
@@ -3776,7 +3789,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
     <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition" />
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
-    <skos:related rdf:resource="#performance"/>
+    <skos:related rdf:resource="#performer"/>
 </cwrc:Occupation>
 <cwrc:Occupation rdf:about="#diplomat">
     <rdfs:label xml:lang="en">diplomat</rdfs:label>
@@ -3845,7 +3858,6 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
     <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#datasetdefinition" />
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
-    <skos:related rdf:resource="#royal"/>
     <skos:broaderTransitive rdf:resource="#higherGovernment"/>
 </cwrc:Occupation>
 <cwrc:Occupation rdf:about="#researcher">
@@ -8609,7 +8621,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasContestedBehaviour">
-    <rdfs:label xml:lang="en">has contested behaviour</rdfs:label>
+    <rdfs:label xml:lang="en">has nonconformant behaviour</rdfs:label>
     <rdfs:label xml:lang="fr">comportement contesté</rdfs:label>
     <skos:definition xml:lang="en">Describes behaviour, which is perceived as negative, in the context of the subject's education. Often indicative of struggle against systemic discrimination, including within the structures of educational institutions.</skos:definition>
     <skos:definition xml:lang="fr">Décrit le comportement, perçu comme négatif, dans le contexte de l'éducation du sujet. Souvent indicateur d'une lutte contre la discrimination systémique, y compris au sein des structures de l'éducation insitutionnelle.</skos:definition>
@@ -11148,6 +11160,7 @@
     <skos:altLabel xml:lang="en">Unitarian Movement</skos:altLabel>
     <skos:altLabel xml:lang="en">Unitarian Church</skos:altLabel>
     <skos:altLabel xml:lang="en">Unitarian</skos:altLabel>
+    <skos:altLabel xml:lang="en">active unitarian</skos:altLabel>
     <rdfs:label xml:lang="nl">unitarisme</rdfs:label>
     <rdfs:label xml:lang="es">unitarismo</rdfs:label>
     <rdfs:label xml:lang="es">unitarios</rdfs:label>
@@ -11164,6 +11177,8 @@
     <skos:altLabel xml:lang="en">unitarianMovement</skos:altLabel>
     <skos:inScheme rdf:resource="#Religion"/>
     <skos:broaderTransitive rdf:resource="#dissentProtestant"/>
+    <rdf:type rdf:resource="#Occupation"/>
+    <skos:broaderTransitive rdf:resource="#religious"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Religion>
@@ -12034,12 +12049,15 @@
     <rdfs:label xml:lang="en">yeoman farmer</rdfs:label>
     <rdfs:label xml:lang="fr">paysanne yeoman</rdfs:label>
     <skos:altLabel xml:lang="en">YEOMAN-FARMER</skos:altLabel>
+    <skos:altLabel xml:lang="en">yeoman</skos:altLabel>
     <skos:inScheme rdf:resource="#SocialClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Members of this historic class "own[ed] just enough land to support themselves if they did most of the work themselves." Examples include Elizabeth Ham and Mary Webb. <![CDATA[<a href="#cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Brown, 2006)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">Les membres de cette classe historique «posséd[aient] juste assez de terre pour subvenir à leurs besoins, à condition qu'ils fassent eux-mêmes la plus grande partie du travail». Elizabeth Ham et Mary Webb en sont des exemples.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdf:type rdf:resource="#Occupation"/>
+    <skos:broaderTransitive rdf:resource="#farming"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#upper-middleClass">
     <rdfs:label xml:lang="en">upper-middle class</rdfs:label>
@@ -13003,9 +13021,10 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Anti-suffragism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="#Occupation"/>
+    <skos:broaderTransitive rdf:resource="#politics"/>
+    <cwrc:contraryTo rdf:resource="#suffrage"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:contraryTo rdf:resource="#suffrage"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#anti-Trade-Unionism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -13391,8 +13410,10 @@
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Communism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="#Occupation"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#politics"/>
     <cwrc:contraryTo rdf:resource="#anti-Communism"/>
     <cwrc:contraryTo rdf:resource="#liberalism"/>
     <skos:related rdf:resource="#maoism"/>
@@ -13424,6 +13445,8 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:related rdf:resource="#neo-Conservatism"/>
+    <rdf:type rdf:resource="#Occupation"/>
+    <skos:broaderTransitive rdf:resource="#politics"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#conservativeFeminism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -13663,13 +13686,16 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#feminism">
+    <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <rdfs:label xml:lang="fr">Féminisme</rdfs:label>
     <rdfs:label xml:lang="en">feminism</rdfs:label>
-    <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <skos:altLabel xml:lang="en">activist for women and children</skos:altLabel>
+    <skos:altLabel xml:lang="en">advocate of female education</skos:altLabel>
     <skos:altLabel xml:lang="en">anti-sexist</skos:altLabel>
+    <skos:altLabel xml:lang="en">contraceptionist</skos:altLabel>
     <skos:altLabel xml:lang="en">Equality Feminism</skos:altLabel>
     <skos:altLabel xml:lang="en">feminist movement</skos:altLabel>
+    <skos:altLabel xml:lang="en">feminist reformer</skos:altLabel>
     <skos:altLabel xml:lang="en">feminist</skos:altLabel>
     <skos:altLabel xml:lang="en">gender egalitarian</skos:altLabel>
     <skos:altLabel xml:lang="en">lobby for the rights of women</skos:altLabel>
@@ -13687,15 +13713,20 @@
     <skos:altLabel xml:lang="en">women's movement</skos:altLabel>
     <skos:altLabel xml:lang="en">women's rights activist</skos:altLabel>
     <skos:altLabel xml:lang="en">women's rights</skos:altLabel>
+    <skos:hiddenLabel xml:lang="en">worked to establish pay equity</skos:hiddenLabel>
+    <skos:hiddenLabel xml:lang="en">worked devotedly for the society for promoting the employment of women</skos:hiddenLabel>
+    <skos:hiddenLabel xml:lang="en">advocate for women's education</skos:hiddenLabel>
     <skos:definition xml:lang="en">"Feminism is a range of political movements, ideologies, and social movements that share a common goal: to define, establish, and achieve political, economic, personal, and social rights for women that are equal to those of men. This includes seeking to establish equal opportunities for women in education and employment. Feminist movements have campaigned and continue to campaign for women's rights, including the right to vote, to hold public office, to work, to earn fair wages or equal pay, to own property, to receive education, to enter contracts, to have equal rights within marriage, and to have maternity leave. Feminists have also worked to promote bodily autonomy and integrity, and to protect women and girls from rape, sexual harassment, and domestic violence. Feminist campaigns are generally considered to be one of the main forces behind major historical societal changes for women's rights, particularly in the West, where they are near-universally credited with having achieved women's suffrage, gender neutrality in English, reproductive rights for women (including access to contraceptives and abortion), and the right to enter into contracts and own property. Although feminist advocacy is, and has been, mainly focused on women's rights, some feminists, including bell hooks, argue for the inclusion of men's liberation within its aims because men are also harmed by traditional gender roles. Feminist theory, which emerged from feminist movements, aims to understand the nature of gender inequality by examining women's social roles and lived experience; it has developed theories in a variety of disciplines in order to respond to issues concerning gender. Numerous feminist movements and ideologies have developed over the years and represent different viewpoints and aims. Some forms of feminism have been criticized for taking into account only white, middle class, and educated perspectives. This criticism led to the creation of ethnically specific or multicultural forms of feminism, including black feminism and intersectional feminism." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr">«Le féminisme est un ensemble de mouvements et d'idées politiques, philosophiques et sociales, qui partagent un but commun : définir, établir et atteindre l'égalité politique, économique, culturelle, personnelle, sociale et juridique entre les femmes et les hommes. Le féminisme a donc pour objectif d'abolir, dans ces différents domaines, les inégalités homme-femme dont les femmes sont les principales victimes, et ainsi de promouvoir les droits des femmes dans la société civile et dans la sphère privée. Si le terme «féminisme» ne prend son sens actuel qu'à la fin du XIXe siècle, les idées de libération de la femme prennent leurs racines dans le siècle des Lumières et se réclament de mouvements plus anciens ou de combats menés dans d'autres contextes historiques. L'objectif principal de la première vague féministe est de réformer les institutions, de sorte que les hommes et les femmes deviennent égaux devant la loi : droit à l'éducation, droit au travail, droit à la maîtrise de leurs biens et droit de vote des femmes constituent les revendications principales de cette période. Le mouvement féministe a produit une grande diversité d'analyses sociologiques et philosophiques. La deuxième vague féministe, qui intervient à la fin des années 1960 avec la naissance du Mouvement de libération des femmes (MLF) et du Women's Lib, a ainsi élaboré plusieurs concepts qui entendent rendre compte de la spécificité du rapport de domination exercé sur les femmes. C'est à cette période qu'est reformulé le concept de patriarcat, élaboré celui de sexisme et que l'accent est mis sur la sphère privée comme lieu privilégié de la domination masculine : le «privé est politique». Les revendications touchant au contrôle de leur corps par les femmes (avortement, contraception) sont placées au premier plan mais, plus largement, c'est à la construction de nouveaux rapports sociaux de sexe qu'appellent les féministes de cette deuxième vague. Dans cette perspective, la notion de «genre» entend «dénaturaliser» les rapports entre les sexes. Sous le nom de troisième vague féministe, on désigne à partir des années 1990, un large ensemble de revendications exprimées par des militantes féministes issues de groupes minoritaires, dans le sillage du Black feminism.» <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Feminism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="#Occupation"/>
+    <skos:broaderTransitive rdf:resource="#politics"/>
+    <skos:broaderTransitive rdf:resource="#civilRights"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broaderTransitive rdf:resource="#civilRights"/>
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#feministAnti-ViolenceActivism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
@@ -14077,8 +14108,10 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Italian_nationalism"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Italian_unification"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
-    <skos:broaderTransitive rdf:resource="#nationalism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="#Occupation"/>
+    <skos:broaderTransitive rdf:resource="#politics"/>
+    <skos:broaderTransitive rdf:resource="#nationalism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
@@ -14101,6 +14134,8 @@
   <cwrc:PoliticalAffiliation rdf:about="#jacobitism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <skos:altLabel xml:lang="en">jacobites</skos:altLabel>
+    <skos:altLabel xml:lang="en">jacobite</skos:altLabel>
+    <skos:altLabel xml:lang="en">jacobite conspirator</skos:altLabel>
     <rdfs:label xml:lang="en">Jacobitism</rdfs:label>
     <rdfs:label xml:lang="fr">Jacobitisme</rdfs:label>
     <skos:definition xml:lang="en">"Jacobitism (/ˈdʒækəbaɪˌtɪzm/ JAK-ə-beye-TIZ-əm;Irish: Seacaibíteachas, Séamusachas, Scottish Gaelic: Seumasachas) was a political movement in Great Britain and Ireland that aimed to restore the Roman Catholic Stuart King James VII of Scotland, II of England and Ireland, and his heirs to the thrones of England, Scotland and Ireland. The movement took its name from Jacobus, the Renaissance Latin form of Iacomus, the original Latin form of James. Adherents rebelled against the British government on several occasions between 1688 and 1746. After James II was deposed in 1688 and replaced by his daughter Mary II, ruling jointly with her husband and first cousin (James's nephew) William III, the Stuarts lived in exile, occasionally attempting to regain the throne. The strongholds of Jacobitism were parts of the Scottish Highlands and the lowland north-east of Scotland, Ireland, and parts of Northern England (mostly within the counties of Northumberland and Lancashire). Significant support also existed in Wales and South-West England. The Jacobites believed that parliamentary interference with the line of succession to the English and Scottish thrones was illegal. Catholics also hoped the Stuarts would end recusancy. In Scotland, the Jacobite cause became intertwined with the last throes of the warrior clan system. The emblem of the Jacobites is the White Cockade. White Rose Day is celebrated on 10 June, the anniversary of the birth of the Old Pretender in 1688." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -14109,6 +14144,8 @@
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Jacobitism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="#Occupation"/>
+    <skos:broaderTransitive rdf:resource="#politics"/>
     <skos:broaderTransitive rdf:resource="#pro-Catholicism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -14286,6 +14323,8 @@
     <skos:altLabel xml:lang="en">royalist</skos:altLabel>
     <skos:altLabel xml:lang="en">monarchist</skos:altLabel>
     <skos:altLabel xml:lang="en">constitutional monarchist</skos:altLabel>
+    <skos:hiddenLabel xml:lang="en">royalist politician</skos:hiddenLabel>
+    <skos:hiddenLabel xml:lang="en">active royalists</skos:hiddenLabel>
     <rdfs:label xml:lang="en">monarchism</rdfs:label>
     <rdfs:label xml:lang="fr">Monarchisme</rdfs:label>
     <skos:definition xml:lang="en">"Monarchism is the advocacy of a monarch or monarchical rule. A monarchist is an individual who supports this form of government, independent of any specific monarch; one who espouses a particular monarch is a royalist. Conversely, the opposition to monarchical rule is sometimes referred to as republicanism. Depending on the country, a monarchist may advocate for the rule of the person who sits on the throne, a pretender, or someone who would otherwise occupy the throne but has been deposed." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -14294,6 +14333,8 @@
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Monarchism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="#Occupation"/>
+    <skos:broaderTransitive rdf:resource="#politics"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
@@ -14684,12 +14725,16 @@
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <skos:altLabel xml:lang="en">radical</skos:altLabel>
     <skos:altLabel xml:lang="en">political radical</skos:altLabel>
+    <skos:altLabel xml:lang="en">radical dissident</skos:altLabel>
+    <skos:altLabel xml:lang="en">working class radical</skos:altLabel>
     <rdfs:label xml:lang="en">radicalism</rdfs:label>
     <rdfs:label xml:lang="fr">radicalisme</rdfs:label>
     <skos:definition xml:lang="en">"The term political radicalism (or simply, in political science, radicalism) denotes political principles focused on altering social structures through revolutionary means and changing value systems in fundamental ways. Derived from the Latin radix (root), the denotation of radical has changed since its eighteenth-century coinage to comprehend the entire political spectrum—yet retains the "change at the root" connotation fundamental to revolutionary societal change. Historically, radicalism has referred exclusively to the radical left (under the single category of far-left politics) and rarely incorporating far-right politics, though these may have revolutionary elements; the prominent exception is in the United States where some consider radicalism to include both political extremes of the radical left and the radical right. In traditional labels of the spectrum of political thought, the opposite of radical on the "right" of the political spectrum is termed reactionary. The nineteenth-century Cyclopaedia of Political Science (1881, 1889) reports that "radicalism is characterized less by its principles than by the manner of their application". Conservatives often used the term radical pejoratively, whereas contemporary left radicals used the term conservative derogatorily; thus contemporary denotations of radical, radicalism, and political radicalism comprehend far left (hard left, radical left), and far right (hard right, radical right). The Encyclopædia Britannica records the first political usage of radical as ascribed to the British Whig Party parliamentarian Charles James Fox, who, in 1797, proposed a "radical reform" of the electoral system, franchise to provide universal manhood suffrage, thereby, idiomatically establishing radical to denote supporters of the reformation of the British Parliament. Throughout the nineteenth century, the term was combined with political notions and doctrines, thus working class radicalism, middle class-, philosophic-, democratic- bourgeois-, Tory-, and plebeian radicalism. In the event, politically influential radical leaders give rise to their own trend of political radicalism, e.g. Spencean radicalism and Carlilean radicalism. Philosophically, the French political scientist Jean-Jacques Rousseau (1712–78), is the principal theoretician proposing political radicalism as feasible in republican political philosophy, viz the French Revolution (1789–99), and other modern revolutions—the antithesis to the liberalism of John Locke." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Political_radicalism"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="#Occupation"/>
+    <skos:broaderTransitive rdf:resource="#politics"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
@@ -14840,12 +14885,14 @@
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#socialism">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
-    <skos:altLabel xml:lang="en">socialist</skos:altLabel>
+    <skos:altLabel xml:lang="en">militant socialist</skos:altLabel>
+    <skos:altLabel xml:lang="en">owenite socialism</skos:altLabel>
     <skos:altLabel xml:lang="en">radical socialist</skos:altLabel>
     <skos:altLabel xml:lang="en">socialist and feminist</skos:altLabel>
     <skos:altLabel xml:lang="en">socialist feminist</skos:altLabel>
-    <skos:altLabel xml:lang="en">owenite socialism</skos:altLabel>
-    <skos:altLabel xml:lang="en">militant socialist</skos:altLabel>
+    <skos:altLabel xml:lang="en">socialist</skos:altLabel>
+    <skos:altLabel xml:lang="en">socialist organizer</skos:altLabel>
+    <skos:altLabel xml:lang="en">fabian socialist</skos:altLabel>
     <rdfs:label xml:lang="en">socialism</rdfs:label>
     <rdfs:label xml:lang="fr">socialisme</rdfs:label>
     <skos:definition xml:lang="en">"Socialism is a range of economic and social systems characterised by social ownership and democratic control of the means of production; as well as the political ideologies, theories, and movements that aim at their establishment. Social ownership may refer to forms of public, collective, or cooperative ownership; to citizen ownership of equity; or to any combination of these. Although there are many varieties of socialism and there is no single definition encapsulating all of them, social ownership is the common element shared by its various forms. Socialist economic systems can be divided into both non-market and market forms. Non-market socialism involves the substitution of factor markets and money with engineering and technical criteria based on calculation performed in-kind, thereby producing an economic mechanism that functions according to different economic laws from those of capitalism. Non-market socialism aims to circumvent the inefficiencies and crises traditionally associated with capital accumulation and the profit system. By contrast, market socialism retains the use of monetary prices, factor markets, and, in some cases, the profit motive with respect to the operation of socially owned enterprises and the allocation of capital goods between them. Profits generated by these firms would be controlled directly by the workforce of each firm or accrue to society at large in the form of a social dividend. The feasibility and exact methods of resource allocation and calculation for a socialist system are the subjects of the socialist calculation debate. The socialist political movement includes a diverse array of political philosophies that originated amid the revolutionary movements of the mid-to-late 1700s and of a general concern for the social problems that were associated with capitalism. In addition to the debate over markets and planning, the varieties of socialism differ in their form of social ownership, how management is to be organized within productive institutions, and the role of the state in constructing socialism. Core dichotomies associated with these concerns include reformism versus revolutionary socialism, and state socialism versus libertarian socialism. Socialist politics has been both centralist and decentralized; internationalist and nationalist in orientation; organized through political parties and opposed to party politics; at times overlapping with trade unions and at other times independent of, and critical of, unions; and present in both industrialized and developing countries. While all tendencies of socialism consider themselves democratic, the term "democratic socialism" is often used to highlight its advocates' high value for democratic processes in the economy and democratic political systems, usually to draw contrast to tendencies they may perceive to be undemocratic in their approach. The term is frequently used to draw contrast to the political system of the Soviet Union, which operated in an authoritarian fashion. By the late 19th century, and after further articulation and advancement by Karl Marx and his collaborator Friedrich Engels as the culmination of technological development outstripping the economic dynamics of capitalism, "socialism" had come to signify opposition to capitalism and advocacy for a post-capitalist system based on some form of social ownership of the means of production. By the 1920s, social democracy and communism became the two dominant political tendencies within the international socialist movement. Socialism proceeded to emerge as the most influential secular political-economic worldview of the twentieth century, and while the emergence of the Soviet Union as the world's first nominally socialist state led to socialism's widespread association with the Soviet economic model, many economists and intellectuals have argued that in practice the model functioned as a form of state capitalism, or a non-planned administrative or command economy. Socialist parties and ideas remain a political force with varying degrees of power and influence in all continents, heading national governments in many countries around the world. Today, some socialists have also adopted the causes of other social movements, such as environmentalism, feminism, and liberalism." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -14856,6 +14903,8 @@
     <skos:related rdf:resource="#communism"/>
     <skos:related rdf:resource="#socialReform"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="#Occupation"/>
+    <skos:broaderTransitive rdf:resource="#politics"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:PoliticalAffiliation>
@@ -14909,20 +14958,24 @@
   </cwrc:PoliticalAffiliation>
   <cwrc:PoliticalAffiliation rdf:about="#suffrage">
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
-    <skos:altLabel xml:lang="en">suffrage</skos:altLabel>
-    <skos:altLabel xml:lang="en">suffrage politics</skos:altLabel>
+    <skos:altLabel xml:lang="en">christian suffragist</skos:altLabel>
+    <skos:altLabel xml:lang="en">female suffrage</skos:altLabel>
     <skos:altLabel xml:lang="en">International Suffrage Congress</skos:altLabel>
-    <skos:altLabel xml:lang="en">supporter of the women's suffrage movement</skos:altLabel>
-    <skos:altLabel xml:lang="en">Woman Suffrage</skos:altLabel>
+    <skos:altLabel xml:lang="en">moderate suffragist</skos:altLabel>
+    <skos:altLabel xml:lang="en">non-militant suffragist</skos:altLabel>
+    <skos:altLabel xml:lang="en">suffrage demonstrator</skos:altLabel>
+    <skos:altLabel xml:lang="en">suffrage leader</skos:altLabel>
     <skos:altLabel xml:lang="en">suffrage organisations</skos:altLabel>
+    <skos:altLabel xml:lang="en">suffrage organizer</skos:altLabel>
+    <skos:altLabel xml:lang="en">suffrage politics</skos:altLabel>
+    <skos:altLabel xml:lang="en">suffrage</skos:altLabel>
+    <skos:altLabel xml:lang="en">suffragette</skos:altLabel>
     <skos:altLabel xml:lang="en">suffragettes</skos:altLabel>
     <skos:altLabel xml:lang="en">suffragist</skos:altLabel>
+    <skos:altLabel xml:lang="en">supporter of the women's suffrage movement</skos:altLabel>
+    <skos:altLabel xml:lang="en">Woman Suffrage</skos:altLabel>
     <skos:altLabel xml:lang="en">women's suffrage</skos:altLabel>
-    <skos:altLabel xml:lang="en">female suffrage</skos:altLabel>
-    <skos:altLabel xml:lang="en">non-militant suffragist</skos:altLabel>
-    <skos:altLabel xml:lang="en">christian suffragist</skos:altLabel>
-    <skos:altLabel xml:lang="en">moderate suffragist</skos:altLabel>
-    <skos:altLabel xml:lang="en">suffragism</skos:altLabel>
+    <skos:hiddenLabel xml:lang="en">activist; suffrage campaigner</skos:hiddenLabel>
     <rdfs:label xml:lang="en">suffrage movement</rdfs:label>
     <rdfs:label xml:lang="fr">Droit de vote</rdfs:label>
     <skos:definition xml:lang="en">"Suffrage, political franchise, or simply franchise is the right to vote in public, political elections (although the term is sometimes used for any right to vote). The right to run for office is sometimes called candidate eligibility, and the combination of both rights is sometimes called full suffrage. In many languages, the right to vote is called the active right to vote and the right to run for office is called the passive right to vote. In English, these are sometimes called active suffrage and passive suffrage. Suffrage is often conceived in terms of elections for representatives. However, suffrage applies equally to referenda and initiatives. Suffrage describes not only the legal right to vote, but also the practical question of whether a question will be put to a vote. The utility of suffrage is reduced when important questions are decided unilaterally by elected or non-elected representatives. In most democracies, eligible voters can vote in elections of representatives. Voting on issues by referendum may also be available. For example, in Switzerland this is permitted at all levels of government. In the United States, some states such as California and Washington have exercised their shared sovereignty to offer citizens the opportunity to write, propose, and vote on referendums and initiatives; other states have not. The United States federal government does not offer any initiatives at all. Suffrage is granted to qualifying citizens once they have reached the voting age. What constitutes a qualifying citizen depends on the government's decision, but most democracies no longer extend differing rights to vote on the basis of sex or race. Resident non-citizens can vote in some countries, which may be restricted to citizens of closely linked countries (e.g., Commonwealth citizens and European Union citizens)." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -14957,6 +15010,8 @@
     <skos:inScheme rdf:resource="#PoliticalAffiliation"/>
     <skos:altLabel xml:lang="en">temperance activist</skos:altLabel>
     <skos:altLabel xml:lang="en">temperance</skos:altLabel>
+    <skos:altLabel xml:lang="en">temperance work</skos:altLabel>
+    <skos:altLabel xml:lang="en">temperance worker</skos:altLabel>
     <skos:altLabel xml:lang="en">temperance supporter</skos:altLabel>
     <rdfs:label xml:lang="en">temperance movement</rdfs:label>
     <rdfs:label xml:lang="fr">Ligue de tempérance</rdfs:label>
@@ -14968,6 +15023,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdf:type rdf:resource="#Occupation"/>
+    <skos:broaderTransitive rdf:resource="#politics"/>
     <skos:related rdf:resource="#feminism"/>
     <skos:related rdf:resource="#conservatism"/>
   </cwrc:PoliticalAffiliation>
