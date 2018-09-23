@@ -182,6 +182,7 @@
     <rdfs:label xml:lang="en">literary genre</rdfs:label>
     <rdfs:label xml:lang="fr">genre littéraire</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:subClassOf rdf:resource="#Genre"/>
     <skos:definition xml:lang="en">Literary genres are used to classify texts within an ever-evolving spectrum of literary forms and practices. There is debate over whether genre inheres in texts themselves or emerges from contexts of reception, but the shifts in historical definitions indicate that genres, literary and more broadly, have a strong social component (Dubrow, 1982; Miller 1984). Genres are most frequently related to formal features such as the English sonnet's fourteen lines of iambic pentameter, to characteristic subject matter such as themes of romance, horror, comedy, or tragedy, to aspects of style such as hard-boiled detective fiction, or to the purpose of a text. Within the context of literary studies, the question of &quot;purpose,&quot; especially when considered within a political context, is of keen interest to literary scholars. For example, feminist literary scholars like Cynthia Huff (&quot;‘That Profoundly Female, and Feminist Genre’: The Diary as Feminist Practice&quot;), Giancarlo Lombardi (Rooms with a View: Feminist Diary Fiction, 1952-1999), Rita Felski (Beyond Feminist Aesthetics: Feminist Literature and Social Change) and others read "diary fiction" as a powerful genre used to spur on women’s movements. For more on literary genre, see the introduction to this ontology.</skos:definition>
     <skos:definition xml:lang="fr">Les genres littéraires sont utilisés pour classer les textes parmi un éventail de formes et de pratiques littéraires en constante évolution. On se demande si le genre est inhérent aux textes eux-mêmes ou émerge des contextes de réception, mais les changements dans les définitions historiques indiquent que les genres littéraires et les genres en général ont une forte composante sociale (Dubrow, 1982, Miller 1984). Les genres reposent le plus souvent sur des éléments formels (les quatorze vers en pentamètre iambique du sonnet anglais), sur le traitement de thèmes caractéristiques (romance, horreur, comédie ou tragédie), sur des aspects stylistiques (ton cynique typique du roman policier), ou encore sur l'objectif d'un texte. Dans le contexte des études littéraires, la question de l'"objectif" est d'un intérêt fondamental dans la recherche académique, surtout lorsqu'elle s'inscrit dans un contexte politique. Par exemple, des universitaires féministes comme Cynthia Huff ("'That Profoundly Female, and Feminist Genre’: The Diary as Feminist Practice"), Giancarlo Lombardi (Rooms with a View: Feminist Diary Fiction, 1952-1999), Rita Felski (Beyond Feminist Aesthetics: Feminist Literature and Social Change) et d'autres soulignent l'influence significative du genre du journal intime sur l'expansion des mouvements féministes. Pour en savoir plus sur le genre littéraire, voir l'introduction de cette ontologie.</skos:definition>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300055907"/>
@@ -224,11 +225,15 @@
     <cc:Jurisdiction rdf:resource="http://dbpedia.org/resource/Canada"/>
     <cc:attributionURL rdf:resource="http://www.cwrc.ca/"/>
     <dcterms:publisher rdf:resource="#cwrc"/>
-    <dcterms:creator rdf:resource="#MicaelaJimenez"/>
-    <dcterms:creator rdf:resource="#RobWarren"/>
-    <dcterms:creator rdf:resource="#JadePenancier"/>
-    <dcterms:creator rdf:resource="#AlliyyaMo"/>
     <dcterms:creator rdf:resource="#SusanBrown"/>
+    <dcterms:creator rdf:resource="#JoelCummings"/>
+    <dcterms:creator rdf:resource="#MicaelaJimenez"/>
+    <dcterms:creator rdf:resource="#AbigelLemak"/>
+    <dcterms:creator rdf:resource="#KimMartin"/>
+    <dcterms:creator rdf:resource="#AlliyyaMo"/>
+    <dcterms:creator rdf:resource="#JadePenancier"/>
+    <dcterms:creator rdf:resource="#DebStacey"/>
+    <dcterms:creator rdf:resource="#RobWarren"/>
     <loc:ctb rdf:resource="#ConstanceCrompton"/>
     <loc:ctb rdf:resource="#originalOrlandoAuthor"/>
     <loc:pdr rdf:resource="#SusanBrown"/>
@@ -924,6 +929,22 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="fr">&quot;Littérature écrite et publiée pour les enfants.&quot;</skos:definition>
   </genre:LiteraryGenre>
+  <genre:Genre rdf:about="#chronology">
+    <skos:altLabel xml:lang="en">timeline</skos:altLabel>
+    <rdfs:label xml:lang="en">chronology</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#Genre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">"Tables, lists, or treatises listing events, biographies, milestones, or other items in serial temporal order relative to given dates or time periods." (<![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>]]>)</skos:definition>
+    <skos:definition xml:lang="es">"Documentos que listan fechas, períodos de tiempo o acontecimientos en orden cronológico.." (<![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>]]>)</skos:definition>
+    <skos:definition xml:lang="nl">"Documenten waarin data, periodes of gebeurtenissen in chronologische volgorde zijn gecatalogiseerd." (<![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>]]>)</skos:definition>
+    <skos:definition xml:lang="de">"Tabelle, Liste oder Abhandlung, die Ereignisse, Biographien, Wendepunkte oder andere Dinge in ihrer zeitlichen Reihenfolge in Beziehung zu bekannten Zeitpunkten oder -perioden einordnet.。" (<![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>]]>)</skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/page/aat/300252008"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <skos:definition xml:lang="fr"></skos:definition>
+  </genre:Genre>
   <genre:LiteraryGenre rdf:about="#clerihew">
     <skos:altLabel xml:lang="en">CLERIHEW</skos:altLabel>
     <rdfs:label xml:lang="en">clerihew</rdfs:label>
@@ -2366,6 +2387,18 @@ s épîtres.</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Libretto"/>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
   </genre:LiteraryGenre>
+  <genre:LiteraryGenre rdf:about="#lifeWriting">
+    <rdfs:label xml:lang="en">life writing</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#LiteraryGenre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">"Life writing is the recording of memories, and experiences, whether one's own or another's. This applies to many genres and practices, under which can be found autobiography, biography, memoir, diaries, letters, testimonies, personal essays and, more recently, digital forms such as blogs and email." (<![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>]]>)</skos:definition>
+    <skos:definition xml:lang="de">"Ein Clerihew ist ein kurzer scherzhafter pseudobiographischer Vierzeiler, eine Gedichtform, die von Edmund Clerihew Bentley (1875–1956) erfunden wurde. Er besteht aus zwei Reimpaaren mit ungleichmäßiger Länge und mehr oder weniger freiem Rhythmus. Der Name der historischen Person steht dabei meist am Ende der ersten oder der zweiten Verszeile. Der Clerihew ist eher wunderlich und schrullig als satirisch.Die Verszeilen sind auf komische Weise irregulär (unregelmäßige Verslänge, unregelmäßiger – nicht aber freier – Rhythmus)." (<![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>]]>)</skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Life_writing"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
+  </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#literaryCriticism">
     <skos:altLabel xml:lang="en">LITERARYCRITICISM</skos:altLabel>
     <rdfs:label xml:lang="en">literary criticism</rdfs:label>
@@ -2600,14 +2633,25 @@ s épîtres.</skos:definition>
     <skos:definition xml:lang="en">"Contemporary works of art that employ several distinct art forms, such as sculpture and music or painting and light art." (<![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300047910"/>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
-    <skos:definition xml:lang="fr">Oeuvre matérialisée par son support quel qu'il soit ou son &#13;
-mode de communication, constituée de différents éléments&#13;
-(logiciel, graphisme, musique, son, scénario, images fixes&#13;
-ou animées, etc.) assemblés pour former un ensemble à&#13;
-l'identité propre.</skos:definition>
-<prov:wasDerivedFrom rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T69-7979"/>
-<rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Thésaurus de la désignation des objets mobiliers (2014).</rdfs:comment>
+    <skos:definition xml:lang="fr">Oeuvre matérialisée par son support quel qu'il soit ou son mode de communication, constituée de différents éléments (logiciel, graphisme, musique, son, scénario, images fixes ou animées, etc.) assemblés pour former un ensemble à l'identité propre.</skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/T69-7979"/>
+    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Thésaurus de la désignation des objets mobiliers (2014).</rdfs:comment>
   </genre:LiteraryGenre>
+  <genre:Genre rdf:about="#music">
+    <skos:altLabel xml:lang="en">musical work</skos:altLabel>
+    <rdfs:label xml:lang="en">music</rdfs:label>
+    <rdfs:label xml:lang="fr">musique</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#Genre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">"Performing arts genre having to do with the combining of vocal or instrumental sounds in measured time to communicate emotions, ideas, or states of mind, usually according to cultural standards of rhythm, melody, and, in most Western music, harmony." (<![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>]]>)</skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/page/aat/300054146"/>
+    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <skos:definition xml:lang="es">El arte concerniente a la combinación de sonidos vocales o instrumentales en tiempo rítmico para comunicar emociones, ideas o estados de ánimo, usualmente acorde a estandares culturales de ritmo, melodías y en la mayoría de la música occidental, armonía.</skos:definition>
+    <skos:definition xml:lang="nl">De kunst die zich bezighoudt met het combineren van vocale of instrumentale geluiden binnen een bepaalde tijd om emoties, ideeën of geestestoestanden over te brengen, veelal volgens culturele normen voor ritme, melodie en, in de meeste Westerse muziek, harmonie.</skos:definition>
+  </genre:Genre>
   <genre:LiteraryGenre rdf:about="#musicalWriting">
     <rdfs:label xml:lang="en">musical writing</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
@@ -3018,6 +3062,18 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Pedagogy"/>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
   </genre:LiteraryGenre>
+  <genre:Genre rdf:about="#performance">
+    <rdfs:label xml:lang="en">performance</rdfs:label>
+    <rdfs:label xml:lang="fr">représentation</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#Genre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A capacious and contested category of time-based and usually embodied human expression through actions or processes that may occur in institutionalized locations, more informal cultural contexts, and broader social situations, as in the performance of social identities.  Most often applied to literary, artistic, musical, theatrical, or other creative work, or the representation or record of such work. Within the Records of Early English Drama project, "Performance has been broadly defined to encompass nearly every mimetic, musical, or ritualistic form of play used to entertain or otherwise engage an audience." (<![CDATA[<a href="https://ereed.library.utoronto.ca/about/series/#selection">REED Online, 2018</a>]]>)</skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/page/aat/300054146"/>
+    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <skos:definition xml:lang="fr"></skos:definition>
+  </genre:Genre>
   <genre:LiteraryGenre rdf:about="#performancePoetry">
     <skos:altLabel xml:lang="en">PERFORMANCEPOETRY</skos:altLabel>
     <rdfs:label xml:lang="en">performance poetry</rdfs:label>
@@ -3365,8 +3421,23 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:broaderTransitive rdf:resource="#fiction"/>
     <skos:definition xml:lang="fr">«Terme général pour qualifier les œuvres d'art dans lesquelles la représentation du monde extérieur s'appuie ou semble s'appuyer sur une observation directe de celui-ci; ces oeuvres incluent ou mettent en valeur ses défauts et ses imperfections plutôt que d'en souligner la beauté ou d'idéaliser certains de ses aspetcs. Bien qu'une oeuvre puisse être à la fois réaliste et naturaliste, le naturalisme est susceptible d'idéaliser les défauts ou la laideur des thèmes abordés. Concernant le style formel et la période d'apparition des caractéristiques générales du réalisme, comme dans la peinture de Gustave Courbet, utilisez "Realist (dans les styles de beaux arts modernes européens)".» (<![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>]]>)</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://vocab.getty.edu/aat/300056550"/>
-    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus and were translated from English  by Jade Penancier.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus and were translated from English by Jade Penancier.</rdfs:comment>
   </genre:LiteraryGenre>
+  <genre:Genre rdf:about="#record">
+    <skos:altLabel xml:lang="en">document</skos:altLabel>
+    <rdfs:label xml:lang="en">record</rdfs:label>
+    <rdfs:label xml:lang="fr">notice</rdfs:label>
+    <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026163"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#Genre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">"Evidence about an object or the past, regardless of medium, as preserved in a record or document. As defined by the Library of Congress, records are "Documents in any form created or received by an agency, institution, organization, or individual, accumulated in the normal conduct of business or affairs." (<![CDATA[<a href="http://id.loc.gov/authorities/genreForms/gf2014026163.html">Library of Congress, 2018</a>]]>) Wikipedia says, "A document is a written, drawn, presented or recorded representation of thoughts. Originating from the Latin Documentum meaning lesson - the verb doceō means to teach, and is pronounced similarly, in the past it was usually used as a term for a written proof used as evidence. In the computer age, a document is usually used to describe a primarily textual file, along with its structure and design, such as fonts, colors and additional images." (<![CDATA[<a href="https://en.wikipedia.org/wiki/Document">Wikipedia, 2018</a>]]>) Information scientist Suzanne Breit defines a document as "any concrete or symbolic indication, preserved or recorded, for reconstructing or for proving a phenomenon, whether physical or mental." (<![CDATA[<a href="#cwrc:3A9ee53c63-e387-4fc0-ad17-df5a84dddb4">Breit, 1951; translated</a>]]>)</skos:definition>
+    <skos:definition xml:lang="fr">«Un document renvoie à un ensemble formé par un support et une information, celle-ci enregistrée de manière persistante. Il a une valeur explicative, descriptive ou de preuve. Vecteur matériel de la pensée humaine, il joue un rôle essentiel dans la plupart des sociétés contemporaines, tant pour le fonctionnement de leurs administrations que dans l'élaboration de leurs savoirs.» (<![CDATA[<a href="http://fr.dbpedia.org/page/Document">Breit, 1951</a>]]>; <![CDATA[<a href="http://martinetl.free.fr/suzannebriet/questcequeladocumentation/briet.pdf">pdf</a>]]>) «[T]out indice concret ou symbolique, conservé out enregistré, aux fins de représenter, de reconstituer ou de prouver un phénomène ou physique out intellectuel»(<![CDATA[<a href="#cwrc:3A9ee53c63-e387-4fc0-ad17-df5a84dddb4">Breit, 1951</a>]]>)</skos:definition>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Document"/>
+    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Library of Congress.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
+  </genre:Genre>
   <genre:LiteraryGenre rdf:about="#regional">
     <skos:altLabel xml:lang="en">REGIONAL</skos:altLabel>
     <rdfs:label xml:lang="en">regional</rdfs:label>
@@ -3490,8 +3561,9 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
   </genre:LiteraryGenre>
   <genre:LiteraryGenre rdf:about="#scholarship">
-    <skos:altLabel xml:lang="en">SCHOLARSHIP</skos:altLabel>
-    <rdfs:label xml:lang="en">scholarship</rdfs:label>
+    <skos:hiddenLabel xml:lang="en">SCHOLARSHIP</skos:altLabel>
+    <skos:altLabel xml:lang="en">scholarship</skos:altLabel>
+    <rdfs:label xml:lang="en">scholarly writing</rdfs:label>
     <rdfs:label xml:lang="fr">érudition</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
