@@ -52,14 +52,15 @@ def get_citation(url):
     citation = "https://beta.cwrc.ca/islandora/object/" + url
     try:
         page = urllib.request.urlopen(citation).read().decode('utf-8')
+        soup = BeautifulSoup(page, 'html.parser')
+        # Grabs citation from a div element looking like this --> this is subject to change with changes in cwrc
+        # <div class="csl-entry">Petersen, T. <span style="font-style: italic;" >Art & Architecture Thesaurus</span>. no date. Oxford University Press, no date.</div>
+        citation = soup.find("div", attrs={"class": "csl-entry"})
+        return citation
     except urllib.error.URLError:
         print("<!-- %s is currently inaccessible -->" % citation)
         print("<!-- Unable to retrieve citation from webpage.\n-->")
-    soup = BeautifulSoup(page, 'html.parser')
-    # Grabs citation from a div element looking like this --> this is subject to change with changes in cwrc
-    # <div class="csl-entry">Petersen, T. <span style="font-style: italic;" >Art & Architecture Thesaurus</span>. no date. Oxford University Press, no date.</div>
-    citation = soup.find("div", attrs={"class": "csl-entry"})
-    return citation
+    return None
 
 
 def main():
@@ -68,9 +69,11 @@ def main():
         citation_urls += ["cwrc:" + str(s).split("#")[1] for s, p,
                           o in o_graph.triples((None, RDF.type, x)) if "-partof" not in s]
     citation_dict = {}
+    # print(citation_urls)
     for x in citation_urls:
         citation_element = get_citation(x)
-        citation_dict[citation_element.text] = [x, citation_element]
+        if citation_element:
+            citation_dict[citation_element.text] = [x, citation_element]
 
     print('<div class= "bibliography">')
     soup = BeautifulSoup("", 'html.parser')

@@ -129,9 +129,10 @@ deploy: all
 	cp -f -R js /var/www/html/CWRCLaravel/cwrc/public/ontology/.
 
 # tests rdf files aren't broken before push, make push --> then commit
-push: cwrc.rdf genre.rdf
+push: cwrc.rdf genre.rdf ii.rdf
 	rapper cwrc.rdf -c
 	rapper genre.rdf -c
+	rapper ii.rdf -c
 
 # soft clean
 clean:

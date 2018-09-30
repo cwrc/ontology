@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://sparql.cwrc.ca/ontologies/ii#"
-     xml:base="http://sparql.cwrc.ca/ontologies/ii"
+     xml:base="http://sparql.cwrc.ca/ontologies/ii#"
      xmlns:loc="http://id.loc.gov/vocabulary/relators/"
      xmlns:void="http://rdfs.org/ns/void#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -19,6 +19,8 @@
         <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/ii#datasetdefinition"/>
         <vs:term_status xml:lang="en">Testing</vs:term_status>
         <dcterms:title xml:lang="en">The CWRC Illness and Injury Ontology</dcterms:title>
+        <vann:preferredNamespacePrefix>ii</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://sparql.cwrc.ca/ontologies/ii#</vann:preferredNamespaceUri>
         <loc:ctb rdf:resource="http://sparql.cwrc.ca/ontologies/ii#ConstanceCrompton"/>
         <foaf:logo rdf:resource="http://sparql.cwrc.ca/images/CWRCLogo-Horz-FullColour.png"/>
         <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/ii#DebStacey"/>

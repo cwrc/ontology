@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://sparql.cwrc.ca/ontologies/ii#"
-     xml:base="http://sparql.cwrc.ca/ontologies/ii"
+     xml:base="http://sparql.cwrc.ca/ontologies/ii#"
      xmlns:loc="http://id.loc.gov/vocabulary/relators/"
      xmlns:void="http://rdfs.org/ns/void#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -9,6 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
@@ -19,11 +20,14 @@
         <void:inDataset rdf:resource="http://sparql.cwrc.ca/ontologies/ii#datasetdefinition"/>
         <vs:term_status xml:lang="en">Testing</vs:term_status>
         <dcterms:title xml:lang="en">The CWRC Illness and Injury Ontology</dcterms:title>
+        <vann:preferredNamespacePrefix>ii</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://sparql.cwrc.ca/ontologies/ii#</vann:preferredNamespaceUri>
         <loc:ctb rdf:resource="http://sparql.cwrc.ca/ontologies/ii#ConstanceCrompton"/>
         <foaf:logo rdf:resource="http://sparql.cwrc.ca/images/CWRCLogo-Horz-FullColour.png"/>
         <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/ii#DebStacey"/>
         <rdfs:comment xml:lang="en">The CWRC Illness and Injury Ontology is an ontology developed and used by the Canadian Writing Research Collaboratory.</rdfs:comment>
         <owl:versionInfo>1.1</owl:versionInfo>
+        <owl:priorVersion rdf:resource="http://sparql.cwrc.ca/ontologies/ii-2018-08-31"/>
         <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/ii#JasmineDrudgeWillson"/>
         <rdfs:label xml:lang="en">The CWRC Illness and Injury Ontology</rdfs:label>
         <loc:ctb rdf:resource="http://sparql.cwrc.ca/ontologies/ii#originalOrlandoAuthor"/>

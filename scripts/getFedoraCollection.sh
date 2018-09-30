@@ -15,6 +15,9 @@ then
 elif [ "$1" = "genre" ]
 then
  STOPNOW="islandora/object/cwrc%3Agenreontologysources"
+elif [ "$1" = "ii" ]
+then
+STOPNOW="islandora/object/islandora%3A96ac9d40-ce08-44cb-a139-5c601a230d72"
 else
  echo "Unknown ontology $1"
  exit 255;
