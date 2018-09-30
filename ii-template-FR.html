@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+  <head>
+    <title>Spécifications d'ontologie II - ONTOLOGY_VERSION</title>
+    <meta charset="utf-8"/>
+    <link rel="mvcb:generatorAgent" type="application/rdf+xml" title="DOAP" href="https://raw.githubusercontent.com/muninn/ontology-tools/master/rdf/voidDescription.rdf#specgenMarkII" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous"/>
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link href="css/cwrc.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="css/favicon.ico" type="image/x-icon"/>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/">
+      <img src="http://sparql.cwrc.ca/images/cwrclogo-vert-white.png" height="30" class="align-top" alt="CWRC Logo"/> CWRC Ontologies</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sparql">SPARQL</a></li>
+          <li class="nav-item"><a class="nav-link" href="ii-preamble-FR.html">Preamble</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Spécifications <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="our-team-FR.html">Notre Équipe</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/cwrc/ontology">Github</a></li>
+        </ul>
+        <span class="navbar-text">L'Ontologie du Collaboratoire scientifique des écrits du Canada</span>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+
+        <nav class="col-xl-3 col-lg-4 col-md-12 d-none d-lg-block bg-light sidebar">
+          <div class="sidebar-sticky">
+
+            <div class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Tables des Matières</span>
+              <a class="d-flex align-items-center text-muted" href="#"></a>
+              <div id="toc">
+                <!-- Table of Contents -->
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <header id="header" class="col-xl-9 col-lg-8 col-md-12 ml-sm-auto  pt-3 px-4">
+          {_header_}
+          <p class="copyright"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
+          <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png"/></a>
+          <br/> Cette oeuvre est sous une licence
+          <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
+        </header>
+
+        <main role="main" class="col-xl-9 col-lg-8 col-md-12 ml-sm-auto pt-3 px-4">
+          <hr/>
+          <h2 id="definition_list">1. Référence Globales</h2>
+          <!-- The list of classes and properties goes here -->
+          {_azlist_}
+          <!-- End of the terms list -->
+          <h2 id="reference">2. Les termes</h2>
+          <!-- The following is the script-generated list of classes and properties -->
+          {_terms_}
+          <!-- End of the terms list -->
+          <div class="deprecated">
+            <h2 id="deprecated">3. Termes désuet</h2> 
+            {_deprecated_}
+          </div>
+          <h2 id="version_history">4. Historique des versions</h2>
+          <ul>
+             <li><p>1.0 - Version publique initiale.</p></li>  
+             <li><p>1.1 - </p></li>  
+          </ul>   
+          <h2 id="bibliography">5. Bibliographie</h2>
+          <!-- Will be generated and replaced by cwrcCitations -->
+          m4_include(cwrc-citations.html)
+
+        </main>
+      </div>
+    </div>
+
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+
+    <script src="js/toc.js"></script>
+    <script>
+        var options = {
+            selector: 'h2, h3, h4',
+            scope: 'main'
+        };
+        var container = document.querySelector('#toc');
+        var toc = initTOC(options);
+        container.appendChild(toc);
+    </script>
+
+  </body>
+</html>

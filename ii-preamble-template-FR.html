@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>II Ontology Preamble - ONTOLOGY_VERSION</title>
+    <meta charset="utf-8"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link href="css/cwrc.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="css/favicon.ico" type="image/x-icon"/>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/">
+        <img src="http://sparql.cwrc.ca/images/cwrclogo-vert-white.png" height="30" class="align-top" alt="CWRC Logo"/> CWRC Ontologies</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sparql">SPARQL</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Preamble</a> <span class="sr-only">(current)</span></li>
+          <li class="nav-item"><a class="nav-link" href="ii-FR.html">Spécifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="our-team-FR.html">Notre Équipe</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/cwrc/ontology">Github</a></li>
+        </ul>
+        <span class="navbar-text">L'Ontologie du Collaboratoire scientifique des écrits du Canada</span>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-xl-2 col-lg-3 col-md-12 d-none d-lg-block bg-light sidebar">
+          <div class="sidebar-sticky">
+
+            <div class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Tables des Matières</span>
+              <a class="d-flex align-items-center text-muted" href="#"></a>
+              <div id="toc">
+                <!-- Table of Contents -->
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <main role="main" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto pt-3 px-4" data-spy="scroll" data-target="#toc">
+
+        <h1>CWRC Ontology Preamble</h1>
+        <hr/>
+        <h2 id="abstract">Résumé</h2>
+        <!-- <p>The II (Illness and Injury) Ontology is the ontology used by the Canadian Writing Research Collaboratory (<a href="http://www.cwrc.ca">cwrc.ca</a>) to assign names of illnesses and injuries to cause of death and health issues triples. </p> -->
+
+        <h2 id="introduction">1. Introduction</h2>
+<!--         <p> This list of Illness and Injury (Morbidity and Mortality) classifications is an abbreviated version of the World Health Organization&apos;s (WHO) Startup Mortality List (ICD-10-SMoL).  ICD-10-SMoL is the WHO&apos;s application of ICD-10 for low-resource settings initial cause of death collection.  It was developed to add structure to the designations for cause of death and health issues in biographical information.</p> -->
+
+        <h2 id="background">2. Contexte des données source d'Orlando</h2>
+        
+          <p>ICD-10-SMoL was chosen because it is a simplified version of the ICD-10.  ICD (International Classification of Diseases) &quot;is the foundation for the identification of health trends and statistics globally, and the international standard for reporting diseases and health conditions. It is the diagnostic classification standard for all clinical and research purposes. ICD defines the universe of diseases, disorders, injuries and other related health conditions&quot; [<a href="http://www.who.int/classifications/icd/en/">http://www.who.int/classifications/icd/en/</a>].</p>
+
+          <p>Version 1.0 of this ontology was compiled for the CWRC ontology project and reflects the need to have causes of death and health issues organized in a way to allow for analysis of cultural data.  A simplified list was deemed sufficient since the domain under study (cultural documents) will not have detailed medical information with regards to cause of death or health issues.  But instead of accepting a list of general usage terms for causes of death or health issues that appear in some sources (e.g. Wikipedia, Wikidata, etc.), a standardized, medical classification was selected so that it could be of use for future analysis regarding questions involving the intersection of health and culture.</p>
+
+          <p>ICD-10-SMoL was chosen since it was the latest version of this list (June, 2018).  A stable version of ICD-11 was to be available in June 2018 but there was no ICD-11-SMoL available at this time.  To obtain the ICD10-SMoL: <a href="http://www.who.int/healthinfo/civil_registration/ICD_10_SMoL.pdf?ua=1">http://www.who.int/healthinfo/civil_registration/ICD_10_SMoL.pdf?ua=1</a> </p>
+
+          <h2 id="status">3. À propos de ce document</h2>
+           
+              <p>Ce document est une version de l'ontologie lisible par l'utilisateur qui ne peut pas documenter toutes ses structures de données. L'ontologie elle-même devrait servir de source principale à la compréhension de son fonctionnement. </p>
+              <p>Ce document est destiné au public académique qui souhaite comprendre la façon dont l'ontologie traite les problèmes concrets relatifs à l’enregistrement de données et aux professionnels des webs de données qui souhaitent utiliser l'ontologie.</p>
+
+
+          <h2 id="status_ontology">4. Statut de l'ontologie dynamique</h2>
+           
+            <p>Ce document et l'ontologie associée sont développés de façon itérative et des modifications y seront apportées au fil du temps à mesure que les données sont progressivement traduites et que de nouveaux problèmes ontologiques sont identifiés. L'utilisation des annotations d'ontologies OWL pour la compatibilité ontologique ainsi que les classes et propriétés obsolètes assure sa continuité. Les termes supprimés de l'ontologie restent présents mais sont signalés comme tels. </p>
+          
+            <p>L'ontologie est comprise comme un document évolutif qui ne prétend pas à l’exhaustivité. En particulier, les instances sont dérivées de jeux de données spécifiques et seront développées progressivement. Nous acceptons les suggestions de nouvelles classes, de propriétés et de prédicats de la part des personnes souhaitant utiliser l'ontologie pour leurs propres jeux de données, ainsi que des suggestions sur les termes de vocabulaires complexes déjà existants.</p>
+          <h2 id="data_sources">5. Data Sources</h2>
+          <ul>
+             <li> <a href="http://apps.who.int/classifications/icd10/browse/2010/en#/">ICD-10</a> [<a href="http://bioportal.bioontology.org/ontologies/ICD10/?p=summary">Ontology</a>]
+             <li> <a href="http://www.who.int/healthinfo/civil_registration/ICD_10_SMoL.pdf?ua=1">SMoL</a>
+             <li> <a href="https://www.thornber.net/medicine/html/medgloss.html">Glossary of Medical Terms Used in the 18th and 19th Centuries</a>
+          </ul>
+
+          <h2 id="goals">6. Objectifs ontologiques fondamentaux</h2>
+            <h3 id="linkages">a. Liens vers d'autres ontologies</h3>
+            
+              <p>Nous employons plusieurs stratégies afin de nous relier à d'autres ontologies. Notre architecture n’importe pas intégralement d'ontologies tierces, mais renvoie à d'autres vocabulaires larges de façon précise.  Nous nous efforçons de ne pas abuser du prédicat sameAs (<a href="#cwrc:a5686049-f450-415c-9ca6-deee26e30899">Halpin, Hayes et al., 2010</a>).  Nous adoptons des espaces de noms, des classes et des termes associés dans la mesure du possible lorsqu'ils sont couramment employés et que leurs vocabulaires sont majoritairement compatibles avec le nôtre, comme c'est le cas du <a href="http://xmlns.com/foaf/spec/"> FOAF </a> et du <a href="http://bibliontology.com/"> BIBO </a>.  Pour certains termes, tels que les dénominations religieuses ou les genres littéraires, nous nous appuyons volontiers, en partie ou en totalité, sur les termes et définitions d'autres vocabulaires comme dans le cas du <a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty Art and Architecture Thesaurus</a> (<a href="http://www.getty.edu/research/index.html">Getty Research Institute</a>). D'autres termes sont référencés avec du recul critique.  Ceci s’applique plus particulièrement au vocabulaire en lien avec la classe Forme Culturelle  (voir ci-dessous), qui est avant tout considérée comme représentative et au sein de laquelle les termes d’identité sont entrés comme étiquettes rattachées à des instances internes plus précises, signalant l'intersection dudit terme avec un ou plusieurs types de catégorisation identitaire. Celles-ci sont à leur tour rattachées à des ontologies externes en tant que sous-classes,
+              <code>&lt;rdfs:subClassOf&gt;</code> (or <code>&lt;owl:equivalentClass&gt;</code>, <code>&lt;skos:narrower&gt;</code>, <code>&lt;skos:broader&gt;</code>, etc...)
+              pour indiquer qu'en dépit de leur proximité ces termes et leurs définitions ne ne sont pas comparables à ceux utilisés par le vocabulaire du CSÉC. Au moyen de cette  structure, notre vocabulaire positionne tous les termes associés aux processus de Forme culturelle comme des "étiquettes", conservant ainsi au sein de la prose la complexité des termes relatifs à la complexe construction sociale des identités.</p>
+            
+              <p>La récupération de vocabulaires a présenté certains défis au CSÉC puisque les vocabulaires utilisés dans le balisage à l'origine du RDF peuvent être employés de façon ambigüe, à un tel point que leur réutilisation devient difficile. </p>
+            
+              <p>Les termes relatifs à la religion sont des exemples typiques de ces ambiguïtés, car il est difficile de déterminer si un terme représente effectivement une religion comme système de croyances, une adhésion formelle à l’organisation religieuse associée, des comportements sociaux souvent laïques oules  affiliations en lien avec la religion, ou quelque autre combinaison des exemples ci-dessus. </p>
+     
+          <h3 id="provenance">b. Provenance et contextes</h3>
+         
+            <!-- <p> The <a href="https://www.w3.org/TR/annotation-model/">Web Open Annotation</a> data model is used to link the original Orlando text to specific <a href="cwrc.html#Context">Contexts</a> for cause of death and health issues.  More documentation to come about the way OA was used in this and other CWRC ontologies.</p> -->
+
+
+      <h2 id="notesSKOS">7. Règles de conception de l'ontologie de l’ontologie du CSÉC</h2>
+        <p> Au-delà du formalisme du <a href="https://www.w3.org/TR/owl-primer/"> OWL 2 Web Ontology Language</a>, l'ontologie du CSÉC suit les principes de design et les styles suivants: </p>
+        <ul>
+          <li>...</li>
+        </ul>
+
+
+        <h2 id="notesSKOSOWL">8. Notes sur les langages SKOS et OWL</h2>
+            
+          <p>Le SKOS (Simple Knowledge Organization System) jouit d'une grande popularité au sein de la communauté du web sémantique, car il fournit des termes simples pour les taxonomies sans exiger la présence d’un agent raisonneur. Chaque fois que cela s'avère approprié, les termes SKOS sont insérés dans cette ontologie pour relier les termes entre eux. Cependant, étant donné que ces termes ne sont pas ontologiquement renseignés, leur capacité d’évolution est limitée car chaque couche de termes supplémentaire dans une taxonomie nécessite une autre requête auprès de la base de données.</p>
+          <p> Certaines des constructions de l'ontologie du CSÉC sont complexes et requièrent un raisonnement. OWL est le moyen privilégié pour utiliser cette ontologie, bien que l'utilisation des termes, dans le style de ceux de SKOS, soit possible.</p>
+
+        <h2 id="conclusion">10. Conclusion et travail futur</h2>
+              
+          <p>Ce brouillon d’ontologie est un travail en cours. Il continuera d’être développé, étendu et révisé à mesure que nous découvrons ce qu’implique la structure de l’ontologie à travers l’extraction et l'exploration de nos données, puisque de nouvelles informations et divers cas d’utilisation nécessitent un travail d’élargissement ou de précision, et que nous identifions de nouveaux besoins, de nouvelles interprétations et de nouveaux débats. </p>
+
+        <h2 id="version_history">11. Historique des versions</h2>
+          <ul>
+            <li>1.0 - Version publique initiale.</li>
+            <li>1.1 - </li>
+          </ul>
+
+
+        <h2 id="bibliography">12. Bibliographie</h2> 
+        m4_include(ii-citations.html)
+      </main>
+    </div>
+  </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh3U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+  
+  <script src="js/toc.js"></script>
+  <script src="js/svg-pan-zoom.min.js"></script>
+  <script>
+
+      window.onload = function() {
+      var options = {
+          selector: 'h2, h3, h4, h5',
+          scope: 'main'
+      };
+
+      var container = document.querySelector('#toc');
+      var toc = initTOC(options);
+      container.appendChild(toc);
+        // Expose variable for testing purposes
+        window.panZoomPA = svgPanZoom('#pa-tax', {
+          zoomEnabled: true,
+          minZoom: 1,
+          controlIconsEnabled: true,
+          fit: true,
+          center: true
+        });
+        window.panZoomR = svgPanZoom('#religion-tax', {
+          zoomEnabled: true,
+          minZoom: 1,
+          controlIconsEnabled: true,
+          fit: true,
+          center: true
+        });
+        window.panZoomG = svgPanZoom('#genre-tax', {
+          zoomEnabled: true,
+          minZoom: 1,
+          controlIconsEnabled: true,
+          fit: true,
+          center: true
+        });
+      };
+
+  </script>
+  </body>
+</html>
