@@ -7,7 +7,7 @@ import sys
 
 # Expected Usage:
 # ./crossRef.py test.owl
-# Will output updated rdf file with appropriate <a> in cdata tags to link to appropriate label and link
+# Will output updated rdf-xml file with appropriate <a> in cdata tags to link to appropriate label and link
 # Using @@#uri@@ and @@hyperlink@@
 # Suggested usage
 # ./crossRef.py test.owl > updated_test.owl
@@ -44,6 +44,11 @@ import sys
 # </skos:definition>
 # (Note this will increase the time it takes for script to run with many requests)
 
+# May need to update this user-agent header
+
+headers = {}
+headers['User-Agent'] = "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.27 Safari/537.17"
+
 
 if len(sys.argv) != 2:
     print("Insufficent Arguments provided")
@@ -52,11 +57,18 @@ if len(sys.argv) != 2:
     exit()
 
 file = sys.argv[1]
-parser = etree.XMLParser(strip_cdata=False)
-with open(file, "rb") as source:
-    tree = etree.parse(source, parser=parser)
-    root = tree.getroot()
 
+# Opening with etree parser for manipulation of text
+parser = etree.XMLParser(strip_cdata=False)
+try:
+    with open(file, "rb") as source:
+        tree = etree.parse(source, parser=parser)
+        root = tree.getroot()
+except etree.XMLSyntaxError as e:
+    print("Unable to parse provided rdf-xml file:", e, "\n\n\n")
+    raise e
+
+# Opening with rdflib for querying of labels
 o_graph = rdflib.Graph()
 namespace_manager = rdflib.namespace.NamespaceManager(rdflib.Graph())
 o_graph.namespace_manager = namespace_manager
@@ -78,6 +90,7 @@ def printXML(root):
     rough_string = '<?xml version="1.0" encoding="UTF-8"?>\n'
     rough_string += (etree.tostring(root, encoding="utf-8", pretty_print=True)).decode('utf-8')
     # rough_string += etree.tostring(root, encoding="unicode", pretty_print=True)
+
     # Accounting for oddities in lxml not properly ignoring CDATA sections
     rough_string = rough_string.replace("&lt;", "<")
     rough_string = rough_string.replace("&gt;", ">")
@@ -96,7 +109,13 @@ def printXML(root):
 def get_webpage_title(url):
     title = url
     try:
-        webpage = urllib.request.urlopen(url).read().decode('utf-8')
+        try:
+            webpage = urllib.request.urlopen(url).read().decode('utf-8')
+        except UnicodeDecodeError as e:
+            req = urllib.request.Request(url, headers=headers)
+            webpage = urllib.request.urlopen(req).read()
+            title = str(webpage).split('<title>')[1].split('</title>')[0]
+
         title = str(webpage).split('<title>')[1].split('</title>')[0]
     except urllib.error.URLError:
         print("<!-- %s is currently inaccessible -->" % url)
@@ -130,7 +149,7 @@ def get_definitions(element):
 
 
 def create_hyperlink(uri, label):
-    return ('<![CDATA[<a href="%s" title="%s">%s</a>]]>' % (uri,uri, label))
+    return ('<![CDATA[<a href="%s" title="%s">%s</a>]]>' % (uri, uri, label))
 
 
 def get_label(uri, lang):
