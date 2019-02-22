@@ -9840,7 +9840,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Sexuality>
-  <cwrc:Sexuality rdf:about="#sexualityBisexuality">
+  <cwrc:Sexuality rdf:about="#bisexuality">
     <rdfs:label xml:lang="en">bisexuality</rdfs:label>
     <rdfs:label xml:lang="fr">bisexualité</rdfs:label>
     <skos:altLabel xml:lang="en">bisexual</skos:altLabel>
@@ -9853,7 +9853,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Sexuality>
-  <cwrc:Sexuality rdf:about="#sexualityCelibacy">
+  <cwrc:Sexuality rdf:about="#celibacy">
     <rdfs:label xml:lang="en">celibacy</rdfs:label>
     <rdfs:label xml:lang="fr">célibat</rdfs:label>
     <skos:altLabel xml:lang="en">celibate</skos:altLabel>
@@ -9865,7 +9865,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Sexuality>
-  <cwrc:Sexuality rdf:about="#sexualityFrigidity">
+  <cwrc:Sexuality rdf:about="#frigidity">
     <rdfs:label xml:lang="en">frigidity</rdfs:label>
     <rdfs:label xml:lang="fr">frigidité</rdfs:label>
     <skos:altLabel xml:lang="en">frigid</skos:altLabel>
@@ -9876,7 +9876,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Sexuality>
-  <cwrc:Sexuality rdf:about="#sexualityPromiscuity">
+  <cwrc:Sexuality rdf:about="#promiscuity">
     <rdfs:label xml:lang="en">promiscuity</rdfs:label>
     <rdfs:label xml:lang="fr">promiscuité</rdfs:label>
     <skos:altLabel xml:lang="en">promiscuous</skos:altLabel>
@@ -9887,7 +9887,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Sexuality>
-  <cwrc:Sexuality rdf:about="#sexualityLibertinism">
+  <cwrc:Sexuality rdf:about="#libertinism">
     <rdfs:label xml:lang="en">libertinism</rdfs:label>
     <rdfs:label xml:lang="fr">libertinage</rdfs:label>
     <skos:altLabel xml:lang="en">libertinism</skos:altLabel>
@@ -17914,6 +17914,90 @@
   </owl:DeprecatedClass>
 
   <!-- Deprecated Instances -->
+  <rdf:Description rdf:about="#sexualityBisexuality">
+    <rdfs:label xml:lang="en">bisexuality</rdfs:label>
+    <rdfs:label xml:lang="fr">bisexualité</rdfs:label>
+    <skos:altLabel xml:lang="en">bisexual</skos:altLabel>
+    <skos:altLabel xml:lang="en">bisexuality</skos:altLabel>
+    <skos:definition xml:lang="en">Bisexuality indicates sexual attraction to both genders. In terms of binary understandings of sex or gender, bisexuality is often defined as being sexually attracted to "both sexes".</skos:definition>
+    <skos:definition xml:lang="fr">La bisexualité réfère à l'attraction sexuelle pour les deux genres. En terme d'acceptation binaire du sexe ou du genre, la bisexualité est souvent définie comme attraction sexuelle pour les «deux sexes».</skos:definition>
+    <skos:inScheme rdf:resource="#Sexuality"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:sameAs rdf:resource="http://homosaurus.org/terms/bisexualIdentity"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#bisexuality@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#bisexuality@@.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#bisexuality"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#sexualityCelibacy">
+    <rdfs:label xml:lang="en">celibacy</rdfs:label>
+    <rdfs:label xml:lang="fr">célibat</rdfs:label>
+    <skos:altLabel xml:lang="en">celibate</skos:altLabel>
+    <skos:definition xml:lang="en">Celibacy indicates abstention from sex, and can stem from personal choice, religious prescriptions, or with religious occupations such as being a nun or priest. Celibacy is not the be confused with asexuality, which describes a lack of interest in sex or sexual attraction to other subjects.</skos:definition>
+    <skos:definition xml:lang="fr">Le célibat indique l'abstinence sexuelle, et peut être dû à un choix personnel, à des impératifs religieux ou des professions cléricales comme religieuse ou prêtre. Le célibat ne doit pas être confondu avec l'asexualité, qui décrit une absence d'intérêt pour les pratiques sexuelles ou d'attirance sexuelle pour d'autres personnes.</skos:definition>
+    <skos:inScheme rdf:resource="#Sexuality"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:sameAs rdf:resource="http://homosaurus.org/terms/celibacy"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#celibacy@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#celibacy@@.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#celibacy"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#sexualityFrigidity">
+    <rdfs:label xml:lang="en">frigidity</rdfs:label>
+    <rdfs:label xml:lang="fr">frigidité</rdfs:label>
+    <skos:altLabel xml:lang="en">frigid</skos:altLabel>
+    <skos:definition xml:lang="en">Frigidity labels a female subject as sexually withdrawn or unenthusiastic (read: non-consenting) in relation to the sexual advance, usually of men within a heterosexual framework, and suggests a lack of pleasure from sexual activities. Unlike asexual and celibate, this term is often ascribed to women, as opposed to self-referential. The term "frigid" was coined in the 1920s by sexologists (Sex and Society, Vol. 1, 285). Its use in discourse surrounding female sexuality is waning.</skos:definition>
+    <skos:definition xml:lang="fr">La frigidité est attribuée aux femmes qui se montrent distantes ou peu enthousiastes (comprendre non consentantes) face aux avances sexuelles, le plus souvent de la part d'hommes dans un cadre hétéronormé, et suggère un manque de plaisir associé aux pratiques sexuelles. Contrairement à l'asexualité et au célibat, ce terme est souvent assigné à des femmes, et n'est donc pas autoréférentiel. Le terme «frigide» a été formulé dans les années 20 par des sexologues (Sex and Society, Vol. 1, 285). Son usage est en déclin dans les discours à propos de la sexualité féminine.</skos:definition>
+    <skos:inScheme rdf:resource="#Sexuality"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#frigidity@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#frigidity@@.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#frigidity"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#sexualityPromiscuity">
+    <rdfs:label xml:lang="en">promiscuity</rdfs:label>
+    <rdfs:label xml:lang="fr">promiscuité</rdfs:label>
+    <skos:altLabel xml:lang="en">promiscuous</skos:altLabel>
+    <skos:definition xml:lang="en">Promiscuity indicates sex with multiple partners in a casual or indiscriminate fashion and in opposition to socially sanctioned sexual behaviour. Promiscuity is differently constructed for women and men in most historical and cultural contexts, being closely connected to the control of female sexuality and reproduction. It includes libertinism, a form of hedonistic sexual politics frequently ascribed to or adopted by men.</skos:definition>
+    <skos:definition xml:lang="fr">La promiscuité indique l'activité sexuelle avec des partenaires multiples de façon décomplexée et indifférenciée, en opposition aux pratiques sexuelles socialement acceptées. La promiscuité est différemment interprétée pour les femmes et les hommes dans la plupart des contextes historiques et culturelles, étant étroitement liée au contrôle de la sexualité féminine et de la reproduction. Elle inclut le libertinage, une forme de sexualité hédoniste fréquemment attribuée à ou adoptée par des hommes.</skos:definition>
+    <skos:inScheme rdf:resource="#Sexuality"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#promiscuity@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#promiscuity@@.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#promiscuity"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#sexualityLibertinism">
+    <rdfs:label xml:lang="en">libertinism</rdfs:label>
+    <rdfs:label xml:lang="fr">libertinage</rdfs:label>
+    <skos:altLabel xml:lang="en">libertinism</skos:altLabel>
+    <skos:definition xml:lang="en">Libertinism refers to a type of sexual identity (often tied to men) used to describe a subject who subscribes to hedonistic sexual politics.</skos:definition>
+    <skos:definition xml:lang="fr">Le libertinage réfère à un type d'identité sexuelle (souvent pour des hommes) utilisé pour décrire un sujet adhérant aux idées et pratiques hédonistes.</skos:definition>
+    <skos:inScheme rdf:resource="#Sexuality"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#libertinism@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#libertinism@@.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#libertinism"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+
   <rdf:Description rdf:about="#womensEnfranchisement">
     <rdfs:label xml:lang="en">Women's Enfranchisement</rdfs:label>
     <skos:definition xml:lang="en">"The Women's Enfranchisement Act, 1930, was an act of the Parliament of South Africa which granted white women aged 21 and older the right to vote and to run for office. It also had the effect of diluting the limited voting power of non-white people (in the Cape Province) by effectively doubling the number of white voters. It was enacted by the National Party government of Prime Minister J. B. M. Hertzog. The first general election at which women could vote was the election of 17 May 1933. At that election Leila Reitz (wife of Deneys Reitz) was elected as the first female MP, representing Parktown for the South African Party. The act enfranchised all white women, while certain property qualifications still applied to men. In June 1931 the Franchise Laws Amendment Act, 1931 enfranchised all white men while retaining the property qualifications for non-white voters, thus further diluting the non-white vote. The delimitation of electoral divisions was still based on the white male population until April 1937, when the Electoral Quota Act, 1937 altered it to be based on the whole white population. The Women's Enfranchisement Act was repealed in 1946 when the franchise laws were consolidated into the Electoral Consolidation Act, 1946." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
