@@ -222,7 +222,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:AnnotationProperty>
 
-  
+
 
   <owl:ObjectProperty rdf:about="#hasIDependencyOn">
     <rdfs:label xml:lang="en">has ID dependency on</rdfs:label>
@@ -233,7 +233,7 @@
     <rdfs:range rdf:resource="#Context"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  
+
   <owl:ObjectProperty rdf:about="#rangeIncludes">
     <rdfs:label xml:lang="en">range includes</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -280,7 +280,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  
+
   <owl:Class rdf:ID="ChangeSet">
     <rdfs:label xml:lang="en">change set</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -289,7 +289,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="https://www.w3.org/2006/time#Instant"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    
+
     <prov:wasDerivedFrom rdf:resource="http://vocab.org/changeset/"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:Class>
@@ -327,7 +327,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
-  
+
 
   <owl:Class rdf:ID="NaturalPerson">
     <rdfs:label xml:lang="en">natural person</rdfs:label>
@@ -382,7 +382,7 @@
   </owl:ObjectProperty>
 
 
-  
+
 
   <owl:Class rdf:ID="Certainty">
     <rdfs:label xml:lang="en">certainty</rdfs:label>
@@ -493,7 +493,7 @@
   </cwrc:Certainty>
 
 
-  
+
   <owl:Class rdf:ID="PoliticalClimate">
     <rdfs:label xml:lang="en">political climate</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -575,7 +575,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
-  
+
   <owl:Class rdf:ID="Event">
     <rdfs:label xml:lang="en">event</rdfs:label>
     <rdfs:label xml:lang="fr">évènement</rdfs:label>
@@ -700,8 +700,8 @@
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as Leisure Context provide information about and discussions of instances of the leisure and social activities of a person including hobbies, sporting life and cultural activities, for example mountain climbing or hosting a literary salon.  Notions of leisure are both gendered and classed, and vary by cultural context. This context is meant to capture a person's social life within their larger community, not simply an elite, fashionable social circle.</skos:definition>
-    
-    
+
+
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -813,7 +813,7 @@
 
   <owl:Class rdf:ID="AbusiveName">
     <rdfs:label xml:lang="en">abusive name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom abusif</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">A name constructed with the intent to abuse, satirize, or slander. For example, Constance Gore-Booth was known in the press by the nickname of "Red Countess" and this nickname had negative connotations.</skos:definition>
     <skos:definition xml:lang="fr"/>
@@ -7803,7 +7803,7 @@
 
 
 
-  
+
   <owl:Class rdf:ID="Credential">
     <rdfs:label xml:lang="en">credential</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -8403,7 +8403,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  
+
     <owl:Class rdf:ID="EducationContext">
     <rdfs:label xml:lang="en">education context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte éducatif</rdfs:label>
@@ -8460,13 +8460,13 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  
+
   <owl:Class rdf:ID="EducationalAward">
     <rdfs:label xml:lang="en">educational award</rdfs:label>
     <rdfs:label xml:lang="fr">récompenses scolaires</rdfs:label>
     <skos:definition xml:lang="en">An award, financial, material, or immaterial, associated with a person's education at any level.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    
+
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -8787,7 +8787,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  
+
 
   <owl:Class rdf:ID="Role">
     <skos:definition xml:lang="en">A role of a Person or Actor in some Event, CreativeWork, or Organisation.</skos:definition>
@@ -8808,7 +8808,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-  
+
   <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
     <rdfs:range rdf:resource="#Context"/>
   </rdf:Description>
@@ -8839,7 +8839,7 @@
     <rdfs:label xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#HealthContext"/>
-    
+
     <skos:definition xml:lang="en">A subclass of @@#HealthContext@@. Annotations typed as physical health context describe aspects of a person’s bodily or physical well-being or illness.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -8850,7 +8850,7 @@
     <rdfs:label xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#HealthContext"/>
-    
+
     <skos:definition xml:lang="en">A subclass of @@#HealthContext@@. Annotations typed as mental health context describe an aspect of a person’s mental or psychological well-being or illness.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -8861,7 +8861,7 @@
     <rdfs:label xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#HealthContext"/>
-    
+
     <skos:definition xml:lang="en">A subclass of @@#HealthContext@@. Annotations typed as women 's health context describe an aspect of a person's health related to being a woman. Often closely connected to or overlapping with @@#ReproductiveHistory@@. See @@https://en.wikipedia.org/wiki/Women%27s_health@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -8968,9 +8968,9 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-  
 
-  
+
+
   <owl:Class rdf:ID="NationalHeritage">
     <rdfs:label xml:lang="en">national heritage</rdfs:label>
     <rdfs:label xml:lang="fr">héritage national</rdfs:label>
@@ -9318,7 +9318,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/iso639-1/iso639-1_Language"/>
   </owl:Class>
-  
+
   <owl:Class rdf:ID="GeographicHeritage">
     <rdfs:label xml:lang="en">geographic heritage</rdfs:label>
     <rdfs:label xml:lang="fr">héritage géographique</rdfs:label>
@@ -9552,7 +9552,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-  
+
   <cwrc:Sexuality rdf:about="#heterosexual">
     <rdfs:label xml:lang="en">heterosexuality</rdfs:label>
     <rdfs:label xml:lang="fr">hétérosexualité</rdfs:label>
@@ -10378,7 +10378,7 @@
 
 
 
-  
+
   <owl:Class rdf:ID="Religion">
     <rdfs:label xml:lang="en">religion</rdfs:label>
     <rdfs:label xml:lang="fr">religion</rdfs:label>
@@ -11647,7 +11647,7 @@
   </cwrc:Religion>
 
 
-  
+
   <owl:Class rdf:ID="SocialClass">
     <rdfs:label xml:lang="en">social class</rdfs:label>
     <rdfs:label xml:lang="fr">classe sociale</rdfs:label>
@@ -11906,7 +11906,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
 
-  
+
   <owl:Class rdf:ID="PoliticalAffiliation">
     <rdfs:label xml:lang="en">political affiliation</rdfs:label>
     <rdfs:label xml:lang="fr">appartenance politique</rdfs:label>
@@ -15847,7 +15847,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  
+
   <owl:Class rdf:ID="TextLabels">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:label xml:lang="en">textual label</rdfs:label>
@@ -15859,7 +15859,7 @@
     <skos:related rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
   </owl:Class>
 
-  
+
   <skos:Concept rdf:about="#whiteLabel">
     <rdfs:label xml:lang="en">white identity</rdfs:label>
     <rdfs:label xml:lang="fr">identité blanche</rdfs:label>
@@ -15976,7 +15976,7 @@
   </skos:Concept>
 
 
-  
+
   <owl:ObjectProperty rdf:ID="hasSocialRelationshipWith">
     <rdfs:label xml:lang="en">has social relationship with</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -16102,7 +16102,7 @@
     <rdfs:label xml:lang="en">has reproductive history</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Describes an aspect of a person's reproductive history.  May relate to childlessness, birth control, adoption, abortion, difficulties with childbearing, loss of a child, whether biologically related, adopted, or otherwise considered kin, difficulties with child-bearing. See also the related property @@#hasChildren@@.</skos:definition>
-    
+
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -16261,7 +16261,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#hasRelative"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntimateRelationshipWith"/>
-    
+
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <owl:sameAs rdf:resource="#partnerOf"/>
@@ -16276,7 +16276,7 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    
+
     <rdfs:subPropertyOf rdf:resource="#hasIntimateRelationshipWith"/>
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
     <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Partnership"/>
@@ -16295,7 +16295,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broader rdf:resource="https://schema.org/spouse"/>
     <rdfs:subPropertyOf rdf:resource="#hasPartner"/>
-    
+
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="wifeOf">
@@ -16309,7 +16309,7 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <owl:inverseOf rdf:resource="#hasWife"/>
     <skos:broader rdf:resource="https://schema.org/spouse"/>
-    
+
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasHusband">
@@ -16323,7 +16323,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broader rdf:resource="https://schema.org/spouse"/>
     <rdfs:subPropertyOf rdf:resource="#hasPartner"/>
-    
+
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="husbandOf">
@@ -16337,7 +16337,7 @@
     <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Partnership"/>
     <skos:broader rdf:resource="https://schema.org/spouse"/>
     <owl:inverseOf rdf:resource="#hasHusband"/>
-    
+
   </owl:ObjectProperty>
 
 
@@ -17178,7 +17178,7 @@
 
 
 
-  
+
   <owl:DeprecatedProperty rdf:ID="interpersonalRelationship">
     <rdfs:label xml:lang="en">interpersonal relationship</rdfs:label>
     <rdfs:label xml:lang="fr">relation interpersonnelle</rdfs:label>
@@ -17219,7 +17219,7 @@
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
   </owl:DeprecatedProperty>
-  
+
   <owl:DeprecatedProperty rdf:ID="personalProperty">
     <rdfs:label xml:lang="en">personal property</rdfs:label>
     <rdfs:label xml:lang="fr">propriété personnelle</rdfs:label>
@@ -17481,7 +17481,7 @@
     <rdfs:comment xml:lang="fr">Désapprouver de l'ancienne ontologie Orlando.</rdfs:comment>
   </owl:DeprecatedProperty>
 
-  
+
   <owl:DeprecatedClass rdf:ID="Organization">
     <rdfs:label xml:lang="en">organization</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -17496,7 +17496,7 @@
     <rdfs:comment xml:lang="en">Deprecated in favour of class <![CDATA[<a href="https://www.w3.org/TR/vocab-org/#class-formalorganization">org:formalOrganization</a>]]> </rdfs:comment>
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe <![CDATA[<a href="https://www.w3.org/TR/vocab-org/#class-formalorganization">org:formalOrganization</a>]]>.</rdfs:comment>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
-    
+
   </owl:DeprecatedClass>
   <owl:DeprecatedClass rdf:ID="RaceEthnicity">
     <rdfs:label xml:lang="en">race or ethnicity</rdfs:label>
@@ -17647,7 +17647,7 @@
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe @@#EventElement@@.</rdfs:comment>
   </owl:DeprecatedClass>
 
-  
+
   <rdf:Description rdf:about="#sexualityBisexuality">
     <rdfs:label xml:lang="en">bisexuality</rdfs:label>
     <rdfs:label xml:lang="fr">bisexualité</rdfs:label>
@@ -18159,7 +18159,7 @@
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
-    
+
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
