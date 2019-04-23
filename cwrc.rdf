@@ -215,9 +215,9 @@
 
   <owl:AnnotationProperty rdf:ID="CompetencyQuestion">
     <rdfs:label xml:lang="en">competency question</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">question de compétence</rdfs:label>
     <skos:definition xml:lang="en">A question that can be asked of the ontology and will be used to specify the high level requirements of the CWRC Ontology allowing decisions about structure and components to be made.</skos:definition>
-    <skos:definition xml:lang="fr">Une question qui peut être posée à l’ontologie et servira à déterminer les exigences ontologiques de haut niveau du CSÉC, permettant ainsi de prendre des décisions sur sa structure et ses composants.</skos:definition>
+    <skos:definition xml:lang="fr">Une question qui peut être posée à l’ontologie et servira à déterminer les exigences ontologiques de haut niveau du CSÉC, permettant ainsi de prendre des décisions sur sa structure et ses composantes.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:AnnotationProperty>
@@ -441,17 +441,17 @@
 
   <sem:TimeType rdf:about="#PunctiveTime">
     <rdfs:label xml:lang="en">punctive time</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">temps ponctuel</rdfs:label>
     <skos:definition xml:lang="en">Indicates a point or location in time. Punctive time can be used to anchor an event that has a duration, such as a wedding or an election. It may be represented by various levels of granularity, for instance a second or a year, or by two dates between which an event was known to occur.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique un point ou un emplacement dans le temps. Le temps ponctuel peut être utilisé pour ancrer un événement qui a une durée, comme un mariage ou une élection. Il peut être représenté par différents niveaux de granularité, par exemple une seconde ou une année, ou par deux dates entre lesquelles un événement s'est produit.</skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </sem:TimeType>
   <sem:TimeType rdf:about="#IntervalTime">
     <rdfs:label xml:lang="en">interval time</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">intervalle</rdfs:label>
     <skos:definition xml:lang="en">Indicates a span of time, usually represented in the form of a start and end date.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique une période de temps, généralement représentée par une date de début et de fin.</skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </sem:TimeType>
