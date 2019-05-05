@@ -115,10 +115,10 @@
      &lt;rdfs:comment&gt;
      tags, depending on the degree of alignment with the original definition. That said, these definitions can only act as imperfect guides to an understanding of a particular genre, given the complex and situated operation of genre outlined above.</p> 
      
-     <h2 id="taxonomy">4. Taxonomy structure</h2>
-       <p>Some approaches to genre make each term a class that can be applied to an object, whereas others provide instances for each genre. In order to facilitate the ability both to apply terms to particular cultural productions and enable them to be discussed as concepts, genres are instances within the CWRC Genre ontology, and are related to particular cultural works through the hasgenre property.</p><p>Because it is useful for a number of purposes to be able to move between broader genres and more specific ones, the ontology organizes its terms through a combination of <a href="https://www.w3.org/OWL/">OWL</a> classes that provide broad groupings and
+     <h2 id="taxonomy">4. Structure</h2>
+       <p>Some approaches to genre make each term a class that can be applied to an object, whereas others provide instances for each genre. In order to facilitate the ability both to apply terms to particular cultural productions and enable them to be discussed as concepts, genres  within the CWRC Genre ontology are instances rather than classes, and are related to particular cultural works through the <a href="genre.html#hasGenre"> property.</p><p>Because it is useful for a number of purposes to be able to move between broader genres and more specific ones, the ontology organizes its terms through a combination of <a href="https://www.w3.org/OWL/">OWL</a> classes that provide broad groupings and
        <a href="https://www.w3.org/2004/02/skos/">SKOS</a> taxonomical relations amongst instances. The OWL classes provide the ability to reason from narrower to broader terms, while the SKOS properties
-       provide more limited transitive narrower/broader relationships that can be used
+       provide more limited transitive narrower/broader relationships between the instances themselves that can be used
        to search for relevant works according to those taxonimicaL relationships amongst instances. One distinctive feature of the ontology is its use of adjectives, as in the class &apos;Philosophical Genre&apos; and the instance &apos;detective&apos; to denote types of cultural objects. The classe group multiple genres that fall under that category, while the instance terms can be employed in conjunction with genres that relate more to form, such as &apos;poem&apos; or &apos;novel&apos;, so as to denote, for instance, &apos;detective novel&apos;.</p>
        <!--
        <p><a href="figures/genreTaxonomy-ONTOLOGY_DATE-EN.svg">The specific taxonomy is:</a></p>
@@ -127,8 +127,7 @@
        
      <h2 id="usingthisontology">5. Using this ontology</h2>
 
-     <p>This ontology was constructed to support the efforts of the CWRC
-     project while enabling its stand-alone use by outside projects. Terms
+     <p>This ontology was constructed to support the efforts of the CWRC project while enabling its stand-alone use by outside projects. Terms
      exist as typed instances of either the <a href="#Genre">&lt;Medium&gt;</a>, <a href="#Genre">&lt;Form Genre&gt;</a>, or <a href="#Genre">&lt;Genre&gt;</a> classes or one of their subclasses. 
      <!-- add back in if confirmed
      , as well as
@@ -146,10 +145,11 @@
     <li>Definitions in French, English (and other serendipitously available languages) are never word for word translations and are definitions in their own right, serving to illustrate further the complexity of genre.</li>
     </ol>
     
-    <h2 id="conclusion">7. Conclusion and Future Work</h2>
+    <h2 id="conclusion">7. Future Development</h2>
     <p>
-    This ontology structure should be considered stable. Like other CWRC ontologies, this is a dynamic ontology to which changes will be made as new needs and use-cases arise. 
-    It will continue to be developed as new projects require additional terms, as it is crosswalked more thoroughly with other vocabularies, and as the CWRC team and related projects explore the implications of a multilingual ontology dedicated to medium, form, and genre. Feedback and suggestions are welcome.</p>
+    The basic structure of this ontology should be considered stable. Like other CWRC ontologies, this is a living ontology to which changes will be made as new needs and use-cases arise. 
+     <!-- Deprecated changes will be noted from version 0.6 (completion of the restructuring to introduce the OWL classes) onwards. -->
+    The ontology will continue to be developed as new projects require additional terms, as it is crosswalked more thoroughly with other vocabularies, and as the CWRC team and related projects explore the implications of a multilingual ontology dedicated to medium, form, and genre. Feedback and suggestions are welcome.</p>
     <h2 id="version_history">8. Version History</h2>
 
     <ul>
