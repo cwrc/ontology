@@ -94,15 +94,16 @@ def printXML(root):
     # Accounting for oddities in lxml not properly ignoring CDATA sections
     rough_string = rough_string.replace("&lt;", "<")
     rough_string = rough_string.replace("&gt;", ">")
-    rough_string = rough_string.replace("<![CDATA[<a", "<a")
-    rough_string = rough_string.replace("<![CDATA[<i", "<i")
-    rough_string = rough_string.replace("a>]]>", "a>")
-    rough_string = rough_string.replace("i>]]>", "i>")
+    # rough_string = rough_string.replace("<![CDATA[(<a", "<a")
+    # rough_string = rough_string.replace("<![CDATA[<i", "<i")
+    # rough_string = rough_string.replace("a>)]]>", "a>")
+    # rough_string = rough_string.replace("i>]]>", "i>")
 
-    rough_string = rough_string.replace("<a href=", "<![CDATA[<a href=")
-    rough_string = rough_string.replace("<i>", "<![CDATA[<i>")
-    rough_string = rough_string.replace("</a>", "</a>]]>")
-    rough_string = rough_string.replace("</i>", "</i>]]>")
+    # rough_string = rough_string.replace("<a href=", "<![CDATA[(<a href=")
+    # rough_string = rough_string.replace("<i>", "<![CDATA[<i>")
+    # rough_string = rough_string.replace("</a>", "</a>)]]>")
+    # rough_string = rough_string.replace("</i>", "</i>]]>")
+    # rough_string = rough_string.replace("]]>]]>", "]]>")
     print(str(rough_string))
 
 
