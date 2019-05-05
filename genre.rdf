@@ -241,7 +241,7 @@
     <skos:definition xml:lang="en">"Narratives set in the distant past recounting events impossible in the real world, often magical and with fairies, but with humans as heroes and heroines."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
     <rdfs:label xml:lang="fr">conte de fées</rdfs:label>
   </genre:FictionalGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#guidebook">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#guidebook">
     <skos:definition xml:lang="en">"Handbooks for the guidance of strangers or visitors in a district, town, building, etc., giving a description of the roads, places, or objects of interest to be found there."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <rdfs:label xml:lang="fr">guide de voyage</rdfs:label>
@@ -249,7 +249,7 @@
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026108"/>
     <skos:definition xml:lang="fr">Manuels destinés à guider des étrangers ou des visiteurs dans un quartier, une ville, un bâtiment, etc., en décrivant les routes, les lieux ou les sujets d'intérêt qui s'y trouvent.</skos:definition>
     <rdfs:label xml:lang="en">guidebook</rdfs:label>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:ScholarlyGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#treatise">
     <skos:definition xml:lang="en">"Formal and systematic written expositions of the principles of a subject, generally longer and more detailed than essays."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Treatise"/>
@@ -316,14 +316,14 @@
     <skos:definition xml:lang="en">"Dramatic monologue, also known as a persona poem, is a type of poetry written in the form of a speech of an individual character. M.H. Abrams notes the following three features of the dramatic monologue as it applies to poetry."  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Dramatic_monologue"/>
   </genre:PoeticGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#popular">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#popular">
     <skos:definition xml:lang="en">"Visual arts produced by or for the general public, often reflecting fads and as a response to the daily environment; works produced for mass audiences as distinct from fine art and folk art."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
     <rdfs:label xml:lang="fr">populaire</rdfs:label>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="fr">Arts visuels élaborés par ou pour le grand public qui reflètent souvent des tendances et font écho à la vie quotidienne. Œuvres produites pour le public de masse et qui se distinguent des beaux arts et de l'artisanat.</skos:definition>
     <rdfs:label xml:lang="en">popular</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300311927"/>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:InformationalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#genealogy">
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:related rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026100"/>
@@ -414,7 +414,7 @@
     <rdfs:label xml:lang="en">sentimental</rdfs:label>
     <skos:definition xml:lang="fr">Le XIXe siècle est marqué par la formidable expansion de la presse et des technologies de la communication. La production s’accélère dans tous les secteurs de la culture : la musique, les spectacles, bientôt le cinéma. Un public de nouveaux lecteurs émerge. L’Angleterre est un des premiers pays à faire du livre un objet destiné au grand public. Publié en 1740, Pamela, ou la Vertu récompensée de Samuel Richardson, roman d'amour à succès, est un des premiers best-sellers, avec cinq éditions imprimées en onze mois. De son côté, Jane Austen est considérée comme l'un des précurseurs du genre avec Orgueil et Préjugés, paru en 1813. En France, l’apparition du roman-feuilleton à partir de 1840 marque la naissance du roman populaire. Le roman sentimental se développe dans le dernier quart du XIXe siècle, lorsque l’Église s’alarme du goût du peuple alphabétisé pour la lecture de romans. Elle choisit alors de l’encadrer. Les feuilletons issus des périodiques tels que Les Veillées des chaumières ou Le Petit Écho de la mode proposent alors un roman d’amour qui élève l’âme et l’esprit. M. Maryan a ainsi écrit plus de quatre-vingt-dix-sept romans d’éducation. Toujours optimistes, ces ouvrages préparent les jeunes filles au mariage. Le roman sentimental connaît un large développement après la Première Guerre mondiale. Les principaux éditeurs en sont Joseph Ferenczi, Jules Tallandier et Jules Rouff. Ils produisent de multiples collections de petits romans : petits par le format, la pagination et le coût modique. Jusque dans les années 1980, la Librairie Jules Tallandier restera un des éditeurs majeurs dans ce domaine. Elle va codifier la littérature sentimentale, destinée à exprimer une vision enchantée de l’existence. Les Delly, pseudonyme des frère et sœur Frédéric et Jeanne-Marie Petitjean, sont des auteurs emblématiques du genre.</skos:definition>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Sentimental_novel"/>
-    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicWritingGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026536"/>
     <rdfs:label xml:lang="fr">littérature sentimentale</rdfs:label>
@@ -497,9 +497,9 @@
     <skos:definition xml:lang="en">Moralised case-histories in the form of letters in which the dead strive to reclaim the living beloved by persuading them to repent and reform. Often include features of lively fiction: character-drawing, narrative, suspense, surprise, humour, and love-situations including transgression of all kinds.</skos:definition>
     <rdfs:label xml:lang="en">letters from the dead to the living</rdfs:label>
   </genre:EpistolaryGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#millitary">
-    <rdfs:label xml:lang="en">millitary</rdfs:label>
-  </genre:ThematicWritingGenre>
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#military">
+    <rdfs:label xml:lang="en">military</rdfs:label>
+  </genre:ThematicGenre>
   <genre:BookForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#scrapbook">
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300027341"/>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
@@ -535,7 +535,7 @@
     <skos:definition xml:lang="en">"A novel that exposes the living or working conditions of the 19th century-working class as a result of the industrial revolution. The shocking circumstances—extreme poverty, deplorable factory conditions, widespread disease, over-crowded housing, etc.—are typically described in great detail. Solutions are often proposed, but the main goal of an industrial novel is to make the plight of the lower class known to the middle and upper classes in order to promote social change."  <![CDATA[(<a href="#cwrc:2f09376c-f784-4a46-9f04-5a21aa311f27">Penguin, 1999</a>)]]></skos:definition>
     <rdfs:label xml:lang="en">industrial novel</rdfs:label>
     <rdfs:label xml:lang="fr">roman industriel</rdfs:label>
-    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicWritingGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre"/>
   </genre:NovelisticGenre>
   <genre:IntertextualGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#translation">
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300027389"/>
@@ -582,11 +582,11 @@
     <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#NovelisticGenre"/>
     <skos:definition xml:lang="en">"A verse novel is a type of narrative poetry in which a novel-length narrative is told through the medium of poetry rather than prose. Either simple or complex stanzaic verse-forms may be used, but there will usually be a large cast, multiple voices, dialogue, narration, description, and action in a novelistic manner."  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
   </genre:PoeticGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#temperance">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#temperance">
     <skos:definition xml:lang="en">"The temperance movement is a social movement against the consumption of alcoholic beverages. Temperance movements typically criticize excessive alcohol consumption, promote complete abstinence (teetotalism), or use its political influence to press the government to enact alcohol laws to regulate the availability of alcohol or even its complete prohibition." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:label xml:lang="en">temperance</rdfs:label>
-  </genre:ThematicWritingGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#pastoral">
+  </genre:ThematicGenre>
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#pastoral">
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300250491"/>
     <skos:definition xml:lang="en">"Genre that depicts or evokes idyllic life in the country; in works of pictorial art, often scenes of shepherds and shepherdesses in idealized arcadian landscapes."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026475"/>
@@ -594,7 +594,7 @@
     <rdfs:label xml:lang="en">pastoral</rdfs:label>
     <skos:definition xml:lang="fr">Genre qui représente ou évoque la vie paysanne de façon idyllique. Dans les œuvres d'art picturales, les scènes pastorales représentent généralement des bergers et des bergères dans des paysages arcadiens idéalisés.</skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:PoeticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#haiku">
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
     <rdfs:label xml:lang="en">haiku</rdfs:label>
@@ -685,9 +685,9 @@
     <rdfs:label xml:lang="en">dance</rdfs:label>
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300054144"/>
   </genre:PerformanceMedium>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#immigration">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#immigration">
     <rdfs:label xml:lang="en">immigration</rdfs:label>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:DialogueOrDebateGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#dialogueOrDebate">
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from data.bnf.fr.</rdfs:comment>
     <rdfs:label xml:lang="fr">dialogue ou débat</rdfs:label>
@@ -697,7 +697,7 @@
     <skos:definition xml:lang="en">"A text made up of a conversation between two or more characters, often in which the characters take up opposing sides of an argument."  <![CDATA[(<a href="#cwrc:4c227091-6bf0-4325-b846-9733fae19e61">Oxford, 2015</a>)]]></skos:definition>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026083"/>
   </genre:DialogueOrDebateGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#domestic">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#domestic">
     <rdfs:label xml:lang="en">domestic</rdfs:label>
     <skos:definition xml:lang="en">"Domestic realism normally refers to the genre of nineteenth-century novels popular with women readers. This body of writing is also known as "sentimental fiction" or "woman's fiction". The genre is mainly reflected in the novel though short-stories and non-fiction works such as Harriet Beecher Stowe's "Our Country Neighbors" and The New Housekeeper's Manual written by Stowe and her sister-in-law Catharine Beecher are works of domestic realism. The style's particular characteristics are: "1. Plot focuses on a heroine who embodies one of two types of exemplar: the angel and the practical woman (Reynolds) who sometimes exist in the same work. Baym says that this heroine is contrasted with the passive woman (incompetent, cowardly, ignorant; often the heroine's mother is this type) and the "belle," who is deprived of a proper education. 2. The heroine struggles for self-mastery, learning the pain of conquering her own passions (Tompkins, Sensational Designs, 172). 3. The heroine learns to balance society's demands for self-denial with her own desire for autonomy, a struggle often addressed in terms of religion. 4. She suffers at the hands of abusers of power before establishing a network of surrogate kin. 5. The plots "repeatedly identify immersion in feeling as one of the great temptations and dangers for a developing woman. They show that feeling must be controlled. . . " (Baym 25). Frances Cogan notes that the heroines thus undergo a full education within which to realize feminine obligations (The All-American Girl). 6. The tales generally end with marriage, usually one of two possible kinds: A. Reforming the bad or "wild" male, as in Augusta Evans's St. Elmo (1867) B. Marrying the solid male who already meets her qualifications.Examples: Maria Cummins, The Lamplighter (1854) and Susan Warner, The Wide, Wide World (1850) 7. The novels may use a "language of tears" that evokes sympathy from the readers. 8. Richard Brodhead (Cultures of Letters) sees class as an important issue, as the ideal family or heroine is poised between a lower-class family exemplifying poverty and domestic disorganization and upper-class characters exemplifying an idle, frivolous existence (94)." An example of this style of novel is Jane Smiley's A Thousand Acres in which the main character's confinement is emphasized in such a way. Some early exponents of the genre of domestic realism were Jane Austen and Elizabeth Barrett Browning."  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
     <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#NovelisticGenre"/>
@@ -705,7 +705,7 @@
     <skos:definition xml:lang="fr">Le réalisme domestique se réfère généralement au genre des romans du dix-neuvième siècle populaires auprès des lectrices des femmes. Ce corps d'écriture est également connu sous le nom de "fiction sentimentale" Ou "la fiction de la femme". Le genre se reflète principalement dans le roman, bien que des histoires courtes et des œuvres non-fiction telles que Harriet Beecher Stowe's Our Country Neighbours &amp; quot; Et The New Housekeeper's Manual écrit par Stowe et sa belle-sœur Catharine Beecher sont des œuvres de réalisme domestique. Les caractéristiques particulières du style sont: &amp; quot; 1. Plot se concentre sur une héroïne qui incarne l'un des deux types d'exemples: l'ange et la femme pratique (Reynolds) qui existent parfois dans le même travail. Baym dit que cette héroïne est contrastée avec la femme passive (incompétente, lâche, ignorante, souvent la mère de l'héroïne est de ce type) et la «belle», qui est privée d'une éducation adéquate. 2. L'héroïne lutte pour la maîtrise de soi, apprenant la douleur causée par la nécessité de vaincre ses propres passions (Tompkins, Sensational Designs, 172). 3. L'héroïne apprend à trouver un équilibre entre l’impératif social du sacrifice de soi et son propre désir d'autonomie, une lutte souvent abordée en terme de religion. 4. Elle souffre aux mains d’auteurs de maltraitance, avant d'établir un réseau de parents de substitution. 5. Les intrigues "identifient à plusieurs reprises l’immersion dans la vie sentimentale comme synonyme de grandes tentations et de dangers pour une femme en développement. Ils montrent que les sentiments doivent être contrôlés. . . " (Baym 25). Frances Cogan note que les héroïnes sont suivent une éducation complète dans le but de remplir des obligations féminines (The All-American Girl). 6. Les histoires finissent habituellement par un mariage, correspondant en général à un des deux types possibles: A. Celui qui réhabilite un personnage masculin mauvais ou "sauvage", comme dans le Saint-Elmo d'Augusta Evans (1867) B. Celui qui marrie la protagoniste avec un homme stable qui répond déjà à ses exigences.Exemples: Maria Cummins, The Lamplighter (1854) et Susan Warner, The Wide, Wide World (1850) 7. Les romans peuvent utiliser un "langage larmoyant" qui provoque la sympathie des lecteurs. 8. Richard Brodhead (Cultures of Letters) voit la classe comme une question importante, car la famille idéale ou l'héroïne se situe entre une famille de classe inférieure illustrant la pauvreté et la désorganisation domestique et des personnages de classe supérieure illustrant une existence inactive et frivole (94). " Un exemple de ce style de roman est A Thousand Acres de Jane Smiley, dans lequel le confinement du personnage principal est souligné d’une telle manière. On compte Jane Austen et Elizabeth Barrett Browning comme des premières représentantes du réalisme domestique.</skos:definition>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Domestic_realism"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:PoeticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#elegy">
     <skos:definition xml:lang="en">"Mournful, melancholy, or plaintive poems, especially funeral songs or laments for the dead."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
     <rdfs:label xml:lang="en">elegy</rdfs:label>
@@ -715,12 +715,12 @@
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026307"/>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Elegy"/>
   </genre:PoeticGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#gardening">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#gardening">
     <skos:definition xml:lang="fr">Texte non fictif qui traite du jardinage.</skos:definition>
     <rdfs:label xml:lang="fr">jardinage</rdfs:label>
     <rdfs:label xml:lang="en">gardening</rdfs:label>
     <skos:definition xml:lang="en">A text, typically non-fiction, dealing with the subject of gardening.</skos:definition>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:PerformanceMedium rdf:about="http://sparql.cwrc.ca/ontologies/genre#puppetry">
     <rdfs:label xml:lang="en">puppetry</rdfs:label>
     <skos:definition xml:lang="en">"Puppetry is a form of theatre or performance that involves the manipulation of puppets—inanimate objects, often resembling some type of human or animal figure, that are animated or manipulated by a human called a puppeteer. Such a performance is also known as a puppet play. The puppeteer uses movements of her hands, arms, or control devices such as rods or strings to move the body, head, limbs, and in some cases the mouth and eyes of the puppet. The puppeteer often speaks in the voice of the character of the puppet, and then synchronizes the movements of the puppet's mouth with this spoken part. The actions, gestures and spoken parts acted out by the puppets are typically used in storytelling. There are many different varieties of puppets, and they are made of a wide range of materials, depending on their form and intended use. They can be extremely complex or very simple in their construction. The simplest puppets are finger puppets, which are tiny puppets that fit onto a single finger, and sock puppets, which are formed from a sock and operated by inserting one's hand inside the sock, with the opening and closing of the hand simulating the movement of the puppet's "mouth". A hand puppet is controlled by one hand which occupies the interior of the puppet and moves the puppet around (Punch and Judy puppets are familiar examples of hand puppets). A "live-hand puppet" is similar to a hand puppet but is larger and requires two puppeteer for each puppet. Marionettes are suspended and controlled by a number of strings, plus sometimes a central rod attached to a control bar held from above by the puppeteer. Puppetry is a very ancient form of theatre which was first recorded in the 5th century BC in Ancient Greece. Some forms of puppetry may have originated as long ago as 3000 years BC. Puppetry takes many forms, but they all share the process of animating inanimate performing objects to tell a story. Puppetry is used in almost all human societies both as entertainment – in performance – and ceremonially in rituals and celebrations such as carnivals." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
@@ -767,14 +767,14 @@
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026404"/>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Lai"/>
   </genre:PoeticGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#harlequinade">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#harlequinade">
     <skos:definition xml:lang="fr">Livres populaires aux 18ème et 19ème siècles, représentant à l'origine des harlequins, et dans lesquels des parties des pages qu'on soulève révèlent de nouvelles images, précisément placées sur les parties restantes des images précédentes.</skos:definition>
     <skos:definition xml:lang="en">"Books popular in the 18th and 19th centuries, originally often depicting harlequins, in which folded parts of pages are lifted to reveal new pictures, fitted neatly onto the remaining parts of the previous pictures."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300212205"/>
     <rdfs:label xml:lang="en">harlequinade</rdfs:label>
     <rdfs:label xml:lang="fr">harlequinade</rdfs:label>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:DramaticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#closetDrama">
     <rdfs:label xml:lang="en">closet drama</rdfs:label>
     <rdfs:label xml:lang="fr">pièce en chambre</rdfs:label>
@@ -805,14 +805,14 @@
     <skos:definition xml:lang="en">"Poetic or prosaic literary forms derived from medieval narratives of love, legendary or heroic adventures, and chivalry. Extends to narratives about important religious figures, or fantastic or supernatural events."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
     <rdfs:label xml:lang="fr">romance</rdfs:label>
   </genre:RomanceGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#orientalist">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#orientalist">
     <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#InformationalGenre"/>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
     <rdfs:label xml:lang="en">orientalist</rdfs:label>
     <rdfs:label xml:lang="fr">orientalisme</rdfs:label>
     <skos:definition xml:lang="fr">«L'orientalisme est un mouvement littéraire et artistique né en Occident au XIXe siècle. Il existe cependant un orientalisme prémoderne humaniste et classique qui remonte à la fin du Moyen Âge et au début de la Renaissance, lorsque les explorations commencèrent, avec par exemple Marco Polo, et qui atteint son apogée avec les turqueries et le goût oriental du XVIIIe siècle baroque puis rococo. Ce goût oriental hérite aussi du contact de l'époque des Croisades avec le monde islamique. Cet article traite donc plutôt de l'orientalisme à partir du XIXe siècle. C'est un mouvement qui marque l'intérêt de cette époque pour les cultures d'Afrique du Nord, turque et arabe, et toutes les régions dominées par l'Empire ottoman, jusqu'au Caucase.»  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
     <skos:definition xml:lang="en">"Writing about the East by Western writers and with a Western perspective, encompassing everything from fiction to scientific writing. In Orientalist writing, even if not looked down upon as inferior, Eastern cultures are represented as foreign and exotic, and in need of translation, interpretation, or explanation."  <![CDATA[(<a href="#cwrc:2f09376c-f784-4a46-9f04-5a21aa311f27">Penguin, 1999</a>)]]></skos:definition>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:MysteryGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#detective">
     <rdfs:label xml:lang="fr">roman policier</rdfs:label>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Detective_fiction"/>
@@ -826,11 +826,11 @@
     <rdfs:label xml:lang="en">column</rdfs:label>
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300026441"/>
   </genre:SerialForm>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#robinsonades">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#robinsonades">
     <rdfs:label xml:lang="en">robinsonades</rdfs:label>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026514"/>
     <skos:definition xml:lang="en">"Robinsonade (/ˌrɒbɪnsəˈneɪd/) is a literary genre that takes its name from the 1719 novel Robinson Crusoe by Daniel Defoe. The success of this novel spawned so many imitations that its name was used to define a genre, which is sometimes described simply as a "desert island story" or a "castaway narrative." The word "robinsonade" was coined by the German writer Johann Gottfried Schnabel in the Preface of his 1731 work Die Insel Felsenburg (The Island Stronghold). It is often viewed as a subgenre of survivalist fiction." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:BookForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#giftbook">
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2017026072"/>
@@ -998,13 +998,13 @@
     <skos:definition xml:lang="en">A ballad /ˈbæləd/ is a form of verse, often a narrative set to music. Ballads derive from the medieval French chanson balladée or ballade, which were originally "dancing songs". Ballads were particularly characteristic of the popular poetry and song of the British Isles from the later medieval period until the 19th century and used extensively across Europe and later the Americas, Australia and North Africa. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Ballad"/>
   </genre:PoeticGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#eulogy">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#eulogy">
     <rdfs:label xml:lang="en">eulogy</rdfs:label>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Eulogy"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <skos:definition xml:lang="en">"A eulogy (from εὐλογία, eulogia, Classical Greek for "praise") is a speech or writing in praise of a person(s) or thing(s), especially one who recently died or retired or as a term of endearment. Eulogies may be given as part of funeral services. They take place in a funeral home during or after a wake. However, some denominations either discourage or do not permit eulogies at services to maintain respect for traditions. Eulogies can also praise people who are still alive. This normally takes place on special occasions like birthdays, office parties, retirement celebrations, etc. Eulogies should not be confused with elegies, which are poems written in tribute to the dead; nor with obituaries, which are published biographies recounting the lives of those who have recently died; nor with obsequies, which refer generally to the rituals surrounding funerals. Catholic priests are prohibited by the rubrics of the Mass from presenting a eulogy for the deceased in place of a homily during a funeral Mass. The modern use of the word eulogy was first documented in the 15th century and came from the Medieval Latin term “eulogium” (Merriam-Webster 2012). “Eulogium” at that time has since turned into the shorter “eulogy” of today. Eulogies are usually delivered by a family member or a close family friend in the case of a dead person. For a living eulogy given in such cases as a retirement, a senior colleague could perhaps deliver it. On occasions, eulogies are given to those who are severely ill or elderly in order to express words of love and gratitude before they die. Eulogies are not limited to merely people, however; Places or things can also be given eulogies (which anyone can deliver), but these are less common than those delivered to people, whether living or deceased."  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
     <skos:definition xml:lang="fr">«L’éloge (masculin du latin elogium, avec l’influence du grec εὐλογία) est un genre littéraire hérité de l'Antiquité, où il est très présent, qui consiste à vanter les mérites d'un individu ou d'une institution. Il s'agit d'un discours public ou donné comme tel, destiné à l'édification commune ; à cette fin, il recourt à l'exploitation des ressources du discours épidictique héritées de la rhétorique classique. Il existe plusieurs sortes d'éloges:»</skos:definition>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:RecordForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#record">
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Document"/>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026163"/>
@@ -1077,14 +1077,14 @@ s épîtres.]]></skos:definition>
     <skos:definition xml:lang="en">A reference text containing biographical entries on multiple people, often with a common link between them (for example, a biographical dictionary of women), and typically arranged alphabetically.</skos:definition>
     <rdfs:label xml:lang="fr">dictionaire biographique</rdfs:label>
   </genre:ReferenceWorkGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#love">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#love">
     <rdfs:label xml:lang="fr">amour</rdfs:label>
     <skos:definition>Generic modifier for a representation that deals primarily with the subject of love. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <rdfs:label xml:lang="en">love</rdfs:label>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Christo"/>
     <skos:definition xml:lang="fr">Dénomination générique pour les textes dont le sujet principal contient une forme de représentation de l'amour.</skos:definition>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:StillImageMedium rdf:about="http://sparql.cwrc.ca/ontologies/genre#painting">
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300033618"/>
     <rdfs:label xml:lang="en">painting</rdfs:label>
@@ -1178,7 +1178,7 @@ s épîtres.]]></skos:definition>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Proletarian_literature"/>
     <rdfs:label xml:lang="en">proletarian writing</rdfs:label>
   </genre:PoliticalWritingGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#gothic">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#gothic">
     <skos:definition xml:lang="fr">Fictions romantiques dont l'atmosphère est mystérieuse et angoissante, racontant souvent une histoire d'amour. Le genre a été introduit en Angleterre aux alentours de 1765, mais s'est aussitôt popularisé ailleurs en Europe, atteignant son apogée dans les années 1790. Le genre a connu de nombreux renouvellements au cours des siècles suivants. Le genre est ainsi nommé car les premiers exemples de romans gothiques se déroulaients souvent partiellement au sein de bâtiments médiévaux et de ruines, comme les châteaux ou les monastères.</skos:definition>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026360"/>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300266777"/>
@@ -1186,7 +1186,7 @@ s épîtres.]]></skos:definition>
     <rdfs:label xml:lang="en">gothic</rdfs:label>
     <rdfs:label xml:lang="fr">gothique</rdfs:label>
     <skos:definition xml:lang="en">"Romantic fictions having a prevailing atmosphere of mystery and terror, often combined with a love story. The genre was introduced in England ca. 1765, but soon became popular elsewhere in Europe, reaching its heyday in the 1790s. The genre has undergone frequent revivals in subsequent centuries. It is called "Gothic" because the early examples were often set in part among medieval buildings and ruins, such as castles or monasteries."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:NovelisticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#nationalTale">
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from The Cambridge Companion to the Irish Novel.</rdfs:comment>
     <skos:definition xml:lang="en">"A romantic genre developed in early nineteenth-century, particularly associated with Ireland and Scotland, in which historical content is woven into narratives treating such subjects as the formation or defence of a nation, political conflict with a bearing on nationhood, and national identity or culture."  <![CDATA[(<a href="#cwrc:076686ab-eab5-4dcf-a6c0-4949d23feb5c">Foster, 2006</a>)]]></skos:definition>
@@ -1286,10 +1286,10 @@ s épîtres.]]></skos:definition>
     <skos:definition xml:lang="fr">«Burletta (« petite plaisanterie » en italien, parfois aussi burla ou burlettina), est un terme musical pour qualifier un bref opéra comique italien (ou, plus tard anglais). Le terme est utilisé au XVIIIe siècle pour désigner les intermezzos comiques entre les actes d'un opéra seria mais est parfois donné à des œuvres de plus grande envergure. La serva padrona de Pergolese est appelée burletta lors de sa création à Londres en 1750.»  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Burletta"/>
   </genre:ComedicGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#western">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#western">
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026594"/>
     <rdfs:label xml:lang="en">western</rdfs:label>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:NovelisticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#sensationNovel">
     <skos:definition xml:lang="fr">«Le roman à sensation est un genre littéraire né dans la deuxième moitié du XIXe siècle en Grande-Bretagne. Ce genre littéraire est une évolution des romans mélodramatiques, qui utilisaient un ensemble de personnages stéréotypés, et des romans Newgate, qui avaient pour thème principal la vie de célèbres criminels. East Lynne de Ellen Wood's, paru en 1861, fut le premier roman à être étiqueté comme roman à sensation par la critique. Le courant comprend trois auteurs majeurs : Ellen Woods, Wilkie Collins (La Femme en blanc, 1859; La Pierre de lune, 1868) et Mary Elizabeth Braddon (Le secret de Lady Audley, 1862). Les romans à sensation avaient pour thèmes des sujets choquants comme l'adultère, le vol, l'enlèvement, la bigamie, la fabrication de fausse monnaie, la séduction et le meurtre. Le genre se distinguait des autres mouvements de l'époque, comme le mouvement Gothique, par l'utilisation de ces thèmes dans un contexte domestique, voire familial, allant ainsi à l'encontre de l'idée largement répandue à l'époque victorienne que les événements sensationnels étaient totalement étrangers à la vie confortable des classes moyennes qui composaient la plus grande partie du lectorat de l'époque. William S. Gilbert fit une satire du genre en 1871 avec son opéra comique A Sensation Novel.»  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
@@ -1325,10 +1325,10 @@ s épîtres.]]></skos:definition>
   <genre:BookForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#book">
     <rdfs:label xml:lang="en">book</rdfs:label>
   </genre:BookForm>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#exploration">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#exploration">
     <rdfs:label xml:lang="en">exploration</rdfs:label>
     <skos:definition xml:lang="en">"Outdoor literature is a literature genre about or involving the outdoors. Outdoor literature encompasses several different subgenres including exploration literature, adventure literature, mountain literature and nature writing. Another subgenre is the guide book, an early example of which was Thomas West's guide to the Lake District published in 1778. The genres can include activities such as exploration, survival, sailing, hiking, mountaineering, whitewater boating, geocaching or kayaking, or writing about nature and the environment. Travel literature is similar to outdoor literature but differs in that it does not always deal with the out-of-doors, but there is a considerable overlap between these genres, in particular with regard to long journeys." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:PoliticalWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#propaganda">
     <rdfs:label xml:lang="fr">propagande</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300055539"/>
@@ -1439,7 +1439,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:label xml:lang="en">critical analysis</rdfs:label>
   </genre:ScholarlyGenre>
   <genre:LGBTQPlusGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#lesbian">
-    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicWritingGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre"/>
     <skos:altLabel xml:lang="en">lesbianWriting</skos:altLabel>
     <skos:definition xml:lang="en">Lesbian literature is a subgenre of literature addressing lesbian themes. It includes poetry, plays, fiction addressing lesbian characters, and non-fiction about lesbian-interest topics.</skos:definition>
     <rdfs:label xml:lang="en">lesbian</rdfs:label>
@@ -1458,14 +1458,14 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:label xml:lang="en">psychoanalytical</rdfs:label>
     <skos:definition xml:lang="en">Writing related to the field of psychology or psychiatry, particularly in connection with Sigmund Freud’s theories of psychoanalysis.</skos:definition>
   </genre:ScholarlyGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#performance">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#performance">
     <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PerformanceMedium"/>
     <rdfs:label xml:lang="en">performance</rdfs:label>
     <skos:definition xml:lang="en">A capacious and contested category of time-based and usually embodied human expression through actions or processes that may occur in institutionalized locations, more informal cultural contexts, and broader social situations, as in the performance of social identities.  Most often applied to literary, artistic, musical, theatrical, or other creative work, or the representation or record of such work. Within the Records of Early English Drama project, "Performance has been broadly defined to encompass nearly every mimetic, musical, or ritualistic form of play used to entertain or otherwise engage an audience."  <![CDATA[(<a href="https://ereed.library.utoronto.ca/about/series/#selection">REED Online, 2018</a>)]]></skos:definition>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/page/aat/300054146"/>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <rdfs:label xml:lang="fr">représentation</rdfs:label>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:DigitalMedium rdf:about="http://sparql.cwrc.ca/ontologies/genre#videoGame">
     <skos:definition xml:lang="en">"A video game is an electronic game that involves human interaction with a user interface to generate visual feedback on a video device such as a TV screen or computer monitor. The word video in video game traditionally referred to a raster display device, but as of the 2000s, it implies any type of display device that can produce two- or three-dimensional images. Some theorists categorize video games as an art form, but this designation is controversial. The electronic systems used to play video games are known as platforms; examples of these are personal computers and video game consoles. These platforms range from large mainframe computers to small handheld computing devices. Specialized video games such as arcade games, in which the video game components are housed in a large, coin-operated chassis, while common in the 1980s in video arcades, have gradually declined in use due to the widespread availability of affordable home video game consoles (e.g., PlayStation 4 and Xbox One) and video games on desktop and laptop computers and smartphones. The input device used for games, the game controller, varies across platforms. Common controllers include gamepads, joysticks, mouses, keyboards, the touchscreens of mobile devices and buttons. Players typically view the game on a video screen or television and there are often game sounds from loudspeakers. Some games in the 2000s include haptic, vibration-creating effects, force feedback peripherals and virtual reality headsets. In the 2010s, the video game industry is of increasing commercial importance, with growth driven particularly by the emerging Asian markets and mobile games, which are played on smartphones. As of 2015, video games generated sales of USD 74 billion annually worldwide, and were the third-largest segment in the U.S. entertainment market, behind broadcast and cable TV." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300256888"/>
@@ -1650,14 +1650,14 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">"Chronological records of significant events, as of the life or development of a people, country, or institution, often with an explanation of the causes."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
     <rdfs:label xml:lang="fr">histoire</rdfs:label>
   </genre:HistoricalGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#regional">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#regional">
     <rdfs:comment xml:lang="en">Encyclopédie du Canada</rdfs:comment>
     <skos:definition xml:lang="en">Regional writing reflects the details of a specific region, whether in prose or poetry. Regionalism is often associated with rural areas and "local colour", and often allied with realism insofar as it seeks to distinguish one region clearly from others. At its best, as when practiced by Thomas Hardy, William Faulkner, Sara Jeannette Duncan, or Margaret Laurence, regionalism conveys not merely the superficialities or prosaic details of an area but a profound sense of the impact of place on individual characters and destinies.</skos:definition>
     <rdfs:label xml:lang="en">regional</rdfs:label>
     <rdfs:label xml:lang="fr">littérature régionale</rdfs:label>
     <dcterms:references rdf:resource="http://www.encyclopediecanadienne.ca/fr/article/regionalisme-dans-la-litterature/"/>
     <skos:definition xml:lang="fr">La littérature régionale au sens strict se rattache aux conventions du réalisme parce qu'elle tente de distinguer avec précision les caractéristiques d'une région clairement définissable, soit une région rurale ou encore étroitement liée à la terre. Comme le montrent les oeuvres de Thomas Hardy, de William Faulkner, de Sara Jeannette Duncan, et de Margaret Laurence de ce type de littérature régionale, dans sa forme la plus accomplie, n'est pas synonyme de détails superficiels ou de style prosaïque mais plutôt d'une exploration profonde de l'influence qu'exercent des régions particulières dans le destin d'individus précis.</skos:definition>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:ReligiousGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#religious">
     <rdfs:label xml:lang="fr">religieux</rdfs:label>
     <skos:definition xml:lang="en">Writing dealing with religion or spirituality.</skos:definition>
@@ -1801,10 +1801,10 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">"Literature written and published for children."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300263209"/>
   </genre:ChildrensLiteratureGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#seaStory">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#seaStory">
     <rdfs:label xml:lang="en">sea story</rdfs:label>
     <skos:definition xml:lang="en">"Nautical fiction, frequently also naval fiction, sea fiction, naval adventure fiction or maritime fiction, is a genre of literature with a setting on or near the sea, that focuses on the human relationship to the sea and sea voyages and highlights nautical culture in these environments. The settings of nautical fiction vary greatly, including merchant ships, liners, naval ships, fishing vessels, life boats, etc., along with sea ports and fishing villages. When describing nautical fiction, scholars most frequently refer to novels, novellas, and short stories, sometimes under the name of sea novels or sea stories. These works are sometimes adapted for the theatre, film and television. The development of nautical fiction follows with the development of the English language novel and while the tradition is mainly British and North American, there are also significant works from literatures in Japan, France, Scandinavia, and other Western traditions. Though the treatment of themes and settings related to the sea and maritime culture is common throughout the history of western literature, nautical fiction, as a distinct genre, was first pioneered by James Fenimore Cooper (The Pilot, 1824) and Frederick Marryat (Frank Mildmay, 1829 and Mr Midshipman Easy 1836) at the beginning of the 19th century. There were 18th century and earlier precursors that have nautical settings, but few are as richly developed as subsequent works in this genre. The genre has evolved to include notable literary works like Herman Melville's Moby Dick (1851), Joseph Conrad's Lord Jim (1899–1900), popular fiction like C.S. Forester's Hornblower series (1937–67), and works by authors that straddle the divide between popular and literary fiction, like Patrick O'Brian's Aubrey-Maturin series (1970–2004). Because of the historical dominance of nautical culture by men, they are usually the central characters, except for works that feature ships carrying women passengers. For this reason, nautical fiction is often marketed for men. Nautical fiction usually includes distinctive themes, such as a focus on masculinity and heroism, investigations of social hierarchies, and the psychological struggles of the individual in the hostile environment of the sea. Stylistically, readers of the genre expect an emphasis on adventure, accurate representation of maritime culture, and use of nautical language. Works of nautical fiction often include elements overlapping with other genres, including historical fiction, adventure fiction, war fiction, children's literature, travel narratives (such as the Robinsonade), the social problem novel and psychological fiction." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:SerialForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#newspaper">
     <rdfs:label xml:lang="en">newspaper</rdfs:label>
     <skos:definition xml:lang="en">"A newspaper is a serial publication containing news, other informative articles (), and advertising. A newspaper is usually but not exclusively printed on relatively inexpensive, low-grade paper such as newsprint. The news organizations that publish newspapers are themselves often metonymically called newspapers. Most newspapers are now published online as well as in print. The online versions are called online newspapers or news sites. Newspapers are typically published daily or weekly. News magazines are also weekly, but they have a magazine format. General-interest newspapers typically publish news articles and feature articles on national and international news as well as local news. The news includes political events and personalities, business and finance, crime, severe weather, and natural disasters; health and medicine, science, and technology; sports; and entertainment, society, food and cooking, clothing and home fashion, and the arts. Typically the paper is divided into sections for each of those major groupings (labeled A, B, C, and so on, with pagination prefixes yielding page numbers A1-A20, B1-B20, C1-C20, and so on). Most traditional papers also feature an editorial page containing editorials written by an editor, op-eds written by guest writers, and columns that express the personal opinions of columnists, usually offering analysis and synthesis that attempts to translate the raw data of the news into information telling the reader "what it all means" and persuading them to concur. A wide variety of material has been published in newspapers. Besides the aforementioned news and opinions, they include weather forecasts; criticism and reviews of the arts (including literature, film, television, theater, fine arts, and architecture) and of local services such as restaurants; obituaries; entertainment features such as crosswords, horoscopes, editorial cartoons, gag cartoons, and comic strips; advice, food, and other columns; and radio and television listings (program schedules). Most newspapers are businesses, and they pay their expenses (such as journalists' wages, printing costs, and distribution costs) with a mixture of subscription revenue, newsstand sales, and advertising revenue (other businesses or individuals pay to place advertisements in the pages, including display ads, classified ads, and their online equivalents). Some newspapers are government-run or at least government-funded; their reliance on advertising revenue and on profitability is less critical to their survival. The editorial independence of a newspaper is thus always subject to the interests of someone, whether owners, advertisers, or a government. Some newspapers with high editorial independence, high journalism quality, and large circulation are viewed as newspapers of record. Many newspapers, besides employing journalists on their own payrolls, also subscribe to news agencies (wire services) (such as the Associated Press, Reuters, or Agence France-Presse), which employ journalists to find, assemble, and report the news, then sell the content to the various newspapers. This is a way to avoid duplicating the expense of reporting. Circa 2005, there were approximately 6,580 daily newspaper titles in the world selling 395 million print copies a day (in the U.S., 1,450 titles selling 55 million copies). The late 2000s–early 2010s global recession, combined with the rapid growth of free web-based alternatives, has helped cause a decline in advertising and circulation, as many papers had to retrench operations to increase profitability. The decline in advertising revenues affected both the print and online media as well as all other mediums; print advertising was once lucrative but has greatly declined, and the prices of online advertising are often lower than those of their print precursors. Besides remodeling advertising, the internet (especially the web) has also challenged the business models of the print-only era by democratizing and crowdsourcing both publishing in general (sharing information with others) and, more specifically, journalism (the work of finding, assembling, and reporting the news). In addition, the rise of news aggregators, which bundle linked articles from many online newspapers and other sources, influences the flow of web traffic. Increasing paywalling of online newspapers may be counteracting those effects." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
@@ -1928,18 +1928,18 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:altLabel xml:lang="en">tv script</skos:altLabel>
     <skos:definition xml:lang="en">"Written texts of stage plays, screenplays, and radio or television broadcasts."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
   </genre:DramaticGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#juvenilia">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#juvenilia">
     <skos:definition xml:lang="en">"Literary or artistic works produced by persons in their childhood or youth; usually used to set those works apart from later, mature works."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <rdfs:label xml:lang="en">juvenilia</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300028883"/>
     <rdfs:label xml:lang="fr">oeuvres de jeunesse</rdfs:label>
     <skos:definition xml:lang="fr">Œuvres littéraires ou artistiques produites par des personnes dans leur enfance ou leur jeunesse; le terme est généralement utilisé pour distinguer ces œuvres des travaux matures plus tardifs.</skos:definition>
-  </genre:ThematicWritingGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#ruralIdyll">
+  </genre:ThematicGenre>
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#ruralIdyll">
     <rdfs:label xml:lang="en">rural idyll</rdfs:label>
     <skos:definition xml:lang="en">"An idyll or idyl (/ˈaɪdəl/ or /ˈɪdəl/; from Greek εἰδύλλιον, eidullion, "short poem") is a short poem, descriptive of rustic life, written in the style of Theocritus' short pastoral poems, the Idylls. Unlike Homer, Theocritus did not engage in heroes and warfare. His idylls are limited to a small intimate world, and describe scenes from everyday life. Later imitators include the Roman poets Virgil and Catullus, Italian poets Torquato Tasso, Sannazaro and Leopardi, the English poet Alfred, Lord Tennyson (Idylls of the King), and Nietzsche's Idylls from Messina. Goethe called his poem Hermann and Dorothea—which Schiller considered the very climax in Goethe's production—an idyll." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:PedagogicalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#pedagogy">
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Pedagogy"/>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
@@ -2140,10 +2140,10 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
   <genre:CartographicForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#cartographicMaterials">
     <rdfs:label xml:lang="en">cartographic materials</rdfs:label>
   </genre:CartographicForm>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#diasporic">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#diasporic">
     <skos:altLabel xml:lang="en">diaspora</skos:altLabel>
     <rdfs:label xml:lang="en">diasporic</rdfs:label>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:PoeticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#epithalamium">
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Epithalamium"/>
     <skos:definition xml:lang="fr">«L'épithalame (en grec ancien ἐπιθαλάμιον / epithalámion) est une sorte de poème lyrique composé chez les Anciens à l'occasion d'un mariage et à la louange des nouveaux époux. En Grèce, il était chanté par un chœur, soit de jeunes vierges seules, soit de jeunes filles[réf. nécessaire] et de jeunes garçons, avec accompagnement de danses. On le nommait aussi catakoemèse (de catakoimân, envoyer dormir).»  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
@@ -2192,9 +2192,9 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300028569"/>
     <rdfs:label xml:lang="en">manuscript</rdfs:label>
   </genre:TextualMedium>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#juvenile">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#juvenile">
     <rdfs:label xml:lang="en">juvenile</rdfs:label>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:PoeticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#topographicalPoetry">
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from data.bnf.</rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2018026132"/>
@@ -2206,7 +2206,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
   </genre:PoeticGenre>
   <genre:PoliticalWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#feminist">
     <skos:definition xml:lang="fr">Textes qui peuvent être considérés comme féministes dans la mesure où ils abordent de façon critique et consciente les inégalités entre hommes et femmes, ou parmi les individus d'identités genrées diverses. Un texte, fictif ou non, entre généralement dans cette catégorie s'il reflète des théories féministes ou est engagé dans des mouvements politiques féministes. Les aspects féministes d'un texte peuvent être explicites ou implicites, et sont fortement sujets à débat étant donné la grande pluralité de type de féminisme.</skos:definition>
-    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicWritingGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
     <dcterms:references rdf:resource="http://web.cn.edu/kwheeler/lit_terms_f.html"/>
     <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FeministGenre"/>
@@ -2287,22 +2287,22 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300374824"/>
     <rdfs:label xml:lang="en">born digital</rdfs:label>
   </genre:DigitalMedium>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#lgbtq">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#lgbtq">
     <skos:definition xml:lang="en">"LGBT, or GLBT, is an initialism that stands for lesbian, gay, bisexual, and transgender. In use since the 1990s, the term is an adaptation of the initialism LGB, which was used to replace the term gay in reference to the LGBT community beginning in the mid-to-late 1980s. Activists believed that the term gay community did not accurately represent all those to whom it referred. The initialism has become mainstream as a self-designation; it has been adopted by the majority of sexuality and gender identity-based community centers and media in the United States, as well as some other English-speaking countries. The term is used also in some other countries, particularly those which languages use the initialism, such as Argentina, France and Turkey. The initialism LGBT is intended to emphasize a diversity of sexuality and gender identity-based cultures. It may be used to refer to anyone who is non-heterosexual or non-cisgender, instead of exclusively to people who are lesbian, gay, bisexual, or transgender. To recognize this inclusion, a popular variant adds the letter Q for those who identify as queer or are questioning their sexual identity; LGBTQ has been recorded since 1996. Those who wish to include intersex people in LGBT groups suggest an extended initialism LGBTI. This initialism is used in all parts of "The Activist's Guide" of the Yogyakarta Principles in Action. Some people combine the two acronyms and use the term LGBTIQ. Whether or not LGBT people openly identify themselves may depend on local political concerns and whether they live in a discriminatory environment, as well as on the status of LGBT rights where they live." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:label xml:lang="en">lgbtq</rdfs:label>
     <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LGBTQPlusGenre"/>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:StillImageMedium rdf:about="http://sparql.cwrc.ca/ontologies/genre#photograph">
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300046300"/>
     <rdfs:label xml:lang="en">photograph</rdfs:label>
     <skos:definition xml:lang="en">"A photograph or photo is an image created by light falling on a light-sensitive surface, usually photographic film or an electronic medium such as a CCD or a CMOS chip. Most photographs are created using a camera, which uses a lens to focus the scene's visible wavelengths of light into a reproduction of what the human eye would see. The process and practice of creating photographs is called photography. The word "photograph" was coined in 1839 by Sir John Herschel and is based on the Greek φῶς (phos), meaning "light", and γραφή (graphê), meaning "drawing, writing", together meaning "drawing with light"." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
   </genre:StillImageMedium>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#comingOut">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#comingOut">
     <rdfs:label xml:lang="fr">coming out</rdfs:label>
     <skos:definition xml:lang="en">Pertaining to the process of coming out sexually.</skos:definition>
     <skos:definition xml:lang="fr">Qui se rapporte au processus de révélation publique de sa sexualité.</skos:definition>
     <rdfs:label xml:lang="en">coming out</rdfs:label>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:MusicalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#musicalWriting">
     <rdfs:label xml:lang="en">musical writing</rdfs:label>
     <skos:definition xml:lang="en">Writing associated with some form of music.</skos:definition>
@@ -2351,14 +2351,14 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300033973"/>
     <rdfs:label xml:lang="en">drawing</rdfs:label>
   </genre:StillImageMedium>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#travelWriting">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#travelWriting">
     <rdfs:label xml:lang="fr">récit de voyage</rdfs:label>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from Wikipedia.</rdfs:comment>
     <skos:definition xml:lang="en">Writing about time spent abroad, typically containing descriptions of the scenery and culture of places visited. Sometimes includes biographical content, such as travel literature written in the form of a personal journal or diary.</skos:definition>
     <rdfs:label xml:lang="en">travel writing</rdfs:label>
     <skos:definition xml:lang="fr">Un récit de voyage ou relation de voyage est un genre littéraire dans lequel l'auteur rend compte d'un ou des voyages, des peuples rencontrés, des émotions ressenties, des choses vues et entendues. Contrairement au roman, le récit de voyage privilégie le réel à la fiction. Pour mériter le titre de « récit » et avoir rang de littérature, la narration doit être structurée et aller au-delà de la simple énumération des dates et des lieux (comme un journal intime ou un livre de bord d'un navire). Cette littérature doit rendre compte d'impressions, d'aventures, de l'exploration ou de la conquête de pays lointains.</skos:definition>
     <skos:closeMatch rdf:resource="https://fr.wikipedia.org/wiki/R%C3%A9cit_de_voyage"/>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:DialogueOrDebateGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#dialogueOfTheDead">
     <skos:definition xml:lang="en">"A popular style of fiction in the 17th and 18th centuries featuring conversations between the ghosts of well-known figures. Based on the satirical Dialogues of the Dead by Lucian (120-around 180 CE), but not necessarily satirical themselves."  <![CDATA[(<a href="#cwrc:93fc3195-0bd5-4161-a123-0352d96c42ab">Mazella, 2007</a>)]]></skos:definition>
     <skos:definition xml:lang="fr">Mise en scène littéraire de la parole de personnages illustres dans l'au-delà, pratiquée dans l'Antiquité grecque, et jusqu'à nos jours.</skos:definition>
@@ -2576,10 +2576,10 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:definition xml:lang="fr">"Collections d'extraits choisis parmi les écrits d'un ou de plusieurs auteurs, ayant habituellement une caractéristique commune telle que le sujet abordé ou la forme littéraire. " </skos:definition>
     <skos:related rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026052"/>
   </genre:CollectionForm>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#paranormal">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#paranormal">
     <rdfs:label xml:lang="en">paranormal</rdfs:label>
     <skos:definition xml:lang="en">"Paranormal events are phenomena described in popular culture, folklore, and other non-scientific bodies of knowledge, whose existence within these contexts is described to lie beyond normal experience or scientific explanation. A paranormal phenomenon is different from hypothetical concepts such as dark matter and dark energy. Unlike paranormal phenomena, these hypothetical concepts are based on empirical observations and experimental data gained through the scientific method. The most notable paranormal beliefs include those that pertain to ghosts, extraterrestrial life, unidentified flying objects, psychic abilities or extrasensory perception, and cryptids." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:IllustratedForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#graphicNovel">
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026362"/>
     <rdfs:label xml:lang="en">graphic novel</rdfs:label>
@@ -2592,12 +2592,12 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:definition xml:lang="en">"A concert program or programme is a selection and ordering, or programming, of pieces to be performed at an occasion, or concert. Programs may be influenced by the available ensemble of instruments, by performer ability or skill, by theme (historical, programmatic, or technical), by musical concerns (such as form), or by allowable time. For example, a brass ensemble will perform an "all brass" program, the pieces of which may be chosen by a theme, such as "all Bach", and the chosen pieces may be ordered so that they build in intensity as the concert progresses. Concert programs may be put together by ensembles, conductors, or ensemble directors, and are often explained in program notes. The program note is a standard element of a concert where contemporary or classical music is being performed. Program notes serve two purposes: to provide historical and background information on the piece and, if necessary, the composer, and to give the audience some sense of what to expect, and what possibly what to listen for, when listening to the work. With the presentation of contemporary pieces, it is common to include notes provided by the composer. Programs may include information about, and quotes or commentary from, the composer, conductor, or performers, as well as provide context regarding the musical era. Programs may also include information about the programmatic or absolute content of the music, including analysis, and may point out details such as themes, musical motifs, and sections or movements." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:label xml:lang="en">program notes</rdfs:label>
   </genre:InformationalGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#thematicWriting">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#thematicWriting">
     <rdfs:label xml:lang="en">thematic writing</rdfs:label>
     <rdfs:label xml:lang="fr">écriture thématique</rdfs:label>
     <skos:definition xml:lang="en">"Indicates a type of writing associated with some aspect of the text’s content or purpose, broadly conceived."  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:PoeticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#freeVerse">
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026348"/>
     <rdfs:label xml:lang="en">free verse</rdfs:label>
@@ -2609,10 +2609,10 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">chronology</rdfs:label>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026062"/>
   </genre:InformationalGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#war">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#war">
     <skos:definition xml:lang="en">"War is a state of armed conflict between societies. It is generally characterized by extreme aggression, destruction, and mortality, using regular or irregular military forces. An absence of war is usually called "peace". Warfare refers to the common activities and characteristics of types of war, or of wars in general. Total war is warfare that is not restricted to purely legitimate military targets, and can result in massive civilian or other non-combatant casualties. While some scholars see war as a universal and ancestral aspect of human nature, others argue it is a result of specific socio-cultural or ecological circumstances. The deadliest war in history, in terms of the cumulative number of deaths since its start, is the Second World War, from 1939 to 1945, with 60–85 million deaths, followed by the Mongol conquests which was greater than 41 million. Proportionally speaking, the most destructive war in modern history is the War of the Triple Alliance, which took the lives of over 60% of Paraguay's population, according to Steven Pinker. In 2013 war resulted in 31,000 deaths, down from 72,000 deaths in 1990. In 2003, Richard Smalley identified war as the sixth (of ten) biggest problem facing humanity for the next fifty years. War usually results in significant deterioration of infrastructure and the ecosystem, a decrease in social spending, famine, large-scale emigration from the war zone, and often the mistreatment of prisoners of war or civilians. Another byproduct of some wars is the prevalence of propaganda by some or all parties in the conflict, and increased revenues by weapons manufacturers." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:label xml:lang="en">war</rdfs:label>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:SatiricalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#mockForms">
     <skos:definition xml:lang="en">Writing that uses the conventions of a specific genre satirically in order to mock or parody that genre.</skos:definition>
     <skos:definition xml:lang="fr">Œuvres qui reprennent les conventions d'un genre spécifique dans une perspective satirique, dans le but de le parodier ou de le tourner en ridicule.</skos:definition>
@@ -2667,9 +2667,9 @@ Closely related to the industrial novel because of its interest in the impact of
   <genre:SoundRecordingMedium rdf:about="http://sparql.cwrc.ca/ontologies/genre#soundRecordingNonmusical">
     <rdfs:label xml:lang="en">sound recording – nonmusical</rdfs:label>
   </genre:SoundRecordingMedium>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#nationalist">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#nationalist">
     <rdfs:label xml:lang="en">nationalist</rdfs:label>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:DigitalMedium rdf:about="http://sparql.cwrc.ca/ontologies/genre#webpage">
     <rdfs:label xml:lang="en">webpage</rdfs:label>
   </genre:DigitalMedium>
@@ -2684,16 +2684,16 @@ Closely related to the industrial novel because of its interest in the impact of
     <dcterms:references rdf:resource="http://web.cn.edu/kwheeler/lit_terms_g.html"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
   </genre:PedagogicalGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#business">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#business">
     <rdfs:label xml:lang="en">business</rdfs:label>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:CatalogueForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#catalogue">
     <rdfs:label xml:lang="en">catalogue</rdfs:label>
   </genre:CatalogueForm>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#architecturalWriting">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#architecturalWriting">
     <skos:altLabel xml:lang="en">architecture</skos:altLabel>
     <rdfs:label xml:lang="en">architectural writing</rdfs:label>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:PoeticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#anacreontic">
     <skos:definition xml:lang="en">"Anacreontics are verses in a meter used by the Greek poet Anacreon in his poems dealing with love and wine. His later Greek imitators (whose surviving poems are known as the Anacreontea) took up the same themes and used the Anacreontic meter. In modern poetry, Anacreontics are short lyrical pieces that keep the Anacreontic subject matter but not the meter." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:label xml:lang="en">anacreontic</rdfs:label>
@@ -2719,21 +2719,21 @@ Closely related to the industrial novel because of its interest in the impact of
   <genre:PoliticalWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#socialReform">
     <rdfs:label xml:lang="en">social reform</rdfs:label>
   </genre:PoliticalWritingGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#erotica">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#erotica">
     <rdfs:label xml:lang="en">erotica</rdfs:label>
-  </genre:ThematicWritingGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#environmental">
+  </genre:ThematicGenre>
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#environmental">
     <rdfs:label xml:lang="en">environmental</rdfs:label>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <genre:PartialForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#partExcerpt">
     <rdfs:label xml:lang="en">part/excerpt</rdfs:label>
   </genre:PartialForm>
   <genre:IntertextualGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#commentary">
     <rdfs:label xml:lang="en">commentary</rdfs:label>
   </genre:IntertextualGenre>
-  <genre:ThematicWritingGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#sensational">
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#sensational">
     <rdfs:label xml:lang="en">sensational</rdfs:label>
-  </genre:ThematicWritingGenre>
+  </genre:ThematicGenre>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#CatalogueForm">
     <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
     <skos:definition xml:lang="en">Indicates "enumerations of items, such as a file of bibliographic records or a list of art objects, usually arranged systematically and with descriptive details; may be in book or pamphlet form, on cards, or online." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
@@ -2875,7 +2875,7 @@ Closely related to the industrial novel because of its interest in the impact of
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#DidacticGenre">
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300404113"/>
     <rdfs:label xml:lang="en">Didactic Genre</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicWritingGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre"/>
     <skos:definition>Indicates works that have “the function, quality, or activity of having instruction or teaching as a primary or ulterior purpose.” <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#AutobiographicalGenre">
@@ -3099,10 +3099,10 @@ Literary genres are used to classify texts within a shifting range of literary f
     <skos:definition xml:lang="en">Indicates works that relay histories in both written and oral form; not to be confused with historical fiction.</skos:definition>
     <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
   </owl:Class>
-  <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#ThematicWritingGenre">
-    <rdfs:label xml:lang="en">Thematic Writing Genre</rdfs:label>
-    <skos:definition xml:lang="en">Indicates works that are shaped by a defining theme or topic, such as ‘feminist,’ ‘gothic,’ 'gardening,' and ‘military,’ for instance. </skos:definition>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
+  <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre">
+    <rdfs:label xml:lang="en">Thematic Genre</rdfs:label>
+    <skos:definition xml:lang="en">Indicates cultural works that are shaped by a defining theme or topic, such as ‘feminist,’ ‘gothic,’ 'gardening,' and ‘military,’ for instance. </skos:definition>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Genre"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#ReferenceWorkGenre">
     <skos:definition xml:lang="en">Indicates types of genres composed of "[s]ources intended primarily for consultation rather than for consecutive reading." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
