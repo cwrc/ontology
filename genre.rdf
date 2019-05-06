@@ -1328,6 +1328,7 @@ s épîtres.]]></skos:definition>
   <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#exploration">
     <rdfs:label xml:lang="en">exploration</rdfs:label>
     <skos:definition xml:lang="en">"Outdoor literature is a literature genre about or involving the outdoors. Outdoor literature encompasses several different subgenres including exploration literature, adventure literature, mountain literature and nature writing. Another subgenre is the guide book, an early example of which was Thomas West's guide to the Lake District published in 1778. The genres can include activities such as exploration, survival, sailing, hiking, mountaineering, whitewater boating, geocaching or kayaking, or writing about nature and the environment. Travel literature is similar to outdoor literature but differs in that it does not always deal with the out-of-doors, but there is a considerable overlap between these genres, in particular with regard to long journeys." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
+    <skos:broader rdf:resource="http://sparql.cwrc.ca/ontologies/genre#travel"/>
   </genre:ThematicGenre>
   <genre:PoliticalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#propaganda">
     <rdfs:label xml:lang="fr">propagande</rdfs:label>
@@ -2351,13 +2352,14 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300033973"/>
     <rdfs:label xml:lang="en">drawing</rdfs:label>
   </genre:StillImageMedium>
-  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#travelWriting">
-    <rdfs:label xml:lang="fr">récit de voyage</rdfs:label>
+  <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#travel">
+    <rdfs:label xml:lang="fr">voyage</rdfs:label>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from Wikipedia.</rdfs:comment>
-    <skos:definition xml:lang="en">Writing about time spent abroad, typically containing descriptions of the scenery and culture of places visited. Sometimes includes biographical content, such as travel literature written in the form of a personal journal or diary.</skos:definition>
+    <skos:definition xml:lang="en">About experiences away from home, typically containing descriptions of the scenery and culture of places visited. Sometimes includes biographical content, such as travel literature written in the form of a personal journal or diary.</skos:definition>
     <rdfs:label xml:lang="en">travel writing</rdfs:label>
     <skos:definition xml:lang="fr">Un récit de voyage ou relation de voyage est un genre littéraire dans lequel l'auteur rend compte d'un ou des voyages, des peuples rencontrés, des émotions ressenties, des choses vues et entendues. Contrairement au roman, le récit de voyage privilégie le réel à la fiction. Pour mériter le titre de « récit » et avoir rang de littérature, la narration doit être structurée et aller au-delà de la simple énumération des dates et des lieux (comme un journal intime ou un livre de bord d'un navire). Cette littérature doit rendre compte d'impressions, d'aventures, de l'exploration ou de la conquête de pays lointains.</skos:definition>
-    <skos:closeMatch rdf:resource="https://fr.wikipedia.org/wiki/R%C3%A9cit_de_voyage"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre"/><skos:closeMatch rdf:resource="https://fr.wikipedia.org/wiki/R%C3%A9cit_de_voyage"/>
+    <rdf:type rdf:resource="genre:NarrativeGenre"/>
   </genre:ThematicGenre>
   <genre:DialogueOrDebateGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#dialogueOfTheDead">
     <skos:definition xml:lang="en">"A popular style of fiction in the 17th and 18th centuries featuring conversations between the ghosts of well-known figures. Based on the satirical Dialogues of the Dead by Lucian (120-around 180 CE), but not necessarily satirical themselves."  <![CDATA[(<a href="#cwrc:93fc3195-0bd5-4161-a123-0352d96c42ab">Mazella, 2007</a>)]]></skos:definition>
