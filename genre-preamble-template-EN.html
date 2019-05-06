@@ -5,7 +5,7 @@
 > 
 
   <head>
-    <title>CWRC Literary Genre Ontology Specification - ONTOLOGY_VERSION</title>
+    <title>CWRC Genre Ontology Specification - ONTOLOGY_VERSION</title>
     <link rel="mvcb:generatorAgent" type="application/rdf+xml" title="DOAP" href="https://raw.githubusercontent.com/muninn/ontology-tools/master/rdf/voidDescription.rdf#specgenMarkII" />
     <meta http-equiv="content-type" content="text/xhtml+xml; charset=utf-8" />
     
@@ -34,7 +34,7 @@
           <li class="nav-item"><a class="nav-link" href="our-team-EN.html">Our Team</a></li>
           <li class="nav-item"><a class="nav-link" href="https://github.com/cwrc/ontology">Github</a></li>
         </ul>
-        <span class="navbar-text">The Literary Genre Ontology of the Canadian Writing Research Collaboratory</span>
+        <span class="navbar-text">The Genre Ontology of the Canadian Writing Research Collaboratory</span>
       </div>
     </nav>
 
@@ -57,14 +57,14 @@
     <main role="main" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto pt-3 px-4" data-spy="scroll" data-target="#toc">
 
     <hr />
-    <h1>CWRC Literary Genre Ontology Preamble</h1>
+    <h1>CWRC Genre Ontology Preamble</h1>
 
     <h2 id="abstract">Abstract</h2>
-    <p>The CWRC Literary Genre Ontology is the ontology used by the Canadian Writing Research Collaboratory (<a href="http://www.cwrc.ca/en">cwrc.ca</a>) to assign Literary Genres to different documents.</p>
+    <p>The CWRC Genre Ontology was developed by the Canadian Writing Research Collaboratory (<a href="http://www.cwrc.ca/en">cwrc.ca</a>) to identify genres associated with various forms of cultural production, particularly literary production. It is designed to enable both the classification of specific items and to enable discussions of genres as concepts.</p>
 
      <h2 id="introduction">1. Introduction</h2>
      
-     <p>This is a linked data representation of the genre vocabulary of the Canadian Writing Research Collaboratory (CWRC), an extension of the genre vocabulary of the Orlando Project. It includes literary genres associated with the literary tradition in English, broadly conceived, as well as related genres that often interact with literature or that are frequently subjected to literary analysis. We welcome suggestions of additions and improvements from related projects wishing to use the vocabulary.</p>
+     <p>This is a linked data representation of the genre vocabulary of the Canadian Writing Research Collaboratory (CWRC). The genre vocabulary of the Orlando Project has been substantially extended to reflect more fully the vocabularies of other projects, as well as aspects of materiality and form. It has three major groups of terms associated with medium, form, and genre. Although form and genre can bleed into one another, we concieve of form in relation to material characteristics, and genre in terms of content, style, or purpose. It includes literary genres associated with the literary tradition in English, broadly conceived, as well as related genres that often interact with literature or that are frequently subjected to literary analysis. We welcome suggestions of additions and improvements from related projects wishing to use the vocabulary.</p>
      
      <h2 id="background">2. Background</h2>
      <p>Genre, Carolyn R.  Miller contends in an influential article, does
@@ -82,12 +82,12 @@
      discursive acts (Miller 1984).  But there is also the act of applying a
      generic label to a text, another kind of discursive act that operates
      in a wide range of contexts for different purposes.  Generic
-     categorization is foundational to literary studies, organizing both
-     primary and secondary materials, defining specializations and literary
-     movements, and playing a major role in the organization and
+     categorization is foundational to a wide range of disciplines, and most of all to literary and cultural studies, in which generic categorization organizes both
+     primary and secondary materials, defines specializations and literary
+     movements, and plays a major role in the organization and
      articulation of literary theory, criticism, and history.  As a major
      feature of library classification systems, genre labeling serves
-     research across the disciplines.  It organizes bookstores and
+     research across the disciplines. It organizes bookstores and
      publishers’ lists, and is used by readers to share and discuss their
      tastes in texts.</p> 
      
@@ -101,67 +101,68 @@
      Numerous studies have indicated that while the terms deployed in these
      various contexts may overlap, they are not consistently applied
        (Lester; Lu; Rolla).</p>  
-     <p>This is the understanding of genre that informs this ontology. It does not claim to have arrived at a definitive taxonomy of literary forms, and considers such a taxonomy to be impossible. Rather, it represents a pragmatic approach to literary genres, very broadly conceived, as they have emerged from a scholary history of women's writing, and recognizes that other languages and approaches will emerge from other contexts. It recognizes that in a Linked Open Data (LOD) environment various approaches to genre will intersect, collide, and otherwise interact, and welcomes the prospect of ongoing expansion, revision, and linking of this ontology to other vocabularies, as the Canadian Writing Research Collaboratory continues to grow in conversation with the LOD community.</p>
+     <p>This is the understanding of genre that informs this ontology. It does not claim to have arrived at a definitive taxonomy of literary forms, and considers such a taxonomy to be impossible. Rather, it represents a pragmatic approach to media, form, and genre, very broadly conceived. Its particular emphasis on literary genre emerges from a scholary history of women's writing. The creators recognize that other languages and approaches will emerge from other contexts, and hope the structure will prove flexible and extensible enough to server other types of projects. In a Linked Open Data (LOD) environment, various approaches to genre will necessarily intersect, collide, and otherwise interact. We welcome the prospect of ongoing expansion, revision, and linking of this ontology to other vocabularies, as the Canadian Writing Research Collaboratory continues to grow in conversation with the LOD community.</p>
      
      <h2 id="datasources">3. Data sources</h2>
      
-     <p>The list of genres used within this ontology is based on
-     the genres originally listed by the Orlando Project. The list is
-     tightly coupled to the project's original objectives but is
-     substantive.</p>
-     <p>As the original Orlando project did not post definitions or
-     descriptions of the genres it used, these had to be created for this
-     ontology. Whenever possible, these were adapted from the linked open
+     <p>The genre instances within this ontology are based on the intersection of
+     the genres originally listed by the Orlando Project with the metadata schema and additional terms required by other projects hosted by the Canadian Writing Research Collaboratory.</p>
+     <p>Definitions of the genres used have been adopted, adapted, or created so as to provide guidance in the application of the terms. Where possible, these were adapted from the linked open
      data sets of DBpedia/Wikipedia, the Getty Art &amp; Architecture Thesaurus, or from the <i><a href="http://web.cn.edu/kwheeler/lit_terms.html">Literary Terms and
      Definitions</a></i> webpage of  
-     Dr. L. Kip Wheeler. The indebtedness of the description is done using
-     the <a href="https://www.w3.org/TR/prov-o/">provenance ontology</a>, inline html citations and within
+     Dr. L. Kip Wheeler. The indebtedness of the description is indicated using
+     the <a href="https://www.w3.org/TR/prov-o/">provenance ontology</a>, inline html citations, and within
      &lt;rdfs:comment&gt;
-     tags.</p> 
+     tags, depending on the degree of alignment with the original definition. That said, these definitions can only act as imperfect guides to an understanding of a particular genre, given the complex and situated operation of genre outlined above.</p> 
      
-     <h2 id="taxonomy">4. Taxonomy construction</h2>
-       <p>The Literary Genre ontology contains a taxonomy of literary genres based on a
-       <a href="https://www.w3.org/2004/02/skos/">SKOS</a> approach. This
-       provides limited transitive narrower/broader definitions that can be used
-       to search for relevant creative works using the taxonomy. The
-       taxonomical tree is built on an ad-hoc topic relevance standard meant
-       for document retrieval and that may not be suited to all
-       applications. One distinctive feature of the ontology is the use of adjectival terms such as &apos;philosophical&apos; or &apos;detective&apos; to denote a particularly type of text. Such terms can be employed in conjunction with genres that relate more to form, such as &apos;poem&apos; or &apos;novel&apos;, so as to denote, for instance, &apos;feminist novel&apos;.</p>
+     <h2 id="taxonomy">4. Structure</h2>
+       <p>Some approaches to genre make each term a class that can be applied to an object, whereas others provide instances for each genre. In order to facilitate the ability both to apply terms to particular cultural productions and enable them to be discussed as concepts, genres  within the CWRC Genre ontology are instances rather than classes, and are related to particular cultural works through the <a href="genre.html#hasGenre"> property.</p><p>Because it is useful for a number of purposes to be able to move between broader genres and more specific ones, the ontology organizes its terms through a combination of <a href="https://www.w3.org/OWL/">OWL</a> classes that provide broad groupings and
+       <a href="https://www.w3.org/2004/02/skos/">SKOS</a> taxonomical relations amongst instances. The OWL classes provide the ability to reason from narrower to broader terms, while the SKOS properties
+       provide more limited transitive narrower/broader relationships between the instances themselves that can be used
+       to search for relevant works according to those taxonimicaL relationships amongst instances. One distinctive feature of the ontology is its use of adjectives, as in the class &apos;Philosophical Genre&apos; and the instance &apos;detective&apos; to denote types of cultural objects. The classe group multiple genres that fall under that category, while the instance terms can be employed in conjunction with genres that relate more to form, such as &apos;poem&apos; or &apos;novel&apos;, so as to denote, for instance, &apos;detective novel&apos;.</p>
+         
+        <p>The overall structure of the classses is shown here (image produced by <a href="http://vowl.visualdataweb.org/webvowl.html">WebVOWL</a>) </p>
+       <img src="figures/genre-structure.png" alt="Genre Stucture" width="100%" />
+
+
+       <!--
        <p><a href="figures/genreTaxonomy-ONTOLOGY_DATE-EN.svg">The specific taxonomy is:</a></p>
-       <object type="image/svg+xml" id="genre-tax" data="figures/genreTaxonomy-ONTOLOGY_DATE-EN.svg"></object>  
+       <object type="image/svg+xml" id="genre-tax" data="figures/genreTaxonomy-ONTOLOGY_DATE-EN.svg"></object> 
+        --> 
        
      <h2 id="usingthisontology">5. Using this ontology</h2>
 
-     <p>This ontology was constructed to support the efforts of the CWRC
-     project while enabling its stand-alone use by outside projects. Genres
-     exist both as typed instances of the <a href="#Genre">&lt;genre:Genre&gt;</a> class and as
+     <p>This ontology was constructed to support the efforts of the CWRC project while enabling its stand-alone use by outside projects. Terms
+     exist as typed instances of either the <a href="#Genre">&lt;Medium&gt;</a>, <a href="#Genre">&lt;Form Genre&gt;</a>, or <a href="#Genre">&lt;Genre&gt;</a> classes or one of their subclasses. 
+     <!-- add back in if confirmed
+     , as well as
      <a href="https://www.w3.org/2009/08/skos-reference/skos.html#Concept">&lt;skos:Concept&gt;</a>s
-     of a Genre <a href="https://www.w3.org/2009/08/skos-reference/skos.html#ConceptScheme">&lt;ConceptScheme&gt;</a>. Instances can be both accessed directly or
-     through the built in SKOS taxonomical properties. A provided property
+     of a Genre <a href="https://www.w3.org/2009/08/skos-reference/skos.html#ConceptScheme">&lt;ConceptScheme&gt;</a>. -->
+     Instances can be accessed directly, via the OWL classes relations, or
+     through the built-in SKOS taxonomical properties. The property
      <a href="genre.html#hasGenre">&lt;genre:hasGenre&gt;</a> with no <a href="https://www.w3.org/TR/owl-ref/#domain-def">&lt;rdfs:domain&gt;</a>
      permits the easy assignment of a genre to a work without committing to
      a specific type of creative work.</p>
-      <p>This ontology can be paired with the <a href="http://sparql.cwrc.ca/">CWRC ontology</a>, though it is certainly not required. The focus of the CWRC ontology is on &quot;describing and relating aspects
-      of literary studies and literary history, with a strong emphasis on gender and intersectional analysis indebted to its roots in The Orlando Project, a history of women’s writing in the British Isles.&quot; Given the CWRC ontology's complexity and specificity, we have decided to split it off from the genre ontology so that users may reap the joys of having a taxonomy of genre at their fingertips without having to import some of CWRC's more contentious ontological assertions (eg. cultural formation) wholesale. We do, however, hope users will engage with both ontologies.</p>
+      <p>This ontology can be paired with the <a href="http://sparql.cwrc.ca/">CWRC ontology</a> or used independently. The CWRC team welcomes suggestions for additions to and refinement of this Genre ontology via its <a href="https://github.com/cwrc/ontology">code repository</a>.</p>
 
-    <h2 id="notesSKOS">6. Genre Ontology Design Rules</h2>
+    <h2 id="notesSKOS">6. Translations of definitions</h2>
     <ol>
-    <li>Definitions in French, English (and other serendipitously available languages) are never word for word translations and are definitions in their own right.</li>
+    <li>Definitions in French, English (and other serendipitously available languages) are never word for word translations and are definitions in their own right, serving to illustrate further the complexity of genre.</li>
     </ol>
     
-    <h2 id="conclusion">7. Conclusion and Future Work</h2>
+    <h2 id="conclusion">7. Future Development</h2>
     <p>
-    This ontology should be considered stable in nature with occasional
-    additions and refinements being made from time to time. 
-    It will continue to be developed as we
-    discover the implications of a multilingual ontology dedicated to literary
-    genres.</p>
+    The basic structure of this ontology should be considered stable. Like other CWRC ontologies, this is a living ontology to which changes will be made as new needs and use-cases arise. 
+     <!-- Deprecated changes will be noted from version 0.6 (completion of the restructuring to introduce the OWL classes) onwards. -->
+    The ontology will continue to be developed as new projects require additional terms, as it is crosswalked more thoroughly with other vocabularies, and as the CWRC team and related projects explore the implications of a multilingual ontology dedicated to medium, form, and genre. Feedback and suggestions are welcome.</p>
     <h2 id="version_history">8. Version History</h2>
 
     <ul>
     <li><p>0.1 - Ontology separated off from main cwrc ontology.</p></li>
     <li><p>0.2 - Definitions and translations added.</p></li>
     <li><p>0.3 - Deprecating of all genre instances and new uris, and instances being typed as Literary Genre.</p></li>
+     <!-- Expose when updating and adding this version number.
+    <li><p>0.4 - Introduction and application to terms of multiple OWL classes; additional terms added; preamble revised.</p -->
     </ul>
     
     <h2 id="bibliography">9. Bibliography</h2>    
