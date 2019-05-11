@@ -207,8 +207,20 @@
     <foaf:name xml:lang="en">Members of the Orlando Project.</foaf:name>
     <foaf:name xml:lang="fr">Les membres du projet Orlando</foaf:name>
     <foaf:homepage rdf:resource="http://orlando.cambridge.org/public/svDocumentation?formname=t&amp;d_id=CREDITSANDACKNOWLEDGEMENTS"/>
-    <skos:definition xml:lang="en">The collection of all persons having written entries for The Orlando Project.</skos:definition>
-    <skos:definition xml:lang="fr">La collection de tous les auteurs du Projet Orlando.</skos:definition>
+    <skos:definition xml:lang="en">The collective of all persons having written entries for The Orlando Project.</skos:definition>
+    <skos:definition xml:lang="fr">La collective de tous les auteurs du Projet Orlando.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="#unidentifiedTagger">
+    <rdfs:label xml:lang="en">Unidentified tagger</rdfs:label>
+    <rdfs:label xml:lang="fr">Tagueur non identifié(e)</rdfs:label>
+    <rdf:type rdf:resource="#NaturalPerson"/>
+    <foaf:name xml:lang="en">Unidentified tagger.</foaf:name>
+    <foaf:name xml:lang="fr">Tagueur non identifié(e)</foaf:name>
+    <skos:definition xml:lang="en">A human tagger whose identity has not been recorded, for example within legacy datasets.</skos:definition>
+    <skos:definition xml:lang="fr">Un encodeur humain non identifié par le système, par exemple dans des jeux de données hérités.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </skos:Concept>
