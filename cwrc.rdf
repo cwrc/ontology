@@ -394,24 +394,25 @@
   </owl:ObjectProperty>
 
 
-  
-
   <owl:Class rdf:ID="Certainty">
     <rdfs:label xml:lang="en">certainty</rdfs:label>
     <rdfs:label xml:lang="fr">probabilité</rdfs:label>
-    <skos:definition xml:lang="en">Certainty describes the quality of a fact in the ontology. It is used primarily to represent information that may not be fact.</skos:definition>
-    <skos:definition xml:lang="fr">La probabilité décrit la qualité d'un fait dans l'ontologie. Elle est principalement utilisée pour représenter des informations qui peuvent être des faits non avérés.</skos:definition>
+    <skos:definition xml:lang="en">Indicates the degree of certainty associated with some aspect of an assertion, description, identification, or value within a dataset. Equivalent to the "teidata.certainty" range of values of the Text Encoding Initiative.</skos:definition>
+    <skos:definition xml:lang="fr">La probabilité décrit la qualité d'une affirmation dans les données.</skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Text Encoding Initiative's P5: Guidelines for Electronic Text Encoding and Interchange.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <skos:closeMatch rdf:resource="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.certainty.html"/>
+    <skos:closeMatch rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.certainty.html"/>
+    <prov:wasDerivedFrom rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.certainty.html"/>
   </owl:Class>
 
   <owl:ObjectProperty rdf:ID="hasCertainty">
     <rdfs:label xml:lang="en">has certainty</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Associates a level of @@#Certainty@@ for a source</skos:definition>
+    <skos:definition xml:lang="en">Associates a level of @@#Certainty@@ with an assertion, description, identification, or value.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Text Encoding Initiative's P5: Guidelines for Electronic Text Encoding and Interchange. Equivalent to the "Certainty" element of the Text Encoding Initiative.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="#Certainty"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -420,19 +421,20 @@
   <owl:ObjectProperty rdf:ID="certaintyOf">
     <rdfs:label xml:lang="en">certainty of</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Links a level of @@#Certainty@@ to a source</skos:definition>
+    <skos:definition xml:lang="en">Links a level of @@#Certainty@@ to an assertion, description, identification, or value. Related to the "Certainty" element of the Text Encoding Initiative.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
     <rdfs:domain rdf:resource="#Certainty"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <owl:inverseOf rdf:resource="#hasCertainty"/>
+    <skos:closeMatch rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-certainty.html"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasTimeCertainty">
     <rdfs:label xml:lang="en">has time certainty</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Indicates the degree of certainty or precision of the temporal value or values associated with a time-based phenomenon such as an event or birth date</skos:definition>
+    <skos:definition xml:lang="en">Indicates the degree of certainty or precision of the temporal value or values associated with a time-based phenomenon such as an event or birth date.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:subPropertyOf rdf:resource="#hasCertainty"/>
@@ -471,40 +473,85 @@
   <cwrc:Certainty rdf:about="#lowCertainty">
     <rdfs:label xml:lang="en">low certainty</rdfs:label>
     <rdfs:label xml:lang="fr">faible probabilité</rdfs:label>
-    <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that represents cases where where a fact is considered of low quality</skos:definition>
+    <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that represents cases where where an assertion, description, identification, value, or measurement is considered of low quality.  Equivalent to the "medium" value for certainty or precision of the Text Encoding Initiative.</skos:definition>
     <skos:definition xml:lang="fr">Une valeur de probabilité prédéfinie utilisée dans le cas où un fait est considéré comme une information de basse qualité.</skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="#Precision"/>
+    <prov:wasDerivedFrom rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.certainty.html"/>
   </cwrc:Certainty>
 
   <cwrc:Certainty rdf:about="#mediumCertainty">
     <rdfs:label xml:lang="en">medium certainty</rdfs:label>
     <rdfs:label xml:lang="fr">probabilité moyenne</rdfs:label>
-    <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that represents cases where where a fact is considered of medium quality</skos:definition>
+    <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that represents cases where where an assertion, description, identification, value, or measurement is considered of medium quality. Equivalent to the "medium" value for certainty or precision  of the Text Encoding Initiative.</skos:definition>
     <skos:definition xml:lang="fr">Une valeur de probabilité prédéfinie utilisée dans le cas où un fait est considéré comme une information de qualité moyenne.</skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="#Precision"/>
+    <prov:wasDerivedFrom rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.certainty.html"/>
   </cwrc:Certainty>
 
   <cwrc:Certainty rdf:about="#highCertainty">
     <rdfs:label xml:lang="en">high certainty</rdfs:label>
     <rdfs:label xml:lang="fr">forte probabilité</rdfs:label>
-    <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that represents cases where where a fact is considered of high quality</skos:definition>
+    <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that represents cases where where an assertion, description, identification, value, or measurement is considered of high quality.  Equivalent to the "high" value for certainty or precision of the Text Encoding Initiative.</skos:definition>
     <skos:definition xml:lang="fr">Une valeur de probabilité prédéfinie utilisée dans le cas où un fait est considéré comme une information de haute qualité.</skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="#Precision"/>
+    <prov:wasDerivedFrom rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.certainty.html"/>
   </cwrc:Certainty>
 
   <cwrc:Certainty rdf:about="#unknownCertainty">
     <rdfs:label xml:lang="en">unknown certainty</rdfs:label>
     <rdfs:label xml:lang="fr">probabilité inconnue</rdfs:label>
-    <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that is used when one does not want to assert an opinion on certainty</skos:definition>
+    <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that is used when one does not want to assert an opinion on certainty or precision, or the degree of certainty or precision is not known. Equivalent to the "unknown" attribute value for certainty of the Text Encoding Initiative.</skos:definition>
     <skos:definition xml:lang="fr">Une valeur de probabilité prédéfinie utilisée lorsque l'on ne veut pas exprimer d'opinion sur la probabilité.</skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Text Encoding Initiative's P5: Guidelines for Electronic Text Encoding and Interchange.</rdfs:comment>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="#Precision"/>
+    <prov:wasDerivedFrom rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.certainty.html"/>
   </cwrc:Certainty>
 
+<owl:Class rdf:ID="Precision">
+    <rdfs:label xml:lang="en">precision</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates the numerical accuracy or precision associated with some aspect of a value, measurement, or identification. For example, with respect to a location, it may indicate how precisely a place being referenced is indicated by the latitude and longitude or the place identifier provided.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Text Encoding Initiative's P5: Guidelines for Electronic Text Encoding and Interchange.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <skos:closeMatch rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-precision.html"/>
+    <prov:wasDerivedFrom rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-precision.html"/>
+  </owl:Class>
 
+  <owl:ObjectProperty rdf:ID="hasPrecision">
+    <rdfs:label xml:lang="en">has precision</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Associates a level of @@#Precision@@ with a value. measurement, or identification.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Text Encoding Initiative's P5: Guidelines for Electronic Text Encoding and Interchange.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="#Precision"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="precisionOf">
+    <rdfs:label xml:lang="en">precision of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Links a level of @@#Precision@@ to a source</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="#Precision"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <owl:inverseOf rdf:resource="#hasPrecision"/>
+    <skos:closeMatch rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-precision.html"/>
+    <prov:wasDerivedFrom rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-precision.html"/>
+  </owl:ObjectProperty>
   
   <owl:Class rdf:ID="PoliticalClimate">
     <rdfs:label xml:lang="en">political climate</rdfs:label>
