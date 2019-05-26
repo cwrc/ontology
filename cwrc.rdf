@@ -506,9 +506,9 @@
   </owl:Class>
   <owl:Class rdf:ID="LiteraryClimate">
     <rdfs:label xml:lang="en">literary climate</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">environnement littéraire</rdfs:label>
     <skos:definition xml:lang="en">An event associated with the climate for literature and writing, broadly conceived, ranging from publication or performance events to information about print technologies and copyright.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un évènement associé à l'environnement littéraire et à l'écriture, allant de la publication ou à la représentation d'un texte à des informations sur les techniques d'impression et sur les droits d'auteur·e.</skos:definition>
     <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -536,9 +536,9 @@
   </owl:Class>
   <owl:Class rdf:ID="HistoricSignificance">
     <rdfs:label xml:lang="en">historic significance</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">importance historique</rdfs:label>
     <skos:definition xml:lang="en">Indicates a very high level of significance appropriate to a historical overview.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique un très haut niveau d'importance qui est approprié pour un résumé historique.</skos:definition>
     <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -566,9 +566,9 @@
   </owl:Class>
   <owl:Class rdf:ID="IndividualSignificance">
     <rdfs:label xml:lang="en">individual significance</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">importance individuelle</rdfs:label>
     <skos:definition xml:lang="en">Indicates a level of significance appropriate to an understanding of an individual person or entity.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique le niveau d'importance approprié pour la compréhension d'une personne ou d'une entité individuelle.</skos:definition>
     <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -696,13 +696,13 @@
 
   <owl:Class rdf:ID="LeisureContext">
     <rdfs:label xml:lang="en">leisure context</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">contexte de loisirs</rdfs:label>
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as Leisure Context provide information about and discussions of instances of the leisure and social activities of a person including hobbies, sporting life and cultural activities, for example mountain climbing or hosting a literary salon.  Notions of leisure are both gendered and classed, and vary by cultural context. This context is meant to capture a person's social life within their larger community, not simply an elite, fashionable social circle.</skos:definition>
 
 
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Une sous-classe importante de contexte. Les annotations entrées en tant que contexte de loisirs fournissent des informations et des discussions sur les loisirs et les activités sociales d'une personne, notamment ses hobbies, sa vie sportive et ses activités culturelles, par exemple l'escalade ou la tenue d'un salon littéraire. Les notions de loisirs dépendent à la fois du genre et de la classe sociale et varient en fonction des cultures. Ce contexte vise à rendre compte de la vie sociale d’une personne au sein de sa communauté au sens large, et non seulement de son cercle social d'élite.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -711,11 +711,11 @@
 
 <owl:Class rdf:ID="NameContext">
     <rdfs:label xml:lang="en">name context</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">contexte de nom</rdfs:label> 
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as name context provide the name or names associated with a person, at times with contextual information.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Sous-classe de contexte importante. Les annotations entrées comme contexte de nom fournissent le ou les noms associés à une personne, parfois accompagnés d'informations contextuelles. </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -803,10 +803,10 @@
 
   <owl:Class rdf:ID="Nickname">
     <rdfs:label xml:lang="en">nickname</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom honnorifique</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">Indicates familiar, humorous, or abusive name given to a person, applied instead of or in addition to their real name. May have @@#NameType@@, @@#AbusiveName@@ or @@#HonorificName@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un nom à connotation positive qui glorifie ou honnore une personne.</skos:definition> 
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -843,10 +843,10 @@
 
   <owl:Class rdf:ID="LocalName">
     <rdfs:label xml:lang="en">local name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom local</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">A name with a geographic connotation, for example, "Julian of Norwich."</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Nom avec une connotation géographique, par exmple "Julienne de Norwich."</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -863,10 +863,10 @@
 
   <owl:Class rdf:ID="LiteraryName">
     <rdfs:label xml:lang="en">literary name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom littéraire</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">A name applied to a writer by others, for example in reviews or at readings, which orginate in the person's status as a writer.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un nom attribué par d'autres à un·e auteur·e, par example dans des critiques ou lors de lectures, prenant son origine dans le statut d'écrivain·e de la personne.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -936,10 +936,10 @@
 
   <owl:Class rdf:ID="IndexedName">
     <rdfs:label xml:lang="en">indexed name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom indexé</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">Name under which a person's work is indexed by an institution or organization.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Nom sous le travail d'une personne est indexé par une insitution ou une organisation. </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -955,10 +955,10 @@
 
   <owl:Class rdf:ID="MarriedName">
     <rdfs:label xml:lang="en">married name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom marital</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">A surname adopted in marriage. </skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Nom de famille adopté après le mariage.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -1042,9 +1042,9 @@
 
   <owl:Class rdf:ID="NameLink">
     <rdfs:label xml:lang="en">name link</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">particule de nom</rdfs:label>
     <skos:definition xml:lang="en">"A connecting phrase or link used within a name but not regarded as part of it, such as van der or of." This term is derived from the Text Encoding Initiative P5 schema for the 'NameLink' element. See @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-nameLink.html@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">"Une locution ou un lien de connexion utilisé dans un nom mais n'étant pas considéré comme partie intégrante de ce nom, par example van der ou de." Ce terme est dérivé du schéma P5 du Text Encoding Initiative pour l'élément 'NameLink'. Voir l'élément TEI @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-nameLink.html@@.</skos:definition> 
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -1053,7 +1053,7 @@
     <rdfs:label xml:lang="en">generational name</rdfs:label>
     <rdfs:label xml:lang="fr">nom générationnel</rdfs:label>
     <skos:definition xml:lang="en">A name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named." This term is derived from the Text Encoding Initiative P5 schema for the 'genName' element. See @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-genName.html@@.</skos:definition>
-    <skos:definition xml:lang="fr">Composant de nom utilisé pour distinguer des noms par ailleurs similaires sur la base des âges ou générations relatifs des personnes nommées. "Ce terme est dérivé du schéma Initiative de codage de texte P5 pour l'élément 'genName'. Voir l'élément TEI genName @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-genName.html@@.</skos:definition>
+    <skos:definition xml:lang="fr">Composant de nom utilisé pour distinguer des noms similaires, en fonction de l'âge ou de la génération relatifs aux personnes portant un nom. "Ce terme est dérivé du schéma P5 du Text Encoding Initiative pour l'élément 'genName'. Voir l'élément TEI genName @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-genName.html@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -8826,11 +8826,11 @@
 
   <owl:Class rdf:ID="HealthContext">
     <rdfs:label xml:lang="en">health context</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">contexte de santé</rdfs:label>
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as health provide information about and discussions of a person's health, both mental and physical, and associated social, political and historical factors.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Sous-classe importante de contexte. Les annotations entrées comme contexte de santé fournissent des informations sur la santé physique et mentale d'une personne ainsi que sur des facteurs sociaux, politiques et historiques associés.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -8847,12 +8847,12 @@
   </owl:Class>
   <owl:Class rdf:ID="MentalHealthContext">
     <rdfs:label xml:lang="en">mental health context</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">contexte de santé mentale</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#HealthContext"/>
 
     <skos:definition xml:lang="en">A subclass of @@#HealthContext@@. Annotations typed as mental health context describe an aspect of a person’s mental or psychological well-being or illness.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Sous-classe de Contexte de santé. Les annotations entrées en tant que contexte de snaté mentale décrivent un aspect de du bien-être mental d'une personne ou au contraire de ses troubles psychologiques ou mentaux.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
