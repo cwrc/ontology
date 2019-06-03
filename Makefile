@@ -81,52 +81,52 @@ testing-deploy: force all
 
 # deploy to testing server--> called automatically with every change on git 
 testing: all
-	cat $(ONTOLOGY_W_DATE)-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/CWRCLaravel/cwrc/public/testing/$(ONTOLOGY_W_DATE)-EN.html
-	cat $(ONTOLOGY_W_DATE)-FR.html  | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/CWRCLaravel/cwrc/public/testing/$(ONTOLOGY_W_DATE)-FR.html
-	cat $(ONTOLOGY)-preamble-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/CWRCLaravel/cwrc/public/testing/$(ONTOLOGY)-preamble-EN.html
-	cat $(ONTOLOGY)-preamble-FR.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/CWRCLaravel/cwrc/public/testing/$(ONTOLOGY)-preamble-FR.html
-	cat our-team-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/CWRCLaravel/cwrc/public/testing/our-team-EN.html
-	cat our-team-FR.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/html/CWRCLaravel/cwrc/public/testing/our-team-FR.html
+	cat $(ONTOLOGY_W_DATE)-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY_W_DATE)-EN.html
+	cat $(ONTOLOGY_W_DATE)-FR.html  | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY_W_DATE)-FR.html
+	cat $(ONTOLOGY)-preamble-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY)-preamble-EN.html
+	cat $(ONTOLOGY)-preamble-FR.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY)-preamble-FR.html
+	cat our-team-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/our-team-EN.html
+	cat our-team-FR.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/our-team-FR.html
 	
-	cp -f $(ONTOLOGY_W_DATE).rdf /var/www/html/CWRCLaravel/cwrc/public/testing/.
-	cp -f $(ONTOLOGY_W_DATE).nt /var/www/html/CWRCLaravel/cwrc/public/testing/.
-	cp -f $(ONTOLOGY_W_DATE).ttl /var/www/html/CWRCLaravel/cwrc/public/testing/.	
+	cp -f $(ONTOLOGY_W_DATE).rdf /var/www/public/testing/.
+	cp -f $(ONTOLOGY_W_DATE).nt /var/www/public/testing/.
+	cp -f $(ONTOLOGY_W_DATE).ttl /var/www/public/testing/.	
 	
-	ln -sf /var/www/html/CWRCLaravel/cwrc/public/testing/$(ONTOLOGY_W_DATE)-EN.html /var/www/html/CWRCLaravel/cwrc/public/testing/$(ONTOLOGY).html
-	ln -sf /var/www/html/CWRCLaravel/cwrc/public/testing/$(ONTOLOGY_W_DATE)-EN.html /var/www/html/CWRCLaravel/cwrc/public/testing/$(ONTOLOGY_W_DATE).html
-	ln -sf /var/www/html/CWRCLaravel/cwrc/public/testing/$(ONTOLOGY_W_DATE)-FR.html /var/www/html/CWRCLaravel/cwrc/public/testing/$(ONTOLOGY)-FR.html
-	ln -sf /var/www/html/CWRCLaravel/cwrc/public/testing/$(ONTOLOGY_W_DATE).rdf /var/www/html/CWRCLaravel/cwrc/public/testing/$(ONTOLOGY).rdf
-	ln -sf /var/www/html/CWRCLaravel/cwrc/public/testing/$(ONTOLOGY_W_DATE).nt /var/www/html/CWRCLaravel/cwrc/public/testing/$(ONTOLOGY).nt
-	ln -sf /var/www/html/CWRCLaravel/cwrc/public/testing/$(ONTOLOGY_W_DATE).ttl /var/www/html/CWRCLaravel/cwrc/public/testing/$(ONTOLOGY).ttl
+	ln -sf /var/www/public/testing/$(ONTOLOGY_W_DATE)-EN.html /var/www/public/testing/$(ONTOLOGY).html
+	ln -sf /var/www/public/testing/$(ONTOLOGY_W_DATE)-EN.html /var/www/public/testing/$(ONTOLOGY_W_DATE).html
+	ln -sf /var/www/public/testing/$(ONTOLOGY_W_DATE)-FR.html /var/www/public/testing/$(ONTOLOGY)-FR.html
+	ln -sf /var/www/public/testing/$(ONTOLOGY_W_DATE).rdf /var/www/public/testing/$(ONTOLOGY).rdf
+	ln -sf /var/www/public/testing/$(ONTOLOGY_W_DATE).nt /var/www/public/testing/$(ONTOLOGY).nt
+	ln -sf /var/www/public/testing/$(ONTOLOGY_W_DATE).ttl /var/www/public/testing/$(ONTOLOGY).ttl
 	
-	cp -f figures/* /var/www/html/CWRCLaravel/cwrc/public/testing/figures/.	
-	cp -f -R css /var/www/html/CWRCLaravel/cwrc/public/testing/.
-	cp -f -R js /var/www/html/CWRCLaravel/cwrc/public/testing/.
+	cp -f figures/* /var/www/public/testing/figures/.	
+	cp -f -R css /var/www/public/testing/.
+	cp -f -R js /var/www/public/testing/.
 
 # deploy to production
 deploy: all
-	cp $(ONTOLOGY_W_DATE)-EN.html /var/www/html/CWRCLaravel/cwrc/public/ontology/$(ONTOLOGY_W_DATE)-EN.html
-	cp $(ONTOLOGY_W_DATE)-FR.html /var/www/html/CWRCLaravel/cwrc/public/ontology/$(ONTOLOGY_W_DATE)-FR.html
-	cp $(ONTOLOGY)-preamble-EN.html /var/www/html/CWRCLaravel/cwrc/public/ontology/$(ONTOLOGY)-preamble-EN.html
-	cp $(ONTOLOGY)-preamble-FR.html /var/www/html/CWRCLaravel/cwrc/public/ontology/$(ONTOLOGY)-preamble-FR.html
+	cp $(ONTOLOGY_W_DATE)-EN.html /var/www/public/ontology/$(ONTOLOGY_W_DATE)-EN.html
+	cp $(ONTOLOGY_W_DATE)-FR.html /var/www/public/ontology/$(ONTOLOGY_W_DATE)-FR.html
+	cp $(ONTOLOGY)-preamble-EN.html /var/www/public/ontology/$(ONTOLOGY)-preamble-EN.html
+	cp $(ONTOLOGY)-preamble-FR.html /var/www/public/ontology/$(ONTOLOGY)-preamble-FR.html
 	
-	cp our-team-EN.html /var/www/html/CWRCLaravel/cwrc/public/ontology/our-team-EN.html
-	cp our-team-FR.html /var/www/html/CWRCLaravel/cwrc/public/ontology/our-team-FR.html
+	cp our-team-EN.html /var/www/public/ontology/our-team-EN.html
+	cp our-team-FR.html /var/www/public/ontology/our-team-FR.html
 
-	cp -f $(ONTOLOGY_W_DATE).rdf /var/www/html/CWRCLaravel/cwrc/public/ontology/.
-	cp -f $(ONTOLOGY_W_DATE).nt /var/www/html/CWRCLaravel/cwrc/public/ontology/.
-	cp -f $(ONTOLOGY_W_DATE).ttl /var/www/html/CWRCLaravel/cwrc/public/ontology/.	
+	cp -f $(ONTOLOGY_W_DATE).rdf /var/www/public/ontology/.
+	cp -f $(ONTOLOGY_W_DATE).nt /var/www/public/ontology/.
+	cp -f $(ONTOLOGY_W_DATE).ttl /var/www/public/ontology/.	
 	
-	ln -sf /var/www/html/CWRCLaravel/cwrc/public/ontology/$(ONTOLOGY_W_DATE)-EN.html /var/www/html/CWRCLaravel/cwrc/public/ontology/$(ONTOLOGY).html
-	ln -sf /var/www/html/CWRCLaravel/cwrc/public/ontology/$(ONTOLOGY_W_DATE)-EN.html /var/www/html/CWRCLaravel/cwrc/public/ontology/$(ONTOLOGY_W_DATE).html
-	ln -sf /var/www/html/CWRCLaravel/cwrc/public/ontology/$(ONTOLOGY_W_DATE)-FR.html /var/www/html/CWRCLaravel/cwrc/public/ontology/$(ONTOLOGY)-FR.html
-	ln -sf /var/www/html/CWRCLaravel/cwrc/public/ontology/$(ONTOLOGY_W_DATE).rdf /var/www/html/CWRCLaravel/cwrc/public/ontology/$(ONTOLOGY).rdf
-	ln -sf /var/www/html/CWRCLaravel/cwrc/public/ontology/$(ONTOLOGY_W_DATE).nt /var/www/html/CWRCLaravel/cwrc/public/ontology/$(ONTOLOGY).nt
-	ln -sf /var/www/html/CWRCLaravel/cwrc/public/ontology/$(ONTOLOGY_W_DATE).ttl /var/www/html/CWRCLaravel/cwrc/public/ontology/$(ONTOLOGY).ttl
+	ln -sf /var/www/public/ontology/$(ONTOLOGY_W_DATE)-EN.html /var/www/public/ontology/$(ONTOLOGY).html
+	ln -sf /var/www/public/ontology/$(ONTOLOGY_W_DATE)-EN.html /var/www/public/ontology/$(ONTOLOGY_W_DATE).html
+	ln -sf /var/www/public/ontology/$(ONTOLOGY_W_DATE)-FR.html /var/www/public/ontology/$(ONTOLOGY)-FR.html
+	ln -sf /var/www/public/ontology/$(ONTOLOGY_W_DATE).rdf /var/www/public/ontology/$(ONTOLOGY).rdf
+	ln -sf /var/www/public/ontology/$(ONTOLOGY_W_DATE).nt /var/www/public/ontology/$(ONTOLOGY).nt
+	ln -sf /var/www/public/ontology/$(ONTOLOGY_W_DATE).ttl /var/www/public/ontology/$(ONTOLOGY).ttl
 	
-	cp -f figures/* /var/www/html/CWRCLaravel/cwrc/public/ontology/figures/.	
-	cp -f -R css /var/www/html/CWRCLaravel/cwrc/public/ontology/.
-	cp -f -R js /var/www/html/CWRCLaravel/cwrc/public/ontology/.
+	cp -f figures/* /var/www/public/ontology/figures/.	
+	cp -f -R css /var/www/public/ontology/.
+	cp -f -R js /var/www/public/ontology/.
 
 # tests rdf files aren't broken before push, make push --> then commit
 push: cwrc.rdf genre.rdf ii.rdf

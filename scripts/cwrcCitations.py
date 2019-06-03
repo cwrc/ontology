@@ -49,7 +49,7 @@ with open(file, "rb") as source:
 
 
 def get_citation(url):
-    citation = "https://beta.cwrc.ca/islandora/object/" + url
+    citation = "https://cwrc.ca/islandora/object/" + url
     try:
         page = urllib.request.urlopen(citation).read().decode('utf-8')
         soup = BeautifulSoup(page, 'html.parser')
@@ -79,10 +79,10 @@ def main():
     soup = BeautifulSoup("", 'html.parser')
     for x in sorted(citation_dict.keys()):
         print('<div class="citation" id="%s">' % citation_dict[x][0])
-        link_str = "https://beta.cwrc.ca/islandora/object/" + citation_dict[x][0]
+        link_str = "https://cwrc.ca/islandora/object/" + citation_dict[x][0]
         new_tag = soup.new_tag("a", href=link_str)
         new_tag.string = "link"
-        citation_dict[x][1].append('[')
+        citation_dict[x][1].append(' [')
         citation_dict[x][1].append(new_tag)
         citation_dict[x][1].append(']')
         print(citation_dict[x][1])
