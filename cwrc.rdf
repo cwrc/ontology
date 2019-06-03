@@ -167,7 +167,7 @@
     <cc:attributionURL rdf:resource="http://www.cwrc.ca/"/>
     <dcterms:publisher rdf:resource="#cwrc"/>
     <dcterms:creator rdf:resource="#JohnSimpson"/>
-    <dcterms:creator rdf:resource="#AbiLemak"/>
+    <dcterms:creator rdf:resource="#AbigelLemak"/>
     <dcterms:creator rdf:resource="#ColinFaulkner"/>
     <dcterms:creator rdf:resource="#RobWarren"/>
     <dcterms:creator rdf:resource="#JadePenancier"/>
@@ -362,7 +362,7 @@
     <skos:definition xml:lang="en">A note or annotation intended for internal purposes having to do with such matters as research, composition, or workflow, and not intended for publication.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Note"/>
-    <rdfs:subClassOf rdf:resource="Note"/>
+    <rdfs:subClassOf rdf:resource="#Note"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:Class>
 
@@ -372,7 +372,7 @@
     <skos:definition xml:lang="en">A scholarly note or annotation intended for publication, usually containing ancillary or supplementary content, which may take various forms such as a footnote, endnote, or pop-up note.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Note"/>
-    <rdfs:subClassOf rdf:resource="Note"/>
+    <rdfs:subClassOf rdf:resource="#Note"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:Class>
 
@@ -8451,7 +8451,7 @@
     <skos:definition xml:lang="en">Indicates that the student was educated by the entity in question,—an instructor, an educational institution, or a particular type of schooling.</skos:definition>
     <skos:definition xml:lang="fr">Indique que l'étudiant·e a été éduqué·e par l'entité en question (instructeur·rice, établissement éducatif,ou type d'éducation particulière).</skos:definition>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:domain rdf:resource="#School"/>
+    <rdfs:domain rdf:resource="#EducationalOrganization"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -8490,7 +8490,7 @@
     <rdfs:label xml:lang="fr">scolarisation</rdfs:label>
     <skos:definition xml:lang="en">Indicates attending or having attended for education either a particular school or a particular type of schooling.</skos:definition>
     <skos:definition xml:lang="fr"> Indique que le sujet fréquente ou a fréquenté un établissement éducatif en particulier ou a reçu une forme d'enseignement spécifique</skos:definition>
-    <rdfs:range rdf:resource="#School"/>
+    <rdfs:range rdf:resource="#EducationalOrganization"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <owl:inverseOf rdf:resource="#hasStudent"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -8801,7 +8801,7 @@
     <skos:definition xml:lang="en">An exhibition is a type of scholarship award or bursary.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Exhibition_(scholarship)"/>
-    <rdfs:subClassOf rdf:resource="EducationalAward"/>
+    <rdfs:subClassOf rdf:resource="#EducationalAward"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -9892,7 +9892,7 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Jews"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#RaceColour"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-2018-05-27"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:RaceColour>
   <cwrc:RaceColour rdf:about="#eurasianRaceColour">
@@ -15496,7 +15496,7 @@
   <owl:ObjectProperty rdf:ID="religionSelfReportedOf">
     <rdfs:label xml:lang="en">religious affiliation (self-reported) of</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <rdfs:subPropertyOf rdf:resource="religionOf"/>
+    <rdfs:subPropertyOf rdf:resource="#religionOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -15505,7 +15505,7 @@
   <owl:ObjectProperty rdf:ID="religionReportedOf">
     <rdfs:label xml:lang="en">religious affiliation (reported) of</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <rdfs:subPropertyOf rdf:resource="religionOf"/>
+    <rdfs:subPropertyOf rdf:resource="#religionOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -15581,7 +15581,7 @@
     <skos:definition xml:lang="en">Indicates some degree of sustained engagement with an organization such as a political group or literary movement. Does not necessarily denote formal membership, but rather points to clear evidence of a link with an organization without indication of more active participation: a person may have been a member of the @@#sanitaryMovement@@ or participated in a reading associated with a particular literary movement.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <owl:inverseOf rdf:resource="#hasPoliticalMembershipFrom"/>
-    <rdfs:subPropertyOf rdf:resource="hasPoliticalInvolvementIn"/>
+    <rdfs:subPropertyOf rdf:resource="#hasPoliticalInvolvementIn"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
@@ -17412,7 +17412,7 @@
     <rdfs:label xml:lang="en">has race (self declared)</rdfs:label>
     <rdfs:label xml:lang="fr">est de race (autodéclarée)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
-    <rdfs:range rdf:resource="#Race"/>
+    <rdfs:range rdf:resource="#RaceColour"/>
     <skos:definition xml:lang="en">This describes a person's self-reported identity with respect to race or colour.</skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -17884,7 +17884,6 @@
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Welsh_people"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:representedBy rdf:resource="#welshLabel"/>
     <owl:sameAs rdf:resource="http://sws.geonames.org/2634895/"/>
     <rdfs:comment xml:lang="en">Deprecated in favour of foreign instance ISO 3166-2:GB-WLS.</rdfs:comment>
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance ISO 3166-2:GB-WLS.</rdfs:comment>
