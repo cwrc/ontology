@@ -2788,6 +2788,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">A form of narrative fiction, named for a phrase from Thomas Carlyle's “Chartism” (1839), that addresses Victorian social and political issues with a focus on political unrest and class conflict, and typically seeks to instill empathy for the poor and understanding of social iniquities and injustices.
 Closely related to the industrial novel because of its interest in the impact of the industrial revolution.</skos:definition>
     <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#NovelisticGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FictionalGenre"/>
   </genre:PoliticalGenre>
   <genre:ComedicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#comedyOfMenace">
     <rdfs:label xml:lang="fr">comédie de menace</rdfs:label>
@@ -3066,6 +3067,8 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:altLabel xml:lang="en">architecture</skos:altLabel>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">architectural writing</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#InformationalGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ScholarlyGenre"/>
   </genre:ThematicGenre>
   <genre:PoeticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#anacreontic">
     <skos:definition xml:lang="en">"Anacreontics are verses in a meter used by the Greek poet Anacreon in his poems dealing with love and wine. His later Greek imitators (whose surviving poems are known as the Anacreontea) took up the same themes and used the Anacreontic meter. In modern poetry, Anacreontics are short lyrical pieces that keep the Anacreontic subject matter but not the meter." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
