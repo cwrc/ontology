@@ -2789,15 +2789,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
 Closely related to the industrial novel because of its interest in the impact of the industrial revolution.</skos:definition>
     <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#NovelisticGenre"/>
   </genre:PoliticalGenre>
-  <genre:FictionalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#conditionOfEnglandNovel">
-    <rdfs:label xml:lang="fr">condition of england novel</rdfs:label>
-    <skos:definition xml:lang="fr">Forme de fiction narrative, nommée ainsi d'après une phrase du "Chartisme" de Thomas Carlyle (1839), qui traite des questions sociales et politiques victoriennes en mettant l'accent sur l'agitation politique et les conflits entre classes sociales, qui cherche généralement à provoquer l'empathie pour les pauvres et la compréhension des inégalités et des injustices sociales. Ce mouvement est très proche du roman industriel en raison de son intérêt pour les conséquences de la révolution industrielle.</skos:definition>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">condition of england novel</rdfs:label>
-    <skos:definition xml:lang="en">A form of narrative fiction, named for a phrase from Thomas Carlyle's “Chartism” (1839), that addresses Victorian social and political issues with a focus on political unrest and class conflict, and typically seeks to instill empathy for the poor and understanding of social iniquities and injustices.
-Closely related to the industrial novel because of its interest in the impact of the industrial revolution.</skos:definition>
-    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#NovelisticGenre"/>
-  </genre:FictionalGenre>
   <genre:ComedicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#comedyOfMenace">
     <rdfs:label xml:lang="fr">comédie de menace</rdfs:label>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Penguin Dictionary of Literary Terms &amp; Literary Theory, 4th ed.</rdfs:comment>
@@ -3076,16 +3067,6 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">architectural writing</rdfs:label>
   </genre:ThematicGenre>
-  <genre:InformationalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#architecturalWriting">
-    <skos:altLabel xml:lang="en">architecture</skos:altLabel>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">architectural writing</rdfs:label>
-  </genre:InformationalGenre>
-  <genre:ScholarlyGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#architecturalWriting">
-    <skos:altLabel xml:lang="en">architecture</skos:altLabel>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">architectural writing</rdfs:label>
-  </genre:ScholarlyGenre>
   <genre:PoeticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#anacreontic">
     <skos:definition xml:lang="en">"Anacreontics are verses in a meter used by the Greek poet Anacreon in his poems dealing with love and wine. His later Greek imitators (whose surviving poems are known as the Anacreontea) took up the same themes and used the Anacreontic meter. In modern poetry, Anacreontics are short lyrical pieces that keep the Anacreontic subject matter but not the meter." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3139,7 +3120,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">sensational</rdfs:label>
   </genre:ThematicGenre>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#CatalogueForm">
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
     <skos:definition xml:lang="en">Indicates "enumerations of items, such as a file of bibliographic records or a list of art objects, usually arranged systematically and with descriptive details; may be in book or pamphlet form, on cards, or online." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300026059"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3171,11 +3152,11 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Calendar Form</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300026741"/>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#ScriptForm">
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300026487"/>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
     <skos:definition xml:lang="en">Indicates "written texts of stage plays, screenplays, and radio or television broadcasts." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Script Form</rdfs:label>
@@ -3207,7 +3188,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">Advertisement Form</rdfs:label>
     <skos:altLabel xml:lang="en">advertising copy</skos:altLabel>
     <skos:definition xml:lang="en">Indicates "an audio or visual form of marketing communication that employs an openly sponsored, nonpersonal message to promote or sell a product, service or idea." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#StillImageMedium">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3271,7 +3252,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Record Form</rdfs:label>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026163"/>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300026685"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#MysteryGenre">
@@ -3289,7 +3270,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Proverb Form</rdfs:label>
     <skos:altLabel xml:lang="en">aphorism</skos:altLabel>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#DramaticGenre">
     <skos:definition xml:lang="en">Indicates works "in prose or verse in which a story is related by means of dialogue and action . . . generally written with the intention of performance on stage, film, television, or the like." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
@@ -3347,7 +3328,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">Book Form</rdfs:label>
     <skos:definition xml:lang="en">Indicates "items comprising a collection of leaves of paper, parchment, wood, stiffened textile, ivory, metal tablets, or other flat material, that are blank, written on, or printed, and are strung or bound together in a volume." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300028051"/>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#ScholarlyGenre">
     <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#InformationalGenre"/>
@@ -3386,7 +3367,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300054354"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#PartialForm">
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
     <skos:definition xml:lang="en">Indicates "portions of documents or other written works, either included as discrete sections in an extant document or detached from the original document." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300055027"/>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026097"/>
@@ -3394,7 +3375,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">Partial Form</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#AlphabetForm">
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
     <skos:definition xml:lang="en">Indicates "a standard set of letters (basic written symbols or graphemes) that is used to write one or more languages based on the general principle that the letters represent phonemes (basic significant sounds) of the spoken language." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Alphabet Form</rdfs:label>
@@ -3420,7 +3401,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Illustrated Form</rdfs:label>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026111"/>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
     <skos:definition xml:lang="en">Indicates works that include "drawings or other pictures intended to elucidate a description, story, or other written material, usually in a book or periodical." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#PoeticGenre">
@@ -3436,14 +3417,14 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:definition xml:lang="en">Indicates "any materials representing, in whole or part, the earth or any celestial body at any scale." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Cartographic Form</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
     <skos:related rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026113"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#MusicalNotationForm">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Musical Notation Form</rdfs:label>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Musical_notation"/>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
     <skos:altLabel xml:lang="en">sheet music</skos:altLabel>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300026430"/>
     <skos:definition xml:lang="en">Indicates "any system used to visually represent aurally perceived music played with instruments or sung by the human voice through the use of written, printed, or otherwise-produced symbols." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
@@ -3471,7 +3452,7 @@ Closely related to the industrial novel because of its interest in the impact of
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#SerialForm">
     <skos:altLabel xml:lang="en">periodical</skos:altLabel>
     <skos:definition xml:lang="en">Indicates "publications in any medium issued in successive parts bearing numerical or chronological designations and intended to be continued indefinitely." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Serial Form</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300215389"/>
@@ -3544,7 +3525,7 @@ Closely related to the industrial novel because of its interest in the impact of
 &#13;
 Literary genres are used to classify texts within a shifting range of literary forms and practices. Genres are most frequently related to formal features such as the English sonnet's fourteen lines of iambic pentameter, to characteristic subject matter such as themes of romance, horror, comedy, or tragedy, to aspects of style such as hard-boiled detective fiction, or to the purpose of a text. Within the context of literary studies, the question of "purpose," especially when considered within a political context, is of especial interest to scholars. For example, feminist literary scholars like Cynthia Huff ("‘That Profoundly Female, and Feminist Genre’: The Diary as Feminist Practice"), Giancarlo Lombardi (Rooms with a View: Feminist Diary Fiction, 1952-1999), Rita Felski (Beyond Feminist Aesthetics: Feminist Literature and Social Change) and others read "diary fiction" as a powerful genre used to spur on women’s movements. For more on literary genre, see the <![CDATA[<a href="http://sparql.cwrc.ca/ontologies/genre-preamble-EN.html#background">introduction</a>]]> to this ontology .</skos:definition>
   </owl:Class>
-  <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#Form">
+  <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#FormGenre">
     <skos:definition xml:lang="en">Indicates material and structural elements that distinguish one category of cultural work from another. Whereas Genre categories tend to group categories based on features such as the style, content, or audience of cultural works, Form categories usually define material characteristics that shape or contain the work, such as ‘anthology,’ in the case of CollectionForm, ’notebook’ under BookForm, or ‘journal’ within SerialForm.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Form Genre</rdfs:label>
@@ -3579,7 +3560,7 @@ Literary genres are used to classify texts within a shifting range of literary f
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Collection Form</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300025976"/>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
     <skos:definition xml:lang="en">Indicates "accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
   </owl:Class>
 </rdf:RDF>
