@@ -3255,7 +3255,7 @@ Closely related to the industrial novel because of its interest in the impact of
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#ReligiousGenre">
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300417817"/>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Genre"/>
     <skos:definition xml:lang="en">Indicates works "having a religious subject or spirtual theme." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Religious Genre</rdfs:label>
@@ -3296,7 +3296,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300404113"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Didactic Genre</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#InformationalGenre"/>
     <skos:definition>Indicates works that have “the function, quality, or activity of having instruction or teaching as a primary or ulterior purpose.” <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#AutobiographicalGenre">
@@ -3372,7 +3372,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#JournalisticGenre">
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Genre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#InformationalGenre"/>
     <skos:definition xml:lang="en">Indicates works "concerned with the collection, preparation, and distribution of news and related commentary through the mass media, both print and electronic."&#13;
  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3398,7 +3398,8 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">LGBTQ+Genre</rdfs:label>
     <skos:definition xml:lang="en">Indicates works concerned with LGBTQ+ identities and experiences. </skos:definition>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Genre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PoliticalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#InformationalGenre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
