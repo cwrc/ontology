@@ -708,6 +708,8 @@
     <rdfs:label xml:lang="fr">oratorio</rdfs:label>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of English, 3rd ed.</rdfs:comment>
     <skos:definition xml:lang="fr">«Un oratorio est une œuvre lyrique dramatique représentée sans mise en scène, ni costumes, ni décors. Généralement composé pour voix solistes, chœur et orchestre symphonique, avec parfois un narrateur, son sujet est le plus souvent religieux (épisode extrait de la Bible, de la vie de Jésus, d’un(e) saint(e)… ) mais peut être aussi profane (héros mythologique, sujet historique, hymne à la nature…). Formellement assez proche de la cantate et de l’opéra, l'oratorio comprend généralement une ouverture, des récitatifs, des airs et des chœurs.»  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ReligiousGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#NarrativeGenre"/>
   </genre:SongGenre>
   <genre:DramaticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#theatreOfTheAbsurd">
     <rdfs:label xml:lang="fr">théâtre de l'absurde</rdfs:label>
@@ -1553,6 +1555,7 @@ s épîtres.]]></skos:definition>
     <rdfs:label xml:lang="fr">ballade</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">ballade</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PoeticGenre"/>
   </genre:MusicalGenre>
   <genre:SongGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#lullaby">
     <skos:definition xml:lang="en">"A lullaby, or cradle song, is a soothing song or piece of music, usually played for or sung to children. The purposes of lullabies vary. In some societies they are used to pass down cultural knowledge or tradition. In addition, lullabies are often used for the developing of communication skills, indication of emotional intent, maintenance of infants' undivided attention, modulation of infants' arousal, and regulation of behavior. Perhaps one of the most important uses of lullabies is as a sleep aid for infants. As a result, the music is often simple and repetitive. Lullabies can be found in many countries, and have existed since ancient times." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
@@ -2332,6 +2335,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Song"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014027103"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PoeticGenre"/>
   </genre:SongGenre>
   <genre:ParatextualGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#dedication">
     <skos:definition xml:lang="en">"A short bit of text conventionally appearing before the start of a novel or poem in which the author or poet addresses some individual, invoking his or her gratitude or thanks to that individual. Frequently, the dedication is to a spouse, friend, loved one, child, mentor, or individual who inspired the work. Several of the Inklings dedicated specific fictional works to each other (or in the case of C.S. Lewis, to children of fellow Inklings). Among scholars, one of the most significant types of dedications is a festschrift. A festschrift is a collection of essays or studies in book form, dedicated to a former teacher or professor in his or her advanced age. The individual scholarly writings come from his or her students, who typically collaborate to organize the work and contact the publisher, and they present the collection to the teacher upon its publication."  <![CDATA[(<a href="cwrc:509015ff-7641-473e-94c5-688e06952bb7">L. K Wheeler, 2017</a>)]]></skos:definition>
