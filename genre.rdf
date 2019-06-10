@@ -884,7 +884,7 @@
     <skos:definition xml:lang="fr">Œuvre habituellement fictionnelle, qui tirent leur origines des romans chevaleresques du Moyen Âge et de la Renaissance représentant des chevaliers et des aventures merveilleuses. La romance traite des relations sentimentales, familiales et sexuelles, et s'articule souvent autours de récits hétéronormés qui se concluent par une union romantique ou un mariage. La catégorie comprend les œuvres reconnues pour leur qualité littéraire, ainsi que la littérature commerciale ou de genre produite pour un public de masse. Les sous-genres de la romance comprennent la littérature gothique, la romance historique et celles écrites durant la Régence anglaise.</skos:definition>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300191065"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">romance</rdfs:label>
+    <rdfs:label xml:lang="en">literary romance</rdfs:label>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="en">"Poetic or prosaic literary forms derived from medieval narratives of love, legendary or heroic adventures, and chivalry. Extends to narratives about important religious figures, or fantastic or supernatural events."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
     <rdfs:label xml:lang="fr">romance</rdfs:label>
@@ -3262,7 +3262,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Mystery_fiction"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Mystery Genre</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#ProverbForm">
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300188783"/>
@@ -3433,10 +3433,10 @@ Closely related to the industrial novel because of its interest in the impact of
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#RomanceGenre">
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300255278"/>
-    <skos:definition>Indicates a "mass-market literary genre in which love is the central theme; often written by and for women and featuring plots that focus on finding and sustaining romantic relationships with an ideal partner." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
+    <skos:definition>Indicates types of texts participating in the genre of romance, broadly conceived, ranging from chivalric romances of the middle ages to "mass-market literary genre in which love is the central theme; often written by and for women and featuring plots that focus on finding and sustaining romantic relationships with an ideal partner." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Romance Genre</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#SocialScienceGenre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3543,7 +3543,8 @@ Literary genres are used to classify texts within a shifting range of literary f
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Historical Genre</rdfs:label>
     <skos:definition xml:lang="en">Indicates works that relay histories in both written and oral form; not to be confused with historical fiction.</skos:definition>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#InformationalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
