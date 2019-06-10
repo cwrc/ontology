@@ -541,7 +541,8 @@
   <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#military">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">military</rdfs:label>
-    <skos:related rdf:resource="http://dbpedia.org/resource/Military"/>
+    <skos:definition xml:lang="en">A thematic genre concerned with such matters as military lives, experiences, or history, whether at war or during peace time.</skos:definition>
+    <skos:related>genre#war</skos:related></genre:ThematicGenre>
   </genre:ThematicGenre>
   <genre:BookForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#scrapbook">
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300027341"/>
@@ -2963,9 +2964,10 @@ Closely related to the industrial novel because of its interest in the impact of
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026062"/>
   </genre:InformationalGenre>
   <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#war">
-    <skos:definition xml:lang="en">"War is a state of armed conflict between societies. It is generally characterized by extreme aggression, destruction, and mortality, using regular or irregular military forces. An absence of war is usually called "peace". Warfare refers to the common activities and characteristics of types of war, or of wars in general. Total war is warfare that is not restricted to purely legitimate military targets, and can result in massive civilian or other non-combatant casualties. While some scholars see war as a universal and ancestral aspect of human nature, others argue it is a result of specific socio-cultural or ecological circumstances. The deadliest war in history, in terms of the cumulative number of deaths since its start, is the Second World War, from 1939 to 1945, with 60–85 million deaths, followed by the Mongol conquests which was greater than 41 million. Proportionally speaking, the most destructive war in modern history is the War of the Triple Alliance, which took the lives of over 60% of Paraguay's population, according to Steven Pinker. In 2013 war resulted in 31,000 deaths, down from 72,000 deaths in 1990. In 2003, Richard Smalley identified war as the sixth (of ten) biggest problem facing humanity for the next fifty years. War usually results in significant deterioration of infrastructure and the ecosystem, a decrease in social spending, famine, large-scale emigration from the war zone, and often the mistreatment of prisoners of war or civilians. Another byproduct of some wars is the prevalence of propaganda by some or all parties in the conflict, and increased revenues by weapons manufacturers." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
+    <skos:definition xml:lang="en">A themtic genre concerning engagement with war in a range of forms and media and from a range of perspectives, including both front-line experiences, the lives of those imprisoned by war, experiences of living and working at a remove from battle. Includes historical and documentary approaches.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">war</rdfs:label>
+    <skos:related>genre#military:</skos:related>
   </genre:ThematicGenre>
   <genre:SatiricalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#mockForms">
     <skos:definition xml:lang="en">Writing that uses the conventions of a specific genre satirically in order to mock or parody that genre.</skos:definition>
