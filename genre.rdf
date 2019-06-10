@@ -408,7 +408,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">animation</rdfs:label>
   </genre:MovingMedium>
-  <genre:ParatextualGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#prefatoryPiece">
+  <genre:PartialForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#prefatoryPiece">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">prefatory piece</rdfs:label>
     <rdfs:label xml:lang="fr">préface</rdfs:label>
@@ -416,7 +416,7 @@
     <skos:definition xml:lang="fr">«Une préface (du latin præ : avant et fari : parler) est, en littérature, un texte d’introduction et de présentation. Placé en tête d’un livre, il en fait connaître les vues, le plan, prévient des objections, répond à des critiques ou encore donne une idée sur le message que veut transmettre l'auteur à travers ce livre (ex : la pauvreté de la société, l'inégalité, la prostitution, la violence, etc.). La préface est courte lorsqu'elle devient un avertissement et largement développée dans le cadre des prolégomènes. On oppose à la préface la postface.»  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
     <skos:definition xml:lang="en">"Texts preceding the main literary work and containing comments about such matters as the reason for or circumstances of the author's writing the work, or comments by another about the author or the work."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Preface"/>
-  </genre:ParatextualGenre>
+  </genre:PartialForm>
   <genre:FictionalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#schoolFiction">
     <rdfs:label xml:lang="fr">fiction scolaire</rdfs:label>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
@@ -1138,7 +1138,7 @@
     <dcterms:references rdf:resource="http://web.cn.edu/kwheeler/lit_terms_h.html"/>
     <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ReligiousGenre"/>
   </genre:MusicalGenre>
-  <genre:ParatextualGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#afterword">
+  <genre:PartialForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#afterword">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">afterword</rdfs:label>
     <skos:definition xml:lang="en">"A section that appears towards the end of a book, does not form part of the main body, and often concludes or summarizes."  <![CDATA[(<a href="#cwrc:4c227091-6bf0-4325-b846-9733fae19e61">Oxford, 2015</a>)]]></skos:definition>
@@ -1146,7 +1146,7 @@
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Postface"/>
     <skos:definition xml:lang="fr">«Une postface est un texte ajouté à la fin d'un livre ou d'un écrit pour en guise de supplément ou de conclusion, généralement pour émettre un commentaire, une explication ou un avertissement. La postface peut être rédigée par l'auteur d'un document ou par une autre personne. La postface est séparée du corps principal de l'ouvrage et est placée dans les pages annexes, c'est-à-dire à la fin du document. La postface, bien qu'elle puise faire office de conclusion, présente des informations qui ne sont pas essentielles à l'intégralité de l'ouvrage, mais qui sont toutefois jugées pertinentes. On oppose la préface, située dans les liminaires, à la postface.»  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
-  </genre:ParatextualGenre>
+  </genre:PartialForm>
   <genre:OperaGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#opera">
     <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PerformanceMedium"/>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026976"/>
@@ -1521,7 +1521,7 @@ s épîtres.]]></skos:definition>
     <rdfs:label xml:lang="en">melodrama</rdfs:label>
     <skos:definition xml:lang="en">"A dramatic form characterized by excessive sentiment, exaggerated emotion, sensational and thrilling action, and an artificially happy ending. Melodramas originally referred to romantic plays featuring music, singing, and dancing, but by the eighteenth century they connoted simplified and coincidental plots, bathos, and happy endings. These melodramatic traits are present in Gothic novels, western stories, popular films, and television crime shows, to name but a few more recent examples."  <![CDATA[(<a href="cwrc:509015ff-7641-473e-94c5-688e06952bb7">L. K Wheeler, 2017</a>)]]></skos:definition>
   </genre:DramaticGenre>
-  <genre:ParatextualGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#epilogue">
+  <genre:PartialForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#epilogue">
     <skos:definition xml:lang="fr">«L’épilogue (du grec επι (epi) : au-dessus et λογος (logos) : discours) est la dernière partie, la conclusion d’une œuvre (discours, roman, film, pièce théâtrale, etc.). Il désigne plus particulièrement au théâtre classique un discours récapitulatif à la fin de la pièce. Il est surtout un hors-d’œuvre, un adieu au public. La Fontaine, croyant avoir fini son œuvre des Fables au VIe livre, prend congé du lecteur dans cet épilogue : Bornons ici cette carrière,Les longs ouvrages me font peur ;Loin d’épuiser une matière,On n’en doit prendre que la fleur»… <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
     <rdfs:label xml:lang="fr">épilogue</rdfs:label>
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
@@ -1530,7 +1530,7 @@ s épîtres.]]></skos:definition>
     <rdfs:label xml:lang="en">epilogue</rdfs:label>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2018026101"/>
     <skos:definition xml:lang="en">"A conclusion added to a literary work such as a novel, play, or long poem. It is the opposite of a prologue. Often, the epilogue refers to the moral of a fable. Sometimes, it is a speech made by one of the actors at the end of a play asking for the indulgence of the critics and the audience. Shakespeare's A Midsummer Night's Dream contains one of the most famous epilogues. Contrast with prologue. Do not confuse the term with eclogue."  <![CDATA[(<a href="cwrc:509015ff-7641-473e-94c5-688e06952bb7">L. K Wheeler, 2017</a>)]]></skos:definition>
-  </genre:ParatextualGenre>
+  </genre:PartialForm>
   <genre:RecordForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#bibliographicRecord">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">bibliographic record</rdfs:label>
@@ -1723,14 +1723,14 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="fr">Écrit au sujet de la politique, généralement écrit dans un ton persuasif en faveur d'un parti ou d'une cause politique particulière.</skos:definition>
     <rdfs:label xml:lang="fr">écrits politiques</rdfs:label>
   </genre:PoliticalGenre>
-  <genre:ParatextualGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#paratext">
-    <skos:definition xml:lang="en">"Text surrounding the main body of a written work that contains supplementary information about the body, such as a preface, afterword, footnote, or glossary."  <![CDATA[(<a href="#cwrc:4c227091-6bf0-4325-b846-9733fae19e61">Oxford, 2015</a>)]]></skos:definition>
+  <genre:PartialForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#paratext">
+    <skos:definition xml:lang="en">A part of or supplement to a work that is structurally associated with the main body of a cultural work that "contains supplementary information about the body but is not necessariy colocated with it, such as a preface, annotation, afterword, footnote, or glossary."<![CDATA[(<a href="#cwrc:4c227091-6bf0-4325-b846-9733fae19e61">Oxford, 2015</a>)]]></skos:definition>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">paratext</rdfs:label>
     <rdfs:label xml:lang="fr">paratextes</rdfs:label>
     <dcterms:references rdf:resource="https://books.google.ca/books?id=s4FMCAAAQBAJ&amp;printsec=frontcover&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false"/>
-  </genre:ParatextualGenre>
+  </genre:PartialForm>
   <genre:IntertextualGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#satire">
     <skos:definition xml:lang="en">"Literary compositions in verse or prose, or ideas expressed as the subjects of art works, in which human folly and vice are held up to scorn, derision, or ridicule."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
     <skos:definition xml:lang="fr">«Une satire est une œuvre dont l'objectif est une critique moqueuse de son sujet (des individus, des organisations, des États, etc.), souvent dans l'intention de provoquer, prévenir un changement ou de porter à réfléchir. On attribue généralement la paternité de ce genre littéraire (satura, c'est-à-dire pot-pourri) au poète archaïque latin Lucilius.»  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
@@ -1748,14 +1748,14 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">informational writing</rdfs:label>
   </genre:InformationalGenre>
-  <genre:ParatextualGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#introduction">
+  <genre:PartialForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#introduction">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">introduction</rdfs:label>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Penguin Dictionary of Literary Terms &amp; Literary Theory, 4th ed.</rdfs:comment>
     <rdfs:label xml:lang="fr">introduction</rdfs:label>
     <skos:definition xml:lang="fr">Section d'ouverture d'un texte, souvent sous forme d'essai, qui donne généralement un aperçu du propos du texte et explique les raisons pour lesquelles l'auteur.e l'a écrit.</skos:definition>
     <skos:definition xml:lang="en">"The opening section of a text, often in the form of an essay, that usually provides an overview of the text's subject matter and explains the author's reason for writing."  <![CDATA[(<a href="#cwrc:2f09376c-f784-4a46-9f04-5a21aa311f27">Penguin, 1999</a>)]]></skos:definition>
-  </genre:ParatextualGenre>
+  </genre:PartialForm>
   <genre:ComedicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#comedy">
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="fr">"Genre concernant les formes du théâtre, de la littérature et de l'improvisation qui ont pour principal objectif de divertir et de provoquer le rire. La comédie est généralement opposée à la tragédie et peut prendre soit la forme d'une critique sociale à travers la satire et l'humour d'esprit politique ou intellectuel, soit la forme de spectacle pur à travers la farce ou le burlesque." </skos:definition>
@@ -2068,7 +2068,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Journalism"/>
     <rdfs:label xml:lang="fr">journalisme</rdfs:label>
   </genre:JournalisticGenre>
-  <genre:ParatextualGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#annotation">
+  <genre:PartialForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#annotation">
     <rdfs:label xml:lang="fr">annotation</rdfs:label>
     <skos:definition xml:lang="fr">"Notes ajoutées en tant que commentaires ou explications, comme celles qui accompagnent les entrées d'une bibliographie, une liste de lecture, ou un catalogue voué à décrire, expliquer ou évaluer la publication à laquelle on se réfère. " </skos:definition>
     <skos:definition xml:lang="en">"Notes added as comment or explanation, such as those accompanying an entry in a bibliography, reading list, or catalogue intended to describe, explain, or evaluate the publication referred to."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
@@ -2076,7 +2076,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">annotation</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300026100"/>
-  </genre:ParatextualGenre>
+  </genre:PartialForm>
   <genre:ChildrensLiteratureGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#nurseryRhyme">
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300202593"/>
@@ -2095,7 +2095,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="en">"Solemn declarations, written or verbal; usually made orally by a witness under oath in response to interrogation by a lawyer or authorized public official, then reduced to writing for the record."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
   </genre:NarrativeGenre>
-  <genre:ParatextualGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#prologue">
+  <genre:PartialForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#prologue">
     <skos:definition xml:lang="en">"(1) In original Greek tragedy, the prologue was either the action or a set of introductory speeches before the first entry (parados) of the chorus. Here, a single actor's monologue or a dialogue between two actors would establish the play's background events. (2) In later literature, a prologue is a section of any introductory material before the first chapter or the main material of a prose work, or any such material before the first stanza of a poetic work."  <![CDATA[(<a href="cwrc:509015ff-7641-473e-94c5-688e06952bb7">L. K Wheeler, 2017</a>)]]></skos:definition>
     <rdfs:label xml:lang="fr">prologue</rdfs:label>
     <skos:definition xml:lang="fr">«Le prologue (du grec προ (pro) : avant, et λóγος (logos) : discours) est la première partie d’une œuvre littéraire ou la première scène d’une œuvre dramatique, faisant office de préface, d’introduction ou de préambule, et servant à situer les personnages et l’action de l’œuvre en exposant divers points essentiels à connaître pour l’intelligence de la pièce.»  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
@@ -2104,7 +2104,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2018026101"/>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Prologue"/>
-  </genre:ParatextualGenre>
+  </genre:PartialForm>
   <genre:MusicalNotationForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#notatedMusic">
     <skos:definition xml:lang="en">"Sheet music is a handwritten or printed form of music notation that uses modern musical symbols to indicate the pitches (melodies), rhythms and/or chords of a song or instrumental musical piece. Like its analogs – printed books or pamphlets in English, Arabic or other languages – the medium of sheet music typically is paper (or, in earlier centuries, papyrus or parchment), although the access to musical notation since the 1980s has included the presentation of musical notation on computer screens and the development of scorewriter computer programs that can notate a song or piece electronically, and, in some cases, "play back" the notated music using a synthesizer or virtual instruments. Use of the term "sheet" is intended to differentiate written or printed forms of music from sound recordings (on vinyl record, cassette, CD), radio or TV broadcasts or recorded live performances, which may capture film or video footage of the performance as well as the audio component. In everyday use, "sheet music" (or simply "music") can refer to the print publication of commercial sheet music in conjunction with the release of a new film, TV show, record album, or other special or popular event which involves music. The first printed sheet music made with a printing press was made in 1473. Sheet music is the basic form in which Western classical music is notated so that it can be learned and performed by solo singers or instrumentalists or musical ensembles. Many forms of traditional and popular Western music are commonly learned by singers and musicians "by ear", rather than by using sheet music (although in many cases, traditional and pop music may also be available in sheet music form). "Score" is a common alternative (and more generic) term for sheet music, and there are several types of scores, as discussed below. The term "score" can also refer to theatre music, orchestral music or songs written for a play, musical, opera or ballet, or to music or songs written for a television programme or film; for the last of these, see Film score." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -2214,11 +2214,11 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">camp</rdfs:label>
   </genre:DramaticGenre>
-  <genre:ParatextualGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#appendix">
+  <genre:PartialForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#appendix">
     <skos:definition xml:lang="en">"An addendum, in general, is an addition required to be made to a document by its author subsequent to its printing or publication. It comes from the Latin verbal phrase addendum est, being the gerundive form of the verb addo, addere, addidi, additum, "to give to, add to", meaning "(that which) must be added". Addenda is from the plural form addenda sunt, "(those things) which must be added". (See also memorandum, agenda, corrigenda.)" <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">appendix</rdfs:label>
-  </genre:ParatextualGenre>
+  </genre:PartialForm>
   <genre:MusicalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#music">
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026952"/>
@@ -2334,7 +2334,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014027103"/>
   </genre:SongGenre>
-  <genre:ParatextualGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#dedication">
+  <genre:PartialForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#dedication">
     <skos:definition xml:lang="en">"A short bit of text conventionally appearing before the start of a novel or poem in which the author or poet addresses some individual, invoking his or her gratitude or thanks to that individual. Frequently, the dedication is to a spouse, friend, loved one, child, mentor, or individual who inspired the work. Several of the Inklings dedicated specific fictional works to each other (or in the case of C.S. Lewis, to children of fellow Inklings). Among scholars, one of the most significant types of dedications is a festschrift. A festschrift is a collection of essays or studies in book form, dedicated to a former teacher or professor in his or her advanced age. The individual scholarly writings come from his or her students, who typically collaborate to organize the work and contact the publisher, and they present the collection to the teacher upon its publication."  <![CDATA[(<a href="cwrc:509015ff-7641-473e-94c5-688e06952bb7">L. K Wheeler, 2017</a>)]]></skos:definition>
     <skos:definition xml:lang="fr">«Une dédicace est une épître ou simple inscription placée par un auteur en tête d’un livre pour mettre son œuvre sous le patronage d’une personne illustre ou influente, ou pour témoigner de ses sentiments de gratitude ou d’amitié, ou enfin, à certaines époques, pour en tirer profit.»  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -2342,7 +2342,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:label xml:lang="fr">dédicace</rdfs:label>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Dedication_(publishing)"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
-  </genre:ParatextualGenre>
+  </genre:PartialForm>
   <genre:ScholarlyGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#phdThesis">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">phd thesis</rdfs:label>
@@ -3213,13 +3213,6 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">Childrens Literature Genre</rdfs:label>
     <skos:definition xml:lang="en">Indicates works  produced for children and young adults, whether fictional or informational.<![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
   </owl:Class>
-  <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#ParatextualGenre">
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
-    <skos:definition xml:lang="en">Indicates "the textual elements associated with a book that are apart from the text of the work itself." </skos:definition>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">Paratextual Genre</rdfs:label>
-    <skos:closeMatch rdf:resource="http://id.loc.gov/authorities/subjects/sh2006003881"/>
-  </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#ComedicGenre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Comedic Genre</rdfs:label>
@@ -3396,7 +3389,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300311832"/>
     <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Genre"/>
     <skos:altLabel xml:lang="en">non-fiction</skos:altLabel>
-    <skos:definition xml:lang="en">Indicates genres, often considered nonfictional, designed to convey specific content on a wide range of topics, although that content is not necessarily factual.<![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
+    <skos:definition xml:lang="en">Indicates genres, often considered nonfictional, in a range of media and forms, designed to convey specific content on a wide range of topics, although that content is not necessarily factual.<![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#IllustratedForm">
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300054200"/>
