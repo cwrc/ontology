@@ -8555,12 +8555,33 @@
   </owl:ObjectProperty>
 
 
+  <owl:Class rdf:ID="Award">
+    <rdfs:label xml:lang="en">award</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">An award is something given to a person, a group of people, like a sports team, or an organization in recognition of their excellence in a certain field. An award may be accompanied by a trophy, title, certificate, commemorative plaque, medal, badge, pin, or ribbon. The accompanying item may vary according to purpose. </skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <skos:closeMatch rdf:resource="https://en.wikipedia.org/wiki/Award_or_decoration"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
   <owl:Class rdf:ID="EducationalAward">
     <rdfs:label xml:lang="en">educational award</rdfs:label>
-    <rdfs:label xml:lang="fr">récompenses scolaires</rdfs:label>
+    <rdfs:label xml:lang="fr">récompense scolaire</rdfs:label>
     <skos:definition xml:lang="en">An award, financial, material, or immaterial, associated with a person's education at any level.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="#Award"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
 
+  <owl:Class rdf:ID="LiteraryAward">
+    <rdfs:label xml:lang="en">literary award</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">A literary award is an award presented in recognition of a particularly lauded literary piece or body of work. It is normally presented to an author.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="#Award"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Literary_award"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -8729,7 +8750,6 @@
     <rdfs:label xml:lang="fr">oeuvre</rdfs:label>
     <skos:definition xml:lang="en">Indicates the  works of an author or other creative practioner regarded collectively.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -8766,7 +8786,7 @@
 
   <owl:Class rdf:ID="Fellowship">
     <rdfs:label xml:lang="en">fellowship</rdfs:label>
-    <rdfs:label xml:lang="fr">programme de bourse/rdfs:label>
+    <rdfs:label xml:lang="fr">programme de bourse</rdfs:label>
     <skos:definition xml:lang="en">An educational award or academic position usually associated with research or advanced standing in a field and sometimes involving labour such as teaching.</skos:definition>
     <skos:definition xml:lang="fr">Récompense ou position académique généralement reliée à la recherche ou à un parcours avancé dans un champ disciplinaire, impliquant parfois un emploi d'enseignant·e.</skos:definition>
     <rdfs:subClassOf rdf:resource="#EducationalAward"/>
