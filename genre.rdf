@@ -389,6 +389,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">hagiography</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300201063"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
   </genre:ReligiousGenre>
   <genre:MovingMedium rdf:about="http://sparql.cwrc.ca/ontologies/genre#videoRecording">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -686,6 +687,7 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">sermon</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PerformanceMedium"/>
   </genre:ReligiousGenre>
   <genre:DidacticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#bestiary">
     <rdfs:label xml:lang="fr">bestiaire</rdfs:label>
@@ -745,6 +747,7 @@
     <skos:definition xml:lang="fr">Chacun des cent cinquante poèmes religieux, jadis attribués au roi David, qui composent l'un des livres de la Bible et sont récités ou chantés dans les liturgies juives ou chrétiennes (abrév. ps.).</skos:definition>
     <rdfs:label xml:lang="fr">psaume</rdfs:label>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2015026079"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#SongGenre"/>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Dictionnaire Vivant de la Langue Française.</rdfs:comment>
     <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PoeticGenre"/>
     <skos:definition xml:lang="en">"Sacred songs that may be sung or recited in religious worship, particularly those contained in the Book of Psalms in the Old Testament and Hebrew Scriptures."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
@@ -1483,6 +1486,7 @@ s épîtres.]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2015026029"/>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#DidacticGenre"/>
   </genre:ReligiousGenre>
   <genre:BookForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#book">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1551,6 +1555,7 @@ s épîtres.]]></skos:definition>
     <skos:definition xml:lang="en">"Religious texts (also known as scripture, or scriptures, from the Latin scriptura, meaning "a writing" ) are the texts which various religious traditions consider to be sacred, or central to their religious tradition. Religious texts may be used to evoke a deeper connection with the divine, convey spiritual truths, promote mystical experience, foster communal identity, and to guide individual and communal spiritual practice. Many religions and spiritual movements believe that their sacred texts are divinely or supernaturally revealed or inspired. The monotheistic faiths view their texts as the "Word of God" and divine revelation." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">scripture</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
   </genre:ReligiousGenre>
   <genre:DramaticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#revengeComedy">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1686,6 +1691,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">"Writing, typically in the form of a prayer or a song, to be used by a particular religious community for the purpose of worship."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="fr">«Cet article concerne les cérémonies formant le culte public et officiel institué par une église. Pour l'obligation fiscale pesant sur les riches en Grèce antique, voir liturgie (Grèce antique). Le mot liturgie (du grec λειτουργία / leitourgía ; « le service du peuple ») est l'ensemble des rites, cérémonies et prières dédiés au culte d'une divinité religieuse, tels qu'ils sont définis selon les règles éventuellement codifiées dans les textes sacrés ou la tradition. Ce terme s'applique le plus souvent à la religion chrétienne où il désigne un culte public et officiel institué par une église.»  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PerformanceMedium"/>
   </genre:ReligiousGenre>
   <genre:ScriptForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#script">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -2650,6 +2656,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">biblical paraphrase</rdfs:label>
     <skos:definition xml:lang="en">A work that rewords the text of the Bible, often to improve clarity or to make it accessible to a wider audience.</skos:definition>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
   </genre:ReligiousGenre>
   <genre:DramaticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#improvisation">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -2804,6 +2811,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Christian_devotional_literature"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2015026057"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
   </genre:ReligiousGenre>
   <genre:AutobiographicalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#sexualAwakeningFiction">
     <rdfs:label xml:lang="fr">éveil à la sexualité</rdfs:label>
@@ -2921,6 +2929,7 @@ Closely related to the industrial novel because of its interest in the impact of
   <genre:ReligiousGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#sundaySchoolStory">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">sunday school story</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ChildrensLiteratureGenre"/>
   </genre:ReligiousGenre>
   <genre:ThreeDimensionalMedium rdf:about="http://sparql.cwrc.ca/ontologies/genre#archivalMaterial">
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300379505"/>
