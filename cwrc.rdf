@@ -167,7 +167,7 @@
     <cc:attributionURL rdf:resource="http://www.cwrc.ca/"/>
     <dcterms:publisher rdf:resource="#cwrc"/>
     <dcterms:creator rdf:resource="#JohnSimpson"/>
-    <dcterms:creator rdf:resource="#AbiLemak"/>
+    <dcterms:creator rdf:resource="#AbigelLemak"/>
     <dcterms:creator rdf:resource="#ColinFaulkner"/>
     <dcterms:creator rdf:resource="#RobWarren"/>
     <dcterms:creator rdf:resource="#JadePenancier"/>
@@ -207,22 +207,34 @@
     <foaf:name xml:lang="en">Members of the Orlando Project.</foaf:name>
     <foaf:name xml:lang="fr">Les membres du projet Orlando</foaf:name>
     <foaf:homepage rdf:resource="http://orlando.cambridge.org/public/svDocumentation?formname=t&amp;d_id=CREDITSANDACKNOWLEDGEMENTS"/>
-    <skos:definition xml:lang="en">The collection of all persons having written entries for The Orlando Project.</skos:definition>
-    <skos:definition xml:lang="fr">La collection de tous les auteurs du Projet Orlando.</skos:definition>
+    <skos:definition xml:lang="en">The collective of all persons having written entries for The Orlando Project.</skos:definition>
+    <skos:definition xml:lang="fr">La collective de tous les auteurs du Projet Orlando.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="#unidentifiedTagger">
+    <rdfs:label xml:lang="en">Unidentified tagger</rdfs:label>
+    <rdfs:label xml:lang="fr">Tagueur non identifié(e)</rdfs:label>
+    <rdf:type rdf:resource="#NaturalPerson"/>
+    <foaf:name xml:lang="en">Unidentified tagger.</foaf:name>
+    <foaf:name xml:lang="fr">Tagueur non identifié(e)</foaf:name>
+    <skos:definition xml:lang="en">A human tagger whose identity has not been recorded, for example within legacy datasets.</skos:definition>
+    <skos:definition xml:lang="fr">Un encodeur humain non identifié par le système, par exemple dans des jeux de données hérités.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </skos:Concept>
 
   <owl:AnnotationProperty rdf:ID="CompetencyQuestion">
     <rdfs:label xml:lang="en">competency question</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">question de compétence</rdfs:label>
     <skos:definition xml:lang="en">A question that can be asked of the ontology and will be used to specify the high level requirements of the CWRC Ontology allowing decisions about structure and components to be made.</skos:definition>
-    <skos:definition xml:lang="fr">Une question qui peut être posée à l’ontologie et servira à déterminer les exigences ontologiques de haut niveau du CSÉC, permettant ainsi de prendre des décisions sur sa structure et ses composants.</skos:definition>
+    <skos:definition xml:lang="fr">Une question qui peut être posée à l’ontologie et servira à déterminer les exigences ontologiques de haut niveau du CSÉC, permettant ainsi de prendre des décisions sur sa structure et ses composantes.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:AnnotationProperty>
 
-  
+
 
   <owl:ObjectProperty rdf:about="#hasIDependencyOn">
     <rdfs:label xml:lang="en">has ID dependency on</rdfs:label>
@@ -233,11 +245,11 @@
     <rdfs:range rdf:resource="#Context"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  
+
   <owl:ObjectProperty rdf:about="#rangeIncludes">
     <rdfs:label xml:lang="en">range includes</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Specifies a particular class type that is acceptable to use for a relation's range</skos:definition>
+    <skos:definition xml:lang="en">Specifies a particular class type that is acceptable to use for a relation's range.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -247,7 +259,7 @@
   <owl:ObjectProperty rdf:about="#domainIncludes">
     <rdfs:label xml:lang="en">domain includes</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Specifies a particular class type that is acceptable to use for a relation's domain</skos:definition>
+    <skos:definition xml:lang="en">Specifies a particular class type that is acceptable to use for a relation's domain.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -257,7 +269,7 @@
   <owl:ObjectProperty rdf:about="#hasFunctionalRelation">
     <rdfs:label xml:lang="en">has functional relation</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Relates terms within the CWRC ontology to external terms that are semantically incommensurate but that may be pragmatically related for processing purposes such as search and retrieval. For example, the @@#Gender@@ instance @@#woman@@ relates functionally to appearances:SexISO5218-2 because important datasets employ the ISO5218 value "female". hasFunctionalRelation can be leveraged by search tools to broaden the results returned.</skos:definition>
+    <skos:definition xml:lang="en">Relates terms within the CWRC ontology to external terms that are semantically incommensurate but that may be pragmatically related for processing purposes such as search and retrieval. For example, the @@#Gender@@ instance @@#woman@@ relates functionally to appearances:SexISO5218-2 because important datasets employ the ISO5218 value "female". @@#hasFunctionalRelation can be leveraged by search tools to broaden the results returned.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -280,16 +292,16 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  
+
   <owl:Class rdf:ID="ChangeSet">
     <rdfs:label xml:lang="en">change set</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">change set</rdfs:label> 
     <skos:definition xml:lang="en">A change set represents changes or additions made to the ontology by ontology editors or through users where instances were affected. Change sets will also be used to translate and contain Orlando recordInfo instances.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un change set représente l'ensemble des modifications ou des ajouts apportés à l'ontologie par les éditeur·ice·s de l'ontologie ou par les utilisateur·ice·s qui ayant affecté des instances. Les change set seront également utilisés pour traduire et contenir les instances recordInfo d'Orlando.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="https://www.w3.org/2006/time#Instant"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    
+
     <prov:wasDerivedFrom rdf:resource="http://vocab.org/changeset/"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:Class>
@@ -327,7 +339,42 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
-  
+  <oa:Motivation rdf:about="#citing">
+  <rdfs:label xml:lang="en">citing</rdfs:label>
+  <rdfs:label xml:lang="fr"/>
+  <skos:definition xml:lang="en">A motivation for W3C Web Annotations for when the user is identifying a citation within a Target. The Body of the Annotation will typically be the item being cited.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/ns/oa#Motivation"/>
+  <!-- This must be provided to at least one of the existing motivations per OA -->
+  <skos:broader rdf:resource="https://www.w3.org/TR/annotation-vocab/#commenting"/> 
+</oa:Motivation>
+
+  <owl:Class rdf:ID="Note">
+    <rdfs:label xml:lang="en">note</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">A note or annotation, such as a footnote, endnote, or hypertext comment, which may be part of an object, contained in metadata describing it (as for a non-textual object), or linked to it, for instance via a Web Annotation.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="NoteInternal">
+    <rdfs:label xml:lang="en">note (internal)</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">A note or annotation intended for internal purposes having to do with such matters as research, composition, or workflow, and not intended for publication.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Note"/>
+    <rdfs:subClassOf rdf:resource="#Note"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="NoteScholarly">
+    <rdfs:label xml:lang="en">note (scholarly)</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">A scholarly note or annotation intended for publication, usually containing ancillary or supplementary content, which may take various forms such as a footnote, endnote, or pop-up note.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Note"/>
+    <rdfs:subClassOf rdf:resource="#Note"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:Class>
 
   <owl:Class rdf:ID="NaturalPerson">
     <rdfs:label xml:lang="en">natural person</rdfs:label>
@@ -382,24 +429,25 @@
   </owl:ObjectProperty>
 
 
-  
-
   <owl:Class rdf:ID="Certainty">
     <rdfs:label xml:lang="en">certainty</rdfs:label>
     <rdfs:label xml:lang="fr">probabilité</rdfs:label>
-    <skos:definition xml:lang="en">Certainty describes the quality of a fact in the ontology. It is used primarily to represent information that may not be fact.</skos:definition>
-    <skos:definition xml:lang="fr">La probabilité décrit la qualité d'un fait dans l'ontologie. Elle est principalement utilisée pour représenter des informations qui peuvent être des faits non avérés.</skos:definition>
+    <skos:definition xml:lang="en">Indicates the degree of certainty associated with some aspect of an assertion, description, identification, or value within a dataset. Equivalent to the "teidata.certainty" range of values of the Text Encoding Initiative.</skos:definition>
+    <skos:definition xml:lang="fr">La probabilité décrit la qualité d'une affirmation dans les données.</skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Text Encoding Initiative's P5: Guidelines for Electronic Text Encoding and Interchange.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <skos:closeMatch rdf:resource="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.certainty.html"/>
+    <skos:closeMatch rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.certainty.html"/>
+    <prov:wasDerivedFrom rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.certainty.html"/>
   </owl:Class>
 
   <owl:ObjectProperty rdf:ID="hasCertainty">
     <rdfs:label xml:lang="en">has certainty</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Associates a level of @@#Certainty@@ for a source</skos:definition>
+    <skos:definition xml:lang="en">Associates a level of @@#Certainty@@ with an assertion, description, identification, or value.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Text Encoding Initiative's P5: Guidelines for Electronic Text Encoding and Interchange. Equivalent to the "Certainty" element of the Text Encoding Initiative.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="#Certainty"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -408,19 +456,20 @@
   <owl:ObjectProperty rdf:ID="certaintyOf">
     <rdfs:label xml:lang="en">certainty of</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Links a level of @@#Certainty@@ to a source</skos:definition>
+    <skos:definition xml:lang="en">Links a level of @@#Certainty@@ to an assertion, description, identification, or value. Related to the "Certainty" element of the Text Encoding Initiative.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
     <rdfs:domain rdf:resource="#Certainty"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <owl:inverseOf rdf:resource="#hasCertainty"/>
+    <skos:closeMatch rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-certainty.html"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasTimeCertainty">
     <rdfs:label xml:lang="en">has time certainty</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Indicates the degree of certainty or precision of the temporal value or values associated with a time-based phenomenon such as an event or birth date</skos:definition>
+    <skos:definition xml:lang="en">Indicates the degree of certainty or precision of the temporal value or values associated with a time-based phenomenon such as an event or birth date.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:subPropertyOf rdf:resource="#hasCertainty"/>
@@ -441,17 +490,17 @@
 
   <sem:TimeType rdf:about="#PunctiveTime">
     <rdfs:label xml:lang="en">punctive time</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">temps ponctuel</rdfs:label>
     <skos:definition xml:lang="en">Indicates a point or location in time. Punctive time can be used to anchor an event that has a duration, such as a wedding or an election. It may be represented by various levels of granularity, for instance a second or a year, or by two dates between which an event was known to occur.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique un point ou un emplacement dans le temps. Le temps ponctuel peut être utilisé pour ancrer un événement qui a une durée, comme un mariage ou une élection. Il peut être représenté par différents niveaux de granularité, par exemple une seconde ou une année, ou par deux dates entre lesquelles un événement s'est produit.</skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </sem:TimeType>
   <sem:TimeType rdf:about="#IntervalTime">
     <rdfs:label xml:lang="en">interval time</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">intervalle</rdfs:label>
     <skos:definition xml:lang="en">Indicates a span of time, usually represented in the form of a start and end date.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique une période de temps, généralement représentée par une date de début et de fin.</skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </sem:TimeType>
@@ -459,40 +508,85 @@
   <cwrc:Certainty rdf:about="#lowCertainty">
     <rdfs:label xml:lang="en">low certainty</rdfs:label>
     <rdfs:label xml:lang="fr">faible probabilité</rdfs:label>
-    <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that represents cases where where a fact is considered of low quality</skos:definition>
+    <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that represents cases where where an assertion, description, identification, value, or measurement is considered of low quality.  Equivalent to the "medium" value for certainty or precision of the Text Encoding Initiative.</skos:definition>
     <skos:definition xml:lang="fr">Une valeur de probabilité prédéfinie utilisée dans le cas où un fait est considéré comme une information de basse qualité.</skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="#Precision"/>
+    <prov:wasDerivedFrom rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.certainty.html"/>
   </cwrc:Certainty>
 
   <cwrc:Certainty rdf:about="#mediumCertainty">
     <rdfs:label xml:lang="en">medium certainty</rdfs:label>
     <rdfs:label xml:lang="fr">probabilité moyenne</rdfs:label>
-    <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that represents cases where where a fact is considered of medium quality</skos:definition>
+    <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that represents cases where where an assertion, description, identification, value, or measurement is considered of medium quality. Equivalent to the "medium" value for certainty or precision  of the Text Encoding Initiative.</skos:definition>
     <skos:definition xml:lang="fr">Une valeur de probabilité prédéfinie utilisée dans le cas où un fait est considéré comme une information de qualité moyenne.</skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="#Precision"/>
+    <prov:wasDerivedFrom rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.certainty.html"/>
   </cwrc:Certainty>
 
   <cwrc:Certainty rdf:about="#highCertainty">
     <rdfs:label xml:lang="en">high certainty</rdfs:label>
     <rdfs:label xml:lang="fr">forte probabilité</rdfs:label>
-    <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that represents cases where where a fact is considered of high quality</skos:definition>
+    <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that represents cases where where an assertion, description, identification, value, or measurement is considered of high quality.  Equivalent to the "high" value for certainty or precision of the Text Encoding Initiative.</skos:definition>
     <skos:definition xml:lang="fr">Une valeur de probabilité prédéfinie utilisée dans le cas où un fait est considéré comme une information de haute qualité.</skos:definition>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="#Precision"/>
+    <prov:wasDerivedFrom rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.certainty.html"/>
   </cwrc:Certainty>
 
   <cwrc:Certainty rdf:about="#unknownCertainty">
     <rdfs:label xml:lang="en">unknown certainty</rdfs:label>
     <rdfs:label xml:lang="fr">probabilité inconnue</rdfs:label>
-    <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that is used when one does not want to assert an opinion on certainty</skos:definition>
+    <skos:definition xml:lang="en">A predefined value of @@#Certainty@@ that is used when one does not want to assert an opinion on certainty or precision, or the degree of certainty or precision is not known. Equivalent to the "unknown" attribute value for certainty of the Text Encoding Initiative.</skos:definition>
     <skos:definition xml:lang="fr">Une valeur de probabilité prédéfinie utilisée lorsque l'on ne veut pas exprimer d'opinion sur la probabilité.</skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Text Encoding Initiative's P5: Guidelines for Electronic Text Encoding and Interchange.</rdfs:comment>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="#Precision"/>
+    <prov:wasDerivedFrom rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.certainty.html"/>
   </cwrc:Certainty>
 
+<owl:Class rdf:ID="Precision">
+    <rdfs:label xml:lang="en">precision</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates the numerical accuracy or precision associated with some aspect of a value, measurement, or identification. For example, with respect to a location, it may indicate how precisely a place being referenced is indicated by the latitude and longitude or the place identifier provided.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Text Encoding Initiative's P5: Guidelines for Electronic Text Encoding and Interchange.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <skos:closeMatch rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-precision.html"/>
+    <prov:wasDerivedFrom rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-precision.html"/>
+  </owl:Class>
 
+  <owl:ObjectProperty rdf:ID="hasPrecision">
+    <rdfs:label xml:lang="en">has precision</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Associates a level of @@#Precision@@ with a value. measurement, or identification.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Text Encoding Initiative's P5: Guidelines for Electronic Text Encoding and Interchange.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="#Precision"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="precisionOf">
+    <rdfs:label xml:lang="en">precision of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Links a level of @@#Precision@@ to a source</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="#Precision"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <owl:inverseOf rdf:resource="#hasPrecision"/>
+    <skos:closeMatch rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-precision.html"/>
+    <prov:wasDerivedFrom rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-precision.html"/>
+  </owl:ObjectProperty>
   
   <owl:Class rdf:ID="PoliticalClimate">
     <rdfs:label xml:lang="en">political climate</rdfs:label>
@@ -506,9 +600,9 @@
   </owl:Class>
   <owl:Class rdf:ID="LiteraryClimate">
     <rdfs:label xml:lang="en">literary climate</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">environnement littéraire</rdfs:label>
     <skos:definition xml:lang="en">An event associated with the climate for literature and writing, broadly conceived, ranging from publication or performance events to information about print technologies and copyright.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un évènement associé à l'environnement littéraire et à l'écriture, allant de la publication ou à la représentation d'un texte à des informations sur les techniques d'impression et sur les droits d'auteur·e.</skos:definition>
     <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -516,9 +610,9 @@
   </owl:Class>
   <owl:Class rdf:ID="BritishWomenLiteraryClimate">
     <rdfs:label xml:lang="en">british women writers literary climate</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">climat littéraire des femmes de lettres britanniques</rdfs:label>
     <skos:definition xml:lang="en">An event associated with British women writers, including the creation, publication and reception of their works, as well as the material conditions and other aspects of their lives.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un événement associé aux femmes de lettres britanniques, qui inclue la création, la publication et la réception de leurs œuvres, ainsi que les conditions matérielles et autres aspects de leur vie.</skos:definition>
     <rdfs:subClassOf rdf:resource="#LiteraryClimate"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -536,9 +630,9 @@
   </owl:Class>
   <owl:Class rdf:ID="HistoricSignificance">
     <rdfs:label xml:lang="en">historic significance</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">importance historique</rdfs:label>
     <skos:definition xml:lang="en">Indicates a very high level of significance appropriate to a historical overview.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique un très haut niveau d'importance qui est approprié pour un résumé historique.</skos:definition>
     <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -556,9 +650,9 @@
   </owl:Class>
   <owl:Class rdf:ID="DecadeSignficance">
     <rdfs:label xml:lang="en">decade significance</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">importance de décennie</rdfs:label>
     <skos:definition xml:lang="en">Indicates a low level of significance appropriate to a detailed understanding of a decade.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique un faible niveau d'importance pour la compréhension détaillée d'une décennie.</skos:definition>
     <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -566,16 +660,16 @@
   </owl:Class>
   <owl:Class rdf:ID="IndividualSignificance">
     <rdfs:label xml:lang="en">individual significance</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">importance individuelle</rdfs:label>
     <skos:definition xml:lang="en">Indicates a level of significance appropriate to an understanding of an individual person or entity.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique le niveau d'importance approprié pour la compréhension d'une personne ou d'une entité individuelle.</skos:definition>
     <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
-  
+
   <owl:Class rdf:ID="Event">
     <rdfs:label xml:lang="en">event</rdfs:label>
     <rdfs:label xml:lang="fr">évènement</rdfs:label>
@@ -696,13 +790,13 @@
 
   <owl:Class rdf:ID="LeisureContext">
     <rdfs:label xml:lang="en">leisure context</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">contexte de loisirs</rdfs:label>
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as Leisure Context provide information about and discussions of instances of the leisure and social activities of a person including hobbies, sporting life and cultural activities, for example mountain climbing or hosting a literary salon.  Notions of leisure are both gendered and classed, and vary by cultural context. This context is meant to capture a person's social life within their larger community, not simply an elite, fashionable social circle.</skos:definition>
-    
-    
-    <skos:definition xml:lang="fr"/>
+
+
+    <skos:definition xml:lang="fr">Une sous-classe importante de contexte. Les annotations entrées en tant que contexte de loisirs fournissent des informations et des discussions sur les loisirs et les activités sociales d'une personne, notamment ses hobbies, sa vie sportive et ses activités culturelles, par exemple l'escalade ou la tenue d'un salon littéraire. Les notions de loisirs dépendent à la fois du genre et de la classe sociale et varient en fonction des cultures. Ce contexte vise à rendre compte de la vie sociale d’une personne au sein de sa communauté au sens large, et non seulement de son cercle social d'élite.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -711,11 +805,11 @@
 
 <owl:Class rdf:ID="NameContext">
     <rdfs:label xml:lang="en">name context</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">contexte de nom</rdfs:label> 
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as name context provide the name or names associated with a person, at times with contextual information.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Sous-classe de contexte importante. Les annotations entrées comme contexte de nom fournissent le ou les noms associés à une personne, parfois accompagnés d'informations contextuelles. </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -773,10 +867,10 @@
 
   <owl:Class rdf:ID="AuthorialName">
     <rdfs:label xml:lang="en">authorial name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom d'auteur·e</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">A name under which a writer wrote or published.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un nom sous lequel un·e auteur·e a écrit ou publié.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -803,20 +897,20 @@
 
   <owl:Class rdf:ID="Nickname">
     <rdfs:label xml:lang="en">nickname</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom honnorifique</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">Indicates familiar, humorous, or abusive name given to a person, applied instead of or in addition to their real name. May have @@#NameType@@, @@#AbusiveName@@ or @@#HonorificName@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un nom à connotation positive qui glorifie ou honnore une personne.</skos:definition> 
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
   <owl:Class rdf:ID="AbusiveName">
     <rdfs:label xml:lang="en">abusive name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom abusif</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">A name constructed with the intent to abuse, satirize, or slander. For example, Constance Gore-Booth was known in the press by the nickname of "Red Countess" and this nickname had negative connotations.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un nom inventé dans l'intention d'abuser, de tourner en satire ou de calomnier une personne. Par exemple, Constance Gore-Booth était connue dans la presse sous le surnom de "Red Countess" qui avait une connotation négative.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -833,20 +927,20 @@
 
   <owl:Class rdf:ID="CrypticName">
     <rdfs:label xml:lang="en">cryptic name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom cryptique</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">A name deliberately obscured, as in an anagram. Cryptic names have lexical meaning such as "The Scotch Milkmaid,""A Housewife," or "A Placid Reader." </skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un nom qu'on a délibérément chercher à cacher, par un exemple dans un anagramme. Les noms cryptiques ont une signification lexicale, par exemple "The Scotch Milkmaid", "A Housewife" ou "A Placid Reader".</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
   <owl:Class rdf:ID="LocalName">
     <rdfs:label xml:lang="en">local name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom local</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">A name with a geographic connotation, for example, "Julian of Norwich."</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Nom avec une connotation géographique, par exmple "Julienne de Norwich."</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -863,20 +957,20 @@
 
   <owl:Class rdf:ID="LiteraryName">
     <rdfs:label xml:lang="en">literary name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom littéraire</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">A name applied to a writer by others, for example in reviews or at readings, which orginate in the person's status as a writer.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un nom attribué par d'autres à un·e auteur·e, par example dans des critiques ou lors de lectures, prenant son origine dans le statut d'écrivain·e de la personne.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
   <owl:Class rdf:ID="FamiliarName">
     <rdfs:label xml:lang="en">familiar name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom familier</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">A version of a name used by those familiar with a person, such as family, friends, or co-workers.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Variante du nom utilisée par les individus familiers avec une personne, telles que la famille, les ami·e·s ou les collègues.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -893,22 +987,22 @@
 
   <owl:Class rdf:ID="Birthname">
     <rdfs:label xml:lang="en">birthname</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom de naissance</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300404681"/>
     <skos:definition xml:lang="en">Indicates the name a person was assigned at birth.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique le nom assigné à la naissance.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
   <owl:Class rdf:ID="Forename">
     <rdfs:label xml:lang="en">forename</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">prénom</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300404681"/>
     <skos:definition xml:lang="en">A subject's given or baptismal name. This term is derived from the Text Encoding Initiative P5 schema 'forename' element. See also @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-forename.html@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Le nom attribué ou le nom de baptême d'une personne. Ce terme est dérivé de l'élément 'forename' du schéma P5 du Text Encoding Initiative. Voir l'élément TEI 'forename'.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -936,10 +1030,10 @@
 
   <owl:Class rdf:ID="IndexedName">
     <rdfs:label xml:lang="en">indexed name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom indexé</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">Name under which a person's work is indexed by an institution or organization.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Nom sous le travail d'une personne est indexé par une insitution ou une organisation. </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -955,10 +1049,10 @@
 
   <owl:Class rdf:ID="MarriedName">
     <rdfs:label xml:lang="en">married name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom marital</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">A surname adopted in marriage. </skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Nom de famille adopté après le mariage.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -1033,27 +1127,27 @@
 
   <owl:Class rdf:ID="AdditionalName">
     <rdfs:label xml:lang="en">additional name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom additionnel</rdfs:label>
     <skos:definition xml:lang="en">An additional name, "such as a nickname, epithet, or alias." This term is derived from the Text Encoding Initiative P5 schema for the 'addName' element. See @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-addName.html@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un nom supplémentaire, "tel qu'un surnom, une épithète ou un alias". Ce terme est dérivé du schéma Text Encoding Initiative P5 pour l'élément 'addName'. Voir l'élément TEI addName @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-addName.html@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
   <owl:Class rdf:ID="NameLink">
     <rdfs:label xml:lang="en">name link</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">particule de nom</rdfs:label>
     <skos:definition xml:lang="en">"A connecting phrase or link used within a name but not regarded as part of it, such as van der or of." This term is derived from the Text Encoding Initiative P5 schema for the 'NameLink' element. See @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-nameLink.html@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">"Une locution ou un lien de connexion utilisé dans un nom mais n'étant pas considéré comme partie intégrante de ce nom, par example van der ou de." Ce terme est dérivé du schéma P5 du Text Encoding Initiative pour l'élément 'NameLink'. Voir l'élément TEI @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-nameLink.html@@.</skos:definition> 
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
   <owl:Class rdf:ID="GenerationalName">
     <rdfs:label xml:lang="en">generational name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom générationnel</rdfs:label>
     <skos:definition xml:lang="en">A name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named." This term is derived from the Text Encoding Initiative P5 schema for the 'genName' element. See @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-genName.html@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Composant de nom utilisé pour distinguer des noms similaires, en fonction de l'âge ou de la génération relatifs aux personnes portant un nom. "Ce terme est dérivé du schéma P5 du Text Encoding Initiative pour l'élément 'genName'. Voir l'élément TEI genName @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-genName.html@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -1062,11 +1156,11 @@
 
   <owl:Class rdf:ID="OccupationContext">
     <rdfs:label xml:lang="en">occupation context</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">contexte biographique</rdfs:label>
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as occupation provide information about and discussions of positions and activities significant to a person's life, including paid, unpaid, and voluntary work both beyond and within the home. Although writing as a career sometimes overlaps with occupation, literary activities are often described in writing contexts.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Contexte Biographique est une sous-classe majeure de contexte. Les annotations entrées comme contexte biographique fournissent des informations et des discussions sur la biographie ou la vie personnelle d'un individu, grâce aux propriétés, aux relations biographiques et  aux sous-classes de contexte biographique, telles que le contexte de naissance, le contexte de forme culturelle ou le contexte professionnel.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -7803,12 +7897,12 @@
 
 
 
-  
+
   <owl:Class rdf:ID="Credential">
     <rdfs:label xml:lang="en">credential</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">certificat</rdfs:label>
     <skos:definition xml:lang="en">Academic or educational qualification, such as a certificate or degree, awarded by an educational institution.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Titre académique ou scolaire, tel qu'un certificat ou un diplôme, délivré par un établissement d'enseignement.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -8357,7 +8451,7 @@
     <skos:definition xml:lang="en">Indicates that the student was educated by the entity in question,—an instructor, an educational institution, or a particular type of schooling.</skos:definition>
     <skos:definition xml:lang="fr">Indique que l'étudiant·e a été éduqué·e par l'entité en question (instructeur·rice, établissement éducatif,ou type d'éducation particulière).</skos:definition>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:domain rdf:resource="#School"/>
+    <rdfs:domain rdf:resource="#EducationalOrganization"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -8396,14 +8490,14 @@
     <rdfs:label xml:lang="fr">scolarisation</rdfs:label>
     <skos:definition xml:lang="en">Indicates attending or having attended for education either a particular school or a particular type of schooling.</skos:definition>
     <skos:definition xml:lang="fr"> Indique que le sujet fréquente ou a fréquenté un établissement éducatif en particulier ou a reçu une forme d'enseignement spécifique</skos:definition>
-    <rdfs:range rdf:resource="#School"/>
+    <rdfs:range rdf:resource="#EducationalOrganization"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <owl:inverseOf rdf:resource="#hasStudent"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  
+
     <owl:Class rdf:ID="EducationContext">
     <rdfs:label xml:lang="en">education context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte éducatif</rdfs:label>
@@ -8460,13 +8554,34 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  
+
+  <owl:Class rdf:ID="Award">
+    <rdfs:label xml:lang="en">award</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">An award is something given to a person, a group of people, like a sports team, or an organization in recognition of their excellence in a certain field. An award may be accompanied by a trophy, title, certificate, commemorative plaque, medal, badge, pin, or ribbon. The accompanying item may vary according to purpose. </skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <skos:closeMatch rdf:resource="https://en.wikipedia.org/wiki/Award_or_decoration"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
   <owl:Class rdf:ID="EducationalAward">
     <rdfs:label xml:lang="en">educational award</rdfs:label>
-    <rdfs:label xml:lang="fr">récompenses scolaires</rdfs:label>
+    <rdfs:label xml:lang="fr">récompense scolaire</rdfs:label>
     <skos:definition xml:lang="en">An award, financial, material, or immaterial, associated with a person's education at any level.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    
+    <rdf:type rdf:resource="#Award"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="LiteraryAward">
+    <rdfs:label xml:lang="en">literary award</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">A literary award is an award presented in recognition of a particularly lauded literary piece or body of work. It is normally presented to an author.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="#Award"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Literary_award"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -8622,9 +8737,9 @@
 
   <owl:Class rdf:ID="EducationalSubject">
     <rdfs:label xml:lang="en">educational subject</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">sujet d'étude</rdfs:label>
     <skos:definition xml:lang="en">A subject or field of study or practice. Educational subjects are typically designated by Library of Congress Subject Headings (http://id.loc.gov/authorities/subjects.html). However, given the omissions, biases, and US-centricity of this vocabulary, other terms or strings may be used.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Une matière, un domaine d'étude ou de compétence. Les sujets d'étude sont généralement désignés par les en-têtes de sujet de la Bibliothèque du Congrès (http://id.loc.gov/authorities/subjects.html). Cependant, étant donné les omissions, les partis pris et la perspective majoritairement nord-américaine de ce vocabulaire, d'autres termes ou d'autres chaînes peuvent être utilisés.</skos:definition>
     <skos:related rdf:resource="http://id.loc.gov/ontologies/bibframe/subject"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -8634,7 +8749,6 @@
     <rdfs:label xml:lang="en">oeuvre</rdfs:label>
     <rdfs:label xml:lang="fr">oeuvre</rdfs:label>
     <skos:definition xml:lang="en">Indicates the  works of an author or other creative practioner regarded collectively.</skos:definition>
-    <skos:definition xml:lang="fr"/>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -8662,9 +8776,9 @@
 
   <owl:Class rdf:ID="EducationalPrize">
     <rdfs:label xml:lang="en">educational prize</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">récompense éducative</rdfs:label>
     <skos:definition xml:lang="en">A medal or award, monetary or otherwise, presented by either an institution or person of authority to an individual who has excelled in some aspect of their education.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Une médaille ou un prix, monétaire ou autre, remis par une institution ou une personne d'autorité à un individu ayant excellé lors de son parcours scolaire.</skos:definition>
     <rdfs:subClassOf rdf:resource="#EducationalAward"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -8672,9 +8786,9 @@
 
   <owl:Class rdf:ID="Fellowship">
     <rdfs:label xml:lang="en">fellowship</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">programme de bourse</rdfs:label>
     <skos:definition xml:lang="en">An educational award or academic position usually associated with research or advanced standing in a field and sometimes involving labour such as teaching.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Récompense ou position académique généralement reliée à la recherche ou à un parcours avancé dans un champ disciplinaire, impliquant parfois un emploi d'enseignant·e.</skos:definition>
     <rdfs:subClassOf rdf:resource="#EducationalAward"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -8682,9 +8796,9 @@
 
   <owl:Class rdf:ID="EssayAward">
     <rdfs:label xml:lang="en">essay award</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">prix (travaux académiques)</rdfs:label>
     <skos:definition xml:lang="en">An award given in an educational context on the strength of the recipient's essay.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Prix attribué en contexte académique pour récompenser une production académique de qualité.</skos:definition>
     <rdfs:subClassOf rdf:resource="#EducationalAward"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -8692,9 +8806,9 @@
 
   <owl:Class rdf:ID="Bursary">
     <rdfs:label xml:lang="en">bursary</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">bourse</rdfs:label>
     <skos:definition xml:lang="en">A bursary is a monetary award made by an institution to individuals or groups of people who cannot afford to pay full fees. In return for the bursary the individual is usually obligated to be employed at the institution for the duration as the bursary.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Une bourse est une compensation monétaire octroyée par une institution à des individus ou à des groupes de personnes qui ne peuvent pas se permettre de payer l'intégralité des frais d'inscription. En contrepartie de la bourse, le/la boursier·ère doit généralement être employé·e par l'établissement pour toute la durée de la bourse.</skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Bursary"/>
     <rdfs:subClassOf rdf:resource="#EducationalAward"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -8703,20 +8817,20 @@
 
   <owl:Class rdf:ID="Exhibition">
     <rdfs:label xml:lang="en">exhibition (scholarship)</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">exposition (bourse)</rdfs:label>
     <skos:definition xml:lang="en">An exhibition is a type of scholarship award or bursary.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Une exposition est un type de bourse ou de récompense académique.</skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Exhibition_(scholarship)"/>
-    <rdfs:subClassOf rdf:resource="EducationalAward"/>
+    <rdfs:subClassOf rdf:resource="#EducationalAward"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
   <owl:Class rdf:ID="Distinction">
     <rdfs:label xml:lang="en">distinction</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">mention</rdfs:label>
     <skos:definition xml:lang="en">An educational award indicating that a person has achieved honours or distinction in their studies.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un prix éducatif indiquant qu'une personne a obtenu des honneurs ou une mention au cours de ses études.</skos:definition>
     <rdfs:subClassOf rdf:resource="#EducationalAward"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -8787,7 +8901,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  
+
 
   <owl:Class rdf:ID="Role">
     <skos:definition xml:lang="en">A role of a Person or Actor in some Event, CreativeWork, or Organisation.</skos:definition>
@@ -8804,11 +8918,11 @@
     <rdfs:label xml:lang="fr">contexte</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">The Context class provides the discursive context for assertions in the ontology. Where the assertions have been generated from a source text, Context provides the text, or the relevant snippet of a longer text, from which they have been extracted.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">La classe Contexte fournit le contexte discursif des assertions de l'ontologie. Lorsque les assertions sont générées à partir d'un texte source, le contexte fournit le texte ou un extrait de code provenant d'un texte plus long d'où ces assertations ont été extraites.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-  
+
   <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
     <rdfs:range rdf:resource="#Context"/>
   </rdf:Description>
@@ -8826,11 +8940,11 @@
 
   <owl:Class rdf:ID="HealthContext">
     <rdfs:label xml:lang="en">health context</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">contexte de santé</rdfs:label>
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as health provide information about and discussions of a person's health, both mental and physical, and associated social, political and historical factors.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Sous-classe importante de contexte. Les annotations entrées comme contexte de santé fournissent des informations sur la santé physique et mentale d'une personne ainsi que sur des facteurs sociaux, politiques et historiques associés.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -8839,7 +8953,7 @@
     <rdfs:label xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#HealthContext"/>
-    
+
     <skos:definition xml:lang="en">A subclass of @@#HealthContext@@. Annotations typed as physical health context describe aspects of a person’s bodily or physical well-being or illness.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -8847,12 +8961,12 @@
   </owl:Class>
   <owl:Class rdf:ID="MentalHealthContext">
     <rdfs:label xml:lang="en">mental health context</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">contexte de santé mentale</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#HealthContext"/>
-    
+
     <skos:definition xml:lang="en">A subclass of @@#HealthContext@@. Annotations typed as mental health context describe an aspect of a person’s mental or psychological well-being or illness.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Sous-classe de Contexte de santé. Les annotations entrées en tant que contexte de snaté mentale décrivent un aspect de du bien-être mental d'une personne ou au contraire de ses troubles psychologiques ou mentaux.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -8861,7 +8975,7 @@
     <rdfs:label xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#HealthContext"/>
-    
+
     <skos:definition xml:lang="en">A subclass of @@#HealthContext@@. Annotations typed as women 's health context describe an aspect of a person's health related to being a woman. Often closely connected to or overlapping with @@#ReproductiveHistory@@. See @@https://en.wikipedia.org/wiki/Women%27s_health@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -8968,9 +9082,9 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-  
 
-  
+
+
   <owl:Class rdf:ID="NationalHeritage">
     <rdfs:label xml:lang="en">national heritage</rdfs:label>
     <rdfs:label xml:lang="fr">héritage national</rdfs:label>
@@ -9318,7 +9432,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/iso639-1/iso639-1_Language"/>
   </owl:Class>
-  
+
   <owl:Class rdf:ID="GeographicHeritage">
     <rdfs:label xml:lang="en">geographic heritage</rdfs:label>
     <rdfs:label xml:lang="fr">héritage géographique</rdfs:label>
@@ -9552,7 +9666,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-  
+
   <cwrc:Sexuality rdf:about="#heterosexual">
     <rdfs:label xml:lang="en">heterosexuality</rdfs:label>
     <rdfs:label xml:lang="fr">hétérosexualité</rdfs:label>
@@ -9798,7 +9912,7 @@
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Jews"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#RaceColour"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-2018-05-27"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:RaceColour>
   <cwrc:RaceColour rdf:about="#eurasianRaceColour">
@@ -10378,7 +10492,7 @@
 
 
 
-  
+
   <owl:Class rdf:ID="Religion">
     <rdfs:label xml:lang="en">religion</rdfs:label>
     <rdfs:label xml:lang="fr">religion</rdfs:label>
@@ -11647,7 +11761,7 @@
   </cwrc:Religion>
 
 
-  
+
   <owl:Class rdf:ID="SocialClass">
     <rdfs:label xml:lang="en">social class</rdfs:label>
     <rdfs:label xml:lang="fr">classe sociale</rdfs:label>
@@ -11906,7 +12020,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
 
-  
+
   <owl:Class rdf:ID="PoliticalAffiliation">
     <rdfs:label xml:lang="en">political affiliation</rdfs:label>
     <rdfs:label xml:lang="fr">appartenance politique</rdfs:label>
@@ -15402,7 +15516,7 @@
   <owl:ObjectProperty rdf:ID="religionSelfReportedOf">
     <rdfs:label xml:lang="en">religious affiliation (self-reported) of</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <rdfs:subPropertyOf rdf:resource="religionOf"/>
+    <rdfs:subPropertyOf rdf:resource="#religionOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -15411,7 +15525,7 @@
   <owl:ObjectProperty rdf:ID="religionReportedOf">
     <rdfs:label xml:lang="en">religious affiliation (reported) of</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <rdfs:subPropertyOf rdf:resource="religionOf"/>
+    <rdfs:subPropertyOf rdf:resource="#religionOf"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -15487,7 +15601,7 @@
     <skos:definition xml:lang="en">Indicates some degree of sustained engagement with an organization such as a political group or literary movement. Does not necessarily denote formal membership, but rather points to clear evidence of a link with an organization without indication of more active participation: a person may have been a member of the @@#sanitaryMovement@@ or participated in a reading associated with a particular literary movement.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <owl:inverseOf rdf:resource="#hasPoliticalMembershipFrom"/>
-    <rdfs:subPropertyOf rdf:resource="hasPoliticalInvolvementIn"/>
+    <rdfs:subPropertyOf rdf:resource="#hasPoliticalInvolvementIn"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
@@ -15847,7 +15961,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  
+
   <owl:Class rdf:ID="TextLabels">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <rdfs:label xml:lang="en">textual label</rdfs:label>
@@ -15859,7 +15973,7 @@
     <skos:related rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
   </owl:Class>
 
-  
+
   <skos:Concept rdf:about="#whiteLabel">
     <rdfs:label xml:lang="en">white identity</rdfs:label>
     <rdfs:label xml:lang="fr">identité blanche</rdfs:label>
@@ -15976,7 +16090,7 @@
   </skos:Concept>
 
 
-  
+
   <owl:ObjectProperty rdf:ID="hasSocialRelationshipWith">
     <rdfs:label xml:lang="en">has social relationship with</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -15990,10 +16104,11 @@
 
   <owl:Class rdf:ID="FriendsAndAssociatesContext">
     <rdfs:label xml:lang="en">friends and associates context</rdfs:label>
+    <rdfs:label xml:lang="fr">contexte ami·e·s et relations</rdfs:label>
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Friends and connections context is a significant subclass of context. Annotations typed as friends and connections contexts discuss a broad spectrum of social relations ranging from friendship to enmities and casual associations. Other context annotations treat related aspects of social connections, including @@#LeisureContext@@ and @@#IntimateRelationshipsContext@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Le contexte des amis et des connexions est une sous-classe de contexte importante. Les annotations saisies en tant que contexte amis et relations abordent un large éventail de liens sociaux, allant de l’amitié aux conflits en passant par les relations éphémères. D'autres annotations contextuelles traitent des aspects liés aux rapports sociaux, notamment les loisirs et les relations intimes.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -16102,7 +16217,7 @@
     <rdfs:label xml:lang="en">has reproductive history</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Describes an aspect of a person's reproductive history.  May relate to childlessness, birth control, adoption, abortion, difficulties with childbearing, loss of a child, whether biologically related, adopted, or otherwise considered kin, difficulties with child-bearing. See also the related property @@#hasChildren@@.</skos:definition>
-    
+
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -16222,10 +16337,11 @@
 
   <owl:Class rdf:ID="FamilyContext">
     <rdfs:label xml:lang="en">family context</rdfs:label>
+    <rdfs:label xml:lang="fr">contexte familial</rdfs:label>
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Family Context is a significant subclass of context. Annotations typed as Family Context provide information about and discussions of a person's familial relations.  Family relationships are social bonds assumed between a group of people affiliated by blood, marriage, co-residence, or other affiliation. For more information, see @@http://dbpedia.org/page/Family@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Le contexte familial est une sous-classe de contexte importante. Les annotations saisies en tant que contexte familial fournissent des informations et des discussions sur les rapports familiaux d'une personne. Les rapports familiaux sont des liens sociaux contractés entre un groupe de personnes liées par le sang, le mariage, la cohabitation ou autre affiliation. Pour plus d'informations, voir @@http://dbpedia.org/page/Family@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -16261,7 +16377,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#hasRelative"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntimateRelationshipWith"/>
-    
+
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <owl:sameAs rdf:resource="#partnerOf"/>
@@ -16276,7 +16392,7 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    
+
     <rdfs:subPropertyOf rdf:resource="#hasIntimateRelationshipWith"/>
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
     <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Partnership"/>
@@ -16295,7 +16411,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broader rdf:resource="https://schema.org/spouse"/>
     <rdfs:subPropertyOf rdf:resource="#hasPartner"/>
-    
+
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="wifeOf">
@@ -16309,7 +16425,7 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <owl:inverseOf rdf:resource="#hasWife"/>
     <skos:broader rdf:resource="https://schema.org/spouse"/>
-    
+
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasHusband">
@@ -16323,7 +16439,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broader rdf:resource="https://schema.org/spouse"/>
     <rdfs:subPropertyOf rdf:resource="#hasPartner"/>
-    
+
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="husbandOf">
@@ -16337,7 +16453,7 @@
     <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Partnership"/>
     <skos:broader rdf:resource="https://schema.org/spouse"/>
     <owl:inverseOf rdf:resource="#hasHusband"/>
-    
+
   </owl:ObjectProperty>
 
 
@@ -17178,7 +17294,7 @@
 
 
 
-  
+
   <owl:DeprecatedProperty rdf:ID="interpersonalRelationship">
     <rdfs:label xml:lang="en">interpersonal relationship</rdfs:label>
     <rdfs:label xml:lang="fr">relation interpersonnelle</rdfs:label>
@@ -17219,7 +17335,7 @@
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
   </owl:DeprecatedProperty>
-  
+
   <owl:DeprecatedProperty rdf:ID="personalProperty">
     <rdfs:label xml:lang="en">personal property</rdfs:label>
     <rdfs:label xml:lang="fr">propriété personnelle</rdfs:label>
@@ -17318,7 +17434,7 @@
     <rdfs:label xml:lang="en">has race (self declared)</rdfs:label>
     <rdfs:label xml:lang="fr">est de race (autodéclarée)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#personalPropertySelfDeclared"/>
-    <rdfs:range rdf:resource="#Race"/>
+    <rdfs:range rdf:resource="#RaceColour"/>
     <skos:definition xml:lang="en">This describes a person's self-reported identity with respect to race or colour.</skos:definition>
    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -17481,7 +17597,7 @@
     <rdfs:comment xml:lang="fr">Désapprouver de l'ancienne ontologie Orlando.</rdfs:comment>
   </owl:DeprecatedProperty>
 
-  
+
   <owl:DeprecatedClass rdf:ID="Organization">
     <rdfs:label xml:lang="en">organization</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -17496,7 +17612,7 @@
     <rdfs:comment xml:lang="en">Deprecated in favour of class <![CDATA[<a href="https://www.w3.org/TR/vocab-org/#class-formalorganization">org:formalOrganization</a>]]> </rdfs:comment>
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe <![CDATA[<a href="https://www.w3.org/TR/vocab-org/#class-formalorganization">org:formalOrganization</a>]]>.</rdfs:comment>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
-    
+
   </owl:DeprecatedClass>
   <owl:DeprecatedClass rdf:ID="RaceEthnicity">
     <rdfs:label xml:lang="en">race or ethnicity</rdfs:label>
@@ -17647,7 +17763,7 @@
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe @@#EventElement@@.</rdfs:comment>
   </owl:DeprecatedClass>
 
-  
+
   <rdf:Description rdf:about="#sexualityBisexuality">
     <rdfs:label xml:lang="en">bisexuality</rdfs:label>
     <rdfs:label xml:lang="fr">bisexualité</rdfs:label>
@@ -17790,7 +17906,6 @@
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Welsh_people"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <cwrc:representedBy rdf:resource="#welshLabel"/>
     <owl:sameAs rdf:resource="http://sws.geonames.org/2634895/"/>
     <rdfs:comment xml:lang="en">Deprecated in favour of foreign instance ISO 3166-2:GB-WLS.</rdfs:comment>
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance ISO 3166-2:GB-WLS.</rdfs:comment>
@@ -18159,7 +18274,7 @@
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
-    
+
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>

@@ -25,10 +25,6 @@
   xmlns:void="http://rdfs.org/ns/void#"
   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-<!-- TODO
-  - Fixing up english quotations!!!!
-  - Fixing up french quotations
- -->
   <owl:Ontology rdf:about="">
     <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
     <vann:preferredNamespacePrefix>genre</vann:preferredNamespacePrefix>
@@ -139,7 +135,6 @@
     <dcterms:description xml:lang="fr">L'Ontologie des genres littéraires CWRC est l'ontologie utilisée par le Collaboratoire scientifique des écrits du Canada pour assigner des genres à des écrits littéraires.</dcterms:description>
     <skos:definition xml:lang="fr">L'Ontologie des genres littéraires CWRC est l'ontologie utilisée par le Collaboratoire scientifique des écrits du Canada pour assigner des genres à des écrits littéraires.</skos:definition>
     <rdfs:comment xml:lang="fr">L'Ontologie des genres littéraires CWRC est l'ontologie utilisée par le Collaboratoire scientifique des écrits du Canada pour assigner des genres à des écrits littéraires.</rdfs:comment>
-    <!-- -->
     <cc:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
     <cc:Jurisdiction rdf:resource="http://dbpedia.org/resource/Canada"/>
     <cc:attributionURL rdf:resource="http://www.cwrc.ca/"/>
@@ -202,7 +197,6 @@
     <dcterms:description xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</dcterms:description>
     <skos:definition xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</skos:definition>
     <rdfs:comment xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</rdfs:comment>
-    <!-- -->
     <cc:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
     <cc:Jurisdiction rdf:resource="http://dbpedia.org/resource/Canada"/>
     <cc:attributionURL rdf:resource="http://www.cwrc.ca/"/>
@@ -2703,7 +2697,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:label xml:lang="en">travel writing</rdfs:label>
     <skos:definition xml:lang="fr">Un récit de voyage ou relation de voyage est un genre littéraire dans lequel l'auteur rend compte d'un ou des voyages, des peuples rencontrés, des émotions ressenties, des choses vues et entendues. Contrairement au roman, le récit de voyage privilégie le réel à la fiction. Pour mériter le titre de « récit » et avoir rang de littérature, la narration doit être structurée et aller au-delà de la simple énumération des dates et des lieux (comme un journal intime ou un livre de bord d'un navire). Cette littérature doit rendre compte d'impressions, d'aventures, de l'exploration ou de la conquête de pays lointains.</skos:definition>
     <skos:closeMatch rdf:resource="https://fr.wikipedia.org/wiki/R%C3%A9cit_de_voyage"/>
-    <rdf:type rdf:resource="genre:NarrativeGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#NarrativeGenre"/>
   </genre:ThematicGenre>
   <genre:DialogueOrDebateGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#dialogueOfTheDead">
     <skos:definition xml:lang="en">"A popular style of fiction in the 17th and 18th centuries featuring conversations between the ghosts of well-known figures. Based on the satirical Dialogues of the Dead by Lucian (120-around 180 CE), but not necessarily satirical themselves."  <![CDATA[(<a href="#cwrc:93fc3195-0bd5-4161-a123-0352d96c42ab">Mazella, 2007</a>)]]></skos:definition>
