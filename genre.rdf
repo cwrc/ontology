@@ -25,10 +25,6 @@
   xmlns:void="http://rdfs.org/ns/void#"
   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-<!-- TODO
-  - Fixing up english quotations!!!!
-  - Fixing up french quotations
- -->
   <owl:Ontology rdf:about="">
     <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
     <vann:preferredNamespacePrefix>genre</vann:preferredNamespacePrefix>
@@ -41,8 +37,8 @@
     <rdfs:label xml:lang="fr">L'Ontologie des genres CWRC</rdfs:label>
     <foaf:name xml:lang="fr">L'Ontologie des genres CWRC</foaf:name>
     <dcterms:description xml:lang="en">The CWRC Genre Ontology is the ontology used by the Canadian Writing Research Collaboratory to assign Genres to different types of cultural objects, particularly but not exclusively written ones.</dcterms:description>
-    <skos:definition xml:lang="en">The CWRC  Genre Ontology is the ontology used by the Canadian Writing Research Collaboratory to assign Literary Genres to different types of cultural objects, particularly but not exclusively written ones.</skos:definition>
-    <rdfs:comment xml:lang="en">The CWRC Literary Genre Ontology is the ontology used by the Canadian Writing Research Collaboratory to assign Literary Genres to different types of cultural objects, particularly but not exclusively written ones.</rdfs:comment>
+    <skos:definition xml:lang="en">The CWRC Genre Ontology is the ontology used by the Canadian Writing Research Collaboratory to assign Genres to different types of cultural objects, particularly but not exclusively written ones.</skos:definition>
+    <rdfs:comment xml:lang="en">The CWRC Genre Ontology is the ontology used by the Canadian Writing Research Collaboratory to assign  Genres to different types of cultural objects, particularly but not exclusively written ones.</rdfs:comment>
     <dcterms:description xml:lang="fr">L'Ontologie des genres CWRC est l'ontologie utilisée par le Collaboratoire scientifique des écrits du Canada pour assigner des genres à des écrits littéraires.</dcterms:description>
     <skos:definition xml:lang="fr">L'Ontologie des genres CWRC est l'ontologie utilisée par le Collaboratoire scientifique des écrits du Canada pour assigner des genres à des écrits littéraires.</skos:definition>
     <rdfs:comment xml:lang="fr">L'Ontologie des genres CWRC est l'ontologie utilisée par le Collaboratoire scientifique des écrits du Canada pour assigner des genres à des écrits littéraires.</rdfs:comment>
@@ -139,7 +135,6 @@
     <dcterms:description xml:lang="fr">L'Ontologie des genres littéraires CWRC est l'ontologie utilisée par le Collaboratoire scientifique des écrits du Canada pour assigner des genres à des écrits littéraires.</dcterms:description>
     <skos:definition xml:lang="fr">L'Ontologie des genres littéraires CWRC est l'ontologie utilisée par le Collaboratoire scientifique des écrits du Canada pour assigner des genres à des écrits littéraires.</skos:definition>
     <rdfs:comment xml:lang="fr">L'Ontologie des genres littéraires CWRC est l'ontologie utilisée par le Collaboratoire scientifique des écrits du Canada pour assigner des genres à des écrits littéraires.</rdfs:comment>
-    <!-- -->
     <cc:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
     <cc:Jurisdiction rdf:resource="http://dbpedia.org/resource/Canada"/>
     <cc:attributionURL rdf:resource="http://www.cwrc.ca/"/>
@@ -202,7 +197,6 @@
     <dcterms:description xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</dcterms:description>
     <skos:definition xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</skos:definition>
     <rdfs:comment xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</rdfs:comment>
-    <!-- -->
     <cc:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
     <cc:Jurisdiction rdf:resource="http://dbpedia.org/resource/Canada"/>
     <cc:attributionURL rdf:resource="http://www.cwrc.ca/"/>
@@ -290,7 +284,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">offprint</rdfs:label>
     <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/marcgt/off.html"/>
-    <skos:definition>An offprint is a separate printing of a work that originally appeared as part of a larger publication, usually one of composite authorship such as an academic journal, magazine, or edited book. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
+    <skos:definition xml:lang="en">An offprint is a separate printing of a work that originally appeared as part of a larger publication, usually one of composite authorship such as an academic journal, magazine, or edited book. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
   </genre:PrintMedium>
   <genre:FictionalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#magicRealist">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -330,8 +324,9 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">dramatic monologue</rdfs:label>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026298"/>
-    <skos:definition xml:lang="en">"Dramatic monologue, also known as a persona poem, is a type of poetry written in the form of a speech of an individual character. M.H. Abrams notes the following three features of the dramatic monologue as it applies to poetry."  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
+    <skos:definition xml:lang="en">"Dramatic monologue, also known as a persona poem, is a type of poetry written in the form of a speech of an individual character."  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Dramatic_monologue"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#DramaticGenre"/>
   </genre:PoeticGenre>
   <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#popular">
     <skos:definition xml:lang="en">"Visual arts produced by or for the general public, often reflecting fads and as a response to the daily environment; works produced for mass audiences as distinct from fine art and folk art."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
@@ -388,12 +383,14 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">hagiography</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300201063"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
   </genre:ReligiousGenre>
   <genre:MovingMedium rdf:about="http://sparql.cwrc.ca/ontologies/genre#videoRecording">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">video recording</rdfs:label>
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300028682"/>
     <skos:definition xml:lang="en">"Video is an electronic medium for the recording, copying, playback, broadcasting, and display of moving visual media. Video systems vary greatly in the resolution of the display and refresh rate. Video can be carried on a variety of media, including radio broadcast, tapes, DVDs, computer files etc." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#VisualArtMedium"/>
   </genre:MovingMedium>
   <genre:NarrativeGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#myth">
     <skos:definition xml:lang="en">"Legendary stories without a determinable basis of fact or natural explanation, typically concerning a being, hero, deity, or event and explains some practice, rite, or phenomenon of nature."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
@@ -407,6 +404,7 @@
     <skos:definition xml:lang="en">"Animation is the process of making the illusion of motion and change by means of the rapid display of a sequence of static images that minimally differ from each other. The illusion—as in motion pictures in general—is thought to rely on the phi phenomenon. Animators are artists who specialize in the creation of animation.Animation can be recorded with either analogue media, a flip book, motion picture film, video tape, digital media, including formats with animated GIF, Flash animation and digital video. To display animation, a digital camera, computer, or projector are used along with new technologies that are produced. Animation creation methods include the traditional animation creation method and those involving stop motion animation of two and three-dimensional objects, paper cutouts, puppets and clay figures. Images are displayed in a rapid succession, usually 24, 25, 30, or 60 frames per second." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">animation</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#VisualArtMedium"/>
   </genre:MovingMedium>
   <genre:PartialForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#prefatoryPiece">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -584,6 +582,7 @@
     <rdfs:label xml:lang="en">industrial novel</rdfs:label>
     <rdfs:label xml:lang="fr">roman industriel</rdfs:label>
     <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PoliticalGenre"/>
   </genre:NovelisticGenre>
   <genre:IntertextualGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#translation">
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300027389"/>
@@ -592,7 +591,7 @@
     <skos:definition xml:lang="fr">Versions traduites du'un texte.</skos:definition>
     <rdfs:label xml:lang="fr">traduction</rdfs:label>
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
-    <skos:definition>Translated versions of a text. <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
+    <skos:definition xml:lang="en">Translated versions of a text. <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
   </genre:IntertextualGenre>
   <genre:DramaticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#theatreOfCruelty">
     <rdfs:label xml:lang="fr">théâtre de la cruauté</rdfs:label>
@@ -639,6 +638,7 @@
     <skos:definition xml:lang="en">"The temperance movement is a social movement against the consumption of alcoholic beverages. Temperance movements typically criticize excessive alcohol consumption, promote complete abstinence (teetotalism), or use its political influence to press the government to enact alcohol laws to regulate the availability of alcohol or even its complete prohibition." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">temperance</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PoliticalGenre"/>
   </genre:ThematicGenre>
   <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#pastoral">
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300250491"/>
@@ -682,6 +682,7 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">sermon</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PerformanceMedium"/>
   </genre:ReligiousGenre>
   <genre:DidacticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#bestiary">
     <rdfs:label xml:lang="fr">bestiaire</rdfs:label>
@@ -709,6 +710,8 @@
     <rdfs:label xml:lang="fr">oratorio</rdfs:label>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of English, 3rd ed.</rdfs:comment>
     <skos:definition xml:lang="fr">«Un oratorio est une œuvre lyrique dramatique représentée sans mise en scène, ni costumes, ni décors. Généralement composé pour voix solistes, chœur et orchestre symphonique, avec parfois un narrateur, son sujet est le plus souvent religieux (épisode extrait de la Bible, de la vie de Jésus, d’un(e) saint(e)… ) mais peut être aussi profane (héros mythologique, sujet historique, hymne à la nature…). Formellement assez proche de la cantate et de l’opéra, l'oratorio comprend généralement une ouverture, des récitatifs, des airs et des chœurs.»  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ReligiousGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#NarrativeGenre"/>
   </genre:SongGenre>
   <genre:DramaticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#theatreOfTheAbsurd">
     <rdfs:label xml:lang="fr">théâtre de l'absurde</rdfs:label>
@@ -739,6 +742,7 @@
     <skos:definition xml:lang="fr">Chacun des cent cinquante poèmes religieux, jadis attribués au roi David, qui composent l'un des livres de la Bible et sont récités ou chantés dans les liturgies juives ou chrétiennes (abrév. ps.).</skos:definition>
     <rdfs:label xml:lang="fr">psaume</rdfs:label>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2015026079"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#SongGenre"/>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Dictionnaire Vivant de la Langue Française.</rdfs:comment>
     <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PoeticGenre"/>
     <skos:definition xml:lang="en">"Sacred songs that may be sung or recited in religious worship, particularly those contained in the Book of Psalms in the Old Testament and Hebrew Scriptures."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
@@ -755,6 +759,7 @@
   <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#immigration">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">immigration</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PoliticalGenre"/>
   </genre:ThematicGenre>
   <genre:DialogueOrDebateGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#dialogueOrDebate">
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from data.bnf.fr.</rdfs:comment>
@@ -906,7 +911,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">detective</rdfs:label>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026280"/>
-    <skos:definition>Detective fiction is a subgenre of crime fiction and mystery fiction in which an investigator or a detective—either professional or amateur—investigates a crime, often murder. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
+    <skos:definition xml:lang="en">Detective fiction is a subgenre of crime fiction and mystery fiction in which an investigator or a detective—either professional or amateur—investigates a crime, often murder. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
   </genre:MysteryGenre>
   <genre:SerialForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#column">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1003,6 +1008,7 @@
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300027211"/>
     <rdfs:label xml:lang="fr">tract</rdfs:label>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2015026053"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ReligiousGenre"/>
   </genre:PoliticalGenre>
   <genre:InformationalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#survey">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1189,6 +1195,7 @@ s épîtres.]]></skos:definition>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2018026053"/>
     <skos:definition xml:lang="fr">Fiction abordant le thème de la bisexualité.</skos:definition>
     <rdfs:label xml:lang="fr">fiction bisexuelle</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LGBTQPlusGenre"/>
   </genre:FictionalGenre>
   <genre:ReferenceWorkGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#biographicalDictionary">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1199,7 +1206,7 @@ s épîtres.]]></skos:definition>
   </genre:ReferenceWorkGenre>
   <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#love">
     <rdfs:label xml:lang="fr">amour</rdfs:label>
-    <skos:definition>Generic modifier for a representation that deals primarily with the subject of love. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
+    <skos:definition xml:lang="en">Generic modifier for a representation that deals primarily with the subject of love. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">love</rdfs:label>
@@ -1210,6 +1217,7 @@ s épîtres.]]></skos:definition>
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300033618"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">painting</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#VisualArtMedium"/>
   </genre:StillImageMedium>
   <genre:ReferenceWorkGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#manual">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1304,7 +1312,7 @@ s épîtres.]]></skos:definition>
   <genre:PoliticalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#proletarianWriting">
     <rdfs:label xml:lang="fr">littérature prolétarienne</rdfs:label>
     <skos:definition xml:lang="fr">«La littérature prolétarienne est un courant littéraire qu'Henry Poulaille, fondateur du « Groupe des écrivains prolétariens de langue française », connu aussi sous le nom d'« école prolétarienne » (terme que Poulaille désapprouvait), fut le premier à définir et organiser en France dans les années 1930. Est défini comme auteur prolétarien tout auteur : * né de parents ouvriers ou paysans, * autodidacte (ayant quitté tôt l'école pour travailler, ou à la rigueur ayant bénéficié d'une bourse - en général pour devenir instituteur dans le système primaire, « l'école des pauvres », à l'époque où deux systèmes scolaires cohabitaient), * et qui témoigne dans ses écrits des conditions d'existence de sa classe sociale. La définition première précise aussi que l'auteur prolétarien doit continuer de gagner sa vie comme ouvrier ou comme paysan, mais plusieurs auteurs faisant exception à cette règle (à commencer par Poulaille lui-même qui a exercé divers métiers de 13 à 27 ans, mais s'est consacré ensuite à des activités moins « ouvrières » dans l'édition et le journalisme) sont cependant considérés comme auteurs prolétariens, du fait que leurs ouvrages et leur action restent orientés vers la défense du prolétariat et d'une expression littéraire spécifiquement ouvrière.»  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
-    <skos:definition>Writing by members of the working-classes or poor, including that by those who consider themselves members of the proletariat, and sometimes also writing produced to raise awareness of poor economic or labour conditions. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
+    <skos:definition xml:lang="en">Writing by members of the working-classes or poor, including that by those who consider themselves members of the proletariat, and sometimes also writing produced to raise awareness of poor economic or labour conditions. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Proletarian_literature"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1472,6 +1480,7 @@ s épîtres.]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2015026029"/>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#DidacticGenre"/>
   </genre:ReligiousGenre>
   <genre:BookForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#book">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1480,7 +1489,7 @@ s épîtres.]]></skos:definition>
   <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#exploration">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">exploration</rdfs:label>
-    <skos:definition xml:lang="en">"Outdoor literature is a literature genre about or involving the outdoors. Outdoor literature encompasses several different subgenres including exploration literature, adventure literature, mountain literature and nature writing. Another subgenre is the guide book, an early example of which was Thomas West's guide to the Lake District published in 1778. The genres can include activities such as exploration, survival, sailing, hiking, mountaineering, whitewater boating, geocaching or kayaking, or writing about nature and the environment. Travel literature is similar to outdoor literature but differs in that it does not always deal with the out-of-doors, but there is a considerable overlap between these genres, in particular with regard to long journeys." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
+    <skos:definition xml:lang="en">Indicates works wherein a subject interacts with ostensibly new flora, fauna, peoples, and places. Such narratives often reflect colonialist and imperialist mentalities and stereotypes.</skos:definition>
     <skos:broader rdf:resource="http://sparql.cwrc.ca/ontologies/genre#travel"/>
   </genre:ThematicGenre>
   <genre:PoliticalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#propaganda">
@@ -1539,6 +1548,7 @@ s épîtres.]]></skos:definition>
     <skos:definition xml:lang="en">"Religious texts (also known as scripture, or scriptures, from the Latin scriptura, meaning "a writing" ) are the texts which various religious traditions consider to be sacred, or central to their religious tradition. Religious texts may be used to evoke a deeper connection with the divine, convey spiritual truths, promote mystical experience, foster communal identity, and to guide individual and communal spiritual practice. Many religions and spiritual movements believe that their sacred texts are divinely or supernaturally revealed or inspired. The monotheistic faiths view their texts as the "Word of God" and divine revelation." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">scripture</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
   </genre:ReligiousGenre>
   <genre:DramaticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#revengeComedy">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1554,12 +1564,15 @@ s épîtres.]]></skos:definition>
     <rdfs:label xml:lang="fr">ballade</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">ballade</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PoeticGenre"/>
   </genre:MusicalGenre>
   <genre:SongGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#lullaby">
     <skos:definition xml:lang="en">"A lullaby, or cradle song, is a soothing song or piece of music, usually played for or sung to children. The purposes of lullabies vary. In some societies they are used to pass down cultural knowledge or tradition. In addition, lullabies are often used for the developing of communication skills, indication of emotional intent, maintenance of infants' undivided attention, modulation of infants' arousal, and regulation of behavior. Perhaps one of the most important uses of lullabies is as a sleep aid for infants. As a result, the music is often simple and repetitive. Lullabies can be found in many countries, and have existed since ancient times." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026913"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">lullaby</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ChildrensLiteratureGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#DidacticGenre"/>
   </genre:SongGenre>
   <genre:BookForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#notebook">
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Notebook_(style)"/>
@@ -1621,7 +1634,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:label xml:lang="en">quiz</rdfs:label>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Quiz"/>
     <rdfs:label xml:lang="fr">quiz</rdfs:label>
-    <skos:definition>A brief, interactive text that poses questions for the reader to answer, often as an assessment of knowledge in the form of questionnaire. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
+    <skos:definition xml:lang="en">A brief, interactive text that poses questions for the reader to answer, often as an assessment of knowledge in the form of questionnaire. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
   </genre:PedagogicalGenre>
   <genre:ScholarlyGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#psychoanalytical">
@@ -1671,6 +1684,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">"Writing, typically in the form of a prayer or a song, to be used by a particular religious community for the purpose of worship."  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2017</a>)]]></skos:definition>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="fr">«Cet article concerne les cérémonies formant le culte public et officiel institué par une église. Pour l'obligation fiscale pesant sur les riches en Grèce antique, voir liturgie (Grèce antique). Le mot liturgie (du grec λειτουργία / leitourgía ; « le service du peuple ») est l'ensemble des rites, cérémonies et prières dédiés au culte d'une divinité religieuse, tels qu'ils sont définis selon les règles éventuellement codifiées dans les textes sacrés ou la tradition. Ce terme s'applique le plus souvent à la religion chrétienne où il désigne un culte public et officiel institué par une église.»  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PerformanceMedium"/>
   </genre:ReligiousGenre>
   <genre:ScriptForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#script">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1703,7 +1717,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">literary criticism</rdfs:label>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
-    <skos:definition>Writing that analyzes or critiques a literary work, often through the use of a particular literary theory, and typically in the form of an essay. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
+    <skos:definition xml:lang="en">Writing that analyzes or critiques a literary work, often through the use of a particular literary theory, and typically in the form of an essay. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Literary_criticism"/>
     <skos:definition xml:lang="fr">«La critique littéraire est l'étude, la discussion, l'évaluation et l'interprétation de la littérature. Elle peut prendre la forme d'un discours théorique s'appuyant sur la théorie de la littérature ou bien d'un discours plus circonstancié, de présentation ou de compte rendu d'une œuvre littéraire (souvent sous une forme journalistique lors de sa parution). Ces deux acceptions ne sont pas diamétralement opposées bien que la seconde se distingue par le jugement qu'elle porte sur les œuvres étudiées.»  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
   </genre:ScholarlyGenre>
@@ -1779,6 +1793,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:label xml:lang="fr">libretto</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">libretto</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ScriptForm"/>
   </genre:OperaGenre>
   <genre:IntertextualGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#abridgement">
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
@@ -2155,6 +2170,8 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026635"/>
     <skos:definition xml:lang="en">"A song in which the lyrics promote pride in and allegiance to the identity and values of a particular group, such as a nation, sports team, or social cause."  <![CDATA[(<a href="#cwrc:4c227091-6bf0-4325-b846-9733fae19e61">Oxford, 2015</a>)]]></skos:definition>
     <skos:definition xml:lang="fr">Une chanson dont les paroles promeuvent la fidélité à l'identité et aux valeurs d'un groupe particulier —une nation, une équipe sportive ou une cause sociale— ainsi que la fierté d'y adhérer.</skos:definition>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PoliticalGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre"/>
   </genre:SongGenre>
   <genre:DramaticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#filmTvScript">
     <rdfs:label xml:lang="fr">script</rdfs:label>
@@ -2180,6 +2197,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">rural idyll</rdfs:label>
     <skos:definition xml:lang="en">"An idyll or idyl (/ˈaɪdəl/ or /ˈɪdəl/; from Greek εἰδύλλιον, eidullion, "short poem") is a short poem, descriptive of rustic life, written in the style of Theocritus' short pastoral poems, the Idylls. Unlike Homer, Theocritus did not engage in heroes and warfare. His idylls are limited to a small intimate world, and describe scenes from everyday life. Later imitators include the Roman poets Virgil and Catullus, Italian poets Torquato Tasso, Sannazaro and Leopardi, the English poet Alfred, Lord Tennyson (Idylls of the King), and Nietzsche's Idylls from Messina. Goethe called his poem Hermann and Dorothea—which Schiller considered the very climax in Goethe's production—an idyll." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PoeticGenre"/>
   </genre:ThematicGenre>
   <genre:PedagogicalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#pedagogy">
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Pedagogy"/>
@@ -2302,6 +2320,8 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">folk song</rdfs:label>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</rdfs:comment>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#NarrativeGenre"/>
   </genre:SongGenre>
   <genre:PerformanceMedium rdf:about="http://sparql.cwrc.ca/ontologies/genre#lecture">
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026122"/>
@@ -2333,6 +2353,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Song"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014027103"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PoeticGenre"/>
   </genre:SongGenre>
   <genre:PartialForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#dedication">
     <skos:definition xml:lang="en">"A short bit of text conventionally appearing before the start of a novel or poem in which the author or poet addresses some individual, invoking his or her gratitude or thanks to that individual. Frequently, the dedication is to a spouse, friend, loved one, child, mentor, or individual who inspired the work. Several of the Inklings dedicated specific fictional works to each other (or in the case of C.S. Lewis, to children of fellow Inklings). Among scholars, one of the most significant types of dedications is a festschrift. A festschrift is a collection of essays or studies in book form, dedicated to a former teacher or professor in his or her advanced age. The individual scholarly writings come from his or her students, who typically collaborate to organize the work and contact the publisher, and they present the collection to the teacher upon its publication."  <![CDATA[(<a href="cwrc:509015ff-7641-473e-94c5-688e06952bb7">L. K Wheeler, 2017</a>)]]></skos:definition>
@@ -2384,7 +2405,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">occasional poetry</rdfs:label>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026460"/>
-    <skos:definition>Occasional poetry is poetry composed for a particular occasion. In the history of literature, it is often studied in connection with orality, performance, and patronage. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
+    <skos:definition xml:lang="en">Occasional poetry is poetry composed for a particular occasion. In the history of literature, it is often studied in connection with orality, performance, and patronage. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Occasional_poetry"/>
   </genre:PoeticGenre>
@@ -2415,6 +2436,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:altLabel xml:lang="en">diaspora</skos:altLabel>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">diasporic</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PoliticalGenre"/>
   </genre:ThematicGenre>
   <genre:PoeticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#epithalamium">
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Epithalamium"/>
@@ -2592,6 +2614,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">photograph</rdfs:label>
     <skos:definition xml:lang="en">"A photograph or photo is an image created by light falling on a light-sensitive surface, usually photographic film or an electronic medium such as a CCD or a CMOS chip. Most photographs are created using a camera, which uses a lens to focus the scene's visible wavelengths of light into a reproduction of what the human eye would see. The process and practice of creating photographs is called photography. The word "photograph" was coined in 1839 by Sir John Herschel and is based on the Greek φῶς (phos), meaning "light", and γραφή (graphê), meaning "drawing, writing", together meaning "drawing with light"." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#VisualArtMedium"/>
   </genre:StillImageMedium>
   <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#comingOut">
     <rdfs:label xml:lang="fr">coming out</rdfs:label>
@@ -2599,11 +2622,13 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="fr">Qui se rapporte au processus de révélation publique de sa sexualité.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">coming out</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LGBTQPlusGenre"/>
   </genre:ThematicGenre>
   <genre:MusicalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#musicalWriting">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">musical writing</rdfs:label>
     <skos:definition xml:lang="en">Writing associated with some form of music.</skos:definition>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#InformationalGenre"/>
   </genre:MusicalGenre>
   <genre:ComedicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#comedyOfManners">
     <skos:definition xml:lang="en">"The comedy of manners is an entertainment form which satirizes the manners and affectations of a social class or of multiple classes, often represented by stereotypical stock characters. For example, the miles gloriosus ("boastful soldier") in ancient times, the fop and the rake during the English Restoration, or an old person pretending to be young. Restoration comedy is used as a synonym for "comedy of manners". The plot of the comedy, often concerned with scandal, is generally less important than its witty dialogue. A great writer of comedies of manners was Oscar Wilde, his most famous play being The Importance of Being Earnest. The comedy of manners was first developed in the new comedy of the Ancient Greek playwright Menander. His style, elaborate plots, and stock characters were imitated by the Roman playwrights Plautus and Terence, whose comedies were widely known and copied during the Renaissance. The best-known comedies of manners, however, may well be those of the French playwright Molière, who satirized the hypocrisy and pretension of the ancien régime in such plays as L'École des femmes (The School for Wives, 1662), Le Misanthrope (The Misanthrope, 1666), and most famously Tartuffe (1664)."  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
@@ -2620,6 +2645,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">biblical paraphrase</rdfs:label>
     <skos:definition xml:lang="en">A work that rewords the text of the Bible, often to improve clarity or to make it accessible to a wider audience.</skos:definition>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
   </genre:ReligiousGenre>
   <genre:DramaticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#improvisation">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -2656,6 +2682,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300033973"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">drawing</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#VisualArtMedium"/>
   </genre:StillImageMedium>
   <genre:ThematicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#travel">
     <rdfs:label xml:lang="fr">voyage</rdfs:label>
@@ -2665,7 +2692,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:label xml:lang="en">travel writing</rdfs:label>
     <skos:definition xml:lang="fr">Un récit de voyage ou relation de voyage est un genre littéraire dans lequel l'auteur rend compte d'un ou des voyages, des peuples rencontrés, des émotions ressenties, des choses vues et entendues. Contrairement au roman, le récit de voyage privilégie le réel à la fiction. Pour mériter le titre de « récit » et avoir rang de littérature, la narration doit être structurée et aller au-delà de la simple énumération des dates et des lieux (comme un journal intime ou un livre de bord d'un navire). Cette littérature doit rendre compte d'impressions, d'aventures, de l'exploration ou de la conquête de pays lointains.</skos:definition>
     <skos:closeMatch rdf:resource="https://fr.wikipedia.org/wiki/R%C3%A9cit_de_voyage"/>
-    <rdf:type rdf:resource="genre:NarrativeGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#NarrativeGenre"/>
   </genre:ThematicGenre>
   <genre:DialogueOrDebateGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#dialogueOfTheDead">
     <skos:definition xml:lang="en">"A popular style of fiction in the 17th and 18th centuries featuring conversations between the ghosts of well-known figures. Based on the satirical Dialogues of the Dead by Lucian (120-around 180 CE), but not necessarily satirical themselves."  <![CDATA[(<a href="#cwrc:93fc3195-0bd5-4161-a123-0352d96c42ab">Mazella, 2007</a>)]]></skos:definition>
@@ -2773,6 +2800,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Christian_devotional_literature"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2015026057"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
   </genre:ReligiousGenre>
   <genre:AutobiographicalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#sexualAwakeningFiction">
     <rdfs:label xml:lang="fr">éveil à la sexualité</rdfs:label>
@@ -2789,6 +2817,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">A form of narrative fiction, named for a phrase from Thomas Carlyle's “Chartism” (1839), that addresses Victorian social and political issues with a focus on political unrest and class conflict, and typically seeks to instill empathy for the poor and understanding of social iniquities and injustices.
 Closely related to the industrial novel because of its interest in the impact of the industrial revolution.</skos:definition>
     <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#NovelisticGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FictionalGenre"/>
   </genre:PoliticalGenre>
   <genre:ComedicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#comedyOfMenace">
     <rdfs:label xml:lang="fr">comédie de menace</rdfs:label>
@@ -2842,6 +2871,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:definition xml:lang="en">"("Movie" and "Moving picture" redirect here. For other uses, see Movie (disambiguation) and Moving picture (disambiguation).) A film, also called a movie, motion picture, theatrical film or photoplay, is a series of still images which, when shown on a screen, creates the illusion of moving images due to the phi phenomenon. This optical illusion causes the audience to perceive continuous motion between separate objects viewed rapidly in succession. The process of filmmaking is both an art and an industry. A film is created by photographing actual scenes with a motion picture camera; by photographing drawings or miniature models using traditional animation techniques; by means of CGI and computer animation; or by a combination of some or all of these techniques and other visual effects. The word "cinema", short for cinematography, is often used to refer to the industry of films and filmmaking or to the art of filmmaking itself. The contemporary definition of cinema is the art of simulating experiences to communicate ideas, stories, perceptions, feelings, beauty or atmosphere by the means of recorded or programmed moving images along with other sensory stimulations. Films were originally recorded onto plastic film through a photochemical process, and then shown through a movie projector onto a large screen. The adoption of CGI-based special effects led to the use of digital intermediates. Most contemporary films are now fully digital through the entire process of production, distribution, and exhibition from start to finish. Films recorded in a photochemical form traditionally included an analogous optical soundtrack, which is a graphic recording of the spoken words, music and other sounds that accompany the images. It runs along a portion of the film exclusively reserved for it and is not projected. Films are cultural artifacts created by specific cultures. They reflect those cultures, and, in turn, affect them. Film is considered to be an important art form, a source of popular entertainment, and a powerful medium for educating—or indoctrinating—citizens. The visual basis of film gives it a universal power of communication. Some films have become popular worldwide attractions by using dubbing or subtitles to translate the dialog into the language of the viewer. Some have criticized the film industry's glorification of violence and its potentially negative treatment of women. The individual images that make up a film are called frames. During projection of traditional films, a rotating shutter causes intervals of darkness as each frame in turn is moved into position to be projected, but the viewer does not notice the interruptions because of an effect known as persistence of vision, whereby the eye retains a visual image for a fraction of a second after the source has been removed. The perception of motion is due to a psychological effect called phi phenomenon. The name "film" originates from the fact that photographic film (also called film stock) has historically been the medium for recording and displaying motion pictures. Many other terms exist for an individual motion picture, including picture, picture show, moving picture, photoplay and flick. The most common term in the United States is movie, while in Europe film is preferred. Terms for the field in general include the big screen, the silver screen, the movies and cinema; the latter is commonly used in scholarly texts and critical essays, especially by European writers. In early years, the word sheet was sometimes used instead of screen." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">film</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#VisualArtMedium"/>
   </genre:MovingMedium>
   <genre:InformationalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#cookbook">
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026169"/>
@@ -2888,6 +2918,7 @@ Closely related to the industrial novel because of its interest in the impact of
   <genre:ReligiousGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#sundaySchoolStory">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">sunday school story</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ChildrensLiteratureGenre"/>
   </genre:ReligiousGenre>
   <genre:ThreeDimensionalMedium rdf:about="http://sparql.cwrc.ca/ontologies/genre#archivalMaterial">
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300379505"/>
@@ -2967,7 +2998,8 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:definition xml:lang="en">A themtic genre concerning engagement with war in a range of forms and media and from a range of perspectives, including both front-line experiences, the lives of those imprisoned by war, experiences of living and working at a remove from battle. Includes historical and documentary approaches.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">war</rdfs:label>
-    <skos:related>genre#military:</skos:related>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/genre#military"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PoliticalGenre"/>
   </genre:ThematicGenre>
   <genre:SatiricalGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#mockForms">
     <skos:definition xml:lang="en">Writing that uses the conventions of a specific genre satirically in order to mock or parody that genre.</skos:definition>
@@ -2996,7 +3028,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">ma research paper</rdfs:label>
   </genre:ScholarlyGenre>
   <genre:ReligiousGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#theology">
-    <skos:definition>A branch of religious writing attempting to deal systematically with the study of a deity or deities or religious beliefs; the science of religion. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
+    <skos:definition xml:lang="en">A branch of religious writing attempting to deal systematically with the study of a deity or deities or religious beliefs; the science of religion. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr">«La théologie (en grec ancien θεολογία, littéralement « discours rationnel sur la divinité ou le divin, le Θεός [Theos] ») est un ensemble de champs disciplinaires qui touchent d'une manière ou d'une autre à l'idée de Dieu ou de divin. Selon la tradition dont il est question, les définitions de la théologie peuvent varier grandement.»  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Theology"/>
@@ -3038,6 +3070,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">nationalist</rdfs:label>
     <skos:related rdf:resource="http://dbpedia.org/resource/Nationalism"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PoliticalGenre"/>
   </genre:ThematicGenre>
   <genre:DigitalMedium rdf:about="http://sparql.cwrc.ca/ontologies/genre#webpage">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3068,6 +3101,8 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:altLabel xml:lang="en">architecture</skos:altLabel>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">architectural writing</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#InformationalGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ScholarlyGenre"/>
   </genre:ThematicGenre>
   <genre:PoeticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#anacreontic">
     <skos:definition xml:lang="en">"Anacreontics are verses in a meter used by the Greek poet Anacreon in his poems dealing with love and wine. His later Greek imitators (whose surviving poems are known as the Anacreontea) took up the same themes and used the Anacreontic meter. In modern poetry, Anacreontics are short lyrical pieces that keep the Anacreontic subject matter but not the meter." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
@@ -3122,7 +3157,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">sensational</rdfs:label>
   </genre:ThematicGenre>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#CatalogueForm">
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
     <skos:definition xml:lang="en">Indicates "enumerations of items, such as a file of bibliographic records or a list of art objects, usually arranged systematically and with descriptive details; may be in book or pamphlet form, on cards, or online." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300026059"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3147,18 +3182,18 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">Feminist Genre</rdfs:label>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Feminism"/>
     <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PoliticalGenre"/>
-    <skos:definition xml:lang="en">Indicates works engaging with "a range of political movements, ideologies, and social movements that share a common goal: to define, establish, and achieve political, economic, personal, and social rights" and equality for all genders.<![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
+    <skos:definition xml:lang="en">Indicates works engaging with "a range of political movements, ideologies, and social movements that share a common goal: to define, establish, and achieve political, economic, personal, and social rights" and equality for all genders. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#CalendarForm">
     <skos:definition xml:lang="en">Indicates "registers of days or other contrivances for reckoning days, months, years, etc., such as a table showing the division of a given year into its months, weeks, days, years, or other divisions of time." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Calendar Form</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300026741"/>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#ScriptForm">
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300026487"/>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
     <skos:definition xml:lang="en">Indicates "written texts of stage plays, screenplays, and radio or television broadcasts." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Script Form</rdfs:label>
@@ -3190,7 +3225,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">Advertisement Form</rdfs:label>
     <skos:altLabel xml:lang="en">advertising copy</skos:altLabel>
     <skos:definition xml:lang="en">Indicates "an audio or visual form of marketing communication that employs an openly sponsored, nonpersonal message to promote or sell a product, service or idea." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#StillImageMedium">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3211,7 +3246,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Childrens Literature Genre</rdfs:label>
-    <skos:definition xml:lang="en">Indicates works  produced for children and young adults, whether fictional or informational.<![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
+    <skos:definition xml:lang="en">Indicates works  produced for children and young adults, whether fictional or informational. <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#ComedicGenre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3237,7 +3272,7 @@ Closely related to the industrial novel because of its interest in the impact of
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#ReligiousGenre">
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300417817"/>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Genre"/>
     <skos:definition xml:lang="en">Indicates works "having a religious subject or spirtual theme." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Religious Genre</rdfs:label>
@@ -3247,7 +3282,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Record Form</rdfs:label>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026163"/>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300026685"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#MysteryGenre">
@@ -3265,7 +3300,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Proverb Form</rdfs:label>
     <skos:altLabel xml:lang="en">aphorism</skos:altLabel>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#DramaticGenre">
     <skos:definition xml:lang="en">Indicates works "in prose or verse in which a story is related by means of dialogue and action . . . generally written with the intention of performance on stage, film, television, or the like." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
@@ -3278,8 +3313,8 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300404113"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Didactic Genre</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre"/>
-    <skos:definition>Indicates works that have “the function, quality, or activity of having instruction or teaching as a primary or ulterior purpose.” <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#InformationalGenre"/>
+    <skos:definition xml:lang="en">Indicates works that have “the function, quality, or activity of having instruction or teaching as a primary or ulterior purpose.” <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#AutobiographicalGenre">
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300026049"/>
@@ -3323,7 +3358,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">Book Form</rdfs:label>
     <skos:definition xml:lang="en">Indicates "items comprising a collection of leaves of paper, parchment, wood, stiffened textile, ivory, metal tablets, or other flat material, that are blank, written on, or printed, and are strung or bound together in a volume." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300028051"/>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#ScholarlyGenre">
     <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#InformationalGenre"/>
@@ -3354,7 +3389,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#JournalisticGenre">
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Genre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#InformationalGenre"/>
     <skos:definition xml:lang="en">Indicates works "concerned with the collection, preparation, and distribution of news and related commentary through the mass media, both print and electronic."&#13;
  <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3362,7 +3397,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300054354"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#PartialForm">
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
     <skos:definition xml:lang="en">Indicates "portions of documents or other written works, either included as discrete sections in an extant document or detached from the original document." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300055027"/>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026097"/>
@@ -3370,7 +3405,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">Partial Form</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#AlphabetForm">
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
     <skos:definition xml:lang="en">Indicates "a standard set of letters (basic written symbols or graphemes) that is used to write one or more languages based on the general principle that the letters represent phonemes (basic significant sounds) of the spoken language." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Alphabet Form</rdfs:label>
@@ -3380,7 +3415,8 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">LGBTQ+Genre</rdfs:label>
     <skos:definition xml:lang="en">Indicates works concerned with LGBTQ+ identities and experiences. </skos:definition>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Genre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PoliticalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#InformationalGenre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3389,14 +3425,14 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300311832"/>
     <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Genre"/>
     <skos:altLabel xml:lang="en">non-fiction</skos:altLabel>
-    <skos:definition xml:lang="en">Indicates genres, often considered nonfictional, in a range of media and forms, designed to convey specific content on a wide range of topics, although that content is not necessarily factual.<![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
+    <skos:definition xml:lang="en">Indicates genres, often considered nonfictional, designed to convey specific content on a wide range of topics, although that content is not necessarily factual. <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#IllustratedForm">
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300054200"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Illustrated Form</rdfs:label>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026111"/>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
     <skos:definition xml:lang="en">Indicates works that include "drawings or other pictures intended to elucidate a description, story, or other written material, usually in a book or periodical." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#PoeticGenre">
@@ -3412,14 +3448,14 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:definition xml:lang="en">Indicates "any materials representing, in whole or part, the earth or any celestial body at any scale." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Cartographic Form</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
     <skos:related rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026113"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#MusicalNotationForm">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Musical Notation Form</rdfs:label>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Musical_notation"/>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
     <skos:altLabel xml:lang="en">sheet music</skos:altLabel>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300026430"/>
     <skos:definition xml:lang="en">Indicates "any system used to visually represent aurally perceived music played with instruments or sung by the human voice through the use of written, printed, or otherwise-produced symbols." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
@@ -3447,7 +3483,7 @@ Closely related to the industrial novel because of its interest in the impact of
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#SerialForm">
     <skos:altLabel xml:lang="en">periodical</skos:altLabel>
     <skos:definition xml:lang="en">Indicates "publications in any medium issued in successive parts bearing numerical or chronological designations and intended to be continued indefinitely." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Serial Form</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300215389"/>
@@ -3455,7 +3491,7 @@ Closely related to the industrial novel because of its interest in the impact of
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#PrintMedium">
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Printing"/>
-    <skos:definition xml:lang="en">Indicates media that involve the mechanical transfer of information to a physical object via a template or master form.<![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
+    <skos:definition xml:lang="en">Indicates media that involve the mechanical transfer of information to a physical object via a template or master form. <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#TextualMedium"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Print Medium</rdfs:label>
@@ -3516,11 +3552,10 @@ Closely related to the industrial novel because of its interest in the impact of
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#Genre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Genre</rdfs:label>
-    <skos:definition xml:lang="en">Genres are used to classify cultural works , broadly conceived, within an evolving spectrum of categories on the basis of a particular form, content, style, or purpose (OED). Though there is debate over whether genre inheres in works themselves or emerges from contexts of reception, shifts in historical definitions indicate that genres have a strong social component (Dubrow, 1982; Miller 1984).&#13;
-&#13;
-Literary genres are used to classify texts within a shifting range of literary forms and practices. Genres are most frequently related to formal features such as the English sonnet's fourteen lines of iambic pentameter, to characteristic subject matter such as themes of romance, horror, comedy, or tragedy, to aspects of style such as hard-boiled detective fiction, or to the purpose of a text. Within the context of literary studies, the question of "purpose," especially when considered within a political context, is of especial interest to scholars. For example, feminist literary scholars like Cynthia Huff ("‘That Profoundly Female, and Feminist Genre’: The Diary as Feminist Practice"), Giancarlo Lombardi (Rooms with a View: Feminist Diary Fiction, 1952-1999), Rita Felski (Beyond Feminist Aesthetics: Feminist Literature and Social Change) and others read "diary fiction" as a powerful genre used to spur on women’s movements. For more on literary genre, see the <![CDATA[<a href="http://sparql.cwrc.ca/ontologies/genre-preamble-EN.html#background">introduction</a>]]> to this ontology .</skos:definition>
+    <skos:definition xml:lang="en">Genres are used to classify cultural works , broadly conceived, within an evolving spectrum of categories on the basis of a particular form, content, style, or purpose (OED). Though there is debate over whether genre inheres in works themselves or emerges from contexts of reception, shifts in historical definitions indicate that genres have a strong social component (Dubrow, 1982; Miller 1984). 
+    Literary genres are used to classify texts within a shifting range of literary forms and practices. Genres are most frequently related to formal features such as the English sonnet's fourteen lines of iambic pentameter, to characteristic subject matter such as themes of romance, horror, comedy, or tragedy, to aspects of style such as hard-boiled detective fiction, or to the purpose of a text. Within the context of literary studies, the question of "purpose," especially when considered within a political context, is of especial interest to scholars. For example, feminist literary scholars like Cynthia Huff ("‘That Profoundly Female, and Feminist Genre’: The Diary as Feminist Practice"), Giancarlo Lombardi (Rooms with a View: Feminist Diary Fiction, 1952-1999), Rita Felski (Beyond Feminist Aesthetics: Feminist Literature and Social Change) and others read "diary fiction" as a powerful genre used to spur on women’s movements. For more on literary genre, see the <![CDATA[<a href="http://sparql.cwrc.ca/ontologies/genre-preamble-EN.html#background">introduction</a>]]> to this ontology .</skos:definition>
   </owl:Class>
-  <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#FormGenre">
+  <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#Form">
     <skos:definition xml:lang="en">Indicates material and structural elements that distinguish one category of cultural work from another. Whereas Genre categories tend to group categories based on features such as the style, content, or audience of cultural works, Form categories usually define material characteristics that shape or contain the work, such as ‘anthology,’ in the case of CollectionForm, ’notebook’ under BookForm, or ‘journal’ within SerialForm.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Form Genre</rdfs:label>
@@ -3531,6 +3566,7 @@ Literary genres are used to classify texts within a shifting range of literary f
     <rdfs:label xml:lang="en">Life Writing Genre</rdfs:label>
     <skos:definition xml:lang="en">Indicates recorded "memories, and experiences, whether one's own or another's." <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2019</a>)]]></skos:definition>
     <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#LiteraryGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#NarrativeGenre"/>
   </owl:Class>
   <owl:Class rdf:about="http://sparql.cwrc.ca/ontologies/genre#HistoricalGenre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3556,7 +3592,7 @@ Literary genres are used to classify texts within a shifting range of literary f
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Collection Form</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300025976"/>
-    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#FormGenre"/>
+    <rdfs:subClassOf rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Form"/>
     <skos:definition xml:lang="en">Indicates "accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization." <![CDATA[(<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">Getty, 2019</a>)]]></skos:definition>
   </owl:Class>
 </rdf:RDF>

@@ -852,11 +852,11 @@ def get_header_html():
 
     if lang == "en":
         version_type = "Française"
-        html_str += """ (<a href="%s">Version %s</a>)</h3>\n""" % (url, version_type)
         url += "-FR.html"
+        html_str += """ (<a href="%s">Version %s</a>)</h3>\n""" % (url, version_type)
     else:
-        html_str += """ (<a href="%s">%s Version</a>)</h3>\n""" % (url, version_type)
         url += "-EN.html"
+        html_str += """ (<a href="%s">%s Version</a>)</h3>\n""" % (url, version_type)
 
     html_str += "<dl>\n"
     if header["prior"]:
