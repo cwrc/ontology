@@ -1569,6 +1569,8 @@ s épîtres.]]></skos:definition>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026913"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">lullaby</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ChildrensLiteratureGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#DidacticGenre"/>
   </genre:SongGenre>
   <genre:BookForm rdf:about="http://sparql.cwrc.ca/ontologies/genre#notebook">
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Notebook_(style)"/>
@@ -1789,6 +1791,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:label xml:lang="fr">libretto</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">libretto</rdfs:label>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ScriptForm"/>
   </genre:OperaGenre>
   <genre:IntertextualGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#abridgement">
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
@@ -2166,6 +2169,8 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026635"/>
     <skos:definition xml:lang="en">"A song in which the lyrics promote pride in and allegiance to the identity and values of a particular group, such as a nation, sports team, or social cause."  <![CDATA[(<a href="#cwrc:4c227091-6bf0-4325-b846-9733fae19e61">Oxford, 2015</a>)]]></skos:definition>
     <skos:definition xml:lang="fr">Une chanson dont les paroles promeuvent la fidélité à l'identité et aux valeurs d'un groupe particulier —une nation, une équipe sportive ou une cause sociale— ainsi que la fierté d'y adhérer.</skos:definition>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#PoliticalGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre"/>
   </genre:SongGenre>
   <genre:DramaticGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#filmTvScript">
     <rdfs:label xml:lang="fr">script</rdfs:label>
@@ -2314,6 +2319,8 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">folk song</rdfs:label>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</rdfs:comment>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#ThematicGenre"/>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#NarrativeGenre"/>
   </genre:SongGenre>
   <genre:PerformanceMedium rdf:about="http://sparql.cwrc.ca/ontologies/genre#lecture">
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026122"/>
@@ -2620,6 +2627,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">musical writing</rdfs:label>
     <skos:definition xml:lang="en">Writing associated with some form of music.</skos:definition>
+    <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/genre#InformationalGenre"/>
   </genre:MusicalGenre>
   <genre:ComedicGenre rdf:about="http://sparql.cwrc.ca/ontologies/genre#comedyOfManners">
     <skos:definition xml:lang="en">"The comedy of manners is an entertainment form which satirizes the manners and affectations of a social class or of multiple classes, often represented by stereotypical stock characters. For example, the miles gloriosus ("boastful soldier") in ancient times, the fop and the rake during the English Restoration, or an old person pretending to be young. Restoration comedy is used as a synonym for "comedy of manners". The plot of the comedy, often concerned with scandal, is generally less important than its witty dialogue. A great writer of comedies of manners was Oscar Wilde, his most famous play being The Importance of Being Earnest. The comedy of manners was first developed in the new comedy of the Ancient Greek playwright Menander. His style, elaborate plots, and stock characters were imitated by the Roman playwrights Plautus and Terence, whose comedies were widely known and copied during the Renaissance. The best-known comedies of manners, however, may well be those of the French playwright Molière, who satirized the hypocrisy and pretension of the ancien régime in such plays as L'École des femmes (The School for Wives, 1662), Le Misanthrope (The Misanthrope, 1666), and most famously Tartuffe (1664)."  <![CDATA[(<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">DBpedia, 2017</a>)]]></skos:definition>
