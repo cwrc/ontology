@@ -33,7 +33,7 @@ $(ONTOLOGY_W_DATE).unique: $(ONTOLOGY_W_DATE).tmp
 
 # Final rdf file
 $(ONTOLOGY_W_DATE).rdf: $(ONTOLOGY_W_DATE).unique $(ONTOLOGY_W_DATE).counts $(ONTOLOGY_W_DATE).tmp scripts/crossRef.py
-	python3 scripts/crossRef.py $(ONTOLOGY_W_DATE).tmp > $(ONTOLOGY_W_DATE).tmp2
+	python3 scripts/crossRef.py $(ONTOLOGY_W_DATE).tmp $(ONTOLOGY_W_DATE).tmp2
 	cat $(ONTOLOGY_W_DATE).tmp2 | sed 's/ONTOLOGY_DATE/$(ONTOLOGY_DATE)/g' | sed 's/TOTAL_TRIPLES_CWRC_ONTOLOGY/$(TOTAL_TRIPLES_CWRC_ONTOLOGY)/g' | sed 's/TOTAL_ENTITIES_CWRC_ONTOLOGY/$(TOTAL_ENTITIES_CWRC_ONTOLOGY)/g' > $@	
 	rapper $@ > $(ONTOLOGY_W_DATE).nt
 	rapper -o turtle $@ > $(ONTOLOGY_W_DATE).ttl

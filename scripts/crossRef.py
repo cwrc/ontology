@@ -7,7 +7,7 @@ import sys
 
 # Expected Usage:
 # ./crossRef.py test.owl
-# Will output updated rdf-xml file with appropriate <a> in cdata tags to link to appropriate label and link
+# Will output updated rdf-xml input_file with appropriate <a> in cdata tags to link to appropriate label and link
 # Using @@#uri@@ and @@hyperlink@@
 # Suggested usage
 # ./crossRef.py test.owl > updated_test.owl
@@ -44,28 +44,28 @@ import sys
 # </skos:definition>
 # (Note this will increase the time it takes for script to run with many requests)
 
-# May need to update this user-agent header
-
+# NOTE: May need to update this user-agent header
 headers = {}
 headers['User-Agent'] = "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.27 Safari/537.17"
 
 
-if len(sys.argv) != 2:
+if len(sys.argv) != 3:
     print("Insufficent Arguments provided")
     print("Expected Usage:")
-    print(sys.argv[0] + " file.owl")
+    print(sys.argv[0] + " input.[owl/rdf/xml] output.[owl/rdf/xml]")
     exit()
 
-file = sys.argv[1]
+input_file = sys.argv[1]
+output_file = sys.argv[2]
 
 # Opening with etree parser for manipulation of text
 parser = etree.XMLParser(strip_cdata=False)
 try:
-    with open(file, "rb") as source:
+    with open(input_file, "r", encoding="UTF-8") as source:
         tree = etree.parse(source, parser=parser)
         root = tree.getroot()
 except etree.XMLSyntaxError as e:
-    print("Unable to parse provided rdf-xml file:", e, "\n\n\n")
+    print("Unable to parse provided rdf-xml input_file:", e, "\n\n\n")
     raise e
 
 # Opening with rdflib for querying of labels
@@ -74,7 +74,7 @@ namespace_manager = rdflib.namespace.NamespaceManager(rdflib.Graph())
 o_graph.namespace_manager = namespace_manager
 try:
     o_graph.open("store", create=True)
-    o_graph.parse(file)
+    o_graph.parse(input_file)
 except Exception as e:
     raise e
 
@@ -86,7 +86,7 @@ def get_full_uri(uri):
     return spec_url[:-1] + uri
 
 
-def printXML(root):
+def format_XML(root):
     rough_string = '<?xml version="1.0" encoding="UTF-8"?>\n'
     rough_string += (etree.tostring(root, encoding="utf-8", pretty_print=True)).decode('utf-8')
     # rough_string += etree.tostring(root, encoding="unicode", pretty_print=True)
@@ -94,17 +94,25 @@ def printXML(root):
     # Accounting for oddities in lxml not properly ignoring CDATA sections
     rough_string = rough_string.replace("&lt;", "<")
     rough_string = rough_string.replace("&gt;", ">")
-    # rough_string = rough_string.replace("<![CDATA[(<a", "<a")
-    # rough_string = rough_string.replace("<![CDATA[<i", "<i")
-    # rough_string = rough_string.replace("a>)]]>", "a>")
-    # rough_string = rough_string.replace("i>]]>", "i>")
+    rough_string = rough_string.replace("(<a", "<a")
+    rough_string = rough_string.replace("(<i", "<i")
+    rough_string = rough_string.replace("<![CDATA[<a", "<a")
+    rough_string = rough_string.replace("<![CDATA[<i", "<i")
+    rough_string = rough_string.replace("a>)", "a>")
+    rough_string = rough_string.replace("i>)", "i>")
+    rough_string = rough_string.replace("a>]]>", "a>")
+    rough_string = rough_string.replace("i>]]>", "i>")
 
-    # rough_string = rough_string.replace("<a href=", "<![CDATA[(<a href=")
-    # rough_string = rough_string.replace("<i>", "<![CDATA[<i>")
-    # rough_string = rough_string.replace("</a>", "</a>)]]>")
-    # rough_string = rough_string.replace("</i>", "</i>]]>")
-    # rough_string = rough_string.replace("]]>]]>", "]]>")
-    print(str(rough_string))
+    if "CDATA" in rough_string:
+        print("CDATA not properly removed")
+        exit()
+
+    rough_string = rough_string.replace("<a", "<![CDATA[<a")
+    rough_string = rough_string.replace("<i>", "<![CDATA[<i>")
+    rough_string = rough_string.replace("/a>", "/a>]]>")
+    rough_string = rough_string.replace("/i>", "/i>]]>")
+
+    return(rough_string)
 
 
 def get_webpage_title(url):
@@ -176,8 +184,11 @@ def main():
     elements = find_elements()
     for element in elements:
         get_definitions(element)
-    printXML(root)
+    # format_XML(root)
 
+    with open(output_file, "w") as output:
+        # tree.write(output, encoding="UTF-8")
+        output.write(format_XML(root))
 
 if __name__ == '__main__':
     main()
