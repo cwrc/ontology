@@ -92,25 +92,29 @@ def format_XML(root):
     # rough_string += etree.tostring(root, encoding="unicode", pretty_print=True)
 
     # Accounting for oddities in lxml not properly ignoring CDATA sections
-    rough_string = rough_string.replace("&lt;", "<")
-    rough_string = rough_string.replace("&gt;", ">")
-    rough_string = rough_string.replace("(<a", "<a")
-    rough_string = rough_string.replace("(<i", "<i")
-    rough_string = rough_string.replace("<![CDATA[<a", "<a")
-    rough_string = rough_string.replace("<![CDATA[<i", "<i")
-    rough_string = rough_string.replace("a>)", "a>")
-    rough_string = rough_string.replace("i>)", "i>")
-    rough_string = rough_string.replace("a>]]>", "a>")
-    rough_string = rough_string.replace("i>]]>", "i>")
+    rough_string = rough_string.replace("&lt;![CDATA[&lt;", "<![CDATA[<")
+    rough_string = rough_string.replace('"&gt;', '">')
+    rough_string = rough_string.replace('&lt;/a&gt;]]&gt;', '</a>]]>')
 
-    if "CDATA" in rough_string:
-        print("CDATA not properly removed")
-        exit()
+    # rough_string = rough_string.replace("&lt;", "<")
+    # rough_string = rough_string.replace("&gt;", ">")
+    # rough_string = rough_string.replace("(<a", "<a")
+    # rough_string = rough_string.replace("(<i", "<i")
+    # rough_string = rough_string.replace("<![CDATA[<a", "<a")
+    # rough_string = rough_string.replace("<![CDATA[<i", "<i")
+    # rough_string = rough_string.replace("a>)", "a>")
+    # rough_string = rough_string.replace("i>)", "i>")
+    # rough_string = rough_string.replace("a>]]>", "a>")
+    # rough_string = rough_string.replace("i>]]>", "i>")
 
-    rough_string = rough_string.replace("<a", "<![CDATA[<a")
-    rough_string = rough_string.replace("<i>", "<![CDATA[<i>")
-    rough_string = rough_string.replace("/a>", "/a>]]>")
-    rough_string = rough_string.replace("/i>", "/i>]]>")
+    # if "CDATA" in rough_string:
+    #     print("CDATA not properly removed")
+        # exit()
+
+    # rough_string = rough_string.replace("<a", "<![CDATA[<a")
+    # rough_string = rough_string.replace("<i>", "<![CDATA[<i>")
+    # rough_string = rough_string.replace("/a>", "/a>]]>")
+    # rough_string = rough_string.replace("/i>", "/i>]]>")
 
     return(rough_string)
 
