@@ -8555,12 +8555,33 @@
   </owl:ObjectProperty>
 
 
+  <owl:Class rdf:ID="Award">
+    <rdfs:label xml:lang="en">award</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">An award is something given to a person, a group of people, like a sports team, or an organization in recognition of their excellence in a certain field. An award may be accompanied by a trophy, title, certificate, commemorative plaque, medal, badge, pin, or ribbon. The accompanying item may vary according to purpose. </skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <skos:closeMatch rdf:resource="https://en.wikipedia.org/wiki/Award_or_decoration"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
   <owl:Class rdf:ID="EducationalAward">
     <rdfs:label xml:lang="en">educational award</rdfs:label>
-    <rdfs:label xml:lang="fr">récompenses scolaires</rdfs:label>
+    <rdfs:label xml:lang="fr">récompense scolaire</rdfs:label>
     <skos:definition xml:lang="en">An award, financial, material, or immaterial, associated with a person's education at any level.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="#Award"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
 
+  <owl:Class rdf:ID="LiteraryAward">
+    <rdfs:label xml:lang="en">literary award</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">A literary award is an award presented in recognition of a particularly lauded literary piece or body of work. It is normally presented to an author.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="#Award"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Literary_award"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -8729,7 +8750,6 @@
     <rdfs:label xml:lang="fr">oeuvre</rdfs:label>
     <skos:definition xml:lang="en">Indicates the  works of an author or other creative practioner regarded collectively.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -8766,7 +8786,7 @@
 
   <owl:Class rdf:ID="Fellowship">
     <rdfs:label xml:lang="en">fellowship</rdfs:label>
-    <rdfs:label xml:lang="fr">programme de bourse/rdfs:label>
+    <rdfs:label xml:lang="fr">programme de bourse</rdfs:label>
     <skos:definition xml:lang="en">An educational award or academic position usually associated with research or advanced standing in a field and sometimes involving labour such as teaching.</skos:definition>
     <skos:definition xml:lang="fr">Récompense ou position académique généralement reliée à la recherche ou à un parcours avancé dans un champ disciplinaire, impliquant parfois un emploi d'enseignant·e.</skos:definition>
     <rdfs:subClassOf rdf:resource="#EducationalAward"/>
@@ -8996,7 +9016,7 @@
     <rdfs:label xml:lang="fr">sexualité en contexte</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
-    <skos:definition xml:lang="en">Sexuality Context is a significant subclass of @@#CulturalFormContext@@. Annotations typed as Sexuality Context provide information about and discussions of a person's subjectivity with regards to their sexuality and sexual identity. Sexuality Context provides depth to more granular categorizations of a person through the sexuality or sexuality self-reported properties. It does not provide context for individual sexual experiences and relationships (for which see @@#IntimateRelationshipsContext@@), although specific relationships may be invoked to indicate the impact on a subject's life and understanding of their own sexuality. Contextualizations allow recognition of the complicated politics of sexuality, for example, considerations regarding outing, the historical specificity of some categories such as "congenital invert," the appropriation of derogatory terms, and the multiplicity of constructions. There are important politics of privacy with respect to the disclosure of a subject's sexuality, sexual orientation, and sexual identity. As far as living persons are concerned, recommended practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See (<![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>]]>)
+    <skos:definition xml:lang="en">Sexuality Context is a significant subclass of @@#CulturalFormContext@@. Annotations typed as Sexuality Context provide information about and discussions of a person's subjectivity or experience with regards to their sexuality and sexual identity. Sexuality Context provides depth to more granular categorizations of a person through the sexuality or sexuality self-reported properties. It does not provide context for individual sexual experiences and relationships (for which see @@#IntimateRelationshipsContext@@), although specific relationships may be invoked to indicate the impact on a subject's life and understanding of their own sexuality. Contextualizations allow recognition of the complicated politics of sexuality, for example, considerations regarding outing, the historical specificity of some categories such as "congenital invert," the appropriation of derogatory terms, and the multiplicity of constructions. There are important politics of privacy with respect to the disclosure of a subject's sexuality, sexual orientation, and sexual identity. As far as living persons are concerned, recommended practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See (<![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>]]>)
     </skos:definition>
     <skos:definition xml:lang="fr">Sexualité En Contexte est une sous-classe de contexte importante. Les annotations de Sexualité En Contexte fournissent des renseignements et des discussions sur la sexualité et l'identité sexuelle d'une personne grâce à Sexualité ou Sexualité Autodéclarée. Elle n'est pas vouée à répertorier les expériences sexuelles et les relations intimes, même si certaines d'entre elles peuvent être évoquées pour indiquer leurs conséquences sur la vie du sujet ou la connaissance qu'elle a de sa propre sexualité. Ces efforts de contextualisation permettent de reconnaître l'existence de questions complexes qui entourent la sexualité, comme par exemple les politiques de délation, la spécificité historique de certaines catégories comme "inversion sexuelle", la réappropriation de termes dénigrants ou les mutliples constructions discursives. Il existe d'importantes politiques de confidentialité qui protègent les personnes contre la divulgation d'informations privées sur leur sexualité, leur orientation sexuelle et leur identité sexuelle. Pour les personnes toujours en vie, notre pratique est donc de ne nous appuyer que sur des sources ou des déclarations publiques venant des sujets eux-mêmes, afin de ne pas dévoiler par inadvertance des informations privées sur leur sexualité. Voir (<![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>]]>)
     </skos:definition>
@@ -9022,7 +9042,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
     <dcterms:subject rdf:resource="#Religion"/>
-    <skos:definition xml:lang="en">Religion Context is a significant subclass of @@#Context@@. It is associated with the @@#CulturalForm@@ subclass @@#Religion@@, and sometimes other intersecting Cultural Forms. Annotations typed as Religion Context provide information about and discussions of a person's subjectivity with regards to their religion. Religion Context provides depth to more granular categorizations of a person indicated by the properties @@#hasReligion@@ or @@#hasReligionSelfReported@@.</skos:definition>
+    <skos:definition xml:lang="en">Religion Context is a significant subclass of @@#Context@@. It is associated with the @@#CulturalForm@@ subclass @@#Religion@@, and sometimes other intersecting Cultural Forms. Annotations typed as Religion Context provide information about and discussions of a person's subjectivity or experience with regards to their religion. Religion Context provides depth to more granular categorizations of a person indicated by the properties @@#hasReligion@@ or @@#hasReligionSelfReported@@.</skos:definition>
     <skos:definition xml:lang="fr">Contexte Religieux est une sous-classe de contexte importante. Elle est associée à @@#Religion@@, sous-classe de Forme Culturelle, et recoupe parfois avec d'autres Formes Culturelles. Les annotations entrées en tant que Contexte Religieux fournissent des informations et des discussions sur la subjectivité d'une personne en lien avec sa religion. Contexte Religieux explore plus en détails les catégories granulaires d'une personne grâce aux propriétés @@#hasReligion@@ Ou @@#hasReligionSelfReported@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -9046,7 +9066,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
     <dcterms:subject rdf:resource="#PoliticalAffiliation"/>
-    <skos:definition xml:lang="en">Politics Context is a significant subclass of @@#Context@@. It is associated with the @@#CulturalForm@@ subclass @@#PoliticalAffiliation@@, and sometimes other intersecting Cultural Forms. Annotations typed as Politics Context provide information about and discussions of a person's subjectivity with regards to their political identity. Politics Context provides depth to more granular categorizations of a person indicated by the properties @@#hasPoliticalAffiliation@@ and its subproperties.</skos:definition>
+    <skos:definition xml:lang="en">Politics Context is a significant subclass of @@#Context@@. It is associated with the @@#CulturalForm@@ subclass @@#PoliticalAffiliation@@, and sometimes other intersecting Cultural Forms. Annotations typed as Politics Context provide information about and discussions of a person's subjectivity or experience with regards to their political identity. Politics Context provides depth to more granular categorizations of a person indicated by the properties @@#hasPoliticalAffiliation@@ and its subproperties.</skos:definition>
     <skos:definition xml:lang="fr">Contexte Politique est une sous-classe de @@#Context@@ importante. Elle est associée à @@#PoliticalAffiliation@@, sous-classe de @@#CulturalForm@@, et recoupe parfois avec d'autres Formes Culturelles. Les annotations entrées en tant que Contexte Politique fournissent des informations et des discussions sur la subjectivité d'une personne en lien avec son activité politique. Contexte Politique explore plus en détails les catégories granulaires d'une personne grâce aux propriétés @@#hasPoliticalAffiliation@@ ou @@#hasPoliticalAffiliationSelfReported@@).</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -9057,7 +9077,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
     <dcterms:subject rdf:resource="#Gender"/>
-    <skos:definition xml:lang="en">Gender Context is a significant subclass of @@#Context@@. It is associated with the @@#CulturalForm@@ subclass @@#Gender@@, and sometimes other intersecting Cultural Forms. Annotations typed as Gender Context provide information about and discussions of a person's subjectivity with regards to their gender and gender identity. Gender Context provides depth to more granular categorizations of a person indicated through the properties @@#hasGender@@ or @@#hasGenderSelfReported@@.</skos:definition>
+    <skos:definition xml:lang="en">Gender Context is a significant subclass of @@#Context@@. It is associated with the @@#CulturalForm@@ subclass @@#Gender@@, and sometimes other intersecting Cultural Forms. Annotations typed as Gender Context provide information about and discussions of a person's subjectivity or experience with regards to their gender and gender identity. Gender Context provides depth to more granular categorizations of a person indicated through the properties @@#hasGender@@ or @@#hasGenderSelfReported@@.</skos:definition>
     <skos:definition xml:lang="fr">Genre En Contexte est une sous-classe de contexte importante. Elle est associée à la sous-classe de Forme Culturelle @@#Gender@@, et se recoupe parfois avec d'autres Formes Culturelles. Les annotations entrées en tant que Genre En Contexte fournissent des renseignements et des discussions sur la subjectivité d'une personne en ce qui concerne son genre et son identité genrée. Genre Contexte explore plus en détails les indications granulaires des propriétés @@#hasGender@@ ou @@#hasGenderSelfReported@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -17657,7 +17677,7 @@
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
     <dcterms:subject rdf:resource="#Ethnicity"/>
     <dcterms:subject rdf:resource="#RaceColour"/>
-    <skos:definition xml:lang="en">Ethnicity Context is a significant subclass of @@#Context@@. It is associated with the @@#CulturalForm@@ subclass Ethnicity, and sometimes other intersecting Cultural Forms. Annotations typed as Ethnicity Context provide information about and discussions of a person's subjectivity with regards to their perceived or self-reported ethnicity. Ethnicity Context provides depth to more granular categorizations of a person indicated by the properties @@#hasEthnicity@@ or @@#hasEthnicitySelfReported@@.</skos:definition>
+    <skos:definition xml:lang="en">Ethnicity Context is a significant subclass of @@#Context@@. It is associated with the @@#CulturalForm@@ subclass Ethnicity, and sometimes other intersecting Cultural Forms. Annotations typed as Ethnicity Context provide information about and discussions of a person's subjectivity or experience with regards to their perceived or self-reported ethnicity. Ethnicity Context provides depth to more granular categorizations of a person indicated by the properties @@#hasEthnicity@@ or @@#hasEthnicitySelfReported@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:comment xml:lang="en">Deprecated in favour of class @@#RaceEthnicityContext@@.</rdfs:comment>
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe @@#RaceEthnicityContext@@.</rdfs:comment>
