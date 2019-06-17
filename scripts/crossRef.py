@@ -88,21 +88,32 @@ def get_full_uri(uri):
 
 def printXML(root):
     rough_string = '<?xml version="1.0" encoding="UTF-8"?>\n'
-    rough_string += (etree.tostring(root, encoding="utf-8", pretty_print=True)).decode('utf-8')
-    # rough_string += etree.tostring(root, encoding="unicode", pretty_print=True)
+    # rough_string += (etree.tostring(root, encoding="utf-8", pretty_print=True)).decode('utf-8')
+    rough_string += etree.tostring(root, encoding="unicode", pretty_print=True)
 
     # Accounting for oddities in lxml not properly ignoring CDATA sections
     rough_string = rough_string.replace("&lt;", "<")
     rough_string = rough_string.replace("&gt;", ">")
-    # rough_string = rough_string.replace("<![CDATA[(<a", "<a")
-    # rough_string = rough_string.replace("<![CDATA[<i", "<i")
-    # rough_string = rough_string.replace("a>)]]>", "a>")
-    # rough_string = rough_string.replace("i>]]>", "i>")
+    rough_string = rough_string.replace("<![CDATA[(<a", "<a")
+    rough_string = rough_string.replace("<![CDATA[<a", "<a")
+    rough_string = rough_string.replace("<![CDATA[<i", "<i")
+    rough_string = rough_string.replace("a>)]]>", "a>")
+    rough_string = rough_string.replace("a>]]>", "a>")
+    rough_string = rough_string.replace("i>]]>", "i>")
 
-    # rough_string = rough_string.replace("<a href=", "<![CDATA[(<a href=")
-    # rough_string = rough_string.replace("<i>", "<![CDATA[<i>")
-    # rough_string = rough_string.replace("</a>", "</a>)]]>")
-    # rough_string = rough_string.replace("</i>", "</i>]]>")
+    if "CDATA" in rough_string:
+        print("Unable to escape CDATA")
+
+    # rough_string = rough_string.replace('<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>',
+    #                                     '<![CDATA[<a href="#cwrc:aec674cf-2108-4977-be3a-9317efe35aa9">(Damon Sajnani, 2015)</a>]]>')
+    # rough_string = rough_string.replace('<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>',
+    #                                     '<![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>]]>')
+    # rough_string = rough_string.replace("<![CDATA[<![CDATA[", "<![CDATA[")
+    # rough_string = rough_string.replace("]]>]]>", "]]>")
+    rough_string = rough_string.replace("<a ", "<![CDATA[<a ")
+    rough_string = rough_string.replace("<i>", "<![CDATA[<i>")
+    rough_string = rough_string.replace("</a>", "</a>]]>")
+    rough_string = rough_string.replace("</i>", "</i>]]>")
     # rough_string = rough_string.replace("]]>]]>", "]]>")
     print(str(rough_string))
 
