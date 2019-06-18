@@ -598,11 +598,30 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-
   <owl:Class rdf:ID="LeisureEvent">
     <rdfs:label xml:lang="en">leisure event</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">An event related to an @@#LeisureContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e7-activity"/>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EconomicEvent">
+    <rdfs:label xml:lang="en">economic event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#EconomicContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e7-activity"/>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ViolenceEvent">
+    <rdfs:label xml:lang="en">violence event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#ViolenceContext@@.</skos:definition>
     <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e7-activity"/>
     <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -788,16 +807,56 @@
 
 
 
-  <owl:Class rdf:ID="WealthContext">
-    <rdfs:label xml:lang="en">wealth context</rdfs:label>
+  <owl:Class rdf:ID="EconomicContext">
+    <rdfs:label xml:lang="en">economic context</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as Wealth Context provide information about and discussions of a person's economic standing, including inheritance, property ownership, pensions, and personal financial disasters. See also the @@#OccupationContext@@ and @@#CulturalFormContext@@, particularly for @@#SocialClassContext@@.</skos:definition>
+    <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as Economic Context provide information about and discussions of a person's economic standing, including inheritance, property ownership, pensions, and personal financial disasters. See also the @@#OccupationContext@@ and @@#CulturalFormContext@@, particularly for @@#SocialClassContext@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="economicRelationship">
+    <rdfs:label xml:lang="en">economic relationship</rdfs:label>
+    <skos:definition xml:lang="en"></skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#biographicalRelation"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="relatesEconomicallyTo">
+    <rdfs:label xml:lang="en">relates economically to</rdfs:label>
+    <skos:definition xml:lang="en">Any relationship between persons and other persons or entities related to information about economic standing, such as income, inheritance, property, or poverty.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelation"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
 
   <owl:Class rdf:ID="ViolenceContext">
     <rdfs:label xml:lang="en">violence context</rdfs:label>
@@ -809,6 +868,47 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+
+
+  <owl:ObjectProperty rdf:ID="violenceAssociation">
+    <rdfs:label xml:lang="en">violence association</rdfs:label>
+    <skos:definition xml:lang="en"></skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#biographicalRelation"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="associatedByViolenceWith">
+    <rdfs:label xml:lang="en">associated by violence with</rdfs:label>
+    <skos:definition xml:lang="en">A connection between persons and other persons or entities related to instances of physical, sexual, and undue emotional violence, whether the subject was the victim or the perpetrator. Broadly conceived to include the effect of exposure to violence of which the person was neither perpetrator nor survivor.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelation"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
 
   <owl:Class rdf:ID="LeisureContext">
     <rdfs:label xml:lang="en">leisure context</rdfs:label>
@@ -826,6 +926,7 @@
   <owl:ObjectProperty rdf:ID="socialRelationship">
     <rdfs:label xml:lang="en">social relationship</rdfs:label>
     <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#biographicalRelation"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -853,13 +954,14 @@
     <skos:definition xml:lang="en"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelation"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="relatesByLeisureTo">
     <rdfs:label xml:lang="en">relates by leisure to</rdfs:label>
     <skos:definition xml:lang="en">Any relationship between persons and another type of entity such as another person, or an organization, place, or text, often in the context of cultural and social activities, including hobbies and sports.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#relatesSociallyTo"/>
-    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -1318,7 +1420,7 @@
 
   <owl:ObjectProperty rdf:ID="relatesByOccupationTo">
     <rdfs:label xml:lang="en">relates by occupation to</rdfs:label>
-    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelation"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
@@ -1423,7 +1525,7 @@
     <skos:definition xml:lang="en">Describes or provides information regarding a person's incomes related to an occupation.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <skos:related rdf:resource="#hasOccupation"/>
-    <rdfs:subPropertyof rdf:resource="#hasBiographicalRelation"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelation"/>
     <owl:inverseOf rdf:resource="#occupationIncomeOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1444,7 +1546,7 @@
     <skos:definition xml:lang="fr"/>
     <skos:related rdf:resource="#hasOccupation"/>
     <owl:inverseOf rdf:resource="#hasEmployee"/>
-    <rdfs:subPropertyof rdf:resource="#hasBiographicalRelation"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelation"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -17771,6 +17873,21 @@
     <rdfs:comment xml:lang="fr">Désapprouver de l'ancienne ontologie Orlando.</rdfs:comment>
   </owl:DeprecatedProperty>
 
+  <owl:DeprecatedClass rdf:ID="WealthContext">
+    <rdfs:label xml:lang="en">wealth context</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subClassOf rdf:resource="#BiographyContext"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as Wealth Context provide information about and discussions of a person's economic standing, including inheritance, property ownership, pensions, and personal financial disasters. See also the @@#OccupationContext@@ and @@#CulturalFormContext@@, particularly for @@#SocialClassContext@@.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of class @@#EconomicContext@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe @@#EconomicContext@@.</rdfs:comment>
+    <owl:equivalentClass rdf:resource="#EconomicContext"/>
+    <dcterms:isReplacedBy rdf:resource="#EconomicContext"/>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </owl:DeprecatedClass>
 
   <owl:DeprecatedClass rdf:ID="Organization">
     <rdfs:label xml:lang="en">organization</rdfs:label>
@@ -17786,7 +17903,6 @@
     <rdfs:comment xml:lang="en">Deprecated in favour of class <![CDATA[<a href="https://www.w3.org/TR/vocab-org/#class-formalorganization">org:formalOrganization</a>]]> </rdfs:comment>
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe <![CDATA[<a href="https://www.w3.org/TR/vocab-org/#class-formalorganization">org:formalOrganization</a>]]>.</rdfs:comment>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
-
   </owl:DeprecatedClass>
   <owl:DeprecatedClass rdf:ID="RaceEthnicity">
     <rdfs:label xml:lang="en">race or ethnicity</rdfs:label>
