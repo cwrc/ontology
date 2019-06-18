@@ -809,7 +809,7 @@
     <skos:definition xml:lang="en">Any relationship between persons and other persons or entities related to information about economic standing, such as income, inheritance, property, or poverty.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelation"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -867,7 +867,7 @@
     <skos:definition xml:lang="en">A connection between persons and other persons or entities related to instances of physical, sexual, and undue emotional violence, whether the subject was the victim or the perpetrator. Broadly conceived to include the effect of exposure to violence of which the person was neither perpetrator nor survivor.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelation"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -932,7 +932,7 @@
     <skos:definition xml:lang="en"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelation"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="relatesByLeisureTo">
@@ -1406,7 +1406,7 @@
   <owl:ObjectProperty rdf:ID="relatesByOccupationTo">
     <rdfs:label xml:lang="en">relates by occupation to</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelation"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -1423,7 +1423,7 @@
     <skos:definition xml:lang="en">Indicates a regular position or activity significant to a person's life, including paid, unpaid, and voluntary work.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <owl:inverseOf rdf:resource="#occupationOf"/>
-    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelation"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Occupation"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1510,7 +1510,7 @@
     <skos:definition xml:lang="en">Describes or provides information regarding a person's incomes related to an occupation.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <skos:related rdf:resource="#hasOccupation"/>
-    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelation"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
     <owl:inverseOf rdf:resource="#occupationIncomeOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1531,7 +1531,7 @@
     <skos:definition xml:lang="fr"/>
     <skos:related rdf:resource="#hasOccupation"/>
     <owl:inverseOf rdf:resource="#hasEmployee"/>
-    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelation"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -9193,27 +9193,23 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
-  <owl:ObjectProperty rdf:ID="biographicalRelation">
-    <rdfs:label xml:lang="en">biographical relation</rdfs:label>
+  <owl:ObjectProperty rdf:ID="biographicalRelationship">
+    <rdfs:label xml:lang="en">biographical relationship</rdfs:label>
     <skos:definition xml:lang="en"></skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>  
 
-  <owl:ObjectProperty rdf:ID="hasBiographicalRelation">
-    <rdfs:label xml:lang="en">has biographical relation</rdfs:label>
+  <owl:ObjectProperty rdf:ID="hasBiographicalRelationTo">
+    <rdfs:label xml:lang="en">has biographical relation to</rdfs:label>
     <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
-    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
-    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
