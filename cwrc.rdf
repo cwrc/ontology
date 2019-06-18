@@ -588,57 +588,7 @@
     <prov:wasDerivedFrom rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-precision.html"/>
   </owl:ObjectProperty>
   
-  <owl:Class rdf:ID="OccupationEvent">
-    <rdfs:label xml:lang="en">occupation event</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">An event related to an @@#OccupationContext@@.</skos:definition>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e7-activity"/>
-    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
-  <owl:Class rdf:ID="LeisureEvent">
-    <rdfs:label xml:lang="en">leisure event</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">An event related to an @@#LeisureContext@@.</skos:definition>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e7-activity"/>
-    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
-  <owl:Class rdf:ID="EconomicEvent">
-    <rdfs:label xml:lang="en">economic event</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">An event related to an @@#EconomicContext@@.</skos:definition>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e7-activity"/>
-    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
-  <owl:Class rdf:ID="ViolenceEvent">
-    <rdfs:label xml:lang="en">violence event</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">An event related to an @@#ViolenceContext@@.</skos:definition>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e7-activity"/>
-    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
-  <owl:Class rdf:ID="BiographicalEvent">
-    <rdfs:label xml:lang="en">biographical event</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">An event related to an @@#BiographyContext@@.</skos:definition>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e7-activity"/>
-    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
-
+<!-- EventTypes -->
   <owl:Class rdf:ID="PoliticalClimate">
     <rdfs:label xml:lang="en">political climate</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -827,6 +777,17 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+  
+  <owl:Class rdf:ID="EconomicEvent">
+    <rdfs:label xml:lang="en">economic event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#EconomicContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e7-activity"/>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Event"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
 
   <owl:ObjectProperty rdf:ID="economicRelationship">
     <rdfs:label xml:lang="en">economic relationship</rdfs:label>
@@ -878,7 +839,17 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-
+  
+  <owl:Class rdf:ID="ViolenceEvent">
+    <rdfs:label xml:lang="en">violence event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#ViolenceContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e7-activity"/>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Event"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
 
   <owl:ObjectProperty rdf:ID="violenceAssociation">
     <rdfs:label xml:lang="en">violence association</rdfs:label>
@@ -930,8 +901,17 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-
   
+  <owl:Class rdf:ID="LeisureEvent">
+    <rdfs:label xml:lang="en">leisure event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#LeisureContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e7-activity"/>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Event"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
 
   <owl:ObjectProperty rdf:ID="socialRelationship">
     <rdfs:label xml:lang="en">social relationship</rdfs:label>
@@ -1346,6 +1326,17 @@
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as occupation provide information about and discussions of positions and activities significant to a person's life, including paid, unpaid, and voluntary work both beyond and within the home. Although writing as a career sometimes overlaps with occupation, literary activities are often described in writing contexts.</skos:definition>
     <skos:definition xml:lang="fr">Contexte Biographique est une sous-classe majeure de contexte. Les annotations entrées comme contexte biographique fournissent des informations et des discussions sur la biographie ou la vie personnelle d'un individu, grâce aux propriétés, aux relations biographiques et  aux sous-classes de contexte biographique, telles que le contexte de naissance, le contexte de forme culturelle ou le contexte professionnel.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="OccupationEvent">
+    <rdfs:label xml:lang="en">occupation event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#OccupationContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e7-activity"/>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Event"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
@@ -9207,6 +9198,16 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+  <owl:Class rdf:ID="BiographicalEvent">
+    <rdfs:label xml:lang="en">biographical event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#BiographyContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e7-activity"/>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Event"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
 
   <owl:ObjectProperty rdf:ID="biographicalRelation">
     <rdfs:label xml:lang="en">biographical relation</rdfs:label>
@@ -9249,7 +9250,6 @@
     <rdfs:label xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#HealthContext"/>
-
     <skos:definition xml:lang="en">A subclass of @@#HealthContext@@. Annotations typed as physical health context describe aspects of a person’s bodily or physical well-being or illness.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -9260,7 +9260,6 @@
     <rdfs:label xml:lang="fr">contexte de santé mentale</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#HealthContext"/>
-
     <skos:definition xml:lang="en">A subclass of @@#HealthContext@@. Annotations typed as mental health context describe an aspect of a person’s mental or psychological well-being or illness.</skos:definition>
     <skos:definition xml:lang="fr">Sous-classe de Contexte de santé. Les annotations entrées en tant que contexte de snaté mentale décrivent un aspect de du bien-être mental d'une personne ou au contraire de ses troubles psychologiques ou mentaux.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -9271,7 +9270,6 @@
     <rdfs:label xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#HealthContext"/>
-
     <skos:definition xml:lang="en">A subclass of @@#HealthContext@@. Annotations typed as women 's health context describe an aspect of a person's health related to being a woman. Often closely connected to or overlapping with @@#ReproductiveHistory@@. See @@https://en.wikipedia.org/wiki/Women%27s_health@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
