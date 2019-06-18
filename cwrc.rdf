@@ -815,11 +815,7 @@
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
-    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
-    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -873,11 +869,7 @@
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
-    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
-    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -909,6 +901,11 @@
     <rdfs:label xml:lang="en">social relationship</rdfs:label>
     <skos:definition xml:lang="en"></skos:definition>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -930,6 +927,12 @@
   <owl:ObjectProperty rdf:ID="relatesSociallyTo">
     <rdfs:label xml:lang="en">relates socially to</rdfs:label>
     <skos:definition xml:lang="en"></skos:definition>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
@@ -1393,7 +1396,6 @@
   <owl:ObjectProperty rdf:ID="occupationRelationship">
     <rdfs:label xml:lang="en">occupation relationship</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -9197,6 +9199,11 @@
     <rdfs:label xml:lang="en">biographical relationship</rdfs:label>
     <skos:definition xml:lang="en"></skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>  
