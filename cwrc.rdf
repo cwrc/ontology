@@ -16627,6 +16627,33 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="nativeLinguisticAbility">
+    <rdfs:label xml:lang="en">natively known language</rdfs:label>
+    <rdfs:label xml:lang="fr">langue native</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#linguisticAbility"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Language"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="nativeLinguisticAbilitySelfReported">
+    <rdfs:label xml:lang="en">natively known language (self-reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">langue native (autodéclarée)</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#nativeLinguisticAbility"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Language"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="nativeLinguisticAbilityReported">
+    <rdfs:label xml:lang="en">natively known language (reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">langue native (déclarée)</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#nativeLinguisticAbility"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Language"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasLinguisticAbility">
     <rdfs:label xml:lang="en">language known</rdfs:label>
