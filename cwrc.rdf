@@ -9555,6 +9555,33 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
+  <owl:ObjectProperty rdf:ID="gender">
+    <rdfs:label xml:lang="en">gender identity</rdfs:label>
+    <rdfs:label xml:lang="fr">genre</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Gender"/>
+    <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="genderSelfReported">
+    <rdfs:label xml:lang="en">gender identity (self-reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">genre (autodéclaré)</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#gender"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Gender"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="genderReported">
+    <rdfs:label xml:lang="en">gender identity (reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">genre (déclaré)</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Gender"/>
+    <rdfs:subPropertyOf rdf:resource="#gender"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
 
 
   <owl:Class rdf:ID="NationalHeritage">
