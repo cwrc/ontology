@@ -9652,6 +9652,34 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+  <owl:ObjectProperty rdf:ID="nationalHeritage">
+    <rdfs:label xml:lang="en">national heritage</rdfs:label>
+    <rdfs:label xml:lang="fr">héritage national</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#hasCulturalForm"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#NationalHeritage"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="nationalHeritageSelfReported">
+    <rdfs:label xml:lang="en">national heritage (self-reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">héritage national (autodéclarée)</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#NationalHeritage"/>
+    <rdfs:subPropertyOf rdf:resource="#nationalHeritage"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="nationalHeritageReported">
+    <rdfs:label xml:lang="en">national heritage (reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">héritage national (déclarée)</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#NationalHeritage"/>
+    <rdfs:subPropertyOf rdf:resource="#nationalHeritage"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
   <cwrc:NationalHeritage rdf:about="#anglo-IrishNationalHeritage">
     <rdfs:label xml:lang="en">Anglo-Irish</rdfs:label>
     <rdfs:label xml:lang="fr">Anglo-irlandais</rdfs:label>
@@ -15826,6 +15854,7 @@
     <rdfs:label xml:lang="fr">de héritage national</rdfs:label>
     <skos:definition xml:lang="en">Describes a person's @@#NationalHeritage@@, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasCulturalForm"/>
     <owl:inverseOf rdf:resource="#nationalHeritageOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#NationalHeritage"/>
@@ -15862,6 +15891,7 @@
     <rdfs:label xml:lang="fr"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#NationalHeritage"/>
+    <rdfs:subPropertyOf rdf:resource="#culturalFormOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
