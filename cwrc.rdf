@@ -10002,6 +10002,35 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+  <owl:ObjectProperty rdf:ID="geographicHeritage">
+    <rdfs:label xml:lang="en">geographic heritage</rdfs:label>
+    <rdfs:label xml:lang="fr">un héritage géographique</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
+    <rdfs:range rdf:resource="#GeographicHeritage"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="geographicHeritageSelfReported">
+    <rdfs:label xml:lang="en">geographic heritage (self-reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">un héritage géographique (autodéclaré)</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#GeographicHeritage"/>
+    <rdfs:subPropertyOf rdf:resource="#geographicHeritage"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="geographicHeritageReported">
+    <rdfs:label xml:lang="en">geographic heritage (reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">un héritage géographique (déclaré)</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#GeographicHeritage"/>
+    <rdfs:subPropertyOf rdf:resource="#geographicHeritage"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+
   <cwrc:GeographicHeritage rdf:about="#englishGeographicHeritage">
     <rdfs:label xml:lang="en">England</rdfs:label>
     <rdfs:label xml:lang="fr">Angleterre</rdfs:label>
@@ -15714,6 +15743,7 @@
     <skos:definition xml:lang="en">Describes a person's heritage in relation to a place, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#NationalityContext@@ annotations. Place names and boundaries change over time, and a conception of geographical heritage from one historical period may not be commensurate with those from an earlier or later period, even if they go by the same name. Similarly, a sense of geographical heritage may differ from a sense of identity with a political entity that goes by the same name. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type. For further information about this property, see @@#GeographicHeritage@@.</skos:definition>
     <skos:definition xml:lang="fr">Décrit l'héritage d'une personne en lien avec une situation géographique. Comme les toponomies et les frontières changent au cours du temps, une description de l'héritage géographique associée à une période historique donnée ne correspond pas toujours à celles des périodes antérieures ou postérieures, et ce même si elles possèdent le même nom. De même, le sentiment d'appartenance à un héritage géographique peut différer du sentiement d'appartenance à une entité politique du même nom. De même que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type. Pour plus d'informations sur cette propriété, voir @@#GeographicHeritage@@.</skos:definition>
     <owl:inverseOf rdf:resource="#geographicHeritageOf"/>
+    <rdfs:subPropertyOf rdf:resource="#hasCulturalForm"/>
     <rdfs:range rdf:resource="#GeographicHeritage"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -15749,6 +15779,7 @@
     <rdfs:label xml:lang="fr"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#GeographicHeritage"/>
+    <rdfs:subPropertyOf rdf:resource="#culturalFormOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -16337,6 +16368,7 @@
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:domainIncludes rdf:resource="#PoliticalAffiliation"/>
     <cwrc:domainIncludes rdf:resource="#PoliticalOrganization"/>
+    <rdfs:subPropertyOf rdf:resource="#culturalFormOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
