@@ -9508,6 +9508,35 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="religion">
+    <rdfs:label xml:lang="en">religious affiliation</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Religion"/>
+    <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="religionSelfReported">
+    <rdfs:label xml:lang="en">religious affiliation (self-reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">religion (autodéclarée)</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#religion"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="religionReported">
+    <rdfs:label xml:lang="en">religious affiliation (reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">religion (déclarée)</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#religion"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
   <owl:Class rdf:ID="NationalityContext">
     <rdfs:label xml:lang="en">nationality context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte national</rdfs:label>
@@ -15621,6 +15650,7 @@
     <owl:inverseOf rdf:resource="#genderOf"/>
     <skos:definition xml:lang="en">Describes a person's @@#Gender@@ identity, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#GenderContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasCulturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -16006,6 +16036,7 @@
     <owl:inverseOf rdf:resource="#religionOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Religion"/>
+    <rdfs:subPropertyOf rdf:resource="#hasCulturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -16039,6 +16070,7 @@
     <rdfs:label xml:lang="fr"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Religion"/>
+    <rdfs:subPropertyOf rdf:resource="#culturalFormOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
