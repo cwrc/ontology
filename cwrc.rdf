@@ -7817,7 +7817,7 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Indicates where a person was born.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="#hasSpatialRelationTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -7837,7 +7837,7 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Indicates the date of which a person was born.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -7857,7 +7857,7 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Indicates a person's @@#BirthPosition@@ relative to their siblings, with accompanying context provided by @@#BirthContext@@ annotations.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#BirthPosition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
