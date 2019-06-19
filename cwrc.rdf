@@ -17038,7 +17038,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-
+<!-- 
   <owl:ObjectProperty rdf:ID="hasGuardian">
     <rdfs:label xml:lang="en">has guardian</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -17154,7 +17154,7 @@
   <owl:ObjectProperty rdf:ID="hasRelative">
     <rdfs:label xml:lang="en">has relative</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Has a familial relationship to a person. hasRelative and its subproperties indicate social aspects of familial relations as opposed to biological ones; for example, @@#hasMother@@ is not necessarily a consanguineal relationship -- although both can be present. Family relationships are subproperties of social relationships. For more information, see @@http://dbpedia.org/page/Family@@. This property indicates either a general familial relationship or one that is complicated or not easily categorisable in traditional kinship terms.</skos:definition>
+    <skos:definition xml:lang="en">Has a familial relationship to a person. hasRelative and its subproperties indicate social aspects of familial relations as opposed to biological ones; for example, @@#hasMother@@ is not necessarily a consanguineal relationship - although both can be present. Family relationships are subproperties of social relationships. For more information, see @@http://dbpedia.org/page/Family@@. This property indicates either a general familial relationship or one that is complicated or not easily categorisable in traditional kinship terms.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdfs:subPropertyOf rdf:resource="#hasSocialRelationshipWith"/>
@@ -17972,7 +17972,7 @@
     <owl:inverseOf rdf:resource="#hasCousin"/>
     <skos:broader rdf:resource="http://schema.org/relatedTo"/>
   </owl:ObjectProperty>
-
+ -->
 
 
   <cwrc:Role rdf:about="#Actor">
