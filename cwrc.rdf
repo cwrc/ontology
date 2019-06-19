@@ -9443,12 +9443,41 @@
     <dcterms:subject rdf:resource="#Ethnicity"/>
     <dcterms:subject rdf:resource="#RaceColour"/>
   </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="raceColour">
+    <rdfs:label xml:lang="en">race or colour identity</rdfs:label>
+    <rdfs:label xml:lang="fr">est de race our couleur</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#RaceColour"/>
+    <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="raceColourSelfReported">
+    <rdfs:label xml:lang="en">race or colour identity (self-reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">race ou couleur (autodéclarée)</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#raceColour"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#RaceColour"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="raceColourReported">
+    <rdfs:label xml:lang="en">race or colour identity (reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">race ou couleur (déclarée)</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#raceColour"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#RaceColour"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:ID="ethnicity">
     <rdfs:label xml:lang="en">ethnic identity</rdfs:label>
     <rdfs:label xml:lang="fr">ethnicité</rdfs:label>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Ethnicity"/>
-    <rdfs:subPropertyOf rdf:resource="#hasCulturalForm"/>
+    <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -9470,7 +9499,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  
+
   <owl:Class rdf:ID="SexualityContext">
     <rdfs:label xml:lang="en">sexuality context</rdfs:label>
     <rdfs:label xml:lang="fr">sexualité en contexte</rdfs:label>
@@ -16046,6 +16075,7 @@
     <owl:inverseOf rdf:resource="#raceColourOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#RaceColour"/>
+    <rdfs:subPropertyOf rdf:resource="#hasCulturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -16079,6 +16109,7 @@
     <rdfs:label xml:lang="fr"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#RaceColour"/>
+    <rdfs:subPropertyOf rdf:resource="#culturalFormOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
