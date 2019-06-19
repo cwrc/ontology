@@ -1407,6 +1407,7 @@
 
   <owl:ObjectProperty rdf:ID="relatesByOccupationTo">
     <rdfs:label xml:lang="en">relates by occupation to</rdfs:label>
+    <skos:definition xml:lang="en">A connection between persons and other persons or entities related to occupation or employment.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -9244,15 +9245,26 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+  
+  <owl:ObjectProperty rdf:ID="culturalForm">
+    <rdfs:label xml:lang="en">cultural form</rdfs:label>
+    <rdfs:label xml:lang="fr">forme culturelle</rdfs:label>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:ID="hasCulturalForm">
     <rdfs:label xml:lang="en">has a cultural form</rdfs:label>
     <rdfs:label xml:lang="fr">a une forme culturelle</rdfs:label>
     <skos:definition xml:lang="en">This associates specific concepts and categories with the process of identity formation through cultural processes. Such associations may be or have been embraced by the subject her/himself or attributed by others. The concepts and categories classed as a @@#CulturalForm@@ are understood to overlap with each other conceptually and in terms of the labels used.</skos:definition>
     <skos:definition xml:lang="fr">Associe des concepts et des catégories spécifiques au processus de formation identitaire par des processus culturels. Les sujets eux-mêmes peuvent ou ont pu s'approprier de telles associations, ou d'autres personnes les leur ont attribuées. Les concepts et les catégories classés dans @@#CulturalForm@@ se chevauchent pour les concepts et les étiquettes utilisés.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-
   <owl:ObjectProperty rdf:ID="culturalFormOf">
     <rdfs:label xml:lang="en">cultural form of</rdfs:label>
     <skos:definition xml:lang="en">This is the inverse of @@#hasCulturalForm@@.</skos:definition>
@@ -9464,6 +9476,46 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+
+  
+  <owl:Class rdf:ID="PoliticsEvent">
+    <rdfs:label xml:lang="en">politics event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#PoliticsContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e7-activity"/>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Event"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="politicalRelationship">
+    <rdfs:label xml:lang="en">political relationship</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="relatesByPoliticsTo">
+    <rdfs:label xml:lang="en">relates by politics to</rdfs:label>
+    <skos:definition xml:lang="en">A connection between persons and other persons or entities related to politics.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
   <owl:Class rdf:ID="GenderContext">
     <rdfs:label xml:lang="en">gender context</rdfs:label>
     <rdfs:label xml:lang="fr">genre en contexte</rdfs:label>
@@ -15926,20 +15978,48 @@
   </owl:ObjectProperty>
 
 
+  <owl:ObjectProperty rdf:ID="politicalAffiliation">
+    <rdfs:label xml:lang="en">political affiliation</rdfs:label>
+    <rdfs:label xml:lang="fr">une appartenance politique</rdfs:label>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:ID="hasPoliticalAffiliation">
     <rdfs:label xml:lang="en">has political affiliation</rdfs:label>
     <rdfs:label xml:lang="fr">a une appartenance politique</rdfs:label>
     <skos:definition xml:lang="en">Describes a person's political affiliation, which may be self-reported or reported by another, with accompanying context, where present, provided by @@#PoliticalContext@@ annotations. As with other @@#CulturalForm@@s, an individual may have more than one property or descriptor of this type, and it may be linked to @@#PoliticalAffiliation@@s or directly to an organization which may or may not be primarily political. For further information about this property, see @@#PoliticalAffiliation@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <owl:inverseOf rdf:resource="#politicalAffiliationOf"/>
+    <rdfs:subPropertyOf rdf:resource="#hasCulturalForm"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
 
+  <owl:ObjectProperty rdf:ID="genderedPoliticalActivity">
+    <rdfs:label xml:lang="en">gendered political activity</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#politicalAffiliation"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasGenderedPoliticalActivity">
     <rdfs:label xml:lang="en">has gendered political activity</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -15950,6 +16030,7 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -15964,6 +16045,19 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:ID="politicalInvolvementIn">
+    <rdfs:label xml:lang="en">political involvement in</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#politicalAffiliation"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasPoliticalInvolvementIn">
     <rdfs:label xml:lang="en">has political involvement in</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -15974,6 +16068,7 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -15988,6 +16083,19 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:ID="politicalMembershipIn">
+    <rdfs:label xml:lang="en">political membership in</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#politicalInvolvementIn"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasPoliticalMembershipIn">
     <rdfs:label xml:lang="en">has political membership in</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -15998,6 +16106,7 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -16013,6 +16122,19 @@
   </owl:ObjectProperty>
 
 
+  <owl:ObjectProperty rdf:ID="activistInvolvementIn">
+    <rdfs:label xml:lang="en">activist involvement in</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#politicalMembershipIn"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasActivistInvolvementIn">
     <rdfs:label xml:lang="en">has activist involvement in</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -16023,10 +16145,10 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-
   <owl:ObjectProperty rdf:ID="hasActivistInvolvementFrom">
     <rdfs:label xml:lang="en">has activist involvement from</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -16038,6 +16160,19 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:ID="politicalAffiliationSelfReported">
+    <rdfs:label xml:lang="en">political affiliation (self-reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">une appartenance politique (autodéclarée)</rdfs:label>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#politicalAffiliation"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasPoliticalAffiliationSelfReported">
     <rdfs:label xml:lang="en">has political affiliation (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">a une appartenance politique (autodéclarée)</rdfs:label>
@@ -16048,6 +16183,20 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="#Religion"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="politicalAffiliationReported">
+    <rdfs:label xml:lang="en">political affiliation (reported)</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#politicalAffiliation"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
+    <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -16061,6 +16210,7 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>

@@ -543,6 +543,8 @@ def get_comment_list(uri):
 def get_label_dict(uri):
     temp = get_uri_term(uri)
     label = o_graph.objects(uri, RDFS.label)
+    if not label:
+        label = o_graph.objects(uri, SKOS.prefLabel)
     for x in label:
         temp = x
         if x.language == lang:
