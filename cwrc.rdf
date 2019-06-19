@@ -9514,6 +9514,35 @@
     <dcterms:subject rdf:resource="#Sexuality"/>
     <dcterms:subject rdf:resource="#Gender"/>
   </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="sexuality">
+    <rdfs:label xml:lang="en">sexual identity</rdfs:label>
+    <rdfs:label xml:lang="fr">une orientation sexuelle</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Sexuality"/>
+    <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="sexualitySelfReported">
+    <rdfs:label xml:lang="en">sexual identity (self-reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">une orientation sexuelle (autodéclarée)</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#sexuality"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Sexuality"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="sexualityReported">
+    <rdfs:label xml:lang="en">sexual identity (reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">une orientation sexuelle (déclarée)</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#sexuality"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Sexuality"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
   <owl:Class rdf:ID="SocialClassContext">
     <rdfs:label xml:lang="en">social class context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte social</rdfs:label>
@@ -16795,6 +16824,7 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <owl:inverseOf rdf:resource="#sexualityOf"/>
     <rdfs:range rdf:resource="#Sexuality"/>
+    <rdfs:subPropertyOf rdf:resource="#hasCulturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -16828,6 +16858,7 @@
     <rdfs:label xml:lang="fr"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Sexuality"/>
+    <rdfs:subPropertyOf rdf:resource="#culturalFormOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
