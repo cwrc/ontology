@@ -7794,7 +7794,7 @@
     <rdfs:label xml:lang="en">birth place</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
-    <!-- <rdfs:subPropertyOf rdf:resource="#spatialRelationship"/> -->
+    <rdfs:subPropertyOf rdf:resource="#spatialRelationship"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
@@ -7818,7 +7818,7 @@
     <skos:definition xml:lang="en">Indicates where a person was born.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationship"/>
-    <!-- <rdfs:subPropertyOf rdf:resource="#hasSpatialRelationTo"/> -->
+    <rdfs:subPropertyOf rdf:resource="#hasSpatialRelationTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -7962,7 +7962,7 @@
     <rdfs:label xml:lang="en">death place</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
-    <!-- <rdfs:subPropertyOf rdf:resource="#spatialRelationship"/> -->
+    <rdfs:subPropertyOf rdf:resource="#spatialRelationship"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -7973,7 +7973,7 @@
     <rdfs:label xml:lang="en">burial place</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
-    <!-- <rdfs:subPropertyOf rdf:resource="#spatialRelationship"/> -->
+    <rdfs:subPropertyOf rdf:resource="#spatialRelationship"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -7997,7 +7997,7 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Indicates where a person was buried after death.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <!-- <rdfs:subPropertyOf rdf:resource="#hasSpatialRelationTo"/> -->
+    <rdfs:subPropertyOf rdf:resource="#hasSpatialRelationTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -8017,7 +8017,7 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Indicates where a person has died.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <!-- <rdfs:subPropertyOf rdf:resource="#hasSpatialRelationTo"/> -->
+    <rdfs:subPropertyOf rdf:resource="#hasSpatialRelationTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -8072,10 +8072,10 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="relatesSpatiallyTo">
-    <rdfs:label xml:lang="en">relates spatially to</rdfs:label>
+  <owl:ObjectProperty rdf:ID="hasSpatialRelationTo">
+    <rdfs:label xml:lang="en">has spatial relation to</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Indicates an entity's connection to a geospatial location.</skos:definition>
+    <skos:definition xml:lang="en">Indicates an entity's connection to a geospatial location or to some other entity related to location.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -17837,7 +17837,19 @@
 
 
 
-
+  <owl:DeprecatedProperty rdf:ID="relatesSpatiallyTo">
+    <rdfs:label xml:lang="en">relates spatially to</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Indicates an entity's connection to a geospatial location.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#hasSpatialRelationTo@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#hasSpatialRelationTo@@.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#hasSpatialRelationTo"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </owl:DeprecatedProperty>
   <owl:DeprecatedProperty rdf:ID="interpersonalRelationship">
     <rdfs:label xml:lang="en">interpersonal relationship</rdfs:label>
     <rdfs:label xml:lang="fr">relation interpersonnelle</rdfs:label>
