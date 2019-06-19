@@ -9468,6 +9468,35 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="socialClass">
+    <rdfs:label xml:lang="en">class identity</rdfs:label>
+    <rdfs:label xml:lang="fr">une classe sociale</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#SocialClass"/>
+    <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="socialClassSelfReported">
+    <rdfs:label xml:lang="en">class identity (self-reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">classe sociale autodéclarée</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#socialClass"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#SocialClass"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="socialClassReported">
+    <rdfs:label xml:lang="en">class identity (reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">classe sociale déclarée</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#socialClass"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#SocialClass"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
   <owl:Class rdf:ID="ReligionContext">
     <rdfs:label xml:lang="en">religious context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte religieux</rdfs:label>
@@ -15625,6 +15654,7 @@
     <rdfs:label xml:lang="fr"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Gender"/>
+    <rdfs:subPropertyOf rdf:resource="#culturalFormOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -16308,6 +16338,7 @@
     <owl:inverseOf rdf:resource="#socialClassOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#SocialClass"/>
+    <rdfs:subPropertyOf rdf:resource="#hasCulturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -16316,6 +16347,7 @@
     <rdfs:label xml:lang="fr"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#SocialClass"/>
+    <rdfs:subPropertyOf rdf:resource="#culturalFormOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
