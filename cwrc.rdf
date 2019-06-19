@@ -9550,6 +9550,35 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="nationality">
+    <rdfs:label xml:lang="en">national identity</rdfs:label>
+    <rdfs:label xml:lang="fr">nationalité</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#NationalIdentity"/>
+    <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="nationalitySelfReported">
+    <rdfs:label xml:lang="en">national identity (self-reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">nationalité (autodéclarée)</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#nationality"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#NationalIdentity"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="nationalityReported">
+    <rdfs:label xml:lang="en">national identity (reported)</rdfs:label>
+    <rdfs:label xml:lang="fr">nationalité (déclarée)</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#nationality"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#NationalIdentity"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
   <owl:Class rdf:ID="PoliticalContext">
     <rdfs:label xml:lang="en">politics context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte politique</rdfs:label>
@@ -15923,6 +15952,7 @@
     <skos:definition xml:lang="fr">Décrit la @@#NationalIdentity@@ d'une personne. De même que pour les autres formes culturelles, une même personne peut cumuler plus d'une propriété ou description de ce type.</skos:definition>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#NationalIdentity"/>
+    <rdfs:subPropertyOf rdf:resource="#hasCulturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -15956,6 +15986,7 @@
     <rdfs:label xml:lang="fr"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#NationalIdentity"/>
+    <rdfs:subPropertyOf rdf:resource="#culturalFormOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -16051,6 +16082,7 @@
     <owl:inverseOf rdf:resource="#ethnicityOf"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Ethnicity"/>
+    <rdfs:subPropertyOf rdf:resource="#hasCulturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -16084,6 +16116,7 @@
     <rdfs:label xml:lang="fr"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Ethnicity"/>
+    <rdfs:subPropertyOf rdf:resource="#culturalFormOf"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
