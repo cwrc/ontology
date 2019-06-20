@@ -8088,7 +8088,7 @@
     <skos:definition xml:lang="en">Indicates that a person lived in this place.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <owl:inverseOf rdf:resource="#hasInhabitant"/>
-    <rdfs:subPropertyOf rdf:resource="#relatesSpatiallyTo"/>
+    <rdfs:subPropertyOf rdf:resource="#hasSpatialRelationTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -8097,7 +8097,7 @@
   <owl:ObjectProperty rdf:ID="hasInhabitant">
     <rdfs:label xml:lang="en">has inhabitant</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <rdfs:subPropertyOf rdf:resource="#relatesSpatiallyTo"/>
+    <rdfs:subPropertyOf rdf:resource="#hasSpatialRelationTo"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -8109,7 +8109,7 @@
     <skos:definition xml:lang="en">Indicates that a person travelled to this place.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <owl:inverseOf rdf:resource="#hasTraveller"/>
-    <rdfs:subPropertyOf rdf:resource="#relatesSpatiallyTo"/>
+    <rdfs:subPropertyOf rdf:resource="#hasSpatialRelationTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -8118,7 +8118,7 @@
   <owl:ObjectProperty rdf:ID="hasTraveller">
     <rdfs:label xml:lang="en">has traveller</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <rdfs:subPropertyOf rdf:resource="#relatesSpatiallyTo"/>
+    <rdfs:subPropertyOf rdf:resource="#hasSpatialRelationTo"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -18213,7 +18213,6 @@
   </cwrc:Role>
 
 
-
   <owl:DeprecatedProperty rdf:ID="relatesSpatiallyTo">
     <rdfs:label xml:lang="en">relates spatially to</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -18227,6 +18226,7 @@
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedProperty>
+
   <owl:DeprecatedProperty rdf:ID="interpersonalRelationship">
     <rdfs:label xml:lang="en">interpersonal relationship</rdfs:label>
     <rdfs:label xml:lang="fr">relation interpersonnelle</rdfs:label>
