@@ -8062,6 +8062,29 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
+  
+  <owl:Class rdf:ID="SpatialEvent">
+    <rdfs:label xml:lang="en">spatial event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#SpatialContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e7-activity"/>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Event"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="SpatialMovementEvent">
+    <rdfs:label xml:lang="en">spatial movement event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#SpatialContext@@. Particularly in relation to @@#travelsTo@@, @@#relocatesTo@@, @@#migratesFrom@@, @@#migratesTo@@, @@#visits@@ </skos:definition>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e7-activity"/>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Event"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
   <owl:ObjectProperty rdf:ID="spatialRelationship">
     <rdfs:label xml:lang="en">spatial relationship</rdfs:label>
     <rdfs:label xml:lang="fr"/>
