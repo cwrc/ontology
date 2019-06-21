@@ -9111,6 +9111,46 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
+  <owl:Class rdf:ID="EducationEvent">
+    <rdfs:label xml:lang="en">education event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#EducationContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#BiographicalEvent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="DomesticEducationEvent">
+    <rdfs:label xml:lang="en">domestic education event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#DomesticEducationContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#EducationEvent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="InstitutionalEducationEvent">
+    <rdfs:label xml:lang="en">institutional education event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#InstitutionalEducationContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#EducationEvent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="SelfTaughtEducationEvent">
+    <rdfs:label xml:lang="en">self taught education event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#SelfTaughtEducationContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#EducationEvent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
   <owl:ObjectProperty rdf:ID="hasEducation">
     <rdfs:range rdf:resource="#EducationContext"/>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
