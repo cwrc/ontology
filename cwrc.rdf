@@ -687,7 +687,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
-
+<!-- Possibly remove this class with us using our own more granular events -->
   <owl:Class rdf:ID="Event">
     <rdfs:label xml:lang="en">event</rdfs:label>
     <rdfs:label xml:lang="fr">évènement</rdfs:label>
@@ -703,8 +703,6 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
-
-
   <owl:ObjectProperty rdf:ID="hasEvent">
     <rdfs:label xml:lang="en">has event</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -715,7 +713,6 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
-
   <owl:ObjectProperty rdf:ID="eventOf">
     <rdfs:label xml:lang="en">event of</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -811,6 +808,7 @@
     <skos:definition xml:lang="en"></skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#relatesEconomicallyTo"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -865,6 +863,7 @@
     <skos:definition xml:lang="en"></skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#associatedByViolenceWith"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -917,26 +916,13 @@
   <owl:ObjectProperty rdf:ID="socialRelationship">
     <rdfs:label xml:lang="en">social relationship</rdfs:label>
     <skos:definition xml:lang="en"></skos:definition>
+    <cwrc:subjectCentricPredicate rdf:resource="#relatesSociallyTo"/>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:ID="leisureRelationship">
-    <rdfs:label xml:lang="en">leisure relationship</rdfs:label>
-    <skos:definition xml:lang="en"></skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#socialRelationship"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
-    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
-    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -953,6 +939,21 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="leisureRelationship">
+    <rdfs:label xml:lang="en">leisure relationship</rdfs:label>
+    <skos:definition xml:lang="en"></skos:definition>
+    <cwrc:subjectCentricPredicate rdf:resource="#relatesByLeisureTo"/>
+    <rdfs:subPropertyOf rdf:resource="#socialRelationship"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="relatesByLeisureTo">
@@ -1358,6 +1359,7 @@
     <rdfs:label xml:lang="en">paid occupation</rdfs:label>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Occupation"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasPaidOccupation"/>
     <rdfs:subPropertyOf rdf:resource="#occupation"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1367,6 +1369,7 @@
     <rdfs:label xml:lang="en">family based occupation</rdfs:label>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Occupation"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasFamilyBasedOccupation"/>
     <rdfs:subPropertyOf rdf:resource="#occupation"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1376,6 +1379,7 @@
     <rdfs:label xml:lang="en">occupation</rdfs:label>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Occupation"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasOccupation"/>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1385,6 +1389,7 @@
     <rdfs:label xml:lang="en">volunteer occupation</rdfs:label>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Occupation"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasVolunteerOccupation"/>
     <rdfs:subPropertyOf rdf:resource="#occupation"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1394,6 +1399,7 @@
     <rdfs:label xml:lang="en">occupation income</rdfs:label>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasOccupationIncome"/>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1405,6 +1411,7 @@
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasEmployer"/>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1413,6 +1420,7 @@
   <owl:ObjectProperty rdf:ID="occupationRelationship">
     <rdfs:label xml:lang="en">occupation relationship</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#relatesByOccupationTo"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -7801,6 +7809,7 @@
   <owl:ObjectProperty rdf:ID="birthDate">
     <rdfs:label xml:lang="en">birth date</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasBirthDate"/>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -7810,6 +7819,7 @@
   <owl:ObjectProperty rdf:ID="birthPlace">
     <rdfs:label xml:lang="en">birth place</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasBirthPlace"/>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
     <rdfs:subPropertyOf rdf:resource="#spatialRelationship"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -7822,6 +7832,7 @@
   <owl:ObjectProperty rdf:ID="birthPosition">
     <rdfs:label xml:lang="en">birth position</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasBirthPosition"/>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#BirthPosition"/>
@@ -7868,7 +7879,6 @@
     <owl:inverseOf rdf:resource="#hasBirthDate"/>
   </owl:ObjectProperty>
 
-
   <owl:ObjectProperty rdf:ID="hasBirthPosition">
     <rdfs:label xml:lang="en">has birth position</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -7879,6 +7889,15 @@
     <rdfs:range rdf:resource="#BirthPosition"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="birthPositionOf">
+    <rdfs:label xml:lang="en">birth position of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#BirthPosition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasBirthPosition"/>
   </owl:ObjectProperty>
 
   <owl:Class rdf:ID="BirthPosition">
@@ -7962,6 +7981,7 @@
     <rdfs:label xml:lang="en">cause of death</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasCauseOfDeath"/>
     <rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/ii#IllnessInjury"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -7970,6 +7990,7 @@
   <owl:ObjectProperty rdf:ID="deathDate">
     <rdfs:label xml:lang="en">death date</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasDeathDate"/>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -7978,6 +7999,7 @@
   <owl:ObjectProperty rdf:ID="deathPlace">
     <rdfs:label xml:lang="en">death place</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasDeathPlace"/>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
     <rdfs:subPropertyOf rdf:resource="#spatialRelationship"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -7989,6 +8011,7 @@
   <owl:ObjectProperty rdf:ID="burialPlace">
     <rdfs:label xml:lang="en">burial place</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasBurialPlace"/>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
     <rdfs:subPropertyOf rdf:resource="#spatialRelationship"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -8107,6 +8130,7 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en"></skos:definition>
     <skos:definition xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasSpatialRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -9318,6 +9342,7 @@
     <rdfs:label xml:lang="fr">forme culturelle</rdfs:label>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasCulturalForm"/>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -9389,6 +9414,7 @@
   <owl:ObjectProperty rdf:ID="biographicalRelationship">
     <rdfs:label xml:lang="en">biographical relationship</rdfs:label>
     <skos:definition xml:lang="en"></skos:definition>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasBiographicalRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -9398,7 +9424,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>  
-
   <owl:ObjectProperty rdf:ID="hasBiographicalRelationTo">
     <rdfs:label xml:lang="en">has biographical relation to</rdfs:label>
     <skos:definition xml:lang="en"></skos:definition>
@@ -9489,6 +9514,7 @@
     <rdfs:label xml:lang="fr">est de race our couleur</rdfs:label>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#RaceColour"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasRaceColour"/>
     <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -9497,6 +9523,7 @@
     <rdfs:label xml:lang="en">race or colour identity (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">race ou couleur (autodéclarée)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#raceColour"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasRaceColourSelfReported"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#RaceColour"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -9505,6 +9532,7 @@
   <owl:ObjectProperty rdf:ID="raceColourReported">
     <rdfs:label xml:lang="en">race or colour identity (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">race ou couleur (déclarée)</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasRaceColourReported"/>
     <rdfs:subPropertyOf rdf:resource="#raceColour"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#RaceColour"/>
@@ -9517,6 +9545,7 @@
     <rdfs:label xml:lang="fr">ethnicité</rdfs:label>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Ethnicity"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasEthnicity"/>
     <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -9524,6 +9553,7 @@
   <owl:ObjectProperty rdf:ID="ethnicitySelfReported">
     <rdfs:label xml:lang="en">ethnic identity (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">ethnicité (autodéclarée)</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasEthnicitySelfReported"/>
     <rdfs:subPropertyOf rdf:resource="#ethnicity"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Ethnicity"/>
@@ -9533,6 +9563,7 @@
   <owl:ObjectProperty rdf:ID="ethnicityReported">
     <rdfs:label xml:lang="en">ethnic identity (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">ethnicité (déclarée)</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasEthnicityReported"/>
     <rdfs:subPropertyOf rdf:resource="#ethnicity"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Ethnicity"/>
@@ -9560,6 +9591,7 @@
     <rdfs:label xml:lang="fr">une orientation sexuelle</rdfs:label>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Sexuality"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasSexuality"/>
     <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -9567,6 +9599,7 @@
   <owl:ObjectProperty rdf:ID="sexualitySelfReported">
     <rdfs:label xml:lang="en">sexual identity (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">une orientation sexuelle (autodéclarée)</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasSexualitySelfReported"/>
     <rdfs:subPropertyOf rdf:resource="#sexuality"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Sexuality"/>
@@ -9576,6 +9609,7 @@
   <owl:ObjectProperty rdf:ID="sexualityReported">
     <rdfs:label xml:lang="en">sexual identity (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">une orientation sexuelle (déclarée)</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasSexualityReported"/>
     <rdfs:subPropertyOf rdf:resource="#sexuality"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Sexuality"/>
@@ -9600,6 +9634,7 @@
     <rdfs:label xml:lang="fr">une classe sociale</rdfs:label>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#SocialClass"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasSocialClass"/>
     <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -9607,6 +9642,7 @@
   <owl:ObjectProperty rdf:ID="socialClassSelfReported">
     <rdfs:label xml:lang="en">class identity (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">classe sociale autodéclarée</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasSocialClassSelfReported"/>
     <rdfs:subPropertyOf rdf:resource="#socialClass"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#SocialClass"/>
@@ -9616,6 +9652,7 @@
   <owl:ObjectProperty rdf:ID="socialClassReported">
     <rdfs:label xml:lang="en">class identity (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">classe sociale déclarée</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasSocialClassReported"/>
     <rdfs:subPropertyOf rdf:resource="#socialClass"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#SocialClass"/>
@@ -9640,6 +9677,7 @@
     <rdfs:label xml:lang="fr"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Religion"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasReligion"/>
     <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -9648,6 +9686,7 @@
     <rdfs:label xml:lang="en">religious affiliation (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">religion (autodéclarée)</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#religion"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasReligionSelfReported"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -9656,6 +9695,7 @@
   <owl:ObjectProperty rdf:ID="religionReported">
     <rdfs:label xml:lang="en">religious affiliation (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">religion (déclarée)</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasReligionReported"/>
     <rdfs:subPropertyOf rdf:resource="#religion"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Religion"/>
@@ -9680,6 +9720,7 @@
   <owl:ObjectProperty rdf:ID="nationality">
     <rdfs:label xml:lang="en">national identity</rdfs:label>
     <rdfs:label xml:lang="fr">nationalité</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasNationality"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#NationalIdentity"/>
     <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
@@ -9689,6 +9730,7 @@
   <owl:ObjectProperty rdf:ID="nationalitySelfReported">
     <rdfs:label xml:lang="en">national identity (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">nationalité (autodéclarée)</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasNationalitySelfReported"/>
     <rdfs:subPropertyOf rdf:resource="#nationality"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#NationalIdentity"/>
@@ -9698,6 +9740,7 @@
   <owl:ObjectProperty rdf:ID="nationalityReported">
     <rdfs:label xml:lang="en">national identity (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">nationalité (déclarée)</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasNationalityReported"/>
     <rdfs:subPropertyOf rdf:resource="#nationality"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#NationalIdentity"/>
@@ -9732,6 +9775,7 @@
   <owl:ObjectProperty rdf:ID="politicalRelationship">
     <rdfs:label xml:lang="en">political relationship</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#relatesByPoliticsTo"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -9773,6 +9817,7 @@
     <rdfs:label xml:lang="fr">genre</rdfs:label>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Gender"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasGender"/>
     <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -9780,6 +9825,7 @@
   <owl:ObjectProperty rdf:ID="genderSelfReported">
     <rdfs:label xml:lang="en">gender identity (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">genre (autodéclaré)</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasGenderSelfReported"/>
     <rdfs:subPropertyOf rdf:resource="#gender"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Gender"/>
@@ -9791,6 +9837,7 @@
     <rdfs:label xml:lang="fr">genre (déclaré)</rdfs:label>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Gender"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasGenderReported"/>
     <rdfs:subPropertyOf rdf:resource="#gender"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -9811,6 +9858,7 @@
     <rdfs:label xml:lang="en">national heritage</rdfs:label>
     <rdfs:label xml:lang="fr">héritage national</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#hasCulturalForm"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasNationalHeritage"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#NationalHeritage"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -9819,6 +9867,7 @@
   <owl:ObjectProperty rdf:ID="nationalHeritageSelfReported">
     <rdfs:label xml:lang="en">national heritage (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">héritage national (autodéclarée)</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasNationalHeritageSelfReported"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#NationalHeritage"/>
     <rdfs:subPropertyOf rdf:resource="#nationalHeritage"/>
@@ -9828,6 +9877,7 @@
   <owl:ObjectProperty rdf:ID="nationalHeritageReported">
     <rdfs:label xml:lang="en">national heritage (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">héritage national (déclarée)</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasNationalHeritageReported"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#NationalHeritage"/>
     <rdfs:subPropertyOf rdf:resource="#nationalHeritage"/>
@@ -10189,6 +10239,7 @@
     <rdfs:label xml:lang="en">geographic heritage</rdfs:label>
     <rdfs:label xml:lang="fr">un héritage géographique</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasGeographicHeritage"/>
     <cwrc:rangeIncludes rdf:resource="#GeographicHeritage"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
@@ -10199,6 +10250,7 @@
   <owl:ObjectProperty rdf:ID="geographicHeritageSelfReported">
     <rdfs:label xml:lang="en">geographic heritage (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">un héritage géographique (autodéclaré)</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasGeographicHeritageSelfReported"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#GeographicHeritage"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -10210,6 +10262,7 @@
   <owl:ObjectProperty rdf:ID="geographicHeritageReported">
     <rdfs:label xml:lang="en">geographic heritage (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">un héritage géographique (déclaré)</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasGeographicHeritageReported"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#GeographicHeritage"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -16339,6 +16392,7 @@
     <rdfs:label xml:lang="fr">une appartenance politique</rdfs:label>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasPoliticalAffiliation"/>
     <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalOrganization"/>
@@ -16368,6 +16422,7 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasGenderedPoliticalActivity"/>
     <rdfs:subPropertyOf rdf:resource="#politicalAffiliation"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
@@ -16406,6 +16461,7 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasPoliticalInvolvementIn"/>
     <rdfs:subPropertyOf rdf:resource="#politicalAffiliation"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
@@ -16444,6 +16500,7 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasPoliticalMembershipIn"/>
     <rdfs:subPropertyOf rdf:resource="#politicalInvolvementIn"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
@@ -16483,6 +16540,7 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasActivistInvolvementIn"/>
     <rdfs:subPropertyOf rdf:resource="#politicalMembershipIn"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
@@ -16521,6 +16579,7 @@
     <rdfs:label xml:lang="fr">une appartenance politique (autodéclarée)</rdfs:label>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasPoliticalAffiliationSelfReported"/>
     <rdfs:subPropertyOf rdf:resource="#politicalAffiliation"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
@@ -16543,11 +16602,13 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:ID="politicalAffiliationReported">
     <rdfs:label xml:lang="en">political affiliation (reported)</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasPoliticalAffiliationReported"/>
     <rdfs:subPropertyOf rdf:resource="#politicalAffiliation"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#PoliticalAffiliation"/>
@@ -16674,6 +16735,7 @@
     <rdfs:label xml:lang="fr">maîtrise une langue</rdfs:label>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Language"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasLinguisticAbility"/>
     <rdfs:subPropertyOf rdf:resource="#culturalForm"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -16681,6 +16743,7 @@
   <owl:ObjectProperty rdf:ID="linguisticAbilitySelfReported">
     <rdfs:label xml:lang="en">language known (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">maîtrise une langue (autodéclaré)</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasLinguisticAbilitySelfReported"/>
     <rdfs:subPropertyOf rdf:resource="#linguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Language"/>
@@ -16690,6 +16753,7 @@
   <owl:ObjectProperty rdf:ID="linguisticAbilityReported">
     <rdfs:label xml:lang="en">language known (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">maîtrise une langue (déclaré)</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasLinguisticAbilityReported"/>
     <rdfs:subPropertyOf rdf:resource="#linguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Language"/>
@@ -16700,6 +16764,7 @@
     <rdfs:label xml:lang="en">natively known language</rdfs:label>
     <rdfs:label xml:lang="fr">langue native</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#linguisticAbility"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasNativeLinguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Language"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -16708,6 +16773,7 @@
   <owl:ObjectProperty rdf:ID="nativeLinguisticAbilitySelfReported">
     <rdfs:label xml:lang="en">natively known language (self-reported)</rdfs:label>
     <rdfs:label xml:lang="fr">langue native (autodéclarée)</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasNativeLinguisticAbilitySelfReported"/>
     <rdfs:subPropertyOf rdf:resource="#nativeLinguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Language"/>
@@ -16717,6 +16783,7 @@
   <owl:ObjectProperty rdf:ID="nativeLinguisticAbilityReported">
     <rdfs:label xml:lang="en">natively known language (reported)</rdfs:label>
     <rdfs:label xml:lang="fr">langue native (déclarée)</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasNativeLinguisticAbilityReported"/>
     <rdfs:subPropertyOf rdf:resource="#nativeLinguisticAbility"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Language"/>
