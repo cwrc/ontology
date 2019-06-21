@@ -9024,13 +9024,32 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:ID="companion">
+    <rdfs:label xml:lang="en">companion</rdfs:label>
+    <rdfs:label xml:lang="fr">un·e camarade</rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasCompanion"/>
+    <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasCompanion">
     <rdfs:label xml:lang="en">has companion</rdfs:label>
     <rdfs:label xml:lang="fr">a un·e camarade</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
     <skos:definition xml:lang="en">Describes a relationship with a person, usually a peer, in the context of the subject's education.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la relation du sujet avec une personne, habituellement un·e camarade, dans le contexte de son éducation.</skos:definition>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="contestedBehaviour">
+    <rdfs:label xml:lang="en">nonconformant behaviour</rdfs:label>
+    <rdfs:label xml:lang="fr">comportement contesté</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasContestedBehaviour"/>
+    <rdfs:subPropertyOf rdf:resource="#educationRelationship"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -9039,7 +9058,18 @@
     <rdfs:label xml:lang="fr">comportement contesté</rdfs:label>
     <skos:definition xml:lang="en">Describes behaviour, which is perceived as negative, in the context of the subject's education. Often indicative of struggle against systemic discrimination, including within the structures of educational institutions.</skos:definition>
     <skos:definition xml:lang="fr">Décrit le comportement, perçu comme négatif, dans le contexte de l'éducation du sujet. Souvent indicateur d'une lutte contre la discrimination systémique, y compris au sein des structures de l'éducation insitutionnelle.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#relatesByEducationTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="instructor">
+    <rdfs:label xml:lang="en">instructor</rdfs:label>
+    <rdfs:label xml:lang="fr">un instructeur·ice</rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasInstructor"/>
+    <rdfs:subPropertyOf rdf:resource="#educationRelationship"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -9048,6 +9078,7 @@
     <rdfs:label xml:lang="fr">a un instructeur·ice</rdfs:label>
     <skos:definition xml:lang="en">Describes the subject's relationship with an educational instructor or mentor, formal or informal.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la relation du sujet avec un instructeur pédagogique ou un·e mentor·e, formel·le ou informel·le.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#relatesByEducationTo"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -9162,6 +9193,35 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:ID="educationRelationship">
+    <rdfs:label xml:lang="en">education relationship</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#relatesByEducationTo"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="relatesByEducationTo">
+    <rdfs:label xml:lang="en">relates by education to</rdfs:label>
+    <skos:definition xml:lang="en">A connection between persons and other persons or entities related to education.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
 
   <owl:Class rdf:ID="Award">
     <rdfs:label xml:lang="en">award</rdfs:label>
@@ -9194,11 +9254,21 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
+  <owl:ObjectProperty rdf:ID="award">
+    <rdfs:label xml:lang="en">award</rdfs:label>
+    <rdfs:label xml:lang="fr">une récompense</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasAward"/>
+    <rdfs:subPropertyOf rdf:resource="#educationRelationship"/>
+    <!-- Add writing relation eventually -->
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasAward">
     <rdfs:label xml:lang="en">has award</rdfs:label>
     <rdfs:label xml:lang="fr">a une récompense</rdfs:label>
     <skos:definition xml:lang="en">Indicates an award, prize, or recognition that a person has won, such as a literary award or an @@#educationalAwardPrize@@.</skos:definition>
     <skos:definition xml:lang="fr">Indique une récompense, un prix ou une distinction qu'une personne a gagné, tel qu'un prix littéraire ou un prix d'éducation.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#relatesByEducationTo"/>
     <owl:inverseOf rdf:resource="#awardedTo"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -9235,11 +9305,21 @@
   </cwrc:EducationalAward>
 
 
+  <owl:ObjectProperty rdf:about="#credential">
+    <rdfs:label xml:lang="en">credential</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:range rdf:resource="#Credential"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasCredentialIn"/>
+    <rdfs:subPropertyOf rdf:resource="#educationRelationship"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#hasCredentialIn">
     <rdfs:label xml:lang="en">has credential in</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Indicates an educational credential awarded to a person.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#relatesByEducationTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Credential"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -9258,6 +9338,16 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <!-- May have to deprecate this in favour of hasDegreeSubject TBD -->
+  <owl:ObjectProperty rdf:about="#credentialSubject">
+    <rdfs:label xml:lang="en">credential subject</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:range rdf:resource="#EducationalSubject"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasCredentialSubject"/>
+    <rdfs:subPropertyOf rdf:resource="#educationRelationship"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#hasCredentialSubject">
     <rdfs:label xml:lang="en">has credential subject</rdfs:label>
@@ -9265,6 +9355,7 @@
     <skos:definition xml:lang="en">Indicates a subject in which a person has pursued or received a degree.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#relatesByEducationTo"/>
     <rdfs:range rdf:resource="#EducationalSubject"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -9282,16 +9373,27 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#studies">
-    <rdfs:label xml:lang="en">studies</rdfs:label>
+  <owl:ObjectProperty rdf:about="#subjectOfStudy">
+    <rdfs:label xml:lang="en">subject of study</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Indicates a text studied by a person in the course of their education, whether formal or informal, institutional or domestic.</skos:definition>
-    <skos:definition xml:lang="fr"/>
     <rdfs:range rdf:resource="#EducationalSubject"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#studies"/>
+    <rdfs:subPropertyOf rdf:resource="#educationRelationship"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="#studies">
+    <rdfs:label xml:lang="en">studies</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Indicates a subject, field, art, or skill studied in the course of their education, whether formal or informal, institutional or domestic.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="#EducationalSubject"/>
+    <rdfs:subPropertyOf rdf:resource="#relatesByEducationTo"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#studiedBy">
     <rdfs:label xml:lang="en">studied by</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -9302,6 +9404,15 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="#teachingEducationalSubject">
+    <rdfs:label xml:lang="en">teaching educational subject</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:range rdf:resource="#EducationalSubject"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#studies"/>
+    <rdfs:subPropertyOf rdf:resource="#educationRelationship"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#teachesEducationalSubject">
     <rdfs:label xml:lang="en">teaches educational subject</rdfs:label>
     <rdfs:label xml:lang="fr"/>
