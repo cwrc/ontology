@@ -220,12 +220,12 @@ def newAZ(nodes):
     string += '    <th scope="col">Instance</th>'
     string += '  </tr>\n\t</thead>\n<tbody>'
     for x in types:
-        instances = [get_uri_term(x) for x in o_graph.subjects(None, x) if spec_url in x]
+        instances = sorted([get_uri_term(y) for y in o_graph.subjects(RDF.type, x) if spec_url in y])
         if instances:
             string += '<tr>'
             name = '<a href="%s" style="font-weight:bold;">%s:</a>' % (get_link(x), get_prefix(x))
             string += '  <th scope="row">%s</th>' % name
-            string += create_row(sorted(instances))
+            string += create_row((instances))
             string += '</tr>'
     string += '</tbody>\n</table>'
 
@@ -273,7 +273,7 @@ def all_terms_html(nodes):
         types.remove(rdflib.term.URIRef('http://www.w3.org/2002/07/owl#NamedIndividual'))
     string = ""
     for x in types:
-        instances = [get_uri_term(x) for x in o_graph.subjects(None, x) if spec_url in x]
+        instances = [get_uri_term(y) for y in o_graph.subjects(RDF.type, x) if spec_url in y]
         if instances:
             string += '<div class="type">'
             string += '<h3 id="%s">%s<span> (%s)</span></h3>\n' % (get_prefix(x), get_prefix(x), len(instances))
@@ -283,7 +283,7 @@ def all_terms_html(nodes):
             string += '<div/>'
 
     for x in types:
-        instances = sorted([x for x in o_graph.subjects(None, x)])
+        instances = sorted([y for y in o_graph.subjects(RDF.type, x)])
         if any((y, RDF.type, x) in o_graph for y in instances) and grandchildren_exist(instances):
             string += '<h3>%s Instances</h3>\n' % get_prefix(x)
             for y in instances:
