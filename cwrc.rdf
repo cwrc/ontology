@@ -8196,6 +8196,76 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:ID="habitation">
+    <rdfs:label xml:lang="en">habitation</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#spatialRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#inhabits"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="travel">
+    <rdfs:label xml:lang="en">travel</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#spatialRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#travelsTo"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="relocation">
+    <rdfs:label xml:lang="en">relocation</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#habitation"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#relocatesTo"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="emigration">
+    <rdfs:label xml:lang="en">emigration</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#habitation"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#migratesFrom"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="migration">
+    <rdfs:label xml:lang="en">migration</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#habitation"/>
+    <rdfs:subPropertyOf rdf:resource="#travel"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#migratesTo"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+
+  <owl:ObjectProperty rdf:ID="visit">
+    <rdfs:label xml:lang="en">visit</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#travel"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#visits"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+
+<!-- Simple location predicates -->
   <owl:ObjectProperty rdf:ID="inhabits">
     <rdfs:label xml:lang="en">inhabited</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -8204,6 +8274,8 @@
     <owl:inverseOf rdf:resource="#hasInhabitant"/>
     <rdfs:subPropertyOf rdf:resource="#hasSpatialRelationTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -8213,6 +8285,8 @@
     <rdfs:label xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasSpatialRelationTo"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -8225,6 +8299,8 @@
     <owl:inverseOf rdf:resource="#hasTraveller"/>
     <rdfs:subPropertyOf rdf:resource="#hasSpatialRelationTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -8234,6 +8310,8 @@
     <rdfs:label xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasSpatialRelationTo"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -8246,6 +8324,8 @@
     <owl:inverseOf rdf:resource="#hasRelocatee"/>
     <rdfs:subPropertyOf rdf:resource="#inhabits"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -8255,6 +8335,8 @@
     <rdfs:label xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasInhabitant"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -8267,6 +8349,8 @@
     <owl:inverseOf rdf:resource="#hasEmigrant"/>
     <rdfs:subPropertyOf rdf:resource="#inhabits"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -8276,6 +8360,8 @@
     <rdfs:label xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasInhabitant"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -8289,6 +8375,8 @@
     <rdfs:subPropertyOf rdf:resource="#inhabits"/>
     <rdfs:subPropertyOf rdf:resource="#travelsTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -8299,6 +8387,8 @@
     <rdfs:subPropertyOf rdf:resource="#hasInhabitant"/>
     <rdfs:subPropertyOf rdf:resource="#hasTraveller"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -8311,6 +8401,8 @@
     <owl:inverseOf rdf:resource="#hasVistor"/>
     <rdfs:subPropertyOf rdf:resource="#travelsTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -8320,6 +8412,8 @@
     <rdfs:label xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasTraveller"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
