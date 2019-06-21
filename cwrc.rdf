@@ -8094,7 +8094,7 @@
   <owl:Class rdf:ID="SpatialContext">
     <rdfs:label xml:lang="en">spatial context</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <rdfs:subClassOf rdf:resource="#BiographyContext"/>
+    <rdfs:subClassOf rdf:resource="#Context"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as spatial context provide information about and discussions of aspects of a person's connections to geospatial locations. Spatial information is also associated in a range of ways with other properties and events such as a person's @@#GeographicHeritage@@, a place of publication, or the setting of literary texts.</skos:definition>
     <skos:definition xml:lang="fr"/>
@@ -8131,7 +8131,6 @@
     <skos:definition xml:lang="en"></skos:definition>
     <skos:definition xml:lang="fr"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasSpatialRelationTo"/>
-    <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -8141,7 +8140,6 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Indicates an entity's connection to a geospatial location or to some other entity related to location.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
