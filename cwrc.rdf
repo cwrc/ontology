@@ -9031,14 +9031,16 @@
     <rdfs:label xml:lang="fr">un·e camarade</rdfs:label>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasCompanion"/>
-    <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#educationRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#socialRelationship"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasCompanion">
     <rdfs:label xml:lang="en">has companion</rdfs:label>
     <rdfs:label xml:lang="fr">a un·e camarade</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
+    <rdfs:subPropertyOf rdf:resource="#relatesByEducationTo"/>
+    <rdfs:subPropertyOf rdf:resource="#relatesSociallyTo"/>
     <skos:definition xml:lang="en">Describes a relationship with a person, usually a peer, in the context of the subject's education.</skos:definition>
     <skos:definition xml:lang="fr">Décrit la relation du sujet avec une personne, habituellement un·e camarade, dans le contexte de son éducation.</skos:definition>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
