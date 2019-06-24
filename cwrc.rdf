@@ -17543,15 +17543,16 @@
   </owl:ObjectProperty>
 
 
-  <owl:Class rdf:ID="IntimateRelationshipsContext">
-    <rdfs:label xml:lang="en">intimate relationships context</rdfs:label>
+  <owl:Class rdf:ID="IntimateRelationshipContext">
+    <rdfs:label xml:lang="en">intimate relationship context</rdfs:label>
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">Intimate relationships context is a significant subclass of context. Annotations typed intimate relationships discuss any type of intimacy ranging from emotional through psychological or material to sexual.</skos:definition>
+    <skos:definition xml:lang="en">Intimate relationship context is a significant subclass of @@#Context@@. Annotations typed intimate relationships discuss any type of intimacy ranging from emotional through psychological or material to sexual.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+
 
   <owl:ObjectProperty rdf:ID="hasIntimateRelationshipWith">
     <rdfs:label xml:lang="en">has intimate relationship with</rdfs:label>
@@ -19047,6 +19048,21 @@
     <rdfs:comment xml:lang="en">Deprecated from previous Orlando Ontology design.</rdfs:comment>
     <rdfs:comment xml:lang="fr">Désapprouver de l'ancienne ontologie Orlando.</rdfs:comment>
   </owl:DeprecatedProperty>
+
+  <owl:Class rdf:ID="IntimateRelationshipsContext">
+    <rdfs:label xml:lang="en">intimate relationships context</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#BiographyContext"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Intimate relationships context is a significant subclass of context. Annotations typed intimate relationships discuss any type of intimacy ranging from emotional through psychological or material to sexual.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of class @@#IntimateRelationshipContext@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe @@#IntimateRelationshipContext@@.</rdfs:comment>
+    <owl:equivalentClass rdf:resource="#IntimateRelationshipContext"/>
+    <dcterms:isReplacedBy rdf:resource="#IntimateRelationshipContext"/>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </owl:Class>
 
   <owl:DeprecatedClass rdf:ID="WealthContext">
     <rdfs:label xml:lang="en">wealth context</rdfs:label>
