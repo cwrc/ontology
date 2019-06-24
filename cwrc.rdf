@@ -9311,13 +9311,13 @@
     <rdfs:label xml:lang="en">credential</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <rdfs:range rdf:resource="#Credential"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#hasCredentialIn"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasCredential"/>
     <rdfs:subPropertyOf rdf:resource="#educationRelationship"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasCredentialIn">
-    <rdfs:label xml:lang="en">has credential in</rdfs:label>
+  <owl:ObjectProperty rdf:about="#hasCredential">
+    <rdfs:label xml:lang="en">has credential</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Indicates an educational credential awarded to a person.</skos:definition>
     <skos:definition xml:lang="fr"/>
@@ -9328,19 +9328,18 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#credentialHeldBy">
-    <rdfs:label xml:lang="en">credential held by</rdfs:label>
+  <owl:ObjectProperty rdf:about="#credentialOf">
+    <rdfs:label xml:lang="en">credential of</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en"/>
     <skos:definition xml:lang="fr"/>
-    <owl:inverseOf rdf:resource="#hasCredentialIn"/>
+    <owl:inverseOf rdf:resource="#hasCredential"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Credential"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <!-- May have to deprecate this in favour of hasDegreeSubject TBD -->
   <owl:ObjectProperty rdf:about="#credentialSubject">
     <rdfs:label xml:lang="en">credential subject</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -12151,6 +12150,7 @@
     <skos:definition xml:lang="en">"Neo-Scholasticism (also known as neo-scholastic Thomism or neo-Thomism because of the great influence of the writings of St. Thomas Aquinas on the movement), is a revival and development of medieval scholasticism in Roman Catholic theology and philosophy which began in the second half of the 19th century." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Neo-Scholasticism"/>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr">««Courant de pensée philosophico-théologique de type thomiste, développé à partir XIXe siècle pour répondre aux objections posées au christianisme catholique par la modernité.»<![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
@@ -18698,6 +18698,39 @@
     <skos:inScheme rdf:resource="#Role"/>
   </cwrc:Role>
 
+  <owl:DeprecatedProperty rdf:about="#hasCredentialIn">
+    <rdfs:label xml:lang="en">has credential in</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Indicates an educational credential awarded to a person.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#relatesByEducationTo"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Credential"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#hasCredential@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#hasCredential@@.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#hasCredential"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </owl:DeprecatedProperty>
+
+  <owl:DeprecatedProperty rdf:about="#credentialHeldBy">
+    <rdfs:label xml:lang="en">credential held by</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <owl:inverseOf rdf:resource="#hasCredentialIn"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#Credential"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#credentialOf@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#credentialOf@@.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#credentialOf"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </owl:DeprecatedProperty>
 
   <owl:DeprecatedProperty rdf:ID="relatesSpatiallyTo">
     <rdfs:label xml:lang="en">relates spatially to</rdfs:label>
