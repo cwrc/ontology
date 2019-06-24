@@ -9716,6 +9716,7 @@
   <owl:ObjectProperty rdf:ID="culturalFormRelationship">
     <rdfs:label xml:lang="en">cultural form relationship</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#relatesByCulturalFormTo"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
