@@ -32,6 +32,8 @@ import urllib.request
  - missing json file
  - no namespace uri
  - no namespace prefix
+
+9) revaluate if using sparql queries would be more efficent than generator objects 
 """
 spec_url = None
 spec_ns = None
@@ -365,14 +367,14 @@ def create_term_main(term, uri):
     comment = get_comment_list(uri)
 
     inverse_uri = None
-    if (uri, RDF.type, OWL.ObjectProperty) in o_graph and defn == [] and comment == []:
+    if defn == [] and comment == [] and (uri, RDF.type, OWL.ObjectProperty) in o_graph:
         if (uri, OWL.inverseOf, None) in o_graph:
             inverse_uri = [o for o in o_graph.objects(uri, OWL.inverseOf)][0]
         elif (None, OWL.inverseOf, uri) in o_graph:
             inverse_uri = [s for s in o_graph.subjects(OWL.inverseOf, uri)][0]
-
     html_str = '<p id="top">[<a href="#definition_list">back to top</a>]</p>\n'
     html_str += '<h5>%s</h5>\n' % (label)
+
     if inverse_uri:
         if lang == "fr":
             html_str += """<div class="defn">Inverse de a """
@@ -531,13 +533,7 @@ def create_term_html(uri):
 
 def get_comment_list(uri):
     comment = o_graph.objects(uri, RDFS.comment)
-    test = [str(x) for x in comment if x.language == lang]
-    # comment = [str(x) for x in comment]
-    if test:
-        return test
-
-    for s, p, o in o_graph.triples((uri, RDFS.comment, None)):
-        return[o]
+    return [str(x) for x in comment if x.language == lang]
 
 
 def get_label_dict(uri):
