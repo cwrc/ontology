@@ -10910,6 +10910,18 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Sexuality>
+  <cwrc:Sexuality rdf:about="#asexuality">
+    <rdfs:label xml:lang="en">asexuality</rdfs:label>
+    <rdfs:label xml:lang="fr">asexualité</rdfs:label>
+    <skos:altLabel xml:lang="en">asexual</skos:altLabel>
+    <skos:definition xml:lang="en">Indicates a lack of interest in sex or sexual attraction to other subjects and is not to be confused with @@#celibacy@@</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <skos:inScheme rdf:resource="#Sexuality"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:sameAs rdf:resource="http://homosaurus.org/terms/asexuality"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:Sexuality>
   <cwrc:Sexuality rdf:about="#celibacy">
     <rdfs:label xml:lang="en">celibacy</rdfs:label>
     <rdfs:label xml:lang="fr">célibat</rdfs:label>
