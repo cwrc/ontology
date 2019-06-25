@@ -9445,7 +9445,7 @@
     <rdfs:label xml:lang="en">teaching educational subject</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <rdfs:range rdf:resource="#EducationalSubject"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#studies"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#teachesEducationalSubject"/>
     <rdfs:subPropertyOf rdf:resource="#educationRelationship"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -9852,6 +9852,50 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+  <owl:Class rdf:ID="HealthEvent">
+    <rdfs:label xml:lang="en">health event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#HealthContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#BiographicalEvent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="healthAssociation">
+    <rdfs:label xml:lang="en">health association</rdfs:label>
+    <skos:definition xml:lang="en"></skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#associatedViaHealthWith"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="associatedViaHealthWith">
+    <rdfs:label xml:lang="en">associated via health with</rdfs:label>
+    <skos:definition xml:lang="en"></skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+
+
   <owl:Class rdf:ID="PhysicalHealthContext">
     <rdfs:label xml:lang="en">physical health context</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -9980,7 +10024,7 @@
     <rdfs:label xml:lang="fr">sexualité en contexte</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#CulturalFormContext"/>
-    <skos:definition xml:lang="en">Sexuality Context is a significant subclass of @@#CulturalFormContext@@. Annotations typed as Sexuality Context provide information about and discussions of a person's subjectivity or experience with regards to their sexuality and sexual identity. Sexuality Context provides depth to more granular categorizations of a person through the sexuality or sexuality self-reported properties. It does not provide context for individual sexual experiences and relationships (for which see @@#IntimateRelationshipsContext@@), although specific relationships may be invoked to indicate the impact on a subject's life and understanding of their own sexuality. Contextualizations allow recognition of the complicated politics of sexuality, for example, considerations regarding outing, the historical specificity of some categories such as "congenital invert," the appropriation of derogatory terms, and the multiplicity of constructions. There are important politics of privacy with respect to the disclosure of a subject's sexuality, sexual orientation, and sexual identity. As far as living persons are concerned, recommended practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See (<![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>]]>)
+    <skos:definition xml:lang="en">Sexuality Context is a significant subclass of @@#CulturalFormContext@@. Annotations typed as Sexuality Context provide information about and discussions of a person's subjectivity or experience with regards to their sexuality and sexual identity. Sexuality Context provides depth to more granular categorizations of a person through the sexuality or sexuality self-reported properties. It does not provide context for individual sexual experiences and relationships (for which see @@#IntimateRelationshipContext@@), although specific relationships may be invoked to indicate the impact on a subject's life and understanding of their own sexuality. Contextualizations allow recognition of the complicated politics of sexuality, for example, considerations regarding outing, the historical specificity of some categories such as "congenital invert," the appropriation of derogatory terms, and the multiplicity of constructions. There are important politics of privacy with respect to the disclosure of a subject's sexuality, sexual orientation, and sexual identity. As far as living persons are concerned, recommended practice is to draw only on widely circulated public sources or disclosures from the subject her/himself in order to avoid inadvertently outing someone. See (<![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>]]>)
     </skos:definition>
     <skos:definition xml:lang="fr">Sexualité En Contexte est une sous-classe de contexte importante. Les annotations de Sexualité En Contexte fournissent des renseignements et des discussions sur la sexualité et l'identité sexuelle d'une personne grâce à Sexualité ou Sexualité Autodéclarée. Elle n'est pas vouée à répertorier les expériences sexuelles et les relations intimes, même si certaines d'entre elles peuvent être évoquées pour indiquer leurs conséquences sur la vie du sujet ou la connaissance qu'elle a de sa propre sexualité. Ces efforts de contextualisation permettent de reconnaître l'existence de questions complexes qui entourent la sexualité, comme par exemple les politiques de délation, la spécificité historique de certaines catégories comme "inversion sexuelle", la réappropriation de termes dénigrants ou les mutliples constructions discursives. Il existe d'importantes politiques de confidentialité qui protègent les personnes contre la divulgation d'informations privées sur leur sexualité, leur orientation sexuelle et leur identité sexuelle. Pour les personnes toujours en vie, notre pratique est donc de ne nous appuyer que sur des sources ou des déclarations publiques venant des sujets eux-mêmes, afin de ne pas dévoiler par inadvertance des informations privées sur leur sexualité. Voir (<![CDATA[<a href="#cwrc:9144c07e-d14f-4371-8d28-7545b7337a4a">Campbell and Cowan, 2016</a>]]>)
     </skos:definition>
@@ -17550,7 +17594,7 @@
     <rdfs:label xml:lang="fr">contexte ami·e·s et relations</rdfs:label>
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">Friends and connections context is a significant subclass of context. Annotations typed as friends and connections contexts discuss a broad spectrum of social relations ranging from friendship to enmities and casual associations. Other context annotations treat related aspects of social connections, including @@#LeisureContext@@ and @@#IntimateRelationshipsContext@@.</skos:definition>
+    <skos:definition xml:lang="en">Friends and connections context is a significant subclass of context. Annotations typed as friends and connections contexts discuss a broad spectrum of social relations ranging from friendship to enmities and casual associations. Other context annotations treat related aspects of social connections, including @@#LeisureContext@@ and @@#IntimateRelationshipContext@@.</skos:definition>
     <skos:definition xml:lang="fr">Le contexte des amis et des connexions est une sous-classe de contexte importante. Les annotations saisies en tant que contexte amis et relations abordent un large éventail de liens sociaux, allant de l’amitié aux conflits en passant par les relations éphémères. D'autres annotations contextuelles traitent des aspects liés aux rapports sociaux, notamment les loisirs et les relations intimes.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
