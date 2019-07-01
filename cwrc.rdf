@@ -7790,7 +7790,7 @@
     <rdfs:label xml:lang="en">birth event</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">An event related to an @@#BirthContext@@.</skos:definition>
-    <owl:sameAs rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e67-birth"/>
+    <owl:sameAs rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E67_birth"/>
     <rdfs:subClassOf rdf:resource="#BiographicalEvent"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -8158,7 +8158,7 @@
     <rdfs:label xml:lang="en">spatial event</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">An event related to an @@#SpatialContext@@.</skos:definition>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e7-activity"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_activity"/>
     <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Event"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -9615,6 +9615,27 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+  <owl:Class rdf:ID="MappedPlace">
+    <rdfs:label xml:lang="en">mapped place</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">A place that can be mapped according to some accepted system of graphically representing space.</skos:definition>
+    <owl:sameAs rdf:resource="http://schema.org/Place"/>
+    <owl:sameAs rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_place"/>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Place"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="hasMappedPlace">
+    <rdfs:label xml:lang="en">has mapped place</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Associates a @@#MappedPlace@@ with coordinates for its location.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:comment xml:lang="en">Note: Instances of places and coordinates for mapping are taken from a range of sources, including @@https://www.geonames.org@@ and the @@https://www.getty.edu/research/tools/vocabularies/tgn@@ that have their own classification schemes. Geonames will sometimes categorize places that are now abandoned as "populated places."</rdfs:comment>
+    <skos:closeMatch rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P53"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
   <owl:Class rdf:ID="Place">
     <rdfs:label xml:lang="en">place</rdfs:label>
     <rdfs:label xml:lang="fr">endroit</rdfs:label>
@@ -9808,7 +9829,7 @@
     <rdfs:label xml:lang="en">biographical event</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">An event related to an @@#BiographyContext@@.</skos:definition>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/e7-activity"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_activity"/>
     <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Event"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
