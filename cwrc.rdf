@@ -1023,6 +1023,33 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  
+  <owl:ObjectProperty rdf:ID="nameOf">
+    <rdfs:label xml:lang="en">name of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <owl:inverseOf rdf:resource="#hasName"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="namePartOf">
+    <rdfs:label xml:lang="en">name part of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:domainIncludes rdf:resource="#PersonalName"/>
+    <owl:inverseOf rdf:resource="#hasNamePart"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="sortOrderOf">
+    <rdfs:label xml:lang="en">sort order of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:domainIncludes rdf:resource="#PersonalName"/>
+    <owl:inverseOf rdf:resource="#hasSortOrder"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
   <owl:Class rdf:ID="NameType">
     <rdfs:label xml:lang="en">name type</rdfs:label>
     <rdfs:label xml:lang="fr"/>
