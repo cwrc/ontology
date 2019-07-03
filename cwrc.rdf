@@ -234,10 +234,20 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:AnnotationProperty>
 
-  <owl:ObjectProperty rdf:ID="hasContextPredicate">
-    <rdfs:label xml:lang="en">has context predicate</rdfs:label>
+  <owl:ObjectProperty rdf:ID="contextFocus">
+    <rdfs:label xml:lang="en">context focus</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="en">Indicates the focus or primary subject of a Context annotation.
+    Note: The object of this property, the Context focus, becomes the subject of the subject-centric properties that can be derived from Context predicates via SPARQL CONSTRUCT queries.
+    </skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:range rdf:resource="#Context"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasContextPredicate">
+    <rdfs:label xml:lang="en">context predicate</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Indicates the version of this predicate associated with Context annotations, where such annotations exist.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -245,9 +255,9 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="subjectCentricPredicate">
-    <rdfs:label xml:lang="en">subject centric predicate</rdfs:label>
+    <rdfs:label xml:lang="en">subject-centric predicate</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="en">Indicates the version of this predicate associated with triples that do not have annotations, or triples derived from this annotation which take the Context focus as their subject.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <owl:inverseOf rdf:resource="#hasContextPredicate"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
@@ -708,7 +718,7 @@
   <owl:ObjectProperty rdf:ID="hasEvent">
     <rdfs:label xml:lang="en">has event</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Associates a subject with an event</skos:definition>
+    <skos:definition xml:lang="en">Associates a Context with an Event.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:range rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Event"/>
@@ -7929,7 +7939,7 @@
   <owl:ObjectProperty rdf:ID="hasBirthDate">
     <rdfs:label xml:lang="en">has birth date</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Indicates the date of which a person was born.</skos:definition>
+    <skos:definition xml:lang="en">Indicates the date on which a person was born.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#relatesByBirthTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -9578,9 +9588,10 @@
   <owl:Class rdf:ID="Fellowship">
     <rdfs:label xml:lang="en">fellowship</rdfs:label>
     <rdfs:label xml:lang="fr">programme de bourse</rdfs:label>
-    <skos:definition xml:lang="en">An educational award or academic position usually associated with research or advanced standing in a field and sometimes involving labour such as teaching.</skos:definition>
+    <skos:definition xml:lang="en">An award or position usually associated with research or advanced standing in a field, and often associated with a particular group, body, or organization connected to creative, scholarly, or professional practice, sometimes involving a stipend and sometimes labour such as teaching.</skos:definition>
     <skos:definition xml:lang="fr">Récompense ou position académique généralement reliée à la recherche ou à un parcours avancé dans un champ disciplinaire, impliquant parfois un emploi d'enseignant·e.</skos:definition>
-    <rdfs:subClassOf rdf:resource="#EducationalAward"/>
+    <rdf:type rdf:resource="#Award"/>
+    <skos:related rdf:resource="#fellow"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -9650,6 +9661,20 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+
+  
+  <owl:Class rdf:ID="FictionalPlace">
+    <rdfs:label xml:lang="en">fictional place</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">A place that features in an imaginative work such as a literary work. Such places typically do not not have geospatial coordinates, although they may have a relationship to a @@#MappedLocation@@.</skos:definition>
+    <owl:sameAs rdf:resource="http://schema.org/Place"/>
+    <owl:sameAs rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_place"/>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Place"/>
+    <rdfs:subClassOf rdf:resource="#Place"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
   <owl:Class rdf:ID="MappedPlace">
     <rdfs:label xml:lang="en">mapped place</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
@@ -9657,11 +9682,12 @@
     <owl:sameAs rdf:resource="http://schema.org/Place"/>
     <owl:sameAs rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_place"/>
     <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Place"/>
+    <rdfs:subClassOf rdf:resource="#Place"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-  <owl:ObjectProperty rdf:ID="hasMappedPlace">
+  <owl:ObjectProperty rdf:ID="hasMappedLocation">
     <rdfs:label xml:lang="en">has mapped place</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">Associates a @@#MappedPlace@@ with coordinates for its location.</skos:definition>
@@ -9674,9 +9700,7 @@
   <owl:Class rdf:ID="Place">
     <rdfs:label xml:lang="en">place</rdfs:label>
     <rdfs:label xml:lang="fr">endroit</rdfs:label>
-    <skos:definition xml:lang="en">A named place, whether incorporated, settled, or occupied.</skos:definition>
-    <skos:definition xml:lang="fr">Un endroit nommé, qu'il soit déclaré, peuplé ou occupé.</skos:definition>
-    <skos:definition xml:lang="en">It may be, but is not necessarily, a populated place. Some places, such as cross-roads, do not have a population or settlement per se. Geonames will sometimes categorize places that are now abandoned as "populated places."</skos:definition>
+    <skos:definition xml:lang="en">A named entity associated with a location in geographical space. It may be real or fictive, populated or unpopulated. </skos:definition>
     <skos:definition xml:lang="fr">Il peut concerner un endroit peuplé, mais pas nécessairemment. Certains endroits, comme les intersections, n'ont pas de de populations ou d'habitants en soi. Les Geonames classifieront parfois les endroits désormais abandonnés comme «lieux habités».</skos:definition>
     <owl:equivalentClass rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Place"/>
@@ -9886,7 +9910,7 @@
   </owl:ObjectProperty>  
   <owl:ObjectProperty rdf:ID="hasBiographicalRelationTo">
     <rdfs:label xml:lang="en">has biographical relation to</rdfs:label>
-    <skos:definition xml:lang="en"></skos:definition>
+    <skos:definition xml:lang="en">Indicates a relationship or assertion based on an account of the life of a person or persons.</skos:definition>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -9897,6 +9921,32 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+
+  <owl:ObjectProperty rdf:ID="writingRelationship">
+    <rdfs:label xml:lang="en">writing relationship</rdfs:label>
+    <skos:definition xml:lang="en"></skos:definition>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasWritingRelationTo"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>  
+  <owl:ObjectProperty rdf:ID="hasWritingRelationTo">
+    <rdfs:label xml:lang="en">has writing relation to</rdfs:label>
+    <skos:definition xml:lang="en">Indicates a relationship or assertion based on a writer’s literary works or an account of their literary career.</skos:definition>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
 
   <owl:Class rdf:ID="HealthContext">
     <rdfs:label xml:lang="en">health context</rdfs:label>
