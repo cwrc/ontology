@@ -1081,6 +1081,7 @@
   <owl:Class rdf:ID="PreferredName">
     <rdfs:label xml:lang="en">preferred name</rdfs:label>
     <rdfs:label xml:lang="fr"/>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">Indicates the form of name preferred by an authority or institution.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1328,6 +1329,7 @@
   <owl:Class rdf:ID="RoleName">
     <rdfs:label xml:lang="en">role name</rdfs:label>
     <rdfs:label xml:lang="fr"/>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">A name which "indicates that a person has a particular role or position in society, such as an official title or rank." This term is derived from the Text Encoding Initiative P5 schema for the <![CDATA[<i>roleName</i>]]> element. See @@https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-roleName.html@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1337,6 +1339,7 @@
   <owl:Class rdf:ID="AdditionalName">
     <rdfs:label xml:lang="en">additional name</rdfs:label>
     <rdfs:label xml:lang="fr">nom additionnel</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">An additional name, "such as a nickname, epithet, or alias." This term is derived from the Text Encoding Initiative P5 schema for the <![CDATA[<i>addName</i>]]> element. See @@https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-addName.html@@.</skos:definition>
     <skos:definition xml:lang="fr">Un nom supplémentaire, "tel qu'un surnom, une épithète ou un alias". Ce terme est dérivé du schéma Text Encoding Initiative P5 pour l'élément <![CDATA[<i>addName</i>]]>. Voir l'élément TEI addName @@https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-addName.html@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1346,6 +1349,7 @@
   <owl:Class rdf:ID="NameLink">
     <rdfs:label xml:lang="en">name link</rdfs:label>
     <rdfs:label xml:lang="fr">particule de nom</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">"A connecting phrase or link used within a name but not regarded as part of it, such as van der or of." This term is derived from the Text Encoding Initiative P5 schema for the <![CDATA[<i>NameLink</i>]]> element. See @@https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-nameLink.html@@.</skos:definition>
     <skos:definition xml:lang="fr">"Une locution ou un lien de connexion utilisé dans un nom mais n'étant pas considéré comme partie intégrante de ce nom, par example van der ou de." Ce terme est dérivé du schéma P5 du Text Encoding Initiative pour l'élément <![CDATA[<i>NameLink</i>]]>. Voir l'élément TEI @@https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-nameLink.html@@.</skos:definition> 
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -1355,6 +1359,7 @@
   <owl:Class rdf:ID="GenerationalName">
     <rdfs:label xml:lang="en">generational name</rdfs:label>
     <rdfs:label xml:lang="fr">nom générationnel</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">A name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named." This term is derived from the Text Encoding Initiative P5 schema for the <![CDATA[<i>genName</i>]]> element. See @@https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-genName.html@@.</skos:definition>
     <skos:definition xml:lang="fr">Composant de nom utilisé pour distinguer des noms similaires, en fonction de l'âge ou de la génération relatifs aux personnes portant un nom. "Ce terme est dérivé du schéma P5 du Text Encoding Initiative pour l'élément <![CDATA[<i>genName</i>]]>. Voir l'élément TEI genName @@https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-genName.html@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -9306,7 +9311,7 @@
     <rdfs:label xml:lang="fr">récompense scolaire</rdfs:label>
     <skos:definition xml:lang="en">An award, financial, material, or immaterial, associated with a person's education at any level.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="#Award"/>
+    <rdfs:subClassOf rdf:resource="#Award"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -9316,7 +9321,7 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">A literary award is an award presented in recognition of a particularly lauded literary piece or body of work. It is normally presented to an author.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <rdf:type rdf:resource="#Award"/>
+    <rdfs:subClassOf rdf:resource="#Award"/>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Literary_award"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10804,7 +10809,7 @@
       A subclass of @@#CulturalForm@@ for indicating a person's gender, whether attributed or self-reported, with accompanying context, where present, provided by @@#GenderContext@@ annotations.
       Although in popular culture gender and biological sex are conflated and understood to be binary, the concept of gender stresses the relationality, constructedness, and performativity of gendered identities and gendered behaviour, whose categories are historically contingent and shifting, and the boundaries between them blurry. Simone de Beauvoir <![CDATA[<a href="#cwrc:c6a678e5-8fc6-41bc-8631-7cfb7116017e"> (1973) </a>]]> stated "One is not born, but rather becomes, a woman," a belief that has been taken up by many other theorists of gender including Judith Butler <![CDATA[<a href="#cwrc:825995b3-3b66-4e0a-a62d-d8649aaead78">(1990)</a>]]>. Gender studies to date has investigated the social construction of femininity more than that of masculinity. The multi-layered constructedness of gender is also underlined by Donna Haraway who understands it as a "socially, historically, and semiotically positioned difference" <![CDATA[<a href="#cwrc:f62e94d6-bd04-494c-9282-53af0a3f3376">(Donna Haraway, 1988)</a>]]>.
       Gender is understood as fluid, situational, and sometimes plural, and it is related to, though not commensurate with, sexual identity and orientation, just as it is related to but not defined by specific forms of embodiment. Rather than seeing biological sex as a pre-social or natural given, the body is understood as a site of inscription (cf. <![CDATA[<a href="#cwrc:3d49dc32-ac97-4abd-a252-573c52b463cf"> (Elizabeth Grosz, 1994)</a>]]>) which is also socially constructed and indeed epigenetically shaped by environmental factors <![CDATA[<a href="#cwrc:5e45242f-0c2e-4aaa-8ddb-ac54dd0e6249">(N. Katherine Hayles, 2012)</a>]]>. As articulated by feminist neurologist Gillian Einstein, <![CDATA[<a href="#cwrc:842ffbb4-11de-4212-8e6e-9d4d8d28d3a5">(2012)</a>]]>"The world writes on the body." This ontology therefore does not provide separate terms for sex as distinct from gender. Instead, it privileges terms associated with gender, recognizing that they are conventionally but not necessarily associated with sex, and that there is constant slippage between gender and sex in the way that these categories circulate through discourses, actions, and institutions. Far from indicating a universal facet of experience, gender intersects with other identity categories and axes of oppression such as class, race or colour, or geographical heritage to produced quite different interests and experiences among people of the same gender, as with the intersection of religion and white masculine identity in the Muscular Christianity movement in nineteenth-century Britain. Being a woman of colour often compounds the impacts of gender oppression. Such interaction between different forms of oppression is termed "intersectionality" <![CDATA[<a href="#cwrc:b9eeccf9-9380-4341-99dc-a83f5ee32909">(Kimberlé Crenshaw, 1989).</a>]]>
-      Those using this class and its instances are encouraged to consult associated @@#GenderContext@@ annotations, if available.
+      Where this class and its instances are concerned, readers are advised to consult @@#GenderContext@@ context annotations, if available. Where terms are applied to younger individuals, the gendered variants, such as “girl” for “woman”, are understood to apply.
     </skos:definition>
     <skos:definition xml:lang="fr">
       Cette sous-classe de @@#CulturalForm@@ indique le genre d'une personne, qu'il soit attribué par d'autres ou autoproclamé, accompagné du contexte fourni par les annotations de @@#GenderContext@@ lorsque celui-ci est disponible.
@@ -10826,6 +10831,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">
       Indicates identification with or labelling as the gender man, and who is often but not necessarily understood to be sexed male.
+      Where terms associated with this label are applied to younger individuals, “boy” is understood to apply for “man”.
     </skos:definition>
     <skos:definition xml:lang="fr">
       Indique l'identification ou l'assignation au genre masculin, et qui est souvent mais non nécessairement de sexe masculin.
@@ -10852,6 +10858,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">
       Indicates a subject identification with or labelling as the gender woman, and who is often but not necessarily understood to be sexed female. "One is not born, but rather becomes, woman." <![CDATA[<a href="#cwrc:c6a678e5-8fc6-41bc-8631-7cfb7116017e"> (Simone de Beauvoir, 1973)</a>]]>
+      Where terms associated with this label are applied to younger individuals, “girl” is understood to apply for “woman”.
     </skos:definition>
     <skos:definition xml:lang="fr">
       Indique l'identification ou l'assignation au genre féminin, et qui est souvent mais non nécessairement de sexe féminin. «On ne naît pas femme, on le devient»: Simone de Beauvoir, Le deuxième sexe <![CDATA[<a href="#cwrc:c6a678e5-8fc6-41bc-8631-7cfb7116017e"> (1973) </a>]]>
@@ -17590,7 +17597,9 @@
     <skos:altLabel xml:lang="en">man</skos:altLabel>
     <rdfs:label xml:lang="en">man</rdfs:label>
     <rdfs:label xml:lang="fr">homme</rdfs:label>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of manhood, masculinity, or maleness as associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "man" (e.g. @@#man@@, @@#cisMan@@) cultural identities.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of manhood, masculinity, or maleness as associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "man" (e.g. @@#man@@, @@#cisMan@@) cultural identities.
+    Where associated terms are applied to younger individuals, gendered variants, such as “boy” for “man”, are understood to apply.
+    </skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la masculinité, ou de la virilité. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «masculines» (par exemple @@#man@@, @@#cisMan@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
     <cwrc:represents rdf:resource="#man"/>
@@ -17604,7 +17613,9 @@
     <skos:altLabel xml:lang="en">woman</skos:altLabel>
     <rdfs:label xml:lang="en">woman</rdfs:label>
     <rdfs:label xml:lang="fr">femme</rdfs:label>
-    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of womanhood, femininity, or femaleness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "woman" (e.g. @@#woman@@, @@#transWoman@@) cultural identities.</skos:definition>
+    <skos:definition xml:lang="en">A subclass of @@#TextLabels@@, this discursive label reflects the ambiguity of womanhood, femininity, or femaleness associated with different @@#CulturalForm@@s. It provides a means of aggregating and searching multiple instances of "woman" (e.g. @@#woman@@, @@#transWoman@@) cultural identities. 
+    Where associated terms are applied to younger individuals, gendered variants, such as “girl” for “woman”, are understood to apply.
+    </skos:definition>
     <skos:definition xml:lang="fr">Une sous-classe d'étiquettes textuelles, cette étiquette discursive reflète l'ambiguité de la féminité. Elle permet de compiler et de rechercher les multiples instances d'identités culturelles «féminines» (par exemple @@#woman@@, @@#transWoman@@).</skos:definition>
     <rdf:type rdf:resource="#TextLabels"/>
     <cwrc:represents rdf:resource="#woman"/>
