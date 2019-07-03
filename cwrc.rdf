@@ -1081,8 +1081,6 @@
   <owl:Class rdf:ID="PreferredName">
     <rdfs:label xml:lang="en">preferred name</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <cwrc:rangeIncludes rdf:resource="#PersonalName"/>
-    <cwrc:rangeIncludes rdf:resource="#Organization"/>
     <skos:definition xml:lang="en">Indicates the form of name preferred by an authority or institution.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -9262,17 +9260,6 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-
-  <owl:ObjectProperty rdf:ID="hasEducation">
-    <rdfs:range rdf:resource="#EducationContext"/>
-    <rdfs:domain rdf:resource="#NaturalPerson"/>
-    <rdfs:label xml:lang="en">has education</rdfs:label>
-    <rdfs:label xml:lang="fr">a une éducation</rdfs:label>
-    <skos:definition xml:lang="en">Links a person to information about their education in @@#EducationContext@@.</skos:definition>
-    <skos:definition xml:lang="fr">Relie une personne à des renseignements sur son contexte éducatif.</skos:definition>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="educationRelationship">
     <rdfs:label xml:lang="en">education relationship</rdfs:label>
@@ -17642,17 +17629,6 @@
 
 
 
-  <owl:ObjectProperty rdf:ID="hasSocialRelationshipWith">
-    <rdfs:label xml:lang="en">has social relationship with</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Any relationship between persons. See @@https://en.wikipedia.org/wiki/Social_relation@@ </skos:definition>
-    <skos:definition xml:lang="fr"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </owl:ObjectProperty>
-
   <owl:Class rdf:ID="FriendsAndAssociatesContext">
     <rdfs:label xml:lang="en">friends and associates context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte ami·e·s et relations</rdfs:label>
@@ -17671,7 +17647,16 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subPropertyOf rdf:resource="#hasSocialRelationshipWith"/>
+    <rdfs:subPropertyOf rdf:resource="#relatesSociallyTo"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="interpersonalRelationshipWith">
+    <rdfs:label xml:lang="en">interpersonal relationship</rdfs:label>
+    <rdfs:label xml:lang="fr">relation interpersonnelle</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#socialRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasInterpersonalRelationshipWith"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasCohabitant">
@@ -17687,6 +17672,16 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:ID="cohabitant">
+    <rdfs:label xml:lang="en">cohabitant</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasCohabitant"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#interpersonalRelationshipWith"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:ObjectProperty>
+
 
   <owl:Class rdf:ID="IntimateRelationshipContext">
     <rdfs:label xml:lang="en">intimate relationship context</rdfs:label>
@@ -17698,6 +17693,45 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
+  <owl:ObjectProperty rdf:ID="intimateRelationship">
+    <rdfs:label xml:lang="en">intimate relationship</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasIntimateRelationshipWith"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#interpersonalRelationshipWith"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="eroticRelationship">
+    <rdfs:label xml:lang="en">erotic relationship</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasEroticRelationshipWith"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#intimateRelationship"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="nonEroticRelationship">
+    <rdfs:label xml:lang="en">non-erotic relationship</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasNonEroticRelationshipWith"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#intimateRelationship"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="possiblyEroticRelationship">
+    <rdfs:label xml:lang="en">possibly erotic relationship</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasPossiblyEroticRelationshipWith"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#intimateRelationship"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasIntimateRelationshipWith">
     <rdfs:label xml:lang="en">has intimate relationship with</rdfs:label>
@@ -17769,12 +17803,33 @@
     <rdfs:label xml:lang="en">has reproductive history</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Describes an aspect of a person's reproductive history.  May relate to childlessness, birth control, adoption, abortion, difficulties with childbearing, loss of a child, whether biologically related, adopted, or otherwise considered kin, difficulties with child-bearing. See also the related property @@#hasChildren@@.</skos:definition>
-
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#ReproductiveHistory"/>
+    <rdfs:subPropertyOf rdf:resource="#associatedViaHealthWith"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="children">
+    <rdfs:label xml:lang="en">children</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasChildren"/>
+    <skos:related rdf:resource="#hasReproductiveHistory"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:subPropertyOf rdf:resource="#relative"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="reproductiveHistory">
+    <rdfs:label xml:lang="en">reproductive history</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasReproductiveHistory"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="#ReproductiveHistory"/>
+    <rdfs:subPropertyOf rdf:resource="#healthAssociation"/>
   </owl:ObjectProperty>
 
   <owl:Class rdf:ID="ReproductiveHistory">
@@ -17897,7 +17952,387 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-<!-- 
+
+
+  <owl:ObjectProperty rdf:ID="guardian">
+    <rdfs:label xml:lang="en">guardian</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasGuardian"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#interpersonalRelationshipWith"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="partner">
+    <rdfs:label xml:lang="en">partner</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasPartner"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#relative"/>
+    <rdfs:subPropertyOf rdf:resource="#intimateRelationship"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:sameAs rdf:resource="#partnerOf"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="wife">
+    <rdfs:label xml:lang="en">wife</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasWife"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#partner"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="husband">
+    <rdfs:label xml:lang="en">husband</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasHusband"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#partner"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="relative">
+    <rdfs:label xml:lang="en">relative</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasRelative"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdfs:subPropertyOf rdf:resource="#socialRelationship"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:sameAs rdf:resource="#relativeOf"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="ancestor">
+    <rdfs:label xml:lang="en">ancestor</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasAncestor"/>
+    <skos:altLabel xml:lang="en">forebear</skos:altLabel>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#relative"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="sibling">
+    <rdfs:label xml:lang="en">sibling</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasSibling"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:sameAs rdf:resource="http://schema.org/sibling"/>
+    <owl:sameAs rdf:resource="#siblingOf"/>
+    <rdfs:subPropertyOf rdf:resource="#relative"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="sister">
+    <rdfs:label xml:lang="en">sister</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasSister"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#sibling"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="brother">
+    <rdfs:label xml:lang="en">brother</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasBrother"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#sibling"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="stepSister">
+    <rdfs:label xml:lang="en">stepsister</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasStepSister"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#sister"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="stepBrother">
+    <rdfs:label xml:lang="en">stepbrother</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasStepBrother"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#brother"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="halfSister">
+    <rdfs:label xml:lang="en">half-sister</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasHalfSister"/>
+    <skos:note>Comment: This term is a CWRC-specific addition not in the original Orlando tag set.</skos:note>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#sister"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="halfBrother">
+    <rdfs:label xml:lang="en">half-brother</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasHalfBrother"/>
+    <skos:note>Comment: This term is a CWRC-specific addition not in the original Orlando tag set.</skos:note>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#brother"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="child">
+    <rdfs:label xml:lang="en">child</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasChild"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#relative"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="daughter">
+    <rdfs:label xml:lang="en">daughter</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasDaughter"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#child"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="son">
+    <rdfs:label xml:lang="en">son</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasSon"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#child"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="grandChild">
+    <rdfs:label xml:lang="en">grandchild</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasGrandChild"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#relative"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="grandDaughter">
+    <rdfs:label xml:lang="en">granddaughter</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasGrandDaughter"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#grandChild"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="grandSon">
+    <rdfs:label xml:lang="en">grandson</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasGrandSon"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#grandChild"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="stepChild">
+    <rdfs:label xml:lang="en">stepchild</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasStepChild"/>
+     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#child"/>
+    <skos:related rdf:resource="https://schema.org/children"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="stepDaughter">
+    <rdfs:label xml:lang="en">stepdaughter</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasStepDaughter"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#stepChild"/>
+  <skos:related rdf:resource="https://schema.org/children"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="stepSon">
+    <rdfs:label xml:lang="en">stepson</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasStepSon"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#stepChild"/>
+    <skos:related rdf:resource="https://schema.org/children"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="parent">
+    <rdfs:label xml:lang="en">parent</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasParent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:sameAs rdf:resource="http://schema.org/parent"/>
+    <owl:sameAs rdf:resource="#childOf"/>
+    <rdfs:subPropertyOf rdf:resource="#relative"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="mother">
+    <rdfs:label xml:lang="en">mother</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasMother"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#parent"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="father">
+    <rdfs:label xml:lang="en">father</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasFather"/>
+     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#parent"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#parent"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="stepParent">
+    <rdfs:label xml:lang="en">stepparent</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasStepParent"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#parent"/>
+   <owl:inverseOf rdf:resource="#hasStepChild"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="stepMother">
+    <rdfs:label xml:lang="en">stepmother</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasStepMother"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:inverseOf rdf:resource="#stepMotherOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#stepParent"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="stepFather">
+    <rdfs:label xml:lang="en">stepfather</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasStepFather"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#stepParent"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="grandParent">
+    <rdfs:label xml:lang="en">grandparent</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasGrandParent"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#relative"/>
+    <owl:sameAs rdf:resource="#grandChildOf"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="grandMother">
+    <rdfs:label xml:lang="en">grandmother</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasGrandMother"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#grandParent"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="grandFather">
+    <rdfs:label xml:lang="en">grandfather</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasGrandFather"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#grandParent"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="aunt">
+    <rdfs:label xml:lang="en">aunt</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasAunt"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#relative"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="uncle">
+    <rdfs:label xml:lang="en">uncle</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasUncle"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#relative"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="niece">
+    <rdfs:label xml:lang="en">niece</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasNiece"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#relative"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="nephew">
+    <rdfs:label xml:lang="en">nephew</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasNephew"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#relative"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="cousin">
+    <rdfs:label xml:lang="en">cousin</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasCousin"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#relative"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:sameAs rdf:resource="#cousinOf"/>
+  </owl:ObjectProperty> 
+
+
   <owl:ObjectProperty rdf:ID="hasGuardian">
     <rdfs:label xml:lang="en">has guardian</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -17944,7 +18379,6 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-
     <rdfs:subPropertyOf rdf:resource="#hasIntimateRelationshipWith"/>
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
     <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Partnership"/>
@@ -17963,7 +18397,6 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broader rdf:resource="https://schema.org/spouse"/>
     <rdfs:subPropertyOf rdf:resource="#hasPartner"/>
-
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="wifeOf">
@@ -17977,7 +18410,6 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <owl:inverseOf rdf:resource="#hasWife"/>
     <skos:broader rdf:resource="https://schema.org/spouse"/>
-
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasHusband">
@@ -17991,7 +18423,6 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broader rdf:resource="https://schema.org/spouse"/>
     <rdfs:subPropertyOf rdf:resource="#hasPartner"/>
-
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="husbandOf">
@@ -18005,7 +18436,6 @@
     <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Partnership"/>
     <skos:broader rdf:resource="https://schema.org/spouse"/>
     <owl:inverseOf rdf:resource="#hasHusband"/>
-
   </owl:ObjectProperty>
 
 
@@ -18016,7 +18446,7 @@
     <skos:definition xml:lang="en">Has a familial relationship to a person. hasRelative and its subproperties indicate social aspects of familial relations as opposed to biological ones; for example, @@#hasMother@@ is not necessarily a consanguineal relationship - although both can be present. Family relationships are subproperties of social relationships. For more information, see @@http://dbpedia.org/page/Family@@. This property indicates either a general familial relationship or one that is complicated or not easily categorisable in traditional kinship terms.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdfs:subPropertyOf rdf:resource="#hasSocialRelationshipWith"/>
+    <rdfs:subPropertyOf rdf:resource="#relatesSociallyTo"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -18027,7 +18457,7 @@
     <rdfs:label xml:lang="en">relative of</rdfs:label>
     <rdfs:label xml:lang="fr">liens de famille</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdfs:subPropertyOf rdf:resource="#hasSocialRelationshipWith"/>
+    <rdfs:subPropertyOf rdf:resource="#relatesSociallyTo"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -18831,7 +19261,7 @@
     <owl:inverseOf rdf:resource="#hasCousin"/>
     <skos:broader rdf:resource="http://schema.org/relatedTo"/>
   </owl:ObjectProperty>
- -->
+
 
 
   <cwrc:Role rdf:about="#Actor">
@@ -18843,6 +19273,21 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:inScheme rdf:resource="#Role"/>
   </cwrc:Role>
+
+  <owl:DeprecatedProperty rdf:ID="hasEducation">
+    <rdfs:range rdf:resource="#EducationContext"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
+    <rdfs:label xml:lang="en">has education</rdfs:label>
+    <rdfs:label xml:lang="fr">a une éducation</rdfs:label>
+    <skos:definition xml:lang="en">Links a person to information about their education in @@#EducationContext@@.</skos:definition>
+    <skos:definition xml:lang="fr">Relie une personne à des renseignements sur son contexte éducatif.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated, with no current equivalence.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver sans équivalence.</rdfs:comment>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+  </owl:DeprecatedProperty>
 
   <owl:DeprecatedProperty rdf:about="#hasCredentialIn">
     <rdfs:label xml:lang="en">has credential in</rdfs:label>
@@ -18899,7 +19344,7 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subPropertyOf rdf:resource="#hasSocialRelationshipWith"/>
+    <rdfs:subPropertyOf rdf:resource="#relatesSociallyTo"/>
     <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#hasInterpersonalRelationshipWith@@.</rdfs:comment>
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#hasInterpersonalRelationshipWith@@.</rdfs:comment>
     <dcterms:isReplacedBy rdf:resource="#hasInterpersonalRelationshipWith"/>

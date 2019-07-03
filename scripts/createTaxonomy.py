@@ -26,6 +26,7 @@ relations = {
     "related": "http://www.w3.org/2004/02/skos/core#related",
     "narrowerTransitive": "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
     "contraryTo": "http://sparql.cwrc.ca/ontologies/cwrc#contraryTo",
+    "subjectCentricPredicate": "http://sparql.cwrc.ca/ontologies/cwrc#subjectCentricPredicate",
     "subPropertyOf": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
     "subClassOf": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
     "inverseOf": "http://www.w3.org/2002/07/owl#inverseOf",
@@ -39,6 +40,7 @@ relation_style = {
     "contraryTo": " [color=red dir=none ]",  # label=contraryTo]",
     "subPropertyOf": "[color=blue ]",  # label=subPropertyOf]",
     "subClassOf": "[color=blue ]",  # label=subClassOf]",
+    "subjectCentricPredicate": "[style=dashed,color=green ]",  # label=subClassOf]",
     "inverseOf": "[color=red dir=both ]",  # label=inverseOf]",
     "SymmetricProperty": "[color=green dir=both ]",  # label=SymmetricProperty]",
     "sameAs": "[dir=none ]",  # label=sameAs]",
@@ -205,6 +207,8 @@ def main():
         relation_list = get_relation(instances, "subClassOf")
     elif args.inverseOf:
         relation_list = get_relation(instances, "inverseOf")
+    elif args.subjectCentricPredicate:
+        relation_list = get_relation(instances, "subjectCentricPredicate")
     else:
         relation_list = get_relation(instances, "broaderTransitive")
 
