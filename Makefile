@@ -88,9 +88,15 @@ testing: all
 	cat our-team-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/our-team-EN.html
 	cat our-team-FR.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/our-team-FR.html
 	
-	cp -f $(ONTOLOGY_W_DATE).rdf /var/www/public/testing/.
-	cp -f $(ONTOLOGY_W_DATE).nt /var/www/public/testing/.
-	cp -f $(ONTOLOGY_W_DATE).ttl /var/www/public/testing/.	
+
+	cat $(ONTOLOGY_W_DATE).rdf | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY_W_DATE).rdf
+	cat $(ONTOLOGY_W_DATE).nt | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY_W_DATE).rdf
+	cat $(ONTOLOGY_W_DATE).ttl | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY_W_DATE).rdf
+
+
+# 	cp -f $(ONTOLOGY_W_DATE).rdf /var/www/public/testing/.
+# 	cp -f $(ONTOLOGY_W_DATE).nt /var/www/public/testing/.
+# 	cp -f $(ONTOLOGY_W_DATE).ttl /var/www/public/testing/.	
 	
 	ln -sf /var/www/public/testing/$(ONTOLOGY_W_DATE)-EN.html /var/www/public/testing/$(ONTOLOGY).html
 	ln -sf /var/www/public/testing/$(ONTOLOGY_W_DATE)-EN.html /var/www/public/testing/$(ONTOLOGY_W_DATE).html
@@ -102,6 +108,10 @@ testing: all
 	cp -f figures/* /var/www/public/testing/figures/.	
 	cp -f -R css /var/www/public/testing/.
 	cp -f -R js /var/www/public/testing/.
+
+	curl -X POST -H 'Content-Type:application/sparql-update' -d 'CLEAR GRAPH <http://sparql.cwrc.ca/testing/cwrc>' http://localhost:9999/blazegraph/sparql
+	curl -X POST -H 'Content-Type:application/rdf+xml' -d @/var/www/public/testing/$(ONTOLOGY).rdf http://localhost:9999/blazegraph/sparql?context-uri=http://sparql.cwrc.ca/testing/cwrc
+	
 
 # deploy to production
 deploy: all
@@ -127,6 +137,10 @@ deploy: all
 	cp -f figures/* /var/www/public/ontology/figures/.	
 	cp -f -R css /var/www/public/ontology/.
 	cp -f -R js /var/www/public/ontology/.
+
+	curl -X POST -H 'Content-Type:application/sparql-update' -d 'CLEAR GRAPH <http://sparql.cwrc.ca/ontologies/cwrc>' http://localhost:9999/blazegraph/sparql
+	curl -X POST -H 'Content-Type:application/rdf+xml' -d @/var/www/public/ontologies/$(ONTOLOGY).rdf http://localhost:9999/blazegraph/sparql?context-uri=http://sparql.cwrc.ca/ontologies/cwrc
+
 
 # tests rdf files aren't broken before push, make push --> then commit
 push: cwrc.rdf genre.rdf ii.rdf
