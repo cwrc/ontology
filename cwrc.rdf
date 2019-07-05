@@ -17764,6 +17764,16 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
+  <owl:Class rdf:ID="IntimateRelationshipEvent">
+    <rdfs:label xml:lang="en">intimate relationship event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#IntimateRelationshipContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#BiographicalEvent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
   <owl:ObjectProperty rdf:ID="intimateRelationship">
     <rdfs:label xml:lang="en">intimate relationship</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -18024,6 +18034,15 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
+  <owl:Class rdf:ID="FamilyEvent">
+    <rdfs:label xml:lang="en">family event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#FamilyContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#BiographicalEvent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
 
   <owl:ObjectProperty rdf:ID="guardian">
     <rdfs:label xml:lang="en">guardian</rdfs:label>
