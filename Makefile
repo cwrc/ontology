@@ -109,8 +109,8 @@ testing: all
 	cp -f -R css /var/www/public/testing/.
 	cp -f -R js /var/www/public/testing/.
 
-	curl -X POST -H 'Content-Type:application/sparql-update' -d 'CLEAR GRAPH <http://sparql.cwrc.ca/testing/cwrc>' http://localhost:9999/blazegraph/sparql
-	curl -X POST -H 'Content-Type:application/rdf+xml' -d @/var/www/public/testing/$(ONTOLOGY).rdf http://localhost:9999/blazegraph/sparql?context-uri=http://sparql.cwrc.ca/testing/cwrc
+	curl -X POST -H 'Content-Type:application/sparql-update' -d 'CLEAR GRAPH <http://sparql.cwrc.ca/testing/$(ONTOLOGY)>' http://localhost:9999/blazegraph/sparql
+	curl -X POST -H 'Content-Type:application/rdf+xml' -d @/var/www/public/testing/$(ONTOLOGY).rdf http://localhost:9999/blazegraph/sparql?context-uri=http://sparql.cwrc.ca/testing/$(ONTOLOGY)
 	
 
 # deploy to production
@@ -138,8 +138,8 @@ deploy: all
 	cp -f -R css /var/www/public/ontology/.
 	cp -f -R js /var/www/public/ontology/.
 
-	curl -X POST -H 'Content-Type:application/sparql-update' -d 'CLEAR GRAPH <http://sparql.cwrc.ca/ontologies/cwrc>' http://localhost:9999/blazegraph/sparql
-	curl -X POST -H 'Content-Type:application/rdf+xml' -d @/var/www/public/ontologies/$(ONTOLOGY).rdf http://localhost:9999/blazegraph/sparql?context-uri=http://sparql.cwrc.ca/ontologies/cwrc
+	curl -X POST -H 'Content-Type:application/sparql-update' -d 'CLEAR GRAPH <http://sparql.cwrc.ca/ontologies/$(ONTOLOGY)>' http://localhost:9999/blazegraph/sparql
+	curl -X POST -H 'Content-Type:application/rdf+xml' -d @/var/www/public/ontologies/$(ONTOLOGY).rdf http://localhost:9999/blazegraph/sparql?context-uri=http://sparql.cwrc.ca/ontologies/$(ONTOLOGY)
 
 
 # tests rdf files aren't broken before push, make push --> then commit

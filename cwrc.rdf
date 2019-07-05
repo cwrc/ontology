@@ -1454,9 +1454,9 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <!-- TODO: revise this uri for overlap -->
-  <owl:ObjectProperty rdf:ID="employer">
-    <rdfs:label xml:lang="en">employer</rdfs:label>
+  
+  <owl:ObjectProperty rdf:ID="employment">
+    <rdfs:label xml:lang="en">employment</rdfs:label>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -17699,6 +17699,15 @@
     <skos:definition xml:lang="en">Friends and connections context is a significant subclass of context. Annotations typed as friends and connections contexts discuss a broad spectrum of social relations ranging from friendship to enmities and casual associations. Other context annotations treat related aspects of social connections, including @@#LeisureContext@@ and @@#IntimateRelationshipContext@@.</skos:definition>
     <skos:definition xml:lang="fr">Le contexte des amis et des connexions est une sous-classe de contexte importante. Les annotations saisies en tant que contexte amis et relations abordent un large éventail de liens sociaux, allant de l’amitié aux conflits en passant par les relations éphémères. D'autres annotations contextuelles traitent des aspects liés aux rapports sociaux, notamment les loisirs et les relations intimes.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="FriendsAndAssociatesEvent">
+    <rdfs:label xml:lang="en">friends and associates event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#FriendsAndAssociatesContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#BiographicalEvent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
