@@ -3403,7 +3403,7 @@ Closely related to the industrial novel because of its interest in the impact of
   </owl:Class>
   <owl:Class rdf:about="#StandaloneWork">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">Book/Standalone Work</rdfs:label>
+    <rdfs:label xml:lang="en">Standalone Work/Book</rdfs:label>
     <skos:definition xml:lang="en">A substantial, standalone work of writing in either or both of the physical or the intellectual sense of the term. 
       Note: Used to class texts encoded using the “m” (monographic) value for the level attribute of the title element. See @@https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-title.html@@.</skos:definition>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300028051"/>
@@ -3453,7 +3453,7 @@ Note: Used to class texts encoded using the “a” (analytic) value for the lev
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300055027"/>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026097"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">Partial/Embedded Work</rdfs:label>
+    <rdfs:label xml:lang="en">Embedded/Partial Work</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="#AlphabetForm">
     <rdfs:subClassOf rdf:resource="#Form"/>
