@@ -32,6 +32,8 @@ import urllib.request
  - missing json file
  - no namespace uri
  - no namespace prefix
+
+9) revaluate if using sparql queries would be more efficent than generator objects 
 """
 spec_url = None
 spec_ns = None
@@ -220,12 +222,12 @@ def newAZ(nodes):
     string += '    <th scope="col">Instance</th>'
     string += '  </tr>\n\t</thead>\n<tbody>'
     for x in types:
-        instances = [get_uri_term(x) for x in o_graph.subjects(None, x) if spec_url in x]
+        instances = sorted([get_uri_term(y) for y in o_graph.subjects(RDF.type, x) if spec_url in y])
         if instances:
             string += '<tr>'
             name = '<a href="%s" style="font-weight:bold;">%s:</a>' % (get_link(x), get_prefix(x))
             string += '  <th scope="row">%s</th>' % name
-            string += create_row(sorted(instances))
+            string += create_row((instances))
             string += '</tr>'
     string += '</tbody>\n</table>'
 
@@ -273,7 +275,7 @@ def all_terms_html(nodes):
         types.remove(rdflib.term.URIRef('http://www.w3.org/2002/07/owl#NamedIndividual'))
     string = ""
     for x in types:
-        instances = [get_uri_term(x) for x in o_graph.subjects(None, x) if spec_url in x]
+        instances = [get_uri_term(y) for y in o_graph.subjects(RDF.type, x) if spec_url in y]
         if instances:
             string += '<div class="type">'
             string += '<h3 id="%s">%s<span> (%s)</span></h3>\n' % (get_prefix(x), get_prefix(x), len(instances))
@@ -283,7 +285,7 @@ def all_terms_html(nodes):
             string += '<div/>'
 
     for x in types:
-        instances = sorted([x for x in o_graph.subjects(None, x)])
+        instances = sorted([y for y in o_graph.subjects(RDF.type, x)])
         if any((y, RDF.type, x) in o_graph for y in instances) and grandchildren_exist(instances):
             string += '<h3>%s Instances</h3>\n' % get_prefix(x)
             for y in instances:
@@ -365,14 +367,14 @@ def create_term_main(term, uri):
     comment = get_comment_list(uri)
 
     inverse_uri = None
-    if (uri, RDF.type, OWL.ObjectProperty) in o_graph and defn == [] and comment == []:
+    if defn == [] and comment == [] and (uri, RDF.type, OWL.ObjectProperty) in o_graph:
         if (uri, OWL.inverseOf, None) in o_graph:
             inverse_uri = [o for o in o_graph.objects(uri, OWL.inverseOf)][0]
         elif (None, OWL.inverseOf, uri) in o_graph:
             inverse_uri = [s for s in o_graph.subjects(OWL.inverseOf, uri)][0]
-
     html_str = '<p id="top">[<a href="#definition_list">back to top</a>]</p>\n'
     html_str += '<h5>%s</h5>\n' % (label)
+
     if inverse_uri:
         if lang == "fr":
             html_str += """<div class="defn">Inverse de a """
@@ -531,18 +533,14 @@ def create_term_html(uri):
 
 def get_comment_list(uri):
     comment = o_graph.objects(uri, RDFS.comment)
-    test = [str(x) for x in comment if x.language == lang]
-    # comment = [str(x) for x in comment]
-    if test:
-        return test
-
-    for s, p, o in o_graph.triples((uri, RDFS.comment, None)):
-        return[o]
+    return [str(x) for x in comment if x.language == lang]
 
 
 def get_label_dict(uri):
     temp = get_uri_term(uri)
     label = o_graph.objects(uri, RDFS.label)
+    if not label:
+        label = o_graph.objects(uri, SKOS.prefLabel)
     for x in label:
         temp = x
         if x.language == lang:
