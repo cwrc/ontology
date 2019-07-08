@@ -992,6 +992,15 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+  <owl:Class rdf:ID="NameEvent">
+    <rdfs:label xml:lang="en">name event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#NameContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#BiographicalEvent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
   <owl:Class rdf:ID="PersonalName">
     <rdfs:label xml:lang="en">personal name</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -17738,7 +17747,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    <rdfs:subPropertyOf rdf:resource="#hasInterpersonalRelationshipWith"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIntimateRelationshipWith"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
   </owl:ObjectProperty>
@@ -17749,7 +17758,7 @@
     <cwrc:subjectCentricPredicate rdf:resource="#hasCohabitant"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <rdfs:subPropertyOf rdf:resource="#interpersonalRelationshipWith"/>
+    <rdfs:subPropertyOf rdf:resource="#intimateRelationship"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
   </owl:ObjectProperty>
 
@@ -19729,7 +19738,7 @@
     <rdfs:comment xml:lang="fr">Désapprouver de l'ancienne ontologie Orlando.</rdfs:comment>
   </owl:DeprecatedProperty>
 
-  <owl:Class rdf:ID="IntimateRelationshipsContext">
+  <owl:DeprecatedClass rdf:ID="IntimateRelationshipsContext">
     <rdfs:label xml:lang="en">intimate relationships context</rdfs:label>
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -19742,7 +19751,7 @@
     <owl:equivalentClass rdf:resource="#IntimateRelationshipContext"/>
     <dcterms:isReplacedBy rdf:resource="#IntimateRelationshipContext"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
-  </owl:Class>
+  </owl:DeprecatedClass>
 
   <owl:DeprecatedClass rdf:ID="WealthContext">
     <rdfs:label xml:lang="en">wealth context</rdfs:label>

@@ -425,7 +425,7 @@
     <rdfs:label xml:lang="en">animation</rdfs:label>
     <rdf:type rdf:resource="#VisualArtMedium"/>
   </genre:MovingMedium>
-  <genre:PartialForm rdf:about="#prefatoryPiece">
+  <genre:EmbeddedWork rdf:about="#prefatoryPiece">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">prefatory piece</rdfs:label>
     <rdfs:label xml:lang="fr">préface</rdfs:label>
@@ -433,7 +433,7 @@
     <skos:definition xml:lang="fr">«Une préface (du latin præ : avant et fari : parler) est, en littérature, un texte d’introduction et de présentation. Placé en tête d’un livre, il en fait connaître les vues, le plan, prévient des objections, répond à des critiques ou encore donne une idée sur le message que veut transmettre l'auteur à travers ce livre (ex : la pauvreté de la société, l'inégalité, la prostitution, la violence, etc.). La préface est courte lorsqu'elle devient un avertissement et largement développée dans le cadre des prolégomènes. On oppose à la préface la postface.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="en">"Texts preceding the main literary work and containing comments about such matters as the reason for or circumstances of the author's writing the work, or comments by another about the author or the work."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Preface"/>
-  </genre:PartialForm>
+  </genre:EmbeddedWork>
   <genre:FictionalGenre rdf:about="#schoolFiction">
     <rdfs:label xml:lang="fr">fiction scolaire</rdfs:label>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
@@ -561,7 +561,7 @@
     <skos:definition xml:lang="en">A thematic genre concerned with such matters as military lives, experiences, or history, whether at war or during peace time.</skos:definition>
     <skos:related rdf:resource="#"/>
   </genre:ThematicGenre>
-  <genre:BookForm rdf:about="#scrapbook">
+  <genre:StandaloneWork rdf:about="#scrapbook">
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300027341"/>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr">«Un album photos est un livre regroupant un ensemble de photographies. Certains albums ont des compartiments dans lesquels les photos sont rangées, d'autres, généralement plus anciens, contiennent simplement des feuilles de papier épais sur lesquelles les photos peuvent être collées. Il est également possible et facile de créer un album photo avec les photos numériques. De nombreux logiciels offrent cette possibilité.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -570,7 +570,7 @@
     <rdfs:label xml:lang="en">scrapbook</rdfs:label>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Photograph_album"/>
     <skos:definition xml:lang="en">"Blank books or albums designed so that a variety of items may be affixed to the pages, including photographs, clippings, and other memorabilia."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
-  </genre:BookForm>
+  </genre:StandaloneWork>
   <genre:FeministGenre rdf:about="#feministTheory">
     <skos:definition xml:lang="fr">«La théorie féministe est un aspect du féminisme porté sur la théorisation et la réflexion philosophique. Son but est de comprendre la nature de l'inégalité entre les genres. Elle examine la place des femmes en faisant référence à des domaines des sciences sociales comme l'anthropologie, la sociologie, la communication, la psychanalyse, la philosophie, etc.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <owl:sameAs rdf:resource="https://en.wikipedia.org/wiki/Feminist_theory"/>
@@ -941,7 +941,7 @@
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026514"/>
     <skos:definition xml:lang="en">"Robinsonade (/ˌrɒbɪnsəˈneɪd/) is a literary genre that takes its name from the 1719 novel Robinson Crusoe by Daniel Defoe. The success of this novel spawned so many imitations that its name was used to define a genre, which is sometimes described simply as a "desert island story" or a "castaway narrative." The word "robinsonade" was coined by the German writer Johann Gottfried Schnabel in the Preface of his 1731 work Die Insel Felsenburg (The Island Stronghold). It is often viewed as a subgenre of survivalist fiction." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
   </genre:ThematicGenre>
-  <genre:BookForm rdf:about="#giftbook">
+  <genre:StandaloneWork rdf:about="#giftbook">
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2017026072"/>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300202541"/>
@@ -950,7 +950,7 @@
     <skos:definition xml:lang="en">"Books, usually illustrated literary anthologies, intended to be given as gifts and often published annually; popular in the 19th century. For works produced to mark an occasion, use "keepsakes (books)."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">giftbook</rdfs:label>
-  </genre:BookForm>
+  </genre:StandaloneWork>
   <genre:DigitalMedium rdf:about="#computerProgram">
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300312188"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
@@ -1161,7 +1161,7 @@
     <dcterms:references rdf:resource="http://web.cn.edu/kwheeler/lit_terms_h.html"/>
     <rdf:type rdf:resource="#ReligiousGenre"/>
   </genre:MusicalGenre>
-  <genre:PartialForm rdf:about="#afterword">
+  <genre:EmbeddedWork rdf:about="#afterword">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">afterword</rdfs:label>
     <skos:definition xml:lang="en">"A section that appears towards the end of a book, does not form part of the main body, and often concludes or summarizes."  <![CDATA[<a href="#cwrc:4c227091-6bf0-4325-b846-9733fae19e61">(Oxford, 2015)</a>]]></skos:definition>
@@ -1169,7 +1169,7 @@
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Postface"/>
     <skos:definition xml:lang="fr">«Une postface est un texte ajouté à la fin d'un livre ou d'un écrit pour en guise de supplément ou de conclusion, généralement pour émettre un commentaire, une explication ou un avertissement. La postface peut être rédigée par l'auteur d'un document ou par une autre personne. La postface est séparée du corps principal de l'ouvrage et est placée dans les pages annexes, c'est-à-dire à la fin du document. La postface, bien qu'elle puise faire office de conclusion, présente des informations qui ne sont pas essentielles à l'intégralité de l'ouvrage, mais qui sont toutefois jugées pertinentes. On oppose la préface, située dans les liminaires, à la postface.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
-  </genre:PartialForm>
+  </genre:EmbeddedWork>
   <genre:OperaGenre rdf:about="#opera">
     <rdf:type rdf:resource="#PerformanceMedium"/>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026976"/>
@@ -1496,10 +1496,10 @@
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdf:type rdf:resource="#DidacticGenre"/>
   </genre:ReligiousGenre>
-  <genre:BookForm rdf:about="#book">
+  <genre:StandaloneWork rdf:about="#book">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">book</rdfs:label>
-  </genre:BookForm>
+  </genre:StandaloneWork>
   <genre:ThematicGenre rdf:about="#exploration">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">exploration</rdfs:label>
@@ -1544,7 +1544,7 @@
     <rdfs:label xml:lang="en">melodrama</rdfs:label>
     <skos:definition xml:lang="en">"A dramatic form characterized by excessive sentiment, exaggerated emotion, sensational and thrilling action, and an artificially happy ending. Melodramas originally referred to romantic plays featuring music, singing, and dancing, but by the eighteenth century they connoted simplified and coincidental plots, bathos, and happy endings. These melodramatic traits are present in Gothic novels, western stories, popular films, and television crime shows, to name but a few more recent examples."  <![CDATA[<a href="cwrc:509015ff-7641-473e-94c5-688e06952bb7">(L. K Wheeler, 2017)</a>]]></skos:definition>
   </genre:DramaticGenre>
-  <genre:PartialForm rdf:about="#epilogue">
+  <genre:EmbeddedWork rdf:about="#epilogue">
     <skos:definition xml:lang="fr">«L’épilogue (du grec επι (epi) : au-dessus et λογος (logos) : discours) est la dernière partie, la conclusion d’une œuvre (discours, roman, film, pièce théâtrale, etc.). Il désigne plus particulièrement au théâtre classique un discours récapitulatif à la fin de la pièce. Il est surtout un hors-d’œuvre, un adieu au public. La Fontaine, croyant avoir fini son œuvre des Fables au VIe livre, prend congé du lecteur dans cet épilogue : Bornons ici cette carrière,Les longs ouvrages me font peur ;Loin d’épuiser une matière,On n’en doit prendre que la fleur»… <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:label xml:lang="fr">épilogue</rdfs:label>
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
@@ -1553,7 +1553,7 @@
     <rdfs:label xml:lang="en">epilogue</rdfs:label>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2018026101"/>
     <skos:definition xml:lang="en">"A conclusion added to a literary work such as a novel, play, or long poem. It is the opposite of a prologue. Often, the epilogue refers to the moral of a fable. Sometimes, it is a speech made by one of the actors at the end of a play asking for the indulgence of the critics and the audience. Shakespeare's A Midsummer Night's Dream contains one of the most famous epilogues. Contrast with prologue. Do not confuse the term with eclogue."  <![CDATA[<a href="cwrc:509015ff-7641-473e-94c5-688e06952bb7">(L. K Wheeler, 2017)</a>]]></skos:definition>
-  </genre:PartialForm>
+  </genre:EmbeddedWork>
   <genre:RecordForm rdf:about="#bibliographicRecord">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">bibliographic record</rdfs:label>
@@ -1588,7 +1588,7 @@
     <rdf:type rdf:resource="#ChildrensLiteratureGenre"/>
     <rdf:type rdf:resource="#DidacticGenre"/>
   </genre:SongGenre>
-  <genre:BookForm rdf:about="#notebook">
+  <genre:StandaloneWork rdf:about="#notebook">
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Notebook_(style)"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">notebook</rdfs:label>
@@ -1600,7 +1600,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026133"/>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from CRHQ CNRS.</rdfs:comment>
     <skos:definition xml:lang="en">"Notebook is a style of writing where people jot down what they have thought or heard at the spur of moment. The contents of a notebook are unorganized, and the number of subjects covered in a notebook are unlimited: a paragraph of autobiography can be followed immediately by one on astronomy or one on history. Some famous authors are also famous for the notebooks they left. The Italian poet Giacomo Leopardi kept a notebook, called Zibaldone, from 1817 to 1832. The idea of keeping that, which contains no fewer than 4,526 pages, was possibly suggested by a priest who fled from the French Revolution and came to live in the poet's hometown. The priest suggested that "every literary man should have a written chaos such as this: notebook containing sottiseries, adrersa, excerpta, pugillares, commentaria... the store-house out of which fine literature of every kind may come, as the sun, moon, and stars issued out of chaos." There are writers who earned their posthumous fame solely by their notebooks, such as the German scientist and humorous writer Georg Lichtenberg. He called his notebooks "waste book," using the English book-keeping term. He explains the purpose of his "waste book" in his notebook E: The notebooks of scientists, such as those of Michael Faraday and Charles Darwin, can reveal the development of their scientific theories. On the other hand, the notebooks used by scientists for recording their experiments are called lab notebooks. The notebooks used by artists are usually referred as sketchbooks, which may contain more than sketches. Leonardo da Vinci's notebooks contain his writings on painting, sculpture, architecture, anatomy, mining, inventions and music, as well as his sketches, his grocery lists and the names of people who owed him money. In Chinese literature, "notebook" or biji is a distinct genre, and has a broader meaning."  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
-  </genre:BookForm>
+  </genre:StandaloneWork>
   <genre:IntertextualGenre rdf:about="#review">
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026168"/>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
@@ -1751,14 +1751,14 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="fr">Écrit au sujet de la politique, généralement écrit dans un ton persuasif en faveur d'un parti ou d'une cause politique particulière.</skos:definition>
     <rdfs:label xml:lang="fr">écrits politiques</rdfs:label>
   </genre:PoliticalGenre>
-  <genre:PartialForm rdf:about="#paratext">
+  <genre:EmbeddedWork rdf:about="#paratext">
     <skos:definition xml:lang="en">A part of or supplement to a work that is structurally associated with the main body of a cultural work that "contains supplementary information about the body but is not necessariy colocated with it, such as a preface, annotation, afterword, footnote, or glossary."<![CDATA[<a href="#cwrc:4c227091-6bf0-4325-b846-9733fae19e61">(Oxford, 2015)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">paratext</rdfs:label>
     <rdfs:label xml:lang="fr">paratextes</rdfs:label>
     <dcterms:references rdf:resource="https://books.google.ca/books?id=s4FMCAAAQBAJ&amp;printsec=frontcover&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false"/>
-  </genre:PartialForm>
+  </genre:EmbeddedWork>
   <genre:IntertextualGenre rdf:about="#satire">
     <skos:definition xml:lang="en">"Literary compositions in verse or prose, or ideas expressed as the subjects of art works, in which human folly and vice are held up to scorn, derision, or ridicule."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">«Une satire est une œuvre dont l'objectif est une critique moqueuse de son sujet (des individus, des organisations, des États, etc.), souvent dans l'intention de provoquer, prévenir un changement ou de porter à réfléchir. On attribue généralement la paternité de ce genre littéraire (satura, c'est-à-dire pot-pourri) au poète archaïque latin Lucilius.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -1776,14 +1776,14 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">informational writing</rdfs:label>
   </genre:InformationalGenre>
-  <genre:PartialForm rdf:about="#introduction">
+  <genre:EmbeddedWork rdf:about="#introduction">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">introduction</rdfs:label>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Penguin Dictionary of Literary Terms &amp; Literary Theory, 4th ed.</rdfs:comment>
     <rdfs:label xml:lang="fr">introduction</rdfs:label>
     <skos:definition xml:lang="fr">Section d'ouverture d'un texte, souvent sous forme d'essai, qui donne généralement un aperçu du propos du texte et explique les raisons pour lesquelles l'auteur.e l'a écrit.</skos:definition>
     <skos:definition xml:lang="en">"The opening section of a text, often in the form of an essay, that usually provides an overview of the text's subject matter and explains the author's reason for writing."  <![CDATA[<a href="#cwrc:2f09376c-f784-4a46-9f04-5a21aa311f27">(Penguin, 1999)</a>]]></skos:definition>
-  </genre:PartialForm>
+  </genre:EmbeddedWork>
   <genre:ComedicGenre rdf:about="#comedy">
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="fr">"Genre concernant les formes du théâtre, de la littérature et de l'improvisation qui ont pour principal objectif de divertir et de provoquer le rire. La comédie est généralement opposée à la tragédie et peut prendre soit la forme d'une critique sociale à travers la satire et l'humour d'esprit politique ou intellectuel, soit la forme de spectacle pur à travers la farce ou le burlesque." </skos:definition>
@@ -2097,7 +2097,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Journalism"/>
     <rdfs:label xml:lang="fr">journalisme</rdfs:label>
   </genre:JournalisticGenre>
-  <genre:PartialForm rdf:about="#annotation">
+  <genre:EmbeddedWork rdf:about="#annotation">
     <rdfs:label xml:lang="fr">annotation</rdfs:label>
     <skos:definition xml:lang="fr">"Notes ajoutées en tant que commentaires ou explications, comme celles qui accompagnent les entrées d'une bibliographie, une liste de lecture, ou un catalogue voué à décrire, expliquer ou évaluer la publication à laquelle on se réfère. " </skos:definition>
     <skos:definition xml:lang="en">"Notes added as comment or explanation, such as those accompanying an entry in a bibliography, reading list, or catalogue intended to describe, explain, or evaluate the publication referred to."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
@@ -2105,7 +2105,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">annotation</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300026100"/>
-  </genre:PartialForm>
+  </genre:EmbeddedWork>
   <genre:ChildrensLiteratureGenre rdf:about="#nurseryRhyme">
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300202593"/>
@@ -2124,7 +2124,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="en">"Solemn declarations, written or verbal; usually made orally by a witness under oath in response to interrogation by a lawyer or authorized public official, then reduced to writing for the record."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
   </genre:NarrativeGenre>
-  <genre:PartialForm rdf:about="#prologue">
+  <genre:EmbeddedWork rdf:about="#prologue">
     <skos:definition xml:lang="en">"(1) In original Greek tragedy, the prologue was either the action or a set of introductory speeches before the first entry (parados) of the chorus. Here, a single actor's monologue or a dialogue between two actors would establish the play's background events. (2) In later literature, a prologue is a section of any introductory material before the first chapter or the main material of a prose work, or any such material before the first stanza of a poetic work."  <![CDATA[<a href="cwrc:509015ff-7641-473e-94c5-688e06952bb7">(L. K Wheeler, 2017)</a>]]></skos:definition>
     <rdfs:label xml:lang="fr">prologue</rdfs:label>
     <skos:definition xml:lang="fr">«Le prologue (du grec προ (pro) : avant, et λóγος (logos) : discours) est la première partie d’une œuvre littéraire ou la première scène d’une œuvre dramatique, faisant office de préface, d’introduction ou de préambule, et servant à situer les personnages et l’action de l’œuvre en exposant divers points essentiels à connaître pour l’intelligence de la pièce.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -2133,7 +2133,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2018026101"/>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Prologue"/>
-  </genre:PartialForm>
+  </genre:EmbeddedWork>
   <genre:MusicalNotationForm rdf:about="#notatedMusic">
     <skos:definition xml:lang="en">"Sheet music is a handwritten or printed form of music notation that uses modern musical symbols to indicate the pitches (melodies), rhythms and/or chords of a song or instrumental musical piece. Like its analogs – printed books or pamphlets in English, Arabic or other languages – the medium of sheet music typically is paper (or, in earlier centuries, papyrus or parchment), although the access to musical notation since the 1980s has included the presentation of musical notation on computer screens and the development of scorewriter computer programs that can notate a song or piece electronically, and, in some cases, "play back" the notated music using a synthesizer or virtual instruments. Use of the term "sheet" is intended to differentiate written or printed forms of music from sound recordings (on vinyl record, cassette, CD), radio or TV broadcasts or recorded live performances, which may capture film or video footage of the performance as well as the audio component. In everyday use, "sheet music" (or simply "music") can refer to the print publication of commercial sheet music in conjunction with the release of a new film, TV show, record album, or other special or popular event which involves music. The first printed sheet music made with a printing press was made in 1473. Sheet music is the basic form in which Western classical music is notated so that it can be learned and performed by solo singers or instrumentalists or musical ensembles. Many forms of traditional and popular Western music are commonly learned by singers and musicians "by ear", rather than by using sheet music (although in many cases, traditional and pop music may also be available in sheet music form). "Score" is a common alternative (and more generic) term for sheet music, and there are several types of scores, as discussed below. The term "score" can also refer to theatre music, orchestral music or songs written for a play, musical, opera or ballet, or to music or songs written for a television programme or film; for the last of these, see Film score." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -2246,11 +2246,11 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">camp</rdfs:label>
   </genre:DramaticGenre>
-  <genre:PartialForm rdf:about="#appendix">
+  <genre:EmbeddedWork rdf:about="#appendix">
     <skos:definition xml:lang="en">"An addendum, in general, is an addition required to be made to a document by its author subsequent to its printing or publication. It comes from the Latin verbal phrase addendum est, being the gerundive form of the verb addo, addere, addidi, additum, "to give to, add to", meaning "(that which) must be added". Addenda is from the plural form addenda sunt, "(those things) which must be added". (See also memorandum, agenda, corrigenda.)" <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">appendix</rdfs:label>
-  </genre:PartialForm>
+  </genre:EmbeddedWork>
   <genre:MusicalGenre rdf:about="#music">
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026952"/>
@@ -2388,7 +2388,7 @@ For fiction published in installments there are also specific terms for those is
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014027103"/>
     <rdf:type rdf:resource="#PoeticGenre"/>
   </genre:SongGenre>
-  <genre:PartialForm rdf:about="#dedication">
+  <genre:EmbeddedWork rdf:about="#dedication">
     <skos:definition xml:lang="en">"A short bit of text conventionally appearing before the start of a novel or poem in which the author or poet addresses some individual, invoking his or her gratitude or thanks to that individual. Frequently, the dedication is to a spouse, friend, loved one, child, mentor, or individual who inspired the work. Several of the Inklings dedicated specific fictional works to each other (or in the case of C.S. Lewis, to children of fellow Inklings). Among scholars, one of the most significant types of dedications is a festschrift. A festschrift is a collection of essays or studies in book form, dedicated to a former teacher or professor in his or her advanced age. The individual scholarly writings come from his or her students, who typically collaborate to organize the work and contact the publisher, and they present the collection to the teacher upon its publication."  <![CDATA[<a href="cwrc:509015ff-7641-473e-94c5-688e06952bb7">(L. K Wheeler, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">«Une dédicace est une épître ou simple inscription placée par un auteur en tête d’un livre pour mettre son œuvre sous le patronage d’une personne illustre ou influente, ou pour témoigner de ses sentiments de gratitude ou d’amitié, ou enfin, à certaines époques, pour en tirer profit.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -2396,7 +2396,7 @@ For fiction published in installments there are also specific terms for those is
     <rdfs:label xml:lang="fr">dédicace</rdfs:label>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Dedication_(publishing)"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
-  </genre:PartialForm>
+  </genre:EmbeddedWork>
   <genre:ScholarlyGenre rdf:about="#phdThesis">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">phd thesis</rdfs:label>
@@ -2448,7 +2448,7 @@ For fiction published in installments there are also specific terms for those is
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">journal</rdfs:label>
   </genre:JournalForm>
-  <genre:BookForm rdf:about="#sketchBook">
+  <genre:StandaloneWork rdf:about="#sketchBook">
     <skos:definition xml:lang="fr">«Un carnet de croquis est un carnet utilisé par les dessinateurs, peintres et graveurs pour exécuter dessins et esquisses hors de leur atelier. Il peut être utilisé pour une modeste création ou pour préparer l’exécution d'une œuvre plus complexe. Généralement, le carnet de croquis est utilisé avec les outils de dessin : crayons, feutres, mine de plomb, pierre noire, aquarelle ou gouache. C'est souvent une ressource recherchée en histoire de l'art, pour comprendre le cheminement d'un artiste dans une œuvre ; points de passage, modèles qui inspireront les éléments de composition de l'œuvre finale.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2017027262"/>
     <skos:definition xml:lang="en">"Books or pads of blank sheets used or intended for sketching, which are informal or rough drawings."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
@@ -2457,7 +2457,7 @@ For fiction published in installments there are also specific terms for those is
     <rdfs:label xml:lang="en">sketch book</rdfs:label>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300027354"/>
-  </genre:BookForm>
+  </genre:StandaloneWork>
   <genre:CartographicForm rdf:about="#cartographicMaterials">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">cartographic materials</rdfs:label>
@@ -2487,12 +2487,12 @@ For fiction published in installments there are also specific terms for those is
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <rdfs:label xml:lang="fr">chapbook</rdfs:label>
   </genre:PrintMedium>
-  <genre:PartialForm rdf:about="#fascicle">
+  <genre:EmbeddedWork rdf:about="#fascicle">
     <skos:definition xml:lang="en">A bundle or bound set of pages, usually a portion of a book that is published in parts or installments, but used more rarely to refer to unpublished bundles such as Emily Dickinson’s fascicles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">fascicle</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300265628"/>
-  </genre:PartialForm>
+  </genre:EmbeddedWork>
   <genre:PoeticGenre rdf:about="#poeticDrama">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">poetic drama</rdfs:label>
@@ -3087,12 +3087,12 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">costume drama</rdfs:label>
     <skos:definition xml:lang="en">"A historical period drama (also known as a historical drama, period drama or period piece) is a work of art set in, or reminiscent of, an earlier time period. The term is usually used in the context of film and television. It is an informal crossover term that can apply to several genres but is most often heard in the context of historical fiction and romances, adventure films, and swashbucklers. The implication is that the audience is attracted as much by the lavish costumes as by the content. In the performing arts, a period piece is a work set in a particular era. This informal term covers all countries, all periods and all genres. It may be as long and general as the medieval era or as limited as one decade—the Roaring Twenties, for example." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
   </genre:DramaticGenre>
-  <genre:BookForm rdf:about="#artistsBook">
+  <genre:StandaloneWork rdf:about="#artistsBook">
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300123016"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">artist's book</rdfs:label>
     <skos:definition xml:lang="en">"Artists' books (or art books) are works of art that utilize the form of the book. They are often published in small editions, though they are sometimes produced as one-of-a-kind objects." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
-  </genre:BookForm>
+  </genre:StandaloneWork>
   <genre:SoundRecordingMedium rdf:about="#soundRecordingNonmusical">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">sound recording – nonmusical</rdfs:label>
@@ -3175,10 +3175,10 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">environmental</rdfs:label>
   </genre:ThematicGenre>
-  <genre:PartialForm rdf:about="#partExcerpt">
+  <genre:EmbeddedWork rdf:about="#partExcerpt">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">part/excerpt</rdfs:label>
-  </genre:PartialForm>
+  </genre:EmbeddedWork>
   <genre:IntertextualGenre rdf:about="#commentary">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">commentary</rdfs:label>
@@ -3401,7 +3401,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">Philosophical Genre</rdfs:label>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300054279"/>
   </owl:Class>
-  <owl:Class rdf:about="#BookForm">
+  <owl:Class rdf:about="#StandaloneWork">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Book/Standalone Work</rdfs:label>
     <skos:definition xml:lang="en">A substantial, standalone work of writing in either or both of the physical or the intellectual sense of the term. 
@@ -3445,10 +3445,10 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">Journalistic Genre</rdfs:label>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300054354"/>
   </owl:Class>
-  <owl:Class rdf:about="#PartialForm">
+  <owl:Class rdf:about="#EmbeddedWork">
     <rdfs:subClassOf rdf:resource="#Form"/>
-    <skos:definition xml:lang="en">Indicates "portions of documents or other written works, either included as discrete sections in an extant document or detached from the original document." <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]> 
-Note: Used to class texts encoded using the “a” (analytic) value for the level attribute in the Text Encoding Initiative Schema. See https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-title.html.
+    <skos:definition xml:lang="en">A work that is embedded in or forms a part of a larger work, for instance a poem within a volume or an essay within a journal.
+Note: Used to class texts encoded using the “a” (analytic) value for the level attribute in the Text Encoding Initiative Schema. See @@https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-title.html@@.
   </skos:definition>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300055027"/>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026097"/>
@@ -3616,7 +3616,7 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
     Literary genres are used to classify texts within a shifting range of literary forms and practices. Genres are most frequently related to formal features such as the English sonnet's fourteen lines of iambic pentameter, to characteristic subject matter such as themes of romance, horror, comedy, or tragedy, to aspects of style such as hard-boiled detective fiction, or to the purpose of a text. Within the context of literary studies, the question of "purpose," especially when considered within a political context, is of especial interest to scholars. For example, feminist literary scholars like Cynthia Huff ("‘That Profoundly Female, and Feminist Genre’: The Diary as Feminist Practice"), Giancarlo Lombardi (Rooms with a View: Feminist Diary Fiction, 1952-1999), Rita Felski (Beyond Feminist Aesthetics: Feminist Literature and Social Change) and others read "diary fiction" as a powerful genre used to spur on women’s movements. For more on literary genre, see the <![CDATA[<a href="http://sparql.cwrc.ca/ontologies/genre-preamble-EN.html#background">introduction</a>]]> to this ontology .</skos:definition>
   </owl:Class>
   <owl:Class rdf:about="#Form">
-    <skos:definition xml:lang="en">Indicates material and structural elements that distinguish one category of cultural work from another. Whereas Genre categories tend to group categories based on features such as the style, content, or audience of cultural works, Form categories usually define material characteristics that shape or contain the work, such as ‘anthology,’ in the case of @@#CollectionForm@@, ’notebook’ under @@#BookForm@@, or ‘journal’ within @@#SerialForm@@.</skos:definition>
+    <skos:definition xml:lang="en">Indicates material and structural elements that distinguish one category of cultural work from another. Whereas Genre categories tend to group categories based on features such as the style, content, or audience of cultural works, Form categories usually define material characteristics that shape or contain the work, such as ‘anthology,’ in the case of @@#CollectionForm@@, ’notebook’ under @@#StandaloneWork@@, or ‘journal’ within @@#SerialForm@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Form Genre</rdfs:label>
   </owl:Class>
@@ -3655,4 +3655,34 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
     <rdfs:subClassOf rdf:resource="#Form"/>
     <skos:definition xml:lang="en">Indicates "accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization." <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
   </owl:Class>
+
+  <owl:DeprecatedClass rdf:about="#PartialForm">
+    <rdfs:subClassOf rdf:resource="#Form"/>
+    <skos:definition xml:lang="en">Indicates "portions of documents or other written works, either included as discrete sections in an extant document or detached from the original document." <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]> 
+  Note: Used to class texts encoded using the “a” (analytic) value for the level attribute in the Text Encoding Initiative Schema. See @@https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-title.html@@.
+    </skos:definition>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300055027"/>
+    <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026097"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">Partial/Embedded Work</rdfs:label>
+    <rdfs:comment xml:lang="en">Deprecated in favour of class @@#EmbeddedWork@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe @@#EmbeddedWork@@.</rdfs:comment>
+    <owl:equivalentClass rdf:resource="#EmbeddedWork"/>
+    <dcterms:isReplacedBy rdf:resource="#EmbeddedWork"/>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </owl:DeprecatedClass>
+  <owl:DeprecatedClass rdf:about="#BookForm">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">Book/Standalone Work</rdfs:label>
+    <skos:definition xml:lang="en">A substantial, standalone work of writing in either or both of the physical or the intellectual sense of the term. 
+      Note: Used to class texts encoded using the “m” (monographic) value for the level attribute of the title element. See @@https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-title.html@@.</skos:definition>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300028051"/>
+    <rdfs:subClassOf rdf:resource="#Form"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of class @@#StandaloneWork@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe @@#StandaloneWork@@.</rdfs:comment>
+    <owl:equivalentClass rdf:resource="#StandaloneWork"/>
+    <dcterms:isReplacedBy rdf:resource="#StandaloneWork"/>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </owl:DeprecatedClass>
+
 </rdf:RDF>
