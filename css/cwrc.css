@@ -1,21 +1,36 @@
 body {
-    margin-left: 2em;
-    margin-right: 2em;
-    text-align: justify;
-    padding: 2em;
-    background-color: #f1f1f1;
-    font-family: "Lato",Arial,Helvetica,sans-serif;
+  margin-left: 2em;
+  margin-right: 2em;
+  text-align: justify;
+  padding: 2em;
+  background-color: #f1f1f1;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 }
+figcaption {
+  text-align: center;
+}
+
 main {
-    position: relative;
+  position: relative;
 }
 object {
   width: inherit;
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    padding-top: 4em;
-    margin-top: -1em;
-    clear: both;
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-top: 4em;
+  margin-top: -1em;
+  clear: both;
 }
 h4 a {
   border-bottom: none;
@@ -25,137 +40,146 @@ p.h4.text-muted {
   margin-top: 0em;
 }
 .instancestype > .specterm h5 {
-    /*padding: 0;*/
+  /*padding: 0;*/
 }
 
 .instances td > ul {
-    padding-left: 0;
-    columns: 5 280px;
+  padding-left: 0;
+  columns: 5 280px;
 }
 
 table {
-    /*table-layout: fixed;*/
-    word-wrap: break-word;
-    width: 100%;
-    border: solid 2px lightgrey;
+  /*table-layout: fixed;*/
+  word-wrap: break-word;
+  width: 100%;
+  border: solid 2px lightgrey;
 }
-section table{
-    border: none;
+section table {
+  border: none;
 }
 table td {
   -webkit-columns: 5 280px;
-    -moz-columns: 5 280px;
-      columns: 5 280px;
-    width: 75%;
+  -moz-columns: 5 280px;
+  columns: 5 280px;
+  width: 75%;
 }
 section table td {
   /*-webkit-columns: 5 280px;*/
-    /*-moz-columns: 5 280px;*/
+  /*-moz-columns: 5 280px;*/
   columns: auto;
-    width: 75%;
+  width: 75%;
 }
 .global-ref ul {
-    padding: 0;
+  padding: 0;
 }
 .global-ref li {
-    list-style: none;
+  list-style: none;
 }
 .global-ref th {
 }
 
-table li{
-    list-style: none;
+table li {
+  list-style: none;
 }
 
 th {
-    width: 25%;
+  width: 25%;
 }
 td a:after {
-    content: ",";
+  content: ",";
 }
 td a:last-child:after {
-    content: none;
+  content: none;
 }
 .altlabel {
-    font-style: italic;
-    /*display: none;*/
+  font-style: italic;
+  /*display: none;*/
 }
 
-
 .altlabel:first-child p {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .altlabel span:after {
-    content: ";";
-    margin-right: 2px;
+  content: ";";
+  margin-right: 2px;
 }
 .altlabel span:last-child:after {
-    content: none;
+  content: none;
 }
 
 .inverse {
   margin-left: 1em;
 }
 
-section .table thead>tr>th, section .table tbody>tr>th, section .table tfoot>tr>th, section .table thead>tr>td, section .table tbody>tr>td, section .table tfoot>tr>td {
-    border: none;
-    border-top: 1px solid #444;
-    border-bottom: 1px solid #444;
-    max-width: 60%;
-    line-break:;
-    /* column-count: 5; */
-    /* columns: 5 280px; */
+section .table thead > tr > th,
+section .table tbody > tr > th,
+section .table tfoot > tr > th,
+section .table thead > tr > td,
+section .table tbody > tr > td,
+section .table tfoot > tr > td {
+  border: none;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  max-width: 60%;
+  line-break: ;
+  /* column-count: 5; */
+  /* columns: 5 280px; */
 }
 dl {
-    margin: 0;
-    margin-top: 0.5em;
+  margin: 0;
+  margin-top: 0.5em;
 }
 img {
-    border: 0;
-    text-align: center;
-    clear: both;
+  border: 0;
+  text-align: center;
+  clear: both;
 }
 
 @keyframes border-fade {
-  from { border-color: #ae0030; }
-  to { border-color: #f1f1f1; }
+  from {
+    border-color: #ae0030;
+  }
+  to {
+    border-color: #f1f1f1;
+  }
 }
 
-p > a[href^="#"] { 
+p > a[href^="#"] {
   font-style: italic;
 }
 
-p > a[href^="#cwrc:"],p > a[href^="#_"] {
+p > a[href^="#cwrc:"],
+p > a[href^="#_"] {
   font-style: normal;
 }
 
-a[href^="cwrc.html#"] { 
+a[href^="cwrc.html#"] {
   font-style: italic;
 }
 
 :target {
-    border-bottom: 1px solid #f1f1f1;
-    animation: border-fade 3s ease;
+  border-bottom: 1px solid #f1f1f1;
+  animation: border-fade 3s ease;
 }
 
 section:target {
-    border: 1px solid #f1f1f1;
-    animation: border-fade 3s ease;
+  border: 1px solid #f1f1f1;
+  animation: border-fade 3s ease;
 }
 
 .bibliography .citation {
-    padding-top: 4em;
-    margin-top: -3em;
+  padding-top: 4em;
+  margin-top: -3em;
 }
 
-.deprecated_term .specterm, .az_list.deprecated_list{
-    background: #ff000010;
+.deprecated_term .specterm,
+.az_list.deprecated_list {
+  background: #ff000010;
 }
 .deprecated_term .specterm h5 {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
-
 
 /* Set black background color, white text and some padding */
 footer {
@@ -164,68 +188,67 @@ footer {
   padding: 15px;
 }
 
-header a, main a {
-    color: #000;
-    font-weight: bold;
-    border-bottom: 1px dashed #999;
-    line-break:;
+header a,
+main a {
+  color: #000;
+  font-weight: bold;
+  border-bottom: 1px dashed #999;
+  line-break: ;
 }
 
-header a:hover, main a:hover {
-    color: #444;
-    font-weight: bold;
-    text-decoration: none;
-    border-bottom: 1px solid #444;
+header a:hover,
+main a:hover {
+  color: #444;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
 }
-
 
 h2#subtitle {
-    margin-top: 0;
-    padding-top: 1em;
+  margin-top: 0;
+  padding-top: 1em;
 }
 
 h3#mymw-doctype {
-    margin: 0px;
-    margin-bottom: 1em;
+  margin: 0px;
+  margin-bottom: 1em;
 }
-
 
 /*
 Bootstrap Modifications
 */
-/* Remove the navbar's default margin-bottom and rounded borders */ 
+/* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
 }
 .nav-link.active {
-    color: #818182 !important;
+  color: #818182 !important;
 }
 .navbar-dark .navbar-nav .nav-link {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 450px}
-
+.row.content {
+  height: 450px;
+}
 
 .main-content {
-    background-color: white;
-    height: max-content;
+  background-color: white;
+  height: max-content;
 }
 
 #top {
-    float: right; 
-    font-size: small;
-    margin-top: 0px;
-    display: none;
+  float: right;
+  font-size: small;
+  margin-top: 0px;
+  display: none;
 }
-
 
 /*
  * Sidebar
  */
-
 
 .sidebar {
   position: fixed;
@@ -234,7 +257,7 @@ Bootstrap Modifications
   left: 0;
   z-index: 100; /* Behind the navbar */
   padding: 0;
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-sticky {
@@ -242,7 +265,7 @@ Bootstrap Modifications
   position: sticky;
   top: 48px; /* Height of navbar */
   height: calc(100vh - 48px);
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   overflow-x: hidden;
 }
 
@@ -270,39 +293,39 @@ Bootstrap Modifications
 }
 
 .sidebar li {
-    list-style: none;
-    /* display: table-footer-group; */
+  list-style: none;
+  /* display: table-footer-group; */
 }
 
 div#toc > ol {
-    padding-left: 0;
+  padding-left: 0;
 }
-ol ol, ul ul {
-    padding-left: 2em;
+ol ol,
+ul ul {
+  padding-left: 2em;
 }
-
 
 div#toc ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
 }
 
 div#toc li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-    /* display: flex; */
-    white-space: nowrap;
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  /* display: flex; */
+  white-space: nowrap;
 }
 
 /* Change the link color on hover */
 div#toc li a:hover {
-    background-color: #555;
-    color: white;
+  background-color: #555;
+  color: white;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
