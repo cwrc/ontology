@@ -83,9 +83,25 @@ except Exception as e:
 namespace_dict = {key: value for (key, value) in o_graph.namespace_manager.namespaces()}
 spec_url = namespace_dict['']
 
+genre_graph = None
+genre_namespace_dict = None
+genre_spec_url = None
+if "cwrc" in input_file:
+    genre_graph = rdflib.Graph()
+    namespace_manager = rdflib.namespace.NamespaceManager(rdflib.Graph())
+    genre_graph.namespace_manager = namespace_manager
+    try:
+        genre_graph.open("store", create=True)
+        genre_graph.parse("genre.rdf")
+    except Exception as e:
+        raise e
 
-def get_full_uri(uri):
-    return spec_url[:-1] + uri
+    genre_namespace_dict = {key: value for (key, value) in genre_graph.namespace_manager.namespaces()}
+    genre_spec_url = genre_namespace_dict['']
+
+
+def get_full_uri(uri, spec=spec_url):
+    return spec[:-1] + uri
 
 
 def format_XML(root):
@@ -177,6 +193,14 @@ def get_definitions(element):
                             hyperlink = create_hyperlink(uri, get_label(get_full_uri(uri), language) + "s")
                         else:
                             hyperlink = create_hyperlink(uri, get_label(get_full_uri(uri), language))
+                    elif "genre:" in uri and genre_graph:
+                        language = x.get("{http://www.w3.org/XML/1998/namespace}lang")
+                        if language is None:
+                            language = "EN"
+                        full_uri = get_full_uri(uri.split(":")[1], genre_spec_url + "#")
+                        # label = get_label(full_uri, language, genre_graph)
+                        # hyperlink = create_hyperlink(full_uri, label)
+                        hyperlink = create_hyperlink(full_uri, uri)
                     else:
                         hyperlink = create_hyperlink(uri, get_webpage_title(uri))
 
@@ -187,7 +211,7 @@ def create_hyperlink(uri, label):
     return ('<![CDATA[<a href="%s" title="%s">%s</a>]]>' % (uri, uri, label))
 
 
-def get_label(uri, lang):
+def get_label(uri, lang, graph=o_graph):
     query_str = """
         select distinct ?label  where {
             OPTIONAL { <%s> rdfs:label ?label. }.
@@ -196,7 +220,7 @@ def get_label(uri, lang):
             )
         }""" % (uri, lang)
     label = "[%s]" % uri
-    for row in o_graph.query(query_str):
+    for row in graph.query(query_str):
         label = row.label
 
     return label
