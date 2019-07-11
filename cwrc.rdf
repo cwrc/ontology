@@ -2,6 +2,7 @@
 <rdf:RDF xml:base="http://sparql.cwrc.ca/ontologies/cwrc#"
   xmlns="http://sparql.cwrc.ca/ontologies/cwrc#"
   xmlns:bibo="http://purl.org/ontology/bibo/"
+  xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
   xmlns:cc="http://creativecommons.org/ns#"
   xmlns:cidoc="http://www.cidoc-crm.org/cidoc-crm/"
   xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#"
@@ -799,6 +800,9 @@
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as Economic Context provide information about and discussions of a person's economic standing, including inheritance, property ownership, pensions, and personal financial disasters. See also the @@#OccupationContext@@ and @@#CulturalFormContext@@, particularly for @@#SocialClassContext@@.</skos:definition>
+    <rdfs:seeAlso rdf:resource="#OccupationContext"/>
+    <rdfs:seeAlso rdf:resource="#CulturalFormContext"/>
+    <rdfs:seeAlso rdf:resource="#SocialClassContext"/>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -1009,6 +1013,7 @@
     <skos:exactMatch rdf:resource="http://id.loc.gov/authorities/subjects/sh85089622"/>
     <skos:definition xml:lang="en">A person's name, containing a proper noun or proper-noun phrase referring to a person. Has subclasses for types of names such as @@#Pseudonym@@ and may have @@#NameType@@, and may have associated parts. This term is derived in part from the Text Encoding Initiative P5 schema <![CDATA[<i>persname</i>]]> element. See also @@https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-persName.html@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <rdfs:seeAlso rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-persName.html"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -1232,6 +1237,7 @@
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300404681"/>
     <skos:definition xml:lang="en">A subject's given or baptismal name. This term is derived from the Text Encoding Initiative P5 schema <![CDATA[<i>forename</i>]]> element. See also @@https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-forename.html@@.</skos:definition>
     <skos:definition xml:lang="fr">Le nom attribué ou le nom de baptême d'une personne. Ce terme est dérivé de l'élément 'forename' du schéma P5 du Text Encoding Initiative. Voir l'élément TEI <![CDATA[<i>forename</i>]]>.</skos:definition>
+    <rdfs:seeAlso rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-forename.html"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -1243,6 +1249,7 @@
     <owl:equivalentClass rdf:resource="http://metadataregistry.org/concept/show/id/8581.html"/>
     <skos:definition xml:lang="en">A subject's last name at birth, often a family (inherited) name, as opposed to a @@#Forename@@ or @@#Nickname@@." This term is derived from the Text Encoding Initiative P5 schema <![CDATA[<i>surname</i>]]> element. See also @@https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-surname.html@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <rdfs:seeAlso rdf:resource="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-surname.html"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -9952,9 +9959,82 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
+  <owl:ObjectProperty rdf:ID="extent">
+    <rdfs:label xml:lang="en">extent</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#writingRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasExtent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasExtent">
+    <rdfs:label xml:lang="en">has extent</rdfs:label>
+    <skos:definition xml:lang="en">The size or duration of a thing.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <skos:closeMatch rdf:resource="http://purl.org/dc/terms/extent"/>
+    <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="extentOf">
+    <rdfs:label xml:lang="en">extent of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasExtent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="profile">
+    <rdfs:label xml:lang="en">profile</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#writingRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasProfile"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasProfile">
+    <rdfs:label xml:lang="en">has profile</rdfs:label>
+    <skos:definition xml:lang="en">A description of something or someone.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="profileOf">
+    <rdfs:label xml:lang="en">profile of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasProfile"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="genericRangeIncludes">
+    <rdfs:label xml:lang="en">generic range includes</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#writingRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasGenericRange"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasGenericRange">
+    <rdfs:label xml:lang="en">has generic range</rdfs:label>
+    <skos:definition xml:lang="en">Indicates that a person wrote in this genre or form.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="inGenericRangeOf">
+    <rdfs:label xml:lang="en">in generic range of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasGenericRange"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+  
+
    <owl:Class rdf:ID="IntertextualityContext">
     <rdfs:label xml:lang="en">intertextuality context</rdfs:label>
-    <rdfs:label xml:lang="fr"> </rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subClassOf rdf:resource="#WritingContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Intertextuality Context is a significant subclass of Context. Annotations typed as Intertextuality Context provide information on the relationships between authors and texts.</skos:definition>
@@ -9962,49 +10042,8 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-   <owl:Class rdf:ID="ReceptionContext">
-    <rdfs:label xml:lang="en">reception context</rdfs:label>
-    <rdfs:label xml:lang="fr"> </rdfs:label>
-    <rdfs:subClassOf rdf:resource="#WritingContext"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">Reception Context is a significant subclass of Writing Context. Annotations typed as Reception Context chart the effects and results of an individual's writing, and the responses of self and others to an individual's writing.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
-   <owl:Class rdf:ID="TextualFeaturesContext">
-    <rdfs:label xml:lang="en">textual features context</rdfs:label>
-    <rdfs:label xml:lang="fr"> </rdfs:label>
-    <rdfs:subClassOf rdf:resource="#WritingContext"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">Textual Features Context is a significant subclass of Writing Context. Annotations typed as Textual Features Context chart critical interest in texts in addition to textual analysis, which occassionally draws on the tradition of close reading.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
-   <owl:Class rdf:ID="ProductionContext">
-    <rdfs:label xml:lang="en">production context</rdfs:label>
-    <rdfs:label xml:lang="fr"> </rdfs:label>
-    <rdfs:subClassOf rdf:resource="#WritingContext"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">Production Context is a significant subclass of Writing Context.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
-   <owl:Class rdf:ID="TextualSurvivalContext">
-    <rdfs:label xml:lang="en">textual survival context</rdfs:label>
-    <rdfs:label xml:lang="fr"> </rdfs:label>
-    <rdfs:subClassOf rdf:resource="#WritingContext"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">Textual Survival Context is a significant subclass of Writing Context. Annotations typed as Textual Survival Context chart the survival or lack of survival, whether accidental or deliberate, of a text or texts.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
-  
-  <owl:Class rdf:ID="IntertextualityEvent">
-    <rdfs:label xml:lang="en"> Intertextuality event</rdfs:label>
+    <owl:Class rdf:ID="IntertextualityEvent">
+    <rdfs:label xml:lang="en"> intertextuality event</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">An event related to an @@#IntertextualityContext@@.</skos:definition>
     <rdfs:subClassOf rdf:resource="#WritingEvent"/>
@@ -10012,6 +10051,651 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="intertextualRelationship">
+    <rdfs:label xml:lang="en">intertextual relationship</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#writingRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasIntertextualRelationTo"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasIntertextualRelationTo">
+    <rdfs:label xml:lang="en">has intertextual relation to</rdfs:label>
+    <skos:definition xml:lang="en">Indicates the relationships amongst authors and texts, reflecting the extent to which language of an author or a specific text is in dialogic relation to other texts, as first articulated by Julia Kristeva. A creative Work or an author more generally relates intertextually to a textual object, either to a specific Work or to the general style or oeuvre of another author. Usually refers to  how the meaning of a later text is informed by an earlier one, but, as articulated by theorists including Mikhail Bakhtin and Kristeva, it can also be invoked to refer to the shaping impact of language more generally on subsequent linguistic productions. The specific subpredicates provided here are not exhaustive. <![CDATA[<a href="https://www.zotero.org/groups/1018142/cwrc_ontology_references/items/itemKey/JE6QKFF4/itemPage/3">1996</a>]]>.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="explicitAllusion">
+    <rdfs:label xml:lang="en">explicit allusion</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#intertextualRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#alludesExplicitlyTo"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="alludesExplicitlyTo">
+    <rdfs:label xml:lang="en">alludes explicitly to</rdfs:label>
+    <skos:definition xml:lang="en">Indicates direct acknowledgement of either a specific creative Work or the style or general oeuvre of another author, often through mention of the title or the author's name. </skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasExplicitAllusionBy">
+    <rdfs:label xml:lang="en">has explicit allusion by</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#alludesExplicitlyTo"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="allusion">
+    <rdfs:label xml:lang="en">allusion</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#intertextualRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#alludesTo"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="alludesTo">
+    <rdfs:label xml:lang="en">alludes to</rdfs:label>
+    <skos:definition xml:lang="en">Indicates an apparent but indirect reference to either a specific creative work or the style or general oeuvre of another author, without explicitly identifying it.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="alludedToBy">
+    <rdfs:label xml:lang="en">alluded to by</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#alludesTo"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="adaptation">
+    <rdfs:label xml:lang="en">adaptation</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#intertextualRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#adapts"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="adapts">
+    <rdfs:label xml:lang="en">adapts</rdfs:label>
+    <skos:definition xml:lang="en">Indicates a reworking of a creative Work, including updates. Adaptation can be construed broadly: to quote Linda Hutcheon, "adaptation is not only a formal entity . . . but a process" <![CDATA[<a href="https://www.zotero.org/groups/1018142/cwrc_ontology_references/items/itemKey/CE53Q3ZE">xvii</a>]]>.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="adaptedBy">
+    <rdfs:label xml:lang="en">adapted by</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#adapts"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="quotation">
+    <rdfs:label xml:lang="en">quotation</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#intertextualRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#quotes"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="quotes">
+    <rdfs:label xml:lang="en">quotes</rdfs:label>
+    <skos:definition xml:lang="en">Indicates when an  author or a text lifts words or phrases directly from another's writing.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="quotedBy">
+    <rdfs:label xml:lang="en">quoted by</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#quotes"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="misquotation">
+    <rdfs:label xml:lang="en">misquotation</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#intertextualRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#misquotes"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="misquotes">
+    <rdfs:label xml:lang="en">misquotes</rdfs:label>
+    <skos:definition xml:lang="en">Indicates when an  author or a text lifts words or phrases incorrectly from another's writing.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="misquotedBy">
+    <rdfs:label xml:lang="en">misquoted by</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#misquotes"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="parody">
+    <rdfs:label xml:lang="en">parody</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#intertextualRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#parodies"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="parodies">
+    <rdfs:label xml:lang="en">parodies</rdfs:label>
+    <skos:definition xml:lang="en">Indicates a parodic mode of intertextuality. See @@genre:parody@@</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="parodiedBy">
+    <rdfs:label xml:lang="en">parodied by</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#parodies"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="satire">
+    <rdfs:label xml:lang="en">satire</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#intertextualRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#satirizes"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="satirizes">
+    <rdfs:label xml:lang="en">satirizes</rdfs:label>
+    <skos:definition xml:lang="en">Indicates a satiric mode of intertextuality. See @@genre:satire@@</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="satirizedBy">
+    <rdfs:label xml:lang="en">satirized by</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#satirizes"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="imitation">
+    <rdfs:label xml:lang="en">imitation</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#intertextualRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#imitates"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="imitates">
+    <rdfs:label xml:lang="en">imitates</rdfs:label>
+    <skos:definition xml:lang="en">Indicates a generally favourable intertextual engagement by way of imitation. See @@genre:imitation@@</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="imitatedBy">
+    <rdfs:label xml:lang="en">imitated by</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#imitates"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="continuation">
+    <rdfs:label xml:lang="en">continuation</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#intertextualRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#continues"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="continues">
+    <rdfs:label xml:lang="en">is continuation of</rdfs:label>
+    <skos:definition xml:lang="en">Indicates an imaginative textual response to a previous text that further develops the characters, plot, or setting, but differs from imitations, adaptations, or updates in that it does not directly rely on the previous text, nor act as a sequel.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasContinuation">
+    <rdfs:label xml:lang="en">has continuation</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#continues"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="prequel">
+    <rdfs:label xml:lang="en">prequel</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#intertextualRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#isPrequelOf"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isPrequelOf">
+    <rdfs:label xml:lang="en">is prequel of</rdfs:label>
+    <skos:definition xml:lang="en">Indicates an intertextual engagement that involves creative speculation about events what came before the temporal setting or events of an existing text.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasPrequel">
+    <rdfs:label xml:lang="en">has prequel</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#isPrequelOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="answer">
+    <rdfs:label xml:lang="en">answer</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#intertextualRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#answers"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="answers">
+    <rdfs:label xml:lang="en">answers</rdfs:label>
+    <skos:definition xml:lang="en">Indicates an intertexual engagement that forms a reply to a previous text, sometimes but not necessarily a rebuttal.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="answeredBy">
+    <rdfs:label xml:lang="en">answered by</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#answers"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="ResponseContext">
+    <rdfs:label xml:lang="en">response context</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#IntertextualityContext"/>
+    <rdfs:subClassOf rdf:resource="#ReceptionContext"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Response Context is a significant subclass of both Reception Context and Intertextuality Context. annotations typed as Response Context address reactions to a writer's literary work, whether their oeuvre in general or specific works, or to their role as an author.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ResponseEvent">
+    <rdfs:label xml:lang="en"> response event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#ResponseContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#IntertextualityEvent"/>
+    <rdfs:subClassOf rdf:resource="#ReceptionEvent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="responseRelationship">
+    <rdfs:label xml:lang="en">response relationship</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#intertextualRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasIntertextualRelationTo"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasResponseRelationTo">
+    <rdfs:label xml:lang="en">has response relationship to</rdfs:label>
+    <skos:definition xml:lang="en">The subject, whether a Person or a Creative Work, responds to a textual object, which can take the form of a creative work, a writer's oeuvre in general, or, when the object is a Person, a writer's role as an author/artist. Reactions can take the form of texts, such as reviews or diary entries, or events such as conversations.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Response"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="response">
+    <rdfs:label xml:lang="en">response</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#intertextualRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#responseRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasResponse"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasResponse">
+    <rdfs:label xml:lang="en">has Response</rdfs:label>
+    <skos:definition xml:lang="en">Indicates a response to a subject, whether a particular work, a writer's oeuvre in general, or, when the object is a Person, a writer's role as an author/artist. Responses may manifest as texts, such as reviews or diary entries, or fugitive forms reported later, such as conversations.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
+    <rdfs:subPropertyOf rdf:resource="#hasResponseRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#Response"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="respondsTo">
+    <rdfs:label xml:lang="en">responds to</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasResponse"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+
+  <owl:Class rdf:ID="Response">
+    <rdfs:label xml:lang="en">Response</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A reaction to a creative work or its creator which may take a wide range of forms both material and immaterial.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="RecentResponse">
+    <rdfs:label xml:lang="en">recent response</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Response"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Indicates that a response to an author or one or more of their work occurred at some point after the initial response period.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ReEvaluationResponse">
+    <rdfs:label xml:lang="en">re-evaluation response</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Response"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Indicates a significant re-consideration of an author or one or more of their works.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="InitialResponse">
+    <rdfs:label xml:lang="en">Initial response</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Response"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Indicates that a response to an author, or more usually one of their works, occurred soon after the time of production or publication.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="FormalResponse">
+    <rdfs:label xml:lang="en">formal response</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Response"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Indicates that a response to an author or their work was formally delivered, that is, written or otherwise made public.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="InformalResponse">
+    <rdfs:label xml:lang="en">informal response</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Response"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Indicates that a response to a work was informally delivered rather than published, which can include a hearty slap on the back, rude looks from strangers on buses, a snubbing by someone's social set, or comments in conversations, letters, or diaries.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="AdfeminamResponse">
+    <rdfs:label xml:lang="en">adfeminam response</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Response"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Indicates that a response to the author's work was predicated on their identification as a woman, and that it was driven by a pre-existing opinion of the author as distinct from the work, and of her as a woman rather than a writer, for example, if the circulation of a malign stereotype of a particular author is reflected in a critical response.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="GenderedResponse">
+    <rdfs:label xml:lang="en">gendered response</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Response"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Describes a response to the author or their work as influenced by their gender.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="NonGendered">
+    <rdfs:label xml:lang="en">non-gendered response</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Response"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Describes a response to an author or their work as not influenced by their gender.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="influence">
+    <rdfs:label xml:lang="en">influence</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#intertextualRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#influenceRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#influences"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="influences">
+    <rdfs:label xml:lang="en">influences</rdfs:label>
+    <skos:definition xml:lang="en">Describes an authors' influence on other writers, the literary tradition, and/or society as a whole.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
+    <rdfs:subPropertyOf rdf:resource="#hasResponseRelationTo"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isInfluencedBy">
+    <rdfs:label xml:lang="en">is influenced by</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">This element from the Production component names the specific people, texts, events or places that formed (developed) the writer's thinking as an artist. Influences can pertain to individual texts or her work as a whole.</skos:definition>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#influences"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="literaryInfluence">
+    <rdfs:label xml:lang="en">literary Influence</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#isInfluencedBy"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasAsLiteraryInfluence"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasAsLiteraryInfluence">
+    <rdfs:label xml:lang="en">has as literary influence</rdfs:label>
+    <skos:definition xml:lang="en">Indicates an author's own work having been influenced by another's literature.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#isInfluencedBy"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasLiteraryInfluenceOn">
+    <rdfs:label xml:lang="en">has literary influence on</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasAsLiteraryInfluence"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="intellectualInfluence">
+    <rdfs:label xml:lang="en">intellectual influence</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#isInfluencedBy"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasAsIntellectualnfluence"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasAsIntellectualnfluence">
+    <rdfs:label xml:lang="en">has as intellectual influence</rdfs:label>
+    <skos:definition xml:lang="en">Indicates an author's own work having been intellectually influenced by another.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#isInfluencedBy"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasIntellectualInfluenceOn">
+    <rdfs:label xml:lang="en">has intellectual influence on</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasAsIntellectualnfluence"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="familialInfluence">
+    <rdfs:label xml:lang="en">familial influence</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#isInfluencedBy"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasAsFamilialInfluence"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasAsFamilialInfluence">
+    <rdfs:label xml:lang="en">has as familial influence</rdfs:label>
+    <skos:definition xml:lang="en">Indicates an author's own work having been influenced by her family history.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#isInfluencedBy"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasFamilialInfluenceOn">
+    <rdfs:label xml:lang="en">has familial influence on</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasAsFamilialInfluence"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="ReceptionContext">
+    <rdfs:label xml:lang="en">reception context</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#WritingContext"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Reception Context is a significant subclass of Writing Context. Annotations typed as Reception Context chart the effects and results of an individual's writing, and the responses of self and others to an individual's writing.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
   <owl:Class rdf:ID="ReceptionEvent">
     <rdfs:label xml:lang="en">reception event</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -10021,6 +10705,62 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+  <owl:ObjectProperty rdf:ID="receptionRelationship">
+    <rdfs:label xml:lang="en">reception relationship</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#writingRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasReceptionRelationTo"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasReceptionRelationTo">
+    <rdfs:label xml:lang="en">has reception relation to</rdfs:label>
+    <skos:definition xml:lang="en"></skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+   <owl:Class rdf:ID="TextualFeaturesContext">
+    <rdfs:label xml:lang="en">textual features context</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#WritingContext"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Textual Features Context is a significant subclass of Writing Context. Annotations typed as Textual Features Context chart critical interest in texts in addition to textual analysis, which occassionally draws on the tradition of close reading.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+   <owl:Class rdf:ID="ProductionContext">
+    <rdfs:label xml:lang="en">production context</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#WritingContext"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Production Context is a significant subclass of Writing Context.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+   <owl:Class rdf:ID="TextualSurvivalContext">
+    <rdfs:label xml:lang="en">textual survival context</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#WritingContext"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Textual Survival Context is a significant subclass of Writing Context. Annotations typed as Textual Survival Context chart the survival or lack of survival, whether accidental or deliberate, of a text or texts.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  
+
   <owl:Class rdf:ID="TextualFeaturesEvent">
     <rdfs:label xml:lang="en">textual features event</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -12204,6 +12944,7 @@
     <skos:definition xml:lang="en">"English Dissenters were Christians who separated from the Church of England in the 16th, 17th and 18th centuries. A dissenter (from the Latin dissentire, "to disagree") is one who disagrees in matters of opinion, belief, etc. English Dissenters opposed state interference in religious matters, and founded their own churches, educational establishments, and communities; some emigrated to the New World. They originally agitated for a wide-reaching Protestant Reformation of the Established Church, and triumphed briefly under Oliver Cromwell." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]> See also: @@https://en.wikipedia.org/wiki/Nonconformist@@</skos:definition>
     <skos:definition xml:lang="fr">«Les Dissidents anglais (en anglais : English Dissenters ou nonconformists) sont des protestants anglais qui firent sécession de l'Église d'Angleterre. Ils s'opposaient à l'interférence de l'État dans les affaires religieuses et fondèrent leurs propres communautés du XVIe au XVIIIe siècle. Les Dissidents triomphèrent un temps lors du gouvernement d'Oliver Cromwell, mais après la Restauration de la monarchie, en 1660, l'épiscopat fut rétabli et les droits civiques des Dissidents limités, dès les années 1660, par une série de lois dont l'Act of Uniformity, le Corporation Act et le Test Act. Ce n'est qu'en 1828 que ces lois discriminatoires sont abrogées. Parmi les Dissidents les plus connus, on peut citer le fondateur de la secte des Puritains Henry Jacob (en) (1563-1624), l'éditeur Joseph Johnson (1738-1809), la mystique Jane Leade (1623-1704), le philosophe Richard Price (1723-1791), ou encore le chimiste et théologien Joseph Priestley (1733-1804), ainsi que le fondateur d'une académie dissidente à Kendal (Cumbria), le révérend Caleb Rotherham, qui instruisit l'un des pères de la Révolution industrielle, le fondeur et beau-frère de Joseph Priestley, John Wilkinson.» <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]>Voir aussi: @@https://fr.wikipedia.org/wiki/Non-conformistes@@</skos:definition>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Nonconformist"/>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Nonconformists"/>
     <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/English_Dissenters"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="#PoliticalAffiliation"/>
@@ -17844,6 +18585,9 @@
     <rdfs:label xml:lang="fr">a relation interpersonnelle avec</rdfs:label>
     <skos:definition xml:lang="en">Indicates personal knowledge of someone, covering a broad spectrum of social relations ranging from friendship to enmities and casual associations: it can include a writer having coffee with Samuel Johnson on one notable day, without needing a historical record of whether they were necessarily friends, through to substantial longlasting relationships. See also @@#hasIntimateRelationshipWith@@, @@#hasEroticRelationshipWith@@, @@#hasPossiblyEroticRelationshipWith@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <rdfs:seeAlso rdf:resource="#hasIntimateRelationshipWith"/>
+    <rdfs:seeAlso rdf:resource="#hasEroticRelationshipWith"/>
+    <rdfs:seeAlso rdf:resource="#hasPossiblyEroticRelationshipWith"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#relatesSociallyTo"/>
@@ -18013,6 +18757,7 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Describes an aspect of a person's reproductive history.  May relate to childlessness, birth control, adoption, abortion, difficulties with childbearing, loss of a child, whether biologically related, adopted, or otherwise considered kin, difficulties with child-bearing. See also the related property @@#hasChildren@@.</skos:definition>
     <skos:definition xml:lang="fr"/>
+    <rdfs:seeAlso rdf:resource="#hasChildren"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -19978,7 +20723,7 @@
   </owl:DeprecatedClass>
 
   <owl:DeprecatedClass rdf:ID="CulturalFormation">
-    <rdfs:label xml:lang="en">cultural formation </rdfs:label>
+    <rdfs:label xml:lang="en">cultural formation</rdfs:label>
     <rdfs:label xml:lang="fr">formation culturelle</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Cultural formation refers to the processes of lived social subjectivities of people and is often combined with predicates indicating the identity positions as they relate to the following discursive constructions of Class, Religion, Ethnicity, Gender, GeographicHeritage, LinguisticAbility, NationalHeritage, NationalIdentity, PoliticalAffiliation, RaceColour, and Sexuality. These categories are not understood as transhistorical or isolated categories. Rather, they facilitate analysis of how such situationally contingent, changing, and negotiated labels are assigned to or adopted by a particular individual. The tensions endemic to practices of classification demand critical engagement and inquiry into the situatedness of particular cultural identities.</skos:definition>
