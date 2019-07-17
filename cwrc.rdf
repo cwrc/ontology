@@ -722,13 +722,13 @@
 
   <owl:Class rdf:ID="PersonalName">
     <rdfs:label xml:lang="en">personal name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom personnel</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"/>
     <owl:sameAs rdf:resource="http://xmlns.com/foaf/0.1/name"/>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300266386"/>
     <skos:exactMatch rdf:resource="http://id.loc.gov/authorities/subjects/sh85089622"/>
     <skos:definition xml:lang="en">A person's name, containing a proper noun or proper-noun phrase referring to a person. Has subclasses for types of names such as @@#Pseudonym@@ and may have @@#NameType@@, and may have associated parts. This term is derived in part from the Text Encoding Initiative P5 schema persname element. See also @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-persName.html@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un nom de personne qui contient un ou plusieurs noms propres en référence à une personne. Possède des sous-classes pour les types de noms telles que @@#Pseudonym@@ et peut avoir des @@#NameType@@ et des parties associées. Ce terme est en partie dérivé du schéma P5 de l'élément persname du Text Encoding Initiative. Voir l'élément persName du TEI (nom personnel). </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -803,10 +803,10 @@
 
   <owl:Class rdf:ID="Nickname">
     <rdfs:label xml:lang="en">nickname</rdfs:label>
-    <rdfs:label xml:lang="fr">nom honnorifique</rdfs:label>
+    <rdfs:label xml:lang="fr">surnom </rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">Indicates familiar, humorous, or abusive name given to a person, applied instead of or in addition to their real name. May have @@#NameType@@, @@#AbusiveName@@ or @@#HonorificName@@.</skos:definition>
-    <skos:definition xml:lang="fr">Un nom à connotation positive qui glorifie ou honnore une personne.</skos:definition> 
+    <skos:definition xml:lang="fr">Indique un nom familier, comique ou abusif donné à une personne, venant remplacer ou s'ajouter à son vrai nom. Peut avoir l'attribut @@#NameType@@, @@#AbusiveName@@  ou @@#HonorificName@@. </skos:definition> 
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -823,10 +823,10 @@
 
   <owl:Class rdf:ID="HonorificName">
     <rdfs:label xml:lang="en">honorific name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom honorifique</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">A positive name which celebrates or honours a person. </skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un nom à connotation positive qui glorifie ou honnore une personne. </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -1044,7 +1044,7 @@
     <rdfs:label xml:lang="en">name link</rdfs:label>
     <rdfs:label xml:lang="fr">particule de nom</rdfs:label>
     <skos:definition xml:lang="en">"A connecting phrase or link used within a name but not regarded as part of it, such as van der or of." This term is derived from the Text Encoding Initiative P5 schema for the 'NameLink' element. See @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-nameLink.html@@.</skos:definition>
-    <skos:definition xml:lang="fr">"Une locution ou un lien de connexion utilisé dans un nom mais n'étant pas considéré comme partie intégrante de ce nom, par example van der ou de." Ce terme est dérivé du schéma P5 du Text Encoding Initiative pour l'élément 'NameLink'. Voir l'élément TEI @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-nameLink.html@@.</skos:definition> 
+    <skos:definition xml:lang="fr">"Une locution ou un lien de connexion utilisé dans un nom mais n'étant pas considéré comme partie intégrante de ce nom, par exemple Van Der ou de." Ce terme est dérivé du schéma P5 du Text Encoding Initiative pour l'élément 'NameLink'. Voir l'élément TEI @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-nameLink.html@@.</skos:definition> 
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -1062,21 +1062,21 @@
 
   <owl:Class rdf:ID="OccupationContext">
     <rdfs:label xml:lang="en">occupation context</rdfs:label>
-    <rdfs:label xml:lang="fr">contexte biographique</rdfs:label>
+    <rdfs:label xml:lang="fr">Contexte d'occupation</rdfs:label>
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as occupation provide information about and discussions of positions and activities significant to a person's life, including paid, unpaid, and voluntary work both beyond and within the home. Although writing as a career sometimes overlaps with occupation, literary activities are often described in writing contexts.</skos:definition>
-    <skos:definition xml:lang="fr">Contexte Biographique est une sous-classe majeure de contexte. Les annotations entrées comme contexte biographique fournissent des informations et des discussions sur la biographie ou la vie personnelle d'un individu, grâce aux propriétés, aux relations biographiques et  aux sous-classes de contexte biographique, telles que le contexte de naissance, le contexte de forme culturelle ou le contexte professionnel.</skos:definition>
+    <skos:definition xml:lang="fr">Une sous-classe de contexte importante. Les annotation de Contexte d'occupation fournissent des informations et des discussions sur les positions et les activités importantes de la vie d'une personne, incluant son travail rémunéré, non rémunéré et volontaire aussi bien en dehors qu'au sein du foyer. Même si une carrière dans l'écriture est parfois considérée comme une occupation, l'activité littéraire est souvent décrite dans les contextes d'écriture. </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
   <owl:Class rdf:ID="Occupation">
     <rdfs:label xml:lang="en">occupation</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">occupation</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A position, activity, job, or profession, whether paid, unpaid, or voluntary, often related to and at times overlapping with a person's @@#SocialClass@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Une position, une activité, un emploi ou une profession, qu'elle soit rémunérée, non rémunérée ou sur la base du volontariat, souvent liée et parfois recoupant avec la @@#SocialClass@@ d'une personne. </skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
