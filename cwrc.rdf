@@ -496,9 +496,9 @@
 
   <owl:Class rdf:ID="PoliticalClimate">
     <rdfs:label xml:lang="en">political climate</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">climat politique</rdfs:label>
     <skos:definition xml:lang="en">An event having political implications within its geopolitical context, often nationally or internationally. Includes the accession of' monarchs, changing governing structures including revolutions, the establishment of major organizations, and other markers of political change.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un événement ayant des implications politiques souvent nationales ou internationales au sein de son contexte géopolitique. Inclut l'accession de monarques au pouvoir, les changements de structures de pouvoir y compris les révolutions, l'établissement de grandes organisations et autres manifestations de changement politique.</skos:definition>
     <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -526,9 +526,9 @@
   </owl:Class>
   <owl:Class rdf:ID="SocialClimate">
     <rdfs:label xml:lang="en">social climate</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">climat social</rdfs:label>
     <skos:definition xml:lang="en">Events, including indications of larger trends, with social implications, such as shifts in technology, science, medicine, law, or education, domestic conditions such as housing, clothes, or food and food supply, or the changing positions and civic involvements of marginalized groups.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Évènements, incluant des indications sur des tendances au sens large, qui ont des implications sociales telles que les mutations technologiques, scientifiques, médicinales, légales ou éducatives, les conditions de vie domestiques comme le logement, les vêtements, la nourriture ou l'approvisionnement alimentaire, ou encore le changement de positions et les engagements civiques des groupes marginalisés.</skos:definition>
     <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -546,9 +546,9 @@
   </owl:Class>
   <owl:Class rdf:ID="PeriodSignificance">
     <rdfs:label xml:lang="en">period significance</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">importance de période</rdfs:label>
     <skos:definition xml:lang="en">Indicates a moderate level of significance appropriate to an understanding of a historical period.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique un niveau d'importance modéré dans la compréhension d'une période historique.</skos:definition>
     <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -674,22 +674,22 @@
 
   <owl:Class rdf:ID="WealthContext">
     <rdfs:label xml:lang="en">wealth context</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">contexte de richesse</rdfs:label>
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as Wealth Context provide information about and discussions of a person's economic standing, including inheritance, property ownership, pensions, and personal financial disasters. See also the @@#OccupationContext@@ and @@#CulturalFormContext@@, particularly for @@#SocialClassContext@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Une sous-classe importante de contexte. Les annotations de contexte de richesse fournissent des informations et des discussions sur la situation économique d'une personne, y compris son héritage, son patrimoine immobilier, ses rentes ou ses désastres financiers personnels. Voir aussi le contexte d'occupation et le contexte de forme culturelle, en particulier pour le contexte de classe sociale.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
   <owl:Class rdf:ID="ViolenceContext">
     <rdfs:label xml:lang="en">violence context</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">contexte de violence</rdfs:label>
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as Violence Context provide information about and discussions of instances of physical, sexual, and undue emotional abuse, whether the person was subject to the violence or perpetrated it. Broadly conceived to include the effect of exposure to violence of which the person was neither perpetrator nor survivor.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Une sous-classe importante de contexte. Les annotations de contexte de violence fournissent des informations et des discussions sur des cas de violence physique, sexuelle et psychologique, que la personne ait été victime ou responsable de violence. Comprise au sens large pour inclure les effets de l'exposition à la violence sur une personne, même si la personne n'y a pas pris part ou n'en a pas été victime.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -783,11 +783,11 @@
 
   <owl:Class rdf:ID="PreferredName">
     <rdfs:label xml:lang="en">preferred name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom d'usage</rdfs:label>
     <cwrc:rangeIncludes rdf:resource="#PersonalName"/>
     <cwrc:rangeIncludes rdf:resource="#Organization"/>
     <skos:definition xml:lang="en">Indicates the form of name preferred by an authority or institution.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique la forme du nom utilisée par une autorité ou un institution.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -853,10 +853,10 @@
 
   <owl:Class rdf:ID="RomanceName">
     <rdfs:label xml:lang="en">romance name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom de romance</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">Indicates cases where the person has a name associated with writing romances, or with romantic writing, for example, Swift's Stella.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique des cas où le nom d'une personne est associé à des romances ou des écrits romantiques, par exemple la Stella de Swift.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -883,10 +883,10 @@
 
   <owl:Class rdf:ID="Pseudonym">
     <rdfs:label xml:lang="en">pseudonym</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">pseudonyme</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">Indicates both names and descriptive phrases (e.g. "A Lover of Her Sex" is a pseudonym for Mary Astell) used in publishing to conceal the identity of the author or to represent a persona.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique à la fois les noms et les locutions descriptives (par exemple "A Lover of Her Sex" est le pseudonyme de Mary Astell) utilisés dans les publications pour dissimuler l'indentité de l'auteur·e ou pour représenter un persona.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -915,21 +915,21 @@
 
   <owl:Class rdf:ID="Surname">
     <rdfs:label xml:lang="en">surname</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom de famille</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <owl:equivalentClass rdf:resource="http://metadataregistry.org/concept/show/id/8581.html"/>
     <skos:definition xml:lang="en">A subject's last name at birth, often a family (inherited) name, as opposed to a @@#Forename@@ or @@#Nickname@@." This term is derived from the Text Encoding Initiative P5 schema 'surname' element. See also @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-surname.html@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Le nom de famille d'une personne attribué à sa naissance, souvent un nom hérité de sa famille, à la différence du @@#prénom@@ ou du @@#surnom@@. Ce terme est dérivé de l'élément 'surname' du schéma P5 du Text Encoding Initiative. Voir @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-surname.html@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
   <owl:Class rdf:ID="ProfessionalTitle">
     <rdfs:label xml:lang="en">professional title</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">titre professionnel</rdfs:label>
     <rdfs:subClassOf rdf:resource="#RoleName"/>
     <skos:definition xml:lang="en">A person's professional role (e.g. Doctor Jane Smith) or designates membership in a professional society (e.g. John Smith, Esquire).</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">La fonction professionnelle d'une personne (par exemple Docteure Jane Smith) ou nom qui désigne l'appartenance à un société professionnelle (par exemple John Smith, Esquire).</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -965,68 +965,68 @@
 
   <owl:Class rdf:ID="ReligousName">
     <rdfs:label xml:lang="en">religious name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom religieux</rdfs:label>
     <rdfs:subClassOf rdf:resource="#NameType"/>
     <skos:definition xml:lang="en">A name acquired through a religious role or practice.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un nom acquis par le biais d'une fonction ou d'une pratique religieuse.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
   <owl:Class rdf:ID="RoyalName">
     <rdfs:label xml:lang="en">royal name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom royal</rdfs:label>
     <rdfs:subClassOf rdf:resource="#RoleName"/>
     <skos:definition xml:lang="en">A name based on royal status.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un nom tiré d'un statut royal.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
   <owl:Class rdf:ID="SelfConstructedName">
     <rdfs:label xml:lang="en">self constructed name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom construit</rdfs:label>
     <rdfs:subClassOf rdf:resource="#AdditionalName"/>
     <skos:definition xml:lang="en">A self-chosen name used in everyday life rather than only on title-pages as is the case for a @@#pseudonym@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique un nom choisi par la personne elle-même et utilisé dans la vie courante plutôt que seulement dans les pages de titre, comme c'est le cas d'un @@#pseudonyme@@.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
   <owl:Class rdf:ID="StyledName">
     <rdfs:label xml:lang="en">styled name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom stylisé</rdfs:label>
     <rdfs:subClassOf rdf:resource="#RoleName"/>
     <skos:definition xml:lang="en">A courtesy title associated with the British or other peerage.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un nom de courtoisie associé avec les Britanniques ou autre pairie.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
   <owl:Class rdf:ID="TitledName">
     <rdfs:label xml:lang="en">titled name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom de titre</rdfs:label>
     <rdfs:subClassOf rdf:resource="#RoleName"/>
     <skos:definition xml:lang="en">A formal title in the British and other peerages, including of a life peer. Peeresses may be described as titled, although in strict terms, unless one holds a title "in her own right", these are @@#StyledName@@s or courtesy titles.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un nom formel chez les Britanniques et autres pairies, incluant le Pair à vie. Les pairesses peuvent être désignées avec des titres, même au sens strict ceux-ci sont des noms stylisés ou des titres de courtoisie, à moins qu'une pairesse détienne un titre "à part entière."</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
   <owl:Class rdf:ID="SystemName">
     <rdfs:label xml:lang="en">system name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom de système</rdfs:label>
     <rdfs:subClassOf rdf:resource="#PersonalName"/>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/accountName"/>
     <skos:definition xml:lang="en">A name by which a person holds an account for a platform or service.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un nom avec lequel une personne détient un compte sur une plateforme ou un service.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
   <owl:Class rdf:ID="RoleName">
     <rdfs:label xml:lang="en">role name</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">nom de rôle</rdfs:label>
     <skos:definition xml:lang="en">A name which "indicates that a person has a particular role or position in society, such as an official title or rank." This term is derived from the Text Encoding Initiative P5 schema for the 'roleName' element. See @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-roleName.html@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un nom qui "signale qu'une personne possède un rôle ou une position particulière dans la société, telle qu'un titre ou un rang officiel." Ce terme est dérivé du schéma P5 du Text Encoding Initiative pour l'élément 'roleName'. Voir @@http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-roleName.html@@.</skos:definition>  
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -7610,11 +7610,11 @@
 
   <owl:Class rdf:ID="SpatialContext">
     <rdfs:label xml:lang="en">spatial context</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">contexte spatiale</rdfs:label>
     <rdfs:subClassOf rdf:resource="#BiographyContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A significant subclass of @@#Context@@. Annotations typed as spatial context provide information about and discussions of aspects of a person's connections to geospatial locations. Spatial information is also associated in a range of ways with other properties and events such as a person's @@#GeographicHeritage@@, a place of publication, or the setting of literary texts.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Une sous-classe importante de contexte. Les annotations de contexte spatial fournissent des informations et des discussions sur certains aspects des relations d'une personne avec des positions géospatiales. L'information spatiale est aussi associée d'autres manières à d'autres propriétés ou évènements tels que l'héritage géographique d'une personne, un lieu de publication ou les cadres de textes littéraires.</skos:definition> 
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -7771,9 +7771,9 @@
   <owl:Class rdf:ID="ReligiousOrganization">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <rdfs:label xml:lang="en">religious organization</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">organisation religieuse</rdfs:label>
     <skos:definition xml:lang="en">An organization whose activities are primarily religious.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Une organisation dont les activités ont principalement un caractère religieux.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -7781,9 +7781,9 @@
   <owl:Class rdf:ID="PoliticalOrganization">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <rdfs:label xml:lang="en">political organization</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">organisation politique</rdfs:label>
     <skos:definition xml:lang="en">An organization whose activities are primarily political or with which a person is affiliated politically.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Un organisation dont les activités sont principalement politiques ou avec laquelle une personne est politiquement affiliée.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -8503,7 +8503,7 @@
 
   <cwrc:EducationalAward rdf:ID="educationalAwardScholarship">
     <rdfs:label xml:lang="en">educational award scholarship</rdfs:label>
-    <rdfs:label xml:lang="fr">bourse d'étude</rdfs:label>
+    <rdfs:label xml:lang="fr">bourse d'études</rdfs:label>
     <skos:definition xml:lang="en">A scholarship is an award of financial aid for a student to further their education. Scholarships are awarded based upon various criteria, which usually reflect the values and purposes of the donor or founder of the award. Scholarship money is not required to be repaid.</skos:definition>
     <skos:definition xml:lang="fr">Une bourse d'études est une bourse d'aide financière qui permet à un·e étudiant·e de poursuivre ses études. Les bourses sont accordées en fonction de critères variés, qui reflètent généralement les valeurs et les objectifs du/de la donateur·ice ou fondateur·ice de la bourse. Les bourses d'études ne sont pas destinées à être remboursées.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -8632,10 +8632,9 @@
 
   <owl:Class rdf:ID="Oeuvre">
     <rdfs:label xml:lang="en">oeuvre</rdfs:label>
-    <rdfs:label xml:lang="fr">oeuvre</rdfs:label>
+    <rdfs:label xml:lang="fr">œuvre</rdfs:label>
     <skos:definition xml:lang="en">Indicates the  works of an author or other creative practioner regarded collectively.</skos:definition>
-    <skos:definition xml:lang="fr"/>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Indique l'ensemble des travaux d'un·e auteur·e ou d'un·e artiste.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -8724,9 +8723,9 @@
 
   <owl:Class rdf:ID="Studentship">
     <rdfs:label xml:lang="en">studentship</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">bourse estudiantine</rdfs:label>
     <skos:definition xml:lang="en">A Studentship is a type of academic scholarship.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Une bourse estudiantine est un type de bourse académique.</skos:definition>
     <prov:wasDerivedFrom rdf:resource="https://en.wikipedia.org/wiki/Studentship"/>
     <rdfs:subClassOf rdf:resource="#EducationalAward"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -8836,12 +8835,12 @@
   </owl:Class>
   <owl:Class rdf:ID="PhysicalHealthContext">
     <rdfs:label xml:lang="en">physical health context</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">contexte de santé physique</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#HealthContext"/>
 
     <skos:definition xml:lang="en">A subclass of @@#HealthContext@@. Annotations typed as physical health context describe aspects of a person’s bodily or physical well-being or illness.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Sous-classe de contexte de santé. Les annotations de contexte de santé physique décrivent des aspects de la condition physique d'une personne, qu'elle soit en bonne ou en mauvaise santé.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -8858,12 +8857,12 @@
   </owl:Class>
   <owl:Class rdf:ID="WomensHealthContext">
     <rdfs:label xml:lang="en">women's health context</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
+    <rdfs:label xml:lang="fr">contexte de santé des femmes</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="#HealthContext"/>
 
     <skos:definition xml:lang="en">A subclass of @@#HealthContext@@. Annotations typed as women 's health context describe an aspect of a person's health related to being a woman. Often closely connected to or overlapping with @@#ReproductiveHistory@@. See @@https://en.wikipedia.org/wiki/Women%27s_health@@.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Une sous-classe importante de contexte. Les annotations de contexte de santé féminine fournissent des informations et des discussions sur un aspect de la santé d'une personne en relation à son statut de femme. Souvent étroitement lié ou en croisement avec l'histoire reproductive. Voir @@https://fr.wikipedia.org/wiki/Sant%C3%A9_de_la_femme@@.</skos:definition> 
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
