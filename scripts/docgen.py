@@ -4,11 +4,6 @@ import rdflib
 import time
 import urllib.request
 
-# temp log library for debugging
-# from log import *
-# log = Log("log/docgen")
-# log.test_name("Debugging Document Generator")
-
 """TODO:
 1) Double check validity of uris when they're relative uris
     search ontology for if it's a term
@@ -157,7 +152,8 @@ def open_graph(specloc):
     o_graph = rdflib.Graph()
     try:
         o_graph.open("store", create=True)
-        o_graph.parse(specloc)
+        file_format = rdflib.util.guess_format(specloc)
+        o_graph.parse(specloc, format=file_format)
     except Exception as e:
         raise e
         print_usage()
@@ -165,6 +161,24 @@ def open_graph(specloc):
 
 def etreetag_to_uri(tag):
     return rdflib.term.URIRef(str(tag)[1:].replace("}", ""))
+
+
+ignore_uris = [rdflib.term.URIRef("http://rdfs.org/ns/void#Dataset"),
+               rdflib.term.URIRef("http://www.w3.org/2002/07/owl#Ontology"),
+               rdflib.term.URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#Description"),
+               rdflib.term.URIRef("http://www.w3.org/2002/07/owl#DeprecatedClass"),
+               # Most instances are also typed as concepts, resulting in redundant types in the main listing
+               rdflib.term.URIRef("http://www.w3.org/2004/02/skos/core#Concept"),
+               rdflib.term.URIRef("http://www.w3.org/2004/02/skos/core#ConceptScheme"),
+               rdflib.term.URIRef("http://purl.org/ontology/bibo/Collection"),
+               rdflib.term.URIRef("http://www.w3.org/2002/07/owl#DeprecatedProperty")]
+
+
+def get_high_lvl_nodes1():
+    query_str = "select distinct ?x where {?s <%s> ?x }" % RDF.type
+    results = sorted([row[0] for row in o_graph.query(query_str) if row[0] not in ignore_uris])
+    results = [x for x in results if "purl.org/ontology/bibo/" not in str(x)]
+    return results
 
 
 def get_high_lvl_nodes():
@@ -176,18 +190,10 @@ def get_high_lvl_nodes():
         tree = etree.parse(source, parser=parser)
         root = tree.getroot()
 
-    ignore_uris = [rdflib.term.URIRef("http://rdfs.org/ns/void#Dataset"),
-                   rdflib.term.URIRef("http://www.w3.org/2002/07/owl#Ontology"),
-                   rdflib.term.URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#Description"),
-                   rdflib.term.URIRef("http://www.w3.org/2002/07/owl#DeprecatedClass"),
-                   # Most instances are also typed as concepts, resulting in redundant types in the main listing
-                   rdflib.term.URIRef("http://www.w3.org/2004/02/skos/core#Concept"),
-                   rdflib.term.URIRef("http://www.w3.org/2002/07/owl#DeprecatedProperty")]
-
     types = {etreetag_to_uri(x.tag) for x in root if etreetag_to_uri(x.tag) not in ignore_uris}
     bibo_nodes = {x for x in types if ("purl.org/ontology/bibo/" in str(x))}
-
-    return list(types - bibo_nodes)
+    types = list(types - bibo_nodes)
+    return types
 
 
 def create_row(list, listitem=True):
@@ -210,6 +216,10 @@ def create_row(list, listitem=True):
 def newAZ(nodes):
     types = [x for x in nodes if spec_url not in x]
     instanceTypes = sorted(list(set(nodes) - set(types)))
+    if len(types) < 2:
+        types += instanceTypes
+    types = sorted(types, key=get_prefix)
+
     if rdflib.term.URIRef('http://www.w3.org/2002/07/owl#NamedIndividual') in types:
         types.remove(rdflib.term.URIRef('http://www.w3.org/2002/07/owl#NamedIndividual'))
 
@@ -222,7 +232,8 @@ def newAZ(nodes):
     string += '    <th scope="col">Instance</th>'
     string += '  </tr>\n\t</thead>\n<tbody>'
     for x in types:
-        instances = sorted([get_uri_term(y) for y in o_graph.subjects(RDF.type, x) if spec_url in y])
+        instances = sorted([get_uri_term(y) for y in o_graph.subjects(
+            RDF.type, x) if (spec_url in y) and str(y) not in deprecated_uris])
         if instances:
             string += '<tr>'
             name = '<a href="%s" style="font-weight:bold;">%s:</a>' % (get_link(x), get_prefix(x))
@@ -270,12 +281,18 @@ def grandchildren_exist(instances):
 
 
 def all_terms_html(nodes):
-    types = sorted([x for x in nodes if spec_url not in x])
+    types = [x for x in nodes if spec_url not in x]
+    instanceTypes = list(set(nodes) - set(types))
+    if len(types) < 2:
+        types += instanceTypes
+    types = sorted(types, key=get_prefix)
+
     if rdflib.term.URIRef('http://www.w3.org/2002/07/owl#NamedIndividual') in types:
         types.remove(rdflib.term.URIRef('http://www.w3.org/2002/07/owl#NamedIndividual'))
     string = ""
     for x in types:
-        instances = [get_uri_term(y) for y in o_graph.subjects(RDF.type, x) if spec_url in y]
+        instances = [get_uri_term(y) for y in o_graph.subjects(RDF.type, x)
+                     if spec_url in y and str(y) not in deprecated_uris]
         if instances:
             string += '<div class="type">'
             string += '<h3 id="%s">%s<span> (%s)</span></h3>\n' % (get_prefix(x), get_prefix(x), len(instances))
@@ -342,19 +359,28 @@ def specgen(template, language):
     symmetric_dict = create_symmetric_dict()
     inverse_dict = create_inverse_dict()
 
-    azlist_html = newAZ(get_high_lvl_nodes())
-    terms_html = all_terms_html(get_high_lvl_nodes())
+    # get_high_lvl_nodes()
+    # print("-" * 34)
+    # get_high_lvl_nodes1()
+    # exit()
 
     if spec_pre:
         if "{_header_}" in template:
             template = template.replace("{_header_}", get_header_html())
 
-    template = template.replace("{_azlist_}", azlist_html)
-    template = template.replace("{_terms_}", terms_html)
+    if "{_azlist_}" in template:
+        azlist_html = newAZ(get_high_lvl_nodes1())
+        template = template.replace("{_azlist_}", azlist_html)
+
+    if "{_terms_}" in template:
+        terms_html = all_terms_html(get_high_lvl_nodes1())
+        template = template.replace("{_terms_}", terms_html)
+
     if deprecated_uris:
         template = template.replace("{_deprecated_}", deprecated_html)
     else:
         template = template.replace("{_deprecated_}", "")
+
     # bibliography_html = all_terms_html(bibo_nodes)
     # template = template.replace("{_bibliography_}", newAZ(bibo_nodes) + bibliography_html)
 
@@ -567,12 +593,11 @@ def get_prefix(uri):
             if k == "":
                 # Must be base xml
                 temp = uri_list[0].split("/")[-1][:-1]
-                tempkey = (temp) + ":" + uri_list[1]
-                return tempkey
+                uri = (temp) + ":" + uri_list[1]
+                break
             else:
-                tempkey = str(k) + ":" + uri_list[1]
-                return tempkey
-
+                uri = str(k) + ":" + uri_list[1]
+                break
     return uri
 
 
