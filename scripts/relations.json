@@ -9,7 +9,9 @@
     "http://www.w3.org/2004/02/skos/core#broaderTransitive": "skos:narrowerTransitive",
     "http://www.w3.org/2004/02/skos/core#narrowerTransitive": "skos:broaderTransitive",
     "http://www.w3.org/2004/02/skos/core#broader": "skos:narrower",
-    "http://www.w3.org/2004/02/skos/core#narrower": "skos:broader"
+    "http://www.w3.org/2004/02/skos/core#narrower": "skos:broader",
+    "http://sparql.cwrc.ca/ontologies/cwrc#subjectCentricPredicate": "cwrc:hasContextPredicate",
+    "http://sparql.cwrc.ca/ontologies/cwrc#hasContextPredicate": "subjectCentricPredicate"
   },
   "symmetric": [
     "http://www.w3.org/2002/07/owl#inverseOf",
