@@ -498,7 +498,7 @@
   <owl:ObjectProperty rdf:ID="hasTimeCertainty">
     <rdfs:label xml:lang="en">has time certainty</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Indicates the degree of certainty or precision of the temporal value or values associated with a time-based phenomenon such as an event or birth date.</skos:definition>
+    <skos:definition xml:lang="en">Indicates the degree of certainty or precision of the temporal value or values associated with a time-based phenomenon such as an event.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:subPropertyOf rdf:resource="#hasCertainty"/>
@@ -618,12 +618,22 @@
   </owl:ObjectProperty>
   
 <!-- EventTypes -->
+  <owl:Class rdf:ID="EventClimate">
+    <rdfs:label xml:lang="en">event climate</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
   <owl:Class rdf:ID="PoliticalClimate">
     <rdfs:label xml:lang="en">political climate</rdfs:label>
     <rdfs:label xml:lang="fr">climat politique</rdfs:label>
     <skos:definition xml:lang="en">An event having political implications within its geopolitical context, often nationally or internationally. Includes the accession of' monarchs, changing governing structures including revolutions, the establishment of major organizations, and other markers of political change.</skos:definition>
     <skos:definition xml:lang="fr">Un événement ayant des implications politiques souvent nationales ou internationales au sein de son contexte géopolitique. Inclut l'accession de monarques au pouvoir, les changements de structures de pouvoir y compris les révolutions, l'établissement de grandes organisations et autres manifestations de changement politique.</skos:definition>
-    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
+    <rdfs:subClassOf rdf:resource="#EventClimate"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -633,7 +643,7 @@
     <rdfs:label xml:lang="fr">environnement littéraire</rdfs:label>
     <skos:definition xml:lang="en">An event associated with the climate for literature and writing, broadly conceived, ranging from publication or performance events to information about print technologies and copyright.</skos:definition>
     <skos:definition xml:lang="fr">Un évènement associé à l'environnement littéraire et à l'écriture, allant de la publication ou à la représentation d'un texte à des informations sur les techniques d'impression et sur les droits d'auteur·e.</skos:definition>
-    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
+    <rdfs:subClassOf rdf:resource="#EventClimate"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -653,6 +663,16 @@
     <rdfs:label xml:lang="fr">climat social</rdfs:label>
     <skos:definition xml:lang="en">Events, including indications of larger trends, with social implications, such as shifts in technology, science, medicine, law, or education, domestic conditions such as housing, clothes, or food and food supply, or the changing positions and civic involvements of marginalized groups.</skos:definition>
     <skos:definition xml:lang="fr">Évènements, incluant des indications sur des tendances au sens large, qui ont des implications sociales telles que les mutations technologiques, scientifiques, médicinales, légales ou éducatives, les conditions de vie domestiques comme le logement, les vêtements, la nourriture ou l'approvisionnement alimentaire, ou encore le changement de positions et les engagements civiques des groupes marginalisés.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#EventClimate"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EventSignificance">
+    <rdfs:label xml:lang="en">event significance</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="fr"/>
     <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -663,7 +683,7 @@
     <rdfs:label xml:lang="fr">importance historique</rdfs:label>
     <skos:definition xml:lang="en">Indicates a very high level of significance appropriate to a historical overview.</skos:definition>
     <skos:definition xml:lang="fr">Indique un très haut niveau d'importance qui est approprié pour un résumé historique.</skos:definition>
-    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
+    <rdfs:subClassOf rdf:resource="#EventSignificance"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -673,7 +693,7 @@
     <rdfs:label xml:lang="fr">importance de période</rdfs:label>
     <skos:definition xml:lang="en">Indicates a moderate level of significance appropriate to an understanding of a historical period.</skos:definition>
     <skos:definition xml:lang="fr">Indique un niveau d'importance modéré dans la compréhension d'une période historique.</skos:definition>
-    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
+    <rdfs:subClassOf rdf:resource="#EventSignificance"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -683,7 +703,7 @@
     <rdfs:label xml:lang="fr">importance de décennie</rdfs:label>
     <skos:definition xml:lang="en">Indicates a low level of significance appropriate to a detailed understanding of a decade.</skos:definition>
     <skos:definition xml:lang="fr">Indique un faible niveau d'importance pour la compréhension détaillée d'une décennie.</skos:definition>
-    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
+    <rdfs:subClassOf rdf:resource="#EventSignificance"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -693,7 +713,7 @@
     <rdfs:label xml:lang="fr">importance individuelle</rdfs:label>
     <skos:definition xml:lang="en">Indicates a level of significance appropriate to an understanding of an individual person or entity.</skos:definition>
     <skos:definition xml:lang="fr">Indique le niveau d'importance approprié pour la compréhension d'une personne ou d'une entité individuelle.</skos:definition>
-    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
+    <rdfs:subClassOf rdf:resource="#EventSignificance"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
