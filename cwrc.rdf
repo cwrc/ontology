@@ -238,9 +238,8 @@
   <owl:ObjectProperty rdf:ID="contextFocus">
     <rdfs:label xml:lang="en">context focus</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Indicates the focus or primary subject of a Context annotation.
-    Note: The object of this property, the Context focus, becomes the subject of the subject-centric properties that can be derived from Context predicates via SPARQL CONSTRUCT queries.
-    </skos:definition>
+    <skos:definition xml:lang="en">Indicates the focus or primary subject of a @@#Context@@ annotation.</skos:definition>
+    <skos:note xml:lang="en">The object of this property, the context focus, becomes the subject of the subject-centric properties that can be derived from @@#Context@@ predicates via SPARQL CONSTRUCT queries.</skos:note>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
     <skos:definition xml:lang="fr"/>
     <rdfs:range rdf:resource="#Context"/>
@@ -249,7 +248,7 @@
   <owl:ObjectProperty rdf:ID="hasContextPredicate">
     <rdfs:label xml:lang="en">context predicate</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Indicates the version of this predicate associated with Context annotations, where such annotations exist.</skos:definition>
+    <skos:definition xml:lang="en">Indicates the version of this predicate associated with @@#Context@@ annotations, where such annotations exist.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -259,7 +258,7 @@
   <owl:ObjectProperty rdf:ID="subjectCentricPredicate">
     <rdfs:label xml:lang="en">subject-centric predicate</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">Indicates the version of this predicate associated with triples that do not have annotations, or triples derived from this annotation which take the Context focus as their subject.</skos:definition>
+    <skos:definition xml:lang="en">Indicates the version of this predicate associated with triples that do not have annotations, or triples derived from this annotation which take the @@#contextFocus@@ as their subject.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <owl:inverseOf rdf:resource="#hasContextPredicate"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
@@ -9485,6 +9484,7 @@
     <rdfs:label xml:lang="en">studies</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Indicates a subject, field, art, or skill studied in the course of their education, whether formal or informal, institutional or domestic.</skos:definition>
+    <skos:note xml:lang="en">Using this predicate with an author's @@#Oeuvre@@ usually indicates the study of a portion, rather than the entirety, of that author's works.</skos:note>
     <skos:definition xml:lang="fr"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:rangeIncludes rdf:resource="#EducationalSubject"/>
@@ -9574,7 +9574,7 @@
   <owl:Class rdf:ID="EducationalText">
     <rdfs:label xml:lang="en">educational text</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="en">A text, cultural work, or an author or artist's general @@#Oeuvre@@, that is significant to a person's informal or formal education.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -20572,6 +20572,30 @@
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedProperty>
+  <owl:DeprecatedProperty rdf:ID="hasSubEvent">
+    <rdfs:label xml:lang="en">has Sub Element</rdfs:label>
+    <rdfs:label xml:lang="fr">a un sous évènement</rdfs:label>
+    <skos:definition xml:lang="en">Associates a sub event to a master event.</skos:definition>
+    <rdfs:domain rdf:resource="#Event" />
+    <rdfs:range rdf:resource="#Event" />
+    <void:inDataset rdf:resource="#datasetdefinition" />
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
+    <rdfs:comment xml:lang="en">Deprecated, with no current equivalence.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver sans équivalence.</rdfs:comment>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </owl:DeprecatedProperty>
+  <owl:DeprecatedProperty rdf:ID="hasEventElement">
+    <rdfs:label xml:lang="en">has Element</rdfs:label>
+    <rdfs:label xml:lang="fr">a un élément</rdfs:label>
+    <skos:definition xml:lang="en">Associates an event or event element.</skos:definition>
+    <rdfs:domain rdf:resource="#Event" />
+    <rdfs:range rdf:resource="#EventElement" />
+    <void:inDataset rdf:resource="#datasetdefinition" />
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
+    <rdfs:comment xml:lang="en">Deprecated, with no current equivalence.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver sans équivalence.</rdfs:comment>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </owl:DeprecatedProperty>
   <owl:DeprecatedProperty rdf:ID="hasPeformance">
     <rdfs:label xml:lang="en">has Peformance</rdfs:label>
     <rdfs:label xml:lang="fr">a une interprétation</rdfs:label>
@@ -20732,7 +20756,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:DeprecatedClass>
-
   <owl:DeprecatedClass rdf:ID="CulturalFormation">
     <rdfs:label xml:lang="en">cultural formation</rdfs:label>
     <rdfs:label xml:lang="fr">formation culturelle</rdfs:label>
@@ -20747,7 +20770,6 @@
     <dcterms:isReplacedBy rdf:resource="#CulturalForm"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedClass>
-
   <owl:DeprecatedClass rdf:ID="SexualIdentity">
     <rdfs:label xml:lang="en">Sexual Identity</rdfs:label>
     <rdfs:label xml:lang="fr">Identité Sexuelle</rdfs:label>
@@ -20791,6 +20813,19 @@
     <rdfs:comment xml:lang="fr">Désapprouver en faveur de la classe @@#SocialClass@@.</rdfs:comment>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedClass>
+  <owl:DeprecatedClass rdf:ID="EventElement">
+    <foaf:name>performance</foaf:name>
+    <rdfs:label xml:lang="en">Event Element</rdfs:label>
+    <rdfs:label xml:lang="fr">élément d'évènement</rdfs:label>
+    <skos:definition xml:lang="en">An event element by an agent in an event under a specific context, be it in a role, character or responsibility.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE" />
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
+    <void:inDataset rdf:resource="#datasetdefinition" />
+    <rdfs:subClassOf rdf:resource="#Event" />
+    <rdfs:comment xml:lang="en">Deprecated, with no current equivalence.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver sans équivalence.</rdfs:comment>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </owl:DeprecatedClass>
   <owl:DeprecatedClass rdf:ID="Performance">
     <rdfs:label xml:lang="en">performance</rdfs:label>
     <rdfs:label xml:lang="fr">interprétation</rdfs:label>
@@ -20800,7 +20835,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subClassOf rdf:resource="#EventElement"/>
-    <dcterms:isReplacedBy rdf:resource="#hasElement"/>
+    <dcterms:isReplacedBy rdf:resource="#EventElement"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
     <owl:equivalentClass rdf:resource="#EventElement"/>
