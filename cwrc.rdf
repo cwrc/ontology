@@ -10586,7 +10586,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
   <owl:Class rdf:ID="InitialResponse">
-    <rdfs:label xml:lang="en">Initial response</rdfs:label>
+    <rdfs:label xml:lang="en">initial response</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subClassOf rdf:resource="#Response"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -19017,7 +19017,6 @@
     <rdfs:subPropertyOf rdf:resource="#relative"/>
     <rdfs:subPropertyOf rdf:resource="#intimateRelationship"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <owl:sameAs rdf:resource="#partnerOf"/>
   </owl:ObjectProperty> 
 
   <owl:ObjectProperty rdf:ID="wife">
@@ -19048,13 +19047,22 @@
     <rdfs:subPropertyOf rdf:resource="#socialRelationship"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <owl:sameAs rdf:resource="#relativeOf"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="ancestor">
     <rdfs:label xml:lang="en">ancestor</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasAncestor"/>
+    <skos:altLabel xml:lang="en">forebear</skos:altLabel>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf rdf:resource="#relative"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="descendent">
+    <rdfs:label xml:lang="en">descendent</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasDescendent"/>
     <skos:altLabel xml:lang="en">forebear</skos:altLabel>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -19069,8 +19077,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <owl:sameAs rdf:resource="http://schema.org/sibling"/>
-    <owl:sameAs rdf:resource="#siblingOf"/>
     <rdfs:subPropertyOf rdf:resource="#relative"/>
   </owl:ObjectProperty> 
 
@@ -19238,8 +19244,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <owl:sameAs rdf:resource="http://schema.org/parent"/>
-    <owl:sameAs rdf:resource="#childOf"/>
     <rdfs:subPropertyOf rdf:resource="#relative"/>
   </owl:ObjectProperty> 
 
@@ -19271,7 +19275,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#parent"/>
-   <owl:inverseOf rdf:resource="#hasStepChild"/>
   </owl:ObjectProperty> 
 
   <owl:ObjectProperty rdf:ID="stepMother">
@@ -19305,7 +19308,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#relative"/>
-    <owl:sameAs rdf:resource="#grandChildOf"/>
   </owl:ObjectProperty> 
 
   <owl:ObjectProperty rdf:ID="grandMother">
@@ -19376,9 +19378,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#relative"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <owl:sameAs rdf:resource="#cousinOf"/>
   </owl:ObjectProperty> 
-
 
   <owl:ObjectProperty rdf:ID="hasGuardian">
     <rdfs:label xml:lang="en">has guardian</rdfs:label>
@@ -19521,6 +19521,7 @@
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:subPropertyOf rdf:resource="#hasRelative"/>
+    <owl:inverseOf rdf:resource="#hasDescendent"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="ancestorOf">
@@ -19530,6 +19531,31 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
     <owl:inverseOf rdf:resource="#hasAncestor"/>
+    <owl:sameAs rdf:resource="#hasDescendent"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasDescendent">
+    <rdfs:label xml:lang="en">has descendent</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Relates a person to a descendent, either lineal (that is, descended in a direct line from an ancestor, such as a child, grandchild, great-grandchild and so) or collateral (descended from the line of a brother or sister of a direct ancestor).</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:inverseOf rdf:resource="#hasAncestor"/>
+    <rdfs:subPropertyOf rdf:resource="#hasRelative"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="descendentOf">
+    <rdfs:label xml:lang="en">descendent of</rdfs:label>
+    <rdfs:label xml:lang="fr">descendent de</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:subPropertyOf rdf:resource="#relativeOf"/>
+    <owl:inverseOf rdf:resource="#hasDescendent"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
   </owl:ObjectProperty>
