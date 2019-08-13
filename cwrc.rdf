@@ -621,7 +621,7 @@
   <owl:Class rdf:ID="EventClimate">
     <rdfs:label xml:lang="en">event climate</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="en">Categories by which the relevance of an event to one or more broad areas is indicated, usually by an author or editor.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -671,7 +671,7 @@
   <owl:Class rdf:ID="EventSignificance">
     <rdfs:label xml:lang="en">event significance</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en"/>
+    <skos:definition xml:lang="en">Indications of the degree of importance assigned to an event, often by its author or an editor.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -7926,6 +7926,16 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="approximateBirthDate">
+    <rdfs:label xml:lang="en">approximate birth date</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasApproximateBirthDate"/>
+    <rdfs:subPropertyOf rdf:resource="#birthRelationship"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:closeMatch rdf:resource="#birthDate"/>
+  </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="birthPlace">
     <rdfs:label xml:lang="en">birth place</rdfs:label>
@@ -7988,6 +7998,26 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:inverseOf rdf:resource="#hasBirthDate"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasApproximateBirthDate">
+    <rdfs:label xml:lang="en">has approximate birth date</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Provides an approximation of the date on which a person was born.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#relatesByBirthTo"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:closeMatch rdf:resource="#hasBirthDate"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="approximateBirthDateOf">
+    <rdfs:label xml:lang="en">birth date of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasApproximateBirthDate"/>
+    <skos:closeMatch rdf:resource="#birthDateOf"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasBirthPosition">
@@ -8135,6 +8165,17 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:ID="approximateDeathDate">
+    <rdfs:label xml:lang="en">approximate death date</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasApproximateDeathDate"/>
+    <rdfs:subPropertyOf rdf:resource="#deathRelationship"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:closeMatch rdf:resource="#deathDate"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:ID="deathPlace">
     <rdfs:label xml:lang="en">death place</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
@@ -8231,7 +8272,26 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:inverseOf rdf:resource="#hasDeathDate"/>
   </owl:ObjectProperty>
-
+  <owl:ObjectProperty rdf:ID="hasApproximateDeathDate">
+    <rdfs:label xml:lang="en">has approximate death date</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Provides an approximation of the date on which a person died.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#relatesByDeathTo"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:closeMatch rdf:resource="#hasDeathDate"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="approximateDeathDateOf">
+    <rdfs:label xml:lang="en">death date of</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasApproximateDeathDate"/>
+    <skos:closeMatch rdf:resource="#deathDateOf"/>
+  </owl:ObjectProperty>
 
   <owl:Class rdf:ID="SpatialContext">
     <rdfs:label xml:lang="en">spatial context</rdfs:label>
