@@ -244,7 +244,66 @@
     <void:triples>TOTAL_TRIPLES_CWRC_ONTOLOGY</void:triples>
     <void:entities>TOTAL_ENTITIES_CWRC_ONTOLOGY</void:entities>
   </void:Dataset>
-    <genre:FictionalGenre rdf:about="#realist">
+
+  <genre:SatiricalGenre rdf:about="#antiromance">
+    <rdfs:label xml:lang="en">anti-romance</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">"An anti-romance, sometimes referred to as a satire, is a type of story characterized by having an apathetic or self-doubting anti-hero cast as the protagonist, who fails in the object of his journey or struggle. Most anti-romances take place in urban settings, and frequently feature insanity, depression, and the meaning of reality as major themes. An anti-romance is the antithesis of a romance." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Anti-romance"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+  </genre:SatiricalGenre>
+  <genre:NovelisticGenre rdf:about="#kunstlerroman">
+    <rdfs:label xml:lang="en">kunstlerroman</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:hiddenLabel xml:lang="en">KUNSTLERROMAN</skos:hiddenLabel>
+    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en"/>
+    <skos:narrower rdf:resource="#bildungsroman"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+  </genre:NovelisticGenre>
+  <genre:ThematicGenre rdf:about="#pornography">
+    <rdfs:label xml:lang="en">pornography</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">Creative works involving content that is sexually oriented and often arousing to their audiences; often distinguished from erotica by being more sexually explicit, or involving a power differential and the domination, objectification, or exploitation of women. Notwithstanding this common association, there are proponents of feminist pornography as a liberating genre, but anti-pornography feminists see a strong link between pornography and rape culture and understand pornography itself a form of violence against women. See @@https://en.wikipedia.org/wiki/Pornography@@, @@https://en.wikipedia.org/wiki/Feminist_pornography@@, and @@https://en.wikipedia.org/wiki/Feminist_views_on_pornography#Anti-pornography_feminism@@. </skos:definition>
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Pornography"/>
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Feminist_pornography"/>
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Feminist_views_on_pornography"/>
+    <skos:narrower rdf:resource="#eroticaOrPornography"/>
+    <skos:related rdf:resource="#erotica"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+  </genre:ThematicGenre>
+  <genre:ThematicGenre rdf:about="#eroticaOrPornography">
+    <rdfs:label xml:lang="en">erotica or pornography</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:hiddenLabel xml:lang="en">EROTICAPORNOGRAPHY</skos:hiddenLabel>
+    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">Creative works involving content that is sexually oriented, at times explicit, and often arousing to their audiences. Distinctions between erotica and pornography are historically and contextually influenced, and reflects the subject position of the person making the classification. Many feminists including Gloria Steinem (cited in Wikipedia "Erotica") saw the two as distinguished by respect on the one hand and gender domination on the other, whereas Susanne Kappeler argued that common practices of representation are bound up in power differentials that can be pornographic without necessarily involving gender <![CDATA[<a href="#cwrc:26b39b85-62f3-484c-a2e8-e249b476b927">(Kappeler)</a>]]>. See @@https://en.wikipedia.org/wiki/Erotica@@ and @@https://en.wikipedia.org/wiki/Pornography@@.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Erotica"/>
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Pornography"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+  </genre:ThematicGenre>
+  <genre:EmbeddedWork rdf:about="#editorialWork">
+    <rdfs:label xml:lang="en">editorial work</rdfs:label>
+    <skos:hiddenLabel xml:lang="en">EDITING</skos:hiddenLabel>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">An often invisible and unacknowledged type of cultural labour, paid or unpaid, that ranges from the selection and preparation of works, in a range of media including text, image, and film, for publication to the preparation of minutely researched scholarly editions by textual scholars. It can express care and attachment to a community <![CDATA[<a href="#cwrc:d4130c87-b761-46d3-b85c-96ed84d3e4f5">(Eichhorn and Milne)</a>]]> or  Editorial work has a shaping impact on cultural production and may manifest in changes to a cultural artifact that are distinct, as with the addition of explanatory notes, or embedded in traces throughout. See @@https://en.wikipedia.org/wiki/Editing@@</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Editing"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+  </genre:EmbeddedWork>
+  <genre:FictionalGenre rdf:about="#characterSketch">
+    <rdfs:label xml:lang="en">character sketch</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:hiddenLabel xml:lang="en">CHARACTER</skos:hiddenLabel>
+    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">"A character sketch is an abbreviated portrayal of a particular characteristic of people. The term originates in portraiture, where the character sketch is a common academic exercise. Following the translation of Theophrastus's Characters into English, a number of British and American painters attempted to illustrate the "types" of humanity. As late as William Hogarth, portraitists were doing studies of (in his case) Nine heads. The artist performing a character sketch attempts to capture an expression or gesture that goes beyond coincident actions and gets to the essence of the individual." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Character_sketch"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+  </genre:FictionalGenre>
+  <genre:FictionalGenre rdf:about="#realist">
     <rdfs:label xml:lang="fr">réaliste</rdfs:label>
     <dcterms:references rdf:resource="http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-954?rskey=CNr3ZX%26result=951"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -479,7 +538,7 @@
     <skos:definition xml:lang="fr">Oeuvre matérialisée par son support quel qu'il soit ou son mode de communication, constituée de différents éléments (logiciel, graphisme, musique, son, scénario, images fixes ou animées, etc.) assemblés pour former un ensemble à l'identité propre.</skos:definition>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300047910"/>
   </genre:DigitalMedium>
-  <genre:PoeticGenre rdf:about="#boutsRimés">
+  <genre:PoeticGenre rdf:about="#boutsRimes">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">bouts-rimés</rdfs:label>
     <skos:definition xml:lang="en">"The result of a game popularized in 17th-century France in which a poet must write a logical poem using a list of random rhyming words written by someone else."  <![CDATA[<a href="#cwrc:4c227091-6bf0-4325-b846-9733fae19e61">(Oxford, 2015)</a>]]></skos:definition>
@@ -544,6 +603,7 @@
     <rdfs:label xml:lang="fr">fiction</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">fiction</rdfs:label>
+    <skos:hiddenLabel xml:lang="en">NATIONALISTFICTION</skos:hiddenLabel>
     <skos:definition xml:lang="en">"Genre that refers to works evoked from the imagination of the writer and not conferred as fact. In literature, fiction generally refers to the novel, novella, short story, and poetic forms."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300055918"/>
     <skos:definition xml:lang="fr">Genre that refers to works evoked from the imagination of the writer and not conferred as fact. In literature, fiction generally refers to the novel, novella, short story, and poetic forms.</skos:definition>
@@ -813,6 +873,7 @@
     <rdfs:label xml:lang="fr">jardinage</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">gardening</rdfs:label>
+    <skos:hiddenLabel xml:lang="en">GARDENINGBOOK</skos:hiddenLabel>
     <skos:definition xml:lang="en">A text, typically non-fiction, dealing with the subject of gardening.</skos:definition>
   </genre:ThematicGenre>
   <genre:PerformanceMedium rdf:about="#puppetry">
@@ -917,6 +978,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">orientalist</rdfs:label>
     <rdfs:label xml:lang="fr">orientalisme</rdfs:label>
+    <skos:hiddenLabel xml:lang="en">ORIENTAL</skos:hiddenLabel>
     <skos:definition xml:lang="fr">«L'orientalisme est un mouvement littéraire et artistique né en Occident au XIXe siècle. Il existe cependant un orientalisme prémoderne humaniste et classique qui remonte à la fin du Moyen Âge et au début de la Renaissance, lorsque les explorations commencèrent, avec par exemple Marco Polo, et qui atteint son apogée avec les turqueries et le goût oriental du XVIIIe siècle baroque puis rococo. Ce goût oriental hérite aussi du contact de l'époque des Croisades avec le monde islamique. Cet article traite donc plutôt de l'orientalisme à partir du XIXe siècle. C'est un mouvement qui marque l'intérêt de cette époque pour les cultures d'Afrique du Nord, turque et arabe, et toutes les régions dominées par l'Empire ottoman, jusqu'au Caucase.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="en">"Writing about the East by Western writers and with a Western perspective, encompassing everything from fiction to scientific writing. In Orientalist writing, even if not looked down upon as inferior, Eastern cultures are represented as foreign and exotic, and in need of translation, interpretation, or explanation."  <![CDATA[<a href="#cwrc:2f09376c-f784-4a46-9f04-5a21aa311f27">(Penguin, 1999)</a>]]></skos:definition>
   </genre:ThematicGenre>
@@ -1046,6 +1108,7 @@
     <skos:definition xml:lang="en">An official government publication covering any of a wide variety of subjects.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">government report</rdfs:label>
+    <skos:hiddenLabel xml:lang="en">PARLIAMENTARYREPORT</skos:hiddenLabel>
   </genre:InformationalGenre>
   <genre:DidacticGenre rdf:about="#conductLiterature">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1468,15 +1531,14 @@
     <rdf:type rdf:resource="#MysteryGenre"/>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Sensation_novel"/>
   </genre:NovelisticGenre>
-  <genre:DramaticGenre rdf:about="#sketch">
-    <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300026291"/>
+  <genre:FictionalGenre rdf:about="#sketch">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">sketch</rdfs:label>
-    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
-    <skos:definition xml:lang="en">"Short literary compositions on single subjects, often presenting the personal view of the author."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
-    <skos:definition xml:lang="fr">«Un croquis est un dessin fait rapidement, à main levée, sans recherche de détails dans le but de dégager à grands traits, l'essentiel du sujet, du motif ; souvent fait d'après nature, il alimente le carnet de voyage dessiné dit « de croquis ».»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:label xml:lang="fr">croquis</rdfs:label>
-  </genre:DramaticGenre>
+    <skos:definition xml:lang="en">A short, often but not necessarily humorous depiction of a person, incident, or a subject, by analogy with an artistic sketch often cursory and suggestive rather than fully fleshed out. Subjects may be identifiable or fictional. See @@https://en.wikipedia.org/wiki/Sketch_story@@.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Sketch_story"/>
+    <skos:definition xml:lang="fr"/>
+  </genre:FictionalGenre>
   <genre:ReligiousGenre rdf:about="#passionPlay">
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026472"/>
     <skos:definition xml:lang="en">"The Passion Play or Easter pageant is a dramatic presentation depicting the Passion of Jesus Christ: his trial, suffering and death. It is a traditional part of Lent in several Christian denominations, particularly in Catholic tradition." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
@@ -1715,7 +1777,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">pre-school</rdfs:label>
   </genre:ChildrensLiteratureGenre>
-  <genre:NovelisticGenre rdf:about="#àClef">
+  <genre:NovelisticGenre rdf:about="#aClef">
     <skos:definition xml:lang="en">"A novel in which the characters and plots are fictionalized, but can actually be recognized as real people and events in disguise. French for "novel with a key.""  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">à clef</rdfs:label>
@@ -1755,6 +1817,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">A part of or supplement to a work that is structurally associated with the main body of a cultural work that "contains supplementary information about the body but is not necessariy colocated with it, such as a preface, annotation, afterword, footnote, or glossary."<![CDATA[<a href="#cwrc:4c227091-6bf0-4325-b846-9733fae19e61">(Oxford, 2015)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <skos:hiddenLabel xml:lang="en">PARATEXTS</skos:hiddenLabel>
     <rdfs:label xml:lang="en">paratext</rdfs:label>
     <rdfs:label xml:lang="fr">paratextes</rdfs:label>
     <dcterms:references rdf:resource="https://books.google.ca/books?id=s4FMCAAAQBAJ&amp;printsec=frontcover&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false"/>
@@ -2267,18 +2330,19 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="fr">«La fiction historique est un genre de fiction qui situe le récit dans le cadre historique précis d'un passé proche ou lointain. Des exemples connus de fiction historique sont le roman Sinouhé l'Égyptien, la bande dessinée L'Épervier ou le film Meurtre dans un jardin anglais. D'autres romans tels que Les Piliers de la Terre se placent également dans un contexte réaliste, respectant scrupuleusement les faits historiques, tout en déroulant un fil principal à caractère fictionnel : Ainsi, le livre reprend le thème du Moyen Âge central et narre la vie d'un bâtisseur de l'époque.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:label xml:lang="fr">écrivage historique</rdfs:label>
+    <skos:hiddenLabel xml:lang="en">HISTORICAL</skos:hiddenLabel>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Historical_fiction"/>
   </genre:HistoricalGenre>
-  <genre:JournalisticGenre rdf:about="#revue">
+  <genre:DramaticGenre rdf:about="#revue">
+    <rdfs:label xml:lang="en">revue</rdfs:label>
+    <rdfs:label xml:lang="fr">revue (variétés)</rdfs:label>
+    <skos:definition xml:lang="en">"A revue (from French 'magazine' or 'overview') is a type of multi-act popular theatrical entertainment that combines music, dance and sketches. The revue has its roots in 19th century popular entertainment and melodrama but grew into a substantial cultural presence of its own during its golden years from 1916 to 1932. Though most famous for their visual spectacle, revues frequently satirized contemporary figures, news or literature. Similar to the related subforms of operetta and musical theatre, the revue art form brings together music, dance and sketches to create a compelling show. In contrast to these, however, revue does not have an overarching storyline. Rather, a general theme serves as the motto for a loosely-related series of acts that alternate between solo performances and dance" <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">«Une revue est un genre théâtral qui associe musique, danse et sketches qui font la satire de personnes contemporaines, de l'actualité ou de la littérature. Comme les formes apparentées de l'opérette et de la comédie musicale, la revue allie musique, danse et comédie pour former un spectacle complet. Contrairement à celles-ci, elle ne possède cependant pas d'histoire suivie. Un thème général est plutôt utilisé pour un enchaînement de numéros au cours desquels solos et ensembles de danse se relaient.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Revue"/>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014027050"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">revue</rdfs:label>
-    <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
-    <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300026480"/>
-    <skos:definition xml:lang="fr">«Une revue est un genre théâtral qui associe musique, danse et sketches qui font la satire de personnes contemporaines, de l'actualité ou de la littérature. Comme les formes apparentées de l'opérette et de la comédie musicale, la revue allie musique, danse et comédie pour former un spectacle complet. Contrairement à celles-ci, elle ne possède cependant pas d'histoire suivie. Un thème général est plutôt utilisé pour un enchaînement de numéros au cours desquels solos et ensembles de danse se relaient.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
-    <skos:definition xml:lang="en">"Periodicals, reports, or essays giving critical estimates and appraisals of art, a performance, or event. For other critical descriptions and analyses, prefer "criticism."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
-    <rdfs:label xml:lang="fr">revue (variétés)</rdfs:label>
-  </genre:JournalisticGenre>
+  </genre:DramaticGenre>
   <genre:PoeticGenre rdf:about="#epigram">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">epigram</rdfs:label>
@@ -2700,6 +2764,7 @@ For fiction published in installments there are also specific terms for those is
     <dcterms:references rdf:resource="http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-753?rskey=XphoRT%26result=751"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">morality or mystery play</rdfs:label>
+    <skos:hiddenLabel xml:lang="en">MORALITYMYSTERYPLAY</skos:hiddenLabel>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026442"/>
     <skos:definition xml:lang="en">"Religious dramas or pageants, typically written anonymously, that were popular in medieval Europe. Mystery plays represent one or more scenes from the Bible, and were first performed in the 13th century, often using a wagon as a stage to allow a performance to take place in various locations, . Morality plays were first popularized in the 15th century, and are allegorical rather than directly representational works in which personified vices and virtues compete to win a human soul for eternity."  <![CDATA[<a href="#cwrc:4c227091-6bf0-4325-b846-9733fae19e61">(Oxford, 2015)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</rdfs:comment>
@@ -3102,6 +3167,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">nationalist</rdfs:label>
     <skos:related rdf:resource="http://dbpedia.org/resource/Nationalism"/>
     <rdf:type rdf:resource="#PoliticalGenre"/>
+    <skos:hiddenLabel xml:lang="en">NATIONALISTFICTION</skos:hiddenLabel>
   </genre:ThematicGenre>
   <genre:DigitalMedium rdf:about="#webpage">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3168,8 +3234,16 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">social reform</rdfs:label>
   </genre:PoliticalGenre>
   <genre:ThematicGenre rdf:about="#erotica">
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">erotica</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">Creative works involving content that is sexually oriented and often arousing to their audiences; often distinguished from pornography by being less sexually explicit, more egalitarian, and providing a greater sense of narrative or context. See @@#eroticaOrPornography@@ and @@https://en.wikipedia.org/wiki/Erotica@@</skos:definition>
+    <skos:related rdf:resource="#pornography"/>
+    <skos:narrower rdf:resource="#eroticaOrPornography"/>
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Erotica"/>
+    <skos:narrower rdf:resource="#eroticaOrPornography"/>
+    <skos:related rdf:resource="#erotica"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
   </genre:ThematicGenre>
   <genre:ThematicGenre rdf:about="#environmental">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3684,5 +3758,34 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
     <dcterms:isReplacedBy rdf:resource="#StandaloneWork"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedClass>
+
+  <rdf:Description rdf:about="#àClef">
+    <skos:definition xml:lang="en">"A novel in which the characters and plots are fictionalized, but can actually be recognized as real people and events in disguise. French for "novel with a key.""  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">à clef</rdfs:label>
+    <rdfs:label xml:lang="fr">roman à clefs</rdfs:label>
+    <skos:definition xml:lang="fr">«Le roman à lol clef est un sous-genre romanesque dans lequel certains personnages bite ou la totalité de ceux-ci représentent, de façon plus ou moins explicite, une personne réelle. Sous le couvert de la fiction, l'auteur écrit en réalité une histoire vraie, souvent pour éviter la diffamation tout en faisant une satire. La clef de l'histoire, qui fait comprendre au lecteur qu'il s'agit d'une histoire vraie, est habituellement une personnalité publique reconnue, plus particulièrement un homme politique ou une personne ayant une influence majeure sur un groupe, qu'il s'agisse de politique, d'affaires, de show-business, etc.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
+    <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026518"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Roman_%C3%A0_clef"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#aClef@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#aClef@@.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#aClef"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="#boutsRimés">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">bouts-rimés</rdfs:label>
+    <skos:definition xml:lang="en">"The result of a game popularized in 17th-century France in which a poet must write a logical poem using a list of random rhyming words written by someone else."  <![CDATA[<a href="#cwrc:4c227091-6bf0-4325-b846-9733fae19e61">(Oxford, 2015)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</rdfs:comment>
+    <dcterms:references rdf:resource="http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-142?rskey=3RXM0b%26result=141"/>
+    <rdfs:label xml:lang="fr">bout-rimé</rdfs:label>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#boutsRimes@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#boutsRimes@@.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#boutsRimes"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
 
 </rdf:RDF>
