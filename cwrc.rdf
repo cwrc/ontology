@@ -726,10 +726,8 @@
     <rdfs:label xml:lang="de">event</rdfs:label>
     <skos:definition xml:lang="en">An event that occurs in time.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
-    <owl:sameAs rdf:resource="http://erlangen-crm.org/current/E5.Event"/>
-    <owl:sameAs rdf:resource="http://linkedevents.org/ontology/Event"/>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Event"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_activity"/>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -9985,8 +9983,7 @@
     <rdfs:label xml:lang="en">biographical event</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">An event related to an @@#BiographyContext@@.</skos:definition>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_activity"/>
-    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Event"/>
+    <rdfs:subClassOf rdf:resource="#Event"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10033,8 +10030,7 @@
     <rdfs:label xml:lang="en">writing event</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">An event related to an @@#WritingContext@@.</skos:definition>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_activity"/>
-    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Event"/>
+    <rdfs:subClassOf rdf:resource="#Event"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10124,7 +10120,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
     <owl:Class rdf:ID="IntertextualityEvent">
-    <rdfs:label xml:lang="en"> intertextuality event</rdfs:label>
+    <rdfs:label xml:lang="en">intertextuality event</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">An event related to an @@#IntertextualityContext@@.</skos:definition>
     <rdfs:subClassOf rdf:resource="#WritingEvent"/>
