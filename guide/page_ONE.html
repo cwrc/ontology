@@ -1,132 +1,113 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<!-- Custom CSS -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="/style.css">
     <title>Hello, world!</title>
-  </head>
-	<header>
+</head>
+<header>
+</header>
 
-	</header>
-  <body class="container">
-<!-- What is sparql + text -->
-		<div class="center">
-			<h1>What is SPARQL?</h1>
-			<p>SPARQL (SPARQL Protocol and RDF Query Language, pronounced “sparkle”)
-				is a query language used to retrieve and manipulate linked data stored in an RDF format. In this format,
-			data are stored as triples. Triples are formed by a suject, predicate, and object.</p>
-				<br>
-
-				<img src="triple.png" alt="Triple" class="center_img">
-
-			<h3>Example:</h3>
-			<p>The best way to get started is to write simple a simple query:</p>
-		</div>
-
-<!-- Query all example -->
-		<div class="grey-box">
-			<p class="move-left">SELECT ?subject ?predicate ?object <br>
-			WHERE { <br>
-			&nbsp &nbsp ?subject ?predicate ?object . <br>
-			}</p>
-		</div>
-
-		<p>This query will return all the triples in the dataset.</p>
-		<p>Let's break down this query further:</p>
-		<strong class="red_bold">?:</strong>
-		<p>Any word following the question mark is a variable.</p>
-		<strong class="red_bold">SELECT:</strong>
-		<p>The variables following SELECT will be
-			 the ones displayed in a table. There are other keywords which could be used here and will return
-			 something else like CONSTRUCT, ASK, and DESCRIBE.
-		</p>
-		<strong class="red_bold">WHERE:</strong>
-		<p>The WHERE clause is always mandatory and specifies the data to pull out. Other temporary variables
-		may be used here.</p>
-
-		<p>Note: This might result is a lot triples, we can use modifiers such as LIMIT to refine our search.
-			 This topic will be explored in greater detail in the next chapter. The following will
-			 display the first 10 results.
-		</p>
-
-		<div class="grey-box">
-			<p class="move-left">SELECT ?subject ?predicate ?object <br>
-			WHERE { <br>
-			&nbsp &nbsp ?subject ?predicate ?object . <br>
-			}<br>
-		  LIMIT 10 <br>
-		</p>
-		</div>
-
-		<h3>Prefixes and URIs</h3>
-		<p>The data are stored in triples, which have subject, predicate, object format.
-			Each part of the triple is identified by  Uniform Resource Identifier (URI).
-			For example, being a woman in the CWRC Ontology is represented by the following URI: </p>
-		<p class="make_blue">&lthttp://sparql.cwrc.ca/ontologies/cwrc/woman></p>
-
-		<p>To save space and for clarity, the URIs in queries are often shortened using a prefix defined at
-			the top of the query which stands in for most of the URI except the changed endings. </p>
-
-		<h3>The parts of a simple SPARQL query</h3>
-		<div class="grey-box">
-			<p class="move-left">
-				PREFIX cwrc: &lthttp://sparql.cwrc.ca/ontologies/cwrc#>
-			<br>
-			<br>
-			SELECT ?person  <br>
-			WHERE { <br>
-				&nbsp &nbsp?person cwrc:hasGender cwrc:woman . <br>
-		    &nbsp &nbsp?person cwrc:hasOccupation ?occupation .<br>
-				&nbsp &nbsp?occupation a cwrc:teacher .<br>
-			}<br>
-		</p>
-		</div>
-
-		<p>This query searches of all the triples in the dataset that satisfy the following
-			requirements: the person is a woman and a teacher. </p>
-
-		<p>In plain English, it could be translated as follows: </p>
-
-		<div class="italicize">
-			<p>There is a person who has a gender of woman</p>
-
-			<p>That same person has an occupation</p>
-
-			<p>That occupation is teacher</p>
-
-		</div>
-
-		<h5>Notes on Style:</h5>
-		<p>Every triple in a query should end in a period.</p>
-		<p>If a variable use in one line is repeated in the next line it can be omitted. Example:</p>
-		<div class="grey-box">
-			<p class="move-left">
-				PREFIX cwrc: &lthttp://sparql.cwrc.ca/ontologies/cwrc#>
-			<br>
-			<br>
-			SELECT ?person ?occupation <br>
-			WHERE { <br>
-				&nbsp &nbsp?person cwrc:hasGender cwrc:woman . <br>
-				&nbsp &nbsp &nbsp &nbsp cwrc:hasOccupation ?occupation .<br>
-			}<br>
-		</p>
-		</div>
-
-		<br>
-
-<!-- <a href="src/page.html">Next Page: Modifiers</a> -->
-
-
+<body class="container">
+    <!-- What is sparql + text -->
+    <div class="center">
+        <h1>What is SPARQL?</h1>
+        <p>SPARQL (SPARQL Protocol and RDF Query Language, pronounced “sparkle”)
+            is a query language used to retrieve and manipulate linked data stored in an RDF format. In this format,
+            data are stored as triples. Triples are formed by a suject, predicate, and object.</p>
+        <br>
+        <img src="triple.png" alt="Triple" class="center_img">
+        <h3>Example:</h3>
+        <p>The best way to get started is to write simple a simple query:</p>
+    </div>
+    <!-- Query all example -->
+    <div class="grey-box">
+        <p class="move-left">SELECT ?subject ?predicate ?object <br>
+            WHERE { <br>
+            &nbsp &nbsp ?subject ?predicate ?object . <br>
+            }</p>
+    </div>
+    <p>This query will return all the triples in the dataset.</p>
+    <p>Let's break down this query further:</p>
+    <strong class="red_bold">?:</strong>
+    <p>Any word following the question mark is a variable.</p>
+    <strong class="red_bold">SELECT:</strong>
+    <p>The variables following SELECT will be
+        the ones displayed in a table. There are other keywords which could be used here and will return
+        something else like CONSTRUCT, ASK, and DESCRIBE.
+    </p>
+    <strong class="red_bold">WHERE:</strong>
+    <p>The WHERE clause is always mandatory and specifies the data to pull out. Other temporary variables
+        may be used here.</p>
+    <p>Note: This might result is a lot triples, we can use modifiers such as LIMIT to refine our search.
+        This topic will be explored in greater detail in the next chapter. The following will
+        display the first 10 results.
+    </p>
+    <div class="grey-box">
+        <p class="move-left">SELECT ?subject ?predicate ?object <br>
+            WHERE { <br>
+            &nbsp &nbsp ?subject ?predicate ?object . <br>
+            }<br>
+            LIMIT 10 <br>
+        </p>
+    </div>
+    <h3>Prefixes and URIs</h3>
+    <p>The data are stored in triples, which have subject, predicate, object format.
+        Each part of the triple is identified by Uniform Resource Identifier (URI).
+        For example, being a woman in the CWRC Ontology is represented by the following URI: </p>
+    <p class="make_blue">&lthttp://sparql.cwrc.ca/ontologies/cwrc/woman></p>
+    <p>To save space and for clarity, the URIs in queries are often shortened using a prefix defined at
+        the top of the query which stands in for most of the URI except the changed endings. </p>
+    <h3>The parts of a simple SPARQL query</h3>
+    <div class="grey-box">
+        <p class="move-left">
+            PREFIX cwrc: &lthttp://sparql.cwrc.ca/ontologies/cwrc#>
+            <br>
+            <br>
+            SELECT ?person <br>
+            WHERE { <br>
+            &nbsp &nbsp?person cwrc:hasGender cwrc:woman . <br>
+            &nbsp &nbsp?person cwrc:hasOccupation ?occupation .<br>
+            &nbsp &nbsp?occupation a cwrc:teacher .<br>
+            }<br>
+        </p>
+    </div>
+    <p>This query searches of all the triples in the dataset that satisfy the following
+        requirements: the person is a woman and a teacher. </p>
+    <p>In plain English, it could be translated as follows: </p>
+    <div class="italicize">
+        <p>There is a person who has a gender of woman</p>
+        <p>That same person has an occupation</p>
+        <p>That occupation is teacher</p>
+    </div>
+    <h5>Notes on Style:</h5>
+    <p>Every triple in a query should end in a period.</p>
+    <p>If a variable use in one line is repeated in the next line it can be omitted. Example:</p>
+    <div class="grey-box">
+        <p class="move-left">
+            PREFIX cwrc: &lthttp://sparql.cwrc.ca/ontologies/cwrc#>
+            <br>
+            <br>
+            SELECT ?person ?occupation <br>
+            WHERE { <br>
+            &nbsp &nbsp?person cwrc:hasGender cwrc:woman . <br>
+            &nbsp &nbsp &nbsp &nbsp cwrc:hasOccupation ?occupation .<br>
+            }<br>
+        </p>
+    </div>
+    <br>
+    <!-- <a href="src/page.html">Next Page: Modifiers</a> -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>
