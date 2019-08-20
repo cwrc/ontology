@@ -9762,9 +9762,6 @@
     <rdfs:label xml:lang="en">fictional place</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">A place that features in an imaginative work such as a literary work. Such places typically do not not have geospatial coordinates, although they may have a relationship to a @@#MappedLocation@@.</skos:definition>
-    <owl:sameAs rdf:resource="http://schema.org/Place"/>
-    <owl:sameAs rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_place"/>
-    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Place"/>
     <rdfs:subClassOf rdf:resource="#Place"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -9774,9 +9771,6 @@
     <rdfs:label xml:lang="en">mapped place</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">A place that can be mapped according to some accepted system of graphically representing space.</skos:definition>
-    <owl:sameAs rdf:resource="http://schema.org/Place"/>
-    <owl:sameAs rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_place"/>
-    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Place"/>
     <rdfs:subClassOf rdf:resource="#Place"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -9787,12 +9781,14 @@
     <rdfs:label xml:lang="fr">endroit</rdfs:label>
     <skos:definition xml:lang="en">A named entity associated with a location in geographical space. It may be real or fictive, populated or unpopulated. </skos:definition>
     <skos:definition xml:lang="fr">Il peut concerner un endroit peuplé, mais pas nécessairemment. Certains endroits, comme les intersections, n'ont pas de de populations ou d'habitants en soi. Les Geonames classifieront parfois les endroits désormais abandonnés comme «lieux habités».</skos:definition>
-    <owl:equivalentClass rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Place"/>
-    <owl:equivalentClass rdf:resource="http://schema.org/Place"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    <owl:equivalentClass rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <owl:sameAs rdf:resource="http://geovocab.org/spatial#Feature"/>
+    <owl:sameAs rdf:resource="http://schema.org/Place"/>
+    <owl:sameAs rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_place"/>
     <owl:sameAs rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Place"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
