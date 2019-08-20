@@ -9403,9 +9403,9 @@
   <owl:Class rdf:ID="Award">
     <rdfs:label xml:lang="en">award</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:definition xml:lang="en">An award is something given to a person, a group of people, like a sports team, or an organization in recognition of their excellence in a certain field. An award may be accompanied by a trophy, title, certificate, commemorative plaque, medal, badge, pin, or ribbon. The accompanying item may vary according to purpose. </skos:definition>
+    <skos:definition xml:lang="en">"An award is something given to a person, a group of people, like a sports team, or an organization in recognition of their excellence in a certain field. An award may be accompanied by a trophy, title, certificate, commemorative plaque, medal, badge, pin, or ribbon. The accompanying item may vary according to purpose." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2019)</a>]]> </skos:definition>
     <skos:definition xml:lang="fr"/>
-    <skos:closeMatch rdf:resource="https://en.wikipedia.org/wiki/Award_or_decoration"/>
+    <prov:wasDerivedFrom rdf:resource="http://dbpedia.org/resource/Award"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
