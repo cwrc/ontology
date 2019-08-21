@@ -300,7 +300,7 @@ def all_terms_html(nodes):
             string += '<table class="table list-table"><tbody><tr>' + \
                 create_row(sorted(instances)) + '</tr></tbody></table>'
             string += create_terms_html(sorted(instances), get_prefix(x))
-            string += '<div/>'
+            string += '</div>'
 
     for x in types:
         instances = sorted([y for y in o_graph.subjects(RDF.type, x)])
@@ -409,28 +409,30 @@ def create_term_main(term, uri):
     if inverse_uri:
         if lang == "fr":
             html_str += """<div class="defn">Inverse de a """
-            html_str += '<a href="%s">%s</a>' % (get_link(inverse_uri), str(get_label_dict(inverse_uri)))
-            html_str += ' dont la définition est la suivante: <div class="inverse"'
+            html_str += '<a href="%s">%s</a>, ' % (get_link(inverse_uri), str(get_label_dict(inverse_uri)))
+            html_str += 'dont la définition est la suivante: <div class="inverse">'
             html_str += '%s</div></div>' % (get_defn_html(get_definition_list(inverse_uri)))
         else:
             html_str += """<div class="defn">This is the inverse of """
-            html_str += '<a href="%s">%s</a>' % (get_link(inverse_uri), str(get_label_dict(inverse_uri)))
-            html_str += ' whose definition is as follows: <div class="inverse"'
+            html_str += '<a href="%s">%s</a>, ' % (get_link(inverse_uri), str(get_label_dict(inverse_uri)))
+            html_str += 'whose definition is as follows: <div class="inverse">'
             html_str += '%s</div></div>' % (get_defn_html(get_definition_list(inverse_uri)))
     elif subjectcentric_uri:
         if lang == "fr":
             html_str += """<div class="defn">This is the """
-            html_str += '<a href="%s">%s</a>' % (CWRC.hasContextPredicate, "context centric predicate")
-            html_str += 'of <a href="%s">%s</a> ' % (get_link(subjectcentric_uri),
-                                                     str(get_label_dict(subjectcentric_uri)))
-            html_str += 'whose definition is as follows: <div class="inverse"'
+            html_str += '<a href="#%s">%s</a> ' % (str(CWRC.hasContextPredicate).split("#")
+                                                   [1], "context centric predicate")
+            html_str += 'corresponding to <a href="%s">%s</a>, ' % (get_link(subjectcentric_uri),
+                                                                    str(get_label_dict(subjectcentric_uri)))
+            html_str += 'whose definition is as follows: <div class="inverse">'
             html_str += '%s</div></div>' % (get_defn_html(get_definition_list(subjectcentric_uri)))
         else:
             html_str += """<div class="defn">This is the """
-            html_str += '<a href="%s">%s</a>' % (CWRC.hasContextPredicate, "context centric predicate ")
-            html_str += 'of <a href="%s">%s</a> ' % (get_link(subjectcentric_uri),
-                                                     str(get_label_dict(subjectcentric_uri)))
-            html_str += 'whose definition is as follows: <div class="inverse"'
+            html_str += '<a href="#%s">%s</a>' % (str(CWRC.hasContextPredicate).split("#")
+                                                  [1], "context centric predicate ")
+            html_str += 'corresponding to <a href="%s">%s</a>, ' % (get_link(subjectcentric_uri),
+                                                                    str(get_label_dict(subjectcentric_uri)))
+            html_str += 'whose definition is as follows: <div class="inverse">'
             html_str += '%s</div></div>' % (get_defn_html(get_definition_list(subjectcentric_uri)))
     else:
         html_str += """<div class="defn">%s</div>""" % (get_defn_html(defn))
@@ -464,7 +466,6 @@ def create_term_extra(term_dict, uri, term):
     html_str += "</tr>\n"
     html_str += "<th>Tag:</th>\n"
     html_str += """<td>%s:%s</td>\n""" % (spec_pre, term)
-    html_str += "</tr>\n"
 
     # TODO: figure out why this occurs
     pred_dict.pop("foaf1:subject", None)
@@ -584,9 +585,12 @@ def get_comment_list(uri):
 
 def get_label_dict(uri):
     temp = get_uri_term(uri)
-    label = o_graph.objects(uri, RDFS.label)
+    label = [x for x in o_graph.objects(uri, RDFS.label)]
+
     if not label:
-        label = o_graph.objects(uri, SKOS.prefLabel)
+        label = [x for x in o_graph.objects(uri, SKOS.prefLabel)]
+    if not label:
+        label = [x for x in o_graph.objects(uri, FOAF.name)]
     for x in label:
         temp = x
         if x.language == lang:
@@ -886,7 +890,7 @@ def get_header_html():
         html_str += """<img src="%s" class="logo" width="350"/>\n""" % header["logo"][0]
 
     html_str += """<h2 id="subtitle">%s</h2>\n""" % header["desc"][0]
-    html_str += """<h3 id="mymw-doctype">%s &mdash; %s""" % (trans_dict["draft"][l_index], header["date_str"])
+    html_str += """<h3 id="mymw-doctype">%s - %s""" % (trans_dict["draft"][l_index], header["date_str"])
 
     url = "/".join(spec_url.split("/")[:-1]) + "/" + spec_pre + "-" + header["date"]
     latest_url = url.replace("-" + header["date"], "")

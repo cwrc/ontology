@@ -224,20 +224,20 @@
     <cc:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
     <cc:Jurisdiction rdf:resource="http://dbpedia.org/resource/Canada"/>
     <cc:attributionURL rdf:resource="http://www.cwrc.ca/"/>
-    <dcterms:publisher rdf:resource="#cwrc"/>
-    <dcterms:creator rdf:resource="#SusanBrown"/>
-    <dcterms:creator rdf:resource="#JoelCummings"/>
-    <dcterms:creator rdf:resource="#MicaelaJimenez"/>
-    <dcterms:creator rdf:resource="#AbigelLemak"/>
-    <dcterms:creator rdf:resource="#KimMartin"/>
-    <dcterms:creator rdf:resource="#AlliyyaMo"/>
-    <dcterms:creator rdf:resource="#JadePenancier"/>
-    <dcterms:creator rdf:resource="#DebStacey"/>
-    <dcterms:creator rdf:resource="#RobWarren"/>
-    <loc:ctb rdf:resource="#ConstanceCrompton"/>
-    <loc:ctb rdf:resource="#originalOrlandoAuthor"/>
-    <loc:pdr rdf:resource="#SusanBrown"/>
-    <loc:fnd rdf:resource="#sshrc"/>
+    <dcterms:publisher rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#cwrc"/>
+    <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#SusanBrown"/>
+    <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#JoelCummings"/>
+    <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#MicaelaJimenez"/>
+    <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#AbigelLemak"/>
+    <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#KimMartin"/>
+    <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#AlliyyaMo"/>
+    <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#JadePenancier"/>
+    <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#DebStacey"/>
+    <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#RobWarren"/>
+    <loc:ctb rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#ConstanceCrompton"/>
+    <loc:ctb rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#originalOrlandoAuthor"/>
+    <loc:pdr rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#SusanBrown"/>
+    <loc:fnd rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#sshrc"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <foaf:logo rdf:resource="http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif"/>
     <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85019388"/>
@@ -2389,7 +2389,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">serial</rdfs:label>
     <skos:definition xml:lang="en">A broad category indicating works in a range of media and genres published in parts, whether a television series or a serial podcast.
-For fiction published in installments there are also specific terms for those issued as separate publications @@#SerialVolume@@ or within sequential issues of the same periodical publication.
+For fiction published in installments there are also specific terms for those issued as separate publications @@#serialVolume@@ or within sequential issues of the same periodical publication.
 </skos:definition>
   </genre:SerialForm>
   <genre:SerialForm rdf:about="#bookSeries">
