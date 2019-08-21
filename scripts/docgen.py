@@ -420,7 +420,7 @@ def create_term_main(term, uri):
     elif subjectcentric_uri:
         if lang == "fr":
             html_str += """<div class="defn">This is the """
-            html_str += '<a href="%s">%s</a>' % (CWRC.hasContextPredicate, "context predicate")
+            html_str += '<a href="%s">%s</a>' % (CWRC.hasContextPredicate, "context centric predicate")
             html_str += 'of <a href="%s">%s</a> ' % (get_link(subjectcentric_uri),
                                                      str(get_label_dict(subjectcentric_uri)))
             html_str += 'whose definition is as follows: <div class="inverse"'
