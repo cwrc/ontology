@@ -48,6 +48,7 @@ FOAF = rdflib.Namespace("http://xmlns.com/foaf/0.1/")
 VANN = rdflib.Namespace("http://purl.org/vocab/vann/")
 PROV = rdflib.Namespace("http://www.w3.org/ns/prov#")
 DCTERMS = rdflib.Namespace("http://purl.org/dc/terms/")
+CWRC = rdflib.Namespace("http://sparql.cwrc.ca/ontologies/cwrc#")
 
 trans_dict = {
     "specification": ["Specification", "Spécifications"],
@@ -393,11 +394,15 @@ def create_term_main(term, uri):
     comment = get_comment_list(uri)
 
     inverse_uri = None
+    subjectcentric_uri = None
     if defn == [] and comment == [] and (uri, RDF.type, OWL.ObjectProperty) in o_graph:
         if (uri, OWL.inverseOf, None) in o_graph:
             inverse_uri = [o for o in o_graph.objects(uri, OWL.inverseOf)][0]
         elif (None, OWL.inverseOf, uri) in o_graph:
             inverse_uri = [s for s in o_graph.subjects(OWL.inverseOf, uri)][0]
+        elif (uri, CWRC.subjectCentricPredicate, None) in o_graph:
+            subjectcentric_uri = [o for o in o_graph.objects(uri, CWRC.subjectCentricPredicate)][0]
+
     html_str = '<p id="top">[<a href="#definition_list">back to top</a>]</p>\n'
     html_str += '<h5>%s</h5>\n' % (label)
 
@@ -412,6 +417,21 @@ def create_term_main(term, uri):
             html_str += '<a href="%s">%s</a>' % (get_link(inverse_uri), str(get_label_dict(inverse_uri)))
             html_str += ' whose definition is as follows: <div class="inverse"'
             html_str += '%s</div></div>' % (get_defn_html(get_definition_list(inverse_uri)))
+    elif subjectcentric_uri:
+        if lang == "fr":
+            html_str += """<div class="defn">This is the """
+            html_str += '<a href="%s">%s</a>' % (CWRC.hasContextPredicate, "context predicate")
+            html_str += 'of <a href="%s">%s</a> ' % (get_link(subjectcentric_uri),
+                                                     str(get_label_dict(subjectcentric_uri)))
+            html_str += 'whose definition is as follows: <div class="inverse"'
+            html_str += '%s</div></div>' % (get_defn_html(get_definition_list(subjectcentric_uri)))
+        else:
+            html_str += """<div class="defn">This is the """
+            html_str += '<a href="%s">%s</a>' % (CWRC.hasContextPredicate, "context centric predicate ")
+            html_str += 'of <a href="%s">%s</a> ' % (get_link(subjectcentric_uri),
+                                                     str(get_label_dict(subjectcentric_uri)))
+            html_str += 'whose definition is as follows: <div class="inverse"'
+            html_str += '%s</div></div>' % (get_defn_html(get_definition_list(subjectcentric_uri)))
     else:
         html_str += """<div class="defn">%s</div>""" % (get_defn_html(defn))
 
