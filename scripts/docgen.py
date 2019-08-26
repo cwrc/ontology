@@ -351,7 +351,13 @@ def specgen(template, language):
             print("Please provide the uri of your ontology")
             spec_url = rdflib.URIRef(input("URI:"))
         # spec_url = rdflib.URIRef("http://semanticweb.cs.vu.nl/2009/11/sem/")
+    print()
+    if not spec_pre:
         spec_pre = {value: key for (key, value) in all_ns}[spec_url]
+        if spec_pre == '':
+            print("Unable to able to find the prefix of your ontology")
+            print("Please provide the prefix of your ontology")
+            spec_pre = input("Prefix:")
 
     spec_ns = rdflib.Namespace(spec_url)
     deprecated_html = create_deprecated_html(o_graph)

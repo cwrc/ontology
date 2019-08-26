@@ -142,7 +142,12 @@ def get_webpage_title(url):
 
     r = requests.get(url, headers=headers)
     soup = BeautifulSoup(r.content, "lxml")
-    title = soup.find("title").text
+    try:
+        title = soup.find("title").text
+    except AttributeError:
+        print(url)
+        print(soup)
+        title = url
     if title != url:
         URL_DICT[url] = title
     return title
