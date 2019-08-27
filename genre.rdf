@@ -43,7 +43,7 @@
     <skos:definition xml:lang="fr">L'Ontologie des genres CWRC est l'ontologie utilisée par le Collaboratoire scientifique des écrits du Canada pour assigner des genres à des écrits littéraires.</skos:definition>
     <rdfs:comment xml:lang="fr">L'Ontologie des genres CWRC est l'ontologie utilisée par le Collaboratoire scientifique des écrits du Canada pour assigner des genres à des écrits littéraires.</rdfs:comment>
     <owl:versionInfo>0.7</owl:versionInfo>
-    <owl:priorVersion rdf:resource="http://sparql.cwrc.ca/ontologies/genre-2019-05-06"/>
+    <owl:priorVersion rdf:resource="http://sparql.cwrc.ca/ontologies/genre-2019-07-09"/>
     <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">ONTOLOGY_DATE</dcterms:date>
     <dcterms:rights rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
     <vs:term_status xml:lang="en">Testing</vs:term_status>
@@ -155,8 +155,8 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <foaf:logo rdf:resource="http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif"/>
     <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85077490"/>
-    <void:triples>TOTAL_TRIPLES_CWRC_ONTOLOGY</void:triples>
-    <void:entities>TOTAL_ENTITIES_CWRC_ONTOLOGY</void:entities>
+    <void:triples>TOTAL_TRIPLES</void:triples>
+    <void:entities>TOTAL_ENTITIES</void:entities>
   </void:Dataset>
   <skos:Concept rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#originalOrlandoAuthor">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -207,47 +207,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <void:Dataset rdf:about="#datasetdefinition">
-    <dcterms:title xml:lang="en">The CWRC Ontology</dcterms:title>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">The CWRC Ontology</rdfs:label>
-    <foaf:name xml:lang="en">The CWRC Ontology</foaf:name>
-    <dcterms:title xml:lang="fr">L'Ontologie CWRC</dcterms:title>
-    <rdfs:label xml:lang="fr">L'Ontologie CWRC</rdfs:label>
-    <foaf:name xml:lang="fr">L'Ontologie CWRC</foaf:name>
-    <dcterms:description xml:lang="en">The CWRC Ontology is the ontology of the Canadian Writing Research Collaboratory.</dcterms:description>
-    <skos:definition xml:lang="en">The CWRC Ontology is the ontology of the Canadian Writing Research Collaboratory.</skos:definition>
-    <rdfs:comment xml:lang="en">The CWRC Ontology is the ontology of the Canadian Writing Research Collaboratory.</rdfs:comment>
-    <dcterms:description xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</dcterms:description>
-    <skos:definition xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</skos:definition>
-    <rdfs:comment xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</rdfs:comment>
-    <cc:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
-    <cc:Jurisdiction rdf:resource="http://dbpedia.org/resource/Canada"/>
-    <cc:attributionURL rdf:resource="http://www.cwrc.ca/"/>
-    <dcterms:publisher rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#cwrc"/>
-    <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#SusanBrown"/>
-    <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#JoelCummings"/>
-    <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#MicaelaJimenez"/>
-    <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#AbigelLemak"/>
-    <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#KimMartin"/>
-    <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#AlliyyaMo"/>
-    <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#JadePenancier"/>
-    <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#DebStacey"/>
-    <dcterms:creator rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#RobWarren"/>
-    <loc:ctb rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#ConstanceCrompton"/>
-    <loc:ctb rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#originalOrlandoAuthor"/>
-    <loc:pdr rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#SusanBrown"/>
-    <loc:fnd rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#sshrc"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <foaf:logo rdf:resource="http://www.cwrc.ca/wp-content/uploads/2010/11/CWRC_logo_v074.gif"/>
-    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85019388"/>
-    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85043777"/>
-    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85013838"/>
-    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85077519"/>
-    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2009007122"/>
-    <void:triples>TOTAL_TRIPLES_CWRC_ONTOLOGY</void:triples>
-    <void:entities>TOTAL_ENTITIES_CWRC_ONTOLOGY</void:entities>
-  </void:Dataset>
 
   <genre:SatiricalGenre rdf:about="#antiromance">
     <rdfs:label xml:lang="en">anti-romance</rdfs:label>

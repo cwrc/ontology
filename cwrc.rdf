@@ -48,8 +48,8 @@
     <dcterms:description xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</dcterms:description>
     <skos:definition xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</skos:definition>
     <rdfs:comment xml:lang="fr">L'Ontologie CWRC est l'ontologie du Collaboratoire scientifique des écrits du Canada.</rdfs:comment>
-    <owl:versionInfo>0.99.85</owl:versionInfo>
-    <owl:priorVersion rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-2018-09-30"/>
+    <owl:versionInfo>0.99.86</owl:versionInfo>
+    <owl:priorVersion rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-2018-07-09"/>
     <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">ONTOLOGY_DATE</dcterms:date>
     <dcterms:rights rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
     <vs:term_status xml:lang="en">Testing</vs:term_status>
@@ -194,8 +194,8 @@
     <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85013838"/>
     <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85077519"/>
     <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2009007122"/>
-    <void:triples>TOTAL_TRIPLES_CWRC_ONTOLOGY</void:triples>
-    <void:entities>TOTAL_ENTITIES_CWRC_ONTOLOGY</void:entities>
+    <void:triples>TOTAL_TRIPLES</void:triples>
+    <void:entities>TOTAL_ENTITIES</void:entities>
   </void:Dataset>
 
   <bibo:Collection rdf:about="#bibliography">
@@ -9733,7 +9733,7 @@
   <owl:Class rdf:ID="FictionalPlace">
     <rdfs:label xml:lang="en">fictional place</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:definition xml:lang="en">A place that features in an imaginative work such as a literary work. Such places typically do not not have geospatial coordinates, although they may have a relationship to a @@#MappedLocation@@.</skos:definition>
+    <skos:definition xml:lang="en">A place that features in an imaginative work such as a literary work. Such places typically do not not have geospatial coordinates, although they may have a relationship to a @@#MappedPlace@@.</skos:definition>
     <rdfs:subClassOf rdf:resource="#Place"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>

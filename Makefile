@@ -9,8 +9,8 @@ ONTOLOGY_LONGDATE = $(shell date -d '$(ONTOLOGY_DATE)'  +'%d %B %Y')
 ONTOLOGY_VERSION = $(shell xpath -e '/rdf:RDF/owl:Ontology/owl:versionInfo/text()' $(ONTOLOGY).rdf  2> /dev/null)
 ONTOLOGY_LOGO = $(shell xpath -e '/rdf:RDF/owl:Ontology/foaf:logo/@rdf:resource' $(ONTOLOGY).rdf  2> /dev/null | sed 's/\//\\\//g' | cut -d "\"" -f 2)
 PREVIOUS_ONTOLOGY = $(shell xpath -e '/rdf:RDF/owl:Ontology/owl:priorVersion/@rdf:resource' $(ONTOLOGY).rdf  2> /dev/null | sed 's/\//\\\//g' | cut -d "\"" -f 2)
-TOTAL_TRIPLES_CWRC_ONTOLOGY = $(shell cat $(ONTOLOGY_W_DATE).counts)
-TOTAL_ENTITIES_CWRC_ONTOLOGY = $(shell cat $(ONTOLOGY_W_DATE).unique)
+TOTAL_TRIPLES = $(shell cat $(ONTOLOGY_W_DATE).counts)
+TOTAL_ENTITIES = $(shell cat $(ONTOLOGY_W_DATE).unique)
 
 force:	$(ONTOLOGY).rdf
 	touch $(ONTOLOGY).rdf
@@ -64,7 +64,7 @@ $(ONTOLOGY)-citations.html: $(ONTOLOGY_W_DATE).bibli scripts/cwrcCitations.py
 
 # # Final rdf file
 $(ONTOLOGY_W_DATE).rdf: $(ONTOLOGY_W_DATE).unique $(ONTOLOGY_W_DATE).counts $(ONTOLOGY_W_DATE).tmp2
-	cat $(ONTOLOGY_W_DATE).tmp2 | sed 's/ONTOLOGY_DATE/$(ONTOLOGY_DATE)/g' | sed 's/TOTAL_TRIPLES_CWRC_ONTOLOGY/$(TOTAL_TRIPLES_CWRC_ONTOLOGY)/g' | sed 's/TOTAL_ENTITIES_CWRC_ONTOLOGY/$(TOTAL_ENTITIES_CWRC_ONTOLOGY)/g' > $@	
+	cat $(ONTOLOGY_W_DATE).tmp2 | sed 's/ONTOLOGY_DATE/$(ONTOLOGY_DATE)/g' | sed 's/TOTAL_TRIPLES/$(TOTAL_TRIPLES)/g' | sed 's/TOTAL_ENTITIES/$(TOTAL_ENTITIES)/g' > $@	
 	rapper $@ > $(ONTOLOGY_W_DATE).nt
 	rapper -o turtle $@ > $(ONTOLOGY_W_DATE).ttl
 

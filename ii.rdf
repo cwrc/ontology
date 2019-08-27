@@ -16,8 +16,35 @@
     xmlns:vann="http://purl.org/vocab/vann/"
   xml:base="http://sparql.cwrc.ca/ontologies/ii#">
   <owl:Ontology rdf:about="">
+    <dcterms:creator rdf:resource="#SusanBrown"/>
+    <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">ONTOLOGY_DATE</dcterms:date>
+    <dcterms:description xml:lang="en">The CWRC Illness and Injury Ontology is an ontology developed and used by the Canadian Writing Research Collaboratory.</dcterms:description>
+    <dcterms:description xml:lang="fr">L'Ontologie II est l'ontologie du Collaboratoire scientifique des écrits du Canada.</dcterms:description>
+    <dcterms:rights rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2009007122"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85013838"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85019388"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85043777"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85077519"/>
+    <dcterms:title xml:lang="en">The CWRC Illness and Injury Ontology</dcterms:title>
+    <dcterms:title xml:lang="fr">L'Ontologie II</dcterms:title>
+    <foaf:logo rdf:resource="http://sparql.cwrc.ca/images/CWRCLogo-Horz-FullColour.png"/>
+    <foaf:name xml:lang="en">The CWRC Illness and Injury Ontology</foaf:name>
+    <loc:ctb rdf:resource="#originalOrlandoAuthor"/>
+    <void:triples>TOTAL_TRIPLES</void:triples>
+    <void:entities>TOTAL_ENTITIES</void:entities>
+    <owl:versionInfo>1.2</owl:versionInfo>
+    <owl:priorVersion rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-2018-09-30"/>
+
+    <rdfs:comment xml:lang="en">The CWRC Illness and Injury Ontology is an ontology developed and used by the Canadian Writing Research Collaboratory.</rdfs:comment>
+    <rdfs:label xml:lang="en">The CWRC Illness and Injury Ontology</rdfs:label>
+    <skos:definition xml:lang="en">The CWRC Illness and Injury Ontology is an ontology developed and used by the Canadian Writing Research Collaboratory.</skos:definition>
+
     <vann:preferredNamespacePrefix>ii</vann:preferredNamespacePrefix>
     <vann:preferredNamespaceUri>http://sparql.cwrc.ca/ontologies/ii#</vann:preferredNamespaceUri>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <vs:term_status xml:lang="en">Testing</vs:term_status>
+
     <dcterms:creator>
       <cwrc:NaturalPerson rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#DebStacey">
         <foaf:name>Deborah Stacey</foaf:name>
@@ -25,7 +52,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </cwrc:NaturalPerson>
     </dcterms:creator>
-    <rdfs:label xml:lang="en">The CWRC Illness and Injury Ontology</rdfs:label>
     <dcterms:creator>
       <cwrc:NaturalPerson rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#JasmineDrudgeWillson">
         <foaf:name>Jasmine Drudge-Willson</foaf:name>
@@ -56,67 +82,48 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </foaf:Organization>
     </loc:fnd>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
     <dcterms:creator>
       <cwrc:NaturalPerson rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#JoelCummings">
         <foaf:name>Joel Cummings</foaf:name>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </cwrc:NaturalPerson>
     </dcterms:creator>
-    <rdfs:comment xml:lang="en">The CWRC Illness and Injury Ontology is an ontology developed and used by the Canadian Writing Research Collaboratory.</rdfs:comment>
     <dcterms:creator>
       <cwrc:NaturalPerson rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#GurjapSingh">
         <foaf:name>Gurjap Singh</foaf:name>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </cwrc:NaturalPerson>
     </dcterms:creator>
-    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85013838"/>
-    <dcterms:creator rdf:resource="#SusanBrown"/>
-    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2009007122"/>
-    <vs:term_status xml:lang="en">Testing</vs:term_status>
     <dcterms:creator>
       <cwrc:NaturalPerson rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#AlliyyaMo">
         <foaf:name>Alliyya Mo</foaf:name>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </cwrc:NaturalPerson>
     </dcterms:creator>
-    <dcterms:title xml:lang="en">The CWRC Illness and Injury Ontology</dcterms:title>
-    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85043777"/>
-    <skos:definition xml:lang="en">The CWRC Illness and Injury Ontology is an ontology developed and used by the Canadian Writing Research Collaboratory.</skos:definition>
-    <dcterms:description xml:lang="en">The CWRC Illness and Injury Ontology is an ontology developed and used by the Canadian Writing Research Collaboratory.</dcterms:description>
     <loc:ctb>
       <cwrc:NaturalPerson rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#ConstanceCrompton">
         <foaf:name>Constance Crompton</foaf:name>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </cwrc:NaturalPerson>
     </loc:ctb>
-    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85077519"/>
     <dcterms:creator>
       <cwrc:NaturalPerson rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#AbigelLemak">
         <foaf:name>Abigel Lemak</foaf:name>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </cwrc:NaturalPerson>
     </dcterms:creator>
-    <loc:ctb rdf:resource="#originalOrlandoAuthor"/>
-    <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >ONTOLOGY_DATE</dcterms:date>
     <dcterms:creator>
       <cwrc:NaturalPerson rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#JadePenancier">
         <foaf:name>Jade Penancier</foaf:name>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </cwrc:NaturalPerson>
     </dcterms:creator>
-    <foaf:name xml:lang="en">The CWRC Illness and Injury Ontology</foaf:name>
     <dcterms:creator>
       <cwrc:NaturalPerson rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#ColinFaulkner">
         <foaf:name>Colin Faulkner</foaf:name>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </cwrc:NaturalPerson>
     </dcterms:creator>
-    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85019388"/>
-    <dcterms:rights rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
-    <owl:versionInfo>1.1</owl:versionInfo>
-    <foaf:logo rdf:resource="http://sparql.cwrc.ca/images/CWRCLogo-Horz-FullColour.png"/>
     <dcterms:creator>
       <cwrc:NaturalPerson rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#KimMartin">
         <foaf:name>Kim Martin</foaf:name>
@@ -124,6 +131,7 @@
       </cwrc:NaturalPerson>
     </dcterms:creator>
   </owl:Ontology>
+
   <owl:Class rdf:ID="External_causes">
     <rdfs:label xml:lang="en">External causes</rdfs:label>
     <rdfs:subClassOf>
