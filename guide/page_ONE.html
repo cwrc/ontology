@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="/style.css">
-    <title>Hello, world!</title>
+    <title>Introduction to SPARQL Queries</title>
 </head>
 <header>
 </header>
@@ -17,10 +17,13 @@
 <body class="container">
     <!-- What is sparql + text -->
     <div class="center">
-        <h1>What is SPARQL?</h1>
+        <h1>An introduction to SPARQL QUERIES.</h1>
+        <h3>What is SPARQL?</h3>
         <p>SPARQL (SPARQL Protocol and RDF Query Language, pronounced “sparkle”)
             is a query language used to retrieve and manipulate linked data stored in an RDF format. In this format,
-            data are stored as triples. Triples are formed by a suject, predicate, and object.</p>
+            data are stored as triples. Triples are formed by a subject, predicate, and object. Together they form an assertion that the subject has a particular property or relationship, indicated by the predicate, to the object.</p>
+            <!--need a generic image of what a triple looks like (which may be covered by the one that isn't loading--can't tell). Add a "Learn more" link to a page with introductory resources for those who want to read more.-->
+        <!--image not loading in my browser--does the file need to be added to the directory or use an external URL?-->
         <br>
         <img src="triple.png" alt="Triple" class="center_img">
         <h3>Example:</h3>
@@ -34,19 +37,20 @@
             }</p>
     </div>
     <p>This query will return all the triples in the dataset.</p>
-    <p>Let's break down this query further:</p>
+    <p>Let's break down this query further.</p>
+    <!-- insert heading here: VARIABLES:-->
     <strong class="red_bold">?:</strong>
     <p>Any word following the question mark is a variable.</p>
     <strong class="red_bold">SELECT:</strong>
     <p>The variables following SELECT will be
         the ones displayed in a table. There are other keywords which could be used here and will return
-        something else like CONSTRUCT, ASK, and DESCRIBE.
+        something else, such as CONSTRUCT, ASK, and DESCRIBE.
     </p>
     <strong class="red_bold">WHERE:</strong>
     <p>The WHERE clause is always mandatory and specifies the data to pull out. Other temporary variables
         may be used here.</p>
-    <p>Note: This might result is a lot triples, we can use modifiers such as LIMIT to refine our search.
-        This topic will be explored in greater detail in the next chapter. The following will
+    <p>Note: If a query might result in a lot triples, we can use modifiers such as LIMIT to refine our search.
+        This topic will be explored in greater detail in the next section. The following will
         display the first 10 results.
     </p>
     <div class="grey-box">
@@ -58,12 +62,14 @@
         </p>
     </div>
     <h3>Prefixes and URIs</h3>
-    <p>The data are stored in triples, which have subject, predicate, object format.
+    <p>The data are stored in the form of triples with the subject, predicate, object format.
         Each part of the triple is identified by Uniform Resource Identifier (URI).
-        For example, being a woman in the CWRC Ontology is represented by the following URI: </p>
+        <!--add link to wikipedia or some other accessible article on URIs-->
+        For example, the gender property "woman" in the CWRC Ontology is represented by the following URI: </p>
     <p class="make_blue">&lthttp://sparql.cwrc.ca/ontologies/cwrc/woman></p>
-    <p>To save space and for clarity, the URIs in queries are often shortened using a prefix defined at
-        the top of the query which stands in for most of the URI except the changed endings. </p>
+    <p>To save space and for clarity, the URIs in queries are often shortened using a prefix, or <a href="https://en.wikipedia.org/wiki/Namespace">namespace</a>, defined at the top of the query, which stands in for most of the URI, leaving the variable portions at the end which designate the actual terms from that ontology or vocabulary. </p>
+    <p>The same term above could be represented in a triple as:</p>
+     <p class="make_blue">cwrc:woman></p>.
     <h3>The parts of a simple SPARQL query</h3>
     <div class="grey-box">
         <p class="move-left">
