@@ -1,119 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link href="../css/cwrc.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="../css/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../css/favicon.ico" type="image/x-icon" />
     <title>Introduction to SPARQL Queries</title>
 </head>
-<header>
-</header>
 
-<body class="container">
-    <!-- What is sparql + text -->
-    <div class="center">
-        <h1>An introduction to SPARQL QUERIES.</h1>
-        <h3>What is SPARQL?</h3>
-        <p>SPARQL (SPARQL Protocol and RDF Query Language, pronounced “sparkle”)
-            is a query language used to retrieve and manipulate linked data stored in an RDF format. In this format,
-            data are stored as triples. Triples are formed by a subject, predicate, and object. Together they form an assertion that the subject has a particular property or relationship, indicated by the predicate, to the object.</p>
-            <!--need a generic image of what a triple looks like (which may be covered by the one that isn't loading--can't tell). Add a "Learn more" link to a page with introductory resources for those who want to read more.-->
-        <!--image not loading in my browser--does the file need to be added to the directory or use an external URL?-->
-        <br>
-        <img src="triple.png" alt="Triple" class="center_img">
-        <h3>Example:</h3>
-        <p>The best way to get started is to write simple a simple query:</p>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-xl-2 col-lg-3 col-md-12 d-none d-lg-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <div class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Table of Contents</span>
+                        <a class="d-flex align-items-center text-muted" href="#"></a>
+                        <div id="toc">
+                            <!-- Table of Contents -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <main role="main" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto pt-3 px-4" data-spy="scroll" data-target="#toc">
+                <h1>An Introduction to SPARQL Queries</h1>
+                <h2>What is SPARQL?</h2>
+                <p>SPARQL (SPARQL Protocol and RDF Query Language, pronounced “sparkle”)
+                    is a query language used to retrieve and manipulate linked data stored in an RDF format. In this format,
+                    data are stored as triples. Triples are formed by a subject, predicate, and object. Together they form an assertion that the subject has a particular property or relationship, indicated by the predicate, to the object.</p>
+                <!--need a generic image of what a triple looks like (which may be covered by the one that isn't loading can't tell). Add a "Learn more" link to a page with introductory resources for those who want to read more.-->
+                <!--image not loading in my browser- does the file need to be added to the directory or use an external URL?-->
+                <!-- <img src="triple.png" alt="Triple" class="center_img"/> -->
+                <strong>Example:</strong>
+                <p>The best way to get started is to write simple a simple query:</p>
+                <pre>
+					<code>SELECT ?subject ?predicate ?object WHERE { 
+	?subject ?predicate ?object . 
+}					</code>
+				</pre>
+                <p>This query will return all the triples in the dataset.</p>
+                <h2>Components of a Query</h2>
+                <p>Let's break down this query further.</p>
+                <!-- insert heading here: VARIABLES:-->
+                <strong class="red_bold">?:</strong>
+                <p>Any word following the question mark is a variable.</p>
+                <strong class="red_bold">SELECT:</strong>
+                <p>The variables following SELECT will be
+                    the ones displayed in a table. There are other keywords which could be used here and will return
+                    something else, such as CONSTRUCT, ASK, and DESCRIBE.
+                </p>
+                <strong class="red_bold">WHERE:</strong>
+                <p>The WHERE clause is always mandatory and specifies the data to pull out. Other temporary variables
+                    may be used here.</p>
+                <p>Note: If a query might result in a lot triples, we can use modifiers such as LIMIT to refine our search.
+                    This topic will be explored in greater detail in the next section. The following will
+                    display the first 10 results.
+                </p>
+                <pre>
+					<code>SELECT ?subject ?predicate ?object WHERE { 
+	?subject ?predicate ?object .
+}
+LIMIT 10			</code>
+				</pre>
+                <h3>Prefixes and URIs</h3>
+                <p>The data are stored in the form of triples with the subject, predicate, object format.
+                    Each part of the triple is identified by <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier">Uniform Resource Identifier (URI)</a>.
+                    For example, the gender property <a href="http://sparql.cwrc.ca/ontologies/cwrc.html#woman">"woman"</a> in the CWRC Ontology is represented by the following URI: <a href="http://sparql.cwrc.ca/ontologies/cwrc.html#woman">&lt;http://sparql.cwrc.ca/ontologies/cwrc.html#woman&gt;</a> </p>
+                <p>To save space and for clarity, the URIs in queries are often shortened using a prefix, or <a href="https://en.wikipedia.org/wiki/Namespace">namespace</a>, defined at the top of the query, which stands in for most of the URI, leaving the variable portions at the end which designate the actual terms from that ontology or vocabulary. </p>
+                <p>The same term above could be represented in a triple as: <strong>cwrc:woman</strong></p>
+                <h2>Interpreting a simple SPARQL query</h2>
+                <pre class="code">PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;
+SELECT ?person WHERE { 
+    ?person cwrc:hasGender cwrc:woman . 
+    ?person cwrc:hasOccupation ?occupation .
+    ?occupation a cwrc:teacher .
+}
+</pre>
+                <p>This query searches of all the triples in the dataset that satisfy the following
+                    requirements: the person is a woman and a teacher. </p>
+                <p>In plain English, it could be translated as follows: </p>
+                <p>
+                    <em>There is a person who has a gender of woman</em>
+                </p>
+                <p>
+                    <em>That same person has an occupation</em>
+                </p>
+                <p>
+                    <em>That occupation is teacher</em>
+                </p>
+                <h2>Notes on Style</h2>
+                <p>Every triple in a query should end in a period.</p>
+                <p>If a variable use in one line is repeated in the next line it can be omitted. Example:</p>
+                <pre>
+		        	<code>PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;
+SELECT ?person ?occupation WHERE { 
+	?person cwrc:hasGender cwrc:woman . 
+		cwrc:hasOccupation ?occupation .
+}		        	</code>
+        		</pre>
+            </main>
+        </div>
     </div>
-    <!-- Query all example -->
-    <div class="grey-box">
-        <p class="move-left">SELECT ?subject ?predicate ?object <br>
-            WHERE { <br>
-            &nbsp &nbsp ?subject ?predicate ?object . <br>
-            }</p>
-    </div>
-    <p>This query will return all the triples in the dataset.</p>
-    <p>Let's break down this query further.</p>
-    <!-- insert heading here: VARIABLES:-->
-    <strong class="red_bold">?:</strong>
-    <p>Any word following the question mark is a variable.</p>
-    <strong class="red_bold">SELECT:</strong>
-    <p>The variables following SELECT will be
-        the ones displayed in a table. There are other keywords which could be used here and will return
-        something else, such as CONSTRUCT, ASK, and DESCRIBE.
-    </p>
-    <strong class="red_bold">WHERE:</strong>
-    <p>The WHERE clause is always mandatory and specifies the data to pull out. Other temporary variables
-        may be used here.</p>
-    <p>Note: If a query might result in a lot triples, we can use modifiers such as LIMIT to refine our search.
-        This topic will be explored in greater detail in the next section. The following will
-        display the first 10 results.
-    </p>
-    <div class="grey-box">
-        <p class="move-left">SELECT ?subject ?predicate ?object <br>
-            WHERE { <br>
-            &nbsp &nbsp ?subject ?predicate ?object . <br>
-            }<br>
-            LIMIT 10 <br>
-        </p>
-    </div>
-    <h3>Prefixes and URIs</h3>
-    <p>The data are stored in the form of triples with the subject, predicate, object format.
-        Each part of the triple is identified by Uniform Resource Identifier (URI).
-        <!--add link to wikipedia or some other accessible article on URIs-->
-        For example, the gender property "woman" in the CWRC Ontology is represented by the following URI: </p>
-    <p class="make_blue">&lthttp://sparql.cwrc.ca/ontologies/cwrc/woman></p>
-    <p>To save space and for clarity, the URIs in queries are often shortened using a prefix, or <a href="https://en.wikipedia.org/wiki/Namespace">namespace</a>, defined at the top of the query, which stands in for most of the URI, leaving the variable portions at the end which designate the actual terms from that ontology or vocabulary. </p>
-    <p>The same term above could be represented in a triple as:</p>
-     <p class="make_blue">cwrc:woman></p>.
-    <h3>The parts of a simple SPARQL query</h3>
-    <div class="grey-box">
-        <p class="move-left">
-            PREFIX cwrc: &lthttp://sparql.cwrc.ca/ontologies/cwrc#>
-            <br>
-            <br>
-            SELECT ?person <br>
-            WHERE { <br>
-            &nbsp &nbsp?person cwrc:hasGender cwrc:woman . <br>
-            &nbsp &nbsp?person cwrc:hasOccupation ?occupation .<br>
-            &nbsp &nbsp?occupation a cwrc:teacher .<br>
-            }<br>
-        </p>
-    </div>
-    <p>This query searches of all the triples in the dataset that satisfy the following
-        requirements: the person is a woman and a teacher. </p>
-    <p>In plain English, it could be translated as follows: </p>
-    <div class="italicize">
-        <p>There is a person who has a gender of woman</p>
-        <p>That same person has an occupation</p>
-        <p>That occupation is teacher</p>
-    </div>
-    <h5>Notes on Style:</h5>
-    <p>Every triple in a query should end in a period.</p>
-    <p>If a variable use in one line is repeated in the next line it can be omitted. Example:</p>
-    <div class="grey-box">
-        <p class="move-left">
-            PREFIX cwrc: &lthttp://sparql.cwrc.ca/ontologies/cwrc#>
-            <br>
-            <br>
-            SELECT ?person ?occupation <br>
-            WHERE { <br>
-            &nbsp &nbsp?person cwrc:hasGender cwrc:woman . <br>
-            &nbsp &nbsp &nbsp &nbsp cwrc:hasOccupation ?occupation .<br>
-            }<br>
-        </p>
-    </div>
-    <br>
-    <!-- <a href="src/page.html">Next Page: Modifiers</a> -->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript
+	  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh3U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+    <script src="../js/toc.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+    <script>
+    window.onload = function() {
+        var options = {
+            selector: 'h2, h3, h4, h5',
+            scope: 'main'
+        };
+
+        var container = document.querySelector('#toc');
+        var toc = initTOC(options);
+        container.appendChild(toc);
+    };
+    </script>
 </body>
 
 </html>

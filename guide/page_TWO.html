@@ -1,191 +1,191 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- <link href="css/cwrc.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon"/>
-    <link rel="icon" href="css/favicon.ico" type="image/x-icon"/> -->
+    <meta charset="utf-8" />
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link href="../css/cwrc.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="../css/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../css/favicon.ico" type="image/x-icon" />
     <title>Modifiers!</title>
 </head>
-<header>
-</header>
 
-<body class="container">
-    <!-- What is sparql + text -->
-    <!-- <div class="center"> -->
-    <h1>Refine your search</h1>
-    <p>SPAPQL has a lot of built in keywords which can be used to refine your search. A list of some of the main keywords
-        along with a brief description is in the table below.</p>
-    <br>
-    <div class="container">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Keyword</th>
-                    <th>Purpose</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>FILTER</td>
-                    <td>An expression that modifies your search is placed in the filter paraenthesis. See Query 1 for an example.</td>
-                </tr>
-                <tr>
-                    <td>FILTER NOT EXISTS</td>
-                    <td>Returns true if a specified graph pattern does not exist.</td>
-                </tr>
-                <tr>
-                    <td>OPTIONAL</td>
-                    <td>Makes certain patterns of preceding triples as optional. See Query 2 for an example.</td>
-                </tr>
-                <tr>
-                    <td>MINUS</td>
-                    <td>Similar to FILTER NOT EXISTS, subtracts the graph pattern in the argument.</td>
-                </tr>
-                <tr>
-                    <td>UNION</td>
-                    <td>Lets you retrieve different graph patters at once. </td>
-                </tr>
-                <tr>
-                    <td>OFFSET</td>
-                    <td>Skips the first number of rows specified by offset.</td>
-                </tr>
-                <tr>
-                    <td>LIMIT</td>
-                    <td>Limits the number of outputs displayed in a random order.</td>
-                </tr>
-                <tr>
-                    <td>VALUES</td>
-                    <td>Specifies values for variables, allows for more than one match.</td>
-                </tr>
-                <tr>
-                    <td>ORDER BY</td>
-                    <td>Sorts the data using the values in the argument. Data are shown in ascending order unless otherwise specified. See Query 3 for an example.</td>
-                </tr>
-                <tr>
-                    <td>GROUP BY</td>
-                    <td>Groups data together to perform aggregate functions. See Query 4 for an example.</td>
-                </tr>
-                <tr>
-                    <td>GRAPH</td>
-                    <td>Allows you to specify a graph to retrieve certain data from.</td>
-                </tr>
-            </tbody>
-        </table>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-xl-2 col-lg-3 col-md-12 d-none d-lg-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <div class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Table of Contents</span>
+                        <a class="d-flex align-items-center text-muted" href="#"></a>
+                        <div id="toc">
+                            <!-- Table of Contents -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <main role="main" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto pt-3 px-4" data-spy="scroll" data-target="#toc">
+                <h1>Refine your search</h1>
+                <p>SPARQL has a lot of built in keywords which can be used to refine your search. A list of some of the main keywords
+                    along with a brief description is in the table below.</p>
+                <table class="table table-hover normal">
+                    <thead>
+                        <tr>
+                            <th>Keyword</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>FILTER</td>
+                            <td>An expression that modifies your search is placed in the filter paraenthesis. See <a href="#Query1">Query 1</a> for an example.</td>
+                        </tr>
+                        <tr>
+                            <td>FILTER NOT EXISTS</td>
+                            <td>Returns true if a specified graph pattern does not exist.</td>
+                        </tr>
+                        <tr>
+                            <td>OPTIONAL</td>
+                            <td>Makes certain patterns of preceding triples as optional. See <a href="#Query2">Query 2</a> for an example.</td>
+                        </tr>
+                        <tr>
+                            <td>MINUS</td>
+                            <td>Similar to FILTER NOT EXISTS, subtracts the graph pattern in the argument.</td>
+                        </tr>
+                        <tr>
+                            <td>UNION</td>
+                            <td>Lets you retrieve different graph patters at once. </td>
+                        </tr>
+                        <tr>
+                            <td>OFFSET</td>
+                            <td>Skips the first number of rows specified by offset.</td>
+                        </tr>
+                        <tr>
+                            <td>LIMIT</td>
+                            <td>Limits the number of outputs displayed in a random order.</td>
+                        </tr>
+                        <tr>
+                            <td>VALUES</td>
+                            <td>Specifies values for variables, allows for more than one match.</td>
+                        </tr>
+                        <tr>
+                            <td>ORDER BY</td>
+                            <td>Sorts the data using the values in the argument. Data are shown in ascending order unless otherwise specified. See <a href="#Query3">Query 3</a> for an example.</td>
+                        </tr>
+                        <tr>
+                            <td>GROUP BY</td>
+                            <td>Groups data together to perform aggregate functions. See <a href="#Query4">Query 4</a> for an example.</td>
+                        </tr>
+                        <tr>
+                            <td>GRAPH</td>
+                            <td>Allows you to specify a graph to retrieve certain data from.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Examples:</h2>
+                <!-- Query 1 -->
+                <h3 id="Query1"><a target="_blank" href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0A%0ASELECT+%3Fname+%0AWHERE+%7B+%0A++++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman+.%0A++++%3Fperson+rdfs%3Alabel+%3Fname+.%0AFILTER(regex(%3Fname%2C+%22Anne%22%2C+%22i%22))+%0A%7D+++&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query+1&headers=%7B%7D&outputFormat=table">Query 1</a></h3>
+                <pre>
+                    <code>PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+
+SELECT ?name 
+WHERE { 
+    ?person cwrc:hasGender cwrc:woman .
+    ?person rdfs:label ?name .
+FILTER(regex(?name, "Anne", "i")) 
+}                   </code>
+                </pre>
+                <p>The FILTER command takes a single argument. Many of the arguments make use of a function,
+                    here the function regex is used to filter the results based on the label of the person. The query
+                    returns all the names with of the women in the dataset and filter command reduces that output
+                    to only those whose match the name "Anne", "i" is for "insensitive", this means the result can
+                    be either uppercase or lowercase.</p>
+                <!-- Query 2 -->
+                <h3 id="Query2"><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0A%0ASELECT+%3Fperson+%3Foccupation+%0AWHERE+%7B+%0A++++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman+.%0A++++%3Fperson+cwrc%3AhasOccupation+%3Foccupation+.+%0A++++%0A++++OPTIONAL+%7B%3Foccupation+a+cwrc%3Ateacher%7D%0A%7D+&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query+1&headers=%7B%7D&outputFormat=table" target="_blank">Query 2</a></h3>
+                <pre>
+                    <code>PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;
+                        
+SELECT ?person ?occupation 
+WHERE { 
+    ?person cwrc:hasGender cwrc:woman .
+    ?person cwrc:hasOccupation ?occupation . 
+    
+OPTIONAL {?occupation a cwrc:teacher}
+}                    </code>
+                </pre>
+                <p>The OPTIONAL graph pattern does not need to be satisfied. Here, if the OPTIONAL tag
+                    was removed then the result table would include all women who are teachers, with the tag it
+                    will display all women and their occupation, including women who are teachers. This is similar
+                    to an outer join in SQL.</p>
+                <h3 id="Query3"><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0A%0ASELECT+%3Fperson+%3FbirthDate+%0AWHERE+%7B+%0A++++%3Fperson+cwrc%3AhasBirthDate+%3FbirthDate+.%0A++++FILTER+((%3FbirthDate+%3E%3D+'1844-01-01'%5E%5Exsd%3Adate)+%26%26+(%3FbirthDate+%3C%3D+'1884-01-01'+%5E%5Exsd%3Adate))+.+%0A%7D+++%0A++++ORDER+BY+%3FbirthDate&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query+1&headers=%7B%7D&outputFormat=table" target="_blank">Query 3</a></h3>
+                <pre>
+                    <code>PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;
+
+SELECT ?person ?birthDate 
+WHERE { 
+    ?person cwrc:hasBirthDate ?birthDate .
+    FILTER ((?birthDate >= '1844-01-01'^^xsd:date) &amp;&amp; (?birthDate &lt;= '1884-01-01' ^^xsd:date)) . 
+}   
+    ORDER BY ?birthDate
+                 </code>
+                </pre>
+                <p>This query searches for every person who has a birthdate between a two specific dates. The triples that
+                    satisfy this are then displayed in a table which will be ordered by birth dates from earliest to latest in
+                    ascending numerical value.</p>
+                <p>Literals:
+                    The object of a triple can be more than a URI or string, the other types are known as literals.
+                    You can specify the data type if you know it. In the example above date is specified.</p>
+                <p> Examples of other types:</p>
+                <ul>
+                    <li>d:item dm:quantity "4"<strong>^^xsd:integer</strong></li>
+                    <li>d:item dm:invoiced "false"<strong>^^xsd:boolean</strong></li>
+                    <li>d:item dm:costPerItem "3.50"<strong>^^xsd:decimal</strong></li>
+                </ul>
+                <h3 id="Query4"><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0A%0A%0ASELECT+%3Foccupation+(COUNT(%3Fperson)+AS+%3FnumberPerProfession)+%0AWHERE+%7B+%0A++++%3Fperson+a+cwrc%3ANaturalPerson%3B%0A++++%09cwrc%3AhasOccupation+%3Foccupation.%0A%7D%0AGROUP+BY+%3Foccupation+%0AORDER+BY+DESC+(%3FnumberPerProfession)&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query+1&headers=%7B%7D&outputFormat=table" target="_blank">Query 4</a></h4>
+                    <pre>
+                    <code>PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;
+
+SELECT ?occupation (COUNT(?person) AS ?numberPerProfession) 
+WHERE { 
+    ?person a cwrc:NaturalPerson;
+        cwrc:hasOccupation ?occupation.
+}
+GROUP BY ?occupation 
+ORDER BY DESC (?numberPerProfession)</code>
+                </pre>
+                    <p>The GROUP BY function lets you group functions together, you can then perform functions on each group. The query above groups results by occupation, and then the COUNT function adds the number of people with that profession. The table here will have two colums, one of occupation and the other called numberPerProfession with an amount.
+                    </p>
+                    <p>Other functions:</p>
+                    <ul>
+                        <li>AVG()</li>
+                        <li>MAX()</li>
+                        <li>MIN()</li>
+                        <li>SUM()</li>
+                        <li>COUNT()</li>
+                    </ul>
+            </main>
+        </div>
     </div>
-    <h3>Examples:</h3>
-    <br>
-    <!-- Query 1 -->
-    <h4>Query 1</h4>
-    <div class="grey-box">
-        <p class="move-left">
-            PREFIX cwrc: &lthttp://sparql.cwrc.ca/ontologies/cwrc#> <br>
-            PREFIX rdfs: &lthttp://www.w3.org/2000/01/rdf-schema#>
-            <br>
-            <br>
-            SELECT ?name <br>
-            WHERE { <br>
-            &nbsp &nbsp?person cwrc:hasGender cwrc:woman .<br>
-            &nbsp &nbsp?person rdfs:label ?name .<br>
-            FILTER(regex(?name, "Anne", "i")) <br>
-            }<br>
-        </p>
-    </div>
-    <p>The FILTER command takes a single argument. Many of the arguments make use of a function,
-        here the function regex is used to filter the results based on the label of the person. The query
-        returns all the names with of the women in the data set and filter command reduces that output
-        to only those whose match the name "Anne", "i" is for "insensitive", this means the result can
-        be either uppercase or lowercase.</p>
-    <br>
-    <br>
-    <!-- Query 2 -->
-    <h4>Query 2</h4>
-    <div class="grey-box">
-        <p class="move-left">
-            PREFIX cwrc: &lthttp://sparql.cwrc.ca/ontologies/cwrc#>
-            <br>
-            <br>
-            SELECT ?person ?occupation <br>
-            WHERE { <br>
-            &nbsp &nbsp?person cwrc:hasGender cwrc:woman .<br>
-            &nbsp &nbsp?person cwrc:hasOccupation ?occupation . <br>
-            &nbsp &nbsp OPTIONAL {?occupation a cwrc:teacher}<br>
-            }<br>
-        </p>
-    </div>
-    <p>The OPTIONAL graph pattern does not need to be satisfied. Here, if the OPTIONAL tag
-        was removed then the result table would include all women who are teachers, with the tag it
-        will display all women and their occupation, including women who are teachers. This is similar
-        to an outer join in SQL.</p>
-    <br>
-    <br>
-    <!-- Query 3 -->
-    <h4>Query 3</h4>
-    <div class="grey-box">
-        <p class="move-left">
-            PREFIX cwrc: &lthttp://sparql.cwrc.ca/ontologies/cwrc#>
-            <br>
-            <br>
-            SELECT ?person ?birthDate <br>
-            WHERE { <br>
-            &nbsp &nbsp ?person cwrc:hasBirthDate ?birthDate .<br>
-            &nbsp &nbsp FILTER ((?birthDate >= '1844-01-01'^^xsd:date) && (?birthDate <= '1884-01-01' ^^xsd:date)) . <br>
-                &nbsp &nbsp ORDER BY ?birthDate .<br>
-                }<br>
-        </p>
-    </div>
-    <p>This query searches for every person who has a birthdate between a two specific dates. The triples that
-        satisfy this are then displayed in a table which will be ordered by birth dates from earliest to latest in
-        ascending numerical value.</p>
-    <p>Literals: <br>
-        The object of a triple can be more than a URI or string, the other types are known as literals.
-        You can specify the data type if you know it. In the example above date is specified. Examples of other types:</p>
-    <p>d:item dm:quantity "4"<strong>^^xsd:integer</strong></p>
-    <p>d:item dm:invoiced "false"<strong>^^xsd:boolean</strong></p>
-    <p>d:item dm:costPerItem "3.50"<strong>^^xsd:decimal</strong></p>
-    <br>
-    <br>
-    <!-- Query 4 -->
-    <h4>Query 4</h4>
-    <div class="grey-box">
-        <p class="move-left">
-            PREFIX cwrc: &lthttp://sparql.cwrc.ca/ontologies/cwrc#>
-            <br>
-            <br>
-            SELECT ?occupation (COUNT(?person) AS ?numberPerProfession) <br>
-            WHERE { <br>
-            &nbsp &nbsp?person a cwrc:NaturalPerson<br>
-            &nbsp &nbsp?person cwrc:hasOccupation ?occupation<br>
-            }<br>
-            GROUP BY ?occupation <br>
-        </p>
-    </div>
-    <p>The GROUP BY function lets you group functions together, you can then perform functions on
-        each group. The query above groups results by occupation, and then the COUNT function adds the
-        number of people with that profession. The table here will have two colums, one of occupation and
-        the other caleed numberPerProfession with an amount.
-    </p>
-    <p>Other functions: <br>
-        AVG()<br>
-        MAX()<br>
-        MIN()<br>
-        SUM()<br>
-        COUNT()<br>
-    </p>
-    <br>
-    <br>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+    <script src="../js/toc.js"></script>
+    <script>
+    var options = {
+        selector: 'h2, h3, h4',
+        scope: 'main'
+    };
+
+    var container = document.querySelector('#toc');
+    var toc = initTOC(options);
+    container.appendChild(toc);
+    </script>
 </body>
 
 </html>
