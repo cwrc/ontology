@@ -8,7 +8,7 @@
     <link href="../css/cwrc.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="../css/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="../css/favicon.ico" type="image/x-icon" />
-    <title>Modifiers!</title>
+    <title>Modifiers</title>
 </head>
 
 <body>
@@ -26,9 +26,9 @@
                 </div>
             </nav>
             <main role="main" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto pt-3 px-4" data-spy="scroll" data-target="#toc">
-                <h1>Refine your search</h1>
-                <p>SPARQL has a lot of built in keywords which can be used to refine your search. A list of some of the main keywords
-                    along with a brief description is in the table below.</p>
+                <h1>Refining your search</h1>
+                <p>SPARQL has many built-in keywords which can be used to refine your search. The table below provides a list of some of the main keywords
+                    along with a brief description.</p>
                 <table class="table table-hover normal">
                     <thead>
                         <tr>
@@ -47,15 +47,15 @@
                         </tr>
                         <tr>
                             <td>OPTIONAL</td>
-                            <td>Makes certain patterns of preceding triples as optional. See <a href="#Query2">Query 2</a> for an example.</td>
+                            <td>Makes certain patterns of preceding triples optional. See <a href="#Query2">Query 2</a> for an example.</td>
                         </tr>
                         <tr>
                             <td>MINUS</td>
-                            <td>Similar to FILTER NOT EXISTS, subtracts the graph pattern in the argument.</td>
+                            <td>Similar to FILTER NOT EXISTS; subtracts the graph pattern in the argument.</td>
                         </tr>
                         <tr>
                             <td>UNION</td>
-                            <td>Lets you retrieve different graph patters at once. </td>
+                            <td>Allows for the retrieval of different graph patters at once. </td>
                         </tr>
                         <tr>
                             <td>OFFSET</td>
@@ -67,7 +67,7 @@
                         </tr>
                         <tr>
                             <td>VALUES</td>
-                            <td>Specifies values for variables, allows for more than one match.</td>
+                            <td>Specifies values for variables; allows for more than one match.</td>
                         </tr>
                         <tr>
                             <td>ORDER BY</td>
@@ -79,7 +79,7 @@
                         </tr>
                         <tr>
                             <td>GRAPH</td>
-                            <td>Allows you to specify a graph to retrieve certain data from.</td>
+                            <td>Specifies which graph data will be retrieved from.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -97,10 +97,10 @@ WHERE {
 FILTER(regex(?name, "Anne", "i")) 
 }                   </code>
                 </pre>
-                <p>The FILTER command takes a single argument. Many of the arguments make use of a function,
-                    here the function regex is used to filter the results based on the label of the person. The query
-                    returns all the names with of the women in the dataset and filter command reduces that output
-                    to only those whose match the name "Anne", "i" is for "insensitive", this means the result can
+                <p>The FILTER command takes a single argument. Many of the arguments make use of a function.
+                    Here, the function regex is used to filter the results based on the label of the person. The query
+                    returns all the names of the women in the dataset, and the filter command reduces that output
+                    to only those containing the name "Anne". The "i" is for "insensitive"; this means the results can
                     be either uppercase or lowercase.</p>
                 <!-- Query 2 -->
                 <h3 id="Query2"><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0A%0ASELECT+%3Fperson+%3Foccupation+%0AWHERE+%7B+%0A++++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman+.%0A++++%3Fperson+cwrc%3AhasOccupation+%3Foccupation+.+%0A++++%0A++++OPTIONAL+%7B%3Foccupation+a+cwrc%3Ateacher%7D%0A%7D+&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query+1&headers=%7B%7D&outputFormat=table" target="_blank">Query 2</a></h3>
@@ -115,9 +115,9 @@ WHERE {
 OPTIONAL {?occupation a cwrc:teacher}
 }                    </code>
                 </pre>
-                <p>The OPTIONAL graph pattern does not need to be satisfied. Here, if the OPTIONAL tag
-                    was removed then the result table would include all women who are teachers, with the tag it
-                    will display all women and their occupation, including women who are teachers. This is similar
+                <p>The OPTIONAL graph pattern does not need to be satisfied. If the OPTIONAL tag
+                    was removed in this example, the resulting table would include all of the women who are teachers. The inclusion of the OPTIONAL tag
+                    will display all women and their occupations, including women who are teachers. This is similar
                     to an outer join in SQL.</p>
                 <h3 id="Query3"><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0A%0ASELECT+%3Fperson+%3FbirthDate+%0AWHERE+%7B+%0A++++%3Fperson+cwrc%3AhasBirthDate+%3FbirthDate+.%0A++++FILTER+((%3FbirthDate+%3E%3D+'1844-01-01'%5E%5Exsd%3Adate)+%26%26+(%3FbirthDate+%3C%3D+'1884-01-01'+%5E%5Exsd%3Adate))+.+%0A%7D+++%0A++++ORDER+BY+%3FbirthDate&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query+1&headers=%7B%7D&outputFormat=table" target="_blank">Query 3</a></h3>
                 <pre>
@@ -131,12 +131,12 @@ WHERE {
     ORDER BY ?birthDate
                  </code>
                 </pre>
-                <p>This query searches for every person who has a birthdate between a two specific dates. The triples that
+                <p>This query searches for every person who has a birthdate between two specific dates. The triples that
                     satisfy this are then displayed in a table which will be ordered by birth dates from earliest to latest in
                     ascending numerical value.</p>
                 <p>Literals:
-                    The object of a triple can be more than a URI or string, the other types are known as literals.
-                    You can specify the data type if you know it. In the example above date is specified.</p>
+                    The object of a triple can be a URI, a string, or a literal.
+                    The data type can be specified if known. In the example above the data, in this case a date, is specified.</p>
                 <p> Examples of other types:</p>
                 <ul>
                     <li>d:item dm:quantity "4"<strong>^^xsd:integer</strong></li>
@@ -155,7 +155,7 @@ WHERE {
 GROUP BY ?occupation 
 ORDER BY DESC (?numberPerProfession)</code>
                 </pre>
-                    <p>The GROUP BY function lets you group functions together, you can then perform functions on each group. The query above groups results by occupation, and then the COUNT function adds the number of people with that profession. The table here will have two colums, one of occupation and the other called numberPerProfession with an amount.
+                    <p>The GROUP BY function groups functions together. These functions can then be performed on each group. The query above groups results by occupation. The COUNT function then adds the number of people with that profession. The table will have two columns: one for occupation, the other, called numberPerProfession, with an amount.
                     </p>
                     <p>Other functions:</p>
                     <ul>
