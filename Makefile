@@ -91,9 +91,11 @@ testing: all
 	cat $(ONTOLOGY_W_DATE)-FR.html  | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY_W_DATE)-FR.html
 	cat $(ONTOLOGY)-preamble-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY)-preamble-EN.html
 	cat $(ONTOLOGY)-preamble-FR.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY)-preamble-FR.html
+	
 	cat our-team-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/our-team-EN.html
 	cat our-team-FR.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/our-team-FR.html
 	
+	cat releasenotes-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/releasenotes-EN.html
 
 	cat $(ONTOLOGY_W_DATE).rdf | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY_W_DATE).rdf
 	cat $(ONTOLOGY_W_DATE).nt | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY_W_DATE).nt
@@ -109,6 +111,7 @@ testing: all
 	cp -f figures/* /var/www/public/testing/figures/.	
 	cp -f -R css /var/www/public/testing/.
 	cp -f -R js /var/www/public/testing/.
+	cp -f -R guide /var/www/public/testing/.
 
 	curl -X POST -H 'Content-Type:application/sparql-update' -d 'CLEAR GRAPH <http://sparql.cwrc.ca/testing/$(ONTOLOGY)>' http://localhost:9999/blazegraph/sparql
 	curl -X POST -H 'Content-Type:application/rdf+xml' --data-binary @/var/www/public/testing/$(ONTOLOGY).rdf http://localhost:9999/blazegraph/sparql?context-uri=http://sparql.cwrc.ca/testing/$(ONTOLOGY)
@@ -123,6 +126,8 @@ deploy: all
 	
 	cp our-team-EN.html /var/www/public/ontology/our-team-EN.html
 	cp our-team-FR.html /var/www/public/ontology/our-team-FR.html
+	
+	cp releasenotes-EN.html /var/www/public/ontology/releasenotes-EN.html
 
 	cp -f $(ONTOLOGY_W_DATE).rdf /var/www/public/ontology/.
 	cp -f $(ONTOLOGY_W_DATE).nt /var/www/public/ontology/.
@@ -138,6 +143,7 @@ deploy: all
 	cp -f figures/* /var/www/public/ontology/figures/.	
 	cp -f -R css /var/www/public/ontology/.
 	cp -f -R js /var/www/public/ontology/.
+	cp -f -R guide /var/www/public/ontology/.
 
 	curl -X POST -H 'Content-Type:application/sparql-update' -d 'CLEAR GRAPH <http://sparql.cwrc.ca/ontologies/$(ONTOLOGY)>' http://localhost:9999/blazegraph/sparql
 	curl -X POST -H 'Content-Type:application/rdf+xml' --data-binary @/var/www/public/ontologies/$(ONTOLOGY).rdf http://localhost:9999/blazegraph/sparql?context-uri=http://sparql.cwrc.ca/ontologies/$(ONTOLOGY)
