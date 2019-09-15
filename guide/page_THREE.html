@@ -53,7 +53,7 @@ SELECT ?obj ?snippet WHERE {
 }                   </code>
                 </pre>
 
-                <p>This query starts with listing the prefixes of all the ontologies to be used. The variables that are being returned are the object that we're searching for, in this case Fiennes's father, and the snippet from which this information is derived from. This query also shows the graph
+                <p>This query begins with a list of prefixes from all of the ontologies being used. The variables that are being returned are the object that we're searching for, in this case Fiennes's father, and the snippet from which this information is being derived. This query also shows the graph
                     that is being searched and specifies the context, which is listed after rdf:type. Outside of the graph section,
                     the query searches for the snippet of text that the data is stored as. The last line is what we're searching for; it
                     allows us to specify the relationship between the subject and the object.
@@ -61,7 +61,7 @@ SELECT ?obj ?snippet WHERE {
                 <p>The name of the person whose information is being searched is in bold. In this case, the person is
                     Celia Fiennes. If you would like to search for another person, a name can be chosen from 
                     <a href="http://orlando.cambridge.org" target="_blank">http://orlando.cambridge.org</a></p>
-                    <p>The other data in bold is the predicate which connects the subject and object. There are a variety of predicated in the <a href="http://sparql.cwrc.ca/ontologies/cwrc.html">CWRC Ontology</a>, any of which may be used to construct a query.</p>
+                    <p>The other data in bold is the predicate which connects the subject and object. There are a variety of predicates in the <a href="http://sparql.cwrc.ca/ontologies/cwrc.html">CWRC Ontology</a>, any of which may be used to construct a query.</p>
                     <h3>Family & Friends & Intimate Relationships</h3>
 
                         
@@ -111,7 +111,7 @@ SELECT ?obj ?snippet WHERE {
                 <pre>
                     <code>?context ?pred ?obj</code>
                 </pre>
-                <p>This query had specified the object instead of leaving it as a variable.
+                <p>This query has specified the object instead of leaving it as a variable.
                     The object was taken from the GeoNames ontology. If you would like to specify a different location, search for a place on <a href="https://www.geonames.org/v3/" target="_blank">https://www.geonames.org/v3/</a>and replace the number in the URI to reflect your desired location.
                    </p>
                 <pre>
@@ -175,7 +175,7 @@ SELECT ?obj ?snippet WHERE {
                </p>
                
                <p>
-                   <a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+data%3A+%3Chttp%3A%2F%2Fcwrc.ca%2Fcwrcdata%2F%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX+oa%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Foa%23%3E%0ASELECT+%3Fobj+%3FcontextFocus+%3Fsnippet+where+%7B+%0A++GRAPH+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fdb%2FBiographyV2Beta%3E+%7B+%0A+++%3Fcontext+%3Fpred+%3Fobj%3B%0A++++++++++++cwrc%3AcontextFocus+%3Fperson%3B%0A++++++%09%09oa%3AhasTarget+%3Ftarget%3B%0A++++++++++++rdf%3Atype+%3FcontextFocus.%0A++%3Fperson+rdfs%3Alabel+%22Otway%2C+Thomas%22.%0A%7D.%0A++%3Ftarget+oa%3AhasSelector+%3Fxpath_selector.%0A++%3Fxpath_selector+oa%3ArefinedBy+%3Ftext_selector.%0A++%3Ftext_selector++oa%3Aexact+%3Fsnippet.%0A++%3Fpred+cwrc%3AsubjectCentricPredicate+cwrc%3Aattends.%0A%7D+%0A%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query&headers=%7B%7D&outputFormat=table" target="_blank">What were the schools attended by a particular author?</a>
+                   <a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+data%3A+%3Chttp%3A%2F%2Fcwrc.ca%2Fcwrcdata%2F%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX+oa%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Foa%23%3E%0ASELECT+%3Fobj+%3FcontextFocus+%3Fsnippet+where+%7B+%0A++GRAPH+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fdb%2FBiographyV2Beta%3E+%7B+%0A+++%3Fcontext+%3Fpred+%3Fobj%3B%0A++++++++++++cwrc%3AcontextFocus+%3Fperson%3B%0A++++++%09%09oa%3AhasTarget+%3Ftarget%3B%0A++++++++++++rdf%3Atype+%3FcontextFocus.%0A++%3Fperson+rdfs%3Alabel+%22Otway%2C+Thomas%22.%0A%7D.%0A++%3Ftarget+oa%3AhasSelector+%3Fxpath_selector.%0A++%3Fxpath_selector+oa%3ArefinedBy+%3Ftext_selector.%0A++%3Ftext_selector++oa%3Aexact+%3Fsnippet.%0A++%3Fpred+cwrc%3AsubjectCentricPredicate+cwrc%3Aattends.%0A%7D+%0A%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query&headers=%7B%7D&outputFormat=table" target="_blank">What schools did a particular author attend?</a>
                </p>
                
                
