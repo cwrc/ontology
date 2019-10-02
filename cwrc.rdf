@@ -10455,8 +10455,8 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hasResponseRelationTo">
-    <rdfs:label xml:lang="en">has response relationship to</rdfs:label>
+  <owl:ObjectProperty rdf:ID="relatesByResponseTo">
+    <rdfs:label xml:lang="en">relates by response to</rdfs:label>
     <skos:definition xml:lang="en">The subject, whether a Person or a Creative Work, responds to a textual object, which can take the form of a creative work, a writer's oeuvre in general, or, when the object is a Person, a writer's role as an author/artist. Reactions can take the form of texts, such as reviews or diary entries, or events such as conversations.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
@@ -10482,7 +10482,7 @@
     <skos:definition xml:lang="en">Indicates a response to a subject, whether a particular work, a writer's oeuvre in general, or, when the object is a Person, a writer's role as an author/artist. Responses may manifest as texts, such as reviews or diary entries, or fugitive forms reported later, such as conversations.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
-    <rdfs:subPropertyOf rdf:resource="#hasResponseRelationTo"/>
+    <rdfs:subPropertyOf rdf:resource="#relatesByResponseTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Response"/>
@@ -10626,14 +10626,14 @@
     <rdfs:label xml:lang="en">literary influence</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#influence"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#hasAsLiteraryInfluence"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasLiteraryInfluence"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hasAsLiteraryInfluence">
-    <rdfs:label xml:lang="en">has as literary influence</rdfs:label>
+  <owl:ObjectProperty rdf:ID="hasLiteraryInfluence">
+    <rdfs:label xml:lang="en">has literary influence</rdfs:label>
     <skos:definition xml:lang="en">Indicates an author's own work having been influenced by another's literature.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#isInfluencedBy"/>
@@ -10649,7 +10649,7 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#influences"/>
-    <owl:inverseOf rdf:resource="#hasAsLiteraryInfluence"/>
+    <owl:inverseOf rdf:resource="#hasLiteraryInfluence"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
@@ -10657,13 +10657,13 @@
     <rdfs:label xml:lang="en">intellectual influence</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#influence"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#hasAsIntellectualInfluence"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasIntellectualInfluence"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hasAsIntellectualInfluence">
-    <rdfs:label xml:lang="en">has as intellectual influence</rdfs:label>
+  <owl:ObjectProperty rdf:ID="hasIntellectualInfluence">
+    <rdfs:label xml:lang="en">has intellectual influence</rdfs:label>
     <skos:definition xml:lang="en">Indicates an author's own work having been intellectually influenced by another.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#isInfluencedBy"/>
@@ -10678,20 +10678,20 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#influences"/>
-    <owl:inverseOf rdf:resource="#hasAsIntellectualInfluence"/>
+    <owl:inverseOf rdf:resource="#hasIntellectualInfluence"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="familialInfluence">
     <rdfs:label xml:lang="en">familial influence</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#influence"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#hasAsFamilialInfluence"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasFamilialInfluence"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hasAsFamilialInfluence">
-    <rdfs:label xml:lang="en">has as familial influence</rdfs:label>
+  <owl:ObjectProperty rdf:ID="hasFamilialInfluence">
+    <rdfs:label xml:lang="en">has familial influence</rdfs:label>
     <skos:definition xml:lang="en">Indicates an author's own work having been influenced by her family history.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#isInfluencedBy"/>
@@ -10706,7 +10706,7 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdfs:subPropertyOf rdf:resource="#influences"/>
-    <owl:inverseOf rdf:resource="#hasAsFamilialInfluence"/>
+    <owl:inverseOf rdf:resource="#hasFamilialInfluence"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
