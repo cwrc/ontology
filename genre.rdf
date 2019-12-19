@@ -797,9 +797,10 @@
     <rdfs:label xml:lang="en">dance</rdfs:label>
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300054144"/>
   </genre:PerformanceMedium>
-  <genre:ThematicGenre rdf:about="#immigration">
+  <genre:ThematicGenre rdf:about="#migration">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">immigration</rdfs:label>
+    <rdfs:label xml:lang="en">migration</rdfs:label>
+    <skos:altLabel xml:lang="en">immigration writing</skos:altLabel>
     <rdf:type rdf:resource="#PoliticalGenre"/>
   </genre:ThematicGenre>
   <genre:DialogueOrDebateGenre rdf:about="#dialogueOrDebate">
@@ -2376,8 +2377,6 @@ For fiction published in installments there are also specific terms for those is
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">folk song</rdfs:label>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</rdfs:comment>
-    <rdf:type rdf:resource="#ThematicGenre"/>
-    <rdf:type rdf:resource="#NarrativeGenre"/>
   </genre:SongGenre>
   <genre:PerformanceMedium rdf:about="#lecture">
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026122"/>
@@ -3720,6 +3719,17 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
     <dcterms:isReplacedBy rdf:resource="#StandaloneWork"/>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </owl:DeprecatedClass>
+  <rdf:Description rdf:about="#immigration">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">immigration</rdfs:label>
+    <rdf:type rdf:resource="#PoliticalGenre"/>
+    <rdf:type rdf:resource="#ThematicGenre"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#migration@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#migration@@.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#migration"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </rdf:Description>
 
   <rdf:Description rdf:about="#àClef">
     <skos:definition xml:lang="en">"A novel in which the characters and plots are fictionalized, but can actually be recognized as real people and events in disguise. French for "novel with a key.""  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
