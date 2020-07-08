@@ -6,6 +6,14 @@ import re
 import sys
 from bs4 import BeautifulSoup
 import requests
+import socket
+import urllib
+import urllib3
+# TODO:
+# handling of broken links:
+ # append to https://web.archive.org/web/*/
+ # Wayback Machine: URI
+ # Clean up exception handling
 
 # Expected Usage:
 # ./crossRef.py test.owl
@@ -136,41 +144,57 @@ def format_XML(root):
 def get_webpage_title(url):
     # TODO: investigate what's wrong with old way because bs4 is slow
     title = url
+    connection_errors = (urllib3.exceptions.MaxRetryError, socket.gaierror, urllib.error.URLError,
+                         urllib3.exceptions.NewConnectionError, requests.exceptions.ConnectionError)
     global URL_DICT
     if url in URL_DICT:
         return URL_DICT[url]
-
-    r = requests.get(url, headers=headers)
-    soup = BeautifulSoup(r.content, "lxml")
     try:
-        title = soup.find("title").text
-    except AttributeError:
-        print(url)
-        print(soup)
-        title = url
-    if title != url:
-        URL_DICT[url] = title
+        r = requests.get(url, headers=headers)
+        soup = BeautifulSoup(r.content, "lxml")
+    except connection_errors as e:
+        print("<!-- %s is currently inaccessible -->" % url)
+        print("<!-- Unable to retrieve title from webpage.\n-->")
+    else:
+        try:
+            title = soup.find("title").text
+        except AttributeError:
+            print(url)
+            print(soup)
+            title = url
+    if title == url:
+        title = str(url) + " Via Wayback Machine"
+
+    URL_DICT[url] = title
     return title
 
 
 def _get_webpage_title(url):
     title = url
+    webpage = None
     global URL_DICT
+    connection_errors = (urllib3.exceptions.MaxRetryError, socket.gaierror, urllib.error.URLError,
+                         urllib3.exceptions.NewConnectionError, requests.exceptions.ConnectionError)
     if url in URL_DICT:
         return URL_DICT[url]
+
     try:
+        webpage = urllib.request.urlopen(url).read().decode('utf-8')
+    except UnicodeDecodeError:
+        webpage = None
+    if not webpage:
         try:
-            webpage = urllib.request.urlopen(url).read().decode('utf-8')
-        except UnicodeDecodeError as e:
             req = urllib.request.Request(url, headers=headers)
             webpage = urllib.request.urlopen(req).read()
+        except connection_errors:
+            webpage = None
+    if webpage:
         try:
             title = str(webpage).split('<title>')[1].split('</title>')[0]
         except IndexError:
             print(str(webpage).split('<title>'))
             title = url
-
-    except urllib.error.URLError:
+    else:
         print("<!-- %s is currently inaccessible -->" % url)
         print("<!-- Unable to retrieve title from webpage.\n-->")
 
@@ -207,12 +231,17 @@ def get_definitions(element):
                         # hyperlink = create_hyperlink(full_uri, label)
                         hyperlink = create_hyperlink(full_uri, uri)
                     else:
-                        hyperlink = create_hyperlink(uri, get_webpage_title(uri))
+                        if ".pdf" in str(uri):
+                            hyperlink = create_hyperlink(uri, str(uri))
+                        else:
+                            hyperlink = create_hyperlink(uri, get_webpage_title(uri))
 
                     x.text = x.text.replace(string, hyperlink)
 
 
 def create_hyperlink(uri, label):
+    if "Via Wayback Machine" in label:
+        uri = "https://web.archive.org/web/*/" + uri
     return ('<![CDATA[<a href="%s" title="%s">%s</a>]]>' % (uri, uri, label))
 
 
