@@ -48,7 +48,7 @@
     <dcterms:creator>
       <cwrc:NaturalPerson rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#DebStacey">
         <foaf:name>Deborah Stacey</foaf:name>
-        <foaf:homepage rdf:resource="http://ontology.socs.uoguelph.ca/"/>
+        <foaf:homepage rdf:resource="http://www.dastacey.ca/"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </cwrc:NaturalPerson>
     </dcterms:creator>
@@ -100,16 +100,11 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </cwrc:NaturalPerson>
     </dcterms:creator>
-    <loc:ctb>
-      <cwrc:NaturalPerson rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#ConstanceCrompton">
-        <foaf:name>Constance Crompton</foaf:name>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-      </cwrc:NaturalPerson>
-    </loc:ctb>
     <dcterms:creator>
       <cwrc:NaturalPerson rdf:about="http://sparql.cwrc.ca/ontologies/cwrc#AbigelLemak">
         <foaf:name>Abigel Lemak</foaf:name>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <owl:sameAs rdf:resource="https://orcid.org/0000-0002-4275-5140"/>
       </cwrc:NaturalPerson>
     </dcterms:creator>
     <dcterms:creator>
@@ -257,7 +252,7 @@ Version 1.0 of this ontology was compiled for the CWRC ontology project and refl
 ICD-10-SMoL was chosen since it was the latest version of this list (June, 2018).  A stable version of ICD-11 was to be available in June 2018 but there was no ICD-11-SMoL available at this time.
 
 To obtain the ICD10-SMoL:
-@@http://www.who.int/healthinfo/civil_registration/ICD_10_SMoL.pdf?ua=1@@</skos:note>
+@@http://www.who.int/healthinfo/civil_registration/ICD_10_SMoL.pdf@@</skos:note>
     <skos:altLabel>Morbidity and Mortality</skos:altLabel>
   </owl:Class>
   <owl:Class rdf:ID="Cancers">
