@@ -8,57 +8,67 @@
     <link href="../css/cwrc.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="../css/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="../css/favicon.ico" type="image/x-icon" />
-    <title>Modifiers</title>
+    <title>Query Modifiers</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="/">
-        <img src="http://sparql.cwrc.ca/images/cwrclogo-vert-white.png" height="30" class="align-top" alt="CWRC Logo"/> CWRC Ontologies</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="/sparql">SPARQL</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Preamble
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../cwrc-preamble-EN.html">CWRC Ontology</a>
-              <a class="dropdown-item" href="../genre-preamble-EN.html">Genre Ontology</a>
-              <a class="dropdown-item" href="../ii-preamble-EN.html">II Ontology</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Specification
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../cwrc.html">CWRC Ontology</a>
-              <a class="dropdown-item" href="../genre.html">Genre Ontology</a>
-              <a class="dropdown-item" href="../ii.html">II Ontology</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Guide to Our Dataset
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../releasenotes-EN.html">Release Notes</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="page_ONE.html">Intro to SPARQL</a>
-              <a class="dropdown-item" href="#">Query Modifiers<span class="sr-only">(current)</span></a>
-              <a class="dropdown-item" href="page_THREE.html">Sample Queries</a>
-            </div>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="../our-team-EN.html">Our Team</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://github.com/cwrc/ontology">Github</a></li>
-        </ul>
-        <span class="navbar-text">The Ontology of the Canadian Writing Research Collaboratory</span>
-      </div>
+        <a class="navbar-brand" href="/">
+            <img src="http://sparql.cwrc.ca/images/cwrclogo-vert-white.png" height="30" class="align-top" alt="CWRC Logo" /> CWRC Linked Data</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/sparql">SPARQL Queries</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Preambles
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../cwrc-preamble-EN.html">CWRC Ontology</a>
+                        <a class="dropdown-item" href="../genre-preamble-EN.html">Genre Ontology</a>
+                        <a class="dropdown-item" href="../ii-preamble-EN.html">II Ontology</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Specifications
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../cwrc.html">CWRC Ontology</a>
+                        <a class="dropdown-item" href="../genre.html">Genre Ontology</a>
+                        <a class="dropdown-item" href="../ii.html">II Ontology</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Documentation
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="our-dataset.html">Our Dataset</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="intro-to-sparql.html">Intro to SPARQL</a>
+                        <a class="dropdown-item" href="query-modifiers.html">Query Modifiers</a>
+                        <a class="dropdown-item" href="sample-queries.html">Sample Queries</a>
+                        <a class="dropdown-item" href="load-into-huviz.html">Load into HuViz</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="NavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="cwrc.html">CWRC</a>
+                        <a class="dropdown-item" href="linked-data.html">Linked Data</a>
+                        <a class="dropdown-item" href="../our-team-EN.html">Our Team</a>
+                        <a class="dropdown-item" href="https://github.com/cwrc/ontology">Github</a>
+                    </div>
+                </li>
+            </ul>
+            <span class="navbar-text">The Ontology of the Canadian Writing Research Collaboratory</span>
+        </div>
     </nav>
     <div class="container-fluid">
         <div class="row">
@@ -74,7 +84,7 @@
                 </div>
             </nav>
             <main role="main" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto pt-3 px-4" data-spy="scroll" data-target="#toc">
-                <h1>Refining your search</h1>
+                <h1>Query modifiers: refining your search</h1>
                 <p>SPARQL has many built-in keywords which can be used to refine your search. The table below provides a list of some of the main keywords
                     along with a brief description.</p>
                 <table class="table table-hover normal">
@@ -133,7 +143,7 @@
                 </table>
                 <h2>Examples:</h2>
                 <!-- Query 1 -->
-                <h3 id="Query1"><a target="_blank" href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0A%0ASELECT+%3Fname+%0AWHERE+%7B+%0A++++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman+.%0A++++%3Fperson+rdfs%3Alabel+%3Fname+.%0AFILTER(regex(%3Fname%2C+%22Anne%22%2C+%22i%22))+%0A%7D+++&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query+1&headers=%7B%7D&outputFormat=table">Query 1</a></h3>
+                <h3 id="Query1"><a target="_blank" href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0A%0ASELECT+%3Fname+%0AWHERE+%7B+%0A++++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman+.%0A++++%3Fperson+rdfs%3Alabel+%3Fname+.%0AFILTER(regex(%3Fname%2C+%22Anne%22%2C+%22i%22))+%0A%7D+++&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query+1&headers=%7B%7D&outputFormat=table">Women named Anne</a></h3>
                 <pre>
                     <code>PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;
 PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
@@ -151,7 +161,7 @@ FILTER(regex(?name, "Anne", "i"))
                     to only those containing the name "Anne". The "i" is for "insensitive"; this means the results can
                     be either uppercase or lowercase.</p>
                 <!-- Query 2 -->
-                <h3 id="Query2"><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0A%0ASELECT+%3Fperson+%3Foccupation+%0AWHERE+%7B+%0A++++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman+.%0A++++%3Fperson+cwrc%3AhasOccupation+%3Foccupation+.+%0A++++%0A++++OPTIONAL+%7B%3Foccupation+a+cwrc%3Ateacher%7D%0A%7D+&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query+1&headers=%7B%7D&outputFormat=table" target="_blank">Query 2</a></h3>
+                <h3 id="Query2"><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0A%0ASELECT+%3Fperson+%3Foccupation+%0AWHERE+%7B+%0A++++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman+.%0A++++%3Fperson+cwrc%3AhasOccupation+%3Foccupation+.+%0A++++%0A++++OPTIONAL+%7B%3Foccupation+a+cwrc%3Ateacher%7D%0A%7D+&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query+1&headers=%7B%7D&outputFormat=table" target="_blank">Women's occupations</a></h3>
                 <pre>
                     <code>PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;
                         
@@ -167,7 +177,7 @@ OPTIONAL {?occupation a cwrc:teacher}
                     was removed in this example, the resulting table would include all of the women who are teachers. The inclusion of the OPTIONAL tag
                     will display all women and their occupations, including women who are teachers. This is similar
                     to an outer join in SQL.</p>
-                <h3 id="Query3"><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0A%0ASELECT+%3Fperson+%3FbirthDate+%0AWHERE+%7B+%0A++++%3Fperson+cwrc%3AhasBirthDate+%3FbirthDate+.%0A++++FILTER+((%3FbirthDate+%3E%3D+'1844-01-01'%5E%5Exsd%3Adate)+%26%26+(%3FbirthDate+%3C%3D+'1884-01-01'+%5E%5Exsd%3Adate))+.+%0A%7D+++%0A++++ORDER+BY+%3FbirthDate&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query+1&headers=%7B%7D&outputFormat=table" target="_blank">Query 3</a></h3>
+                <h3 id="Query3"><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0A%0ASELECT+%3Fperson+%3FbirthDate+%0AWHERE+%7B+%0A++++%3Fperson+cwrc%3AhasBirthDate+%3FbirthDate+.%0A++++FILTER+((%3FbirthDate+%3E%3D+'1844-01-01'%5E%5Exsd%3Adate)+%26%26+(%3FbirthDate+%3C%3D+'1884-01-01'+%5E%5Exsd%3Adate))+.+%0A%7D+++%0A++++ORDER+BY+%3FbirthDate&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query+1&headers=%7B%7D&outputFormat=table" target="_blank">Birthdates</a></h3>
                 <pre>
                     <code>PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;
 
@@ -191,8 +201,8 @@ WHERE {
                     <li>d:item dm:invoiced "false"<strong>^^xsd:boolean</strong></li>
                     <li>d:item dm:costPerItem "3.50"<strong>^^xsd:decimal</strong></li>
                 </ul>
-                <h3 id="Query4"><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0A%0A%0ASELECT+%3Foccupation+(COUNT(%3Fperson)+AS+%3FnumberPerProfession)+%0AWHERE+%7B+%0A++++%3Fperson+a+cwrc%3ANaturalPerson%3B%0A++++%09cwrc%3AhasOccupation+%3Foccupation.%0A%7D%0AGROUP+BY+%3Foccupation+%0AORDER+BY+DESC+(%3FnumberPerProfession)&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query+1&headers=%7B%7D&outputFormat=table" target="_blank">Query 4</a></h4>
-                    <pre>
+                <h3 id="Query4"><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0A%0A%0ASELECT+%3Foccupation+(COUNT(%3Fperson)+AS+%3FnumberPerProfession)+%0AWHERE+%7B+%0A++++%3Fperson+a+cwrc%3ANaturalPerson%3B%0A++++%09cwrc%3AhasOccupation+%3Foccupation.%0A%7D%0AGROUP+BY+%3Foccupation+%0AORDER+BY+DESC+(%3FnumberPerProfession)&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query+1&headers=%7B%7D&outputFormat=table" target="_blank">Counting professions</a></h3>
+                <pre>
                     <code>PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;
 
 SELECT ?occupation (COUNT(?person) AS ?numberPerProfession) 
@@ -203,16 +213,16 @@ WHERE {
 GROUP BY ?occupation 
 ORDER BY DESC (?numberPerProfession)</code>
                 </pre>
-                    <p>The GROUP BY function groups functions together. These functions can then be performed on each group. The query above groups results by occupation. The COUNT function then adds the number of people with that profession. The table will have two columns: one for occupation, the other, called numberPerProfession, with an amount.
-                    </p>
-                    <p>Other functions:</p>
-                    <ul>
-                        <li>AVG()</li>
-                        <li>MAX()</li>
-                        <li>MIN()</li>
-                        <li>SUM()</li>
-                        <li>COUNT()</li>
-                    </ul>
+                <p>The GROUP BY function groups functions together. These functions can then be performed on each group. The query above groups results by occupation. The COUNT function then adds the number of people with that profession. The table will have two columns: one for occupation, the other, called numberPerProfession, with an amount.
+                </p>
+                <p>Other functions:</p>
+                <ul>
+                    <li>AVG()</li>
+                    <li>MAX()</li>
+                    <li>MIN()</li>
+                    <li>SUM()</li>
+                    <li>COUNT()</li>
+                </ul>
             </main>
         </div>
     </div>
