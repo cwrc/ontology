@@ -829,6 +829,8 @@ def get_contributors():
 
     name_list = [str(x) for x in names.keys()]
     name_list = sorted(sorted(name_list), key=lambda n: n.split()[1])
+    if not name_list:
+        return ""
     html_str = "<dt>%s:</dt>\n" % trans_dict["contrib"][l_index]
     for x in name_list:
         html_str += "<dd>\n"
