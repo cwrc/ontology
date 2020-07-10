@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link href="../css/cwrc.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="../css/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../css/favicon.ico" type="image/x-icon" />
+    <title>Uploading SPARQL query results to HuViz</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="/">
+            <img src="http://sparql.cwrc.ca/images/cwrclogo-vert-white.png" height="30" class="align-top" alt="CWRC Logo" /> CWRC Linked Data</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/sparql">SPARQL Queries</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Preambles
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../cwrc-preamble-EN.html">CWRC Ontology</a>
+                        <a class="dropdown-item" href="../genre-preamble-EN.html">Genre Ontology</a>
+                        <a class="dropdown-item" href="../ii-preamble-EN.html">II Ontology</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Specifications
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../cwrc.html">CWRC Ontology</a>
+                        <a class="dropdown-item" href="../genre.html">Genre Ontology</a>
+                        <a class="dropdown-item" href="../ii.html">II Ontology</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Documentation
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="our-dataset.html">Our Dataset</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="sparql-query-guide.html">SPARQL Query Guide</a>
+                        <a class="dropdown-item" href="intro-to-sparql.html">Intro to SPARQL</a>
+                        <a class="dropdown-item" href="query-modifiers.html">Query Modifiers</a>
+                        <a class="dropdown-item" href="sample-queries.html">Sample Queries</a>
+                        <a class="dropdown-item" href="load-into-huviz.html">Load into HuViz</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="NavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="cwrc.html">CWRC</a>
+                        <a class="dropdown-item" href="linked-data.html">Linked Data</a>
+                        <a class="dropdown-item" href="../our-team-EN.html">Our Team</a>
+                        <a class="dropdown-item" href="https://github.com/cwrc/ontology">Github</a>
+                    </div>
+                </li>
+            </ul>
+            <span class="navbar-text">The Ontology of the Canadian Writing Research Collaboratory</span>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <main role="main" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto pt-3 px-4" data-spy="scroll" data-target="#toc">
+                <h1>Uploading SPARQL query results to HuViz</h1>
+                <h2>Displaying SPARQL query results in HuViz</h2>
+                <ol>
+                    <li>
+                        <p>Go to <a href="/sparql">SPARQL Queries</a>. Click on the menu icon at the top left of the panel:</p>
+                        <p> <img src="load-huviz-1.png" alt="Selecting menu in SPARQL Query Editor" /> </p>
+                        <p>Configure your request to provide output in turtle syntax, and then click on the menu icon again to collapse the panel:</p>
+                        <p> <img src="load-huviz-2.png" alt="Changing Construct/Describe attribute to Turtle" /></p>
+                    </li>
+                    <li>
+                        <p>Insert SPARQL query into available text box</p>
+                        <ol type="a">
+                            <li>
+                                <p><a href="http://sparql.cwrc.ca/sparql#query=++PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0A++PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0A++PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0A++PREFIX+data%3A+%3Chttp%3A%2F%2Fcwrc.ca%2Fcwrcdata%2F%3E%0A++PREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0A++CONSTRUCT+%7B%0A++++%3FcontextFocus+%3FsubjectCentricPredicate+%3Fo+.%0A++++%3FcontextFocus+rdfs%3Alabel+%3Flabel.%0A++++%3FcontextFocus+skos%3AaltLabel+%3Fname.%0A++%7D+WHERE+%7B%0A++++GRAPH+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fdb%2FBiographyV2Beta%3E+%7B%0A++++++%3Fperson+rdfs%3Alabel+%22Aulnoy%2C+Marie-Catherine+d'%22.%0A++++++BIND(%3Fperson+AS+%3FcontextFocus)%0A+++++++++%3Fcontext+cwrc%3AcontextFocus+%3FcontextFocus+%3B%0A++++++++++++++++++%3Fp+%3Fo+%3B%0A++++++%7D++++++++++++++++++++++.%0A++++++%23+Grab+the+correct+relationship+for+the+predicate+we+are+looking+for%0A++++++%3Fp+cwrc%3AsubjectCentricPredicate+%3FsubjectCentricPredicate+.+++%0A++++%3FcontextFocus+rdfs%3Alabel+%3Flabel.%0A++++%3FcontextFocus+skos%3AaltLabel+%3Fname.%0A++%7D+&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query+2&headers=%7B%7D&outputFormat=rawResponse">Example query</a>: This will find all the triples, that is, all the linked data properties and assertions, related to "Aulnoy, Marie-Catherine d'" </p>
+                                <pre>
+                    <code>  PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;
+  PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+  PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+  PREFIX data: &lt;http://cwrc.ca/cwrcdata/&gt;
+  PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+  CONSTRUCT {
+    ?contextFocus ?subjectCentricPredicate ?o .
+    ?contextFocus rdfs:label ?label.
+    ?contextFocus skos:altLabel ?name.
+  } WHERE {
+    GRAPH &lt;http://sparql.cwrc.ca/db/BiographyV2Beta&gt; {
+      ?person rdfs:label "Aulnoy, Marie-Catherine d'".
+      BIND(?person AS ?contextFocus)
+         ?context cwrc:contextFocus ?contextFocus ;
+                  ?p ?o ;
+      }                      .
+      # Grab the correct relationship for the predicate we are looking for
+      ?p cwrc:subjectCentricPredicate ?subjectCentricPredicate .   
+    ?contextFocus rdfs:label ?label.
+    ?contextFocus skos:altLabel ?name.
+  } </code>
+                </pre>
+                                <p>You can substitute a different name, in the standard inverted form, from the Orlando dataset to get the triples related to another author or person.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>Hit “play” to display the results of the query</p>
+                        <p><img src="load-huviz-3.png" alt="Selecting Play button" /></p>
+                    </li>
+                    <li>
+                        <p>Download results to your computer</p>
+                        <p><img src="load-huviz-4.png" alt="Selecting Download button" /></p>
+                    </li>
+                    <li>Check your downloads folder for a file named “queryResults”</li>
+                    <li>Rename that file as you wish, with the file extension .ttl <ol type="a">
+                            <li>Example: marie-catherine-aulnoy.ttl</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>Upload this file to <a href="http://huviz.dev.nooron.com/">HuViz</a> by following these steps in the Commands tab:</p>
+                        <ol type="a">
+                            <li>
+                                <p>Commands > DATASET > Provide New Dataset ...</p>
+                                <p><img src="load-huviz-5.png" alt="DATASET > Provide New Dataset ..." /></p>
+                            </li>
+                            <li>There are two ways of uploading the dataset:
+                                <ol type="i">
+                                    <li>
+                                        <p>Drag and drop your downloaded file into this box:</p>
+                                        <p><img src="load-huviz-6.png" alt="Drop box for files or links" /></p>
+                                        <p>or</p>
+                                    </li>
+                                    <li>
+                                        <p>Provide a github link such as <a href="https://raw.githubusercontent.com/alliyya/huviz_demo_data/master/marie-catherine-aulnoy.ttl">https://raw.githubusercontent.com/alliyya/huviz_demo_data/master/marie-catherine-aulnoy.ttl</a></p>
+                                        <p>This is particularly useful if you want to share your results with someone else, or make modifications or additions to the SPARQL query results. Be sure to use the URL for the “Raw” version of the file in GitHub: </p>
+                                        <p><img src="load-huviz-7.png" alt="Select Raw Button" /></p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>Click on the ONTOLOGY list and select the CWRC Ontology.</p>
+                        <p><img src="load-huviz-8.png" alt="CWRC Ontology Selected" /></p>
+                        <p>After you have selected the ontology, the LOAD button will become active.</p>
+                    </li>
+                    <li>Click LOAD &amp; Explore!</li>
+                </ol>
+            </main>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh3U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+    <script src="../js/toc.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+    <script>
+    window.onload = function() {
+        var options = {
+            selector: 'h2, h3, h4, h5',
+            scope: 'main'
+        };
+
+        var container = document.querySelector('#toc');
+        var toc = initTOC(options);
+        container.appendChild(toc);
+    };
+    </script>
+</body>
+
+</html>
