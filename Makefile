@@ -111,7 +111,7 @@ testing: all
 	cp -f figures/* /var/www/public/testing/figures/.	
 	cp -f -R css /var/www/public/testing/.
 	cp -f -R js /var/www/public/testing/.
-	cp -f -R guide /var/www/public/testing/.
+	cp -f -R documentation /var/www/public/testing/.
 
 	curl -X POST -H 'Content-Type:application/sparql-update' -d 'CLEAR GRAPH <http://sparql.cwrc.ca/testing/$(ONTOLOGY)>' http://localhost:9999/blazegraph/sparql
 	curl -X POST -H 'Content-Type:application/rdf+xml' --data-binary @/var/www/public/testing/$(ONTOLOGY).rdf http://localhost:9999/blazegraph/sparql?context-uri=http://sparql.cwrc.ca/testing/$(ONTOLOGY)
@@ -143,7 +143,7 @@ deploy: all
 	cp -f figures/* /var/www/public/ontology/figures/.	
 	cp -f -R css /var/www/public/ontology/.
 	cp -f -R js /var/www/public/ontology/.
-	cp -f -R guide /var/www/public/ontology/.
+	cp -f -R documentation /var/www/public/ontology/.
 
 	curl -X POST -H 'Content-Type:application/sparql-update' -d 'CLEAR GRAPH <http://sparql.cwrc.ca/ontologies/$(ONTOLOGY)>' http://localhost:9999/blazegraph/sparql
 	curl -X POST -H 'Content-Type:application/rdf+xml' --data-binary @/var/www/public/ontologies/$(ONTOLOGY).rdf http://localhost:9999/blazegraph/sparql?context-uri=http://sparql.cwrc.ca/ontologies/$(ONTOLOGY)
