@@ -90,6 +90,9 @@
                 <p>SPARQL (SPARQL Protocol and RDF Query Language, pronounced “sparkle”)
                     is a query language used to retrieve and manipulate linked data stored in an RDF format. In this format,
                     data are stored as triples. Triples are formed by a subject, predicate, and object. Together they form an assertion that the subject has a particular property or relationship, indicated by the predicate, to the object.</p>
+
+                <!--To further consult: https://www.w3.org/TR/rdf-sparql-query/#:~:text=1.2.-,4%20Terminology,URIs%20%5BRFC3986%5D%20and%20URLs. -->
+
                 <!--need a generic image of what a triple looks like (which may be covered by the one that isn't loading can't tell). Add a "Learn more" link to a page with introductory resources for those who want to read more.-->
                 <!--image not loading in my browser- does the file need to be added to the directory or use an external URL?-->
                 <!-- <img src="triple.png" alt="Triple" class="center_img"/> -->
@@ -113,16 +116,16 @@
                 <p>The WHERE clause is mandatory and specifies where data will be extracted from. Other temporary variables
                     may be used here.</p>
                 <p>Note: If a query may result in a large number of triples, modifiers such as LIMIT can be used to refine the search.
-                    This topic will be explored in greater detail in the next section. The example below will
+                    This topic will be explored in greater detail in the next section. <a href="http://sparql.cwrc.ca/sparql#query=SELECT+%3Fsubject+%3Fpredicate+%3Fobject+WHERE+%7B+%0A++%3Fsubject+%3Fpredicate+%3Fobject+.%0A%7D%0ALIMIT+10+&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Simple+Triple+Retrieval&headers=%7B%7D&outputFormat=table">The example</a> below will
                     display the first 10 results.
                 </p>
                 <pre>
-          <code>SELECT ?subject ?predicate ?object WHERE { 
+          <code>Select ?subject ?predicate ?object WHERE { 
   ?subject ?predicate ?object .
 }
 LIMIT 10      </code>
         </pre>
-                <h3>Prefixes and URIs</h3>
+                <h2>Prefixes and URIs</h2>
                 <p>The data are stored in the form of triples with the subject, predicate, object format.
                     Each part of the triple is identified by a <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier">Uniform Resource Identifier (URI)</a>.
                     For example, the gender property <a href="http://sparql.cwrc.ca/ontologies/cwrc.html#woman">"woman"</a> in the CWRC Ontology is represented by the following URI: <a href="http://sparql.cwrc.ca/ontologies/cwrc.html#woman">&lt;http://sparql.cwrc.ca/ontologies/cwrc.html#woman&gt;</a> </p>
@@ -130,32 +133,40 @@ LIMIT 10      </code>
                 <p>Thus the same term above could be represented in a triple as: <strong>cwrc:woman</strong></p>
                 <h2>A Simple Query</h2>
                 <pre class="code">PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;
-SELECT ?person WHERE { 
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+SELECT ?name WHERE { 
     ?person cwrc:hasGender cwrc:woman . 
-    ?person cwrc:hasOccupation ?occupation .
-    ?occupation a cwrc:teacher .
+    ?person cwrc:hasOccupation cwrc:teacher .
+    ?person skos:altLabel ?name
 }
 </pre>
-                <p>This query searches for all of the triples in the CWRC dataset that satisfy the following
+                <p><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0ASELECT+%3Fname+WHERE+%7B+%0A++++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman+.+%0A++++%3Fperson+cwrc%3AhasOccupation+cwrc%3Ateacher+.%0A++%09%3Fperson+skos%3AaltLabel+%3Fname%0A%7D&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Teachers+who+were+women&headers=%7B%7D&outputFormat=table">This query</a> searches for all of the triples in the CWRC dataset that satisfy the following
                     requirements: the person is a woman and a teacher. </p>
                 <p>In plain English, it could be translated as follows: </p>
                 <p>
                     <em>There is a person who has the gender woman</em>
                 </p>
                 <p>
-                    <em>That same person has an occupation</em>
+                    <em>That same person has an occupation of teacher</em>
                 </p>
                 <p>
-                    <em>That occupation is a teacher</em>
+                    <em>That person has a name represented by an alt label</em>
                 </p>
                 <h2>Notes on Style</h2>
                 <p>Every triple in a query should end in a period.</p>
-                <p>If a variable used in one line is repeated in the next line it can be omitted. Example:</p>
+                <p>If a subject used in one line is repeated in the next line it can be omitted as long as there is a semicolon at the end to indicate use of the same subject.</p>
+                
+                <!-- Triple patterns with a common subject can be written so that the subject is only written once and is used for more than one triple pattern by employing the ";" notation.
+
+ -->
+                <p><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0ASELECT+%3Fname+WHERE+%7B+%0A++++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman%3B+%0A++++%09%09cwrc%3AhasOccupation+cwrc%3Ateacher%3B%0A++++++%09%09skos%3AaltLabel+%3Fname.%0A%7D&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Teachers+who+were+women+(%3B+notation)&headers=%7B%7D&outputFormat=table">Example:</a></p>
                 <pre>
               <code>PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;
-SELECT ?person ?occupation WHERE { 
-  ?person cwrc:hasGender cwrc:woman . 
-    cwrc:hasOccupation ?occupation .
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+SELECT ?name WHERE { 
+    ?person cwrc:hasGender cwrc:woman; 
+            cwrc:hasOccupation cwrc:teacher;
+            skos:altLabel ?name.
 }             </code>
             </pre>
             </main>

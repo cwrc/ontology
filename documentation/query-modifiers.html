@@ -162,32 +162,35 @@ FILTER(regex(?name, "Anne", "i"))
                     to only those containing the name "Anne". The "i" is for "insensitive"; this means the results can
                     be either uppercase or lowercase.</p>
                 <!-- Query 2 -->
-                <h3 id="Query2"><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0A%0ASELECT+%3Fperson+%3Foccupation+%0AWHERE+%7B+%0A++++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman+.%0A++++%3Fperson+cwrc%3AhasOccupation+%3Foccupation+.+%0A++++%0A++++OPTIONAL+%7B%3Foccupation+a+cwrc%3Ateacher%7D%0A%7D+&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query+1&headers=%7B%7D&outputFormat=table" target="_blank">Women's occupations</a></h3>
+                <h3 id="Query2"><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0A%0ASELECT+%3Fname+%3Foccupation+%0AWHERE+%7B+%0A++++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman+%3B%0A++++%09%09cwrc%3AhasOccupation+%3Foccupation+%3B+%0A++++++%09%09skos%3AaltLabel+%3Fname%0A++++%0A++++OPTIONAL+%7B%3Foccupation+a+cwrc%3Ateacher%7D%0A%7D+&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Women's+occupations+(Optional)&headers=%7B%7D&outputFormat=table" target="_blank">Women's occupations</a></h3>
                 <pre>
+                    <!-- THIS is a bad query: poor explanation of optional clause, use of the word tag is questionable -->
                     <code>PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;
-                        
-SELECT ?person ?occupation 
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;                        
+SELECT ?name ?occupation 
 WHERE { 
-    ?person cwrc:hasGender cwrc:woman .
-    ?person cwrc:hasOccupation ?occupation . 
+    ?person cwrc:hasGender cwrc:woman ;
+            cwrc:hasOccupation ?occupation ; 
+            skos:altLabel ?name
     
-OPTIONAL {?occupation a cwrc:teacher}
+    OPTIONAL {?occupation a cwrc:teacher}
 }                    </code>
                 </pre>
                 <p>The OPTIONAL graph pattern does not need to be satisfied. If the OPTIONAL tag
                     was removed in this example, the resulting table would include all of the women who are teachers. The inclusion of the OPTIONAL tag
                     will display all women and their occupations, including women who are teachers. This is similar
                     to an outer join in SQL.</p>
-                <h3 id="Query3"><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0A%0ASELECT+%3Fperson+%3FbirthDate+%0AWHERE+%7B+%0A++++%3Fperson+cwrc%3AhasBirthDate+%3FbirthDate+.%0A++++FILTER+((%3FbirthDate+%3E%3D+'1844-01-01'%5E%5Exsd%3Adate)+%26%26+(%3FbirthDate+%3C%3D+'1884-01-01'+%5E%5Exsd%3Adate))+.+%0A%7D+++%0A++++ORDER+BY+%3FbirthDate&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query+1&headers=%7B%7D&outputFormat=table" target="_blank">Birthdates</a></h3>
+                <h3 id="Query3"><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0ASELECT+%3Fname+%3FbirthDate+%0AWHERE+%7B+%0A++++%3Fperson+cwrc%3AhasBirthDate+%3FbirthDate+%3B%0A++++++++++++skos%3AaltLabel+%3Fname%0A++++FILTER+((%3FbirthDate+%3E%3D+'1844-01-01'%5E%5Exsd%3Adate)+%26%26+(%3FbirthDate+%3C%3D+'1884-01-01'+%5E%5Exsd%3Adate))+.+%0A++%09%0A%7DORDER+BY+%3FbirthDate&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Birthdates+(Filter+%26+Order+by)&headers=%7B%7D&outputFormat=table" target="_blank">Birthdates</a></h3>
                 <pre>
                     <code>PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;
-
-SELECT ?person ?birthDate 
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+SELECT ?name ?birthDate 
 WHERE { 
-    ?person cwrc:hasBirthDate ?birthDate .
-    FILTER ((?birthDate >= '1844-01-01'^^xsd:date) &amp;&amp; (?birthDate &lt;= '1884-01-01' ^^xsd:date)) . 
-}   
-    ORDER BY ?birthDate
+    ?person cwrc:hasBirthDate ?birthDate ;
+            skos:altLabel ?name
+FILTER ((?birthDate &gt;= &apos;1844-01-01&apos;^^xsd:date) &amp;&amp; (?birthDate &lt;= &apos;1884-01-01&apos; ^^xsd:date)) . 
+  &#x9;
+}ORDER BY ?birthDate
                  </code>
                 </pre>
                 <p>This query searches for every person who has a birthdate between two specific dates. The triples that
@@ -202,7 +205,7 @@ WHERE {
                     <li>d:item dm:invoiced "false"<strong>^^xsd:boolean</strong></li>
                     <li>d:item dm:costPerItem "3.50"<strong>^^xsd:decimal</strong></li>
                 </ul>
-                <h3 id="Query4"><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0A%0A%0ASELECT+%3Foccupation+(COUNT(%3Fperson)+AS+%3FnumberPerProfession)+%0AWHERE+%7B+%0A++++%3Fperson+a+cwrc%3ANaturalPerson%3B%0A++++%09cwrc%3AhasOccupation+%3Foccupation.%0A%7D%0AGROUP+BY+%3Foccupation+%0AORDER+BY+DESC+(%3FnumberPerProfession)&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Query+1&headers=%7B%7D&outputFormat=table" target="_blank">Counting professions</a></h3>
+                <h3 id="Query4"><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0A%0ASELECT+%3Foccupation+(COUNT(%3Fperson)+AS+%3FnumberPerProfession)+%0AWHERE+%7B+%0A++++%3Fperson+a+cwrc%3ANaturalPerson%3B%0A++++%09cwrc%3AhasOccupation+%3Foccupation.%0A%7D%0AGROUP+BY+%3Foccupation+%0AORDER+BY+DESC+(%3FnumberPerProfession)&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Counting+professions+(Group+by+%26+Order+by+desc)&headers=%7B%7D&outputFormat=table" target="_blank">Counting professions</a></h3>
                 <pre>
                     <code>PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;
 
