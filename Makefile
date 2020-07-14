@@ -94,8 +94,6 @@ testing: all
 	
 	cat our-team-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/our-team-EN.html
 	cat our-team-FR.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/our-team-FR.html
-	
-	cat releasenotes-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/releasenotes-EN.html
 
 	cat $(ONTOLOGY_W_DATE).rdf | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY_W_DATE).rdf
 	cat $(ONTOLOGY_W_DATE).nt | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY_W_DATE).nt
@@ -126,8 +124,6 @@ deploy: all
 	
 	cp our-team-EN.html /var/www/public/ontology/our-team-EN.html
 	cp our-team-FR.html /var/www/public/ontology/our-team-FR.html
-	
-	cp releasenotes-EN.html /var/www/public/ontology/releasenotes-EN.html
 
 	cp -f $(ONTOLOGY_W_DATE).rdf /var/www/public/ontology/.
 	cp -f $(ONTOLOGY_W_DATE).nt /var/www/public/ontology/.
