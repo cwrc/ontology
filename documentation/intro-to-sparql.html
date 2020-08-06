@@ -99,7 +99,7 @@
 
                 <h2>Components of a Query</h2>
                 <p>The best way to get started is to write a simple query.</p>
-                <p><strong>Example:</strong> This query will return the first ten triples in the dataset:</p>
+                <p><strong>Example:</strong> <a href="http://sparql.cwrc.ca/sparql#query=Select+%3Fsubject+%3Fpredicate+%3Fobject+WHERE+%7B%0A++%3Fsubject+%3Fpredicate+%3Fobject+.%0A%7D%0ALIMIT+10&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=First+Ten+Triples&headers=%7B%7D&outputFormat=table">This query</a> will return the first ten triples in the dataset:</p>
                 <pre class="code"> Select ?subject ?predicate ?object WHERE {
   ?subject ?predicate ?object .
 }
@@ -120,7 +120,7 @@ LIMIT 10</pre>
 
                 <h2>Prefixes and URIs</h2>
                 <p>Each part of a triple (subject, predicate, object) is identified by a <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier">Uniform Resource Identifier (URI)</a>.</p>
-                <p>For example, the gender property <a href="http://sparql.cwrc.ca/ontologies/cwrc.html#woman">"woman"</a> in the CWRC Ontology is represented by the following URI: <a href="http://sparql.cwrc.ca/ontologies/cwrc.html#woman">&lt;http://sparql.cwrc.ca/ontologies/cwrc.html#woman&gt;</a> </p>
+                <p>For example, the gender property <a href="http://sparql.cwrc.ca/ontologies/cwrc#woman">"woman"</a> in the CWRC Ontology is represented by the following URI: <a href="http://sparql.cwrc.ca/ontologies/cwrc#woman">&lt;http://sparql.cwrc.ca/ontologies/cwrc#woman&gt;</a> </p>
                 <p> URIs in queries are often shortened using a <b>prefix</b>, or <a href="https://en.wikipedia.org/wiki/Namespace">namespace</a>, which is defined at the beginning of the query. These stand in for most of the URI, leaving the variable at the end which designates the terms from that ontology or vocabulary. </p>
                 <p>Defining a prefix at the beginning of a query uses the keyword PREFIX, the namespace, and the URI of the ontology. For example:</p>
                 <pre class="code">PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;</pre>

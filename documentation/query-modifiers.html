@@ -107,31 +107,125 @@
                         </tr>
                     </thead>
                     <tbody>
+                      <tr>
+                          <td>DISTINCT</td>
+                          <td>Prevents duplicate results to be returned.</td>
+                          <td>
+                            <pre class="code">SELECT DISTINCT ?birthdate ?name WHERE {
+  ?person cwrc:hasGender cwrc:woman;
+          cwrc:hasBirthDate ?birthdate;
+  		  skos:altLabel ?name.
+}</pre>
+                            <p><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+data%3A+%3Chttp%3A%2F%2Fcwrc.ca%2Fcwrcdata%2F%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX+oa%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Foa%23%3E%0ASELECT+DISTINCT+%3Fbirthdate+%3Fname+WHERE+%7B+%0A++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman%3B%0A++++++++++cwrc%3AhasBirthDate+%3Fbirthdate%3B%0A++%09%09++skos%3AaltLabel+%3Fname.%0A%7D%0A%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=DISTINCT+modifier+example+&headers=%7B%7D&outputFormat=table" target="_blank">This query</a> returns the names and birthdays of women with no duplicate entries.</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>BIND</td>
+                          <td>Assigns the result of an expression to a variable, using the format "<b>BIND(expression AS ?variable).</b>"</td>
+                          <td>
+                            <pre class="code">SELECT ?name ?birthDate ?deathDate ?age WHERE {
+  ?person rdfs:label ?name;
+          cwrc:hasDeathDate ?deathDate;
+          cwrc:hasBirthDate ?birthDate.
+  BIND(?deathDate - ?birthDate as ?ageInDays).
+  BIND(?ageInDays/365.2425 AS ?ageInYears).
+  BIND(FLOOR(?ageInYears) AS ?age).
+
+}</pre>
+                            <p><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+data%3A+%3Chttp%3A%2F%2Fcwrc.ca%2Fcwrcdata%2F%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX+oa%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Foa%23%3E%0ASELECT+%3Fname+%3FbirthDate+%3FdeathDate+%3Fage+WHERE+%7B%0A++%3Fperson+rdfs%3Alabel+%3Fname%3B%0A++++++++++cwrc%3AhasDeathDate+%3FdeathDate%3B%0A++++++++++cwrc%3AhasBirthDate+%3FbirthDate.%0A++BIND(%3FdeathDate+-+%3FbirthDate+as+%3FageInDays).%0A++BIND(%3FageInDays%2F365.2425+AS+%3FageInYears).%0A++BIND(FLOOR(%3FageInYears)+AS+%3Fage).%0A++%0A%7DORDER+BY+%3Fage&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=BIND+modifier+example&headers=%7B%7D&outputFormat=table" target="_blank">This query</a> returns the names and ages of people in the database. The age is calculated using the BIND keyword to assign values to variables such as date of birth, date of death, and ageInDays, so operations can be performed on them without overwriting the variable each time.</p>
+                          </td>
+                      </tr>
                         <tr>
                             <td>FILTER</td>
                             <td>Filters results by a provided clause. You can filter by using a regex (regular expression) that will return true/false, a range of dates, the language of a label, and more.</td>
                             <td>
-                              <pre class="code">SELECT ?name WHERE {
+                              <pre class="code">SELECT ?name ?birthDate WHERE {
     ?person cwrc:hasBirthDate ?birthDate ;
             cwrc:hasGender cwrc:woman;
             rdfs:label ?name.
 FILTER ((?birthDate >= '1900-01-01'^^xsd:date)) .
 } </pre>
-                              <p>Returns names of women with birthdates after January 1, 1900.</p>
+                              <p><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+data%3A+%3Chttp%3A%2F%2Fcwrc.ca%2Fcwrcdata%2F%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX+oa%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Foa%23%3E%0ASELECT+%3Fname+%3FbirthDate+WHERE+%7B%0A++++%3Fperson+cwrc%3AhasBirthDate+%3FbirthDate+%3B%0A++++++++++++cwrc%3AhasGender+cwrc%3Awoman%3B%0A++++++++++++rdfs%3Alabel+%3Fname.%0AFILTER+((%3FbirthDate+%3E%3D+'1900-01-01'%5E%5Exsd%3Adate))+.%0A%7D&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=FILTER+modifier+example&headers=%7B%7D&outputFormat=table" target="_blank">This query</a> returns names of women with birthdates after January 1, 1900.</p>
                             </td>
                         </tr>
                         <tr>
                             <td>FILTER NOT EXISTS</td>
                             <td>Filters results, returning results which do not meet the provided clause.</td>
                             <td>
-                              <pre class="code">SELECT ?name
-WHERE {
+                              <pre class="code">SELECT ?name WHERE {
     ?person cwrc:hasBirthDate ?birthDate ;
             cwrc:hasGender cwrc:woman;
             rdfs:label ?name.
-FILTER NOT EXISTS {?person cwrc:hasBirthDate "1775-12-16"^^xsd:date}
+    FILTER NOT EXISTS {
+        ?person cwrc:hasBirthDate "1775-12-16"^^xsd:date
+    }
 }</pre>
-                              <p>Returns names of women except for those with the birthday December 16, 1776 (Jane Austen).</p>
+                              <p><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+data%3A+%3Chttp%3A%2F%2Fcwrc.ca%2Fcwrcdata%2F%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX+oa%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Foa%23%3E%0ASELECT+%3Fname+WHERE+%7B%0A++++%3Fperson+cwrc%3AhasBirthDate+%3FbirthDate+%3B%0A++++++++++++cwrc%3AhasGender+cwrc%3Awoman%3B%0A++++++++++++rdfs%3Alabel+%3Fname.%0AFILTER+NOT+EXISTS+%7B%3Fperson+cwrc%3AhasBirthDate+%221775-12-16%22%5E%5Exsd%3Adate%7D%0A%7D&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=FILTER+NOT+EXISTS+modifier+example&headers=%7B%7D&outputFormat=table" target="_blank">This query</a> returns names of women except for those with the birthday December 16, 1776 (Jane Austen).</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>GRAPH</td>
+                            <td>Specifies which graph data will be retrieved from.</td>
+                            <td><pre class="code">SELECT ?obj ?snippet WHERE {
+  GRAPH <http://sparql.cwrc.ca/db/BiographyV2Beta> {
+   ?context ?pred ?obj;
+            cwrc:contextFocus ?person;
+      		oa:hasTarget ?target;
+            rdf:type cwrc:DeathContext.
+  ?person rdfs:label "Donne, John".
+}.
+  ?target oa:hasSelector/oa:refinedBy/oa:exact ?snippet.
+}</pre>
+                          <p><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+data%3A+%3Chttp%3A%2F%2Fcwrc.ca%2Fcwrcdata%2F%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX+oa%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Foa%23%3E%0ASELECT+%3Fobj+%3Fsnippet+where+%7B+%0A++GRAPH+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fdb%2FBiographyV2Beta%3E+%7B+%0A+++%3Fcontext+%3Fpred+%3Fobj%3B%0A++++++++++++cwrc%3AcontextFocus+%3Fperson%3B%0A++++++%09%09oa%3AhasTarget+%3Ftarget%3B%0A++++++++++++rdf%3Atype+cwrc%3ADeathContext.%0A++%3Fperson+rdfs%3Alabel+%22Donne%2C+John%22.%0A%7D.%0A++%3Ftarget+oa%3AhasSelector%2Foa%3ArefinedBy%2Foa%3Aexact+%3Fsnippet.%0A%7D+&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=GRAPH+modifier+example+&headers=%7B%7D&outputFormat=table" target="_blank">This query</a> will return snippets relating to John Donne's death. It does so by using GRAPH to get the context from the BiographyV2Beta database where it is stored.</p>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>GROUP BY</td>
+                            <td>Groups the results together according to specified criteria. After grouping results, you can then perform functions on these groups, such as COUNT(), AVG(), SUM(), MIN(), and MAX(). More information on aggregate functions can be found <a href="https://en.wikibooks.org/wiki/SPARQL/Aggregate_functions" target="_blank">here</a>.</td>
+                            <td>
+                              <pre class="code">SELECT ?occupation (COUNT(?person) AS ?numPerProf) WHERE {
+    ?person cwrc:hasGender cwrc:woman;
+        cwrc:hasOccupation ?occupation.
+}
+GROUP BY ?occupation</pre>
+                              <p><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+data%3A+%3Chttp%3A%2F%2Fcwrc.ca%2Fcwrcdata%2F%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX+oa%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Foa%23%3E%0ASELECT+%3Foccupation+(COUNT(%3Fperson)+AS+%3FnumPerProf)%0AWHERE+%7B%0A++++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman%3B%0A++++++++cwrc%3AhasOccupation+%3Foccupation.%0A%7D%0AGROUP+BY+%3Foccupation&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=GROUP+BY+modifier+example&headers=%7B%7D&outputFormat=table" target="_blank">This query</a> returns occupations of women in CRWC. The query first finds all the women with occupations, groups them by their occupations (using GROUP BY), and then counts the number of people in each group. These counts will be displayed in the results table in a column labeled "numPerProf", the number of people in each profession.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LIMIT</td>
+                            <td>Limits the number of results returned. The results will have a random order unless using the 'ORDER BY' keyword.</td>
+                            <td>
+                              <pre class="code">SELECT ?name WHERE { 
+    ?person cwrc:hasGender cwrc:woman .
+    ?person rdfs:label ?name .
+}LIMIT 10</pre>
+                              <p><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+data%3A+%3Chttp%3A%2F%2Fcwrc.ca%2Fcwrcdata%2F%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX+oa%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Foa%23%3E%0ASELECT+%3Fname+WHERE+%7B%0A++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman+.%0A++%3Fperson+rdfs%3Alabel+%3Fname+.%0A%7DLIMIT+10&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=LIMIT+modifier+example&headers=%7B%7D&outputFormat=table" target="_blank">This query</a> returns the first ten names of women.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>MINUS</td>
+                            <td>Similar to FILTER NOT EXISTS; can be used to prevent certain objects from being included in the results.</td>
+                            <td>
+                              <pre class="code">SELECT ?name WHERE {
+  ?person cwrc:hasGender cwrc:woman .
+  ?person rdfs:label ?name .
+  MINUS {
+    ?person rdfs:label "Askew, Anne".
+  }.
+} </pre>
+                              <p><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+data%3A+%3Chttp%3A%2F%2Fcwrc.ca%2Fcwrcdata%2F%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX+oa%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Foa%23%3E%0ASELECT+%3Fname%0AWHERE+%7B%0A++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman+.%0A++%3Fperson+rdfs%3Alabel+%3Fname+.%0A++MINUS+%7B%0A++++%3Fperson+rdfs%3Alabel+%22Askew%2C+Anne%22.%0A++%7D.%0A%7D&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=MINUS+modifier+example&headers=%7B%7D&outputFormat=table" target="_blank">This query</a> returns names of women, except those named "Anne Askew".</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>OFFSET</td>
+                            <td>Skips the first number of rows specified by offset.</td>
+                            <td>
+                              <pre class="code">SELECT ?name WHERE {
+  ?person cwrc:hasGender cwrc:woman .
+  ?person rdfs:label ?name .
+
+}OFFSET 10</pre>
+                              <p><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+data%3A+%3Chttp%3A%2F%2Fcwrc.ca%2Fcwrcdata%2F%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX+oa%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Foa%23%3E%0ASELECT+%3Fname%0AWHERE+%7B%0A++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman+.%0A++%3Fperson+rdfs%3Alabel+%3Fname+.%0A%0A%7DOFFSET+10&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=OFFSET+modifier+example&headers=%7B%7D&outputFormat=table" target="_blank">This query</a> returns names of women, starting at the eleventh name.</p>
                             </td>
                         </tr>
                         <tr>
@@ -143,96 +237,43 @@ FILTER NOT EXISTS {?person cwrc:hasBirthDate "1775-12-16"^^xsd:date}
    rdfs:label ?name .
   OPTIONAL {?person cwrc:hasDeathDate ?deathDate}.
 }</pre>
-                              <p>Returns names of women and their date of death. If they do not have a date of death, their name will still be displayed, but the column for date of death will be empty for that row.</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>MINUS</td>
-                            <td>Similar to FILTER NOT EXISTS; can be used to prevent certain objects from being included in the results.</td>
-                            <td>
-                              <pre class="code">SELECT ?name
-WHERE {
-  ?person cwrc:hasGender cwrc:woman .
-  ?person rdfs:label ?name .
-  MINUS {
-    ?person rdfs:label "Askew, Anne".
-  }.
-} </pre>
-                              <p>Returns names of women, except those named "Anne Askew".</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>OFFSET</td>
-                            <td>Skips the first number of rows specified by offset.</td>
-                            <td>
-                              <pre class="code">SELECT ?name
-WHERE {
-  ?person cwrc:hasGender cwrc:woman .
-  ?person rdfs:label ?name .
-
-}OFFSET 10</pre>
-                              <p>Returns names of women, starting at the eleventh name.</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>LIMIT</td>
-                            <td>Limits the number of results returned.</td>
-                            <td>
-                              <pre class="code">SELECT ?name 
-WHERE { 
-    ?person cwrc:hasGender cwrc:woman .
-    ?person rdfs:label ?name .
-}LIMIT 10</pre>
-                              <p>Returns the first ten names of women.</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>VALUES</td>
-                            <td>Allows for more than one match to the criteria.</td>
-                            <td>
-                              <pre class="code">SELECT ?name ?birthDate
-WHERE {
-    VALUES ?name {"Anne" "Mary"}
-  ?person cwrc:hasBirthDate ?birthDate.
-
-}</pre>
-                              <p>Returns names of women, these names can either be Anne or Mary.</p>
+                              <p><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+data%3A+%3Chttp%3A%2F%2Fcwrc.ca%2Fcwrcdata%2F%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX+oa%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Foa%23%3E%0ASELECT+%3Fname+%3FdeathDate+WHERE+%7B%0A++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman%3B%0A+++rdfs%3Alabel+%3Fname+.%0A++OPTIONAL+%7B%3Fperson+cwrc%3AhasDeathDate+%3FdeathDate%7D.%0A%7D&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=OPTIONAL+modifier+example&headers=%7B%7D&outputFormat=table" target="_blank">This query</a> returns names of women and their date of death. If they do not have a date of death, their name will still be displayed, but the column for date of death will be empty for that row.</p>
                             </td>
                         </tr>
                         <tr>
                             <td>ORDER BY</td>
                             <td>Sorts the data by the values specified. Default is ascending order, unless otherwise specified.</td>
                             <td>
-                              <pre class="code">SELECT ?name ?birthDate
-WHERE {
+                              <pre class="code">SELECT ?name ?birthDate WHERE {
     ?person cwrc:hasBirthDate ?birthDate.
     ?person rdfs:label ?name .
 
 }ORDER BY ?birthDate</pre>
-                              <p>Returns names of women, ordered by their date of birth.</p>
+                              <p><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+data%3A+%3Chttp%3A%2F%2Fcwrc.ca%2Fcwrcdata%2F%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX+oa%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Foa%23%3E%0ASELECT+%3Fname+%3FbirthDate%0AWHERE+%7B%0A+++%3Fperson+cwrc%3AhasBirthDate+%3FbirthDate.%0A++%3Fperson+rdfs%3Alabel+%3Fname+.%0A%0A%7DORDER+BY+%3FbirthDate&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=ORDER+BY+modifier+example&headers=%7B%7D&outputFormat=table" target="_blank">This query</a> returns names of people, ordered by their date of birth.</p>
                             </td>
                         </tr>
                         <tr>
-                            <td>GROUP BY</td>
-                            <td>Groups the results together according to specified criteria. After grouping results, you can then perform functions on these groups, such as COUNT(), AVG(), SUM(), MIN(), and MAX(). More information on aggregate functions can be found here.</td>
+                            <td>VALUES</td>
+                            <td>Allows for more than one match to the criteria.</td>
                             <td>
-                              <pre class="code">SELECT ?occupation (COUNT(?person) AS ?numPerProf)
-WHERE {
-    ?person cwrc:hasGender cwrc:woman;
-        cwrc:hasOccupation ?occupation.
-}
-GROUP BY ?occupation</pre>
-                              <p>Returns occupations of women in CRWC. The query first finds all the women with occupations, groups them by their occupations (using GROUP BY), and then counts the number of people in each group. These counts will be displayed in the results table in a column labeled "numPerProf", the number of people in each profession.</p>
+                              <pre class="code">SELECT ?name ?birthDate WHERE {
+    VALUES ?name {"Anne" "Mary"}
+  ?person cwrc:hasBirthDate ?birthDate.
+
+}</pre>
+                              <p><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+data%3A+%3Chttp%3A%2F%2Fcwrc.ca%2Fcwrcdata%2F%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX+oa%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Foa%23%3E%0ASELECT+%3Fname+%3FbirthDate%0AWHERE+%7B%0A++++VALUES+%3Fname+%7B%22Anne%22+%22Mary%22%7D%0A++%3Fperson+cwrc%3AhasBirthDate+%3FbirthDate.%0A%0A%7D&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=VALUES+modifier+example&headers=%7B%7D&outputFormat=table" target="_blank">This query</a> returns names, these names can either be Anne or Mary.</p>
                             </td>
-                        </tr>
-                        <tr>
-                            <td>GRAPH</td>
-                            <td>Specifies which graph data will be retrieved from.</td>
                         </tr>
                         <tr>
                             <td>UNION</td>
                             <td>Allows for grouping of different results, as well as combining multiple graph patterns so that one of several may match.</td>
-                            <td>
+                            <td><pre class="code">SELECT ?name ?occupation WHERE {
+  ?person rdfs:label ?name.
+  {?person cwrc:hasPaidOccupation ?occupation.}
+  UNION
+  {?person cwrc:hasVolunteerOccupation ?occupation.}
+}</pre>
+                            <p><a href="http://sparql.cwrc.ca/sparql#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+data%3A+%3Chttp%3A%2F%2Fcwrc.ca%2Fcwrcdata%2F%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX+oa%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Foa%23%3E%0ASELECT+%3Fname+%3Foccupation+WHERE+%7B%0A++%3Fperson+rdfs%3Alabel+%3Fname.%0A++%7B%3Fperson+cwrc%3AhasPaidOccupation+%3Foccupation.%7D%0A++UNION%0A++%7B%3Fperson+cwrc%3AhasVolunteerOccupation+%3Foccupation.%7D%0A%7D&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=UNION+modifier+example&headers=%7B%7D&outputFormat=table" target="_blank">This query</a> returns the names and occupations of people who have a volunteer occupation, and people who have paid occupations. By using UNION, the two kinds of occupations are displayed in the same column, rather than needing to have separate columns for each type of occupation.</p>
                             </td>
                         </tr>
                     </tbody>

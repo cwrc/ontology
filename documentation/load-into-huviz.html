@@ -109,28 +109,28 @@
                                   <pre class="code">?contextFocus ?subjectCentricPredicate ?o .
 ?contextFocus rdfs:label ?label.
 ?contextFocus skos:altLabel ?name.</pre>
-                                  <p>You can substitute a name (in the inverted form) into this example query to create your own dataset.</p>
+                                  <p>You can substitute a name in the standard inverted form from <a href="http://orlando.cambridge.org/protected/svPeople?formname=q&subform=1">Orlando</a> into this example query to create your own dataset.</p>
                                 <pre class="code">PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;
-  PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-  PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-  PREFIX data: &lt;http://cwrc.ca/cwrcdata/&gt;
-  PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
-  CONSTRUCT {
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX data: &lt;http://cwrc.ca/cwrcdata/&gt;
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+CONSTRUCT {
     ?contextFocus ?subjectCentricPredicate ?o .
     ?contextFocus rdfs:label ?label.
     ?contextFocus skos:altLabel ?name.
-  } WHERE {
+} WHERE {
     GRAPH &lt;http://sparql.cwrc.ca/db/BiographyV2Beta&gt; {
-      ?person rdfs:label "Aulnoy, Marie-Catherine d'".
-      BIND(?person AS ?contextFocus)
-         ?context cwrc:contextFocus ?contextFocus ;
-                  ?p ?o ;
-      }                      .
-      # Grab the correct relationship for the predicate we are looking for
-      ?p cwrc:subjectCentricPredicate ?subjectCentricPredicate .
+        ?person rdfs:label "Aulnoy, Marie-Catherine d'".
+        BIND(?person AS ?contextFocus)
+        ?context cwrc:contextFocus ?contextFocus ;
+             ?p ?o ;
+    }.
+    # Grab the correct relationship for the predicate we are looking for
+    ?p cwrc:subjectCentricPredicate ?subjectCentricPredicate .
     ?contextFocus rdfs:label ?label.
     ?contextFocus skos:altLabel ?name.
-  }</pre>
+}</pre>
                             </li>
                         </ol>
                     </li>
