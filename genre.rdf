@@ -1575,7 +1575,7 @@
   <genre:EmbeddedWork rdf:about="#epilogue">
     <skos:definition xml:lang="fr">«L’épilogue (du grec επι (epi) : au-dessus et λογος (logos) : discours) est la dernière partie, la conclusion d’une œuvre (discours, roman, film, pièce théâtrale, etc.). Il désigne plus particulièrement au théâtre classique un discours récapitulatif à la fin de la pièce. Il est surtout un hors-d’œuvre, un adieu au public. La Fontaine, croyant avoir fini son œuvre des Fables au VIe livre, prend congé du lecteur dans cet épilogue : Bornons ici cette carrière,Les longs ouvrages me font peur ;Loin d’épuiser une matière,On n’en doit prendre que la fleur»… <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:label xml:lang="fr">épilogue</rdfs:label>
-    <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University.</rdfs:comment>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Epilogue"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">epilogue</rdfs:label>
@@ -1583,6 +1583,9 @@
     <skos:definition xml:lang="en">"A conclusion added to a literary work such as a novel, play, or long poem. It is the opposite of a prologue. Often, the epilogue refers to the moral of a fable. Sometimes, it is a speech made by one of the actors at the end of a play asking for the indulgence of the critics and the audience. Shakespeare's A Midsummer Night's Dream contains one of the most famous epilogues. Contrast with prologue. Do not confuse the term with eclogue."  <![CDATA[<a href="cwrc:509015ff-7641-473e-94c5-688e06952bb7">(L. K Wheeler, 2017)</a>]]></skos:definition>
   </genre:EmbeddedWork>
   <genre:RecordForm rdf:about="#bibliographicRecord">
+    <skos:definition xml:lang="en">"An entry in a bibliographic index (or a library catalog) which represents and describes a specific resource." <![CDATA[<a href="#cwrc:50024824-8252-4a95-b62e-797911907f20">(Dbpedia, 2021)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
+    <owl:sameAs rdf:resource="https://dbpedia.org/page/Bibliographic_record"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">bibliographic record</rdfs:label>
   </genre:RecordForm>
@@ -2659,6 +2662,9 @@ For fiction published in installments there are also specific terms for those is
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026191"/>
   </genre:PedagogicalGenre>
   <genre:DigitalMedium rdf:about="#bornDigital">
+    <skos:definition xml:lang="en">"Material or content created in electronic form and saved as digital data, having had no initial or interstitial state as an analog or physical product." <![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300374824"/>
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300374824"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">born digital</rdfs:label>
