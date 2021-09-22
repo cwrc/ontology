@@ -805,6 +805,9 @@
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300054144"/>
   </genre:PerformanceMedium>
   <genre:ThematicGenre rdf:about="#migration">
+    <skos:definition xml:lang="en">"A text or other form of media concerned with the topic of the changing of permanent residence (conventionally understood as being for at least one year) by discrete populations." <![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">migration</rdfs:label>
     <skos:altLabel xml:lang="en">immigration writing</skos:altLabel>
@@ -939,7 +942,7 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300404196"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <skos:broader rdf:resource="#bornDigital"/>
+    <skos:broader rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#bornDigital"/>
     <rdfs:label xml:lang="en">digital</rdfs:label>
   </genre:DigitalMedium>
   <genre:RomanceGenre rdf:about="#romance">
@@ -2110,6 +2113,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:label xml:lang="en">childrens literature</rdfs:label>
     <skos:definition xml:lang="en">"Literature written and published for children."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300263209"/>
+    <skos:closeMatch rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#juvenile"/>
   </genre:ChildrensLiteratureGenre>
   <genre:ThematicGenre rdf:about="#seaStory">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -2537,6 +2541,8 @@ For fiction published in installments there are also specific terms for those is
     <skos:definition xml:lang="en">"Written works or other forms of media that deals with the experiences of populations who have spread or become dispersed beyond their traditional homeland or point of origin, by either voluntary or forced means." <![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300417673"/>
+    <skos:closeMatch rdf:resource="http://sparql.cwrc.ca/ontologies/genre.html#immigration"/>
+    <skos:closeMatch rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#diasporic"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">diasporic</rdfs:label>
     <rdf:type rdf:resource="#PoliticalGenre"/>
@@ -2716,7 +2722,7 @@ For fiction published in installments there are also specific terms for those is
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300374824"/>
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300374824"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <skos:narrower rdf:resource="#digital"/>
+    <skos:narrower rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#digital"/>
     <rdfs:label xml:lang="en">born digital</rdfs:label>
   </genre:DigitalMedium>
   <genre:ThematicGenre rdf:about="#lgbtq">
