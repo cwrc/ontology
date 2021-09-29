@@ -476,6 +476,7 @@
   <genre:DramaticGenre rdf:about="#drama">
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026297"/>
+    <skos:broader rdf:resource="http://sparql.cwrc.ca/ontologies/genre.html#theatreForYoungAudiences"/>
     <rdfs:label xml:lang="fr">genre dramatique</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">drama</rdfs:label>
@@ -2126,6 +2127,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">"Literature written and published for children."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300263209"/>
     <skos:closeMatch rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#juvenile"/>
+    <skos:broader rdf:resource="http://sparql.cwrc.ca/ontologies/genre.html#theatreForYoungAudiences"/>
   </genre:ChildrensLiteratureGenre>
   <genre:ThematicGenre rdf:about="#seaStory">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3113,6 +3115,10 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">summary</rdfs:label>
   </genre:InformationalGenre>
   <genre:PerformanceMedium rdf:about="#theatreForYoungAudiences">
+    <skos:definition xml:lang="en">"Genre of performing arts concerning theatrical or dramatic entertainment, often intended for stage presentation, and specifically intended for an audience of children." <![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <skos:narrower rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#drama"/>
+    <skos:narrower rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#childrensLiterature"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">theatre for young audiences</rdfs:label>
   </genre:PerformanceMedium>
