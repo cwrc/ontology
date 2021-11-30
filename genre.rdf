@@ -2429,6 +2429,9 @@ For fiction published in installments there are also specific terms for those is
     <skos:broader rdf:resource="#serial"/>
   </genre:SerialForm>
   <genre:SoundRecordingMedium rdf:about="#soundRecordingMusical">
+    <skos:definition xml:lang="en">"Discs, tapes, filaments, or other media on which music has been recorded. Music is defined as a performing arts genre having to do with the combining of vocal or instrumental sounds in measured time to communicate emotions, ideas, or states of mind, usually according to cultural standards of rhythm, melody, and, in most Western music, harmony."<![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/genre.html#SoundRecordingMedium"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">sound recording - musical</rdfs:label>
   </genre:SoundRecordingMedium>
@@ -2882,7 +2885,7 @@ For fiction published in installments there are also specific terms for those is
     <rdfs:label xml:lang="en">interview</rdfs:label>
   </genre:InformationalGenre>
   <genre:AdvertisementForm rdf:about="#advertisement">
-    <rdfs:comment xml:lang="en">"Public notices or paid announcements, often promoting something for commercial purposes."<![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
+    <skos:definition xml:lang="en">"Public notices or paid announcements, often promoting something for commercial purposes."<![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">advertisement</rdfs:label>
