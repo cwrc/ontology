@@ -132,8 +132,8 @@ PREFIX data: &lt;http://cwrc.ca/cwrcdata/&gt;
 PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
 PREFIX oa: &lt;http://www.w3.org/ns/oa#&gt;
 
-SELECT ?name ?snippet WHERE {
-    GRAPH &lt;http://sparql.cwrc.ca/db/BiographyV2Beta&gt; {
+SELECT distinct ?name ?snippet WHERE {
+    GRAPH &lt;http://sparql.cwrc.ca/data/orlando_volumes&gt; {
         ?context ?pred ?obj;
             cwrc:contextFocus ?person;
             oa:hasTarget ?target;
