@@ -3880,6 +3880,12 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300163404"/>
     <rdfs:subClassOf rdf:resource="#InformationalGenre"/>
   </owl:Class>
+  <owl:Class rdf:about="#FinancialRecordsGenre">
+    <skos:definition xml:lang="en">"Documents pertaining to money matters." <![CDATA[<a href="#cwrc:a0414fff-d3ba-4d20-9d13-623b4ddc077f">(Getty, 2022)</a>]]></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">Financial Records Genre</rdfs:label>
+    <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300027473"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
   <owl:Class rdf:about="#CollectionForm">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Collection Form</rdfs:label>
