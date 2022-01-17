@@ -733,6 +733,13 @@
     <rdfs:label xml:lang="en">sermon</rdfs:label>
     <rdf:type rdf:resource="#PerformanceMedium"/>
   </genre:ReligiousGenre>
+  <genre:ReligiousGenre rdf:about="#churchOrder">
+    <skos:definition xml:lang="en">"Regulations and directions on church governance that are decreed according to ecclesiastical or scriptural authority."<![CDATA[<a href="#cwrc:788072dc-a6e5-44b1-b72b-873846d117a8">(Library of Congress, 2022)</a>]]></skos:definition>
+    <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2015026054"/>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to The Library of Congress.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">church order</rdfs:label>
+  </genre:ReligiousGenre>
   <genre:DidacticGenre rdf:about="#bestiary">
     <rdfs:label xml:lang="fr">bestiaire</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
