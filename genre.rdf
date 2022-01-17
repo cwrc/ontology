@@ -1111,6 +1111,13 @@
     <rdfs:label xml:lang="en">government report</rdfs:label>
     <skos:hiddenLabel xml:lang="en">PARLIAMENTARYREPORT</skos:hiddenLabel>
   </genre:InformationalGenre>
+  <genre:InformationalGenre rdf:about="#administrativeDecision">
+    <skos:definition xml:lang="en">"Decisions and opinions of administrative agencies."<![CDATA[<a href="#cwrc:788072dc-a6e5-44b1-b72b-873846d117a8">(Library of Congress, 2022)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to The Library of Congress.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026029"/>
+    <rdfs:label xml:lang="en">administrative decision</rdfs:label>
+  </genre:InformationalGenre>  
   <genre:DidacticGenre rdf:about="#conductLiterature">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">conduct literature</rdfs:label>
