@@ -1961,6 +1961,13 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
     <skos:definition xml:lang="en">"Legal writing is a type of technical writing used by lawyers, judges, legislators, and others in law to express legal analysis and legal rights and duties. Legal writing in practice is used to advocate for or to express the resolution of a client's legal matter."  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
   </genre:ScholarlyGenre>
+  <genre:LegalDocumentsGenre rdf:about="#courtDecision">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">court decision</rdfs:label>
+    <skos:definition xml:lang="en">"Reported and unreported court decisions, opinions, judgments, etc."<![CDATA[<a href="#cwrc:788072dc-a6e5-44b1-b72b-873846d117a8">(Library of Congress, 2022)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">This term is indebted to The Library of Congress.</rdfs:comment>
+    <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026172"/>
+  </genre:LegalDocumentsGenre>
   <genre:PrintMedium rdf:about="#mimeograph">
     <skos:definition xml:lang="en">"The stencil duplicator or mimeograph machine (often abbreviated to mimeo) is a low-cost duplicating machine that works by forcing ink through a stencil onto paper. The mimeograph process should not be confused with the spirit duplicator process. Mimeographs, along with spirit duplicators and hectographs, were a common technology in printing small quantities, as in office work, classroom materials, and church bulletins. Early fanzines were printed with this technology, because it was widespread and cheap. In the late 1960s, mimeographs, spirit duplicators, and hectographs began to be gradually displaced by photocopying." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <skos:altLabel xml:lang="en">stencil</skos:altLabel>
