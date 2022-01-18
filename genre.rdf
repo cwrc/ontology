@@ -1094,6 +1094,13 @@
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300226986"/>
     <rdfs:label xml:lang="en">survey</rdfs:label>
   </genre:InformationalGenre>
+  <genre:InformationalGenre rdf:about="#register">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <skos:definition xml:lang="en">"Lists of names, addresses, events, dates, etc., usually presented in a single chronological or numerical sequence (e.g., parish or guild registers, birth/death/marriage)."<![CDATA[<a href="#cwrc:788072dc-a6e5-44b1-b72b-873846d117a8">(Library of Congress, 2022)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to The Library of Congress.</rdfs:comment>
+    <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026166"/>
+    <rdfs:label xml:lang="en">register</rdfs:label>
+  </genre:InformationalGenre>
   <genre:FinancialRecordsGenre rdf:about="#accountBook">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <skos:definition xml:lang="en">"Accounting journals, Accounting ledgers, Books of account, Journals, Accounting, Ledgers, Accounting, Records (Documents)."<![CDATA[<a href="#cwrc:788072dc-a6e5-44b1-b72b-873846d117a8">(Library of Congress, 2022)</a>]]></skos:definition>
