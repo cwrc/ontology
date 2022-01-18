@@ -1118,6 +1118,13 @@
     <rdfs:label xml:lang="en">government report</rdfs:label>
     <skos:hiddenLabel xml:lang="en">PARLIAMENTARYREPORT</skos:hiddenLabel>
   </genre:InformationalGenre>
+  <genre:GovernmentRecordsGenre rdf:about="#municipalOrdinance">
+    <skos:definition xml:lang="en">"Laws established by cities, towns, or other local governmental entities. For rules or administrative provisions adopted by an organization for its internal governance and its external dealings." <![CDATA[<a href="#cwrc:788072dc-a6e5-44b1-b72b-873846d117a8">(Library of Congress, 2022)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to The Library of Congress.</rdfs:comment>
+    <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026412"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">municipal ordinance</rdfs:label>
+  </genre:GovernmentRecordsGenre> 
   <genre:InformationalGenre rdf:about="#administrativeDecision">
     <skos:definition xml:lang="en">"Decisions and opinions of administrative agencies."<![CDATA[<a href="#cwrc:788072dc-a6e5-44b1-b72b-873846d117a8">(Library of Congress, 2022)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to The Library of Congress.</rdfs:comment>
