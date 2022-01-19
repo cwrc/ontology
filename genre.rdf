@@ -1969,11 +1969,11 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
   <genre:ScholarlyGenre rdf:about="#legalWriting">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">legal writing</rdfs:label>
-    <skos:definition xml:lang="fr">Type d'écrit technique destiné à être utilisé par les professionnels juridiques lors de la rédaction de textes légaux ou à propos du droit.</skos:definition>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Legal_writing"/>
     <rdfs:label xml:lang="fr">rédaction juridique</rdfs:label>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
     <skos:definition xml:lang="en">"Legal writing is a type of technical writing used by lawyers, judges, legislators, and others in law to express legal analysis and legal rights and duties. Legal writing in practice is used to advocate for or to express the resolution of a client's legal matter."  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
+    <skos:broader rdf:resource="http://sparql.cwrc.ca/ontologies/genre#courtDecision"/>
+    <rdf:type rdf:resource="#LegalDocumentGenre"/>
   </genre:ScholarlyGenre>
   <genre:LegalDocumentsGenre rdf:about="#courtDecision">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1981,6 +1981,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">"Reported and unreported court decisions, opinions, judgments, etc."<![CDATA[<a href="#cwrc:788072dc-a6e5-44b1-b72b-873846d117a8">(Library of Congress, 2022)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">This term is indebted to The Library of Congress.</rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026172"/>
+    <skos:narrower rdf:resource="http://sparql.cwrc.ca/ontologies/genre#legalWriting"/>
   </genre:LegalDocumentsGenre>
     <genre:LegalDocumentsGenre rdf:about="#legalInstrument">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
