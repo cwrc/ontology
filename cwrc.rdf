@@ -10430,10 +10430,9 @@
   <owl:Class rdf:ID="ResponseContext">
     <rdfs:label xml:lang="en">response context</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subClassOf rdf:resource="#IntertextualityContext"/>
     <rdfs:subClassOf rdf:resource="#ReceptionContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">Response Context is a significant subclass of both Reception Context and Intertextuality Context. annotations typed as Response Context address reactions to a writer's literary work, whether their oeuvre in general or specific works, or to their role as an author.</skos:definition>
+    <skos:definition xml:lang="en">Response Context is a significant subclass of Reception Context. Annotations typed as Response Context address reactions to a writer's literary work, whether their oeuvre in general or specific works, or to their role as an author.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10442,7 +10441,6 @@
     <rdfs:label xml:lang="en"> response event</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">An event related to an @@#ResponseContext@@.</skos:definition>
-    <rdfs:subClassOf rdf:resource="#IntertextualityEvent"/>
     <rdfs:subClassOf rdf:resource="#ReceptionEvent"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
