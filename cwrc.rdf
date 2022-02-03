@@ -10093,7 +10093,8 @@
    <owl:Class rdf:ID="IntertextualityContext">
     <rdfs:label xml:lang="en">intertextuality context</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subClassOf rdf:resource="#WritingContext"/>
+    <rdfs:subClassOf rdf:resource="#TextualFeaturesContext"/>
+    <rdfs:subClassOf rdf:resource="#InfluenceContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">Intertextuality Context is a significant subclass of Context. Annotations typed as Intertextuality Context provide information on the relationships between authors and texts.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
@@ -10104,7 +10105,8 @@
     <rdfs:label xml:lang="en">intertextuality event</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">An event related to an @@#IntertextualityContext@@.</skos:definition>
-    <rdfs:subClassOf rdf:resource="#WritingEvent"/>
+    <rdfs:subClassOf rdf:resource="#TextualFeaturesEvent"/>
+    <rdfs:subClassOf rdf:resource="#InfluenceEvent"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10624,6 +10626,26 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
+<owl:Class rdf:ID="InfluenceContext">
+    <rdfs:label xml:lang="en">influence context</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#ReceptionContext"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Influence Context is a significant subclass of ReceptionContext. Annotations typed as Influence Context chart both the effects and results of external factors on the subject of the annotation, and also the impact of that subject's writing on other entities.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="InfluenceEvent">
+    <rdfs:label xml:lang="en">influence event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#InfluenceContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#ReceptionEvent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
   <owl:ObjectProperty rdf:ID="influence">
     <rdfs:label xml:lang="en">influence</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
@@ -10772,6 +10794,26 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
+  <owl:Class rdf:ID="RecognitionContext">
+    <rdfs:label xml:lang="en">recognition context</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#ReceptionContext"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Recognition Context is a significant subclass of Reception Context.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="RecognitionEvent">
+    <rdfs:label xml:lang="en">recognition event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to a @@#RecognitionContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#ReceptionEvent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
   <owl:Class rdf:ID="ReceptionContext">
     <rdfs:label xml:lang="en">reception context</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
@@ -10782,7 +10824,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-
   <owl:Class rdf:ID="ReceptionEvent">
     <rdfs:label xml:lang="en">reception event</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -10792,6 +10833,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
+
   <owl:ObjectProperty rdf:ID="receptionRelationship">
     <rdfs:label xml:lang="en">reception relationship</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#writingRelationship"/>
@@ -10825,6 +10867,15 @@
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+  <owl:Class rdf:ID="TextualFeaturesEvent">
+    <rdfs:label xml:lang="en">textual features event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to an @@#TextualFeaturesContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#WritingEvent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>  
   </owl:Class>
    <owl:Class rdf:ID="ProductionContext">
     <rdfs:label xml:lang="en">production context</rdfs:label>
@@ -10836,27 +10887,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-   <owl:Class rdf:ID="TextualSurvivalContext">
-    <rdfs:label xml:lang="en">textual survival context</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subClassOf rdf:resource="#WritingContext"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">Textual Survival Context is a significant subclass of Writing Context. Annotations typed as Textual Survival Context chart the survival or lack of survival, whether accidental or deliberate, of a text or texts.</skos:definition>
-    <skos:definition xml:lang="fr"></skos:definition>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
-  
-
-  <owl:Class rdf:ID="TextualFeaturesEvent">
-    <rdfs:label xml:lang="en">textual features event</rdfs:label>
-    <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">An event related to an @@#TextualFeaturesContext@@.</skos:definition>
-    <rdfs:subClassOf rdf:resource="#WritingEvent"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:Class>
   <owl:Class rdf:ID="ProductionEvent">
     <rdfs:label xml:lang="en">production event</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -10866,11 +10896,40 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
-  <owl:Class rdf:ID="TextualSurvivalEvent">
-    <rdfs:label xml:lang="en">textual survival event</rdfs:label>
+  <owl:Class rdf:ID="TextualHistoryContext">
+    <rdfs:label xml:lang="en">textual history context</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#WritingContext"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Textual History Context is a significant subclass of Writing Context. Annotations typed as Textual History Context chart the history of the physical manifestation of a text or texts. These include manuscript history, archival locations, and survival or lack of survival, whether accidental or deliberate.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TextualHistoryEvent">
+    <rdfs:label xml:lang="en">textual history event</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">An event related to an @@#TextualSurvivalContext@@.</skos:definition>
+    <skos:definition xml:lang="en">An event related to a @@#TextualHistoryContext@@.</skos:definition>
     <rdfs:subClassOf rdf:resource="#WritingEvent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PublishingContext">
+    <rdfs:label xml:lang="en">publishing context</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#ProductionContext"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Publishing Context is a significant subclass of Production Context.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PublishingEvent">
+    <rdfs:label xml:lang="en">publishing event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to a @@#PublishingContext@@.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#ProductionEvent"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
