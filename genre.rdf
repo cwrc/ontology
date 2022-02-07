@@ -1827,17 +1827,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">video game</rdfs:label>
   </genre:DigitalMedium>
-  <genre:FictionalGenre rdf:about="#legendFolktale">
-    <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300055922"/>
-    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">legend folktale</rdfs:label>
-    <skos:definition xml:lang="en">"Stories that have been maintained over time, usually by a particular culture through an oral tradition. Often understood within originating cultures as historical accounts although they differ from Western record-keeping."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
-    <skos:altLabel xml:lang="en">folklore</skos:altLabel>
-    <skos:related rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026344"/>
-    <skos:definition xml:lang="fr">Histoires conservées au fil du temps, généralement transmise au sein d'une culture particulière par le biais de la tradition orale. Elles sont souvent interprétées comme des faits historiques dans les sociétés anciennes, même si elles diffèrent de la conception occidentale de l'Histoire.</skos:definition>
-    <rdfs:label xml:lang="fr">légende conte folklorique</rdfs:label>
-  </genre:FictionalGenre>
   <genre:PrintMedium rdf:about="#pamphlet">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">pamphlet</rdfs:label>
@@ -4091,5 +4080,20 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
+
+ <genre:FictionalGenre rdf:about="#legendFolktale">
+    <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300055922"/>
+    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">legend folktale</rdfs:label>
+    <skos:definition xml:lang="en">"Stories that have been maintained over time, usually by a particular culture through an oral tradition. Often understood within originating cultures as historical accounts although they differ from Western record-keeping."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
+    <skos:altLabel xml:lang="en">folklore</skos:altLabel>
+    <skos:related rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026344"/>
+    <skos:definition xml:lang="fr">Histoires conservées au fil du temps, généralement transmise au sein d'une culture particulière par le biais de la tradition orale. Elles sont souvent interprétées comme des faits historiques dans les sociétés anciennes, même si elles diffèrent de la conception occidentale de l'Histoire.</skos:definition>
+    <rdfs:label xml:lang="fr">légende conte folklorique</rdfs:label>
+    <rdfs:comment xml:lang="en">Deprecated with no current equivalence. This term was split into two terms: @@#legend@@ and @@#folkTale@@.</rdfs:comment>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </genre:FictionalGenre>
 
 </rdf:RDF>
