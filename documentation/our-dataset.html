@@ -87,7 +87,7 @@
             <main role="main" class="col-xl-10 col-lg-9 col-md-12 ml-sm-auto pt-3 px-4" data-spy="scroll" data-target="#toc">
                 <h1>The Orlando British Women's Writing Dataset Release 1: Biography and Bibliography</h1>
                 <div class="alert alert-info">
-                    <p>[01-11-2018] Release 1.01 See <a href="#release-notes">1.01 release</a> for more details.</p>
+                    <p>[01-29-2022] Release 1.52 See <a href="#release-1.51">1.51 release</a> for more details.</p>
                 </div>
                 <h2>Introduction</h2>
                 <p>This dataset provides a rich set of linked open data representing women's literary history from the beginnings to the present, concentrated on writing in English in the British Isles but with tentacles out to other languages, literary traditions, and parts of the world. It emerges from the ongoing experiments in literary history being conducted by The Orlando Project, whose textbase is published and regularly updated and augmented as Orlando: Women's Writing in the British Isles from the Beginnings to the Present by Cambridge University Press since 2006, and from the Canadian Writing Research Collaboratory's work in Linked Open Data as a means of enabling digital scholarship and collaboration in the humanities. </p>
@@ -103,7 +103,7 @@
                 <p>An example of a heat map approach: Taking one of the research questions provided below such as "Does social identity become more diverse over time?" can you represent this as a series of heat maps that plot out social identity (religion, ethnicity, etc.) over time? This could even be in the form of a video such as <a href="https://www.flickr.com/photos/150411108@N06/43350961005/#">https://www.flickr.com/photos/150411108@N06/43350961005/#</a>.</p>
                 <p>An example of trend analysis: the research question, "How is the number of publications related to the number of children a woman writer had?" could be illustrated using dynamic graphs, examples of which can be seen in videos of Hans Rosling's Gapminder visualizations such as <a href="https://www.youtube.com/watch?v=jbkSRLYSojo">https://www.youtube.com/watch?v=jbkSRLYSojo</a>.</p>
                 <p> An example of an infographics approach: If you Google Emily Brontë, an infographic such as the one shown here is provided.</p>
-                <img src="http://sparql.cwrc.ca/images/EmilyBronte.png" alt="Emily Bronte Infographic" width="25%" />
+                <img src="../figures/EmilyBronte.png" alt="Emily Bronte Infographic" width="25%" />
                 <p>Using the Orlando data, can you produce a more detailed infographic of the author? Can you then expand this to have additional infographics of people who are connected to her and who also appear in the Orlando data? Can you find information in the Orlando data and the ontologies that would produce a much different infographic than Google's? What would an infographic of a larger group, such as all writers from a particular historical period, or all writers of a given genre of literature, look like?</p>
                 <h3>Sample Queries</h3>
                 <ol>
@@ -382,12 +382,18 @@
                 <p>Spatial data is often but not always (e.g. place of death) regularized to <a href="http://www.geonames.org/">Geonames</a> or the <a href="http://www.getty.edu/research/tools/vocabularies/tgn/index.html">Getty Thesaurus of Geographic Names</a> identifiers.</p>
                 <p>Bibliography objects use the <a href="http://www.loc.gov/bibframe/docs/index.html">BIBFRAME RDF</a> schema supplemented by a couple of terms from <a href="https://schema.org">schema.org</a>.</p>
                 <h2 id="release-notes">Release Notes</h2>
-                <h3>Release 1.01</h3>
+                <h3 id="release-1.01">Release 1.01</h3>
                 <b>01-11-2018</b>
                 <ul>
                     <li>Removed: invalid properties on certain subjects in biographical data, due to error in extraction process.</li>
                     <li>Changed: better conversion of invalid dates in bibliographic data.</li>
-                    <li>Please use the new versions below.</li>
+                </ul>
+                <h3 id="release-1.51">Release 1.51</h3>
+                <b>01-29-2022</b>
+                <ul>
+                    <li>Large overhaul of extraction process including numerous updates over the last 4 years</li>
+                    <li>This includes the biographical data and bibliographic data</li>
+                    <li>Please use the new versions above.</li>
                 </ul>
                 <h2>License</h2>
                 <p>This dataset is made available under a CC-BY-NC license. If you make use of this dataset, we would appreciate being informed of this at <a href="mailto:cwrc@ualberta.ca">cwrc@ualberta.ca</a>.</p>
