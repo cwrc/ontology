@@ -164,3 +164,9 @@ clean-all:
 	@echo "Are you sure you'd like to remove the following files(y/n)"
 	@ls | grep '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].*'| xargs -p rm -v
 
+extraction:
+	python3 scripts/cf_label_extraction.py cwrc.rdf scripts/CF_external_mapping.csv mapTest.csv 
+	cat mapTest.csv | python3 scripts/fixcsv.py 40 > cf_master_mapping.csv 
+	python3 scripts/occupation_label_extraction.py cwrc.rdf occupations.csv 
+# 	cp cf_master_mapping.csv ~
+#	cp occupations.csv /home/alliyya/stuff/work/cwrc/RDF-extraction/data/occupation_mapping.csv
