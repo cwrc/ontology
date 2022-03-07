@@ -87,62 +87,62 @@ testing-deploy: force all
 
 # deploy to testing server--> called automatically with every change on git 
 testing: all
-	cat $(ONTOLOGY_W_DATE)-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY_W_DATE)-EN.html
-	cat $(ONTOLOGY_W_DATE)-FR.html  | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY_W_DATE)-FR.html
-	cat $(ONTOLOGY)-preamble-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY)-preamble-EN.html
-	cat $(ONTOLOGY)-preamble-FR.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY)-preamble-FR.html
+	cat $(ONTOLOGY_W_DATE)-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > ~/data/www/testing/$(ONTOLOGY_W_DATE)-EN.html
+	cat $(ONTOLOGY_W_DATE)-FR.html  | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > ~/data/www/testing/$(ONTOLOGY_W_DATE)-FR.html
+	cat $(ONTOLOGY)-preamble-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > ~/data/www/testing/$(ONTOLOGY)-preamble-EN.html
+	cat $(ONTOLOGY)-preamble-FR.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > ~/data/www/testing/$(ONTOLOGY)-preamble-FR.html
 	
-	cat our-team-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/our-team-EN.html
-	cat our-team-FR.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/our-team-FR.html
+	cat our-team-EN.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > ~/data/www/testing/our-team-EN.html
+	cat our-team-FR.html | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > ~/data/www/testing/our-team-FR.html
 
-	cat $(ONTOLOGY_W_DATE).rdf | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY_W_DATE).rdf
-	cat $(ONTOLOGY_W_DATE).nt | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY_W_DATE).nt
-	cat $(ONTOLOGY_W_DATE).ttl | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > /var/www/public/testing/$(ONTOLOGY_W_DATE).ttl
+	cat $(ONTOLOGY_W_DATE).rdf | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > ~/data/www/testing/$(ONTOLOGY_W_DATE).rdf
+	cat $(ONTOLOGY_W_DATE).nt | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > ~/data/www/testing/$(ONTOLOGY_W_DATE).nt
+	cat $(ONTOLOGY_W_DATE).ttl | sed 's/cwrc.ca\/ontologies\//cwrc.ca\/testing\//g' > ~/data/www/testing/$(ONTOLOGY_W_DATE).ttl
 	
-	ln -sf /var/www/public/testing/$(ONTOLOGY_W_DATE)-EN.html /var/www/public/testing/$(ONTOLOGY).html
-	ln -sf /var/www/public/testing/$(ONTOLOGY_W_DATE)-EN.html /var/www/public/testing/$(ONTOLOGY_W_DATE).html
-	ln -sf /var/www/public/testing/$(ONTOLOGY_W_DATE)-FR.html /var/www/public/testing/$(ONTOLOGY)-FR.html
-	ln -sf /var/www/public/testing/$(ONTOLOGY_W_DATE).rdf /var/www/public/testing/$(ONTOLOGY).rdf
-	ln -sf /var/www/public/testing/$(ONTOLOGY_W_DATE).nt /var/www/public/testing/$(ONTOLOGY).nt
-	ln -sf /var/www/public/testing/$(ONTOLOGY_W_DATE).ttl /var/www/public/testing/$(ONTOLOGY).ttl
+	ln -sf ~/data/www/testing/$(ONTOLOGY_W_DATE)-EN.html ~/data/www/testing/$(ONTOLOGY).html
+	ln -sf ~/data/www/testing/$(ONTOLOGY_W_DATE)-EN.html ~/data/www/testing/$(ONTOLOGY_W_DATE).html
+	ln -sf ~/data/www/testing/$(ONTOLOGY_W_DATE)-FR.html ~/data/www/testing/$(ONTOLOGY)-FR.html
+	ln -sf ~/data/www/testing/$(ONTOLOGY_W_DATE).rdf ~/data/www/testing/$(ONTOLOGY).rdf
+	ln -sf ~/data/www/testing/$(ONTOLOGY_W_DATE).nt ~/data/www/testing/$(ONTOLOGY).nt
+	ln -sf ~/data/www/testing/$(ONTOLOGY_W_DATE).ttl ~/data/www/testing/$(ONTOLOGY).ttl
 	
-	cp -f figures/* /var/www/public/testing/figures/.	
-	cp -f -R css /var/www/public/testing/.
-	cp -f -R js /var/www/public/testing/.
-	cp -f -R documentation /var/www/public/testing/.
+	cp -f figures/* ~/data/www/testing/figures/.	
+	cp -f -R css ~/data/www/testing/.
+	cp -f -R js ~/data/www/testing/.
+	cp -f -R documentation ~/data/www/testing/.
 
-	curl -X POST -H 'Content-Type:application/sparql-update' -d 'CLEAR GRAPH <http://sparql.cwrc.ca/testing/$(ONTOLOGY)>' http://localhost:9999/blazegraph/sparql
-	curl -X POST -H 'Content-Type:application/rdf+xml' --data-binary @/var/www/public/testing/$(ONTOLOGY).rdf http://localhost:9999/blazegraph/sparql?context-uri=http://sparql.cwrc.ca/testing/$(ONTOLOGY)
+# curl -X POST -H 'Content-Type:application/sparql-update' -d 'CLEAR GRAPH <http://sparql.cwrc.ca/testing/$(ONTOLOGY)>' http://localhost:9999/blazegraph/sparql
+# curl -X POST -H 'Content-Type:application/rdf+xml' --data-binary @~/data/www/testing/$(ONTOLOGY).rdf http://localhost:9999/blazegraph/sparql?context-uri=http://sparql.cwrc.ca/testing/$(ONTOLOGY)
 	
 
 # deploy to production
 deploy: all
-	cp $(ONTOLOGY_W_DATE)-EN.html /var/www/public/ontology/$(ONTOLOGY_W_DATE)-EN.html
-	cp $(ONTOLOGY_W_DATE)-FR.html /var/www/public/ontology/$(ONTOLOGY_W_DATE)-FR.html
-	cp $(ONTOLOGY)-preamble-EN.html /var/www/public/ontology/$(ONTOLOGY)-preamble-EN.html
-	cp $(ONTOLOGY)-preamble-FR.html /var/www/public/ontology/$(ONTOLOGY)-preamble-FR.html
+	cp $(ONTOLOGY_W_DATE)-EN.html ~/data/www/ontologies/$(ONTOLOGY_W_DATE)-EN.html
+	cp $(ONTOLOGY_W_DATE)-FR.html ~/data/www/ontologies/$(ONTOLOGY_W_DATE)-FR.html
+	cp $(ONTOLOGY)-preamble-EN.html ~/data/www/ontologies/$(ONTOLOGY)-preamble-EN.html
+	cp $(ONTOLOGY)-preamble-FR.html ~/data/www/ontologies/$(ONTOLOGY)-preamble-FR.html
 	
-	cp our-team-EN.html /var/www/public/ontology/our-team-EN.html
-	cp our-team-FR.html /var/www/public/ontology/our-team-FR.html
+	cp our-team-EN.html ~/data/www/ontologies/our-team-EN.html
+	cp our-team-FR.html ~/data/www/ontologies/our-team-FR.html
 
-	cp -f $(ONTOLOGY_W_DATE).rdf /var/www/public/ontology/.
-	cp -f $(ONTOLOGY_W_DATE).nt /var/www/public/ontology/.
-	cp -f $(ONTOLOGY_W_DATE).ttl /var/www/public/ontology/.	
+	cp -f $(ONTOLOGY_W_DATE).rdf ~/data/www/ontologies/.
+	cp -f $(ONTOLOGY_W_DATE).nt ~/data/www/ontologies/.
+	cp -f $(ONTOLOGY_W_DATE).ttl ~/data/www/ontologies/.	
 	
-	ln -sf /var/www/public/ontology/$(ONTOLOGY_W_DATE)-EN.html /var/www/public/ontology/$(ONTOLOGY).html
-	ln -sf /var/www/public/ontology/$(ONTOLOGY_W_DATE)-EN.html /var/www/public/ontology/$(ONTOLOGY_W_DATE).html
-	ln -sf /var/www/public/ontology/$(ONTOLOGY_W_DATE)-FR.html /var/www/public/ontology/$(ONTOLOGY)-FR.html
-	ln -sf /var/www/public/ontology/$(ONTOLOGY_W_DATE).rdf /var/www/public/ontology/$(ONTOLOGY).rdf
-	ln -sf /var/www/public/ontology/$(ONTOLOGY_W_DATE).nt /var/www/public/ontology/$(ONTOLOGY).nt
-	ln -sf /var/www/public/ontology/$(ONTOLOGY_W_DATE).ttl /var/www/public/ontology/$(ONTOLOGY).ttl
+	ln -sf ~/data/www/ontologies/$(ONTOLOGY_W_DATE)-EN.html ~/data/www/ontologies/$(ONTOLOGY).html
+	ln -sf ~/data/www/ontologies/$(ONTOLOGY_W_DATE)-EN.html ~/data/www/ontologies/$(ONTOLOGY_W_DATE).html
+	ln -sf ~/data/www/ontologies/$(ONTOLOGY_W_DATE)-FR.html ~/data/www/ontologies/$(ONTOLOGY)-FR.html
+	ln -sf ~/data/www/ontologies/$(ONTOLOGY_W_DATE).rdf ~/data/www/ontologies/$(ONTOLOGY).rdf
+	ln -sf ~/data/www/ontologies/$(ONTOLOGY_W_DATE).nt ~/data/www/ontologies/$(ONTOLOGY).nt
+	ln -sf ~/data/www/ontologies/$(ONTOLOGY_W_DATE).ttl ~/data/www/ontologies/$(ONTOLOGY).ttl
 	
-	cp -f figures/* /var/www/public/ontology/figures/.	
-	cp -f -R css /var/www/public/ontology/.
-	cp -f -R js /var/www/public/ontology/.
-	cp -f -R documentation /var/www/public/ontology/.
+	cp -f figures/* ~/data/www/ontologies/figures/.	
+	cp -f -R css ~/data/www/ontologies/.
+	cp -f -R js ~/data/www/ontologies/.
+	cp -f -R documentation ~/data/www/ontologies/.
 
-	curl -X POST -H 'Content-Type:application/sparql-update' -d 'CLEAR GRAPH <http://sparql.cwrc.ca/ontologies/$(ONTOLOGY)>' http://localhost:9999/blazegraph/sparql
-	curl -X POST -H 'Content-Type:application/rdf+xml' --data-binary @/var/www/public/ontologies/$(ONTOLOGY).rdf http://localhost:9999/blazegraph/sparql?context-uri=http://sparql.cwrc.ca/ontologies/$(ONTOLOGY)
+# curl -X POST -H 'Content-Type:application/sparql-update' -d 'CLEAR GRAPH <http://sparql.cwrc.ca/ontologies/$(ONTOLOGY)>' http://localhost:9999/blazegraph/sparql
+# curl -X POST -H 'Content-Type:application/rdf+xml' --data-binary @/var/www/public/ontologies/$(ONTOLOGY).rdf http://localhost:9999/blazegraph/sparql?context-uri=http://sparql.cwrc.ca/ontologies/$(ONTOLOGY)
 
 
 # tests rdf files aren't broken before push, make push --> then commit
