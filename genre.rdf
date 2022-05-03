@@ -254,6 +254,25 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasMedium">
+    <rdfs:label xml:lang="en">has medium</rdfs:label>
+    <rdfs:label xml:lang="fr">a un support</rdfs:label>
+    <skos:definition xml:lang="en">Describes the material used to produce a cultural work and/or the governing substance that defines a particular object, digital or otherwise. Objects may have multiple media.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="#Medium"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="mediumOf">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">medium of</rdfs:label>
+    <rdfs:label xml:lang="fr">support de</rdfs:label>
+    <skos:definition xml:lang="en">This is the inverse of has medium, whose definition is as follows: Describes the material used to produce a cultural work and/or the governing substance that defines a particular object, digital or otherwise. Objects may have multiple media.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <owl:inverseOf rdf:resource="#hasMedium"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
 
   <genre:SatiricalGenre rdf:about="#antiromance">
     <rdfs:label xml:lang="en">anti-romance</rdfs:label>
