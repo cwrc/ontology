@@ -202,6 +202,21 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </skos:Concept>
+  <owl:ObjectProperty rdf:ID="hasMedium">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">has medium</rdfs:label>
+    <skos:definition xml:lang="en">Describes the material used to produce a cultural work and/or the governing substance that defines a particular object, digital or otherwise. Objects may have multiple media.</skos:definition>
+    <owl:inverseOf rdf:resource="#mediumOf"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="#Medium"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="mediumOf">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">medium of</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasMedium"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:range rdf:resource="#Medium"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasGenre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">has genre</rdfs:label>
@@ -224,7 +239,7 @@
   <owl:ObjectProperty rdf:ID="hasForm">
     <rdfs:label xml:lang="en">has form</rdfs:label>
     <rdfs:label xml:lang="fr">a un form</rdfs:label>
-    <skos:definition xml:lang="en">Describes the form of a cultural artifact, including material form or medium; type of publication such as serialization; or organization of content such as record. Objects often have multiple forms.</skos:definition>
+    <skos:definition xml:lang="en">Describes the form of a cultural artifact, including material form; type of publication such as serialization; or organization of content such as record. Objects often have multiple forms.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <skos:narrower rdf:resource="http://id.loc.gov/ontologies/bibframe/genreForm"/>
@@ -476,7 +491,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">hagiography</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300201063"/>
-    <rdf:type rdf:resource="#LiteraryGenre"/>
   </genre:ReligiousGenre>
   <genre:MovingMedium rdf:about="#videoRecording">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1238,7 +1252,9 @@
     <skos:altLabel xml:lang="en">folklore</skos:altLabel>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">folk tale</rdfs:label>
-    <skos:definition xml:lang="en">"Folklore is traditional art, literature, knowledge, and practices that are passed on in large part through oral communication and example. The information thus transmitted expresses the shared ideas and values of a particular group. British antiquarian William Thoms is generally credited with coining the term "folklore" in 1846. Elliott Oring states thatfolklore is that part of culture that "lives happily ever after". The academic study of folklore is most often known as folkloristics, although it is sometimes also termed "folklore studies" and "folklife research". As an academic discipline folklore shares methods, and insights with literature, anthropology, art, music, history, linguistics, philosophy, and mythology." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
+    <skos:definition xml:lang="en">"Traditional stories or legends in a given culture that are passed down over time, often orally." <![CDATA[<a href="#cwrc:a0414fff-d3ba-4d20-9d13-623b4ddc077f">(Getty, 2022)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300055922"/>
   </genre:NarrativeGenre>
   <genre:PhilosophicalGenre rdf:about="#philosophical">
     <skos:definition xml:lang="en">Writing engaging in philosophical questions, that may or may not be considered philosophy per se.</skos:definition>
@@ -1718,7 +1734,6 @@
     <skos:definition xml:lang="en">"Religious texts (also known as scripture, or scriptures, from the Latin scriptura, meaning "a writing" ) are the texts which various religious traditions consider to be sacred, or central to their religious tradition. Religious texts may be used to evoke a deeper connection with the divine, convey spiritual truths, promote mystical experience, foster communal identity, and to guide individual and communal spiritual practice. Many religions and spiritual movements believe that their sacred texts are divinely or supernaturally revealed or inspired. The monotheistic faiths view their texts as the "Word of God" and divine revelation." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">scripture</rdfs:label>
-    <rdf:type rdf:resource="#LiteraryGenre"/>
   </genre:ReligiousGenre>
   <genre:DramaticGenre rdf:about="#revengeComedy">
     <skos:definition xml:lang="en">"A narrative with the basic objective to amuse, humour, and induce laughter; specifically dealing with the theme of the infliction of retributive injury or punishment in retaliation for an injury or offense." <![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
@@ -1829,17 +1844,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">video game</rdfs:label>
   </genre:DigitalMedium>
-  <genre:FictionalGenre rdf:about="#legendFolktale">
-    <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300055922"/>
-    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">legend folktale</rdfs:label>
-    <skos:definition xml:lang="en">"Stories that have been maintained over time, usually by a particular culture through an oral tradition. Often understood within originating cultures as historical accounts although they differ from Western record-keeping."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
-    <skos:altLabel xml:lang="en">folklore</skos:altLabel>
-    <skos:related rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026344"/>
-    <skos:definition xml:lang="fr">Histoires conservées au fil du temps, généralement transmise au sein d'une culture particulière par le biais de la tradition orale. Elles sont souvent interprétées comme des faits historiques dans les sociétés anciennes, même si elles diffèrent de la conception occidentale de l'Histoire.</skos:definition>
-    <rdfs:label xml:lang="fr">légende conte folklorique</rdfs:label>
-  </genre:FictionalGenre>
   <genre:PrintMedium rdf:about="#pamphlet">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">pamphlet</rdfs:label>
@@ -2100,9 +2104,9 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">"The picaresque novel (Spanish: "picaresca," from "pícaro," for "rogue" or "rascal") is a genre of prose fiction which depicts the adventures of a roguish hero of low social class who lives by his wits in a corrupt society. Picaresque novels typically adopt a realistic style, with elements of comedy and satire. This style of novel originated in 16th-century Spain and flourished throughout Europe in the 17th and 18th centuries. It continues to influence modern literature. According to the traditional view of Thrall and Hibbard (first published in 1936), seven qualities distinguish the picaresque novel or narrative form, all or some of which may be employed for effect by the author. (1) A picaresque narrative is usually written in first person as an autobiographical account. (2) The main character is often of low character or social class. He or she gets by with wit and rarely deigns to hold a job. (3) There is no plot. The story is told in a series of loosely connected adventures or episodes. (4) There is little if any character development in the main character. Once a picaro, always a picaro. His or her circumstances may change but they rarely result in a change of heart. (5) The picaro's story is told with a plainness of language or realism. (6) Satire might sometimes be a prominent element. (7) The behavior of a picaresque hero or heroine stops just short of criminality. Carefree or immoral rascality positions the picaresque hero as a sympathetic outsider, untouched by the false rules of society. However, Trall and Hibbert's thesis has been questioned by scholars[specify] interested in how genre functions, rather than how it looks on the surface."  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
   </genre:FictionalGenre>
   <genre:NarrativeGenre rdf:about="#legend">
-    <skos:definition xml:lang="en">"A genre of folklore that consists of a narrative featuring human actions perceived or believed both by teller and listeners to have taken place within human history." <![CDATA[<a href="#cwrc:50024824-8252-4a95-b62e-797911907f20">(DBpedia, 2021)</a>]]></skos:definition>
-    <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
-    <owl:sameAs rdf:resource="https://dbpedia.org/page/Legend"/>
+    <skos:definition xml:lang="en">"Stories handed down by tradition from earlier times, usually concerned with a real person, place, or event, and popularly regarded as historical although not entirely verifiable." <![CDATA[<a href="#cwrc:a0414fff-d3ba-4d20-9d13-623b4ddc077f">(Getty, 2022)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300055923"/>
     <skos:altLabel xml:lang="en">folktale</skos:altLabel>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">legend</rdfs:label>
@@ -2451,11 +2455,10 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <owl:sameAs rdf:resource="http://vocab.getty.edu/page/aat/300054146"/>
   </genre:MusicalGenre>
   <genre:HistoricalGenre rdf:about="#historicalWriting">
-    <skos:definition xml:lang="en">"Refers to maps that indicate political administrative boundaries or other characteristics of a region at periods of time before the present. They typically include historical names for places, historical population dispositions, and the historical state of physical features."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
+    <skos:definition xml:lang="en">"Historical fiction is a literary genre in which the plot takes place in a setting located in the past. Although the term is commonly used as a synonym for the historical novel, it can also be applied to other types of narrative, including theatre, opera, cinema, and television, as well as video games and graphic novels."<![CDATA[<a href="#cwrc:3f210e75-29b0-4ffe-8d9b-471445b00f92">(DBpedia, 2022)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">historical writing</rdfs:label>
-    <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
-    <skos:definition xml:lang="fr">«La fiction historique est un genre de fiction qui situe le récit dans le cadre historique précis d'un passé proche ou lointain. Des exemples connus de fiction historique sont le roman Sinouhé l'Égyptien, la bande dessinée L'Épervier ou le film Meurtre dans un jardin anglais. D'autres romans tels que Les Piliers de la Terre se placent également dans un contexte réaliste, respectant scrupuleusement les faits historiques, tout en déroulant un fil principal à caractère fictionnel : Ainsi, le livre reprend le thème du Moyen Âge central et narre la vie d'un bâtisseur de l'époque.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
     <rdfs:label xml:lang="fr">écrivage historique</rdfs:label>
     <skos:hiddenLabel xml:lang="en">HISTORICAL</skos:hiddenLabel>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Historical_fiction"/>
@@ -2901,7 +2904,6 @@ For fiction published in installments there are also specific terms for those is
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">biblical paraphrase</rdfs:label>
     <skos:definition xml:lang="en">A work that rewords the text of the Bible, often to improve clarity or to make it accessible to a wider audience.</skos:definition>
-    <rdf:type rdf:resource="#LiteraryGenre"/>
   </genre:ReligiousGenre>
   <genre:DramaticGenre rdf:about="#improvisation">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3076,7 +3078,6 @@ For fiction published in installments there are also specific terms for those is
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Christian_devotional_literature"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2015026057"/>
-    <rdf:type rdf:resource="#LiteraryGenre"/>
   </genre:ReligiousGenre>
   <genre:AutobiographicalGenre rdf:about="#sexualAwakeningFiction">
     <rdfs:label xml:lang="fr">éveil à la sexualité</rdfs:label>
@@ -4093,5 +4094,20 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <vs:term_status xml:lang="en">deprecated</vs:term_status>
   </rdf:Description>
+
+ <genre:FictionalGenre rdf:about="#legendFolktale">
+    <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300055922"/>
+    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">legend folktale</rdfs:label>
+    <skos:definition xml:lang="en">"Stories that have been maintained over time, usually by a particular culture through an oral tradition. Often understood within originating cultures as historical accounts although they differ from Western record-keeping."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
+    <skos:altLabel xml:lang="en">folklore</skos:altLabel>
+    <skos:related rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026344"/>
+    <skos:definition xml:lang="fr">Histoires conservées au fil du temps, généralement transmise au sein d'une culture particulière par le biais de la tradition orale. Elles sont souvent interprétées comme des faits historiques dans les sociétés anciennes, même si elles diffèrent de la conception occidentale de l'Histoire.</skos:definition>
+    <rdfs:label xml:lang="fr">légende conte folklorique</rdfs:label>
+    <rdfs:comment xml:lang="en">Deprecated with no current equivalence. This term was split into two terms: @@#legend@@ and @@#folkTale@@.</rdfs:comment>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </genre:FictionalGenre>
 
 </rdf:RDF>
