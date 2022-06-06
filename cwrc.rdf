@@ -11110,7 +11110,7 @@
 
   <owl:ObjectProperty rdf:ID="bestKnownWork">
     <rdfs:label xml:lang="en">bestknown work</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#writingRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#receptionRelationship"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasBestKnownWork"/>
     <rdfs:domain rdf:resource="#RecognitionContext"/>
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
