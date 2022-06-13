@@ -523,7 +523,7 @@
   <genre:DramaticGenre rdf:about="#drama">
     <rdfs:comment xml:lang="en">The description for this term is indebted to Dr. L. Kip Wheeler of Carson-Newman University. </rdfs:comment>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026297"/>
-    <skos:broader rdf:resource="http://sparql.cwrc.ca/ontologies/genre.html#theatreForYoungAudiences"/>
+    <skos:broader rdf:resource="http://sparql.cwrc.ca/ontologies/genre#theatreForYoungAudiences"/>
     <rdfs:label xml:lang="fr">genre dramatique</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">drama</rdfs:label>
@@ -988,7 +988,7 @@
     <skos:definition xml:lang="en">"Epic theatre is a theatrical movement arising in the early to mid-20th century from the theories and practice of a number of theatre practitioners who responded to the political climate of the time through the creation of new political dramas. Epic theatre is not meant to refer to the scale or the scope of the work, but rather to the form that it takes. Epic theatre emphasizes the audience's perspective and reaction to the piece through a variety of techniques that deliberately cause them to individually engage in a different way. The purpose of epic theatre is not to encourage an audience to suspend their disbelief, but rather to force them to see their world as it is." <![CDATA[<a href="#cwrc:50024824-8252-4a95-b62e-797911907f20">(DBpedia, 2021)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
     <skos:closeMatch rdf:resource="https://dbpedia.org/page/Epic_theatre"/>
-    <skos:related rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#epic"/>
+    <skos:related rdf:resource="https://sparql.cwrc.ca/ontologies/genre#epic"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">epic theatre</rdfs:label>
   </genre:DramaticGenre>
@@ -997,8 +997,8 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300404196"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <skos:broader rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#bornDigital"/>
-    <skos:broader rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#webpage"/>
+    <skos:broader rdf:resource="https://sparql.cwrc.ca/ontologies/genre#bornDigital"/>
+    <skos:broader rdf:resource="https://sparql.cwrc.ca/ontologies/genre#webpage"/>
     <rdfs:label xml:lang="en">digital</rdfs:label>
   </genre:DigitalMedium>
   <genre:RomanceGenre rdf:about="#romance">
@@ -1859,7 +1859,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
   </genre:InformationalGenre>
   <genre:ChildrensLiteratureGenre rdf:about="#preSchool">
     <skos:definition xml:lang="en">"Texts intended for an audience of children below school age."</skos:definition>
-    <skos:closeMatch rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#juvenile"/>
+    <skos:closeMatch rdf:resource="https://sparql.cwrc.ca/ontologies/genre#juvenile"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">pre-school</rdfs:label>
   </genre:ChildrensLiteratureGenre>
@@ -2224,8 +2224,8 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:label xml:lang="en">childrens literature</rdfs:label>
     <skos:definition xml:lang="en">"Literature written and published for children."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300263209"/>
-    <skos:closeMatch rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#juvenile"/>
-    <skos:broader rdf:resource="http://sparql.cwrc.ca/ontologies/genre.html#theatreForYoungAudiences"/>
+    <skos:closeMatch rdf:resource="https://sparql.cwrc.ca/ontologies/genre#juvenile"/>
+    <skos:broader rdf:resource="http://sparql.cwrc.ca/ontologies/genre#theatreForYoungAudiences"/>
   </genre:ChildrensLiteratureGenre>
   <genre:ThematicGenre rdf:about="#seaStory">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -2523,7 +2523,7 @@ For fiction published in installments there are also specific terms for those is
   <genre:SoundRecordingMedium rdf:about="#soundRecordingMusical">
     <skos:definition xml:lang="en">"Discs, tapes, filaments, or other media on which music has been recorded. Music is defined as a performing arts genre having to do with the combining of vocal or instrumental sounds in measured time to communicate emotions, ideas, or states of mind, usually according to cultural standards of rhythm, melody, and, in most Western music, harmony."<![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
-    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/genre.html#SoundRecordingMedium"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/genre#SoundRecordingMedium"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">sound recording - musical</rdfs:label>
   </genre:SoundRecordingMedium>
@@ -2654,12 +2654,12 @@ For fiction published in installments there are also specific terms for those is
   </genre:CartographicForm>
   <genre:ThematicGenre rdf:about="#diasporic">
     <skos:altLabel xml:lang="en">diaspora</skos:altLabel>
-    <skos:closeMatch rdf:resource="http://sparql.cwrc.ca/ontologies/genre.html#migration"/>
+    <skos:closeMatch rdf:resource="http://sparql.cwrc.ca/ontologies/genre#migration"/>
     <skos:definition xml:lang="en">"Written works or other forms of media that deals with the experiences of populations who have spread or become dispersed beyond their traditional homeland or point of origin, by either voluntary or forced means." <![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300417673"/>
-    <skos:closeMatch rdf:resource="http://sparql.cwrc.ca/ontologies/genre.html#immigration"/>
-    <skos:closeMatch rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#migration"/>
+    <skos:closeMatch rdf:resource="http://sparql.cwrc.ca/ontologies/genre#immigration"/>
+    <skos:closeMatch rdf:resource="https://sparql.cwrc.ca/ontologies/genre#migration"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">diasporic</rdfs:label>
     <rdf:type rdf:resource="#PoliticalGenre"/>
@@ -2725,8 +2725,8 @@ For fiction published in installments there are also specific terms for those is
     <skos:definition xml:lang="en">"Literary or artistic works produced by persons in their childhood or youth; usually used to set those works apart from later, mature works." <![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300028883"/>
-    <skos:closeMatch rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#childrensLiterature"/>
-    <skos:closeMatch rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#preSchool"/>
+    <skos:closeMatch rdf:resource="https://sparql.cwrc.ca/ontologies/genre#childrensLiterature"/>
+    <skos:closeMatch rdf:resource="https://sparql.cwrc.ca/ontologies/genre#preSchool"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">juvenile</rdfs:label>
   </genre:ThematicGenre>
@@ -2842,7 +2842,7 @@ For fiction published in installments there are also specific terms for those is
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300374824"/>
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300374824"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <skos:narrower rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#digital"/>
+    <skos:narrower rdf:resource="https://sparql.cwrc.ca/ontologies/genre#digital"/>
     <rdfs:label xml:lang="en">born digital</rdfs:label>
   </genre:DigitalMedium>
   <genre:ThematicGenre rdf:about="#lgbtq">
@@ -3222,8 +3222,8 @@ Closely related to the industrial novel because of its interest in the impact of
   <genre:PerformanceMedium rdf:about="#theatreForYoungAudiences">
     <skos:definition xml:lang="en">"Genre of performing arts concerning theatrical or dramatic entertainment, often intended for stage presentation, and specifically intended for an audience of children." <![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
-    <skos:narrower rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#drama"/>
-    <skos:narrower rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#childrensLiterature"/>
+    <skos:narrower rdf:resource="https://sparql.cwrc.ca/ontologies/genre#drama"/>
+    <skos:narrower rdf:resource="https://sparql.cwrc.ca/ontologies/genre#childrensLiterature"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">theatre for young audiences</rdfs:label>
   </genre:PerformanceMedium>
@@ -3364,7 +3364,7 @@ Closely related to the industrial novel because of its interest in the impact of
   <genre:SoundRecordingMedium rdf:about="#soundRecordingNonmusical">
     <skos:definition xml:lang="en">"Discs, tapes, filaments, or other media on which sound, excluding musical sound, has been recorded."<![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
-    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/genre.html#SoundRecordingMedium"/>
+    <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/genre#SoundRecordingMedium"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">sound recording – nonmusical</rdfs:label>
   </genre:SoundRecordingMedium>
@@ -3381,7 +3381,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:definition xml:lang="en">"Hypertext documents of text, images, and other embedded media or scripts that are accessible via the World Wide Web, hosted on a web site." <![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300264578"/>
-    <skos:narrower rdf:resource="https://sparql.cwrc.ca/ontologies/genre.html#digital"/>
+    <skos:narrower rdf:resource="https://sparql.cwrc.ca/ontologies/genre#digital"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">webpage</rdfs:label>
   </genre:DigitalMedium>
@@ -4027,7 +4027,7 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
   </owl:DeprecatedClass>
   <rdf:Description rdf:about="#immigration">
     <skos:definition xml:lang="en">"A text or other form of media concerned with the experience of arriving into a country, area, or abode for the purpose of permanent residence (conventionally understood as being for at least one year)." <![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
-    <skos:closeMatch rdf:resource="http://sparql.cwrc.ca/ontologies/genre.html#diasporic"/>
+    <skos:closeMatch rdf:resource="http://sparql.cwrc.ca/ontologies/genre#diasporic"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">immigration</rdfs:label>
     <rdf:type rdf:resource="#PoliticalGenre"/>
