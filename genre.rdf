@@ -2010,7 +2010,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from Wikipedia.</rdfs:comment>
     <skos:definition xml:lang="en"> Scholarly writing communicating legal analysis or other results of research relevant to the law. <![CDATA[<a href="#cwrc:88202968-6890-4981-88a9-e39f691deea4">(Wikipedia, 2022)</a>]]></skos:definition>
     <skos:broader rdf:resource="http://sparql.cwrc.ca/ontologies/genre#courtDecision"/>
-    <rdf:type rdf:resource="#LegalDocumentGenre"/>
+    <rdf:type rdf:resource="#LegalDocumentsGenre"/>
   </genre:ScholarlyGenre>
   <genre:LegalDocumentsGenre rdf:about="#courtDecision">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3321,8 +3321,6 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:definition xml:lang="en">"Ephemera (singular: ephemeron) are any transitory written or printed matter not meant to be retained or preserved. The word derives from the Greek ephemeros, meaning "lasting only one day, short-lived". Some collectible ephemera are advertising trade cards, airsickness bags, bookmarks, catalogues, greeting cards, letters, pamphlets, postcards, posters, prospectuses, defunct stock certificates or tickets, and zines." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
   </genre:ThreeDimensionalMedium>
   <genre:ScholarlyGenre rdf:about="#M.A.ResearchPaper">
-    <skos:definition xml:lang="en">"Papers presenting the author's research and submitted in support of candidature for a Master's Degree." <![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
-    <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">M.A. research paper</rdfs:label>
   </genre:ScholarlyGenre>
@@ -3428,6 +3426,8 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">anacreontic</rdfs:label>
   </genre:PoeticGenre>
   <genre:ScholarlyGenre rdf:about="#maThesis">
+    <skos:definition xml:lang="en">"Papers presenting the author's research and submitted in support of candidature for a Master's Degree." <![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">M.A. thesis</rdfs:label>
   </genre:ScholarlyGenre>
