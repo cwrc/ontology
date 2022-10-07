@@ -10123,7 +10123,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
-  <owl:ObjectProperty rdf:ID="extent">
+  <owl:ObjectProperty rdf:ID="c_hasExtent">
     <rdfs:label xml:lang="en">extent</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#writingRelationship"/>
@@ -10139,13 +10139,6 @@
     <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="extentOf">
-    <rdfs:label xml:lang="en">extent of</rdfs:label>
-    <rdfs:label xml:lang="fr"></rdfs:label>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-    <owl:inverseOf rdf:resource="#hasExtent"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
   
   <owl:ObjectProperty rdf:ID="profile">
@@ -10171,7 +10164,8 @@
     <owl:inverseOf rdf:resource="#hasProfile"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="genericRangeIncludes">
+  
+  <owl:ObjectProperty rdf:ID="c_hasGenericRange">
     <rdfs:label xml:lang="en">generic range includes</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#writingRelationship"/>
@@ -10187,14 +10181,33 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="inGenericRangeOf">
+  <owl:ObjectProperty rdf:ID="i_hasGenericRange">
     <rdfs:label xml:lang="en">in generic range of</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:inverseOf rdf:resource="#hasGenericRange"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
-  
+
+  <owl:ObjectProperty rdf:ID="c_hasDescription">
+    <rdfs:label xml:lang="en">description</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#writingRelationship"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasDescription"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="hasDescription">
+    <rdfs:label xml:lang="en">has description</rdfs:label>
+    <skos:definition xml:lang="en">A description of something or someone.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
+    <rdfs:domain rdf:resource=""/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+</owl:ObjectProperty>
+
 
    <owl:Class rdf:ID="IntertextualityContext">
     <rdfs:label xml:lang="en">intertextuality context</rdfs:label>
