@@ -10231,7 +10231,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
-  <owl:ObjectProperty rdf:ID="c_hasIntertextualRelationship">
+  <owl:ObjectProperty rdf:ID="c_hasIntertextualRelationTo">
     <rdfs:label xml:lang="en">intertextual relationship</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#writingRelationship"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasIntertextualRelationTo"/>
@@ -10256,7 +10256,7 @@
   <owl:ObjectProperty rdf:ID="c_alludesExplicitlyTo">
     <rdfs:label xml:lang="en">explicit allusion</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#alludesExplicitlyTo"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10286,7 +10286,7 @@
   <owl:ObjectProperty rdf:ID="allusion">
     <rdfs:label xml:lang="en">allusion</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#alludesTo"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10316,7 +10316,7 @@
   <owl:ObjectProperty rdf:ID="adaptation">
     <rdfs:label xml:lang="en">adaptation</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#adapts"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10346,7 +10346,7 @@
   <owl:ObjectProperty rdf:ID="quotation">
     <rdfs:label xml:lang="en">quotation</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#quotes"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10376,7 +10376,7 @@
   <owl:ObjectProperty rdf:ID="misquotation">
     <rdfs:label xml:lang="en">misquotation</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#misquotes"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10406,7 +10406,7 @@
   <owl:ObjectProperty rdf:ID="parody">
     <rdfs:label xml:lang="en">parody</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#parodies"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10435,7 +10435,7 @@
   <owl:ObjectProperty rdf:ID="satire">
     <rdfs:label xml:lang="en">satire</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#satirizes"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10464,7 +10464,7 @@
   <owl:ObjectProperty rdf:ID="imitation">
     <rdfs:label xml:lang="en">imitation</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#imitates"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10494,7 +10494,7 @@
   <owl:ObjectProperty rdf:ID="continuation">
     <rdfs:label xml:lang="en">continuation</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#continues"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10524,7 +10524,7 @@
   <owl:ObjectProperty rdf:ID="prequel">
     <rdfs:label xml:lang="en">prequel</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#isPrequelOf"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10554,7 +10554,7 @@
   <owl:ObjectProperty rdf:ID="answer">
     <rdfs:label xml:lang="en">answer</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#answers"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10603,7 +10603,7 @@
 
   <owl:ObjectProperty rdf:ID="responseRelationship">
     <rdfs:label xml:lang="en">response relationship</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="#receptionRelationship"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasResponseRelationTo"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -10767,7 +10767,7 @@
   <owl:ObjectProperty rdf:ID="influence">
     <rdfs:label xml:lang="en">influence</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="#receptionRelationship"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasInfluenceOn"/>
     <rdfs:domain rdf:resource="#Context"/>
@@ -10797,7 +10797,7 @@
   <owl:ObjectProperty rdf:ID="influencedBy">
     <rdfs:label xml:lang="en">influenced by</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="#receptionRelationship"/>
     <cwrc:subjectCentricPredicate rdf:resource="#isInfluencedBy"/>
     <rdfs:domain rdf:resource="#Context"/>
