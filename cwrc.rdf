@@ -10313,7 +10313,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="adaptation">
+  <owl:ObjectProperty rdf:ID="c_adapts">
     <rdfs:label xml:lang="en">adaptation</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
@@ -10335,7 +10335,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="adaptedBy">
+  <owl:ObjectProperty rdf:ID="i_adapts">
     <rdfs:label xml:lang="en">adapted by</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10343,7 +10343,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="quotation">
+  <owl:ObjectProperty rdf:ID="c_quotes">
     <rdfs:label xml:lang="en">quotation</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
@@ -10365,7 +10365,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="quotedBy">
+  <owl:ObjectProperty rdf:ID="i_quotes">
     <rdfs:label xml:lang="en">quoted by</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10373,7 +10373,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="misquotation">
+  <owl:ObjectProperty rdf:ID="c_misquotes">
     <rdfs:label xml:lang="en">misquotation</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
@@ -10395,7 +10395,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="misquotedBy">
+  <owl:ObjectProperty rdf:ID="i_misquotes">
     <rdfs:label xml:lang="en">misquoted by</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10403,7 +10403,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
   
-  <owl:ObjectProperty rdf:ID="parody">
+  <owl:ObjectProperty rdf:ID="c_parodies">
     <rdfs:label xml:lang="en">parody</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
@@ -10425,14 +10425,14 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="parodiedBy">
+  <owl:ObjectProperty rdf:ID="i_parodies">
     <rdfs:label xml:lang="en">parodied by</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:inverseOf rdf:resource="#parodies"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="satire">
+  <owl:ObjectProperty rdf:ID="c_satirizes">
     <rdfs:label xml:lang="en">satire</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
@@ -10454,14 +10454,14 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="satirizedBy">
+  <owl:ObjectProperty rdf:ID="i_satirizes">
     <rdfs:label xml:lang="en">satirized by</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:inverseOf rdf:resource="#satirizes"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="imitation">
+  <owl:ObjectProperty rdf:ID="c_imitates">
     <rdfs:label xml:lang="en">imitation</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
@@ -10483,7 +10483,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="imitatedBy">
+  <owl:ObjectProperty rdf:ID="i_imitates">
     <rdfs:label xml:lang="en">imitated by</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10521,7 +10521,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="prequel">
+  <owl:ObjectProperty rdf:ID="c_isPrequelOf">
     <rdfs:label xml:lang="en">prequel</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
@@ -10543,7 +10543,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hasPrequel">
+  <owl:ObjectProperty rdf:ID="i_isPrequelOf">
     <rdfs:label xml:lang="en">has prequel</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10551,7 +10551,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
   
-  <owl:ObjectProperty rdf:ID="answer">
+  <owl:ObjectProperty rdf:ID="c_answers">
     <rdfs:label xml:lang="en">answer</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
@@ -10573,7 +10573,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="answeredBy">
+  <owl:ObjectProperty rdf:ID="i_answers">
     <rdfs:label xml:lang="en">answered by</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <void:inDataset rdf:resource="#datasetdefinition"/>
