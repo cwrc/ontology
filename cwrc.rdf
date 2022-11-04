@@ -10604,7 +10604,7 @@
   <owl:ObjectProperty rdf:ID="responseRelationship">
     <rdfs:label xml:lang="en">response relationship</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
-    <rdfs:subPropertyOf rdf:resource="#receptionRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasReceptionRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasResponseRelationTo"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10768,7 +10768,7 @@
     <rdfs:label xml:lang="en">influence</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
-    <rdfs:subPropertyOf rdf:resource="#receptionRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasReceptionRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasInfluenceOn"/>
     <rdfs:domain rdf:resource="#Context"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
@@ -10937,7 +10937,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
-  <owl:ObjectProperty rdf:ID="receptionRelationship">
+  <owl:ObjectProperty rdf:ID="c_hasReceptionRelationTo">
     <rdfs:label xml:lang="en">reception relationship</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#writingRelationship"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasReceptionRelationTo"/>
@@ -10959,6 +10959,62 @@
     <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="c_hasBestKnownWork">
+    <rdfs:label xml:lang="en">best known work</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasReceptionRelationTo"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasBestKnownWork"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasBestKnownWork">
+    <rdfs:label xml:lang="en">has best known work</rdfs:label>
+    <skos:definition xml:lang="en">Describes a writer's best-known, most successful, or most praised work. Can occur multiple times for the same creator in relation to different genres or media (e.g. best-known poem and best-known novel). </skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasReceptionRelationTo"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="i_hasBestKnownWork">
+    <rdfs:label xml:lang="en">best known work of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <owl:inverseOf rdf:resource="#hasBestKnownWork"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="c_hasLandmarkText">
+    <rdfs:label xml:lang="en">landmark work</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasReceptionRelationTo"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasLandmarkText"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasLandmarkText">
+    <rdfs:label xml:lang="en">has landmark text</rdfs:label>
+    <skos:definition xml:lang="en">Describes a creative work to having major social or literary repercussions. </skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasReceptionRelationTo"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="i_hasLandmarkText">
+    <rdfs:label xml:lang="en">landmark text of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <owl:inverseOf rdf:resource="#hasLandmarkText"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
    <owl:Class rdf:ID="TextualFeaturesContext">
