@@ -10283,7 +10283,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
   
-  <owl:ObjectProperty rdf:ID="allusion">
+  <owl:ObjectProperty rdf:ID="c_alludesTo">
     <rdfs:label xml:lang="en">allusion</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
@@ -10305,7 +10305,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="alludedToBy">
+  <owl:ObjectProperty rdf:ID="i_alludesTo">
     <rdfs:label xml:lang="en">alluded to by</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <void:inDataset rdf:resource="#datasetdefinition"/>
