@@ -10126,7 +10126,7 @@
   <owl:ObjectProperty rdf:ID="c_hasExtent">
     <rdfs:label xml:lang="en">extent</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#writingRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasWritingRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasExtent"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10144,7 +10144,7 @@
   <owl:ObjectProperty rdf:ID="profile">
     <rdfs:label xml:lang="en">profile</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#writingRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasWritingRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasProfile"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10168,7 +10168,7 @@
   <owl:ObjectProperty rdf:ID="c_hasGenericRange">
     <rdfs:label xml:lang="en">generic range includes</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#writingRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasWritingRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasGenericRange"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10192,7 +10192,7 @@
   <owl:ObjectProperty rdf:ID="c_hasDescription">
     <rdfs:label xml:lang="en">description</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#writingRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasWritingRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasDescription"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10233,7 +10233,7 @@
 
   <owl:ObjectProperty rdf:ID="c_hasIntertextualRelationTo">
     <rdfs:label xml:lang="en">intertextual relationship</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#writingRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasWritingRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasIntertextualRelationTo"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10601,7 +10601,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
-  <owl:ObjectProperty rdf:ID="responseRelationship">
+  <owl:ObjectProperty rdf:ID="c_hasResponseRelationTo">
     <rdfs:label xml:lang="en">response relationship</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="#c_hasReceptionRelationTo"/>
@@ -10627,7 +10627,7 @@
   <owl:ObjectProperty rdf:ID="response">
     <rdfs:label xml:lang="en">response</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#responseRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasResponseRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasResponse"/>
     <rdfs:range rdf:resource="#Response"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -10651,6 +10651,27 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <owl:inverseOf rdf:resource="#hasResponse"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="c_hasSelfDescription">
+    <rdfs:label xml:lang="en">self description</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasResponseRelationTo"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasResponse"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasSelfDescription">
+    <rdfs:label xml:lang="en">has self description</rdfs:label>
+    <skos:definition xml:lang="en">Describes a creator's evaluation of their own work or response to it.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasResponseRelationTo"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
 
@@ -10939,7 +10960,7 @@
 
   <owl:ObjectProperty rdf:ID="c_hasReceptionRelationTo">
     <rdfs:label xml:lang="en">reception relationship</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#writingRelationship"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasWritingRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasReceptionRelationTo"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -11096,7 +11117,7 @@
 
 
 
-  <owl:ObjectProperty rdf:ID="writingRelationship">
+  <owl:ObjectProperty rdf:ID="c_hasWritingRelationTo">
     <rdfs:label xml:lang="en">writing relationship</rdfs:label>
     <skos:definition xml:lang="en"></skos:definition>
     <cwrc:subjectCentricPredicate rdf:resource="#hasWritingRelationTo"/>
