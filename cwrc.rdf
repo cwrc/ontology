@@ -11161,7 +11161,7 @@
   </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:ID="c_hasNon-SurvivingWork">
-    <rdfs:label xml:lang="en">race or colour identity</rdfs:label>
+    <rdfs:label xml:lang="en">non-surviving work</rdfs:label>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#LostLiteraryWork"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasNon-SurvivingWork"/>
@@ -11170,7 +11170,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasNon-SurvivingWork">
-    <rdfs:label xml:lang="en">race or colour identity (self-reported)</rdfs:label>
+    <rdfs:label xml:lang="en">has non-surviving work</rdfs:label>
     <skos:definition xml:lang="en">Describes creative work that has not survived.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#relatesByTextualHistoryTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#relatesByTextualHistoryTo"/>
