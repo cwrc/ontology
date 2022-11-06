@@ -11700,6 +11700,38 @@
   </owl:ObjectProperty>
 
 
+  <owl:ObjectProperty rdf:ID="c_hasProductionRelationTo">
+    <rdfs:label xml:lang="en">production relation</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasWritingRelationTo"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasProductionRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="#Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasProductionRelationTo">
+    <rdfs:label xml:lang="en">has production relation to</rdfs:label>
+    <skos:definition xml:lang="en">Production Context is a significant subclass of Writing Context. Annotations typed as Production Context describe the process of textual making, ranging a text's raw, manuscript form through to its final publication stage.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="#Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="i_hasProductionRelationTo">
+    <rdfs:label xml:lang="en">relates by production to</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasProductionRelationTo"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+
   <owl:Class rdf:ID="HealthContext">
     <rdfs:label xml:lang="en">health context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte de santé</rdfs:label>
