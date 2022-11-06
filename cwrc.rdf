@@ -11307,6 +11307,60 @@
   </owl:ObjectProperty>
 
 
+  <owl:ObjectProperty rdf:ID="c_hasTextualFeaturesRelationTo">
+    <rdfs:label xml:lang="en">textual features relationship</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasWritingRelationTo"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasTextualFeaturesRelationTo"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasTextualFeaturesRelationTo">
+    <rdfs:label xml:lang="en">has textual features relation to</rdfs:label>
+    <skos:definition xml:lang="en">"Textual Features Context is a significant subclass of Writing Context. Annotations typed as Textual Features Context chart critical interest in texts in addition to textual analysis, which occassionally draws on the tradition of close reading."</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="c_hasTemporalSetting">
+    <rdfs:label xml:lang="en">temporal setting</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTextualFeaturesRelationTo"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasTemporalSetting"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="#TemporalSettingDateType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasTemporalSetting">
+    <rdfs:label xml:lang="en">has temporal setting</rdfs:label>
+    <skos:definition xml:lang="en">Describes a creative work's temporal setting that specifies a historical era indicated in the text.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasTextualFeaturesRelationTo"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="#TemporalSettingDateType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="i_hasTemporalSetting">
+    <rdfs:label xml:lang="en">temporal setting of</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasTemporalSetting"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+
+
+
+
+
   <owl:Class rdf:ID="HealthContext">
     <rdfs:label xml:lang="en">health context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte de santé</rdfs:label>
