@@ -11444,6 +11444,33 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:ID="c_hasSocialSetting">
+    <rdfs:label xml:lang="en">social setting</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTextualFeaturesRelationTo"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasSocialSetting"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#Oeuvre"/>
+    <rdfs:range rdf:resource="#SocialSetting"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasSocialSetting">
+    <rdfs:label xml:lang="en">has social setting</rdfs:label>
+    <skos:definition xml:lang="en">Describes the socio-economic status of a setting reference in a text.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasTextualFeaturesRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#Oeuvre"/>
+    <rdfs:range rdf:resource="#SocialSetting"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="i_hasSocialSetting">
+    <rdfs:label xml:lang="en">social setting of</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasSocialSetting"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
 
   <owl:Class rdf:ID="HealthContext">
     <rdfs:label xml:lang="en">health context</rdfs:label>
