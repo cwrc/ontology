@@ -10653,7 +10653,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:ID="c_hasSelfDescription">
+  <owl:ObjectProperty rdf:ID="c_hasSelfDescription">
     <rdfs:label xml:lang="en">self description</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasResponseRelationTo"/>
@@ -10669,6 +10669,27 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasResponseRelationTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="c_suffersWritingPenalty">
+    <rdfs:label xml:lang="en">penalty</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasResponseRelationTo"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#suffersWritingPenalty"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="suffersWritingPenalty">
+    <rdfs:label xml:lang="en">suffers writing penalty</rdfs:label>
+    <skos:definition xml:lang="en">Describes negative consequences produced by the subject's work, either generally or by a specific instance of it.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasResponseRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
