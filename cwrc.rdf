@@ -10170,6 +10170,8 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasWritingRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasGenericRange"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
+    <rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Genre"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10178,6 +10180,8 @@
     <skos:definition xml:lang="en">Indicates that a person wrote in this genre or form.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
+    <rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Genre"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10194,6 +10198,8 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasWritingRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasDescription"/>
+    <rdfs:domain rdf:resource=""/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
 </owl:ObjectProperty>
@@ -10235,7 +10241,9 @@
     <rdfs:label xml:lang="en">intertextual relationship</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasWritingRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasIntertextualRelationTo"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10247,9 +10255,9 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
@@ -10258,7 +10266,9 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#alludesExplicitlyTo"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10269,9 +10279,9 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10288,7 +10298,9 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#alludesTo"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10299,9 +10311,9 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10318,8 +10330,10 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#adapts"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10329,9 +10343,9 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10348,8 +10362,10 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#quotes"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10359,9 +10375,9 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10378,8 +10394,10 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#misquotes"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10389,9 +10407,9 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10408,8 +10426,10 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#parodies"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10419,9 +10439,9 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10432,13 +10452,16 @@
     <owl:inverseOf rdf:resource="#parodies"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:ID="c_satirizes">
     <rdfs:label xml:lang="en">satire</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#satirizes"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10448,9 +10471,9 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10461,13 +10484,16 @@
     <owl:inverseOf rdf:resource="#satirizes"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:ID="c_imitates">
     <rdfs:label xml:lang="en">imitation</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#imitates"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10477,9 +10503,9 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10496,8 +10522,8 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#continues"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10506,10 +10532,8 @@
     <skos:definition xml:lang="en">Indicates an imaginative textual response to a previous text that further develops the characters, plot, or setting, but differs from imitations, adaptations, or updates in that it does not directly rely on the previous text, nor act as a sequel.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
-    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10526,8 +10550,8 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#isPrequelOf"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/> 
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10536,10 +10560,8 @@
     <skos:definition xml:lang="en">Indicates an intertextual engagement that involves creative speculation about events what came before the temporal setting or events of an existing text.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
-    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10556,8 +10578,10 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#answers"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10567,9 +10591,9 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10606,8 +10630,11 @@
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="#c_hasReceptionRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasResponseRelationTo"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <rdfs:range rdf:resource="#Response"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10619,7 +10646,9 @@
     <rdfs:subPropertyOf rdf:resource="#hasReceptionRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <rdfs:range rdf:resource="#Response"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
@@ -10629,6 +10658,8 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasResponseRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasResponse"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#Response"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10640,7 +10671,7 @@
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="#hasResponseRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#Response"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10658,7 +10689,7 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasResponseRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasResponse"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10668,7 +10699,7 @@
     <skos:definition xml:lang="en">Describes a creator's evaluation of their own work or response to it.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasResponseRelationTo"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10679,7 +10710,7 @@
     <rdfs:subPropertyOf rdf:resource="#c_hasResponseRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#suffersWritingPenalty"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10689,7 +10720,7 @@
     <skos:definition xml:lang="en">Describes negative consequences produced by the subject's work, either generally or by a specific instance of it.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasResponseRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10812,9 +10843,9 @@
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="#c_hasReceptionRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasInfluenceOn"/>
-    <rdfs:domain rdf:resource="#Context"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10827,9 +10858,9 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="#hasReceptionRelationTo"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10841,12 +10872,6 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:definition xml:lang="en">This element from the Production component names the specific people, texts, events or places that formed (developed) the writer's thinking as an artist. Influences can pertain to individual texts or her work as a whole.</skos:definition>
     <owl:inverseOf rdf:resource="#hasInfluenceOn"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
-    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
-    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10856,8 +10881,10 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#i_hasInfluenceOn"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasLiteraryInfluence"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10867,9 +10894,9 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#i_hasInfluenceOn"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10887,7 +10914,10 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#i_hasInfluenceOn"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasIntellectualInfluence"/>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10897,8 +10927,9 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#i_hasInfluenceOn"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10915,7 +10946,10 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#i_hasInfluenceOn"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasFamilialInfluence"/>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10925,8 +10959,9 @@
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#i_hasInfluenceOn"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10983,6 +11018,8 @@
     <rdfs:label xml:lang="en">reception relationship</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasWritingRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasReceptionRelationTo"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -10994,11 +11031,9 @@
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
-    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
@@ -11142,10 +11177,9 @@
     <skos:definition xml:lang="en"></skos:definition>
     <cwrc:subjectCentricPredicate rdf:resource="#hasWritingRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
-    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -11156,8 +11190,6 @@
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
-    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -11183,7 +11215,7 @@
 
   <owl:ObjectProperty rdf:ID="c_hasNonSurvivingWork">
     <rdfs:label xml:lang="en">non-surviving work</rdfs:label>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#LostLiteraryWork"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasNonSurvivingWork"/>
     <rdfs:subPropertyOf rdf:resource="#c_relatesByTextualHistoryTo"/>
@@ -11194,7 +11226,7 @@
     <rdfs:label xml:lang="en">has non-surviving work</rdfs:label>
     <skos:definition xml:lang="en">Describes creative work that has not survived.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#relatesByTextualHistoryTo"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#LostLiteraryWork"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -11210,7 +11242,7 @@
     <rdfs:label xml:lang="en">accidental non-surviving work</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasNonSurvivingWork"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasAccidentalNonSurvivingWork"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#LostLiteraryWork"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -11219,7 +11251,7 @@
     <rdfs:label xml:lang="en">has non-surviving work</rdfs:label>
     <skos:definition xml:lang="en">Describes creative work that has not survived as a result of an accident.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasNonSurvivingWork"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#LostLiteraryWork"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -11235,7 +11267,7 @@
     <rdfs:label xml:lang="en">work destruction</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasNonSurvivingWork"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasDestroyedWork"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#LostLiteraryWork"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -11244,7 +11276,7 @@
     <rdfs:label xml:lang="en">has destroyed work</rdfs:label>
     <skos:definition xml:lang="en">Describes creative work that has been destroyed.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasNonSurvivingWork"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#LostLiteraryWork"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -11260,7 +11292,7 @@
     <rdfs:label xml:lang="en">work destroyed by self</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasNonSurvivingWork"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasWorkDestroyedBySelf"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#LostLiteraryWork"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -11269,7 +11301,7 @@
     <rdfs:label xml:lang="en">has work destroyed by self</rdfs:label>
     <skos:definition xml:lang="en">Describes creative work that has been destroyed by its creator.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasNonSurvivingWork"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#LostLiteraryWork"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -11285,7 +11317,7 @@
     <rdfs:label xml:lang="en">work destroyed by other</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasNonSurvivingWork"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasWorkDestroyedByOther"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#LostLiteraryWork"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -11294,7 +11326,7 @@
     <rdfs:label xml:lang="en">has work destroyed by other</rdfs:label>
     <skos:definition xml:lang="en">Describes creative work that has been destroyed by someone other than its creator.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasNonSurvivingWork"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#LostLiteraryWork"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -11592,6 +11624,25 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+<owl:ObjectProperty rdf:ID="c_hasMotif">
+    <rdfs:label xml:lang="en">motif</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTextualFeaturesRelationTo"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasMotif"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasMotif">
+    <rdfs:label xml:lang="en">has motif</rdfs:label>
+    <skos:definition xml:lang="en">Describes a significant scene, episode, or idea in a text that is not coterminal with the entire text and recurs across multiple texts. Motifs are localized or contained within a plot and may recur multiple times in the same work.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasTextualFeaturesRelationTo"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:ID="c_hasPlotSummary">
     <rdfs:label xml:lang="en">plot summary</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasTextualFeaturesRelationTo"/>
@@ -11616,8 +11667,8 @@
     <rdfs:subPropertyOf rdf:resource="#c_hasTextualFeaturesRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#engagesWithGenre"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="#Person"/>
-    <rdfs:range rdf:resource="#Genre"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Genre"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -11626,8 +11677,8 @@
     <skos:definition xml:lang="en">Indicates an author or text's disputable generic allegiance, unusual generic mixture or <i>bricolage</i>, or landmark engagement with genre rather than relatively routine participation in a genre.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasTextualFeaturesRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="#Person"/>
-    <rdfs:range rdf:resource="#Genre"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Genre"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -11705,9 +11756,9 @@
     <rdfs:subPropertyOf rdf:resource="#c_hasWritingRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasProductionRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="#Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="#Person"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -11717,9 +11768,9 @@
     <skos:definition xml:lang="en">Production Context is a significant subclass of Writing Context. Annotations typed as Production Context describe the process of textual making, ranging a text's raw, manuscript form through to its final publication stage.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="#Person"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="#Person"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
