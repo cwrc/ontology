@@ -10630,10 +10630,14 @@
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="#c_hasReceptionRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasResponseRelationTo"/>
-    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <rdfs:range rdf:resource="#Response"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10645,10 +10649,14 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     <rdfs:subPropertyOf rdf:resource="#hasReceptionRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
-    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <rdfs:range rdf:resource="#Response"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
