@@ -11237,7 +11237,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="c_relatesByTextualHistoryTo">
+  <owl:ObjectProperty rdf:ID="c_hasTextualHistoryRelationTo">
     <rdfs:label xml:lang="en">textual history relationship</rdfs:label>
     <skos:definition xml:lang="en"></skos:definition>
     <cwrc:subjectCentricPredicate rdf:resource="#c_hasWritingRelationTo"/>
@@ -11247,7 +11247,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>  
-  <owl:ObjectProperty rdf:ID="relatesByTextualHistoryTo">
+  <owl:ObjectProperty rdf:ID="hasTextualHistoryRelationTo">
     <rdfs:label xml:lang="en">related by textual history to</rdfs:label>
     <skos:definition xml:lang="en">Relates to an aspect of a text's survival or destruction.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
@@ -11262,14 +11262,14 @@
     <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#LostLiteraryWork"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasNonSurvivingWork"/>
-    <rdfs:subPropertyOf rdf:resource="#c_relatesByTextualHistoryTo"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTextualHistoryRelationTo"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasNonSurvivingWork">
     <rdfs:label xml:lang="en">has non-surviving work</rdfs:label>
     <skos:definition xml:lang="en">Describes creative work that has not survived.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#relatesByTextualHistoryTo"/>
+    <rdfs:subPropertyOf rdf:resource="#hasTextualHistoryRelationTo"/>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#LostLiteraryWork"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -11384,7 +11384,7 @@
 
   <owl:ObjectProperty rdf:ID="c_hasArchivalLocation">
     <rdfs:label xml:lang="en">archival location</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_relatesByTextualHistoryTo"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTextualHistoryRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasArchivalLocation"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="#Oeuvre"/>
@@ -11397,7 +11397,7 @@
   <owl:ObjectProperty rdf:ID="hasArchivalLocation">
     <rdfs:label xml:lang="en">has archival location</rdfs:label>
     <skos:definition xml:lang="en">Describes the location or institutional holder of a manuscript or rare printed text.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#relatesByTextualHistoryTo"/>
+    <rdfs:subPropertyOf rdf:resource="#hasTextualHistoryRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="#Oeuvre"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -11415,7 +11415,7 @@
 
   <owl:ObjectProperty rdf:ID="c_relatesViaArchiveTo">
     <rdfs:label xml:lang="en">archival location</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_relatesByTextualHistoryTo"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTextualHistoryRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#relatesViaArchiveTo"/>
     <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -11428,7 +11428,7 @@
     <rdfs:label xml:lang="en">relates via archive to</rdfs:label>
     <skos:definition xml:lang="en">Describes a relationship of a writer or their archived writing to a person or organization.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    <rdfs:subPropertyOf rdf:resource="#relatesByTextualHistoryTo"/>
+    <rdfs:subPropertyOf rdf:resource="#hasTextualHistoryRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
