@@ -10243,14 +10243,14 @@
     <cwrc:subjectCentricPredicate rdf:resource="#hasIntertextualRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
-    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasIntertextualRelationTo">
     <rdfs:label xml:lang="en">has intertextual relation to</rdfs:label>
-    <skos:definition xml:lang="en">Indicates the relationships amongst authors and texts, reflecting the extent to which language of an author or a specific text is in dialogic relation to other texts, as first articulated by Julia Kristeva. A creative Work or an author more generally relates intertextually to a textual object, either to a specific Work or to the general style or oeuvre of another author. Usually refers to  how the meaning of a later text is informed by an earlier one, but, as articulated by theorists including Mikhail Bakhtin and Kristeva, it can also be invoked to refer to the shaping impact of language more generally on subsequent linguistic productions. The specific subpredicates provided here are not exhaustive. <![CDATA[<a href="https://www.zotero.org/groups/1018142/cwrc_ontology_references/items/itemKey/JE6QKFF4/itemPage/3">1996</a>]]>.</skos:definition>
+    <skos:definition xml:lang="en">Indicates the relationships amongst authors and texts, reflecting the extent to which language of an author or a specific text is in dialogic relation to other texts, as first articulated by Julia Kristeva. A creative Work or an author more generally relates intertextually to a textual object, either to a specific Work or to the general style or oeuvre of another author. Usually refers to  how the meaning of a later text is informed by an earlier one, but, as articulated by theorists including Mikhail Bakhtin and Kristeva, it can also be invoked to refer to the shaping impact of language more generally on subsequent linguistic productions. The specific subpredicates provided here are not exhaustive. <![CDATA[ <a href="https://www.zotero.org/groups/1018142/cwrc_ontology_references/items/itemKey/JE6QKFF4/itemPage/3">1996</a>.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
