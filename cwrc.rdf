@@ -11424,7 +11424,7 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="c_relatesViaArchiveTo">
-    <rdfs:label xml:lang="en">archival location</rdfs:label>
+    <rdfs:label xml:lang="en">archival relationship</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasTextualHistoryRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#relatesViaArchiveTo"/>
     <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -11436,7 +11436,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="relatesViaArchiveTo">
     <rdfs:label xml:lang="en">relates via archive to</rdfs:label>
-    <skos:definition xml:lang="en">Describes a relationship of a writer or their archived writing to a person or organization.</skos:definition>
+    <skos:definition xml:lang="en">Indicates the relationship of a writer or their archived writing to a person or organization.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     <rdfs:subPropertyOf rdf:resource="#hasTextualHistoryRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
