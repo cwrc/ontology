@@ -10276,7 +10276,7 @@
   <owl:ObjectProperty rdf:ID="alludesExplicitlyTo">
     <rdfs:label xml:lang="en">alludes explicitly to</rdfs:label>
     <skos:definition xml:lang="en">Indicates direct acknowledgement of either a specific creative Work or the style or general oeuvre of another author, often through mention of the title or the author's name. </skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Le sujet, une Œuvre littéraire ou une auteure, fait allusion à un autre objet textuel — soit une Œuvre littéraire spécifique, soit le style ou le corpus d'un(e) autre auteur(e).</skos:definiton>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
@@ -10339,8 +10339,8 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="adapts">
     <rdfs:label xml:lang="en">adapts</rdfs:label>
-    <skos:definition xml:lang="en">Indicates a reworking of a creative Work, including updates. Adaptation can be construed broadly: to quote Linda Hutcheon, "adaptation is not only a formal entity . . . but a process" <![CDATA[<a href="cwrc:c5b85d6d-6814-43ee-8e85-d3ad14c34c29">(Hutcheon and O'Flynn, 2012)</a>]]>.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="en">Indicates a reworking of a creative Work, including updates. Adaptation can be construed broadly: to quote Linda Hutcheon, "adaptation is not only a formal entity . . . but a process"  <![CDATA[ <a href="https://www.zotero.org/groups/1018142/cwrc_ontology_references/items/itemKey/CE53Q3ZE">xvii</a>.</skos:definition>
+    <skos:definition xml:lang="fr">Le sujet, une Œuvre littéraire ou une auteure, adapte une autre Œuvre littéraire. L'adaptation peut être interprétée au sens large; selon Linda Hutcheon, "l'adaptation n'est pas seulement une entité formelle... mais un processus".  <![CDATA[ <a href="https://www.zotero.org/groups/1018142/cwrc_ontology_references/items/itemKey/CE53Q3ZE">xvii</a>.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
@@ -10435,7 +10435,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="parodies">
     <rdfs:label xml:lang="en">parodies</rdfs:label>
-    <skos:definition xml:lang="en">Indicates a parodic mode of intertextuality. See @@genre:parody@@</skos:definition>
+    <skos:definition xml:lang="en">Indicates a parodic mode of intertextuality. See http://sparql.cwrc.ca/ontologies/genre.html#parody</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10467,7 +10467,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="satirizes">
     <rdfs:label xml:lang="en">satirizes</rdfs:label>
-    <skos:definition xml:lang="en">Indicates a satiric mode of intertextuality. See @@genre:satire@@</skos:definition>
+    <skos:definition xml:lang="en">Indicates a satiric mode of intertextuality. See http://sparql.cwrc.ca/ontologies/genre.html#satire</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10499,7 +10499,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="imitates">
     <rdfs:label xml:lang="en">imitates</rdfs:label>
-    <skos:definition xml:lang="en">Indicates a generally favourable intertextual engagement by way of imitation. See @@genre:imitation@@</skos:definition>
+    <skos:definition xml:lang="en">Indicates a generally favourable intertextual engagement by way of imitation. See http://sparql.cwrc.ca/ontologies/genre.html#imitation</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10652,7 +10652,7 @@
   <owl:Class rdf:ID="ResponseEvent">
     <rdfs:label xml:lang="en"> response event</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en">An event related to an @@#ResponseContext@@.</skos:definition>
+    <skos:definition xml:lang="en">An event related to a Response to a creative work.</skos:definition>
     <rdfs:subClassOf rdf:resource="#ReceptionEvent"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
