@@ -10254,7 +10254,7 @@
   <owl:ObjectProperty rdf:ID="hasIntertextualRelationTo">
     <rdfs:label xml:lang="en">has intertextual relation to</rdfs:label>
     <skos:definition xml:lang="en">Indicates the relationships amongst authors and texts, reflecting the extent to which language of an author or a specific text is in dialogic relation to other texts, as first articulated by Julia Kristeva. A creative Work or an author more generally relates intertextually to a textual object, either to a specific Work or to the general style or oeuvre of another author. Usually refers to  how the meaning of a later text is informed by an earlier one, but, as articulated by theorists including Mikhail Bakhtin and Kristeva, it can also be invoked to refer to the shaping impact of language more generally on subsequent linguistic productions. The specific subpredicates provided here are not exhaustive. <![CDATA[ <a href="https://www.zotero.org/groups/1018142/cwrc_ontology_references/items/itemKey/JE6QKFF4/itemPage/3">1996</a>]]>.</skos:definition>
-    <skos:definition xml:lang="fr"/>
+    <skos:definition xml:lang="fr">Le sujet, une Œuvre littéraire ou une auteure, possède un lien important avec un autre objet textuel — soit une œuvre spécifique, soit le style ou le corpus d'une autr(e) auteur(e). Dans la critique littéraire, l'intertextualité est le plus souvent mentionnée pour référer à toute forme de relation entre deux textes publiés à des moments distincts, mais comme Mikhail Bakhtin et Julia Kristeva l'ont formulé, on peut parler également d'intertextualité pour se référer à l'influence formatrice du langage sur toute production linguisitique ultérieure. Les sous-classes spécifiques de l'intertextualité fournies ici ne sont pas exhaustives.</skos:definiton>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -10671,11 +10671,12 @@
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:domainIncludes rdf:resource="#Response"/>
     <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
-    <rdfs:range rdf:resource="#Response"/>
+    <cwrc:rangeIncludes rdf:resource="#Response"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -10690,11 +10691,12 @@
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:domainIncludes rdf:resource="#Response"/>
     <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
-    <rdfs:range rdf:resource="#Response"/>
+    <cwrc:rangeIncludes rdf:resource="#Response"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
