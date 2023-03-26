@@ -10520,39 +10520,96 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="c_fictionalizes">
-    <rdfs:label xml:lang="en">fictionalization</rdfs:label>
+
+  <owl:ObjectProperty rdf:ID="c_hasFictionalizationRelationTo">
+    <rdfs:label xml:lang="en">fictionalization relationship</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasIntertextualRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="#c_hasReceptionRelationTo"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#fictionalizes"/>
-    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasFictionalizationRelationTo"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="fictionalizes">
-    <rdfs:label xml:lang="en">fictionalizes</rdfs:label>
-    <skos:definition xml:lang="en"> Describes the fictionalized (usually written) responses to a creator or their work, such as a one-woman show about Virginia Woolf's life.</skos:definition>
+  <owl:ObjectProperty rdf:ID="hasFictionalizationRelationTo">
+    <rdfs:label xml:lang="en">has fictionalization relation to</rdfs:label>
+    <skos:definition xml:lang="en">Indicates that an entity is related to the fictionalization, in various media such as novels, films, or plays, of the subject creator or their work.</skos:definition>
     <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasIntertextualRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="#hasReceptionRelationTo"/>
-    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="i_fictionalizes">
-    <rdfs:label xml:lang="en">fictionalized by</rdfs:label>
+  <owl:ObjectProperty rdf:ID="i_hasFictionalizationRelationTo">
+    <rdfs:label xml:lang="en">fictionalization relationship of</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <owl:inverseOf rdf:resource="#fictionalizes"/>
+    <owl:inverseOf rdf:resource="#hasFictionalizationRelationTo"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="c_hasFictionalization">
+    <rdfs:label xml:lang="en">fictionalization</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasFictionalizationRelationTo"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasFictionalization"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasFictionalization">
+    <rdfs:label xml:lang="en">has fictionalization</rdfs:label>
+    <skos:definition xml:lang="en"> Describes a fictionalized response to a creator or their work.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasFictionalizationRelationTo"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="c_fictionalizedBy">
+    <rdfs:label xml:lang="en">fictionalization</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasFictionalizationRelationTo"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#fictionalizedBy"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="fictionalizedBy">
+    <rdfs:label xml:lang="en">fictionalized by</rdfs:label>
+    <skos:definition xml:lang="en">Indicates a fictionalized response to a creator or their work by another creator or creative work.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasFictionalizationRelationTo"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="i_fictionalizedBy">
+    <rdfs:label xml:lang="en">fictionalizes</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#fictionalizedBy"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
 
   <owl:ObjectProperty rdf:ID="c_hasContinuation">
     <rdfs:label xml:lang="en">continuation</rdfs:label>
@@ -10734,7 +10791,7 @@
     <rdfs:label xml:lang="en">self description</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasResponseRelationTo"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#hasResponse"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasSelfDescription"/>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -10751,9 +10808,47 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:ID="c_hasWritingPenaltyRelationTo">
+    <rdfs:label xml:lang="en">writing penalty relationship</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasReceptionRelationTo"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasWritingPenaltyRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasWritingPenaltyRelationTo">
+    <rdfs:label xml:lang="en">has writing penalty relation to</rdfs:label>
+    <skos:definition xml:lang="en">Indicates a person, organization, creative work, or place related to the negative or punitive reception of the subject creator's work.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasReceptionRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="i_hasWritingPenaltyRelationTo">
+    <rdfs:label xml:lang="en">relates to writing penalty of</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <owl:inverseOf rdf:resource="#hasWritingPenaltyRelationTo"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:ID="c_suffersWritingPenalty">
     <rdfs:label xml:lang="en">penalty</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasResponseRelationTo"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasWritingPenaltyRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#suffersWritingPenalty"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
@@ -10764,14 +10859,13 @@
   <owl:ObjectProperty rdf:ID="suffersWritingPenalty">
     <rdfs:label xml:lang="en">suffers writing penalty</rdfs:label>
     <skos:definition xml:lang="en">Describes negative consequences produced by the subject's work, either generally or by a specific instance of it.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasResponseRelationTo"/>
+    <rdfs:subPropertyOf rdf:resource="#hasWritingPenaltyRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-
 
   <owl:Class rdf:ID="Response">
     <rdfs:label xml:lang="en">Response</rdfs:label>
@@ -11065,10 +11159,16 @@
     <rdfs:label xml:lang="en">reception relationship</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasWritingRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasReceptionRelationTo"/>
-    <rdfs:domain rdf:resource="#NaturalPerson"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -11078,10 +11178,16 @@
     <skos:definition xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
-    <rdfs:domain rdf:resource="#NaturalPerson"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
   </owl:ObjectProperty>
 
@@ -11184,7 +11290,7 @@
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subClassOf rdf:resource="#WritingContext"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">Textual History Context is a significant subclass of Writing Context. Annotations typed as Textual History Context chart the history of the physical manifestation of a text or texts. These include manuscript history, archival locations, and survival or lack of survival, whether accidental or deliberate.</skos:definition>
+    <skos:definition xml:lang="en">Textual History Context is a significant subclass of Writing Context. Annotations typed as Textual Survival Context relate to the material history of a text, often in manuscript form, including loss and destruction.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -11249,17 +11355,17 @@
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="#Oeuvre"/>
-    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>  
   <owl:ObjectProperty rdf:ID="hasTextualHistoryRelationTo">
     <rdfs:label xml:lang="en">related by textual history to</rdfs:label>
-    <skos:definition xml:lang="en">Indicates a relationship between the material text of a creative work and another entity.</skos:definition>
+    <skos:definition xml:lang="en">Indicates a relationship between the history of a lost creative work and another entity.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasWritingRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="#Oeuvre"/>
@@ -11272,59 +11378,9 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="c_hasNonSurvivingWork">
-    <rdfs:label xml:lang="en">non-surviving work</rdfs:label>
-    <rdfs:domain rdf:resource="#NaturalPerson"/>
-    <rdfs:range rdf:resource="#LostLiteraryWork"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#hasNonSurvivingWork"/>
-    <rdfs:subPropertyOf rdf:resource="#c_hasTextualHistoryRelationTo"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hasNonSurvivingWork">
-    <rdfs:label xml:lang="en">has non-surviving work</rdfs:label>
-    <skos:definition xml:lang="en">Describes creative work that has not survived.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasTextualHistoryRelationTo"/>
-    <rdfs:domain rdf:resource="#NaturalPerson"/>
-    <rdfs:range rdf:resource="#LostLiteraryWork"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="i_hasNonSurvivingWork">
-    <rdfs:label xml:lang="en">non-survivingWork of</rdfs:label>
-    <owl:inverseOf rdf:resource="#hasNonSurvivingWork"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:ID="c_hasAccidentalNonSurvivingWork">
-    <rdfs:label xml:lang="en">accidental non-surviving work</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasNonSurvivingWork"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#hasAccidentalNonSurvivingWork"/>
-    <rdfs:domain rdf:resource="#NaturalPerson"/>
-    <rdfs:range rdf:resource="#LostLiteraryWork"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hasAccidentalNonSurvivingWork">
-    <rdfs:label xml:lang="en">has non-surviving work</rdfs:label>
-    <skos:definition xml:lang="en">Describes creative work that has not survived as a result of an accident.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasNonSurvivingWork"/>
-    <rdfs:domain rdf:resource="#NaturalPerson"/>
-    <rdfs:range rdf:resource="#LostLiteraryWork"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="i_hasAccidentalNonSurvivingWork">
-    <rdfs:label xml:lang="en">accidental non-surviving work of</rdfs:label>
-    <owl:inverseOf rdf:resource="#hasAccidentalNonSurvivingWork"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-
   <owl:ObjectProperty rdf:ID="c_hasDestroyedWork">
     <rdfs:label xml:lang="en">work destruction</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasNonSurvivingWork"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTextualHistoryRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasDestroyedWork"/>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#LostLiteraryWork"/>
@@ -11333,8 +11389,8 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasDestroyedWork">
     <rdfs:label xml:lang="en">has destroyed work</rdfs:label>
-    <skos:definition xml:lang="en">Describes creative work that has been destroyed.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasNonSurvivingWork"/>
+    <skos:definition xml:lang="en">Indicates creative work that has been lost or destroyed.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasTextualHistoryRelationTo "/>
     <rdfs:domain rdf:resource="#NaturalPerson"/>
     <rdfs:range rdf:resource="#LostLiteraryWork"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -11346,53 +11402,129 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  
-  <owl:ObjectProperty rdf:ID="c_hasWorkDestroyedBySelf">
-    <rdfs:label xml:lang="en">work destroyed by self</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasNonSurvivingWork"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#hasWorkDestroyedBySelf"/>
-    <rdfs:domain rdf:resource="#NaturalPerson"/>
-    <rdfs:range rdf:resource="#LostLiteraryWork"/>
+
+  <owl:Class rdf:ID="LostLiteraryWork">
+    <rdfs:label xml:lang="en">lost literary work</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A creative work that has been lost or destroyed.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="c_isDestroyed">
+    <rdfs:label xml:lang="en">destruction</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTextualHistoryRelationTo "/>
+    <cwrc:subjectCentricPredicate rdf:resource="#isDestroyed"/>
+    <rdfs:domain rdf:resource="#LostLiteraryWork"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hasWorkDestroyedBySelf">
-    <rdfs:label xml:lang="en">has work destroyed by self</rdfs:label>
-    <skos:definition xml:lang="en">Describes creative work that has been destroyed by its creator.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasNonSurvivingWork"/>
-    <rdfs:domain rdf:resource="#NaturalPerson"/>
-    <rdfs:range rdf:resource="#LostLiteraryWork"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="i_hasWorkDestroyedBySelf">
-    <rdfs:label xml:lang="en">destroyed by creator</rdfs:label>
-    <owl:inverseOf rdf:resource="#hasWorkDestroyedBySelf"/>
+  <owl:ObjectProperty rdf:ID="isDestroyed">
+    <rdfs:label xml:lang="en">is destroyed</rdfs:label>
+    <skos:definition xml:lang="en">Describes the loss or destruction of creative work.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasTextualHistoryRelationTo "/>
+    <rdfs:domain rdf:resource="#LostLiteraryWork"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="c_hasWorkDestroyedByOther">
-    <rdfs:label xml:lang="en">work destroyed by other</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasNonSurvivingWork"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#hasWorkDestroyedByOther"/>
-    <rdfs:domain rdf:resource="#NaturalPerson"/>
-    <rdfs:range rdf:resource="#LostLiteraryWork"/>
+  <owl:ObjectProperty rdf:ID="c_hasDestructionType">
+    <rdfs:label xml:lang="en">destruction type</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTextualHistoryRelationTo"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasDestructionType"/>
+    <rdfs:domain rdf:resource="#LostLiteraryWork"/>
+    <rdfs:range rdf:resource="#DestructionType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hasWorkDestroyedByOther">
-    <rdfs:label xml:lang="en">has work destroyed by other</rdfs:label>
-    <skos:definition xml:lang="en">Describes creative work that has been destroyed by someone other than its creator.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasNonSurvivingWork"/>
-    <rdfs:domain rdf:resource="#NaturalPerson"/>
-    <rdfs:range rdf:resource="#LostLiteraryWork"/>
+  <owl:ObjectProperty rdf:ID="hasDestructionType">
+    <rdfs:label xml:lang="en">has destruction type</rdfs:label>
+    <skos:definition xml:lang="en">Indicates creative work that has been lost or destroyed.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasTextualHistoryRelationTo "/>
+    <rdfs:domain rdf:resource="#LostLiteraryWork"/>
+    <rdfs:range rdf:resource="#DestructionType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="i_hasWorkDestroyedByOther">
-    <rdfs:label xml:lang="en">destroyed work</rdfs:label>
-    <owl:inverseOf rdf:resource="#hasWorkDestroyedByOther"/>
+  <owl:ObjectProperty rdf:ID="i_hasDestructionType">
+    <rdfs:label xml:lang="en">destruction type of</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasDestructionType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="DestructionType">
+    <rdfs:label xml:lang="en">destruction type</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">The manner in which a creative work was destroyed.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <cwrc:DestructionType rdf:about="#accidentalDestruction">
+    <rdfs:label xml:lang="en">accident</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">Loss as a result of an accident.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#DestructionType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:DestructionType>
+
+  <cwrc:DestructionType rdf:about="#destructionByCreator">
+    <rdfs:label xml:lang="en">destruction by creator</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">Loss as a result of destruction by the author.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#DestructionType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:DestructionType>
+
+  <cwrc:DestructionType rdf:about="#destructionByAnother">
+    <rdfs:label xml:lang="en">destruction by another</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">Loss as a result of destruction by someone other than the author.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#DestructionType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:DestructionType>
+
+  <owl:ObjectProperty rdf:ID="c_isDestroyedBy">
+    <rdfs:label xml:lang="en">destruction</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTextualHistoryRelationTo"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#isDestroyedBy"/>
+    <rdfs:domain rdf:resource="#LostLiteraryWork"/>
+    <rdfs:range rdf:resource="#NaturalPerson"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isDestroyedBy">
+    <rdfs:label xml:lang="en">is destroyed by</rdfs:label>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasTextualHistoryRelationTo "/>
+    <rdfs:domain rdf:resource="#LostLiteraryWork"/>
+    <rdfs:range rdf:resource="#NaturalPerson"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="i_isDestroyedBy">
+    <rdfs:label xml:lang="en">destroys</rdfs:label>
+    <owl:inverseOf rdf:resource="#isDestroyedBy"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
