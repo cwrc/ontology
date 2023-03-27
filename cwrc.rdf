@@ -9514,6 +9514,63 @@
   </owl:ObjectProperty>
 
 
+  <owl:ObjectProperty rdf:ID="c_hasRecognitionRelationTo">
+    <rdfs:label xml:lang="en">recognition relationship work</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasRecognitionRelationTo"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasReceptionRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasRecognitionRelationTo">
+    <rdfs:label xml:lang="en">has recognition relation to</rdfs:label>
+    <skos:definition xml:lang="en">Indicates a person, organization, creative work, or place related to the positive recognition of the subject creator's work, usually in the form of awards and prizes.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasReceptionRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="i_hasRecognitionRelationTo">
+    <rdfs:label xml:lang="en">relates to recognition of</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasRecognitionRelationTo"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="c_receivesRecognition">
+    <rdfs:label xml:lang="en">writing recognition</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#receivesRecognition"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasRecognitionRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="receivesRecognition">
+    <rdfs:label xml:lang="en">receives writing recognition</rdfs:label>
+    <skos:definition xml:lang="en">Describes positive recognition of a subject's work, usually in the form of awards and prizes.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasRecognitionRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  
+
   <owl:Class rdf:ID="Award">
     <rdfs:label xml:lang="en">award</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
@@ -9561,6 +9618,52 @@
     <skos:definition xml:lang="fr">Indique une récompense, un prix ou une distinction qu'une personne a gagné, tel qu'un prix littéraire ou un prix d'éducation.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#relatesByEducationTo"/>
     <owl:inverseOf rdf:resource="#awardedTo"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="c_hasLiteraryAward">
+    <rdfs:label xml:lang="en">literary work</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasLiteraryAward"/>
+    <rdfs:subPropertyOf rdf:resource="#c_receivesRecognition"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="#LiteraryAward"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasLiteraryAward">
+    <rdfs:label xml:lang="en">has literary work</rdfs:label>
+    <skos:definition xml:lang="en">Indicates a specific award, prize, or other form of recognition given to the subject's work, either generally or for a specific piece.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#receivesRecognition"/>
+    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="#LiteraryAward"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="i_hasLiteraryAward">
+    <rdfs:label xml:lang="en">literary work of</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasLiteraryAward"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="c_gainsLiteraryAwardValue">
+    <rdfs:label xml:lang="en">literary award value</rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#gainsLiteraryAwardValue"/>
+    <rdfs:subPropertyOf rdf:resource="#c_receivesRecognition"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="gainsLiteraryAwardValue">
+    <rdfs:label xml:lang="en">gains iterary award value</rdfs:label>
+    <skos:definition xml:lang="en">Describes a monetary or intangible value of an award or recognition given to the subject for their work, either generally or for a specific piece.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#receivesRecognition"/>
+    <rdfs:domain rdf:resource="#NaturalPerson"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
