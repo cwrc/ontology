@@ -9149,7 +9149,7 @@
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Education_in_the_United_Kingdom"/>
   </owl:Class>
 
-<owl:Class rdf:ID="SecondaryModernSchool">
+  <owl:Class rdf:ID="SecondaryModernSchool">
     <rdfs:subClassOf rdf:resource="#EducationalOrganization"/>
     <rdfs:label xml:lang="en">secondary modern school</rdfs:label>
     <rdfs:label xml:lang="fr">école secondaire moderne</rdfs:label>
@@ -11350,7 +11350,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-   <owl:Class rdf:ID="TextualFeaturesContext">
+  <owl:Class rdf:ID="TextualFeaturesContext">
     <rdfs:label xml:lang="en">textual features context</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <rdfs:subClassOf rdf:resource="#WritingContext"/>
@@ -11755,7 +11755,6 @@
     <rdfs:label xml:lang="en">textual features relationship</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasWritingRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasTextualFeaturesRelationTo"/>
-    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
@@ -11780,34 +11779,140 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="c_hasTemporalSetting">
-    <rdfs:label xml:lang="en">temporal setting</rdfs:label>
+
+  <owl:Class rdf:ID="SettingContext">
+    <rdfs:label xml:lang="en">setting context</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#TextualFeaturesContext"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Setting Context is a subclass of Textual Features Context. Annotations typed as Settings Contexts relate to the settings of creative works.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SettingEvent">
+    <rdfs:label xml:lang="en">setting event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to a Settings Context.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#TextualFeaturesEvent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="c_hasSettingRelationTo">
+    <rdfs:label xml:lang="en">setting relationship</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasTextualFeaturesRelationTo"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#hasTemporalSetting"/>
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <rdfs:range rdf:resource="#TemporalSettingDateType"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasSettingRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hasTemporalSetting">
-    <rdfs:label xml:lang="en">has temporal setting</rdfs:label>
-    <skos:definition xml:lang="en">Describes a creative work's temporal setting that specifies a historical era indicated in the text.</skos:definition>
+  <owl:ObjectProperty rdf:ID="hasSettingRelationTo">
+    <rdfs:label xml:lang="en">has setting relation to</rdfs:label>
+    <skos:definition xml:lang="en">Indicates a relationship between a text's setting and an entity.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasTextualFeaturesRelationTo"/>
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <rdfs:range rdf:resource="#TemporalSettingDateType"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="i_hasTemporalSetting">
-    <rdfs:label xml:lang="en">temporal setting of</rdfs:label>
-    <owl:inverseOf rdf:resource="#hasTemporalSetting"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:ID="c_hasSpatialSetting">
+  <owl:ObjectProperty rdf:ID="c_hasSetting">
+    <rdfs:label xml:lang="en">setting</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasSettingRelationTo"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasSetting"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasSetting">
+    <rdfs:label xml:lang="en">has setting</rdfs:label>
+    <skos:definition xml:lang="en">Describes a text's setting.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasSettingRelationTo"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="c_hasSettingType">
+    <rdfs:label xml:lang="en">setting type</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasSetting"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasSetting"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasSettingType">
+    <rdfs:label xml:lang="en">has setting type</rdfs:label>
+    <skos:definition xml:lang="en">Indicates an aspect of a creative work's setting.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasSetting"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="SettingType">
+    <rdfs:label xml:lang="en">setting type</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">An aspect of a creative work's setting.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#SettingContext"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SpatialSettingType">
+    <rdfs:label xml:lang="en">spatial setting type</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">An aspect of the geographic or other spatial setting of a creative work.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#SettingType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TemporalSettingType">
+    <rdfs:label xml:lang="en">temporal setting type</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Indicates the setting of a creative work relative to the era in which it was written.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#SettingType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SocialSettingType">
+    <rdfs:label xml:lang="en">socio-economic setting type</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A socio-economic mileu or context in which a creative work is set.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#SettingType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="c_hasSpatialSetting">
     <rdfs:label xml:lang="en">spatial setting</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasTextualFeaturesRelationTo"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasSetting"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasSpatialSetting"/>
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -11818,112 +11923,295 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasSpatialSetting">
     <rdfs:label xml:lang="en">has spatial setting</rdfs:label>
-    <skos:definition xml:lang="en">Describes a real or imaginary location in a text.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasTextualFeaturesRelationTo"/>
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
-    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:ID="c_hasFictiveSetting">
-    <rdfs:label xml:lang="en">fictive setting</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasSpatialSetting"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#hasFictiveSetting"/>
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hasFictiveSetting">
-    <rdfs:label xml:lang="en">has fictive setting</rdfs:label>
-    <skos:definition xml:lang="en">Describes imaginary locations referenced in a text.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasSpatialSetting"/>
+    <skos:definition xml:lang="en">Indicates the geospatial setting represented in a creative work.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasSetting"/>
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="c_hasRealSetting">
-    <rdfs:label xml:lang="en">real setting</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasSpatialSetting"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#hasRealSetting"/>
+  <owl:ObjectProperty rdf:ID="c_hasSpatialSettingType">
+    <rdfs:label xml:lang="en">spatial setting type</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasSettingType"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasSpatialSettingType"/>
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
-    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:range rdf:resource="#SpatialSettingType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hasRealSetting">
-    <rdfs:label xml:lang="en">has real setting</rdfs:label>
-    <skos:definition xml:lang="en">Describes real places in the world that are referenced in a text.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasSpatialSetting"/>
+  <owl:ObjectProperty rdf:ID="hasSpatialSettingType">
+    <rdfs:label xml:lang="en">has spatial setting type</rdfs:label>
+    <skos:definition xml:lang="en">Indicates an aspect of a creative work's geospatial setting.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasSettingType"/>
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
-    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:range rdf:resource="#SpatialSettingType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="c_hasIdentifiableSetting">
-    <rdfs:label xml:lang="en">identifiable setting</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasSpatialSetting"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#hasIdentifiableSetting"/>
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
-    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+  <cwrc:SpatialSettingType rdf:about="#fictiveLocation">
+    <rdfs:label xml:lang="en">fictive location</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">A spatial setting for a creative work that is fictive.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#SpatialSettingType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hasIdentifiableSetting">
-    <rdfs:label xml:lang="en">has identifiable setting</rdfs:label>
-    <skos:definition xml:lang="en">Describes imaginary locations which are based on somewhere actual that are referenced in a text.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasSpatialSetting"/>
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
-    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+  </cwrc:SpatialSettingType>
+  <cwrc:SpatialSettingType rdf:about="#realLocation">
+    <rdfs:label xml:lang="en">real location</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">A spatial setting that is a real location.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#SpatialSettingType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
+  </cwrc:SpatialSettingType>
+  <cwrc:SpatialSettingType rdf:about="#identifiableLocation">
+    <rdfs:label xml:lang="en">identifiable location</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">A spatial setting that is identifiable as a real location.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#SpatialSettingType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:SpatialSettingType>
+
 
   <owl:ObjectProperty rdf:ID="c_hasSocialSetting">
     <rdfs:label xml:lang="en">social setting</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasTextualFeaturesRelationTo"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasSetting"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasSocialSetting"/>
-    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="#Oeuvre"/>
-    <rdfs:range rdf:resource="#SocialSetting"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasSocialSetting">
     <rdfs:label xml:lang="en">has social setting</rdfs:label>
-    <skos:definition xml:lang="en">Describes the socio-economic status of a setting reference in a text.</skos:definition>
+    <skos:definition xml:lang="en">Describes a creative work's social setting.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasSetting"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="c_hasSocialSettingType">
+    <rdfs:label xml:lang="en">spatial setting type</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasSettingType"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasSocialSettingType"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="#SocialSettingType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasSocialSettingType">
+    <rdfs:label xml:lang="en">has spatial setting type</rdfs:label>
+    <skos:definition xml:lang="en">Indicates an aspect of a creative work's setting relative to socio-economic classes.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasSettingType"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="#SocialSettingType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <cwrc:SocialSettingType rdf:about="#upperClassMileu">
+    <rdfs:label xml:lang="en">upper-class mileu</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">An upper-class context or mileu.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#SocialSettingType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:SocialSettingType>
+  <cwrc:SocialSettingType rdf:about="#workingClassMileu">
+    <rdfs:label xml:lang="en">working-class mileu</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">A working-class context or mileu.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#SocialSettingType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:SocialSettingType>
+  <cwrc:SocialSettingType rdf:about="#middleClassMileu">
+    <rdfs:label xml:lang="en">middle-class mileu</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">A middle-class context or mileu.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#SocialSettingType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:SocialSettingType>
+  <cwrc:SocialSettingType rdf:about="#wide-rangingMileu">
+    <rdfs:label xml:lang="en">wide-ranging social mileu</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">A wide-ranging context or mileu, as far as socio-economic status is concerned.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#SocialSettingType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:SocialSettingType>
+
+
+  <owl:ObjectProperty rdf:ID="c_hasTemporalSetting">
+    <rdfs:label xml:lang="en">temporal setting</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasSetting"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasTemporalSetting"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasTemporalSetting">
+    <rdfs:label xml:lang="en">has temporal setting</rdfs:label>
+    <skos:definition xml:lang="en">Describes a creative work's temporal setting.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasSetting"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="c_hasTemporalSettingType">
+    <rdfs:label xml:lang="en">temporal setting type</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasSettingType"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasTemporalSettingType"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="#TemporalSettingType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasTemporalSettingType">
+    <rdfs:label xml:lang="en">has temporal setting type</rdfs:label>
+    <skos:definition xml:lang="en">Indicates an aspect of a creative work's setting in time relative to when it was produced.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasSettingType"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="#TemporalSettingType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <cwrc:hasTemporalSettingType rdf:about="#pastTemporality">
+    <rdfs:label xml:lang="en">past temporality</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">Temporally prior to the era in which a creative work was produced.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#hasTemporalSettingType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:hasTemporalSettingType>
+  <cwrc:hasTemporalSettingType rdf:about="#presentTemporality">
+    <rdfs:label xml:lang="en">present temporality</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">Temporally equivalent or close to the era in which a creative work was produced.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#hasTemporalSettingType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:hasTemporalSettingType>
+  <cwrc:hasTemporalSettingType rdf:about="#futureTemporality">
+    <rdfs:label xml:lang="en">future temporality</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">Temporally later than the era in which a creative work was produced.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#hasTemporalSettingType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:hasTemporalSettingType>
+  <cwrc:hasTemporalSettingType rdf:about="#ambiguousTemporality">
+    <rdfs:label xml:lang="en">ambigious temporality</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">Temporally ambigous in relation to the era in which a creative work was produced.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#hasTemporalSettingType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:hasTemporalSettingType>
+  
+
+
+  <owl:Class rdf:ID="CharacterizationContext">
+    <rdfs:label xml:lang="en">characterization context</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#TextualFeaturesContext"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Characterization Context is a subclass of Textual Features Context. Annotations typed as Characterization Contexts relate to how creative works handle characters.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CharacterizationEvent">
+    <rdfs:label xml:lang="en">characterization event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to a Characterization Context.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#TextualFeaturesEvent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="c_hasCharacterizationRelationTo">
+    <rdfs:label xml:lang="en">characterization relationship</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTextualFeaturesRelationTo"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasCharacterization"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasCharacterizationRelationTo">
+    <rdfs:label xml:lang="en">has characterization relation to</rdfs:label>
+    <skos:definition xml:lang="en">Indicates a relationship between a creative work's setting and an entity.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasTextualFeaturesRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="#Oeuvre"/>
-    <rdfs:range rdf:resource="#SocialSetting"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="i_hasSocialSetting">
-    <rdfs:label xml:lang="en">social setting of</rdfs:label>
-    <owl:inverseOf rdf:resource="#hasSocialSetting"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-
-<owl:ObjectProperty rdf:ID="c_hasCharacterization">
+  <owl:ObjectProperty rdf:ID="c_hasCharacterization">
     <rdfs:label xml:lang="en">characterization</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasTextualFeaturesRelationTo"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasCharacterizationRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasCharacterization"/>
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
@@ -11932,8 +12220,8 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasCharacterization">
     <rdfs:label xml:lang="en">has characterization</rdfs:label>
-    <skos:definition xml:lang="en">Describes distringuishing traits of fictional characters.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasTextualFeaturesRelationTo"/>
+    <skos:definition xml:lang="en">Describes aspects of characterization within a creative work.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasCharacterizationRelationTo"/>
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -11942,68 +12230,349 @@
 
   <owl:ObjectProperty rdf:ID="c_hasCharacterName">
     <rdfs:label xml:lang="en">character name</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasTextualFeaturesRelationTo"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasCharacterization"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasCharacterName"/>
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <rdfs:range rdf:resource="#CharacterName"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasCharacterName">
     <rdfs:label xml:lang="en">has character name</rdfs:label>
     <skos:definition xml:lang="en">Indicates the names of fictional characters.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasTextualFeaturesRelationTo"/>
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <rdfs:range rdf:resource="#CharacterName"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="i_hasCharacterName">
-    <rdfs:label xml:lang="en">name of character</rdfs:label>
-    <owl:inverseOf rdf:resource="#hasCharacterName"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:ID="c_hasThemeTopic">
-    <rdfs:label xml:lang="en">theme topic</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasTextualFeaturesRelationTo"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#hasThemeTopic"/>
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
-    <cwrc:rangeIncludes rdf:resource="#ThemeTopic"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hasThemeTopic">
-    <rdfs:label xml:lang="en">has theme topic</rdfs:label>
-    <skos:definition xml:lang="en">Describes the theme or topic of a text, where theme refers to the central idea in a text stated either directly or indirectly, and topic applies to interesting subjects appearing in a work that might not aspire to the statues of a "theme" and is useful in genres such as educational or non-education texts.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasTextualFeaturesRelationTo"/>
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
-    <cwrc:rangeIncludes rdf:resource="#ThemeTopic"/>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
-
-<owl:ObjectProperty rdf:ID="c_hasMotif">
-    <rdfs:label xml:lang="en">motif</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasTextualFeaturesRelationTo"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#hasMotif"/>
+    <rdfs:subPropertyOf rdf:resource="#hasCharacterization"/>
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="c_hasCharacterType">
+    <rdfs:label xml:lang="en">character type</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasCharacterization"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasCharacterType"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#CharacterType"/>
+    <cwrc:rangeIncludes rdf:resource="#Gender"/>
+    <cwrc:rangeIncludes rdf:resource="#Occupation"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasCharacterType">
+    <rdfs:label xml:lang="en">has character type</rdfs:label>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasCharacterization"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#CharacterType"/>
+    <cwrc:rangeIncludes rdf:resource="#Gender"/>
+    <cwrc:rangeIncludes rdf:resource="#Occupation"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="i_hasCharacterType">
+    <rdfs:label xml:lang="en">character type of</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasCharacterType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="c_hasProtagonistType">
+    <rdfs:label xml:lang="en">protagonist type</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasCharacterType"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasProtagonistType"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#CharacterType"/>
+    <cwrc:rangeIncludes rdf:resource="#Gender"/>
+    <cwrc:rangeIncludes rdf:resource="#Occupation"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasProtagonistType">
+    <rdfs:label xml:lang="en">has protagonist type</rdfs:label>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasCharacterType"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="#CharacterType"/>
+    <cwrc:rangeIncludes rdf:resource="#Gender"/>
+    <cwrc:rangeIncludes rdf:resource="#Occupation"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="i_hasProtagonistType">
+    <rdfs:label xml:lang="en">protagonist type of</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasProtagonistType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="CharacterType">
+    <rdfs:label xml:lang="en">character type</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Indicates a type or category associated with a character in a creative work.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#CharacterizationContext"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+  <cwrc:CharacterType rdf:about="#realCharacter">
+    <rdfs:label xml:lang="en">real character</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">A character based on a real person, however greatly fictionalized.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#CharacterType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:CharacterType>
+
+  <owl:ObjectProperty rdf:ID="c_hasCharacter">
+    <rdfs:label xml:lang="en">character</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasCharacterization"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasCharacter"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasCharacter">
+    <rdfs:label xml:lang="en">has character</rdfs:label>
+    <skos:definition xml:lang="en">Indicates a person depicted as a character in a creative work.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasCharacterization"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="i_hasCharacter">
+    <rdfs:label xml:lang="en">character in</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasCharacter"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="c_hasCharacterRole">
+    <rdfs:label xml:lang="en">character role</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasCharacterization"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasCharacterRole"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasCharacterRole">
+    <rdfs:label xml:lang="en">has character role</rdfs:label>
+    <skos:definition xml:lang="en">Variable short descriptions of the social role, occupation, or other aspects of a character in a creative work.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasCharacterization"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="c_hasProtagonistRole">
+    <rdfs:label xml:lang="en">protagonist role</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasCharacterRole"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasProtagonistRole"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasProtagonistRole">
+    <rdfs:label xml:lang="en">has protagonist role</rdfs:label>
+    <skos:definition xml:lang="en">Describes the social role, occupation, or other aspects of a protagonist.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasCharacterRole"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="c_hasWomanProtagonistRole">
+    <rdfs:label xml:lang="en">woman protagonist role</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasProtagonistRole"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasWomanProtagonistRole"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasWomanProtagonistRole">
+    <rdfs:label xml:lang="en">has woman protagonist role</rdfs:label>
+    <skos:definition xml:lang="en">Describes a social role, occupation, or other aspects of a protagonist who is represented as a woman.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasProtagonistRole"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="c_hasManProtagonistRole">
+    <rdfs:label xml:lang="en">man protagonist role</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasProtagonistRole"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasManProtagonistRole"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasManProtagonistRole">
+    <rdfs:label xml:lang="en">has man protagonist role</rdfs:label>
+    <skos:definition xml:lang="en">Describes a social role, occupation, or other aspects of a protagonist who is represented as a man.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasProtagonistRole"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+
+
+  <owl:Class rdf:ID="ThematicContext">
+    <rdfs:label xml:lang="en">thematic context</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdfs:subClassOf rdf:resource="#TextualFeaturesContext"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Thematic Context is a subclass of Textual Features Context. Annotations typed as Thematic Contexts relate to how creative works handle themes or topics. </skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>  
+  <owl:Class rdf:ID="ThematicEvent">
+    <rdfs:label xml:lang="en">thematic event</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">An event related to a Thematic context.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#TextualFeaturesEvent"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="c_hasThemeRelationTo">
+    <rdfs:label xml:lang="en">thematic relationship</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTextualFeaturesRelationTo"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasThemeRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasThemeRelationTo">
+    <rdfs:label xml:lang="en">has theme relation to</rdfs:label>
+    <skos:definition xml:lang="en">Indicates a relationship between the theme or topic of a creative work and a named entity.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasTextualFeaturesRelationTo"/>
+    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="c_hasThemeOrTopic">
+    <rdfs:label xml:lang="en">theme or topic</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasThemeRelationTo"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasThemeOrTopic"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasThemeOrTopic">
+    <rdfs:label xml:lang="en">has theme or topic</rdfs:label>
+    <skos:definition xml:lang="en">Describes the theme or topic, either a central idea in a text or interesting subject, of a creative work.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasThemeRelationTo"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="c_hasTopicType">
+    <rdfs:label xml:lang="en">topic type</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasThemeOrTopic"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasTopicType"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="#TopicType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasTopicType">
+    <rdfs:label xml:lang="en">has topic type</rdfs:label>
+    <skos:definition xml:lang="en">An aspect of the subject matter of a creative work that may constitute a theme or be treated in passing.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasThemeOrTopic"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="#TopicType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="i_hasTopicType">
+    <rdfs:label xml:lang="en">topic type of</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasTopicType"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="TopicType">
+    <rdfs:label xml:lang="en">topic type</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A common topic of creative works.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#ThematicContext"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="c_hasMotif">
+    <rdfs:label xml:lang="en">motif</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasThemeOrTopic"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasMotif"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="#Motif"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasMotif">
     <rdfs:label xml:lang="en">has motif</rdfs:label>
-    <skos:definition xml:lang="en">Describes a significant scene, episode, or idea in a text that is not coterminal with the entire text and recurs across multiple texts. Motifs are localized or contained within a plot and may recur multiple times in the same work.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasTextualFeaturesRelationTo"/>
+    <skos:definition xml:lang="en">Indicates a significant scene, action, episode, or idea.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasThemeOrTopic"/>
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:range rdf:resource="#Motif"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="i_hasMotif">
+    <rdfs:label xml:lang="en">motif in</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasMotif"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="Motif">
+    <rdfs:label xml:lang="en">topic type</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A significant scene, action, episode, or idea that recurs across multiple creative works and often within a single one. Motifs are typically localized or contained within a plot and may recur multiple times in the same work.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#ThematicContext"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
 
   <owl:ObjectProperty rdf:ID="c_hasPlotSummary">
     <rdfs:label xml:lang="en">plot summary</rdfs:label>
@@ -12016,7 +12585,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasPlotSummary">
     <rdfs:label xml:lang="en">has plot summary</rdfs:label>
-    <skos:definition xml:lang="en">Summarizes narrative action within a work. More specifically, plot describes "the plan, design, scheme, or pattern" of a text.</skos:definition>
+    <skos:definition xml:lang="en">Describes the narrative action of a text.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasTextualFeaturesRelationTo"/>
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
@@ -12024,32 +12593,35 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="c_engagesWithGenre">
+  <owl:ObjectProperty rdf:ID="c_hasEngagementWithGenre">
     <rdfs:label xml:lang="en">genre engagement</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasTextualFeaturesRelationTo"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#engagesWithGenre"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasEngagementWithGenre"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:domainIncludes rdf:resource="#Oeuvre"/>
     <rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Genre"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="engagesWithGenre">
-    <rdfs:label xml:lang="en">engages with genre</rdfs:label>
+  <owl:ObjectProperty rdf:ID="hasEngagementWithGenre">
+    <rdfs:label xml:lang="en">has engagement with genre</rdfs:label>
     <skos:definition xml:lang="en">Indicates an author or text's disputable generic allegiance, unusual generic mixture or <i>bricolage</i>, or landmark engagement with genre rather than relatively routine participation in a genre.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasTextualFeaturesRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
+    <cwrc:domainIncludes rdf:resource="#Oeuvre"/>
     <rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Genre"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="i_engagesWithGenre">
-    <rdfs:label xml:lang="en">genre engages with</rdfs:label>
-    <owl:inverseOf rdf:resource="#engagesWithGenre"/>
+  <owl:ObjectProperty rdf:ID="i_hasEngagementWithGenre">
+    <rdfs:label xml:lang="en">genre engaged by</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasEngagementWithGenre"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
+
 
   <owl:ObjectProperty rdf:ID="c_hasTechnique">
     <rdfs:label xml:lang="en">technique</rdfs:label>
@@ -12062,7 +12634,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasTechnique">
     <rdfs:label xml:lang="en">has technique</rdfs:label>
-    <skos:definition xml:lang="en">Describes the use of various kinds of literary techniques and other verbal effects made in a text. subPredicates include: hasImagery, hasVersification, hasDiction, hasNonStandardEnglish (i.e. the application of non-standard english), and hasAuralEffects (covering onomatopoeia, alliteration, internal rhyme, and so on). </skos:definition>
+    <skos:definition xml:lang="en">Describes the use of various techniques and verbal effects.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasTextualFeaturesRelationTo"/>
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
@@ -12070,9 +12642,101 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:ID="c_hasDiction">
+    <rdfs:label xml:lang="en">diction</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTechnique"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasDiction"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasDiction">
+    <rdfs:label xml:lang="en">has diction</rdfs:label>
+    <skos:definition xml:lang="en">Describes aspects of vocabulary or linguistic choice.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasTechnique"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="c_hasVersification">
+    <rdfs:label xml:lang="en">versification</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTechnique"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasVersification"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasVersification">
+    <rdfs:label xml:lang="en">has versification</rdfs:label>
+    <skos:definition xml:lang="en">Describes aspects of verse form, metrical structure, or rhyme.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasTechnique"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="c_hasNonStandardLanguage">
+    <rdfs:label xml:lang="en">non-standard language</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTechnique"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasNonStandardLanguage"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasNonStandardLanguage">
+    <rdfs:label xml:lang="en">has non-standard language</rdfs:label>
+    <skos:definition xml:lang="en">Describes the use of dialect or other departures from standarized language.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasTechnique"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="c_hasImagery">
+    <rdfs:label xml:lang="en">imagery</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTechnique"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasImagery"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasImagery">
+    <rdfs:label xml:lang="en">has imagery</rdfs:label>
+    <skos:definition xml:lang="en">Describes the use of figurative language.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasTechnique"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="c_hasAuralEffects">
+    <rdfs:label xml:lang="en">aural effects</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTechnique"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasAuralEffects"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasAuralEffects">
+    <rdfs:label xml:lang="en">has aural effects</rdfs:label>
+    <skos:definition xml:lang="en">Describes imagery or effects created through sound.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasTechnique"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+
   <owl:ObjectProperty rdf:ID="c_hasToneOrStyle">
     <rdfs:label xml:lang="en">tone or style</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasTextualFeaturesRelationTo"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTechnique"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasToneOrStyle"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="#Oeuvre"/>
@@ -12082,8 +12746,8 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasToneOrStyle">
     <rdfs:label xml:lang="en">has tone or style</rdfs:label>
-    <skos:definition xml:lang="en">Describes manners of expression, whether of a writer, text, or fictional character.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasTextualFeaturesRelationTo"/>
+    <skos:definition xml:lang="en">Describes manner of expression and communication of attitude.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasTechnique"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="#Oeuvre"/>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
@@ -12093,7 +12757,7 @@
 
   <owl:ObjectProperty rdf:ID="c_hasVoiceOrNarration">
     <rdfs:label xml:lang="en">voice or narration</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasTextualFeaturesRelationTo"/>
+    <rdfs:subPropertyOf rdf:resource="#c_hasTechnique"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasVoiceOrNarration"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="#Oeuvre"/>
@@ -12103,8 +12767,8 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasVoiceOrNarration">
     <rdfs:label xml:lang="en">has voice or narration</rdfs:label>
-    <skos:definition xml:lang="en">Describes the narrative voice of the author or text.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasTextualFeaturesRelationTo"/>
+    <skos:definition xml:lang="en">Describes narrative voice or technique.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasTechnique"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:domainIncludes rdf:resource="#Oeuvre"/>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
