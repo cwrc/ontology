@@ -13173,6 +13173,61 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
+  <owl:Class rdf:ID="PublicationMode">
+    <rdfs:label xml:lang="en">publication mode</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <cwrc:PublicationMode rdf:about="#selfPublication">
+    <rdfs:label xml:lang="en">self publication</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">Indicates a text published by the writer themselves.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#PublicationMode"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:PublicationMode>
+  <cwrc:PublicationMode rdf:about="#privatelyPrinted">
+    <rdfs:label xml:lang="en">privately printed</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">Indicates that a text published privately, for instancy by a friend or associate as opposed to an established press.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#PublicationMode"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:PublicationMode>
+  <cwrc:PublicationMode rdf:about="#limitedEdition">
+    <rdfs:label xml:lang="en">limited edition</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">Indicates a text published in limited supply.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#PublicationMode"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:PublicationMode>
+  <cwrc:PublicationMode rdf:about="#pirated">
+    <rdfs:label xml:lang="en">pirated</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:definition xml:lang="en">Indicates that the text was copied or derived from another source.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="#PublicationMode"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:PublicationMode>
+
+
 
   <owl:Class rdf:ID="HealthContext">
     <rdfs:label xml:lang="en">health context</rdfs:label>
