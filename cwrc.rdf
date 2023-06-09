@@ -11900,7 +11900,6 @@
     <rdfs:label xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">An aspect of a creative work's setting.</skos:definition>
-    <rdfs:subClassOf rdf:resource="#SettingContext"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
@@ -11939,7 +11938,6 @@
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
-    <cwrc:rangeIncludes rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -11948,7 +11946,14 @@
     <skos:definition xml:lang="en">Describes a creative work's geospatial setting.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasSetting"/>
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="i_hasSpatialSetting">
+    <rdfs:label xml:lang="en">spatial setting of</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasSpatialSetting"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -12269,7 +12274,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="c_hasCharacterType">
+  <!-- <owl:ObjectProperty rdf:ID="c_hasCharacterType">
     <rdfs:label xml:lang="en">character type</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasCharacterization"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasCharacterType"/>
@@ -12296,38 +12301,34 @@
     <owl:inverseOf rdf:resource="#hasCharacterType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty>
+  </owl:ObjectProperty> -->
 
-  <owl:ObjectProperty rdf:ID="c_hasProtagonistType">
-    <rdfs:label xml:lang="en">protagonist type</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#c_hasCharacterType"/>
-    <cwrc:subjectCentricPredicate rdf:resource="#hasProtagonistType"/>
+  <owl:ObjectProperty rdf:ID="c_hasProtagonistGender">
+    <rdfs:label xml:lang="en">protagonist gender</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#c_hasCharacterization"/>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasProtagonistGender"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:rangeIncludes rdf:resource="#CharacterType"/>
-    <cwrc:rangeIncludes rdf:resource="#Gender"/>
-    <cwrc:rangeIncludes rdf:resource="#Occupation"/>
+    <rdfs:range rdf:resource="#Gender"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hasProtagonistType">
-    <rdfs:label xml:lang="en">has protagonist type</rdfs:label>
-    <skos:definition xml:lang="en"></skos:definition>
-    <rdfs:subPropertyOf rdf:resource="#hasCharacterType"/>
+  <owl:ObjectProperty rdf:ID="hasProtagonistGender">
+    <rdfs:label xml:lang="en">has protagonist gender</rdfs:label>
+    <skos:definition xml:lang="en">Indicates gender of protagonist.</skos:definition>
+    <rdfs:subPropertyOf rdf:resource="#hasCharacterization"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:rangeIncludes rdf:resource="#CharacterType"/>
-    <cwrc:rangeIncludes rdf:resource="#Gender"/>
-    <cwrc:rangeIncludes rdf:resource="#Occupation"/>
+    <rdfs:range rdf:resource="#Gender"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="i_hasProtagonistType">
-    <rdfs:label xml:lang="en">protagonist type of</rdfs:label>
-    <owl:inverseOf rdf:resource="#hasProtagonistType"/>
+  <owl:ObjectProperty rdf:ID="i_hasProtagonistGender">
+    <rdfs:label xml:lang="en">protagonist gender of</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasProtagonistGender"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <owl:Class rdf:ID="CharacterType">
+  <!-- <owl:Class rdf:ID="CharacterType">
     <rdfs:label xml:lang="en">character type</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -12346,7 +12347,7 @@
     <skos:inScheme rdf:resource="#CharacterType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:CharacterType>
+  </cwrc:CharacterType> -->
 
   <owl:ObjectProperty rdf:ID="c_hasCharacter">
     <rdfs:label xml:lang="en">character</rdfs:label>
@@ -12618,7 +12619,6 @@
     <rdfs:subPropertyOf rdf:resource="#c_hasTextualFeaturesRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasEngagementWithGenre"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:domainIncludes rdf:resource="#Oeuvre"/>
     <rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Genre"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -12626,10 +12626,9 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasEngagementWithGenre">
     <rdfs:label xml:lang="en">has engagement with genre</rdfs:label>
-    <skos:definition xml:lang="en">Indicates an author or text's disputable generic allegiance, unusual generic mixture or <i>bricolage</i>, or landmark engagement with genre rather than relatively routine participation in a genre.</skos:definition>
+    <skos:definition xml:lang="en">Indicates the disputable generic allegiance, unusual generic mixture or <i>bricolage</i>, innovation, or landmark engagement with one or more genres within a text or an author's oeuvre, in contrast to relatively unproblematized generic participation.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasTextualFeaturesRelationTo"/>
     <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="#NaturalPerson"/>
     <cwrc:domainIncludes rdf:resource="#Oeuvre"/>
     <rdfs:range rdf:resource="http://sparql.cwrc.ca/ontologies/genre#Genre"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
@@ -12919,11 +12918,7 @@
     <rdfs:label xml:lang="en">writing motive relationship</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasWritingMotive"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasWritingMotiveRelationTo"/>
-    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
-    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
-    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -12936,16 +12931,18 @@
     <rdfs:label xml:lang="en">has writing motive relation to</rdfs:label>
     <skos:definition xml:lang="en">Indicates persons, creative works, places, or organizations connected to a writer's reasons for writing generally or for creating a particular work.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasWritingMotive"/>
-    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
-    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
-    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="i_hasWritingMotiveRelationTo">
+    <rdfs:label xml:lang="en">relates to writing motive relation of</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasWritingMotiveRelationTo"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
@@ -12996,11 +12993,7 @@
     <rdfs:label xml:lang="en">literary school relationship</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasWritingConditionsRelationTo"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasLiterarySchoolRelationTo"/>
-    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
-    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
-    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -13013,16 +13006,18 @@
     <rdfs:label xml:lang="en">has literary school relation to</rdfs:label>
     <skos:definition xml:lang="en">Indicates a relationship between entities linked to literary or artistic groups, or related individual, places, or creative works.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasWritingConditionsRelationTo"/>
-    <cwrc:domainIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
-    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
-    <cwrc:domainIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <cwrc:rangeIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
     <cwrc:rangeIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="i_hasLiterarySchoolRelationTo">
+    <rdfs:label xml:lang="en">relates to literary school relation of</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasLiterarySchoolRelationTo"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
