@@ -12134,50 +12134,50 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <cwrc:hasTemporalSettingType rdf:about="#pastTemporality">
+  <cwrc:TemporalSettingType rdf:about="#pastTemporality">
     <rdfs:label xml:lang="en">past temporality</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">Temporally prior to the era in which a creative work was produced.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="#hasTemporalSettingType"/>
+    <skos:inScheme rdf:resource="#TemporalSettingType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:hasTemporalSettingType>
-  <cwrc:hasTemporalSettingType rdf:about="#presentTemporality">
+  </cwrc:TemporalSettingType>
+  <cwrc:TemporalSettingType rdf:about="#presentTemporality">
     <rdfs:label xml:lang="en">present temporality</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">Temporally equivalent or close to the era in which a creative work was produced.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="#hasTemporalSettingType"/>
+    <skos:inScheme rdf:resource="#TemporalSettingType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:hasTemporalSettingType>
-  <cwrc:hasTemporalSettingType rdf:about="#futureTemporality">
+  </cwrc:TemporalSettingType>
+  <cwrc:TemporalSettingType rdf:about="#futureTemporality">
     <rdfs:label xml:lang="en">future temporality</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">Temporally later than the era in which a creative work was produced.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="#hasTemporalSettingType"/>
+    <skos:inScheme rdf:resource="#TemporalSettingType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:hasTemporalSettingType>
-  <cwrc:hasTemporalSettingType rdf:about="#ambiguousTemporality">
+  </cwrc:TemporalSettingType>
+  <cwrc:TemporalSettingType rdf:about="#ambiguousTemporality">
     <rdfs:label xml:lang="en">ambigious temporality</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
     <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">Temporally ambigous in relation to the era in which a creative work was produced.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="#hasTemporalSettingType"/>
+    <skos:inScheme rdf:resource="#TemporalSettingType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:hasTemporalSettingType>
+  </cwrc:TemporalSettingType>
   
 
 
