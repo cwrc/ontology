@@ -12115,7 +12115,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialSettingType>
 
-  <owl:ObjectProperty rdf:ID="c_hasTemporalSetting">
+  <owl:ObjectProperty rdf:ID="c_hasTemporalOrientation">
     <rdfs:label xml:lang="en">temporal setting</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasSetting"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasTemporalSetting"/>
@@ -12124,7 +12124,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hasTemporalSetting">
+  <owl:ObjectProperty rdf:ID="hasTemporalOrientation">
     <rdfs:label xml:lang="en">has temporal setting</rdfs:label>
     <skos:definition xml:lang="en">Describes a creative work's temporal setting.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasSetting"/>
