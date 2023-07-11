@@ -11593,7 +11593,6 @@
   <cwrc:DestructionType rdf:about="#destructionByAccident">
     <rdfs:label xml:lang="en">accident</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">Loss as a result of an accident.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -11605,7 +11604,6 @@
   <cwrc:DestructionType rdf:about="#destructionUnspecified">
     <rdfs:label xml:lang="en">unspecified</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">Loss as a result of destruction by unspecified means.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -11617,7 +11615,6 @@
   <cwrc:DestructionType rdf:about="#destructionByCreator">
     <rdfs:label xml:lang="en">destruction by creator</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">Loss as a result of destruction by the author.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -11629,7 +11626,6 @@
   <cwrc:DestructionType rdf:about="#destructionByAnother">
     <rdfs:label xml:lang="en">destruction by another</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">Loss as a result of destruction by someone other than the author.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -11989,7 +11985,7 @@
   <cwrc:SpatialSettingType rdf:about="#fictiveLocation">
     <rdfs:label xml:lang="en">fictive location</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:altLabel xml:lang="en">fictional setting</skos:altLabel>
     <skos:definition xml:lang="en">A spatial setting for a creative work that is fictive.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -12000,7 +11996,6 @@
   <cwrc:SpatialSettingType rdf:about="#realLocation">
     <rdfs:label xml:lang="en">real location</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">A spatial setting that is a real location.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -12011,7 +12006,6 @@
   <cwrc:SpatialSettingType rdf:about="#identifiableLocation">
     <rdfs:label xml:lang="en">identifiable location</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">A spatial setting that is identifiable as a real location.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -12062,7 +12056,6 @@
   <cwrc:SocialSettingType rdf:about="#upperClassMileu">
     <rdfs:label xml:lang="en">upper-class mileu</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">An upper-class context or mileu.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -12073,7 +12066,6 @@
   <cwrc:SocialSettingType rdf:about="#workingClassMileu">
     <rdfs:label xml:lang="en">working-class mileu</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">A working-class context or mileu.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -12084,7 +12076,6 @@
   <cwrc:SocialSettingType rdf:about="#middleClassMileu">
     <rdfs:label xml:lang="en">middle-class mileu</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">A middle-class context or mileu.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -12092,10 +12083,9 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialSettingType>
-  <cwrc:SocialSettingType rdf:about="#wide-rangingMileu">
+  <cwrc:SocialSettingType rdf:about="#wideRangingMileu">
     <rdfs:label xml:lang="en">wide-ranging social mileu</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">A wide-ranging context or mileu, as far as socio-economic status is concerned.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -12145,7 +12135,6 @@
   <cwrc:TemporalOrientation rdf:about="#past">
     <rdfs:label xml:lang="en">past</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">Temporally prior to the era in which a creative work was produced.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -12156,7 +12145,6 @@
   <cwrc:TemporalOrientation rdf:about="#present">
     <rdfs:label xml:lang="en">present</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">Temporally equivalent or close to the era in which a creative work was produced.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -12167,7 +12155,6 @@
   <cwrc:TemporalOrientation rdf:about="#future">
     <rdfs:label xml:lang="en">future</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">Temporally later than the era in which a creative work was produced.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -12178,7 +12165,6 @@
   <cwrc:TemporalOrientation rdf:about="#ambiguousTemporality">
     <rdfs:label xml:lang="en">ambigious temporality</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">Temporally ambigous in relation to the era in which a creative work was produced.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -12189,7 +12175,6 @@
   <cwrc:TemporalOrientation rdf:about="#ongoing">
     <rdfs:label xml:lang="en">ongoing</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en"></skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -12358,7 +12343,6 @@
   <cwrc:CharacterType rdf:about="#realCharacter">
     <rdfs:label xml:lang="en">real character</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">A character based on a real person, however greatly fictionalized.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -13378,7 +13362,7 @@
   <cwrc:PublicationMode rdf:about="#selfPublication">
     <rdfs:label xml:lang="en">self publication</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:altLabel xml:lang="en">self published</skos:altLabel>
     <skos:definition xml:lang="en">Indicates a text published by the writer themselves.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -13389,7 +13373,7 @@
   <cwrc:PublicationMode rdf:about="#privatelyPrinted">
     <rdfs:label xml:lang="en">privately printed</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
+    <skos:altLabel xml:lang="en">privately published</skos:altLabel>
     <skos:definition xml:lang="en">Indicates that a text published privately, for instancy by a friend or associate as opposed to an established press.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -13400,7 +13384,6 @@
   <cwrc:PublicationMode rdf:about="#limitedEdition">
     <rdfs:label xml:lang="en">limited edition</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">Indicates a text published in limited supply.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -13411,7 +13394,6 @@
   <cwrc:PublicationMode rdf:about="#pirated">
     <rdfs:label xml:lang="en">pirated</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en">Indicates that the text was copied or derived from another source.</skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -13806,7 +13788,6 @@
   <cwrc:AuthorshipControversy rdf:about="#forgery">
     <rdfs:label xml:lang="en">forgery</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en"></skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -13817,7 +13798,6 @@
   <cwrc:AuthorshipControversy rdf:about="#spurious">
     <rdfs:label xml:lang="en">spurious authorship</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en"></skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -13828,7 +13808,6 @@
   <cwrc:AuthorshipControversy rdf:about="#misattribution">
     <rdfs:label xml:lang="en">misattribution</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en"></skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -13839,7 +13818,6 @@
   <cwrc:AuthorshipControversy rdf:about="#doubtful">
     <rdfs:label xml:lang="en">doubtful authorship</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en"></skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -13909,7 +13887,6 @@
   <cwrc:AuthorNameType rdf:about="#anonymous">
     <rdfs:label xml:lang="en">anonymous</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en"></skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -13920,7 +13897,6 @@
   <cwrc:AuthorNameType rdf:about="#pseudonymous">
     <rdfs:label xml:lang="en">pseudonymous</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en"></skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -13931,7 +13907,6 @@
   <cwrc:AuthorNameType rdf:about="#allusiveAuthorship">
     <rdfs:label xml:lang="en">allusive authorship</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en"></skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -13942,7 +13917,6 @@
   <cwrc:AuthorNameType rdf:about="#collaborativeAuthorhip">
     <rdfs:label xml:lang="en">collaborative authorhip</rdfs:label>
     <rdfs:label xml:lang="fr"></rdfs:label>
-    <skos:altLabel xml:lang="en"></skos:altLabel>
     <skos:definition xml:lang="en"></skos:definition>
     <skos:definition xml:lang="fr"></skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
