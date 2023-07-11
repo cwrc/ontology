@@ -845,8 +845,6 @@
 
   <owl:ObjectProperty rdf:ID="economicRelationship">
     <rdfs:label xml:lang="en">economic relationship</rdfs:label>
-    <skos:definition xml:lang="en"></skos:definition>
-    <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
     <cwrc:subjectCentricPredicate rdf:resource="#relatesEconomicallyTo"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
@@ -899,8 +897,6 @@
 
   <owl:ObjectProperty rdf:ID="violenceAssociation">
     <rdfs:label xml:lang="en">violence association</rdfs:label>
-    <skos:definition xml:lang="en"></skos:definition>
-    <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
     <cwrc:subjectCentricPredicate rdf:resource="#associatedByViolenceWith"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
@@ -953,7 +949,6 @@
 
   <owl:ObjectProperty rdf:ID="socialRelationship">
     <rdfs:label xml:lang="en">social relationship</rdfs:label>
-    <skos:definition xml:lang="en"></skos:definition>
     <cwrc:subjectCentricPredicate rdf:resource="#relatesSociallyTo"/>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
@@ -981,7 +976,6 @@
 
   <owl:ObjectProperty rdf:ID="leisureRelationship">
     <rdfs:label xml:lang="en">leisure relationship</rdfs:label>
-    <skos:definition xml:lang="en"></skos:definition>
     <cwrc:subjectCentricPredicate rdf:resource="#relatesByLeisureTo"/>
     <rdfs:subPropertyOf rdf:resource="#socialRelationship"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
@@ -8443,8 +8437,6 @@
   <owl:ObjectProperty rdf:ID="spatialRelationship">
     <rdfs:label xml:lang="en">spatial relationship</rdfs:label>
     <rdfs:label xml:lang="fr"/>
-    <skos:definition xml:lang="en"></skos:definition>
-    <skos:definition xml:lang="fr"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasSpatialRelationTo"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
@@ -10182,7 +10174,6 @@
 
   <owl:ObjectProperty rdf:ID="biographicalRelationship">
     <rdfs:label xml:lang="en">biographical relationship</rdfs:label>
-    <skos:definition xml:lang="en"></skos:definition>
     <cwrc:subjectCentricPredicate rdf:resource="#hasBiographicalRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
@@ -11450,7 +11441,6 @@
 
   <owl:ObjectProperty rdf:ID="c_hasWritingRelationTo">
     <rdfs:label xml:lang="en">writing relationship</rdfs:label>
-    <skos:definition xml:lang="en"></skos:definition>
     <cwrc:subjectCentricPredicate rdf:resource="#hasWritingRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -11473,7 +11463,6 @@
 
   <owl:ObjectProperty rdf:ID="c_hasTextualHistoryRelationTo">
     <rdfs:label xml:lang="en">textual history relationship</rdfs:label>
-    <skos:definition xml:lang="en"></skos:definition>
     <cwrc:subjectCentricPredicate rdf:resource="#c_hasWritingRelationTo"/>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
     <cwrc:domainIncludes rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -12317,7 +12306,6 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasCharacterType">
     <rdfs:label xml:lang="en">has character type</rdfs:label>
-    <skos:definition xml:lang="en"></skos:definition>
     <rdfs:subPropertyOf rdf:resource="#hasCharacterization"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="#CharacterType"/>
@@ -14556,8 +14544,6 @@
 
   <owl:ObjectProperty rdf:ID="healthAssociation">
     <rdfs:label xml:lang="en">health association</rdfs:label>
-    <skos:definition xml:lang="en"></skos:definition>
-    <skos:definition xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
     <cwrc:subjectCentricPredicate rdf:resource="#associatedViaHealthWith"/>
     <cwrc:rangeIncludes rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
