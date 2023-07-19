@@ -9895,7 +9895,7 @@
     <rdfs:label xml:lang="fr">programme de bourse</rdfs:label>
     <skos:definition xml:lang="en">An award or position usually associated with research or advanced standing in a field, and often associated with a particular group, body, or organization connected to creative, scholarly, or professional practice, sometimes involving a stipend and sometimes labour such as teaching.</skos:definition>
     <skos:definition xml:lang="fr">Récompense ou position académique généralement reliée à la recherche ou à un parcours avancé dans un champ disciplinaire, impliquant parfois un emploi d'enseignant·e.</skos:definition>
-    <rdf:type rdf:resource="#Award"/>
+    <rdfs:subClassOf rdf:resource="#EducationalAward"/>
     <skos:related rdf:resource="#fellow"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
