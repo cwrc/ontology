@@ -9411,9 +9411,7 @@
   <owl:Class rdf:ID="SelfTaughtEducationContext">
     <rdfs:label xml:lang="en">self taught education context</rdfs:label>
     <rdfs:label xml:lang="fr">contexte éducatif autodidacte</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="#EducationContext"/>
-    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#EducationContext"/>
     <skos:definition xml:lang="en">Education context related to learning conducted independently.</skos:definition>
     <skos:definition xml:lang="fr">Contexte éducatif lié à l'apprentissage mené de façon autonome.</skos:definition>
     <skos:related rdf:resource="https://en.wikipedia.org/wiki/Autodidacticism"/>
