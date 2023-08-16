@@ -122,6 +122,7 @@ def format_XML(root):
     rough_string = rough_string.replace("&gt;", ">")
     rough_string = rough_string.replace("(<a", "<a")
     rough_string = rough_string.replace("(<i", "<i")
+    rough_string = rough_string.replace("<![CDATA[ ", "<![CDATA[")
     rough_string = rough_string.replace("<![CDATA[<a", "<a")
     rough_string = rough_string.replace("<![CDATA[<i", "<i")
     rough_string = rough_string.replace("a>)", "a>")
@@ -130,7 +131,7 @@ def format_XML(root):
     rough_string = rough_string.replace("i>]]>", "i>")
 
     if "CDATA" in rough_string:
-        print("CDATA not properly removed")
+        print("CDATA not properly removed, try rerunning this script to output to file")
         exit()
 
     rough_string = rough_string.replace("<a", "<![CDATA[<a")
