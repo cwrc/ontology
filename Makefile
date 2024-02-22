@@ -116,9 +116,11 @@ testing: all
 
 documentation-test:	
 	cp -f -R documentation ~/data/www/testing/.
+	cp -f -R css ~/data/www/testing/.
 
 documentation-prod:	
 	cp -f -R documentation ~/data/www/ontologies/.
+	cp -f -R css ~/data/www/ontologies/.
 
 # deploy to production
 deploy: all
