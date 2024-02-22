@@ -99,7 +99,7 @@
 
                 <h2>Components of a Query</h2>
                 <p>The best way to get started is to write a simple query.</p>
-                <p><strong>Example:</strong> <a href="https://yasgui.lincsproject.ca/#query=Select+%3Fsubject+%3Fpredicate+%3Fobject+WHERE+%7B%0A++%3Fsubject+%3Fpredicate+%3Fobject+.%0A%7D%0ALIMIT+10&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=First+Ten+Triples&headers=%7B%7D&outputFormat=table">This query</a> will return the first ten triples in the dataset:</p>
+                <p><strong>Example:</strong> <a href="https://yasgui.lincsproject.ca/#query=Select+%3Fsubject+%3Fpredicate+%3Fobject+WHERE+%7B%0A++%3Fsubject+%3Fpredicate+%3Fobject+.%0A%7D%0ALIMIT+10&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https://fuseki.lincsproject.ca/cwrc/sparql&requestMethod=POST&tabTitle=First+Ten+Triples&headers=%7B%7D&outputFormat=table">This query</a> will return the first ten triples in the dataset:</p>
                 <pre class="code"> Select ?subject ?predicate ?object WHERE {
   ?subject ?predicate ?object .
 }
@@ -134,7 +134,7 @@ SELECT ?name WHERE {
     ?person skos:altLabel ?name
 }
 </pre>
-                <p><a href="https://yasgui.lincsproject.ca/#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0ASELECT+%3Fname+WHERE+%7B+%0A++++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman+.+%0A++++%3Fperson+cwrc%3AhasOccupation+cwrc%3Ateacher+.%0A++%09%3Fperson+skos%3AaltLabel+%3Fname%0A%7D&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Teachers+who+were+women&headers=%7B%7D&outputFormat=table">This query</a> searches for all of the triples in the CWRC dataset that satisfy the following
+                <p><a href="https://yasgui.lincsproject.ca/#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0ASELECT+%3Fname+WHERE+%7B+%0A++++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman+.+%0A++++%3Fperson+cwrc%3AhasOccupation+cwrc%3Ateacher+.%0A++%09%3Fperson+skos%3AaltLabel+%3Fname%0A%7D&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https://fuseki.lincsproject.ca/cwrc/sparql&requestMethod=POST&tabTitle=Teachers+who+were+women&headers=%7B%7D&outputFormat=table">This query</a> searches for all of the triples in the CWRC dataset that satisfy the following
                     requirements: the person is a woman and a teacher. We can break down the pieces of this query.</p>
 
                     <p>The namespaces used here are <b>cwrc</b> and <b>skos</b>:</p>
@@ -175,7 +175,7 @@ PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;</pre>
                 <!-- Triple patterns with a common subject can be written so that the subject is only written once and is used for more than one triple pattern by employing the ";" notation.
 
  -->
-                <p><a href="https://yasgui.lincsproject.ca/#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0ASELECT+%3Fname+WHERE+%7B+%0A++++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman%3B+%0A++++%09%09cwrc%3AhasOccupation+cwrc%3Ateacher%3B%0A++++++%09%09skos%3AaltLabel+%3Fname.%0A%7D&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=http%3A%2F%2Fsparql.cwrc.ca%2Fsparql&requestMethod=POST&tabTitle=Teachers+who+were+women+(%3B+notation)&headers=%7B%7D&outputFormat=table">Example:</a></p>
+                <p><a href="https://yasgui.lincsproject.ca/#query=PREFIX+cwrc%3A+%3Chttp%3A%2F%2Fsparql.cwrc.ca%2Fontologies%2Fcwrc%23%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0ASELECT+%3Fname+WHERE+%7B+%0A++++%3Fperson+cwrc%3AhasGender+cwrc%3Awoman%3B+%0A++++%09%09cwrc%3AhasOccupation+cwrc%3Ateacher%3B%0A++++++%09%09skos%3AaltLabel+%3Fname.%0A%7D&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https://fuseki.lincsproject.ca/cwrc/sparql&requestMethod=POST&tabTitle=Teachers+who+were+women+(%3B+notation)&headers=%7B%7D&outputFormat=table">Example:</a></p>
                 <pre class="code">PREFIX cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;
 PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
 SELECT ?name WHERE {

@@ -117,7 +117,7 @@
     ?contextFocus rdfs:label ?label.
     ?contextFocus skos:altLabel ?name.
   } WHERE {
-    GRAPH &lt;http://sparql.cwrc.ca/db/BiographyV2Beta&gt; {
+    GRAPH &lt;http://sparql.cwrc.ca/data/orlando/biography&gt; {
       ?person rdfs:label <strong>"<?php echo $stdname; ?>"</strong>.
       BIND(?person AS ?contextFocus)
          ?context cwrc:contextFocus ?contextFocus ;
@@ -139,7 +139,7 @@ PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
 PREFIX oa: &lt;http://www.w3.org/ns/oa#&gt;
 
 SELECT ?obj ?snippet WHERE { 
-    GRAPH &lt;http://sparql.cwrc.ca/db/BiographyV2Beta&gt; {
+    GRAPH &lt;http://sparql.cwrc.ca/data/orlando/biography&gt; {
         ?context ?pred ?obj;
             cwrc:contextFocus ?person;
             oa:hasTarget ?target;
