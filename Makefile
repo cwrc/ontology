@@ -113,7 +113,12 @@ testing: all
 
 # curl -X POST -H 'Content-Type:application/sparql-update' -d 'CLEAR GRAPH <http://sparql.cwrc.ca/testing/$(ONTOLOGY)>' http://localhost:9999/blazegraph/sparql
 # curl -X POST -H 'Content-Type:application/rdf+xml' --data-binary @~/data/www/testing/$(ONTOLOGY).rdf http://localhost:9999/blazegraph/sparql?context-uri=http://sparql.cwrc.ca/testing/$(ONTOLOGY)
-	
+
+documentation-test:	
+	cp -f -R documentation ~/data/www/testing/.
+
+documentation-prod:	
+	cp -f -R documentation ~/data/www/ontologies/.
 
 # deploy to production
 deploy: all
