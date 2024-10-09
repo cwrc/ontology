@@ -8672,7 +8672,7 @@
     <rdfs:label xml:lang="fr"/>
     <skos:definition xml:lang="en">Indicates that a person visited this place.</skos:definition>
     <skos:definition xml:lang="fr"/>
-    <owl:inverseOf rdf:resource="#hasVistor"/>
+    <owl:inverseOf rdf:resource="#hasVisitor"/>
     <rdfs:subPropertyOf rdf:resource="#travelsTo"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <cwrc:rangeIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -8681,7 +8681,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="hasVistor">
+  <owl:ObjectProperty rdf:ID="hasVisitor">
     <rdfs:label xml:lang="en">has vistor</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <rdfs:subPropertyOf rdf:resource="#hasTraveller"/>
@@ -24255,6 +24255,21 @@
   </owl:ObjectProperty>
 
 <!-- DEPRECATED  -->
+  <owl:DeprecatedProperty rdf:ID="hasVistor">
+    <rdfs:label xml:lang="en">has vistor</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <cwrc:domainIncludes rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <cwrc:domainIncludes rdf:resource="http://vocab.getty.edu/ontology#AdminPlaceConcept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <rdfs:comment xml:lang="en">Deprecated in favour of instance @@#hasVisitor@@.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Désapprouver en faveur de l'instance @@#hasVisitor@@.</rdfs:comment>
+    <dcterms:isReplacedBy rdf:resource="#hasVisitor"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <vs:term_status xml:lang="en">deprecated</vs:term_status>
+  </owl:DeprecatedProperty>
+
   <owl:DeprecatedProperty rdf:ID="hasParticipant">
     <rdfs:label xml:lang="en">has participant</rdfs:label>
     <rdfs:label xml:lang="fr"/>
@@ -24702,6 +24717,8 @@
     <rdfs:comment xml:lang="en">Deprecated from previous Orlando Ontology design.</rdfs:comment>
     <rdfs:comment xml:lang="fr">Désapprouver de l'ancienne ontologie Orlando.</rdfs:comment>
   </owl:DeprecatedProperty>
+
+  
 
   <owl:DeprecatedClass rdf:ID="Role">
     <skos:definition xml:lang="en">A role of a Person or Actor in some Event, CreativeWork, or Organisation.</skos:definition>
@@ -25447,7 +25464,6 @@
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
-
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
