@@ -8220,6 +8220,72 @@
     <skos:inScheme rdf:resource="#BirthPosition"/>
   </cwrc:BirthPosition>
 
+  <owl:ObjectProperty rdf:ID="hasMaritalStatusChange">
+    <rdfs:label xml:lang="en">has marital status change</rdfs:label>
+    <rdfs:label xml:lang="fr"/>
+    <skos:definition xml:lang="en">Indicates a person's marital status has changed.</skos:definition>
+    <skos:definition xml:lang="fr"/>
+    <rdfs:subPropertyOf rdf:resource="#hasBiographicalRelationTo"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#MaritalStatusChange"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="maritalStatusChange">
+    <rdfs:label xml:lang="en">marital status change</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <cwrc:subjectCentricPredicate rdf:resource="#hasMaritalStatusChange"/>
+    <rdfs:subPropertyOf rdf:resource="#biographicalRelationship"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="#MaritalStatusChange"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="MaritalStatusChange">
+    <rdfs:label xml:lang="en">marital status</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Indicates the marital status change of a person.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </owl:Class>
+
+  <cwrc:MaritalStatusChange rdf:about="#marriage">
+    <rdfs:label xml:lang="en">marriage</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">Indicates a person's transition into a married relationship, whether legal or common-law, heterosexual or same-sex.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#MaritalStatusChange"/>
+  </cwrc:MaritalStatusChange>
+
+  <cwrc:MaritalStatusChange rdf:about="#divorce">
+    <rdfs:label xml:lang="en">divorce</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">A relationship resulting from the legal dissolution of a marriage through civil or religious processes.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#MaritalStatusChange"/>
+  </cwrc:MaritalStatusChange>
+
+  <cwrc:MaritalStatusChange rdf:about="#separation">
+    <rdfs:label xml:lang="en">separation</rdfs:label>
+    <rdfs:label xml:lang="fr"></rdfs:label>
+    <skos:definition xml:lang="en">A informal or legal relationship in which a married couple who are not divorced cease to function as married.</skos:definition>
+    <skos:definition xml:lang="fr"></skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:inScheme rdf:resource="#MaritalStatusChange"/>
+  </cwrc:MaritalStatusChange>
+
 
   <owl:Class rdf:ID="DeathContext">
     <rdfs:label xml:lang="en">death context</rdfs:label>
