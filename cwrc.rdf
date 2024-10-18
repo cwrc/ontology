@@ -12381,7 +12381,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <!-- <owl:ObjectProperty rdf:ID="c_hasCharacterType">
+  <owl:ObjectProperty rdf:ID="c_hasCharacterType">
     <rdfs:label xml:lang="en">character type</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#c_hasCharacterization"/>
     <cwrc:subjectCentricPredicate rdf:resource="#hasCharacterType"/>
@@ -12411,7 +12411,7 @@
     <cwrc:domainIncludes rdf:resource="#Occupation"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </owl:ObjectProperty> -->
+  </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="c_hasProtagonistGender">
     <rdfs:label xml:lang="en">protagonist gender</rdfs:label>
@@ -12440,7 +12440,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:ObjectProperty>
 
-  <!-- <owl:Class rdf:ID="CharacterType">
+  <owl:Class rdf:ID="CharacterType">
     <rdfs:label xml:lang="en">character type</rdfs:label>
     <rdfs:label xml:lang="fr"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -12458,7 +12458,7 @@
     <skos:inScheme rdf:resource="#CharacterType"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-  </cwrc:CharacterType> -->
+  </cwrc:CharacterType>
 
   <owl:ObjectProperty rdf:ID="c_hasCharacter">
     <rdfs:label xml:lang="en">character</rdfs:label>
