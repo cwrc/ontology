@@ -18037,6 +18037,7 @@
     <skos:definition xml:lang="fr">«La bohème est une façon de vivre au jour le jour dans la pauvreté mais aussi dans l’insouciance. Elle correspond à un mouvement littéraire et artistique du XIXe siècle, en marge du mouvement romantique plus « aristocratique ». C’est à la fois un style de vie qui rejette la domination bourgeoise et sa rationalité dans le cadre de la société industrielle, et la recherche d’un idéal artistique. Si l’expression avait connu un certain déclin à partir des Trente Glorieuses et des années 1960, période de la normalisation technocratique de Paris, l’expression « bourgeois bohème », ou « bobo », lui donne un certain regain. Le concept s’appuie évidemment sur la métaphore des « peuples bohémiens » ou des tziganes, qui étaient associés, au XIXe siècle, au mouvement romantique.» <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Bohemianism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <skos:broaderTransitive rdf:resource="#lowerMiddleClass"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#brahmin">
@@ -18061,7 +18062,6 @@
     <skos:definition xml:lang="fr">Cette classe inclut "les employé•e•s, le personnel de bureau, les instituteur•ice•s et les gouvernantes. Il faut toutefois rappeler que certains des instituteur•ice•s entrent dans la catégorie des Professions (<![CDATA[<a href="https://fr.wikipedia.org/wiki/Au_revoir_Mr._Chips">Mr. Chips dans le film du même nom (1939)</a>]]>) ainsi que les femmes qui ouvrent et dirigent les écoles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
-    <skos:broaderTransitive rdf:resource="#middleClass"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#entrepreneurial-industrialist">
     <rdfs:label xml:lang="en">entrepreneurial</rdfs:label>
@@ -18072,6 +18072,7 @@
     <skos:definition xml:lang="en">This class comprises the owners of large-scale enterprises such as factories, those who back such enterprises through investing money, or especially in the earlier historical periods when women were rarely economic agents, the wives and daughters of those who do, for instance, Elizabeth Montagu or Beatrice Webb.<![CDATA[<a href="#cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Brown, 2006)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">Cette classe comprend les propriétaires de grandes entreprises comme les usines, les individus qui soutiennent ces entreprises en y investissant des fonds, ou plus particulièrement les femmes et les filles de ces derniers, telles que Elizabeth Montagu ou Beatrice Webb, pour les périodes historiques anciennes au cours desquelles les les agents économiques étaient rarement des femmes.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <skos:broaderTransitive rdf:resource="#middleClass"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#professional">
@@ -18086,6 +18087,7 @@
     <skos:definition xml:lang="fr">Les docteur/res, avocat/es, membres de guilde, et les hautes appellations comme les membres du clergé (Église d'Angleterre) appartiennent à cette classe. Ces professions sont respectées socialement et requièrent des qualités intellectuelles. Ann Hunter, mariée à un chirurgien, et Virginia Woolf, fille d'intellectuel, en sont des exemples.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <skos:note xml:lang="en">Overlaps with the @@#upper-middleClass@@ class.</skos:note>
+    <skos:broaderTransitive rdf:resource="#middleClass"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#managerial">
@@ -18097,6 +18099,7 @@
     <skos:definition xml:lang="en">This class refers to those whose "station in life comes from the fact that they are running something but not putting their money into it, for instance salaried civil service, bankers, or hospital administrators." <![CDATA[<a href="#cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Brown, 2006)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">Cette classe réfère à ceux dont «la situation sociale est dûe à l'administration d'une structure dans laquelle ils n'investissent pas leurs propres fonds, par exemple les salariés du service civique, les banquiers, les administrateurs d'hôpitaux.» <![CDATA[<a href="#cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Brown, 2006)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <skos:broaderTransitive rdf:resource="#middleClass"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#nobility">
@@ -18149,6 +18152,7 @@
     <skos:definition xml:lang="en">Typically applied to someone who "owns and runs a pub or shop," but not on the scale of an entrepreneur or industrialist. <![CDATA[<a href="#cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Brown, 2006)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">Habituellement attribué à quelqu'un qui «possède et tient un bar ou une boutique», mais dont l'activité est plus réduite que celle d'un entrepreneur ou d'un industriel.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <skos:broaderTransitive rdf:resource="#lowerMiddleClass"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#yeoman-farmer">
@@ -18162,6 +18166,7 @@
     <skos:definition xml:lang="fr">Les membres de cette classe historique «posséd[aient] juste assez de terre pour subvenir à leurs besoins, à condition qu'ils fassent eux-mêmes la plus grande partie du travail». Elizabeth Ham et Mary Webb en sont des exemples.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#lowerMiddleClass"/>
     <skos:related rdf:resource="#farming"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#upper-middleClass">
@@ -18203,6 +18208,7 @@
     <skos:definition xml:lang="en">This class includes such trades as "goldsmith, tailor, shoemaker, milliner, and dressmaker." <![CDATA[<a href="#cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Brown, 2006)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">Celle classe inclut des métiers tels que tailleur/euse, orfèvre, cordonnier/ère, chapelier/ère et couturier/ère.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <skos:broaderTransitive rdf:resource="#lowerMiddleClass"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#urban-industrialUnskilled">
