@@ -18041,6 +18041,15 @@
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Working_class"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#lowerClass"/>
+  </cwrc:SocialClass>
+  <cwrc:SocialClass rdf:about="#lowerClass">
+    <rdfs:label xml:lang="en">lower class</rdfs:label>
+    <rdfs:label xml:lang="fr">classe inférieure</rdfs:label>
+    <skos:inScheme rdf:resource="#SocialClass"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#bohemianism">
     <rdfs:label xml:lang="en">Bohemianism</rdfs:label>
@@ -18161,6 +18170,7 @@
     <skos:definition xml:lang="fr">Cette classe sociale inclut "les pauvres, les indigent•e•s, les chômeur•euse•s " dépendant des actions de charité ou des aides sociales.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#lowerClass"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#shopkeepers">
     <rdfs:label xml:lang="en">shopkeepers</rdfs:label>
@@ -18217,6 +18227,7 @@
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Indentured_servitude"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#lowerClass"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#skilledCraftpersonArtisan">
     <rdfs:label xml:lang="en">artisan</rdfs:label>
@@ -18227,7 +18238,7 @@
     <skos:definition xml:lang="en">This class includes such trades as "goldsmith, tailor, shoemaker, milliner, and dressmaker." <![CDATA[<a href="#cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Brown, 2006)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">Celle classe inclut des métiers tels que tailleur/euse, orfèvre, cordonnier/ère, chapelier/ère et couturier/ère.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
-    <skos:broaderTransitive rdf:resource="#lowerMiddleClass"/>
+    <skos:broaderTransitive rdf:resource="#lowerClass"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#urban-industrialUnskilled">
@@ -18240,6 +18251,7 @@
     <skos:definition xml:lang="fr">Cette classe inclut les ouvriers/ères d'usine et les travailleurs/euses des grandes industries ou des industries urbaines, qui ne possèdent ni profession ni qualification définie. Elle renvoie également aux emplois du secteur des services avec des salaires et des statuts faibles, comme la restauration ou l'industrie du fast-food dans les sociétés industrielles et postindustrielles.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#lowerClass"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#rural-unskilled">
     <rdfs:label xml:lang="en">rural unskilled</rdfs:label>
@@ -18251,6 +18263,7 @@
     <skos:definition xml:lang="fr">Cette classe renvoie aux travailleurs/euses agricoles, généralement des hommes, et concerne des périodes historiques plus reculées. Elle inclut aussi les fermiers/ères migrants/es.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#lowerClass"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#servants">
     <rdfs:label xml:lang="en">servant</rdfs:label>
@@ -18262,6 +18275,7 @@
     <skos:definition xml:lang="fr">Les domestiques vivent normalement au sein du foyer de la famille ou de l'institution qui les emploie, même si ceux des classes les plus inférieures n'y travaillent que ponctuellement et ne reçoivent donc ni toit ni pension. Ce type d'emploi, très répandu avant le 20ème siècle, est différent des postes rattachés au tertiaire tels que vendeur/se, personnel de cabine ou serveur/se.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#lowerClass"/>
   </cwrc:SocialClass>
 
 
