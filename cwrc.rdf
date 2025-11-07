@@ -16873,7 +16873,7 @@
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
-    <skos:broaderTransitive rdf:resource="#christianity"/>
+    <skos:broaderTransitive rdf:resource="#protestantism"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:Religion>
@@ -17150,6 +17150,7 @@
     <skos:inScheme rdf:resource="#Religion"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
+    <skos:broaderTransitive rdf:resource="#christianity"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#neo-thomism">
     <rdfs:label xml:lang="en">Neo-thomism</rdfs:label>
@@ -17208,7 +17209,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <skos:broaderTransitive rdf:resource="#dissentProtestant"/>
-    <skos:broaderTransitive rdf:resource="#millenarianism"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#quakerism">
     <rdfs:label xml:lang="en">Quakerism</rdfs:label>
@@ -17392,6 +17392,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broaderTransitive rdf:resource="#protestantism"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#calvinism">
     <rdfs:label xml:lang="en">Calvinism</rdfs:label>
@@ -17406,6 +17407,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broaderTransitive rdf:resource="#protestantism"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#swedenborgianism">
     <rdfs:label xml:lang="en">Swedenborgianism</rdfs:label>
@@ -17419,6 +17421,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broaderTransitive rdf:resource="#christianity"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#behemenism">
     <rdfs:label xml:lang="en">Behemenism</rdfs:label>
@@ -17622,6 +17625,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
+    <skos:broaderTransitive rdf:resource="#catholicism"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#adventism">
     <rdfs:label xml:lang="en">Adventism</rdfs:label>
@@ -17865,6 +17869,7 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="#Religion"/>
+    <skos:broaderTransitive rdf:resource="#judaism"/>
   </cwrc:Religion>
   <cwrc:Religion rdf:about="#rosicrucianism">
     <rdfs:label xml:lang="en">Rosicrucianism</rdfs:label>
