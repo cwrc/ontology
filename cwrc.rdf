@@ -17991,6 +17991,17 @@
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </owl:Class>
 
+ <cwrc:SocialClass rdf:about="#upperClass">
+    <rdfs:label xml:lang="en">upper class</rdfs:label>
+    <rdfs:label xml:lang="fr">classe supérieure</rdfs:label>
+    <skos:inScheme rdf:resource="#SocialClass"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">"The social class composed of the wealthiest members of society, who also wield the greatest political power." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
+    <skos:definition xml:lang="fr">«La classe sociale composée des membres les plus riches de la société, qui détiennent également le plus grand pouvoir politique.»</skos:definition>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Middle_class"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <void:inDataset rdf:resource="#datasetdefinition"/>
+  </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#middleClass">
     <rdfs:label xml:lang="en">middle class</rdfs:label>
     <rdfs:label xml:lang="fr">classe moyenne</rdfs:label>
@@ -18115,6 +18126,7 @@
     <skos:definition xml:lang="en">This group refers to "those holding a title or of close family relation to someone holding a title (such as Lady Mary Wortley Montagu, Lord Byron, or Nancy Mitford)". <![CDATA[<a href="#cwrc:d596c4a0-ecaf-4739-8a58-3e0af7dba4c7">(Brown, 2006)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">Ce groupe réfère aux «personnes qui possèdent un titre, ou dont un membre de la famille proche possède un titre (telle que Lady Mary Wortley Montagu, Lord Byron, ou Nancy Mitford)».</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <skos:broaderTransitive rdf:resource="#upperClass"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#gentry">
@@ -18128,6 +18140,7 @@
     <skos:definition xml:lang="fr">L'appartenance à l'aristocratie indique la possession d'une propriété, sous la forme de terres, d'actions ou d'obligations. Elle «indique d'abord la possession d'armes et d'armoiries, mais se distingue de la noblesse car les biens financiers ne sont pas nécessairement liés à un sang ou un titre nobles. Les gentlemen désintéressés font partie de cette classe (i.e. Mr Bennett dans Jane Austen).» Les gentlewomen appartiennent également à cette classe, y compris dans le cas où elles sont entretenues par un père ou un frère au lieu d'être propriétaires, ou lorsqu'elles se retrouvent en difficulté, c'est-à-dire passées à un état de précarité financière, comme c'est le cas de Jane Eyre ou la Jane Fairfax de Austen.</skos:definition>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Gentry"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
+    <skos:broaderTransitive rdf:resource="#upperClass"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
   <cwrc:SocialClass rdf:about="#indigent">
