@@ -604,6 +604,7 @@
   <genre:HistoricalGenre rdf:about="#oralHistory">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">oral history</rdfs:label>
+    <rdf:type rdf:resource="#History"/>
     <skos:definition xml:lang="en">"Oral history is the collection and study of historical information about individuals, families, important events, or everyday life using audiotapes, videotapes, or transcriptions of planned interviews. These interviews are conducted with people who participated in or observed past events and whose memories and perceptions of these are to be preserved as an aural record for future generations. Oral history strives to obtain information from different perspectives and most of these cannot be found in written sources. Oral history also refers to information gathered in this manner and to a written work (published or unpublished) based on such data, often preserved in archives and large libraries. The term is sometimes used in a more general sense to refer to any information about past events that people who experienced them tell anybody else, but professional historians usually consider this to be oral tradition. However, as the Columbia Encyclopedia explains: Primitive societies have long relied on oral tradition to preserve a record of the past in the absence of written histories. In Western society, the use of oral material goes back to the early Greek historians Herodotus and Thucydides, both of whom made extensive use of oral reports from witnesses. The modern concept of oral history was developed in the 1940s by Allan Nevins and his associates at Columbia University." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <rdf:type rdf:resource="#NarrativeGenre"/>
   </genre:HistoricalGenre>
@@ -2047,6 +2048,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
   <genre:HistoricalGenre rdf:about="#history">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">history</rdfs:label>
+    <rdf:type rdf:resource="#History"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300026358"/>
     <skos:definition xml:lang="fr">Comptes rendus chronologiques d'événements importants, à partir de la vie ou du développement d'un peuple, d'un pays ou d'une institution, souvent accompagnés d'explications et de leurs causes.</skos:definition>
@@ -2481,6 +2483,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
   </genre:PoeticGenre>
   <genre:HistoricalGenre rdf:about="#localHistory">
     <skos:definition xml:lang="en">"Histories that are distinctly localized in subject matter or source materials, focusing on specific neighborhoods, communities, counties, or other specific subdivisions of larger geopolitical bodies." <![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
+    <rdf:type rdf:resource="#History"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300251993"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3405,6 +3408,7 @@ Closely related to the industrial novel because of its interest in the impact of
   </genre:DigitalMedium>
   <genre:HistoricalGenre rdf:about="#historicalOverview">
     <skos:definition xml:lang="en">"Written works or other forms of media that describe or summarize a specific historical period or set of events, and their significance."</skos:definition>
+    <rdf:type rdf:resource="#History"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">historical overview</rdfs:label>
   </genre:HistoricalGenre>
@@ -3979,6 +3983,13 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
     <rdfs:label xml:lang="en">Historical Genre</rdfs:label>
     <skos:definition xml:lang="en">Indicates works that relay histories in both written and oral form; not to be confused with historical fiction.</skos:definition>
     <rdfs:subClassOf rdf:resource="#ThematicGenre"/>
+    <rdfs:subClassOf rdf:resource="#InformationalGenre"/>
+  </owl:Class>
+  <owl:Class rdf:about="#History">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">History</rdfs:label>
+     <rdfs:label xml:lang="en">Histoire</rdfs:label>
+    <skos:definition xml:lang="en">The genre and subgenres of history. See also #HistoricalGenre.</skos:definition>
     <rdfs:subClassOf rdf:resource="#InformationalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#ThematicGenre">
