@@ -1327,6 +1327,18 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">opera</rdfs:label>
   </genre:OperaGenre>
+  <genre:OperaGenre rdf:about="#operetta">
+    <rdf:type rdf:resource="#PerformanceMedium"/>
+    <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026976"/>
+    <rdfs:label xml:lang="fr">opéra</rdfs:label>
+    <skos:definition xml:lang="en">"Operetta is a form of theatre and a genre of light opera. It includes spoken dialogue, songs and including dances. It is lighter than opera in terms of its music, orchestral size, and length of the work. Apart from its shorter length, the operetta is usually of a light and amusing character. The subject matter may portray "lovers' spats, mistaken identities, sudden reversals of fortune, and glittering parties".[4] It sometimes also includes satirical commentaries.</skos:definition>
+    <skos:definition xml:lang="fr">«"L'opérette est un genre musical mêlant comédie, chant et généralement danse." "L'opérette alterne numéros chantés--et parfois dansés--et dialogues, se différenciant de l'opéra-comique par l'utilisation de musique dite « légère » (en opposition à la « musique savante ») pour ses partitions et le fait qu'elle ait une fin le plus souvent heureuse."»<![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from Wikipedia.</rdfs:comment>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Operetta"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">operetta</rdfs:label>
+    <rdfs:label xml:lang="fr">opérette</rdfs:label>
+  </genre:OperaGenre>
   <genre:ScholarlyGenre rdf:about="#artCriticism">
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -2463,7 +2475,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
   <genre:DramaticGenre rdf:about="#revue">
     <rdfs:label xml:lang="en">revue</rdfs:label>
     <rdfs:label xml:lang="fr">revue (variétés)</rdfs:label>
-    <skos:definition xml:lang="en">"A revue (from French 'magazine' or 'overview') is a type of multi-act popular theatrical entertainment that combines music, dance and sketches. The revue has its roots in 19th century popular entertainment and melodrama but grew into a substantial cultural presence of its own during its golden years from 1916 to 1932. Though most famous for their visual spectacle, revues frequently satirized contemporary figures, news or literature. Similar to the related subforms of operetta and musical theatre, the revue art form brings together music, dance and sketches to create a compelling show. In contrast to these, however, revue does not have an overarching storyline. Rather, a general theme serves as the motto for a loosely-related series of acts that alternate between solo performances and dance" <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
+    <skos:definition xml:lang="en">"A revue (from French 'magazine' or 'overview') is a type of multi-act popular theatrical entertainment that combines music, dance and sketches. The revue has its roots in 19th century popular entertainment and melodrama but grew into a substantial cultural presence of its own during its golden years from 1916 to 1932. Though most famous for their visual spectacle, revues frequently satirized contemporary figures, news or literature. Similar to the related subforms of operetta and musical theatre, the revue art form brings together music, dance and sketches to create a compelling show. In contrast to these, however, revue does not have an overarching storyline. Rather, a general theme serves as the motto for a loosely-related series of acts that alternate between solo performances and dance." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">«Une revue est un genre théâtral qui associe musique, danse et sketches qui font la satire de personnes contemporaines, de l'actualité ou de la littérature. Comme les formes apparentées de l'opérette et de la comédie musicale, la revue allie musique, danse et comédie pour former un spectacle complet. Contrairement à celles-ci, elle ne possède cependant pas d'histoire suivie. Un thème général est plutôt utilisé pour un enchaînement de numéros au cours desquels solos et ensembles de danse se relaient.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Revue"/>
