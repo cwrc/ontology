@@ -1327,6 +1327,18 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">opera</rdfs:label>
   </genre:OperaGenre>
+  <genre:OperaGenre rdf:about="#operetta">
+    <rdf:type rdf:resource="#PerformanceMedium"/>
+    <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026976"/>
+    <rdfs:label xml:lang="fr">opéra</rdfs:label>
+    <skos:definition xml:lang="en">"Operetta is a form of theatre and a genre of light opera. It includes spoken dialogue, songs and including dances. It is lighter than opera in terms of its music, orchestral size, and length of the work. Apart from its shorter length, the operetta is usually of a light and amusing character. The subject matter may portray "lovers' spats, mistaken identities, sudden reversals of fortune, and glittering parties".[4] It sometimes also includes satirical commentaries.</skos:definition>
+    <skos:definition xml:lang="fr">«"L'opérette est un genre musical mêlant comédie, chant et généralement danse." "L'opérette alterne numéros chantés--et parfois dansés--et dialogues, se différenciant de l'opéra-comique par l'utilisation de musique dite « légère » (en opposition à la « musique savante ») pour ses partitions et le fait qu'elle ait une fin le plus souvent heureuse."»<![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
+    <rdfs:comment xml:lang="en">This term and its description were created from data gathered from Wikipedia.</rdfs:comment>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Operetta"/>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">operetta</rdfs:label>
+    <rdfs:label xml:lang="fr">opérette</rdfs:label>
+  </genre:OperaGenre>
   <genre:ScholarlyGenre rdf:about="#artCriticism">
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
