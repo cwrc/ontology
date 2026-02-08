@@ -1904,7 +1904,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026518"/>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Roman_%C3%A0_clef"/>
   </genre:NovelisticGenre>
-  <genre:ScholarlyGenre rdf:about="#literaryCriticism">
+  <genre:LiteraryCriticalGenre rdf:about="#literaryCriticism">
     <rdfs:label xml:lang="fr">critique littéraire</rdfs:label>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2017026126"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1913,8 +1913,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">Writing that analyzes or critiques a literary work, often through the use of a particular literary theory, and typically in the form of an essay. <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Literary_criticism"/>
     <skos:definition xml:lang="fr">«La critique littéraire est l'étude, la discussion, l'évaluation et l'interprétation de la littérature. Elle peut prendre la forme d'un discours théorique s'appuyant sur la théorie de la littérature ou bien d'un discours plus circonstancié, de présentation ou de compte rendu d'une œuvre littéraire (souvent sous une forme journalistique lors de sa parution). Ces deux acceptions ne sont pas diamétralement opposées bien que la seconde se distingue par le jugement qu'elle porte sur les œuvres étudiées.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
-    <rdf:type rdf:resource="#LiteraryCriticalGenre"/>
-  </genre:ScholarlyGenre>
+  </genre:LiteraryCriticalGenre>
   <genre:EpistolaryGenre rdf:about="#epistolary">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">epistolary</rdfs:label>
@@ -3623,7 +3622,7 @@ Closely related to the industrial novel because of its interest in the impact of
   </owl:Class>
   <owl:Class rdf:about="#IntertextualGenre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">Intertextual Genre</rdfs:label>
+    <rdfs:label xml:lang="en">Intertextual Writing (genres)</rdfs:label>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Intertextuality"/>
     <rdfs:subClassOf rdf:resource="#Genre"/>
     <skos:definition xml:lang="en">Indicates works that shape "a text's meaning by another text." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
@@ -3661,7 +3660,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300263209"/>
     <rdfs:subClassOf rdf:resource="#LiteraryGenre"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">Childrens Literature Genre</rdfs:label>
+    <rdfs:label xml:lang="en">Children's Literature Writing (genres)</rdfs:label>
     <skos:definition xml:lang="en">Indicates works  produced for children and young adults, whether fictional or informational. <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
   </owl:Class>
   <owl:Class rdf:about="#ComedicGenre">
@@ -3673,7 +3672,7 @@ Closely related to the industrial novel because of its interest in the impact of
   </owl:Class>
  <owl:Class rdf:about="#ParatextualGenre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">Paratextual Genre</rdfs:label>
+    <rdfs:label xml:lang="en">Paratextual Writing (genres)</rdfs:label>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300311832"/>
     <rdfs:subClassOf rdf:resource="#Genre"/>
     <skos:definition xml:lang="en">A work that is embedded in or forms a part of a larger work, for instance a poem within a volume or an essay within a journal, or one that is producted from a combination of other works or serves to enhance them. Largely parallels the @@#EmbeddedWork@@ or Partial Work grouping in the @@#Form@@ vocabulary. <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
@@ -3828,7 +3827,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:definition xml:lang="en">Indicates works "concerned with the collection, preparation, and distribution of news and related commentary through the mass media, both print and electronic."
  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">Journalistic Genre</rdfs:label>
+    <rdfs:label xml:lang="en">Journalistic Writing (genres)</rdfs:label>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300054354"/>
   </owl:Class>
   <owl:Class rdf:about="#EmbeddedWork">
@@ -3868,8 +3867,8 @@ Note: Used to class texts encoded using the “a” (analytic) value for the lev
   </owl:Class>
     <owl:Class rdf:about="#NonFictionalGenre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">Non-Fictional Writing (genre)</rdfs:label>
-    <rdfs:label xml:lang="fr">Écrits non fictionnels (genre)/rdfs:label>
+    <rdfs:label xml:lang="en">Non-Fiction (genres)</rdfs:label>
+    <rdfs:label xml:lang="fr">Écrits non fictionnels (genres)/rdfs:label>
     <skos:altLabel xml:lang="en">essais</skos:altLabel>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300163411"/>
      <skos:closeMatch rdf:resource="http://www.wikidata.org/entity/Q213051"/>
@@ -4040,8 +4039,8 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
   </owl:Class>
   <owl:Class rdf:about="#History">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">History</rdfs:label>
-     <rdfs:label xml:lang="en">Histoire</rdfs:label>
+    <rdfs:label xml:lang="en">History (genres)</rdfs:label>
+     <rdfs:label xml:lang="en">Histoire (genres)</rdfs:label>
     <skos:definition xml:lang="en">The genre and subgenres of history. See also #HistoricalGenre.</skos:definition>
     <rdfs:subClassOf rdf:resource="#InformationalGenre"/>
   </owl:Class>
