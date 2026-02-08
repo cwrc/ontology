@@ -430,7 +430,7 @@
     <rdfs:label xml:lang="en">popular</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300311927"/>
   </genre:ThematicGenre>
-  <genre:InformationalGenre rdf:about="#genealogy">
+  <genre:NonFictionalGenre rdf:about="#genealogy">
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:related rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026100"/>
     <skos:definition xml:lang="en">"Accounts or histories of the descent of persons, families, or other groups, from an ancestor or ancestors; enumerations of ancestors and their descendants in the natural order of succession."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
@@ -439,7 +439,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">genealogy</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300027015"/>
-  </genre:InformationalGenre>
+  </genre:NonFictionalGenre>
   <genre:DramaticGenre rdf:about="#bergamasque">
     <rdfs:label xml:lang="fr">bergamasque</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -909,11 +909,13 @@
   </genre:PoeticGenre>
   <genre:ThematicGenre rdf:about="#gardening">
     <skos:definition xml:lang="fr">Texte non fictif qui traite du jardinage.</skos:definition>
+    <rdfs:label xml:lang="en">gardening writing</rdfs:label>
     <rdfs:label xml:lang="fr">jardinage</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">gardening</rdfs:label>
     <skos:hiddenLabel xml:lang="en">GARDENINGBOOK</skos:hiddenLabel>
     <skos:definition xml:lang="en">A text, typically non-fiction, dealing with the subject of gardening.</skos:definition>
+    <rdf:type rdf:resource="#NonFictionalGenre"/>
   </genre:ThematicGenre>
   <genre:PerformanceMedium rdf:about="#puppetry">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1174,14 +1176,14 @@
     <skos:definition xml:lang="fr">Formes de spectacles divers, incluant souvent de la danse, du chant ou de la comédie, représentés dans une salle de spectacle, généralement un cabaret, où le public est assis à des tables. La musique jouée dans les restaurants ou les tavernes n'est généralement pas considérée comme un spectacle de cabaret, à moins qu'elle présente des éléments distinctifs.</skos:definition>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Oxford Dictionary of Literary Terms, 4th ed.</rdfs:comment>
   </genre:PerformanceMedium>
-  <genre:InformationalGenre rdf:about="#governmentReport">
+  <genre:NonFictionalGenre rdf:about="#governmentReport">
     <rdfs:label xml:lang="fr">rapport gouvernemental</rdfs:label>
     <skos:definition xml:lang="fr">Publication officielle émise par un gouvernement, couvrant une large variété de sujets.</skos:definition>
     <skos:definition xml:lang="en">An official government publication covering any of a wide variety of subjects.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">government report</rdfs:label>
     <skos:hiddenLabel xml:lang="en">PARLIAMENTARYREPORT</skos:hiddenLabel>
-  </genre:InformationalGenre>
+  </genre:NonFictionalGenre>
   <genre:GovernmentRecordsGenre rdf:about="#municipalOrdinance">
     <skos:definition xml:lang="en">"Laws established by cities, towns, or other local governmental entities. For rules or administrative provisions adopted by an organization for its internal governance and its external dealings." <![CDATA[<a href="#cwrc:788072dc-a6e5-44b1-b72b-873846d117a8">(Library of Congress, 2022)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to The Library of Congress.</rdfs:comment>
@@ -1462,7 +1464,7 @@
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300027112"/>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026085"/>
   </genre:AutobiographicalGenre>
-  <genre:InformationalGenre rdf:about="#obituary">
+  <genre:LifeWritingGenre rdf:about="#obituary">
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026134"/>
     <rdfs:label xml:lang="fr">élégie</rdfs:label>
     <skos:definition xml:lang="en">"An obituary (obit for short) is a news article that reports the recent death of a person, typically along with an account of the person's life and information about the upcoming funeral."  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2018)</a>]]></skos:definition>
@@ -1471,8 +1473,7 @@
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">obituary</rdfs:label>
-    <rdf:type rdf:resource="#LifeWritingGenre"/>
-  </genre:InformationalGenre>
+  </genre:LifeWRitingGenre>
   <genre:DramaticGenre rdf:about="#masque">
     <dcterms:references rdf:resource="http://web.cn.edu/kwheeler/lit_terms_m.html"/>
     <skos:definition xml:lang="fr">«Le masque (de l'anglais « masque ») est une forme de spectacle de cour qui fit son apparition en Angleterre sous le règne d'Elisabeth I (1558-1603).»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -1880,13 +1881,13 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300026487"/>
   </genre:ScriptForm>
-  <genre:InformationalGenre rdf:about="#medicalWriting">
+  <genre:NonFictionalGenre rdf:about="#medicalWriting">
     <skos:definition xml:lang="fr">Écrits, de nature scientifique pour la plupart, qui traitent du sujet de la médecine.</skos:definition>
     <skos:definition xml:lang="en">Writing, typically of a scientific nature, relating to the field of medicine.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">medical writing</rdfs:label>
     <rdfs:label xml:lang="fr">traité médical</rdfs:label>
-  </genre:InformationalGenre>
+  </genre:NonFictionalGenre>
   <genre:ChildrensLiteratureGenre rdf:about="#preSchool">
     <skos:definition xml:lang="en">"Texts intended for an audience of children below school age."</skos:definition>
     <skos:closeMatch rdf:resource="https://sparql.cwrc.ca/ontologies/genre#juvenile"/>
@@ -1953,7 +1954,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
   </genre:IntertextualGenre>
   <genre:InformationalGenre rdf:about="#informationalWriting">
     <skos:related rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026113"/>
-    <skos:definition xml:lang="en">A broad category of writing, often considered nonfictional, designed to convey specific content on a wide range of topics. That content may not be true, and informational texts like other forms of writing are vehicles for persuasion and ideology. Informational writing may possess literary qualities and may or may not be scholarly.</skos:definition>
+    <skos:definition xml:lang="en">A broad category of writing, often considered nonfictional, designed to convey specific content on a wide range of topics. That content may not be true, and informational texts, like other forms of writing, are vehicles for persuasion and ideology. Informational writing may possess literary qualities and may or may not be scholarly.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">informational writing</rdfs:label>
   </genre:InformationalGenre>
@@ -2523,8 +2524,8 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">loose-leaf</rdfs:label>
   </genre:TextualMedium>
-  <genre:InformationalGenre rdf:about="#biography">
-    <skos:definition xml:lang="en">"The genre of nonfiction that concerns accounts of the lives of individuals."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
+  <genre:LifeWritingGenre rdf:about="#biography">
+    <skos:definition xml:lang="en">"The genre of nonfiction that concerns accounts of the lives of individuals."<![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">biography</rdfs:label>
     <rdfs:comment xml:lang="fr">La description de ce terme est basée sur celle de DBPedia.</rdfs:comment>
@@ -2533,12 +2534,11 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026049"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <rdfs:label xml:lang="fr">biographie </rdfs:label>
-  </genre:InformationalGenre>
+  </genre:LifeWritingGenre>
   <genre:SerialForm rdf:about="#serial">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">serial</rdfs:label>
-    <skos:definition xml:lang="en">A broad category indicating works in a range of media and genres published in parts, whether a television series or a serial podcast.
-For fiction published in installments there are also specific terms for those issued as separate publications @@#serialVolume@@ or within sequential issues of the same periodical publication.
+    <skos:definition xml:lang="en">A broad category indicating works in a range of media and genres published in parts, whether a television series or a serial podcast. For fiction published in installments there are also specific terms for those issued as separate publications @@#serialVolume@@ or within sequential issues of the same periodical publication.
 </skos:definition>
   </genre:SerialForm>
   <genre:SerialForm rdf:about="#bookSeries">
@@ -2913,7 +2913,7 @@ For fiction published in installments there are also specific terms for those is
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">musical writing</rdfs:label>
     <skos:definition xml:lang="en">Writing associated with some form of music.</skos:definition>
-    <rdf:type rdf:resource="#InformationalGenre"/>
+    <rdf:type rdf:resource="#NonFictionalGenre"/>
   </genre:MusicalGenre>
   <genre:ComedicGenre rdf:about="#comedyOfManners">
     <skos:definition xml:lang="en">"The comedy of manners is an entertainment form which satirizes the manners and affectations of a social class or of multiple classes, often represented by stereotypical stock characters. For example, the miles gloriosus ("boastful soldier") in ancient times, the fop and the rake during the English Restoration, or an old person pretending to be young. Restoration comedy is used as a synonym for "comedy of manners". The plot of the comedy, often concerned with scandal, is generally less important than its witty dialogue. A great writer of comedies of manners was Oscar Wilde, his most famous play being The Importance of Being Earnest. The comedy of manners was first developed in the new comedy of the Ancient Greek playwright Menander. His style, elaborate plots, and stock characters were imitated by the Roman playwrights Plautus and Terence, whose comedies were widely known and copied during the Renaissance. The best-known comedies of manners, however, may well be those of the French playwright Molière, who satirized the hypocrisy and pretension of the ancien régime in such plays as L'École des femmes (The School for Wives, 1662), Le Misanthrope (The Misanthrope, 1666), and most famously Tartuffe (1664)."  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -3184,15 +3184,16 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">film</rdfs:label>
     <rdf:type rdf:resource="#VisualArtMedium"/>
   </genre:MovingMedium>
-  <genre:InformationalGenre rdf:about="#cookbook">
+  <genre:NonFictionalGenre rdf:about="#cookbook">
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026169"/>
     <skos:definition xml:lang="fr">«Un livre de cuisine est un recueil de recettes ou de considérations gastronomiques.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300026109"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">cookbook</rdfs:label>
-    <skos:definition xml:lang="en">"Reference publications containing collections of recipes with ancillary content on selection of ingredients or the broader context of the types of cooking presented. Contemporary cookbooks may  focus on cultural or regional themes."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
-  </genre:InformationalGenre>
+    <skos:definition xml:lang="en">Cookbooks and similar "publications containing collections of recipes with ancillary content on selection of ingredients or the broader context of the types of cooking presented. Contemporary cookbooks may  focus on cultural or regional themes."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
+    <rdf:type rdf:resource="#ThematicGenre"/>
+  </genre:NonFictionalGenre>
   <genre:ThreeDimensionalMedium rdf:about="#realia">
     <skos:definition xml:lang="en">"In library classification systems, the term realia refers to three-dimensional objects from real life such as coins, tools, and textiles, that do not easily fit into the orderly categories of printed material. They can be either man-made (artifacts, tools, utensils, etc.) or naturally occurring (specimens, samples, etc.), usually borrowed, purchased, or received as donation by a teacher, library, or museum for use in classroom instruction or in exhibits. Archival and manuscript collections often receive items of memorabilia such as badges, emblems, insignias, jewelry, leather goods, needlework, etc., in connection with gifts of personal papers. Most government or institutional archives reject gifts of non-documentary objects unless they have a documentary value. When accepting large bequests of mixed objects they normally have the donors sign legal documents giving permission to the archive to destroy, exchange, sell or dispose in any way those objects which, according to the best judgement of the archivist, are not manuscripts (which can include typescripts or printouts) or are not immediately useful for understanding the manuscripts." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3309,11 +3310,11 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">mixed materials</rdfs:label>
   </genre:ThreeDimensionalMedium>
-  <genre:InformationalGenre rdf:about="#programNotes">
+  <genre:NonFictionalGenre rdf:about="#programNotes">
     <skos:definition xml:lang="en">"A concert program or programme is a selection and ordering, or programming, of pieces to be performed at an occasion, or concert. Programs may be influenced by the available ensemble of instruments, by performer ability or skill, by theme (historical, programmatic, or technical), by musical concerns (such as form), or by allowable time. For example, a brass ensemble will perform an "all brass" program, the pieces of which may be chosen by a theme, such as "all Bach", and the chosen pieces may be ordered so that they build in intensity as the concert progresses. Concert programs may be put together by ensembles, conductors, or ensemble directors, and are often explained in program notes. The program note is a standard element of a concert where contemporary or classical music is being performed. Program notes serve two purposes: to provide historical and background information on the piece and, if necessary, the composer, and to give the audience some sense of what to expect, and what possibly what to listen for, when listening to the work. With the presentation of contemporary pieces, it is common to include notes provided by the composer. Programs may include information about, and quotes or commentary from, the composer, conductor, or performers, as well as provide context regarding the musical era. Programs may also include information about the programmatic or absolute content of the music, including analysis, and may point out details such as themes, musical motifs, and sections or movements." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">program notes</rdfs:label>
-  </genre:InformationalGenre>
+  </genre:NonFictionalGenre>
   <genre:ThematicGenre rdf:about="#thematicWriting">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">thematic writing</rdfs:label>
@@ -3351,11 +3352,11 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">mock forms</rdfs:label>
     <rdfs:label xml:lang="fr">imitations parodiques</rdfs:label>
   </genre:SatiricalGenre>
-  <genre:InformationalGenre rdf:about="#nonFiction">
+  <genre:NonFictionalGenre rdf:about="#nonFiction">
     <skos:definition xml:lang="en">"Nonfiction or non-fiction is content (often, in the form of a story) whose creator, in good faith, assumes responsibility for the truth or accuracy of the events, people, and/or information presented. In contrast, a story whose creator explicitly leaves open if and how the work refers to reality is usually classified as fiction. Nonfiction, which may be presented either objectively or subjectively, is traditionally one of the two main divisions of narratives (and, specifically, prose writing), the other traditional division being fiction, which contrasts with nonfiction by dealing in information, events, and characters expected to be partly or largely imaginary. Nonfiction's specific factual assertions and descriptions may or may not be accurate, and can give either a true or a false account of the subject in question. However, authors of such accounts genuinely believe or claim them to be truthful at the time of their composition or, at least, pose them to a convinced audience as historically or empirically factual. Reporting the beliefs of others in a nonfiction format is not necessarily an endorsement of the ultimate veracity of those beliefs, it is simply saying it is true that people believe them (for such topics as mythology). Nonfiction can also be written about fiction, typically known as literary criticism, giving information and analysis on these other works. Nonfiction need not necessarily be written text, since pictures and film can also purport to present a factual account of a subject." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">non-fiction</rdfs:label>
-  </genre:InformationalGenre>
+  </genre:NonFictionalGenre>
   <genre:NarrativeGenre rdf:about="#questNarrative">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">quest narrative</rdfs:label>
@@ -3873,8 +3874,9 @@ Note: Used to class texts encoded using the “a” (analytic) value for the lev
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300163411"/>
      <skos:closeMatch rdf:resource="http://www.wikidata.org/entity/Q213051"/>
     <rdfs:subClassOf rdf:resource="#Genre"/>
-    <skos:altLabel xml:lang="en">non-fiction</skos:altLabel>
+    <skos:altLabel xml:lang="en">Non-fiction Writing (genres)</skos:altLabel>
     <skos:definition xml:lang="en">Indicates genres that are contrasted with fictional ones, although they may be creative and the content is not necessarily factual. <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
+    <rdfs:subClassOf rdf:resource="#NonFictionalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#IllustratedForm">
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300054200"/>
@@ -3967,9 +3969,9 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
   </owl:Class>
   <owl:Class rdf:about="#MusicalGenre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">Musical Genre</rdfs:label>
+    <rdfs:label xml:lang="en">Musical Writing (genres)</rdfs:label>
     <rdfs:subClassOf rdf:resource="#Genre"/>
-    <skos:definition xml:lang="en">Indicates works related to the classification, performance, or discussion of music.</skos:definition>
+    <skos:definition xml:lang="en">Indicates works related to the composition, classification, performance, or discussion of music.</skos:definition>
   </owl:Class>
   <owl:Class rdf:about="#Medium">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -4054,7 +4056,7 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Reference Work Genre</rdfs:label>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300163404"/>
-    <rdfs:subClassOf rdf:resource="#InformationalGenre"/>
+    <rdfs:subClassOf rdf:resource="#NonFictionalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#FinancialRecordsGenre">
     <skos:definition xml:lang="en">"Documents pertaining to money matters." <![CDATA[<a href="#cwrc:a0414fff-d3ba-4d20-9d13-623b4ddc077f">(Getty, 2022)</a>]]></skos:definition>
@@ -4088,7 +4090,7 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026351"/>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300027590"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus and The Library of Congress.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="#InformationalGenre"/>
+    <rdfs:subClassOf rdf:resource="#NonFictionalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#CollectionForm">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -4097,7 +4099,6 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
     <rdfs:subClassOf rdf:resource="#Form"/>
     <skos:definition xml:lang="en">Indicates "accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization." <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
   </owl:Class>
-
   <owl:DeprecatedClass rdf:about="#PartialForm">
     <rdfs:subClassOf rdf:resource="#Form"/>
     <skos:definition xml:lang="en">Indicates "portions of documents or other written works, either included as discrete sections in an extant document or detached from the original document." <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]> 
