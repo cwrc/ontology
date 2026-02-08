@@ -1473,7 +1473,7 @@
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">obituary</rdfs:label>
-  </genre:LifeWRitingGenre>
+  </genre:LifeWritingGenre>
   <genre:DramaticGenre rdf:about="#masque">
     <dcterms:references rdf:resource="http://web.cn.edu/kwheeler/lit_terms_m.html"/>
     <skos:definition xml:lang="fr">«Le masque (de l'anglais « masque ») est une forme de spectacle de cour qui fit son apparition en Angleterre sous le règne d'Elisabeth I (1558-1603).»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -2828,7 +2828,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026261"/>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Clerihew"/>
   </genre:PoeticGenre>
-  genre:JournalisticGenre rdf:about="#documentary">
+  <genre:JournalisticGenre rdf:about="#documentary">
     <skos:definition xml:lang="fr">Enregistrements écrits, oraux, sonores ou photographiques, ou représentations dans d'autres média qui expliquent ou recréent des événements réels, des épisodes, des histoires de vie ou d'autres informations factuelles d'une façon qui se veut objective et précise.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">documentary</rdfs:label>
@@ -4025,7 +4025,7 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
   <owl:Class rdf:about="#LifeWritingGenre">
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Life_writing"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">Life Writing (genres of)</rdfs:label>
+    <rdfs:label xml:lang="en">Life Writing (genres)</rdfs:label>
     <skos:definition xml:lang="en">Indicates representations of "memories, and experiences, whether one's own or another's" <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <rdfs:subClassOf rdf:resource="#LiteraryGenre"/>
     <rdfs:subClassOf rdf:resource="#NarrativeGenre"/>
@@ -4084,7 +4084,7 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
   </owl:Class>
   <owl:Class rdf:about="#LegalWritingGenre">
     <rdfs:label xml:lang="en">Legal Writing (genres)</rdfs:label>
-    <skos:definition xml:lang="en">Genres of writing and documents with relevance to legislation, the law, and legal processes. <![CDATA[<a href="#cwrc:a0414fff-d3ba-4d20-9d13-623b4ddc077f">(Getty, 2022)</a>]]></skos:definition>
+    <skos:definition xml:lang="en">Genres of writing and documents relevant to legislation, the law, and legal processes. <![CDATA[<a href="#cwrc:a0414fff-d3ba-4d20-9d13-623b4ddc077f">(Getty, 2022)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026351"/>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300027590"/>
