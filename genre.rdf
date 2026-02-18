@@ -3591,7 +3591,8 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:subClassOf rdf:resource="#Genre"/>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Politics"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">Political Genre</rdfs:label>
+    <rdfs:label xml:lang="en">Political Writing (genres)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#FeministGenre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -4111,7 +4112,7 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
     <skos:definition xml:lang="en">Indicates "accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization." <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
   </owl:Class>
   <owl:Class rdf:about="#LiteraryHistoricalGenre">
-    <skos:definition xml:lang="en">"A curated set of literary historical genre groupings gathering genres in which many writers wrote historically, with many but not all of these genres spanning multiple periods of British literary history. This class of genre groupings emerges from the Orlando Project's feminist literary history. It has a literary bias, reflects genres in which women tended to write, and groups them with an awareness of and interest in exposing how women's writing developed over time, supporting cross-period comparison and contrast. Not all genres encompassed in these groups are conventionally "literary" genres notwithstandingn their relevance to literary history. Meant for exploring large shifts, the groups omit many terms found in this ontology and some used within the Orlando dataset." <![CDATA[<a href="#cwrc:a0414fff-d3ba-4d20-9d13-623b4ddc077f">(Getty, 2022)</a>]]></skos:definition>
+    <skos:definition xml:lang="en">"A curated set of literary historical genre groupings gathering genres in which many writers wrote historically, with many but not all of these genres spanning multiple periods of British literary history. This class of genre groupings emerges from the Orlando Project's feminist literary history. It has a literary bias, reflects genres in which women tended to write, and groups them with an awareness of and interest in exposing how women's writing developed over time, supporting cross-period comparison and contrast. Not all genres encompassed in these groups are conventionally "literary" genres, notwithstanding their relevance to literary history. Meant for exploring larger generic shifts and developments, this set of groups omits many terms found in this ontology and some of those used within the Orlando dataset."</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Literary Historical Genres</rdfs:label>
   </owl:Class>
