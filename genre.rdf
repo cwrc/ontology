@@ -3584,13 +3584,15 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="fr">Écrits pédagogiques (genres)</rdfs:label>
     <rdfs:subClassOf rdf:resource="#InformationalGenre"/>
     <skos:definition xml:lang="en">Indicates works that have “the function, quality, or activity of having instruction or teaching as a primary or ulterior purpose.” <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
+    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#PoliticalGenre">
     <skos:definition xml:lang="en">Indicates works concerned with "the distribution of power and resources within a given community (a usually hierarchically organized population) as well as the interrelationship(s) between communities." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <rdfs:subClassOf rdf:resource="#Genre"/>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Politics"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">Political Genre</rdfs:label>
+    <rdfs:label xml:lang="en">Political Writing (genres)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#FeministGenre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3626,7 +3628,8 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Intertextuality"/>
     <rdfs:subClassOf rdf:resource="#Genre"/>
     <skos:definition xml:lang="en">Indicates works that shape "a text's meaning by another text." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
-  </owl:Class>
+    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
+    </owl:Class>
   <owl:Class rdf:about="#EpistolaryGenre">
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300410324"/>
     <skos:definition xml:lang="en">Indicates works "written by using the device of a series of letters, diary entries, newspaper clippings, or other documents." <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
@@ -3662,6 +3665,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Children's Literature Writing (genres)</rdfs:label>
     <skos:definition xml:lang="en">Indicates works  produced for children and young adults, whether fictional or informational. <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
+    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#ComedicGenre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3676,6 +3680,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300311832"/>
     <rdfs:subClassOf rdf:resource="#Genre"/>
     <skos:definition xml:lang="en">A work that is embedded in or forms a part of a larger work, for instance a poem within a volume or an essay within a journal, or one that is producted from a combination of other works or serves to enhance them. Largely parallels the @@#EmbeddedWork@@ or Partial Work grouping in the @@#Form@@ vocabulary. <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
+    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#ThreeDimensionalMedium">
     <dcterms:references rdf:resource="https://www.loc.gov/standards/mods/userguide/typeofresource.html"/>
@@ -3700,6 +3705,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:definition xml:lang="en">Indicates works "having a religious subject or spirtual theme." <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Religious Genre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#RecordForm">
     <skos:definition xml:lang="en">Indicates "recorded information, often standardized in format and content and treated as a unit." <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
@@ -3733,6 +3739,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">Dramatic Writing (genres)</rdfs:label>
     <rdfs:label xml:lang="fr">Écrits dramatiques (genres)</rdfs:label>
     <rdfs:subClassOf rdf:resource="#LiteraryGenre"/>
+    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#LiteraryCriticalGenre">
     <rdfs:subClassOf rdf:resource="#InformationalGenre"/>
@@ -3741,6 +3748,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:definition xml:lang="en">Criticism of writing in various genres.<![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:subClassOf rdf:resource="#LiteraryGenre"/>
+    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#DidacticGenre">
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300404113"/>
@@ -3821,6 +3829,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300055918"/>
     <rdfs:subClassOf rdf:resource="#NarrativeGenre"/>
     <rdfs:subClassOf rdf:resource="#LiteraryGenre"/>
+    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#JournalisticGenre">
     <rdfs:subClassOf rdf:resource="#InformationalGenre"/>
@@ -3829,6 +3838,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Journalistic Writing (genres)</rdfs:label>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300054354"/>
+    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#EmbeddedWork">
     <rdfs:subClassOf rdf:resource="#Form"/>
@@ -3898,6 +3908,7 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Poetic Genre</rdfs:label>
     <rdfs:subClassOf rdf:resource="#LiteraryGenre"/>
+    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#CartographicForm">
     <skos:altLabel xml:lang="en">cartographic</skos:altLabel>
@@ -4029,6 +4040,7 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
     <skos:definition xml:lang="en">Indicates representations of "memories, and experiences, whether one's own or another's" <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <rdfs:subClassOf rdf:resource="#LiteraryGenre"/>
     <rdfs:subClassOf rdf:resource="#NarrativeGenre"/>
+    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#HistoricalGenre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -4043,6 +4055,7 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
      <rdfs:label xml:lang="en">Histoire (genres)</rdfs:label>
     <skos:definition xml:lang="en">The genre and subgenres of history. See also #HistoricalGenre.</skos:definition>
     <rdfs:subClassOf rdf:resource="#InformationalGenre"/>
+    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#ThematicGenre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -4097,6 +4110,11 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300025976"/>
     <rdfs:subClassOf rdf:resource="#Form"/>
     <skos:definition xml:lang="en">Indicates "accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization." <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="#LiteraryHistoricalGenre">
+    <skos:definition xml:lang="en">"A curated set of literary historical genre groupings gathering genres in which many writers wrote historically, with many but not all of these genres spanning multiple periods of British literary history. This class of genre groupings emerges from the Orlando Project's feminist literary history. It has a literary bias, reflects genres in which women tended to write, and groups them with an awareness of and interest in exposing how women's writing developed over time, supporting cross-period comparison and contrast. Not all genres encompassed in these groups are conventionally "literary" genres, notwithstanding their relevance to literary history. Meant for exploring larger generic shifts and developments, this set of groups omits many terms found in this ontology and some of those used within the Orlando dataset."</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">Literary Historical Genres</rdfs:label>
   </owl:Class>
   <owl:DeprecatedClass rdf:about="#PartialForm">
     <rdfs:subClassOf rdf:resource="#Form"/>
