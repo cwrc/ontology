@@ -483,6 +483,7 @@
   <genre:MovingMedium rdf:about="#videoRecording">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">video recording</rdfs:label>
+    <skos:altLabel xml:lang="en">video</skos:altLabel>
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300028682"/>
     <skos:definition xml:lang="en">"Video is an electronic medium for the recording, copying, playback, broadcasting, and display of moving visual media. Video systems vary greatly in the resolution of the display and refresh rate. Video can be carried on a variety of media, including radio broadcast, tapes, DVDs, computer files etc." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <rdf:type rdf:resource="#VisualArtMedium"/>
@@ -533,6 +534,9 @@
     <rdfs:label xml:lang="fr">genre dramatique</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">drama</rdfs:label>
+    <skos:altLabel xml:lang="en">dramatic work</skos:altLabel>
+    <skos:altLabel xml:lang="en">dramatic</skos:altLabel>
+    <skos:altLabel xml:lang="en">play</skos:altLabel>
     <dcterms:references rdf:resource="http://web.cn.edu/kwheeler/lit_terms_d.html"/>
     <skos:definition xml:lang="en">"A composition in prose or verse presenting, in pantomime and dialogue, a narrative involving conflict between a character or characters and some external or internal force (see conflict). Playwrights usually design dramas for presentation on a stage in front of an audience. Aristotle called drama "imitated human action." Drama may have originated in religious ceremonies. Thespis of Attica (sixth century BCE) was the first recorded composer of a tragedy. Tragedies in their earliest stage were performed by a single actor who interacted with the chorus. The playwright Aeschylus added a second actor on the stage (deuteragonist) to allow additional conflict and dialogue. Sophocles and Euripides added a third (tritagonist). Medieval drama may have evolved independently from rites commemorating the birth and death of Christ. During the late medieval period and the early Renaissance, drama gradually altered to the form we know today. The mid-sixteenth century in England in particular was one of the greatest periods of world drama. In traditional Greek drama, as defined by Aristotle, a play was to consist of five acts and follow the three dramatic unities. In more recent drama (i.e., during the last two centuries), plays have frequently consisted of three acts, and playwrights have felt more comfortable disregarding the confines of Aristotelian rules involving verisimilitude. See also unities, comedy, tragedy, revenge play, miracle play, morality play, and mystery play. An individual work of drama is called a play."  <![CDATA[<a href="cwrc:509015ff-7641-473e-94c5-688e06952bb7">(L. K Wheeler, 2017)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">(du grec "drama", action) Formes littéraires, presque toujours sous forme de dialogues (en vers ou un prose) destinés à être joués par des acteurs lors d'une représentation scénique.</skos:definition>
@@ -551,6 +555,7 @@
   <genre:DigitalMedium rdf:about="#multimedia">
     <skos:altLabel xml:lang="en">software, multimedia</skos:altLabel>
     <skos:altLabel xml:lang="en">mixed media</skos:altLabel>
+    <skos:hiddenLabel xml:lang="en">mixedmedia</skos:hiddenLabel>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300047910"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -627,6 +632,7 @@
     <rdfs:label xml:lang="fr">fiction</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">fiction</rdfs:label>
+    <skos:altLabel xml:lang="en">fictional</skos:altLabel>
     <skos:hiddenLabel xml:lang="en">NATIONALISTFICTION</skos:hiddenLabel>
     <skos:definition xml:lang="en">"Genre that refers to works evoked from the imagination of the writer and not conferred as fact. In literature, fiction generally refers to the novel, novella, short story, and poetic forms."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300055918"/>
@@ -767,6 +773,7 @@
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300311699"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">chapter</rdfs:label>
+    <skos:altLabel xml:lang="en">book chapter</skos:altLabel>
   </genre:TextualMedium>
   <genre:DramaticGenre rdf:about="#tragedy">
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
@@ -1040,6 +1047,7 @@
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">detective</rdfs:label>
+    <skos:altLabel xml:lang="en">detective novel</skos:altLabel>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026280"/>
     <skos:definition xml:lang="en">Detective fiction is a subgenre of crime fiction and mystery fiction in which an investigator or a detective—either professional or amateur—investigates a crime, often murder. <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
   </genre:MysteryGenre>
@@ -1215,6 +1223,7 @@
     <skos:definition xml:lang="fr">Documents qui fournissent la transcription écrite d'une adresse publique ou d'une conversation.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">speech</rdfs:label>
+    <skos:altLabel xml:lang="en">public speech</skos:altLabel>
     <skos:definition xml:lang="en">"Documents containing the text of any public address or talk"  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
   </genre:PerformanceMedium>
   <genre:ReligiousGenre rdf:about="#prayer">
@@ -1705,6 +1714,7 @@
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026499"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">radio drama</rdfs:label>
+    <skos:altLabel xml:lang="en">radio play</skos:altLabel>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr">«Le théâtre radiophonique ou radio-théâtre est une adaptation du médium théâtral au médium radiophonique.À partir du début des années 1950, le théâtre radiophonique subit la concurrence de la dramatique radio, puisque le premier terme disparait.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
   </genre:DramaticGenre>
@@ -2205,6 +2215,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300203177"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">comicbook</rdfs:label>
+    <skos:altLabel xml:lang="en">comic</skos:altLabel>
     <rdfs:label xml:lang="fr">bande dessinée</rdfs:label>
     <skos:definition xml:lang="fr">" Séquence d'illustrations contenant une ou des histoires (appelées «comics», car certaines sont humoristiques), souvent sérialisées et publiées sous forme de brochure." </skos:definition>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026266"/>
@@ -2254,6 +2265,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">childrens literature</rdfs:label>
+    <skos:altLabel xml:lang="en">children's book</skos:altLabel>
     <skos:definition xml:lang="en">"Literature written and published for children."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300263209"/>
     <skos:closeMatch rdf:resource="https://sparql.cwrc.ca/ontologies/genre#juvenile"/>
@@ -2275,6 +2287,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">illustrated</rdfs:label>
+    <skos:altLabel xml:lang="en">picture book</skos:altLabel>
   </genre:IllustratedForm>
   <genre:ComedicGenre rdf:about="#farce">
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Farce"/>
@@ -2303,6 +2316,8 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from the Merriam-Webster dictionary.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">journalism</rdfs:label>
+    <skos:altLabel xml:lang="en">journalistic</skos:altLabel>
+    <skos:altLabel xml:lang="en">journalism and writings</skos:altLabel>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Journalism"/>
     <rdfs:label xml:lang="fr">journalisme</rdfs:label>
   </genre:JournalisticGenre>
@@ -2350,6 +2365,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">"Sheet music is a handwritten or printed form of music notation that uses modern musical symbols to indicate the pitches (melodies), rhythms and/or chords of a song or instrumental musical piece. Like its analogs – printed books or pamphlets in English, Arabic or other languages – the medium of sheet music typically is paper (or, in earlier centuries, papyrus or parchment), although the access to musical notation since the 1980s has included the presentation of musical notation on computer screens and the development of scorewriter computer programs that can notate a song or piece electronically, and, in some cases, "play back" the notated music using a synthesizer or virtual instruments. Use of the term "sheet" is intended to differentiate written or printed forms of music from sound recordings (on vinyl record, cassette, CD), radio or TV broadcasts or recorded live performances, which may capture film or video footage of the performance as well as the audio component. In everyday use, "sheet music" (or simply "music") can refer to the print publication of commercial sheet music in conjunction with the release of a new film, TV show, record album, or other special or popular event which involves music. The first printed sheet music made with a printing press was made in 1473. Sheet music is the basic form in which Western classical music is notated so that it can be learned and performed by solo singers or instrumentalists or musical ensembles. Many forms of traditional and popular Western music are commonly learned by singers and musicians "by ear", rather than by using sheet music (although in many cases, traditional and pop music may also be available in sheet music form). "Score" is a common alternative (and more generic) term for sheet music, and there are several types of scores, as discussed below. The term "score" can also refer to theatre music, orchestral music or songs written for a play, musical, opera or ballet, or to music or songs written for a television programme or film; for the last of these, see Film score." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">notated music</rdfs:label>
+    <skos:altLabel xml:lang="en">musical score</skos:altLabel>
   </genre:MusicalNotationForm>
   <genre:NovelisticGenre rdf:about="#bildungsroman">
     <skos:definition xml:lang="fr">«Le roman d'apprentissage, appelé aussi roman de formation ou roman d’éducation, est un genre littéraire romanesque né en Allemagne au XVIIIe siècle (à ne pas confondre avec le roman de jeunesse). Il s'oppose cependant à la fonction première du romanesque qui est de nous transporter dans un monde de rêve et d'évasion. On parle ainsi de « roman initiatique » ou de « conte initiatique ». En allemand, le roman de formation est nommé « Bildungsroman ». Ce terme est dû au philologue allemand Johann Carl Simon Morgenstern, qui voyait dans le Bildungsroman « l'essence du roman par opposition au récit épique ». On emploie aussi l'expression « Entwicklungsroman » (roman de développement personnel). Un roman d'apprentissage a pour thème le cheminement évolutif d'un héros, souvent jeune, jusqu'à ce qu'il atteigne l'idéal de l'homme accompli et cultivé. Le héros découvre en général un domaine particulier dans lequel il fait ses armes. Mais en réalité, c'est une conception de la vie en elle-même qu'il se forge progressivement. En effet, derrière l'apprentissage d'un domaine, le jeune héros découvre les grands événements de l'existence (la mort, l'amour, la haine, l'altérité, pour prendre quelques exemples). Ainsi, dans L'Éducation sentimentale (Flaubert, 1869), le jeune Frédéric connaît les premiers émois de l'amour : et réfléchissant sur les sentiments qu'il porte à Mme Arnoux, Frédéric se construit une idée de l'existence. Le roman d'apprentissage est un roman qui décrit la maturation du héros. Il manque d'expérience au départ et traverse des obstacles ou des épreuves afin de mûrir et d'en tirer des leçons.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -2406,6 +2422,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300026487"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">film or TV script</rdfs:label>
+    <skos:altLabel xml:lang="en">screenplay</skos:altLabel>
     <rdf:type rdf:resource="#ScriptForm"/>
     <skos:definition xml:lang="fr">Textes de théâtre, scénario, et scripts pour télévision ou la radio.</skos:definition>
     <skos:altLabel xml:lang="en">tv script</skos:altLabel>
@@ -2761,6 +2778,8 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">manuscript</rdfs:label>
     <skos:altLabel xml:lang="en">typescript</skos:altLabel>
+    <skos:altLabel xml:lang="en">unpublished typescript</skos:altLabel>
+    <skos:altLabel xml:lang="en">unpublished manuscript</skos:altLabel>
   </genre:TextualMedium>
   <genre:ThematicGenre rdf:about="#juvenile">
     <skos:definition xml:lang="en">"Literary or artistic works produced by persons in their childhood or youth; usually used to set those works apart from later, mature works." <![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
@@ -2913,6 +2932,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
   <genre:MusicalGenre rdf:about="#musicalWriting">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">musical writing</rdfs:label>
+    <skos:altLabel xml:lang="en">musical verse</skos:altLabel>
     <skos:definition xml:lang="en">Writing associated with some form of music.</skos:definition>
     <rdf:type rdf:resource="#NonFictionalGenre"/>
   </genre:MusicalGenre>
@@ -2981,7 +3001,9 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">About experiences away from home, typically containing descriptions of the scenery and culture of places visited. Sometimes includes biographical content, such as travel literature written in the form of a personal journal or diary.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">travel writing</rdfs:label>
+    <rdfs:label xml:lang="en">travel literature</rdfs:label>
     <rdfs:label xml:lang="fr">récits de voyage</rdfs:label>
+    <skos:hiddenLabel xml:lang="en">TRAVELWRITING</skos:hiddenLabel>
     <skos:definition xml:lang="fr">Un récit de voyage ou relation de voyage est un genre littéraire dans lequel l'auteur rend compte d'un ou des voyages, des peuples rencontrés, des émotions ressenties, des choses vues et entendues. Contrairement au roman, le récit de voyage privilégie le réel à la fiction. Pour mériter le titre de « récit » et avoir rang de littérature, la narration doit être structurée et aller au-delà de la simple énumération des dates et des lieux (comme un journal intime ou un livre de bord d'un navire). Cette littérature doit rendre compte d'impressions, d'aventures, de l'exploration ou de la conquête de pays lointains.</skos:definition>
     <skos:closeMatch rdf:resource="https://fr.wikipedia.org/wiki/R%C3%A9cit_de_voyage"/>
     <rdf:type rdf:resource="#NarrativeGenre"/>
@@ -3022,6 +3044,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">"An interview is a conversation where questions are asked and answers are given. In common parlance, the word "interview" refers to a one-on-one conversation with one person acting in the role of the interviewer and the other in the role of the interviewee. The interviewer asks questions, the interviewee responds, with participants taking turns talking. Interviews usually involve a transfer of information from interviewee to interviewer, which is usually the primary purpose of the interview, although information transfers can happen in both directions simultaneously. One can contrast an interview which involves bi-directional communication with a one-way flow of information, such as a speech or oration. Interviews usually take place face to face and in person, although modern communications technologies such as the Internet have enabled conversations to happen in which parties are separated geographically, such as with videoconferencing software, and of course telephone interviews can happen without visual contact. Interviews almost always involve spoken conversation between two or more parties, although in some instances a "conversation" can happen between two persons who type questions and answers back and forth. Interviews can range from unstructured or free-wheeling and open-ended conversations in which there is no predetermined plan with prearranged questions, to highly structured conversations in which specific questions occur in a specified order. They can follow diverse formats; for example, in a ladder interview, a respondent's answers typically guide subsequent interviews, with the object being to explore a respondent's subconscious motives. Typically the interviewer has some way of recording the information that is gleaned from the interviewee, often by writing with a pencil and paper, sometimes transcribing with a video or audio recorder, depending on the context and extent of information and the length of the interview. Interviews have a duration in time, in the sense that the interview has a beginning and an ending." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">interview</rdfs:label>
+    <skos:altLabel xml:lang="en">unpublished interview</skos:altLabel>
   </genre:InformationalGenre>
   <genre:AdvertisementForm rdf:about="#advertisement">
     <skos:definition xml:lang="en">"Public notices or paid announcements, often promoting something for commercial purposes."<![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
@@ -3143,6 +3166,8 @@ Closely related to the industrial novel because of its interest in the impact of
   <genre:ScholarlyGenre rdf:about="#criticism">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">criticism</rdfs:label>
+    <skos:altLabel xml:lang="en">critical writing</skos:altLabel>
+    <skos:hiddenLabel xml:lang="en">STAGEREVIEW</skos:hiddenLabel>
     <skos:definition xml:lang="en">"Analyzing and evaluating the characteristics of man-made objects, literary works and documents, actions or projects. For critical descriptions or analyses of relatively recent works or events," <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300055851"/>
@@ -3415,6 +3440,8 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:related rdf:resource="http://sparql.cwrc.ca/ontologies/genre#SoundRecordingMedium"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">sound recording – nonmusical</rdfs:label>
+    <skos:altLabel xml:lang="en">voice recording</skos:altLabel>
+    <skos:altLabel xml:lang="en">sound</skos:altLabel>
   </genre:SoundRecordingMedium>
   <genre:ThematicGenre rdf:about="#nationalist">
     <skos:definition xml:lang="en">"A text that deals with a sense of national consciousness exalting one nation, typically above others, and placing primary emphasis on promotion of its culture and interests as opposed to those of other nations or supranational groups." <![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
@@ -3461,6 +3488,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300026059"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">catalogue</rdfs:label>
+    <skos:altLabel xml:lang="en">catalog</skos:altLabel>
   </genre:CatalogueForm>
   <genre:ThematicGenre rdf:about="#architecturalWriting">
     <skos:altLabel xml:lang="en">architecture</skos:altLabel>
@@ -3535,6 +3563,7 @@ Closely related to the industrial novel because of its interest in the impact of
   <genre:EmbeddedWork rdf:about="#partExcerpt">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">part/excerpt</rdfs:label>
+    <skos:altLabel xml:lang="en">excerpt</skos:altLabel>
     <skos:definition xml:lang="en">"Portions of a larger work, such as a literary work or motion picture, reproduced or excised without further change from their original context." <![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300026939"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
@@ -3650,6 +3679,7 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Advertisement Form</rdfs:label>
     <skos:altLabel xml:lang="en">advertising copy</skos:altLabel>
+    <skos:hiddenLabel xml:lang="en">advertisingcopy</skos:hiddenLabel>
     <skos:definition xml:lang="en">Indicates "an audio or visual form of marketing communication that employs an openly sponsored, nonpersonal message to promote or sell a product, service or idea." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <rdfs:subClassOf rdf:resource="#Form"/>
   </owl:Class>
