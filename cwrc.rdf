@@ -300,7 +300,7 @@
     <skos:note xml:lang="en">The object of this property, the context focus, becomes the subject of the subject-centric properties that can be derived from @@#Context@@ predicates via SPARQL CONSTRUCT queries.</skos:note>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
     <skos:definition xml:lang="fr"/>
-    <rdfs:range rdf:resource="#Context"/>
+    <rdfs:domain rdf:resource="#Context"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasContextPredicate">
@@ -18004,7 +18004,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">"The social class composed of the wealthiest members of society, who also wield the greatest political power." <![CDATA[<a href="#cwrc:c5e7bace-95bb-4820-bd7d-6bb97c1badc5">(DBpedia, 2018)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">«La classe sociale composée des membres les plus riches de la société, qui détiennent également le plus grand pouvoir politique.»</skos:definition>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Middle_class"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Upper_class"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc-ONTOLOGY_DATE"/>
     <void:inDataset rdf:resource="#datasetdefinition"/>
   </cwrc:SocialClass>
