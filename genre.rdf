@@ -1547,6 +1547,7 @@
   <genre:EpistolaryGenre rdf:about="#letter">
     <skos:definition xml:lang="en">Messages, more formal than notes or memorandums and usually but not always in written form, intended to be conveyed to a person or group of poeple.</skos:definition>
     <skos:altLabel xml:lang="en">letter</skos:altLabel>
+    <skos:altLabel xml:lang="en">email</skos:altLabel>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">letter</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300026879"/>
@@ -2759,6 +2760,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:related rdf:resource="http://vocab.getty.edu/aat/300028569"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">manuscript</rdfs:label>
+    <skos:altLabel xml:lang="en">typescript</skos:altLabel>
   </genre:TextualMedium>
   <genre:ThematicGenre rdf:about="#juvenile">
     <skos:definition xml:lang="en">"Literary or artistic works produced by persons in their childhood or youth; usually used to set those works apart from later, mature works." <![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
@@ -3536,6 +3538,13 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:definition xml:lang="en">"Portions of a larger work, such as a literary work or motion picture, reproduced or excised without further change from their original context." <![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300026939"/>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
+    <rdf:type rdf:resource="#ParatextualGenre"/>
+  </genre:EmbeddedWork>
+  <genre:EmbeddedWork rdf:about="#article">
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <rdfs:label xml:lang="en">article</rdfs:label>
+    <skos:definition xml:lang="en">A written work prepared for publication as an independent portion of a text (which can be either digital or physical) such as, but not limited to, a magazine, newspaper, encyclopedia, journal, or book</skos:definition>
+    <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300026939"/>
     <rdf:type rdf:resource="#ParatextualGenre"/>
   </genre:EmbeddedWork>
   <genre:IntertextualGenre rdf:about="#commentary">
