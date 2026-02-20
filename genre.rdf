@@ -1340,7 +1340,7 @@
     <rdf:type rdf:resource="#PerformanceMedium"/>
     <owl:sameAs rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026976"/>
     <rdfs:label xml:lang="fr">opéra</rdfs:label>
-    <skos:definition xml:lang="en">"Operetta is a form of theatre and a genre of light opera. It includes spoken dialogue, songs and including dances. It is lighter than opera in terms of its music, orchestral size, and length of the work. Apart from its shorter length, the operetta is usually of a light and amusing character. The subject matter may portray "lovers' spats, mistaken identities, sudden reversals of fortune, and glittering parties".[4] It sometimes also includes satirical commentaries.</skos:definition>
+    <skos:definition xml:lang="en">"Operetta is a form of theatre and a genre of light opera. It includes spoken dialogue, songs and including dances. It is lighter than opera in terms of its music, orchestral size, and length of the work. Apart from its shorter length, the operetta is usually of a light and amusing character. The subject matter may portray "lovers' spats, mistaken identities, sudden reversals of fortune, and glittering parties". It sometimes also includes satirical commentaries.</skos:definition>
     <skos:definition xml:lang="fr">«"L'opérette est un genre musical mêlant comédie, chant et généralement danse." "L'opérette alterne numéros chantés--et parfois dansés--et dialogues, se différenciant de l'opéra-comique par l'utilisation de musique dite « légère » (en opposition à la « musique savante ») pour ses partitions et le fait qu'elle ait une fin le plus souvent heureuse."»<![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from Wikipedia.</rdfs:comment>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Operetta"/>
@@ -3522,7 +3522,6 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:narrower rdf:resource="#eroticaOrPornography"/>
     <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Erotica"/>
     <skos:narrower rdf:resource="#eroticaOrPornography"/>
-    <skos:related rdf:resource="#erotica"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
   </genre:ThematicGenre>
   <genre:ThematicGenre rdf:about="#environmental">
@@ -3885,7 +3884,6 @@ Note: Used to class texts encoded using the “a” (analytic) value for the lev
     <rdfs:subClassOf rdf:resource="#Genre"/>
     <skos:altLabel xml:lang="en">Non-fiction Writing (genres)</skos:altLabel>
     <skos:definition xml:lang="en">Indicates genres that are contrasted with fictional ones, although they may be creative and the content is not necessarily factual. <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
-    <rdfs:subClassOf rdf:resource="#NonFictionalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#IllustratedForm">
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300054200"/>
