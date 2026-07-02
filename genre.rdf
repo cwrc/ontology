@@ -307,6 +307,7 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="#EditorialGenre"/>
     <rdfs:subClassOf rdf:resource="#CriticalWritingEditingGenre"/>
+    <rdfs:subClassOf rdf:resource="#EditorialGenres"/>
   </genre:EmbeddedWork>
   <genre:FictionalGenre rdf:about="#characterSketch">
     <rdfs:label xml:lang="en">character sketch</rdfs:label>
@@ -1999,6 +2000,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdf:type rdf:resource="#ParatextualGenre"/>
     <rdfs:subClassOf rdf:resource="#CriticalWritingEditingGenre"/>
     <rdfs:subClassOf rdf:resource="#CulturalCriticism"/>
+    <rdfs:subClassOf rdf:resource="#EditorialGenres"/>
   </genre:EmbeddedWork>
   <genre:ComedicGenre rdf:about="#comedy">
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
