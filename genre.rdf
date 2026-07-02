@@ -306,6 +306,7 @@
     <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Editing"/>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="#EditorialGenre"/>
+    <rdfs:subClassOf rdf:resource="#CriticalWritingEditingGenre"/>
   </genre:EmbeddedWork>
   <genre:FictionalGenre rdf:about="#characterSketch">
     <rdfs:label xml:lang="en">character sketch</rdfs:label>
@@ -1100,6 +1101,7 @@
     <rdfs:label xml:lang="fr">essai</rdfs:label>
     <skos:definition xml:lang="en">"Short literary compositions on single subjects, often presenting the personal view of the author."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#CriticalWritingEditingGenre"/>
   </genre:EssaysCriticismGenre>
   <genre:CartographicForm rdf:about="#map">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1373,6 +1375,7 @@
     <skos:definition xml:lang="en">"The study or practice of the analytical description, interpretation, and evaluation of visual art works and exhibitions."  <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2017)</a>]]></skos:definition>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300168233"/>
     <rdf:type rdf:resource="#EssaysCriticismGenre"/>
+    <rdfs:subClassOf rdf:resource="#CriticalWritingEditingGenre"/>
   </genre:ScholarlyGenre>
   <genre:InformationalGenre rdf:about="#profileOfAuthor">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1819,6 +1822,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:label xml:lang="en">review</rdfs:label>
     <rdfs:label xml:lang="fr">critique</rdfs:label>
     <rdf:type rdf:resource="#IntertextualGenre"/>
+    <rdfs:subClassOf rdf:resource="#CriticalWritingEditingGenre"/>
   </genre:EssaysCriticismGenre>
   <genre:PoeticGenre rdf:about="#pindaric">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1936,6 +1940,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="en">Writing that analyzes or critiques a literary work, often through the use of a particular literary theory, and typically in the form of an essay. <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Literary_criticism"/>
     <skos:definition xml:lang="fr">«La critique littéraire est l'étude, la discussion, l'évaluation et l'interprétation de la littérature. Elle peut prendre la forme d'un discours théorique s'appuyant sur la théorie de la littérature ou bien d'un discours plus circonstancié, de présentation ou de compte rendu d'une œuvre littéraire (souvent sous une forme journalistique lors de sa parution). Ces deux acceptions ne sont pas diamétralement opposées bien que la seconde se distingue par le jugement qu'elle porte sur les œuvres étudiées.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
+    <rdfs:subClassOf rdf:resource="#CriticalWritingEditingGenre"/>
   </genre:EssaysCriticismGenre>
   <genre:EpistolaryGenre rdf:about="#epistolary">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -1988,6 +1993,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="fr">Section d'ouverture d'un texte, souvent sous forme d'essai, qui donne généralement un aperçu du propos du texte et explique les raisons pour lesquelles l'auteur.e l'a écrit.</skos:definition>
     <skos:definition xml:lang="en">"The opening section of a text, often in the form of an essay, that usually provides an overview of the text's subject matter and explains the author's reason for writing."  <![CDATA[<a href="#cwrc:2f09376c-f784-4a46-9f04-5a21aa311f27">(Penguin, 1999)</a>]]></skos:definition>
     <rdf:type rdf:resource="#ParatextualGenre"/>
+    <rdfs:subClassOf rdf:resource="#CriticalWritingEditingGenre"/>
   </genre:EmbeddedWork>
   <genre:ComedicGenre rdf:about="#comedy">
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
@@ -2342,6 +2348,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">annotation</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300026100"/>
+    <rdfs:subClassOf rdf:resource="#CriticalWritingEditingGenre"/>
   </genre:EmbeddedWork>
   <genre:ChildrensLiteratureGenre rdf:about="#nurseryRhyme">
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
@@ -3838,6 +3845,24 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:subClassOf rdf:resource="#LiteraryGenre"/>
     <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
+  </owl:Class>
+  <owl:Class rdf:about="#CriticalWritingEditingGenre">
+    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
+    <rdfs:label xml:lang="en">Critical Writing and Editing</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <skos:definition xml:lang="en">Temporary genre grouping to test merit of different groupings related to criticial writing and editorial work (1/3).</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="#CulturalCriticism">
+    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
+    <rdfs:label xml:lang="en">Cultural Criticism</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <skos:definition xml:lang="en">Temporary genre grouping to test merit of different groupings related to criticial writing and editorial work (2/3).</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="#EditorialGenres">
+    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
+    <rdfs:label xml:lang="en">Editorial Genres</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
+    <skos:definition xml:lang="en">Temporary genre grouping to test merit of different groupings related to criticial writing and editorial work (3/3).</skos:definition>
   </owl:Class>
   <owl:Class rdf:about="#DidacticGenre">
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300404113"/>
