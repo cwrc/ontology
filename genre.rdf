@@ -307,7 +307,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdf:type rdf:resource="#EditorialGenre"/>
     <rdfs:subClassOf rdf:resource="#CriticalWritingEditingGenre"/>
-    <rdfs:subClassOf rdf:resource="#EditorialGenres"/>
   </genre:EmbeddedWork>
   <genre:FictionalGenre rdf:about="#characterSketch">
     <rdfs:label xml:lang="en">character sketch</rdfs:label>
@@ -1998,9 +1997,9 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <skos:definition xml:lang="fr">Section d'ouverture d'un texte, souvent sous forme d'essai, qui donne généralement un aperçu du propos du texte et explique les raisons pour lesquelles l'auteur.e l'a écrit.</skos:definition>
     <skos:definition xml:lang="en">"The opening section of a text, often in the form of an essay, that usually provides an overview of the text's subject matter and explains the author's reason for writing."  <![CDATA[<a href="#cwrc:2f09376c-f784-4a46-9f04-5a21aa311f27">(Penguin, 1999)</a>]]></skos:definition>
     <rdf:type rdf:resource="#ParatextualGenre"/>
+    <rdfs:subClassOf rdf:resource="#EditorialGenre"/>
     <rdfs:subClassOf rdf:resource="#CriticalWritingEditingGenre"/>
     <rdfs:subClassOf rdf:resource="#CulturalCriticism"/>
-    <rdfs:subClassOf rdf:resource="#EditorialGenres"/>
   </genre:EmbeddedWork>
   <genre:ComedicGenre rdf:about="#comedy">
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
@@ -3346,7 +3345,6 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="fr">anthologie</rdfs:label>
     <skos:definition xml:lang="fr">"Collections d'extraits choisis parmi les écrits d'un ou de plusieurs auteurs, ayant habituellement une caractéristique commune telle que le sujet abordé ou la forme littéraire. " </skos:definition>
     <skos:related rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026052"/>
-    <rdf:type rdf:resource="#EditorialGenre"/>
   </genre:CollectionForm>
   <genre:ThematicGenre rdf:about="#paranormal">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3865,12 +3863,6 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">Cultural Criticism</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <skos:definition xml:lang="en">Temporary genre grouping to test merit of different groupings related to criticial writing and editorial work (2/3).</skos:definition>
-  </owl:Class>
-  <owl:Class rdf:about="#EditorialGenres">
-    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
-    <rdfs:label xml:lang="en">Editorial Genres</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <skos:definition xml:lang="en">Temporary genre grouping to test merit of different groupings related to criticial writing and editorial work (3/3).</skos:definition>
   </owl:Class>
   <owl:Class rdf:about="#DidacticGenre">
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300404113"/>
