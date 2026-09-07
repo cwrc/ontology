@@ -354,7 +354,6 @@
     <rdfs:label xml:lang="en">treatise</rdfs:label>
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <skos:definition xml:lang="fr">«Un traité est un manuel d'instructions ou un livre standard dans n'importe quelle branche qui forme un sujet d'études. Ils se différencient les uns des autres, aussi bien par le public ciblé que par le sujet abordé. Les traités sont habituellement édités par des imprimeurs spécialisés, dans le but de répondre aux besoins de formation, sur n'importe quel thème susceptible de faire l'objet d'un enseignement. Il s'agit d'un important commerce qui nécessite des ventes massives, afin de rendre ces publications rentables. Bien que la plupart des traités soient uniquement édités sous forme de livres reliés, certains sont désormais consultables sur internet. Les traités sont apparus avec le développement de l'imprimerie de Johannes Gutenberg, sous la forme de méthodes d'enseignement.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
-    <rdf:type rdf:resource="#PhilosophyHumanitiesScholarshipGenre"/>
   </genre:ScholarlyGenre>
   <genre:NovelisticGenre rdf:about="#novella">
     <skos:definition xml:lang="fr">Brèves histoires en prose populaires à la Renaissance, et ensuite formes de de prose intermédiaires entre le roman et la nouvelle.</skos:definition>
@@ -602,7 +601,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">philosophy</rdfs:label>
     <rdfs:label xml:lang="fr">philosophie</rdfs:label>
-    <rdf:type rdf:resource="#PhilosophyHumanitiesScholarshipGenre"/>
   </genre:PhilosophicalGenre>
   <genre:IntertextualGenre rdf:about="#answer">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -970,7 +968,6 @@
     <rdfs:comment xml:lang="en">The description for this term is indebted to the Getty Art &amp; Architecture Thesaurus.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">encyclopaedia</rdfs:label>
-    <rdf:type rdf:resource="#PhilosophyHumanitiesScholarshipGenre"/>
   </genre:ReferenceWorkGenre>
   <genre:PoeticGenre rdf:about="#lais">
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
@@ -1443,7 +1440,6 @@
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">musicology</rdfs:label>
     <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300054240"/>
-    <rdf:type rdf:resource="#PhilosophyHumanitiesScholarshipGenre"/>
   </genre:ScholarlyGenre>
   <genre:PoeticGenre rdf:about="#epic">
     <skos:definition xml:lang="fr">Provenant du nom "épopoée", le genre épique désigne aujourd'hui les formes artistiques et littéraires (prose, poésie, théâtre, fillms, et autres) dans lesquelles l'histoire a pour thèmes principaux la grandeur et l'héroïsme.</skos:definition>
@@ -2127,7 +2123,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:comment xml:lang="en">This term and its description were created from data gathered from DBpedia.</rdfs:comment>
     <skos:definition xml:lang="fr">«Un épyllion (en grec ancien ἐπύλλιον / epúllion diminutif de ἔπος / épos [« parole » racine d'ἐποποιία / epopoiía : « épopée »]) est, dans la littérature grecque et latine, une épopée très brève. C'est un poème narratif de quelques centaines d'hexamètres portant généralement sur la vie d'un héros ou d'une héroïne mythique et plus particulièrement sur ses amours.»  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
   </genre:PoeticGenre>
-  <genre:PhilosophyHumanitiesScholarshipGenre rdf:about="#sageWriting">
+  <genre:ScholarlyGenre rdf:about="#sageWriting">
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia.</rdfs:comment>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Sage_writing"/>
     <skos:definition xml:lang="en">"Sage writing was a genre of creative nonfiction popular in the Victorian era. The concept originates with John Holloway's 1953 book The Victorian Sage: Studies in Argument. Sage writing is a development from ancient wisdom literature in which the writer chastises and instructs the reader about contemporary social issues, often utilizing discourses of philosophy, history, politics, and economics in non-technical ways. Prominent examples of the genre include writings by Thomas Carlyle, Matthew Arnold, John Ruskin, and Henry David Thoreau. Some 20th-century writers, such as Joan Didion and New Journalists such as Norman Mailer and Tom Wolfe, have also been identified as sage writers."  <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2017)</a>]]></skos:definition>
@@ -2135,7 +2131,7 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:label xml:lang="en">sage writing</rdfs:label>
     <rdfs:label xml:lang="fr">sage writing</rdfs:label>
     <skos:definition xml:lang="fr">Le "sage writing" était un genre non fictionel populaire à l'ère victorienne. Son nom vient de de John Holloway paru en 1953, The Victorian Sage: Studies in Argument. Le "sage writing" s'inspire de la littérature de sagesse antique dans laquelle l'auteur donne des leçons et des enseignements à son lecteur concernant des questions sociales contemporaines, souvent en utilisant dans un style accessible et non savant les discours philosophiques, historiques, politiques et et économiques. Les représentants les plus connus du "sage writing" sont Thomas Carlyle, Matthew Arnold, John Ruskin et Henry David Thoreau. Certains écrivains du 20ème siècle comme Joan Didion et les New Journalists Norman Mailer et Tom Wolfe sont également considérés comme appartenant à ce genre.</skos:definition>
-  </genre:PhilosophyHumanitiesScholarshipGenre>
+  </genre:ScholarlyGenre>
   <genre:FictionalGenre rdf:about="#picaresque">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">picaresque</rdfs:label>
@@ -2199,7 +2195,6 @@ paragraphes, souvent précédés de la date du jour d’écriture.</skos:definit
     <rdfs:label xml:lang="fr">érudition</rdfs:label>
     <skos:definition xml:lang="en">Writing by a scholar, either amateur or professional, typically focused on a specific field or topic in which the author is an expert.</skos:definition>
     <skos:altLabel xml:lang="en">academic writing</skos:altLabel>
-    <rdf:type rdf:resource="#PhilosophyHumanitiesScholarshipGenre"/>
   </genre:ScholarlyGenre>
   <genre:DramaticGenre rdf:about="#tragicomedy">
     <rdfs:comment xml:lang="en">The description for this term is indebted to DBpedia. </rdfs:comment>
@@ -3522,7 +3517,6 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">architectural writing</rdfs:label>
     <rdf:type rdf:resource="#InformationalGenre"/>
     <rdf:type rdf:resource="#ScholarlyGenre"/>
-    <rdf:type rdf:resource="#PhilosophyHumanitiesScholarshipGenre"/>
   </genre:ThematicGenre>
   <genre:PoeticGenre rdf:about="#anacreontic">
     <skos:definition xml:lang="en">"Anacreontics are verses in a meter used by the Greek poet Anacreon in his poems dealing with love and wine. His later Greek imitators (whose surviving poems are known as the Anacreontea) took up the same themes and used the Anacreontic meter. In modern poetry, Anacreontics are short lyrical pieces that keep the Anacreontic subject matter but not the meter." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
@@ -3662,7 +3656,6 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
     <rdfs:label xml:lang="en">Medical and Scientific Genres</rdfs:label>
     <rdfs:label xml:lang="fr">Genres médicaux et scientifiques</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#FeministGenre">
     <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
@@ -3699,7 +3692,6 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Intertextuality"/>
     <rdfs:subClassOf rdf:resource="#Genre"/>
     <rdfs:subClassOf rdf:resource="#LiteraryGenre"/>
-    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
     <skos:definition xml:lang="en">Indicates works that shape "a text's meaning by another text." <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
     <skos:definition xml:lang="fr">Indique les œuvres qui façonnent « le sens d'un texte par un autre texte ». <![CDATA[<a href="#cwrc:727d97bc-af78-4122-94be-aa78b2e97d5a">(DBpedia, 2019)</a>]]></skos:definition>
   </owl:Class>
@@ -3766,7 +3758,6 @@ Closely related to the industrial novel because of its interest in the impact of
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300311832"/>
     <rdfs:subClassOf rdf:resource="#Genre"/>
     <skos:definition xml:lang="en">A work that is embedded in or forms a part of a larger work, for instance a poem within a volume or an essay within a journal, or one that is producted from a combination of other works or serves to enhance them. Largely parallels the @@#EmbeddedWork@@ or Partial Work grouping in the @@#Form@@ vocabulary. <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
-    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#ThreeDimensionalMedium">
     <dcterms:references rdf:resource="https://www.loc.gov/standards/mods/userguide/typeofresource.html"/>
@@ -3855,13 +3846,6 @@ Closely related to the industrial novel because of its interest in the impact of
     <rdfs:label xml:lang="en">Autobiographical Genre</rdfs:label>
     <rdfs:subClassOf rdf:resource="#LifeWritingGenre"/>
     <skos:definition xml:lang="en">Indicates "accounts of a person's life given by themselves." <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
-  </owl:Class>
-  <owl:Class rdf:about="#PhilosophyHumanitiesScholarshipGenre">
-    <skos:definition xml:lang="en">Indicates works of philosophy and other humanities scholarship apart from essays and criticism. Does not include social science, or medical and scientific writing.</skos:definition>
-    <rdfs:isDefinedBy rdf:resource="http://sparql.cwrc.ca/ontologies/genre-ONTOLOGY_DATE"/>
-    <rdfs:label xml:lang="en">Philosophy and Humanities Genres</rdfs:label>
-    <rdfs:label xml:lang="fr">Genres en philosophie et sciences humaines</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#SongGenre">
     <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Song"/>
@@ -4044,7 +4028,6 @@ Note: Used to class texts encoded using the “u” (unpublished) value for the 
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300054314"/>
     <skos:definition xml:lang="en">Indicates works "dealing with the institutions and functioning of human society and with the interpersonal relationships of individuals as members of society." <![CDATA[<a href="#cwrc:db2f8571-a773-4068-a35f-34262950bb8f">(Getty, 2019)</a>]]></skos:definition>
     <rdfs:subClassOf rdf:resource="#ScholarlyGenre"/>
-    <rdfs:subClassOf rdf:resource="#LiteraryHistoricalGenre"/>
   </owl:Class>
   <owl:Class rdf:about="#SoundRecordingMedium">
     <skos:definition xml:lang="en">"Discs, tapes, filaments, or other media on which sound has been recorded."<![CDATA[<a href="#cwrc:bd595bc4-5991-4c51-98d9-9ab52c416f4f">(Getty, 2021)</a>]]></skos:definition>
